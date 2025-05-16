@@ -1,0 +1,99 @@
+----Design Entry----
+Xcelium (simulation), JasperGold (formal property verification), vManager (verification management)
+--HDL Coding--
+The HDL (Verilog) code can be written in plain text editor (extension '*.v') or virtuoso can be used.
+***If it written in virtuoso it can be built/compiled/verified in the virtuoso (in the same editor).
+***If it written in plain text editor Xcelium can be used to buid/compile/verify.
+
+--Testbench Development--
+
+
+----Compilation and Simulation----
+--Compile the HDL Code--
+Use Cadence tools likeCadence NCSim (NC Verilog) to compile your HDL code and testbench. This step checks for syntax errors and ensures that the code is free from basic mistakes.
+
+--Functional Simulation--
+Simulate the compiled code using the testbench to verify that the design functions as expected. Observe the simulation results and ensure that the design meets the specified requirements.
+
+----Synthesis----
+--Synthesis Tool Setup--
+Configure the Cadence Genus Synthesis Solution tool with the target technology library and constraints.
+--Run Synthesis--
+Synthesize the HDL code to convert it into a gate-level netlist. This step maps the design to the target technology's standard cells and optimizes it for area, power, and timing.
+--Post-Synthesis Simulation--
+Perform gate-level simulation to verify that the synthesized netlist matches the original RTL design's functionality.
+
+----Placement and Routing----
+--Floorplanning--
+Use Cadence Innovus Implementation System to define the floorplan of the design. This includes placing macro blocks, defining power and ground networks, and setting routing resources.
+--Placement--
+Automatically or manually place the logic cells on the chip while considering timing and congestion constraints.
+--Routing--
+Perform detailed routing of the connections between the placed cells. Optimize the routing for signal integrity and timing.
+
+----Timing Analysis and Optimization----
+--Static Timing Analysis (STA)--
+Use Cadence Tempus Timing Sign-Off Solution to perform STA on the placed and routed design. Check if the design meets all timing constraints (setup, hold, skew, etc.).
+--Optimization--
+If timing violations are found, apply optimizations such as buffer insertion, resizing, or re-routing to fix them.
+
+----Signal Integrity and Power Analysis----
+--Signal Integrity Analysis--
+Check for signal integrity issues like crosstalk and noise using Cadence tools.
+--Power Analysis--
+Analyze the power consumption of the design using Cadence Joules Power System. Optimize the design to reduce power consumption if necessary.
+
+----Design Review and Verification---
+--Design Rule Checks (DRC)--
+Run DRC to ensure that the design adheres to the fabrication process rules.
+--Layout Versus Schematic (LVS)--
+Compare the final layout with the schematic to ensure they match.
+--Final Verification--
+Perform final verification to ensure that the design meets all functional, timing, and physical requirements.
+
+----Tape-Out----
+--Final Checks--
+Perform final checks including DRC, LVS, and electrical rule checks (ERC).
+--Generate Mask Layers--
+Generate the mask layers required for the fabrication process.
+--Tape-Out Submission--
+Submit the design to the foundry for manufacturing.
+
+---------------------------------------------
+xrun ./SRC/and2_include_netlists.v -access +rwc \
+	-incdir ./SRC/sky130/cells/inv \
+	-incdir ./SRC/sky130/cells/buf \
+	-incdir ./SRC/sky130/cells/or2 \
+	-incdir ./SRC/sky130/cells/mux2 \
+	-incdir ./SRC/sky130/cells/sdfbbp \
+	-64bit
+	-gui &
+
+xrun ./SRC/and2_include_netlists.v -access +rwc -gui &
+----------------
+genus -gui
+read_libs <lib name>
+read_hdl <hdl--verilog file>
+elaborate <top_module name>
+set_db syn_generic_effort medium
+set_db syn_map_effort medium
+set_db syn_opt_effort medium
+syn_generic
+syn_map
+syn_opt
+write_hdl > hdl.v
+----------------
+----Innovus commands----
+before importing hierarchical netlists run--
+set init_design_uniquify 1
+read_netlist <netlist_file.v>
+get_cells
+saveNetlist -flat <flatten_netlist_file.v>
+
+--get core area--
+dbGet top.fPlan.coreBox_size
+dbGet top.fPlan.coreBox_sizex
+dbGet top.fPlan.coreBox_sizey
+
+----------------
+

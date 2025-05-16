@@ -1,0 +1,17 @@
+# File Created by Exotic at Fri May 16 22:24:07 2025
+# assisted by CdsLibEditor
+# File Created by Sajib Barua (Student MA about OpenFPGA) at Thu Feb  6 19:50:01 2025
+# assisted by CdsLibEditor
+# File Created by Standard CAE user at Sat Nov 16 10:23:16 2024
+# assisted by CdsLibEditor
+# File Created by Sajib Barua (Student MA about OpenFPGA) at Sun Oct 13 12:38:17 2024
+# assisted by CdsLibEditor
+# File Created by Standard CAE user at Fri Oct 11 02:31:15 2024
+# assisted by CdsLibEditor
+DEFINE analogLib $IC_HOME/tools/dfII/etc/cdslib/artist/analogLib
+DEFINE basic $IC_HOME/tools/dfII/etc/cdslib/basic
+DEFINE sky130_fd_pr_main /run/media/exotic/Cadence/PDK/sky130_release_004a/sky130_release_004a/libs/sky130_fd_pr_main
+
+DEFINE avTech /run/media/exotic/Cadence/Installed/ASSURA_04.17.001_231/tools.lnx86/assura/etc/avtech/avTech
+DEFINE sky130_scl_9T /run/media/exotic/Cadence/PDK/sky130_scl_9T_0.0.5/oa/sky130_scl_9T
+DEFINE SIPO /run/media/exotic/Cadence/gitrepo/DD_Lab_exercise/SIPO/HDL/SIPO

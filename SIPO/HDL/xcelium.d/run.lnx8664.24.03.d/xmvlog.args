@@ -1,0 +1,30 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+./xcelium.d/run.lnx8664.24.03.d
+-RUNMODE
+-NOCOPYRIGHT
+-NOSTDOUT
+-NOWARN
+DLNOHV
+-NOWARN
+SPDUSD
+-INCDIR
+"/run/media/exotic/Cadence/gitrepo/DD_Lab_exercise/HDL/"
+-CDSLIB
+./xcelium.d/run.lnx8664.24.03.d/cdsrun.lib
+-VIEW
+functional
+-WORK
+SIPO
+/run/media/exotic/Cadence/gitrepo/DD_Lab_exercise/HDL/SIPO/sipo/functional/verilog.v
+-HDLVAR
+./xcelium.d/run.lnx8664.24.03.d/hdlrun.var
+-no_analogsolver
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./xcelium.d/run.lnx8664.24.03.d/xllibs
+-ALLOWUNBOUND

@@ -1,0 +1,45 @@
+TOOL:	xrun(64)	24.03-s004: Started on May 16, 2025 at 22:17:44 CEST
+xrun
+	-compile
+	-nocopy
+	-nostdout
+	-nowarn DLNOHV
+	-nowarn SPDUSD
+	-messages
+	-update
+	-log /run/media/exotic/Cadence/gitrepo/DD_Lab_exercise/HDL/.cadence/dfII/TextSupport/Logs/Parser/verilog/SIPO/functional/compile1.log
+	-incdir "/run/media/exotic/Cadence/gitrepo/DD_Lab_exercise/HDL/"
+	-cdslib /run/media/exotic/Cadence/gitrepo/DD_Lab_exercise/HDL/cds.lib
+	-makelib SIPO
+	-view functional
+	-SPECIFICUNIT serial_to_parallel
+	/run/media/exotic/Cadence/gitrepo/DD_Lab_exercise/HDL/SIPO/serial_to_parallel/functional/verilog.v
+	-endlib
+Recompiling... reason: unable to stat '/./run/media/exotic/Cadence/gitrepo/DD_Lab_exercise/HDL/SIPO/sipo/functional/verilog.v'.
+TOOL:	xrun(64)	24.03-s004: Exiting on May 16, 2025 at 22:17:45 CEST  (total: 00:00:01)
+
+
+
+ ========================================================================================================
+		                  HDL IMPORT QUICK STATUS REPORT
+ ========================================================================================================
+ HDL SETUP MODE	: 0 - IMPROVED LEGACY FLOW
+ ========================================================================================================
+ HDL SETUP STATUS	: SUCCESS
+ ========================================================================================================
+ cds.lib USED	: "/run/media/exotic/Cadence/gitrepo/DD_Lab_exercise/HDL/cds.lib"
+ ========================================================================================================
+ COMPILER OPTIONS	: ""
+ ========================================================================================================
+ PCDB DM CHECKS	: SUCCESS
+ ========================================================================================================
+ PCDB UPDATE REQUIRED	: NO
+ ========================================================================================================
+ IMPORT CONFIGURATION	: CHECK BELOW SETTINGS
+		: generateShadow(false)
+		: enableBlackBox(false)
+		: enableSpecificUnit(true)
+		: updateCDF(false)
+ ========================================================================================================
+ OVERALL IMPORT STATUS	: SUCCESS
+ ========================================================================================================

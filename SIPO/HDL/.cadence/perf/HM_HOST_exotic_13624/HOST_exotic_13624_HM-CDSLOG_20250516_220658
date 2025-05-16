@@ -1,0 +1,97 @@
+\# Program start time:     UTC 2025.05.16 20:05:42.215
+\# Local time: GMT+02:00 (UTC+02:00) 2025.05.16 22:05:42.215
+\o Program:		@(#)$CDS: Virtuoso Studio version IC23.1-64b 05/22/2024 07:43 (cpgbld16) $
+\o Hierarchy:		/run/media/exotic/Cadence/Installed/IC_23.10.070/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC23.1-64b.ISR7.27  (64-bit addresses)
+\# Command line:	/run/media/exotic/Cadence/Installed/IC_23.10.070/tools/dfII/bin/64bit/virtuoso
+\# Host name (type):	exotic-rhel (x86_64)
+\# Operating system:	Linux 4.18.0-553.33.1.el8_10.x86_64 #1 SMP Fri Dec 6 15:07:20 EST 2024
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:0 (1680x1050)
+\# Available geometry:			TL(0:27) BR(1679:1049)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 12101003)
+\# X resource pool:	base 0x2600000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        751 MB
+\# Available memory:	      4,906 MB
+\# System memory:	      7,654 MB
+\# Maximum memory size:	      7,076 MB
+\# Max mem available:	      5,079 MB
+\# Initial memory used:	        173 MB
+\#        process size:	      1,685 MB
+\# Thread usage limits (effective/default):	maxthreads 14299/14299 maxload 2.00/2.00
+\# Qt version:		5.15.9
+\# Window Manager:	GNOME Shell
+\# User Name:		exotic
+\o Working Directory:	exotic-rhel:/run/media/exotic/Cadence/gitrepo/DD_Lab_exercise/HDL
+\# Process Id:		13624
+\o 
+\o COPYRIGHT (C) 1992-2024  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2024  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\# Available memory:          4,839 MB at UTC 2025.05.16 20:05:52.063
+\# Memory report: Maximum memory size now 5,057 MB at UTC 2025.05.16 20:05:52.065
+\# Thread usage report: 2 active threads, active load 1.00 at UTC 2025.05.16 20:05:52.065
+\# Thread usage report: 6 active threads, active load 1.40 at UTC 2025.05.16 20:06:02.136
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading im.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\# Memory report: using         275 MB, process size 1,915 MB at UTC 2025.05.16 20:06:12.016
+\o Loading layers.cxt 
+\o Loading drv.cxt 
+\o Loading ams.cxt 
+\o Loading adexlDM.cxt 
+\o Loading cpf.cxt 
+\o Loading cli.cxt 
+\o Loading lp.cxt 
+\o Loading sipLayout.cxt 
+\o Loading diagCenter.cxt 
+\# [22:05:47.163745] Configured Lic search path (23.02-s006): /home/exotic/cadence/Lic/license.dat
+\o Virtuoso Framework License (111) was checked out successfully. Total checkout time was 1.34s.
+\# Available memory:          4,356 MB at UTC 2025.05.16 20:06:41.344
+\# Memory report: Maximum memory size now 4,665 MB at UTC 2025.05.16 20:06:41.353
+\w *WARNING* The directory: '/run/media/exotic/Cadence/FPGA-OpenFPGA/DRC/FPGA_TOP' does not exist
+\w 	but was defined in libFile '/run/media/exotic/Cadence/gitrepo/DD_Lab_exercise/HDL/cds.lib' for Lib 'FPGA_TOP'.
+\p > 
+\o Loading le.cxt 
+\o Loading tilp.cxt 
+\o Loading validator.cxt 
+\o Loading vrf.cxt 
+\o Loading multiTechPlugin.cxt 
+\o Loading exportDie.cxt 
+\# Loading perfDiag...
+\# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
+\o The Health Monitor tool is installed. You can access it from CIW - Tools - Diagnostic Center or use the shell command 'cdsPerfDiag -p 13624' to open it when Virtuoso freezes.
+\# (PerfDiag): Use backtrace from GLIBC.
+\# Thread usage report: 7 active threads, active load 1.40 at UTC 2025.05.16 20:06:51.059
+\a hiResizeWindow(window(1) list(327:24 1122:124))
+\# [22:06:51.003216] periodic Lic check successful
+\# [22:06:51.003216] Feature usage summary:
+\# [22:06:51.016512]  Virtuoso_Adv_Node_Framework  
+\# [22:06:51.468839]   111  
+\r t
+\a hiResizeWindow(window(1) list(327:24 1122:496))
+\r t
