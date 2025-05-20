@@ -1,17 +1,10 @@
 \o Program:		@(#)$CDS: cdsLibEditor version 23.1 - CAT38 04/15/2024 12:26 (sjfdcl749) $
 \o Sub version:		sub-version  p323 
-\o Arguments:		-display :0 -mpssession virtuoso15952 -mpshost exotic-rhel -mpsversion 23.1 -namespace CDBA -cdslib /run/media/exotic/Cadence/gitrepo/DD_Lab_exercise/SIPO/HDL/cds.lib 
-\o Working Directory:	exotic-rhel:/run/media/exotic/Cadence/gitrepo/DD_Lab_exercise/SIPO/HDL
+\o Arguments:		-display :25.0 -mpssession virtuoso3841550 -mpshost ei-vm-018.othr.de -mpsversion 23.1 -namespace CDBA -cdslib /home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/cds.lib 
+\o Working Directory:	ei-vm-018.othr.de:/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL
 \o 64-bit offsets
 \a nrSetWindowVisibility(cdsLibEditor "show")
 \o Qt version: 		5.15.9
 \a nrSetCurrentWindow(cdsLibEditor)
-\a nrListItemAction(cdsLibEditor->mainTable 0 0)
-\o Active cell: 0 0 "analogLib"
-\a nrResizeWindow(cdsLibEditor list(0 27 500 400))
-\a nrListItemAction(cdsLibEditor->mainTable 5 1)
-\o Active cell: 5 1 "/run/media/exotic/Cadence/gitrepo/DD_Lab_exercise/HDL/SIPO"
-\a nrListItemRename(cdsLibEditor->mainTable, 5 1 "/run/media/exotic/Cadence/gitrepo/DD_Lab_exercise/SIPO/HDL/SIPO")
-\a cdsLibEditor->fileSaveButton->value = t
-\a nrResizeWindow(cdsLibEditor list(334 192 500 400))
+\a nrResizeWindow(cdsLibEditor list(585 321 500 400))
 \a exit(0)

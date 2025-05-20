@@ -1,0 +1,57 @@
+TOOL:	xrun(64)	24.03-s004: Started on May 18, 2025 at 02:11:00 CEST
+xrun
+	-compile
+	-nocopy
+	-nostdout
+	-nowarn DLNOHV
+	-nowarn SPDUSD
+	-messages
+	-update
+	-log /home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/.cadence/dfII/TextSupport/Logs/Parser/verilog/SIPO/functional/compile2.log
+	-incdir "/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/"
+	-cdslib /home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/cds.lib
+	-makelib SIPO
+	-view functional
+	-SPECIFICUNIT serial_to_parallel
+	/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/serial_to_parallel/functional/verilog.v
+	-endlib
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/xcelium.d/worklib'.
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/xcelium.d/worklib'.
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/xcelium.d/worklib'.
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/xcelium.d/worklib'.
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/xcelium.d/worklib'.
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/xcelium.d/worklib'.
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/xcelium.d/worklib'.
+Recompiling... reason: file './serial_to_parallel/functional/verilog.v' is newer than expected.
+	expected: Sun May 18 01:47:47 2025
+	actual:   Sun May 18 02:12:44 2025
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/xcelium.d/worklib'.
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/xcelium.d/worklib'.
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/xcelium.d/worklib'.
+TOOL:	xrun(64)	24.03-s004: Exiting on May 18, 2025 at 02:11:00 CEST  (total: 00:00:00)
+
+
+
+ ========================================================================================================
+		                  HDL IMPORT QUICK STATUS REPORT
+ ========================================================================================================
+ HDL SETUP MODE	: 0 - IMPROVED LEGACY FLOW
+ ========================================================================================================
+ HDL SETUP STATUS	: SUCCESS
+ ========================================================================================================
+ cds.lib USED	: "/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/cds.lib"
+ ========================================================================================================
+ COMPILER OPTIONS	: ""
+ ========================================================================================================
+ PCDB DM CHECKS	: SUCCESS
+ ========================================================================================================
+ PCDB UPDATE REQUIRED	: NO
+ ========================================================================================================
+ IMPORT CONFIGURATION	: CHECK BELOW SETTINGS
+		: generateShadow(false)
+		: enableBlackBox(false)
+		: enableSpecificUnit(true)
+		: updateCDF(false)
+ ========================================================================================================
+ OVERALL IMPORT STATUS	: SUCCESS
+ ========================================================================================================

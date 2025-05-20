@@ -1,0 +1,24 @@
+xrun(64): 24.03-s004: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.03-s004: Started on May 20, 2025 at 07:15:20 CEST
+xrun
+	SIPO_tb.v
+	-access +rwc
+	-64bit
+	-gui
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/xcelium.d/worklib'.
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/xcelium.d/worklib'.
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/xcelium.d/worklib'.
+xmvlog: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/xcelium.d/worklib'.
+file: SIPO_tb.v
+`include /home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/SIPO.v
+         |
+xmvlog: *E,INCEXS (SIPO_tb.v,3|9): expecting a string containing an include file name.
+`include /home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/SIPO.v
+             |
+xmvlog: *E,EXPMPA (SIPO_tb.v,3|13): expecting the keyword 'module', 'macromodule' or 'primitive'[A.1].
+	module worklib.serial_to_parallel_tb:v
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 2, warnings: 1
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun(64)	24.03-s004: Exiting on May 20, 2025 at 07:15:20 CEST  (total: 00:00:00)

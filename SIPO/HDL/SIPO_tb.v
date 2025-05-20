@@ -1,6 +1,10 @@
+//Verilog HDL for "SIPO", "serial_to_parallel_tb" "functional"
+
 `timescale 1ns/1ns
 
-module testbench;
+`include /home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/SIPO.v
+
+module serial_to_parallel_tb ( );
 
     // Testbench Parameters
     parameter DATA_WIDTH = 4;
@@ -80,3 +84,4 @@ module testbench;
     end
 
 endmodule
+

@@ -3,8 +3,8 @@
 // Do not modify this file
 //
 -INCDIR
-"/run/media/exotic/Cadence/gitrepo/DD_Lab_exercise/HDL/"
+"/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/"
 -VIEW
 functional
 -SPECIFICUNIT
-serial_to_parallel
+serial_to_parallel_tb

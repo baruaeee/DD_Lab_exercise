@@ -1,0 +1,27 @@
+xrun(64): 24.03-s004: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.03-s004: Started on May 20, 2025 at 08:07:59 CEST
+xrun
+	SIPO_tb.v
+	-access +rwc
+	-64bit
+	-gui
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /eda/cadence/2024-25/RHELx86/XCELIUM_24.03.004/tools/xcelium/files/xmsimrc
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm serial_to_parallel_tb.clk serial_to_parallel_tb.serial_data serial_to_parallel_tb.parallel_data
+Created probe 1
+xcelium> run
+Testing LSB-FIRST Mode:
+Sending Serial Data: 0b1011 (LSB first)
+Received Parallel Data: 0b x
+Expected Parallel Data: 0b1101
+
+Simulation stopped via $stop(1) at time 170 NS + 0
+xcelium> ^C
+xcelium> exit
+TOOL:	xrun(64)	24.03-s004: Exiting on May 20, 2025 at 08:13:33 CEST  (total: 00:05:34)

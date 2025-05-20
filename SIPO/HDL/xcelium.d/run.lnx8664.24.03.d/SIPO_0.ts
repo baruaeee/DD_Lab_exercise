@@ -1,1 +1,1 @@
-1747426606 /run/media/exotic/Cadence/gitrepo/DD_Lab_exercise/HDL/SIPO/serial_to_parallel/functional/verilog.v
+1747721766 /home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/serial_to_parallel_tb/functional/verilog.v
