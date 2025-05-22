@@ -1,4 +1,4 @@
-TOOL:	xrun(64)	24.03-s004: Started on May 18, 2025 at 02:11:00 CEST
+TOOL:	xrun(64)	24.03-s004: Started on May 21, 2025 at 08:00:40 CEST
 xrun
 	-compile
 	-nocopy
@@ -19,16 +19,16 @@ xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds
 xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/xcelium.d/worklib'.
 xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/xcelium.d/worklib'.
 xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/xcelium.d/worklib'.
+Recompiling... reason: file './serial_to_parallel_tb/functional/verilog.v' is newer than expected.
+	expected: Tue May 20 08:16:06 2025
+	actual:   Wed May 21 07:43:46 2025
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/xcelium.d/worklib'.
+xmvlog: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/xcelium.d/worklib'.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
 xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/xcelium.d/worklib'.
 xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/xcelium.d/worklib'.
-xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/xcelium.d/worklib'.
-Recompiling... reason: file './serial_to_parallel/functional/verilog.v' is newer than expected.
-	expected: Sun May 18 01:47:47 2025
-	actual:   Sun May 18 02:12:44 2025
-xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/xcelium.d/worklib'.
-xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/xcelium.d/worklib'.
-xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/xcelium.d/worklib'.
-TOOL:	xrun(64)	24.03-s004: Exiting on May 18, 2025 at 02:11:00 CEST  (total: 00:00:00)
+TOOL:	xrun(64)	24.03-s004: Exiting on May 21, 2025 at 08:00:40 CEST  (total: 00:00:00)
 
 
 
@@ -45,7 +45,7 @@ TOOL:	xrun(64)	24.03-s004: Exiting on May 18, 2025 at 02:11:00 CEST  (total: 00:
  ========================================================================================================
  PCDB DM CHECKS	: SUCCESS
  ========================================================================================================
- PCDB UPDATE REQUIRED	: NO
+ PCDB UPDATE REQUIRED	: YES
  ========================================================================================================
  IMPORT CONFIGURATION	: CHECK BELOW SETTINGS
 		: generateShadow(false)
@@ -53,5 +53,5 @@ TOOL:	xrun(64)	24.03-s004: Exiting on May 18, 2025 at 02:11:00 CEST  (total: 00:
 		: enableSpecificUnit(true)
 		: updateCDF(false)
  ========================================================================================================
- OVERALL IMPORT STATUS	: SUCCESS
+ OVERALL IMPORT STATUS	: FAILED
  ========================================================================================================

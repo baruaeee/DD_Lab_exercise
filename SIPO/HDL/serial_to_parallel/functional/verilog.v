@@ -1,42 +1,33 @@
 //Verilog HDL for "SIPO", "serial_to_parallel" "functional"
 
 
-module serial_to_parallel #(
-    parameter DATA_WIDTH = 8,
-    parameter LSB_FIRST = 1 // 1 for LSB_FIRST, 0 for MSB_FIRST
-)(
-    input clk,
-    input reset,
-    input serial_data,
-    output reg [DATA_WIDTH-1:0] parallel_data,
-    output reg data_ready
+module serial_to_parallel(
+    input clk,          // Clock signal
+    input rst_n,        // Reset signal (active low)
+    input serial_in,    // Serial input
+    output wire [7:0] p_o
 );
+    reg [7:0] parallel_out; // Parallel output (8-bit)
+    reg data_valid; // Signal indicating valid data
+    reg [2:0] bit_count; // Counter to keep track of bits received
 
-    reg [DATA_WIDTH-1:0] shift_reg;
-    reg [$clog2(DATA_WIDTH)-1:0] bit_count;
-
-    always @(posedge clk or posedge reset) begin
-        if (reset) begin
-            shift_reg <= 0;
-            bit_count <= 0;
-            data_ready <= 0;
+    always @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            // Reset condition
+            parallel_out <= 8'b0; // Reset parallel output to 0
+            data_valid <= 1'b0;   // Reset data valid signal
+            bit_count <= 3'b0;    // Reset bit counter
         end else begin
-            if (bit_count < DATA_WIDTH) begin
-                // Shift based on LSB_FIRST
-                if (LSB_FIRST) begin
-                    // Shift left: New bit enters LSB
-                    shift_reg <= {shift_reg[DATA_WIDTH-2:0], serial_data};
-                end else begin // MSB_FIRST
-                    // Shift right: New bit enters MSB
-                    shift_reg <= {serial_data, shift_reg[DATA_WIDTH-1:1]};
-                end
-                bit_count <= bit_count + 1;
-                data_ready <= 0;
+            if (bit_count == 3'b111) begin
+                // If 8 bits have been received
+                data_valid <= 1'b1; // Set data valid signal
+                bit_count <= 3'b0;  // Reset bit counter
             end else begin
-                parallel_data <= shift_reg;
-                data_ready <= 1;
+                parallel_out <= {parallel_out[6:0], serial_in}; // Shift left and insert new bit
+                bit_count <= bit_count + 1; // Increment bit counter
+                data_valid <= 1'b0; // Clear data valid signal
             end
         end
     end
-
+    assign p_o = parallel_out;
 endmodule

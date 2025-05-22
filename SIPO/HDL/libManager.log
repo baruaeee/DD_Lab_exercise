@@ -573,3 +573,607 @@
 \a cdsLibManager->viewListBox->value = "functional"
 \a cdsLibManager->viewLineEdit->value = "functional"
 \a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "serial_to_parallel"
+\a cdsLibManager->cellLineEdit->value = "serial_to_parallel"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a cdsLibManager->cellListBox->value = "serial_to_parallel"
+\a cdsLibManager->cellLineEdit->value = "serial_to_parallel"
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a lmgrLogShowPopup("mainListPopup2" 38 44 2 "symbol")
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a cdsLibManager->cellListBox->value = "serial_to_parallel"
+\a cdsLibManager->cellLineEdit->value = "serial_to_parallel"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a nrSetCurrentWindow(cdsLibManager)
+\a lmgrLogShowPopup("mainListPopup2" 41 47 2 "symbol")
+\a cdsLibManager->editDeleteButton->value = t
+\a nrSetCurrentWindow(deleteForm)
+\a deleteForm->OK->value = t
+\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
+\a nrSetWindowVisibility(mcMBXDLG "show")
+\a nrSetCurrentWindow(mcMBXDLG)
+\a nrResizeWindow(mcMBXDLG list(159 262 268 91))
+\a mcMBXDLG->pushButton1->value = t
+\o Delete needs confirmation for library "SIPO" -> "/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL"
+\a libraryDeleteConfirmDialog->libraryDirectoryEdit->value = "/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL"
+\a libraryDeleteConfirmDialog->skipRadioButton->value = t
+\a nrSetWindowVisibility(libraryDeleteConfirmDialog "show")
+\a nrSetCurrentWindow(libraryDeleteConfirmDialog)
+\a nrResizeWindow(libraryDeleteConfirmDialog list(38 43 541 528))
+\a libraryDeleteConfirmDialog->skipRadioButton->value = nil
+\a libraryDeleteConfirmDialog->deleteThisLibRadioButton->value = t
+\a libraryDeleteConfirmDialog->OK->value = t
+\o Deleting view "symbol" from cell "serial_to_parallel" in library "SIPO".
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\o Deleted cellview 'SIPO/serial_to_parallel/symbol'.
+\o Deletion of 1 view done.
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a nrResizeWindow(workingDialogForm list(180 299 268 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a cdsLibManager->cellListBox->value = "serial_to_parallel"
+\a cdsLibManager->cellLineEdit->value = "serial_to_parallel"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a lmgrLogShowPopup("mainListPopup2" 45 27 2 "schematic")
+\a cdsLibManager->editDeleteButton->value = t
+\a nrSetCurrentWindow(deleteForm)
+\a deleteForm->OK->value = t
+\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
+\a nrSetWindowVisibility(mcMBXDLG "show")
+\a nrSetCurrentWindow(mcMBXDLG)
+\a nrResizeWindow(mcMBXDLG list(159 262 268 91))
+\a mcMBXDLG->pushButton1->value = t
+\o Delete needs confirmation for library "SIPO" -> "/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL"
+\a libraryDeleteConfirmDialog->libraryDirectoryEdit->value = "/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL"
+\a libraryDeleteConfirmDialog->skipRadioButton->value = t
+\a nrSetWindowVisibility(libraryDeleteConfirmDialog "show")
+\a nrSetCurrentWindow(libraryDeleteConfirmDialog)
+\a nrResizeWindow(libraryDeleteConfirmDialog list(38 43 541 528))
+\a libraryDeleteConfirmDialog->skipRadioButton->value = nil
+\a libraryDeleteConfirmDialog->deleteThisLibRadioButton->value = t
+\a libraryDeleteConfirmDialog->OK->value = t
+\o Deleting view "schematic" from cell "serial_to_parallel" in library "SIPO".
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\o Deleted cellview 'SIPO/serial_to_parallel/schematic'.
+\o Deletion of 1 view done.
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a nrResizeWindow(workingDialogForm list(180 299 268 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a cdsLibManager->cellListBox->value = "serial_to_parallel"
+\a cdsLibManager->cellLineEdit->value = "serial_to_parallel"
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a cdsLibManager->cellListBox->value = "serial_to_parallel"
+\a cdsLibManager->cellLineEdit->value = "serial_to_parallel"
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a cdsLibManager->cellListBox->value = "serial_to_parallel"
+\a cdsLibManager->cellLineEdit->value = "serial_to_parallel"
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a cdsLibManager->cellListBox->value = "serial_to_parallel"
+\a cdsLibManager->cellLineEdit->value = "serial_to_parallel"
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a cdsLibManager->cellListBox->value = "serial_to_parallel"
+\a cdsLibManager->cellLineEdit->value = "serial_to_parallel"
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a cdsLibManager->cellListBox->value = "serial_to_parallel"
+\a cdsLibManager->cellLineEdit->value = "serial_to_parallel"
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a cdsLibManager->cellListBox->value = "serial_to_parallel"
+\a cdsLibManager->cellLineEdit->value = "serial_to_parallel"
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a cdsLibManager->cellListBox->value = "serial_to_parallel"
+\a cdsLibManager->cellLineEdit->value = "serial_to_parallel"
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a cdsLibManager->cellListBox->value = "serial_to_parallel"
+\a cdsLibManager->cellLineEdit->value = "serial_to_parallel"
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a cdsLibManager->cellListBox->value = "serial_to_parallel"
+\a cdsLibManager->cellLineEdit->value = "serial_to_parallel"
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "serial_to_parallel_tb"
+\a cdsLibManager->cellLineEdit->value = "serial_to_parallel_tb"
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a cdsLibManager->cellListBox->value = "serial_to_parallel_tb"
+\a cdsLibManager->cellLineEdit->value = "serial_to_parallel_tb"
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a cdsLibManager->cellListBox->value = "serial_to_parallel_tb"
+\a cdsLibManager->cellLineEdit->value = "serial_to_parallel_tb"
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a cdsLibManager->cellListBox->value = "serial_to_parallel_tb"
+\a cdsLibManager->cellLineEdit->value = "serial_to_parallel_tb"
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a cdsLibManager->cellListBox->value = "serial_to_parallel_tb"
+\a cdsLibManager->cellLineEdit->value = "serial_to_parallel_tb"
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a cdsLibManager->cellListBox->value = "serial_to_parallel_tb"
+\a cdsLibManager->cellLineEdit->value = "serial_to_parallel_tb"
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a cdsLibManager->cellListBox->value = "serial_to_parallel_tb"
+\a cdsLibManager->cellLineEdit->value = "serial_to_parallel_tb"
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a cdsLibManager->cellListBox->value = "serial_to_parallel_tb"
+\a cdsLibManager->cellLineEdit->value = "serial_to_parallel_tb"
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a cdsLibManager->cellListBox->value = "serial_to_parallel_tb"
+\a cdsLibManager->cellLineEdit->value = "serial_to_parallel_tb"
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "serial_to_parallel"
+\a cdsLibManager->cellLineEdit->value = "serial_to_parallel"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->cellListBox->value = "serial_to_parallel_tb"
+\a cdsLibManager->cellLineEdit->value = "serial_to_parallel_tb"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a cdsLibManager->cellListBox->value = "serial_to_parallel_tb"
+\a cdsLibManager->cellLineEdit->value = "serial_to_parallel_tb"
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 82 46 2 "serial_to_parallel_tb")
+\a cdsLibManager->editRenameButton->value = t
+\a basicRenameForm->basicRenameFromEdit->value = "serial_to_parallel_tb"
+\a basicRenameForm->basicRenameToEdit->value = "serial_to_parallel_tb"
+\a nrSetCurrentWindow(basicRenameForm)
+\a nrResizeWindow(basicRenameForm list(195 270 239 190))
+\a basicRenameForm->Cancel->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a lmgrLogShowPopup("mainListPopup1" 82 44 2 "serial_to_parallel_tb")
+\a cdsLibManager->editDeleteButton->value = t
+\a nrSetCurrentWindow(deleteForm)
+\a deleteForm->OK->value = t
+\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
+\a nrSetWindowVisibility(mcMBXDLG "show")
+\a nrSetCurrentWindow(mcMBXDLG)
+\a nrResizeWindow(mcMBXDLG list(159 262 268 91))
+\a mcMBXDLG->pushButton1->value = t
+\o Delete needs confirmation for library "SIPO" -> "/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL"
+\a libraryDeleteConfirmDialog->libraryDirectoryEdit->value = "/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL"
+\a libraryDeleteConfirmDialog->skipRadioButton->value = t
+\a nrSetWindowVisibility(libraryDeleteConfirmDialog "show")
+\a nrSetCurrentWindow(libraryDeleteConfirmDialog)
+\a nrResizeWindow(libraryDeleteConfirmDialog list(38 43 541 528))
+\a libraryDeleteConfirmDialog->skipRadioButton->value = nil
+\a libraryDeleteConfirmDialog->deleteThisLibRadioButton->value = t
+\a libraryDeleteConfirmDialog->OK->value = t
+\o Deleting cell "serial_to_parallel_tb" from library "SIPO".
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\o Deleted cell 'SIPO/serial_to_parallel_tb'.
+\o Deletion of 1 cell done.
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a nrResizeWindow(workingDialogForm list(180 299 268 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a cdsLibManager->FileNewCVButton->value = t
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "serial_to_parallel"
+\a cdsLibManager->cellLineEdit->value = "serial_to_parallel"
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 73 29 2 "serial_to_parallel")
+\a cdsLibManager->editDeleteButton->value = t
+\a nrSetCurrentWindow(deleteForm)
+\a deleteForm->OK->value = t
+\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
+\a nrSetWindowVisibility(mcMBXDLG "show")
+\a nrSetCurrentWindow(mcMBXDLG)
+\a nrResizeWindow(mcMBXDLG list(159 262 268 91))
+\a mcMBXDLG->pushButton1->value = t
+\o Delete needs confirmation for library "SIPO" -> "/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL"
+\a libraryDeleteConfirmDialog->libraryDirectoryEdit->value = "/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL"
+\a libraryDeleteConfirmDialog->skipRadioButton->value = t
+\a nrSetWindowVisibility(libraryDeleteConfirmDialog "show")
+\a nrSetCurrentWindow(libraryDeleteConfirmDialog)
+\a nrResizeWindow(libraryDeleteConfirmDialog list(38 43 541 528))
+\a libraryDeleteConfirmDialog->skipRadioButton->value = nil
+\a libraryDeleteConfirmDialog->deleteThisLibRadioButton->value = t
+\a libraryDeleteConfirmDialog->OK->value = t
+\o Deleting cell "serial_to_parallel" from library "SIPO".
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\o Deleted cell 'SIPO/serial_to_parallel'.
+\o Deletion of 1 cell done.
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a nrResizeWindow(workingDialogForm list(180 299 268 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a cdsLibManager->FileNewCVButton->value = t
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "SIPO"
+\a cdsLibManager->libLineEdit->value = "SIPO"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a _lmgrCloseIconify("cdsLibManager" 1)
+\o MPS service: shutdown
+\o libManager is exiting.
+\a exit(0)

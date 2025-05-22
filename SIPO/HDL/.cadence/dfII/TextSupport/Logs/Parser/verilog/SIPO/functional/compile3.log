@@ -1,4 +1,4 @@
-TOOL:	xrun(64)	24.03-s004: Started on May 20, 2025 at 08:14:14 CEST
+TOOL:	xrun(64)	24.03-s004: Started on May 21, 2025 at 07:44:12 CEST
 xrun
 	-compile
 	-nocopy
@@ -9,6 +9,7 @@ xrun
 	-update
 	-log /home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/.cadence/dfII/TextSupport/Logs/Parser/verilog/SIPO/functional/compile3.log
 	-incdir "/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/"
+	-xmvlogargs " -messages "
 	-cdslib /home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/cds.lib
 	-makelib SIPO
 	-view functional
@@ -20,19 +21,11 @@ xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds
 xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/xcelium.d/worklib'.
 xmvlog: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/xcelium.d/worklib'.
 file: /home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/serial_to_parallel_tb/functional/verilog.v
-	module SIPO.serial_to_parallel_tb:functional
-		errors: 0, warnings: 0
+xmvlog: *E,NOTCMP: unit serial_to_parallel_tb not found while parsing.
 	Total errors/warnings found outside modules and primitives:
-		errors: 0, warnings: 1
-xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/xcelium.d/worklib'.
-xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/xcelium.d/worklib'.
-TOOL:	xrun(64)	24.03-s004: Exiting on May 20, 2025 at 08:14:14 CEST  (total: 00:00:00)
-
-
-Instance Binding Report:
--------------------------------------------------------------------------------
-Instance		MasterLib		MasterCell		MasterView
--------------------------------------------------------------------------------
+		errors: 1, warnings: 1
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun(64)	24.03-s004: Exiting on May 21, 2025 at 07:44:13 CEST  (total: 00:00:01)
 
 
 
@@ -45,17 +38,17 @@ Instance		MasterLib		MasterCell		MasterView
  ========================================================================================================
  cds.lib USED	: "/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/cds.lib"
  ========================================================================================================
- COMPILER OPTIONS	: ""
+ COMPILER OPTIONS	: " -messages "
  ========================================================================================================
  PCDB DM CHECKS	: SUCCESS
  ========================================================================================================
  PCDB UPDATE REQUIRED	: YES
  ========================================================================================================
  IMPORT CONFIGURATION	: CHECK BELOW SETTINGS
-		: generateShadow(true)
+		: generateShadow(false)
 		: enableBlackBox(false)
 		: enableSpecificUnit(true)
-		: updateCDF(true)
+		: updateCDF(false)
  ========================================================================================================
- OVERALL IMPORT STATUS	: SUCCESS
+ OVERALL IMPORT STATUS	: FAILED
  ========================================================================================================

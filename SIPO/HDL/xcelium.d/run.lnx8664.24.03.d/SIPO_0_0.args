@@ -22,5 +22,5 @@ SIPO
 -VIEW
 functional
 -SPECIFICUNIT
-serial_to_parallel_tb
-/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/serial_to_parallel_tb/functional/verilog.v
+serial_to_parallel
+/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/serial_to_parallel/functional/verilog.v

@@ -1,0 +1,10 @@
+#e1(21May2025:17:25:31): source ./xcelium.d/env.d/env.history.21May2025_17_25_31
+s1(21May2025:17:25:31):  xrun SIPO_tb.v -access +rwc -64bit -gui 
+#e2(21May2025:17:26:55): source ./xcelium.d/env.d/env.history.21May2025_17_26_55
+s2(21May2025:17:26:55):  xrun SIPO_tb.v -access +rwc -64bit -gui 
+#e3(21May2025:17:29:39): source ./xcelium.d/env.d/env.history.21May2025_17_29_39
+s3(21May2025:17:29:39):  xrun SIPO_tb.v -access +rwc -64bit -gui 
+#e4(21May2025:17:29:49): source ./xcelium.d/env.d/env.history.21May2025_17_29_49
+s4(21May2025:17:29:49):  xrun SIPO_tb.v -access +rwc -64bit -gui 
+#e5(21May2025:17:36:18): source ./xcelium.d/env.d/env.history.21May2025_17_36_18
+s5(21May2025:17:36:18):  xrun SIPO_tb.v -access +rwc -64bit -gui 

@@ -12,7 +12,7 @@ SPDUSD
 -messages
 -update
 -log
-/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/.cadence/dfII/TextSupport/Logs/Parser/verilog/SIPO/functional/compile3.log
+/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/.cadence/dfII/TextSupport/Logs/Parser/verilog/SIPO/functional/compile2.log
 -incdir
 "/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/"
 -cdslib
@@ -22,6 +22,6 @@ SIPO
 -view
 functional
 -SPECIFICUNIT
-serial_to_parallel_tb
-/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/serial_to_parallel_tb/functional/verilog.v
+serial_to_parallel
+/home/bas33767/Desktop/DD_Lab_exercise/SIPO/HDL/serial_to_parallel/functional/verilog.v
 -endlib
