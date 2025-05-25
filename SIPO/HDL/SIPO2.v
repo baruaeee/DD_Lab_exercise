@@ -1,68 +1,66 @@
 // ==============================================
-// 50GHz Serial-to-Parallel Converter
-// Features:
-// 1) Time-interleaving (2x speed)
-// 2) Wave pipelining (combinational throughput)
-// 3) Reset-synchronized outputs
-// Technology: SG13G2 PDK
+// Module: serial_to_parallel  
+// Description: Converts 1-bit serial input to 8-bit parallel output at 50GHz  
+// Technology: SG13G2 PDK  
 // ==============================================
-module serial_to_parallel(
-    input clk,          // 50GHz master clock
-    input rst_n,        // Active-low synchronous reset
-    input serial_in,    // 50Gbps serial data
-    output wire [7:0] p_o // Parallel output
+module serial_to_parallel (
+    input wire clk,          // 50GHz clock  
+    input wire rst_n,        // Active-low synchronous reset  
+    input wire serial_in,    // Serial input (1-bit)  
+    output wire [7:0] p_o    // Parallel output (8-bit)  
 );
 
 // ==============================================
-// TIME-INTERLEAVED CORE
+// **Time-Interleaved Dual-Path Processing**  
 // ==============================================
-// Two parallel processing paths for odd/even bits
-reg [3:0] even_bits;  // Stores bits 0,2,4,6
-reg [3:0] odd_bits;   // Stores bits 1,3,5,7
-reg [1:0] phase;      // Tracks bit position (0-3)
+// Two independent shift registers for odd/even bits  
+reg [3:0] shift_even;  // Stores bits 0,2,4,6  
+reg [3:0] shift_odd;   // Stores bits 1,3,5,7  
+reg [1:0] bit_phase;   // Tracks current bit position (0-3)  
 
-// Wave-pipelined capture (no registers between stages)
-always @(posedge clk) begin
-    if (!rst_n) begin
-        even_bits <= 4'b0;
-        odd_bits  <= 4'b0;
-        phase <= 2'b0;
-    end else begin
-        // Stage 1: Bit steering
-        case(phase)
-            2'd0: even_bits[0] <= serial_in;
-            2'd1: odd_bits[0]  <= serial_in;
-            2'd2: even_bits[1] <= serial_in;
-            2'd3: odd_bits[1]  <= serial_in;
-        endcase
-        
-        // Stage 2: Wave propagation
-        even_bits[3:1] <= even_bits[2:0];
-        odd_bits[3:1]  <= odd_bits[2:0];
-        
-        phase <= phase + 1;
-    end
-end
+// **Wave-pipelined capture (no intermediate FFs)**
+always @(posedge clk or negedge rst_n) begin  
+    if (!rst_n) begin  
+        shift_even <= 4'b0;  
+        shift_odd  <= 4'b0;  
+        bit_phase <= 2'b0;  
+    end else begin  
+        // **Bit steering into even/odd paths**  
+        case (bit_phase)  
+            2'd0: shift_even[0] <= serial_in;  // Bit 0  
+            2'd1: shift_odd[0]  <= serial_in;  // Bit 1  
+            2'd2: shift_even[1] <= serial_in;  // Bit 2  
+            2'd3: shift_odd[1]  <= serial_in;  // Bit 3  
+        endcase  
 
-// ==============================================
-// OUTPUT RECONSTRUCTION
-// ==============================================
-reg [7:0] parallel_out;
+        // **Wave propagation (combinational shift)**
+        shift_even[3:1] <= shift_even[2:0];  
+        shift_odd[3:1]  <= shift_odd[2:0];  
 
-always @(posedge clk) begin
-    if (phase == 2'd3) begin  // Full byte ready
-        parallel_out <= {odd_bits[3], even_bits[3],
-                         odd_bits[2], even_bits[2],
-                         odd_bits[1], even_bits[1],
-                         odd_bits[0], even_bits[0]};
-    end
-end
-
-assign p_o = parallel_out;
+        // **Phase counter (auto-resets after 4 cycles)**
+        bit_phase <= (bit_phase == 2'd3) ? 2'd0 : (bit_phase + 1);  
+    end  
+end  
 
 // ==============================================
-// TIMING CONSTRAINTS (for synthesis)
+// **Parallel Output Reconstruction**  
 // ==============================================
-// Multicycle path for output reconstruction
-// set_multicycle_path 4 -setup -to [get_pins parallel_out*]
-endmodule
+reg [7:0] parallel_reg;  
+
+always @(posedge clk or negedge rst_n) begin  
+    if (!rst_n) begin  
+        parallel_reg <= 8'b0;  
+    end else if (bit_phase == 2'd3) begin  
+        // **Combine even & odd bits into full byte**  
+        parallel_reg <= {  
+            shift_odd[3], shift_even[3],  // Bits 7 & 6  
+            shift_odd[2], shift_even[2],  // Bits 5 & 4  
+            shift_odd[1], shift_even[1],  // Bits 3 & 2  
+            shift_odd[0], shift_even[0]   // Bits 1 & 0  
+        };  
+    end  
+end  
+
+assign p_o = parallel_reg;  
+
+endmodule  
