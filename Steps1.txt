@@ -6,9 +6,9 @@ Virtuoso® Studio (mixed-signal designs)
 
 Xcelium™ (simulation)
 
-JasperGold® (formal property verification)
+Advanced use--JasperGold® (formal property verification)
 
-Palladium® (emulation for large designs)
+Advanced use--Palladium® (emulation for large designs)
 
 Key Steps:
 
