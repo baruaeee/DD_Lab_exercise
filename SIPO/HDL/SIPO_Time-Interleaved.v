@@ -1,5 +1,6 @@
+// SIPO_Time-Interleaved
 module serial_to_parallel (
-    input wire clk,          // 50GHz clock
+    input wire clk,
     input wire rst_n,        // Active-low synchronous reset
     input wire serial_in,    // Serial input (1-bit)
     output wire [7:0] p_o    // Parallel output (8-bit)
