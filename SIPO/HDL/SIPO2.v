@@ -1,25 +1,29 @@
-module serial_to_parallel (
-    input wire clk,          // 50GHz clock
-    input wire rst_n,        // Active-low synchronous reset
-    input wire serial_in,    // Serial input (1-bit)
-    output wire [7:0] p_o    // Parallel output (8-bit)
+// DEFF)
+module serial_to_parallel(
+    input clk,
+    input rst_n,
+    input serial_in,
+    output reg [7:0] p_o
 );
-
-    // Internal shift register to hold the serial data
+    reg [3:0] bit_counter;
     reg [7:0] shift_reg;
 
-    // Parallel output
-    assign p_o = shift_reg;
-
-    // Sequential logic to shift the serial input into the shift register
-    always @(posedge clk or negedge rst_n) begin
+    // Double-edge capture
+    always @(posedge clk or negedge clk or negedge rst_n) begin
         if (!rst_n) begin
-            // Synchronous reset
             shift_reg <= 8'b0;
+            bit_counter <= 4'b0;
         end else begin
-            // Shift the serial input into the shift register
-            shift_reg <= {shift_reg[6:0], serial_in};
+            shift_reg <= {shift_reg[6:0], serial_in}; // Shift on both edges
+            bit_counter <= bit_counter + 1;
         end
     end
 
+    // Output latching (every 4 clock edges = 8 bits)
+    always @(posedge clk) begin
+        if (bit_counter == 4'b1000) begin
+            p_o <= shift_reg;
+            bit_counter <= 4'b0;
+        end
+    end
 endmodule
