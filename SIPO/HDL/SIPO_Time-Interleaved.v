@@ -1,4 +1,4 @@
-// SIPO_Time-Interleaved
+// Time-Interleaved
 module serial_to_parallel (
     input wire clk,
     input wire rst_n,        // Active-low synchronous reset
