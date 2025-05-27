@@ -1,0 +1,2 @@
+#e1(26May2025:19:19:13): source ./xcelium.d/env.d/env.history.26May2025_19_19_13
+s1(26May2025:19:19:13):  xrun SIPO_gate-level_tb.v -access +rwc -64bit -gui 

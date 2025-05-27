@@ -1,0 +1,9 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+SIPO_gate-level_tb.v
+-access
++rwc
+-64bit
+-gui

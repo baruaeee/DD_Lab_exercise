@@ -1,8 +1,11 @@
 ## SDC Version
 set sdc_version 2
 
-# Define the clock with a period of 6.67 ps (150 GHz clock speed)
-create_clock -period 6.67 -name clk -waveform {0.0 3.335} [get_ports clk]
+set_units -time 1ps
+
+# Define the clock with a period of 1/x ps (x GHz clock speed)
+create_clock -period 400 -name clk -waveform {0.0 200.00} [get_ports clk]
+#create_clock -period 540 -name clk -waveform {0.0 270.00} [get_ports clk]
 
 # Set the driving cell for the clock (assuming a suitable cell in the library)
 #set_driving_cell -lib_cell BUFX2 [get_ports clk]
@@ -11,10 +14,10 @@ create_clock -period 6.67 -name clk -waveform {0.0 3.335} [get_ports clk]
 set_load 0.5 [get_ports p_o]
 
 # Set the maximum fanout for the output ports
-set_max_fanout 5 [get_ports p_o]
+#set_max_fanout 5 [get_ports serial_in]
 
 # Set the maximum transition time for the output ports
-set_max_transition 0.2 [get_ports p_o]
+set_max_transition 0.2 [get_ports p_o*]
 
 # Set the clock transition time
 set_clock_transition 0.03 [get_clocks clk]
@@ -34,7 +37,7 @@ set_output_delay -min 1.5 -clock clk [get_ports p_o]
 set_false_path -from [get_ports rst_n]
 
 # Set the wire load model (assuming a medium wire load model)
-set_wire_load_model -name "medium"
+#set_wire_load_model -name "medium"
 
 # Write the SDC file
 #write_sdc -file "serial_to_parallel.sdc"

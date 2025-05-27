@@ -1,0 +1,9 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+SIPO1_tb.v
+-access
++rwc
+-64bit
+-gui

@@ -1,0 +1,357 @@
+(DELAYFILE
+  (SDFVERSION  "OVI 3.0")
+  (DESIGN      "serial_to_parallel")
+  (DATE        "Mon May 26 19:15:14 CEST 2025")
+  (VENDOR      "Cadence, Inc.")
+  (PROGRAM     "Genus(TM) Synthesis Solution")
+  (VERSION     "23.11-s100_1")
+  (DIVIDER     .)
+  (VOLTAGE     ::1.2)
+  (PROCESS     "::1.0")
+  (TEMPERATURE ::25.0)
+  (TIMESCALE   1ns)
+  (CELL
+     (CELLTYPE "sg13g2_inv_16")
+     (INSTANCE g4)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.002))
+          (IOPATH A Y (::0.115) (::0.102))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sg13g2_dfrbp_2")
+     (INSTANCE shift_reg_reg\[7\])
+     (DELAY
+        (ABSOLUTE
+          (PORT RESET_B (::0.000))
+          (PORT CLK (::0.000))
+          (PORT D (::0.000))
+          (IOPATH RESET_B Q () (::0.271))
+          (IOPATH CLK Q (::0.235) (::0.201))
+          (IOPATH RESET_B Q_N (::0.220) ())
+          (IOPATH CLK Q_N (::0.149) (::0.169))
+        )
+     )
+     (TIMINGCHECK
+        (REMOVAL (posedge RESET_B) (posedge CLK) (::0.000))
+        (RECOVERY (posedge RESET_B) (posedge CLK) (::0.119))
+        (HOLD (negedge D) (posedge CLK) (::0.000))
+        (HOLD (posedge D) (posedge CLK) (::0.000))
+        (SETUP (negedge D) (posedge CLK) (::0.128))
+        (SETUP (posedge D) (posedge CLK) (::0.123))
+     )
+  )
+  (CELL
+     (CELLTYPE "sg13g2_dfrbp_2")
+     (INSTANCE shift_reg_reg\[6\])
+     (DELAY
+        (ABSOLUTE
+          (PORT RESET_B (::0.000))
+          (PORT CLK (::0.000))
+          (PORT D (::0.000))
+          (IOPATH RESET_B Q () (::0.271))
+          (IOPATH CLK Q (::0.235) (::0.201))
+          (IOPATH RESET_B Q_N (::0.225) ())
+          (IOPATH CLK Q_N (::0.154) (::0.175))
+        )
+     )
+     (TIMINGCHECK
+        (REMOVAL (posedge RESET_B) (posedge CLK) (::0.000))
+        (RECOVERY (posedge RESET_B) (posedge CLK) (::0.119))
+        (HOLD (negedge D) (posedge CLK) (::0.000))
+        (HOLD (posedge D) (posedge CLK) (::0.000))
+        (SETUP (negedge D) (posedge CLK) (::0.128))
+        (SETUP (posedge D) (posedge CLK) (::0.123))
+     )
+  )
+  (CELL
+     (CELLTYPE "sg13g2_dfrbp_2")
+     (INSTANCE shift_reg_reg\[5\])
+     (DELAY
+        (ABSOLUTE
+          (PORT RESET_B (::0.000))
+          (PORT CLK (::0.000))
+          (PORT D (::0.000))
+          (IOPATH RESET_B Q () (::0.271))
+          (IOPATH CLK Q (::0.235) (::0.201))
+          (IOPATH RESET_B Q_N (::0.225) ())
+          (IOPATH CLK Q_N (::0.154) (::0.175))
+        )
+     )
+     (TIMINGCHECK
+        (REMOVAL (posedge RESET_B) (posedge CLK) (::0.000))
+        (RECOVERY (posedge RESET_B) (posedge CLK) (::0.119))
+        (HOLD (negedge D) (posedge CLK) (::0.000))
+        (HOLD (posedge D) (posedge CLK) (::0.000))
+        (SETUP (negedge D) (posedge CLK) (::0.128))
+        (SETUP (posedge D) (posedge CLK) (::0.123))
+     )
+  )
+  (CELL
+     (CELLTYPE "sg13g2_dfrbp_2")
+     (INSTANCE shift_reg_reg\[4\])
+     (DELAY
+        (ABSOLUTE
+          (PORT RESET_B (::0.000))
+          (PORT CLK (::0.000))
+          (PORT D (::0.000))
+          (IOPATH RESET_B Q () (::0.271))
+          (IOPATH CLK Q (::0.235) (::0.201))
+          (IOPATH RESET_B Q_N (::0.225) ())
+          (IOPATH CLK Q_N (::0.154) (::0.175))
+        )
+     )
+     (TIMINGCHECK
+        (REMOVAL (posedge RESET_B) (posedge CLK) (::0.000))
+        (RECOVERY (posedge RESET_B) (posedge CLK) (::0.119))
+        (HOLD (negedge D) (posedge CLK) (::0.000))
+        (HOLD (posedge D) (posedge CLK) (::0.000))
+        (SETUP (negedge D) (posedge CLK) (::0.128))
+        (SETUP (posedge D) (posedge CLK) (::0.123))
+     )
+  )
+  (CELL
+     (CELLTYPE "sg13g2_dfrbp_2")
+     (INSTANCE shift_reg_reg\[3\])
+     (DELAY
+        (ABSOLUTE
+          (PORT RESET_B (::0.000))
+          (PORT CLK (::0.000))
+          (PORT D (::0.000))
+          (IOPATH RESET_B Q () (::0.271))
+          (IOPATH CLK Q (::0.235) (::0.201))
+          (IOPATH RESET_B Q_N (::0.225) ())
+          (IOPATH CLK Q_N (::0.154) (::0.175))
+        )
+     )
+     (TIMINGCHECK
+        (REMOVAL (posedge RESET_B) (posedge CLK) (::0.000))
+        (RECOVERY (posedge RESET_B) (posedge CLK) (::0.119))
+        (HOLD (negedge D) (posedge CLK) (::0.000))
+        (HOLD (posedge D) (posedge CLK) (::0.000))
+        (SETUP (negedge D) (posedge CLK) (::0.128))
+        (SETUP (posedge D) (posedge CLK) (::0.123))
+     )
+  )
+  (CELL
+     (CELLTYPE "sg13g2_dfrbp_2")
+     (INSTANCE shift_reg_reg\[2\])
+     (DELAY
+        (ABSOLUTE
+          (PORT RESET_B (::0.000))
+          (PORT CLK (::0.000))
+          (PORT D (::0.000))
+          (IOPATH RESET_B Q () (::0.271))
+          (IOPATH CLK Q (::0.235) (::0.201))
+          (IOPATH RESET_B Q_N (::0.225) ())
+          (IOPATH CLK Q_N (::0.154) (::0.175))
+        )
+     )
+     (TIMINGCHECK
+        (REMOVAL (posedge RESET_B) (posedge CLK) (::0.000))
+        (RECOVERY (posedge RESET_B) (posedge CLK) (::0.119))
+        (HOLD (negedge D) (posedge CLK) (::0.000))
+        (HOLD (posedge D) (posedge CLK) (::0.000))
+        (SETUP (negedge D) (posedge CLK) (::0.128))
+        (SETUP (posedge D) (posedge CLK) (::0.123))
+     )
+  )
+  (CELL
+     (CELLTYPE "sg13g2_dfrbp_2")
+     (INSTANCE shift_reg_reg\[1\])
+     (DELAY
+        (ABSOLUTE
+          (PORT RESET_B (::0.000))
+          (PORT CLK (::0.000))
+          (PORT D (::0.000))
+          (IOPATH RESET_B Q () (::0.271))
+          (IOPATH CLK Q (::0.235) (::0.201))
+          (IOPATH RESET_B Q_N (::0.225) ())
+          (IOPATH CLK Q_N (::0.154) (::0.175))
+        )
+     )
+     (TIMINGCHECK
+        (REMOVAL (posedge RESET_B) (posedge CLK) (::0.000))
+        (RECOVERY (posedge RESET_B) (posedge CLK) (::0.119))
+        (HOLD (negedge D) (posedge CLK) (::0.000))
+        (HOLD (posedge D) (posedge CLK) (::0.000))
+        (SETUP (negedge D) (posedge CLK) (::0.128))
+        (SETUP (posedge D) (posedge CLK) (::0.123))
+     )
+  )
+  (CELL
+     (CELLTYPE "sg13g2_dfrbp_2")
+     (INSTANCE shift_reg_reg\[0\])
+     (DELAY
+        (ABSOLUTE
+          (PORT RESET_B (::0.000))
+          (PORT CLK (::0.000))
+          (PORT D (::0.000))
+          (IOPATH RESET_B Q () (::0.271))
+          (IOPATH CLK Q (::0.235) (::0.201))
+          (IOPATH RESET_B Q_N (::0.225) ())
+          (IOPATH CLK Q_N (::0.154) (::0.175))
+        )
+     )
+     (TIMINGCHECK
+        (REMOVAL (posedge RESET_B) (posedge CLK) (::0.000))
+        (RECOVERY (posedge RESET_B) (posedge CLK) (::0.119))
+        (HOLD (negedge D) (posedge CLK) (::0.000))
+        (HOLD (posedge D) (posedge CLK) (::0.000))
+        (SETUP (negedge D) (posedge CLK) (::0.118))
+        (SETUP (posedge D) (posedge CLK) (::0.112))
+     )
+  )
+  (CELL
+     (CELLTYPE "sg13g2_buf_16")
+     (INSTANCE fopt)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.001))
+          (IOPATH A X (::0.160) (::0.151))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sg13g2_inv_4")
+     (INSTANCE fopt1)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.000))
+          (IOPATH A Y (::0.040) (::0.036))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sg13g2_buf_16")
+     (INSTANCE fopt56)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.001))
+          (IOPATH A X (::0.160) (::0.151))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sg13g2_buf_16")
+     (INSTANCE fopt58)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.001))
+          (IOPATH A X (::0.160) (::0.151))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sg13g2_inv_4")
+     (INSTANCE fopt59)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.000))
+          (IOPATH A Y (::0.040) (::0.036))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sg13g2_buf_16")
+     (INSTANCE fopt60)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.001))
+          (IOPATH A X (::0.160) (::0.151))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sg13g2_buf_16")
+     (INSTANCE fopt62)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.001))
+          (IOPATH A X (::0.160) (::0.151))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sg13g2_inv_4")
+     (INSTANCE fopt63)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.000))
+          (IOPATH A Y (::0.040) (::0.036))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sg13g2_buf_16")
+     (INSTANCE fopt64)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.001))
+          (IOPATH A X (::0.160) (::0.151))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sg13g2_buf_16")
+     (INSTANCE fopt66)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.001))
+          (IOPATH A X (::0.160) (::0.151))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sg13g2_inv_4")
+     (INSTANCE fopt67)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.000))
+          (IOPATH A Y (::0.040) (::0.036))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sg13g2_buf_8")
+     (INSTANCE g16)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.000))
+          (IOPATH A X (::0.086) (::0.093))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sg13g2_inv_4")
+     (INSTANCE g18)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.000))
+          (IOPATH A Y (::0.040) (::0.036))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sg13g2_inv_4")
+     (INSTANCE g22)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.000))
+          (IOPATH A Y (::0.040) (::0.036))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sg13g2_inv_4")
+     (INSTANCE g20)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.000))
+          (IOPATH A Y (::0.040) (::0.036))
+        )
+     )
+  )
+)
