@@ -3,19 +3,19 @@ Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
 Cadence and the Cadence logo are registered trademarks and Genus is a trademark
 of Cadence Design Systems, Inc. in the United States and other countries.
 
-[19:15:02.381844] Configured Lic search path (23.02-s003): 5280@hs-lic3.oth-regensburg.de:27003@hs-lic1.oth-regensburg.de:27003@hs-lic1.oth-regensburg.de:
+[04:35:13.381828] Configured Lic search path (23.02-s003): 5280@hs-lic3.oth-regensburg.de:27003@hs-lic1.oth-regensburg.de:27003@hs-lic1.oth-regensburg.de:
 
 Version: 23.11-s100_1, built Mon Apr 22 02:28:10 PDT 2024
 Options: -files synth.tcl 
-Date:    Mon May 26 19:15:02 2025
+Date:    Thu May 29 04:35:13 2025
 Host:    ei-vm-018.othr.de (x86_64 w/Linux 4.18.0-553.44.1.el8_10.x86_64) (32cores*32cpus*1physical cpu*AMD Ryzen Threadripper PRO 5965WX 24-Cores 512KB) (198059944KB)
-PID:     806891
+PID:     1947018
 OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
 
 Checking out license: Genus_Synthesis
-[19:15:02.378256] Periodic Lic check successful
-[19:15:02.902553] Feature usage summary:
-[19:15:02.902553] Genus_Synthesis
+[04:35:13.233802] Periodic Lic check successful
+[04:35:13.758099] Feature usage summary:
+[04:35:13.758099] Genus_Synthesis
 
 
 
@@ -147,7 +147,7 @@ stamp 'PBS_Generic-Start' being created for table 'pbs_debug'
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:08) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:11 (May26) |  549.2 MB | PBS_Generic-Start
+ 00:00:08(00:00:08) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:22 (May29) |  549.9 MB | PBS_Generic-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
@@ -223,7 +223,7 @@ No special hier is found
   Setting attribute of root '/': 'hier_sandbox_support_folded' = 0
 End SDR optimization UME_region 
 Starting timing based select reordering [v1.0] (stage: pre_rtlopt, startdef: serial_to_parallel, recur: true)
-Completed timing based select reordering (accepts: 0, rejects: 0, runtime: 0.003s)
+Completed timing based select reordering (accepts: 0, rejects: 0, runtime: 0.002s)
 Starting recase case-box optimization [v1.0] (stage: pre_rtlopt, startdef: serial_to_parallel, recur: true)
 Completed recase case-box optimization (accepts: 0, rejects: 0, runtime: 0.000s)
 Starting infer macro optimization [v1.0] (stage: pre_rtlopt, startdef: serial_to_parallel, recur: true)
@@ -241,7 +241,7 @@ Completed mux input consolidation (accepts: 0, rejects: 0, runtime: 0.000s)
 Starting constant-data mux optimization [v1.0] (stage: pre_rtlopt, startdef: serial_to_parallel, recur: true)
 Completed constant-data mux optimization (accepts: 0, rejects: 0, runtime: 0.000s)
 Starting chain-to-tree inequality transform [v2.0] (stage: pre_rtlopt, startdef: serial_to_parallel, recur: true)
-Completed chain-to-tree inequality transform (accepts: 0, rejects: 0, runtime: 0.000s)
+Completed chain-to-tree inequality transform (accepts: 0, rejects: 0, runtime: 0.001s)
 Starting reconvergence optimization [v1.0] (stage: pre_rtlopt, startdef: serial_to_parallel, recur: true)
 Completed reconvergence optimization (accepts: 0, rejects: 0, runtime: 0.000s)
 Starting logic restructure optimization [v1.0] (stage: pre_rtlopt, startdef: serial_to_parallel, recur: true)
@@ -317,7 +317,7 @@ Completed logic reduction (accepts: 0, rejects: 0, runtime: 0.000s)
 Starting mux data reorder optimization [v1.0] (stage: post_rtlopt, startdef: serial_to_parallel, recur: true)
 Completed mux data reorder optimization (accepts: 0, rejects: 0, runtime: 0.000s)
 Starting timing based select reordering [v1.0] (stage: post_rtlopt, startdef: serial_to_parallel, recur: true)
-Completed timing based select reordering (accepts: 0, rejects: 0, runtime: 0.000s)
+Completed timing based select reordering (accepts: 0, rejects: 0, runtime: 0.001s)
 
 Stage: post_rtlopt
 ----------------------------------------------------------------
@@ -331,9 +331,9 @@ Stage: post_rtlopt
 Starting mux speculation [v1.0] (stage: post_muxopt, startdef: serial_to_parallel, recur: true)
 Starting speculation optimization
 Completed speculation optimization (accepts:0)
-Completed mux speculation (accepts: 0, rejects: 0, runtime: 0.001s)
+Completed mux speculation (accepts: 0, rejects: 0, runtime: 0.000s)
 Starting timing based select reordering [v1.0] (stage: post_muxopt, startdef: serial_to_parallel, recur: true)
-Completed timing based select reordering (accepts: 0, rejects: 0, runtime: 0.001s)
+Completed timing based select reordering (accepts: 0, rejects: 0, runtime: 0.000s)
 
 Stage: post_muxopt
 --------------------------------------------------------
@@ -415,14 +415,14 @@ Excluded from State Retention       8        100.0
 State Retention instances           0          0.0
 --------------------------------------------------
 
-PBS_Generic_Opt-Post - Elapsed_Time 1, CPU_Time 0.9970369999999997
+PBS_Generic_Opt-Post - Elapsed_Time 1, CPU_Time 0.9968019999999997
 stamp 'PBS_Generic_Opt-Post' being created for table 'pbs_debug'
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:08) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:11 (May26) |  549.2 MB | PBS_Generic-Start
+ 00:00:08(00:00:08) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:22 (May29) |  549.9 MB | PBS_Generic-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:09) |  00:00:00(00:00:01) | 100.0(100.0) |   19:15:12 (May26) |  549.2 MB | PBS_Generic_Opt-Post
+ 00:00:08(00:00:09) |  00:00:00(00:00:01) | 100.0(100.0) |    4:35:23 (May29) |  549.9 MB | PBS_Generic_Opt-Post
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
@@ -432,11 +432,11 @@ stamp 'PBS_Generic-Postgen HBO Optimizations' being created for table 'pbs_debug
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:08) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:11 (May26) |  549.2 MB | PBS_Generic-Start
+ 00:00:08(00:00:08) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:22 (May29) |  549.9 MB | PBS_Generic-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:09) |  00:00:00(00:00:01) | 100.0(100.0) |   19:15:12 (May26) |  549.2 MB | PBS_Generic_Opt-Post
+ 00:00:08(00:00:09) |  00:00:00(00:00:01) | 100.0(100.0) |    4:35:23 (May29) |  549.9 MB | PBS_Generic_Opt-Post
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:12 (May26) |  549.2 MB | PBS_Generic-Postgen HBO Optimizations
+ 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:23 (May29) |  549.9 MB | PBS_Generic-Postgen HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
@@ -473,13 +473,13 @@ stamp 'PBS_TechMap-Start' being created for table 'pbs_debug'
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:08) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:11 (May26) |  549.2 MB | PBS_Generic-Start
+ 00:00:08(00:00:08) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:22 (May29) |  549.9 MB | PBS_Generic-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:09) |  00:00:00(00:00:01) | 100.0(100.0) |   19:15:12 (May26) |  549.2 MB | PBS_Generic_Opt-Post
+ 00:00:08(00:00:09) |  00:00:00(00:00:01) | 100.0(100.0) |    4:35:23 (May29) |  549.9 MB | PBS_Generic_Opt-Post
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:12 (May26) |  549.2 MB | PBS_Generic-Postgen HBO Optimizations
+ 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:23 (May29) |  549.9 MB | PBS_Generic-Postgen HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:12 (May26) |  549.2 MB | PBS_TechMap-Start
+ 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:23 (May29) |  549.9 MB | PBS_TechMap-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
@@ -489,15 +489,15 @@ stamp 'PBS_TechMap-Premap HBO Optimizations' being created for table 'pbs_debug'
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:08) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:11 (May26) |  549.2 MB | PBS_Generic-Start
+ 00:00:08(00:00:08) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:22 (May29) |  549.9 MB | PBS_Generic-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:09) |  00:00:00(00:00:01) | 100.0(100.0) |   19:15:12 (May26) |  549.2 MB | PBS_Generic_Opt-Post
+ 00:00:08(00:00:09) |  00:00:00(00:00:01) | 100.0(100.0) |    4:35:23 (May29) |  549.9 MB | PBS_Generic_Opt-Post
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:12 (May26) |  549.2 MB | PBS_Generic-Postgen HBO Optimizations
+ 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:23 (May29) |  549.9 MB | PBS_Generic-Postgen HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:12 (May26) |  549.2 MB | PBS_TechMap-Start
+ 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:23 (May29) |  549.9 MB | PBS_TechMap-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:12 (May26) |  549.2 MB | PBS_TechMap-Premap HBO Optimizations
+ 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:23 (May29) |  549.9 MB | PBS_TechMap-Premap HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
@@ -582,22 +582,22 @@ State Retention instances           0          0.0
 --------------------------------------------------
 
 INFO: skipping constant propagation
-PBS_Techmap-Global Mapping - Elapsed_Time 1, CPU_Time -0.001962999999999937
+PBS_Techmap-Global Mapping - Elapsed_Time 1, CPU_Time -0.0027159999999994966
 stamp 'PBS_Techmap-Global Mapping' being created for table 'pbs_debug'
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:08) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:11 (May26) |  549.2 MB | PBS_Generic-Start
+ 00:00:08(00:00:08) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:22 (May29) |  549.9 MB | PBS_Generic-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:09) |  00:00:00(00:00:01) | 100.2( 50.0) |   19:15:12 (May26) |  549.2 MB | PBS_Generic_Opt-Post
+ 00:00:08(00:00:09) |  00:00:00(00:00:01) | 100.3( 50.0) |    4:35:23 (May29) |  549.9 MB | PBS_Generic_Opt-Post
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:12 (May26) |  549.2 MB | PBS_Generic-Postgen HBO Optimizations
+ 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:23 (May29) |  549.9 MB | PBS_Generic-Postgen HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:12 (May26) |  549.2 MB | PBS_TechMap-Start
+ 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:23 (May29) |  549.9 MB | PBS_TechMap-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:12 (May26) |  549.2 MB | PBS_TechMap-Premap HBO Optimizations
+ 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:23 (May29) |  549.9 MB | PBS_TechMap-Premap HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:10) |  00:00:00(00:00:01) |  -0.2( 50.0) |   19:15:13 (May26) |  549.2 MB | PBS_Techmap-Global Mapping
+ 00:00:08(00:00:10) |  00:00:00(00:00:01) |  -0.3( 50.0) |    4:35:24 (May29) |  549.9 MB | PBS_Techmap-Global Mapping
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
@@ -607,48 +607,48 @@ Info    : Wrote formal verification information. [CFM-5]
 Info    : Wrote dofile. [CFM-1]
         : Dofile is 'fv/serial_to_parallel/rtl_to_fv_map.do'.
         : RTL names flow is enabled.
-PBS_TechMap-Datapath Postmap Operations - Elapsed_Time 0, CPU_Time 0.0
+PBS_TechMap-Datapath Postmap Operations - Elapsed_Time 0, CPU_Time 1.0
 stamp 'PBS_TechMap-Datapath Postmap Operations' being created for table 'pbs_debug'
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:08) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:11 (May26) |  549.2 MB | PBS_Generic-Start
+ 00:00:08(00:00:08) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:22 (May29) |  549.9 MB | PBS_Generic-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:09) |  00:00:00(00:00:01) | 100.2( 50.0) |   19:15:12 (May26) |  549.2 MB | PBS_Generic_Opt-Post
+ 00:00:08(00:00:09) |  00:00:00(00:00:01) |  50.0( 50.0) |    4:35:23 (May29) |  549.9 MB | PBS_Generic_Opt-Post
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:12 (May26) |  549.2 MB | PBS_Generic-Postgen HBO Optimizations
+ 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:23 (May29) |  549.9 MB | PBS_Generic-Postgen HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:12 (May26) |  549.2 MB | PBS_TechMap-Start
+ 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:23 (May29) |  549.9 MB | PBS_TechMap-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:12 (May26) |  549.2 MB | PBS_TechMap-Premap HBO Optimizations
+ 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:23 (May29) |  549.9 MB | PBS_TechMap-Premap HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:10) |  00:00:00(00:00:01) |  -0.2( 50.0) |   19:15:13 (May26) |  549.2 MB | PBS_Techmap-Global Mapping
+ 00:00:08(00:00:10) |  00:00:00(00:00:01) |  -0.1( 50.0) |    4:35:24 (May29) |  549.9 MB | PBS_Techmap-Global Mapping
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:10) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:13 (May26) |  549.2 MB | PBS_TechMap-Datapath Postmap Operations
+ 00:00:09(00:00:10) |  00:00:01(00:00:00) |  50.1(  0.0) |    4:35:24 (May29) |  549.9 MB | PBS_TechMap-Datapath Postmap Operations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
 Info: CPU time includes time of parent + longest thread
-PBS_TechMap-Postmap HBO Optimizations - Elapsed_Time 0, CPU_Time 0.9997190000000007
+PBS_TechMap-Postmap HBO Optimizations - Elapsed_Time 0, CPU_Time -0.00021599999999999397
 stamp 'PBS_TechMap-Postmap HBO Optimizations' being created for table 'pbs_debug'
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:08) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:11 (May26) |  549.2 MB | PBS_Generic-Start
+ 00:00:08(00:00:08) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:22 (May29) |  549.9 MB | PBS_Generic-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:09) |  00:00:00(00:00:01) |  50.0( 50.0) |   19:15:12 (May26) |  549.2 MB | PBS_Generic_Opt-Post
+ 00:00:08(00:00:09) |  00:00:00(00:00:01) |  50.0( 50.0) |    4:35:23 (May29) |  549.9 MB | PBS_Generic_Opt-Post
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:12 (May26) |  549.2 MB | PBS_Generic-Postgen HBO Optimizations
+ 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:23 (May29) |  549.9 MB | PBS_Generic-Postgen HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:12 (May26) |  549.2 MB | PBS_TechMap-Start
+ 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:23 (May29) |  549.9 MB | PBS_TechMap-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:12 (May26) |  549.2 MB | PBS_TechMap-Premap HBO Optimizations
+ 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:23 (May29) |  549.9 MB | PBS_TechMap-Premap HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:10) |  00:00:00(00:00:01) |  -0.1( 50.0) |   19:15:13 (May26) |  549.2 MB | PBS_Techmap-Global Mapping
+ 00:00:08(00:00:10) |  00:00:00(00:00:01) |  -0.1( 50.0) |    4:35:24 (May29) |  549.9 MB | PBS_Techmap-Global Mapping
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:10) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:13 (May26) |  549.2 MB | PBS_TechMap-Datapath Postmap Operations
+ 00:00:09(00:00:10) |  00:00:01(00:00:00) |  50.2(  0.0) |    4:35:24 (May29) |  549.9 MB | PBS_TechMap-Datapath Postmap Operations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:09(00:00:10) |  00:00:00(00:00:00) |  50.1(  0.0) |   19:15:13 (May26) |  549.2 MB | PBS_TechMap-Postmap HBO Optimizations
+ 00:00:09(00:00:10) |  00:00:00(00:00:00) |  -0.0(  0.0) |    4:35:24 (May29) |  549.9 MB | PBS_TechMap-Postmap HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
@@ -661,23 +661,23 @@ stamp 'PBS_TechMap-Postmap Clock Gating' being created for table 'pbs_debug'
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:08) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:11 (May26) |  549.2 MB | PBS_Generic-Start
+ 00:00:08(00:00:08) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:22 (May29) |  549.9 MB | PBS_Generic-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:09) |  00:00:00(00:00:01) |  50.0( 50.0) |   19:15:12 (May26) |  549.2 MB | PBS_Generic_Opt-Post
+ 00:00:08(00:00:09) |  00:00:00(00:00:01) |  50.0( 50.0) |    4:35:23 (May29) |  549.9 MB | PBS_Generic_Opt-Post
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:12 (May26) |  549.2 MB | PBS_Generic-Postgen HBO Optimizations
+ 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:23 (May29) |  549.9 MB | PBS_Generic-Postgen HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:12 (May26) |  549.2 MB | PBS_TechMap-Start
+ 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:23 (May29) |  549.9 MB | PBS_TechMap-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:12 (May26) |  549.2 MB | PBS_TechMap-Premap HBO Optimizations
+ 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:23 (May29) |  549.9 MB | PBS_TechMap-Premap HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:10) |  00:00:00(00:00:01) |  -0.1( 50.0) |   19:15:13 (May26) |  549.2 MB | PBS_Techmap-Global Mapping
+ 00:00:08(00:00:10) |  00:00:00(00:00:01) |  -0.1( 50.0) |    4:35:24 (May29) |  549.9 MB | PBS_Techmap-Global Mapping
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:10) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:13 (May26) |  549.2 MB | PBS_TechMap-Datapath Postmap Operations
+ 00:00:09(00:00:10) |  00:00:01(00:00:00) |  50.2(  0.0) |    4:35:24 (May29) |  549.9 MB | PBS_TechMap-Datapath Postmap Operations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:09(00:00:10) |  00:00:00(00:00:00) |  50.1(  0.0) |   19:15:13 (May26) |  549.2 MB | PBS_TechMap-Postmap HBO Optimizations
+ 00:00:09(00:00:10) |  00:00:00(00:00:00) |  -0.0(  0.0) |    4:35:24 (May29) |  549.9 MB | PBS_TechMap-Postmap HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:09(00:00:10) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:13 (May26) |  549.2 MB | PBS_TechMap-Postmap Clock Gating
+ 00:00:09(00:00:10) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:24 (May29) |  549.9 MB | PBS_TechMap-Postmap Clock Gating
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
@@ -746,60 +746,60 @@ Operation                   Area   Slacks      Slack    Trans      Cap   Fanout
         setup_dn        24  (        0 /        0 )  0.00
         mb_split        24  (        0 /        0 )  0.00
 
-PBS_TechMap-Postmap Cleanup - Elapsed_Time 0, CPU_Time -0.00021899999999952513
+PBS_TechMap-Postmap Cleanup - Elapsed_Time 0, CPU_Time -0.00024800000000091416
 stamp 'PBS_TechMap-Postmap Cleanup' being created for table 'pbs_debug'
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:08) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:11 (May26) |  549.2 MB | PBS_Generic-Start
+ 00:00:08(00:00:08) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:22 (May29) |  549.9 MB | PBS_Generic-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:09) |  00:00:00(00:00:01) |  50.0( 50.0) |   19:15:12 (May26) |  549.2 MB | PBS_Generic_Opt-Post
+ 00:00:08(00:00:09) |  00:00:00(00:00:01) |  50.0( 50.0) |    4:35:23 (May29) |  549.9 MB | PBS_Generic_Opt-Post
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:12 (May26) |  549.2 MB | PBS_Generic-Postgen HBO Optimizations
+ 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:23 (May29) |  549.9 MB | PBS_Generic-Postgen HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:12 (May26) |  549.2 MB | PBS_TechMap-Start
+ 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:23 (May29) |  549.9 MB | PBS_TechMap-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:12 (May26) |  549.2 MB | PBS_TechMap-Premap HBO Optimizations
+ 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:23 (May29) |  549.9 MB | PBS_TechMap-Premap HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:10) |  00:00:00(00:00:01) |  -0.1( 50.0) |   19:15:13 (May26) |  549.2 MB | PBS_Techmap-Global Mapping
+ 00:00:08(00:00:10) |  00:00:00(00:00:01) |  -0.1( 50.0) |    4:35:24 (May29) |  549.9 MB | PBS_Techmap-Global Mapping
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:10) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:13 (May26) |  549.2 MB | PBS_TechMap-Datapath Postmap Operations
+ 00:00:09(00:00:10) |  00:00:01(00:00:00) |  50.2(  0.0) |    4:35:24 (May29) |  549.9 MB | PBS_TechMap-Datapath Postmap Operations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:09(00:00:10) |  00:00:00(00:00:00) |  50.1(  0.0) |   19:15:13 (May26) |  549.2 MB | PBS_TechMap-Postmap HBO Optimizations
+ 00:00:09(00:00:10) |  00:00:00(00:00:00) |  -0.0(  0.0) |    4:35:24 (May29) |  549.9 MB | PBS_TechMap-Postmap HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:09(00:00:10) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:13 (May26) |  549.2 MB | PBS_TechMap-Postmap Clock Gating
+ 00:00:09(00:00:10) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:24 (May29) |  549.9 MB | PBS_TechMap-Postmap Clock Gating
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:09(00:00:10) |  00:00:00(00:00:00) |  -0.0(  0.0) |   19:15:13 (May26) |  549.2 MB | PBS_TechMap-Postmap Cleanup
+ 00:00:09(00:00:10) |  00:00:00(00:00:00) |  -0.0(  0.0) |    4:35:24 (May29) |  549.9 MB | PBS_TechMap-Postmap Cleanup
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
 Info: CPU time includes time of parent + longest thread
-PBS_Techmap-Post_MBCI - Elapsed_Time 0, CPU_Time 0.0
+PBS_Techmap-Post_MBCI - Elapsed_Time 1, CPU_Time 0.0
 stamp 'PBS_Techmap-Post_MBCI' being created for table 'pbs_debug'
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:08) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:11 (May26) |  549.2 MB | PBS_Generic-Start
+ 00:00:08(00:00:08) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:22 (May29) |  549.9 MB | PBS_Generic-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:09) |  00:00:00(00:00:01) |  50.0( 50.0) |   19:15:12 (May26) |  549.2 MB | PBS_Generic_Opt-Post
+ 00:00:08(00:00:09) |  00:00:00(00:00:01) |  50.0( 33.3) |    4:35:23 (May29) |  549.9 MB | PBS_Generic_Opt-Post
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:12 (May26) |  549.2 MB | PBS_Generic-Postgen HBO Optimizations
+ 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:23 (May29) |  549.9 MB | PBS_Generic-Postgen HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:12 (May26) |  549.2 MB | PBS_TechMap-Start
+ 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:23 (May29) |  549.9 MB | PBS_TechMap-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:12 (May26) |  549.2 MB | PBS_TechMap-Premap HBO Optimizations
+ 00:00:08(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:23 (May29) |  549.9 MB | PBS_TechMap-Premap HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:10) |  00:00:00(00:00:01) |  -0.1( 50.0) |   19:15:13 (May26) |  549.2 MB | PBS_Techmap-Global Mapping
+ 00:00:08(00:00:10) |  00:00:00(00:00:01) |  -0.1( 33.3) |    4:35:24 (May29) |  549.9 MB | PBS_Techmap-Global Mapping
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:08(00:00:10) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:13 (May26) |  549.2 MB | PBS_TechMap-Datapath Postmap Operations
+ 00:00:09(00:00:10) |  00:00:01(00:00:00) |  50.2(  0.0) |    4:35:24 (May29) |  549.9 MB | PBS_TechMap-Datapath Postmap Operations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:09(00:00:10) |  00:00:00(00:00:00) |  50.1(  0.0) |   19:15:13 (May26) |  549.2 MB | PBS_TechMap-Postmap HBO Optimizations
+ 00:00:09(00:00:10) |  00:00:00(00:00:00) |  -0.0(  0.0) |    4:35:24 (May29) |  549.9 MB | PBS_TechMap-Postmap HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:09(00:00:10) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:13 (May26) |  549.2 MB | PBS_TechMap-Postmap Clock Gating
+ 00:00:09(00:00:10) |  00:00:00(00:00:00) |   0.0(  0.0) |    4:35:24 (May29) |  549.9 MB | PBS_TechMap-Postmap Clock Gating
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:09(00:00:10) |  00:00:00(00:00:00) |  -0.0(  0.0) |   19:15:13 (May26) |  549.2 MB | PBS_TechMap-Postmap Cleanup
+ 00:00:09(00:00:10) |  00:00:00(00:00:00) |  -0.0(  0.0) |    4:35:24 (May29) |  549.9 MB | PBS_TechMap-Postmap Cleanup
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:09(00:00:10) |  00:00:00(00:00:00) |   0.0(  0.0) |   19:15:13 (May26) |  549.2 MB | PBS_Techmap-Post_MBCI
+ 00:00:09(00:00:11) |  00:00:00(00:00:01) |   0.0( 33.3) |    4:35:25 (May29) |  549.9 MB | PBS_Techmap-Post_MBCI
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
@@ -828,13 +828,13 @@ Info: CPU time includes time of parent + longest thread
 ##>M:DP Operations                      0         -         -        24       791       549
 ##>M:Const Prop                         0       -21        57        24       791       549
 ##>M:Cleanup                            0       -21        57        24       791       549
-##>M:MBCI                               0         -         -        24       791       549
+##>M:MBCI                               1         -         -        24       791       549
 ##>M:PostGen Opt                        0         -         -         -         -         -
 ##>M:Const Gate Removal                 0         -         -         -         -         -
 ##>M:Early Clock Gating Cleanup         0         -         -         -         -         -
 ##>M:Misc                               1
 ##>----------------------------------------------------------------------------------------
-##>Total Elapsed                        1
+##>Total Elapsed                        2
 ##>========================================================================================
 Info    : Done mapping. [SYNTH-5]
         : Done mapping 'serial_to_parallel'.
@@ -1019,7 +1019,7 @@ Operation                   Area   Slacks      Slack    Trans      Cap   Fanout
 -----------------------------------------------------------
           plc_st         8  (        0 /        0 )  0.00
         plc_star         8  (        0 /        0 )  0.00
-        drc_bufs        16  (        0 /        8 )  0.00
+        drc_bufs        16  (        0 /        8 )  0.01
         drc_fopt         8  (        0 /        0 )  0.00
         drc_bufb         8  (        0 /        0 )  0.00
       simple_buf         8  (        0 /        0 )  0.01
@@ -1069,12 +1069,12 @@ Operation                   Area   Slacks      Slack    Trans      Cap   Fanout
      drc_buftimb         0  (        0 /        0 )  0.00
      drc_buftims         0  (        0 /        0 )  0.00
         crit_msz        40  (        3 /       12 )  0.05
-       crit_upsz        37  (        1 /        1 )  0.02
+       crit_upsz        37  (        1 /        1 )  0.01
    plc_laf_lo_st        36  (        0 /        0 )  0.00
        plc_lo_st        36  (        0 /        0 )  0.00
        crit_swap        36  (        0 /        0 )  0.00
        mux2_swap        36  (        0 /        0 )  0.00
-       crit_dnsz        31  (        0 /        0 )  0.01
+       crit_dnsz        31  (        0 /        0 )  0.02
        load_swap        36  (        0 /        0 )  0.00
             fopt        36  (        7 /        7 )  0.01
         setup_dn        29  (        0 /        0 )  0.00
@@ -1085,7 +1085,7 @@ Operation                   Area   Slacks      Slack    Trans      Cap   Fanout
           rem_bi        29  (        0 /        0 )  0.01
          offload        29  (        0 /        0 )  0.01
           rem_bi        29  (        0 /        0 )  0.03
-         offload        29  (        0 /        0 )  0.03
+         offload        29  (        0 /        0 )  0.02
        merge_bit        29  (        0 /        0 )  0.00
      merge_idrvr        29  (        0 /        0 )  0.00
      merge_iload        29  (        0 /        0 )  0.00
@@ -1114,7 +1114,7 @@ Operation                   Area   Slacks      Slack    Trans      Cap   Fanout
          rem_inv         1  (        0 /        0 )  0.00
         merge_bi         0  (        0 /        0 )  0.00
       rem_inv_qb         8  (        0 /        0 )  0.01
-    seq_res_area         2  (        1 /        1 )  0.04
+    seq_res_area         2  (        1 /        1 )  0.03
         io_phase         0  (        0 /        0 )  0.00
        gate_comp         0  (        0 /        0 )  0.00
        gcomp_mog         0  (        0 /        0 )  0.00
@@ -1377,7 +1377,7 @@ Operation                   Area   Slacks      Slack    Trans      Cap   Fanout
              dup         8  (        0 /        0 )  0.00
        crit_dnsz         0  (        0 /        0 )  0.00
        crit_upsz         8  (        0 /        0 )  0.01
-       crit_slew         8  (        0 /        0 )  0.01
+       crit_slew         8  (        0 /        0 )  0.00
 
 
            Trick     Calls     Accepts   Attempts    Time(secs) 
@@ -1465,7 +1465,7 @@ Finished SDC export (command execution time mm:ss (real) = 00:00).
 @file(synth.tcl) 48: write_design -base_name innovus_src/SIPO
 (write_design): Writing Genus content. Constraint interface is 'smsc'
 Exporting design data for 'serial_to_parallel' to innovus_src/SIPO...
-%# Begin write_design (05/26 19:15:14, mem=1759.87M)
+%# Begin write_design (05/29 04:35:26, mem=1760.75M)
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
 UM:*                                                                   write_design
   Setting attribute of root '/': 'set_boundary_change' = 
@@ -1475,9 +1475,9 @@ Finished SDC export (command execution time mm:ss (real) = 00:00).
 Info: file innovus_src/SIPO.default_emulate_constraint_mode.sdc has been written
 Info: file innovus_src/SIPO.default_emulate_constraint_mode.sdc has been written
 ** To load the database source innovus_src/SIPO.genus_setup.tcl in an Genus(TM) Synthesis Solution session.
-Finished exporting design data for 'serial_to_parallel' (command execution time mm:ss cpu = 00:00, real = 00:01).
+Finished exporting design data for 'serial_to_parallel' (command execution time mm:ss cpu = 00:00, real = 00:00).
 .
-%# End write_design (05/26 19:15:15, total cpu=09:00:00, real=09:00:01, peak res=549.20M, current mem=1761.88M)
+%# End write_design (05/29 04:35:26, total cpu=09:00:00, real=09:00:00, peak res=549.90M, current mem=1762.76M)
 @file(synth.tcl) 51: write_do_lec -golden_design outputs/lec_src/SIPO2mapped_lec.v -revised_design outputs/lec_src/SIPO_netlist.v -logfile outputs/lec_src/mapped2final_lec.log > outputs/lec_src/mapped2final_lec.do
 Info    : Wrote formal verification information. [CFM-5]
         : Wrote 'fv/serial_to_parallel/SIPO_netlistv.fv.json' for netlist 'outputs/lec_src/SIPO_netlist.v'.
@@ -1496,14 +1496,12 @@ Info    : Wrote dofile. [CFM-1]
         : Dofile is 'outputs/lec_src/SIPO2final_lec.do'.
         : RTL names flow is enabled.
 #@ End verbose source ./synth.tcl
-WARNING: This version of the tool is 399 days old.
-@genus:root: 2> lec -xl -dofile outputs/lec_src/SIPO2final_lec.do
-@genus:root: 3> lec -xl -dofile outputs/lec_src/SIPO2final_lec.do
-@genus:root: 4> exit
+WARNING: This version of the tool is 401 days old.
+@genus:root: 2> exit
 
 Lic Summary:
-[19:17:05.377387] Cdslmd servers: hs-lic3
-[19:17:05.901681] Feature usage summary:
-[19:17:05.901681] Genus_Synthesis
+[04:36:03.511714] Cdslmd servers: hs-lic3
+[04:36:03.511720] Feature usage summary:
+[04:36:03.511720] Genus_Synthesis
 
 Normal exit.

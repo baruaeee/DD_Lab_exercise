@@ -1,11 +1,11 @@
 xrun(64): 24.03-s004: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	24.03-s004: Started on May 26, 2025 at 19:19:13 CEST
+TOOL:	xrun(64)	24.03-s004: Started on May 29, 2025 at 13:57:16 CEST
 xrun
-	SIPO_gate-level_tb.v
+	SIPO_tb.v
 	-access +rwc
 	-64bit
 	-gui
-file: SIPO_gate-level_tb.v
+file: SIPO_tb.v
 	module worklib.serial_to_parallel:v
 		errors: 0, warnings: 0
 	module worklib.sg13g2_a21o_1:v
@@ -202,6 +202,17 @@ file: SIPO_gate-level_tb.v
 		errors: 0, warnings: 0
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
+    serial_to_parallel uut (
+                         |
+xmelab: *W,CUVWSP (./SIPO_tb.v,18|25): 1 output port was not connected:
+xmelab: (./outputs/SIPO_netlist.v,8): scan_out
+
+    serial_to_parallel uut (
+                         |
+xmelab: *W,CUVWSI (./SIPO_tb.v,18|25): 2 input ports were not connected:
+xmelab: (./outputs/SIPO_netlist.v,7): scan_en
+xmelab: (./outputs/SIPO_netlist.v,7): scan_in
+
 	Top level design units:
 		sg13g2_a21o_1
 		sg13g2_a21o_2
@@ -219,9 +230,11 @@ file: SIPO_gate-level_tb.v
 		sg13g2_buf_1
 		sg13g2_buf_2
 		sg13g2_buf_4
+		sg13g2_buf_8
 		sg13g2_decap_4
 		sg13g2_decap_8
 		sg13g2_dfrbp_1
+		sg13g2_dfrbp_2
 		sg13g2_dlhq_1
 		sg13g2_dlhr_1
 		sg13g2_dlhrq_1
@@ -241,7 +254,6 @@ file: SIPO_gate-level_tb.v
 		sg13g2_fill_4
 		sg13g2_fill_8
 		sg13g2_inv_1
-		sg13g2_inv_2
 		sg13g2_inv_8
 		sg13g2_lgcp_1
 		sg13g2_mux2_1
@@ -269,7 +281,6 @@ file: SIPO_gate-level_tb.v
 		sg13g2_or3_2
 		sg13g2_or4_1
 		sg13g2_or4_2
-		sg13g2_sdfbbp_1
 		sg13g2_sighold
 		sg13g2_slgcp_1
 		sg13g2_tiehi
@@ -278,7 +289,6 @@ file: SIPO_gate-level_tb.v
 		sg13g2_xor2_1
 		tb_serial_to_parallel
 	Reading SDF file from location "outputs/delays.sdf"
-	Writing compiled SDF file to "delays.sdf.X".
 	Annotating SDF timing data:
 		Compiled SDF file:     delays.sdf.X
 		Log file:              
@@ -289,17 +299,19 @@ file: SIPO_gate-level_tb.v
 		Scale type:            
 	Annotation completed successfully...
 	SDF statistics: 
-		 No. of Pathdelays = 264     	 No. of Disabled Pathdelays = 0        Annotated = 18.18% (48/264) 
-		 No. of Tchecks    = 100     	 No. of Disabled Tchecks    = 0        Annotated = 0.00% (0/100) 
+		 No. of Pathdelays = 292     	 No. of Disabled Pathdelays = 0        Annotated = 21.92% (64/292) 
+		 No. of Tchecks    = 149     	 No. of Disabled Tchecks    = 0        Annotated = 0.00% (0/149) 
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.sg13g2_dfrbp_2:v <0x4ebb3fbc>
+		worklib.sg13g2_sdfbbp_1:v <0x5f5f819b>
 			streams:   0, words:     0
+		worklib.sg13g2_sdfbbp_1:v <0x09a58d42>
+			streams:   0, words:     0
+		worklib.serial_to_parallel:v <0x5bfb8c1a>
+			streams:   1, words:   718
 		worklib.tb_serial_to_parallel:v <0x278c3b78>
 			streams:   8, words:  7705
 		worklib.sg13g2_slgcp_1:v <0x36af426f>
-			streams:   0, words:     0
-		worklib.sg13g2_sdfbbp_1:v <0x7570644a>
 			streams:   0, words:     0
 		worklib.sg13g2_o21ai_1:v <0x270f27ad>
 			streams:   0, words:     0
@@ -321,6 +333,8 @@ file: SIPO_gate-level_tb.v
 			streams:   0, words:     0
 		worklib.sg13g2_dlhq_1:v <0x5b0c4f4d>
 			streams:   0, words:     0
+		worklib.sg13g2_dfrbp_2:v <0x5b28a295>
+			streams:   0, words:     0
 		worklib.sg13g2_dfrbp_1:v <0x686cbe90>
 			streams:   0, words:     0
 		worklib.sg13g2_a221oi_1:v <0x5efa47a4>
@@ -336,20 +350,20 @@ file: SIPO_gate-level_tb.v
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
-		                   Instances  Unique
-		Modules:                  99      80
-		UDPs:                     31      17
-		Primitives:              165       7
-		Timing outputs:           99      61
-		Registers:                20      27
-		Scalar wires:            325       -
-		Always blocks:             1       1
-		Initial blocks:            4       4
-		Pseudo assignments:        3       -
-		Timing checks:           156       -
-		Interconnect:             40       -
-		Delayed tcheck signals:   52      38
-		Simulation timescale:    1ps
+		                    Instances  Unique
+		Modules:                   99      80
+		UDPs:                      38      17
+		Primitives:               172       7
+		Timing outputs:            99      61
+		Registers:                 20      27
+		Scalar wires:             329       -
+		Always blocks:              1       1
+		Initial blocks:             4       4
+		Pseudo assignments:         4       -
+		Timing checks:            247       -
+		Interconnect:              64       -
+		Delayed tcheck signals:    73      52
+		Simulation timescale:    10ps
 	Writing initial simulation snapshot: worklib.sg13g2_a21o_1:v
 xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
 
@@ -359,30 +373,30 @@ xcelium>
 xcelium> source /eda/cadence/2024-25/RHELx86/XCELIUM_24.03.004/tools/xcelium/files/xmsimrc
 xcelium> database -open waves -into waves.shm -default
 Created default SHM database waves
-xcelium> probe -create -shm tb_serial_to_parallel.clk tb_serial_to_parallel.p_o tb_serial_to_parallel.rst_n tb_serial_to_parallel.serial_in
+xcelium> probe -create -shm tb_serial_to_parallel.serial_in tb_serial_to_parallel.rst_n tb_serial_to_parallel.p_o tb_serial_to_parallel.clk
 Created probe 1
 xcelium> run
 Time =                    0, clk = 0, rst_n = 0, serial_in = x, parallel_out = 00000000
-Time =                 5000, clk = 1, rst_n = 0, serial_in = x, parallel_out = 00000000
-Time =                10000, clk = 0, rst_n = 1, serial_in = 1, parallel_out = 00000000
-Time =                15000, clk = 1, rst_n = 1, serial_in = 1, parallel_out = 00000001
-Time =                20000, clk = 0, rst_n = 1, serial_in = 0, parallel_out = 00000001
-Time =                25000, clk = 1, rst_n = 1, serial_in = 0, parallel_out = 00000010
-Time =                30000, clk = 0, rst_n = 1, serial_in = 1, parallel_out = 00000010
-Time =                35000, clk = 1, rst_n = 1, serial_in = 1, parallel_out = 00000101
-Time =                40000, clk = 0, rst_n = 1, serial_in = 1, parallel_out = 00000101
-Time =                45000, clk = 1, rst_n = 1, serial_in = 1, parallel_out = 00001011
-Time =                50000, clk = 0, rst_n = 1, serial_in = 0, parallel_out = 00001011
-Time =                55000, clk = 1, rst_n = 1, serial_in = 0, parallel_out = 00010110
-Time =                60000, clk = 0, rst_n = 1, serial_in = 1, parallel_out = 00010110
-Time =                65000, clk = 1, rst_n = 1, serial_in = 1, parallel_out = 00101101
-Time =                70000, clk = 0, rst_n = 1, serial_in = 0, parallel_out = 00101101
-Time =                75000, clk = 1, rst_n = 1, serial_in = 0, parallel_out = 01011010
-Time =                80000, clk = 0, rst_n = 1, serial_in = 1, parallel_out = 01011010
-Time =                85000, clk = 1, rst_n = 1, serial_in = 1, parallel_out = 10110101
-Time =                90000, clk = 0, rst_n = 1, serial_in = 1, parallel_out = 10110101
-Time =                95000, clk = 1, rst_n = 1, serial_in = 1, parallel_out = 01101011
+Time =                  500, clk = 1, rst_n = 0, serial_in = x, parallel_out = 00000000
+Time =                 1000, clk = 0, rst_n = 1, serial_in = 1, parallel_out = 00000000
+Time =                 1500, clk = 1, rst_n = 1, serial_in = 1, parallel_out = 0000000x
+Time =                 2000, clk = 0, rst_n = 1, serial_in = 0, parallel_out = 0000000x
+Time =                 2500, clk = 1, rst_n = 1, serial_in = 0, parallel_out = 000000xx
+Time =                 3000, clk = 0, rst_n = 1, serial_in = 1, parallel_out = 000000xx
+Time =                 3500, clk = 1, rst_n = 1, serial_in = 1, parallel_out = 00000xxx
+Time =                 4000, clk = 0, rst_n = 1, serial_in = 1, parallel_out = 00000xxx
+Time =                 4500, clk = 1, rst_n = 1, serial_in = 1, parallel_out = 0000xxxx
+Time =                 5000, clk = 0, rst_n = 1, serial_in = 0, parallel_out = 0000xxxx
+Time =                 5500, clk = 1, rst_n = 1, serial_in = 0, parallel_out = 000xxxxx
+Time =                 6000, clk = 0, rst_n = 1, serial_in = 1, parallel_out = 000xxxxx
+Time =                 6500, clk = 1, rst_n = 1, serial_in = 1, parallel_out = 00xxxxxx
+Time =                 7000, clk = 0, rst_n = 1, serial_in = 0, parallel_out = 00xxxxxx
+Time =                 7500, clk = 1, rst_n = 1, serial_in = 0, parallel_out = 0xxxxxxx
+Time =                 8000, clk = 0, rst_n = 1, serial_in = 1, parallel_out = 0xxxxxxx
+Time =                 8500, clk = 1, rst_n = 1, serial_in = 1, parallel_out = xxxxxxxx
+Time =                 9000, clk = 0, rst_n = 1, serial_in = 1, parallel_out = xxxxxxxx
+Time =                 9500, clk = 1, rst_n = 1, serial_in = 1, parallel_out = xxxxxxxx
 Simulation stopped via $stop(1) at time 100 NS + 0
 xcelium> ^C
 xcelium> exit
-TOOL:	xrun(64)	24.03-s004: Exiting on May 26, 2025 at 19:25:49 CEST  (total: 00:06:36)
+TOOL:	xrun(64)	24.03-s004: Exiting on May 29, 2025 at 13:59:50 CEST  (total: 00:02:34)

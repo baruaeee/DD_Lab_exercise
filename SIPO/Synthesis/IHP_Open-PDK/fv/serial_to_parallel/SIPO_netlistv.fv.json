@@ -269,8 +269,8 @@
 "object":"/designs/serial_to_parallel/instances_seq/shift_reg_reg[0]",
 "type":"instance"},
 {"index": "3", 
- "date": "Mon May 26 17:15:15 UTC 2025",
- "seconds": 1748279715.6791918,
+ "date": "Thu May 29 02:35:26 UTC 2025",
+ "seconds": 1748486126.821174,
  "netlist": "outputs/lec_src/SIPO_netlist.v", 
  "netlist_exists": "0", 
  "netlist_normalize": "", 
@@ -283,6 +283,6 @@
  "synthesis_command":"",
  "current_label": "SIPO_netlistv", 
  "previous_label": "SIPO2mapped_lecv", 
- "write_verif_file_runtime": 0.20571599999999998 
+ "write_verif_file_runtime": 0.20827099999999998 
  }
 ]

@@ -1,0 +1,25 @@
+VERSION 5.5 ;
+NAMESCASESENSITIVE ON ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN serial_to_parallel ;
+
+SCANCHAINS 1 ;
+  - top_chain_seg1_clk_rising 
+    + PARTITION p_clk_rising 
+      MAXBITS 8
+    + START PIN scan_in
+    + FLOATING 
+       shift_reg_reg[0] ( IN SCD ) ( OUT Q ) 
+       shift_reg_reg[1] ( IN SCD ) ( OUT Q ) 
+       shift_reg_reg[2] ( IN SCD ) ( OUT Q ) 
+       shift_reg_reg[3] ( IN SCD ) ( OUT Q ) 
+       shift_reg_reg[4] ( IN SCD ) ( OUT Q ) 
+       shift_reg_reg[5] ( IN SCD ) ( OUT Q ) 
+       shift_reg_reg[6] ( IN SCD ) ( OUT Q ) 
+       shift_reg_reg[7] ( IN SCD ) ( OUT Q_N ) 
+    + STOP PIN scan_out
+;
+
+END SCANCHAINS 
+END DESIGN 

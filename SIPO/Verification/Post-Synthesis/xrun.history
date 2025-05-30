@@ -1,2 +1,18 @@
 #e1(26May2025:19:19:13): source ./xcelium.d/env.d/env.history.26May2025_19_19_13
 s1(26May2025:19:19:13):  xrun SIPO_gate-level_tb.v -access +rwc -64bit -gui 
+#e2(29May2025:03:42:27): source ./xcelium.d/env.d/env.history.29May2025_03_42_27
+s2(29May2025:03:42:27):  xrun SIPO1_tb.v -access +rwc -64bit -gui 
+#e3(29May2025:03:47:52): source ./xcelium.d/env.d/env.history.29May2025_03_47_52
+s3(29May2025:03:47:52):  xrun SIPO_gate-level_tb.v -access +rwc -64bit -gui 
+#e4(29May2025:04:18:41): source ./xcelium.d/env.d/env.history.29May2025_04_18_41
+s4(29May2025:04:18:41):  xrun SIPO_gate-level_tb.v -access +rwc -64bit -gui 
+#e5(29May2025:04:33:02): source ./xcelium.d/env.d/env.history.29May2025_04_33_02
+s5(29May2025:04:33:02):  xrun SIPO_gate-level_tb.v -access +rwc -64bit -gui 
+#e6(29May2025:04:33:36): source ./xcelium.d/env.d/env.history.29May2025_04_33_36
+s6(29May2025:04:33:36):  xrun SIPO_gate-level_tb.v -access +rwc -64bit -gui 
+#e7(29May2025:04:36:16): source ./xcelium.d/env.d/env.history.29May2025_04_36_16
+s7(29May2025:04:36:16):  xrun SIPO_gate-level_tb.v -access +rwc -64bit -gui 
+#e8(29May2025:06:02:57): source ./xcelium.d/env.d/env.history.29May2025_06_02_57
+s8(29May2025:06:02:57):  xrun SIPO_gate-level_tb.v -access +rwc -64bit -gui 
+#e9(29May2025:13:57:16): source ./xcelium.d/env.d/env.history.29May2025_13_57_16
+s9(29May2025:13:57:16):  xrun SIPO_tb.v -access +rwc -64bit -gui 

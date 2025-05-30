@@ -1,0 +1,101 @@
+
+INFO (TDA-005): Command Line Invocation: 
+            build_faultmodel -includedynamic no -workdir /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src -stdout summary  [end TDA_005]
+
+INFO (TDA-014): Cadence(R) Modus(TM) DFT Software Solution, Version 23.11-s014_1, built Mar 14 2024 (linux26_64) [end TDA_014]
+
+INFO (TDA-015): Log File: /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/testresults/logs/log_build_faultmodel_052925041603-457390000 [end TDA_015]
+
+INFO (TDA-007): Job Information:
+            Date Started: Thursday May 29 04:16:03 2025  CEST
+            Host machine is ei-vm-018.othr.de, x86_64 running Linux 4.18.0-553.44.1.el8_10.x86_64.
+            This job is process number 1938617.
+[end TDA_007]
+
+INFO (TDA-009): Options/Values information.
+            (options marked with '*' have program generated values,
+             options marked with '+' were specified to default.)
+
+            -WORKDIR /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src
+
+            -LOGFILE /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/testresults/logs/log_build_faultmodel_052925041603-457390000
+            -STDOUT summary
+            -includedynamic no
+[end TDA_009]
+INFO (TFW-117): Modus checked out a modus_atpg license.  [end TFW_117] 
+INFO (TFM-099): Build Fault Model started.  [end TFM_099] 
+INFO (TFM-102): Creating faultModel file /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/tbdata/faultModel.  [end TFM_102] 
+
+Global Ignored Static Fault Count                16
+Global Ignored Dynamic Fault Count                0
+
+
+                            Global Statistics
+
+                    ATCov  ----------------------- Global Faults --------------------------
+                   Global        Total       Tested     Possibly    Redundant     Untested
+
+Total Static         0.00          220            0            0            0          220
+Collapsed Static     0.00          130            0            0            0          130
+PI Static            0.00           10            0            0            0           10
+PO Static            0.00           18            0            0            0           18
+
+Total Dynamic                        0
+
+Parametric        
+
+IDDq                 0.00          220            0                                    220
+
+
+
+INFO (TFM-103): Creating faultStatus file /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/tbdata/faultStatus.  [end TFM_103] 
+
+                           Testmode Statistics: FULLSCAN
+
+                 ---- ATCov ---- ------------------------ Testmode Faults ----------------------- ------------------------- Global Faults ------------------------
+                 Testmode Global        Total       Tested     Possibly    Redundant     Untested        Total       Tested     Possibly    Redundant     Untested
+
+Total Static         0.00   0.00          220            0            0            0          220          220            0            0            0          220
+Collapsed Static     0.00   0.00          130            0            0            0          130          130            0            0            0          130
+PI Static            0.00   0.00           10            0            0            0           10           10            0            0            0           10
+PO Static            0.00   0.00           18            0            0            0           18           18            0            0            0           18
+
+Total Dynamic                               0
+
+Parametric        
+
+IDDq                 0.00   0.00          220            0                                    220          220            0                                    220
+
+Path                 0.00   0.00            0            0                                      0            0            0                                      0
+
+
+
+INFO (TFM-704): Maximum Global Test Coverage Statistics: 
+
+                  %Active      #Faults      #Active    #Inactive
+Total Static       100.00          220          220            0
+Collapsed Static   100.00          130          130            0
+PI Static          100.00           10           10            0
+PO Static          100.00           18           18            0
+
+Total Dynamic                        0
+
+Parametric        
+
+There are 1 test mode(s) defined:
+      FULLSCAN
+
+[end TFM_704]
+INFO (TFM-109): Build Fault Model has completed with highest level severity message of INFO.  [end TFM_109] 
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =            6,301,168  bytes
+
+                      CPU Time =    0:00:00.01
+                  Elapsed Time =    0:00:00.04                    [end TDA_001]
+
+     Date Ended:  Thursday May 29 04:16:03 2025  CEST
+
+INFO (TFW-119): Modus checked in a modus_atpg license.  [end TFW_119] 
+

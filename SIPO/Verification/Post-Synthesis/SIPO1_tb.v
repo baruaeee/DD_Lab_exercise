@@ -3,8 +3,8 @@
 `timescale 1ns/1ns
 
 `include "outputs/SIPO_netlist.v"
-//`include "/home/bas33767/Desktop/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v"
-`include "/eda/cadence/pdks/sky130/sky130_scl_9T_0_0_5/verilog/sky130_scl_9T.v"
+`include "/home/bas33767/Desktop/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v"
+//`include "/eda/cadence/pdks/sky130/sky130_scl_9T_0_0_5/verilog/sky130_scl_9T.v"
 
 
 module tb_serial_to_parallel;

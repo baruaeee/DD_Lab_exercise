@@ -1,0 +1,492 @@
+(DELAYFILE
+  (SDFVERSION "3.0")
+  (DESIGN "serial_to_parallel")
+  (DATE "Fri May 30 01:14:48 2025")
+  (VENDOR "Cadence Design Systems, Inc.")
+  (PROGRAM "Innovus")
+  (VERSION "v23.31-s109_1 ((64bit) 04/22/2024 16:02 (Linux 3.10.0-693.el7.x86_64))")
+  (DIVIDER /)
+  (VOLTAGE 1.350000::1.350000)
+  (PROCESS "1.000000::1.000000")
+  (TEMPERATURE 125.000000::125.000000)
+  (TIMESCALE 1.0 ns)
+
+  (CELL
+    (CELLTYPE  "serial_to_parallel")
+    (INSTANCE)
+      (DELAY
+	(ABSOLUTE
+	(INTERCONNECT FE_OFC16_shift_reg_2/Y FE_OFC17_shift_reg_2/A  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT FE_OFC16_shift_reg_2/Y shift_reg_reg\[3\]/D  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC24_shift_reg_1/Y FE_OFC25_shift_reg_1/A  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT FE_OFC24_shift_reg_1/Y shift_reg_reg\[2\]/D  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT FE_OFC22_shift_reg_6/Y FE_OFC23_shift_reg_6/A  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT FE_OFC22_shift_reg_6/Y shift_reg_reg\[7\]/D  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC28_shift_reg_4/Y FE_OFC29_shift_reg_4/A  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC28_shift_reg_4/Y shift_reg_reg\[5\]/D  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC26_shift_reg_0/Y FE_OFC27_shift_reg_0/A  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC26_shift_reg_0/Y shift_reg_reg\[1\]/D  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC18_shift_reg_3/Y FE_OFC34_p_o_3/A  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC18_shift_reg_3/Y shift_reg_reg\[4\]/D  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC20_shift_reg_5/Y FE_OFC21_shift_reg_5/A  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC20_shift_reg_5/Y shift_reg_reg\[6\]/D  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT shift_reg_reg\[7\]/Q FE_OFC38_p_o_7/A  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT clk shift_reg_reg\[7\]/CLK  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk shift_reg_reg\[6\]/CLK  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk shift_reg_reg\[5\]/CLK  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk shift_reg_reg\[4\]/CLK  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk shift_reg_reg\[3\]/CLK  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk shift_reg_reg\[2\]/CLK  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk shift_reg_reg\[1\]/CLK  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk shift_reg_reg\[0\]/CLK  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT rst_n shift_reg_reg\[7\]/RESET_B  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT rst_n shift_reg_reg\[6\]/RESET_B  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT rst_n shift_reg_reg\[5\]/RESET_B  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT rst_n shift_reg_reg\[4\]/RESET_B  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT rst_n shift_reg_reg\[3\]/RESET_B  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT rst_n shift_reg_reg\[2\]/RESET_B  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT rst_n shift_reg_reg\[1\]/RESET_B  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT rst_n shift_reg_reg\[0\]/RESET_B  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT serial_in shift_reg_reg\[0\]/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT FE_OFC38_p_o_7/X p_o[7]  (0.026::0.026) (0.026::0.026))
+	(INTERCONNECT FE_OFC23_shift_reg_6/X p_o[6]  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT FE_OFC21_shift_reg_5/X p_o[5]  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT FE_OFC29_shift_reg_4/X p_o[4]  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT FE_OFC34_p_o_3/X p_o[3]  (0.025::0.025) (0.025::0.025))
+	(INTERCONNECT FE_OFC17_shift_reg_2/X p_o[2]  (0.029::0.029) (0.029::0.029))
+	(INTERCONNECT FE_OFC25_shift_reg_1/X p_o[1]  (0.027::0.027) (0.027::0.027))
+	(INTERCONNECT FE_OFC27_shift_reg_0/X p_o[0]  (0.023::0.023) (0.023::0.023))
+	(INTERCONNECT scan_en shift_reg_reg\[7\]/SCE  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT scan_en shift_reg_reg\[6\]/SCE  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT scan_en shift_reg_reg\[5\]/SCE  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT scan_en shift_reg_reg\[4\]/SCE  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT scan_en shift_reg_reg\[3\]/SCE  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT scan_en shift_reg_reg\[2\]/SCE  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT scan_en shift_reg_reg\[1\]/SCE  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT scan_en shift_reg_reg\[0\]/SCE  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT scan_in shift_reg_reg\[0\]/SCD  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT shift_reg_reg\[7\]/Q_N scan_out  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT shift_reg_reg\[6\]/Q_N FE_OFC22_shift_reg_6/A  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT shift_reg_reg\[5\]/Q_N FE_OFC20_shift_reg_5/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT shift_reg_reg\[4\]/Q_N FE_OFC28_shift_reg_4/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT shift_reg_reg\[3\]/Q_N FE_OFC18_shift_reg_3/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT shift_reg_reg\[2\]/Q_N FE_OFC16_shift_reg_2/A  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT shift_reg_reg\[1\]/Q_N FE_OFC24_shift_reg_1/A  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT shift_reg_reg\[0\]/Q_N FE_OFC26_shift_reg_0/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT shift_reg_reg\[0\]/Q shift_reg_reg\[1\]/SCD  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT shift_reg_reg\[1\]/Q shift_reg_reg\[2\]/SCD  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT shift_reg_reg\[2\]/Q shift_reg_reg\[3\]/SCD  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT shift_reg_reg\[3\]/Q shift_reg_reg\[4\]/SCD  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT shift_reg_reg\[4\]/Q shift_reg_reg\[5\]/SCD  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT shift_reg_reg\[5\]/Q shift_reg_reg\[6\]/SCD  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT shift_reg_reg\[6\]/Q shift_reg_reg\[7\]/SCD  (0.000::0.000) (0.000::0.000))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "sg13g2_buf_16")
+    (INSTANCE  FE_OFC38_p_o_7)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A X  (0.175::0.175) (0.161::0.161))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "sg13g2_buf_16")
+    (INSTANCE  FE_OFC34_p_o_3)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A X  (0.164::0.164) (0.152::0.152))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "sg13g2_buf_16")
+    (INSTANCE  FE_OFC29_shift_reg_4)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A X  (0.178::0.178) (0.170::0.170))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "sg13g2_inv_2")
+    (INSTANCE  FE_OFC28_shift_reg_4)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Y  (0.065::0.065) (0.059::0.059))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "sg13g2_buf_16")
+    (INSTANCE  FE_OFC27_shift_reg_0)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A X  (0.163::0.163) (0.152::0.152))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "sg13g2_inv_2")
+    (INSTANCE  FE_OFC26_shift_reg_0)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Y  (0.062::0.062) (0.057::0.057))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "sg13g2_buf_16")
+    (INSTANCE  FE_OFC25_shift_reg_1)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A X  (0.155::0.155) (0.146::0.146))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "sg13g2_inv_4")
+    (INSTANCE  FE_OFC24_shift_reg_1)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Y  (0.050::0.050) (0.048::0.048))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "sg13g2_buf_16")
+    (INSTANCE  FE_OFC23_shift_reg_6)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A X  (0.177::0.177) (0.170::0.170))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "sg13g2_inv_2")
+    (INSTANCE  FE_OFC22_shift_reg_6)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Y  (0.062::0.062) (0.057::0.057))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "sg13g2_buf_16")
+    (INSTANCE  FE_OFC21_shift_reg_5)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A X  (0.177::0.177) (0.170::0.170))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "sg13g2_inv_2")
+    (INSTANCE  FE_OFC20_shift_reg_5)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Y  (0.064::0.064) (0.058::0.058))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "sg13g2_inv_2")
+    (INSTANCE  FE_OFC18_shift_reg_3)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Y  (0.065::0.065) (0.059::0.059))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "sg13g2_buf_16")
+    (INSTANCE  FE_OFC17_shift_reg_2)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A X  (0.152::0.152) (0.142::0.142))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "sg13g2_inv_4")
+    (INSTANCE  FE_OFC16_shift_reg_2)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Y  (0.047::0.047) (0.045::0.045))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "sg13g2_sdfbbp_1")
+    (INSTANCE  shift_reg_reg\[7\])
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge CLK) Q_N  (0.219::0.219) (0.268::0.268))
+	(IOPATH (posedge CLK) Q  (0.353::0.353) (0.295::0.295))
+	(COND SCE==1'b1 (IOPATH (posedge CLK) Q_N  (0.219::0.219) (0.268::0.268)))
+	(COND SCE==1'b1 (IOPATH (posedge CLK) Q  (0.353::0.353) (0.295::0.295)))
+	(IOPATH RESET_B Q_N  (0.174::0.174) ())
+	(IOPATH RESET_B Q  () (0.251::0.251))
+	(IOPATH SET_B Q_N  () (0.093::0.093))
+	(IOPATH SET_B Q  (0.175::0.175) ())
+	)
+      )
+      (TIMINGCHECK
+	(RECREM (posedge SET_B) (posedge CLK) (0.014::0.014) (0.038::0.038))
+	(SETUPHOLD (posedge SCE) (posedge CLK) (0.126::0.126) (-0.104::-0.104))
+	(SETUPHOLD (negedge SCE) (posedge CLK) (0.151::0.151) (-0.104::-0.104))
+	(SETUPHOLD (posedge SCD) (posedge CLK) (0.153::0.153) (-0.133::-0.133))
+	(SETUPHOLD (negedge SCD) (posedge CLK) (0.189::0.189) (-0.142::-0.142))
+	(RECREM (posedge RESET_B) (posedge CLK) (0.060::0.060) (-0.040::-0.040))
+	(SETUPHOLD (posedge D) (posedge CLK) (0.133::0.133) (-0.111::-0.111))
+	(SETUPHOLD (negedge D) (posedge CLK) (0.164::0.164) (-0.117::-0.117))
+	(WIDTH (posedge CLK) (0.079::0.079))
+	(WIDTH (negedge CLK) (0.106::0.106))
+	(SETUPHOLD (posedge SET_B) (posedge RESET_B) (0.094::0.094) (-0.075::-0.075))
+	(WIDTH (negedge RESET_B) (0.123::0.123))
+	(WIDTH (negedge SET_B) (0.074::0.074))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "sg13g2_sdfbbp_1")
+    (INSTANCE  shift_reg_reg\[6\])
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge CLK) Q_N  (0.227::0.227) (0.275::0.275))
+	(IOPATH (posedge CLK) Q  (0.313::0.313) (0.259::0.259))
+	(COND SCE==1'b1 (IOPATH (posedge CLK) Q_N  (0.227::0.227) (0.275::0.275)))
+	(COND SCE==1'b1 (IOPATH (posedge CLK) Q  (0.313::0.313) (0.259::0.259)))
+	(IOPATH RESET_B Q_N  (0.182::0.182) ())
+	(IOPATH RESET_B Q  () (0.214::0.214))
+	(IOPATH SET_B Q_N  () (0.100::0.100))
+	(IOPATH SET_B Q  (0.133::0.133) ())
+	)
+      )
+      (TIMINGCHECK
+	(RECREM (posedge SET_B) (posedge CLK) (0.014::0.014) (0.038::0.038))
+	(SETUPHOLD (posedge SCE) (posedge CLK) (0.126::0.126) (-0.104::-0.104))
+	(SETUPHOLD (negedge SCE) (posedge CLK) (0.151::0.151) (-0.104::-0.104))
+	(SETUPHOLD (posedge SCD) (posedge CLK) (0.153::0.153) (-0.133::-0.133))
+	(SETUPHOLD (negedge SCD) (posedge CLK) (0.189::0.189) (-0.142::-0.142))
+	(RECREM (posedge RESET_B) (posedge CLK) (0.060::0.060) (-0.040::-0.040))
+	(SETUPHOLD (posedge D) (posedge CLK) (0.134::0.134) (-0.111::-0.111))
+	(SETUPHOLD (negedge D) (posedge CLK) (0.164::0.164) (-0.117::-0.117))
+	(WIDTH (posedge CLK) (0.079::0.079))
+	(WIDTH (negedge CLK) (0.106::0.106))
+	(SETUPHOLD (posedge SET_B) (posedge RESET_B) (0.094::0.094) (-0.075::-0.075))
+	(WIDTH (negedge RESET_B) (0.123::0.123))
+	(WIDTH (negedge SET_B) (0.074::0.074))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "sg13g2_sdfbbp_1")
+    (INSTANCE  shift_reg_reg\[5\])
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge CLK) Q_N  (0.226::0.226) (0.275::0.275))
+	(IOPATH (posedge CLK) Q  (0.311::0.311) (0.257::0.257))
+	(COND SCE==1'b1 (IOPATH (posedge CLK) Q_N  (0.226::0.226) (0.275::0.275)))
+	(COND SCE==1'b1 (IOPATH (posedge CLK) Q  (0.311::0.311) (0.257::0.257)))
+	(IOPATH RESET_B Q_N  (0.182::0.182) ())
+	(IOPATH RESET_B Q  () (0.213::0.213))
+	(IOPATH SET_B Q_N  () (0.099::0.099))
+	(IOPATH SET_B Q  (0.131::0.131) ())
+	)
+      )
+      (TIMINGCHECK
+	(RECREM (posedge SET_B) (posedge CLK) (0.014::0.014) (0.038::0.038))
+	(SETUPHOLD (posedge SCE) (posedge CLK) (0.126::0.126) (-0.104::-0.104))
+	(SETUPHOLD (negedge SCE) (posedge CLK) (0.151::0.151) (-0.104::-0.104))
+	(SETUPHOLD (posedge SCD) (posedge CLK) (0.153::0.153) (-0.133::-0.133))
+	(SETUPHOLD (negedge SCD) (posedge CLK) (0.189::0.189) (-0.142::-0.142))
+	(RECREM (posedge RESET_B) (posedge CLK) (0.060::0.060) (-0.040::-0.040))
+	(SETUPHOLD (posedge D) (posedge CLK) (0.134::0.134) (-0.111::-0.111))
+	(SETUPHOLD (negedge D) (posedge CLK) (0.164::0.164) (-0.117::-0.117))
+	(WIDTH (posedge CLK) (0.079::0.079))
+	(WIDTH (negedge CLK) (0.106::0.106))
+	(SETUPHOLD (posedge SET_B) (posedge RESET_B) (0.094::0.094) (-0.075::-0.075))
+	(WIDTH (negedge RESET_B) (0.123::0.123))
+	(WIDTH (negedge SET_B) (0.074::0.074))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "sg13g2_sdfbbp_1")
+    (INSTANCE  shift_reg_reg\[4\])
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge CLK) Q_N  (0.226::0.226) (0.275::0.275))
+	(IOPATH (posedge CLK) Q  (0.313::0.313) (0.259::0.259))
+	(COND SCE==1'b1 (IOPATH (posedge CLK) Q_N  (0.226::0.226) (0.275::0.275)))
+	(COND SCE==1'b1 (IOPATH (posedge CLK) Q  (0.313::0.313) (0.259::0.259)))
+	(IOPATH RESET_B Q_N  (0.182::0.182) ())
+	(IOPATH RESET_B Q  () (0.214::0.214))
+	(IOPATH SET_B Q_N  () (0.099::0.099))
+	(IOPATH SET_B Q  (0.133::0.133) ())
+	)
+      )
+      (TIMINGCHECK
+	(RECREM (posedge SET_B) (posedge CLK) (0.014::0.014) (0.038::0.038))
+	(SETUPHOLD (posedge SCE) (posedge CLK) (0.126::0.126) (-0.104::-0.104))
+	(SETUPHOLD (negedge SCE) (posedge CLK) (0.151::0.151) (-0.104::-0.104))
+	(SETUPHOLD (posedge SCD) (posedge CLK) (0.153::0.153) (-0.133::-0.133))
+	(SETUPHOLD (negedge SCD) (posedge CLK) (0.189::0.189) (-0.142::-0.142))
+	(RECREM (posedge RESET_B) (posedge CLK) (0.060::0.060) (-0.040::-0.040))
+	(SETUPHOLD (posedge D) (posedge CLK) (0.134::0.134) (-0.111::-0.111))
+	(SETUPHOLD (negedge D) (posedge CLK) (0.164::0.164) (-0.117::-0.117))
+	(WIDTH (posedge CLK) (0.079::0.079))
+	(WIDTH (negedge CLK) (0.106::0.106))
+	(SETUPHOLD (posedge SET_B) (posedge RESET_B) (0.094::0.094) (-0.075::-0.075))
+	(WIDTH (negedge RESET_B) (0.123::0.123))
+	(WIDTH (negedge SET_B) (0.074::0.074))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "sg13g2_sdfbbp_1")
+    (INSTANCE  shift_reg_reg\[3\])
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge CLK) Q_N  (0.226::0.226) (0.275::0.275))
+	(IOPATH (posedge CLK) Q  (0.312::0.312) (0.258::0.258))
+	(COND SCE==1'b1 (IOPATH (posedge CLK) Q_N  (0.226::0.226) (0.275::0.275)))
+	(COND SCE==1'b1 (IOPATH (posedge CLK) Q  (0.312::0.312) (0.258::0.258)))
+	(IOPATH RESET_B Q_N  (0.182::0.182) ())
+	(IOPATH RESET_B Q  () (0.213::0.213))
+	(IOPATH SET_B Q_N  () (0.099::0.099))
+	(IOPATH SET_B Q  (0.132::0.132) ())
+	)
+      )
+      (TIMINGCHECK
+	(RECREM (posedge SET_B) (posedge CLK) (0.014::0.014) (0.038::0.038))
+	(SETUPHOLD (posedge SCE) (posedge CLK) (0.126::0.126) (-0.104::-0.104))
+	(SETUPHOLD (negedge SCE) (posedge CLK) (0.151::0.151) (-0.104::-0.104))
+	(SETUPHOLD (posedge SCD) (posedge CLK) (0.154::0.154) (-0.134::-0.134))
+	(SETUPHOLD (negedge SCD) (posedge CLK) (0.190::0.190) (-0.143::-0.143))
+	(RECREM (posedge RESET_B) (posedge CLK) (0.060::0.060) (-0.040::-0.040))
+	(SETUPHOLD (posedge D) (posedge CLK) (0.128::0.128) (-0.106::-0.106))
+	(SETUPHOLD (negedge D) (posedge CLK) (0.160::0.160) (-0.113::-0.113))
+	(WIDTH (posedge CLK) (0.079::0.079))
+	(WIDTH (negedge CLK) (0.106::0.106))
+	(SETUPHOLD (posedge SET_B) (posedge RESET_B) (0.094::0.094) (-0.075::-0.075))
+	(WIDTH (negedge RESET_B) (0.123::0.123))
+	(WIDTH (negedge SET_B) (0.074::0.074))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "sg13g2_sdfbbp_1")
+    (INSTANCE  shift_reg_reg\[2\])
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge CLK) Q_N  (0.247::0.247) (0.297::0.297))
+	(IOPATH (posedge CLK) Q  (0.314::0.314) (0.260::0.260))
+	(COND SCE==1'b1 (IOPATH (posedge CLK) Q_N  (0.247::0.247) (0.297::0.297)))
+	(COND SCE==1'b1 (IOPATH (posedge CLK) Q  (0.314::0.314) (0.260::0.260)))
+	(IOPATH RESET_B Q_N  (0.204::0.204) ())
+	(IOPATH RESET_B Q  () (0.215::0.215))
+	(IOPATH SET_B Q_N  () (0.118::0.118))
+	(IOPATH SET_B Q  (0.134::0.134) ())
+	)
+      )
+      (TIMINGCHECK
+	(RECREM (posedge SET_B) (posedge CLK) (0.014::0.014) (0.038::0.038))
+	(SETUPHOLD (posedge SCE) (posedge CLK) (0.126::0.126) (-0.104::-0.104))
+	(SETUPHOLD (negedge SCE) (posedge CLK) (0.151::0.151) (-0.104::-0.104))
+	(SETUPHOLD (posedge SCD) (posedge CLK) (0.155::0.155) (-0.135::-0.135))
+	(SETUPHOLD (negedge SCD) (posedge CLK) (0.190::0.190) (-0.144::-0.144))
+	(RECREM (posedge RESET_B) (posedge CLK) (0.060::0.060) (-0.040::-0.040))
+	(SETUPHOLD (posedge D) (posedge CLK) (0.129::0.129) (-0.107::-0.107))
+	(SETUPHOLD (negedge D) (posedge CLK) (0.161::0.161) (-0.114::-0.114))
+	(WIDTH (posedge CLK) (0.079::0.079))
+	(WIDTH (negedge CLK) (0.106::0.106))
+	(SETUPHOLD (posedge SET_B) (posedge RESET_B) (0.094::0.094) (-0.075::-0.075))
+	(WIDTH (negedge RESET_B) (0.123::0.123))
+	(WIDTH (negedge SET_B) (0.074::0.074))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "sg13g2_sdfbbp_1")
+    (INSTANCE  shift_reg_reg\[1\])
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge CLK) Q_N  (0.256::0.256) (0.306::0.306))
+	(IOPATH (posedge CLK) Q  (0.317::0.317) (0.263::0.263))
+	(COND SCE==1'b1 (IOPATH (posedge CLK) Q_N  (0.256::0.256) (0.306::0.306)))
+	(COND SCE==1'b1 (IOPATH (posedge CLK) Q  (0.317::0.317) (0.263::0.263)))
+	(IOPATH RESET_B Q_N  (0.212::0.212) ())
+	(IOPATH RESET_B Q  () (0.218::0.218))
+	(IOPATH SET_B Q_N  () (0.126::0.126))
+	(IOPATH SET_B Q  (0.137::0.137) ())
+	)
+      )
+      (TIMINGCHECK
+	(RECREM (posedge SET_B) (posedge CLK) (0.014::0.014) (0.038::0.038))
+	(SETUPHOLD (posedge SCE) (posedge CLK) (0.126::0.126) (-0.104::-0.104))
+	(SETUPHOLD (negedge SCE) (posedge CLK) (0.151::0.151) (-0.104::-0.104))
+	(SETUPHOLD (posedge SCD) (posedge CLK) (0.151::0.151) (-0.131::-0.131))
+	(SETUPHOLD (negedge SCD) (posedge CLK) (0.187::0.187) (-0.141::-0.141))
+	(RECREM (posedge RESET_B) (posedge CLK) (0.060::0.060) (-0.040::-0.040))
+	(SETUPHOLD (posedge D) (posedge CLK) (0.133::0.133) (-0.110::-0.110))
+	(SETUPHOLD (negedge D) (posedge CLK) (0.163::0.163) (-0.116::-0.116))
+	(WIDTH (posedge CLK) (0.079::0.079))
+	(WIDTH (negedge CLK) (0.106::0.106))
+	(SETUPHOLD (posedge SET_B) (posedge RESET_B) (0.094::0.094) (-0.075::-0.075))
+	(WIDTH (negedge RESET_B) (0.123::0.123))
+	(WIDTH (negedge SET_B) (0.074::0.074))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "sg13g2_sdfbbp_1")
+    (INSTANCE  shift_reg_reg\[0\])
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge CLK) Q_N  (0.229::0.229) (0.278::0.278))
+	(IOPATH (posedge CLK) Q  (0.306::0.306) (0.252::0.252))
+	(COND SCE==1'b1 (IOPATH (posedge CLK) Q_N  (0.229::0.229) (0.278::0.278)))
+	(COND SCE==1'b1 (IOPATH (posedge CLK) Q  (0.306::0.306) (0.252::0.252)))
+	(IOPATH RESET_B Q_N  (0.185::0.185) ())
+	(IOPATH RESET_B Q  () (0.208::0.208))
+	(IOPATH SET_B Q_N  () (0.102::0.102))
+	(IOPATH SET_B Q  (0.126::0.126) ())
+	)
+      )
+      (TIMINGCHECK
+	(RECREM (posedge SET_B) (posedge CLK) (0.014::0.014) (0.038::0.038))
+	(SETUPHOLD (posedge SCE) (posedge CLK) (0.126::0.126) (-0.104::-0.104))
+	(SETUPHOLD (negedge SCE) (posedge CLK) (0.151::0.151) (-0.104::-0.104))
+	(SETUPHOLD (posedge SCD) (posedge CLK) (0.144::0.144) (-0.124::-0.124))
+	(SETUPHOLD (negedge SCD) (posedge CLK) (0.183::0.183) (-0.136::-0.136))
+	(RECREM (posedge RESET_B) (posedge CLK) (0.060::0.060) (-0.040::-0.040))
+	(SETUPHOLD (posedge D) (posedge CLK) (0.117::0.117) (-0.095::-0.095))
+	(SETUPHOLD (negedge D) (posedge CLK) (0.150::0.150) (-0.104::-0.104))
+	(WIDTH (posedge CLK) (0.079::0.079))
+	(WIDTH (negedge CLK) (0.106::0.106))
+	(SETUPHOLD (posedge SET_B) (posedge RESET_B) (0.094::0.094) (-0.075::-0.075))
+	(WIDTH (negedge RESET_B) (0.123::0.123))
+	(WIDTH (negedge SET_B) (0.074::0.074))
+      )
+  )
+)

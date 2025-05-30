@@ -5,7 +5,7 @@
 -XLMODE
 ./xcelium.d/run.lnx8664.24.03.d
 -RUNMODE
-SIPO_gate-level_tb.v
+SIPO_tb.v
 -CDSLIB
 ./xcelium.d/run.lnx8664.24.03.d/cdsrun.lib
 -HDLVAR

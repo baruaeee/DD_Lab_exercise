@@ -1,0 +1,28 @@
+
+Usage: check_design [-help] [-out_file <string>] {[-type {library netlist power_intent timing hierarchical pin_assign budget assign_statements place opt cts route signoff all}] [-no_check ]} [-type {library netlist power_intent timing hierarchical pin_assign budget assign_statements place opt cts route signoff all} ]
+
+**ERROR: (IMPTCM-48):	"-all" is not a legal option for command "check_design". Either the current option or an option prior to it is not specified correctly.
+tempus 15> 
+tempus 15> 
+tempus 15> 
+tempus 15> 
+tempus 15> 
+tempus 15> **INFO (INTERRUPT): One more Ctrl-C to exit Tempus Timing Solution ...
+
+tempus 15> 
+tempus 15> 
+tempus 15> **INFO (INTERRUPT): The current command will stop at next legal exit point.
+**INFO: CTRL-C Encountered. Timing report is not reliable.
+--------------------------------------------------------------------------------
+|NumPaths=0,Time=1831 microseconds                                             |
+--------------------------------------------------------------------------------
+Parsing file top.btarpt...
+**WARN: (IMPGTD-801):	File (top.btarpt) does not contain any timing paths.
+This could be because the report is not of the correct format,
+or because it does not contain any paths (because there are no
+failing paths in the design, for instance).
+**ERROR: (IMPGTD-223):	load_timing_debug_report top.btarpt failed.
+**ERROR: (IMPQTF-4003):	Form 'tdgReport' does not exist.
+tempus 15> 
+tempus 15> 
+*** INTERRUPTED *** [signal 1]

@@ -1,0 +1,36 @@
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Cadence(R) Modus(TM) DFT Software Solution, Version 23.11-s014_1, built Mar 14 2024 (linux26_64) 
+// This file was created on..............May 29, 2025 at 04:16:07
+// The date time stamp for the TBDbin file TBDbin.FULLSCAN.serial_to_parallel_atpg;  20250529021605 
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//   Total    Relative   Relative     Test      CPP       Pattern                    Event                                          Cycle    Scan      Relative   Measure
+//   Cycle    Cycle      Simulation   Sequence  Test      Odometer                   Type                                           Offset   Length    Scan       Event  
+//   Count    Count      Time (ns)    Number    Number                                                                                                 Number            
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// The vector file output name:  VER.FULLSCAN.serial_to_parallel_atpg.data.scan.ex1.ts1.verilog
+         3         3          160         1         2    1.1.1.2.1.1                Scan_Load - Shift                                   0        8         1        N 
+        10        10          800         1         2    1.1.1.2.1.1                end_of_Scan_Load                                    7        0         1        N 
+        12        12          880         1         2    1.1.1.2.1.2                Scan_Unload - Shift                                 0        8         2        N 
+        19        19         1520         1         2    1.1.1.2.1.2                end_of_Scan_Unload                                  7        0         2        Y 
+// The vector file output name:  VER.FULLSCAN.serial_to_parallel_atpg.data.logic.ex1.ts2.verilog
+        23         3          160         2         4    1.2.1.2.1.1                Scan_Load - Shift                                   0        8         1        N 
+        30        10          800         2         4    1.2.1.2.1.1                end_of_Scan_Load                                    7        0         1        N 
+        34        14         1040         2         4    1.2.1.2.1.4                Scan_Unload - Shift                                 0        8         2        N 
+        41        21         1680         2         4    1.2.1.2.1.4                end_of_Scan_Unload                                  7        0         2        Y 
+        43        23         1760         3         5    1.2.1.3.1.1                Scan_Load - Shift                                   0        8         3        N 
+        50        30         2400         3         5    1.2.1.3.1.1                end_of_Scan_Load                                    7        0         3        N 
+        53        33         2560         3         5    1.2.1.3.1.4                Measure_PO                                          0        1         3        Y 
+        55        35         2720         3         5    1.2.1.3.1.5                Scan_Unload - Shift                                 0        8         4        N 
+        62        42         3360         3         5    1.2.1.3.1.5                end_of_Scan_Unload                                  7        0         4        Y 
+        64        44         3440         4         6    1.2.1.3.2.1                Scan_Load - Shift                                   0        8         5        N 
+        71        51         4080         4         6    1.2.1.3.2.1                end_of_Scan_Load                                    7        0         5        N 
+        74        54         4240         4         6    1.2.1.3.2.4                Measure_PO                                          0        1         5        Y 
+        76        56         4400         4         6    1.2.1.3.2.5                Scan_Unload - Shift                                 0        8         6        N 
+        83        63         5040         4         6    1.2.1.3.2.5                end_of_Scan_Unload                                  7        0         6        Y 
+        85        65         5120         5         7    1.2.1.3.3.1                Scan_Load - Shift                                   0        8         7        N 
+        92        72         5760         5         7    1.2.1.3.3.1                end_of_Scan_Load                                    7        0         7        N 
+        95        75         5920         5         7    1.2.1.3.3.4                Measure_PO                                          0        1         7        Y 
+        97        77         6080         5         7    1.2.1.3.3.5                Scan_Unload - Shift                                 0        8         8        N 
+       104        84         6720         5         7    1.2.1.3.3.5                end_of_Scan_Unload                                  7        0         8        Y 

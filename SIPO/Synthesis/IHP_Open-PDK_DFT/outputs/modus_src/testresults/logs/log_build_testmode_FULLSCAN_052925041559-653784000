@@ -1,0 +1,128 @@
+Starting Command: build_testmode 
+
+INFO (TDA-005): Command Line Invocation: 
+            build_testmode -modedef FULLSCAN -assignfile /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/serial_to_parallel.FULLSCAN.pinassign -testmode FULLSCAN -workdir /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src -stdout summary  [end TDA_005]
+
+INFO (TDA-014): Cadence(R) Modus(TM) DFT Software Solution, Version 23.11-s014_1, built Mar 14 2024 (linux26_64) [end TDA_014]
+
+INFO (TDA-015): Log File: /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/testresults/logs/log_build_testmode_FULLSCAN_052925041559-653784000 [end TDA_015]
+
+INFO (TDA-007): Job Information:
+            Date Started: Thursday May 29 04:15:59 2025  CEST
+            Host machine is ei-vm-018.othr.de, x86_64 running Linux 4.18.0-553.44.1.el8_10.x86_64.
+            This job is process number 1938546.
+[end TDA_007]
+
+INFO (TDA-009): Options/Values information.
+            (options marked with '*' have program generated values,
+             options marked with '+' were specified to default.)
+
+            -WORKDIR /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src
+            -TESTMODE FULLSCAN
+
+            -ASSIGNFILE /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/serial_to_parallel.FULLSCAN.pinassign
+          * update_assign_file=
+            -LOGFILE /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/testresults/logs/log_build_testmode_FULLSCAN_052925041559-653784000
+            -MODEDEF FULLSCAN
+            -STDOUT summary
+[end TDA_009]
+MODEDEFPATH set to:  /eda/cadence/2024-25/RHELx86/MODUS_23.11.000/tools.lnx86/tb/defaults/rules/modedef 
+TDRPATH set to: /eda/cadence/2024-25/RHELx86/MODUS_23.11.000/tools.lnx86/tb/defaults/rules/tdr 
+
+Modus Build Test Mode(s) beginning...
+
+   TDR NAME      =  dummy.tdr 
+
+   SCAN_TYPE     =  GSD 
+   BOUNDARY      =  NONE 
+   IN            =  PI 
+   OUT           =  PO 
+
+INFO (TFW-117): Modus checked out a modus_atpg license.  [end TFW_117] 
+INFO (TTM-391): A default modeinit sequence will be generated.   [end TTM_391] 
+INFO (TTM-387): A default scanop sequence will be generated.   [end TTM_387] 
+INFO (THM-814): Testmode contains 95.79% active logic,  4.21% inactive logic and  0.00% constraint logic.   [end THM_814] 
+WARNING (TTM-347): There is less than 96 percent active logic in this test mode.  Global fault
+           coverage is impacted when too little of the logic is visible.   [end TTM_347] 
+INFO (TTM-357): There are 1 scan chains which are controllable and observable.   [end TTM_357] 
+INFO (TFW-119): Modus checked in a modus_atpg license.  [end TFW_119] 
+
+There are no PPIs for Test Mode:  FULLSCAN
+
+Information for Test Mode:  FULLSCAN
+-------------------------
+
+         Scan Type = GSD
+
+
+ Latch Summary for Test Mode:  FULLSCAN
+ Latch Type                #Active   #Inactive       Total
+ ---------------------   ---------   ---------   ---------
+ Test Constraint (TC)            0           0           0 
+ Scan Enable     (SE)            0           0           0 
+ Fixed Value     (FV)            0           0           0 
+ Floating                        0           0           0 
+ Finite State    (FSM)           0           0           0 
+
+WARNING (TTM-809): Test mode FULLSCAN has been created, WARNINGs have been generated -
+           see preceding message(s) for details. [end TTM_809] 
+
+Test Function Pin Information for Test Mode:  FULLSCAN
+-------------------------------------------
+
+          2  SC    (System  Clock)             Pins
+          0  PC    (P Shift Clock)             Pins
+          1  EC    (E Shift Clock)             Pins
+
+          0  OSC   (Oscillator)                Pins
+
+          0  TI    (Test Inhibit)              Pins
+          1  SE    (Scan Enable)               Pins
+          0  CI    (Clock Isolation)           Pins
+          0  OI    (Output Inhibit)            Pins
+
+          1  SI    (Scan Input)                Pins
+          1  SO    (Scan Output)               Pins
+
+  Pin Index    Type Test Function                         Pin Name / Net Name
+  ---------    ---- ----------------------------------    -------------------
+          1      PI  +SC                                  rst_n / rst_n
+          0      PI  -EC  -SC                             clk / clk
+          2      PI  +SE                                  scan_en / scan_en
+          3      PI   SI                                  scan_in / scan_in
+         13      PO   SO                                  scan_out / scan_out
+
+
+
+Modus Build Test Mode(s) completed. Highest severity is (WARNING).
+
+               Total Memory =           11,637,664  bytes
+
+            Cumulative Time in hours:minutes:seconds:
+                   CPU Time =   0:00:00.12
+               Elapsed Time =   0:00:00.22
+
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TFW-117): Modus checked out a modus_atpg license.   
+      1 INFO (TFW-119): Modus checked in a modus_atpg license.   
+      1 INFO (THM-814): Testmode contains 95.79% active logic,  4.21% inactive logic and  0.00% constraint logic.    
+      1 INFO (TTM-357): There are 1 scan chains which are controllable and observable.    
+      1 INFO (TTM-387): A default scanop sequence will be generated.    
+      1 INFO (TTM-391): A default modeinit sequence will be generated.    
+
+  WARNING Messages...
+      1 WARNING (TTM-347): There is less than 96 percent active logic in this test mode.  Global fault
+      1 WARNING (TTM-809): Test mode FULLSCAN has been created, WARNINGs have been generated -
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------
