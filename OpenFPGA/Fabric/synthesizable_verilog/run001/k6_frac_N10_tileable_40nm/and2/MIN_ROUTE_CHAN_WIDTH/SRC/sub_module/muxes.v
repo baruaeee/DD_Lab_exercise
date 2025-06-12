@@ -3,10 +3,10 @@
 //	Description: Multiplexers
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Thu Jun 12 23:20:13 2025
+//	Date: Fri Jun 13 01:13:00 2025
 //-------------------------------------------
 //----- Default net type -----
-// `default_nettype none
+`default_nettype none
 
 // ----- Verilog module for mux_tree_tapbuf_size4 -----
 module mux_tree_tapbuf_size4(in,
@@ -69,26 +69,26 @@ wire [0:0] sg13g2_mux2_1_3_X;
 		.Y(out));
 
 	sg13g2_mux2_1 mux_l1_in_0_ (
-		.A0(sg13g2_inv_1_0_Y),
-		.A1(sg13g2_inv_1_1_Y),
+		.A1(sg13g2_inv_1_0_Y),
+		.A0(sg13g2_inv_1_1_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_0_X));
 
 	sg13g2_mux2_1 mux_l2_in_0_ (
-		.A0(sg13g2_mux2_1_0_X),
-		.A1(sg13g2_inv_1_2_Y),
+		.A1(sg13g2_mux2_1_0_X),
+		.A0(sg13g2_inv_1_2_Y),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_1_X));
 
 	sg13g2_mux2_1 mux_l2_in_1_ (
-		.A0(sg13g2_inv_1_3_Y),
-		.A1(const1_0_const1),
+		.A1(sg13g2_inv_1_3_Y),
+		.A0(const1_0_const1),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_2_X));
 
 	sg13g2_mux2_1 mux_l3_in_0_ (
-		.A0(sg13g2_mux2_1_1_X),
-		.A1(sg13g2_mux2_1_2_X),
+		.A1(sg13g2_mux2_1_1_X),
+		.A0(sg13g2_mux2_1_2_X),
 		.S(sram[2]),
 		.X(sg13g2_mux2_1_3_X));
 
@@ -96,13 +96,13 @@ endmodule
 // ----- END Verilog module for mux_tree_tapbuf_size4 -----
 
 //----- Default net type -----
-// `default_nettype wire
+`default_nettype wire
 
 
 
 
 //----- Default net type -----
-// `default_nettype none
+`default_nettype none
 
 // ----- Verilog module for mux_tree_tapbuf_size2 -----
 module mux_tree_tapbuf_size2(in,
@@ -153,14 +153,14 @@ wire [0:0] sg13g2_mux2_1_1_X;
 		.Y(out));
 
 	sg13g2_mux2_1 mux_l1_in_0_ (
-		.A0(sg13g2_inv_1_0_Y),
-		.A1(sg13g2_inv_1_1_Y),
+		.A1(sg13g2_inv_1_0_Y),
+		.A0(sg13g2_inv_1_1_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_0_X));
 
 	sg13g2_mux2_1 mux_l2_in_0_ (
-		.A0(sg13g2_mux2_1_0_X),
-		.A1(const1_0_const1),
+		.A1(sg13g2_mux2_1_0_X),
+		.A0(const1_0_const1),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_1_X));
 
@@ -168,13 +168,13 @@ endmodule
 // ----- END Verilog module for mux_tree_tapbuf_size2 -----
 
 //----- Default net type -----
-// `default_nettype wire
+`default_nettype wire
 
 
 
 
 //----- Default net type -----
-// `default_nettype none
+`default_nettype none
 
 // ----- Verilog module for mux_tree_tapbuf_size3 -----
 module mux_tree_tapbuf_size3(in,
@@ -231,20 +231,20 @@ wire [0:0] sg13g2_mux2_1_2_X;
 		.Y(out));
 
 	sg13g2_mux2_1 mux_l1_in_0_ (
-		.A0(sg13g2_inv_1_0_Y),
-		.A1(sg13g2_inv_1_1_Y),
+		.A1(sg13g2_inv_1_0_Y),
+		.A0(sg13g2_inv_1_1_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_0_X));
 
 	sg13g2_mux2_1 mux_l1_in_1_ (
-		.A0(sg13g2_inv_1_2_Y),
-		.A1(const1_0_const1),
+		.A1(sg13g2_inv_1_2_Y),
+		.A0(const1_0_const1),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_1_X));
 
 	sg13g2_mux2_1 mux_l2_in_0_ (
-		.A0(sg13g2_mux2_1_0_X),
-		.A1(sg13g2_mux2_1_1_X),
+		.A1(sg13g2_mux2_1_0_X),
+		.A0(sg13g2_mux2_1_1_X),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_2_X));
 
@@ -252,13 +252,13 @@ endmodule
 // ----- END Verilog module for mux_tree_tapbuf_size3 -----
 
 //----- Default net type -----
-// `default_nettype wire
+`default_nettype wire
 
 
 
 
 //----- Default net type -----
-// `default_nettype none
+`default_nettype none
 
 // ----- Verilog module for mux_tree_size60 -----
 module mux_tree_size60(in,
@@ -657,362 +657,362 @@ wire [0:0] sg13g2_mux2_1_9_X;
 		.const1(const1_0_const1));
 
 	sg13g2_mux2_1 mux_l1_in_0_ (
-		.A0(sg13g2_inv_1_0_Y),
-		.A1(sg13g2_inv_1_1_Y),
+		.A1(sg13g2_inv_1_0_Y),
+		.A0(sg13g2_inv_1_1_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_0_X));
 
 	sg13g2_mux2_1 mux_l1_in_1_ (
-		.A0(sg13g2_inv_1_2_Y),
-		.A1(sg13g2_inv_1_3_Y),
+		.A1(sg13g2_inv_1_2_Y),
+		.A0(sg13g2_inv_1_3_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_1_X));
 
 	sg13g2_mux2_1 mux_l1_in_2_ (
-		.A0(sg13g2_inv_1_4_Y),
-		.A1(sg13g2_inv_1_5_Y),
+		.A1(sg13g2_inv_1_4_Y),
+		.A0(sg13g2_inv_1_5_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_2_X));
 
 	sg13g2_mux2_1 mux_l1_in_3_ (
-		.A0(sg13g2_inv_1_6_Y),
-		.A1(sg13g2_inv_1_7_Y),
+		.A1(sg13g2_inv_1_6_Y),
+		.A0(sg13g2_inv_1_7_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_3_X));
 
 	sg13g2_mux2_1 mux_l1_in_4_ (
-		.A0(sg13g2_inv_1_8_Y),
-		.A1(sg13g2_inv_1_9_Y),
+		.A1(sg13g2_inv_1_8_Y),
+		.A0(sg13g2_inv_1_9_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_4_X));
 
 	sg13g2_mux2_1 mux_l1_in_5_ (
-		.A0(sg13g2_inv_1_10_Y),
-		.A1(sg13g2_inv_1_11_Y),
+		.A1(sg13g2_inv_1_10_Y),
+		.A0(sg13g2_inv_1_11_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_5_X));
 
 	sg13g2_mux2_1 mux_l1_in_6_ (
-		.A0(sg13g2_inv_1_12_Y),
-		.A1(sg13g2_inv_1_13_Y),
+		.A1(sg13g2_inv_1_12_Y),
+		.A0(sg13g2_inv_1_13_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_6_X));
 
 	sg13g2_mux2_1 mux_l1_in_7_ (
-		.A0(sg13g2_inv_1_14_Y),
-		.A1(sg13g2_inv_1_15_Y),
+		.A1(sg13g2_inv_1_14_Y),
+		.A0(sg13g2_inv_1_15_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_7_X));
 
 	sg13g2_mux2_1 mux_l1_in_8_ (
-		.A0(sg13g2_inv_1_16_Y),
-		.A1(sg13g2_inv_1_17_Y),
+		.A1(sg13g2_inv_1_16_Y),
+		.A0(sg13g2_inv_1_17_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_8_X));
 
 	sg13g2_mux2_1 mux_l1_in_9_ (
-		.A0(sg13g2_inv_1_18_Y),
-		.A1(sg13g2_inv_1_19_Y),
+		.A1(sg13g2_inv_1_18_Y),
+		.A0(sg13g2_inv_1_19_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_9_X));
 
 	sg13g2_mux2_1 mux_l1_in_10_ (
-		.A0(sg13g2_inv_1_20_Y),
-		.A1(sg13g2_inv_1_21_Y),
+		.A1(sg13g2_inv_1_20_Y),
+		.A0(sg13g2_inv_1_21_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_10_X));
 
 	sg13g2_mux2_1 mux_l1_in_11_ (
-		.A0(sg13g2_inv_1_22_Y),
-		.A1(sg13g2_inv_1_23_Y),
+		.A1(sg13g2_inv_1_22_Y),
+		.A0(sg13g2_inv_1_23_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_11_X));
 
 	sg13g2_mux2_1 mux_l1_in_12_ (
-		.A0(sg13g2_inv_1_24_Y),
-		.A1(sg13g2_inv_1_25_Y),
+		.A1(sg13g2_inv_1_24_Y),
+		.A0(sg13g2_inv_1_25_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_12_X));
 
 	sg13g2_mux2_1 mux_l1_in_13_ (
-		.A0(sg13g2_inv_1_26_Y),
-		.A1(sg13g2_inv_1_27_Y),
+		.A1(sg13g2_inv_1_26_Y),
+		.A0(sg13g2_inv_1_27_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_13_X));
 
 	sg13g2_mux2_1 mux_l1_in_14_ (
-		.A0(sg13g2_inv_1_28_Y),
-		.A1(sg13g2_inv_1_29_Y),
+		.A1(sg13g2_inv_1_28_Y),
+		.A0(sg13g2_inv_1_29_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_14_X));
 
 	sg13g2_mux2_1 mux_l1_in_15_ (
-		.A0(sg13g2_inv_1_30_Y),
-		.A1(sg13g2_inv_1_31_Y),
+		.A1(sg13g2_inv_1_30_Y),
+		.A0(sg13g2_inv_1_31_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_15_X));
 
 	sg13g2_mux2_1 mux_l1_in_16_ (
-		.A0(sg13g2_inv_1_32_Y),
-		.A1(sg13g2_inv_1_33_Y),
+		.A1(sg13g2_inv_1_32_Y),
+		.A0(sg13g2_inv_1_33_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_16_X));
 
 	sg13g2_mux2_1 mux_l1_in_17_ (
-		.A0(sg13g2_inv_1_34_Y),
-		.A1(sg13g2_inv_1_35_Y),
+		.A1(sg13g2_inv_1_34_Y),
+		.A0(sg13g2_inv_1_35_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_17_X));
 
 	sg13g2_mux2_1 mux_l1_in_18_ (
-		.A0(sg13g2_inv_1_36_Y),
-		.A1(sg13g2_inv_1_37_Y),
+		.A1(sg13g2_inv_1_36_Y),
+		.A0(sg13g2_inv_1_37_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_18_X));
 
 	sg13g2_mux2_1 mux_l1_in_19_ (
-		.A0(sg13g2_inv_1_38_Y),
-		.A1(sg13g2_inv_1_39_Y),
+		.A1(sg13g2_inv_1_38_Y),
+		.A0(sg13g2_inv_1_39_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_19_X));
 
 	sg13g2_mux2_1 mux_l1_in_20_ (
-		.A0(sg13g2_inv_1_40_Y),
-		.A1(sg13g2_inv_1_41_Y),
+		.A1(sg13g2_inv_1_40_Y),
+		.A0(sg13g2_inv_1_41_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_20_X));
 
 	sg13g2_mux2_1 mux_l1_in_21_ (
-		.A0(sg13g2_inv_1_42_Y),
-		.A1(sg13g2_inv_1_43_Y),
+		.A1(sg13g2_inv_1_42_Y),
+		.A0(sg13g2_inv_1_43_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_21_X));
 
 	sg13g2_mux2_1 mux_l1_in_22_ (
-		.A0(sg13g2_inv_1_44_Y),
-		.A1(sg13g2_inv_1_45_Y),
+		.A1(sg13g2_inv_1_44_Y),
+		.A0(sg13g2_inv_1_45_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_22_X));
 
 	sg13g2_mux2_1 mux_l1_in_23_ (
-		.A0(sg13g2_inv_1_46_Y),
-		.A1(sg13g2_inv_1_47_Y),
+		.A1(sg13g2_inv_1_46_Y),
+		.A0(sg13g2_inv_1_47_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_23_X));
 
 	sg13g2_mux2_1 mux_l1_in_24_ (
-		.A0(sg13g2_inv_1_48_Y),
-		.A1(sg13g2_inv_1_49_Y),
+		.A1(sg13g2_inv_1_48_Y),
+		.A0(sg13g2_inv_1_49_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_24_X));
 
 	sg13g2_mux2_1 mux_l1_in_25_ (
-		.A0(sg13g2_inv_1_50_Y),
-		.A1(sg13g2_inv_1_51_Y),
+		.A1(sg13g2_inv_1_50_Y),
+		.A0(sg13g2_inv_1_51_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_25_X));
 
 	sg13g2_mux2_1 mux_l1_in_26_ (
-		.A0(sg13g2_inv_1_52_Y),
-		.A1(sg13g2_inv_1_53_Y),
+		.A1(sg13g2_inv_1_52_Y),
+		.A0(sg13g2_inv_1_53_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_26_X));
 
 	sg13g2_mux2_1 mux_l1_in_27_ (
-		.A0(sg13g2_inv_1_54_Y),
-		.A1(sg13g2_inv_1_55_Y),
+		.A1(sg13g2_inv_1_54_Y),
+		.A0(sg13g2_inv_1_55_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_27_X));
 
 	sg13g2_mux2_1 mux_l1_in_28_ (
-		.A0(sg13g2_inv_1_56_Y),
-		.A1(sg13g2_inv_1_57_Y),
+		.A1(sg13g2_inv_1_56_Y),
+		.A0(sg13g2_inv_1_57_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_28_X));
 
 	sg13g2_mux2_1 mux_l2_in_0_ (
-		.A0(sg13g2_mux2_1_0_X),
-		.A1(sg13g2_mux2_1_1_X),
+		.A1(sg13g2_mux2_1_0_X),
+		.A0(sg13g2_mux2_1_1_X),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_29_X));
 
 	sg13g2_mux2_1 mux_l2_in_1_ (
-		.A0(sg13g2_mux2_1_2_X),
-		.A1(sg13g2_mux2_1_3_X),
+		.A1(sg13g2_mux2_1_2_X),
+		.A0(sg13g2_mux2_1_3_X),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_30_X));
 
 	sg13g2_mux2_1 mux_l2_in_2_ (
-		.A0(sg13g2_mux2_1_4_X),
-		.A1(sg13g2_mux2_1_5_X),
+		.A1(sg13g2_mux2_1_4_X),
+		.A0(sg13g2_mux2_1_5_X),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_31_X));
 
 	sg13g2_mux2_1 mux_l2_in_3_ (
-		.A0(sg13g2_mux2_1_6_X),
-		.A1(sg13g2_mux2_1_7_X),
+		.A1(sg13g2_mux2_1_6_X),
+		.A0(sg13g2_mux2_1_7_X),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_32_X));
 
 	sg13g2_mux2_1 mux_l2_in_4_ (
-		.A0(sg13g2_mux2_1_8_X),
-		.A1(sg13g2_mux2_1_9_X),
+		.A1(sg13g2_mux2_1_8_X),
+		.A0(sg13g2_mux2_1_9_X),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_33_X));
 
 	sg13g2_mux2_1 mux_l2_in_5_ (
-		.A0(sg13g2_mux2_1_10_X),
-		.A1(sg13g2_mux2_1_11_X),
+		.A1(sg13g2_mux2_1_10_X),
+		.A0(sg13g2_mux2_1_11_X),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_34_X));
 
 	sg13g2_mux2_1 mux_l2_in_6_ (
-		.A0(sg13g2_mux2_1_12_X),
-		.A1(sg13g2_mux2_1_13_X),
+		.A1(sg13g2_mux2_1_12_X),
+		.A0(sg13g2_mux2_1_13_X),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_35_X));
 
 	sg13g2_mux2_1 mux_l2_in_7_ (
-		.A0(sg13g2_mux2_1_14_X),
-		.A1(sg13g2_mux2_1_15_X),
+		.A1(sg13g2_mux2_1_14_X),
+		.A0(sg13g2_mux2_1_15_X),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_36_X));
 
 	sg13g2_mux2_1 mux_l2_in_8_ (
-		.A0(sg13g2_mux2_1_16_X),
-		.A1(sg13g2_mux2_1_17_X),
+		.A1(sg13g2_mux2_1_16_X),
+		.A0(sg13g2_mux2_1_17_X),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_37_X));
 
 	sg13g2_mux2_1 mux_l2_in_9_ (
-		.A0(sg13g2_mux2_1_18_X),
-		.A1(sg13g2_mux2_1_19_X),
+		.A1(sg13g2_mux2_1_18_X),
+		.A0(sg13g2_mux2_1_19_X),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_38_X));
 
 	sg13g2_mux2_1 mux_l2_in_10_ (
-		.A0(sg13g2_mux2_1_20_X),
-		.A1(sg13g2_mux2_1_21_X),
+		.A1(sg13g2_mux2_1_20_X),
+		.A0(sg13g2_mux2_1_21_X),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_39_X));
 
 	sg13g2_mux2_1 mux_l2_in_11_ (
-		.A0(sg13g2_mux2_1_22_X),
-		.A1(sg13g2_mux2_1_23_X),
+		.A1(sg13g2_mux2_1_22_X),
+		.A0(sg13g2_mux2_1_23_X),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_40_X));
 
 	sg13g2_mux2_1 mux_l2_in_12_ (
-		.A0(sg13g2_mux2_1_24_X),
-		.A1(sg13g2_mux2_1_25_X),
+		.A1(sg13g2_mux2_1_24_X),
+		.A0(sg13g2_mux2_1_25_X),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_41_X));
 
 	sg13g2_mux2_1 mux_l2_in_13_ (
-		.A0(sg13g2_mux2_1_26_X),
-		.A1(sg13g2_mux2_1_27_X),
+		.A1(sg13g2_mux2_1_26_X),
+		.A0(sg13g2_mux2_1_27_X),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_42_X));
 
 	sg13g2_mux2_1 mux_l2_in_14_ (
-		.A0(sg13g2_mux2_1_28_X),
-		.A1(sg13g2_inv_1_58_Y),
+		.A1(sg13g2_mux2_1_28_X),
+		.A0(sg13g2_inv_1_58_Y),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_43_X));
 
 	sg13g2_mux2_1 mux_l2_in_15_ (
-		.A0(sg13g2_inv_1_59_Y),
-		.A1(const1_0_const1),
+		.A1(sg13g2_inv_1_59_Y),
+		.A0(const1_0_const1),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_44_X));
 
 	sg13g2_mux2_1 mux_l3_in_0_ (
-		.A0(sg13g2_mux2_1_29_X),
-		.A1(sg13g2_mux2_1_30_X),
+		.A1(sg13g2_mux2_1_29_X),
+		.A0(sg13g2_mux2_1_30_X),
 		.S(sram[2]),
 		.X(sg13g2_mux2_1_45_X));
 
 	sg13g2_mux2_1 mux_l3_in_1_ (
-		.A0(sg13g2_mux2_1_31_X),
-		.A1(sg13g2_mux2_1_32_X),
+		.A1(sg13g2_mux2_1_31_X),
+		.A0(sg13g2_mux2_1_32_X),
 		.S(sram[2]),
 		.X(sg13g2_mux2_1_46_X));
 
 	sg13g2_mux2_1 mux_l3_in_2_ (
-		.A0(sg13g2_mux2_1_33_X),
-		.A1(sg13g2_mux2_1_34_X),
+		.A1(sg13g2_mux2_1_33_X),
+		.A0(sg13g2_mux2_1_34_X),
 		.S(sram[2]),
 		.X(sg13g2_mux2_1_47_X));
 
 	sg13g2_mux2_1 mux_l3_in_3_ (
-		.A0(sg13g2_mux2_1_35_X),
-		.A1(sg13g2_mux2_1_36_X),
+		.A1(sg13g2_mux2_1_35_X),
+		.A0(sg13g2_mux2_1_36_X),
 		.S(sram[2]),
 		.X(sg13g2_mux2_1_48_X));
 
 	sg13g2_mux2_1 mux_l3_in_4_ (
-		.A0(sg13g2_mux2_1_37_X),
-		.A1(sg13g2_mux2_1_38_X),
+		.A1(sg13g2_mux2_1_37_X),
+		.A0(sg13g2_mux2_1_38_X),
 		.S(sram[2]),
 		.X(sg13g2_mux2_1_49_X));
 
 	sg13g2_mux2_1 mux_l3_in_5_ (
-		.A0(sg13g2_mux2_1_39_X),
-		.A1(sg13g2_mux2_1_40_X),
+		.A1(sg13g2_mux2_1_39_X),
+		.A0(sg13g2_mux2_1_40_X),
 		.S(sram[2]),
 		.X(sg13g2_mux2_1_50_X));
 
 	sg13g2_mux2_1 mux_l3_in_6_ (
-		.A0(sg13g2_mux2_1_41_X),
-		.A1(sg13g2_mux2_1_42_X),
+		.A1(sg13g2_mux2_1_41_X),
+		.A0(sg13g2_mux2_1_42_X),
 		.S(sram[2]),
 		.X(sg13g2_mux2_1_51_X));
 
 	sg13g2_mux2_1 mux_l3_in_7_ (
-		.A0(sg13g2_mux2_1_43_X),
-		.A1(sg13g2_mux2_1_44_X),
+		.A1(sg13g2_mux2_1_43_X),
+		.A0(sg13g2_mux2_1_44_X),
 		.S(sram[2]),
 		.X(sg13g2_mux2_1_52_X));
 
 	sg13g2_mux2_1 mux_l4_in_0_ (
-		.A0(sg13g2_mux2_1_45_X),
-		.A1(sg13g2_mux2_1_46_X),
+		.A1(sg13g2_mux2_1_45_X),
+		.A0(sg13g2_mux2_1_46_X),
 		.S(sram[3]),
 		.X(sg13g2_mux2_1_53_X));
 
 	sg13g2_mux2_1 mux_l4_in_1_ (
-		.A0(sg13g2_mux2_1_47_X),
-		.A1(sg13g2_mux2_1_48_X),
+		.A1(sg13g2_mux2_1_47_X),
+		.A0(sg13g2_mux2_1_48_X),
 		.S(sram[3]),
 		.X(sg13g2_mux2_1_54_X));
 
 	sg13g2_mux2_1 mux_l4_in_2_ (
-		.A0(sg13g2_mux2_1_49_X),
-		.A1(sg13g2_mux2_1_50_X),
+		.A1(sg13g2_mux2_1_49_X),
+		.A0(sg13g2_mux2_1_50_X),
 		.S(sram[3]),
 		.X(sg13g2_mux2_1_55_X));
 
 	sg13g2_mux2_1 mux_l4_in_3_ (
-		.A0(sg13g2_mux2_1_51_X),
-		.A1(sg13g2_mux2_1_52_X),
+		.A1(sg13g2_mux2_1_51_X),
+		.A0(sg13g2_mux2_1_52_X),
 		.S(sram[3]),
 		.X(sg13g2_mux2_1_56_X));
 
 	sg13g2_mux2_1 mux_l5_in_0_ (
-		.A0(sg13g2_mux2_1_53_X),
-		.A1(sg13g2_mux2_1_54_X),
+		.A1(sg13g2_mux2_1_53_X),
+		.A0(sg13g2_mux2_1_54_X),
 		.S(sram[4]),
 		.X(sg13g2_mux2_1_57_X));
 
 	sg13g2_mux2_1 mux_l5_in_1_ (
-		.A0(sg13g2_mux2_1_55_X),
-		.A1(sg13g2_mux2_1_56_X),
+		.A1(sg13g2_mux2_1_55_X),
+		.A0(sg13g2_mux2_1_56_X),
 		.S(sram[4]),
 		.X(sg13g2_mux2_1_58_X));
 
 	sg13g2_mux2_1 mux_l6_in_0_ (
-		.A0(sg13g2_mux2_1_57_X),
-		.A1(sg13g2_mux2_1_58_X),
+		.A1(sg13g2_mux2_1_57_X),
+		.A0(sg13g2_mux2_1_58_X),
 		.S(sram[5]),
 		.X(sg13g2_mux2_1_59_X));
 
@@ -1020,13 +1020,13 @@ endmodule
 // ----- END Verilog module for mux_tree_size60 -----
 
 //----- Default net type -----
-// `default_nettype wire
+`default_nettype wire
 
 
 
 
 //----- Default net type -----
-// `default_nettype none
+`default_nettype none
 
 // ----- Verilog module for mux_tree_size2 -----
 module mux_tree_size2(in,
@@ -1077,14 +1077,14 @@ wire [0:0] sg13g2_mux2_1_1_X;
 		.const1(const1_0_const1));
 
 	sg13g2_mux2_1 mux_l1_in_0_ (
-		.A0(sg13g2_inv_1_0_Y),
-		.A1(sg13g2_inv_1_1_Y),
+		.A1(sg13g2_inv_1_0_Y),
+		.A0(sg13g2_inv_1_1_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_0_X));
 
 	sg13g2_mux2_1 mux_l2_in_0_ (
-		.A0(sg13g2_mux2_1_0_X),
-		.A1(const1_0_const1),
+		.A1(sg13g2_mux2_1_0_X),
+		.A0(const1_0_const1),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_1_X));
 
@@ -1092,13 +1092,13 @@ endmodule
 // ----- END Verilog module for mux_tree_size2 -----
 
 //----- Default net type -----
-// `default_nettype wire
+`default_nettype wire
 
 
 
 
 //----- Default net type -----
-// `default_nettype none
+`default_nettype none
 
 // ----- Verilog module for frac_lut6_mux -----
 module frac_lut6_mux(in,
@@ -1547,380 +1547,380 @@ wire [0:0] sg13g2_mux2_1_9_X;
 		.Y(lut6_out));
 
 	sg13g2_mux2_1 mux_l1_in_0_ (
-		.A0(sg13g2_inv_1_0_Y),
-		.A1(sg13g2_inv_1_1_Y),
+		.A1(sg13g2_inv_1_0_Y),
+		.A0(sg13g2_inv_1_1_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_0_X));
 
 	sg13g2_mux2_1 mux_l1_in_1_ (
-		.A0(sg13g2_inv_1_2_Y),
-		.A1(sg13g2_inv_1_3_Y),
+		.A1(sg13g2_inv_1_2_Y),
+		.A0(sg13g2_inv_1_3_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_1_X));
 
 	sg13g2_mux2_1 mux_l1_in_2_ (
-		.A0(sg13g2_inv_1_4_Y),
-		.A1(sg13g2_inv_1_5_Y),
+		.A1(sg13g2_inv_1_4_Y),
+		.A0(sg13g2_inv_1_5_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_2_X));
 
 	sg13g2_mux2_1 mux_l1_in_3_ (
-		.A0(sg13g2_inv_1_6_Y),
-		.A1(sg13g2_inv_1_7_Y),
+		.A1(sg13g2_inv_1_6_Y),
+		.A0(sg13g2_inv_1_7_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_3_X));
 
 	sg13g2_mux2_1 mux_l1_in_4_ (
-		.A0(sg13g2_inv_1_8_Y),
-		.A1(sg13g2_inv_1_9_Y),
+		.A1(sg13g2_inv_1_8_Y),
+		.A0(sg13g2_inv_1_9_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_4_X));
 
 	sg13g2_mux2_1 mux_l1_in_5_ (
-		.A0(sg13g2_inv_1_10_Y),
-		.A1(sg13g2_inv_1_11_Y),
+		.A1(sg13g2_inv_1_10_Y),
+		.A0(sg13g2_inv_1_11_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_5_X));
 
 	sg13g2_mux2_1 mux_l1_in_6_ (
-		.A0(sg13g2_inv_1_12_Y),
-		.A1(sg13g2_inv_1_13_Y),
+		.A1(sg13g2_inv_1_12_Y),
+		.A0(sg13g2_inv_1_13_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_6_X));
 
 	sg13g2_mux2_1 mux_l1_in_7_ (
-		.A0(sg13g2_inv_1_14_Y),
-		.A1(sg13g2_inv_1_15_Y),
+		.A1(sg13g2_inv_1_14_Y),
+		.A0(sg13g2_inv_1_15_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_7_X));
 
 	sg13g2_mux2_1 mux_l1_in_8_ (
-		.A0(sg13g2_inv_1_16_Y),
-		.A1(sg13g2_inv_1_17_Y),
+		.A1(sg13g2_inv_1_16_Y),
+		.A0(sg13g2_inv_1_17_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_8_X));
 
 	sg13g2_mux2_1 mux_l1_in_9_ (
-		.A0(sg13g2_inv_1_18_Y),
-		.A1(sg13g2_inv_1_19_Y),
+		.A1(sg13g2_inv_1_18_Y),
+		.A0(sg13g2_inv_1_19_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_9_X));
 
 	sg13g2_mux2_1 mux_l1_in_10_ (
-		.A0(sg13g2_inv_1_20_Y),
-		.A1(sg13g2_inv_1_21_Y),
+		.A1(sg13g2_inv_1_20_Y),
+		.A0(sg13g2_inv_1_21_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_10_X));
 
 	sg13g2_mux2_1 mux_l1_in_11_ (
-		.A0(sg13g2_inv_1_22_Y),
-		.A1(sg13g2_inv_1_23_Y),
+		.A1(sg13g2_inv_1_22_Y),
+		.A0(sg13g2_inv_1_23_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_11_X));
 
 	sg13g2_mux2_1 mux_l1_in_12_ (
-		.A0(sg13g2_inv_1_24_Y),
-		.A1(sg13g2_inv_1_25_Y),
+		.A1(sg13g2_inv_1_24_Y),
+		.A0(sg13g2_inv_1_25_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_12_X));
 
 	sg13g2_mux2_1 mux_l1_in_13_ (
-		.A0(sg13g2_inv_1_26_Y),
-		.A1(sg13g2_inv_1_27_Y),
+		.A1(sg13g2_inv_1_26_Y),
+		.A0(sg13g2_inv_1_27_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_13_X));
 
 	sg13g2_mux2_1 mux_l1_in_14_ (
-		.A0(sg13g2_inv_1_28_Y),
-		.A1(sg13g2_inv_1_29_Y),
+		.A1(sg13g2_inv_1_28_Y),
+		.A0(sg13g2_inv_1_29_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_14_X));
 
 	sg13g2_mux2_1 mux_l1_in_15_ (
-		.A0(sg13g2_inv_1_30_Y),
-		.A1(sg13g2_inv_1_31_Y),
+		.A1(sg13g2_inv_1_30_Y),
+		.A0(sg13g2_inv_1_31_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_15_X));
 
 	sg13g2_mux2_1 mux_l1_in_16_ (
-		.A0(sg13g2_inv_1_32_Y),
-		.A1(sg13g2_inv_1_33_Y),
+		.A1(sg13g2_inv_1_32_Y),
+		.A0(sg13g2_inv_1_33_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_16_X));
 
 	sg13g2_mux2_1 mux_l1_in_17_ (
-		.A0(sg13g2_inv_1_34_Y),
-		.A1(sg13g2_inv_1_35_Y),
+		.A1(sg13g2_inv_1_34_Y),
+		.A0(sg13g2_inv_1_35_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_17_X));
 
 	sg13g2_mux2_1 mux_l1_in_18_ (
-		.A0(sg13g2_inv_1_36_Y),
-		.A1(sg13g2_inv_1_37_Y),
+		.A1(sg13g2_inv_1_36_Y),
+		.A0(sg13g2_inv_1_37_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_18_X));
 
 	sg13g2_mux2_1 mux_l1_in_19_ (
-		.A0(sg13g2_inv_1_38_Y),
-		.A1(sg13g2_inv_1_39_Y),
+		.A1(sg13g2_inv_1_38_Y),
+		.A0(sg13g2_inv_1_39_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_19_X));
 
 	sg13g2_mux2_1 mux_l1_in_20_ (
-		.A0(sg13g2_inv_1_40_Y),
-		.A1(sg13g2_inv_1_41_Y),
+		.A1(sg13g2_inv_1_40_Y),
+		.A0(sg13g2_inv_1_41_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_20_X));
 
 	sg13g2_mux2_1 mux_l1_in_21_ (
-		.A0(sg13g2_inv_1_42_Y),
-		.A1(sg13g2_inv_1_43_Y),
+		.A1(sg13g2_inv_1_42_Y),
+		.A0(sg13g2_inv_1_43_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_21_X));
 
 	sg13g2_mux2_1 mux_l1_in_22_ (
-		.A0(sg13g2_inv_1_44_Y),
-		.A1(sg13g2_inv_1_45_Y),
+		.A1(sg13g2_inv_1_44_Y),
+		.A0(sg13g2_inv_1_45_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_22_X));
 
 	sg13g2_mux2_1 mux_l1_in_23_ (
-		.A0(sg13g2_inv_1_46_Y),
-		.A1(sg13g2_inv_1_47_Y),
+		.A1(sg13g2_inv_1_46_Y),
+		.A0(sg13g2_inv_1_47_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_23_X));
 
 	sg13g2_mux2_1 mux_l1_in_24_ (
-		.A0(sg13g2_inv_1_48_Y),
-		.A1(sg13g2_inv_1_49_Y),
+		.A1(sg13g2_inv_1_48_Y),
+		.A0(sg13g2_inv_1_49_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_24_X));
 
 	sg13g2_mux2_1 mux_l1_in_25_ (
-		.A0(sg13g2_inv_1_50_Y),
-		.A1(sg13g2_inv_1_51_Y),
+		.A1(sg13g2_inv_1_50_Y),
+		.A0(sg13g2_inv_1_51_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_25_X));
 
 	sg13g2_mux2_1 mux_l1_in_26_ (
-		.A0(sg13g2_inv_1_52_Y),
-		.A1(sg13g2_inv_1_53_Y),
+		.A1(sg13g2_inv_1_52_Y),
+		.A0(sg13g2_inv_1_53_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_26_X));
 
 	sg13g2_mux2_1 mux_l1_in_27_ (
-		.A0(sg13g2_inv_1_54_Y),
-		.A1(sg13g2_inv_1_55_Y),
+		.A1(sg13g2_inv_1_54_Y),
+		.A0(sg13g2_inv_1_55_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_27_X));
 
 	sg13g2_mux2_1 mux_l1_in_28_ (
-		.A0(sg13g2_inv_1_56_Y),
-		.A1(sg13g2_inv_1_57_Y),
+		.A1(sg13g2_inv_1_56_Y),
+		.A0(sg13g2_inv_1_57_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_28_X));
 
 	sg13g2_mux2_1 mux_l1_in_29_ (
-		.A0(sg13g2_inv_1_58_Y),
-		.A1(sg13g2_inv_1_59_Y),
+		.A1(sg13g2_inv_1_58_Y),
+		.A0(sg13g2_inv_1_59_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_29_X));
 
 	sg13g2_mux2_1 mux_l1_in_30_ (
-		.A0(sg13g2_inv_1_60_Y),
-		.A1(sg13g2_inv_1_61_Y),
+		.A1(sg13g2_inv_1_60_Y),
+		.A0(sg13g2_inv_1_61_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_30_X));
 
 	sg13g2_mux2_1 mux_l1_in_31_ (
-		.A0(sg13g2_inv_1_62_Y),
-		.A1(sg13g2_inv_1_63_Y),
+		.A1(sg13g2_inv_1_62_Y),
+		.A0(sg13g2_inv_1_63_Y),
 		.S(sram[0]),
 		.X(sg13g2_mux2_1_31_X));
 
 	sg13g2_mux2_1 mux_l2_in_0_ (
-		.A0(sg13g2_mux2_1_0_X),
-		.A1(sg13g2_mux2_1_1_X),
+		.A1(sg13g2_mux2_1_0_X),
+		.A0(sg13g2_mux2_1_1_X),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_32_X));
 
 	sg13g2_mux2_1 mux_l2_in_1_ (
-		.A0(sg13g2_mux2_1_2_X),
-		.A1(sg13g2_mux2_1_3_X),
+		.A1(sg13g2_mux2_1_2_X),
+		.A0(sg13g2_mux2_1_3_X),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_33_X));
 
 	sg13g2_mux2_1 mux_l2_in_2_ (
-		.A0(sg13g2_mux2_1_4_X),
-		.A1(sg13g2_mux2_1_5_X),
+		.A1(sg13g2_mux2_1_4_X),
+		.A0(sg13g2_mux2_1_5_X),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_34_X));
 
 	sg13g2_mux2_1 mux_l2_in_3_ (
-		.A0(sg13g2_mux2_1_6_X),
-		.A1(sg13g2_mux2_1_7_X),
+		.A1(sg13g2_mux2_1_6_X),
+		.A0(sg13g2_mux2_1_7_X),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_35_X));
 
 	sg13g2_mux2_1 mux_l2_in_4_ (
-		.A0(sg13g2_mux2_1_8_X),
-		.A1(sg13g2_mux2_1_9_X),
+		.A1(sg13g2_mux2_1_8_X),
+		.A0(sg13g2_mux2_1_9_X),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_36_X));
 
 	sg13g2_mux2_1 mux_l2_in_5_ (
-		.A0(sg13g2_mux2_1_10_X),
-		.A1(sg13g2_mux2_1_11_X),
+		.A1(sg13g2_mux2_1_10_X),
+		.A0(sg13g2_mux2_1_11_X),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_37_X));
 
 	sg13g2_mux2_1 mux_l2_in_6_ (
-		.A0(sg13g2_mux2_1_12_X),
-		.A1(sg13g2_mux2_1_13_X),
+		.A1(sg13g2_mux2_1_12_X),
+		.A0(sg13g2_mux2_1_13_X),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_38_X));
 
 	sg13g2_mux2_1 mux_l2_in_7_ (
-		.A0(sg13g2_mux2_1_14_X),
-		.A1(sg13g2_mux2_1_15_X),
+		.A1(sg13g2_mux2_1_14_X),
+		.A0(sg13g2_mux2_1_15_X),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_39_X));
 
 	sg13g2_mux2_1 mux_l2_in_8_ (
-		.A0(sg13g2_mux2_1_16_X),
-		.A1(sg13g2_mux2_1_17_X),
+		.A1(sg13g2_mux2_1_16_X),
+		.A0(sg13g2_mux2_1_17_X),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_40_X));
 
 	sg13g2_mux2_1 mux_l2_in_9_ (
-		.A0(sg13g2_mux2_1_18_X),
-		.A1(sg13g2_mux2_1_19_X),
+		.A1(sg13g2_mux2_1_18_X),
+		.A0(sg13g2_mux2_1_19_X),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_41_X));
 
 	sg13g2_mux2_1 mux_l2_in_10_ (
-		.A0(sg13g2_mux2_1_20_X),
-		.A1(sg13g2_mux2_1_21_X),
+		.A1(sg13g2_mux2_1_20_X),
+		.A0(sg13g2_mux2_1_21_X),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_42_X));
 
 	sg13g2_mux2_1 mux_l2_in_11_ (
-		.A0(sg13g2_mux2_1_22_X),
-		.A1(sg13g2_mux2_1_23_X),
+		.A1(sg13g2_mux2_1_22_X),
+		.A0(sg13g2_mux2_1_23_X),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_43_X));
 
 	sg13g2_mux2_1 mux_l2_in_12_ (
-		.A0(sg13g2_mux2_1_24_X),
-		.A1(sg13g2_mux2_1_25_X),
+		.A1(sg13g2_mux2_1_24_X),
+		.A0(sg13g2_mux2_1_25_X),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_44_X));
 
 	sg13g2_mux2_1 mux_l2_in_13_ (
-		.A0(sg13g2_mux2_1_26_X),
-		.A1(sg13g2_mux2_1_27_X),
+		.A1(sg13g2_mux2_1_26_X),
+		.A0(sg13g2_mux2_1_27_X),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_45_X));
 
 	sg13g2_mux2_1 mux_l2_in_14_ (
-		.A0(sg13g2_mux2_1_28_X),
-		.A1(sg13g2_mux2_1_29_X),
+		.A1(sg13g2_mux2_1_28_X),
+		.A0(sg13g2_mux2_1_29_X),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_46_X));
 
 	sg13g2_mux2_1 mux_l2_in_15_ (
-		.A0(sg13g2_mux2_1_30_X),
-		.A1(sg13g2_mux2_1_31_X),
+		.A1(sg13g2_mux2_1_30_X),
+		.A0(sg13g2_mux2_1_31_X),
 		.S(sram[1]),
 		.X(sg13g2_mux2_1_47_X));
 
 	sg13g2_mux2_1 mux_l3_in_0_ (
-		.A0(sg13g2_buf_4_0_X),
-		.A1(sg13g2_buf_4_1_X),
+		.A1(sg13g2_buf_4_0_X),
+		.A0(sg13g2_buf_4_1_X),
 		.S(sram[2]),
 		.X(sg13g2_mux2_1_48_X));
 
 	sg13g2_mux2_1 mux_l3_in_1_ (
-		.A0(sg13g2_buf_4_2_X),
-		.A1(sg13g2_buf_4_3_X),
+		.A1(sg13g2_buf_4_2_X),
+		.A0(sg13g2_buf_4_3_X),
 		.S(sram[2]),
 		.X(sg13g2_mux2_1_49_X));
 
 	sg13g2_mux2_1 mux_l3_in_2_ (
-		.A0(sg13g2_buf_4_4_X),
-		.A1(sg13g2_buf_4_5_X),
+		.A1(sg13g2_buf_4_4_X),
+		.A0(sg13g2_buf_4_5_X),
 		.S(sram[2]),
 		.X(sg13g2_mux2_1_50_X));
 
 	sg13g2_mux2_1 mux_l3_in_3_ (
-		.A0(sg13g2_buf_4_6_X),
-		.A1(sg13g2_buf_4_7_X),
+		.A1(sg13g2_buf_4_6_X),
+		.A0(sg13g2_buf_4_7_X),
 		.S(sram[2]),
 		.X(sg13g2_mux2_1_51_X));
 
 	sg13g2_mux2_1 mux_l3_in_4_ (
-		.A0(sg13g2_buf_4_8_X),
-		.A1(sg13g2_buf_4_9_X),
+		.A1(sg13g2_buf_4_8_X),
+		.A0(sg13g2_buf_4_9_X),
 		.S(sram[2]),
 		.X(sg13g2_mux2_1_52_X));
 
 	sg13g2_mux2_1 mux_l3_in_5_ (
-		.A0(sg13g2_buf_4_10_X),
-		.A1(sg13g2_buf_4_11_X),
+		.A1(sg13g2_buf_4_10_X),
+		.A0(sg13g2_buf_4_11_X),
 		.S(sram[2]),
 		.X(sg13g2_mux2_1_53_X));
 
 	sg13g2_mux2_1 mux_l3_in_6_ (
-		.A0(sg13g2_buf_4_12_X),
-		.A1(sg13g2_buf_4_13_X),
+		.A1(sg13g2_buf_4_12_X),
+		.A0(sg13g2_buf_4_13_X),
 		.S(sram[2]),
 		.X(sg13g2_mux2_1_54_X));
 
 	sg13g2_mux2_1 mux_l3_in_7_ (
-		.A0(sg13g2_buf_4_14_X),
-		.A1(sg13g2_buf_4_15_X),
+		.A1(sg13g2_buf_4_14_X),
+		.A0(sg13g2_buf_4_15_X),
 		.S(sram[2]),
 		.X(sg13g2_mux2_1_55_X));
 
 	sg13g2_mux2_1 mux_l4_in_0_ (
-		.A0(sg13g2_mux2_1_48_X),
-		.A1(sg13g2_mux2_1_49_X),
+		.A1(sg13g2_mux2_1_48_X),
+		.A0(sg13g2_mux2_1_49_X),
 		.S(sram[3]),
 		.X(sg13g2_mux2_1_56_X));
 
 	sg13g2_mux2_1 mux_l4_in_1_ (
-		.A0(sg13g2_mux2_1_50_X),
-		.A1(sg13g2_mux2_1_51_X),
+		.A1(sg13g2_mux2_1_50_X),
+		.A0(sg13g2_mux2_1_51_X),
 		.S(sram[3]),
 		.X(sg13g2_mux2_1_57_X));
 
 	sg13g2_mux2_1 mux_l4_in_2_ (
-		.A0(sg13g2_mux2_1_52_X),
-		.A1(sg13g2_mux2_1_53_X),
+		.A1(sg13g2_mux2_1_52_X),
+		.A0(sg13g2_mux2_1_53_X),
 		.S(sram[3]),
 		.X(sg13g2_mux2_1_58_X));
 
 	sg13g2_mux2_1 mux_l4_in_3_ (
-		.A0(sg13g2_mux2_1_54_X),
-		.A1(sg13g2_mux2_1_55_X),
+		.A1(sg13g2_mux2_1_54_X),
+		.A0(sg13g2_mux2_1_55_X),
 		.S(sram[3]),
 		.X(sg13g2_mux2_1_59_X));
 
 	sg13g2_mux2_1 mux_l5_in_0_ (
-		.A0(sg13g2_buf_4_16_X),
-		.A1(sg13g2_buf_4_17_X),
+		.A1(sg13g2_buf_4_16_X),
+		.A0(sg13g2_buf_4_17_X),
 		.S(sram[4]),
 		.X(sg13g2_mux2_1_60_X));
 
 	sg13g2_mux2_1 mux_l5_in_1_ (
-		.A0(sg13g2_buf_4_18_X),
-		.A1(sg13g2_buf_4_19_X),
+		.A1(sg13g2_buf_4_18_X),
+		.A0(sg13g2_buf_4_19_X),
 		.S(sram[4]),
 		.X(sg13g2_mux2_1_61_X));
 
 	sg13g2_mux2_1 mux_l6_in_0_ (
-		.A0(sg13g2_mux2_1_60_X),
-		.A1(sg13g2_mux2_1_61_X),
+		.A1(sg13g2_mux2_1_60_X),
+		.A0(sg13g2_mux2_1_61_X),
 		.S(sram[5]),
 		.X(sg13g2_mux2_1_62_X));
 
@@ -2008,7 +2008,7 @@ endmodule
 // ----- END Verilog module for frac_lut6_mux -----
 
 //----- Default net type -----
-// `default_nettype wire
+`default_nettype wire
 
 
 

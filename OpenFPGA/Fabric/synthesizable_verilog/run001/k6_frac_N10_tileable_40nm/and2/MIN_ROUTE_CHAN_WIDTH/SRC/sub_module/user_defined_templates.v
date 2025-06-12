@@ -3,11 +3,11 @@
 //	Description: Template for user-defined Verilog modules
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Thu Jun 12 23:20:13 2025
+//	Date: Fri Jun 13 01:13:00 2025
 //-------------------------------------------
 // ----- Template Verilog module for sg13g2_inv_1 -----
 //----- Default net type -----
-// `default_nettype none
+`default_nettype none
 
 // ----- Verilog module for sg13g2_inv_1 -----
 module sg13g2_inv_1(A,
@@ -32,12 +32,12 @@ endmodule
 // ----- END Verilog module for sg13g2_inv_1 -----
 
 //----- Default net type -----
-// `default_nettype wire
+`default_nettype wire
 
 
 // ----- Template Verilog module for sg13g2_buf_4 -----
 //----- Default net type -----
-// `default_nettype none
+`default_nettype none
 
 // ----- Verilog module for sg13g2_buf_4 -----
 module sg13g2_buf_4(A,
@@ -62,12 +62,12 @@ endmodule
 // ----- END Verilog module for sg13g2_buf_4 -----
 
 //----- Default net type -----
-// `default_nettype wire
+`default_nettype wire
 
 
 // ----- Template Verilog module for sg13g2_inv_4 -----
 //----- Default net type -----
-// `default_nettype none
+`default_nettype none
 
 // ----- Verilog module for sg13g2_inv_4 -----
 module sg13g2_inv_4(A,
@@ -92,23 +92,23 @@ endmodule
 // ----- END Verilog module for sg13g2_inv_4 -----
 
 //----- Default net type -----
-// `default_nettype wire
+`default_nettype wire
 
 
 // ----- Template Verilog module for sg13g2_or2_1 -----
 //----- Default net type -----
-// `default_nettype none
+`default_nettype none
 
 // ----- Verilog module for sg13g2_or2_1 -----
-module sg13g2_or2_1(a,
-                    b,
-                    out);
+module sg13g2_or2_1(A,
+                    B,
+                    X);
 //----- INPUT PORTS -----
-input [0:0] a;
+input [0:0] A;
 //----- INPUT PORTS -----
-input [0:0] b;
+input [0:0] B;
 //----- OUTPUT PORTS -----
-output [0:0] out;
+output [0:0] X;
 
 //----- BEGIN wire-connection ports -----
 //----- END wire-connection ports -----
@@ -125,22 +125,22 @@ endmodule
 // ----- END Verilog module for sg13g2_or2_1 -----
 
 //----- Default net type -----
-// `default_nettype wire
+`default_nettype wire
 
 
 // ----- Template Verilog module for sg13g2_mux2_1 -----
 //----- Default net type -----
-// `default_nettype none
+`default_nettype none
 
 // ----- Verilog module for sg13g2_mux2_1 -----
-module sg13g2_mux2_1(A0,
-                     A1,
+module sg13g2_mux2_1(A1,
+                     A0,
                      S,
                      X);
 //----- INPUT PORTS -----
-input [0:0] A0;
-//----- INPUT PORTS -----
 input [0:0] A1;
+//----- INPUT PORTS -----
+input [0:0] A0;
 //----- INPUT PORTS -----
 input [0:0] S;
 //----- OUTPUT PORTS -----
@@ -161,25 +161,25 @@ endmodule
 // ----- END Verilog module for sg13g2_mux2_1 -----
 
 //----- Default net type -----
-// `default_nettype wire
+`default_nettype wire
 
 
-// ----- Template Verilog module for sg13g2_sdfbbp_1 -----
+// ----- Template Verilog module for DFFSRQ -----
 //----- Default net type -----
-// `default_nettype none
+`default_nettype none
 
-// ----- Verilog module for sg13g2_sdfbbp_1 -----
-module sg13g2_sdfbbp_1(SET_B,
-                       RESET_B,
-                       CLK,
-                       D,
-                       Q);
+// ----- Verilog module for DFFSRQ -----
+module DFFSRQ(SET,
+              RST,
+              CK,
+              D,
+              Q);
 //----- GLOBAL PORTS -----
-input [0:0] SET_B;
+input [0:0] SET;
 //----- GLOBAL PORTS -----
-input [0:0] RESET_B;
+input [0:0] RST;
 //----- GLOBAL PORTS -----
-input [0:0] CLK;
+input [0:0] CK;
 //----- INPUT PORTS -----
 input [0:0] D;
 //----- OUTPUT PORTS -----
@@ -197,32 +197,32 @@ output [0:0] Q;
 
 // ----- Internal logic should end here -----
 endmodule
-// ----- END Verilog module for sg13g2_sdfbbp_1 -----
+// ----- END Verilog module for DFFSRQ -----
 
 //----- Default net type -----
-// `default_nettype wire
+`default_nettype wire
 
 
-// ----- Template Verilog module for sg13g2_dfrbp_1 -----
+// ----- Template Verilog module for DFFR -----
 //----- Default net type -----
-// `default_nettype none
+`default_nettype none
 
-// ----- Verilog module for sg13g2_dfrbp_1 -----
-module sg13g2_dfrbp_1(RESET_B,
-                      CLK,
-                      D,
-                      Q,
-                      Q_N);
+// ----- Verilog module for DFFR -----
+module DFFR(RST,
+            CK,
+            D,
+            Q,
+            QN);
 //----- GLOBAL PORTS -----
-input [0:0] RESET_B;
+input [0:0] RST;
 //----- GLOBAL PORTS -----
-input [0:0] CLK;
+input [0:0] CK;
 //----- INPUT PORTS -----
 input [0:0] D;
 //----- OUTPUT PORTS -----
 output [0:0] Q;
 //----- OUTPUT PORTS -----
-output [0:0] Q_N;
+output [0:0] QN;
 
 //----- BEGIN wire-connection ports -----
 //----- END wire-connection ports -----
@@ -236,15 +236,15 @@ output [0:0] Q_N;
 
 // ----- Internal logic should end here -----
 endmodule
-// ----- END Verilog module for sg13g2_dfrbp_1 -----
+// ----- END Verilog module for DFFR -----
 
 //----- Default net type -----
-// `default_nettype wire
+`default_nettype wire
 
 
 // ----- Template Verilog module for GPIO -----
 //----- Default net type -----
-// `default_nettype none
+`default_nettype none
 
 // ----- Verilog module for GPIO -----
 module GPIO(PAD,
@@ -275,6 +275,6 @@ endmodule
 // ----- END Verilog module for GPIO -----
 
 //----- Default net type -----
-// `default_nettype wire
+`default_nettype wire
 
 

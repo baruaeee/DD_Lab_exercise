@@ -11,10 +11,8 @@ INFO - OpenFPGAShell Revision: v8.0.0-10893-g9eef18c4f Compiled: 2024-10-05T14:5
 INFO - OpenFPGA Shell Run is written in file openfpgashell.log
 INFO - vpr result extracted in file vpr_stat.result
 INFO - Launching iverilog_verification 
-ERROR - iverilog_verification run failed with returncode 1
-ERROR - command iverilog -o compiled_and2 ./SRC/and2_include_netlists.v -s and2_autocheck_top_tb -I ./SRC
-ERROR - -->>error: Unable to find the root module "and2_autocheck_top_tb" in the Verilog source.
-ERROR - -->>1 error(s) during elaboration.
-ERROR - Current working directory : /home/ubuntu/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/synthesizable_verilog/run001/k6_frac_N10_tileable_40nm/and2/MIN_ROUTE_CHAN_WIDTH
-ERROR - Failed to run iverilog_verification task
-ERROR - Exiting . . . . . .
+INFO - iverilog_verification is written in file iverilog_output.txt
+INFO - Launching vvp_verification 
+INFO - vvp_verification is written in file vvp_sim_output.txt
+INFO - VVP Simulation Successful
+INFO - Openfpga_flow completed, Total Time Taken 3 seconds VPR Time a moment Verification Time 3 seconds 

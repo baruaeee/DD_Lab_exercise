@@ -3,29 +3,29 @@ fpga_top:
     logical_tile_io_mode_io_:
       logical_tile_io_mode_physical__iopad:
         GPIO:
-        GPIO_sg13g2_dfrbp_1_mem:
-          - sg13g2_dfrbp_1
+        GPIO_DFFR_mem:
+          - DFFR
       direct_interc:
   grid_io_right:
     logical_tile_io_mode_io_:
       logical_tile_io_mode_physical__iopad:
         GPIO:
-        GPIO_sg13g2_dfrbp_1_mem:
-          - sg13g2_dfrbp_1
+        GPIO_DFFR_mem:
+          - DFFR
       direct_interc:
   grid_io_bottom:
     logical_tile_io_mode_io_:
       logical_tile_io_mode_physical__iopad:
         GPIO:
-        GPIO_sg13g2_dfrbp_1_mem:
-          - sg13g2_dfrbp_1
+        GPIO_DFFR_mem:
+          - DFFR
       direct_interc:
   grid_io_left:
     logical_tile_io_mode_io_:
       logical_tile_io_mode_physical__iopad:
         GPIO:
-        GPIO_sg13g2_dfrbp_1_mem:
-          - sg13g2_dfrbp_1
+        GPIO_DFFR_mem:
+          - DFFR
       direct_interc:
   grid_clb:
     logical_tile_clb_mode_clb_:
@@ -41,23 +41,23 @@ fpga_top:
                   - sg13g2_inv_1
                   - sg13g2_mux2_1
                   - sg13g2_buf_4
-              frac_lut6_sg13g2_dfrbp_1_mem:
-                - sg13g2_dfrbp_1
+              frac_lut6_DFFR_mem:
+                - DFFR
             mux_tree_size2:
               - sg13g2_inv_1
               - const1
               - sg13g2_mux2_1
             mux_tree_size2_mem:
-              - sg13g2_dfrbp_1
+              - DFFR
             direct_interc:
           logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff:
-            - sg13g2_sdfbbp_1
+            - DFFSRQ
           mux_tree_size2:
             - sg13g2_inv_1
             - const1
             - sg13g2_mux2_1
           mux_tree_size2_mem:
-            - sg13g2_dfrbp_1
+            - DFFR
           direct_interc:
         direct_interc:
       direct_interc:
@@ -66,7 +66,7 @@ fpga_top:
         - const1
         - sg13g2_mux2_1
       mux_tree_size60_mem:
-        - sg13g2_dfrbp_1
+        - DFFR
   sb_0__0_:
     mux_tree_tapbuf_size3:
       - sg13g2_inv_1
@@ -74,14 +74,14 @@ fpga_top:
       - sg13g2_inv_4
       - sg13g2_mux2_1
     mux_tree_tapbuf_size3_mem:
-      - sg13g2_dfrbp_1
+      - DFFR
     mux_tree_tapbuf_size2:
       - sg13g2_inv_1
       - const1
       - sg13g2_inv_4
       - sg13g2_mux2_1
     mux_tree_tapbuf_size2_mem:
-      - sg13g2_dfrbp_1
+      - DFFR
   sb_0__1_:
     mux_tree_tapbuf_size3:
       - sg13g2_inv_1
@@ -89,14 +89,14 @@ fpga_top:
       - sg13g2_inv_4
       - sg13g2_mux2_1
     mux_tree_tapbuf_size3_mem:
-      - sg13g2_dfrbp_1
+      - DFFR
     mux_tree_tapbuf_size2:
       - sg13g2_inv_1
       - const1
       - sg13g2_inv_4
       - sg13g2_mux2_1
     mux_tree_tapbuf_size2_mem:
-      - sg13g2_dfrbp_1
+      - DFFR
   sb_1__0_:
     mux_tree_tapbuf_size3:
       - sg13g2_inv_1
@@ -104,14 +104,14 @@ fpga_top:
       - sg13g2_inv_4
       - sg13g2_mux2_1
     mux_tree_tapbuf_size3_mem:
-      - sg13g2_dfrbp_1
+      - DFFR
     mux_tree_tapbuf_size2:
       - sg13g2_inv_1
       - const1
       - sg13g2_inv_4
       - sg13g2_mux2_1
     mux_tree_tapbuf_size2_mem:
-      - sg13g2_dfrbp_1
+      - DFFR
   sb_1__1_:
     mux_tree_tapbuf_size3:
       - sg13g2_inv_1
@@ -119,14 +119,14 @@ fpga_top:
       - sg13g2_inv_4
       - sg13g2_mux2_1
     mux_tree_tapbuf_size3_mem:
-      - sg13g2_dfrbp_1
+      - DFFR
     mux_tree_tapbuf_size2:
       - sg13g2_inv_1
       - const1
       - sg13g2_inv_4
       - sg13g2_mux2_1
     mux_tree_tapbuf_size2_mem:
-      - sg13g2_dfrbp_1
+      - DFFR
   cbx_1__0_:
     mux_tree_tapbuf_size4:
       - sg13g2_inv_1
@@ -134,14 +134,14 @@ fpga_top:
       - sg13g2_inv_4
       - sg13g2_mux2_1
     mux_tree_tapbuf_size4_mem:
-      - sg13g2_dfrbp_1
+      - DFFR
     mux_tree_tapbuf_size2:
       - sg13g2_inv_1
       - const1
       - sg13g2_inv_4
       - sg13g2_mux2_1
     mux_tree_tapbuf_size2_mem:
-      - sg13g2_dfrbp_1
+      - DFFR
   cbx_1__1_:
     mux_tree_tapbuf_size4:
       - sg13g2_inv_1
@@ -149,14 +149,14 @@ fpga_top:
       - sg13g2_inv_4
       - sg13g2_mux2_1
     mux_tree_tapbuf_size4_mem:
-      - sg13g2_dfrbp_1
+      - DFFR
     mux_tree_tapbuf_size2:
       - sg13g2_inv_1
       - const1
       - sg13g2_inv_4
       - sg13g2_mux2_1
     mux_tree_tapbuf_size2_mem:
-      - sg13g2_dfrbp_1
+      - DFFR
   cby_0__1_:
     mux_tree_tapbuf_size4:
       - sg13g2_inv_1
@@ -164,14 +164,14 @@ fpga_top:
       - sg13g2_inv_4
       - sg13g2_mux2_1
     mux_tree_tapbuf_size4_mem:
-      - sg13g2_dfrbp_1
+      - DFFR
     mux_tree_tapbuf_size2:
       - sg13g2_inv_1
       - const1
       - sg13g2_inv_4
       - sg13g2_mux2_1
     mux_tree_tapbuf_size2_mem:
-      - sg13g2_dfrbp_1
+      - DFFR
   cby_1__1_:
     mux_tree_tapbuf_size4:
       - sg13g2_inv_1
@@ -179,11 +179,11 @@ fpga_top:
       - sg13g2_inv_4
       - sg13g2_mux2_1
     mux_tree_tapbuf_size4_mem:
-      - sg13g2_dfrbp_1
+      - DFFR
     mux_tree_tapbuf_size2:
       - sg13g2_inv_1
       - const1
       - sg13g2_inv_4
       - sg13g2_mux2_1
     mux_tree_tapbuf_size2_mem:
-      - sg13g2_dfrbp_1
+      - DFFR

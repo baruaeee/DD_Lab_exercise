@@ -3,10 +3,10 @@
 //	Description: Top-level Verilog module for FPGA
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Thu Jun 12 23:20:13 2025
+//	Date: Fri Jun 13 01:13:00 2025
 //-------------------------------------------
 //----- Default net type -----
-// `default_nettype none
+`default_nettype none
 
 // ----- Verilog module for fpga_top -----
 module fpga_top(pReset,
@@ -623,7 +623,7 @@ endmodule
 // ----- END Verilog module for fpga_top -----
 
 //----- Default net type -----
-// `default_nettype wire
+`default_nettype wire
 
 
 

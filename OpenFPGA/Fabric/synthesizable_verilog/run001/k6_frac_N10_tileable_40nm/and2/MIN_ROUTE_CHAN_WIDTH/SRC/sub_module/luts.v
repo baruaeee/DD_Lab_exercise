@@ -3,10 +3,10 @@
 //	Description: Look-Up Tables
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Thu Jun 12 23:20:13 2025
+//	Date: Fri Jun 13 01:13:00 2025
 //-------------------------------------------
 //----- Default net type -----
-// `default_nettype none
+`default_nettype none
 
 // ----- Verilog module for frac_lut6 -----
 module frac_lut6(in,
@@ -54,7 +54,7 @@ wire [0:0] sg13g2_inv_1_2_Y;
 wire [0:0] sg13g2_inv_1_3_Y;
 wire [0:0] sg13g2_inv_1_4_Y;
 wire [0:0] sg13g2_inv_1_5_Y;
-wire [0:0] sg13g2_or2_1_0_out;
+wire [0:0] sg13g2_or2_1_0_X;
 
 // ----- BEGIN Local short connections -----
 // ----- END Local short connections -----
@@ -62,9 +62,9 @@ wire [0:0] sg13g2_or2_1_0_out;
 // ----- END Local output short connections -----
 
 	sg13g2_or2_1 sg13g2_or2_1_0_ (
-		.a(mode),
-		.b(in[5]),
-		.out(sg13g2_or2_1_0_out));
+		.A(mode),
+		.B(in[5]),
+		.X(sg13g2_or2_1_0_X));
 
 	sg13g2_inv_1 sg13g2_inv_1_0_ (
 		.A(in[0]),
@@ -87,7 +87,7 @@ wire [0:0] sg13g2_or2_1_0_out;
 		.Y(sg13g2_inv_1_4_Y));
 
 	sg13g2_inv_1 sg13g2_inv_1_5_ (
-		.A(sg13g2_or2_1_0_out),
+		.A(sg13g2_or2_1_0_X),
 		.Y(sg13g2_inv_1_5_Y));
 
 	sg13g2_buf_4 sg13g2_buf_4_0_ (
@@ -111,7 +111,7 @@ wire [0:0] sg13g2_or2_1_0_out;
 		.X(sg13g2_buf_4_4_X));
 
 	sg13g2_buf_4 sg13g2_buf_4_5_ (
-		.A(sg13g2_or2_1_0_out),
+		.A(sg13g2_or2_1_0_X),
 		.X(sg13g2_buf_4_5_X));
 
 	frac_lut6_mux frac_lut6_mux_0_ (
@@ -125,7 +125,7 @@ endmodule
 // ----- END Verilog module for frac_lut6 -----
 
 //----- Default net type -----
-// `default_nettype wire
+`default_nettype wire
 
 
 

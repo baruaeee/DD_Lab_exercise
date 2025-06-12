@@ -3,10 +3,10 @@
 //	Description: Verilog modules for Unique Switch Blocks[1][0]
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Thu Jun 12 23:20:13 2025
+//	Date: Fri Jun 13 01:13:00 2025
 //-------------------------------------------
 //----- Default net type -----
-// `default_nettype none
+`default_nettype none
 
 // ----- Verilog module for sb_1__0_ -----
 module sb_1__0_(pReset,
@@ -469,7 +469,7 @@ endmodule
 // ----- END Verilog module for sb_1__0_ -----
 
 //----- Default net type -----
-// `default_nettype wire
+`default_nettype wire
 
 
 

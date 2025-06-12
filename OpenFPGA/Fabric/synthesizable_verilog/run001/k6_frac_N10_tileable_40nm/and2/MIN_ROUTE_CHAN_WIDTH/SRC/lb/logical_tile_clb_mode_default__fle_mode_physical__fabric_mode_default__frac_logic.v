@@ -3,11 +3,11 @@
 //	Description: Verilog modules for pb_type: frac_logic
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Thu Jun 12 23:20:13 2025
+//	Date: Fri Jun 13 01:13:00 2025
 //-------------------------------------------
 // ----- BEGIN Physical programmable logic block Verilog module: frac_logic -----
 //----- Default net type -----
-// `default_nettype none
+`default_nettype none
 
 // ----- Verilog module for logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic -----
 module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic(pReset,
@@ -111,7 +111,7 @@ endmodule
 // ----- END Verilog module for logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic -----
 
 //----- Default net type -----
-// `default_nettype wire
+`default_nettype wire
 
 
 

@@ -3,10 +3,10 @@
 //	Description: Verilog modules for primitive pb_type: ff
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Thu Jun 12 23:20:13 2025
+//	Date: Fri Jun 13 01:13:00 2025
 //-------------------------------------------
 //----- Default net type -----
-// `default_nettype none
+`default_nettype none
 
 // ----- Verilog module for logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff -----
 module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff(set,
@@ -45,10 +45,10 @@ wire [0:0] ff_clk;
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	sg13g2_sdfbbp_1 sg13g2_sdfbbp_1_0_ (
-		.SET_B(set),
-		.RESET_B(reset),
-		.CLK(clk),
+	DFFSRQ DFFSRQ_0_ (
+		.SET(set),
+		.RST(reset),
+		.CK(clk),
 		.D(ff_D),
 		.Q(ff_Q));
 
@@ -56,7 +56,7 @@ endmodule
 // ----- END Verilog module for logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff -----
 
 //----- Default net type -----
-// `default_nettype wire
+`default_nettype wire
 
 
 

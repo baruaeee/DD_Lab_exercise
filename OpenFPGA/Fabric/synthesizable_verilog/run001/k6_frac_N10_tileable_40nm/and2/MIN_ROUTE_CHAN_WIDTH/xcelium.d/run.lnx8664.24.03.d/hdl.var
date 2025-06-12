@@ -1,6 +1,0 @@
-define XMSIMRC	( /run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/xcelium/files/xmsimrc, ~/.xmsimrc )
-define AMSRC	( /run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/xcelium/files/amsrc, ~/.amsrc )
-include ./hdlrun.var
-define SNAPSHOT worklib.sg13g2_a21o_1:v
-DEFINE RUNMODEDEFAULT 1
-DEFINE LIB_MAP ( + => worklib )
