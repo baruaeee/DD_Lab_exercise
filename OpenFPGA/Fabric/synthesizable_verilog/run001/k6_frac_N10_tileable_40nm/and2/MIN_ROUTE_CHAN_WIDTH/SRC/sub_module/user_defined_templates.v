@@ -7,7 +7,7 @@
 //-------------------------------------------
 // ----- Template Verilog module for sg13g2_inv_1 -----
 //----- Default net type -----
-`default_nettype none
+// `default_nettype none
 
 // ----- Verilog module for sg13g2_inv_1 -----
 module sg13g2_inv_1(A,
@@ -32,12 +32,12 @@ endmodule
 // ----- END Verilog module for sg13g2_inv_1 -----
 
 //----- Default net type -----
-`default_nettype wire
+// `default_nettype wire
 
 
 // ----- Template Verilog module for sg13g2_buf_4 -----
 //----- Default net type -----
-`default_nettype none
+// `default_nettype none
 
 // ----- Verilog module for sg13g2_buf_4 -----
 module sg13g2_buf_4(A,
@@ -62,12 +62,12 @@ endmodule
 // ----- END Verilog module for sg13g2_buf_4 -----
 
 //----- Default net type -----
-`default_nettype wire
+// `default_nettype wire
 
 
 // ----- Template Verilog module for sg13g2_inv_4 -----
 //----- Default net type -----
-`default_nettype none
+// `default_nettype none
 
 // ----- Verilog module for sg13g2_inv_4 -----
 module sg13g2_inv_4(A,
@@ -92,12 +92,12 @@ endmodule
 // ----- END Verilog module for sg13g2_inv_4 -----
 
 //----- Default net type -----
-`default_nettype wire
+// `default_nettype wire
 
 
 // ----- Template Verilog module for sg13g2_or2_1 -----
 //----- Default net type -----
-`default_nettype none
+// `default_nettype none
 
 // ----- Verilog module for sg13g2_or2_1 -----
 module sg13g2_or2_1(a,
@@ -125,12 +125,12 @@ endmodule
 // ----- END Verilog module for sg13g2_or2_1 -----
 
 //----- Default net type -----
-`default_nettype wire
+// `default_nettype wire
 
 
 // ----- Template Verilog module for sg13g2_mux2_1 -----
 //----- Default net type -----
-`default_nettype none
+// `default_nettype none
 
 // ----- Verilog module for sg13g2_mux2_1 -----
 module sg13g2_mux2_1(A0,
@@ -161,12 +161,12 @@ endmodule
 // ----- END Verilog module for sg13g2_mux2_1 -----
 
 //----- Default net type -----
-`default_nettype wire
+// `default_nettype wire
 
 
 // ----- Template Verilog module for sg13g2_sdfbbp_1 -----
 //----- Default net type -----
-`default_nettype none
+// `default_nettype none
 
 // ----- Verilog module for sg13g2_sdfbbp_1 -----
 module sg13g2_sdfbbp_1(SET_B,
@@ -200,12 +200,12 @@ endmodule
 // ----- END Verilog module for sg13g2_sdfbbp_1 -----
 
 //----- Default net type -----
-`default_nettype wire
+// `default_nettype wire
 
 
 // ----- Template Verilog module for sg13g2_dfrbp_1 -----
 //----- Default net type -----
-`default_nettype none
+// `default_nettype none
 
 // ----- Verilog module for sg13g2_dfrbp_1 -----
 module sg13g2_dfrbp_1(RESET_B,
@@ -239,12 +239,12 @@ endmodule
 // ----- END Verilog module for sg13g2_dfrbp_1 -----
 
 //----- Default net type -----
-`default_nettype wire
+// `default_nettype wire
 
 
 // ----- Template Verilog module for GPIO -----
 //----- Default net type -----
-`default_nettype none
+// `default_nettype none
 
 // ----- Verilog module for GPIO -----
 module GPIO(PAD,
@@ -275,6 +275,6 @@ endmodule
 // ----- END Verilog module for GPIO -----
 
 //----- Default net type -----
-`default_nettype wire
+// `default_nettype wire
 
 

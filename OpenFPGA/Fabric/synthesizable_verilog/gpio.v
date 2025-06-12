@@ -7,8 +7,8 @@
 //-----------------------------------------------------
 // Function    : A minimum general purpose I/O
 //-----------------------------------------------------
-`include "$PDK/libs.ref/sg13g2_io/verilog/sg13g2_io.v"
-`include "$PDK/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v"
+`include "/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/verilog/sg13g2_io.v"
+`include "/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v"
 
 module GPIO (
   input A, // Data output

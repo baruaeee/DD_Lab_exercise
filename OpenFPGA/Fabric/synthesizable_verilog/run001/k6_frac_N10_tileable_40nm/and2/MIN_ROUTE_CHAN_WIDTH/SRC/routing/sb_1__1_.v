@@ -6,7 +6,7 @@
 //	Date: Thu Jun 12 23:20:13 2025
 //-------------------------------------------
 //----- Default net type -----
-`default_nettype none
+// `default_nettype none
 
 // ----- Verilog module for sb_1__1_ -----
 module sb_1__1_(pReset,
@@ -469,7 +469,7 @@ endmodule
 // ----- END Verilog module for sb_1__1_ -----
 
 //----- Default net type -----
-`default_nettype wire
+// `default_nettype wire
 
 
 

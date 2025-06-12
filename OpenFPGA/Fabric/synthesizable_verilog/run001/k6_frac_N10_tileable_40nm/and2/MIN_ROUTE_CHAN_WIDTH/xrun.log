@@ -1,0 +1,717 @@
+xrun(64): 24.03-s004: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.03-s004: Started on Jun 12, 2025 at 23:30:37 CEST
+xrun
+	./SRC/and2_include_netlists.v
+	-access +rwc
+	-64bit
+	-gui
+file: ./SRC/and2_include_netlists.v
+	module worklib.sg13g2_Corner:v
+		errors: 0, warnings: 0
+	module worklib.sg13g2_Filler200:v
+		errors: 0, warnings: 0
+	module worklib.sg13g2_Filler400:v
+		errors: 0, warnings: 0
+	module worklib.sg13g2_Filler1000:v
+		errors: 0, warnings: 0
+	module worklib.sg13g2_Filler2000:v
+		errors: 0, warnings: 0
+	module worklib.sg13g2_Filler4000:v
+		errors: 0, warnings: 0
+	module worklib.sg13g2_Filler10000:v
+		errors: 0, warnings: 0
+	module worklib.sg13g2_IOPadIn:v
+		errors: 0, warnings: 0
+	module worklib.sg13g2_IOPadOut4mA:v
+		errors: 0, warnings: 0
+	module worklib.sg13g2_IOPadOut16mA:v
+		errors: 0, warnings: 0
+	module worklib.sg13g2_IOPadOut30mA:v
+		errors: 0, warnings: 0
+	module worklib.sg13g2_IOPadTriOut4mA:v
+		errors: 0, warnings: 0
+	module worklib.sg13g2_IOPadTriOut16mA:v
+		errors: 0, warnings: 0
+	module worklib.sg13g2_IOPadTriOut30mA:v
+		errors: 0, warnings: 0
+	module worklib.sg13g2_IOPadInOut4mA:v
+		errors: 0, warnings: 0
+	module worklib.sg13g2_IOPadInOut16mA:v
+		errors: 0, warnings: 0
+	module worklib.sg13g2_IOPadInOut30mA:v
+		errors: 0, warnings: 0
+	module worklib.sg13g2_IOPadAnalog:v
+		errors: 0, warnings: 0
+	module worklib.sg13g2_IOPadIOVss:v
+		errors: 0, warnings: 0
+	module worklib.sg13g2_IOPadIOVdd:v
+		errors: 0, warnings: 0
+	module worklib.sg13g2_IOPadVss:v
+		errors: 0, warnings: 0
+	module worklib.sg13g2_IOPadVdd:v
+		errors: 0, warnings: 0
+module sg13g2_a21o_1 (X, A1, A2, B1);
+                   |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,18|19): recompiling design unit worklib.sg13g2_a21o_1:v.
+	First compiled from line 18 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_a21o_1:v
+		errors: 0, warnings: 1
+module sg13g2_a21o_2 (X, A1, A2, B1);
+                   |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,44|19): recompiling design unit worklib.sg13g2_a21o_2:v.
+	First compiled from line 44 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_a21o_2:v
+		errors: 0, warnings: 1
+module sg13g2_a21oi_1 (Y, A1, A2, B1);
+                    |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,70|20): recompiling design unit worklib.sg13g2_a21oi_1:v.
+	First compiled from line 70 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_a21oi_1:v
+		errors: 0, warnings: 1
+module sg13g2_a21oi_2 (Y, A1, A2, B1);
+                    |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,99|20): recompiling design unit worklib.sg13g2_a21oi_2:v.
+	First compiled from line 99 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_a21oi_2:v
+		errors: 0, warnings: 1
+module sg13g2_a221oi_1 (Y, A1, A2, B1, B2, C1);
+                     |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,128|21): recompiling design unit worklib.sg13g2_a221oi_1:v.
+	First compiled from line 128 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_a221oi_1:v
+		errors: 0, warnings: 1
+module sg13g2_a22oi_1 (Y, A1, A2, B1, B2);
+                    |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,180|20): recompiling design unit worklib.sg13g2_a22oi_1:v.
+	First compiled from line 180 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_a22oi_1:v
+		errors: 0, warnings: 1
+module sg13g2_and2_1 (X, A, B);
+                   |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,206|19): recompiling design unit worklib.sg13g2_and2_1:v.
+	First compiled from line 206 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_and2_1:v
+		errors: 0, warnings: 1
+module sg13g2_and2_2 (X, A, B);
+                   |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,224|19): recompiling design unit worklib.sg13g2_and2_2:v.
+	First compiled from line 224 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_and2_2:v
+		errors: 0, warnings: 1
+module sg13g2_and3_1 (X, A, B, C);
+                   |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,242|19): recompiling design unit worklib.sg13g2_and3_1:v.
+	First compiled from line 242 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_and3_1:v
+		errors: 0, warnings: 1
+module sg13g2_and3_2 (X, A, B, C);
+                   |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,261|19): recompiling design unit worklib.sg13g2_and3_2:v.
+	First compiled from line 261 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_and3_2:v
+		errors: 0, warnings: 1
+module sg13g2_and4_1 (X, A, B, C, D);
+                   |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,280|19): recompiling design unit worklib.sg13g2_and4_1:v.
+	First compiled from line 280 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_and4_1:v
+		errors: 0, warnings: 1
+module sg13g2_and4_2 (X, A, B, C, D);
+                   |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,300|19): recompiling design unit worklib.sg13g2_and4_2:v.
+	First compiled from line 300 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_and4_2:v
+		errors: 0, warnings: 1
+module sg13g2_antennanp (A);
+                      |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,320|22): recompiling design unit worklib.sg13g2_antennanp:v.
+	First compiled from line 320 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_antennanp:v
+		errors: 0, warnings: 1
+module sg13g2_buf_1 (X, A);
+                  |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,331|18): recompiling design unit worklib.sg13g2_buf_1:v.
+	First compiled from line 331 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_buf_1:v
+		errors: 0, warnings: 1
+module sg13g2_buf_16 (X, A);
+                   |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,348|19): recompiling design unit worklib.sg13g2_buf_16:v.
+	First compiled from line 348 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_buf_16:v
+		errors: 0, warnings: 1
+module sg13g2_buf_2 (X, A);
+                  |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,365|18): recompiling design unit worklib.sg13g2_buf_2:v.
+	First compiled from line 365 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_buf_2:v
+		errors: 0, warnings: 1
+module sg13g2_buf_4 (X, A);
+                  |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,382|18): recompiling design unit worklib.sg13g2_buf_4:v.
+	First compiled from line 382 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_buf_4:v
+		errors: 0, warnings: 1
+module sg13g2_buf_8 (X, A);
+                  |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,399|18): recompiling design unit worklib.sg13g2_buf_8:v.
+	First compiled from line 399 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_buf_8:v
+		errors: 0, warnings: 1
+module sg13g2_decap_4 ();
+                    |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,416|20): recompiling design unit worklib.sg13g2_decap_4:v.
+	First compiled from line 416 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_decap_4:v
+		errors: 0, warnings: 1
+module sg13g2_decap_8 ();
+                    |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,426|20): recompiling design unit worklib.sg13g2_decap_8:v.
+	First compiled from line 426 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_decap_8:v
+		errors: 0, warnings: 1
+module sg13g2_dfrbp_1 (Q, Q_N, D, RESET_B, CLK);
+                    |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,436|20): recompiling design unit worklib.sg13g2_dfrbp_1:v.
+	First compiled from line 436 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_dfrbp_1:v
+		errors: 0, warnings: 1
+module sg13g2_dfrbp_2 (Q, Q_N, D, RESET_B, CLK);
+                    |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,472|20): recompiling design unit worklib.sg13g2_dfrbp_2:v.
+	First compiled from line 472 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_dfrbp_2:v
+		errors: 0, warnings: 1
+module sg13g2_dlhq_1 (Q, D, GATE);
+                   |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,508|19): recompiling design unit worklib.sg13g2_dlhq_1:v.
+	First compiled from line 508 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_dlhq_1:v
+		errors: 0, warnings: 1
+module sg13g2_dlhr_1 (Q, Q_N, D, RESET_B, GATE);
+                   |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,534|19): recompiling design unit worklib.sg13g2_dlhr_1:v.
+	First compiled from line 534 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_dlhr_1:v
+		errors: 0, warnings: 1
+module sg13g2_dlhrq_1 (Q, D, RESET_B, GATE);
+                    |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,569|20): recompiling design unit worklib.sg13g2_dlhrq_1:v.
+	First compiled from line 569 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_dlhrq_1:v
+		errors: 0, warnings: 1
+module sg13g2_dllr_1 (Q, Q_N, D, RESET_B, GATE_N);
+                   |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,599|19): recompiling design unit worklib.sg13g2_dllr_1:v.
+	First compiled from line 599 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_dllr_1:v
+		errors: 0, warnings: 1
+module sg13g2_dllrq_1 (Q, D, RESET_B, GATE_N);
+                    |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,636|20): recompiling design unit worklib.sg13g2_dllrq_1:v.
+	First compiled from line 636 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_dllrq_1:v
+		errors: 0, warnings: 1
+module sg13g2_dlygate4sd1_1 (X, A);
+                          |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,668|26): recompiling design unit worklib.sg13g2_dlygate4sd1_1:v.
+	First compiled from line 668 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_dlygate4sd1_1:v
+		errors: 0, warnings: 1
+module sg13g2_dlygate4sd2_1 (X, A);
+                          |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,685|26): recompiling design unit worklib.sg13g2_dlygate4sd2_1:v.
+	First compiled from line 685 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_dlygate4sd2_1:v
+		errors: 0, warnings: 1
+module sg13g2_dlygate4sd3_1 (X, A);
+                          |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,702|26): recompiling design unit worklib.sg13g2_dlygate4sd3_1:v.
+	First compiled from line 702 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_dlygate4sd3_1:v
+		errors: 0, warnings: 1
+module sg13g2_ebufn_2 (Z, A, TE_B);
+                    |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,719|20): recompiling design unit worklib.sg13g2_ebufn_2:v.
+	First compiled from line 719 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_ebufn_2:v
+		errors: 0, warnings: 1
+module sg13g2_ebufn_4 (Z, A, TE_B);
+                    |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,737|20): recompiling design unit worklib.sg13g2_ebufn_4:v.
+	First compiled from line 737 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_ebufn_4:v
+		errors: 0, warnings: 1
+module sg13g2_ebufn_8 (Z, A, TE_B);
+                    |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,755|20): recompiling design unit worklib.sg13g2_ebufn_8:v.
+	First compiled from line 755 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_ebufn_8:v
+		errors: 0, warnings: 1
+module sg13g2_einvn_2 (Z, A, TE_B);
+                    |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,773|20): recompiling design unit worklib.sg13g2_einvn_2:v.
+	First compiled from line 773 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_einvn_2:v
+		errors: 0, warnings: 1
+module sg13g2_einvn_4 (Z, A, TE_B);
+                    |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,792|20): recompiling design unit worklib.sg13g2_einvn_4:v.
+	First compiled from line 792 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_einvn_4:v
+		errors: 0, warnings: 1
+module sg13g2_einvn_8 (Z, A, TE_B);
+                    |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,811|20): recompiling design unit worklib.sg13g2_einvn_8:v.
+	First compiled from line 811 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_einvn_8:v
+		errors: 0, warnings: 1
+module sg13g2_fill_1 ();
+                   |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,830|19): recompiling design unit worklib.sg13g2_fill_1:v.
+	First compiled from line 830 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_fill_1:v
+		errors: 0, warnings: 1
+module sg13g2_fill_2 ();
+                   |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,840|19): recompiling design unit worklib.sg13g2_fill_2:v.
+	First compiled from line 840 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_fill_2:v
+		errors: 0, warnings: 1
+module sg13g2_fill_4 ();
+                   |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,850|19): recompiling design unit worklib.sg13g2_fill_4:v.
+	First compiled from line 850 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_fill_4:v
+		errors: 0, warnings: 1
+module sg13g2_fill_8 ();
+                   |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,860|19): recompiling design unit worklib.sg13g2_fill_8:v.
+	First compiled from line 860 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_fill_8:v
+		errors: 0, warnings: 1
+module sg13g2_inv_1 (Y, A);
+                  |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,870|18): recompiling design unit worklib.sg13g2_inv_1:v.
+	First compiled from line 870 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_inv_1:v
+		errors: 0, warnings: 1
+module sg13g2_inv_16 (Y, A);
+                   |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,887|19): recompiling design unit worklib.sg13g2_inv_16:v.
+	First compiled from line 887 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_inv_16:v
+		errors: 0, warnings: 1
+module sg13g2_inv_2 (Y, A);
+                  |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,904|18): recompiling design unit worklib.sg13g2_inv_2:v.
+	First compiled from line 904 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_inv_2:v
+		errors: 0, warnings: 1
+module sg13g2_inv_4 (Y, A);
+                  |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,921|18): recompiling design unit worklib.sg13g2_inv_4:v.
+	First compiled from line 921 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_inv_4:v
+		errors: 0, warnings: 1
+module sg13g2_inv_8 (Y, A);
+                  |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,938|18): recompiling design unit worklib.sg13g2_inv_8:v.
+	First compiled from line 938 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_inv_8:v
+		errors: 0, warnings: 1
+module sg13g2_lgcp_1 (GCLK, GATE, CLK);
+                   |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,955|19): recompiling design unit worklib.sg13g2_lgcp_1:v.
+	First compiled from line 955 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_lgcp_1:v
+		errors: 0, warnings: 1
+module sg13g2_mux2_1 (X, A0, A1, S);
+                   |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,982|19): recompiling design unit worklib.sg13g2_mux2_1:v.
+	First compiled from line 982 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_mux2_1:v
+		errors: 0, warnings: 1
+module sg13g2_mux2_2 (X, A0, A1, S);
+                   |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,1005|19): recompiling design unit worklib.sg13g2_mux2_2:v.
+	First compiled from line 1005 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_mux2_2:v
+		errors: 0, warnings: 1
+module sg13g2_mux4_1 (X, A0, A1, A2, A3, S0, S1);
+                   |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,1028|19): recompiling design unit worklib.sg13g2_mux4_1:v.
+	First compiled from line 1028 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_mux4_1:v
+		errors: 0, warnings: 1
+module sg13g2_nand2_1 (Y, A, B);
+                    |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,1066|20): recompiling design unit worklib.sg13g2_nand2_1:v.
+	First compiled from line 1066 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_nand2_1:v
+		errors: 0, warnings: 1
+module sg13g2_nand2_2 (Y, A, B);
+                    |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,1087|20): recompiling design unit worklib.sg13g2_nand2_2:v.
+	First compiled from line 1087 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_nand2_2:v
+		errors: 0, warnings: 1
+module sg13g2_nand2b_1 (Y, A_N, B);
+                     |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,1108|21): recompiling design unit worklib.sg13g2_nand2b_1:v.
+	First compiled from line 1108 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_nand2b_1:v
+		errors: 0, warnings: 1
+module sg13g2_nand2b_2 (Y, A_N, B);
+                     |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,1130|21): recompiling design unit worklib.sg13g2_nand2b_2:v.
+	First compiled from line 1130 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_nand2b_2:v
+		errors: 0, warnings: 1
+module sg13g2_nand3_1 (Y, A, B, C);
+                    |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,1152|20): recompiling design unit worklib.sg13g2_nand3_1:v.
+	First compiled from line 1152 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_nand3_1:v
+		errors: 0, warnings: 1
+module sg13g2_nand3b_1 (Y, A_N, B, C);
+                     |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,1174|21): recompiling design unit worklib.sg13g2_nand3b_1:v.
+	First compiled from line 1174 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_nand3b_1:v
+		errors: 0, warnings: 1
+module sg13g2_nand4_1 (Y, A, B, C, D);
+                    |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,1197|20): recompiling design unit worklib.sg13g2_nand4_1:v.
+	First compiled from line 1197 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_nand4_1:v
+		errors: 0, warnings: 1
+module sg13g2_nor2_1 (Y, A, B);
+                   |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,1220|19): recompiling design unit worklib.sg13g2_nor2_1:v.
+	First compiled from line 1220 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_nor2_1:v
+		errors: 0, warnings: 1
+module sg13g2_nor2_2 (Y, A, B);
+                   |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,1241|19): recompiling design unit worklib.sg13g2_nor2_2:v.
+	First compiled from line 1241 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_nor2_2:v
+		errors: 0, warnings: 1
+module sg13g2_nor2b_1 (Y, A, B_N);
+                    |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,1262|20): recompiling design unit worklib.sg13g2_nor2b_1:v.
+	First compiled from line 1262 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_nor2b_1:v
+		errors: 0, warnings: 1
+module sg13g2_nor2b_2 (Y, A, B_N);
+                    |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,1284|20): recompiling design unit worklib.sg13g2_nor2b_2:v.
+	First compiled from line 1284 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_nor2b_2:v
+		errors: 0, warnings: 1
+module sg13g2_nor3_1 (Y, A, B, C);
+                   |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,1306|19): recompiling design unit worklib.sg13g2_nor3_1:v.
+	First compiled from line 1306 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_nor3_1:v
+		errors: 0, warnings: 1
+module sg13g2_nor3_2 (Y, A, B, C);
+                   |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,1328|19): recompiling design unit worklib.sg13g2_nor3_2:v.
+	First compiled from line 1328 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_nor3_2:v
+		errors: 0, warnings: 1
+module sg13g2_nor4_1 (Y, A, B, C, D);
+                   |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,1350|19): recompiling design unit worklib.sg13g2_nor4_1:v.
+	First compiled from line 1350 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_nor4_1:v
+		errors: 0, warnings: 1
+module sg13g2_nor4_2 (Y, A, B, C, D);
+                   |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,1373|19): recompiling design unit worklib.sg13g2_nor4_2:v.
+	First compiled from line 1373 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_nor4_2:v
+		errors: 0, warnings: 1
+module sg13g2_o21ai_1 (Y, A1, A2, B1);
+                    |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,1396|20): recompiling design unit worklib.sg13g2_o21ai_1:v.
+	First compiled from line 1396 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_o21ai_1:v
+		errors: 0, warnings: 1
+module sg13g2_or2_1 (X, A, B);
+                  |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,1423|18): recompiling design unit worklib.sg13g2_or2_1:v.
+	First compiled from line 1423 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_or2_1:v
+		errors: 0, warnings: 1
+module sg13g2_or2_2 (X, A, B);
+                  |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,1441|18): recompiling design unit worklib.sg13g2_or2_2:v.
+	First compiled from line 1441 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_or2_2:v
+		errors: 0, warnings: 1
+module sg13g2_or3_1 (X, A, B, C);
+                  |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,1459|18): recompiling design unit worklib.sg13g2_or3_1:v.
+	First compiled from line 1459 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_or3_1:v
+		errors: 0, warnings: 1
+module sg13g2_or3_2 (X, A, B, C);
+                  |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,1478|18): recompiling design unit worklib.sg13g2_or3_2:v.
+	First compiled from line 1478 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_or3_2:v
+		errors: 0, warnings: 1
+module sg13g2_or4_1 (X, A, B, C, D);
+                  |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,1497|18): recompiling design unit worklib.sg13g2_or4_1:v.
+	First compiled from line 1497 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_or4_1:v
+		errors: 0, warnings: 1
+module sg13g2_or4_2 (X, A, B, C, D);
+                  |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,1517|18): recompiling design unit worklib.sg13g2_or4_2:v.
+	First compiled from line 1517 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_or4_2:v
+		errors: 0, warnings: 1
+module sg13g2_sdfbbp_1 (Q, Q_N, D, SCD, SCE, RESET_B, SET_B, CLK);
+                     |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,1537|21): recompiling design unit worklib.sg13g2_sdfbbp_1:v.
+	First compiled from line 1537 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_sdfbbp_1:v
+		errors: 0, warnings: 1
+module sg13g2_sighold (SH);
+                    |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,1588|20): recompiling design unit worklib.sg13g2_sighold:v.
+	First compiled from line 1588 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_sighold:v
+		errors: 0, warnings: 1
+module sg13g2_slgcp_1 (GCLK, GATE, SCE, CLK);
+                    |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,1600|20): recompiling design unit worklib.sg13g2_slgcp_1:v.
+	First compiled from line 1600 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_slgcp_1:v
+		errors: 0, warnings: 1
+module sg13g2_tiehi (L_HI);
+                  |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,1630|18): recompiling design unit worklib.sg13g2_tiehi:v.
+	First compiled from line 1630 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_tiehi:v
+		errors: 0, warnings: 1
+module sg13g2_tielo (L_LO);
+                  |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,1645|18): recompiling design unit worklib.sg13g2_tielo:v.
+	First compiled from line 1645 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_tielo:v
+		errors: 0, warnings: 1
+module sg13g2_xnor2_1 (Y, A, B);
+                    |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,1660|20): recompiling design unit worklib.sg13g2_xnor2_1:v.
+	First compiled from line 1660 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_xnor2_1:v
+		errors: 0, warnings: 1
+module sg13g2_xor2_1 (X, A, B);
+                   |
+xmvlog: *W,RECOME (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,1683|19): recompiling design unit worklib.sg13g2_xor2_1:v.
+	First compiled from line 1683 of /run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v.
+	module worklib.sg13g2_xor2_1:v
+		errors: 0, warnings: 1
+  wire A, Y, PAD, DIR, n_0;
+       |
+xmvlog: *W,ILLPDX (/run/media/exotic/Cadence/DD_Lab_exercise/OpenFPGA/Fabric/synthesizable_verilog/gpio.v,20|7): Multiple declarations for a port not allowed in module with ANSI list of port declarations (port 'A') [12.3.4(IEEE-2001)].
+  wire A, Y, PAD, DIR, n_0;
+          |
+xmvlog: *W,ILLPDX (/run/media/exotic/Cadence/DD_Lab_exercise/OpenFPGA/Fabric/synthesizable_verilog/gpio.v,20|10): Multiple declarations for a port not allowed in module with ANSI list of port declarations (port 'Y') [12.3.4(IEEE-2001)].
+  wire A, Y, PAD, DIR, n_0;
+               |
+xmvlog: *W,ILLPDX (/run/media/exotic/Cadence/DD_Lab_exercise/OpenFPGA/Fabric/synthesizable_verilog/gpio.v,20|15): Multiple declarations for a port not allowed in module with ANSI list of port declarations (port 'PAD') [12.3.4(IEEE-2001)].
+  wire A, Y, PAD, DIR, n_0;
+                    |
+xmvlog: *W,ILLPDX (/run/media/exotic/Cadence/DD_Lab_exercise/OpenFPGA/Fabric/synthesizable_verilog/gpio.v,20|20): Multiple declarations for a port not allowed in module with ANSI list of port declarations (port 'DIR') [12.3.4(IEEE-2001)].
+	module worklib.GPIO:v
+		errors: 0, warnings: 4
+	module worklib.const0:v
+		errors: 0, warnings: 0
+	module worklib.const1:v
+		errors: 0, warnings: 0
+	module worklib.mux_tree_tapbuf_size4:v
+		errors: 0, warnings: 0
+	module worklib.mux_tree_tapbuf_size2:v
+		errors: 0, warnings: 0
+	module worklib.mux_tree_tapbuf_size3:v
+		errors: 0, warnings: 0
+	module worklib.mux_tree_size60:v
+		errors: 0, warnings: 0
+	module worklib.mux_tree_size2:v
+		errors: 0, warnings: 0
+	module worklib.frac_lut6_mux:v
+		errors: 0, warnings: 0
+	module worklib.frac_lut6:v
+		errors: 0, warnings: 0
+	module worklib.direct_interc:v
+		errors: 0, warnings: 0
+	module worklib.mux_tree_tapbuf_size4_mem:v
+		errors: 0, warnings: 0
+	module worklib.mux_tree_tapbuf_size2_mem:v
+		errors: 0, warnings: 0
+	module worklib.mux_tree_tapbuf_size3_mem:v
+		errors: 0, warnings: 0
+	module worklib.mux_tree_size60_mem:v
+		errors: 0, warnings: 0
+	module worklib.mux_tree_size2_mem:v
+		errors: 0, warnings: 0
+	module worklib.frac_lut6_sg13g2_dfrbp_1_mem:v
+		errors: 0, warnings: 0
+	module worklib.GPIO_sg13g2_dfrbp_1_mem:v
+		errors: 0, warnings: 0
+	module worklib.logical_tile_io_mode_physical__iopad:v
+		errors: 0, warnings: 0
+	module worklib.logical_tile_io_mode_io_:v
+		errors: 0, warnings: 0
+	module worklib.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6:v
+		errors: 0, warnings: 0
+	module worklib.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic:v
+		errors: 0, warnings: 0
+	module worklib.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff:v
+		errors: 0, warnings: 0
+	module worklib.logical_tile_clb_mode_default__fle_mode_physical__fabric:v
+		errors: 0, warnings: 0
+	module worklib.logical_tile_clb_mode_default__fle:v
+		errors: 0, warnings: 0
+	module worklib.logical_tile_clb_mode_clb_:v
+		errors: 0, warnings: 0
+	module worklib.grid_io_top:v
+		errors: 0, warnings: 0
+	module worklib.grid_io_right:v
+		errors: 0, warnings: 0
+	module worklib.grid_io_bottom:v
+		errors: 0, warnings: 0
+	module worklib.grid_io_left:v
+		errors: 0, warnings: 0
+	module worklib.grid_clb:v
+		errors: 0, warnings: 0
+	module worklib.sb_0__0_:v
+		errors: 0, warnings: 0
+	module worklib.sb_0__1_:v
+		errors: 0, warnings: 0
+	module worklib.sb_1__0_:v
+		errors: 0, warnings: 0
+	module worklib.sb_1__1_:v
+		errors: 0, warnings: 0
+	module worklib.cbx_1__0_:v
+		errors: 0, warnings: 0
+	module worklib.cbx_1__1_:v
+		errors: 0, warnings: 0
+	module worklib.cby_0__1_:v
+		errors: 0, warnings: 0
+	module worklib.cby_1__1_:v
+		errors: 0, warnings: 0
+	module worklib.fpga_top:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+		.a(mode),
+		 |
+xmelab: *E,CUVPOM (./SRC/sub_module/luts.v,65|3): Port name 'a' of instance 'and2_autocheck_top_tb.FPGA_DUT.grid_clb_1__1_.logical_tile_clb_mode_clb__0.logical_tile_clb_mode_default__fle_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6_0.frac_lut6_0_.sg13g2_or2_1_0_' is invalid or has multiple connections and the instantiated module is defined in file '/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v'.
+		.b(in[5]),
+		 |
+xmelab: *E,CUVPOM (./SRC/sub_module/luts.v,66|3): Port name 'b' of instance 'and2_autocheck_top_tb.FPGA_DUT.grid_clb_1__1_.logical_tile_clb_mode_clb__0.logical_tile_clb_mode_default__fle_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6_0.frac_lut6_0_.sg13g2_or2_1_0_' is invalid or has multiple connections and the instantiated module is defined in file '/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v'.
+		.out(sg13g2_or2_1_0_out));
+		   |
+xmelab: *E,CUVPOM (./SRC/sub_module/luts.v,67|5): Port name 'out' of instance 'and2_autocheck_top_tb.FPGA_DUT.grid_clb_1__1_.logical_tile_clb_mode_clb__0.logical_tile_clb_mode_default__fle_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6_0.frac_lut6_0_.sg13g2_or2_1_0_' is invalid or has multiple connections and the instantiated module is defined in file '/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v'.
+	sg13g2_sdfbbp_1 sg13g2_sdfbbp_1_0_ (
+	                                 |
+xmelab: *W,CUVWSP (./SRC/lb/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff.v,48|34): 1 output port was not connected:
+xmelab: (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,1537): Q_N
+
+	sg13g2_sdfbbp_1 sg13g2_sdfbbp_1_0_ (
+	                                 |
+xmelab: *W,CUVWSI (./SRC/lb/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff.v,48|34): 2 input ports were not connected:
+xmelab: (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,1537): SCD
+xmelab: (/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v,1537): SCE
+
+		.a(mode),
+		 |
+xmelab: *E,CUVPOM (./SRC/sub_module/luts.v,65|3): Port name 'a' of instance 'and2_autocheck_top_tb.FPGA_DUT.grid_clb_1__1_.logical_tile_clb_mode_clb__0.logical_tile_clb_mode_default__fle_1.logical_tile_clb_mode_default__fle_mode_physical__fabric_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6_0.frac_lut6_0_.sg13g2_or2_1_0_' is invalid or has multiple connections and the instantiated module is defined in file '/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v'.
+		.b(in[5]),
+		 |
+xmelab: *E,CUVPOM (./SRC/sub_module/luts.v,66|3): Port name 'b' of instance 'and2_autocheck_top_tb.FPGA_DUT.grid_clb_1__1_.logical_tile_clb_mode_clb__0.logical_tile_clb_mode_default__fle_1.logical_tile_clb_mode_default__fle_mode_physical__fabric_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6_0.frac_lut6_0_.sg13g2_or2_1_0_' is invalid or has multiple connections and the instantiated module is defined in file '/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v'.
+		.out(sg13g2_or2_1_0_out));
+		   |
+xmelab: *E,CUVPOM (./SRC/sub_module/luts.v,67|5): Port name 'out' of instance 'and2_autocheck_top_tb.FPGA_DUT.grid_clb_1__1_.logical_tile_clb_mode_clb__0.logical_tile_clb_mode_default__fle_1.logical_tile_clb_mode_default__fle_mode_physical__fabric_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6_0.frac_lut6_0_.sg13g2_or2_1_0_' is invalid or has multiple connections and the instantiated module is defined in file '/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v'.
+		.a(mode),
+		 |
+xmelab: *E,CUVPOM (./SRC/sub_module/luts.v,65|3): Port name 'a' of instance 'and2_autocheck_top_tb.FPGA_DUT.grid_clb_1__1_.logical_tile_clb_mode_clb__0.logical_tile_clb_mode_default__fle_2.logical_tile_clb_mode_default__fle_mode_physical__fabric_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6_0.frac_lut6_0_.sg13g2_or2_1_0_' is invalid or has multiple connections and the instantiated module is defined in file '/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v'.
+		.b(in[5]),
+		 |
+xmelab: *E,CUVPOM (./SRC/sub_module/luts.v,66|3): Port name 'b' of instance 'and2_autocheck_top_tb.FPGA_DUT.grid_clb_1__1_.logical_tile_clb_mode_clb__0.logical_tile_clb_mode_default__fle_2.logical_tile_clb_mode_default__fle_mode_physical__fabric_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6_0.frac_lut6_0_.sg13g2_or2_1_0_' is invalid or has multiple connections and the instantiated module is defined in file '/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v'.
+		.out(sg13g2_or2_1_0_out));
+		   |
+xmelab: *E,CUVPOM (./SRC/sub_module/luts.v,67|5): Port name 'out' of instance 'and2_autocheck_top_tb.FPGA_DUT.grid_clb_1__1_.logical_tile_clb_mode_clb__0.logical_tile_clb_mode_default__fle_2.logical_tile_clb_mode_default__fle_mode_physical__fabric_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6_0.frac_lut6_0_.sg13g2_or2_1_0_' is invalid or has multiple connections and the instantiated module is defined in file '/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v'.
+		.a(mode),
+		 |
+xmelab: *E,CUVPOM (./SRC/sub_module/luts.v,65|3): Port name 'a' of instance 'and2_autocheck_top_tb.FPGA_DUT.grid_clb_1__1_.logical_tile_clb_mode_clb__0.logical_tile_clb_mode_default__fle_3.logical_tile_clb_mode_default__fle_mode_physical__fabric_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6_0.frac_lut6_0_.sg13g2_or2_1_0_' is invalid or has multiple connections and the instantiated module is defined in file '/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v'.
+		.b(in[5]),
+		 |
+xmelab: *E,CUVPOM (./SRC/sub_module/luts.v,66|3): Port name 'b' of instance 'and2_autocheck_top_tb.FPGA_DUT.grid_clb_1__1_.logical_tile_clb_mode_clb__0.logical_tile_clb_mode_default__fle_3.logical_tile_clb_mode_default__fle_mode_physical__fabric_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6_0.frac_lut6_0_.sg13g2_or2_1_0_' is invalid or has multiple connections and the instantiated module is defined in file '/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v'.
+		.out(sg13g2_or2_1_0_out));
+		   |
+xmelab: *E,CUVPOM (./SRC/sub_module/luts.v,67|5): Port name 'out' of instance 'and2_autocheck_top_tb.FPGA_DUT.grid_clb_1__1_.logical_tile_clb_mode_clb__0.logical_tile_clb_mode_default__fle_3.logical_tile_clb_mode_default__fle_mode_physical__fabric_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6_0.frac_lut6_0_.sg13g2_or2_1_0_' is invalid or has multiple connections and the instantiated module is defined in file '/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v'.
+		.a(mode),
+		 |
+xmelab: *E,CUVPOM (./SRC/sub_module/luts.v,65|3): Port name 'a' of instance 'and2_autocheck_top_tb.FPGA_DUT.grid_clb_1__1_.logical_tile_clb_mode_clb__0.logical_tile_clb_mode_default__fle_4.logical_tile_clb_mode_default__fle_mode_physical__fabric_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6_0.frac_lut6_0_.sg13g2_or2_1_0_' is invalid or has multiple connections and the instantiated module is defined in file '/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v'.
+		.b(in[5]),
+		 |
+xmelab: *E,CUVPOM (./SRC/sub_module/luts.v,66|3): Port name 'b' of instance 'and2_autocheck_top_tb.FPGA_DUT.grid_clb_1__1_.logical_tile_clb_mode_clb__0.logical_tile_clb_mode_default__fle_4.logical_tile_clb_mode_default__fle_mode_physical__fabric_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6_0.frac_lut6_0_.sg13g2_or2_1_0_' is invalid or has multiple connections and the instantiated module is defined in file '/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v'.
+		.out(sg13g2_or2_1_0_out));
+		   |
+xmelab: *E,CUVPOM (./SRC/sub_module/luts.v,67|5): Port name 'out' of instance 'and2_autocheck_top_tb.FPGA_DUT.grid_clb_1__1_.logical_tile_clb_mode_clb__0.logical_tile_clb_mode_default__fle_4.logical_tile_clb_mode_default__fle_mode_physical__fabric_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6_0.frac_lut6_0_.sg13g2_or2_1_0_' is invalid or has multiple connections and the instantiated module is defined in file '/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v'.
+		.a(mode),
+		 |
+xmelab: *E,CUVPOM (./SRC/sub_module/luts.v,65|3): Port name 'a' of instance 'and2_autocheck_top_tb.FPGA_DUT.grid_clb_1__1_.logical_tile_clb_mode_clb__0.logical_tile_clb_mode_default__fle_5.logical_tile_clb_mode_default__fle_mode_physical__fabric_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6_0.frac_lut6_0_.sg13g2_or2_1_0_' is invalid or has multiple connections and the instantiated module is defined in file '/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v'.
+		.b(in[5]),
+		 |
+xmelab: *E,CUVPOM (./SRC/sub_module/luts.v,66|3): Port name 'b' of instance 'and2_autocheck_top_tb.FPGA_DUT.grid_clb_1__1_.logical_tile_clb_mode_clb__0.logical_tile_clb_mode_default__fle_5.logical_tile_clb_mode_default__fle_mode_physical__fabric_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6_0.frac_lut6_0_.sg13g2_or2_1_0_' is invalid or has multiple connections and the instantiated module is defined in file '/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v'.
+		.out(sg13g2_or2_1_0_out));
+		   |
+xmelab: *E,CUVPOM (./SRC/sub_module/luts.v,67|5): Port name 'out' of instance 'and2_autocheck_top_tb.FPGA_DUT.grid_clb_1__1_.logical_tile_clb_mode_clb__0.logical_tile_clb_mode_default__fle_5.logical_tile_clb_mode_default__fle_mode_physical__fabric_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6_0.frac_lut6_0_.sg13g2_or2_1_0_' is invalid or has multiple connections and the instantiated module is defined in file '/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v'.
+		.a(mode),
+		 |
+xmelab: *E,CUVPOM (./SRC/sub_module/luts.v,65|3): Port name 'a' of instance 'and2_autocheck_top_tb.FPGA_DUT.grid_clb_1__1_.logical_tile_clb_mode_clb__0.logical_tile_clb_mode_default__fle_6.logical_tile_clb_mode_default__fle_mode_physical__fabric_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6_0.frac_lut6_0_.sg13g2_or2_1_0_' is invalid or has multiple connections and the instantiated module is defined in file '/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v'.
+		.b(in[5]),
+		 |
+xmelab: *E,CUVPOM (./SRC/sub_module/luts.v,66|3): Port name 'b' of instance 'and2_autocheck_top_tb.FPGA_DUT.grid_clb_1__1_.logical_tile_clb_mode_clb__0.logical_tile_clb_mode_default__fle_6.logical_tile_clb_mode_default__fle_mode_physical__fabric_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6_0.frac_lut6_0_.sg13g2_or2_1_0_' is invalid or has multiple connections and the instantiated module is defined in file '/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v'.
+		.out(sg13g2_or2_1_0_out));
+		   |
+xmelab: *E,CUVPOM (./SRC/sub_module/luts.v,67|5): Port name 'out' of instance 'and2_autocheck_top_tb.FPGA_DUT.grid_clb_1__1_.logical_tile_clb_mode_clb__0.logical_tile_clb_mode_default__fle_6.logical_tile_clb_mode_default__fle_mode_physical__fabric_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6_0.frac_lut6_0_.sg13g2_or2_1_0_' is invalid or has multiple connections and the instantiated module is defined in file '/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v'.
+		.a(mode),
+		 |
+xmelab: *E,CUVPOM (./SRC/sub_module/luts.v,65|3): Port name 'a' of instance 'and2_autocheck_top_tb.FPGA_DUT.grid_clb_1__1_.logical_tile_clb_mode_clb__0.logical_tile_clb_mode_default__fle_7.logical_tile_clb_mode_default__fle_mode_physical__fabric_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6_0.frac_lut6_0_.sg13g2_or2_1_0_' is invalid or has multiple connections and the instantiated module is defined in file '/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v'.
+		.b(in[5]),
+		 |
+xmelab: *E,CUVPOM (./SRC/sub_module/luts.v,66|3): Port name 'b' of instance 'and2_autocheck_top_tb.FPGA_DUT.grid_clb_1__1_.logical_tile_clb_mode_clb__0.logical_tile_clb_mode_default__fle_7.logical_tile_clb_mode_default__fle_mode_physical__fabric_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6_0.frac_lut6_0_.sg13g2_or2_1_0_' is invalid or has multiple connections and the instantiated module is defined in file '/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v'.
+		.out(sg13g2_or2_1_0_out));
+		   |
+xmelab: *E,CUVPOM (./SRC/sub_module/luts.v,67|5): Port name 'out' of instance 'and2_autocheck_top_tb.FPGA_DUT.grid_clb_1__1_.logical_tile_clb_mode_clb__0.logical_tile_clb_mode_default__fle_7.logical_tile_clb_mode_default__fle_mode_physical__fabric_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6_0.frac_lut6_0_.sg13g2_or2_1_0_' is invalid or has multiple connections and the instantiated module is defined in file '/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v'.
+		.a(mode),
+		 |
+xmelab: *E,CUVPOM (./SRC/sub_module/luts.v,65|3): Port name 'a' of instance 'and2_autocheck_top_tb.FPGA_DUT.grid_clb_1__1_.logical_tile_clb_mode_clb__0.logical_tile_clb_mode_default__fle_8.logical_tile_clb_mode_default__fle_mode_physical__fabric_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6_0.frac_lut6_0_.sg13g2_or2_1_0_' is invalid or has multiple connections and the instantiated module is defined in file '/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v'.
+		.b(in[5]),
+		 |
+xmelab: *E,CUVPOM (./SRC/sub_module/luts.v,66|3): Port name 'b' of instance 'and2_autocheck_top_tb.FPGA_DUT.grid_clb_1__1_.logical_tile_clb_mode_clb__0.logical_tile_clb_mode_default__fle_8.logical_tile_clb_mode_default__fle_mode_physical__fabric_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6_0.frac_lut6_0_.sg13g2_or2_1_0_' is invalid or has multiple connections and the instantiated module is defined in file '/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v'.
+		.out(sg13g2_or2_1_0_out));
+		   |
+xmelab: *E,CUVPOM (./SRC/sub_module/luts.v,67|5): Port name 'out' of instance 'and2_autocheck_top_tb.FPGA_DUT.grid_clb_1__1_.logical_tile_clb_mode_clb__0.logical_tile_clb_mode_default__fle_8.logical_tile_clb_mode_default__fle_mode_physical__fabric_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6_0.frac_lut6_0_.sg13g2_or2_1_0_' is invalid or has multiple connections and the instantiated module is defined in file '/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v'.
+		.a(mode),
+		 |
+xmelab: *E,CUVPOM (./SRC/sub_module/luts.v,65|3): Port name 'a' of instance 'and2_autocheck_top_tb.FPGA_DUT.grid_clb_1__1_.logical_tile_clb_mode_clb__0.logical_tile_clb_mode_default__fle_9.logical_tile_clb_mode_default__fle_mode_physical__fabric_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6_0.frac_lut6_0_.sg13g2_or2_1_0_' is invalid or has multiple connections and the instantiated module is defined in file '/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v'.
+		.b(in[5]),
+		 |
+xmelab: *E,CUVPOM (./SRC/sub_module/luts.v,66|3): Port name 'b' of instance 'and2_autocheck_top_tb.FPGA_DUT.grid_clb_1__1_.logical_tile_clb_mode_clb__0.logical_tile_clb_mode_default__fle_9.logical_tile_clb_mode_default__fle_mode_physical__fabric_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6_0.frac_lut6_0_.sg13g2_or2_1_0_' is invalid or has multiple connections and the instantiated module is defined in file '/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v'.
+		.out(sg13g2_or2_1_0_out));
+		   |
+xmelab: *E,CUVPOM (./SRC/sub_module/luts.v,67|5): Port name 'out' of instance 'and2_autocheck_top_tb.FPGA_DUT.grid_clb_1__1_.logical_tile_clb_mode_clb__0.logical_tile_clb_mode_default__fle_9.logical_tile_clb_mode_default__fle_mode_physical__fabric_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0.logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6_0.frac_lut6_0_.sg13g2_or2_1_0_' is invalid or has multiple connections and the instantiated module is defined in file '/run/media/exotic/Cadence/PDK/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v'.
+xrun: *E,ELBERR: Error (*E) or soft error (*SE) occurred during elaboration (status 1), exiting.
+TOOL:	xrun(64)	24.03-s004: Exiting on Jun 12, 2025 at 23:30:39 CEST  (total: 00:00:02)
