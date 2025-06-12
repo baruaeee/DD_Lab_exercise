@@ -3,7 +3,7 @@
 //	Description: Verilog modules for primitive pb_type: iopad
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Thu Jun 12 23:08:43 2025
+//	Date: Thu Jun 12 23:20:13 2025
 //-------------------------------------------
 //----- Default net type -----
 `default_nettype none

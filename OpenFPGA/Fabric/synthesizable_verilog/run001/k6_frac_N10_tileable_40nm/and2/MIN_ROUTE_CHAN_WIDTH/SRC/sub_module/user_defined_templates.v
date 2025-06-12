@@ -3,7 +3,7 @@
 //	Description: Template for user-defined Verilog modules
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Thu Jun 12 23:08:43 2025
+//	Date: Thu Jun 12 23:20:13 2025
 //-------------------------------------------
 // ----- Template Verilog module for sg13g2_inv_1 -----
 //----- Default net type -----
