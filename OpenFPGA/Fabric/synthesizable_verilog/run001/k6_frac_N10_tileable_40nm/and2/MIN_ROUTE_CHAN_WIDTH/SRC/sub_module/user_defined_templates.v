@@ -3,7 +3,7 @@
 //	Description: Template for user-defined Verilog modules
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Thu Jun 12 20:06:41 2025
+//	Date: Thu Jun 12 23:08:43 2025
 //-------------------------------------------
 // ----- Template Verilog module for sg13g2_inv_1 -----
 //----- Default net type -----
@@ -209,14 +209,14 @@ endmodule
 
 // ----- Verilog module for sg13g2_dfrbp_1 -----
 module sg13g2_dfrbp_1(RESET_B,
-                      CK,
+                      CLK,
                       D,
                       Q,
                       Q_N);
 //----- GLOBAL PORTS -----
 input [0:0] RESET_B;
 //----- GLOBAL PORTS -----
-input [0:0] CK;
+input [0:0] CLK;
 //----- INPUT PORTS -----
 input [0:0] D;
 //----- OUTPUT PORTS -----

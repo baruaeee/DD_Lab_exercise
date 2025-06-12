@@ -4,7 +4,7 @@
 #	Description: Disable routing multiplexer outputs for PnR
 #	Author: Xifan TANG 
 #	Organization: University of Utah 
-#	Date: Thu Jun 12 20:06:41 2025
+#	Date: Thu Jun 12 23:08:43 2025
 #############################################
 
 set_disable_timing fpga_top/cbx_*__*_/mux_bottom_ipin_*/out

@@ -4,7 +4,7 @@
 #	Description: Disable configurable memory outputs for PnR
 #	Author: Xifan TANG 
 #	Organization: University of Utah 
-#	Date: Thu Jun 12 20:06:41 2025
+#	Date: Thu Jun 12 23:08:43 2025
 #############################################
 
 set_disable_timing fpga_top/sb_*__*_/mem_top_track_*/sg*g*_dfrbp_*_*_/Q
