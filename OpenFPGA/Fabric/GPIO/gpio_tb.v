@@ -2,7 +2,9 @@
 
 //`include "/home/cae1/Desktop/FPGA-OpenFPGA/Fabric/tasks/synthesizable_verilog/sky130_osu_sc_18T_hs.v"
 //`include "/home/cae1/Desktop/FPGA-OpenFPGA/Synthesis/GPIO/outputs/gpio_netlist.v"
-`include "gpio.v"
+//`include "gpio.v"
+`include "gpio1.v"
+
 module tb_GPIO;
 
     // Parameters
