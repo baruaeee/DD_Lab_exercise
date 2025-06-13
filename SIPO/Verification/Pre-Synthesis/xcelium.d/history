@@ -49,3 +49,4 @@ s44::(26May2025:18:20:35):( xrun SIPO2_tb.v -access +rwc -64bit -gui )&&(./xceli
 s45::(26May2025:18:21:18):( xrun SIPO1_tb.v -access +rwc -64bit -gui )&&(./xcelium.d/env.d/env.history.26May2025_18_21_18)
 s46::(26May2025:18:23:05):( xrun SIPO1_tb.v -access +rwc -64bit -gui )&&(./xcelium.d/env.d/env.history.26May2025_18_23_05)
 s47::(26May2025:18:48:34):( xrun SIPO1_tb.v -access +rwc -64bit -gui )&&(./xcelium.d/env.d/env.history.26May2025_18_48_34)
+s48::(10Jun2025:19:30:08):( xrun SIPO1_tb.v -access +rwc -64bit -gui )&&(./xcelium.d/env.d/env.history.10Jun2025_19_30_08)

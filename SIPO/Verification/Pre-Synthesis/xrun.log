@@ -1,5 +1,5 @@
 xrun(64): 24.03-s004: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	24.03-s004: Started on May 26, 2025 at 18:48:34 CEST
+TOOL:	xrun(64)	24.03-s004: Started on Jun 10, 2025 at 19:30:07 CEST
 xrun
 	SIPO1_tb.v
 	-access +rwc
@@ -13,7 +13,7 @@ xcelium>
 xcelium> source /eda/cadence/2024-25/RHELx86/XCELIUM_24.03.004/tools/xcelium/files/xmsimrc
 xcelium> database -open waves -into waves.shm -default
 Created default SHM database waves
-xcelium> probe -create -shm tb_serial_to_parallel.serial_in tb_serial_to_parallel.rst_n tb_serial_to_parallel.p_o tb_serial_to_parallel.data_valid tb_serial_to_parallel.clk
+xcelium> probe -create -shm tb_serial_to_parallel.clk tb_serial_to_parallel.p_o tb_serial_to_parallel.rst_n tb_serial_to_parallel.serial_in
 Created probe 1
 xcelium> run
 Time =                    0, clk = 0, rst_n = 0, serial_in = x, parallel_out = 00000000, data_valid = z
@@ -39,4 +39,4 @@ Time =                   95, clk = 1, rst_n = 1, serial_in = 1, parallel_out = 0
 Simulation stopped via $stop(1) at time 100 NS + 0
 xcelium> ^C
 xcelium> exit
-TOOL:	xrun(64)	24.03-s004: Exiting on May 26, 2025 at 18:48:56 CEST  (total: 00:00:22)
+TOOL:	xrun(64)	24.03-s004: Exiting on Jun 10, 2025 at 19:31:04 CEST  (total: 00:00:57)

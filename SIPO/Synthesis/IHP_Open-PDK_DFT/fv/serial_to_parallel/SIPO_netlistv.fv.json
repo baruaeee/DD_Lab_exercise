@@ -270,20 +270,20 @@
 "object":"/designs/serial_to_parallel/instances_seq/shift_reg_reg[0]",
 "type":"instance"},
 {"index": "2", 
- "date": "Thu May 29 02:05:41 UTC 2025",
- "seconds": 1748484341.5278208,
+ "date": "Tue Jun 10 17:44:49 UTC 2025",
+ "seconds": 1749577489.2136219,
  "netlist": "outputs/SIPO_netlist.v", 
  "netlist_exists": "1", 
  "netlist_normalize": "/home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/SIPO_netlist.v", 
- "netlist_mtime": "1748484361", 
- "netlist_timestamp": "Thu May 29 02:06:01 UTC 2025", 
+ "netlist_mtime": "1749577551", 
+ "netlist_timestamp": "Tue Jun 10 17:45:51 UTC 2025", 
  "netlist_size": "2671", 
- "netlist_cksum": "2202571341", 
+ "netlist_cksum": "346329096", 
  "design_name": "serial_to_parallel", 
  "synth_workdir": "/home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT", 
  "synthesis_command":"",
  "current_label": "SIPO_netlistv", 
  "previous_label": "fv_map", 
- "write_verif_file_runtime": 0.23741299999999999 
+ "write_verif_file_runtime": 0.252558 
  }
 ]

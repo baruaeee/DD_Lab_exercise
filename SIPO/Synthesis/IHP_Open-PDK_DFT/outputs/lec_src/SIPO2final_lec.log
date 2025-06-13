@@ -7,14 +7,14 @@ This program is proprietary and confidential information belonging to
 Cadence Design Systems, Inc., and may be used and disclosed only as authorized
 in a license agreement controlling such use and disclosure.
 
-// Warning: This version is 363 days old. You can download the latest version from http://downloads.cadence.com.
+// Warning: This version is 376 days old. You can download the latest version from http://downloads.cadence.com.
 
 0
 // Command: usage -auto -elapse
 // Command: usage -auto -elapse
-CPU time     : 0.76    seconds
-Elapse time  : 1       seconds
-Memory usage : 116.18  M bytes
+CPU time     : 0.94    seconds
+Elapse time  : 6       seconds
+Memory usage : 115.28  M bytes
 0
 // Command: set_mapping_method -sensitive
 // Command: set_mapping_method -sensitive
@@ -1002,9 +1002,9 @@ Compared points      PO     DFF       Total
 --------------------------------------------------------------------------------
 Equivalent           8      8         16      
 ================================================================================
-CPU time     : 2.06    seconds
-Elapse time  : 7       seconds
-Memory usage : 196.15  M bytes
+CPU time     : 2.39    seconds
+Elapse time  : 17      seconds
+Memory usage : 195.13  M bytes
 // Command: analyze abort -compare
 There is no abort/specified point to be analyzed.
 // Command: save_hier_compare_result
@@ -1012,8 +1012,8 @@ There is no abort/specified point to be analyzed.
 // Command: set_system_mode setup
 0
 // Command: usage
-CPU time     : 2.07    seconds
-Memory usage : 204.01  M bytes
+CPU time     : 2.40    seconds
+Memory usage : 202.93  M bytes
 0
 Processed 1 out of 1 module pairs	EQ: 1	NEQ: 0	ABORT: 0
 
@@ -1204,8 +1204,8 @@ No of unknown points = 0
 |                  Conformal Version |24.10-p100 
 |                        Root Module |serial_to_parallel 
 |                           CPU Time |2 sec
-|                       Elapsed Time |6 sec
-|                             Memory |204.01 MB
+|                       Elapsed Time |11 sec
+|                             Memory |202.93 MB
 |              Power Grid Comparison |N/A 
 |               Power Intent Compare |N/A 
 |           Supply Power Consistency |N/A 
@@ -1216,14 +1216,14 @@ No of unknown points = 0
 |            Hierarchical Comparison |PASS 
 |                      Logfile Lines |1198 
 |                       Logfile Name |SIPO2final_lec.log 
-|              Logfile Modified Time |Thu May 29 04:09:26 2025 
+|              Logfile Modified Time |Tue Jun 10 19:52:22 2025 
 |         Implementation Information |fv/serial_to_parallel, fv/serial_to_parallel 
 |       Set Verification Information |/home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/fv_map_SIPO_netlistv_db, /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/rtl_fv_map_db 
 |      Read Verification Information |N/A 
 |                   Analysis Elapsed |0.1 sec
-|                    Runtime / #Gate |0.03 sec
+|                    Runtime / #Gate |0.06 sec
 |Matched back-to-back isolation cell |N/A 
-|            Time-consuming commands | 1. compare: 6s(100.00%) (execute 3 time(s))
+|            Time-consuming commands | 1. compare: 11s(100.00%) (execute 3 time(s))
 ================================================================================
            
 // Usage Breakdown Summary
@@ -1234,7 +1234,7 @@ No of unknown points = 0
 |read design -golden       |                0 s|             0 s|        0.00 MB
 |read design -revised      |                0 s|             0 s|        0.00 MB
 |write hier_compare dofile |                0 s|             0 s|        0.00 MB
-|run hier_compare          |                0 s|             0 s|      204.01 MB
+|run hier_compare          |                0 s|             0 s|      202.93 MB
            
 // Flatten Comparison Summary:
 --------------------------------------------------------------------------------
@@ -1271,7 +1271,7 @@ No of unknown points = 0
 ================================================================================
 |     Modules|       Total|         Max|         Min|         Avg
 --------------------------------------------------------------------------------
-|           1|           6|           6|           6|           6
+|           1|          11|          11|          11|          11
 ================================================================================
   Modules: Total number of modules.
   Total: Sum of all module runtimes(sec).
@@ -1286,7 +1286,7 @@ No of unknown points = 0
 // Note: Analysis is skipped due to brief overall runtime
 --------------------------------------------------------------------------------
                
-// Resource usages of analysis: Cpu=0.18s Mem=134MB
+// Resource usages of analysis: Cpu=0.19s Mem=134MB
 0
 // Command: vpxmode
 // Command: vpxmode

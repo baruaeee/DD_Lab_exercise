@@ -7,7 +7,7 @@ of Cadence Design Systems, Inc. in the United States and other countries.
 Type 'help legal_notices' for third party license notices. 
 Version : 23.11-s014_1, built Mar 14 2024 (linux26_64)
 Options : 
-Date    : Thu, May 29 04:15:33 2025
+Date    : Tue, June 10 19:55:09 2025
 Host    : ei-vm-018.othr.de (x86_64 Linux 4.18.0-553.44.1.el8_10.x86_64) (32*AMD Ryzen Threadripper PRO 5965WX 24-Cores 512KB)
 OS      : Red Hat Enterprise Linux release 8.10 (Ootpa)
 @modus:root:/ 1> source outputs/modus_src/runmodus.atpg.tcl 
@@ -39,7 +39,7 @@ INFO (TDA-009): Options/Values information.
 
             -designtop serial_to_parallel
             -TECHLIB /home/bas33767/Desktop/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v
-            -LOGFILE /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/testresults/logs/log_build_model_052925041554-992671000
+            -LOGFILE /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/testresults/logs/log_build_model_061025195521-639692000
             -STDOUT summary
             -messagecounteach 100
             -DESIGNSOURCE /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/serial_to_parallel.test_netlist.v
@@ -89,7 +89,7 @@ INFO (TDA-009): Options/Values information.
 
             -ASSIGNFILE /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/serial_to_parallel.FULLSCAN.pinassign
           * update_assign_file=
-            -LOGFILE /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/testresults/logs/log_build_testmode_FULLSCAN_052925041559-653784000
+            -LOGFILE /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/testresults/logs/log_build_testmode_FULLSCAN_061025195526-360565000
             -MODEDEF FULLSCAN
             -STDOUT summary
 [end TDA_009]
@@ -129,7 +129,7 @@ INFO (TDA-009): Options/Values information.
             -WORKDIR /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src
             -TESTMODE FULLSCAN
 
-            -LOGFILE /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/testresults/logs/log_report_test_structures_FULLSCAN_052925041600-994237000
+            -LOGFILE /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/testresults/logs/log_report_test_structures_FULLSCAN_061025195527-749619000
             -STDOUT summary
             -reportscanchain all
 [end TDA_009]
@@ -163,7 +163,7 @@ INFO (TDA-009): Options/Values information.
             -TESTMODE FULLSCAN
 
             -messagecount TSV-016=10,TSV-024=10,TSV-315=10,TSV-027=10
-            -LOGFILE /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/testresults/logs/log_verify_test_structures_FULLSCAN_052925041602-178744000
+            -LOGFILE /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/testresults/logs/log_verify_test_structures_FULLSCAN_061025195528-961192000
             -STDOUT summary
 [end TDA_009]
 
@@ -184,7 +184,7 @@ INFO (TDA-009): Options/Values information.
       1 INFO (TSV-568): There are 1 observable scan chains feeding to Scan Out (SO) primary outputs.    
       1 INFO (TSV-569): There are 0 controllable scan chains fed by on-product Pattern Generator(s).    
       1 INFO (TSV-570): There are 0 observable scan chains feeding to on-product Multiple-Input Signature Register (MISRs).    
-      1 INFO (TSV-900): verify_test_structures processing has started Thu May 29 04:16:02 2025     
+      1 INFO (TSV-900): verify_test_structures processing has started Tue Jun 10 19:55:29 2025     
       1 INFO (TSV-908): verify_test_structures processing complete.    
 
  For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
@@ -203,7 +203,7 @@ INFO (TDA-009): Options/Values information.
 
             -WORKDIR /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src
 
-            -LOGFILE /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/testresults/logs/log_build_faultmodel_052925041603-457390000
+            -LOGFILE /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/testresults/logs/log_build_faultmodel_061025195530-252863000
             -STDOUT summary
             -includedynamic no
 [end TDA_009]
@@ -242,7 +242,7 @@ INFO (TDA-009): Options/Values information.
             -TESTMODE FULLSCAN
             -EXPERIMENT serial_to_parallel_atpg
 
-            -LOGFILE /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/testresults/logs/log_create_logic_tests_FULLSCAN_serial_to_parallel_atpg_052925041604-964389000
+            -LOGFILE /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/testresults/logs/log_create_logic_tests_FULLSCAN_serial_to_parallel_atpg_061025195531-752416000
             -STDOUT summary
 [end TDA_009]
 INFO (TDA-220):   --- Tests ---   Faults     ---- ATCov ----   -- Faults --   - Elapsed Time -  [end TDA_220] 
@@ -286,7 +286,7 @@ INFO (TDA-009): Options/Values information.
             -TESTMODE FULLSCAN
             -EXPERIMENT serial_to_parallel_atpg
 
-            -LOGFILE /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/testresults/logs/log_write_toggle_gram_FULLSCAN_serial_to_parallel_atpg_052925041606-227120000
+            -LOGFILE /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/testresults/logs/log_write_toggle_gram_FULLSCAN_serial_to_parallel_atpg_061025195533-023859000
             -STDOUT summary
 [end TDA_009]
 
@@ -327,7 +327,7 @@ INFO (TDA-009): Options/Values information.
             -TESTMODE FULLSCAN
 
             -INEXPERIMENT serial_to_parallel_atpg
-            -LOGFILE /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/testresults/logs/log_write_vectors_FULLSCAN_serial_to_parallel_atpg_052925041607-427354000
+            -LOGFILE /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/testresults/logs/log_write_vectors_FULLSCAN_serial_to_parallel_atpg_061025195534-231360000
             -STDOUT summary
             -scanformat parallel
           + -language verilog
@@ -371,7 +371,7 @@ INFO (TDA-009): Options/Values information.
             -TESTMODE FULLSCAN
 
             -INEXPERIMENT serial_to_parallel_atpg
-            -LOGFILE /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/testresults/logs/log_commit_tests_FULLSCAN_serial_to_parallel_atpg_052925041608-597005000
+            -LOGFILE /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/testresults/logs/log_commit_tests_FULLSCAN_serial_to_parallel_atpg_061025195535-401866000
             -STDOUT summary
 [end TDA_009]
 
@@ -399,9 +399,4 @@ INFO (TDA-009): Options/Values information.
 0
 @modus:root:/ 2> gui_open
 0
-@modus:root:/ 3> source outputs/modus_src/run_fullscan_sim
-#@ Begin verbose source outputs/modus_src/run_fullscan_sim
-@file(outputs/modus_src/run_fullscan_sim) 7: export WORKDIR=outputs/modus_src
-File 'outputs/modus_src/run_fullscan_sim' line 7: errors out.  Error is : invalid command name "export"
-#@ End verbose source outputs/modus_src/run_fullscan_sim
-@modus:root:/ 4> exit
+@modus:root:/ 3> exit

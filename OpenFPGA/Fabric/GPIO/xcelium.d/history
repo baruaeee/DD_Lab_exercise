@@ -2,11 +2,4 @@
 // File created by:  xrun
 // Do not modify this file
 
-s1::(11Nov2024:21:01:55):( xrun /home/cae1/Desktop/FPGA-OpenFPGA/Synthesis/GPIO/io_in_tb.v -access +rwc -64bit -gui )
-s2::(11Nov2024:21:02:30):( xrun /home/cae1/Desktop/FPGA-OpenFPGA/Synthesis/GPIO/io_out_tb.v -access +rwc -64bit -gui )
-s3::(21Nov2024:04:04:14):( xrun gpio_tb.v -access +rwc -64bit -gui )
-s4::(21Nov2024:04:05:03):( xrun io_in_tb.v -access +rwc -64bit -gui )
-s5::(21Nov2024:12:27:05):( xrun io_in_tb.v -access +rwc -gui )
-s6::(13Jun2025:18:39:16):( xrun gpio_tb.v -access +rwc -gui )&&(./xcelium.d/env.d/env.history.13Jun2025_18_39_16)
-s7::(13Jun2025:18:41:13):( xrun gpio_tb.v -access +rwc -gui )&&(./xcelium.d/env.d/env.history.13Jun2025_18_41_13)
-s8::(13Jun2025:18:42:10):( xrun gpio_tb.v -access +rwc -gui )&&(./xcelium.d/env.d/env.history.13Jun2025_18_42_10)
+s1::(13Jun2025:19:13:53):( xrun gpio_tb.v -access +rwc -gui )&&(./xcelium.d/env.d/env.history.13Jun2025_19_13_53)

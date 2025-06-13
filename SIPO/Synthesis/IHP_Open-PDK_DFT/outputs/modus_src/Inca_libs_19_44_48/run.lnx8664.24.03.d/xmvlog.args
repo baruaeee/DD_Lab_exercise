@@ -1,0 +1,36 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+outputs/modus_src/Inca_libs_19_44_48/run.lnx8664.24.03.d
+-RUNMODE
+-amsdlibdir
+outputs/modus_src/Inca_libs_19_44_48/AMSD
+-STATUS
+-LIBEXT
+.v
+-LIBEXT
+.V
+-LIBEXT
+.z
+-LIBEXT
+.Z
+-LIBEXT
+.gz
+-XMLIBDIRNAME
+outputs/modus_src/Inca_libs_19_44_48
+-VFILE
+/home/bas33767/Desktop/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v
+outputs/modus_src/serial_to_parallel.test_netlist.v
+outputs/modus_src/testresults/verilog/VER.FULLSCAN.serial_to_parallel_atpg.mainsim.v
+-CDSLIB
+outputs/modus_src/Inca_libs_19_44_48/run.lnx8664.24.03.d/cdsrun.lib
+-HDLVAR
+outputs/modus_src/Inca_libs_19_44_48/run.lnx8664.24.03.d/hdlrun.var
+-no_analogsolver
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+outputs/modus_src/Inca_libs_19_44_48/run.lnx8664.24.03.d/xllibs
+-ALLOWUNBOUND

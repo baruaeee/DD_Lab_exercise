@@ -4,12 +4,12 @@ INFO (TDA-005): Command Line Invocation:
 
 INFO (TDA-014): Cadence(R) Modus(TM) DFT Software Solution, Version 23.11-s014_1, built Mar 14 2024 (linux26_64) [end TDA_014]
 
-INFO (TDA-015): Log File: /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/testresults/logs/log_build_model_052925041554-992671000 [end TDA_015]
+INFO (TDA-015): Log File: /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/testresults/logs/log_build_model_061025195521-639692000 [end TDA_015]
 
 INFO (TDA-007): Job Information:
-            Date Started: Thursday May 29 04:15:55 2025  CEST
+            Date Started: Tuesday Jun 10 19:55:21 2025  CEST
             Host machine is ei-vm-018.othr.de, x86_64 running Linux 4.18.0-553.44.1.el8_10.x86_64.
-            This job is process number 1938479.
+            This job is process number 3293740.
 [end TDA_007]
 
 INFO (TDA-009): Options/Values information.
@@ -20,7 +20,7 @@ INFO (TDA-009): Options/Values information.
 
             -designtop serial_to_parallel
             -TECHLIB /home/bas33767/Desktop/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v
-            -LOGFILE /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/testresults/logs/log_build_model_052925041554-992671000
+            -LOGFILE /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/testresults/logs/log_build_model_061025195521-639692000
             -STDOUT summary
             -messagecounteach 100
             -DESIGNSOURCE /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/serial_to_parallel.test_netlist.v
@@ -119,8 +119,8 @@ INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:
 
                   Total Memory =          113,485,216  bytes
 
-                      CPU Time =    0:00:03.00
-                  Elapsed Time =    0:00:03.48                    [end TDA_001]
+                      CPU Time =    0:00:03.02
+                  Elapsed Time =    0:00:03.52                    [end TDA_001]
 
 
 

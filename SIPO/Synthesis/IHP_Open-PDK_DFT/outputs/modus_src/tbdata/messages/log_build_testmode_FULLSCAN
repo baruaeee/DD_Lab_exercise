@@ -4,12 +4,12 @@ INFO (TDA-005): Command Line Invocation:
 
 INFO (TDA-014): Cadence(R) Modus(TM) DFT Software Solution, Version 23.11-s014_1, built Mar 14 2024 (linux26_64) [end TDA_014]
 
-INFO (TDA-015): Log File: /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/testresults/logs/log_build_testmode_FULLSCAN_052925041559-653784000 [end TDA_015]
+INFO (TDA-015): Log File: /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/testresults/logs/log_build_testmode_FULLSCAN_061025195526-360565000 [end TDA_015]
 
 INFO (TDA-007): Job Information:
-            Date Started: Thursday May 29 04:15:59 2025  CEST
+            Date Started: Tuesday Jun 10 19:55:26 2025  CEST
             Host machine is ei-vm-018.othr.de, x86_64 running Linux 4.18.0-553.44.1.el8_10.x86_64.
-            This job is process number 1938546.
+            This job is process number 3293841.
 [end TDA_007]
 
 INFO (TDA-009): Options/Values information.
@@ -21,7 +21,7 @@ INFO (TDA-009): Options/Values information.
 
             -ASSIGNFILE /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/serial_to_parallel.FULLSCAN.pinassign
           * update_assign_file=
-            -LOGFILE /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/testresults/logs/log_build_testmode_FULLSCAN_052925041559-653784000
+            -LOGFILE /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/testresults/logs/log_build_testmode_FULLSCAN_061025195526-360565000
             -MODEDEF FULLSCAN
             -STDOUT summary
 [end TDA_009]
@@ -98,7 +98,7 @@ Modus Build Test Mode(s) completed. Highest severity is (WARNING).
                Total Memory =           11,637,664  bytes
 
             Cumulative Time in hours:minutes:seconds:
-                   CPU Time =   0:00:00.12
-               Elapsed Time =   0:00:00.22
+                   CPU Time =   0:00:00.14
+               Elapsed Time =   0:00:00.24
 
 

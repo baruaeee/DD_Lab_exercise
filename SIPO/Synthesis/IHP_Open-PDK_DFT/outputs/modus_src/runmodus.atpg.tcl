@@ -100,4 +100,3 @@ commit_tests \
     -testmode	 FULLSCAN 
 
 
-#exit

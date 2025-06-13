@@ -1,6 +1,6 @@
 ######################################################################
 
-# Created by Genus(TM) Synthesis Solution 23.11-s100_1 on Thu May 29 04:05:40 CEST 2025
+# Created by Genus(TM) Synthesis Solution 23.11-s100_1 on Tue Jun 10 19:44:48 CEST 2025
 
 # This file contains the Genus script for design:serial_to_parallel
 
@@ -13,14 +13,14 @@ set_db -quiet phys_use_invs_extraction true
 set_db -quiet phys_route_time_out 120.0
 set_db -quiet capacitance_per_unit_length_mmmc {}
 set_db -quiet resistance_per_unit_length_mmmc {}
-set_db -quiet runtime_by_stage {{to_generic 1 10 0 8} {first_condense 0 10 0 9} {PBS_Generic_Opt-Post 1 10 0.9960810000000002 8.996076} {{PBS_Generic-Postgen HBO Optimizations} 0 10 0.0 8.996076} {PBS_TechMap-Start 0 10 0.0 8.996076} {{PBS_TechMap-Premap HBO Optimizations} 1 11 0.0 8.996076} {second_condense 0 11 0 9} {reify 0 11 0 9} {global_incr_map 0 11 0 9} {{PBS_Techmap-Global Mapping} 0 11 -0.0026200000000002888 8.993456} {{PBS_TechMap-Datapath Postmap Operations} 1 12 1.0 9.993456} {{PBS_TechMap-Postmap HBO Optimizations} 0 12 0.0 9.993456} {{PBS_TechMap-Postmap Clock Gating} 0 12 0.0 9.993456} {{PBS_TechMap-Postmap Cleanup} 0 12 -0.00023900000000054433 9.993217} {PBS_Techmap-Post_MBCI 0 12 0.0 9.993217}}
+set_db -quiet runtime_by_stage {{to_generic 1 34 0 9} {first_condense 0 34 0 9} {PBS_Generic_Opt-Post 1 34 0.9990220000000001 9.999018} {{PBS_Generic-Postgen HBO Optimizations} 0 34 0.0 9.999018} {PBS_TechMap-Start 0 35 0.0 9.999018} {{PBS_TechMap-Premap HBO Optimizations} 0 35 0.0 9.999018} {second_condense 0 35 0 10} {reify 0 35 0 10} {global_incr_map 0 35 0 10} {{PBS_Techmap-Global Mapping} 0 35 -0.004666999999999533 9.994351} {{PBS_TechMap-Datapath Postmap Operations} 1 36 1.0 10.994351} {{PBS_TechMap-Postmap HBO Optimizations} 0 36 -0.0003109999999999502 10.99404} {{PBS_TechMap-Postmap Clock Gating} 0 36 0.0 10.99404} {{PBS_TechMap-Postmap Cleanup} 0 36 -0.00026599999999987745 10.993774} {PBS_Techmap-Post_MBCI 0 36 0.0 10.993774}}
 set_db -quiet timing_adjust_tns_of_complex_flops false
 set_db -quiet tim_complex_use_dense false
 set_db -quiet tim_complex_use_prevs false
 set_db -quiet dft_use_ungated_clock_for_testpoint true
 set_db -quiet tinfo_tstamp_file .rs_bas33767.tstamp
 set_db -quiet metric_enable true
-set_db -quiet flow_metrics_snapshot_uuid ad42a3d1-d651-4243-bfcb-392ae6c1374b
+set_db -quiet flow_metrics_snapshot_uuid 64b2027b-3324-4fda-8ece-845a30d1790d
 set_db -quiet syn_generic_effort high
 set_db -quiet dft_prefix DFT_/
 set_db -quiet source_verbose true
@@ -29,7 +29,7 @@ set_db -quiet source_verbose true
 ##
 ## Written by Genus(TM) Synthesis Solution version 23.11-s100_1
 ## Generated using: Flowkit 23.10-a010_1
-## Written on 04:05:40 29-May 2025
+## Written on 19:44:48 10-Jun 2025
 #############################################################
 #####   Flow Definitions   ##################################
 
@@ -84,7 +84,7 @@ if {[is_attribute flow_step_next -obj_type root]} {set_db flow_step_next {}}
 if {[is_attribute flow_working_directory -obj_type root]} {set_db flow_working_directory .}
 if {[is_attribute flow_branch -obj_type root]} {set_db flow_branch {}}
 if {[is_attribute flow_caller_data -obj_type root]} {set_db flow_caller_data {}}
-if {[is_attribute flow_metrics_snapshot_uuid -obj_type root]} {set_db flow_metrics_snapshot_uuid ad42a3d1-d651-4243-bfcb-392ae6c1374b}
+if {[is_attribute flow_metrics_snapshot_uuid -obj_type root]} {set_db flow_metrics_snapshot_uuid 64b2027b-3324-4fda-8ece-845a30d1790d}
 if {[is_attribute flow_starting_db -obj_type root]} {set_db flow_starting_db {}}
 if {[is_attribute flow_db_directory -obj_type root]} {set_db flow_db_directory dbs}
 if {[is_attribute flow_report_directory -obj_type root]} {set_db flow_report_directory reports}

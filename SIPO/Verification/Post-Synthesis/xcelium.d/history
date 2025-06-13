@@ -11,3 +11,5 @@ s6::(29May2025:04:33:36):( xrun SIPO_gate-level_tb.v -access +rwc -64bit -gui )&
 s7::(29May2025:04:36:16):( xrun SIPO_gate-level_tb.v -access +rwc -64bit -gui )&&(./xcelium.d/env.d/env.history.29May2025_04_36_16)
 s8::(29May2025:06:02:57):( xrun SIPO_gate-level_tb.v -access +rwc -64bit -gui )&&(./xcelium.d/env.d/env.history.29May2025_06_02_57)
 s9::(29May2025:13:57:16):( xrun SIPO_tb.v -access +rwc -64bit -gui )&&(./xcelium.d/env.d/env.history.29May2025_13_57_16)
+s10::(10Jun2025:19:27:15):( xrun SIPO1_tb.v -access +rwc -64bit -gui )&&(./xcelium.d/env.d/env.history.10Jun2025_19_27_15)
+s11::(10Jun2025:20:02:22):( xrun SIPO_gate-level_tb.v -access +rwc -64bit -gui )&&(./xcelium.d/env.d/env.history.10Jun2025_20_02_22)

@@ -29,7 +29,7 @@ xrun \
    +sdf_file+DEFAULT.sdf \
    +xmerror+CUSFNF \
    +define+TIMING \
-   +xmlibdirname+$WORKDIR/Inca_libs_04_05_41 \
+   +xmlibdirname+$WORKDIR/Inca_libs_19_44_48 \
    -l $WORKDIR/ncverilog_FULLSCAN_TIMED.log \
   -v /home/bas33767/Desktop/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v \
 $WORKDIR/serial_to_parallel.test_netlist.v \

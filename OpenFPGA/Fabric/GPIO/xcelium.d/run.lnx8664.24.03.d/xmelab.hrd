@@ -1,6 +1,6 @@
-#!/bin/csh
-#
-# File created by:  xrun
-# Do not modify this file
-#
-#<< : 
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-ACCESS
++rwc

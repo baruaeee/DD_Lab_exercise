@@ -1,529 +1,386 @@
-[05/30 02:43:24      0s] 
-[05/30 02:43:24      0s] Cadence Tempus(TM) Timing Solution.
-[05/30 02:43:24      0s] Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
-[05/30 02:43:24      0s] 
-[05/30 02:43:24      0s] Version:	v23.11-s111_1, built Thu May 16 09:07:16 PDT 2024
-[05/30 02:43:24      0s] Options:	
-[05/30 02:43:24      0s] Date:		Fri May 30 02:43:24 2025
-[05/30 02:43:24      0s] Host:		ei-vm-018.othr.de (x86_64 w/Linux 4.18.0-553.44.1.el8_10.x86_64) (32cores*32cpus*AMD Ryzen Threadripper PRO 5965WX 24-Cores 512KB)
-[05/30 02:43:24      0s] OS:		Red Hat Enterprise Linux 8.10 (Ootpa)
-[05/30 02:43:24      0s] 
-[05/30 02:43:24      0s] License:
-[05/30 02:43:24      0s] 		[02:43:24.483196] Configured Lic search path (23.02-s005): 5280@hs-lic3.oth-regensburg.de:27003@hs-lic1.oth-regensburg.de:27003@hs-lic1.oth-regensburg.de:
+[06/10 21:16:56      0s] 
+[06/10 21:16:56      0s] Cadence Tempus(TM) Timing Solution.
+[06/10 21:16:56      0s] Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+[06/10 21:16:56      0s] 
+[06/10 21:16:56      0s] Version:	v23.11-s111_1, built Thu May 16 09:07:16 PDT 2024
+[06/10 21:16:56      0s] Options:	
+[06/10 21:16:56      0s] Date:		Tue Jun 10 21:16:56 2025
+[06/10 21:16:56      0s] Host:		ei-vm-018.othr.de (x86_64 w/Linux 4.18.0-553.44.1.el8_10.x86_64) (32cores*32cpus*AMD Ryzen Threadripper PRO 5965WX 24-Cores 512KB)
+[06/10 21:16:56      0s] OS:		Red Hat Enterprise Linux 8.10 (Ootpa)
+[06/10 21:16:56      0s] 
+[06/10 21:16:56      0s] License:
+[06/10 21:16:56      0s] 		[21:16:56.483244] Configured Lic search path (23.02-s005): 5280@hs-lic3.oth-regensburg.de:27003@hs-lic1.oth-regensburg.de:27003@hs-lic1.oth-regensburg.de:
 
-[05/30 02:43:24      0s] 		tpsxl	Tempus Timing Signoff Solution XL	23.1	checkout succeeded
-[05/30 02:43:24      0s] 		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
-[05/30 02:43:25      2s] {{{ isCertus 0,  isCertusOrDistOptClient = 0, isInnovusCertusClient = 0}}}
-[05/30 02:43:39     15s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Tempus Timing Solution v23.11-s111_1 (64bit) 05/16/2024 09:07 (Linux 3.10.0-693.el7.x86_64)
-[05/30 02:43:41     16s] @(#)CDS: NanoRoute 23.11-s111_1 NR240401-0735/23_11-UB (database version 18.20.622) {superthreading v2.20}
-[05/30 02:43:41     16s] @(#)CDS: AAE 23.11-s031 (64bit) 05/16/2024 (Linux 3.10.0-693.el7.x86_64)
-[05/30 02:43:41     16s] @(#)CDS: CTE 23.11-s025_1 () May 16 2024 01:47:36 ( )
-[05/30 02:43:41     16s] @(#)CDS: SYNTECH 23.11-s010_1 () Apr  5 2024 04:21:08 ( )
-[05/30 02:43:41     16s] @(#)CDS: CPE v23.11-s059
-[05/30 02:43:41     16s] @(#)CDS: OA 22.61-p011 Thu Nov 30 12:26:13 2023
-[05/30 02:43:41     16s] @(#)CDS: SGN 23.10-d005 (03-Oct-2023) (64 bit executable, TkQt5.15.9)
-[05/30 02:43:41     16s] @(#)CDS: RCDB 11.15.0
-[05/30 02:43:41     16s] @(#)CDS: STYLUS 23.10-a010_1 (02/06/2024 03:59 PST)
-[05/30 02:43:41     16s] Change the soft stacksize limit to 0.2%RAM (386 mbytes). Set global soft_stack_size_limit to change the value.
-[05/30 02:43:41     16s] **INFO: (TMPDIR-1001): Create and set the environment variable TMPDIR to '/tmp/ssv_tmpdir_2509940_qyoI19'.
-environment variable TMPDIR is '/tmp/ssv_tmpdir_2509940_qyoI19'.
-[05/30 02:43:42     17s] <CMD> ::stop_gui -keepDgui
-[05/30 02:43:42     17s] Has not load the powerDB, will keep enalbed
-[05/30 02:43:42     17s] Has not load the powerDB, will keep enalbed
-[05/30 02:44:13     19s] <CMD> read_view_definition SIPO_MMMC.view
-[05/30 02:44:13     19s] <CMD> read_verilog pnr_outputs/post_layout_SIPO.v
-[05/30 02:44:13     19s] <CMD> set_top_module serial_to_parallel
-[05/30 02:44:13     19s] #% Begin Load MMMC data ... (date=05/30 02:44:13, mem=1767.3M)
-[05/30 02:44:13     19s] Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
-[05/30 02:44:13     19s] #% End Load MMMC data ... (date=05/30 02:44:13, total cpu=0:00:00.0, real=0:00:00.0, peak res=1768.4M, current mem=1768.4M)
-[05/30 02:44:13     19s] Loading view definition file from SIPO_MMMC.view
-[05/30 02:44:13     19s] Reading MAX_TIMING timing library '/home/bas33767/Desktop/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_slow_1p35V_125C.lib' ...
-[05/30 02:44:13     20s] Read 78 cells in library 'sg13g2_stdcell_slow_1p35V_125C' 
-[05/30 02:44:13     20s] Reading MIN_TIMING timing library '/home/bas33767/Desktop/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_fast_1p32V_m40C.lib' ...
-[05/30 02:44:13     20s] Read 78 cells in library 'sg13g2_stdcell_fast_1p32V_m40C' 
-[05/30 02:44:13     20s] Ending "PreSetAnalysisView" (total cpu=0:00:00.3, real=0:00:00.0, peak res=1810.6M, current mem=1776.7M)
-[05/30 02:44:13     20s] *** End library_loading (cpu=0.00min, real=0.00min, mem=39.0M, fe_cpu=0.34min, fe_real=0.82min, fe_mem=1692.2M) ***
-[05/30 02:44:14     20s] #% Begin Load netlist data ... (date=05/30 02:44:13, mem=1776.7M)
-[05/30 02:44:14     20s] *** Begin netlist parsing (mem=1692.2M) ***
-[05/30 02:44:14     20s] Reading verilog netlist 'pnr_outputs/post_layout_SIPO.v'
-[05/30 02:44:14     20s] 
-[05/30 02:44:14     20s] *** Memory Usage v#2 (Current mem = 2056.258M, initial mem = 840.277M) ***
-[05/30 02:44:14     20s] *** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=2056.3M) ***
-[05/30 02:44:14     20s] #% End Load netlist data ... (date=05/30 02:44:14, total cpu=0:00:00.4, real=0:00:00.0, peak res=1902.1M, current mem=1894.1M)
-[05/30 02:44:14     20s] Set top cell to serial_to_parallel.
-[05/30 02:44:14     20s] Has not load the powerDB, will keep enalbed
-[05/30 02:44:14     20s] Has not load the powerDB, will keep enalbed
-[05/30 02:44:14     20s] Ending "BindLib:" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1928.3M, current mem=1928.3M)
-[05/30 02:44:14     20s] *** Estimate the number of flat objects and h-objects before Flatten ***
-[05/30 02:44:14     20s] 	flat insts : 23
-[05/30 02:44:14     20s] 	flat terms : 94
-[05/30 02:44:14     20s] 	HNets : 0
-[05/30 02:44:14     20s] 	HInsts : 0
-[05/30 02:44:14     20s] 	HTerms : 0
-[05/30 02:44:14     20s] Building hierarchical netlist for Cell serial_to_parallel ...
-[05/30 02:44:14     20s] ***** UseNewTieNetMode *****.
-[05/30 02:44:14     20s] *** Netlist is unique.
-[05/30 02:44:14     20s] ** info: there are 157 modules.
-[05/30 02:44:14     20s] ** info: there are 23 stdCell insts.
-[05/30 02:44:14     20s] ** info: there are 23 stdCell insts with at least one signal pin.
-[05/30 02:44:14     20s] 
-[05/30 02:44:14     20s] *** Memory Usage v#2 (Current mem = 2441.203M, initial mem = 840.277M) ***
-[05/30 02:44:14     20s] Set Default Input Pin Transition as 0.1 ps.
-[05/30 02:44:14     20s] Has not load the powerDB, will keep enalbed
-[05/30 02:44:14     20s] Has not load the powerDB, will keep enalbed
-[05/30 02:44:14     20s] Has not load the powerDB, will keep enalbed
-[05/30 02:44:14     20s] Has not load the powerDB, will keep enalbed
-[05/30 02:44:14     20s] Has not load the powerDB, will keep enalbed
-[05/30 02:44:14     20s] Has not load the powerDB, will keep enalbed
-[05/30 02:44:15     21s] Extraction setup Started for TopCell serial_to_parallel 
-[05/30 02:44:15     21s] Summary of Active RC-Corners : 
-[05/30 02:44:15     21s]  
-[05/30 02:44:15     21s]  Analysis View: WORST_CASE
-[05/30 02:44:15     21s]     RC-Corner Name        : RC_BEST
-[05/30 02:44:15     21s]     RC-Corner Index       : 0
-[05/30 02:44:15     21s]     RC-Corner Temperature : 40 Celsius
-[05/30 02:44:15     21s]     RC-Corner Cap Table   : ''
-[05/30 02:44:15     21s]     RC-Corner PostRoute Res Factor        : 1
-[05/30 02:44:15     21s]     RC-Corner PostRoute Cap Factor        : 1
-[05/30 02:44:15     21s]     RC-Corner PostRoute XCap Factor       : 1
-[05/30 02:44:15     21s]  
-[05/30 02:44:15     21s]  Analysis View: Best_CASE
-[05/30 02:44:15     21s]     RC-Corner Name        : RC_WORST
-[05/30 02:44:15     21s]     RC-Corner Index       : 1
-[05/30 02:44:15     21s]     RC-Corner Temperature : 125 Celsius
-[05/30 02:44:15     21s]     RC-Corner Cap Table   : ''
-[05/30 02:44:15     21s]     RC-Corner PostRoute Res Factor        : 1
-[05/30 02:44:15     21s]     RC-Corner PostRoute Cap Factor        : 1
-[05/30 02:44:15     21s]     RC-Corner PostRoute XCap Factor       : 1
-[05/30 02:44:15     21s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2435.9M, current mem=2201.9M)
-[05/30 02:44:15     22s] Reading timing constraints file 'pnr_outputs/SIPO.default_emulate_constraint_mode.sdc' ...
-[05/30 02:44:15     22s] Current (total cpu=0:00:22.1, real=0:00:51.0, peak res=2554.8M, current mem=2522.9M)
-[05/30 02:44:15     22s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File pnr_outputs/SIPO.default_emulate_constraint_mode.sdc, Line 9).
-[05/30 02:44:15     22s] 
-[05/30 02:44:15     22s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File pnr_outputs/SIPO.default_emulate_constraint_mode.sdc, Line 10).
-[05/30 02:44:15     22s] 
-[05/30 02:44:15     22s] INFO (CTE): Reading of timing constraints file pnr_outputs/SIPO.default_emulate_constraint_mode.sdc completed, with 2 WARNING
-[05/30 02:44:15     22s] Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2557.6M, current mem=2557.6M)
-[05/30 02:44:15     22s] Current (total cpu=0:00:22.2, real=0:00:51.0, peak res=2557.6M, current mem=2557.6M)
-[05/30 02:44:16     22s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
-[05/30 02:44:16     22s] 
-[05/30 02:44:16     22s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) Begin ...
-[05/30 02:44:16     22s] Summary for sequential cells identification: 
-[05/30 02:44:16     22s]   Identified SBFF number: 3
-[05/30 02:44:16     22s]   Identified MBFF number: 0
-[05/30 02:44:16     22s]   Identified SB Latch number: 5
-[05/30 02:44:16     22s]   Identified MB Latch number: 0
-[05/30 02:44:16     22s]   Not identified SBFF number: 0
-[05/30 02:44:16     22s]   Not identified MBFF number: 0
-[05/30 02:44:16     22s]   Not identified SB Latch number: 0
-[05/30 02:44:16     22s]   Not identified MB Latch number: 0
-[05/30 02:44:16     22s]   Number of sequential cells which are not FFs: 2
-[05/30 02:44:16     22s] Total number of combinational cells: 54
-[05/30 02:44:16     22s] Total number of sequential cells: 10
-[05/30 02:44:16     22s] Total number of tristate cells: 6
-[05/30 02:44:16     22s] Total number of level shifter cells: 0
-[05/30 02:44:16     22s] Total number of power gating cells: 0
-[05/30 02:44:16     22s] Total number of isolation cells: 0
-[05/30 02:44:16     22s] Total number of power switch cells: 0
-[05/30 02:44:16     22s] Total number of pulse generator cells: 0
-[05/30 02:44:16     22s] Total number of always on buffers: 0
-[05/30 02:44:16     22s] Total number of retention cells: 0
-[05/30 02:44:16     22s] Total number of physical cells: 0
-[05/30 02:44:16     22s] List of usable buffers: sg13g2_buf_1 sg13g2_buf_16 sg13g2_buf_2 sg13g2_buf_4 sg13g2_buf_8
-[05/30 02:44:16     22s] Total number of usable buffers: 5
-[05/30 02:44:16     22s] List of unusable buffers:
-[05/30 02:44:16     22s] Total number of unusable buffers: 0
-[05/30 02:44:16     22s] List of usable inverters: sg13g2_inv_1 sg13g2_inv_16 sg13g2_inv_2 sg13g2_inv_8 sg13g2_inv_4
-[05/30 02:44:16     22s] Total number of usable inverters: 5
-[05/30 02:44:16     22s] List of unusable inverters:
-[05/30 02:44:16     22s] Total number of unusable inverters: 0
-[05/30 02:44:16     22s] List of identified usable delay cells: sg13g2_dlygate4sd1_1 sg13g2_dlygate4sd3_1 sg13g2_dlygate4sd2_1
-[05/30 02:44:16     22s] Total number of identified usable delay cells: 3
-[05/30 02:44:16     22s] List of identified unusable delay cells:
-[05/30 02:44:16     22s] Total number of identified unusable delay cells: 0
-[05/30 02:44:16     22s] 
-[05/30 02:44:16     22s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) End ...
-[05/30 02:44:16     22s] 
-[05/30 02:44:16     22s] TimeStamp Deleting Cell Server Begin ...
-[05/30 02:44:16     22s] 
-[05/30 02:44:16     22s] TimeStamp Deleting Cell Server End ...
-[05/30 02:44:16     22s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2559.8M, current mem=2559.8M)
-[05/30 02:44:16     22s] 
-[05/30 02:44:16     22s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) Begin ...
-[05/30 02:44:16     22s] Summary for sequential cells identification: 
-[05/30 02:44:16     22s]   Identified SBFF number: 3
-[05/30 02:44:16     22s]   Identified MBFF number: 0
-[05/30 02:44:16     22s]   Identified SB Latch number: 5
-[05/30 02:44:16     22s]   Identified MB Latch number: 0
-[05/30 02:44:16     22s]   Not identified SBFF number: 0
-[05/30 02:44:16     22s]   Not identified MBFF number: 0
-[05/30 02:44:16     22s]   Not identified SB Latch number: 0
-[05/30 02:44:16     22s]   Not identified MB Latch number: 0
-[05/30 02:44:16     22s]   Number of sequential cells which are not FFs: 2
-[05/30 02:44:16     22s]  Visiting view : WORST_CASE
-[05/30 02:44:16     22s]    : PowerDomain = none : Weighted F : unweighted  = 23.60 (1.000) with rcCorner = 0
-[05/30 02:44:16     22s]    : PowerDomain = none : Weighted F : unweighted  = 23.60 (1.000) with rcCorner = -1
-[05/30 02:44:16     22s]  Visiting view : Best_CASE
-[05/30 02:44:16     22s]    : PowerDomain = none : Weighted F : unweighted  = 16.30 (1.000) with rcCorner = 1
-[05/30 02:44:16     22s]    : PowerDomain = none : Weighted F : unweighted  = 16.30 (1.000) with rcCorner = -1
-[05/30 02:44:16     22s] TLC MultiMap info (StdDelay):
-[05/30 02:44:16     22s]   : MIN_DEALY + MIN_TIMING + 1 + no RcCorner := 16.3ps
-[05/30 02:44:16     22s]   : MIN_DEALY + MIN_TIMING + 1 + RC_WORST := 16.3ps
-[05/30 02:44:16     22s]   : MAX_DEALY + MAX_TIMING + 1 + no RcCorner := 23.6ps
-[05/30 02:44:16     22s]   : MAX_DEALY + MAX_TIMING + 1 + RC_BEST := 23.6ps
-[05/30 02:44:16     22s]  Setting StdDelay to: 23.6ps
-[05/30 02:44:16     22s] 
-[05/30 02:44:16     22s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) End ...
-[05/30 02:44:16     22s] 
-[05/30 02:44:16     22s] TimeStamp Deleting Cell Server Begin ...
-[05/30 02:44:16     22s] 
-[05/30 02:44:16     22s] TimeStamp Deleting Cell Server End ...
-[05/30 02:44:16     22s] <CMD> read_spef -rc_corner RC_BEST pnr_outputs/serial_to_parallel_RC_BEST.spef
-[05/30 02:44:16     22s] read_spef Option :  pnr_outputs/serial_to_parallel_RC_BEST.spef -noStarN -rc_corner RC_BEST 
-[05/30 02:44:16     22s] WARNING (IMPEXT-3315): Spef available for 1 corner(s)but not available for 1 corner(s). Spef reading will be triggered only after spef for all active RC Corners are available.
-[05/30 02:44:16     22s] <CMD> read_spef -rc_corner RC_WORST pnr_outputs/serial_to_parallel_RC_WORST.spef
-[05/30 02:44:16     22s] read_spef Option :  pnr_outputs/serial_to_parallel_RC_WORST.spef -noStarN -rc_corner RC_WORST 
-[05/30 02:44:16     22s] 
-[05/30 02:44:16     22s] SPEF files for RC Corner RC_BEST:
-[05/30 02:44:16     22s] Top-level spef file 'pnr_outputs/serial_to_parallel_RC_BEST.spef'.
-[05/30 02:44:16     22s] 
-[05/30 02:44:16     22s] SPEF files for RC Corner RC_WORST:
-[05/30 02:44:16     22s] Top-level spef file 'pnr_outputs/serial_to_parallel_RC_WORST.spef'.
-[05/30 02:44:16     22s] Start spef parsing (MEM=2821.01).
-[05/30 02:44:16     22s] Number of corners: 2
-[05/30 02:44:16     22s] Number of parallel threads processing the nets is: 1
-[05/30 02:44:16     22s] Maximum backlog used in parser: 50.
-[05/30 02:44:16     22s] Reading multiple SPEF files in parallel.
-[05/30 02:44:16     22s] RCDB /tmp/ssv_tmpdir_2509940_qyoI19/serial_to_parallel_2509940_qJASxF.rcdb.d/serial_to_parallel.rcdb.d Creation Started (CPU Time= 0:00:00.0  MEM= 2830.0M)
-[05/30 02:44:16     22s] Creating parasitic data file '/tmp/ssv_tmpdir_2509940_qyoI19/serial_to_parallel_2509940_qJASxF.rcdb.d/serial_to_parallel.rcdb.d' for storing RC.
-[05/30 02:44:16     22s] SPEF file pnr_outputs/serial_to_parallel_RC_BEST.spef.
-[05/30 02:44:16     22s] Number of Resistors     : 421
-[05/30 02:44:16     22s] Number of Ground Caps   : 433
-[05/30 02:44:16     22s] Number of Coupling Caps : 0
-[05/30 02:44:16     22s] 
-[05/30 02:44:16     22s] SPEF file pnr_outputs/serial_to_parallel_RC_WORST.spef.
-[05/30 02:44:16     22s] Number of Resistors     : 421
-[05/30 02:44:16     22s] Number of Ground Caps   : 433
-[05/30 02:44:16     22s] Number of Coupling Caps : 0
-[05/30 02:44:16     22s] 
-[05/30 02:44:16     22s] RCDB /tmp/ssv_tmpdir_2509940_qyoI19/serial_to_parallel_2509940_qJASxF.rcdb.d/serial_to_parallel.rcdb.d Creation Completed (CPU Time= 0:00:00.0  MEM= 2864.0M)
-[05/30 02:44:16     22s] End spef parsing (MEM=2832.01 CPU=0:00:00.0 REAL=0:00:00.0).
-[05/30 02:44:16     22s] Spef for RC Corner 'RC_BEST' was previously specified. Dropping the previous specification.
-[05/30 02:44:16     22s] Spef for RC Corner 'RC_WORST' was previously specified. Dropping the previous specification.
-[05/30 02:44:16     22s] Lumped Parasitic Loading Started (total cpu=0:00:00.0, real=0:00:00.0, current mem=2823.008M)
-[05/30 02:44:16     22s] Opening parasitic data file '/tmp/ssv_tmpdir_2509940_qyoI19/serial_to_parallel_2509940_qJASxF.rcdb.d/serial_to_parallel.rcdb.d' for reading (mem: 2823.008M)
-[05/30 02:44:16     22s] Lumped Parasitic Loading Completed (total cpu=0:00:00.1, real=0:00:00.0, current mem=2831.008M)
-[05/30 02:44:16     22s] Closing parasitic data file '/tmp/ssv_tmpdir_2509940_qyoI19/serial_to_parallel_2509940_qJASxF.rcdb.d/serial_to_parallel.rcdb.d': 0 access done (mem: 2831.008M)
-[05/30 02:44:16     22s] <CMD> set_si_mode -enable_delay_report true
-[05/30 02:44:16     22s] <CMD> set_si_mode -enable_glitch_report true
-[05/30 02:44:16     22s] <CMD> set_si_mode -enable_glitch_propagation true
-[05/30 02:44:16     22s] <CMD> update_timing -full
-[05/30 02:44:16     22s] AAE_INFO: opIsDesignInPostRouteState() is 0
-[05/30 02:44:16     22s] AAE_INFO: deleting AAE DB in update_timing -full ...
-[05/30 02:44:16     22s] AAE DB initialization (MEM=2866.45 CPU=0:00:00.0 REAL=0:00:00.0) 
-[05/30 02:44:16     22s] #################################################################################
-[05/30 02:44:16     22s] # Design Name: serial_to_parallel
-[05/30 02:44:16     22s] # Design Mode: 65nm
-[05/30 02:44:16     22s] # Analysis Mode: MMMC OCV 
-[05/30 02:44:16     22s] # Parasitics Mode: SPEF/RCDB 
-[05/30 02:44:16     22s] # Signoff Settings: SI Off 
-[05/30 02:44:16     22s] #################################################################################
-[05/30 02:44:17     23s] Topological Sorting (REAL = 0:00:00.0, MEM = 2999.9M, InitMEM = 2997.9M)
-[05/30 02:44:17     23s] Start delay calculation (fullDC) (1 T). (MEM=2521.76)
-[05/30 02:44:17     23s] Start AAE Lib Loading. (MEM=2999.88)
-[05/30 02:44:17     23s] End AAE Lib Loading. (MEM=3210.41 CPU=0:00:00.0 Real=0:00:00.0)
-[05/30 02:44:17     23s] End AAE Lib Interpolated Model. (MEM=3210.41 CPU Time=0:00:00.0, Real Time=0:00:00.0)
-[05/30 02:44:17     23s] Opening parasitic data file '/tmp/ssv_tmpdir_2509940_qyoI19/serial_to_parallel_2509940_qJASxF.rcdb.d/serial_to_parallel.rcdb.d' for reading (mem: 3249.031M)
-[05/30 02:44:17     23s] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 3259.0M)
-[05/30 02:44:17     23s] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 3258.6M)
-[05/30 02:44:17     23s] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 3258.6M)
-[05/30 02:44:17     23s] Total number of fetched objects 36
-[05/30 02:44:17     23s] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 3468.8M)
-[05/30 02:44:17     23s] Total number of fetched objects 36
-[05/30 02:44:17     23s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
-[05/30 02:44:17     23s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
-[05/30 02:44:17     23s] End delay calculation. (MEM=2602.2 CPU=0:00:00.0 REAL=0:00:00.0)
-[05/30 02:44:17     23s] Begin loading slews from CTE ...
-[05/30 02:44:17     23s] Loading slews from CTE completed...
-[05/30 02:44:17     23s] End delay calculation (fullDC). (MEM=2600.78 CPU=0:00:00.1 REAL=0:00:00.0)
-[05/30 02:44:17     23s] *** CDM Built up (cpu=0:00:01.0  real=0:00:01.0  mem= 3344.9M) ***
-[05/30 02:44:17     23s] Has not load the powerDB, will keep enalbed
-[05/30 02:44:17     23s] Has not load the powerDB, will keep enalbed
-[05/30 02:44:17     24s] <CMD> report_timing
-[05/30 02:44:17     24s] Loading  (serial_to_parallel)
-[05/30 02:44:17     24s] Traverse HInst (serial_to_parallel)
-[05/30 02:47:19     32s] <CMD> report_noise -txtfile reports/glitch.rpt
-[05/30 02:47:19     32s] Output report file name prefix is reports/glitch.rpt 
-[05/30 02:47:19     32s] **ERROR: (IMPESI-2109):	Glitch results are not available for reporting. Ensure that parasitics are correctly annotated for all active RC corners, and glitch analysis has also been performed before running report_noise.
-<CMD> check_design -help
-[05/30 02:48:09     34s] 
-[05/30 02:48:09     34s] Usage: check_design [-help] [-out_file <string>] {[-type {library netlist power_intent timing hierarchical pin_assign budget assign_statements place opt cts route signoff all}] [-no_check ]} [-type {library netlist power_intent timing hierarchical pin_assign budget assign_statements place opt cts route signoff all} ]
-[05/30 02:48:09     34s] 
-[05/30 02:48:09     34s] -help                  # Prints out the command usage
--no_check              # Just echo out all the messages that would be checked, don't do any checks (bool, required)
--out_file <string>     # Specifies output report file, contents dumped to this file is Tcl formatted (string, optional)
--type {library netlist power_intent timing hierarchical pin_assign budget assign_statements place opt cts route signoff all}
-                       # List of categories to check, accepts single & multiple values (one or more categories) (enum_list, required)
-
-[05/30 02:48:09     34s] 
-[05/30 02:48:53     36s] <CMD> check_design -out_file reports/check_design.rpt
-[05/30 02:48:53     36s] **ERROR: (IMPTCM-46):	Argument "{[-type] [-no_check]}" is required for command "check_design", either this option is not specified or an option prior to it is not specified correctly.
-
-[05/30 02:49:40     38s] <CMD> check_design -out_file reports/check_design.rpt -type signoff
-[05/30 02:49:40     38s] Begin: Design checking
-[05/30 02:49:40     38s] **ERROR: (IMPESO-441):	The placement density is reported a 0% which means that LEF is loaded but not the DEF.
-[05/30 02:49:40     38s] **WARN: (IMPESO-448):	The standard cell sg13g2_xor2_1 is part of the timing library but has no physical definition. Ensure that this cell is described in the LEF.
-[05/30 02:49:40     38s] **ERROR: (IMPREPO-508):	The message id 'IMPESO-448' was not registered with check_design properly which means the message will not get properly reported with check_design -no_check. This is an internal error that has no effect on the message or check, and can be ignored by users. It can only be fixed by registering the message inside the code properly.
-[05/30 02:49:40     38s] **WARN: (IMPESO-448):	The standard cell sg13g2_xnor2_1 is part of the timing library but has no physical definition. Ensure that this cell is described in the LEF.
-[05/30 02:49:40     38s] **ERROR: (IMPREPO-508):	The message id 'IMPESO-448' was not registered with check_design properly which means the message will not get properly reported with check_design -no_check. This is an internal error that has no effect on the message or check, and can be ignored by users. It can only be fixed by registering the message inside the code properly.
-[05/30 02:49:40     38s] **WARN: (IMPESO-448):	The standard cell sg13g2_tielo is part of the timing library but has no physical definition. Ensure that this cell is described in the LEF.
-[05/30 02:49:40     38s] **ERROR: (IMPREPO-508):	The message id 'IMPESO-448' was not registered with check_design properly which means the message will not get properly reported with check_design -no_check. This is an internal error that has no effect on the message or check, and can be ignored by users. It can only be fixed by registering the message inside the code properly.
-[05/30 02:49:40     38s] **WARN: (IMPESO-448):	The standard cell sg13g2_tiehi is part of the timing library but has no physical definition. Ensure that this cell is described in the LEF.
-[05/30 02:49:40     38s] **ERROR: (IMPREPO-508):	The message id 'IMPESO-448' was not registered with check_design properly which means the message will not get properly reported with check_design -no_check. This is an internal error that has no effect on the message or check, and can be ignored by users. It can only be fixed by registering the message inside the code properly.
-[05/30 02:49:40     38s] **WARN: (IMPESO-448):	The standard cell sg13g2_slgcp_1 is part of the timing library but has no physical definition. Ensure that this cell is described in the LEF.
-[05/30 02:49:40     38s] **ERROR: (IMPREPO-508):	The message id 'IMPESO-448' was not registered with check_design properly which means the message will not get properly reported with check_design -no_check. This is an internal error that has no effect on the message or check, and can be ignored by users. It can only be fixed by registering the message inside the code properly.
-[05/30 02:49:40     38s] **WARN: (IMPESO-448):	The standard cell sg13g2_sdfbbp_1 is part of the timing library but has no physical definition. Ensure that this cell is described in the LEF.
-[05/30 02:49:40     38s] **ERROR: (IMPREPO-508):	The message id 'IMPESO-448' was not registered with check_design properly which means the message will not get properly reported with check_design -no_check. This is an internal error that has no effect on the message or check, and can be ignored by users. It can only be fixed by registering the message inside the code properly.
-[05/30 02:49:40     38s] **WARN: (IMPESO-448):	The standard cell sg13g2_or4_2 is part of the timing library but has no physical definition. Ensure that this cell is described in the LEF.
-[05/30 02:49:40     38s] **ERROR: (IMPREPO-508):	The message id 'IMPESO-448' was not registered with check_design properly which means the message will not get properly reported with check_design -no_check. This is an internal error that has no effect on the message or check, and can be ignored by users. It can only be fixed by registering the message inside the code properly.
-[05/30 02:49:40     38s] **WARN: (IMPESO-448):	The standard cell sg13g2_or4_1 is part of the timing library but has no physical definition. Ensure that this cell is described in the LEF.
-[05/30 02:49:40     38s] **ERROR: (IMPREPO-508):	The message id 'IMPESO-448' was not registered with check_design properly which means the message will not get properly reported with check_design -no_check. This is an internal error that has no effect on the message or check, and can be ignored by users. It can only be fixed by registering the message inside the code properly.
-[05/30 02:49:40     38s] **WARN: (IMPESO-448):	The standard cell sg13g2_or3_2 is part of the timing library but has no physical definition. Ensure that this cell is described in the LEF.
-[05/30 02:49:40     38s] **ERROR: (IMPREPO-508):	The message id 'IMPESO-448' was not registered with check_design properly which means the message will not get properly reported with check_design -no_check. This is an internal error that has no effect on the message or check, and can be ignored by users. It can only be fixed by registering the message inside the code properly.
-[05/30 02:49:40     38s] **WARN: (IMPESO-448):	The standard cell sg13g2_or3_1 is part of the timing library but has no physical definition. Ensure that this cell is described in the LEF.
-[05/30 02:49:40     38s] **ERROR: (IMPREPO-508):	The message id 'IMPESO-448' was not registered with check_design properly which means the message will not get properly reported with check_design -no_check. This is an internal error that has no effect on the message or check, and can be ignored by users. It can only be fixed by registering the message inside the code properly.
-[05/30 02:49:40     38s] **WARN: (IMPESO-448):	The standard cell sg13g2_or2_2 is part of the timing library but has no physical definition. Ensure that this cell is described in the LEF.
-[05/30 02:49:40     38s] **ERROR: (IMPREPO-508):	The message id 'IMPESO-448' was not registered with check_design properly which means the message will not get properly reported with check_design -no_check. This is an internal error that has no effect on the message or check, and can be ignored by users. It can only be fixed by registering the message inside the code properly.
-[05/30 02:49:40     38s] **WARN: (IMPESO-448):	The standard cell sg13g2_or2_1 is part of the timing library but has no physical definition. Ensure that this cell is described in the LEF.
-[05/30 02:49:40     38s] **ERROR: (IMPREPO-508):	The message id 'IMPESO-448' was not registered with check_design properly which means the message will not get properly reported with check_design -no_check. This is an internal error that has no effect on the message or check, and can be ignored by users. It can only be fixed by registering the message inside the code properly.
-[05/30 02:49:40     38s] **WARN: (IMPESO-448):	The standard cell sg13g2_o21ai_1 is part of the timing library but has no physical definition. Ensure that this cell is described in the LEF.
-[05/30 02:49:40     38s] **ERROR: (IMPREPO-508):	The message id 'IMPESO-448' was not registered with check_design properly which means the message will not get properly reported with check_design -no_check. This is an internal error that has no effect on the message or check, and can be ignored by users. It can only be fixed by registering the message inside the code properly.
-[05/30 02:49:40     38s] **WARN: (IMPESO-448):	The standard cell sg13g2_nor4_2 is part of the timing library but has no physical definition. Ensure that this cell is described in the LEF.
-[05/30 02:49:40     38s] **ERROR: (IMPREPO-508):	The message id 'IMPESO-448' was not registered with check_design properly which means the message will not get properly reported with check_design -no_check. This is an internal error that has no effect on the message or check, and can be ignored by users. It can only be fixed by registering the message inside the code properly.
-[05/30 02:49:40     38s] **WARN: (IMPESO-448):	The standard cell sg13g2_nor4_1 is part of the timing library but has no physical definition. Ensure that this cell is described in the LEF.
-[05/30 02:49:40     38s] **ERROR: (IMPREPO-508):	The message id 'IMPESO-448' was not registered with check_design properly which means the message will not get properly reported with check_design -no_check. This is an internal error that has no effect on the message or check, and can be ignored by users. It can only be fixed by registering the message inside the code properly.
-[05/30 02:49:40     38s] **WARN: (IMPESO-448):	The standard cell sg13g2_nor3_2 is part of the timing library but has no physical definition. Ensure that this cell is described in the LEF.
-[05/30 02:49:40     38s] **ERROR: (IMPREPO-508):	The message id 'IMPESO-448' was not registered with check_design properly which means the message will not get properly reported with check_design -no_check. This is an internal error that has no effect on the message or check, and can be ignored by users. It can only be fixed by registering the message inside the code properly.
-[05/30 02:49:40     38s] **WARN: (IMPESO-448):	The standard cell sg13g2_nor3_1 is part of the timing library but has no physical definition. Ensure that this cell is described in the LEF.
-[05/30 02:49:40     38s] **ERROR: (IMPREPO-508):	The message id 'IMPESO-448' was not registered with check_design properly which means the message will not get properly reported with check_design -no_check. This is an internal error that has no effect on the message or check, and can be ignored by users. It can only be fixed by registering the message inside the code properly.
-[05/30 02:49:40     38s] **WARN: (IMPESO-448):	The standard cell sg13g2_nor2b_2 is part of the timing library but has no physical definition. Ensure that this cell is described in the LEF.
-[05/30 02:49:40     38s] **ERROR: (IMPREPO-508):	The message id 'IMPESO-448' was not registered with check_design properly which means the message will not get properly reported with check_design -no_check. This is an internal error that has no effect on the message or check, and can be ignored by users. It can only be fixed by registering the message inside the code properly.
-[05/30 02:49:40     38s] **WARN: (IMPESO-448):	The standard cell sg13g2_nor2b_1 is part of the timing library but has no physical definition. Ensure that this cell is described in the LEF.
-[05/30 02:49:40     38s] **ERROR: (IMPREPO-508):	The message id 'IMPESO-448' was not registered with check_design properly which means the message will not get properly reported with check_design -no_check. This is an internal error that has no effect on the message or check, and can be ignored by users. It can only be fixed by registering the message inside the code properly.
-[05/30 02:49:40     38s] **WARN: (IMPESO-448):	The standard cell sg13g2_nor2_2 is part of the timing library but has no physical definition. Ensure that this cell is described in the LEF.
-[05/30 02:49:40     38s] **ERROR: (IMPREPO-508):	The message id 'IMPESO-448' was not registered with check_design properly which means the message will not get properly reported with check_design -no_check. This is an internal error that has no effect on the message or check, and can be ignored by users. It can only be fixed by registering the message inside the code properly.
-[05/30 02:49:40     38s] **WARN: (EMS-62):	Message <IMPESO-448> has exceeded the default message display limit of 20.
-[05/30 02:49:40     38s] To avoid this warning, increase the display limit per unique message by
-[05/30 02:49:40     38s] using the set_message -limit <number> command.
-[05/30 02:49:40     38s] The message limit can be removed by using the set_message -no_limit command.
-[05/30 02:49:40     38s] Note that setting a very large number using the set_message -limit command
-[05/30 02:49:40     38s] or removing the message limit using the set_message -no_limit command can
-[05/30 02:49:40     38s] significantly increase the log file size.
-[05/30 02:49:40     38s] To suppress a message, use the set_message -suppress command.
-[05/30 02:49:40     38s] **WARN: (EMS-62):	Message <IMPREPO-508> has exceeded the default message display limit of 20.
-[05/30 02:49:40     38s] To avoid this warning, increase the display limit per unique message by
-[05/30 02:49:40     38s] using the set_message -limit <number> command.
-[05/30 02:49:40     38s] The message limit can be removed by using the set_message -no_limit command.
-[05/30 02:49:40     38s] Note that setting a very large number using the set_message -limit command
-[05/30 02:49:40     38s] or removing the message limit using the set_message -no_limit command can
-[05/30 02:49:40     38s] significantly increase the log file size.
-[05/30 02:49:40     38s] To suppress a message, use the set_message -suppress command.
-[05/30 02:49:40     38s] **ERROR: (IMPESO-444):	There has to be at least one host and some threads per hosts to run distributed MMMC timing analysis.
-[05/30 02:49:40     38s]         Messages issued during checks:
-[05/30 02:49:40     38s] -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-[05/30 02:49:40     38s] | ID                | Severity  | Count       | Description                                                                                                                       |
-[05/30 02:49:40     38s] -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-[05/30 02:49:40     38s] | IMPESO-441        | error     | 1           | The placement density is reported a 0%% which means that LEF is loaded but not the DEF.                                           |
-[05/30 02:49:40     38s] | IMPESO-444        | error     | 1           | There has to be at least one host and some threads per hosts to run distributed MMMC timing analysis.                             |
-[05/30 02:49:40     38s] | IMPESO-448        | warning   | 140         | The standard cell %s is part of the timing library but has no physical definition. Ensure that this cell is described in the LEF. |
-[05/30 02:49:40     38s] -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-[05/30 02:49:40     38s] 		(Real time: 0:00:00.0, Memory: 3354.9M)
-[05/30 02:49:40     38s] 
-[05/30 02:49:40     38s] **INFO: Identified 2 error(s) and 140 warning(s) during 'check_design -type {signoff}'.
-[05/30 02:49:40     38s]         The details of the error(s) and warning(s) can be found in report 'reports/check_design.rpt'
-[05/30 02:49:40     38s] End: Design checking
-[05/30 02:51:03     42s] <CMD> setLayerPreference violation -isVisible 1
-[05/30 02:51:03     42s] [02:51:03.136521] Periodic Lic check successful
-[02:51:03.136537] Feature usage summary:
-[02:51:03.136537] Tempus_Timing_Signoff_XL
-[02:51:03.136538] Tempus_Timing_Signoff_TSO
-
-[05/30 02:51:03     42s] This command "violationBrowser" required an extra checkout of license tpstso.
-[05/30 02:51:03     42s] Additional license(s) checked out: 1 'Tempus_Timing_Signoff_TSO' license(s)
-[05/30 02:51:16     43s] <CMD> {loadViolationReport -type Assura -filename reports/check_design.rpt }
-[05/30 02:51:16     43s] Parsing the Assura violation report...
-[05/30 02:51:16     43s] Created 0 markers.
-[05/30 02:59:00     64s] <CMD> report_noise -txtfile reports/glitch.txt
-[05/30 02:59:00     64s] Output report file name prefix is reports/glitch.txt 
-[05/30 02:59:00     64s] **ERROR: (IMPESI-2109):	Glitch results are not available for reporting. Ensure that parasitics are correctly annotated for all active RC corners, and glitch analysis has also been performed before running report_noise.
-<CMD> report_annotated_parasitics
-[05/30 02:59:32     66s] ####################################################################
-[05/30 02:59:32     66s] # report_annotated_parasitics: Fri May 30 02:59:32 2025
-[05/30 02:59:32     66s] #   view: WORST_CASE
-[05/30 02:59:32     66s] #   -list_not_annotated
-[05/30 02:59:32     66s] ####################################################################
-[05/30 02:59:32     66s] #
-[05/30 02:59:32     66s] # list syntax: type: net_name [nrCap Cap nrXCap XCap nrRes Res]
-[05/30 02:59:32     66s] # unit: pF, Ohm
-[05/30 02:59:32     66s] 
-[05/30 02:59:32     66s] # Summary of Annotated Parasitics:
-[05/30 02:59:32     66s] +------------------------------------------------------------------------------+
-[05/30 02:59:32     66s] |    Net Type         |    Count   |   Annotated (%)     | Not Annotated (%)   |
-[05/30 02:59:32     66s] +---------------------+------------+---------------------+---------------------+
-[05/30 02:59:32     66s] | total               |         37 |         36 97.30%   |          1  2.70%   |
-[05/30 02:59:32     66s] +---------------------+------------+---------------------+---------------------+
-[05/30 02:59:32     66s] | 0-term:floating (*) |          1 |          0  0.00%   |          1 100.00%   |
-[05/30 02:59:32     66s] | real net (complete) |         36 |         36 100.00%   |          0  0.00%   |
-[05/30 02:59:32     66s] | real net (broken)   |          0 |          0  0.00%   |          0  0.00%   |
-[05/30 02:59:32     66s] | zero capacitance net|          0 |          0  0.00%   |          0  0.00%   |
-[05/30 02:59:32     66s] +------------------------------------------------------------------------------+
-[05/30 02:59:32     66s] Note for Net Types marked "(*)":  Such nets are never timed, but reported here for informational purpose.
-[05/30 02:59:32     66s] 
-[05/30 02:59:32     66s] +-----------------------------------------------------------------+
-[05/30 02:59:32     66s] | Annotated |    Res (KOhm)   |    Cap (pF)     |    XCap (pF)    |
-[05/30 02:59:32     66s] +-----------+-----------------+-----------------+-----------------+
-[05/30 02:59:32     66s] | Count     |           421   |           433   |             0   |
-[05/30 02:59:32     66s] | Value     |        3.2717   |        0.1061   |        0.0000   |
-[05/30 02:59:32     66s] +-----------------------------------------------------------------+
-[05/30 03:00:04     67s] <CMD> report_analysis_coverage 
-[05/30 03:00:19     68s] <CMD> report_clocks
-[05/30 03:00:58     70s] <CMD> report_constraint -all_violators
-[05/30 03:01:20     71s] <CMD> report_analysis_summary 
-[05/30 03:02:55     75s] <CMD> get_si_mode -analysisType -quiet
-[05/30 03:02:55     75s] <CMD> get_si_mode -separate_delta_delay_on_data -quiet
-[05/30 03:02:55     75s] <CMD> get_si_mode -delta_delay_annotation_mode -quiet
-[05/30 03:02:55     75s] <CMD> get_si_mode -num_si_iteration -quiet
-[05/30 03:02:55     75s] <CMD> get_si_mode -si_reselection -quiet
-[05/30 03:02:55     75s] <CMD> get_si_mode -initial_si_iteration_tw -quiet
-[05/30 03:03:01     76s] <CMD> set_delay_cal_mode -SIaware true -engine aae
-[05/30 03:03:01     76s] AAE_INFO: switching setDelayCal -siAware from false to true ...
-[05/30 03:03:02     76s] AAE_INFO: The setting is changed from false to true in setDelayCalMode -SIAware
-[05/30 03:03:02     76s] <CMD> set_si_mode -analysisType aae
-[05/30 03:03:02     76s] <CMD> set_si_mode -separate_delta_delay_on_data false
-[05/30 03:03:02     76s] <CMD> set_si_mode -delta_delay_annotation_mode arc
-[05/30 03:03:02     76s] <CMD> set_si_mode -num_si_iteration 2
-[05/30 03:03:02     76s] <CMD> set_si_mode -si_reselection slack
-[05/30 03:03:02     76s] <CMD> set_si_mode -initial_si_iteration_tw infinite
-[05/30 03:03:02     76s] <CMD> update_timing -full
-[05/30 03:03:02     76s] AAE_INFO: opIsDesignInPostRouteState() is 0
-[05/30 03:03:02     76s] AAE_INFO: deleting AAE DB in update_timing -full ...
-[05/30 03:03:02     76s] AAE DB initialization (MEM=3023.95 CPU=0:00:00.0 REAL=0:00:00.0) 
-[05/30 03:03:02     76s] AAE_INFO: resetNetProps viewIdx 0 
-[05/30 03:03:02     76s] AAE_INFO: resetNetProps viewIdx 1 
-[05/30 03:03:02     76s] Starting SI iteration 1 using Infinite Timing Windows
-[05/30 03:03:02     76s] Start slew iteration 
-[05/30 03:03:02     76s] #################################################################################
-[05/30 03:03:02     76s] # Design Name: serial_to_parallel
-[05/30 03:03:02     76s] # Design Mode: 65nm
-[05/30 03:03:02     76s] # Analysis Mode: MMMC OCV 
-[05/30 03:03:02     76s] # Parasitics Mode: SPEF/RCDB 
-[05/30 03:03:02     76s] # Signoff Settings: SI On 
-[05/30 03:03:02     76s] #################################################################################
-[05/30 03:03:03     77s] AAE_INFO: 1 threads acquired from CTE.
-[05/30 03:03:03     77s] AAE_INFO: 1 threads acquired from CTE.
-[05/30 03:03:03     77s] Start delay calculation (fullDC) (1 T). (MEM=2616.04)
-[05/30 03:03:03     77s] **ERROR: (IMPESI-2016):	There is no coupling capacitance found in the design. Use 'set_delay_cal_mode -siAware false' to perform base delay analysis. SI analysis requires the SPEF to contain coupling capacitance. To perform SI analysis, load a SPEF with coupling capacitance and re-run.
-RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 3109.8M)
-[05/30 03:03:03     77s] Start AAE Lib Loading. (MEM=3109.75)
-[05/30 03:03:03     77s] End AAE Lib Loading. (MEM=3310.75 CPU=0:00:00.0 Real=0:00:00.0)
-[05/30 03:03:03     77s] End AAE Lib Interpolated Model. (MEM=3310.75 CPU Time=0:00:00.0, Real Time=0:00:00.0)
-[05/30 03:03:03     77s] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 3458.8M)
-[05/30 03:03:03     77s] End delay calculation. (MEM=2622.07 CPU=0:00:00.0 REAL=0:00:00.0)
-[05/30 03:03:03     77s] End delay calculation (fullDC). (MEM=2620.33 CPU=0:00:00.0 REAL=0:00:00.0)
-[05/30 03:03:03     77s] update aggressor slew in non distributed run
-[05/30 03:03:03     77s] End Slew iteration 
-[05/30 03:03:03     77s] Setting infinite Tws ...
-[05/30 03:03:03     77s] First Iteration Infinite Tw... 
-[05/30 03:03:03     77s] Start delay calculation (fullDC) (1 T). (MEM=2620.31)
-[05/30 03:03:03     77s] **ERROR: (IMPESI-2016):	There is no coupling capacitance found in the design. Use 'set_delay_cal_mode -siAware false' to perform base delay analysis. SI analysis requires the SPEF to contain coupling capacitance. To perform SI analysis, load a SPEF with coupling capacitance and re-run.
-End AAE Lib Interpolated Model. (MEM=3466.8 CPU Time=0:00:00.0, Real Time=0:00:00.0)
-[05/30 03:03:03     77s] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 3466.8M)
-[05/30 03:03:03     77s] Total number of fetched objects 36
-[05/30 03:03:03     77s] AAE_INFO-618: Total number of nets in the design is 37,  100.0 percent of the nets selected for SI analysis
-[05/30 03:03:03     77s] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 3488.8M)
-[05/30 03:03:03     77s] Total number of fetched objects 36
-[05/30 03:03:03     77s] AAE_INFO-618: Total number of nets in the design is 37,  100.0 percent of the nets selected for SI analysis
-[05/30 03:03:03     77s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
-[05/30 03:03:03     77s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
-[05/30 03:03:03     77s] End delay calculation. (MEM=2661.87 CPU=0:00:00.1 REAL=0:00:00.0)
-[05/30 03:03:03     77s] End delay calculation (fullDC). (MEM=2661.87 CPU=0:00:00.1 REAL=0:00:00.0)
-[05/30 03:03:03     77s] esiiDumpWaveformsThread is successfull 1 
-[05/30 03:03:03     77s] Save waveform /tmp/ssv_tmpdir_2509940_qyoI19/.AAE_hSySLW/.AAE_2509940/waveform.data in separate thread...
-[05/30 03:03:03     77s] Finish pthread dumping compressed waveforms.
-[05/30 03:03:03     77s] *** CDM Built up (cpu=0:00:01.2  real=0:00:01.0  mem= 3486.8M) ***
-[05/30 03:03:03     77s] Has not load the powerDB, will keep enalbed
-[05/30 03:03:03     77s] Has not load the powerDB, will keep enalbed
-[05/30 03:03:03     77s] Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 3470.8M)
-[05/30 03:03:03     77s] Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 3470.8M)
-[05/30 03:03:03     77s] Starting SI iteration 2
-[05/30 03:03:04     78s] Start delay calculation (fullDC) (1 T). (MEM=2627.84)
-[05/30 03:03:04     78s] **ERROR: (IMPESI-2016):	There is no coupling capacitance found in the design. Use 'set_delay_cal_mode -siAware false' to perform base delay analysis. SI analysis requires the SPEF to contain coupling capacitance. To perform SI analysis, load a SPEF with coupling capacitance and re-run.
-End AAE Lib Interpolated Model. (MEM=3431.1 CPU Time=0:00:00.0, Real Time=0:00:00.0)
-[05/30 03:03:04     78s] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 3433.1M)
-[05/30 03:03:04     78s] Glitch Analysis: View WORST_CASE -- Total Number of Nets Skipped = 0. 
-[05/30 03:03:04     78s] Glitch Analysis: View WORST_CASE -- Total Number of Nets Analyzed = 0. 
-[05/30 03:03:04     78s] Total number of fetched objects 36
-[05/30 03:03:04     78s] AAE_INFO-618: Total number of nets in the design is 37,  2.7 percent of the nets selected for SI analysis
-[05/30 03:03:04     78s] Glitch Analysis: View WORST_CASE -- Total Number of Nets Skipped = 0. 
-[05/30 03:03:04     78s] Glitch Analysis: View WORST_CASE -- Total Number of Nets Analyzed = 0. 
-[05/30 03:03:04     78s] Total number of fetched objects 36
-[05/30 03:03:04     78s] AAE_INFO-618: Total number of nets in the design is 37,  0.0 percent of the nets selected for SI analysis
-[05/30 03:03:04     78s] End delay calculation. (MEM=2633.13 CPU=0:00:00.0 REAL=0:00:00.0)
-[05/30 03:03:04     78s] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 3497.3M)
-[05/30 03:03:04     78s] Glitch Analysis: View Best_CASE -- Total Number of Nets Skipped = 0. 
-[05/30 03:03:04     78s] Glitch Analysis: View Best_CASE -- Total Number of Nets Analyzed = 36. 
-[05/30 03:03:04     78s] Total number of fetched objects 36
-[05/30 03:03:04     78s] AAE_INFO-618: Total number of nets in the design is 37,  2.7 percent of the nets selected for SI analysis
-[05/30 03:03:04     78s] Glitch Analysis: View Best_CASE -- Total Number of Nets Skipped = 0. 
-[05/30 03:03:04     78s] Glitch Analysis: View Best_CASE -- Total Number of Nets Analyzed = 36. 
-[05/30 03:03:04     78s] Total number of fetched objects 36
-[05/30 03:03:04     78s] AAE_INFO-618: Total number of nets in the design is 37,  0.0 percent of the nets selected for SI analysis
-[05/30 03:03:04     78s] End delay calculation. (MEM=2633.14 CPU=0:00:00.0 REAL=0:00:00.0)
-[05/30 03:03:04     78s] End delay calculation. (MEM=2633.14 CPU=0:00:00.0 REAL=0:00:00.0)
-[05/30 03:03:04     78s] End delay calculation (fullDC). (MEM=2632.25 CPU=0:00:00.4 REAL=0:00:00.0)
-[05/30 03:03:04     78s] Save and delete waveform data /tmp/ssv_tmpdir_2509940_qyoI19/.AAE_hSySLW/.AAE_2509940/waveform.data ...
-[05/30 03:03:04     78s] Swap out waveforms (MEM=3369.28 CPU=0:00:00.0 REAL=0:00:00.0) 
-[05/30 03:03:04     78s] Finish pthread dumping timing data and compressed waveforms.
-[05/30 03:03:04     78s] *** CDM Built up (cpu=0:00:00.7  real=0:00:00.0  mem= 3369.3M) ***
-[05/30 03:03:04     78s] Has not load the powerDB, will keep enalbed
-[05/30 03:03:04     78s] Has not load the powerDB, will keep enalbed
-[05/30 03:03:04     79s] Output report file name prefix is tempus_aae/aae 
-[05/30 03:03:04     79s] **WARN: (IMPESI-2112):	No required data is available for report noise delay, set 'setSIMode -separate_delta_delay_on_data true' and run analysis again.
-[05/30 03:03:04     79s] Info: Processing report for view WORST_CASE ...
-[05/30 03:03:04     79s] Info: The output report file is tempus_aae/aae_WORST_CASE
-[05/30 03:03:04     79s] Info: The gui min. incDelay report file is tempus_aae/aae_WORST_CASE_min_incDelay
-[05/30 03:03:04     79s] Info: The gui max. incDelay report file is tempus_aae/aae_WORST_CASE_max_incDelay
-[05/30 03:03:04     79s] Info: Processing report for view Best_CASE ...
-[05/30 03:03:04     79s] Info: The output report file is tempus_aae/aae_Best_CASE
-[05/30 03:03:04     79s] Info: The gui min. incDelay report file is tempus_aae/aae_Best_CASE_min_incDelay
-[05/30 03:03:04     79s] Info: The gui max. incDelay report file is tempus_aae/aae_Best_CASE_max_incDelay
-[05/30 03:03:05     79s] <CMD> all_analysis_views
-[05/30 03:03:14     79s] <CMD> get_eco_opt_mode -optimization_failure_tracking_file -quiet
-[05/30 03:03:17     79s] <CMD> get_time_unit
-[05/30 03:03:17     79s] <CMD> report_timing -gui_capri -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
-[05/30 03:03:17     79s] <CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
-[05/30 03:03:17     79s] Parsing file top.btarpt...
-[05/30 03:07:40     92s] 
+[06/10 21:16:56      0s] 		tpsxl	Tempus Timing Signoff Solution XL	23.1	checkout succeeded
+[06/10 21:16:56      0s] 		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[06/10 21:17:00      1s] {{{ isCertus 0,  isCertusOrDistOptClient = 0, isInnovusCertusClient = 0}}}
+[06/10 21:17:15     14s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Tempus Timing Solution v23.11-s111_1 (64bit) 05/16/2024 09:07 (Linux 3.10.0-693.el7.x86_64)
+[06/10 21:17:18     16s] @(#)CDS: NanoRoute 23.11-s111_1 NR240401-0735/23_11-UB (database version 18.20.622) {superthreading v2.20}
+[06/10 21:17:18     16s] @(#)CDS: AAE 23.11-s031 (64bit) 05/16/2024 (Linux 3.10.0-693.el7.x86_64)
+[06/10 21:17:18     16s] @(#)CDS: CTE 23.11-s025_1 () May 16 2024 01:47:36 ( )
+[06/10 21:17:18     16s] @(#)CDS: SYNTECH 23.11-s010_1 () Apr  5 2024 04:21:08 ( )
+[06/10 21:17:18     16s] @(#)CDS: CPE v23.11-s059
+[06/10 21:17:18     16s] @(#)CDS: OA 22.61-p011 Thu Nov 30 12:26:13 2023
+[06/10 21:17:18     16s] @(#)CDS: SGN 23.10-d005 (03-Oct-2023) (64 bit executable, TkQt5.15.9)
+[06/10 21:17:18     16s] @(#)CDS: RCDB 11.15.0
+[06/10 21:17:18     16s] @(#)CDS: STYLUS 23.10-a010_1 (02/06/2024 03:59 PST)
+[06/10 21:17:18     16s] Change the soft stacksize limit to 0.2%RAM (386 mbytes). Set global soft_stack_size_limit to change the value.
+[06/10 21:17:18     16s] **INFO: (TMPDIR-1001): Create and set the environment variable TMPDIR to '/tmp/ssv_tmpdir_3366901_YbPV1a'.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_3366901_YbPV1a'.
+[06/10 21:17:21     17s] <CMD> ::stop_gui -keepDgui
+[06/10 21:17:21     17s] Has not load the powerDB, will keep enalbed
+[06/10 21:17:21     17s] Has not load the powerDB, will keep enalbed
+[06/10 21:17:35     18s] <CMD> read_view_definition SIPO_MMMC.view
+[06/10 21:17:35     18s] <CMD> read_verilog pnr_outputs/post_layout_SIPO.v
+[06/10 21:17:35     18s] <CMD> set_top_module serial_to_parallel
+[06/10 21:17:35     18s] #% Begin Load MMMC data ... (date=06/10 21:17:35, mem=1765.4M)
+[06/10 21:17:35     18s] Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+[06/10 21:17:35     18s] #% End Load MMMC data ... (date=06/10 21:17:35, total cpu=0:00:00.0, real=0:00:00.0, peak res=1766.5M, current mem=1766.5M)
+[06/10 21:17:35     18s] Loading view definition file from SIPO_MMMC.view
+[06/10 21:17:36     18s] Reading MAX_TIMING timing library '/home/bas33767/Desktop/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_slow_1p35V_125C.lib' ...
+[06/10 21:17:36     18s] Read 78 cells in library 'sg13g2_stdcell_slow_1p35V_125C' 
+[06/10 21:17:36     18s] Reading MIN_TIMING timing library '/home/bas33767/Desktop/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_fast_1p32V_m40C.lib' ...
+[06/10 21:17:36     18s] Read 78 cells in library 'sg13g2_stdcell_fast_1p32V_m40C' 
+[06/10 21:17:36     19s] Ending "PreSetAnalysisView" (total cpu=0:00:00.2, real=0:00:01.0, peak res=1807.3M, current mem=1775.0M)
+[06/10 21:17:36     19s] *** End library_loading (cpu=0.00min, real=0.02min, mem=39.0M, fe_cpu=0.33min, fe_real=0.67min, fe_mem=1691.6M) ***
+[06/10 21:17:36     19s] #% Begin Load netlist data ... (date=06/10 21:17:36, mem=1775.0M)
+[06/10 21:17:36     19s] *** Begin netlist parsing (mem=1691.6M) ***
+[06/10 21:17:36     19s] Reading verilog netlist 'pnr_outputs/post_layout_SIPO.v'
+[06/10 21:17:36     19s] 
+[06/10 21:17:36     19s] *** Memory Usage v#2 (Current mem = 2055.656M, initial mem = 840.277M) ***
+[06/10 21:17:36     19s] *** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=2055.7M) ***
+[06/10 21:17:36     19s] #% End Load netlist data ... (date=06/10 21:17:36, total cpu=0:00:00.4, real=0:00:00.0, peak res=1900.4M, current mem=1892.4M)
+[06/10 21:17:36     19s] Set top cell to serial_to_parallel.
+[06/10 21:17:36     19s] Has not load the powerDB, will keep enalbed
+[06/10 21:17:36     19s] Has not load the powerDB, will keep enalbed
+[06/10 21:17:36     19s] Ending "BindLib:" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1926.8M, current mem=1926.8M)
+[06/10 21:17:36     19s] *** Estimate the number of flat objects and h-objects before Flatten ***
+[06/10 21:17:36     19s] 	flat insts : 23
+[06/10 21:17:36     19s] 	flat terms : 94
+[06/10 21:17:36     19s] 	HNets : 0
+[06/10 21:17:36     19s] 	HInsts : 0
+[06/10 21:17:36     19s] 	HTerms : 0
+[06/10 21:17:36     19s] Building hierarchical netlist for Cell serial_to_parallel ...
+[06/10 21:17:36     19s] ***** UseNewTieNetMode *****.
+[06/10 21:17:37     19s] *** Netlist is unique.
+[06/10 21:17:37     19s] ** info: there are 157 modules.
+[06/10 21:17:37     19s] ** info: there are 23 stdCell insts.
+[06/10 21:17:37     19s] ** info: there are 23 stdCell insts with at least one signal pin.
+[06/10 21:17:37     19s] 
+[06/10 21:17:37     19s] *** Memory Usage v#2 (Current mem = 2441.602M, initial mem = 840.277M) ***
+[06/10 21:17:37     19s] Set Default Input Pin Transition as 0.1 ps.
+[06/10 21:17:37     19s] Has not load the powerDB, will keep enalbed
+[06/10 21:17:37     19s] Has not load the powerDB, will keep enalbed
+[06/10 21:17:37     19s] Has not load the powerDB, will keep enalbed
+[06/10 21:17:37     19s] Has not load the powerDB, will keep enalbed
+[06/10 21:17:37     19s] Has not load the powerDB, will keep enalbed
+[06/10 21:17:37     19s] Has not load the powerDB, will keep enalbed
+[06/10 21:17:37     20s] Extraction setup Started for TopCell serial_to_parallel 
+[06/10 21:17:37     20s] Summary of Active RC-Corners : 
+[06/10 21:17:37     20s]  
+[06/10 21:17:37     20s]  Analysis View: WORST_CASE
+[06/10 21:17:37     20s]     RC-Corner Name        : RC_BEST
+[06/10 21:17:37     20s]     RC-Corner Index       : 0
+[06/10 21:17:37     20s]     RC-Corner Temperature : 40 Celsius
+[06/10 21:17:37     20s]     RC-Corner Cap Table   : ''
+[06/10 21:17:37     20s]     RC-Corner PostRoute Res Factor        : 1
+[06/10 21:17:37     20s]     RC-Corner PostRoute Cap Factor        : 1
+[06/10 21:17:37     20s]     RC-Corner PostRoute XCap Factor       : 1
+[06/10 21:17:37     20s]  
+[06/10 21:17:37     20s]  Analysis View: Best_CASE
+[06/10 21:17:37     20s]     RC-Corner Name        : RC_WORST
+[06/10 21:17:37     20s]     RC-Corner Index       : 1
+[06/10 21:17:37     20s]     RC-Corner Temperature : 125 Celsius
+[06/10 21:17:37     20s]     RC-Corner Cap Table   : ''
+[06/10 21:17:37     20s]     RC-Corner PostRoute Res Factor        : 1
+[06/10 21:17:37     20s]     RC-Corner PostRoute Cap Factor        : 1
+[06/10 21:17:37     20s]     RC-Corner PostRoute XCap Factor       : 1
+[06/10 21:17:38     20s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:01.0, peak res=2434.0M, current mem=2195.8M)
+[06/10 21:17:38     20s] Reading timing constraints file 'pnr_outputs/SIPO.default_emulate_constraint_mode.sdc' ...
+[06/10 21:17:38     20s] Current (total cpu=0:00:21.6, real=0:00:42.0, peak res=2548.5M, current mem=2516.8M)
+[06/10 21:17:38     20s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File pnr_outputs/SIPO.default_emulate_constraint_mode.sdc, Line 9).
+[06/10 21:17:38     20s] 
+[06/10 21:17:38     20s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File pnr_outputs/SIPO.default_emulate_constraint_mode.sdc, Line 10).
+[06/10 21:17:38     20s] 
+[06/10 21:17:38     20s] INFO (CTE): Reading of timing constraints file pnr_outputs/SIPO.default_emulate_constraint_mode.sdc completed, with 2 WARNING
+[06/10 21:17:38     20s] Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2551.6M, current mem=2551.6M)
+[06/10 21:17:38     20s] Current (total cpu=0:00:21.7, real=0:00:42.0, peak res=2551.6M, current mem=2551.6M)
+[06/10 21:17:38     20s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[06/10 21:17:38     20s] 
+[06/10 21:17:38     20s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) Begin ...
+[06/10 21:17:38     20s] Summary for sequential cells identification: 
+[06/10 21:17:38     20s]   Identified SBFF number: 3
+[06/10 21:17:38     20s]   Identified MBFF number: 0
+[06/10 21:17:38     20s]   Identified SB Latch number: 5
+[06/10 21:17:38     20s]   Identified MB Latch number: 0
+[06/10 21:17:38     20s]   Not identified SBFF number: 0
+[06/10 21:17:38     20s]   Not identified MBFF number: 0
+[06/10 21:17:38     20s]   Not identified SB Latch number: 0
+[06/10 21:17:38     20s]   Not identified MB Latch number: 0
+[06/10 21:17:38     20s]   Number of sequential cells which are not FFs: 2
+[06/10 21:17:38     20s] Total number of combinational cells: 54
+[06/10 21:17:38     20s] Total number of sequential cells: 10
+[06/10 21:17:38     20s] Total number of tristate cells: 6
+[06/10 21:17:38     20s] Total number of level shifter cells: 0
+[06/10 21:17:38     20s] Total number of power gating cells: 0
+[06/10 21:17:38     20s] Total number of isolation cells: 0
+[06/10 21:17:38     20s] Total number of power switch cells: 0
+[06/10 21:17:38     20s] Total number of pulse generator cells: 0
+[06/10 21:17:38     20s] Total number of always on buffers: 0
+[06/10 21:17:38     20s] Total number of retention cells: 0
+[06/10 21:17:38     20s] Total number of physical cells: 0
+[06/10 21:17:38     20s] List of usable buffers: sg13g2_buf_1 sg13g2_buf_16 sg13g2_buf_2 sg13g2_buf_4 sg13g2_buf_8
+[06/10 21:17:38     20s] Total number of usable buffers: 5
+[06/10 21:17:38     20s] List of unusable buffers:
+[06/10 21:17:38     20s] Total number of unusable buffers: 0
+[06/10 21:17:38     20s] List of usable inverters: sg13g2_inv_1 sg13g2_inv_16 sg13g2_inv_2 sg13g2_inv_8 sg13g2_inv_4
+[06/10 21:17:38     20s] Total number of usable inverters: 5
+[06/10 21:17:38     20s] List of unusable inverters:
+[06/10 21:17:38     20s] Total number of unusable inverters: 0
+[06/10 21:17:38     20s] List of identified usable delay cells: sg13g2_dlygate4sd1_1 sg13g2_dlygate4sd3_1 sg13g2_dlygate4sd2_1
+[06/10 21:17:38     20s] Total number of identified usable delay cells: 3
+[06/10 21:17:38     20s] List of identified unusable delay cells:
+[06/10 21:17:38     20s] Total number of identified unusable delay cells: 0
+[06/10 21:17:38     20s] 
+[06/10 21:17:38     20s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) End ...
+[06/10 21:17:38     20s] 
+[06/10 21:17:38     20s] TimeStamp Deleting Cell Server Begin ...
+[06/10 21:17:38     20s] 
+[06/10 21:17:38     20s] TimeStamp Deleting Cell Server End ...
+[06/10 21:17:38     20s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2553.8M, current mem=2553.8M)
+[06/10 21:17:38     20s] 
+[06/10 21:17:38     20s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) Begin ...
+[06/10 21:17:38     20s] Summary for sequential cells identification: 
+[06/10 21:17:38     20s]   Identified SBFF number: 3
+[06/10 21:17:38     20s]   Identified MBFF number: 0
+[06/10 21:17:38     20s]   Identified SB Latch number: 5
+[06/10 21:17:38     20s]   Identified MB Latch number: 0
+[06/10 21:17:38     20s]   Not identified SBFF number: 0
+[06/10 21:17:38     20s]   Not identified MBFF number: 0
+[06/10 21:17:38     20s]   Not identified SB Latch number: 0
+[06/10 21:17:38     20s]   Not identified MB Latch number: 0
+[06/10 21:17:38     20s]   Number of sequential cells which are not FFs: 2
+[06/10 21:17:38     20s]  Visiting view : WORST_CASE
+[06/10 21:17:38     20s]    : PowerDomain = none : Weighted F : unweighted  = 23.60 (1.000) with rcCorner = 0
+[06/10 21:17:38     20s]    : PowerDomain = none : Weighted F : unweighted  = 23.60 (1.000) with rcCorner = -1
+[06/10 21:17:38     20s]  Visiting view : Best_CASE
+[06/10 21:17:38     20s]    : PowerDomain = none : Weighted F : unweighted  = 16.30 (1.000) with rcCorner = 1
+[06/10 21:17:38     20s]    : PowerDomain = none : Weighted F : unweighted  = 16.30 (1.000) with rcCorner = -1
+[06/10 21:17:38     20s] TLC MultiMap info (StdDelay):
+[06/10 21:17:38     20s]   : MIN_DEALY + MIN_TIMING + 1 + no RcCorner := 16.3ps
+[06/10 21:17:38     20s]   : MAX_DEALY + MAX_TIMING + 1 + no RcCorner := 23.6ps
+[06/10 21:17:38     20s]   : MIN_DEALY + MIN_TIMING + 1 + RC_WORST := 16.3ps
+[06/10 21:17:38     20s]   : MAX_DEALY + MAX_TIMING + 1 + RC_BEST := 23.6ps
+[06/10 21:17:38     20s]  Setting StdDelay to: 23.6ps
+[06/10 21:17:38     20s] 
+[06/10 21:17:38     20s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) End ...
+[06/10 21:17:38     20s] 
+[06/10 21:17:38     20s] TimeStamp Deleting Cell Server Begin ...
+[06/10 21:17:38     20s] 
+[06/10 21:17:38     20s] TimeStamp Deleting Cell Server End ...
+[06/10 21:17:38     20s] <CMD> read_spef -rc_corner RC_BEST pnr_outputs/serial_to_parallel_RC_BEST.spef
+[06/10 21:17:38     20s] read_spef Option :  pnr_outputs/serial_to_parallel_RC_BEST.spef -noStarN -rc_corner RC_BEST 
+[06/10 21:17:38     20s] WARNING (IMPEXT-3315): Spef available for 1 corner(s)but not available for 1 corner(s). Spef reading will be triggered only after spef for all active RC Corners are available.
+[06/10 21:17:38     20s] <CMD> read_spef -rc_corner RC_WORST pnr_outputs/serial_to_parallel_RC_WORST.spef
+[06/10 21:17:38     20s] read_spef Option :  pnr_outputs/serial_to_parallel_RC_WORST.spef -noStarN -rc_corner RC_WORST 
+[06/10 21:17:38     20s] 
+[06/10 21:17:38     20s] SPEF files for RC Corner RC_BEST:
+[06/10 21:17:38     20s] Top-level spef file 'pnr_outputs/serial_to_parallel_RC_BEST.spef'.
+[06/10 21:17:38     20s] 
+[06/10 21:17:38     20s] SPEF files for RC Corner RC_WORST:
+[06/10 21:17:38     20s] Top-level spef file 'pnr_outputs/serial_to_parallel_RC_WORST.spef'.
+[06/10 21:17:38     20s] Start spef parsing (MEM=2819.66).
+[06/10 21:17:38     20s] Number of corners: 2
+[06/10 21:17:38     20s] Number of parallel threads processing the nets is: 1
+[06/10 21:17:38     20s] Maximum backlog used in parser: 50.
+[06/10 21:17:38     20s] Reading multiple SPEF files in parallel.
+[06/10 21:17:38     20s] RCDB /tmp/ssv_tmpdir_3366901_YbPV1a/serial_to_parallel_3366901_W18iHt.rcdb.d/serial_to_parallel.rcdb.d Creation Started (CPU Time= 0:00:00.0  MEM= 2828.7M)
+[06/10 21:17:38     21s] Creating parasitic data file '/tmp/ssv_tmpdir_3366901_YbPV1a/serial_to_parallel_3366901_W18iHt.rcdb.d/serial_to_parallel.rcdb.d' for storing RC.
+[06/10 21:17:38     21s] SPEF file pnr_outputs/serial_to_parallel_RC_BEST.spef.
+[06/10 21:17:38     21s] Number of Resistors     : 421
+[06/10 21:17:38     21s] Number of Ground Caps   : 433
+[06/10 21:17:38     21s] Number of Coupling Caps : 0
+[06/10 21:17:38     21s] 
+[06/10 21:17:38     21s] SPEF file pnr_outputs/serial_to_parallel_RC_WORST.spef.
+[06/10 21:17:38     21s] Number of Resistors     : 421
+[06/10 21:17:38     21s] Number of Ground Caps   : 433
+[06/10 21:17:38     21s] Number of Coupling Caps : 0
+[06/10 21:17:38     21s] 
+[06/10 21:17:38     21s] RCDB /tmp/ssv_tmpdir_3366901_YbPV1a/serial_to_parallel_3366901_W18iHt.rcdb.d/serial_to_parallel.rcdb.d Creation Completed (CPU Time= 0:00:00.2  MEM= 2862.7M)
+[06/10 21:17:38     21s] End spef parsing (MEM=2830.66 CPU=0:00:00.2 REAL=0:00:00.0).
+[06/10 21:17:38     21s] Spef for RC Corner 'RC_BEST' was previously specified. Dropping the previous specification.
+[06/10 21:17:38     21s] Spef for RC Corner 'RC_WORST' was previously specified. Dropping the previous specification.
+[06/10 21:17:38     21s] Lumped Parasitic Loading Started (total cpu=0:00:00.0, real=0:00:00.0, current mem=2822.664M)
+[06/10 21:17:38     21s] Opening parasitic data file '/tmp/ssv_tmpdir_3366901_YbPV1a/serial_to_parallel_3366901_W18iHt.rcdb.d/serial_to_parallel.rcdb.d' for reading (mem: 2822.664M)
+[06/10 21:17:39     21s] Lumped Parasitic Loading Completed (total cpu=0:00:00.1, real=0:00:01.0, current mem=2830.664M)
+[06/10 21:17:39     21s] Closing parasitic data file '/tmp/ssv_tmpdir_3366901_YbPV1a/serial_to_parallel_3366901_W18iHt.rcdb.d/serial_to_parallel.rcdb.d': 0 access done (mem: 2830.664M)
+[06/10 21:17:39     21s] <CMD> set_si_mode -enable_delay_report true
+[06/10 21:17:39     21s] <CMD> set_si_mode -enable_glitch_report true
+[06/10 21:17:39     21s] <CMD> set_si_mode -enable_glitch_propagation true
+[06/10 21:17:39     21s] <CMD> update_timing -full
+[06/10 21:17:39     21s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[06/10 21:17:39     21s] AAE_INFO: deleting AAE DB in update_timing -full ...
+[06/10 21:17:39     21s] AAE DB initialization (MEM=2865.1 CPU=0:00:00.0 REAL=0:00:00.0) 
+[06/10 21:17:39     21s] #################################################################################
+[06/10 21:17:39     21s] # Design Name: serial_to_parallel
+[06/10 21:17:39     21s] # Design Mode: 65nm
+[06/10 21:17:39     21s] # Analysis Mode: MMMC OCV 
+[06/10 21:17:39     21s] # Parasitics Mode: SPEF/RCDB 
+[06/10 21:17:39     21s] # Signoff Settings: SI Off 
+[06/10 21:17:39     21s] #################################################################################
+[06/10 21:17:39     21s] Topological Sorting (REAL = 0:00:00.0, MEM = 2997.5M, InitMEM = 2995.5M)
+[06/10 21:17:39     21s] Start delay calculation (fullDC) (1 T). (MEM=2517.77)
+[06/10 21:17:39     21s] Start AAE Lib Loading. (MEM=2997.53)
+[06/10 21:17:40     21s] End AAE Lib Loading. (MEM=3208.07 CPU=0:00:00.0 Real=0:00:01.0)
+[06/10 21:17:40     21s] End AAE Lib Interpolated Model. (MEM=3208.07 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[06/10 21:17:40     21s] Opening parasitic data file '/tmp/ssv_tmpdir_3366901_YbPV1a/serial_to_parallel_3366901_W18iHt.rcdb.d/serial_to_parallel.rcdb.d' for reading (mem: 3246.688M)
+[06/10 21:17:40     21s] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 3256.7M)
+[06/10 21:17:40     21s] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 3256.3M)
+[06/10 21:17:40     21s] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 3256.3M)
+[06/10 21:17:40     21s] Total number of fetched objects 36
+[06/10 21:17:40     21s] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 3466.5M)
+[06/10 21:17:40     21s] Total number of fetched objects 36
+[06/10 21:17:40     21s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[06/10 21:17:40     21s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[06/10 21:17:40     21s] End delay calculation. (MEM=2602.62 CPU=0:00:00.1 REAL=0:00:00.0)
+[06/10 21:17:40     21s] Begin loading slews from CTE ...
+[06/10 21:17:40     21s] Loading slews from CTE completed...
+[06/10 21:17:40     21s] End delay calculation (fullDC). (MEM=2601.29 CPU=0:00:00.1 REAL=0:00:01.0)
+[06/10 21:17:40     22s] *** CDM Built up (cpu=0:00:00.7  real=0:00:01.0  mem= 3342.5M) ***
+[06/10 21:17:40     22s] Has not load the powerDB, will keep enalbed
+[06/10 21:17:40     22s] Has not load the powerDB, will keep enalbed
+[06/10 21:17:41     22s] <CMD> report_timing
+[06/10 21:17:41     22s] Loading  (serial_to_parallel)
+[06/10 21:17:41     22s] Traverse HInst (serial_to_parallel)
+[06/10 21:18:19     24s] <CMD> get_si_mode -analysisType -quiet
+[06/10 21:18:19     24s] <CMD> get_si_mode -separate_delta_delay_on_data -quiet
+[06/10 21:18:19     24s] <CMD> get_si_mode -delta_delay_annotation_mode -quiet
+[06/10 21:18:19     24s] <CMD> get_si_mode -num_si_iteration -quiet
+[06/10 21:18:19     24s] <CMD> get_si_mode -si_reselection -quiet
+[06/10 21:18:19     24s] <CMD> get_si_mode -initial_si_iteration_tw -quiet
+[06/10 21:18:33     25s] <CMD> set_delay_cal_mode -SIaware true -engine aae
+[06/10 21:18:33     25s] AAE_INFO: switching setDelayCal -siAware from false to true ...
+[06/10 21:18:33     25s] AAE_INFO: The setting is changed from false to true in setDelayCalMode -SIAware
+[06/10 21:18:33     25s] <CMD> set_si_mode -analysisType aae
+[06/10 21:18:33     25s] <CMD> set_si_mode -separate_delta_delay_on_data false
+[06/10 21:18:33     25s] <CMD> set_si_mode -delta_delay_annotation_mode arc
+[06/10 21:18:33     25s] <CMD> set_si_mode -num_si_iteration 2
+[06/10 21:18:33     25s] <CMD> set_si_mode -si_reselection slack
+[06/10 21:18:33     25s] <CMD> set_si_mode -initial_si_iteration_tw infinite
+[06/10 21:18:33     25s] <CMD> update_timing -full
+[06/10 21:18:33     25s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[06/10 21:18:33     25s] AAE_INFO: deleting AAE DB in update_timing -full ...
+[06/10 21:18:33     25s] AAE DB initialization (MEM=3013.53 CPU=0:00:00.0 REAL=0:00:00.0) 
+[06/10 21:18:33     25s] AAE_INFO: resetNetProps viewIdx 0 
+[06/10 21:18:33     25s] AAE_INFO: resetNetProps viewIdx 1 
+[06/10 21:18:33     25s] Starting SI iteration 1 using Infinite Timing Windows
+[06/10 21:18:33     25s] Start slew iteration 
+[06/10 21:18:33     25s] #################################################################################
+[06/10 21:18:33     25s] # Design Name: serial_to_parallel
+[06/10 21:18:33     25s] # Design Mode: 65nm
+[06/10 21:18:33     25s] # Analysis Mode: MMMC OCV 
+[06/10 21:18:33     25s] # Parasitics Mode: SPEF/RCDB 
+[06/10 21:18:33     25s] # Signoff Settings: SI On 
+[06/10 21:18:33     25s] #################################################################################
+[06/10 21:18:33     25s] AAE_INFO: 1 threads acquired from CTE.
+[06/10 21:18:33     25s] AAE_INFO: 1 threads acquired from CTE.
+[06/10 21:18:33     25s] Start delay calculation (fullDC) (1 T). (MEM=2608.54)
+[06/10 21:18:33     25s] **ERROR: (IMPESI-2016):	There is no coupling capacitance found in the design. Use 'set_delay_cal_mode -siAware false' to perform base delay analysis. SI analysis requires the SPEF to contain coupling capacitance. To perform SI analysis, load a SPEF with coupling capacitance and re-run.
+RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 3099.3M)
+[06/10 21:18:33     25s] Start AAE Lib Loading. (MEM=3099.33)
+[06/10 21:18:33     25s] End AAE Lib Loading. (MEM=3300.33 CPU=0:00:00.0 Real=0:00:00.0)
+[06/10 21:18:33     25s] End AAE Lib Interpolated Model. (MEM=3300.33 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[06/10 21:18:33     25s] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 3456.4M)
+[06/10 21:18:33     25s] End delay calculation. (MEM=2615.89 CPU=0:00:00.0 REAL=0:00:00.0)
+[06/10 21:18:33     25s] End delay calculation (fullDC). (MEM=2614.19 CPU=0:00:00.1 REAL=0:00:00.0)
+[06/10 21:18:33     25s] update aggressor slew in non distributed run
+[06/10 21:18:33     25s] End Slew iteration 
+[06/10 21:18:33     25s] Setting infinite Tws ...
+[06/10 21:18:33     25s] First Iteration Infinite Tw... 
+[06/10 21:18:33     25s] Start delay calculation (fullDC) (1 T). (MEM=2612.29)
+[06/10 21:18:33     25s] **ERROR: (IMPESI-2016):	There is no coupling capacitance found in the design. Use 'set_delay_cal_mode -siAware false' to perform base delay analysis. SI analysis requires the SPEF to contain coupling capacitance. To perform SI analysis, load a SPEF with coupling capacitance and re-run.
+End AAE Lib Interpolated Model. (MEM=3464.38 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[06/10 21:18:33     25s] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 3464.4M)
+[06/10 21:18:33     25s] Total number of fetched objects 36
+[06/10 21:18:33     25s] AAE_INFO-618: Total number of nets in the design is 37,  100.0 percent of the nets selected for SI analysis
+[06/10 21:18:33     25s] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 3492.4M)
+[06/10 21:18:33     25s] Total number of fetched objects 36
+[06/10 21:18:33     25s] AAE_INFO-618: Total number of nets in the design is 37,  100.0 percent of the nets selected for SI analysis
+[06/10 21:18:33     25s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[06/10 21:18:33     25s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[06/10 21:18:33     25s] End delay calculation. (MEM=2656.61 CPU=0:00:00.1 REAL=0:00:00.0)
+[06/10 21:18:33     25s] End delay calculation (fullDC). (MEM=2656.61 CPU=0:00:00.1 REAL=0:00:00.0)
+[06/10 21:18:33     25s] esiiDumpWaveformsThread is successfull 1 
+[06/10 21:18:33     25s] Save waveform /tmp/ssv_tmpdir_3366901_YbPV1a/.AAE_4MMkKi/.AAE_3366901/waveform.data in separate thread...
+[06/10 21:18:33     25s] Finish pthread dumping compressed waveforms.
+[06/10 21:18:33     25s] *** CDM Built up (cpu=0:00:00.7  real=0:00:00.0  mem= 3490.4M) ***
+[06/10 21:18:33     25s] Has not load the powerDB, will keep enalbed
+[06/10 21:18:33     25s] Has not load the powerDB, will keep enalbed
+[06/10 21:18:34     25s] Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 3474.4M)
+[06/10 21:18:34     25s] Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 3474.4M)
+[06/10 21:18:34     25s] Starting SI iteration 2
+[06/10 21:18:34     26s] Start delay calculation (fullDC) (1 T). (MEM=2615.96)
+[06/10 21:18:34     26s] **ERROR: (IMPESI-2016):	There is no coupling capacitance found in the design. Use 'set_delay_cal_mode -siAware false' to perform base delay analysis. SI analysis requires the SPEF to contain coupling capacitance. To perform SI analysis, load a SPEF with coupling capacitance and re-run.
+End AAE Lib Interpolated Model. (MEM=3434.72 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[06/10 21:18:34     26s] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 3436.7M)
+[06/10 21:18:34     26s] Glitch Analysis: View WORST_CASE -- Total Number of Nets Skipped = 0. 
+[06/10 21:18:34     26s] Glitch Analysis: View WORST_CASE -- Total Number of Nets Analyzed = 0. 
+[06/10 21:18:34     26s] Total number of fetched objects 36
+[06/10 21:18:34     26s] AAE_INFO-618: Total number of nets in the design is 37,  2.7 percent of the nets selected for SI analysis
+[06/10 21:18:34     26s] Glitch Analysis: View WORST_CASE -- Total Number of Nets Skipped = 0. 
+[06/10 21:18:34     26s] Glitch Analysis: View WORST_CASE -- Total Number of Nets Analyzed = 0. 
+[06/10 21:18:34     26s] Total number of fetched objects 36
+[06/10 21:18:34     26s] AAE_INFO-618: Total number of nets in the design is 37,  0.0 percent of the nets selected for SI analysis
+[06/10 21:18:34     26s] End delay calculation. (MEM=2619.25 CPU=0:00:00.0 REAL=0:00:00.0)
+[06/10 21:18:34     26s] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 3501.9M)
+[06/10 21:18:34     26s] Glitch Analysis: View Best_CASE -- Total Number of Nets Skipped = 0. 
+[06/10 21:18:34     26s] Glitch Analysis: View Best_CASE -- Total Number of Nets Analyzed = 36. 
+[06/10 21:18:34     26s] Total number of fetched objects 36
+[06/10 21:18:34     26s] AAE_INFO-618: Total number of nets in the design is 37,  2.7 percent of the nets selected for SI analysis
+[06/10 21:18:34     26s] Glitch Analysis: View Best_CASE -- Total Number of Nets Skipped = 0. 
+[06/10 21:18:34     26s] Glitch Analysis: View Best_CASE -- Total Number of Nets Analyzed = 36. 
+[06/10 21:18:34     26s] Total number of fetched objects 36
+[06/10 21:18:34     26s] AAE_INFO-618: Total number of nets in the design is 37,  0.0 percent of the nets selected for SI analysis
+[06/10 21:18:34     26s] End delay calculation. (MEM=2619.27 CPU=0:00:00.0 REAL=0:00:00.0)
+[06/10 21:18:34     26s] End delay calculation. (MEM=2619.27 CPU=0:00:00.0 REAL=0:00:00.0)
+[06/10 21:18:34     26s] End delay calculation (fullDC). (MEM=2616.74 CPU=0:00:00.1 REAL=0:00:00.0)
+[06/10 21:18:34     26s] Swap out waveforms (MEM=3372.9 CPU=0:00:00.0 REAL=0:00:00.0) 
+[06/10 21:18:34     26s] Save and delete waveform data /tmp/ssv_tmpdir_3366901_YbPV1a/.AAE_4MMkKi/.AAE_3366901/waveform.data ...
+[06/10 21:18:34     26s] Finish pthread dumping timing data and compressed waveforms.
+[06/10 21:18:34     26s] *** CDM Built up (cpu=0:00:00.4  real=0:00:00.0  mem= 3372.9M) ***
+[06/10 21:18:34     26s] Has not load the powerDB, will keep enalbed
+[06/10 21:18:34     26s] Has not load the powerDB, will keep enalbed
+[06/10 21:18:34     26s] Output report file name prefix is tempus_aae/aae 
+[06/10 21:18:34     26s] **WARN: (IMPESI-2112):	No required data is available for report noise delay, set 'setSIMode -separate_delta_delay_on_data true' and run analysis again.
+[06/10 21:18:34     26s] Info: Processing report for view WORST_CASE ...
+[06/10 21:18:34     26s] Info: The output report file is tempus_aae/aae_WORST_CASE
+[06/10 21:18:34     26s] Info: The gui min. incDelay report file is tempus_aae/aae_WORST_CASE_min_incDelay
+[06/10 21:18:34     26s] Info: The gui max. incDelay report file is tempus_aae/aae_WORST_CASE_max_incDelay
+[06/10 21:18:34     26s] Info: Processing report for view Best_CASE ...
+[06/10 21:18:34     26s] Info: The output report file is tempus_aae/aae_Best_CASE
+[06/10 21:18:34     26s] Info: The gui min. incDelay report file is tempus_aae/aae_Best_CASE_min_incDelay
+[06/10 21:18:34     26s] Info: The gui max. incDelay report file is tempus_aae/aae_Best_CASE_max_incDelay
+[06/10 21:18:34     26s] <CMD> all_analysis_views
+[06/10 21:18:55     27s] <CMD> get_eco_opt_mode -optimization_failure_tracking_file -quiet
+[06/10 21:19:11     28s] <CMD> get_time_unit
+[06/10 21:19:11     28s] <CMD> report_timing -gui_capri -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+[06/10 21:19:11     28s] <CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+[06/10 21:19:11     28s] Parsing file top.btarpt...
+[06/10 21:28:25     58s] 
 --------------------------------------------------------------------------------
-Exiting Tempus Timing Solution on Fri May 30 03:07:40 2025
-  Total CPU time:     0:01:32
-  Total real time:    0:24:18
-  Peak memory (main): 2635.75MB
+Exiting Tempus Timing Solution on Tue Jun 10 21:28:25 2025
+  Total CPU time:     0:00:59
+  Total real time:    0:11:49
+  Peak memory (main): 2628.95MB
 
-[05/30 03:07:40     92s] 
-[05/30 03:07:40     92s] *** Memory Usage v#2 (Current mem = 3414.285M, initial mem = 840.277M) ***
-[05/30 03:07:40     92s] 
-[05/30 03:07:40     92s] *** Summary of all messages that are not suppressed in this session:
-[05/30 03:07:40     92s] Severity  ID               Count  Summary                                  
-[05/30 03:07:40     92s] ERROR     IMPESI-2109          2  Glitch results are not available for rep...
-[05/30 03:07:40     92s] WARNING   IMPESI-2112          1  No required data is available for report...
-[05/30 03:07:40     92s] ERROR     IMPESI-2016          3  There is no coupling capacitance found i...
-[05/30 03:07:40     92s] ERROR     IMPREPO-508        140  The message id '%s' was not registered w...
-[05/30 03:07:40     92s] ERROR     IMPTCM-46            1  Argument "%s" is required for command "%...
-[05/30 03:07:40     92s] ERROR     IMPESO-441           1  The placement density is reported a 0%% ...
-[05/30 03:07:40     92s] ERROR     IMPESO-444           1  There has to be at least one host and so...
-[05/30 03:07:40     92s] WARNING   IMPESO-448         140  The standard cell %s is part of the timi...
-[05/30 03:07:40     92s] WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
-[05/30 03:07:40     92s] *** Message Summary: 143 warning(s), 148 error(s)
-[05/30 03:07:40     92s] 
-[05/30 03:07:40     92s] --- Ending "Tempus Timing Solution" (totcpu=0:01:33, real=0:24:16, mem=3414.3M) ---
+[06/10 21:28:25     58s] 
+[06/10 21:28:25     58s] *** Memory Usage v#2 (Current mem = 3417.973M, initial mem = 840.277M) ***
+[06/10 21:28:25     58s] 
+[06/10 21:28:25     58s] *** Summary of all messages that are not suppressed in this session:
+[06/10 21:28:25     58s] Severity  ID               Count  Summary                                  
+[06/10 21:28:25     58s] WARNING   IMPESI-2112          1  No required data is available for report...
+[06/10 21:28:25     58s] ERROR     IMPESI-2016          3  There is no coupling capacitance found i...
+[06/10 21:28:25     58s] WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
+[06/10 21:28:25     58s] *** Message Summary: 3 warning(s), 3 error(s)
+[06/10 21:28:25     58s] 
+[06/10 21:28:25     58s] --- Ending "Tempus Timing Solution" (totcpu=0:00:59.3, real=0:11:29, mem=3418.0M) ---

@@ -1,0 +1,5 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(10Jun2025:19:58:46):( xrun +access+rwc +xmstatus +xm64bit +TESTFILE1=outputs/modus_src/testresults/verilog/VER.FULLSCAN.serial_to_parallel_atpg.data.scan.ex1.ts1.verilog +TESTFILE2=outputs/modus_src/testresults/verilog/VER.FULLSCAN.serial_to_parallel_atpg.data.logic.ex1.ts2.verilog +HEARTBEAT +FAILSET +xmtimescale+1ns/1ps +xmoverride_timescale +xmseq_udp_delay+2ps +libext+.v+.V+.z+.Z+.gz +xmlibdirname+outputs/modus_src/Inca_libs_19_44_48 -l outputs/modus_src/ncverilog_FULLSCAN.log -v /home/bas33767/Desktop/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v outputs/modus_src/serial_to_parallel.test_netlist.v outputs/modus_src/testresults/verilog/VER.FULLSCAN.serial_to_parallel_atpg.mainsim.v )&&(outputs/modus_src/Inca_libs_19_44_48/env.d/env.history.10Jun2025_19_58_46)

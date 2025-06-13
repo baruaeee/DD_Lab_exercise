@@ -1,3 +1,1 @@
-#!/bin/csh
-#
-# File c
+include ./cdsrun.lib

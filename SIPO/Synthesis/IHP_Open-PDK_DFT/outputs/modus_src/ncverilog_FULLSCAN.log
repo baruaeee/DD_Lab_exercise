@@ -1,5 +1,5 @@
 xrun(64): 24.03-s004: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	24.03-s004: Started on May 29, 2025 at 04:18:05 CEST
+TOOL:	xrun(64)	24.03-s004: Started on Jun 10, 2025 at 19:58:46 CEST
 xrun
 	+access+rwc
 	+xmstatus
@@ -12,7 +12,7 @@ xrun
 	+xmoverride_timescale
 	+xmseq_udp_delay+2ps
 	+libext+.v+.V+.z+.Z+.gz
-	+xmlibdirname+outputs/modus_src/Inca_libs_04_05_41
+	+xmlibdirname+outputs/modus_src/Inca_libs_19_44_48
 	-l outputs/modus_src/ncverilog_FULLSCAN.log
 	-v /home/bas33767/Desktop/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v
 	outputs/modus_src/serial_to_parallel.test_netlist.v
@@ -51,7 +51,7 @@ file: /home/bas33767/Desktop/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/ver
 	primitive verilog.ihp_mux2:v
 		errors: 0, warnings: 0
 xmvlog: Memory Usage - Current physical: 26.5M, Current virtual: 61.0M
-xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.0s, 71.5% cpu)
+xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.0s, 65.7% cpu)
 xmelab: *N,INFSUD: -NOSPECIFY is automatically used with -SEQ_UDP_DELAY.
 		Caching library 'verilog' ....... Done
 		Caching library 'worklib' ....... Done
@@ -87,7 +87,7 @@ xmelab: *N,INFSUD: -NOSPECIFY is automatically used with -SEQ_UDP_DELAY.
 		Simulation timescale:    1ps
 	Writing initial simulation snapshot: worklib.modus_src_FULLSCAN_serial_to_parallel_atpg:v
 xmelab: Memory Usage - Final: 68.5M, Peak: 68.5M, Peak virtual: 157.6M
-xmelab: CPU Usage - 0.1s system + 0.0s user = 0.1s total (0.1s, 99.3% cpu)
+xmelab: CPU Usage - 0.1s system + 0.1s user = 0.1s total (0.2s, 76.1% cpu)
 Loading snapshot worklib.modus_src_FULLSCAN_serial_to_parallel_atpg:v .................... Done
 xcelium> source /eda/cadence/2024-25/RHELx86/XCELIUM_24.03.004/tools/xcelium/files/xmsimrc
 xcelium> run
@@ -185,6 +185,6 @@ INFO (TVE-209): Cumulative Results:
 Simulation complete via $finish(1) at time 2800 NS + 0
 ./outputs/modus_src/testresults/verilog/VER.FULLSCAN.serial_to_parallel_atpg.mainsim.v:228       $finish; 
 xcelium> exit
-xmsim: Memory Usage - Final: 68.8M, Peak: 68.8M, Peak virtual: 336.6M
+xmsim: Memory Usage - Final: 68.5M, Peak: 68.5M, Peak virtual: 336.6M
 xmsim: CPU Usage - 0.0s system + 0.0s user = 0.1s total (1.1s, 5.9% cpu)
-TOOL:	xrun(64)	24.03-s004: Exiting on May 29, 2025 at 04:18:06 CEST  (total: 00:00:01)
+TOOL:	xrun(64)	24.03-s004: Exiting on Jun 10, 2025 at 19:58:48 CEST  (total: 00:00:02)

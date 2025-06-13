@@ -1,7 +1,7 @@
 (DELAYFILE
   (SDFVERSION "3.0")
   (DESIGN "serial_to_parallel")
-  (DATE "Fri May 30 01:14:48 2025")
+  (DATE "Tue Jun 10 21:07:06 2025")
   (VENDOR "Cadence Design Systems, Inc.")
   (PROGRAM "Innovus")
   (VERSION "v23.31-s109_1 ((64bit) 04/22/2024 16:02 (Linux 3.10.0-693.el7.x86_64))")

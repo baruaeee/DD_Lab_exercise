@@ -4,12 +4,12 @@ INFO (TDA-005): Command Line Invocation:
 
 INFO (TDA-014): Cadence(R) Modus(TM) DFT Software Solution, Version 23.11-s014_1, built Mar 14 2024 (linux26_64) [end TDA_014]
 
-INFO (TDA-015): Log File: /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/testresults/logs/log_verify_test_structures_FULLSCAN_052925041602-178744000 [end TDA_015]
+INFO (TDA-015): Log File: /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/testresults/logs/log_verify_test_structures_FULLSCAN_061025195528-961192000 [end TDA_015]
 
 INFO (TDA-007): Job Information:
-            Date Started: Thursday May 29 04:16:02 2025  CEST
+            Date Started: Tuesday Jun 10 19:55:28 2025  CEST
             Host machine is ei-vm-018.othr.de, x86_64 running Linux 4.18.0-553.44.1.el8_10.x86_64.
-            This job is process number 1938593.
+            This job is process number 3293897.
 [end TDA_007]
 
 INFO (TDA-009): Options/Values information.
@@ -20,10 +20,10 @@ INFO (TDA-009): Options/Values information.
             -TESTMODE FULLSCAN
 
             -messagecount TSV-016=10,TSV-024=10,TSV-315=10,TSV-027=10
-            -LOGFILE /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/testresults/logs/log_verify_test_structures_FULLSCAN_052925041602-178744000
+            -LOGFILE /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/testresults/logs/log_verify_test_structures_FULLSCAN_061025195528-961192000
             -STDOUT summary
 [end TDA_009]
-INFO (TSV-900): verify_test_structures processing has started Thu May 29 04:16:02 2025    [end TSV_900] 
+INFO (TSV-900): verify_test_structures processing has started Tue Jun 10 19:55:29 2025    [end TSV_900] 
 INFO (TFW-117): Modus checked out a modus_atpg license.  [end TFW_117] 
 ------------------- verify_test_structures Process Preview ---------------------
   apply constraints ...................................... constraints=yes    
@@ -161,7 +161,7 @@ Analyze potential clock signal races process has completed.
    Analyze internal scan chains 
 
 Analyze channel inputs for validity process has completed.
-                             CPU time =  0:00:00.00  Elapsed time =  0:00:00.01
+                             CPU time =  0:00:00.01  Elapsed time =  0:00:00.01
 
 --------------------File Information----------------------
           57344 /home/bas33767/Desktop/DD_Lab_exercise/SIPO/Synthesis/IHP_Open-PDK_DFT/outputs/modus_src/tbdata/TSVmessageFile.FULLSCAN 
@@ -173,9 +173,9 @@ INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:
 
                   Total Memory =            5,809,360  bytes
 
-                      CPU Time =    0:00:00.01
+                      CPU Time =    0:00:00.02
                   Elapsed Time =    0:00:00.16                    [end TDA_001]
 
-     Date Ended:  Thursday May 29 04:16:02 2025  CEST
+     Date Ended:  Tuesday Jun 10 19:55:29 2025  CEST
 
 
