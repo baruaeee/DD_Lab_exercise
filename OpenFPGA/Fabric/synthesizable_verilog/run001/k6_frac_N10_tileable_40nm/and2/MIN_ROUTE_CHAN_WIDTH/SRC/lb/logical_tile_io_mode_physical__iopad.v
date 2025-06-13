@@ -6,7 +6,7 @@
 //	Date: Fri Jun 13 01:13:00 2025
 //-------------------------------------------
 //----- Default net type -----
-`default_nettype none
+// `default_nettype none
 
 // ----- Verilog module for logical_tile_io_mode_physical__iopad -----
 module logical_tile_io_mode_physical__iopad(pReset,
@@ -67,7 +67,7 @@ endmodule
 // ----- END Verilog module for logical_tile_io_mode_physical__iopad -----
 
 //----- Default net type -----
-`default_nettype wire
+// `default_nettype wire
 
 
 

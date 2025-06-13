@@ -10,8 +10,8 @@
 
 // ------ Include user-defined netlists -----
 `include "../../../../../ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v"
-`include "/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_cell_library/verilog/dff.v"
-`include "/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_cell_library/verilog/gpio.v"
+`include "../../../../../openfpga_cell_library/verilog/dff.v"
+`include "../../../../../openfpga_cell_library/verilog/gpio.v"
 // ------ Include primitive module netlists -----
 `include "./SRC/sub_module/inv_buf_passgate.v"
 `include "./SRC/sub_module/arch_encoder.v"

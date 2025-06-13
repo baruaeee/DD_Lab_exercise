@@ -6,7 +6,7 @@
 //	Date: Fri Jun 13 01:13:00 2025
 //-------------------------------------------
 //----- Default net type -----
-`default_nettype none
+// `default_nettype none
 
 // ----- Verilog module for fpga_top -----
 module fpga_top(pReset,
@@ -623,7 +623,7 @@ endmodule
 // ----- END Verilog module for fpga_top -----
 
 //----- Default net type -----
-`default_nettype wire
+// `default_nettype wire
 
 
 
