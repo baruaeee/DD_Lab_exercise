@@ -7,8 +7,8 @@
 //-----------------------------------------------------
 // Function    : A minimum general purpose I/O
 //-----------------------------------------------------
-`include "../../../../../ihp-sg13g2/libs.ref/sg13g2_io/verilog/sg13g2_io.v"
-//`include "../../../../../ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v"
+`include "../ihp-sg13g2/libs.ref/sg13g2_io/verilog/sg13g2_io.v"
+`include "../ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v"
 
 module GPIO (
   input A, // Data output
@@ -21,9 +21,6 @@ module GPIO (
 
   sg13g2_inv_1 inv(.Y(n_0), .A(DIR));
   sg13g2_IOPadInOut30mA gpio (.pad(PAD), .c2p(A), .c2p_en(n_0), .p2c(Y));
-
-
-  //sg13g2_IOPadInOut30mA gpio (.pad(PAD), .c2p(A), .c2p_en(DIR), .p2c(Y));
 
   //----- when direction enabled, the signal is propagated from PAD to data input
   //assign Y = DIR ? PAD : 1'bz;
