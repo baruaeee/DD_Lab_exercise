@@ -1,5 +1,5 @@
 # Read Liberty file
-read_libs ../GPIO/LIB/sg13g2_stdcell_typ_1p20V_25C.lib
+read_libs LIB/sg13g2_stdcell_typ_1p20V_25C.lib
 
 # Read HDL/Verilod file
 read_hdl dff.v
