@@ -29,22 +29,15 @@ module DFFSRQ (
 endmodule
 
 
-module DFFR (
-  input RST, // Reset input
-  input CK, // Clock Input
-  input D, // Data Input
-  output Q, // Q output
-  output QN // QB output
-);
-
-    // Original DFF with mux output as data input
-    sg13g2_dfrbp_1 dff_inst (
-        .Q(Q),
-        .Q_N(QN),
-        .D(D),    // Use mux output instead of direct D
-        .RESET_B(RST),
-        .CLK(CK)
-    );
+module DFFR(RST, CK, D, Q, QN);
+  input RST, CK, D;
+  output Q, QN;
+  wire RST, CK, D;
+  wire Q, QN;
+  wire n_0;
+  sg13g2_dfrbp_1 q_reg_reg(.RESET_B (n_0), .CLK (CK), .D (D), .Q (Q),
+       .Q_N (QN));
+  sg13g2_inv_1 g6(.A (RST), .Y (n_0));
 endmodule
 
 module DFFR1 (

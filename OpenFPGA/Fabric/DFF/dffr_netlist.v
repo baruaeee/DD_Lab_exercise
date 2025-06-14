@@ -4,7 +4,7 @@
 
 // Verification Directory fv/DFFR1 
 
-module DFFR1(RST, CK, D, Q, QN);
+module DFFR(RST, CK, D, Q, QN);
   input RST, CK, D;
   output Q, QN;
   wire RST, CK, D;
