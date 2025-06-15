@@ -4,7 +4,7 @@
 #	Description: Constrain timing of Connection Block cbx_1__0_ for PnR
 #	Author: Xifan TANG 
 #	Organization: University of Utah 
-#	Date: Sun Jun 15 03:15:12 2025
+#	Date: Sun Jun 15 19:37:28 2025
 #############################################
 
 #############################################
