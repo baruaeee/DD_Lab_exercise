@@ -1,11 +1,11 @@
 # Read Liberty file
-read_libs LIB/sg13g2_stdcell_typ_1p20V_25C.lib
+read_libs LIB/sg13g2_stdcell_typ_1p50V_25C.lib
 
 # Read HDL/Verilod file
 read_hdl dff.v
 
 # Elaborate the desired module
-elaborate DFFR1
+elaborate dffsrq
 
 #read_sdc gpio_sdc.sdc
 

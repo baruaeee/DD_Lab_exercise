@@ -1,42 +1,48 @@
 
-module DFFSRQ (
-    output Q,
-    output Q_N,
-    input D,
-    input RST,
-    input SET,
-    input CK
+module dffsrq (
+  input SET, // set input
+  input RST, // Reset input
+  input CK, // Clock Input
+  input D, // Data Input
+  output Q // Q output
 );
-    wire mux_out;
-    wire set_value = 1'b1;  // SET forces output to 1
+//------------Internal Variables--------
+reg q_reg;
 
-    // Mux to select between normal D input and SET value
-    sg13g2_mux2_1 set_mux (
-        .X(mux_out),
-        .A0(D),        // Normal data input
-        .A1(set_value), // Forced '1' when SET is active
-        .S(SET)        // SET signal as select
-    );
+//-------------Code Starts Here---------
+always @ ( posedge CK or posedge RST or posedge SET)
+if (RST) begin
+  q_reg <= 1'b0;
+end else if (SET) begin
+  q_reg <= 1'b1;
+end else begin
+  q_reg <= D;
+end
 
-    // Original DFF with mux output as data input
-    sg13g2_dfrbp_1 dff_inst (
-        .Q(Q),
-        .Q_N(Q_N),
-        .D(mux_out),    // Use mux output instead of direct D
-        .RESET_B(RST),
-        .CLK(CK)
-    );
+assign Q = q_reg;
+
 endmodule
 
 
-module DFFR(RST, CK, D, Q, QN);
-  input RST, CK, D;
-  output Q, QN;
-  //wire RST, CK, D;
-  //wire Q, QN;
-  wire n_0;
-  sg13g2_dfrbp_1 q_reg_reg(.RESET_B (n_0), .CLK (CK), .D (D), .Q (Q),
-       .Q_N (QN));
-  sg13g2_inv_1 g6(.A (RST), .Y (n_0));
-endmodule
+module dffr (
+  input RST, // Reset input
+  input CK, // Clock Input
+  input D, // Data Input
+  output Q, // Q output
+  output QN // QB output
+);
+//------------Internal Variables--------
+reg q_reg;
 
+//-------------Code Starts Here---------
+always @ ( posedge CK or posedge RST)
+if (RST) begin
+  q_reg <= 1'b0;
+end else begin
+  q_reg <= D;
+end
+
+assign Q = q_reg;
+assign QN = ~q_reg;
+
+endmodule
