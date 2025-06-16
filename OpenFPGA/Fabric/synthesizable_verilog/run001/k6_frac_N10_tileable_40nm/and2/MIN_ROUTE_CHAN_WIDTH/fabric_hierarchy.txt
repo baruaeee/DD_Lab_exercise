@@ -3,29 +3,29 @@ fpga_top:
     logical_tile_io_mode_io_:
       logical_tile_io_mode_physical__iopad:
         GPIO:
-        GPIO_DFFR_mem:
-          - DFFR
+        GPIO_dffr_mem:
+          - dffr
       direct_interc:
   grid_io_right:
     logical_tile_io_mode_io_:
       logical_tile_io_mode_physical__iopad:
         GPIO:
-        GPIO_DFFR_mem:
-          - DFFR
+        GPIO_dffr_mem:
+          - dffr
       direct_interc:
   grid_io_bottom:
     logical_tile_io_mode_io_:
       logical_tile_io_mode_physical__iopad:
         GPIO:
-        GPIO_DFFR_mem:
-          - DFFR
+        GPIO_dffr_mem:
+          - dffr
       direct_interc:
   grid_io_left:
     logical_tile_io_mode_io_:
       logical_tile_io_mode_physical__iopad:
         GPIO:
-        GPIO_DFFR_mem:
-          - DFFR
+        GPIO_dffr_mem:
+          - dffr
       direct_interc:
   grid_clb:
     logical_tile_clb_mode_clb_:
@@ -41,14 +41,14 @@ fpga_top:
                   - INVTX1
                   - MUX2
                   - buf4
-              frac_lut6_DFFR_mem:
-                - DFFR
+              frac_lut6_dffr_mem:
+                - dffr
             mux_tree_size2:
               - INVTX1
               - const1
               - MUX2
             mux_tree_size2_mem:
-              - DFFR
+              - dffr
             direct_interc:
           logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff:
             - DFFSRQ
@@ -57,7 +57,7 @@ fpga_top:
             - const1
             - MUX2
           mux_tree_size2_mem:
-            - DFFR
+            - dffr
           direct_interc:
         direct_interc:
       direct_interc:
@@ -66,7 +66,7 @@ fpga_top:
         - const1
         - MUX2
       mux_tree_size60_mem:
-        - DFFR
+        - dffr
   sb_0__0_:
     mux_tree_tapbuf_size3:
       - INVTX1
@@ -74,14 +74,14 @@ fpga_top:
       - tap_buf4
       - MUX2
     mux_tree_tapbuf_size3_mem:
-      - DFFR
+      - dffr
     mux_tree_tapbuf_size2:
       - INVTX1
       - const1
       - tap_buf4
       - MUX2
     mux_tree_tapbuf_size2_mem:
-      - DFFR
+      - dffr
   sb_0__1_:
     mux_tree_tapbuf_size3:
       - INVTX1
@@ -89,14 +89,14 @@ fpga_top:
       - tap_buf4
       - MUX2
     mux_tree_tapbuf_size3_mem:
-      - DFFR
+      - dffr
     mux_tree_tapbuf_size2:
       - INVTX1
       - const1
       - tap_buf4
       - MUX2
     mux_tree_tapbuf_size2_mem:
-      - DFFR
+      - dffr
   sb_1__0_:
     mux_tree_tapbuf_size3:
       - INVTX1
@@ -104,14 +104,14 @@ fpga_top:
       - tap_buf4
       - MUX2
     mux_tree_tapbuf_size3_mem:
-      - DFFR
+      - dffr
     mux_tree_tapbuf_size2:
       - INVTX1
       - const1
       - tap_buf4
       - MUX2
     mux_tree_tapbuf_size2_mem:
-      - DFFR
+      - dffr
   sb_1__1_:
     mux_tree_tapbuf_size3:
       - INVTX1
@@ -119,14 +119,14 @@ fpga_top:
       - tap_buf4
       - MUX2
     mux_tree_tapbuf_size3_mem:
-      - DFFR
+      - dffr
     mux_tree_tapbuf_size2:
       - INVTX1
       - const1
       - tap_buf4
       - MUX2
     mux_tree_tapbuf_size2_mem:
-      - DFFR
+      - dffr
   cbx_1__0_:
     mux_tree_tapbuf_size4:
       - INVTX1
@@ -134,14 +134,14 @@ fpga_top:
       - tap_buf4
       - MUX2
     mux_tree_tapbuf_size4_mem:
-      - DFFR
+      - dffr
     mux_tree_tapbuf_size2:
       - INVTX1
       - const1
       - tap_buf4
       - MUX2
     mux_tree_tapbuf_size2_mem:
-      - DFFR
+      - dffr
   cbx_1__1_:
     mux_tree_tapbuf_size4:
       - INVTX1
@@ -149,14 +149,14 @@ fpga_top:
       - tap_buf4
       - MUX2
     mux_tree_tapbuf_size4_mem:
-      - DFFR
+      - dffr
     mux_tree_tapbuf_size2:
       - INVTX1
       - const1
       - tap_buf4
       - MUX2
     mux_tree_tapbuf_size2_mem:
-      - DFFR
+      - dffr
   cby_0__1_:
     mux_tree_tapbuf_size4:
       - INVTX1
@@ -164,14 +164,14 @@ fpga_top:
       - tap_buf4
       - MUX2
     mux_tree_tapbuf_size4_mem:
-      - DFFR
+      - dffr
     mux_tree_tapbuf_size2:
       - INVTX1
       - const1
       - tap_buf4
       - MUX2
     mux_tree_tapbuf_size2_mem:
-      - DFFR
+      - dffr
   cby_1__1_:
     mux_tree_tapbuf_size4:
       - INVTX1
@@ -179,11 +179,11 @@ fpga_top:
       - tap_buf4
       - MUX2
     mux_tree_tapbuf_size4_mem:
-      - DFFR
+      - dffr
     mux_tree_tapbuf_size2:
       - INVTX1
       - const1
       - tap_buf4
       - MUX2
     mux_tree_tapbuf_size2_mem:
-      - DFFR
+      - dffr

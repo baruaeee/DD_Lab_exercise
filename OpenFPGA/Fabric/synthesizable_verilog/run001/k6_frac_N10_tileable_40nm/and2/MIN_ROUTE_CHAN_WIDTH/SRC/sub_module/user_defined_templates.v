@@ -3,7 +3,7 @@
 //	Description: Template for user-defined Verilog modules
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Tue Jun 17 00:18:37 2025
+//	Date: Tue Jun 17 01:34:48 2025
 //-------------------------------------------
 // ----- Template Verilog module for INVTX1 -----
 //----- Default net type -----
@@ -203,12 +203,12 @@ endmodule
 `default_nettype wire
 
 
-// ----- Template Verilog module for DFFR -----
+// ----- Template Verilog module for dffr -----
 //----- Default net type -----
 `default_nettype none
 
-// ----- Verilog module for DFFR -----
-module DFFR(RST,
+// ----- Verilog module for dffr -----
+module dffr(RST,
             CK,
             D,
             Q,
@@ -236,7 +236,7 @@ output [0:0] QN;
 
 // ----- Internal logic should end here -----
 endmodule
-// ----- END Verilog module for DFFR -----
+// ----- END Verilog module for dffr -----
 
 //----- Default net type -----
 `default_nettype wire
