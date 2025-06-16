@@ -4,9 +4,12 @@
 
 // Verification Directory fv/GPIO 
 
-`include "../../../../../ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v"
+//`include "../../../../../ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v"
+//`include "../../../../../ihp-sg13g2/libs.ref/sg13g2_io/verilog/sg13g2_io.v"
 
-`include "../../../../../ihp-sg13g2/libs.ref/sg13g2_io/verilog/sg13g2_io.v"
+//`include "../../ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v"
+`include "../../ihp-sg13g2/libs.ref/sg13g2_io/verilog/sg13g2_io.v"
+
 //module sg13g2_IOPadInOut30mA(pad, c2p, c2p_en, p2c);
 //  input c2p, c2p_en;
 //  output p2c;

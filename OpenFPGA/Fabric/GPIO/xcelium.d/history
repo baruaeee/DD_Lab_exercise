@@ -2,4 +2,6 @@
 // File created by:  xrun
 // Do not modify this file
 
-s1::(13Jun2025:19:13:53):( xrun gpio_tb.v -access +rwc -gui )&&(./xcelium.d/env.d/env.history.13Jun2025_19_13_53)
+s1::(13Jun2025:20:36:26):( xrun gpio_tb.v -access +rwc -gui )&&(./xcelium.d/env.d/env.history.13Jun2025_20_36_26)
+s2::(14Jun2025:10:03:08):( /run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/bin/xrun gpio_tb.v -access +rwc -gui )&&(./xcelium.d/env.d/env.history.14Jun2025_10_03_08)
+s3::(14Jun2025:18:15:25):( xrun gpio_tb.v -access +rwc -gui )&&(./xcelium.d/env.d/env.history.14Jun2025_18_15_25)

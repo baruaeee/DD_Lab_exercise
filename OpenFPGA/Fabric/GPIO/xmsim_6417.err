@@ -1,0 +1,92 @@
+csi-xmsim - CSI: Command line:
+xmsim
+    -f /run/media/exotic/Cadence/DD_Lab_exercise/OpenFPGA/Fabric/GPIO/xcelium.d/run.lnx8664.24.03.d/exotic-rhel_6417/xmsim.args
+        -gui
+        -MESSAGES
+        +EMGRLOG xrun.log
+        -XLSTIME 1749860571
+        -XLKEEP
+        -XLMODE ./xcelium.d/run.lnx8664.24.03.d
+        -RUNMODE
+        -CDSLIB ./xcelium.d/run.lnx8664.24.03.d/cds.lib
+        -HDLVAR ./xcelium.d/run.lnx8664.24.03.d/hdl.var
+        -XLNAME xrun
+        -XLVERSION TOOL:	xrun(64)	24.03-s004
+        -XLNAME ./xcelium.d/run.lnx8664.24.03.d/exotic-rhel_6417
+    -CHECK_VERSION TOOL:	xrun(64)	24.03-s004
+    -LOG_FD 4
+    -LOG_FD_NAME xrun.log
+    -cmdnopsim
+    -runlock /run/media/exotic/Cadence/DD_Lab_exercise/OpenFPGA/Fabric/GPIO/xcelium.d/run.lnx8664.24.03.d/.xmlib.lock
+    -runscratch /run/media/exotic/Cadence/DD_Lab_exercise/OpenFPGA/Fabric/GPIO/xcelium.d/run.lnx8664.24.03.d/exotic-rhel_6417
+Observed simulation time : 0 FS + 0
+
+csi-xmsim - CSI: *F,INTERR: INTERNAL EXCEPTION
+-----------------------------------------------------------------
+The tool has encountered an unexpected condition and must exit.
+Contact Cadence Design Systems customer support about this
+problem and provide enough information to help us reproduce it,
+including the logfile that contains this error message.
+  TOOL:	xmsim(64)	24.03-s004 (CL: 638556 )
+  HOSTNAME: exotic-rhel
+  OPERATING SYSTEM: Linux 4.18.0-553.el8_10.x86_64 #1 SMP Fri May 10 15:19:13 EDT 2024 x86_64
+  MESSAGE: T(0): sv_seghandler - trapno -1 addr(0x6fd9ecc)
+	Stream rts_xfer
+-----------------------------------------------------------------
+
+csi-xmsim - CSI: Cadence Support Investigation, recording details
+External Code in function: <unavailable> offset -65516
+External Code in function: <unavailable> offset -65530
+Simulator Snap Shot: gd (SSS_GD) in snapshot worklib.sg13g2_Corner:v (SSS)
+Verilog Syntax Tree: module declaration (VST_D_MODULE) in module worklib.tb_GPIO:v (VST)
+	File: /run/media/exotic/Cadence/DD_Lab_exercise/OpenFPGA/Fabric/GPIO/gpio_tb.v, line 8, position 13
+	Scope: tb_GPIO
+	Decompile: tb_GPIO
+	Source  : module tb_GPIO;
+	Position:              ^
+Verilog Syntax Tree: wire declaration (VST_D_WIRE) in module worklib.tb_GPIO:v (VST)
+	File: /run/media/exotic/Cadence/DD_Lab_exercise/OpenFPGA/Fabric/GPIO/gpio_tb.v, line 13, position 9
+	Scope: tb_GPIO
+	Decompile: logic Y
+	Source  :     wire Y;        // Wire for output Y
+	Position:          ^
+Verilog Syntax Tree: wire declaration (VST_D_WIRE) in module worklib.sg13g2_IOPadOut16mA:v (VST)
+	File: /run/media/exotic/Cadence/DD_Lab_exercise/OpenFPGA/Fabric/ihp-sg13g2/libs.ref/sg13g2_io/verilog/sg13g2_io.v, line 102, position 9
+	Scope: sg13g2_IOPadOut16mA
+	Decompile: logic c2p
+	Source  : 	input c2p;
+	Position: 	        ^
+Verilog Syntax Tree: overlay table (VST_OVERLAY_TABLE) in module worklib.tb_GPIO:v (SIG) <0x0dcf69fb>
+	Decompile: tb_GPIO
+External Code in function: <unavailable> offset -65536
+Intermediate File: string (IF_STRING) in module worklib.tb_GPIO:v (VST)
+	Decompile: A
+Verilog Syntax Tree: register declaration (VST_D_REG) in module worklib.tb_GPIO:v (VST)
+	File: /run/media/exotic/Cadence/DD_Lab_exercise/OpenFPGA/Fabric/GPIO/gpio_tb.v, line 26, position 19
+	Scope: tb_GPIO
+	Decompile: reg pad_drive_en
+	Source  :     reg pad_drive_en;
+	Position:                    ^
+Verilog Syntax Tree: logic type (VST_T_LOGIC) in module worklib.tb_GPIO:v (VST)
+	Decompile: logic
+Verilog Syntax Tree: logic type (VST_T_LOGIC) in module worklib.tb_GPIO:v (VST)
+	Decompile: reg
+External Code in function: <unavailable> offset -65531
+Verilog Syntax Tree: module declaration (VST_D_MODULE) in module worklib.sg13g2_Corner:v (VST)
+	File: /run/media/exotic/Cadence/DD_Lab_exercise/OpenFPGA/Fabric/ihp-sg13g2/libs.ref/sg13g2_io/verilog/sg13g2_io.v, line 18, position 19
+	Scope: sg13g2_Corner
+	Decompile: sg13g2_Corner
+	Source  : module sg13g2_Corner ();
+	Position:                    ^
+Simulator Snap Shot: top level instance (SSS_TLI) in snapshot worklib.sg13g2_Corner:v (SSS)
+Intermediate File: array of pointers (IF_PTRBLK) in snapshot worklib.sg13g2_Corner:v (SSS)
+Intermediate File: data block (IF_BLK) in snapshot worklib.sg13g2_Corner:v (SSS)
+Simulator Snap Shot: root (SSS_ROOT) in snapshot worklib.sg13g2_Corner:v (SSS)
+Verilog Syntax Tree: module declaration (VST_D_MODULE) in module worklib.sg13g2_IOPadTriOut30mA:v (VST)
+	File: /run/media/exotic/Cadence/DD_Lab_exercise/OpenFPGA/Fabric/ihp-sg13g2/libs.ref/sg13g2_io/verilog/sg13g2_io.v, line 172, position 28
+	Scope: sg13g2_IOPadTriOut30mA
+	Decompile: sg13g2_IOPadTriOut30mA
+	Source  : module sg13g2_IOPadTriOut30mA (pad, c2p, c2p_en);
+	Position:                             ^
+Simulator Snap Shot: dynlib (SSS_DYNLIB) in snapshot worklib.sg13g2_Corner:v (SSS)
+csi-xmsim - CSI: investigation complete took 0.128 secs, send this file to Cadence Support
