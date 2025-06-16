@@ -3,25 +3,13 @@
 // Generated on: Jun 13 2025 22:27:34 CEST (Jun 13 2025 20:27:34 UTC)
 
 // Verification Directory fv/GPIO 
+//use in opefpga simulation + Xcelium
+`include "../../../../../ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v"
+`include "../../../../../ihp-sg13g2/libs.ref/sg13g2_io/verilog/sg13g2_io.v"
 
-//`include "../../../../../ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v"
-//`include "../../../../../ihp-sg13g2/libs.ref/sg13g2_io/verilog/sg13g2_io.v"
+// use in genus synthesis
+//`include "../../ihp-sg13g2/libs.ref/sg13g2_io/verilog/sg13g2_io.v"
 
-//`include "../../ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v"
-`include "../../ihp-sg13g2/libs.ref/sg13g2_io/verilog/sg13g2_io.v"
-
-//module sg13g2_IOPadInOut30mA(pad, c2p, c2p_en, p2c);
-//  input c2p, c2p_en;
-//  output p2c;
-//  inout pad;
-//  wire c2p, c2p_en;
-//  wire p2c;
-//  wire pad;
-//  wire n_0;
-//  assign p2c = pad;
-//  sg13g2_ebufn_2 g1__2398(.A (c2p), .TE_B (n_0), .Z (pad));
-//  sg13g2_inv_1 g4(.A (c2p_en), .Y (n_0));
-//endmodule
 
 module GPIO(A, Y, PAD, DIR);
   input A, DIR;

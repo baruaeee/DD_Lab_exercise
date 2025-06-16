@@ -56,10 +56,10 @@ write_full_testbench --file ./SRC --reference_benchmark_file_path ${REFERENCE_VE
 
 # Write the SDC files for PnR backend
 #  - Turn on every options here
-write_pnr_sdc --file ./SDC
+write_pnr_sdc --file ./SDC --flatten_names
 
 # Write SDC to disable timing for configure ports
-write_sdc_disable_timing_configure_ports --file ./SDC/disable_configure_ports.sdc
+write_sdc_disable_timing_configure_ports --file ./SDC/disable_configure_ports.sdc --flatten_names
 
 # Write the SDC to run timing analysis for a mapped FPGA fabric
 write_analysis_sdc --file ./SDC_analysis

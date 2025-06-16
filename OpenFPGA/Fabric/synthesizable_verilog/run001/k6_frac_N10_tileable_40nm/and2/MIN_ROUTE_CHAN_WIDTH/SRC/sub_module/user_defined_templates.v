@@ -3,7 +3,7 @@
 //	Description: Template for user-defined Verilog modules
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Sun Jun 15 19:37:28 2025
+//	Date: Mon Jun 16 14:38:46 2025
 //-------------------------------------------
 // ----- Template Verilog module for INVTX1 -----
 //----- Default net type -----
