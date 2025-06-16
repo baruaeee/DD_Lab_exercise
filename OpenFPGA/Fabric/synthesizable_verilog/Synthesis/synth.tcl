@@ -7,7 +7,7 @@ read_hdl SRC/fabric_netlists.v
 
 #elaborate
 elaborate fpga_top
-flat
+#flat
 
 
 # set and read SDC files
@@ -21,14 +21,10 @@ foreach sdc_file $sdc_files {
     read_sdc $sdc_file
 }
 
-#foreach sdc_file $sdc_files {
-#	read_sdc [file join $sdc_dir $sdc_file]
-#}
 
-
-set_db syn_generic_effort medium
+#set_db syn_generic_effort medium
 set_db syn_map_effort medium
-set_db syn_opt_effort medium
+#set_db syn_opt_effort medium
 
 
 syn_generic
