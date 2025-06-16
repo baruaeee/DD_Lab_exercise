@@ -32,33 +32,11 @@ endmodule
 module DFFR(RST, CK, D, Q, QN);
   input RST, CK, D;
   output Q, QN;
-  wire RST, CK, D;
-  wire Q, QN;
+  //wire RST, CK, D;
+  //wire Q, QN;
   wire n_0;
   sg13g2_dfrbp_1 q_reg_reg(.RESET_B (n_0), .CLK (CK), .D (D), .Q (Q),
        .Q_N (QN));
   sg13g2_inv_1 g6(.A (RST), .Y (n_0));
 endmodule
 
-module DFFR1 (
-  input RST, // Reset input
-  input CK, // Clock Input
-  input D, // Data Input
-  output Q, // Q output
-  output QN // QB output
-);
-//------------Internal Variables--------
-reg q_reg;
-
-//-------------Code Starts Here---------
-always @ ( posedge CK or posedge RST)
-if (RST) begin
-  q_reg <= 1'b0;
-end else begin
-  q_reg <= D;
-end
-
-assign Q = q_reg;
-assign QN = ~q_reg;
-
-endmodule

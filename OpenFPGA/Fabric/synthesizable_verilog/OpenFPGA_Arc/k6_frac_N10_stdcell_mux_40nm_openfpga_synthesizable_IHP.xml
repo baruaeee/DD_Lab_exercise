@@ -134,7 +134,8 @@
       <port type="sram" prefix="sram" size="1"/>
     </circuit_model>
     <!--DFF subckt ports should be defined as <D> <Q> <CLK> <RESET> <SET>  -->
-    <circuit_model type="ff" name="DFFSRQ" prefix="DFFSRQ" spice_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/spice/dff.sp" verilog_netlist="../../../../../DFF/dff.v">
+    <!--<circuit_model type="ff" name="DFFSRQ" prefix="DFFSRQ" spice_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/spice/dff.sp" verilog_netlist="../../../../../DFF/dff.v">  -->
+    <circuit_model type="ff" name="DFFSRQ" prefix="DFFSRQ" spice_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/spice/dff.sp" verilog_netlist="../../../../../openfpga_cell_library/verilog/dff.v">
       <design_technology type="cmos"/>
       <input_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
       <output_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
@@ -159,7 +160,8 @@
       <port type="sram" prefix="mode" size="1" mode_select="true" circuit_model_name="DFFR" default_val="1"/>
     </circuit_model>
     <!--Scan-chain DFF subckt ports should be defined as <D> <Q> <Qb> <CLK> <RESET> <SET>  -->
-    <circuit_model type="ccff" name="DFFR" prefix="DFFR" spice_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/spice/dff.sp" verilog_netlist="../../../../../DFF/dff.v">
+    <circuit_model type="ccff" name="DFFR" prefix="DFFR" spice_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/spice/dff.sp" verilog_netlist="../../../../../openfpga_cell_library/verilog/dff.v">
+    <!--<circuit_model type="ccff" name="DFFR" prefix="DFFR" spice_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/spice/dff.sp" verilog_netlist="../../../../../DFF/dffr.v">-->
       <design_technology type="cmos"/>
       <input_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
       <output_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>

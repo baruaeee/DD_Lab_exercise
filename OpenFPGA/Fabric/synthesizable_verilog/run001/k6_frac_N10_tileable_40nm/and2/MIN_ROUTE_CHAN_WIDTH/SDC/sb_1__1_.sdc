@@ -4,7 +4,7 @@
 #	Description: Constrain timing of Switch Block sb_1__1_ for PnR
 #	Author: Xifan TANG 
 #	Organization: University of Utah 
-#	Date: Mon Jun 16 22:01:12 2025
+#	Date: Tue Jun 17 00:18:37 2025
 #############################################
 
 #############################################
