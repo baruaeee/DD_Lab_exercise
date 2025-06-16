@@ -3510,6 +3510,13 @@ set_dont_touch [get_cells grid_clb_1__1_/logical_tile_clb_mode_clb__0/cdn_loop_b
 set_dont_touch [get_cells grid_clb_1__1_/logical_tile_clb_mode_clb__0/cdn_loop_breaker10681] ; # disabled_arcs
 set_dont_touch [get_cells grid_clb_1__1_/logical_tile_clb_mode_clb__0/cdn_loop_breaker10682] ; # disabled_arcs
 set_dont_touch [get_cells cdn_loop_breaker] ; # disabled_arcs
+set_dont_touch [get_cells cdn_loop_breaker213] ; # disabled_arcs
+set_dont_touch [get_cells cdn_loop_breaker214] ; # disabled_arcs
+set_dont_touch [get_cells cdn_loop_breaker215] ; # disabled_arcs
+set_dont_touch [get_cells cdn_loop_breaker216] ; # disabled_arcs
+set_dont_touch [get_cells cdn_loop_breaker217] ; # disabled_arcs
+set_dont_touch [get_cells cdn_loop_breaker218] ; # disabled_arcs
+set_dont_touch [get_cells cdn_loop_breaker219] ; # disabled_arcs
 set_dont_touch [get_cells cdn_loop_breaker220] ; # disabled_arcs
 set_dont_touch [get_cells cdn_loop_breaker221] ; # disabled_arcs
 set_dont_touch [get_cells cdn_loop_breaker222] ; # disabled_arcs
@@ -3561,10 +3568,3 @@ set_dont_touch [get_cells cdn_loop_breaker267] ; # disabled_arcs
 set_dont_touch [get_cells cdn_loop_breaker268] ; # disabled_arcs
 set_dont_touch [get_cells cdn_loop_breaker269] ; # disabled_arcs
 set_dont_touch [get_cells cdn_loop_breaker270] ; # disabled_arcs
-set_dont_touch [get_cells cdn_loop_breaker271] ; # disabled_arcs
-set_dont_touch [get_cells cdn_loop_breaker272] ; # disabled_arcs
-set_dont_touch [get_cells cdn_loop_breaker273] ; # disabled_arcs
-set_dont_touch [get_cells cdn_loop_breaker274] ; # disabled_arcs
-set_dont_touch [get_cells cdn_loop_breaker275] ; # disabled_arcs
-set_dont_touch [get_cells cdn_loop_breaker276] ; # disabled_arcs
-set_dont_touch [get_cells cdn_loop_breaker277] ; # disabled_arcs

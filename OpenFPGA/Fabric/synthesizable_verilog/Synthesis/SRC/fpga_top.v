@@ -3,7 +3,7 @@
 //	Description: Top-level Verilog module for FPGA
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Sun Jun 15 19:37:28 2025
+//	Date: Mon Jun 16 14:38:46 2025
 //-------------------------------------------
 //----- Default net type -----
 `default_nettype none
@@ -17,7 +17,6 @@ module fpga_top(pReset,
                 gfpga_pad_GPIO_PAD,
                 ccff_head,
                 ccff_tail);
-
 //----- GLOBAL PORTS -----
 input [0:0] pReset;
 //----- GLOBAL PORTS -----
@@ -201,28 +200,6 @@ wire [0:9] sb_1__1__0_chany_bottom_out;
 // ----- END Local short connections -----
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
-
-// Begin adding input and output pads
-// pReset, prog_clk, set, reset, clk, gfpga_pad_GPIO_PAD, ccff_head, ccff_tail
-  wire padin_pReset, padin_prog_clk, padin_set, padin_reset, padin_clk, padin_ccff_head, padin_ccff_tail;
-  wire padout_pReset, padout_prog_clk, padout_set, padout_reset, padout_clk, padout_ccff_head, padout_ccff_tail;
-  
-  assign padout_pReset = pReset;
-  assign padout_prog_clk = prog_clk;
-  assign padout_set = set;
-  assign padout_reset = reset;
-  assign padout_clk = clk;
-  assign padout_ccff_head = ccff_head;
-  assign padout_ccff_tail = ccff_tail;
-
-  sg13g2_IOPadIn pad_pReset(.p2c(padout_pReset), .pad(padin_pReset));
-  sg13g2_IOPadIn pad_prog_clk(.p2c(padout_prog_clk), .pad(padin_prog_clk));
-  sg13g2_IOPadIn pad_set(.p2c(padout_set), .pad(padin_set));
-  sg13g2_IOPadIn pad_reset(.p2c(padout_reset), .pad(padin_reset));
-  sg13g2_IOPadIn pad_clk(.p2c(padout_clk), .pad(padin_clk));
-  sg13g2_IOPadIn pad_ccff_head(.p2c(padout_ccff_head), .pad(padin_ccff_head));
-  sg13g2_IOPadOut30mA pad_ccff_tail(.c2p(padout_ccff_tail), .pad(padin_ccff_tail));
-// end adding input and output pads
 
 	grid_io_top grid_io_top_1__2_ (
 		.pReset(pReset),

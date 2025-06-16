@@ -3,23 +3,19 @@
 //	Description: Fabric Netlist Summary
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Sun Jun 15 19:37:28 2025
+//	Date: Mon Jun 16 14:38:46 2025
 //-------------------------------------------
 // ------ Include defines: preproc flags -----
 `include "./SRC/fpga_defines.v"
 
 // ------ Include user-defined netlists -----
-`include "../../openfpga_cell_library/verilog/inv.v"
-`include "../../openfpga_cell_library/verilog/buf4.v"
-`include "../../openfpga_cell_library/verilog/tap_buf4.v"
-`include "../../openfpga_cell_library/verilog/or2.v"
-`include "../../openfpga_cell_library/verilog/mux2.v"
-`include "../../openfpga_cell_library/verilog/dff.v"
-`include "../../GPIO/gpio_netlist_IHP.v"
-// to include the Inpad, Outpad; the IOPAD library need to be included here
-// As the IOPAD libray is already included in "gpio_netlist_IHP.v" its not necessary
-
-
+`include "../../../openfpga_cell_library/verilog/inv.v"
+`include "../../../openfpga_cell_library/verilog/buf4.v"
+`include "../../../openfpga_cell_library/verilog/tap_buf4.v"
+`include "../../../openfpga_cell_library/verilog/or2.v"
+`include "../../../openfpga_cell_library/verilog/mux2.v"
+`include "../../../openfpga_cell_library/verilog/dff.v"
+`include "../../../GPIO/gpio_netlist_IHP.v"
 // ------ Include primitive module netlists -----
 `include "./SRC/sub_module/inv_buf_passgate.v"
 `include "./SRC/sub_module/arch_encoder.v"

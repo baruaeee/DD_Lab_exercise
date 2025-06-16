@@ -3513,6 +3513,13 @@ catch {set_db inst:fpga_top/grid_clb_1__1_/logical_tile_clb_mode_clb__0/cdn_loop
 catch {set_db inst:fpga_top/grid_clb_1__1_/logical_tile_clb_mode_clb__0/cdn_loop_breaker10681 .dont_touch true}
 catch {set_db inst:fpga_top/grid_clb_1__1_/logical_tile_clb_mode_clb__0/cdn_loop_breaker10682 .dont_touch true}
 catch {set_db inst:fpga_top/cdn_loop_breaker .dont_touch true}
+catch {set_db inst:fpga_top/cdn_loop_breaker213 .dont_touch true}
+catch {set_db inst:fpga_top/cdn_loop_breaker214 .dont_touch true}
+catch {set_db inst:fpga_top/cdn_loop_breaker215 .dont_touch true}
+catch {set_db inst:fpga_top/cdn_loop_breaker216 .dont_touch true}
+catch {set_db inst:fpga_top/cdn_loop_breaker217 .dont_touch true}
+catch {set_db inst:fpga_top/cdn_loop_breaker218 .dont_touch true}
+catch {set_db inst:fpga_top/cdn_loop_breaker219 .dont_touch true}
 catch {set_db inst:fpga_top/cdn_loop_breaker220 .dont_touch true}
 catch {set_db inst:fpga_top/cdn_loop_breaker221 .dont_touch true}
 catch {set_db inst:fpga_top/cdn_loop_breaker222 .dont_touch true}
@@ -3564,13 +3571,6 @@ catch {set_db inst:fpga_top/cdn_loop_breaker267 .dont_touch true}
 catch {set_db inst:fpga_top/cdn_loop_breaker268 .dont_touch true}
 catch {set_db inst:fpga_top/cdn_loop_breaker269 .dont_touch true}
 catch {set_db inst:fpga_top/cdn_loop_breaker270 .dont_touch true}
-catch {set_db inst:fpga_top/cdn_loop_breaker271 .dont_touch true}
-catch {set_db inst:fpga_top/cdn_loop_breaker272 .dont_touch true}
-catch {set_db inst:fpga_top/cdn_loop_breaker273 .dont_touch true}
-catch {set_db inst:fpga_top/cdn_loop_breaker274 .dont_touch true}
-catch {set_db inst:fpga_top/cdn_loop_breaker275 .dont_touch true}
-catch {set_db inst:fpga_top/cdn_loop_breaker276 .dont_touch true}
-catch {set_db inst:fpga_top/cdn_loop_breaker277 .dont_touch true}
 catch {set_db {hpin:fpga_top/grid_clb_1__1_/logical_tile_clb_mode_clb__0/clb_I[0]} .dont_touch delete_ok}
 catch {set_db {hpin:fpga_top/grid_clb_1__1_/logical_tile_clb_mode_clb__0/clb_I[1]} .dont_touch delete_ok}
 catch {set_db {hpin:fpga_top/grid_clb_1__1_/logical_tile_clb_mode_clb__0/clb_I[2]} .dont_touch delete_ok}
@@ -3747,5 +3747,3 @@ catch {set_db {hpin:fpga_top/sb_1__1_/left_top_grid_bottom_width_0_height_0_subt
 catch {set_db {hpin:fpga_top/sb_1__1_/left_top_grid_bottom_width_0_height_0_subtile_5__pin_inpad_0_[0]} .dont_touch delete_ok}
 catch {set_db {hpin:fpga_top/sb_1__1_/left_top_grid_bottom_width_0_height_0_subtile_6__pin_inpad_0_[0]} .dont_touch delete_ok}
 catch {set_db {hpin:fpga_top/sb_1__1_/left_top_grid_bottom_width_0_height_0_subtile_7__pin_inpad_0_[0]} .dont_touch delete_ok}
-catch {set_db pin:fpga_top/grid_clb_1__1_/logical_tile_clb_mode_clb__0/mem_fle_9_in_5/DFFR_5_/q_reg_reg/Q .dont_touch false}
-catch {set_db pin:fpga_top/grid_clb_1__1_/logical_tile_clb_mode_clb__0/mem_fle_9_in_5/DFFR_5_/q_reg_reg/Q_N .dont_touch false}
