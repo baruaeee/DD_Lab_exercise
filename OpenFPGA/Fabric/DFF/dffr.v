@@ -13,42 +13,6 @@ module dffr1(RST, CK, D, Q, QN);
 endmodule
 
 
-module dffr2 (
-  input RST, // Reset input
-  input CK,  // Clock Input
-  input D,   // Data Input
-  output Q,  // Q output
-  output QN  // QB output
-);
-
-  // Internal wires for latch outputs
-  wire q_master, q_slave;
-
-  // Master latch: transparent when CK is low
-  ihp_latch_r master_latch (
-    .q(q_master),
-    .v(1'b1), // Always enabled
-    .clk(~CK), // Inverted clock for master latch
-    .d(D),
-    .r(RST)
-  );
-
-  // Slave latch: transparent when CK is high
-  ihp_latch_r slave_latch (
-    .q(q_slave),
-    .v(1'b1), // Always enabled
-    .clk(CK), // Clock for slave latch
-    .d(q_master),
-    .r(RST)
-  );
-
-  // Assign outputs
-  assign Q = q_slave;
-  assign QN = ~q_slave;
-
-endmodule
-
-
 module dffr (
     input RST, // Reset input
     input CK,  // Clock Input
