@@ -13,7 +13,7 @@ module dffr1(RST, CK, D, Q, QN);
 endmodule
 
 
-module dffr (
+module dffr2 (
   input RST, // Reset input
   input CK,  // Clock Input
   input D,   // Data Input
@@ -45,5 +45,27 @@ module dffr (
   // Assign outputs
   assign Q = q_slave;
   assign QN = ~q_slave;
+
+endmodule
+
+
+module dffr (
+    input RST, // Reset input
+    input CK,  // Clock Input
+    input D,   // Data Input
+    output Q,  // Q output
+    output QN  // QB output
+);
+
+    // Internal signals
+    wire Q_master;
+    wire inv_CK, inv_RST;
+
+    sg13g2_inv_1 inv_1 (.Y(inv_CK), .A(CK));
+    sg13g2_inv_1 inv_2 (.Y(inv_RST), .A(RST));
+
+    // Master latch (active on positive edge of CK)
+    sg13g2_dlhrq_1 ML (.Q(Q_master), .D(D), .RESET_B(inv_RST), .GATE(CK));
+    sg13g2_dlhr_1 MS (.Q(Q), .Q_N(QN), .D(Q_master), .RESET_B(inv_RST), .GATE(inv_CK));
 
 endmodule
