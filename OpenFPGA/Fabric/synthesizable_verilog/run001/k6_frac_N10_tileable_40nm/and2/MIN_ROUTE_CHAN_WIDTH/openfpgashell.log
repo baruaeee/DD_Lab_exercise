@@ -69,7 +69,7 @@ mode 'io[physical]' is defined by user to be disabled in packing
 mode 'fle[physical]' is defined by user to be disabled in packing
 mode 'fabric[default]' is defined by user to be disabled in packing
 mode 'frac_logic[default]' is defined by user to be disabled in packing
-# Loading Architecture Description took 0.00 seconds (max_rss 22.1 MiB, delta_rss +0.0 MiB)
+# Loading Architecture Description took 0.00 seconds (max_rss 22.0 MiB, delta_rss +0.0 MiB)
 
 Timing analysis: ON
 Circuit netlist file: and2.net
@@ -186,10 +186,10 @@ AnalysisOpts.post_synth_netlist_unconn_input_handling: UNCONNECTED
 AnalysisOpts.post_synth_netlist_unconn_output_handling: UNCONNECTED
 
 # Building complex block graph
-# Building complex block graph took 0.02 seconds (max_rss 22.1 MiB, delta_rss +0.0 MiB)
+# Building complex block graph took 0.02 seconds (max_rss 22.0 MiB, delta_rss +0.0 MiB)
 Circuit file: and2.blif
 # Load circuit
-# Load circuit took 0.00 seconds (max_rss 22.1 MiB, delta_rss +0.0 MiB)
+# Load circuit took 0.00 seconds (max_rss 22.0 MiB, delta_rss +0.0 MiB)
 # Clean circuit
 Absorbed 0 LUT buffers
 Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
@@ -199,11 +199,11 @@ Swept output(s)     : 0 (0 dangling, 0 constant)
 Swept net(s)        : 0
 Swept block(s)      : 0
 Constant Pins Marked: 0
-# Clean circuit took 0.00 seconds (max_rss 22.1 MiB, delta_rss +0.0 MiB)
+# Clean circuit took 0.00 seconds (max_rss 22.0 MiB, delta_rss +0.0 MiB)
 # Compress circuit
-# Compress circuit took 0.00 seconds (max_rss 22.1 MiB, delta_rss +0.0 MiB)
+# Compress circuit took 0.00 seconds (max_rss 22.0 MiB, delta_rss +0.0 MiB)
 # Verify circuit
-# Verify circuit took 0.00 seconds (max_rss 22.1 MiB, delta_rss +0.0 MiB)
+# Verify circuit took 0.00 seconds (max_rss 22.0 MiB, delta_rss +0.0 MiB)
 Circuit Statistics:
   Blocks: 4
     .input :       2
@@ -218,7 +218,7 @@ Circuit Statistics:
   Timing Graph Nodes: 6
   Timing Graph Edges: 5
   Timing Graph Levels: 4
-# Build Timing Graph took 0.00 seconds (max_rss 22.1 MiB, delta_rss +0.0 MiB)
+# Build Timing Graph took 0.00 seconds (max_rss 22.0 MiB, delta_rss +0.0 MiB)
 Netlist contains 0 clocks
 # Load Timing Constraints
 
@@ -229,7 +229,7 @@ Setting default timing constraints:
 Timing constraints created 1 clocks
   Constrained Clock 'virtual_io_clock' (Virtual Clock)
 
-# Load Timing Constraints took 0.00 seconds (max_rss 22.1 MiB, delta_rss +0.0 MiB)
+# Load Timing Constraints took 0.00 seconds (max_rss 22.0 MiB, delta_rss +0.0 MiB)
 # Packing
 Begin packing 'and2.blif'.
 
@@ -252,11 +252,11 @@ Logic Element (fle) detailed count:
   LEs used for logic only             : 1
   LEs used for registers only         : 0
 
-Incr Slack updates 1 in 3.12e-06 sec
-Full Max Req/Worst Slack updates 1 in 1.8e-06 sec
+Incr Slack updates 1 in 2.4e-06 sec
+Full Max Req/Worst Slack updates 1 in 1.6e-06 sec
 Incr Max Req/Worst Slack updates 0 in 0 sec
 Incr Criticality updates 0 in 0 sec
-Full Criticality updates 1 in 1.52e-06 sec
+Full Criticality updates 1 in 1.8e-06 sec
 FPGA sized to 3 x 3 (auto)
 Device Utilization: 0.15 (target 1.00)
 	Block Utilization: 0.09 Type: io
@@ -275,14 +275,14 @@ Absorbed logical nets 0 out of 3 nets, 3 nets not absorbed.
 
 Netlist conversion complete.
 
-# Packing took 0.00 seconds (max_rss 22.1 MiB, delta_rss +0.0 MiB)
+# Packing took 0.00 seconds (max_rss 22.0 MiB, delta_rss +0.0 MiB)
 # Load packing
 Begin loading packed FPGA netlist file.
 Netlist generated from file 'and2.net'.
 Detected 0 constant generators (to see names run with higher pack verbosity)
-Finished loading packed FPGA netlist file (took 0.022081 seconds).
+Finished loading packed FPGA netlist file (took 0.019821 seconds).
 Warning 6: Treated 0 constant nets as global which will not be routed (to see net names increase packer verbosity).
-# Load packing took 0.02 seconds (max_rss 60.1 MiB, delta_rss +38.0 MiB)
+# Load packing took 0.02 seconds (max_rss 60.1 MiB, delta_rss +38.1 MiB)
 Warning 7: Netlist contains 0 global net to non-global architecture pin connections
 Cluster level netlist and block usage statistics
 Netlist num_nets: 3
@@ -448,8 +448,8 @@ io                 Uniform                22.22            100.00          0.00 
                    Median                 11.11            0.00            0.00           100.00       
 
 
-Placement Quench timing analysis took 5.52e-06 seconds (3.48e-06 STA, 2.04e-06 slack) (1 full updates: 1 setup, 0 hold, 0 combined).
-Placement Total  timing analysis took 5.08e-05 seconds (3.68e-05 STA, 1.4e-05 slack) (4 full updates: 4 setup, 0 hold, 0 combined).
+Placement Quench timing analysis took 5.76e-06 seconds (3.56e-06 STA, 2.2e-06 slack) (1 full updates: 1 setup, 0 hold, 0 combined).
+Placement Total  timing analysis took 5.516e-05 seconds (3.976e-05 STA, 1.54e-05 slack) (4 full updates: 4 setup, 0 hold, 0 combined).
 update_td_costs: connections 0 nets 0 sum_nets 0 total 0
 # Placement took 0.00 seconds (max_rss 60.3 MiB, delta_rss +0.0 MiB)
 
@@ -473,11 +473,11 @@ Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wireleng
       (sec)     fac Updt    push    Nets   Conns                                       (ns)       (ns)       (ns)       (ns)       (ns)     Iter
 ---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
    1    0.0     0.0    0      26       3       3       0 ( 0.000%)       4 ( 5.0%)    0.788    -0.7884     -0.788      0.000      0.000      N/A
-Incr Slack updates 4 in 3.68e-06 sec
+Incr Slack updates 4 in 3.6e-06 sec
 Full Max Req/Worst Slack updates 2 in 2.48e-06 sec
-Incr Max Req/Worst Slack updates 2 in 8.8e-07 sec
-Incr Criticality updates 2 in 1.4e-06 sec
-Full Criticality updates 2 in 2.48e-06 sec
+Incr Max Req/Worst Slack updates 2 in 1e-06 sec
+Incr Criticality updates 2 in 1.64e-06 sec
+Full Criticality updates 2 in 3.24e-06 sec
 Restoring best routing
 Critical path: 0.788361 ns
 Successfully routed after 1 routing iterations.
@@ -618,12 +618,12 @@ Final setup slack histogram:
 Final geomean non-virtual intra-domain period: nan ns (nan MHz)
 Final fanout-weighted geomean non-virtual intra-domain period: nan ns (nan MHz)
 
-Incr Slack updates 1 in 2.68e-06 sec
-Full Max Req/Worst Slack updates 1 in 1.12e-06 sec
+Incr Slack updates 1 in 3e-06 sec
+Full Max Req/Worst Slack updates 1 in 1.08e-06 sec
 Incr Max Req/Worst Slack updates 0 in 0 sec
 Incr Criticality updates 0 in 0 sec
-Full Criticality updates 1 in 1.48e-06 sec
-Flow timing analysis took 0.00014424 seconds (0.00010744 STA, 3.68e-05 slack) (8 full updates: 5 setup, 0 hold, 3 combined).
+Full Criticality updates 1 in 1.12e-06 sec
+Flow timing analysis took 0.000149 seconds (0.00011124 STA, 3.776e-05 slack) (8 full updates: 5 setup, 0 hold, 3 combined).
 VPR succeeded
 The entire flow of VPR took 0.09 seconds (max_rss 60.3 MiB)
 
@@ -634,7 +634,7 @@ Confirm selected options when call command 'read_openfpga_arch':
 Reading XML architecture '/home/ubuntu/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/synthesizable_verilog/run001/k6_frac_N10_tileable_40nm/and2/MIN_ROUTE_CHAN_WIDTH/arch/k6_frac_N10_stdcell_mux_40nm_openfpga_synthesizable2.xml'...
 Read OpenFPGA architecture
 Warning 14: Automatically set circuit model 'frac_lut6' to be default in its type.
-Warning 15: Automatically set circuit model 'DFFSRQ' to be default in its type.
+Warning 15: Automatically set circuit model 'dffsrq' to be default in its type.
 Warning 16: Automatically set circuit model 'dffr' to be default in its type.
 Warning 17: Automatically set circuit model 'GPIO' to be default in its type.
 Use the default configurable memory model 'dffr' for circuit model 'mux_tree' port 'sram')
@@ -729,11 +729,11 @@ Building annotation for post-routing and clustering synchornization results...Do
 Building annotation for mapped blocks on grid locations...Done
 User specified the operating clock frequency to use VPR results
 Use VPR critical path delay 9.46033e-19 [ns] with a 20 [%] slack in OpenFPGA.
-Incr Slack updates 1 in 2.24e-06 sec
-Full Max Req/Worst Slack updates 1 in 1.04e-06 sec
+Incr Slack updates 1 in 2.56e-06 sec
+Full Max Req/Worst Slack updates 1 in 1.16e-06 sec
 Incr Max Req/Worst Slack updates 0 in 0 sec
 Incr Criticality updates 0 in 0 sec
-Full Criticality updates 1 in 1.12e-06 sec
+Full Criticality updates 1 in 1.32e-06 sec
 Will apply operating clock frequency 1057.05 [MHz] to simulations
 User specified the number of operating clock cycles to be inferred from signal activities
 Average net density: 0.42
@@ -818,7 +818,7 @@ Building physical tiles...Done
 ## Add module nets for configuration buses
 ## Add module nets for configuration buses took 0.00 seconds (max_rss 60.3 MiB, delta_rss +0.0 MiB)
 # Build FPGA fabric module took 0.00 seconds (max_rss 60.3 MiB, delta_rss +0.0 MiB)
-Build fabric module graph took 0.01 seconds (max_rss 60.3 MiB, delta_rss +0.0 MiB)
+Build fabric module graph took 0.02 seconds (max_rss 60.3 MiB, delta_rss +0.0 MiB)
 Create I/O location mapping for top module
 Create I/O location mapping for top module took 0.00 seconds (max_rss 60.3 MiB, delta_rss +0.0 MiB)
 Create global port info for top module
@@ -1576,7 +1576,7 @@ Done
 Decoded 1458 configuration bits into 403 blocks
 
 Build fabric-independent bitstream for implementation 'and2'
- took 0.00 seconds (max_rss 60.3 MiB, delta_rss +0.0 MiB)
+ took 0.01 seconds (max_rss 60.3 MiB, delta_rss +0.0 MiB)
 
 Overwrite Bitstream
 
@@ -2172,12 +2172,12 @@ Confirm selected options when call command 'exit':
 
 Finish execution with 0 errors
 
-The entire OpenFPGA flow took 0.288012 seconds
+The entire OpenFPGA flow took 0.289368 seconds
 
 Thank you for using OpenFPGA!
-Incr Slack updates 2 in 2.32e-06 sec
+Incr Slack updates 2 in 2.64e-06 sec
 Full Max Req/Worst Slack updates 1 in 1e-06 sec
-Incr Max Req/Worst Slack updates 1 in 6.4e-07 sec
+Incr Max Req/Worst Slack updates 1 in 6e-07 sec
 Incr Criticality updates 0 in 0 sec
-Full Criticality updates 2 in 2.04e-06 sec
+Full Criticality updates 2 in 2.36e-06 sec
 0

@@ -1,6 +1,6 @@
-`include "../../../../../ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v"
+//`include "../../../../../ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v"
 
-module dffr_1(RST, CK, D, Q, QN);
+module dffr1(RST, CK, D, Q, QN);
   input RST, CK, D;
   output Q, QN;
   wire RST, CK, D;
@@ -15,42 +15,35 @@ endmodule
 
 module dffr (
   input RST, // Reset input
-  input CK,  // Clock input
-  input D,   // Data input
+  input CK,  // Clock Input
+  input D,   // Data Input
   output Q,  // Q output
-  output QN  // QN output
+  output QN  // QB output
 );
 
-  // Internal wires for NAND gate connections
-  wire nand1_out, nand2_out, nand3_out, nand4_out;
+  // Internal wires for latch outputs
+  wire q_master, q_slave;
 
-  // NAND gate instantiations
-  sg13g2_nand2_1 nand1 (
-    .Y(nand1_out),
-    .A(nand2_out),
-    .B(nand3_out)
+  // Master latch: transparent when CK is low
+  ihp_latch_r master_latch (
+    .q(q_master),
+    .v(1'b1), // Always enabled
+    .clk(~CK), // Inverted clock for master latch
+    .d(D),
+    .r(RST)
   );
 
-  sg13g2_nand2_1 nand2 (
-    .Y(nand2_out),
-    .A(CK),
-    .B(nand4_out)
+  // Slave latch: transparent when CK is high
+  ihp_latch_r slave_latch (
+    .q(q_slave),
+    .v(1'b1), // Always enabled
+    .clk(CK), // Clock for slave latch
+    .d(q_master),
+    .r(RST)
   );
 
-  sg13g2_nand2_1 nand3 (
-    .Y(nand3_out),
-    .A(nand1_out),
-    .B(RST)
-  );
-
-  sg13g2_nand2_1 nand4 (
-    .Y(nand4_out),
-    .A(D),
-    .B(nand1_out)
-  );
-
-  // Output assignments
-  assign Q = nand1_out;
-  assign QN = ~nand1_out;
+  // Assign outputs
+  assign Q = q_slave;
+  assign QN = ~q_slave;
 
 endmodule

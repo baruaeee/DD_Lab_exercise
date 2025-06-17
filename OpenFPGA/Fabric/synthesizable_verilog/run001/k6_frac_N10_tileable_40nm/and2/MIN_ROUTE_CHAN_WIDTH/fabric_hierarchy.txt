@@ -34,156 +34,156 @@ fpga_top:
           logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic:
             logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6:
               frac_lut6:
-                OR2:
-                INVTX1:
-                buf4:
+                sg13g2_or2_1:
+                sg13g2_inv_1:
+                sg13g2_buf_4:
                 frac_lut6_mux:
-                  - INVTX1
-                  - MUX2
-                  - buf4
+                  - sg13g2_inv_1
+                  - sg13g2_mux2_1
+                  - sg13g2_buf_4
               frac_lut6_dffr_mem:
                 - dffr
             mux_tree_size2:
-              - INVTX1
+              - sg13g2_inv_1
               - const1
-              - MUX2
+              - sg13g2_mux2_1
             mux_tree_size2_mem:
               - dffr
             direct_interc:
           logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff:
-            - DFFSRQ
+            - dffsrq
           mux_tree_size2:
-            - INVTX1
+            - sg13g2_inv_1
             - const1
-            - MUX2
+            - sg13g2_mux2_1
           mux_tree_size2_mem:
             - dffr
           direct_interc:
         direct_interc:
       direct_interc:
       mux_tree_size60:
-        - INVTX1
+        - sg13g2_inv_1
         - const1
-        - MUX2
+        - sg13g2_mux2_1
       mux_tree_size60_mem:
         - dffr
   sb_0__0_:
     mux_tree_tapbuf_size3:
-      - INVTX1
+      - sg13g2_inv_1
       - const1
-      - tap_buf4
-      - MUX2
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
     mux_tree_tapbuf_size3_mem:
       - dffr
     mux_tree_tapbuf_size2:
-      - INVTX1
+      - sg13g2_inv_1
       - const1
-      - tap_buf4
-      - MUX2
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
     mux_tree_tapbuf_size2_mem:
       - dffr
   sb_0__1_:
     mux_tree_tapbuf_size3:
-      - INVTX1
+      - sg13g2_inv_1
       - const1
-      - tap_buf4
-      - MUX2
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
     mux_tree_tapbuf_size3_mem:
       - dffr
     mux_tree_tapbuf_size2:
-      - INVTX1
+      - sg13g2_inv_1
       - const1
-      - tap_buf4
-      - MUX2
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
     mux_tree_tapbuf_size2_mem:
       - dffr
   sb_1__0_:
     mux_tree_tapbuf_size3:
-      - INVTX1
+      - sg13g2_inv_1
       - const1
-      - tap_buf4
-      - MUX2
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
     mux_tree_tapbuf_size3_mem:
       - dffr
     mux_tree_tapbuf_size2:
-      - INVTX1
+      - sg13g2_inv_1
       - const1
-      - tap_buf4
-      - MUX2
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
     mux_tree_tapbuf_size2_mem:
       - dffr
   sb_1__1_:
     mux_tree_tapbuf_size3:
-      - INVTX1
+      - sg13g2_inv_1
       - const1
-      - tap_buf4
-      - MUX2
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
     mux_tree_tapbuf_size3_mem:
       - dffr
     mux_tree_tapbuf_size2:
-      - INVTX1
+      - sg13g2_inv_1
       - const1
-      - tap_buf4
-      - MUX2
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
     mux_tree_tapbuf_size2_mem:
       - dffr
   cbx_1__0_:
     mux_tree_tapbuf_size4:
-      - INVTX1
+      - sg13g2_inv_1
       - const1
-      - tap_buf4
-      - MUX2
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
     mux_tree_tapbuf_size4_mem:
       - dffr
     mux_tree_tapbuf_size2:
-      - INVTX1
+      - sg13g2_inv_1
       - const1
-      - tap_buf4
-      - MUX2
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
     mux_tree_tapbuf_size2_mem:
       - dffr
   cbx_1__1_:
     mux_tree_tapbuf_size4:
-      - INVTX1
+      - sg13g2_inv_1
       - const1
-      - tap_buf4
-      - MUX2
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
     mux_tree_tapbuf_size4_mem:
       - dffr
     mux_tree_tapbuf_size2:
-      - INVTX1
+      - sg13g2_inv_1
       - const1
-      - tap_buf4
-      - MUX2
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
     mux_tree_tapbuf_size2_mem:
       - dffr
   cby_0__1_:
     mux_tree_tapbuf_size4:
-      - INVTX1
+      - sg13g2_inv_1
       - const1
-      - tap_buf4
-      - MUX2
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
     mux_tree_tapbuf_size4_mem:
       - dffr
     mux_tree_tapbuf_size2:
-      - INVTX1
+      - sg13g2_inv_1
       - const1
-      - tap_buf4
-      - MUX2
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
     mux_tree_tapbuf_size2_mem:
       - dffr
   cby_1__1_:
     mux_tree_tapbuf_size4:
-      - INVTX1
+      - sg13g2_inv_1
       - const1
-      - tap_buf4
-      - MUX2
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
     mux_tree_tapbuf_size4_mem:
       - dffr
     mux_tree_tapbuf_size2:
-      - INVTX1
+      - sg13g2_inv_1
       - const1
-      - tap_buf4
-      - MUX2
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
     mux_tree_tapbuf_size2_mem:
       - dffr

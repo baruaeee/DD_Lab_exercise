@@ -3,7 +3,7 @@
 //	Description: Preprocessing flags to enable/disable features in FPGA Verilog modules
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Tue Jun 17 01:34:48 2025
+//	Date: Tue Jun 17 02:39:27 2025
 //-------------------------------------------
 `define ENABLE_TIMING 1
 
