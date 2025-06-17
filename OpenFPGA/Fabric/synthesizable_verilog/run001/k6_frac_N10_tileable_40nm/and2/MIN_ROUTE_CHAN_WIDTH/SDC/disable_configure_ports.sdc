@@ -4,7 +4,7 @@
 #	Description: Disable configuration outputs of all the programmable cells for PnR
 #	Author: Xifan TANG 
 #	Organization: University of Utah 
-#	Date: Wed Jun 18 00:27:09 2025
+#	Date: Wed Jun 18 00:32:36 2025
 #############################################
 
 set_disable_timing fpga_top/grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6_0/frac_lut6_0_/sram
