@@ -3,7 +3,7 @@
 //	Description: Fabric Netlist Summary
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Tue Jun 17 02:39:27 2025
+//	Date: Tue Jun 17 22:49:07 2025
 //-------------------------------------------
 // ------ Include defines: preproc flags -----
 `include "./SRC/fpga_defines.v"
@@ -42,12 +42,19 @@
 // ------ Include routing module netlists -----
 `include "./SRC/routing/sb_0__0_.v"
 `include "./SRC/routing/sb_0__1_.v"
+`include "./SRC/routing/sb_0__4_.v"
 `include "./SRC/routing/sb_1__0_.v"
 `include "./SRC/routing/sb_1__1_.v"
+`include "./SRC/routing/sb_1__4_.v"
+`include "./SRC/routing/sb_4__0_.v"
+`include "./SRC/routing/sb_4__1_.v"
+`include "./SRC/routing/sb_4__4_.v"
 `include "./SRC/routing/cbx_1__0_.v"
 `include "./SRC/routing/cbx_1__1_.v"
+`include "./SRC/routing/cbx_1__4_.v"
 `include "./SRC/routing/cby_0__1_.v"
 `include "./SRC/routing/cby_1__1_.v"
+`include "./SRC/routing/cby_4__1_.v"
 
 // ------ Include tile module netlists -----
 

@@ -1,0 +1,2805 @@
+#Timing report of worst 100 path(s)
+# Unit scale: 1e-09 seconds
+# Output precision: 3
+
+#Path 1
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.c_state[10].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                           Incr      Path
+----------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                     0.000     0.000
+clock source latency                                                           0.000     0.000
+input external delay                                                           0.000     0.000
+arst_i.inpad[0] (.input)                                                       0.000     0.000
+byte_controller.bit_controller.c_state[10].RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                        0.000
+
+clock wb_clk_i (rise edge)                                                     0.000     0.000
+clock source latency                                                           0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                     0.000     0.000
+byte_controller.bit_controller.c_state[10].C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                              0.000     0.000
+cell hold time                                                                 0.066     0.066
+data required time                                                                       0.066
+----------------------------------------------------------------------------------------------
+data required time                                                                      -0.066
+data arrival time                                                                        0.000
+----------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                        -0.066
+
+
+#Path 2
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.sta_condition.RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                             Incr      Path
+------------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                       0.000     0.000
+clock source latency                                                             0.000     0.000
+input external delay                                                             0.000     0.000
+arst_i.inpad[0] (.input)                                                         0.000     0.000
+byte_controller.bit_controller.sta_condition.RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                          0.000
+
+clock wb_clk_i (rise edge)                                                       0.000     0.000
+clock source latency                                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                       0.000     0.000
+byte_controller.bit_controller.sta_condition.C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                                0.000     0.000
+cell hold time                                                                   0.066     0.066
+data required time                                                                         0.066
+------------------------------------------------------------------------------------------------
+data required time                                                                        -0.066
+data arrival time                                                                          0.000
+------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                          -0.066
+
+
+#Path 3
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.sSDA.SN[0] (dffsn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                    Incr      Path
+---------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                              0.000     0.000
+clock source latency                                                    0.000     0.000
+input external delay                                                    0.000     0.000
+arst_i.inpad[0] (.input)                                                0.000     0.000
+byte_controller.bit_controller.sSDA.SN[0] (dffsn)                       0.000     0.000
+data arrival time                                                                 0.000
+
+clock wb_clk_i (rise edge)                                              0.000     0.000
+clock source latency                                                    0.000     0.000
+wb_clk_i.inpad[0] (.input)                                              0.000     0.000
+byte_controller.bit_controller.sSDA.C[0] (dffsn)                        0.000     0.000
+clock uncertainty                                                       0.000     0.000
+cell hold time                                                          0.066     0.066
+data required time                                                                0.066
+---------------------------------------------------------------------------------------
+data required time                                                               -0.066
+data arrival time                                                                 0.000
+---------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                 -0.066
+
+
+#Path 4
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.busy.RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                    Incr      Path
+---------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                              0.000     0.000
+clock source latency                                                    0.000     0.000
+input external delay                                                    0.000     0.000
+arst_i.inpad[0] (.input)                                                0.000     0.000
+byte_controller.bit_controller.busy.RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                 0.000
+
+clock wb_clk_i (rise edge)                                              0.000     0.000
+clock source latency                                                    0.000     0.000
+wb_clk_i.inpad[0] (.input)                                              0.000     0.000
+byte_controller.bit_controller.busy.C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                       0.000     0.000
+cell hold time                                                          0.066     0.066
+data required time                                                                0.066
+---------------------------------------------------------------------------------------
+data required time                                                               -0.066
+data arrival time                                                                 0.000
+---------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                 -0.066
+
+
+#Path 5
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.dSDA.SN[0] (dffsn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                    Incr      Path
+---------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                              0.000     0.000
+clock source latency                                                    0.000     0.000
+input external delay                                                    0.000     0.000
+arst_i.inpad[0] (.input)                                                0.000     0.000
+byte_controller.bit_controller.dSDA.SN[0] (dffsn)                       0.000     0.000
+data arrival time                                                                 0.000
+
+clock wb_clk_i (rise edge)                                              0.000     0.000
+clock source latency                                                    0.000     0.000
+wb_clk_i.inpad[0] (.input)                                              0.000     0.000
+byte_controller.bit_controller.dSDA.C[0] (dffsn)                        0.000     0.000
+clock uncertainty                                                       0.000     0.000
+cell hold time                                                          0.066     0.066
+data required time                                                                0.066
+---------------------------------------------------------------------------------------
+data required time                                                               -0.066
+data arrival time                                                                 0.000
+---------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                 -0.066
+
+
+#Path 6
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.cmd_stop.RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                        Incr      Path
+-------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                  0.000     0.000
+clock source latency                                                        0.000     0.000
+input external delay                                                        0.000     0.000
+arst_i.inpad[0] (.input)                                                    0.000     0.000
+byte_controller.bit_controller.cmd_stop.RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                     0.000
+
+clock wb_clk_i (rise edge)                                                  0.000     0.000
+clock source latency                                                        0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                  0.000     0.000
+byte_controller.bit_controller.cmd_stop.C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                           0.000     0.000
+cell hold time                                                              0.066     0.066
+data required time                                                                    0.066
+-------------------------------------------------------------------------------------------
+data required time                                                                   -0.066
+data arrival time                                                                     0.000
+-------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                     -0.066
+
+
+#Path 7
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.al.RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                  Incr      Path
+-------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                            0.000     0.000
+clock source latency                                                  0.000     0.000
+input external delay                                                  0.000     0.000
+arst_i.inpad[0] (.input)                                              0.000     0.000
+byte_controller.bit_controller.al.RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                               0.000
+
+clock wb_clk_i (rise edge)                                            0.000     0.000
+clock source latency                                                  0.000     0.000
+wb_clk_i.inpad[0] (.input)                                            0.000     0.000
+byte_controller.bit_controller.al.C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                     0.000     0.000
+cell hold time                                                        0.066     0.066
+data required time                                                              0.066
+-------------------------------------------------------------------------------------
+data required time                                                             -0.066
+data arrival time                                                               0.000
+-------------------------------------------------------------------------------------
+slack (VIOLATED)                                                               -0.066
+
+
+#Path 8
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.sda_chk.RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                       Incr      Path
+------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                 0.000     0.000
+clock source latency                                                       0.000     0.000
+input external delay                                                       0.000     0.000
+arst_i.inpad[0] (.input)                                                   0.000     0.000
+byte_controller.bit_controller.sda_chk.RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                    0.000
+
+clock wb_clk_i (rise edge)                                                 0.000     0.000
+clock source latency                                                       0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                 0.000     0.000
+byte_controller.bit_controller.sda_chk.C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                          0.000     0.000
+cell hold time                                                             0.066     0.066
+data required time                                                                   0.066
+------------------------------------------------------------------------------------------
+data required time                                                                  -0.066
+data arrival time                                                                    0.000
+------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                    -0.066
+
+
+#Path 9
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.clk_en.SN[0] (dffsn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                      Incr      Path
+-----------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                0.000     0.000
+clock source latency                                                      0.000     0.000
+input external delay                                                      0.000     0.000
+arst_i.inpad[0] (.input)                                                  0.000     0.000
+byte_controller.bit_controller.clk_en.SN[0] (dffsn)                       0.000     0.000
+data arrival time                                                                   0.000
+
+clock wb_clk_i (rise edge)                                                0.000     0.000
+clock source latency                                                      0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                0.000     0.000
+byte_controller.bit_controller.clk_en.C[0] (dffsn)                        0.000     0.000
+clock uncertainty                                                         0.000     0.000
+cell hold time                                                            0.066     0.066
+data required time                                                                  0.066
+-----------------------------------------------------------------------------------------
+data required time                                                                 -0.066
+data arrival time                                                                   0.000
+-----------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                   -0.066
+
+
+#Path 10
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.c_state[16].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                           Incr      Path
+----------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                     0.000     0.000
+clock source latency                                                           0.000     0.000
+input external delay                                                           0.000     0.000
+arst_i.inpad[0] (.input)                                                       0.000     0.000
+byte_controller.bit_controller.c_state[16].RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                        0.000
+
+clock wb_clk_i (rise edge)                                                     0.000     0.000
+clock source latency                                                           0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                     0.000     0.000
+byte_controller.bit_controller.c_state[16].C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                              0.000     0.000
+cell hold time                                                                 0.066     0.066
+data required time                                                                       0.066
+----------------------------------------------------------------------------------------------
+data required time                                                                      -0.066
+data arrival time                                                                        0.000
+----------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                        -0.066
+
+
+#Path 11
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.c_state[15].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                           Incr      Path
+----------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                     0.000     0.000
+clock source latency                                                           0.000     0.000
+input external delay                                                           0.000     0.000
+arst_i.inpad[0] (.input)                                                       0.000     0.000
+byte_controller.bit_controller.c_state[15].RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                        0.000
+
+clock wb_clk_i (rise edge)                                                     0.000     0.000
+clock source latency                                                           0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                     0.000     0.000
+byte_controller.bit_controller.c_state[15].C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                              0.000     0.000
+cell hold time                                                                 0.066     0.066
+data required time                                                                       0.066
+----------------------------------------------------------------------------------------------
+data required time                                                                      -0.066
+data arrival time                                                                        0.000
+----------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                        -0.066
+
+
+#Path 12
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.c_state[14].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                           Incr      Path
+----------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                     0.000     0.000
+clock source latency                                                           0.000     0.000
+input external delay                                                           0.000     0.000
+arst_i.inpad[0] (.input)                                                       0.000     0.000
+byte_controller.bit_controller.c_state[14].RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                        0.000
+
+clock wb_clk_i (rise edge)                                                     0.000     0.000
+clock source latency                                                           0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                     0.000     0.000
+byte_controller.bit_controller.c_state[14].C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                              0.000     0.000
+cell hold time                                                                 0.066     0.066
+data required time                                                                       0.066
+----------------------------------------------------------------------------------------------
+data required time                                                                      -0.066
+data arrival time                                                                        0.000
+----------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                        -0.066
+
+
+#Path 13
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.c_state[13].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                           Incr      Path
+----------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                     0.000     0.000
+clock source latency                                                           0.000     0.000
+input external delay                                                           0.000     0.000
+arst_i.inpad[0] (.input)                                                       0.000     0.000
+byte_controller.bit_controller.c_state[13].RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                        0.000
+
+clock wb_clk_i (rise edge)                                                     0.000     0.000
+clock source latency                                                           0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                     0.000     0.000
+byte_controller.bit_controller.c_state[13].C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                              0.000     0.000
+cell hold time                                                                 0.066     0.066
+data required time                                                                       0.066
+----------------------------------------------------------------------------------------------
+data required time                                                                      -0.066
+data arrival time                                                                        0.000
+----------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                        -0.066
+
+
+#Path 14
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.c_state[12].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                           Incr      Path
+----------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                     0.000     0.000
+clock source latency                                                           0.000     0.000
+input external delay                                                           0.000     0.000
+arst_i.inpad[0] (.input)                                                       0.000     0.000
+byte_controller.bit_controller.c_state[12].RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                        0.000
+
+clock wb_clk_i (rise edge)                                                     0.000     0.000
+clock source latency                                                           0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                     0.000     0.000
+byte_controller.bit_controller.c_state[12].C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                              0.000     0.000
+cell hold time                                                                 0.066     0.066
+data required time                                                                       0.066
+----------------------------------------------------------------------------------------------
+data required time                                                                      -0.066
+data arrival time                                                                        0.000
+----------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                        -0.066
+
+
+#Path 15
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.c_state[11].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                           Incr      Path
+----------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                     0.000     0.000
+clock source latency                                                           0.000     0.000
+input external delay                                                           0.000     0.000
+arst_i.inpad[0] (.input)                                                       0.000     0.000
+byte_controller.bit_controller.c_state[11].RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                        0.000
+
+clock wb_clk_i (rise edge)                                                     0.000     0.000
+clock source latency                                                           0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                     0.000     0.000
+byte_controller.bit_controller.c_state[11].C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                              0.000     0.000
+cell hold time                                                                 0.066     0.066
+data required time                                                                       0.066
+----------------------------------------------------------------------------------------------
+data required time                                                                      -0.066
+data arrival time                                                                        0.000
+----------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                        -0.066
+
+
+#Path 16
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.sto_condition.RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                             Incr      Path
+------------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                       0.000     0.000
+clock source latency                                                             0.000     0.000
+input external delay                                                             0.000     0.000
+arst_i.inpad[0] (.input)                                                         0.000     0.000
+byte_controller.bit_controller.sto_condition.RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                          0.000
+
+clock wb_clk_i (rise edge)                                                       0.000     0.000
+clock source latency                                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                       0.000     0.000
+byte_controller.bit_controller.sto_condition.C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                                0.000     0.000
+cell hold time                                                                   0.066     0.066
+data required time                                                                         0.066
+------------------------------------------------------------------------------------------------
+data required time                                                                        -0.066
+data arrival time                                                                          0.000
+------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                          -0.066
+
+
+#Path 17
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.c_state[9].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                          Incr      Path
+---------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+input external delay                                                          0.000     0.000
+arst_i.inpad[0] (.input)                                                      0.000     0.000
+byte_controller.bit_controller.c_state[9].RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                       0.000
+
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                    0.000     0.000
+byte_controller.bit_controller.c_state[9].C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                             0.000     0.000
+cell hold time                                                                0.066     0.066
+data required time                                                                      0.066
+---------------------------------------------------------------------------------------------
+data required time                                                                     -0.066
+data arrival time                                                                       0.000
+---------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                       -0.066
+
+
+#Path 18
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.c_state[8].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                          Incr      Path
+---------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+input external delay                                                          0.000     0.000
+arst_i.inpad[0] (.input)                                                      0.000     0.000
+byte_controller.bit_controller.c_state[8].RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                       0.000
+
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                    0.000     0.000
+byte_controller.bit_controller.c_state[8].C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                             0.000     0.000
+cell hold time                                                                0.066     0.066
+data required time                                                                      0.066
+---------------------------------------------------------------------------------------------
+data required time                                                                     -0.066
+data arrival time                                                                       0.000
+---------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                       -0.066
+
+
+#Path 19
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.c_state[7].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                          Incr      Path
+---------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+input external delay                                                          0.000     0.000
+arst_i.inpad[0] (.input)                                                      0.000     0.000
+byte_controller.bit_controller.c_state[7].RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                       0.000
+
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                    0.000     0.000
+byte_controller.bit_controller.c_state[7].C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                             0.000     0.000
+cell hold time                                                                0.066     0.066
+data required time                                                                      0.066
+---------------------------------------------------------------------------------------------
+data required time                                                                     -0.066
+data arrival time                                                                       0.000
+---------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                       -0.066
+
+
+#Path 20
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.c_state[6].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                          Incr      Path
+---------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+input external delay                                                          0.000     0.000
+arst_i.inpad[0] (.input)                                                      0.000     0.000
+byte_controller.bit_controller.c_state[6].RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                       0.000
+
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                    0.000     0.000
+byte_controller.bit_controller.c_state[6].C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                             0.000     0.000
+cell hold time                                                                0.066     0.066
+data required time                                                                      0.066
+---------------------------------------------------------------------------------------------
+data required time                                                                     -0.066
+data arrival time                                                                       0.000
+---------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                       -0.066
+
+
+#Path 21
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.c_state[5].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                          Incr      Path
+---------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+input external delay                                                          0.000     0.000
+arst_i.inpad[0] (.input)                                                      0.000     0.000
+byte_controller.bit_controller.c_state[5].RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                       0.000
+
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                    0.000     0.000
+byte_controller.bit_controller.c_state[5].C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                             0.000     0.000
+cell hold time                                                                0.066     0.066
+data required time                                                                      0.066
+---------------------------------------------------------------------------------------------
+data required time                                                                     -0.066
+data arrival time                                                                       0.000
+---------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                       -0.066
+
+
+#Path 22
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.c_state[4].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                          Incr      Path
+---------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+input external delay                                                          0.000     0.000
+arst_i.inpad[0] (.input)                                                      0.000     0.000
+byte_controller.bit_controller.c_state[4].RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                       0.000
+
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                    0.000     0.000
+byte_controller.bit_controller.c_state[4].C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                             0.000     0.000
+cell hold time                                                                0.066     0.066
+data required time                                                                      0.066
+---------------------------------------------------------------------------------------------
+data required time                                                                     -0.066
+data arrival time                                                                       0.000
+---------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                       -0.066
+
+
+#Path 23
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.c_state[3].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                          Incr      Path
+---------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+input external delay                                                          0.000     0.000
+arst_i.inpad[0] (.input)                                                      0.000     0.000
+byte_controller.bit_controller.c_state[3].RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                       0.000
+
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                    0.000     0.000
+byte_controller.bit_controller.c_state[3].C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                             0.000     0.000
+cell hold time                                                                0.066     0.066
+data required time                                                                      0.066
+---------------------------------------------------------------------------------------------
+data required time                                                                     -0.066
+data arrival time                                                                       0.000
+---------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                       -0.066
+
+
+#Path 24
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.c_state[2].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                          Incr      Path
+---------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+input external delay                                                          0.000     0.000
+arst_i.inpad[0] (.input)                                                      0.000     0.000
+byte_controller.bit_controller.c_state[2].RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                       0.000
+
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                    0.000     0.000
+byte_controller.bit_controller.c_state[2].C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                             0.000     0.000
+cell hold time                                                                0.066     0.066
+data required time                                                                      0.066
+---------------------------------------------------------------------------------------------
+data required time                                                                     -0.066
+data arrival time                                                                       0.000
+---------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                       -0.066
+
+
+#Path 25
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.c_state[1].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                          Incr      Path
+---------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+input external delay                                                          0.000     0.000
+arst_i.inpad[0] (.input)                                                      0.000     0.000
+byte_controller.bit_controller.c_state[1].RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                       0.000
+
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                    0.000     0.000
+byte_controller.bit_controller.c_state[1].C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                             0.000     0.000
+cell hold time                                                                0.066     0.066
+data required time                                                                      0.066
+---------------------------------------------------------------------------------------------
+data required time                                                                     -0.066
+data arrival time                                                                       0.000
+---------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                       -0.066
+
+
+#Path 26
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.c_state[0].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                          Incr      Path
+---------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+input external delay                                                          0.000     0.000
+arst_i.inpad[0] (.input)                                                      0.000     0.000
+byte_controller.bit_controller.c_state[0].RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                       0.000
+
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                    0.000     0.000
+byte_controller.bit_controller.c_state[0].C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                             0.000     0.000
+cell hold time                                                                0.066     0.066
+data required time                                                                      0.066
+---------------------------------------------------------------------------------------------
+data required time                                                                     -0.066
+data arrival time                                                                       0.000
+---------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                       -0.066
+
+
+#Path 27
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : sda_padoen_o.SN[0] (dffsn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+sda_padoen_o.SN[0] (dffsn)                                       0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+sda_padoen_o.C[0] (dffsn)                                        0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 28
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : scl_padoen_o.SN[0] (dffsn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+scl_padoen_o.SN[0] (dffsn)                                       0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+scl_padoen_o.C[0] (dffsn)                                        0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 29
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.cnt[15].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                       Incr      Path
+------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                 0.000     0.000
+clock source latency                                                       0.000     0.000
+input external delay                                                       0.000     0.000
+arst_i.inpad[0] (.input)                                                   0.000     0.000
+byte_controller.bit_controller.cnt[15].RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                    0.000
+
+clock wb_clk_i (rise edge)                                                 0.000     0.000
+clock source latency                                                       0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                 0.000     0.000
+byte_controller.bit_controller.cnt[15].C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                          0.000     0.000
+cell hold time                                                             0.066     0.066
+data required time                                                                   0.066
+------------------------------------------------------------------------------------------
+data required time                                                                  -0.066
+data arrival time                                                                    0.000
+------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                    -0.066
+
+
+#Path 30
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.cnt[14].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                       Incr      Path
+------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                 0.000     0.000
+clock source latency                                                       0.000     0.000
+input external delay                                                       0.000     0.000
+arst_i.inpad[0] (.input)                                                   0.000     0.000
+byte_controller.bit_controller.cnt[14].RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                    0.000
+
+clock wb_clk_i (rise edge)                                                 0.000     0.000
+clock source latency                                                       0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                 0.000     0.000
+byte_controller.bit_controller.cnt[14].C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                          0.000     0.000
+cell hold time                                                             0.066     0.066
+data required time                                                                   0.066
+------------------------------------------------------------------------------------------
+data required time                                                                  -0.066
+data arrival time                                                                    0.000
+------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                    -0.066
+
+
+#Path 31
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.cmd[0].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                      Incr      Path
+-----------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                0.000     0.000
+clock source latency                                                      0.000     0.000
+input external delay                                                      0.000     0.000
+arst_i.inpad[0] (.input)                                                  0.000     0.000
+byte_controller.bit_controller.cmd[0].RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                   0.000
+
+clock wb_clk_i (rise edge)                                                0.000     0.000
+clock source latency                                                      0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                0.000     0.000
+byte_controller.bit_controller.cmd[0].C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                         0.000     0.000
+cell hold time                                                            0.066     0.066
+data required time                                                                  0.066
+-----------------------------------------------------------------------------------------
+data required time                                                                 -0.066
+data arrival time                                                                   0.000
+-----------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                   -0.066
+
+
+#Path 32
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : wb_inta_o.RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+wb_inta_o.RN[0] (dffrn)                                          0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+wb_inta_o.C[0] (dffrn)                                           0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 33
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.dout[7].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+byte_controller.dout[7].RN[0] (dffrn)                            0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+byte_controller.dout[7].C[0] (dffrn)                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 34
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.dout[6].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+byte_controller.dout[6].RN[0] (dffrn)                            0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+byte_controller.dout[6].C[0] (dffrn)                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 35
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.dout[5].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+byte_controller.dout[5].RN[0] (dffrn)                            0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+byte_controller.dout[5].C[0] (dffrn)                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 36
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.dout[4].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+byte_controller.dout[4].RN[0] (dffrn)                            0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+byte_controller.dout[4].C[0] (dffrn)                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 37
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.dout[3].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+byte_controller.dout[3].RN[0] (dffrn)                            0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+byte_controller.dout[3].C[0] (dffrn)                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 38
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.dout[2].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+byte_controller.dout[2].RN[0] (dffrn)                            0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+byte_controller.dout[2].C[0] (dffrn)                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 39
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.dout[1].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+byte_controller.dout[1].RN[0] (dffrn)                            0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+byte_controller.dout[1].C[0] (dffrn)                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 40
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.dout[0].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+byte_controller.dout[0].RN[0] (dffrn)                            0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+byte_controller.dout[0].C[0] (dffrn)                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 41
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.cmd_ack.RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+byte_controller.cmd_ack.RN[0] (dffrn)                            0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+byte_controller.cmd_ack.C[0] (dffrn)                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 42
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.ack_out.RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+byte_controller.ack_out.RN[0] (dffrn)                            0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+byte_controller.ack_out.C[0] (dffrn)                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 43
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.cmd[3].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                      Incr      Path
+-----------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                0.000     0.000
+clock source latency                                                      0.000     0.000
+input external delay                                                      0.000     0.000
+arst_i.inpad[0] (.input)                                                  0.000     0.000
+byte_controller.bit_controller.cmd[3].RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                   0.000
+
+clock wb_clk_i (rise edge)                                                0.000     0.000
+clock source latency                                                      0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                0.000     0.000
+byte_controller.bit_controller.cmd[3].C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                         0.000     0.000
+cell hold time                                                            0.066     0.066
+data required time                                                                  0.066
+-----------------------------------------------------------------------------------------
+data required time                                                                 -0.066
+data arrival time                                                                   0.000
+-----------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                   -0.066
+
+
+#Path 44
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.cmd[2].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                      Incr      Path
+-----------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                0.000     0.000
+clock source latency                                                      0.000     0.000
+input external delay                                                      0.000     0.000
+arst_i.inpad[0] (.input)                                                  0.000     0.000
+byte_controller.bit_controller.cmd[2].RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                   0.000
+
+clock wb_clk_i (rise edge)                                                0.000     0.000
+clock source latency                                                      0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                0.000     0.000
+byte_controller.bit_controller.cmd[2].C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                         0.000     0.000
+cell hold time                                                            0.066     0.066
+data required time                                                                  0.066
+-----------------------------------------------------------------------------------------
+data required time                                                                 -0.066
+data arrival time                                                                   0.000
+-----------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                   -0.066
+
+
+#Path 45
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.cmd[1].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                      Incr      Path
+-----------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                0.000     0.000
+clock source latency                                                      0.000     0.000
+input external delay                                                      0.000     0.000
+arst_i.inpad[0] (.input)                                                  0.000     0.000
+byte_controller.bit_controller.cmd[1].RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                   0.000
+
+clock wb_clk_i (rise edge)                                                0.000     0.000
+clock source latency                                                      0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                0.000     0.000
+byte_controller.bit_controller.cmd[1].C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                         0.000     0.000
+cell hold time                                                            0.066     0.066
+data required time                                                                  0.066
+-----------------------------------------------------------------------------------------
+data required time                                                                 -0.066
+data arrival time                                                                   0.000
+-----------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                   -0.066
+
+
+#Path 46
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.cnt[13].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                       Incr      Path
+------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                 0.000     0.000
+clock source latency                                                       0.000     0.000
+input external delay                                                       0.000     0.000
+arst_i.inpad[0] (.input)                                                   0.000     0.000
+byte_controller.bit_controller.cnt[13].RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                    0.000
+
+clock wb_clk_i (rise edge)                                                 0.000     0.000
+clock source latency                                                       0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                 0.000     0.000
+byte_controller.bit_controller.cnt[13].C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                          0.000     0.000
+cell hold time                                                             0.066     0.066
+data required time                                                                   0.066
+------------------------------------------------------------------------------------------
+data required time                                                                  -0.066
+data arrival time                                                                    0.000
+------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                    -0.066
+
+
+#Path 47
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.dcnt[2].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+byte_controller.dcnt[2].RN[0] (dffrn)                            0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+byte_controller.dcnt[2].C[0] (dffrn)                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 48
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.dcnt[1].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+byte_controller.dcnt[1].RN[0] (dffrn)                            0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+byte_controller.dcnt[1].C[0] (dffrn)                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 49
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.dcnt[0].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+byte_controller.dcnt[0].RN[0] (dffrn)                            0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+byte_controller.dcnt[0].C[0] (dffrn)                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 50
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.din.RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                   Incr      Path
+--------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                             0.000     0.000
+clock source latency                                                   0.000     0.000
+input external delay                                                   0.000     0.000
+arst_i.inpad[0] (.input)                                               0.000     0.000
+byte_controller.bit_controller.din.RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                0.000
+
+clock wb_clk_i (rise edge)                                             0.000     0.000
+clock source latency                                                   0.000     0.000
+wb_clk_i.inpad[0] (.input)                                             0.000     0.000
+byte_controller.bit_controller.din.C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                      0.000     0.000
+cell hold time                                                         0.066     0.066
+data required time                                                               0.066
+--------------------------------------------------------------------------------------
+data required time                                                              -0.066
+data arrival time                                                                0.000
+--------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                -0.066
+
+
+#Path 51
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.c_state[4].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+byte_controller.c_state[4].RN[0] (dffrn)                         0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+byte_controller.c_state[4].C[0] (dffrn)                          0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 52
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.c_state[3].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+byte_controller.c_state[3].RN[0] (dffrn)                         0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+byte_controller.c_state[3].C[0] (dffrn)                          0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 53
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.c_state[2].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+byte_controller.c_state[2].RN[0] (dffrn)                         0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+byte_controller.c_state[2].C[0] (dffrn)                          0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 54
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.c_state[1].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+byte_controller.c_state[1].RN[0] (dffrn)                         0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+byte_controller.c_state[1].C[0] (dffrn)                          0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 55
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.c_state[0].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+byte_controller.c_state[0].RN[0] (dffrn)                         0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+byte_controller.c_state[0].C[0] (dffrn)                          0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 56
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.shift.RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+byte_controller.shift.RN[0] (dffrn)                              0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+byte_controller.shift.C[0] (dffrn)                               0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 57
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.ld.RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+byte_controller.ld.RN[0] (dffrn)                                 0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+byte_controller.ld.C[0] (dffrn)                                  0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 58
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.sSCL.SN[0] (dffsn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                    Incr      Path
+---------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                              0.000     0.000
+clock source latency                                                    0.000     0.000
+input external delay                                                    0.000     0.000
+arst_i.inpad[0] (.input)                                                0.000     0.000
+byte_controller.bit_controller.sSCL.SN[0] (dffsn)                       0.000     0.000
+data arrival time                                                                 0.000
+
+clock wb_clk_i (rise edge)                                              0.000     0.000
+clock source latency                                                    0.000     0.000
+wb_clk_i.inpad[0] (.input)                                              0.000     0.000
+byte_controller.bit_controller.sSCL.C[0] (dffsn)                        0.000     0.000
+clock uncertainty                                                       0.000     0.000
+cell hold time                                                          0.066     0.066
+data required time                                                                0.066
+---------------------------------------------------------------------------------------
+data required time                                                               -0.066
+data arrival time                                                                 0.000
+---------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                 -0.066
+
+
+#Path 59
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.dSCL.SN[0] (dffsn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                    Incr      Path
+---------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                              0.000     0.000
+clock source latency                                                    0.000     0.000
+input external delay                                                    0.000     0.000
+arst_i.inpad[0] (.input)                                                0.000     0.000
+byte_controller.bit_controller.dSCL.SN[0] (dffsn)                       0.000     0.000
+data arrival time                                                                 0.000
+
+clock wb_clk_i (rise edge)                                              0.000     0.000
+clock source latency                                                    0.000     0.000
+wb_clk_i.inpad[0] (.input)                                              0.000     0.000
+byte_controller.bit_controller.dSCL.C[0] (dffsn)                        0.000     0.000
+clock uncertainty                                                       0.000     0.000
+cell hold time                                                          0.066     0.066
+data required time                                                                0.066
+---------------------------------------------------------------------------------------
+data required time                                                               -0.066
+data arrival time                                                                 0.000
+---------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                 -0.066
+
+
+#Path 60
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.clk_cnt[2].SN[0] (dffsn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                          Incr      Path
+---------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+input external delay                                                          0.000     0.000
+arst_i.inpad[0] (.input)                                                      0.000     0.000
+byte_controller.bit_controller.clk_cnt[2].SN[0] (dffsn)                       0.000     0.000
+data arrival time                                                                       0.000
+
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                    0.000     0.000
+byte_controller.bit_controller.clk_cnt[2].C[0] (dffsn)                        0.000     0.000
+clock uncertainty                                                             0.000     0.000
+cell hold time                                                                0.066     0.066
+data required time                                                                      0.066
+---------------------------------------------------------------------------------------------
+data required time                                                                     -0.066
+data arrival time                                                                       0.000
+---------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                       -0.066
+
+
+#Path 61
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : ctr[0].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+ctr[0].RN[0] (dffrn)                                             0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+ctr[0].C[0] (dffrn)                                              0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 62
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.clk_cnt[15].SN[0] (dffsn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                           Incr      Path
+----------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                     0.000     0.000
+clock source latency                                                           0.000     0.000
+input external delay                                                           0.000     0.000
+arst_i.inpad[0] (.input)                                                       0.000     0.000
+byte_controller.bit_controller.clk_cnt[15].SN[0] (dffsn)                       0.000     0.000
+data arrival time                                                                        0.000
+
+clock wb_clk_i (rise edge)                                                     0.000     0.000
+clock source latency                                                           0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                     0.000     0.000
+byte_controller.bit_controller.clk_cnt[15].C[0] (dffsn)                        0.000     0.000
+clock uncertainty                                                              0.000     0.000
+cell hold time                                                                 0.066     0.066
+data required time                                                                       0.066
+----------------------------------------------------------------------------------------------
+data required time                                                                      -0.066
+data arrival time                                                                        0.000
+----------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                        -0.066
+
+
+#Path 63
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.clk_cnt[14].SN[0] (dffsn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                           Incr      Path
+----------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                     0.000     0.000
+clock source latency                                                           0.000     0.000
+input external delay                                                           0.000     0.000
+arst_i.inpad[0] (.input)                                                       0.000     0.000
+byte_controller.bit_controller.clk_cnt[14].SN[0] (dffsn)                       0.000     0.000
+data arrival time                                                                        0.000
+
+clock wb_clk_i (rise edge)                                                     0.000     0.000
+clock source latency                                                           0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                     0.000     0.000
+byte_controller.bit_controller.clk_cnt[14].C[0] (dffsn)                        0.000     0.000
+clock uncertainty                                                              0.000     0.000
+cell hold time                                                                 0.066     0.066
+data required time                                                                       0.066
+----------------------------------------------------------------------------------------------
+data required time                                                                      -0.066
+data arrival time                                                                        0.000
+----------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                        -0.066
+
+
+#Path 64
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.clk_cnt[13].SN[0] (dffsn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                           Incr      Path
+----------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                     0.000     0.000
+clock source latency                                                           0.000     0.000
+input external delay                                                           0.000     0.000
+arst_i.inpad[0] (.input)                                                       0.000     0.000
+byte_controller.bit_controller.clk_cnt[13].SN[0] (dffsn)                       0.000     0.000
+data arrival time                                                                        0.000
+
+clock wb_clk_i (rise edge)                                                     0.000     0.000
+clock source latency                                                           0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                     0.000     0.000
+byte_controller.bit_controller.clk_cnt[13].C[0] (dffsn)                        0.000     0.000
+clock uncertainty                                                              0.000     0.000
+cell hold time                                                                 0.066     0.066
+data required time                                                                       0.066
+----------------------------------------------------------------------------------------------
+data required time                                                                      -0.066
+data arrival time                                                                        0.000
+----------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                        -0.066
+
+
+#Path 65
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.clk_cnt[12].SN[0] (dffsn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                           Incr      Path
+----------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                     0.000     0.000
+clock source latency                                                           0.000     0.000
+input external delay                                                           0.000     0.000
+arst_i.inpad[0] (.input)                                                       0.000     0.000
+byte_controller.bit_controller.clk_cnt[12].SN[0] (dffsn)                       0.000     0.000
+data arrival time                                                                        0.000
+
+clock wb_clk_i (rise edge)                                                     0.000     0.000
+clock source latency                                                           0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                     0.000     0.000
+byte_controller.bit_controller.clk_cnt[12].C[0] (dffsn)                        0.000     0.000
+clock uncertainty                                                              0.000     0.000
+cell hold time                                                                 0.066     0.066
+data required time                                                                       0.066
+----------------------------------------------------------------------------------------------
+data required time                                                                      -0.066
+data arrival time                                                                        0.000
+----------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                        -0.066
+
+
+#Path 66
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.clk_cnt[11].SN[0] (dffsn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                           Incr      Path
+----------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                     0.000     0.000
+clock source latency                                                           0.000     0.000
+input external delay                                                           0.000     0.000
+arst_i.inpad[0] (.input)                                                       0.000     0.000
+byte_controller.bit_controller.clk_cnt[11].SN[0] (dffsn)                       0.000     0.000
+data arrival time                                                                        0.000
+
+clock wb_clk_i (rise edge)                                                     0.000     0.000
+clock source latency                                                           0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                     0.000     0.000
+byte_controller.bit_controller.clk_cnt[11].C[0] (dffsn)                        0.000     0.000
+clock uncertainty                                                              0.000     0.000
+cell hold time                                                                 0.066     0.066
+data required time                                                                       0.066
+----------------------------------------------------------------------------------------------
+data required time                                                                      -0.066
+data arrival time                                                                        0.000
+----------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                        -0.066
+
+
+#Path 67
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.clk_cnt[10].SN[0] (dffsn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                           Incr      Path
+----------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                     0.000     0.000
+clock source latency                                                           0.000     0.000
+input external delay                                                           0.000     0.000
+arst_i.inpad[0] (.input)                                                       0.000     0.000
+byte_controller.bit_controller.clk_cnt[10].SN[0] (dffsn)                       0.000     0.000
+data arrival time                                                                        0.000
+
+clock wb_clk_i (rise edge)                                                     0.000     0.000
+clock source latency                                                           0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                     0.000     0.000
+byte_controller.bit_controller.clk_cnt[10].C[0] (dffsn)                        0.000     0.000
+clock uncertainty                                                              0.000     0.000
+cell hold time                                                                 0.066     0.066
+data required time                                                                       0.066
+----------------------------------------------------------------------------------------------
+data required time                                                                      -0.066
+data arrival time                                                                        0.000
+----------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                        -0.066
+
+
+#Path 68
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.clk_cnt[9].SN[0] (dffsn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                          Incr      Path
+---------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+input external delay                                                          0.000     0.000
+arst_i.inpad[0] (.input)                                                      0.000     0.000
+byte_controller.bit_controller.clk_cnt[9].SN[0] (dffsn)                       0.000     0.000
+data arrival time                                                                       0.000
+
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                    0.000     0.000
+byte_controller.bit_controller.clk_cnt[9].C[0] (dffsn)                        0.000     0.000
+clock uncertainty                                                             0.000     0.000
+cell hold time                                                                0.066     0.066
+data required time                                                                      0.066
+---------------------------------------------------------------------------------------------
+data required time                                                                     -0.066
+data arrival time                                                                       0.000
+---------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                       -0.066
+
+
+#Path 69
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.clk_cnt[8].SN[0] (dffsn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                          Incr      Path
+---------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+input external delay                                                          0.000     0.000
+arst_i.inpad[0] (.input)                                                      0.000     0.000
+byte_controller.bit_controller.clk_cnt[8].SN[0] (dffsn)                       0.000     0.000
+data arrival time                                                                       0.000
+
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                    0.000     0.000
+byte_controller.bit_controller.clk_cnt[8].C[0] (dffsn)                        0.000     0.000
+clock uncertainty                                                             0.000     0.000
+cell hold time                                                                0.066     0.066
+data required time                                                                      0.066
+---------------------------------------------------------------------------------------------
+data required time                                                                     -0.066
+data arrival time                                                                       0.000
+---------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                       -0.066
+
+
+#Path 70
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.clk_cnt[7].SN[0] (dffsn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                          Incr      Path
+---------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+input external delay                                                          0.000     0.000
+arst_i.inpad[0] (.input)                                                      0.000     0.000
+byte_controller.bit_controller.clk_cnt[7].SN[0] (dffsn)                       0.000     0.000
+data arrival time                                                                       0.000
+
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                    0.000     0.000
+byte_controller.bit_controller.clk_cnt[7].C[0] (dffsn)                        0.000     0.000
+clock uncertainty                                                             0.000     0.000
+cell hold time                                                                0.066     0.066
+data required time                                                                      0.066
+---------------------------------------------------------------------------------------------
+data required time                                                                     -0.066
+data arrival time                                                                       0.000
+---------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                       -0.066
+
+
+#Path 71
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.clk_cnt[6].SN[0] (dffsn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                          Incr      Path
+---------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+input external delay                                                          0.000     0.000
+arst_i.inpad[0] (.input)                                                      0.000     0.000
+byte_controller.bit_controller.clk_cnt[6].SN[0] (dffsn)                       0.000     0.000
+data arrival time                                                                       0.000
+
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                    0.000     0.000
+byte_controller.bit_controller.clk_cnt[6].C[0] (dffsn)                        0.000     0.000
+clock uncertainty                                                             0.000     0.000
+cell hold time                                                                0.066     0.066
+data required time                                                                      0.066
+---------------------------------------------------------------------------------------------
+data required time                                                                     -0.066
+data arrival time                                                                       0.000
+---------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                       -0.066
+
+
+#Path 72
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.clk_cnt[5].SN[0] (dffsn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                          Incr      Path
+---------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+input external delay                                                          0.000     0.000
+arst_i.inpad[0] (.input)                                                      0.000     0.000
+byte_controller.bit_controller.clk_cnt[5].SN[0] (dffsn)                       0.000     0.000
+data arrival time                                                                       0.000
+
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                    0.000     0.000
+byte_controller.bit_controller.clk_cnt[5].C[0] (dffsn)                        0.000     0.000
+clock uncertainty                                                             0.000     0.000
+cell hold time                                                                0.066     0.066
+data required time                                                                      0.066
+---------------------------------------------------------------------------------------------
+data required time                                                                     -0.066
+data arrival time                                                                       0.000
+---------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                       -0.066
+
+
+#Path 73
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.clk_cnt[4].SN[0] (dffsn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                          Incr      Path
+---------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+input external delay                                                          0.000     0.000
+arst_i.inpad[0] (.input)                                                      0.000     0.000
+byte_controller.bit_controller.clk_cnt[4].SN[0] (dffsn)                       0.000     0.000
+data arrival time                                                                       0.000
+
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                    0.000     0.000
+byte_controller.bit_controller.clk_cnt[4].C[0] (dffsn)                        0.000     0.000
+clock uncertainty                                                             0.000     0.000
+cell hold time                                                                0.066     0.066
+data required time                                                                      0.066
+---------------------------------------------------------------------------------------------
+data required time                                                                     -0.066
+data arrival time                                                                       0.000
+---------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                       -0.066
+
+
+#Path 74
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.clk_cnt[3].SN[0] (dffsn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                          Incr      Path
+---------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+input external delay                                                          0.000     0.000
+arst_i.inpad[0] (.input)                                                      0.000     0.000
+byte_controller.bit_controller.clk_cnt[3].SN[0] (dffsn)                       0.000     0.000
+data arrival time                                                                       0.000
+
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                    0.000     0.000
+byte_controller.bit_controller.clk_cnt[3].C[0] (dffsn)                        0.000     0.000
+clock uncertainty                                                             0.000     0.000
+cell hold time                                                                0.066     0.066
+data required time                                                                      0.066
+---------------------------------------------------------------------------------------------
+data required time                                                                     -0.066
+data arrival time                                                                       0.000
+---------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                       -0.066
+
+
+#Path 75
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : ctr[1].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+ctr[1].RN[0] (dffrn)                                             0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+ctr[1].C[0] (dffrn)                                              0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 76
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.clk_cnt[1].SN[0] (dffsn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                          Incr      Path
+---------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+input external delay                                                          0.000     0.000
+arst_i.inpad[0] (.input)                                                      0.000     0.000
+byte_controller.bit_controller.clk_cnt[1].SN[0] (dffsn)                       0.000     0.000
+data arrival time                                                                       0.000
+
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                    0.000     0.000
+byte_controller.bit_controller.clk_cnt[1].C[0] (dffsn)                        0.000     0.000
+clock uncertainty                                                             0.000     0.000
+cell hold time                                                                0.066     0.066
+data required time                                                                      0.066
+---------------------------------------------------------------------------------------------
+data required time                                                                     -0.066
+data arrival time                                                                       0.000
+---------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                       -0.066
+
+
+#Path 77
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.clk_cnt[0].SN[0] (dffsn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                          Incr      Path
+---------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+input external delay                                                          0.000     0.000
+arst_i.inpad[0] (.input)                                                      0.000     0.000
+byte_controller.bit_controller.clk_cnt[0].SN[0] (dffsn)                       0.000     0.000
+data arrival time                                                                       0.000
+
+clock wb_clk_i (rise edge)                                                    0.000     0.000
+clock source latency                                                          0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                    0.000     0.000
+byte_controller.bit_controller.clk_cnt[0].C[0] (dffsn)                        0.000     0.000
+clock uncertainty                                                             0.000     0.000
+cell hold time                                                                0.066     0.066
+data required time                                                                      0.066
+---------------------------------------------------------------------------------------------
+data required time                                                                     -0.066
+data arrival time                                                                       0.000
+---------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                       -0.066
+
+
+#Path 78
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.start.RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+byte_controller.start.RN[0] (dffrn)                              0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+byte_controller.start.C[0] (dffrn)                               0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 79
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.stop.RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+byte_controller.stop.RN[0] (dffrn)                               0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+byte_controller.stop.C[0] (dffrn)                                0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 80
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.read.RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+byte_controller.read.RN[0] (dffrn)                               0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+byte_controller.read.C[0] (dffrn)                                0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 81
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.write.RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+byte_controller.write.RN[0] (dffrn)                              0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+byte_controller.write.C[0] (dffrn)                               0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 82
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : ack.RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+ack.RN[0] (dffrn)                                                0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+ack.C[0] (dffrn)                                                 0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 83
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : cr[2].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+cr[2].RN[0] (dffrn)                                              0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+cr[2].C[0] (dffrn)                                               0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 84
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : cr[1].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+cr[1].RN[0] (dffrn)                                              0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+cr[1].C[0] (dffrn)                                               0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 85
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : iack.RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+iack.RN[0] (dffrn)                                               0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+iack.C[0] (dffrn)                                                0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 86
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : al.RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+al.RN[0] (dffrn)                                                 0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+al.C[0] (dffrn)                                                  0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 87
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : irq_flag.RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+irq_flag.RN[0] (dffrn)                                           0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+irq_flag.C[0] (dffrn)                                            0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 88
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : tip.RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+tip.RN[0] (dffrn)                                                0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+tip.C[0] (dffrn)                                                 0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 89
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : rxack.RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+rxack.RN[0] (dffrn)                                              0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+rxack.C[0] (dffrn)                                               0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 90
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.din[7].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+arst_i.inpad[0] (.input)                                         0.000     0.000
+byte_controller.din[7].RN[0] (dffrn)                             0.000     0.000
+data arrival time                                                          0.000
+
+clock wb_clk_i (rise edge)                                       0.000     0.000
+clock source latency                                             0.000     0.000
+wb_clk_i.inpad[0] (.input)                                       0.000     0.000
+byte_controller.din[7].C[0] (dffrn)                              0.000     0.000
+clock uncertainty                                                0.000     0.000
+cell hold time                                                   0.066     0.066
+data required time                                                         0.066
+--------------------------------------------------------------------------------
+data required time                                                        -0.066
+data arrival time                                                          0.000
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.066
+
+
+#Path 91
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.cnt[12].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                       Incr      Path
+------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                 0.000     0.000
+clock source latency                                                       0.000     0.000
+input external delay                                                       0.000     0.000
+arst_i.inpad[0] (.input)                                                   0.000     0.000
+byte_controller.bit_controller.cnt[12].RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                    0.000
+
+clock wb_clk_i (rise edge)                                                 0.000     0.000
+clock source latency                                                       0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                 0.000     0.000
+byte_controller.bit_controller.cnt[12].C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                          0.000     0.000
+cell hold time                                                             0.066     0.066
+data required time                                                                   0.066
+------------------------------------------------------------------------------------------
+data required time                                                                  -0.066
+data arrival time                                                                    0.000
+------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                    -0.066
+
+
+#Path 92
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.cnt[11].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                       Incr      Path
+------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                 0.000     0.000
+clock source latency                                                       0.000     0.000
+input external delay                                                       0.000     0.000
+arst_i.inpad[0] (.input)                                                   0.000     0.000
+byte_controller.bit_controller.cnt[11].RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                    0.000
+
+clock wb_clk_i (rise edge)                                                 0.000     0.000
+clock source latency                                                       0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                 0.000     0.000
+byte_controller.bit_controller.cnt[11].C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                          0.000     0.000
+cell hold time                                                             0.066     0.066
+data required time                                                                   0.066
+------------------------------------------------------------------------------------------
+data required time                                                                  -0.066
+data arrival time                                                                    0.000
+------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                    -0.066
+
+
+#Path 93
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.cnt[10].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                       Incr      Path
+------------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                 0.000     0.000
+clock source latency                                                       0.000     0.000
+input external delay                                                       0.000     0.000
+arst_i.inpad[0] (.input)                                                   0.000     0.000
+byte_controller.bit_controller.cnt[10].RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                    0.000
+
+clock wb_clk_i (rise edge)                                                 0.000     0.000
+clock source latency                                                       0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                 0.000     0.000
+byte_controller.bit_controller.cnt[10].C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                          0.000     0.000
+cell hold time                                                             0.066     0.066
+data required time                                                                   0.066
+------------------------------------------------------------------------------------------
+data required time                                                                  -0.066
+data arrival time                                                                    0.000
+------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                    -0.066
+
+
+#Path 94
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.cnt[9].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                      Incr      Path
+-----------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                0.000     0.000
+clock source latency                                                      0.000     0.000
+input external delay                                                      0.000     0.000
+arst_i.inpad[0] (.input)                                                  0.000     0.000
+byte_controller.bit_controller.cnt[9].RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                   0.000
+
+clock wb_clk_i (rise edge)                                                0.000     0.000
+clock source latency                                                      0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                0.000     0.000
+byte_controller.bit_controller.cnt[9].C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                         0.000     0.000
+cell hold time                                                            0.066     0.066
+data required time                                                                  0.066
+-----------------------------------------------------------------------------------------
+data required time                                                                 -0.066
+data arrival time                                                                   0.000
+-----------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                   -0.066
+
+
+#Path 95
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.cnt[8].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                      Incr      Path
+-----------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                0.000     0.000
+clock source latency                                                      0.000     0.000
+input external delay                                                      0.000     0.000
+arst_i.inpad[0] (.input)                                                  0.000     0.000
+byte_controller.bit_controller.cnt[8].RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                   0.000
+
+clock wb_clk_i (rise edge)                                                0.000     0.000
+clock source latency                                                      0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                0.000     0.000
+byte_controller.bit_controller.cnt[8].C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                         0.000     0.000
+cell hold time                                                            0.066     0.066
+data required time                                                                  0.066
+-----------------------------------------------------------------------------------------
+data required time                                                                 -0.066
+data arrival time                                                                   0.000
+-----------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                   -0.066
+
+
+#Path 96
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.cnt[7].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                      Incr      Path
+-----------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                0.000     0.000
+clock source latency                                                      0.000     0.000
+input external delay                                                      0.000     0.000
+arst_i.inpad[0] (.input)                                                  0.000     0.000
+byte_controller.bit_controller.cnt[7].RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                   0.000
+
+clock wb_clk_i (rise edge)                                                0.000     0.000
+clock source latency                                                      0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                0.000     0.000
+byte_controller.bit_controller.cnt[7].C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                         0.000     0.000
+cell hold time                                                            0.066     0.066
+data required time                                                                  0.066
+-----------------------------------------------------------------------------------------
+data required time                                                                 -0.066
+data arrival time                                                                   0.000
+-----------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                   -0.066
+
+
+#Path 97
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.cnt[6].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                      Incr      Path
+-----------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                0.000     0.000
+clock source latency                                                      0.000     0.000
+input external delay                                                      0.000     0.000
+arst_i.inpad[0] (.input)                                                  0.000     0.000
+byte_controller.bit_controller.cnt[6].RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                   0.000
+
+clock wb_clk_i (rise edge)                                                0.000     0.000
+clock source latency                                                      0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                0.000     0.000
+byte_controller.bit_controller.cnt[6].C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                         0.000     0.000
+cell hold time                                                            0.066     0.066
+data required time                                                                  0.066
+-----------------------------------------------------------------------------------------
+data required time                                                                 -0.066
+data arrival time                                                                   0.000
+-----------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                   -0.066
+
+
+#Path 98
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.cnt[5].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                      Incr      Path
+-----------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                0.000     0.000
+clock source latency                                                      0.000     0.000
+input external delay                                                      0.000     0.000
+arst_i.inpad[0] (.input)                                                  0.000     0.000
+byte_controller.bit_controller.cnt[5].RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                   0.000
+
+clock wb_clk_i (rise edge)                                                0.000     0.000
+clock source latency                                                      0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                0.000     0.000
+byte_controller.bit_controller.cnt[5].C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                         0.000     0.000
+cell hold time                                                            0.066     0.066
+data required time                                                                  0.066
+-----------------------------------------------------------------------------------------
+data required time                                                                 -0.066
+data arrival time                                                                   0.000
+-----------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                   -0.066
+
+
+#Path 99
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.cnt[4].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                      Incr      Path
+-----------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                0.000     0.000
+clock source latency                                                      0.000     0.000
+input external delay                                                      0.000     0.000
+arst_i.inpad[0] (.input)                                                  0.000     0.000
+byte_controller.bit_controller.cnt[4].RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                   0.000
+
+clock wb_clk_i (rise edge)                                                0.000     0.000
+clock source latency                                                      0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                0.000     0.000
+byte_controller.bit_controller.cnt[4].C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                         0.000     0.000
+cell hold time                                                            0.066     0.066
+data required time                                                                  0.066
+-----------------------------------------------------------------------------------------
+data required time                                                                 -0.066
+data arrival time                                                                   0.000
+-----------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                   -0.066
+
+
+#Path 100
+Startpoint: arst_i.inpad[0] (.input clocked by wb_clk_i)
+Endpoint  : byte_controller.bit_controller.cnt[3].RN[0] (dffrn clocked by wb_clk_i)
+Path Type : hold
+
+Point                                                                      Incr      Path
+-----------------------------------------------------------------------------------------
+clock wb_clk_i (rise edge)                                                0.000     0.000
+clock source latency                                                      0.000     0.000
+input external delay                                                      0.000     0.000
+arst_i.inpad[0] (.input)                                                  0.000     0.000
+byte_controller.bit_controller.cnt[3].RN[0] (dffrn)                       0.000     0.000
+data arrival time                                                                   0.000
+
+clock wb_clk_i (rise edge)                                                0.000     0.000
+clock source latency                                                      0.000     0.000
+wb_clk_i.inpad[0] (.input)                                                0.000     0.000
+byte_controller.bit_controller.cnt[3].C[0] (dffrn)                        0.000     0.000
+clock uncertainty                                                         0.000     0.000
+cell hold time                                                            0.066     0.066
+data required time                                                                  0.066
+-----------------------------------------------------------------------------------------
+data required time                                                                 -0.066
+data arrival time                                                                   0.000
+-----------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                   -0.066
+
+
+#End of timing report
