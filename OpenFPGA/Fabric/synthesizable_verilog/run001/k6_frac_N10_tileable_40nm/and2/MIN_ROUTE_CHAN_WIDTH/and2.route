@@ -1,31 +1,34 @@
-Placement_File: and2.place Placement_ID: SHA256:7c6b1cbdb159fa464f6654eaebd8d7744fc23611fe50a94f5195e0ca9e64ceff
-Array size: 3 x 3 logic blocks.
+Placement_File: and2.place Placement_ID: SHA256:5c3404fedfc4d016db8253f04425dd46296146a3d20ba3f7cbb48a8f241c2051
+Array size: 4 x 4 logic blocks.
 
 Routing:
 
 Net 0 (b)
 
-Node:	39	SOURCE (0,0,1)  Pad: 15  Switch: 0
-Node:	55	  OPIN (0,0,1)  Pad: 15  Switch: 2
-Node:	256	 CHANY (0,0,1)  Track: 5  Switch: 1
-Node:	139	  IPIN (0,1,1)  Pin: 11   clb.I[11] Switch: 0
-Node:	84	  SINK (0,1,1)  Class: 0  Switch: -1 Net_pin_index: 1
+Node:	264	SOURCE (0,3,1)  Pad: 5  Switch: 0
+Node:	280	  OPIN (0,3,1)  Pad: 5  Switch: 2
+Node:	732	 CHANY (0,2,1)  Track: 14  Switch: 2
+Node:	621	 CHANX (0,1,1) to (2,1)  Track: 7  Switch: 1
+Node:	474	  IPIN (0,2,2)  Pin: 10   clb.I[10] Switch: 0
+Node:	429	  SINK (0,2,2)  Class: 0  Switch: -1 Net_pin_index: 1
 
 
 Net 1 (a)
 
-Node:	38	SOURCE (0,0,1)  Pad: 13  Switch: 0
-Node:	54	  OPIN (0,0,1)  Pad: 13  Switch: 2
-Node:	254	 CHANY (0,0,1)  Track: 3  Switch: 1
-Node:	138	  IPIN (0,1,1)  Pin: 7   clb.I[7] Switch: 0
-Node:	84	  SINK (0,1,1)  Class: 0  Switch: -1 Net_pin_index: 1
+Node:	498	SOURCE (0,3,2)  Pad: 13  Switch: 0
+Node:	514	  OPIN (0,3,2)  Pad: 13  Switch: 2
+Node:	742	 CHANY (0,2,2)  Track: 16  Switch: 1
+Node:	462	  IPIN (0,2,2)  Pin: 1   clb.I[1] Switch: 0
+Node:	429	  SINK (0,2,2)  Class: 0  Switch: -1 Net_pin_index: 1
 
 
 Net 2 (c)
 
-Node:	83	SOURCE (0,1,1)  Class: 20  Switch: 0
-Node:	105	  OPIN (0,1,1)  Pin: 59   clb.O[19] Switch: 2
-Node:	255	 CHANY (0,0,1)  Track: 4  Switch: 2
-Node:	243	 CHANX (0,1,1)  Track: 12  Switch: 1
-Node:	204	  IPIN (0,1,2)  Pad: 2  Switch: 0
-Node:	188	  SINK (0,1,2)  Pad: 2  Switch: -1 Net_pin_index: 1
+Node:	428	SOURCE (0,2,2)  Class: 20  Switch: 0
+Node:	450	  OPIN (0,2,2)  Pin: 59   clb.O[19] Switch: 2
+Node:	703	 CHANY (0,1,1) to (1,2)  Track: 11  Switch: 2
+Node:	634	 CHANX (0,2,1)  Track: 0  Switch: 2
+Node:	738	 CHANY (0,2,2)  Track: 0  Switch: 2
+Node:	645	 CHANX (0,1,2) to (2,2)  Track: 5  Switch: 1
+Node:	581	  IPIN (0,2,3)  Pad: 2  Switch: 0
+Node:	565	  SINK (0,2,3)  Pad: 2  Switch: -1 Net_pin_index: 1

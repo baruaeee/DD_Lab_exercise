@@ -83,6 +83,42 @@ fpga_top:
     mux_tree_tapbuf_size2_mem:
       - dffr
   sb_0__1_:
+    mux_tree_tapbuf_size8:
+      - sg13g2_inv_1
+      - const1
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
+    mux_tree_tapbuf_size8_mem:
+      - dffr
+    mux_tree_tapbuf_size7:
+      - sg13g2_inv_1
+      - const1
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
+    mux_tree_tapbuf_size7_mem:
+      - dffr
+    mux_tree_tapbuf_size3:
+      - sg13g2_inv_1
+      - const1
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
+    mux_tree_tapbuf_size3_mem:
+      - dffr
+    mux_tree_tapbuf_size4:
+      - sg13g2_inv_1
+      - const1
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
+    mux_tree_tapbuf_size4_mem:
+      - dffr
+    mux_tree_tapbuf_size2:
+      - sg13g2_inv_1
+      - const1
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
+    mux_tree_tapbuf_size2_mem:
+      - dffr
+  sb_0__2_:
     mux_tree_tapbuf_size3:
       - sg13g2_inv_1
       - const1
@@ -98,6 +134,20 @@ fpga_top:
     mux_tree_tapbuf_size2_mem:
       - dffr
   sb_1__0_:
+    mux_tree_tapbuf_size5:
+      - sg13g2_inv_1
+      - const1
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
+    mux_tree_tapbuf_size5_mem:
+      - dffr
+    mux_tree_tapbuf_size4:
+      - sg13g2_inv_1
+      - const1
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
+    mux_tree_tapbuf_size4_mem:
+      - dffr
     mux_tree_tapbuf_size3:
       - sg13g2_inv_1
       - const1
@@ -112,7 +162,137 @@ fpga_top:
       - sg13g2_mux2_1
     mux_tree_tapbuf_size2_mem:
       - dffr
+    mux_tree_tapbuf_size8:
+      - sg13g2_inv_1
+      - const1
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
+    mux_tree_tapbuf_size8_mem:
+      - dffr
+    mux_tree_tapbuf_size7:
+      - sg13g2_inv_1
+      - const1
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
+    mux_tree_tapbuf_size7_mem:
+      - dffr
+    mux_tree_tapbuf_size9:
+      - sg13g2_inv_1
+      - const1
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
+    mux_tree_tapbuf_size9_mem:
+      - dffr
   sb_1__1_:
+    mux_tree_tapbuf_size12:
+      - sg13g2_inv_1
+      - const1
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
+    mux_tree_tapbuf_size12_mem:
+      - dffr
+    mux_tree_tapbuf_size9:
+      - sg13g2_inv_1
+      - const1
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
+    mux_tree_tapbuf_size9_mem:
+      - dffr
+  sb_1__2_:
+    mux_tree_tapbuf_size8:
+      - sg13g2_inv_1
+      - const1
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
+    mux_tree_tapbuf_size8_mem:
+      - dffr
+    mux_tree_tapbuf_size7:
+      - sg13g2_inv_1
+      - const1
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
+    mux_tree_tapbuf_size7_mem:
+      - dffr
+    mux_tree_tapbuf_size4:
+      - sg13g2_inv_1
+      - const1
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
+    mux_tree_tapbuf_size4_mem:
+      - dffr
+    mux_tree_tapbuf_size3:
+      - sg13g2_inv_1
+      - const1
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
+    mux_tree_tapbuf_size3_mem:
+      - dffr
+    mux_tree_tapbuf_size2:
+      - sg13g2_inv_1
+      - const1
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
+    mux_tree_tapbuf_size2_mem:
+      - dffr
+  sb_2__0_:
+    mux_tree_tapbuf_size3:
+      - sg13g2_inv_1
+      - const1
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
+    mux_tree_tapbuf_size3_mem:
+      - dffr
+    mux_tree_tapbuf_size2:
+      - sg13g2_inv_1
+      - const1
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
+    mux_tree_tapbuf_size2_mem:
+      - dffr
+  sb_2__1_:
+    mux_tree_tapbuf_size9:
+      - sg13g2_inv_1
+      - const1
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
+    mux_tree_tapbuf_size9_mem:
+      - dffr
+    mux_tree_tapbuf_size7:
+      - sg13g2_inv_1
+      - const1
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
+    mux_tree_tapbuf_size7_mem:
+      - dffr
+    mux_tree_tapbuf_size8:
+      - sg13g2_inv_1
+      - const1
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
+    mux_tree_tapbuf_size8_mem:
+      - dffr
+    mux_tree_tapbuf_size4:
+      - sg13g2_inv_1
+      - const1
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
+    mux_tree_tapbuf_size4_mem:
+      - dffr
+    mux_tree_tapbuf_size3:
+      - sg13g2_inv_1
+      - const1
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
+    mux_tree_tapbuf_size3_mem:
+      - dffr
+    mux_tree_tapbuf_size2:
+      - sg13g2_inv_1
+      - const1
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
+    mux_tree_tapbuf_size2_mem:
+      - dffr
+  sb_2__2_:
     mux_tree_tapbuf_size3:
       - sg13g2_inv_1
       - const1
@@ -157,6 +337,21 @@ fpga_top:
       - sg13g2_mux2_1
     mux_tree_tapbuf_size2_mem:
       - dffr
+  cbx_1__2_:
+    mux_tree_tapbuf_size4:
+      - sg13g2_inv_1
+      - const1
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
+    mux_tree_tapbuf_size4_mem:
+      - dffr
+    mux_tree_tapbuf_size2:
+      - sg13g2_inv_1
+      - const1
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
+    mux_tree_tapbuf_size2_mem:
+      - dffr
   cby_0__1_:
     mux_tree_tapbuf_size4:
       - sg13g2_inv_1
@@ -173,6 +368,21 @@ fpga_top:
     mux_tree_tapbuf_size2_mem:
       - dffr
   cby_1__1_:
+    mux_tree_tapbuf_size4:
+      - sg13g2_inv_1
+      - const1
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
+    mux_tree_tapbuf_size4_mem:
+      - dffr
+    mux_tree_tapbuf_size2:
+      - sg13g2_inv_1
+      - const1
+      - sg13g2_inv_4
+      - sg13g2_mux2_1
+    mux_tree_tapbuf_size2_mem:
+      - dffr
+  cby_2__1_:
     mux_tree_tapbuf_size4:
       - sg13g2_inv_1
       - const1

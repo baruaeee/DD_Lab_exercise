@@ -3,7 +3,7 @@
 //	Description: Verilog modules for physical tile: io]
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Wed Jun 18 00:32:36 2025
+//	Date: Wed Jun 18 00:42:04 2025
 //-------------------------------------------
 // ----- BEGIN Grid Verilog module: grid_io_right -----
 //----- Default net type -----
