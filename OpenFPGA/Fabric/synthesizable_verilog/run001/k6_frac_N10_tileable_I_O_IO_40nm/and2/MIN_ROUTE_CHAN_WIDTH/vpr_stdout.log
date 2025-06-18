@@ -11,7 +11,7 @@ vtr-users@googlegroups.com
 This is free open source code under MIT license.
 
 VPR was run with the following command-line:
-vpr /home/ubuntu/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/synthesizable_verilog/run001/k6_frac_N10_tileable_I_O_IO_40nm/and2/MIN_ROUTE_CHAN_WIDTH/arch/k6_frac_N10_tileable_I_O_IO_40nm.xml and2.blif --clock_modeling ideal --device auto --route_chan_width 20
+vpr /home/ubuntu/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/synthesizable_verilog/run001/k6_frac_N10_tileable_I_O_IO_40nm/and2/MIN_ROUTE_CHAN_WIDTH/arch/k6_frac_N10_tileable_I_O_IO_40nm.xml and2.blif --clock_modeling ideal --device 2x2 --route_chan_width 20
 
 
 Architecture file: /home/ubuntu/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/synthesizable_verilog/run001/k6_frac_N10_tileable_I_O_IO_40nm/and2/MIN_ROUTE_CHAN_WIDTH/arch/k6_frac_N10_tileable_I_O_IO_40nm.xml
@@ -27,7 +27,7 @@ mode 'io[physical]' is defined by user to be disabled in packing
 mode 'fle[physical]' is defined by user to be disabled in packing
 mode 'fabric[default]' is defined by user to be disabled in packing
 mode 'frac_logic[default]' is defined by user to be disabled in packing
-# Loading Architecture Description took 0.00 seconds (max_rss 22.2 MiB, delta_rss +0.0 MiB)
+# Loading Architecture Description took 0.00 seconds (max_rss 22.0 MiB, delta_rss +0.0 MiB)
 
 Timing analysis: ON
 Circuit netlist file: and2.net
@@ -144,10 +144,10 @@ AnalysisOpts.post_synth_netlist_unconn_input_handling: UNCONNECTED
 AnalysisOpts.post_synth_netlist_unconn_output_handling: UNCONNECTED
 
 # Building complex block graph
-# Building complex block graph took 0.02 seconds (max_rss 22.2 MiB, delta_rss +0.0 MiB)
+# Building complex block graph took 0.02 seconds (max_rss 22.0 MiB, delta_rss +0.0 MiB)
 Circuit file: and2.blif
 # Load circuit
-# Load circuit took 0.00 seconds (max_rss 22.2 MiB, delta_rss +0.0 MiB)
+# Load circuit took 0.00 seconds (max_rss 22.0 MiB, delta_rss +0.0 MiB)
 # Clean circuit
 Absorbed 0 LUT buffers
 Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
@@ -157,11 +157,11 @@ Swept output(s)     : 0 (0 dangling, 0 constant)
 Swept net(s)        : 0
 Swept block(s)      : 0
 Constant Pins Marked: 0
-# Clean circuit took 0.00 seconds (max_rss 22.2 MiB, delta_rss +0.0 MiB)
+# Clean circuit took 0.00 seconds (max_rss 22.0 MiB, delta_rss +0.0 MiB)
 # Compress circuit
-# Compress circuit took 0.00 seconds (max_rss 22.2 MiB, delta_rss +0.0 MiB)
+# Compress circuit took 0.00 seconds (max_rss 22.0 MiB, delta_rss +0.0 MiB)
 # Verify circuit
-# Verify circuit took 0.00 seconds (max_rss 22.2 MiB, delta_rss +0.0 MiB)
+# Verify circuit took 0.00 seconds (max_rss 22.0 MiB, delta_rss +0.0 MiB)
 Circuit Statistics:
   Blocks: 4
     .input :       2
@@ -176,7 +176,7 @@ Circuit Statistics:
   Timing Graph Nodes: 6
   Timing Graph Edges: 5
   Timing Graph Levels: 4
-# Build Timing Graph took 0.00 seconds (max_rss 22.2 MiB, delta_rss +0.0 MiB)
+# Build Timing Graph took 0.00 seconds (max_rss 22.0 MiB, delta_rss +0.0 MiB)
 Netlist contains 0 clocks
 # Load Timing Constraints
 
@@ -187,16 +187,11 @@ Setting default timing constraints:
 Timing constraints created 1 clocks
   Constrained Clock 'virtual_io_clock' (Virtual Clock)
 
-# Load Timing Constraints took 0.00 seconds (max_rss 22.2 MiB, delta_rss +0.0 MiB)
+# Load Timing Constraints took 0.00 seconds (max_rss 22.0 MiB, delta_rss +0.0 MiB)
 # Packing
 Warning 6: Ambiguous block type specification at grid location (1,0). Existing block type 'io' at (1,0) has the same priority (100) as new overlapping type 'gp_inpad'. The last specification will apply.
 Warning 7: Ambiguous block type specification at grid location (3,0). Existing block type 'io' at (3,0) has the same priority (100) as new overlapping type 'gp_inpad'. The last specification will apply.
-Warning 8: Ambiguous block type specification at grid location (5,0). Existing block type 'io' at (5,0) has the same priority (100) as new overlapping type 'gp_inpad'. The last specification will apply.
-Warning 9: Ambiguous block type specification at grid location (7,0). Existing block type 'io' at (7,0) has the same priority (100) as new overlapping type 'gp_inpad'. The last specification will apply.
-Warning 10: Ambiguous block type specification at grid location (2,0). Existing block type 'io' at (2,0) has the same priority (100) as new overlapping type 'gp_outpad'. The last specification will apply.
-Warning 11: Ambiguous block type specification at grid location (4,0). Existing block type 'io' at (4,0) has the same priority (100) as new overlapping type 'gp_outpad'. The last specification will apply.
-Warning 12: Ambiguous block type specification at grid location (6,0). Existing block type 'io' at (6,0) has the same priority (100) as new overlapping type 'gp_outpad'. The last specification will apply.
-Warning 13: Ambiguous block type specification at grid location (8,0). Existing block type 'io' at (8,0) has the same priority (100) as new overlapping type 'gp_outpad'. The last specification will apply.
+Warning 8: Ambiguous block type specification at grid location (2,0). Existing block type 'io' at (2,0) has the same priority (100) as new overlapping type 'gp_outpad'. The last specification will apply.
 Begin packing 'and2.blif'.
 
 After removing unused inputs...
@@ -211,13 +206,9 @@ Starting Clustering - Clustering Progress:
 -------------------   --------------------------   ---------
 Molecules processed   Number of clusters created   FPGA size
 -------------------   --------------------------   ---------
-Warning 14: Ambiguous block type specification at grid location (1,0). Existing block type 'io' at (1,0) has the same priority (100) as new overlapping type 'gp_inpad'. The last specification will apply.
-Warning 15: Ambiguous block type specification at grid location (1,0). Existing block type 'io' at (1,0) has the same priority (100) as new overlapping type 'gp_inpad'. The last specification will apply.
-Warning 16: Ambiguous block type specification at grid location (1,0). Existing block type 'io' at (1,0) has the same priority (100) as new overlapping type 'gp_inpad'. The last specification will apply.
-Warning 17: Ambiguous block type specification at grid location (1,0). Existing block type 'io' at (1,0) has the same priority (100) as new overlapping type 'gp_inpad'. The last specification will apply.
-Warning 18: Ambiguous block type specification at grid location (2,0). Existing block type 'io' at (2,0) has the same priority (100) as new overlapping type 'gp_outpad'. The last specification will apply.
-Warning 19: Ambiguous block type specification at grid location (1,0). Existing block type 'io' at (1,0) has the same priority (100) as new overlapping type 'gp_inpad'. The last specification will apply.
-Warning 20: Ambiguous block type specification at grid location (2,0). Existing block type 'io' at (2,0) has the same priority (100) as new overlapping type 'gp_outpad'. The last specification will apply.
+Warning 9: Ambiguous block type specification at grid location (1,0). Existing block type 'io' at (1,0) has the same priority (100) as new overlapping type 'gp_inpad'. The last specification will apply.
+Warning 10: Ambiguous block type specification at grid location (3,0). Existing block type 'io' at (3,0) has the same priority (100) as new overlapping type 'gp_inpad'. The last specification will apply.
+Warning 11: Ambiguous block type specification at grid location (2,0). Existing block type 'io' at (2,0) has the same priority (100) as new overlapping type 'gp_outpad'. The last specification will apply.
 
 Logic Element (fle) detailed count:
   Total number of Logic Elements used : 1
@@ -225,17 +216,15 @@ Logic Element (fle) detailed count:
   LEs used for logic only             : 1
   LEs used for registers only         : 0
 
-Incr Slack updates 1 in 3.48e-06 sec
-Full Max Req/Worst Slack updates 1 in 1.68e-06 sec
+Incr Slack updates 1 in 2.6e-06 sec
+Full Max Req/Worst Slack updates 1 in 1.44e-06 sec
 Incr Max Req/Worst Slack updates 0 in 0 sec
 Incr Criticality updates 0 in 0 sec
-Full Criticality updates 1 in 1.52e-06 sec
-Warning 21: Ambiguous block type specification at grid location (1,0). Existing block type 'io' at (1,0) has the same priority (100) as new overlapping type 'gp_inpad'. The last specification will apply.
-Warning 22: Ambiguous block type specification at grid location (1,0). Existing block type 'io' at (1,0) has the same priority (100) as new overlapping type 'gp_inpad'. The last specification will apply.
-Warning 23: Ambiguous block type specification at grid location (2,0). Existing block type 'io' at (2,0) has the same priority (100) as new overlapping type 'gp_outpad'. The last specification will apply.
-Warning 24: Ambiguous block type specification at grid location (1,0). Existing block type 'io' at (1,0) has the same priority (100) as new overlapping type 'gp_inpad'. The last specification will apply.
-Warning 25: Ambiguous block type specification at grid location (2,0). Existing block type 'io' at (2,0) has the same priority (100) as new overlapping type 'gp_outpad'. The last specification will apply.
-FPGA sized to 4 x 4 (auto)
+Full Criticality updates 1 in 1.56e-06 sec
+Warning 12: Ambiguous block type specification at grid location (1,0). Existing block type 'io' at (1,0) has the same priority (100) as new overlapping type 'gp_inpad'. The last specification will apply.
+Warning 13: Ambiguous block type specification at grid location (3,0). Existing block type 'io' at (3,0) has the same priority (100) as new overlapping type 'gp_inpad'. The last specification will apply.
+Warning 14: Ambiguous block type specification at grid location (2,0). Existing block type 'io' at (2,0) has the same priority (100) as new overlapping type 'gp_outpad'. The last specification will apply.
+FPGA sized to 4 x 4 (2x2)
 Device Utilization: 0.09 (target 1.00)
 	Block Utilization: 0.25 Type: gp_inpad
 	Block Utilization: 0.12 Type: gp_outpad
@@ -256,15 +245,15 @@ Absorbed logical nets 0 out of 3 nets, 3 nets not absorbed.
 
 Netlist conversion complete.
 
-# Packing took 0.00 seconds (max_rss 22.2 MiB, delta_rss +0.0 MiB)
+# Packing took 0.00 seconds (max_rss 22.0 MiB, delta_rss +0.0 MiB)
 # Load packing
 Begin loading packed FPGA netlist file.
 Netlist generated from file 'and2.net'.
 Detected 0 constant generators (to see names run with higher pack verbosity)
-Finished loading packed FPGA netlist file (took 0.022496 seconds).
-Warning 26: Treated 0 constant nets as global which will not be routed (to see net names increase packer verbosity).
-# Load packing took 0.02 seconds (max_rss 60.2 MiB, delta_rss +38.1 MiB)
-Warning 27: Netlist contains 0 global net to non-global architecture pin connections
+Finished loading packed FPGA netlist file (took 0.022362 seconds).
+Warning 15: Treated 0 constant nets as global which will not be routed (to see net names increase packer verbosity).
+# Load packing took 0.02 seconds (max_rss 60.2 MiB, delta_rss +38.2 MiB)
+Warning 16: Netlist contains 0 global net to non-global architecture pin connections
 
 Pb types usage...
   gp_inpad       : 2
@@ -280,12 +269,10 @@ Pb types usage...
 
 # Create Device
 ## Build Device Grid
-Warning 28: Ambiguous block type specification at grid location (1,0). Existing block type 'io' at (1,0) has the same priority (100) as new overlapping type 'gp_inpad'. The last specification will apply.
-Warning 29: Ambiguous block type specification at grid location (1,0). Existing block type 'io' at (1,0) has the same priority (100) as new overlapping type 'gp_inpad'. The last specification will apply.
-Warning 30: Ambiguous block type specification at grid location (2,0). Existing block type 'io' at (2,0) has the same priority (100) as new overlapping type 'gp_outpad'. The last specification will apply.
-Warning 31: Ambiguous block type specification at grid location (1,0). Existing block type 'io' at (1,0) has the same priority (100) as new overlapping type 'gp_inpad'. The last specification will apply.
-Warning 32: Ambiguous block type specification at grid location (2,0). Existing block type 'io' at (2,0) has the same priority (100) as new overlapping type 'gp_outpad'. The last specification will apply.
-FPGA sized to 4 x 4: 16 grid tiles (auto)
+Warning 17: Ambiguous block type specification at grid location (1,0). Existing block type 'io' at (1,0) has the same priority (100) as new overlapping type 'gp_inpad'. The last specification will apply.
+Warning 18: Ambiguous block type specification at grid location (3,0). Existing block type 'io' at (3,0) has the same priority (100) as new overlapping type 'gp_inpad'. The last specification will apply.
+Warning 19: Ambiguous block type specification at grid location (2,0). Existing block type 'io' at (2,0) has the same priority (100) as new overlapping type 'gp_outpad'. The last specification will apply.
+FPGA sized to 4 x 4: 16 grid tiles (2x2)
 
 Resource usage...
 	Netlist
@@ -315,14 +302,12 @@ Device Utilization: 0.09 (target 1.00)
 	Physical Tile clb:
 	Block Utilization: 0.25 Logical Block: clb
 
-FPGA size limited by block type(s): gp_outpad
-
 ## Build Device Grid took 0.00 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
-Warning 33: Tileable routing resource graph does not support clock modeling yet! Related options are ignored...
+Warning 20: Tileable routing resource graph does not support clock modeling yet! Related options are ignored...
 ## Build tileable routing resource graph
 X-direction routing channel width is 20
 Y-direction routing channel width is 20
-Warning 34: in check_rr_graph: fringe node 80 IPIN at (0,1) has no fanin.
+Warning 21: in check_rr_graph: fringe node 80 IPIN at (0,1) has no fanin.
 	 This is possible on a fringe node based on low Fc_out, N, and certain lengths.
 ## Build tileable routing resource graph took 0.00 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
   RR Graph Nodes: 1000
@@ -333,19 +318,19 @@ Warning 34: in check_rr_graph: fringe node 80 IPIN at (0,1) has no fanin.
 ## Computing wire lookahead
 ## Computing wire lookahead took 0.00 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
 ## Computing src/opin lookahead
-Warning 35: Found no more ample locations for SOURCE in io
-Warning 36: Found no more ample locations for OPIN in io
-Warning 37: Found no more ample locations for SOURCE in gp_inpad
-Warning 38: Found no more ample locations for OPIN in gp_inpad
-Warning 39: Found no more ample locations for SOURCE in clb
-Warning 40: Found no more ample locations for OPIN in clb
+Warning 22: Found no more ample locations for SOURCE in io
+Warning 23: Found no more ample locations for OPIN in io
+Warning 24: Found no more ample locations for SOURCE in gp_inpad
+Warning 25: Found no more ample locations for OPIN in gp_inpad
+Warning 26: Found no more ample locations for SOURCE in clb
+Warning 27: Found no more ample locations for OPIN in clb
 ## Computing src/opin lookahead took 0.00 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
 # Computing router lookahead map took 0.00 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
 # Computing placement delta delay look-up
 RR graph channel widths unchanged, skipping RR graph rebuild
 ## Computing delta delays
-Warning 41: Unable to route between blocks at (0,1,0) and (0,1,0) to characterize delay (setting to inf)
-Warning 42: Unable to route between blocks at (0,2,2) and (0,1,0) to characterize delay (setting to inf)
+Warning 28: Unable to route between blocks at (0,1,0) and (0,1,0) to characterize delay (setting to inf)
+Warning 29: Unable to route between blocks at (0,2,2) and (0,1,0) to characterize delay (setting to inf)
 ## Computing delta delays took 0.00 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
 # Computing placement delta delay look-up took 0.00 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
 
@@ -382,7 +367,7 @@ Initial placement estimated setup slack histogram:
 Placement contains 0 placement macros involving 0 blocks (average macro size nan)
 
 Moves per temperature: 3
-Warning 43: Starting t: 0 of 3 configurations accepted.
+Warning 30: Starting t: 0 of 3 configurations accepted.
 
 ---- ------ ------- ------- ---------- ---------- ------- ---------- -------- ------- ------- ------ -------- --------- ------
 Tnum   Time       T Av Cost Av BB Cost Av TD Cost     CPD       sTNS     sWNS Ac Rate Std Dev  R lim Crit Exp Tot Moves  Alpha
@@ -449,8 +434,8 @@ gp_outpad          Uniform                11.11            0.00            0.00 
 
 
 
-Placement Quench timing analysis took 4.8e-06 seconds (2.88e-06 STA, 1.92e-06 slack) (1 full updates: 1 setup, 0 hold, 0 combined).
-Placement Total  timing analysis took 5.06e-05 seconds (3.612e-05 STA, 1.448e-05 slack) (4 full updates: 4 setup, 0 hold, 0 combined).
+Placement Quench timing analysis took 6.2e-06 seconds (4.36e-06 STA, 1.84e-06 slack) (1 full updates: 1 setup, 0 hold, 0 combined).
+Placement Total  timing analysis took 4.964e-05 seconds (3.628e-05 STA, 1.336e-05 slack) (4 full updates: 4 setup, 0 hold, 0 combined).
 update_td_costs: connections 0 nets 0 sum_nets 0 total 0
 # Placement took 0.00 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
 
@@ -474,11 +459,11 @@ Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wireleng
       (sec)     fac Updt    push    Nets   Conns                                       (ns)       (ns)       (ns)       (ns)       (ns)     Iter
 ---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
    1    0.0     0.0    0      46       3       3       0 ( 0.000%)       8 ( 3.3%)    0.978    -0.9780     -0.978      0.000      0.000      N/A
-Incr Slack updates 4 in 4.44e-06 sec
-Full Max Req/Worst Slack updates 1 in 1.84e-06 sec
-Incr Max Req/Worst Slack updates 3 in 1.6e-06 sec
-Incr Criticality updates 3 in 2.04e-06 sec
-Full Criticality updates 1 in 1.84e-06 sec
+Incr Slack updates 4 in 4.4e-06 sec
+Full Max Req/Worst Slack updates 1 in 1.68e-06 sec
+Incr Max Req/Worst Slack updates 3 in 1.4e-06 sec
+Incr Criticality updates 3 in 1.96e-06 sec
+Full Criticality updates 1 in 1.68e-06 sec
 Restoring best routing
 Critical path: 0.978007 ns
 Successfully routed after 1 routing iterations.
@@ -623,12 +608,12 @@ Final setup slack histogram:
 Final geomean non-virtual intra-domain period: nan ns (nan MHz)
 Final fanout-weighted geomean non-virtual intra-domain period: nan ns (nan MHz)
 
-Incr Slack updates 1 in 2.8e-06 sec
-Full Max Req/Worst Slack updates 1 in 1.04e-06 sec
+Incr Slack updates 1 in 2.48e-06 sec
+Full Max Req/Worst Slack updates 1 in 9.2e-07 sec
 Incr Max Req/Worst Slack updates 0 in 0 sec
 Incr Criticality updates 0 in 0 sec
-Full Criticality updates 1 in 1.32e-06 sec
-Flow timing analysis took 0.00014756 seconds (0.00010872 STA, 3.884e-05 slack) (8 full updates: 5 setup, 0 hold, 3 combined).
+Full Criticality updates 1 in 1.16e-06 sec
+Flow timing analysis took 0.000139522 seconds (0.000105121 STA, 3.4401e-05 slack) (8 full updates: 5 setup, 0 hold, 3 combined).
 VPR succeeded
 The entire flow of VPR took 0.09 seconds (max_rss 60.4 MiB)
 
@@ -638,9 +623,9 @@ Confirm selected options when call command 'read_openfpga_arch':
 --file, -f: /home/ubuntu/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/synthesizable_verilog/run001/k6_frac_N10_tileable_I_O_IO_40nm/and2/MIN_ROUTE_CHAN_WIDTH/arch/k6_frac_N10_stdcell_mux_40nm_openfpga_synthesizable2.xml
 Reading XML architecture '/home/ubuntu/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/synthesizable_verilog/run001/k6_frac_N10_tileable_I_O_IO_40nm/and2/MIN_ROUTE_CHAN_WIDTH/arch/k6_frac_N10_stdcell_mux_40nm_openfpga_synthesizable2.xml'...
 Read OpenFPGA architecture
-Warning 44: Automatically set circuit model 'frac_lut6' to be default in its type.
-Warning 45: Automatically set circuit model 'dffsrq' to be default in its type.
-Warning 46: Automatically set circuit model 'dffr' to be default in its type.
+Warning 31: Automatically set circuit model 'frac_lut6' to be default in its type.
+Warning 32: Automatically set circuit model 'dffsrq' to be default in its type.
+Warning 33: Automatically set circuit model 'dffr' to be default in its type.
 Use the default configurable memory model 'dffr' for circuit model 'mux_tree' port 'sram')
 Use the default configurable memory model 'dffr' for circuit model 'mux_tree_tapbuf' port 'sram')
 Use the default configurable memory model 'dffr' for circuit model 'frac_lut6' port 'sram')
@@ -692,7 +677,7 @@ Binded 0 direct connections to circuit models
 # Annotating rr_node with routed nets
 # Annotating rr_node with routed nets took 0.00 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
 Loaded node-to-net mapping
-Annotating previous nodes for rr_node...Warning 47: Override the previous node 'IPIN:175 side: (BOTTOM,) (1,1,0)' by previous node 'IPIN:178 side: (BOTTOM,) (1,1,0)' for node 'SINK:132  (1,1,0)' with in routing context annotation!
+Annotating previous nodes for rr_node...Warning 34: Override the previous node 'IPIN:175 side: (BOTTOM,) (1,1,0)' by previous node 'IPIN:178 side: (BOTTOM,) (1,1,0)' for node 'SINK:132  (1,1,0)' with in routing context annotation!
 Done with 15 nodes mapping
 Built 1940 incoming edges for routing resource graph
 # Build General Switch Block(GSB) annotation on top of routing resource graph
@@ -727,11 +712,11 @@ Building annotation for post-routing and clustering synchornization results...Do
 Building annotation for mapped blocks on grid locations...Done
 User specified the operating clock frequency to use VPR results
 Use VPR critical path delay 1.17361e-18 [ns] with a 20 [%] slack in OpenFPGA.
-Incr Slack updates 1 in 4.401e-06 sec
-Full Max Req/Worst Slack updates 1 in 1.36e-06 sec
+Incr Slack updates 1 in 2.28e-06 sec
+Full Max Req/Worst Slack updates 1 in 4.08e-06 sec
 Incr Max Req/Worst Slack updates 0 in 0 sec
 Incr Criticality updates 0 in 0 sec
-Full Criticality updates 1 in 1.32e-06 sec
+Full Criticality updates 1 in 1.52e-06 sec
 Will apply operating clock frequency 852.073 [MHz] to simulations
 User specified the number of operating clock cycles to be inferred from signal activities
 Average net density: 0.42
@@ -831,7 +816,7 @@ Confirm selected options when call command 'write_fabric_hierarchy':
 --depth: off
 --exclude_empty_modules: off
 --verbose: off
-Warning 48: Directory '.' already exists. Will overwrite contents
+Warning 35: Directory '.' already exists. Will overwrite contents
 Write fabric hierarchy to plain-text file './fabric_hierarchy.txt'
 Outputted 1 modules as root
 Write fabric hierarchy to plain-text file './fabric_hierarchy.txt' took 0.00 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
@@ -2734,7 +2719,7 @@ Overwrite Bitstream
 
 Overwrite Bitstream
  took 0.00 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
-Warning 49: Directory path is empty and nothing will be created.
+Warning 36: Directory path is empty and nothing will be created.
 Write 5265 architecture independent bitstream into XML file 'fabric_independent_bitstream.xml'
 Write 5265 architecture independent bitstream into XML file 'fabric_independent_bitstream.xml' took 0.01 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
 
@@ -3843,7 +3828,7 @@ Confirm selected options when call command 'write_fabric_bitstream':
 --wl_decremental_order: off
 --no_time_stamp: off
 --verbose: off
-Warning 50: Directory path is empty and nothing will be created.
+Warning 37: Directory path is empty and nothing will be created.
 Write 5265 fabric bitstream into plain text file 'fabric_bitstream.bit'
 Write 5265 fabric bitstream into plain text file 'fabric_bitstream.bit' took 0.00 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
 
@@ -3948,7 +3933,7 @@ Confirm selected options when call command 'write_full_testbench':
 --verbose: off
 Write Verilog full testbenches for FPGA fabric
 
-Warning 51: Directory './SRC' already exists. Will overwrite contents
+Warning 38: Directory './SRC' already exists. Will overwrite contents
 # Write autocheck testbench for FPGA top-level Verilog netlist for 'and2'
 Will use 5266 configuration clock cycles to top testbench
 # Write autocheck testbench for FPGA top-level Verilog netlist for 'and2' took 0.08 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
@@ -3997,7 +3982,7 @@ Confirm selected options when call command 'write_sdc_disable_timing_configure_p
 --flatten_names: on
 --no_time_stamp: off
 --verbose: off
-Warning 52: Directory './SDC' already exists. Will overwrite contents
+Warning 39: Directory './SDC' already exists. Will overwrite contents
 Write SDC to disable timing on configuration outputs of programmable cells for P&R flow './SDC/disable_configure_ports.sdc'
 Write SDC to disable timing on configuration outputs of programmable cells for P&R flow './SDC/disable_configure_ports.sdc' took 0.45 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
 
@@ -4019,11 +4004,11 @@ Confirm selected options when call command 'exit':
 
 Finish execution with 0 errors
 
-The entire OpenFPGA flow took 0.981066 seconds
+The entire OpenFPGA flow took 0.975214 seconds
 
 Thank you for using OpenFPGA!
-Incr Slack updates 2 in 3.52e-06 sec
-Full Max Req/Worst Slack updates 1 in 1.12e-06 sec
-Incr Max Req/Worst Slack updates 1 in 6.8e-07 sec
+Incr Slack updates 2 in 2.16e-06 sec
+Full Max Req/Worst Slack updates 1 in 1.161e-06 sec
+Incr Max Req/Worst Slack updates 1 in 6e-07 sec
 Incr Criticality updates 0 in 0 sec
-Full Criticality updates 2 in 2.08e-06 sec
+Full Criticality updates 2 in 1.96e-06 sec

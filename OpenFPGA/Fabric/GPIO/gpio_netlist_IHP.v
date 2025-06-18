@@ -25,3 +25,16 @@ module GPIO(A, Y, PAD, DIR);
   sg13g2_inv_1 g7(.A (DIR), .Y (c2p_en));
 endmodule
 
+module GPIN (
+  inout A, // External PAD signal
+  output Y // Data input
+);
+  sg13g2_IOPadIn gpin(.pad(A), .p2c(Y));
+endmodule
+
+module GPOUT (
+  inout Y, // External PAD signal
+  input A // Data output
+);
+  sg13g2_IOPadOut30mA gpout(.pad(Y), .c2p(A));
+endmodule

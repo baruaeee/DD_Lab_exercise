@@ -3,7 +3,7 @@
 //	Description: Fabric Netlist Summary
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Thu Jun 19 00:36:40 2025
+//	Date: Thu Jun 19 01:04:00 2025
 //-------------------------------------------
 // ------ Include defines: preproc flags -----
 `include "./SRC/fpga_defines.v"
@@ -13,7 +13,6 @@
 `include "../../../../../DFF/dffsrq.v"
 `include "../../../../../DFF/dffr.v"
 `include "../../../../../GPIO/gpio_netlist_IHP.v"
-`include "../../../../../GPIO/gpio1.v"
 // ------ Include primitive module netlists -----
 `include "./SRC/sub_module/inv_buf_passgate.v"
 `include "./SRC/sub_module/arch_encoder.v"
