@@ -4,7 +4,7 @@
 #	Description: Timing constraints for Grid logical_tile_gp_inpad_mode_gp_inpad_ in PnR
 #	Author: Xifan TANG 
 #	Organization: University of Utah 
-#	Date: Thu Jun 19 13:12:37 2025
+#	Date: Thu Jun 19 14:16:03 2025
 #############################################
 
 #############################################
@@ -12,4 +12,4 @@
 #############################################
 set_units -time s
 
-set_max_delay -from grid_gp_inpad_left/logical_tile_gp_inpad_mode_gp_inpad__0/logical_tile_gp_inpad_mode_default__inpad_0/inpad_inpad[0] -to grid_gp_inpad_left/logical_tile_gp_inpad_mode_gp_inpad__0/gp_inpad_inpad[0] 4.243000049e-11
+set_max_delay -from grid_io_left_*__*_/logical_tile_gp_inpad_mode_gp_inpad__0/logical_tile_gp_inpad_mode_default__inpad_0/inpad_inpad[0] -to grid_io_left_*__*_/logical_tile_gp_inpad_mode_gp_inpad__0/gp_inpad_inpad[0] 4.243000049e-11

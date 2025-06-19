@@ -4,7 +4,7 @@
 #	Description: Disable Switch Block outputs for PnR
 #	Author: Xifan TANG 
 #	Organization: University of Utah 
-#	Date: Thu Jun 19 13:12:37 2025
+#	Date: Thu Jun 19 14:16:03 2025
 #############################################
 
 set_disable_timing sb_0__0_/chany_top_out*

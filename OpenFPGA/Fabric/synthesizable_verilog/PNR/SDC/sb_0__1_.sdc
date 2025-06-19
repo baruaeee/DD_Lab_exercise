@@ -4,7 +4,7 @@
 #	Description: Constrain timing of Switch Block sb_0__1_ for PnR
 #	Author: Xifan TANG 
 #	Organization: University of Utah 
-#	Date: Thu Jun 19 13:12:37 2025
+#	Date: Thu Jun 19 14:16:03 2025
 #############################################
 
 #############################################
@@ -15,22 +15,30 @@ set_units -time s
 set_max_delay -from sb_0__1_/top_left_grid_right_width_0_height_0_subtile_0__pin_inpad_0_[0] -to sb_0__1_/chany_top_out[0] 6.020400151e-11
 set_max_delay -from sb_0__1_/top_left_grid_right_width_0_height_0_subtile_3__pin_inpad_0_[0] -to sb_0__1_/chany_top_out[0] 6.020400151e-11
 set_max_delay -from sb_0__1_/top_left_grid_right_width_0_height_0_subtile_6__pin_inpad_0_[0] -to sb_0__1_/chany_top_out[0] 6.020400151e-11
-set_max_delay -from sb_0__1_/top_right_grid_left_width_0_height_0_subtile_0__pin_O_7_[0] -to sb_0__1_/chany_top_out[0] 6.020400151e-11
-set_max_delay -from sb_0__1_/top_right_grid_left_width_0_height_0_subtile_0__pin_O_19_[0] -to sb_0__1_/chany_top_out[0] 6.020400151e-11
+set_max_delay -from sb_0__1_/top_left_grid_right_width_0_height_0_subtile_9__pin_inpad_0_[0] -to sb_0__1_/chany_top_out[0] 6.020400151e-11
+set_max_delay -from sb_0__1_/top_left_grid_right_width_0_height_0_subtile_12__pin_inpad_0_[0] -to sb_0__1_/chany_top_out[0] 6.020400151e-11
+set_max_delay -from sb_0__1_/top_left_grid_right_width_0_height_0_subtile_15__pin_inpad_0_[0] -to sb_0__1_/chany_top_out[0] 6.020400151e-11
+set_max_delay -from sb_0__1_/top_right_grid_left_width_0_height_0_subtile_0__pin_O_11_[0] -to sb_0__1_/chany_top_out[0] 6.020400151e-11
 set_max_delay -from sb_0__1_/chanx_right_in[1] -to sb_0__1_/chany_top_out[0] 6.020400151e-11
 set_max_delay -from sb_0__1_/chanx_right_in[4] -to sb_0__1_/chany_top_out[0] 6.020400151e-11
 set_max_delay -from sb_0__1_/chanx_right_in[7] -to sb_0__1_/chany_top_out[0] 6.020400151e-11
 set_max_delay -from sb_0__1_/top_left_grid_right_width_0_height_0_subtile_1__pin_inpad_0_[0] -to sb_0__1_/chany_top_out[4] 6.020400151e-11
 set_max_delay -from sb_0__1_/top_left_grid_right_width_0_height_0_subtile_4__pin_inpad_0_[0] -to sb_0__1_/chany_top_out[4] 6.020400151e-11
 set_max_delay -from sb_0__1_/top_left_grid_right_width_0_height_0_subtile_7__pin_inpad_0_[0] -to sb_0__1_/chany_top_out[4] 6.020400151e-11
-set_max_delay -from sb_0__1_/top_right_grid_left_width_0_height_0_subtile_0__pin_O_11_[0] -to sb_0__1_/chany_top_out[4] 6.020400151e-11
+set_max_delay -from sb_0__1_/top_left_grid_right_width_0_height_0_subtile_10__pin_inpad_0_[0] -to sb_0__1_/chany_top_out[4] 6.020400151e-11
+set_max_delay -from sb_0__1_/top_left_grid_right_width_0_height_0_subtile_13__pin_inpad_0_[0] -to sb_0__1_/chany_top_out[4] 6.020400151e-11
+set_max_delay -from sb_0__1_/top_right_grid_left_width_0_height_0_subtile_0__pin_O_3_[0] -to sb_0__1_/chany_top_out[4] 6.020400151e-11
+set_max_delay -from sb_0__1_/top_right_grid_left_width_0_height_0_subtile_0__pin_O_15_[0] -to sb_0__1_/chany_top_out[4] 6.020400151e-11
 set_max_delay -from sb_0__1_/chanx_right_in[2] -to sb_0__1_/chany_top_out[4] 6.020400151e-11
 set_max_delay -from sb_0__1_/chanx_right_in[5] -to sb_0__1_/chany_top_out[4] 6.020400151e-11
 set_max_delay -from sb_0__1_/chanx_right_in[8] -to sb_0__1_/chany_top_out[4] 6.020400151e-11
 set_max_delay -from sb_0__1_/top_left_grid_right_width_0_height_0_subtile_2__pin_inpad_0_[0] -to sb_0__1_/chany_top_out[8] 6.020400151e-11
 set_max_delay -from sb_0__1_/top_left_grid_right_width_0_height_0_subtile_5__pin_inpad_0_[0] -to sb_0__1_/chany_top_out[8] 6.020400151e-11
-set_max_delay -from sb_0__1_/top_right_grid_left_width_0_height_0_subtile_0__pin_O_3_[0] -to sb_0__1_/chany_top_out[8] 6.020400151e-11
-set_max_delay -from sb_0__1_/top_right_grid_left_width_0_height_0_subtile_0__pin_O_15_[0] -to sb_0__1_/chany_top_out[8] 6.020400151e-11
+set_max_delay -from sb_0__1_/top_left_grid_right_width_0_height_0_subtile_8__pin_inpad_0_[0] -to sb_0__1_/chany_top_out[8] 6.020400151e-11
+set_max_delay -from sb_0__1_/top_left_grid_right_width_0_height_0_subtile_11__pin_inpad_0_[0] -to sb_0__1_/chany_top_out[8] 6.020400151e-11
+set_max_delay -from sb_0__1_/top_left_grid_right_width_0_height_0_subtile_14__pin_inpad_0_[0] -to sb_0__1_/chany_top_out[8] 6.020400151e-11
+set_max_delay -from sb_0__1_/top_right_grid_left_width_0_height_0_subtile_0__pin_O_7_[0] -to sb_0__1_/chany_top_out[8] 6.020400151e-11
+set_max_delay -from sb_0__1_/top_right_grid_left_width_0_height_0_subtile_0__pin_O_19_[0] -to sb_0__1_/chany_top_out[8] 6.020400151e-11
 set_max_delay -from sb_0__1_/chanx_right_in[0] -to sb_0__1_/chany_top_out[8] 6.020400151e-11
 set_max_delay -from sb_0__1_/chanx_right_in[3] -to sb_0__1_/chany_top_out[8] 6.020400151e-11
 set_max_delay -from sb_0__1_/chanx_right_in[6] -to sb_0__1_/chany_top_out[8] 6.020400151e-11
@@ -68,6 +76,8 @@ set_max_delay -from sb_0__1_/right_bottom_grid_top_width_0_height_0_subtile_0__p
 set_max_delay -from sb_0__1_/bottom_left_grid_right_width_0_height_0_subtile_1__pin_inpad_0_[0] -to sb_0__1_/chany_bottom_out[0] 6.020400151e-11
 set_max_delay -from sb_0__1_/bottom_left_grid_right_width_0_height_0_subtile_4__pin_inpad_0_[0] -to sb_0__1_/chany_bottom_out[0] 6.020400151e-11
 set_max_delay -from sb_0__1_/bottom_left_grid_right_width_0_height_0_subtile_7__pin_inpad_0_[0] -to sb_0__1_/chany_bottom_out[0] 6.020400151e-11
+set_max_delay -from sb_0__1_/bottom_left_grid_right_width_0_height_0_subtile_10__pin_inpad_0_[0] -to sb_0__1_/chany_bottom_out[0] 6.020400151e-11
+set_max_delay -from sb_0__1_/bottom_left_grid_right_width_0_height_0_subtile_13__pin_inpad_0_[0] -to sb_0__1_/chany_bottom_out[0] 6.020400151e-11
 set_max_delay -from sb_0__1_/bottom_right_grid_left_width_0_height_0_subtile_0__pin_O_3_[0] -to sb_0__1_/chany_bottom_out[0] 6.020400151e-11
 set_max_delay -from sb_0__1_/bottom_right_grid_left_width_0_height_0_subtile_0__pin_O_15_[0] -to sb_0__1_/chany_bottom_out[0] 6.020400151e-11
 set_max_delay -from sb_0__1_/chanx_right_in[1] -to sb_0__1_/chany_bottom_out[0] 6.020400151e-11
@@ -75,6 +85,9 @@ set_max_delay -from sb_0__1_/chanx_right_in[4] -to sb_0__1_/chany_bottom_out[0] 
 set_max_delay -from sb_0__1_/chanx_right_in[7] -to sb_0__1_/chany_bottom_out[0] 6.020400151e-11
 set_max_delay -from sb_0__1_/bottom_left_grid_right_width_0_height_0_subtile_2__pin_inpad_0_[0] -to sb_0__1_/chany_bottom_out[4] 6.020400151e-11
 set_max_delay -from sb_0__1_/bottom_left_grid_right_width_0_height_0_subtile_5__pin_inpad_0_[0] -to sb_0__1_/chany_bottom_out[4] 6.020400151e-11
+set_max_delay -from sb_0__1_/bottom_left_grid_right_width_0_height_0_subtile_8__pin_inpad_0_[0] -to sb_0__1_/chany_bottom_out[4] 6.020400151e-11
+set_max_delay -from sb_0__1_/bottom_left_grid_right_width_0_height_0_subtile_11__pin_inpad_0_[0] -to sb_0__1_/chany_bottom_out[4] 6.020400151e-11
+set_max_delay -from sb_0__1_/bottom_left_grid_right_width_0_height_0_subtile_14__pin_inpad_0_[0] -to sb_0__1_/chany_bottom_out[4] 6.020400151e-11
 set_max_delay -from sb_0__1_/bottom_right_grid_left_width_0_height_0_subtile_0__pin_O_7_[0] -to sb_0__1_/chany_bottom_out[4] 6.020400151e-11
 set_max_delay -from sb_0__1_/bottom_right_grid_left_width_0_height_0_subtile_0__pin_O_19_[0] -to sb_0__1_/chany_bottom_out[4] 6.020400151e-11
 set_max_delay -from sb_0__1_/chanx_right_in[0] -to sb_0__1_/chany_bottom_out[4] 6.020400151e-11
@@ -84,6 +97,9 @@ set_max_delay -from sb_0__1_/chanx_right_in[9] -to sb_0__1_/chany_bottom_out[4] 
 set_max_delay -from sb_0__1_/bottom_left_grid_right_width_0_height_0_subtile_0__pin_inpad_0_[0] -to sb_0__1_/chany_bottom_out[8] 6.020400151e-11
 set_max_delay -from sb_0__1_/bottom_left_grid_right_width_0_height_0_subtile_3__pin_inpad_0_[0] -to sb_0__1_/chany_bottom_out[8] 6.020400151e-11
 set_max_delay -from sb_0__1_/bottom_left_grid_right_width_0_height_0_subtile_6__pin_inpad_0_[0] -to sb_0__1_/chany_bottom_out[8] 6.020400151e-11
+set_max_delay -from sb_0__1_/bottom_left_grid_right_width_0_height_0_subtile_9__pin_inpad_0_[0] -to sb_0__1_/chany_bottom_out[8] 6.020400151e-11
+set_max_delay -from sb_0__1_/bottom_left_grid_right_width_0_height_0_subtile_12__pin_inpad_0_[0] -to sb_0__1_/chany_bottom_out[8] 6.020400151e-11
+set_max_delay -from sb_0__1_/bottom_left_grid_right_width_0_height_0_subtile_15__pin_inpad_0_[0] -to sb_0__1_/chany_bottom_out[8] 6.020400151e-11
 set_max_delay -from sb_0__1_/bottom_right_grid_left_width_0_height_0_subtile_0__pin_O_11_[0] -to sb_0__1_/chany_bottom_out[8] 6.020400151e-11
 set_max_delay -from sb_0__1_/chanx_right_in[2] -to sb_0__1_/chany_bottom_out[8] 6.020400151e-11
 set_max_delay -from sb_0__1_/chanx_right_in[5] -to sb_0__1_/chany_bottom_out[8] 6.020400151e-11
