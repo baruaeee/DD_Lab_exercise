@@ -237,6 +237,7 @@
       <!-- Place I/Os on the sides of the FPGA -->
       <power method="ignore"/>
     </pb_type>
+
     <pb_type name="gp_inpad">
       <output name="inpad" num_pins="1"/>
       <pb_type name="inpad" blif_model=".input" num_pb="1">
