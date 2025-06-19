@@ -3,7 +3,7 @@
 //	Description: Verilog modules for pb_type: fabric
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Thu Jun 19 13:12:37 2025
+//	Date: Thu Jun 19 14:16:03 2025
 //-------------------------------------------
 // ----- BEGIN Physical programmable logic block Verilog module: fabric -----
 //----- Default net type -----

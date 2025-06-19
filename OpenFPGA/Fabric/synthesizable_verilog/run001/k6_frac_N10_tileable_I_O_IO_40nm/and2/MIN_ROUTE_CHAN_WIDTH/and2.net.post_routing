@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
-<block name="and2.net.post_routing" instance="FPGA_packed_netlist[0]" architecture_id="SHA256:f58f8cbcadf4391a5c838f77d6f1f773bff89868cf63209b7b3db3b8a3e73d9c" atom_netlist_id="SHA256:2e9b9fe963ef6fc23a8f4ba4a40f1b273b533ef6a062cd9c2ea9cd7e80da4b04">
+<block name="and2.net.post_routing" instance="FPGA_packed_netlist[0]" architecture_id="SHA256:6fef1f4fd7d27fde2b6e610c7a1bc3b4e84cfe8b0d862a1241189b3250a47c9c" atom_netlist_id="SHA256:2e9b9fe963ef6fc23a8f4ba4a40f1b273b533ef6a062cd9c2ea9cd7e80da4b04">
 	<inputs>a b</inputs>
 	<outputs>out:c</outputs>
 	<clocks></clocks>
 	<block name="c" instance="clb[0]" mode="default">
 		<inputs>
-			<port name="I">open open open b open open open open open open open open open open open a open open open open open open open open open open open open open open open open open open open open open open open open</port>
+			<port name="I">open open a open open open open open open open open open open open b open open open open open open open open open open open open open open open open open open open open open open open open open</port>
 		</inputs>
 		<outputs>
 			<port name="O">open open open open open open open open open open open open open open open open open open open fle[9].out[1]-&gt;clbouts2</port>
@@ -24,7 +24,7 @@
 		<block name="open" instance="fle[8]" />
 		<block name="c" instance="fle[9]" mode="n2_lut5">
 			<inputs>
-				<port name="in">clb.I[3]-&gt;crossbar clb.I[15]-&gt;crossbar open open open open</port>
+				<port name="in">clb.I[14]-&gt;crossbar clb.I[2]-&gt;crossbar open open open open</port>
 			</inputs>
 			<outputs>
 				<port name="out">open lut5inter[0].out[1]-&gt;direct2</port>

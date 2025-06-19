@@ -3,7 +3,7 @@
 //	Description: Fabric Netlist Summary
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Thu Jun 19 13:12:37 2025
+//	Date: Thu Jun 19 14:16:03 2025
 //-------------------------------------------
 // ------ Include defines: preproc flags -----
 `include "./SRC/fpga_defines.v"
@@ -37,9 +37,10 @@
 `include "./SRC/lb/logical_tile_clb_mode_default__fle_mode_physical__fabric.v"
 `include "./SRC/lb/logical_tile_clb_mode_default__fle.v"
 `include "./SRC/lb/logical_tile_clb_mode_clb_.v"
-`include "./SRC/lb/grid_io.v"
-`include "./SRC/lb/grid_gp_inpad_left.v"
-`include "./SRC/lb/grid_gp_outpad_right.v"
+`include "./SRC/lb/grid_io_top.v"
+`include "./SRC/lb/grid_io_right.v"
+`include "./SRC/lb/grid_io_bottom.v"
+`include "./SRC/lb/grid_io_left.v"
 `include "./SRC/lb/grid_clb.v"
 
 // ------ Include routing module netlists -----

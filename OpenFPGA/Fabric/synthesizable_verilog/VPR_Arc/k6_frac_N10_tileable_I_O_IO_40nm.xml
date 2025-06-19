@@ -65,8 +65,6 @@
           <loc side="bottom">io.outpad io.inpad</loc>
         </pinlocations>
       </sub_tile>
-    </tile>
-    <tile name="gp_inpad" area="0">
       <sub_tile name="gp_inpad" capacity="8">
         <equivalent_sites>
           <site pb_type="gp_inpad"/>
@@ -80,8 +78,6 @@
           <loc side="bottom">gp_inpad.inpad</loc>
         </pinlocations>
       </sub_tile>
-    </tile>
-    <tile name="gp_outpad" area="0">
       <sub_tile name="gp_outpad" capacity="8">
         <equivalent_sites>
           <site pb_type="gp_outpad"/>
@@ -96,6 +92,7 @@
         </pinlocations>
       </sub_tile>
     </tile>
+
     <tile name="clb" area="53894">
       <sub_tile name="clb">
         <equivalent_sites>
@@ -125,9 +122,7 @@
     <fixed_layout name="2x2" width="4" height="4">
       <!--Perimeter of 'io' blocks with 'EMPTY' blocks at corners-->
       <perimeter type="io" priority="100"/>
-      <!--put input and output pads in bottom-->
-      <region type="gp_inpad" priority="101" startx="0" endx="0" incrx="1" starty="1" endy="H-1"/>
-      <region type="gp_outpad" priority="101" startx="W-1" endx="W-1" incrx="1" starty="1" endy="H-1"/>
+
       <corners type="EMPTY" priority="101"/>
       <!--Fill with 'clb'-->
       <fill type="clb" priority="10"/>
