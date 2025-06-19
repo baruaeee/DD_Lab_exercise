@@ -4,7 +4,7 @@
 #	Description: Constrain for Timing/Power analysis on the mapped FPGA
 #	Author: Xifan TANG 
 #	Organization: University of Utah 
-#	Date: Thu Jun 19 19:54:57 2025
+#	Date: Thu Jun 19 20:00:49 2025
 #############################################
 
 ##################################################
