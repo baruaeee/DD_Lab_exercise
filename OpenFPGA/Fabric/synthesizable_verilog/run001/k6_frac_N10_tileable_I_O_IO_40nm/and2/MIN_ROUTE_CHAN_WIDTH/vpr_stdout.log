@@ -189,9 +189,8 @@ Timing constraints created 1 clocks
 
 # Load Timing Constraints took 0.00 seconds (max_rss 22.2 MiB, delta_rss +0.0 MiB)
 # Packing
-Warning 6: Ambiguous block type specification at grid location (1,0). Existing block type 'io' at (1,0) has the same priority (100) as new overlapping type 'gp_inpad'. The last specification will apply.
-Warning 7: Ambiguous block type specification at grid location (3,0). Existing block type 'io' at (3,0) has the same priority (100) as new overlapping type 'gp_inpad'. The last specification will apply.
-Warning 8: Ambiguous block type specification at grid location (2,0). Existing block type 'io' at (2,0) has the same priority (100) as new overlapping type 'gp_outpad'. The last specification will apply.
+Warning 6: Ambiguous block type specification at grid location (0,3). Existing block type 'gp_inpad' at (0,3) has the same priority (101) as new overlapping type 'EMPTY'. The last specification will apply.
+Warning 7: Ambiguous block type specification at grid location (3,3). Existing block type 'gp_outpad' at (3,3) has the same priority (101) as new overlapping type 'EMPTY'. The last specification will apply.
 Begin packing 'and2.blif'.
 
 After removing unused inputs...
@@ -206,9 +205,8 @@ Starting Clustering - Clustering Progress:
 -------------------   --------------------------   ---------
 Molecules processed   Number of clusters created   FPGA size
 -------------------   --------------------------   ---------
-Warning 9: Ambiguous block type specification at grid location (1,0). Existing block type 'io' at (1,0) has the same priority (100) as new overlapping type 'gp_inpad'. The last specification will apply.
-Warning 10: Ambiguous block type specification at grid location (3,0). Existing block type 'io' at (3,0) has the same priority (100) as new overlapping type 'gp_inpad'. The last specification will apply.
-Warning 11: Ambiguous block type specification at grid location (2,0). Existing block type 'io' at (2,0) has the same priority (100) as new overlapping type 'gp_outpad'. The last specification will apply.
+Warning 8: Ambiguous block type specification at grid location (0,3). Existing block type 'gp_inpad' at (0,3) has the same priority (101) as new overlapping type 'EMPTY'. The last specification will apply.
+Warning 9: Ambiguous block type specification at grid location (3,3). Existing block type 'gp_outpad' at (3,3) has the same priority (101) as new overlapping type 'EMPTY'. The last specification will apply.
 
 Logic Element (fle) detailed count:
   Total number of Logic Elements used : 1
@@ -216,18 +214,17 @@ Logic Element (fle) detailed count:
   LEs used for logic only             : 1
   LEs used for registers only         : 0
 
-Incr Slack updates 1 in 3.2e-06 sec
-Full Max Req/Worst Slack updates 1 in 1.36e-06 sec
+Incr Slack updates 1 in 3.36e-06 sec
+Full Max Req/Worst Slack updates 1 in 1.4e-06 sec
 Incr Max Req/Worst Slack updates 0 in 0 sec
 Incr Criticality updates 0 in 0 sec
-Full Criticality updates 1 in 1.44e-06 sec
-Warning 12: Ambiguous block type specification at grid location (1,0). Existing block type 'io' at (1,0) has the same priority (100) as new overlapping type 'gp_inpad'. The last specification will apply.
-Warning 13: Ambiguous block type specification at grid location (3,0). Existing block type 'io' at (3,0) has the same priority (100) as new overlapping type 'gp_inpad'. The last specification will apply.
-Warning 14: Ambiguous block type specification at grid location (2,0). Existing block type 'io' at (2,0) has the same priority (100) as new overlapping type 'gp_outpad'. The last specification will apply.
+Full Criticality updates 1 in 1.64e-06 sec
+Warning 10: Ambiguous block type specification at grid location (0,3). Existing block type 'gp_inpad' at (0,3) has the same priority (101) as new overlapping type 'EMPTY'. The last specification will apply.
+Warning 11: Ambiguous block type specification at grid location (3,3). Existing block type 'gp_outpad' at (3,3) has the same priority (101) as new overlapping type 'EMPTY'. The last specification will apply.
 FPGA sized to 4 x 4 (2x2)
 Device Utilization: 0.09 (target 1.00)
-	Block Utilization: 0.25 Type: gp_inpad
-	Block Utilization: 0.12 Type: gp_outpad
+	Block Utilization: 0.12 Type: gp_inpad
+	Block Utilization: 0.06 Type: gp_outpad
 	Block Utilization: 0.25 Type: clb
 
 Start the iterative improvement process
@@ -250,10 +247,10 @@ Netlist conversion complete.
 Begin loading packed FPGA netlist file.
 Netlist generated from file 'and2.net'.
 Detected 0 constant generators (to see names run with higher pack verbosity)
-Finished loading packed FPGA netlist file (took 0.021896 seconds).
-Warning 15: Treated 0 constant nets as global which will not be routed (to see net names increase packer verbosity).
+Finished loading packed FPGA netlist file (took 0.021824 seconds).
+Warning 12: Treated 0 constant nets as global which will not be routed (to see net names increase packer verbosity).
 # Load packing took 0.02 seconds (max_rss 60.2 MiB, delta_rss +38.1 MiB)
-Warning 16: Netlist contains 0 global net to non-global architecture pin connections
+Warning 13: Netlist contains 0 global net to non-global architecture pin connections
 
 Pb types usage...
   gp_inpad       : 2
@@ -269,24 +266,23 @@ Pb types usage...
 
 # Create Device
 ## Build Device Grid
-Warning 17: Ambiguous block type specification at grid location (1,0). Existing block type 'io' at (1,0) has the same priority (100) as new overlapping type 'gp_inpad'. The last specification will apply.
-Warning 18: Ambiguous block type specification at grid location (3,0). Existing block type 'io' at (3,0) has the same priority (100) as new overlapping type 'gp_inpad'. The last specification will apply.
-Warning 19: Ambiguous block type specification at grid location (2,0). Existing block type 'io' at (2,0) has the same priority (100) as new overlapping type 'gp_outpad'. The last specification will apply.
+Warning 14: Ambiguous block type specification at grid location (0,3). Existing block type 'gp_inpad' at (0,3) has the same priority (101) as new overlapping type 'EMPTY'. The last specification will apply.
+Warning 15: Ambiguous block type specification at grid location (3,3). Existing block type 'gp_outpad' at (3,3) has the same priority (101) as new overlapping type 'EMPTY'. The last specification will apply.
 FPGA sized to 4 x 4: 16 grid tiles (2x2)
 
 Resource usage...
 	Netlist
 		0	blocks of type: io
 	Architecture
-		48	blocks of type: io
+		32	blocks of type: io
 	Netlist
 		2	blocks of type: gp_inpad
 	Architecture
-		8	blocks of type: gp_inpad
+		16	blocks of type: gp_inpad
 	Netlist
 		1	blocks of type: gp_outpad
 	Architecture
-		8	blocks of type: gp_outpad
+		16	blocks of type: gp_outpad
 	Netlist
 		1	blocks of type: clb
 	Architecture
@@ -296,41 +292,44 @@ Device Utilization: 0.09 (target 1.00)
 	Physical Tile io:
 	Block Utilization: 0.00 Logical Block: io
 	Physical Tile gp_inpad:
-	Block Utilization: 0.25 Logical Block: gp_inpad
+	Block Utilization: 0.12 Logical Block: gp_inpad
 	Physical Tile gp_outpad:
-	Block Utilization: 0.12 Logical Block: gp_outpad
+	Block Utilization: 0.06 Logical Block: gp_outpad
 	Physical Tile clb:
 	Block Utilization: 0.25 Logical Block: clb
 
 ## Build Device Grid took 0.00 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
-Warning 20: Tileable routing resource graph does not support clock modeling yet! Related options are ignored...
+Warning 16: Tileable routing resource graph does not support clock modeling yet! Related options are ignored...
 ## Build tileable routing resource graph
 X-direction routing channel width is 20
 Y-direction routing channel width is 20
-Warning 21: in check_rr_graph: fringe node 80 IPIN at (0,1) has no fanin.
+Warning 17: in check_rr_graph: fringe node 56 IPIN at (1,0) has no fanin.
 	 This is possible on a fringe node based on low Fc_out, N, and certain lengths.
 ## Build tileable routing resource graph took 0.00 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
-  RR Graph Nodes: 1000
-  RR Graph Edges: 1940
+  RR Graph Nodes: 872
+  RR Graph Edges: 1780
 # Create Device took 0.00 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
 
 # Computing router lookahead map
 ## Computing wire lookahead
 ## Computing wire lookahead took 0.00 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
 ## Computing src/opin lookahead
-Warning 22: Found no more ample locations for SOURCE in io
-Warning 23: Found no more ample locations for OPIN in io
-Warning 24: Found no more ample locations for SOURCE in gp_inpad
-Warning 25: Found no more ample locations for OPIN in gp_inpad
-Warning 26: Found no more ample locations for SOURCE in clb
-Warning 27: Found no more ample locations for OPIN in clb
+Warning 18: Found no more ample locations for SOURCE in io
+Warning 19: Found no more ample locations for OPIN in io
+Warning 20: Found no more ample locations for SOURCE in gp_inpad
+Warning 21: Found no more ample locations for OPIN in gp_inpad
+Warning 22: Found no more ample locations for SOURCE in clb
+Warning 23: Found no more ample locations for OPIN in clb
 ## Computing src/opin lookahead took 0.00 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
 # Computing router lookahead map took 0.00 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
 # Computing placement delta delay look-up
 RR graph channel widths unchanged, skipping RR graph rebuild
 ## Computing delta delays
-Warning 28: Unable to route between blocks at (0,1,0) and (0,1,0) to characterize delay (setting to inf)
-Warning 29: Unable to route between blocks at (0,2,2) and (0,1,0) to characterize delay (setting to inf)
+Warning 24: Unable to route between blocks at (0,0,1) and (0,0,1) to characterize delay (setting to inf)
+Warning 25: Unable to route between blocks at (0,0,1) and (0,0,2) to characterize delay (setting to inf)
+Warning 26: Unable to route between blocks at (0,2,2) and (0,0,1) to characterize delay (setting to inf)
+Warning 27: Unable to route between blocks at (0,2,2) and (0,0,2) to characterize delay (setting to inf)
+Warning 28: Unable to route between blocks at (0,2,2) and (0,0,2) to characterize delay (setting to inf)
 ## Computing delta delays took 0.00 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
 # Computing placement delta delay look-up took 0.00 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
 
@@ -348,35 +347,35 @@ There are 3 point to point connections in this circuit.
 BB estimate of min-dist (placement) wire length: 7
 
 Completed placement consistency check successfully.
-Initial placement cost: 1 bb_cost: 0.35 td_cost: 4.66455e-10
-Initial placement estimated Critical Path Delay (CPD): 0.729184 ns
-Initial placement estimated setup Total Negative Slack (sTNS): -0.729184 ns
-Initial placement estimated setup Worst Negative Slack (sWNS): -0.729184 ns
+Initial placement cost: 1 bb_cost: 0.35 td_cost: 6.21599e-10
+Initial placement estimated Critical Path Delay (CPD): 0.884328 ns
+Initial placement estimated setup Total Negative Slack (sTNS): -0.884328 ns
+Initial placement estimated setup Worst Negative Slack (sWNS): -0.884328 ns
 
 Initial placement estimated setup slack histogram:
-[ -7.3e-10: -7.3e-10) 1 (100.0%) |**************************************************
-[ -7.3e-10: -7.3e-10) 0 (  0.0%) |
-[ -7.3e-10: -7.3e-10) 0 (  0.0%) |
-[ -7.3e-10: -7.3e-10) 0 (  0.0%) |
-[ -7.3e-10: -7.3e-10) 0 (  0.0%) |
-[ -7.3e-10: -7.3e-10) 0 (  0.0%) |
-[ -7.3e-10: -7.3e-10) 0 (  0.0%) |
-[ -7.3e-10: -7.3e-10) 0 (  0.0%) |
-[ -7.3e-10: -7.3e-10) 0 (  0.0%) |
-[ -7.3e-10: -7.3e-10) 0 (  0.0%) |
+[ -8.8e-10: -8.8e-10) 1 (100.0%) |**************************************************
+[ -8.8e-10: -8.8e-10) 0 (  0.0%) |
+[ -8.8e-10: -8.8e-10) 0 (  0.0%) |
+[ -8.8e-10: -8.8e-10) 0 (  0.0%) |
+[ -8.8e-10: -8.8e-10) 0 (  0.0%) |
+[ -8.8e-10: -8.8e-10) 0 (  0.0%) |
+[ -8.8e-10: -8.8e-10) 0 (  0.0%) |
+[ -8.8e-10: -8.8e-10) 0 (  0.0%) |
+[ -8.8e-10: -8.8e-10) 0 (  0.0%) |
+[ -8.8e-10: -8.8e-10) 0 (  0.0%) |
 Placement contains 0 placement macros involving 0 blocks (average macro size nan)
 
 Moves per temperature: 3
-Warning 30: Starting t: 0 of 3 configurations accepted.
+Warning 29: Starting t: 0 of 3 configurations accepted.
 
 ---- ------ ------- ------- ---------- ---------- ------- ---------- -------- ------- ------- ------ -------- --------- ------
 Tnum   Time       T Av Cost Av BB Cost Av TD Cost     CPD       sTNS     sWNS Ac Rate Std Dev  R lim Crit Exp Tot Moves  Alpha
       (sec)                                          (ns)       (ns)     (ns)                                                 
 ---- ------ ------- ------- ---------- ---------- ------- ---------- -------- ------- ------- ------ -------- --------- ------
-   1    0.0 0.0e+00   1.000       0.35 4.6646e-10   0.729     -0.729   -0.729   0.000  0.0000    3.0     1.00         3  0.200
-   2    0.0 0.0e+00   1.000       0.35 4.6646e-10   0.729     -0.729   -0.729   0.000  0.0000    3.0     1.00         6  0.950
+   1    0.0 0.0e+00   1.000       0.35 6.216e-10    0.884     -0.884   -0.884   0.000  0.0000    3.0     1.00         3  0.200
+   2    0.0 0.0e+00   1.000       0.35 6.216e-10    0.884     -0.884   -0.884   0.000  0.0000    3.0     1.00         6  0.950
 ## Placement Quench took 0.00 seconds (max_rss 60.4 MiB)
-post-quench CPD = 0.729184 (ns) 
+post-quench CPD = 0.884328 (ns) 
 
 BB estimate of min-dist (placement) wire length: 7
 
@@ -387,26 +386,26 @@ Swaps called: 9
 Aborted Move Reasons:
   No moves aborted
 
-Placement estimated critical path delay (least slack): 0.729184 ns, Fmax: 1371.4 MHz
-Placement estimated setup Worst Negative Slack (sWNS): -0.729184 ns
-Placement estimated setup Total Negative Slack (sTNS): -0.729184 ns
+Placement estimated critical path delay (least slack): 0.884328 ns, Fmax: 1130.8 MHz
+Placement estimated setup Worst Negative Slack (sWNS): -0.884328 ns
+Placement estimated setup Total Negative Slack (sTNS): -0.884328 ns
 
 Placement estimated setup slack histogram:
-[ -7.3e-10: -7.3e-10) 1 (100.0%) |**************************************************
-[ -7.3e-10: -7.3e-10) 0 (  0.0%) |
-[ -7.3e-10: -7.3e-10) 0 (  0.0%) |
-[ -7.3e-10: -7.3e-10) 0 (  0.0%) |
-[ -7.3e-10: -7.3e-10) 0 (  0.0%) |
-[ -7.3e-10: -7.3e-10) 0 (  0.0%) |
-[ -7.3e-10: -7.3e-10) 0 (  0.0%) |
-[ -7.3e-10: -7.3e-10) 0 (  0.0%) |
-[ -7.3e-10: -7.3e-10) 0 (  0.0%) |
-[ -7.3e-10: -7.3e-10) 0 (  0.0%) |
+[ -8.8e-10: -8.8e-10) 1 (100.0%) |**************************************************
+[ -8.8e-10: -8.8e-10) 0 (  0.0%) |
+[ -8.8e-10: -8.8e-10) 0 (  0.0%) |
+[ -8.8e-10: -8.8e-10) 0 (  0.0%) |
+[ -8.8e-10: -8.8e-10) 0 (  0.0%) |
+[ -8.8e-10: -8.8e-10) 0 (  0.0%) |
+[ -8.8e-10: -8.8e-10) 0 (  0.0%) |
+[ -8.8e-10: -8.8e-10) 0 (  0.0%) |
+[ -8.8e-10: -8.8e-10) 0 (  0.0%) |
+[ -8.8e-10: -8.8e-10) 0 (  0.0%) |
 
 Placement estimated geomean non-virtual intra-domain period: nan ns (nan MHz)
 Placement estimated fanout-weighted geomean non-virtual intra-domain period: nan ns (nan MHz)
 
-Placement cost: 1, bb_cost: 0.35, td_cost: 4.66455e-10, 
+Placement cost: 1, bb_cost: 0.35, td_cost: 6.21599e-10, 
 
 Placement resource usage:
   gp_inpad  implemented as gp_inpad : 2
@@ -434,8 +433,8 @@ gp_outpad          Uniform                11.11            0.00            0.00 
 
 
 
-Placement Quench timing analysis took 4.48e-06 seconds (2.8e-06 STA, 1.68e-06 slack) (1 full updates: 1 setup, 0 hold, 0 combined).
-Placement Total  timing analysis took 4.58e-05 seconds (3.328e-05 STA, 1.252e-05 slack) (4 full updates: 4 setup, 0 hold, 0 combined).
+Placement Quench timing analysis took 4.44e-06 seconds (2.76e-06 STA, 1.68e-06 slack) (1 full updates: 1 setup, 0 hold, 0 combined).
+Placement Total  timing analysis took 4.808e-05 seconds (3.408e-05 STA, 1.4e-05 slack) (4 full updates: 4 setup, 0 hold, 0 combined).
 update_td_costs: connections 0 nets 0 sum_nets 0 total 0
 # Placement took 0.00 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
 
@@ -458,14 +457,14 @@ Initial Net Connection Criticality Histogram:
 Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wirelength      CPD       sTNS       sWNS       hTNS       hWNS Est Succ
       (sec)     fac Updt    push    Nets   Conns                                       (ns)       (ns)       (ns)       (ns)       (ns)     Iter
 ---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
-   1    0.0     0.0    0      46       3       3       0 ( 0.000%)       8 ( 3.3%)    0.978    -0.9780     -0.978      0.000      0.000      N/A
-Incr Slack updates 4 in 3.88e-06 sec
-Full Max Req/Worst Slack updates 1 in 1.36e-06 sec
-Incr Max Req/Worst Slack updates 3 in 1.44e-06 sec
-Incr Criticality updates 3 in 1.88e-06 sec
-Full Criticality updates 1 in 1.72e-06 sec
+   1    0.0     0.0    0      55       3       3       0 ( 0.000%)      10 ( 4.2%)    1.072     -1.072     -1.072      0.000      0.000      N/A
+Incr Slack updates 4 in 4.12e-06 sec
+Full Max Req/Worst Slack updates 1 in 1.76e-06 sec
+Incr Max Req/Worst Slack updates 3 in 1.76e-06 sec
+Incr Criticality updates 3 in 1.92e-06 sec
+Full Criticality updates 1 in 1.88e-06 sec
 Restoring best routing
-Critical path: 0.978007 ns
+Critical path: 1.07183 ns
 Successfully routed after 1 routing iterations.
 Final Net Connection Criticality Histogram:
 [        0:      0.1) 0 (  0.0%) |
@@ -478,7 +477,7 @@ Final Net Connection Criticality Histogram:
 [      0.7:      0.8) 0 (  0.0%) |
 [      0.8:      0.9) 0 (  0.0%) |
 [      0.9:        1) 3 (100.0%) |*************************************************
-Router Stats: total_nets_routed: 3 total_connections_routed: 3 total_heap_pushes: 46 total_heap_pops: 32 
+Router Stats: total_nets_routed: 3 total_connections_routed: 3 total_heap_pushes: 55 total_heap_pops: 36 
 # Routing took 0.00 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
 
 Checking to ensure routing is legal...
@@ -486,7 +485,7 @@ Checking to ensure routing is legal...
 # Checking to ensure non-configurable edges are legal took 0.00 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
 Completed routing consistency check successfully.
 
-Serial number (magic cookie) for the routing is: -13834
+Serial number (magic cookie) for the routing is: -15673
 Circuit successfully routed with a channel width factor of 20.
 # Synchronize the packed netlist to routing optimization
 ## Annotating rr_node with routed nets
@@ -506,17 +505,17 @@ Block Type   # Blocks   Avg. # of input clocks and pins used   Avg. # of output 
 Absorbed logical nets 0 out of 3 nets, 3 nets not absorbed.
 
 
-Average number of bends per net: 1.00000  Maximum # of bends: 3
+Average number of bends per net: 1.33333  Maximum # of bends: 4
 
 Number of global nets: 0
 Number of routed nets (nonglobal): 3
 Wire length results (in units of 1 clb segments)...
-	Total wirelength: 8, average net length: 2.66667
-	Maximum net length: 6
+	Total wirelength: 10, average net length: 3.33333
+	Maximum net length: 8
 
 Wire length results in terms of physical segments...
-	Total wiring segments used: 6, average wire segments per net: 2.00000
-	Maximum segments used by a net: 4
+	Total wiring segments used: 7, average wire segments per net: 2.33333
+	Maximum segments used by a net: 5
 	Total local nets with reserved CLB opins: 0
 Total number of nets absorbed: 0
 
@@ -531,18 +530,18 @@ Routing channel utilization histogram:
 [      0.2:      0.3)  0 (  0.0%) |
 [      0.1:      0.2)  0 (  0.0%) |
 [        0:      0.1) 18 (100.0%) |************************************************
-Maximum routing channel utilization:       0.1 at (1,0)
+Maximum routing channel utilization:      0.05 at (1,1)
 
 X - Directed channels:   j max occ ave occ capacity
                       ---- ------- ------- --------
-                         0       2   0.750       20
+                         0       1   0.250       20
                          1       1   0.500       20
                          2       0   0.000       20
 Y - Directed channels:   i max occ ave occ capacity
                       ---- ------- ------- --------
-                         0       1   0.500       20
+                         0       3   1.000       20
                          1       1   0.250       20
-                         2       0   0.000       20
+                         2       1   0.500       20
 
 Total tracks in x-direction: 60, in y-direction: 60
 
@@ -551,7 +550,7 @@ Logic area (in minimum width transistor areas, excludes I/Os and empty grid tile
 	Total used logic block area: 53894
 
 Routing area (in minimum width transistor areas)...
-	Total routing area: 12402.8, per logic tile: 775.176
+	Total routing area: 12066.9, per logic tile: 754.183
 
 Total Number of Wiring Segments by Direction: direction length number
                                               --------- ------ -------
@@ -560,60 +559,60 @@ Total Number of Wiring Segments by Direction: direction length number
 
 X - Directed Wiring Segment usage by length: length utilization
                                              ------ -----------
-                                             4      0.0513
+                                             4      0.0256
 
 Y - Directed Wiring Segment usage by length: length utilization
                                              ------ -----------
-                                             4      0.0256
+                                             4      0.0641
 
 Segment occupancy by length: Length utilization
                              ------ -----------
-                             L4          0.0385
+                             L4          0.0449
 
 Segment occupancy by type: name type utilization
                            ---- ---- -----------
-                             L4    0      0.0385
+                             L4    0      0.0449
 
 Final hold Worst Negative Slack (hWNS): 0 ns
 Final hold Total Negative Slack (hTNS): 0 ns
 
 Final hold slack histogram:
-[    8e-10:    8e-10) 1 (100.0%) |**************************************************
-[    8e-10:    8e-10) 0 (  0.0%) |
-[    8e-10:    8e-10) 0 (  0.0%) |
-[    8e-10:    8e-10) 0 (  0.0%) |
-[    8e-10:    8e-10) 0 (  0.0%) |
-[    8e-10:    8e-10) 0 (  0.0%) |
-[    8e-10:    8e-10) 0 (  0.0%) |
-[    8e-10:    8e-10) 0 (  0.0%) |
-[    8e-10:    8e-10) 0 (  0.0%) |
-[    8e-10:    8e-10) 0 (  0.0%) |
+[  8.9e-10:  8.9e-10) 1 (100.0%) |**************************************************
+[  8.9e-10:  8.9e-10) 0 (  0.0%) |
+[  8.9e-10:  8.9e-10) 0 (  0.0%) |
+[  8.9e-10:  8.9e-10) 0 (  0.0%) |
+[  8.9e-10:  8.9e-10) 0 (  0.0%) |
+[  8.9e-10:  8.9e-10) 0 (  0.0%) |
+[  8.9e-10:  8.9e-10) 0 (  0.0%) |
+[  8.9e-10:  8.9e-10) 0 (  0.0%) |
+[  8.9e-10:  8.9e-10) 0 (  0.0%) |
+[  8.9e-10:  8.9e-10) 0 (  0.0%) |
 
-Final critical path delay (least slack): 0.978007 ns, Fmax: 1022.49 MHz
-Final setup Worst Negative Slack (sWNS): -0.978007 ns
-Final setup Total Negative Slack (sTNS): -0.978007 ns
+Final critical path delay (least slack): 1.07183 ns, Fmax: 932.98 MHz
+Final setup Worst Negative Slack (sWNS): -1.07183 ns
+Final setup Total Negative Slack (sTNS): -1.07183 ns
 
 Final setup slack histogram:
-[ -9.8e-10: -9.8e-10) 1 (100.0%) |**************************************************
-[ -9.8e-10: -9.8e-10) 0 (  0.0%) |
-[ -9.8e-10: -9.8e-10) 0 (  0.0%) |
-[ -9.8e-10: -9.8e-10) 0 (  0.0%) |
-[ -9.8e-10: -9.8e-10) 0 (  0.0%) |
-[ -9.8e-10: -9.8e-10) 0 (  0.0%) |
-[ -9.8e-10: -9.8e-10) 0 (  0.0%) |
-[ -9.8e-10: -9.8e-10) 0 (  0.0%) |
-[ -9.8e-10: -9.8e-10) 0 (  0.0%) |
-[ -9.8e-10: -9.8e-10) 0 (  0.0%) |
+[ -1.1e-09: -1.1e-09) 1 (100.0%) |**************************************************
+[ -1.1e-09: -1.1e-09) 0 (  0.0%) |
+[ -1.1e-09: -1.1e-09) 0 (  0.0%) |
+[ -1.1e-09: -1.1e-09) 0 (  0.0%) |
+[ -1.1e-09: -1.1e-09) 0 (  0.0%) |
+[ -1.1e-09: -1.1e-09) 0 (  0.0%) |
+[ -1.1e-09: -1.1e-09) 0 (  0.0%) |
+[ -1.1e-09: -1.1e-09) 0 (  0.0%) |
+[ -1.1e-09: -1.1e-09) 0 (  0.0%) |
+[ -1.1e-09: -1.1e-09) 0 (  0.0%) |
 
 Final geomean non-virtual intra-domain period: nan ns (nan MHz)
 Final fanout-weighted geomean non-virtual intra-domain period: nan ns (nan MHz)
 
-Incr Slack updates 1 in 3.08e-06 sec
-Full Max Req/Worst Slack updates 1 in 9.6e-07 sec
+Incr Slack updates 1 in 3.04e-06 sec
+Full Max Req/Worst Slack updates 1 in 9.2e-07 sec
 Incr Max Req/Worst Slack updates 0 in 0 sec
 Incr Criticality updates 0 in 0 sec
-Full Criticality updates 1 in 1.16e-06 sec
-Flow timing analysis took 0.000138481 seconds (0.000103761 STA, 3.472e-05 slack) (8 full updates: 5 setup, 0 hold, 3 combined).
+Full Criticality updates 1 in 1.2e-06 sec
+Flow timing analysis took 0.0001424 seconds (0.00010652 STA, 3.588e-05 slack) (8 full updates: 5 setup, 0 hold, 3 combined).
 VPR succeeded
 The entire flow of VPR took 0.09 seconds (max_rss 60.4 MiB)
 
@@ -623,9 +622,9 @@ Confirm selected options when call command 'read_openfpga_arch':
 --file, -f: /home/ubuntu/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/synthesizable_verilog/run001/k6_frac_N10_tileable_I_O_IO_40nm/and2/MIN_ROUTE_CHAN_WIDTH/arch/k6_frac_N10_stdcell_mux_40nm_openfpga_synthesizable2.xml
 Reading XML architecture '/home/ubuntu/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/synthesizable_verilog/run001/k6_frac_N10_tileable_I_O_IO_40nm/and2/MIN_ROUTE_CHAN_WIDTH/arch/k6_frac_N10_stdcell_mux_40nm_openfpga_synthesizable2.xml'...
 Read OpenFPGA architecture
-Warning 31: Automatically set circuit model 'frac_lut6' to be default in its type.
-Warning 32: Automatically set circuit model 'dffsrq' to be default in its type.
-Warning 33: Automatically set circuit model 'dffr' to be default in its type.
+Warning 30: Automatically set circuit model 'frac_lut6' to be default in its type.
+Warning 31: Automatically set circuit model 'dffsrq' to be default in its type.
+Warning 32: Automatically set circuit model 'dffr' to be default in its type.
 Use the default configurable memory model 'dffr' for circuit model 'mux_tree' port 'sram')
 Use the default configurable memory model 'dffr' for circuit model 'mux_tree_tapbuf' port 'sram')
 Use the default configurable memory model 'dffr' for circuit model 'frac_lut6' port 'sram')
@@ -677,9 +676,9 @@ Binded 0 direct connections to circuit models
 # Annotating rr_node with routed nets
 # Annotating rr_node with routed nets took 0.00 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
 Loaded node-to-net mapping
-Annotating previous nodes for rr_node...Warning 34: Override the previous node 'IPIN:175 side: (BOTTOM,) (1,1,0)' by previous node 'IPIN:178 side: (BOTTOM,) (1,1,0)' for node 'SINK:132  (1,1,0)' with in routing context annotation!
-Done with 15 nodes mapping
-Built 1940 incoming edges for routing resource graph
+Annotating previous nodes for rr_node...Warning 33: Override the previous node 'IPIN:249 side: (LEFT,) (1,1,0)' by previous node 'IPIN:252 side: (LEFT,) (1,1,0)' for node 'SINK:196  (1,1,0)' with in routing context annotation!
+Done with 16 nodes mapping
+Built 1780 incoming edges for routing resource graph
 # Build General Switch Block(GSB) annotation on top of routing resource graph
 [11%] Backannotated GSB[0][0][22%] Backannotated GSB[0][1][33%] Backannotated GSB[0][2][44%] Backannotated GSB[1][0][55%] Backannotated GSB[1][1][66%] Backannotated GSB[1][2][77%] Backannotated GSB[2][0][88%] Backannotated GSB[2][1][100%] Backannotated GSB[2][2]Backannotated 9 General Switch Blocks (GSBs).
 # Build General Switch Block(GSB) annotation on top of routing resource graph took 0.00 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
@@ -697,10 +696,10 @@ Maximum multiplexer size is 64.
 	model 'mux_tree_tapbuf', input_size='4'
 	model 'mux_tree_tapbuf', input_size='10'
 	model 'mux_tree_tapbuf', input_size='8'
+	model 'mux_tree_tapbuf', input_size='9'
+	model 'mux_tree_tapbuf', input_size='13'
 	model 'mux_tree_tapbuf', input_size='6'
 	model 'mux_tree_tapbuf', input_size='7'
-	model 'mux_tree_tapbuf', input_size='13'
-	model 'mux_tree_tapbuf', input_size='9'
 	model 'mux_tree', input_size='61'
 	model 'mux_tree', input_size='3'
 	model 'frac_lut6', input_size='64'
@@ -711,13 +710,13 @@ Built 0 tile-to-tile direct connections
 Building annotation for post-routing and clustering synchornization results...Done
 Building annotation for mapped blocks on grid locations...Done
 User specified the operating clock frequency to use VPR results
-Use VPR critical path delay 1.17361e-18 [ns] with a 20 [%] slack in OpenFPGA.
-Incr Slack updates 1 in 2.76e-06 sec
-Full Max Req/Worst Slack updates 1 in 3.6e-06 sec
+Use VPR critical path delay 1.2862e-18 [ns] with a 20 [%] slack in OpenFPGA.
+Incr Slack updates 1 in 2.48e-06 sec
+Full Max Req/Worst Slack updates 1 in 1.16e-06 sec
 Incr Max Req/Worst Slack updates 0 in 0 sec
 Incr Criticality updates 0 in 0 sec
-Full Criticality updates 1 in 1.44e-06 sec
-Will apply operating clock frequency 852.073 [MHz] to simulations
+Full Criticality updates 1 in 1.12e-06 sec
+Will apply operating clock frequency 777.484 [MHz] to simulations
 User specified the number of operating clock cycles to be inferred from signal activities
 Average net density: 0.42
 Median net density: 0.00
@@ -816,7 +815,7 @@ Confirm selected options when call command 'write_fabric_hierarchy':
 --depth: off
 --exclude_empty_modules: off
 --verbose: off
-Warning 35: Directory '.' already exists. Will overwrite contents
+Warning 34: Directory '.' already exists. Will overwrite contents
 Write fabric hierarchy to plain-text file './fabric_hierarchy.txt'
 Outputted 1 modules as root
 Write fabric hierarchy to plain-text file './fabric_hierarchy.txt' took 0.00 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
@@ -851,8 +850,8 @@ Confirm selected options when call command 'build_architecture_bitstream':
 
 Build fabric-independent bitstream for implementation 'and2'
 
-Reserved 1104 configurable blocks
-Reserved 5265 configuration bits
+Reserved 1041 configurable blocks
+Reserved 5214 configuration bits
 Building grid bitstream...
 Generating bitstream for core grids...Added 65 bits to 'frac_lut6_dffr_mem' under 'logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6_0'
 Added 2 bits to 'mem_frac_logic_out_0' under 'logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0'
@@ -1287,956 +1286,958 @@ Added 1 bits to 'GPIO_dffr_mem' under 'logical_tile_io_mode_physical__iopad_0'
 Added 1 bits to 'GPIO_dffr_mem' under 'logical_tile_io_mode_physical__iopad_0'
 Added 1 bits to 'GPIO_dffr_mem' under 'logical_tile_io_mode_physical__iopad_0'
 Added 1 bits to 'GPIO_dffr_mem' under 'logical_tile_io_mode_physical__iopad_0'
-Added 1 bits to 'GPIO_dffr_mem' under 'logical_tile_io_mode_physical__iopad_0'
-Added 1 bits to 'GPIO_dffr_mem' under 'logical_tile_io_mode_physical__iopad_0'
-Added 1 bits to 'GPIO_dffr_mem' under 'logical_tile_io_mode_physical__iopad_0'
-Added 1 bits to 'GPIO_dffr_mem' under 'logical_tile_io_mode_physical__iopad_0'
-Added 1 bits to 'GPIO_dffr_mem' under 'logical_tile_io_mode_physical__iopad_0'
-Added 1 bits to 'GPIO_dffr_mem' under 'logical_tile_io_mode_physical__iopad_0'
-Added 1 bits to 'GPIO_dffr_mem' under 'logical_tile_io_mode_physical__iopad_0'
-Added 1 bits to 'GPIO_dffr_mem' under 'logical_tile_io_mode_physical__iopad_0'
-Added 1 bits to 'GPIO_dffr_mem' under 'logical_tile_io_mode_physical__iopad_0'
-Added 1 bits to 'GPIO_dffr_mem' under 'logical_tile_io_mode_physical__iopad_0'
-Added 1 bits to 'GPIO_dffr_mem' under 'logical_tile_io_mode_physical__iopad_0'
-Added 1 bits to 'GPIO_dffr_mem' under 'logical_tile_io_mode_physical__iopad_0'
-Added 1 bits to 'GPIO_dffr_mem' under 'logical_tile_io_mode_physical__iopad_0'
-Added 1 bits to 'GPIO_dffr_mem' under 'logical_tile_io_mode_physical__iopad_0'
-Added 1 bits to 'GPIO_dffr_mem' under 'logical_tile_io_mode_physical__iopad_0'
-Added 1 bits to 'GPIO_dffr_mem' under 'logical_tile_io_mode_physical__iopad_0'
 Done
 Done
 Building routing bitstream...
 Generating bitstream for Switch blocks...
 	Generating bitstream for Switch blocks[0][0]...
 Added 'mem_top_track_0' under 'sb_0__0_'
-Prev node '4294967295' for src_node '922'
+Prev node '4294967295' for src_node '794'
 Added 2 bits to 'mem_top_track_0' under 'sb_0__0_'
 Added 'mem_top_track_2' under 'sb_0__0_'
-Prev node '4294967295' for src_node '924'
+Prev node '4294967295' for src_node '796'
 Added 2 bits to 'mem_top_track_2' under 'sb_0__0_'
 Added 'mem_top_track_4' under 'sb_0__0_'
-Prev node '153' for src_node '926'
-Path: 0 -> Driver node '58' for src_node '926'
-Path: 1 -> Driver node '153' for src_node '926'
+Prev node '217' for src_node '798'
+Path: 0 -> Driver node '170' for src_node '798'
+Path: 1 -> Driver node '217' for src_node '798'
 Added 2 bits to 'mem_top_track_4' under 'sb_0__0_'
 Added 'mem_top_track_6' under 'sb_0__0_'
-Prev node '4294967295' for src_node '928'
+Prev node '4294967295' for src_node '800'
 Added 2 bits to 'mem_top_track_6' under 'sb_0__0_'
 Added 'mem_top_track_8' under 'sb_0__0_'
-Prev node '4294967295' for src_node '930'
+Prev node '4294967295' for src_node '802'
 Added 2 bits to 'mem_top_track_8' under 'sb_0__0_'
 Added 'mem_top_track_10' under 'sb_0__0_'
-Prev node '4294967295' for src_node '932'
+Prev node '4294967295' for src_node '804'
 Added 2 bits to 'mem_top_track_10' under 'sb_0__0_'
 Added 'mem_top_track_12' under 'sb_0__0_'
-Prev node '4294967295' for src_node '934'
+Prev node '4294967295' for src_node '806'
 Added 2 bits to 'mem_top_track_12' under 'sb_0__0_'
 Added 'mem_top_track_14' under 'sb_0__0_'
-Prev node '4294967295' for src_node '936'
+Prev node '4294967295' for src_node '808'
 Added 2 bits to 'mem_top_track_14' under 'sb_0__0_'
 Added 'mem_top_track_16' under 'sb_0__0_'
-Prev node '4294967295' for src_node '938'
+Prev node '4294967295' for src_node '810'
 Added 2 bits to 'mem_top_track_16' under 'sb_0__0_'
 Added 'mem_top_track_18' under 'sb_0__0_'
-Prev node '4294967295' for src_node '940'
+Prev node '4294967295' for src_node '812'
 Added 2 bits to 'mem_top_track_18' under 'sb_0__0_'
 Added 'mem_right_track_0' under 'sb_0__0_'
-Prev node '4294967295' for src_node '844'
+Prev node '4294967295' for src_node '716'
 Added 2 bits to 'mem_right_track_0' under 'sb_0__0_'
 Added 'mem_right_track_2' under 'sb_0__0_'
-Prev node '4294967295' for src_node '846'
+Prev node '4294967295' for src_node '718'
 Added 2 bits to 'mem_right_track_2' under 'sb_0__0_'
 Added 'mem_right_track_4' under 'sb_0__0_'
-Prev node '4294967295' for src_node '848'
+Prev node '4294967295' for src_node '720'
 Added 2 bits to 'mem_right_track_4' under 'sb_0__0_'
 Added 'mem_right_track_6' under 'sb_0__0_'
-Prev node '4294967295' for src_node '850'
+Prev node '4294967295' for src_node '722'
 Added 2 bits to 'mem_right_track_6' under 'sb_0__0_'
 Added 'mem_right_track_8' under 'sb_0__0_'
-Prev node '4294967295' for src_node '852'
+Prev node '4294967295' for src_node '724'
 Added 2 bits to 'mem_right_track_8' under 'sb_0__0_'
 Added 'mem_right_track_10' under 'sb_0__0_'
-Prev node '4294967295' for src_node '854'
+Prev node '4294967295' for src_node '726'
 Added 2 bits to 'mem_right_track_10' under 'sb_0__0_'
 Added 'mem_right_track_12' under 'sb_0__0_'
-Prev node '4294967295' for src_node '856'
+Prev node '4294967295' for src_node '728'
 Added 2 bits to 'mem_right_track_12' under 'sb_0__0_'
 Added 'mem_right_track_14' under 'sb_0__0_'
-Prev node '4294967295' for src_node '858'
+Prev node '4294967295' for src_node '730'
 Added 2 bits to 'mem_right_track_14' under 'sb_0__0_'
 Added 'mem_right_track_16' under 'sb_0__0_'
-Prev node '4294967295' for src_node '860'
+Prev node '4294967295' for src_node '732'
 Added 2 bits to 'mem_right_track_16' under 'sb_0__0_'
 Added 'mem_right_track_18' under 'sb_0__0_'
-Prev node '4294967295' for src_node '862'
+Prev node '4294967295' for src_node '734'
 Added 2 bits to 'mem_right_track_18' under 'sb_0__0_'
 	Done
 
 	Generating bitstream for Switch blocks[0][1]...
 Added 'mem_top_track_0' under 'sb_0__1_'
-Prev node '4294967295' for src_node '942'
+Prev node '4294967295' for src_node '814'
 Added 4 bits to 'mem_top_track_0' under 'sb_0__1_'
 Added 'mem_top_track_8' under 'sb_0__1_'
-Prev node '4294967295' for src_node '944'
+Prev node '4294967295' for src_node '816'
 Added 3 bits to 'mem_top_track_8' under 'sb_0__1_'
 Added 'mem_top_track_16' under 'sb_0__1_'
-Prev node '4294967295' for src_node '946'
+Prev node '4294967295' for src_node '818'
 Added 4 bits to 'mem_top_track_16' under 'sb_0__1_'
 Added 'mem_right_track_0' under 'sb_0__1_'
-Prev node '4294967295' for src_node '870'
+Prev node '4294967295' for src_node '742'
 Added 2 bits to 'mem_right_track_0' under 'sb_0__1_'
 Added 'mem_right_track_2' under 'sb_0__1_'
-Prev node '4294967295' for src_node '872'
+Prev node '4294967295' for src_node '744'
 Added 3 bits to 'mem_right_track_2' under 'sb_0__1_'
 Added 'mem_right_track_4' under 'sb_0__1_'
-Prev node '926' for src_node '874'
-Path: 0 -> Driver node '929' for src_node '874'
-Path: 1 -> Driver node '945' for src_node '874'
-Path: 2 -> Driver node '472' for src_node '874'
-Path: 3 -> Driver node '926' for src_node '874'
+Prev node '798' for src_node '746'
+Path: 0 -> Driver node '801' for src_node '746'
+Path: 1 -> Driver node '817' for src_node '746'
+Path: 2 -> Driver node '408' for src_node '746'
+Path: 3 -> Driver node '798' for src_node '746'
 Added 3 bits to 'mem_right_track_4' under 'sb_0__1_'
 Added 'mem_right_track_6' under 'sb_0__1_'
-Prev node '4294967295' for src_node '876'
+Prev node '4294967295' for src_node '748'
 Added 3 bits to 'mem_right_track_6' under 'sb_0__1_'
 Added 'mem_right_track_8' under 'sb_0__1_'
-Prev node '4294967295' for src_node '878'
+Prev node '4294967295' for src_node '750'
 Added 2 bits to 'mem_right_track_8' under 'sb_0__1_'
 Added 'mem_right_track_10' under 'sb_0__1_'
-Prev node '4294967295' for src_node '880'
+Prev node '4294967295' for src_node '752'
 Added 2 bits to 'mem_right_track_10' under 'sb_0__1_'
 Added 'mem_right_track_12' under 'sb_0__1_'
-Prev node '4294967295' for src_node '882'
+Prev node '4294967295' for src_node '754'
 Added 3 bits to 'mem_right_track_12' under 'sb_0__1_'
 Added 'mem_right_track_14' under 'sb_0__1_'
-Prev node '4294967295' for src_node '884'
+Prev node '4294967295' for src_node '756'
 Added 2 bits to 'mem_right_track_14' under 'sb_0__1_'
 Added 'mem_right_track_16' under 'sb_0__1_'
-Prev node '4294967295' for src_node '886'
+Prev node '4294967295' for src_node '758'
 Added 2 bits to 'mem_right_track_16' under 'sb_0__1_'
 Added 'mem_bottom_track_1' under 'sb_0__1_'
-Prev node '4294967295' for src_node '923'
+Prev node '169' for src_node '795'
+Path: 0 -> Driver node '745' for src_node '795'
+Path: 1 -> Driver node '751' for src_node '795'
+Path: 2 -> Driver node '757' for src_node '795'
+Path: 3 -> Driver node '213' for src_node '795'
+Path: 4 -> Driver node '216' for src_node '795'
+Path: 5 -> Driver node '169' for src_node '795'
 Added 4 bits to 'mem_bottom_track_1' under 'sb_0__1_'
 Added 'mem_bottom_track_9' under 'sb_0__1_'
-Prev node '4294967295' for src_node '931'
+Prev node '4294967295' for src_node '803'
 Added 4 bits to 'mem_bottom_track_9' under 'sb_0__1_'
 Added 'mem_bottom_track_17' under 'sb_0__1_'
-Prev node '4294967295' for src_node '939'
+Prev node '168' for src_node '811'
+Path: 0 -> Driver node '747' for src_node '811'
+Path: 1 -> Driver node '753' for src_node '811'
+Path: 2 -> Driver node '759' for src_node '811'
+Path: 3 -> Driver node '215' for src_node '811'
+Path: 4 -> Driver node '168' for src_node '811'
 Added 3 bits to 'mem_bottom_track_17' under 'sb_0__1_'
 	Done
 
 	Generating bitstream for Switch blocks[0][2]...
 Added 'mem_right_track_0' under 'sb_0__2_'
-Prev node '4294967295' for src_node '896'
+Prev node '4294967295' for src_node '768'
 Added 2 bits to 'mem_right_track_0' under 'sb_0__2_'
 Added 'mem_right_track_2' under 'sb_0__2_'
-Prev node '4294967295' for src_node '898'
+Prev node '4294967295' for src_node '770'
 Added 2 bits to 'mem_right_track_2' under 'sb_0__2_'
 Added 'mem_right_track_4' under 'sb_0__2_'
-Prev node '4294967295' for src_node '900'
+Prev node '4294967295' for src_node '772'
 Added 2 bits to 'mem_right_track_4' under 'sb_0__2_'
 Added 'mem_right_track_6' under 'sb_0__2_'
-Prev node '4294967295' for src_node '902'
+Prev node '4294967295' for src_node '774'
 Added 2 bits to 'mem_right_track_6' under 'sb_0__2_'
 Added 'mem_right_track_8' under 'sb_0__2_'
-Prev node '4294967295' for src_node '904'
+Prev node '4294967295' for src_node '776'
 Added 2 bits to 'mem_right_track_8' under 'sb_0__2_'
 Added 'mem_right_track_10' under 'sb_0__2_'
-Prev node '4294967295' for src_node '906'
+Prev node '4294967295' for src_node '778'
 Added 2 bits to 'mem_right_track_10' under 'sb_0__2_'
 Added 'mem_right_track_12' under 'sb_0__2_'
-Prev node '4294967295' for src_node '908'
+Prev node '4294967295' for src_node '780'
 Added 2 bits to 'mem_right_track_12' under 'sb_0__2_'
 Added 'mem_right_track_14' under 'sb_0__2_'
-Prev node '4294967295' for src_node '910'
+Prev node '4294967295' for src_node '782'
 Added 2 bits to 'mem_right_track_14' under 'sb_0__2_'
 Added 'mem_right_track_16' under 'sb_0__2_'
-Prev node '4294967295' for src_node '912'
+Prev node '4294967295' for src_node '784'
 Added 2 bits to 'mem_right_track_16' under 'sb_0__2_'
 Added 'mem_right_track_18' under 'sb_0__2_'
-Prev node '4294967295' for src_node '914'
+Prev node '4294967295' for src_node '786'
 Added 2 bits to 'mem_right_track_18' under 'sb_0__2_'
 Added 'mem_bottom_track_1' under 'sb_0__2_'
-Prev node '4294967295' for src_node '925'
+Prev node '4294967295' for src_node '797'
 Added 2 bits to 'mem_bottom_track_1' under 'sb_0__2_'
 Added 'mem_bottom_track_3' under 'sb_0__2_'
-Prev node '4294967295' for src_node '927'
+Prev node '4294967295' for src_node '799'
 Added 2 bits to 'mem_bottom_track_3' under 'sb_0__2_'
 Added 'mem_bottom_track_5' under 'sb_0__2_'
-Prev node '4294967295' for src_node '929'
+Prev node '4294967295' for src_node '801'
 Added 2 bits to 'mem_bottom_track_5' under 'sb_0__2_'
 Added 'mem_bottom_track_7' under 'sb_0__2_'
-Prev node '4294967295' for src_node '943'
+Prev node '4294967295' for src_node '815'
 Added 2 bits to 'mem_bottom_track_7' under 'sb_0__2_'
 Added 'mem_bottom_track_9' under 'sb_0__2_'
-Prev node '4294967295' for src_node '933'
+Prev node '4294967295' for src_node '805'
 Added 2 bits to 'mem_bottom_track_9' under 'sb_0__2_'
 Added 'mem_bottom_track_11' under 'sb_0__2_'
-Prev node '4294967295' for src_node '935'
+Prev node '4294967295' for src_node '807'
 Added 2 bits to 'mem_bottom_track_11' under 'sb_0__2_'
 Added 'mem_bottom_track_13' under 'sb_0__2_'
-Prev node '4294967295' for src_node '937'
+Prev node '4294967295' for src_node '809'
 Added 2 bits to 'mem_bottom_track_13' under 'sb_0__2_'
 Added 'mem_bottom_track_15' under 'sb_0__2_'
-Prev node '4294967295' for src_node '945'
+Prev node '4294967295' for src_node '817'
 Added 2 bits to 'mem_bottom_track_15' under 'sb_0__2_'
 Added 'mem_bottom_track_17' under 'sb_0__2_'
-Prev node '4294967295' for src_node '941'
+Prev node '4294967295' for src_node '813'
 Added 2 bits to 'mem_bottom_track_17' under 'sb_0__2_'
 Added 'mem_bottom_track_19' under 'sb_0__2_'
-Prev node '4294967295' for src_node '947'
+Prev node '4294967295' for src_node '819'
 Added 2 bits to 'mem_bottom_track_19' under 'sb_0__2_'
 	Done
 
 	Generating bitstream for Switch blocks[1][0]...
 Added 'mem_top_track_0' under 'sb_1__0_'
-Prev node '4294967295' for src_node '948'
+Prev node '4294967295' for src_node '820'
 Added 3 bits to 'mem_top_track_0' under 'sb_1__0_'
 Added 'mem_top_track_2' under 'sb_1__0_'
-Prev node '4294967295' for src_node '950'
+Prev node '4294967295' for src_node '822'
 Added 3 bits to 'mem_top_track_2' under 'sb_1__0_'
 Added 'mem_top_track_4' under 'sb_1__0_'
-Prev node '4294967295' for src_node '952'
+Prev node '4294967295' for src_node '824'
 Added 2 bits to 'mem_top_track_4' under 'sb_1__0_'
 Added 'mem_top_track_6' under 'sb_1__0_'
-Prev node '4294967295' for src_node '954'
+Prev node '4294967295' for src_node '826'
 Added 2 bits to 'mem_top_track_6' under 'sb_1__0_'
 Added 'mem_top_track_8' under 'sb_1__0_'
-Prev node '4294967295' for src_node '956'
+Prev node '4294967295' for src_node '828'
 Added 2 bits to 'mem_top_track_8' under 'sb_1__0_'
 Added 'mem_top_track_10' under 'sb_1__0_'
-Prev node '4294967295' for src_node '958'
+Prev node '4294967295' for src_node '830'
 Added 2 bits to 'mem_top_track_10' under 'sb_1__0_'
 Added 'mem_top_track_12' under 'sb_1__0_'
-Prev node '4294967295' for src_node '960'
+Prev node '4294967295' for src_node '832'
 Added 2 bits to 'mem_top_track_12' under 'sb_1__0_'
 Added 'mem_top_track_16' under 'sb_1__0_'
-Prev node '4294967295' for src_node '964'
+Prev node '4294967295' for src_node '836'
 Added 2 bits to 'mem_top_track_16' under 'sb_1__0_'
 Added 'mem_top_track_18' under 'sb_1__0_'
-Prev node '4294967295' for src_node '966'
+Prev node '4294967295' for src_node '838'
 Added 2 bits to 'mem_top_track_18' under 'sb_1__0_'
 Added 'mem_right_track_0' under 'sb_1__0_'
-Prev node '965' for src_node '864'
-Path: 0 -> Driver node '953' for src_node '864'
-Path: 1 -> Driver node '959' for src_node '864'
-Path: 2 -> Driver node '965' for src_node '864'
-Added 3 bits to 'mem_right_track_0' under 'sb_1__0_'
+Prev node '837' for src_node '736'
+Path: 0 -> Driver node '825' for src_node '736'
+Path: 1 -> Driver node '831' for src_node '736'
+Path: 2 -> Driver node '837' for src_node '736'
+Added 4 bits to 'mem_right_track_0' under 'sb_1__0_'
 Added 'mem_right_track_8' under 'sb_1__0_'
-Prev node '4294967295' for src_node '866'
-Added 3 bits to 'mem_right_track_8' under 'sb_1__0_'
+Prev node '4294967295' for src_node '738'
+Added 4 bits to 'mem_right_track_8' under 'sb_1__0_'
 Added 'mem_right_track_16' under 'sb_1__0_'
-Prev node '4294967295' for src_node '868'
+Prev node '4294967295' for src_node '740'
 Added 3 bits to 'mem_right_track_16' under 'sb_1__0_'
 Added 'mem_left_track_1' under 'sb_1__0_'
-Prev node '9' for src_node '845'
-Path: 0 -> Driver node '949' for src_node '845'
-Path: 1 -> Driver node '955' for src_node '845'
-Path: 2 -> Driver node '961' for src_node '845'
-Path: 3 -> Driver node '967' for src_node '845'
-Path: 4 -> Driver node '144' for src_node '845'
-Path: 5 -> Driver node '147' for src_node '845'
-Path: 6 -> Driver node '9' for src_node '845'
+Prev node '4294967295' for src_node '717'
 Added 4 bits to 'mem_left_track_1' under 'sb_1__0_'
 Added 'mem_left_track_9' under 'sb_1__0_'
-Prev node '4294967295' for src_node '853'
+Prev node '4294967295' for src_node '725'
 Added 3 bits to 'mem_left_track_9' under 'sb_1__0_'
 Added 'mem_left_track_17' under 'sb_1__0_'
-Prev node '8' for src_node '861'
-Path: 0 -> Driver node '951' for src_node '861'
-Path: 1 -> Driver node '957' for src_node '861'
-Path: 2 -> Driver node '963' for src_node '861'
-Path: 3 -> Driver node '146' for src_node '861'
-Path: 4 -> Driver node '8' for src_node '861'
+Prev node '4294967295' for src_node '733'
 Added 3 bits to 'mem_left_track_17' under 'sb_1__0_'
 	Done
 
 	Generating bitstream for Switch blocks[1][1]...
 Added 'mem_top_track_0' under 'sb_1__1_'
-Prev node '4294967295' for src_node '968'
+Prev node '4294967295' for src_node '840'
 Added 4 bits to 'mem_top_track_0' under 'sb_1__1_'
 Added 'mem_top_track_8' under 'sb_1__1_'
-Prev node '4294967295' for src_node '970'
+Prev node '4294967295' for src_node '842'
 Added 4 bits to 'mem_top_track_8' under 'sb_1__1_'
 Added 'mem_top_track_16' under 'sb_1__1_'
-Prev node '4294967295' for src_node '972'
+Prev node '4294967295' for src_node '844'
 Added 4 bits to 'mem_top_track_16' under 'sb_1__1_'
 Added 'mem_right_track_0' under 'sb_1__1_'
-Prev node '4294967295' for src_node '890'
+Prev node '4294967295' for src_node '762'
 Added 4 bits to 'mem_right_track_0' under 'sb_1__1_'
 Added 'mem_right_track_8' under 'sb_1__1_'
-Prev node '4294967295' for src_node '892'
+Prev node '4294967295' for src_node '764'
 Added 4 bits to 'mem_right_track_8' under 'sb_1__1_'
 Added 'mem_right_track_16' under 'sb_1__1_'
-Prev node '4294967295' for src_node '894'
+Prev node '4294967295' for src_node '766'
 Added 4 bits to 'mem_right_track_16' under 'sb_1__1_'
 Added 'mem_bottom_track_1' under 'sb_1__1_'
-Prev node '4294967295' for src_node '949'
+Prev node '4294967295' for src_node '821'
 Added 4 bits to 'mem_bottom_track_1' under 'sb_1__1_'
 Added 'mem_bottom_track_9' under 'sb_1__1_'
-Prev node '4294967295' for src_node '957'
+Prev node '4294967295' for src_node '829'
 Added 4 bits to 'mem_bottom_track_9' under 'sb_1__1_'
 Added 'mem_bottom_track_17' under 'sb_1__1_'
-Prev node '874' for src_node '965'
-Path: 0 -> Driver node '877' for src_node '965'
-Path: 1 -> Driver node '885' for src_node '965'
-Path: 2 -> Driver node '895' for src_node '965'
-Path: 3 -> Driver node '234' for src_node '965'
-Path: 4 -> Driver node '139' for src_node '965'
-Path: 5 -> Driver node '142' for src_node '965'
-Path: 6 -> Driver node '874' for src_node '965'
+Prev node '746' for src_node '837'
+Path: 0 -> Driver node '749' for src_node '837'
+Path: 1 -> Driver node '757' for src_node '837'
+Path: 2 -> Driver node '767' for src_node '837'
+Path: 3 -> Driver node '298' for src_node '837'
+Path: 4 -> Driver node '203' for src_node '837'
+Path: 5 -> Driver node '206' for src_node '837'
+Path: 6 -> Driver node '746' for src_node '837'
 Added 4 bits to 'mem_bottom_track_17' under 'sb_1__1_'
 Added 'mem_left_track_1' under 'sb_1__1_'
-Prev node '4294967295' for src_node '871'
+Prev node '4294967295' for src_node '743'
 Added 4 bits to 'mem_left_track_1' under 'sb_1__1_'
 Added 'mem_left_track_9' under 'sb_1__1_'
-Prev node '4294967295' for src_node '879'
+Prev node '4294967295' for src_node '751'
 Added 4 bits to 'mem_left_track_9' under 'sb_1__1_'
 Added 'mem_left_track_17' under 'sb_1__1_'
-Prev node '4294967295' for src_node '887'
+Prev node '4294967295' for src_node '759'
 Added 4 bits to 'mem_left_track_17' under 'sb_1__1_'
 	Done
 
 	Generating bitstream for Switch blocks[1][2]...
 Added 'mem_right_track_0' under 'sb_1__2_'
-Prev node '4294967295' for src_node '916'
+Prev node '4294967295' for src_node '788'
 Added 4 bits to 'mem_right_track_0' under 'sb_1__2_'
 Added 'mem_right_track_8' under 'sb_1__2_'
-Prev node '4294967295' for src_node '918'
+Prev node '4294967295' for src_node '790'
 Added 4 bits to 'mem_right_track_8' under 'sb_1__2_'
 Added 'mem_right_track_16' under 'sb_1__2_'
-Prev node '4294967295' for src_node '920'
+Prev node '4294967295' for src_node '792'
 Added 3 bits to 'mem_right_track_16' under 'sb_1__2_'
 Added 'mem_bottom_track_1' under 'sb_1__2_'
-Prev node '4294967295' for src_node '951'
+Prev node '4294967295' for src_node '823'
 Added 3 bits to 'mem_bottom_track_1' under 'sb_1__2_'
 Added 'mem_bottom_track_3' under 'sb_1__2_'
-Prev node '4294967295' for src_node '953'
+Prev node '4294967295' for src_node '825'
 Added 3 bits to 'mem_bottom_track_3' under 'sb_1__2_'
 Added 'mem_bottom_track_5' under 'sb_1__2_'
-Prev node '4294967295' for src_node '955'
+Prev node '4294967295' for src_node '827'
 Added 2 bits to 'mem_bottom_track_5' under 'sb_1__2_'
 Added 'mem_bottom_track_7' under 'sb_1__2_'
-Prev node '4294967295' for src_node '969'
+Prev node '4294967295' for src_node '841'
 Added 2 bits to 'mem_bottom_track_7' under 'sb_1__2_'
 Added 'mem_bottom_track_9' under 'sb_1__2_'
-Prev node '4294967295' for src_node '959'
+Prev node '4294967295' for src_node '831'
 Added 2 bits to 'mem_bottom_track_9' under 'sb_1__2_'
 Added 'mem_bottom_track_11' under 'sb_1__2_'
-Prev node '4294967295' for src_node '961'
+Prev node '4294967295' for src_node '833'
 Added 2 bits to 'mem_bottom_track_11' under 'sb_1__2_'
 Added 'mem_bottom_track_13' under 'sb_1__2_'
-Prev node '4294967295' for src_node '963'
+Prev node '4294967295' for src_node '835'
 Added 3 bits to 'mem_bottom_track_13' under 'sb_1__2_'
 Added 'mem_bottom_track_15' under 'sb_1__2_'
-Prev node '4294967295' for src_node '971'
+Prev node '4294967295' for src_node '843'
 Added 2 bits to 'mem_bottom_track_15' under 'sb_1__2_'
 Added 'mem_bottom_track_17' under 'sb_1__2_'
-Prev node '4294967295' for src_node '967'
+Prev node '4294967295' for src_node '839'
 Added 2 bits to 'mem_bottom_track_17' under 'sb_1__2_'
 Added 'mem_bottom_track_19' under 'sb_1__2_'
-Prev node '4294967295' for src_node '973'
+Prev node '4294967295' for src_node '845'
 Added 2 bits to 'mem_bottom_track_19' under 'sb_1__2_'
 Added 'mem_left_track_1' under 'sb_1__2_'
-Prev node '4294967295' for src_node '897'
+Prev node '4294967295' for src_node '769'
 Added 4 bits to 'mem_left_track_1' under 'sb_1__2_'
 Added 'mem_left_track_9' under 'sb_1__2_'
-Prev node '4294967295' for src_node '905'
+Prev node '4294967295' for src_node '777'
 Added 4 bits to 'mem_left_track_9' under 'sb_1__2_'
 Added 'mem_left_track_17' under 'sb_1__2_'
-Prev node '4294967295' for src_node '913'
+Prev node '4294967295' for src_node '785'
 Added 3 bits to 'mem_left_track_17' under 'sb_1__2_'
 	Done
 
 	Generating bitstream for Switch blocks[2][0]...
 Added 'mem_top_track_0' under 'sb_2__0_'
-Prev node '4294967295' for src_node '974'
+Prev node '736' for src_node '846'
+Path: 0 -> Driver node '286' for src_node '846'
+Path: 1 -> Driver node '736' for src_node '846'
 Added 2 bits to 'mem_top_track_0' under 'sb_2__0_'
 Added 'mem_top_track_2' under 'sb_2__0_'
-Prev node '4294967295' for src_node '976'
+Prev node '4294967295' for src_node '848'
 Added 2 bits to 'mem_top_track_2' under 'sb_2__0_'
 Added 'mem_top_track_4' under 'sb_2__0_'
-Prev node '4294967295' for src_node '978'
+Prev node '4294967295' for src_node '850'
 Added 2 bits to 'mem_top_track_4' under 'sb_2__0_'
 Added 'mem_top_track_6' under 'sb_2__0_'
-Prev node '4294967295' for src_node '980'
+Prev node '4294967295' for src_node '852'
 Added 2 bits to 'mem_top_track_6' under 'sb_2__0_'
 Added 'mem_top_track_8' under 'sb_2__0_'
-Prev node '4294967295' for src_node '982'
+Prev node '4294967295' for src_node '854'
 Added 2 bits to 'mem_top_track_8' under 'sb_2__0_'
-Added 'mem_top_track_10' under 'sb_2__0_'
-Prev node '4294967295' for src_node '984'
-Added 2 bits to 'mem_top_track_10' under 'sb_2__0_'
-Added 'mem_top_track_12' under 'sb_2__0_'
-Prev node '4294967295' for src_node '986'
-Added 2 bits to 'mem_top_track_12' under 'sb_2__0_'
-Added 'mem_top_track_14' under 'sb_2__0_'
-Prev node '4294967295' for src_node '988'
-Added 2 bits to 'mem_top_track_14' under 'sb_2__0_'
-Added 'mem_top_track_16' under 'sb_2__0_'
-Prev node '4294967295' for src_node '990'
-Added 2 bits to 'mem_top_track_16' under 'sb_2__0_'
-Added 'mem_top_track_18' under 'sb_2__0_'
-Prev node '4294967295' for src_node '992'
-Added 2 bits to 'mem_top_track_18' under 'sb_2__0_'
 Added 'mem_left_track_1' under 'sb_2__0_'
-Prev node '4294967295' for src_node '847'
+Prev node '4294967295' for src_node '719'
 Added 2 bits to 'mem_left_track_1' under 'sb_2__0_'
 Added 'mem_left_track_3' under 'sb_2__0_'
-Prev node '4294967295' for src_node '849'
+Prev node '4294967295' for src_node '721'
 Added 2 bits to 'mem_left_track_3' under 'sb_2__0_'
 Added 'mem_left_track_5' under 'sb_2__0_'
-Prev node '4294967295' for src_node '851'
+Prev node '4294967295' for src_node '723'
 Added 2 bits to 'mem_left_track_5' under 'sb_2__0_'
 Added 'mem_left_track_7' under 'sb_2__0_'
-Prev node '4294967295' for src_node '865'
+Prev node '4294967295' for src_node '737'
 Added 2 bits to 'mem_left_track_7' under 'sb_2__0_'
 Added 'mem_left_track_9' under 'sb_2__0_'
-Prev node '4294967295' for src_node '855'
+Prev node '4294967295' for src_node '727'
 Added 2 bits to 'mem_left_track_9' under 'sb_2__0_'
+Added 'mem_left_track_11' under 'sb_2__0_'
+Prev node '4294967295' for src_node '729'
+Added 2 bits to 'mem_left_track_11' under 'sb_2__0_'
+Added 'mem_left_track_13' under 'sb_2__0_'
+Prev node '4294967295' for src_node '731'
+Added 2 bits to 'mem_left_track_13' under 'sb_2__0_'
+Added 'mem_left_track_15' under 'sb_2__0_'
+Prev node '4294967295' for src_node '739'
+Added 2 bits to 'mem_left_track_15' under 'sb_2__0_'
+Added 'mem_left_track_17' under 'sb_2__0_'
+Prev node '4294967295' for src_node '735'
+Added 2 bits to 'mem_left_track_17' under 'sb_2__0_'
+Added 'mem_left_track_19' under 'sb_2__0_'
+Prev node '4294967295' for src_node '741'
+Added 2 bits to 'mem_left_track_19' under 'sb_2__0_'
 	Done
 
 	Generating bitstream for Switch blocks[2][1]...
 Added 'mem_top_track_0' under 'sb_2__1_'
-Prev node '4294967295' for src_node '994'
-Added 4 bits to 'mem_top_track_0' under 'sb_2__1_'
+Prev node '4294967295' for src_node '866'
+Added 3 bits to 'mem_top_track_0' under 'sb_2__1_'
 Added 'mem_top_track_8' under 'sb_2__1_'
-Prev node '4294967295' for src_node '996'
+Prev node '4294967295' for src_node '868'
 Added 3 bits to 'mem_top_track_8' under 'sb_2__1_'
 Added 'mem_top_track_16' under 'sb_2__1_'
-Prev node '4294967295' for src_node '998'
+Prev node '4294967295' for src_node '870'
 Added 3 bits to 'mem_top_track_16' under 'sb_2__1_'
 Added 'mem_bottom_track_1' under 'sb_2__1_'
-Prev node '4294967295' for src_node '975'
-Added 4 bits to 'mem_bottom_track_1' under 'sb_2__1_'
+Prev node '4294967295' for src_node '847'
+Added 3 bits to 'mem_bottom_track_1' under 'sb_2__1_'
 Added 'mem_bottom_track_9' under 'sb_2__1_'
-Prev node '4294967295' for src_node '983'
+Prev node '4294967295' for src_node '855'
 Added 3 bits to 'mem_bottom_track_9' under 'sb_2__1_'
 Added 'mem_bottom_track_17' under 'sb_2__1_'
-Prev node '4294967295' for src_node '991'
-Added 4 bits to 'mem_bottom_track_17' under 'sb_2__1_'
+Prev node '4294967295' for src_node '863'
+Added 3 bits to 'mem_bottom_track_17' under 'sb_2__1_'
 Added 'mem_left_track_1' under 'sb_2__1_'
-Prev node '4294967295' for src_node '873'
+Prev node '4294967295' for src_node '745'
 Added 3 bits to 'mem_left_track_1' under 'sb_2__1_'
 Added 'mem_left_track_3' under 'sb_2__1_'
-Prev node '4294967295' for src_node '875'
+Prev node '4294967295' for src_node '747'
 Added 3 bits to 'mem_left_track_3' under 'sb_2__1_'
 Added 'mem_left_track_5' under 'sb_2__1_'
-Prev node '4294967295' for src_node '877'
+Prev node '4294967295' for src_node '749'
 Added 3 bits to 'mem_left_track_5' under 'sb_2__1_'
 Added 'mem_left_track_7' under 'sb_2__1_'
-Prev node '4294967295' for src_node '891'
+Prev node '4294967295' for src_node '763'
 Added 3 bits to 'mem_left_track_7' under 'sb_2__1_'
 Added 'mem_left_track_9' under 'sb_2__1_'
-Prev node '4294967295' for src_node '881'
+Prev node '4294967295' for src_node '753'
 Added 2 bits to 'mem_left_track_9' under 'sb_2__1_'
 Added 'mem_left_track_11' under 'sb_2__1_'
-Prev node '4294967295' for src_node '883'
+Prev node '4294967295' for src_node '755'
 Added 2 bits to 'mem_left_track_11' under 'sb_2__1_'
 Added 'mem_left_track_13' under 'sb_2__1_'
-Prev node '4294967295' for src_node '885'
+Prev node '4294967295' for src_node '757'
 Added 2 bits to 'mem_left_track_13' under 'sb_2__1_'
 Added 'mem_left_track_17' under 'sb_2__1_'
-Prev node '4294967295' for src_node '889'
+Prev node '4294967295' for src_node '761'
 Added 2 bits to 'mem_left_track_17' under 'sb_2__1_'
 Added 'mem_left_track_19' under 'sb_2__1_'
-Prev node '4294967295' for src_node '895'
+Prev node '4294967295' for src_node '767'
 Added 2 bits to 'mem_left_track_19' under 'sb_2__1_'
 	Done
 
 	Generating bitstream for Switch blocks[2][2]...
 Added 'mem_bottom_track_1' under 'sb_2__2_'
-Prev node '4294967295' for src_node '977'
+Prev node '4294967295' for src_node '849'
 Added 2 bits to 'mem_bottom_track_1' under 'sb_2__2_'
 Added 'mem_bottom_track_3' under 'sb_2__2_'
-Prev node '4294967295' for src_node '979'
+Prev node '4294967295' for src_node '851'
 Added 2 bits to 'mem_bottom_track_3' under 'sb_2__2_'
 Added 'mem_bottom_track_5' under 'sb_2__2_'
-Prev node '4294967295' for src_node '981'
+Prev node '4294967295' for src_node '853'
 Added 2 bits to 'mem_bottom_track_5' under 'sb_2__2_'
 Added 'mem_bottom_track_7' under 'sb_2__2_'
-Prev node '4294967295' for src_node '995'
+Prev node '4294967295' for src_node '867'
 Added 2 bits to 'mem_bottom_track_7' under 'sb_2__2_'
 Added 'mem_bottom_track_9' under 'sb_2__2_'
-Prev node '4294967295' for src_node '985'
+Prev node '4294967295' for src_node '857'
 Added 2 bits to 'mem_bottom_track_9' under 'sb_2__2_'
-Added 'mem_bottom_track_11' under 'sb_2__2_'
-Prev node '4294967295' for src_node '987'
-Added 2 bits to 'mem_bottom_track_11' under 'sb_2__2_'
-Added 'mem_bottom_track_13' under 'sb_2__2_'
-Prev node '4294967295' for src_node '989'
-Added 2 bits to 'mem_bottom_track_13' under 'sb_2__2_'
-Added 'mem_bottom_track_15' under 'sb_2__2_'
-Prev node '4294967295' for src_node '997'
-Added 2 bits to 'mem_bottom_track_15' under 'sb_2__2_'
-Added 'mem_bottom_track_17' under 'sb_2__2_'
-Prev node '4294967295' for src_node '993'
-Added 2 bits to 'mem_bottom_track_17' under 'sb_2__2_'
-Added 'mem_bottom_track_19' under 'sb_2__2_'
-Prev node '4294967295' for src_node '999'
-Added 2 bits to 'mem_bottom_track_19' under 'sb_2__2_'
 Added 'mem_left_track_1' under 'sb_2__2_'
-Prev node '4294967295' for src_node '899'
+Prev node '4294967295' for src_node '771'
 Added 2 bits to 'mem_left_track_1' under 'sb_2__2_'
 Added 'mem_left_track_3' under 'sb_2__2_'
-Prev node '4294967295' for src_node '901'
+Prev node '4294967295' for src_node '773'
 Added 2 bits to 'mem_left_track_3' under 'sb_2__2_'
 Added 'mem_left_track_5' under 'sb_2__2_'
-Prev node '4294967295' for src_node '903'
+Prev node '4294967295' for src_node '775'
 Added 2 bits to 'mem_left_track_5' under 'sb_2__2_'
 Added 'mem_left_track_7' under 'sb_2__2_'
-Prev node '4294967295' for src_node '917'
+Prev node '4294967295' for src_node '789'
 Added 2 bits to 'mem_left_track_7' under 'sb_2__2_'
 Added 'mem_left_track_9' under 'sb_2__2_'
-Prev node '4294967295' for src_node '907'
+Prev node '4294967295' for src_node '779'
 Added 2 bits to 'mem_left_track_9' under 'sb_2__2_'
 Added 'mem_left_track_11' under 'sb_2__2_'
-Prev node '4294967295' for src_node '909'
+Prev node '4294967295' for src_node '781'
 Added 2 bits to 'mem_left_track_11' under 'sb_2__2_'
 Added 'mem_left_track_13' under 'sb_2__2_'
-Prev node '4294967295' for src_node '911'
+Prev node '4294967295' for src_node '783'
 Added 2 bits to 'mem_left_track_13' under 'sb_2__2_'
 Added 'mem_left_track_15' under 'sb_2__2_'
-Prev node '4294967295' for src_node '919'
+Prev node '4294967295' for src_node '791'
 Added 2 bits to 'mem_left_track_15' under 'sb_2__2_'
 Added 'mem_left_track_17' under 'sb_2__2_'
-Prev node '4294967295' for src_node '915'
+Prev node '4294967295' for src_node '787'
 Added 2 bits to 'mem_left_track_17' under 'sb_2__2_'
 Added 'mem_left_track_19' under 'sb_2__2_'
-Prev node '4294967295' for src_node '921'
+Prev node '4294967295' for src_node '793'
 Added 2 bits to 'mem_left_track_19' under 'sb_2__2_'
 	Done
 Done
 Generating bitstream for X-direction Connection blocks ...
 	Generating bitstream for X-direction Connection Block [1][0]
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '0'. Details: IPIN:175 side: (BOTTOM,) (1,1,0)
+	Generating bitstream for IPIN '0'. Details: IPIN:239 side: (BOTTOM,) (1,1,0)
 Added 'mem_bottom_ipin_0' under 'cbx_1__0_'
 Added 3 bits to 'mem_bottom_ipin_0' under 'cbx_1__0_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '1'. Details: IPIN:176 side: (BOTTOM,) (1,1,0)
+	Generating bitstream for IPIN '1'. Details: IPIN:240 side: (BOTTOM,) (1,1,0)
 Added 'mem_bottom_ipin_1' under 'cbx_1__0_'
 Added 3 bits to 'mem_bottom_ipin_1' under 'cbx_1__0_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '2'. Details: IPIN:177 side: (BOTTOM,) (1,1,0)
+	Generating bitstream for IPIN '2'. Details: IPIN:241 side: (BOTTOM,) (1,1,0)
 Added 'mem_bottom_ipin_2' under 'cbx_1__0_'
 Added 3 bits to 'mem_bottom_ipin_2' under 'cbx_1__0_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '3'. Details: IPIN:178 side: (BOTTOM,) (1,1,0)
+	Generating bitstream for IPIN '3'. Details: IPIN:242 side: (BOTTOM,) (1,1,0)
 Added 'mem_bottom_ipin_3' under 'cbx_1__0_'
 Added 3 bits to 'mem_bottom_ipin_3' under 'cbx_1__0_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '4'. Details: IPIN:179 side: (BOTTOM,) (1,1,0)
+	Generating bitstream for IPIN '4'. Details: IPIN:243 side: (BOTTOM,) (1,1,0)
 Added 'mem_bottom_ipin_4' under 'cbx_1__0_'
 Added 3 bits to 'mem_bottom_ipin_4' under 'cbx_1__0_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '5'. Details: IPIN:180 side: (BOTTOM,) (1,1,0)
+	Generating bitstream for IPIN '5'. Details: IPIN:244 side: (BOTTOM,) (1,1,0)
 Added 'mem_bottom_ipin_5' under 'cbx_1__0_'
 Added 2 bits to 'mem_bottom_ipin_5' under 'cbx_1__0_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '6'. Details: IPIN:181 side: (BOTTOM,) (1,1,0)
+	Generating bitstream for IPIN '6'. Details: IPIN:245 side: (BOTTOM,) (1,1,0)
 Added 'mem_bottom_ipin_6' under 'cbx_1__0_'
 Added 2 bits to 'mem_bottom_ipin_6' under 'cbx_1__0_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '7'. Details: IPIN:182 side: (BOTTOM,) (1,1,0)
+	Generating bitstream for IPIN '7'. Details: IPIN:246 side: (BOTTOM,) (1,1,0)
 Added 'mem_bottom_ipin_7' under 'cbx_1__0_'
 Added 2 bits to 'mem_bottom_ipin_7' under 'cbx_1__0_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '8'. Details: IPIN:183 side: (BOTTOM,) (1,1,0)
+	Generating bitstream for IPIN '8'. Details: IPIN:247 side: (BOTTOM,) (1,1,0)
 Added 'mem_bottom_ipin_8' under 'cbx_1__0_'
 Added 2 bits to 'mem_bottom_ipin_8' under 'cbx_1__0_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '9'. Details: IPIN:184 side: (BOTTOM,) (1,1,0)
+	Generating bitstream for IPIN '9'. Details: IPIN:248 side: (BOTTOM,) (1,1,0)
 Added 'mem_bottom_ipin_9' under 'cbx_1__0_'
 Added 2 bits to 'mem_bottom_ipin_9' under 'cbx_1__0_'
+	Generating bitstream for IPIN at 'bottom' side
+	Generating bitstream for IPIN '0'. Details: IPIN:48 side: (TOP,) (1,0,0)
+Added 'mem_top_ipin_0' under 'cbx_1__0_'
+Added 3 bits to 'mem_top_ipin_0' under 'cbx_1__0_'
+	Generating bitstream for IPIN at 'bottom' side
+	Generating bitstream for IPIN '1'. Details: IPIN:49 side: (TOP,) (1,0,0)
+Added 'mem_top_ipin_1' under 'cbx_1__0_'
+Added 3 bits to 'mem_top_ipin_1' under 'cbx_1__0_'
+	Generating bitstream for IPIN at 'bottom' side
+	Generating bitstream for IPIN '2'. Details: IPIN:50 side: (TOP,) (1,0,0)
+Added 'mem_top_ipin_2' under 'cbx_1__0_'
+Added 3 bits to 'mem_top_ipin_2' under 'cbx_1__0_'
+	Generating bitstream for IPIN at 'bottom' side
+	Generating bitstream for IPIN '3'. Details: IPIN:51 side: (TOP,) (1,0,0)
+Added 'mem_top_ipin_3' under 'cbx_1__0_'
+Added 3 bits to 'mem_top_ipin_3' under 'cbx_1__0_'
+	Generating bitstream for IPIN at 'bottom' side
+	Generating bitstream for IPIN '4'. Details: IPIN:52 side: (TOP,) (1,0,0)
+Added 'mem_top_ipin_4' under 'cbx_1__0_'
+Added 3 bits to 'mem_top_ipin_4' under 'cbx_1__0_'
+	Generating bitstream for IPIN at 'bottom' side
+	Generating bitstream for IPIN '5'. Details: IPIN:53 side: (TOP,) (1,0,0)
+Added 'mem_top_ipin_5' under 'cbx_1__0_'
+Added 3 bits to 'mem_top_ipin_5' under 'cbx_1__0_'
+	Generating bitstream for IPIN at 'bottom' side
+	Generating bitstream for IPIN '6'. Details: IPIN:54 side: (TOP,) (1,0,0)
+Added 'mem_top_ipin_6' under 'cbx_1__0_'
+Added 3 bits to 'mem_top_ipin_6' under 'cbx_1__0_'
+	Generating bitstream for IPIN at 'bottom' side
+	Generating bitstream for IPIN '7'. Details: IPIN:55 side: (TOP,) (1,0,0)
+Added 'mem_top_ipin_7' under 'cbx_1__0_'
+Added 3 bits to 'mem_top_ipin_7' under 'cbx_1__0_'
 	Done
 
 	Generating bitstream for X-direction Connection Block [1][1]
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '0'. Details: IPIN:501 side: (BOTTOM,) (1,2,0)
+	Generating bitstream for IPIN '0'. Details: IPIN:437 side: (BOTTOM,) (1,2,0)
 Added 'mem_bottom_ipin_0' under 'cbx_1__1_'
 Added 3 bits to 'mem_bottom_ipin_0' under 'cbx_1__1_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '1'. Details: IPIN:502 side: (BOTTOM,) (1,2,0)
+	Generating bitstream for IPIN '1'. Details: IPIN:438 side: (BOTTOM,) (1,2,0)
 Added 'mem_bottom_ipin_1' under 'cbx_1__1_'
 Added 3 bits to 'mem_bottom_ipin_1' under 'cbx_1__1_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '2'. Details: IPIN:503 side: (BOTTOM,) (1,2,0)
+	Generating bitstream for IPIN '2'. Details: IPIN:439 side: (BOTTOM,) (1,2,0)
 Added 'mem_bottom_ipin_2' under 'cbx_1__1_'
 Added 3 bits to 'mem_bottom_ipin_2' under 'cbx_1__1_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '3'. Details: IPIN:504 side: (BOTTOM,) (1,2,0)
+	Generating bitstream for IPIN '3'. Details: IPIN:440 side: (BOTTOM,) (1,2,0)
 Added 'mem_bottom_ipin_3' under 'cbx_1__1_'
 Added 3 bits to 'mem_bottom_ipin_3' under 'cbx_1__1_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '4'. Details: IPIN:505 side: (BOTTOM,) (1,2,0)
+	Generating bitstream for IPIN '4'. Details: IPIN:441 side: (BOTTOM,) (1,2,0)
 Added 'mem_bottom_ipin_4' under 'cbx_1__1_'
 Added 3 bits to 'mem_bottom_ipin_4' under 'cbx_1__1_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '5'. Details: IPIN:506 side: (BOTTOM,) (1,2,0)
+	Generating bitstream for IPIN '5'. Details: IPIN:442 side: (BOTTOM,) (1,2,0)
 Added 'mem_bottom_ipin_5' under 'cbx_1__1_'
 Added 2 bits to 'mem_bottom_ipin_5' under 'cbx_1__1_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '6'. Details: IPIN:507 side: (BOTTOM,) (1,2,0)
+	Generating bitstream for IPIN '6'. Details: IPIN:443 side: (BOTTOM,) (1,2,0)
 Added 'mem_bottom_ipin_6' under 'cbx_1__1_'
 Added 2 bits to 'mem_bottom_ipin_6' under 'cbx_1__1_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '7'. Details: IPIN:508 side: (BOTTOM,) (1,2,0)
+	Generating bitstream for IPIN '7'. Details: IPIN:444 side: (BOTTOM,) (1,2,0)
 Added 'mem_bottom_ipin_7' under 'cbx_1__1_'
 Added 2 bits to 'mem_bottom_ipin_7' under 'cbx_1__1_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '8'. Details: IPIN:509 side: (BOTTOM,) (1,2,0)
+	Generating bitstream for IPIN '8'. Details: IPIN:445 side: (BOTTOM,) (1,2,0)
 Added 'mem_bottom_ipin_8' under 'cbx_1__1_'
 Added 2 bits to 'mem_bottom_ipin_8' under 'cbx_1__1_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '9'. Details: IPIN:510 side: (BOTTOM,) (1,2,0)
+	Generating bitstream for IPIN '9'. Details: IPIN:446 side: (BOTTOM,) (1,2,0)
 Added 'mem_bottom_ipin_9' under 'cbx_1__1_'
 Added 2 bits to 'mem_bottom_ipin_9' under 'cbx_1__1_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '0'. Details: IPIN:154 side: (TOP,) (1,1,0)
+	Generating bitstream for IPIN '0'. Details: IPIN:218 side: (TOP,) (1,1,0)
 Added 'mem_top_ipin_0' under 'cbx_1__1_'
 Added 3 bits to 'mem_top_ipin_0' under 'cbx_1__1_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '1'. Details: IPIN:155 side: (TOP,) (1,1,0)
+	Generating bitstream for IPIN '1'. Details: IPIN:219 side: (TOP,) (1,1,0)
 Added 'mem_top_ipin_1' under 'cbx_1__1_'
 Added 3 bits to 'mem_top_ipin_1' under 'cbx_1__1_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '2'. Details: IPIN:156 side: (TOP,) (1,1,0)
+	Generating bitstream for IPIN '2'. Details: IPIN:220 side: (TOP,) (1,1,0)
 Added 'mem_top_ipin_2' under 'cbx_1__1_'
 Added 3 bits to 'mem_top_ipin_2' under 'cbx_1__1_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '3'. Details: IPIN:157 side: (TOP,) (1,1,0)
+	Generating bitstream for IPIN '3'. Details: IPIN:221 side: (TOP,) (1,1,0)
 Added 'mem_top_ipin_3' under 'cbx_1__1_'
 Added 3 bits to 'mem_top_ipin_3' under 'cbx_1__1_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '4'. Details: IPIN:158 side: (TOP,) (1,1,0)
+	Generating bitstream for IPIN '4'. Details: IPIN:222 side: (TOP,) (1,1,0)
 Added 'mem_top_ipin_4' under 'cbx_1__1_'
 Added 3 bits to 'mem_top_ipin_4' under 'cbx_1__1_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '5'. Details: IPIN:159 side: (TOP,) (1,1,0)
+	Generating bitstream for IPIN '5'. Details: IPIN:223 side: (TOP,) (1,1,0)
 Added 'mem_top_ipin_5' under 'cbx_1__1_'
 Added 2 bits to 'mem_top_ipin_5' under 'cbx_1__1_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '6'. Details: IPIN:160 side: (TOP,) (1,1,0)
+	Generating bitstream for IPIN '6'. Details: IPIN:224 side: (TOP,) (1,1,0)
 Added 'mem_top_ipin_6' under 'cbx_1__1_'
 Added 2 bits to 'mem_top_ipin_6' under 'cbx_1__1_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '7'. Details: IPIN:161 side: (TOP,) (1,1,0)
+	Generating bitstream for IPIN '7'. Details: IPIN:225 side: (TOP,) (1,1,0)
 Added 'mem_top_ipin_7' under 'cbx_1__1_'
 Added 2 bits to 'mem_top_ipin_7' under 'cbx_1__1_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '8'. Details: IPIN:162 side: (TOP,) (1,1,0)
+	Generating bitstream for IPIN '8'. Details: IPIN:226 side: (TOP,) (1,1,0)
 Added 'mem_top_ipin_8' under 'cbx_1__1_'
 Added 2 bits to 'mem_top_ipin_8' under 'cbx_1__1_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '9'. Details: IPIN:163 side: (TOP,) (1,1,0)
+	Generating bitstream for IPIN '9'. Details: IPIN:227 side: (TOP,) (1,1,0)
 Added 'mem_top_ipin_9' under 'cbx_1__1_'
 Added 2 bits to 'mem_top_ipin_9' under 'cbx_1__1_'
 	Done
 
 	Generating bitstream for X-direction Connection Block [1][2]
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '0'. Details: IPIN:748 side: (BOTTOM,) (1,3,0)
+	Generating bitstream for IPIN '0'. Details: IPIN:620 side: (BOTTOM,) (1,3,0)
 Added 'mem_bottom_ipin_0' under 'cbx_1__2_'
 Added 3 bits to 'mem_bottom_ipin_0' under 'cbx_1__2_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '1'. Details: IPIN:749 side: (BOTTOM,) (1,3,0)
+	Generating bitstream for IPIN '1'. Details: IPIN:621 side: (BOTTOM,) (1,3,0)
 Added 'mem_bottom_ipin_1' under 'cbx_1__2_'
 Added 3 bits to 'mem_bottom_ipin_1' under 'cbx_1__2_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '2'. Details: IPIN:750 side: (BOTTOM,) (1,3,0)
+	Generating bitstream for IPIN '2'. Details: IPIN:622 side: (BOTTOM,) (1,3,0)
 Added 'mem_bottom_ipin_2' under 'cbx_1__2_'
 Added 3 bits to 'mem_bottom_ipin_2' under 'cbx_1__2_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '3'. Details: IPIN:751 side: (BOTTOM,) (1,3,0)
+	Generating bitstream for IPIN '3'. Details: IPIN:623 side: (BOTTOM,) (1,3,0)
 Added 'mem_bottom_ipin_3' under 'cbx_1__2_'
 Added 3 bits to 'mem_bottom_ipin_3' under 'cbx_1__2_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '4'. Details: IPIN:752 side: (BOTTOM,) (1,3,0)
+	Generating bitstream for IPIN '4'. Details: IPIN:624 side: (BOTTOM,) (1,3,0)
 Added 'mem_bottom_ipin_4' under 'cbx_1__2_'
 Added 3 bits to 'mem_bottom_ipin_4' under 'cbx_1__2_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '5'. Details: IPIN:753 side: (BOTTOM,) (1,3,0)
+	Generating bitstream for IPIN '5'. Details: IPIN:625 side: (BOTTOM,) (1,3,0)
 Added 'mem_bottom_ipin_5' under 'cbx_1__2_'
 Added 3 bits to 'mem_bottom_ipin_5' under 'cbx_1__2_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '6'. Details: IPIN:754 side: (BOTTOM,) (1,3,0)
+	Generating bitstream for IPIN '6'. Details: IPIN:626 side: (BOTTOM,) (1,3,0)
 Added 'mem_bottom_ipin_6' under 'cbx_1__2_'
 Added 3 bits to 'mem_bottom_ipin_6' under 'cbx_1__2_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '7'. Details: IPIN:755 side: (BOTTOM,) (1,3,0)
+	Generating bitstream for IPIN '7'. Details: IPIN:627 side: (BOTTOM,) (1,3,0)
 Added 'mem_bottom_ipin_7' under 'cbx_1__2_'
 Added 3 bits to 'mem_bottom_ipin_7' under 'cbx_1__2_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '0'. Details: IPIN:480 side: (TOP,) (1,2,0)
+	Generating bitstream for IPIN '0'. Details: IPIN:416 side: (TOP,) (1,2,0)
 Added 'mem_top_ipin_0' under 'cbx_1__2_'
 Added 3 bits to 'mem_top_ipin_0' under 'cbx_1__2_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '1'. Details: IPIN:481 side: (TOP,) (1,2,0)
+	Generating bitstream for IPIN '1'. Details: IPIN:417 side: (TOP,) (1,2,0)
 Added 'mem_top_ipin_1' under 'cbx_1__2_'
 Added 3 bits to 'mem_top_ipin_1' under 'cbx_1__2_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '2'. Details: IPIN:482 side: (TOP,) (1,2,0)
+	Generating bitstream for IPIN '2'. Details: IPIN:418 side: (TOP,) (1,2,0)
 Added 'mem_top_ipin_2' under 'cbx_1__2_'
 Added 3 bits to 'mem_top_ipin_2' under 'cbx_1__2_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '3'. Details: IPIN:483 side: (TOP,) (1,2,0)
+	Generating bitstream for IPIN '3'. Details: IPIN:419 side: (TOP,) (1,2,0)
 Added 'mem_top_ipin_3' under 'cbx_1__2_'
 Added 3 bits to 'mem_top_ipin_3' under 'cbx_1__2_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '4'. Details: IPIN:484 side: (TOP,) (1,2,0)
+	Generating bitstream for IPIN '4'. Details: IPIN:420 side: (TOP,) (1,2,0)
 Added 'mem_top_ipin_4' under 'cbx_1__2_'
 Added 3 bits to 'mem_top_ipin_4' under 'cbx_1__2_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '5'. Details: IPIN:485 side: (TOP,) (1,2,0)
+	Generating bitstream for IPIN '5'. Details: IPIN:421 side: (TOP,) (1,2,0)
 Added 'mem_top_ipin_5' under 'cbx_1__2_'
 Added 2 bits to 'mem_top_ipin_5' under 'cbx_1__2_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '6'. Details: IPIN:486 side: (TOP,) (1,2,0)
+	Generating bitstream for IPIN '6'. Details: IPIN:422 side: (TOP,) (1,2,0)
 Added 'mem_top_ipin_6' under 'cbx_1__2_'
 Added 2 bits to 'mem_top_ipin_6' under 'cbx_1__2_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '7'. Details: IPIN:487 side: (TOP,) (1,2,0)
+	Generating bitstream for IPIN '7'. Details: IPIN:423 side: (TOP,) (1,2,0)
 Added 'mem_top_ipin_7' under 'cbx_1__2_'
 Added 2 bits to 'mem_top_ipin_7' under 'cbx_1__2_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '8'. Details: IPIN:488 side: (TOP,) (1,2,0)
+	Generating bitstream for IPIN '8'. Details: IPIN:424 side: (TOP,) (1,2,0)
 Added 'mem_top_ipin_8' under 'cbx_1__2_'
 Added 2 bits to 'mem_top_ipin_8' under 'cbx_1__2_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '9'. Details: IPIN:489 side: (TOP,) (1,2,0)
+	Generating bitstream for IPIN '9'. Details: IPIN:425 side: (TOP,) (1,2,0)
 Added 'mem_top_ipin_9' under 'cbx_1__2_'
 Added 2 bits to 'mem_top_ipin_9' under 'cbx_1__2_'
 	Done
 
 	Generating bitstream for X-direction Connection Block [2][0]
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '0'. Details: IPIN:258 side: (BOTTOM,) (2,1,0)
+	Generating bitstream for IPIN '0'. Details: IPIN:322 side: (BOTTOM,) (2,1,0)
 Added 'mem_bottom_ipin_0' under 'cbx_2__0_'
 Added 3 bits to 'mem_bottom_ipin_0' under 'cbx_2__0_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '1'. Details: IPIN:259 side: (BOTTOM,) (2,1,0)
+	Generating bitstream for IPIN '1'. Details: IPIN:323 side: (BOTTOM,) (2,1,0)
 Added 'mem_bottom_ipin_1' under 'cbx_2__0_'
 Added 3 bits to 'mem_bottom_ipin_1' under 'cbx_2__0_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '2'. Details: IPIN:260 side: (BOTTOM,) (2,1,0)
+	Generating bitstream for IPIN '2'. Details: IPIN:324 side: (BOTTOM,) (2,1,0)
 Added 'mem_bottom_ipin_2' under 'cbx_2__0_'
 Added 3 bits to 'mem_bottom_ipin_2' under 'cbx_2__0_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '3'. Details: IPIN:261 side: (BOTTOM,) (2,1,0)
+	Generating bitstream for IPIN '3'. Details: IPIN:325 side: (BOTTOM,) (2,1,0)
 Added 'mem_bottom_ipin_3' under 'cbx_2__0_'
 Added 3 bits to 'mem_bottom_ipin_3' under 'cbx_2__0_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '4'. Details: IPIN:262 side: (BOTTOM,) (2,1,0)
+	Generating bitstream for IPIN '4'. Details: IPIN:326 side: (BOTTOM,) (2,1,0)
 Added 'mem_bottom_ipin_4' under 'cbx_2__0_'
 Added 3 bits to 'mem_bottom_ipin_4' under 'cbx_2__0_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '5'. Details: IPIN:263 side: (BOTTOM,) (2,1,0)
+	Generating bitstream for IPIN '5'. Details: IPIN:327 side: (BOTTOM,) (2,1,0)
 Added 'mem_bottom_ipin_5' under 'cbx_2__0_'
 Added 2 bits to 'mem_bottom_ipin_5' under 'cbx_2__0_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '6'. Details: IPIN:264 side: (BOTTOM,) (2,1,0)
+	Generating bitstream for IPIN '6'. Details: IPIN:328 side: (BOTTOM,) (2,1,0)
 Added 'mem_bottom_ipin_6' under 'cbx_2__0_'
 Added 2 bits to 'mem_bottom_ipin_6' under 'cbx_2__0_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '7'. Details: IPIN:265 side: (BOTTOM,) (2,1,0)
+	Generating bitstream for IPIN '7'. Details: IPIN:329 side: (BOTTOM,) (2,1,0)
 Added 'mem_bottom_ipin_7' under 'cbx_2__0_'
 Added 2 bits to 'mem_bottom_ipin_7' under 'cbx_2__0_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '8'. Details: IPIN:266 side: (BOTTOM,) (2,1,0)
+	Generating bitstream for IPIN '8'. Details: IPIN:330 side: (BOTTOM,) (2,1,0)
 Added 'mem_bottom_ipin_8' under 'cbx_2__0_'
 Added 2 bits to 'mem_bottom_ipin_8' under 'cbx_2__0_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '9'. Details: IPIN:267 side: (BOTTOM,) (2,1,0)
+	Generating bitstream for IPIN '9'. Details: IPIN:331 side: (BOTTOM,) (2,1,0)
 Added 'mem_bottom_ipin_9' under 'cbx_2__0_'
 Added 2 bits to 'mem_bottom_ipin_9' under 'cbx_2__0_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '0'. Details: IPIN:24 side: (TOP,) (2,0,0)
+	Generating bitstream for IPIN '0'. Details: IPIN:128 side: (TOP,) (2,0,0)
 Added 'mem_top_ipin_0' under 'cbx_2__0_'
 Added 3 bits to 'mem_top_ipin_0' under 'cbx_2__0_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '1'. Details: IPIN:25 side: (TOP,) (2,0,0)
+	Generating bitstream for IPIN '1'. Details: IPIN:129 side: (TOP,) (2,0,0)
 Added 'mem_top_ipin_1' under 'cbx_2__0_'
 Added 3 bits to 'mem_top_ipin_1' under 'cbx_2__0_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '2'. Details: IPIN:26 side: (TOP,) (2,0,0)
+	Generating bitstream for IPIN '2'. Details: IPIN:130 side: (TOP,) (2,0,0)
 Added 'mem_top_ipin_2' under 'cbx_2__0_'
 Added 3 bits to 'mem_top_ipin_2' under 'cbx_2__0_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '3'. Details: IPIN:27 side: (TOP,) (2,0,0)
+	Generating bitstream for IPIN '3'. Details: IPIN:131 side: (TOP,) (2,0,0)
 Added 'mem_top_ipin_3' under 'cbx_2__0_'
 Added 3 bits to 'mem_top_ipin_3' under 'cbx_2__0_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '4'. Details: IPIN:28 side: (TOP,) (2,0,0)
+	Generating bitstream for IPIN '4'. Details: IPIN:132 side: (TOP,) (2,0,0)
 Added 'mem_top_ipin_4' under 'cbx_2__0_'
 Added 3 bits to 'mem_top_ipin_4' under 'cbx_2__0_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '5'. Details: IPIN:29 side: (TOP,) (2,0,0)
+	Generating bitstream for IPIN '5'. Details: IPIN:133 side: (TOP,) (2,0,0)
 Added 'mem_top_ipin_5' under 'cbx_2__0_'
 Added 3 bits to 'mem_top_ipin_5' under 'cbx_2__0_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '6'. Details: IPIN:30 side: (TOP,) (2,0,0)
+	Generating bitstream for IPIN '6'. Details: IPIN:134 side: (TOP,) (2,0,0)
 Added 'mem_top_ipin_6' under 'cbx_2__0_'
 Added 3 bits to 'mem_top_ipin_6' under 'cbx_2__0_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '7'. Details: IPIN:31 side: (TOP,) (2,0,0)
+	Generating bitstream for IPIN '7'. Details: IPIN:135 side: (TOP,) (2,0,0)
 Added 'mem_top_ipin_7' under 'cbx_2__0_'
 Added 3 bits to 'mem_top_ipin_7' under 'cbx_2__0_'
 	Done
 
 	Generating bitstream for X-direction Connection Block [2][1]
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '0'. Details: IPIN:584 side: (BOTTOM,) (2,2,0)
+	Generating bitstream for IPIN '0'. Details: IPIN:520 side: (BOTTOM,) (2,2,0)
 Added 'mem_bottom_ipin_0' under 'cbx_2__1_'
 Added 3 bits to 'mem_bottom_ipin_0' under 'cbx_2__1_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '1'. Details: IPIN:585 side: (BOTTOM,) (2,2,0)
+	Generating bitstream for IPIN '1'. Details: IPIN:521 side: (BOTTOM,) (2,2,0)
 Added 'mem_bottom_ipin_1' under 'cbx_2__1_'
 Added 3 bits to 'mem_bottom_ipin_1' under 'cbx_2__1_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '2'. Details: IPIN:586 side: (BOTTOM,) (2,2,0)
+	Generating bitstream for IPIN '2'. Details: IPIN:522 side: (BOTTOM,) (2,2,0)
 Added 'mem_bottom_ipin_2' under 'cbx_2__1_'
 Added 3 bits to 'mem_bottom_ipin_2' under 'cbx_2__1_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '3'. Details: IPIN:587 side: (BOTTOM,) (2,2,0)
+	Generating bitstream for IPIN '3'. Details: IPIN:523 side: (BOTTOM,) (2,2,0)
 Added 'mem_bottom_ipin_3' under 'cbx_2__1_'
 Added 3 bits to 'mem_bottom_ipin_3' under 'cbx_2__1_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '4'. Details: IPIN:588 side: (BOTTOM,) (2,2,0)
+	Generating bitstream for IPIN '4'. Details: IPIN:524 side: (BOTTOM,) (2,2,0)
 Added 'mem_bottom_ipin_4' under 'cbx_2__1_'
 Added 3 bits to 'mem_bottom_ipin_4' under 'cbx_2__1_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '5'. Details: IPIN:589 side: (BOTTOM,) (2,2,0)
+	Generating bitstream for IPIN '5'. Details: IPIN:525 side: (BOTTOM,) (2,2,0)
 Added 'mem_bottom_ipin_5' under 'cbx_2__1_'
 Added 2 bits to 'mem_bottom_ipin_5' under 'cbx_2__1_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '6'. Details: IPIN:590 side: (BOTTOM,) (2,2,0)
+	Generating bitstream for IPIN '6'. Details: IPIN:526 side: (BOTTOM,) (2,2,0)
 Added 'mem_bottom_ipin_6' under 'cbx_2__1_'
 Added 2 bits to 'mem_bottom_ipin_6' under 'cbx_2__1_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '7'. Details: IPIN:591 side: (BOTTOM,) (2,2,0)
+	Generating bitstream for IPIN '7'. Details: IPIN:527 side: (BOTTOM,) (2,2,0)
 Added 'mem_bottom_ipin_7' under 'cbx_2__1_'
 Added 2 bits to 'mem_bottom_ipin_7' under 'cbx_2__1_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '8'. Details: IPIN:592 side: (BOTTOM,) (2,2,0)
+	Generating bitstream for IPIN '8'. Details: IPIN:528 side: (BOTTOM,) (2,2,0)
 Added 'mem_bottom_ipin_8' under 'cbx_2__1_'
 Added 2 bits to 'mem_bottom_ipin_8' under 'cbx_2__1_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '9'. Details: IPIN:593 side: (BOTTOM,) (2,2,0)
+	Generating bitstream for IPIN '9'. Details: IPIN:529 side: (BOTTOM,) (2,2,0)
 Added 'mem_bottom_ipin_9' under 'cbx_2__1_'
 Added 2 bits to 'mem_bottom_ipin_9' under 'cbx_2__1_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '0'. Details: IPIN:237 side: (TOP,) (2,1,0)
+	Generating bitstream for IPIN '0'. Details: IPIN:301 side: (TOP,) (2,1,0)
 Added 'mem_top_ipin_0' under 'cbx_2__1_'
 Added 3 bits to 'mem_top_ipin_0' under 'cbx_2__1_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '1'. Details: IPIN:238 side: (TOP,) (2,1,0)
+	Generating bitstream for IPIN '1'. Details: IPIN:302 side: (TOP,) (2,1,0)
 Added 'mem_top_ipin_1' under 'cbx_2__1_'
 Added 3 bits to 'mem_top_ipin_1' under 'cbx_2__1_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '2'. Details: IPIN:239 side: (TOP,) (2,1,0)
+	Generating bitstream for IPIN '2'. Details: IPIN:303 side: (TOP,) (2,1,0)
 Added 'mem_top_ipin_2' under 'cbx_2__1_'
 Added 3 bits to 'mem_top_ipin_2' under 'cbx_2__1_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '3'. Details: IPIN:240 side: (TOP,) (2,1,0)
+	Generating bitstream for IPIN '3'. Details: IPIN:304 side: (TOP,) (2,1,0)
 Added 'mem_top_ipin_3' under 'cbx_2__1_'
 Added 3 bits to 'mem_top_ipin_3' under 'cbx_2__1_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '4'. Details: IPIN:241 side: (TOP,) (2,1,0)
+	Generating bitstream for IPIN '4'. Details: IPIN:305 side: (TOP,) (2,1,0)
 Added 'mem_top_ipin_4' under 'cbx_2__1_'
 Added 3 bits to 'mem_top_ipin_4' under 'cbx_2__1_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '5'. Details: IPIN:242 side: (TOP,) (2,1,0)
+	Generating bitstream for IPIN '5'. Details: IPIN:306 side: (TOP,) (2,1,0)
 Added 'mem_top_ipin_5' under 'cbx_2__1_'
 Added 2 bits to 'mem_top_ipin_5' under 'cbx_2__1_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '6'. Details: IPIN:243 side: (TOP,) (2,1,0)
+	Generating bitstream for IPIN '6'. Details: IPIN:307 side: (TOP,) (2,1,0)
 Added 'mem_top_ipin_6' under 'cbx_2__1_'
 Added 2 bits to 'mem_top_ipin_6' under 'cbx_2__1_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '7'. Details: IPIN:244 side: (TOP,) (2,1,0)
+	Generating bitstream for IPIN '7'. Details: IPIN:308 side: (TOP,) (2,1,0)
 Added 'mem_top_ipin_7' under 'cbx_2__1_'
 Added 2 bits to 'mem_top_ipin_7' under 'cbx_2__1_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '8'. Details: IPIN:245 side: (TOP,) (2,1,0)
+	Generating bitstream for IPIN '8'. Details: IPIN:309 side: (TOP,) (2,1,0)
 Added 'mem_top_ipin_8' under 'cbx_2__1_'
 Added 2 bits to 'mem_top_ipin_8' under 'cbx_2__1_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '9'. Details: IPIN:246 side: (TOP,) (2,1,0)
+	Generating bitstream for IPIN '9'. Details: IPIN:310 side: (TOP,) (2,1,0)
 Added 'mem_top_ipin_9' under 'cbx_2__1_'
 Added 2 bits to 'mem_top_ipin_9' under 'cbx_2__1_'
 	Done
 
 	Generating bitstream for X-direction Connection Block [2][2]
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '0'. Details: IPIN:828 side: (BOTTOM,) (2,3,0)
+	Generating bitstream for IPIN '0'. Details: IPIN:700 side: (BOTTOM,) (2,3,0)
 Added 'mem_bottom_ipin_0' under 'cbx_2__2_'
 Added 3 bits to 'mem_bottom_ipin_0' under 'cbx_2__2_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '1'. Details: IPIN:829 side: (BOTTOM,) (2,3,0)
+	Generating bitstream for IPIN '1'. Details: IPIN:701 side: (BOTTOM,) (2,3,0)
 Added 'mem_bottom_ipin_1' under 'cbx_2__2_'
 Added 3 bits to 'mem_bottom_ipin_1' under 'cbx_2__2_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '2'. Details: IPIN:830 side: (BOTTOM,) (2,3,0)
+	Generating bitstream for IPIN '2'. Details: IPIN:702 side: (BOTTOM,) (2,3,0)
 Added 'mem_bottom_ipin_2' under 'cbx_2__2_'
 Added 3 bits to 'mem_bottom_ipin_2' under 'cbx_2__2_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '3'. Details: IPIN:831 side: (BOTTOM,) (2,3,0)
+	Generating bitstream for IPIN '3'. Details: IPIN:703 side: (BOTTOM,) (2,3,0)
 Added 'mem_bottom_ipin_3' under 'cbx_2__2_'
 Added 3 bits to 'mem_bottom_ipin_3' under 'cbx_2__2_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '4'. Details: IPIN:832 side: (BOTTOM,) (2,3,0)
+	Generating bitstream for IPIN '4'. Details: IPIN:704 side: (BOTTOM,) (2,3,0)
 Added 'mem_bottom_ipin_4' under 'cbx_2__2_'
 Added 3 bits to 'mem_bottom_ipin_4' under 'cbx_2__2_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '5'. Details: IPIN:833 side: (BOTTOM,) (2,3,0)
+	Generating bitstream for IPIN '5'. Details: IPIN:705 side: (BOTTOM,) (2,3,0)
 Added 'mem_bottom_ipin_5' under 'cbx_2__2_'
 Added 3 bits to 'mem_bottom_ipin_5' under 'cbx_2__2_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '6'. Details: IPIN:834 side: (BOTTOM,) (2,3,0)
+	Generating bitstream for IPIN '6'. Details: IPIN:706 side: (BOTTOM,) (2,3,0)
 Added 'mem_bottom_ipin_6' under 'cbx_2__2_'
 Added 3 bits to 'mem_bottom_ipin_6' under 'cbx_2__2_'
 	Generating bitstream for IPIN at 'top' side
-	Generating bitstream for IPIN '7'. Details: IPIN:835 side: (BOTTOM,) (2,3,0)
+	Generating bitstream for IPIN '7'. Details: IPIN:707 side: (BOTTOM,) (2,3,0)
 Added 'mem_bottom_ipin_7' under 'cbx_2__2_'
 Added 3 bits to 'mem_bottom_ipin_7' under 'cbx_2__2_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '0'. Details: IPIN:563 side: (TOP,) (2,2,0)
+	Generating bitstream for IPIN '0'. Details: IPIN:499 side: (TOP,) (2,2,0)
 Added 'mem_top_ipin_0' under 'cbx_2__2_'
 Added 3 bits to 'mem_top_ipin_0' under 'cbx_2__2_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '1'. Details: IPIN:564 side: (TOP,) (2,2,0)
+	Generating bitstream for IPIN '1'. Details: IPIN:500 side: (TOP,) (2,2,0)
 Added 'mem_top_ipin_1' under 'cbx_2__2_'
 Added 3 bits to 'mem_top_ipin_1' under 'cbx_2__2_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '2'. Details: IPIN:565 side: (TOP,) (2,2,0)
+	Generating bitstream for IPIN '2'. Details: IPIN:501 side: (TOP,) (2,2,0)
 Added 'mem_top_ipin_2' under 'cbx_2__2_'
 Added 3 bits to 'mem_top_ipin_2' under 'cbx_2__2_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '3'. Details: IPIN:566 side: (TOP,) (2,2,0)
+	Generating bitstream for IPIN '3'. Details: IPIN:502 side: (TOP,) (2,2,0)
 Added 'mem_top_ipin_3' under 'cbx_2__2_'
 Added 3 bits to 'mem_top_ipin_3' under 'cbx_2__2_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '4'. Details: IPIN:567 side: (TOP,) (2,2,0)
+	Generating bitstream for IPIN '4'. Details: IPIN:503 side: (TOP,) (2,2,0)
 Added 'mem_top_ipin_4' under 'cbx_2__2_'
 Added 3 bits to 'mem_top_ipin_4' under 'cbx_2__2_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '5'. Details: IPIN:568 side: (TOP,) (2,2,0)
+	Generating bitstream for IPIN '5'. Details: IPIN:504 side: (TOP,) (2,2,0)
 Added 'mem_top_ipin_5' under 'cbx_2__2_'
 Added 2 bits to 'mem_top_ipin_5' under 'cbx_2__2_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '6'. Details: IPIN:569 side: (TOP,) (2,2,0)
+	Generating bitstream for IPIN '6'. Details: IPIN:505 side: (TOP,) (2,2,0)
 Added 'mem_top_ipin_6' under 'cbx_2__2_'
 Added 2 bits to 'mem_top_ipin_6' under 'cbx_2__2_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '7'. Details: IPIN:570 side: (TOP,) (2,2,0)
+	Generating bitstream for IPIN '7'. Details: IPIN:506 side: (TOP,) (2,2,0)
 Added 'mem_top_ipin_7' under 'cbx_2__2_'
 Added 2 bits to 'mem_top_ipin_7' under 'cbx_2__2_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '8'. Details: IPIN:571 side: (TOP,) (2,2,0)
+	Generating bitstream for IPIN '8'. Details: IPIN:507 side: (TOP,) (2,2,0)
 Added 'mem_top_ipin_8' under 'cbx_2__2_'
 Added 2 bits to 'mem_top_ipin_8' under 'cbx_2__2_'
 	Generating bitstream for IPIN at 'bottom' side
-	Generating bitstream for IPIN '9'. Details: IPIN:572 side: (TOP,) (2,2,0)
+	Generating bitstream for IPIN '9'. Details: IPIN:508 side: (TOP,) (2,2,0)
 Added 'mem_top_ipin_9' under 'cbx_2__2_'
 Added 2 bits to 'mem_top_ipin_9' under 'cbx_2__2_'
 	Done
@@ -2244,316 +2245,252 @@ Done
 Generating bitstream for Y-direction Connection blocks ...
 	Generating bitstream for Y-direction Connection Block [0][1]
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '0'. Details: IPIN:185 side: (LEFT,) (1,1,0)
+	Generating bitstream for IPIN '0'. Details: IPIN:249 side: (LEFT,) (1,1,0)
 Added 'mem_left_ipin_0' under 'cby_0__1_'
 Added 3 bits to 'mem_left_ipin_0' under 'cby_0__1_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '1'. Details: IPIN:186 side: (LEFT,) (1,1,0)
+	Generating bitstream for IPIN '1'. Details: IPIN:250 side: (LEFT,) (1,1,0)
 Added 'mem_left_ipin_1' under 'cby_0__1_'
 Added 3 bits to 'mem_left_ipin_1' under 'cby_0__1_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '2'. Details: IPIN:187 side: (LEFT,) (1,1,0)
+	Generating bitstream for IPIN '2'. Details: IPIN:251 side: (LEFT,) (1,1,0)
 Added 'mem_left_ipin_2' under 'cby_0__1_'
 Added 3 bits to 'mem_left_ipin_2' under 'cby_0__1_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '3'. Details: IPIN:188 side: (LEFT,) (1,1,0)
+	Generating bitstream for IPIN '3'. Details: IPIN:252 side: (LEFT,) (1,1,0)
 Added 'mem_left_ipin_3' under 'cby_0__1_'
 Added 3 bits to 'mem_left_ipin_3' under 'cby_0__1_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '4'. Details: IPIN:189 side: (LEFT,) (1,1,0)
+	Generating bitstream for IPIN '4'. Details: IPIN:253 side: (LEFT,) (1,1,0)
 Added 'mem_left_ipin_4' under 'cby_0__1_'
 Added 3 bits to 'mem_left_ipin_4' under 'cby_0__1_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '5'. Details: IPIN:190 side: (LEFT,) (1,1,0)
+	Generating bitstream for IPIN '5'. Details: IPIN:254 side: (LEFT,) (1,1,0)
 Added 'mem_left_ipin_5' under 'cby_0__1_'
 Added 2 bits to 'mem_left_ipin_5' under 'cby_0__1_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '6'. Details: IPIN:191 side: (LEFT,) (1,1,0)
+	Generating bitstream for IPIN '6'. Details: IPIN:255 side: (LEFT,) (1,1,0)
 Added 'mem_left_ipin_6' under 'cby_0__1_'
 Added 2 bits to 'mem_left_ipin_6' under 'cby_0__1_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '7'. Details: IPIN:192 side: (LEFT,) (1,1,0)
+	Generating bitstream for IPIN '7'. Details: IPIN:256 side: (LEFT,) (1,1,0)
 Added 'mem_left_ipin_7' under 'cby_0__1_'
 Added 2 bits to 'mem_left_ipin_7' under 'cby_0__1_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '8'. Details: IPIN:193 side: (LEFT,) (1,1,0)
+	Generating bitstream for IPIN '8'. Details: IPIN:257 side: (LEFT,) (1,1,0)
 Added 'mem_left_ipin_8' under 'cby_0__1_'
 Added 2 bits to 'mem_left_ipin_8' under 'cby_0__1_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '9'. Details: IPIN:194 side: (LEFT,) (1,1,0)
+	Generating bitstream for IPIN '9'. Details: IPIN:258 side: (LEFT,) (1,1,0)
 Added 'mem_left_ipin_9' under 'cby_0__1_'
 Added 2 bits to 'mem_left_ipin_9' under 'cby_0__1_'
-	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '0'. Details: IPIN:88 side: (RIGHT,) (0,1,0)
-Added 'mem_right_ipin_0' under 'cby_0__1_'
-Added 3 bits to 'mem_right_ipin_0' under 'cby_0__1_'
-	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '1'. Details: IPIN:89 side: (RIGHT,) (0,1,0)
-Added 'mem_right_ipin_1' under 'cby_0__1_'
-Added 3 bits to 'mem_right_ipin_1' under 'cby_0__1_'
-	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '2'. Details: IPIN:90 side: (RIGHT,) (0,1,0)
-Added 'mem_right_ipin_2' under 'cby_0__1_'
-Added 3 bits to 'mem_right_ipin_2' under 'cby_0__1_'
-	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '3'. Details: IPIN:91 side: (RIGHT,) (0,1,0)
-Added 'mem_right_ipin_3' under 'cby_0__1_'
-Added 3 bits to 'mem_right_ipin_3' under 'cby_0__1_'
-	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '4'. Details: IPIN:92 side: (RIGHT,) (0,1,0)
-Added 'mem_right_ipin_4' under 'cby_0__1_'
-Added 3 bits to 'mem_right_ipin_4' under 'cby_0__1_'
-	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '5'. Details: IPIN:93 side: (RIGHT,) (0,1,0)
-Added 'mem_right_ipin_5' under 'cby_0__1_'
-Added 3 bits to 'mem_right_ipin_5' under 'cby_0__1_'
-	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '6'. Details: IPIN:94 side: (RIGHT,) (0,1,0)
-Added 'mem_right_ipin_6' under 'cby_0__1_'
-Added 3 bits to 'mem_right_ipin_6' under 'cby_0__1_'
-	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '7'. Details: IPIN:95 side: (RIGHT,) (0,1,0)
-Added 'mem_right_ipin_7' under 'cby_0__1_'
-Added 3 bits to 'mem_right_ipin_7' under 'cby_0__1_'
 	Done
 
 	Generating bitstream for Y-direction Connection Block [0][2]
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '0'. Details: IPIN:511 side: (LEFT,) (1,2,0)
+	Generating bitstream for IPIN '0'. Details: IPIN:447 side: (LEFT,) (1,2,0)
 Added 'mem_left_ipin_0' under 'cby_0__2_'
 Added 3 bits to 'mem_left_ipin_0' under 'cby_0__2_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '1'. Details: IPIN:512 side: (LEFT,) (1,2,0)
+	Generating bitstream for IPIN '1'. Details: IPIN:448 side: (LEFT,) (1,2,0)
 Added 'mem_left_ipin_1' under 'cby_0__2_'
 Added 3 bits to 'mem_left_ipin_1' under 'cby_0__2_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '2'. Details: IPIN:513 side: (LEFT,) (1,2,0)
+	Generating bitstream for IPIN '2'. Details: IPIN:449 side: (LEFT,) (1,2,0)
 Added 'mem_left_ipin_2' under 'cby_0__2_'
 Added 3 bits to 'mem_left_ipin_2' under 'cby_0__2_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '3'. Details: IPIN:514 side: (LEFT,) (1,2,0)
+	Generating bitstream for IPIN '3'. Details: IPIN:450 side: (LEFT,) (1,2,0)
 Added 'mem_left_ipin_3' under 'cby_0__2_'
 Added 3 bits to 'mem_left_ipin_3' under 'cby_0__2_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '4'. Details: IPIN:515 side: (LEFT,) (1,2,0)
+	Generating bitstream for IPIN '4'. Details: IPIN:451 side: (LEFT,) (1,2,0)
 Added 'mem_left_ipin_4' under 'cby_0__2_'
 Added 3 bits to 'mem_left_ipin_4' under 'cby_0__2_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '5'. Details: IPIN:516 side: (LEFT,) (1,2,0)
+	Generating bitstream for IPIN '5'. Details: IPIN:452 side: (LEFT,) (1,2,0)
 Added 'mem_left_ipin_5' under 'cby_0__2_'
 Added 2 bits to 'mem_left_ipin_5' under 'cby_0__2_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '6'. Details: IPIN:517 side: (LEFT,) (1,2,0)
+	Generating bitstream for IPIN '6'. Details: IPIN:453 side: (LEFT,) (1,2,0)
 Added 'mem_left_ipin_6' under 'cby_0__2_'
 Added 2 bits to 'mem_left_ipin_6' under 'cby_0__2_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '7'. Details: IPIN:518 side: (LEFT,) (1,2,0)
+	Generating bitstream for IPIN '7'. Details: IPIN:454 side: (LEFT,) (1,2,0)
 Added 'mem_left_ipin_7' under 'cby_0__2_'
 Added 2 bits to 'mem_left_ipin_7' under 'cby_0__2_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '8'. Details: IPIN:519 side: (LEFT,) (1,2,0)
+	Generating bitstream for IPIN '8'. Details: IPIN:455 side: (LEFT,) (1,2,0)
 Added 'mem_left_ipin_8' under 'cby_0__2_'
 Added 2 bits to 'mem_left_ipin_8' under 'cby_0__2_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '9'. Details: IPIN:520 side: (LEFT,) (1,2,0)
+	Generating bitstream for IPIN '9'. Details: IPIN:456 side: (LEFT,) (1,2,0)
 Added 'mem_left_ipin_9' under 'cby_0__2_'
 Added 2 bits to 'mem_left_ipin_9' under 'cby_0__2_'
-	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '0'. Details: IPIN:414 side: (RIGHT,) (0,2,0)
-Added 'mem_right_ipin_0' under 'cby_0__2_'
-Added 3 bits to 'mem_right_ipin_0' under 'cby_0__2_'
-	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '1'. Details: IPIN:415 side: (RIGHT,) (0,2,0)
-Added 'mem_right_ipin_1' under 'cby_0__2_'
-Added 3 bits to 'mem_right_ipin_1' under 'cby_0__2_'
-	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '2'. Details: IPIN:416 side: (RIGHT,) (0,2,0)
-Added 'mem_right_ipin_2' under 'cby_0__2_'
-Added 3 bits to 'mem_right_ipin_2' under 'cby_0__2_'
-	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '3'. Details: IPIN:417 side: (RIGHT,) (0,2,0)
-Added 'mem_right_ipin_3' under 'cby_0__2_'
-Added 3 bits to 'mem_right_ipin_3' under 'cby_0__2_'
-	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '4'. Details: IPIN:418 side: (RIGHT,) (0,2,0)
-Added 'mem_right_ipin_4' under 'cby_0__2_'
-Added 3 bits to 'mem_right_ipin_4' under 'cby_0__2_'
-	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '5'. Details: IPIN:419 side: (RIGHT,) (0,2,0)
-Added 'mem_right_ipin_5' under 'cby_0__2_'
-Added 3 bits to 'mem_right_ipin_5' under 'cby_0__2_'
-	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '6'. Details: IPIN:420 side: (RIGHT,) (0,2,0)
-Added 'mem_right_ipin_6' under 'cby_0__2_'
-Added 3 bits to 'mem_right_ipin_6' under 'cby_0__2_'
-	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '7'. Details: IPIN:421 side: (RIGHT,) (0,2,0)
-Added 'mem_right_ipin_7' under 'cby_0__2_'
-Added 3 bits to 'mem_right_ipin_7' under 'cby_0__2_'
 	Done
 
 	Generating bitstream for Y-direction Connection Block [1][1]
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '0'. Details: IPIN:268 side: (LEFT,) (2,1,0)
+	Generating bitstream for IPIN '0'. Details: IPIN:332 side: (LEFT,) (2,1,0)
 Added 'mem_left_ipin_0' under 'cby_1__1_'
 Added 3 bits to 'mem_left_ipin_0' under 'cby_1__1_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '1'. Details: IPIN:269 side: (LEFT,) (2,1,0)
+	Generating bitstream for IPIN '1'. Details: IPIN:333 side: (LEFT,) (2,1,0)
 Added 'mem_left_ipin_1' under 'cby_1__1_'
 Added 3 bits to 'mem_left_ipin_1' under 'cby_1__1_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '2'. Details: IPIN:270 side: (LEFT,) (2,1,0)
+	Generating bitstream for IPIN '2'. Details: IPIN:334 side: (LEFT,) (2,1,0)
 Added 'mem_left_ipin_2' under 'cby_1__1_'
 Added 3 bits to 'mem_left_ipin_2' under 'cby_1__1_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '3'. Details: IPIN:271 side: (LEFT,) (2,1,0)
+	Generating bitstream for IPIN '3'. Details: IPIN:335 side: (LEFT,) (2,1,0)
 Added 'mem_left_ipin_3' under 'cby_1__1_'
 Added 3 bits to 'mem_left_ipin_3' under 'cby_1__1_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '4'. Details: IPIN:272 side: (LEFT,) (2,1,0)
+	Generating bitstream for IPIN '4'. Details: IPIN:336 side: (LEFT,) (2,1,0)
 Added 'mem_left_ipin_4' under 'cby_1__1_'
 Added 3 bits to 'mem_left_ipin_4' under 'cby_1__1_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '5'. Details: IPIN:273 side: (LEFT,) (2,1,0)
+	Generating bitstream for IPIN '5'. Details: IPIN:337 side: (LEFT,) (2,1,0)
 Added 'mem_left_ipin_5' under 'cby_1__1_'
 Added 2 bits to 'mem_left_ipin_5' under 'cby_1__1_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '6'. Details: IPIN:274 side: (LEFT,) (2,1,0)
+	Generating bitstream for IPIN '6'. Details: IPIN:338 side: (LEFT,) (2,1,0)
 Added 'mem_left_ipin_6' under 'cby_1__1_'
 Added 2 bits to 'mem_left_ipin_6' under 'cby_1__1_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '7'. Details: IPIN:275 side: (LEFT,) (2,1,0)
+	Generating bitstream for IPIN '7'. Details: IPIN:339 side: (LEFT,) (2,1,0)
 Added 'mem_left_ipin_7' under 'cby_1__1_'
 Added 2 bits to 'mem_left_ipin_7' under 'cby_1__1_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '8'. Details: IPIN:276 side: (LEFT,) (2,1,0)
+	Generating bitstream for IPIN '8'. Details: IPIN:340 side: (LEFT,) (2,1,0)
 Added 'mem_left_ipin_8' under 'cby_1__1_'
 Added 2 bits to 'mem_left_ipin_8' under 'cby_1__1_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '9'. Details: IPIN:277 side: (LEFT,) (2,1,0)
+	Generating bitstream for IPIN '9'. Details: IPIN:341 side: (LEFT,) (2,1,0)
 Added 'mem_left_ipin_9' under 'cby_1__1_'
 Added 2 bits to 'mem_left_ipin_9' under 'cby_1__1_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '0'. Details: IPIN:165 side: (RIGHT,) (1,1,0)
+	Generating bitstream for IPIN '0'. Details: IPIN:229 side: (RIGHT,) (1,1,0)
 Added 'mem_right_ipin_0' under 'cby_1__1_'
 Added 3 bits to 'mem_right_ipin_0' under 'cby_1__1_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '1'. Details: IPIN:166 side: (RIGHT,) (1,1,0)
+	Generating bitstream for IPIN '1'. Details: IPIN:230 side: (RIGHT,) (1,1,0)
 Added 'mem_right_ipin_1' under 'cby_1__1_'
 Added 3 bits to 'mem_right_ipin_1' under 'cby_1__1_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '2'. Details: IPIN:167 side: (RIGHT,) (1,1,0)
+	Generating bitstream for IPIN '2'. Details: IPIN:231 side: (RIGHT,) (1,1,0)
 Added 'mem_right_ipin_2' under 'cby_1__1_'
 Added 3 bits to 'mem_right_ipin_2' under 'cby_1__1_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '3'. Details: IPIN:168 side: (RIGHT,) (1,1,0)
+	Generating bitstream for IPIN '3'. Details: IPIN:232 side: (RIGHT,) (1,1,0)
 Added 'mem_right_ipin_3' under 'cby_1__1_'
 Added 3 bits to 'mem_right_ipin_3' under 'cby_1__1_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '4'. Details: IPIN:169 side: (RIGHT,) (1,1,0)
+	Generating bitstream for IPIN '4'. Details: IPIN:233 side: (RIGHT,) (1,1,0)
 Added 'mem_right_ipin_4' under 'cby_1__1_'
 Added 3 bits to 'mem_right_ipin_4' under 'cby_1__1_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '5'. Details: IPIN:170 side: (RIGHT,) (1,1,0)
+	Generating bitstream for IPIN '5'. Details: IPIN:234 side: (RIGHT,) (1,1,0)
 Added 'mem_right_ipin_5' under 'cby_1__1_'
 Added 2 bits to 'mem_right_ipin_5' under 'cby_1__1_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '6'. Details: IPIN:171 side: (RIGHT,) (1,1,0)
+	Generating bitstream for IPIN '6'. Details: IPIN:235 side: (RIGHT,) (1,1,0)
 Added 'mem_right_ipin_6' under 'cby_1__1_'
 Added 2 bits to 'mem_right_ipin_6' under 'cby_1__1_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '7'. Details: IPIN:172 side: (RIGHT,) (1,1,0)
+	Generating bitstream for IPIN '7'. Details: IPIN:236 side: (RIGHT,) (1,1,0)
 Added 'mem_right_ipin_7' under 'cby_1__1_'
 Added 2 bits to 'mem_right_ipin_7' under 'cby_1__1_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '8'. Details: IPIN:173 side: (RIGHT,) (1,1,0)
+	Generating bitstream for IPIN '8'. Details: IPIN:237 side: (RIGHT,) (1,1,0)
 Added 'mem_right_ipin_8' under 'cby_1__1_'
 Added 2 bits to 'mem_right_ipin_8' under 'cby_1__1_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '9'. Details: IPIN:174 side: (RIGHT,) (1,1,0)
+	Generating bitstream for IPIN '9'. Details: IPIN:238 side: (RIGHT,) (1,1,0)
 Added 'mem_right_ipin_9' under 'cby_1__1_'
 Added 2 bits to 'mem_right_ipin_9' under 'cby_1__1_'
 	Done
 
 	Generating bitstream for Y-direction Connection Block [1][2]
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '0'. Details: IPIN:594 side: (LEFT,) (2,2,0)
+	Generating bitstream for IPIN '0'. Details: IPIN:530 side: (LEFT,) (2,2,0)
 Added 'mem_left_ipin_0' under 'cby_1__2_'
 Added 3 bits to 'mem_left_ipin_0' under 'cby_1__2_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '1'. Details: IPIN:595 side: (LEFT,) (2,2,0)
+	Generating bitstream for IPIN '1'. Details: IPIN:531 side: (LEFT,) (2,2,0)
 Added 'mem_left_ipin_1' under 'cby_1__2_'
 Added 3 bits to 'mem_left_ipin_1' under 'cby_1__2_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '2'. Details: IPIN:596 side: (LEFT,) (2,2,0)
+	Generating bitstream for IPIN '2'. Details: IPIN:532 side: (LEFT,) (2,2,0)
 Added 'mem_left_ipin_2' under 'cby_1__2_'
 Added 3 bits to 'mem_left_ipin_2' under 'cby_1__2_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '3'. Details: IPIN:597 side: (LEFT,) (2,2,0)
+	Generating bitstream for IPIN '3'. Details: IPIN:533 side: (LEFT,) (2,2,0)
 Added 'mem_left_ipin_3' under 'cby_1__2_'
 Added 3 bits to 'mem_left_ipin_3' under 'cby_1__2_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '4'. Details: IPIN:598 side: (LEFT,) (2,2,0)
+	Generating bitstream for IPIN '4'. Details: IPIN:534 side: (LEFT,) (2,2,0)
 Added 'mem_left_ipin_4' under 'cby_1__2_'
 Added 3 bits to 'mem_left_ipin_4' under 'cby_1__2_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '5'. Details: IPIN:599 side: (LEFT,) (2,2,0)
+	Generating bitstream for IPIN '5'. Details: IPIN:535 side: (LEFT,) (2,2,0)
 Added 'mem_left_ipin_5' under 'cby_1__2_'
 Added 2 bits to 'mem_left_ipin_5' under 'cby_1__2_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '6'. Details: IPIN:600 side: (LEFT,) (2,2,0)
+	Generating bitstream for IPIN '6'. Details: IPIN:536 side: (LEFT,) (2,2,0)
 Added 'mem_left_ipin_6' under 'cby_1__2_'
 Added 2 bits to 'mem_left_ipin_6' under 'cby_1__2_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '7'. Details: IPIN:601 side: (LEFT,) (2,2,0)
+	Generating bitstream for IPIN '7'. Details: IPIN:537 side: (LEFT,) (2,2,0)
 Added 'mem_left_ipin_7' under 'cby_1__2_'
 Added 2 bits to 'mem_left_ipin_7' under 'cby_1__2_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '8'. Details: IPIN:602 side: (LEFT,) (2,2,0)
+	Generating bitstream for IPIN '8'. Details: IPIN:538 side: (LEFT,) (2,2,0)
 Added 'mem_left_ipin_8' under 'cby_1__2_'
 Added 2 bits to 'mem_left_ipin_8' under 'cby_1__2_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '9'. Details: IPIN:603 side: (LEFT,) (2,2,0)
+	Generating bitstream for IPIN '9'. Details: IPIN:539 side: (LEFT,) (2,2,0)
 Added 'mem_left_ipin_9' under 'cby_1__2_'
 Added 2 bits to 'mem_left_ipin_9' under 'cby_1__2_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '0'. Details: IPIN:491 side: (RIGHT,) (1,2,0)
+	Generating bitstream for IPIN '0'. Details: IPIN:427 side: (RIGHT,) (1,2,0)
 Added 'mem_right_ipin_0' under 'cby_1__2_'
 Added 3 bits to 'mem_right_ipin_0' under 'cby_1__2_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '1'. Details: IPIN:492 side: (RIGHT,) (1,2,0)
+	Generating bitstream for IPIN '1'. Details: IPIN:428 side: (RIGHT,) (1,2,0)
 Added 'mem_right_ipin_1' under 'cby_1__2_'
 Added 3 bits to 'mem_right_ipin_1' under 'cby_1__2_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '2'. Details: IPIN:493 side: (RIGHT,) (1,2,0)
+	Generating bitstream for IPIN '2'. Details: IPIN:429 side: (RIGHT,) (1,2,0)
 Added 'mem_right_ipin_2' under 'cby_1__2_'
 Added 3 bits to 'mem_right_ipin_2' under 'cby_1__2_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '3'. Details: IPIN:494 side: (RIGHT,) (1,2,0)
+	Generating bitstream for IPIN '3'. Details: IPIN:430 side: (RIGHT,) (1,2,0)
 Added 'mem_right_ipin_3' under 'cby_1__2_'
 Added 3 bits to 'mem_right_ipin_3' under 'cby_1__2_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '4'. Details: IPIN:495 side: (RIGHT,) (1,2,0)
+	Generating bitstream for IPIN '4'. Details: IPIN:431 side: (RIGHT,) (1,2,0)
 Added 'mem_right_ipin_4' under 'cby_1__2_'
 Added 3 bits to 'mem_right_ipin_4' under 'cby_1__2_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '5'. Details: IPIN:496 side: (RIGHT,) (1,2,0)
+	Generating bitstream for IPIN '5'. Details: IPIN:432 side: (RIGHT,) (1,2,0)
 Added 'mem_right_ipin_5' under 'cby_1__2_'
 Added 2 bits to 'mem_right_ipin_5' under 'cby_1__2_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '6'. Details: IPIN:497 side: (RIGHT,) (1,2,0)
+	Generating bitstream for IPIN '6'. Details: IPIN:433 side: (RIGHT,) (1,2,0)
 Added 'mem_right_ipin_6' under 'cby_1__2_'
 Added 2 bits to 'mem_right_ipin_6' under 'cby_1__2_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '7'. Details: IPIN:498 side: (RIGHT,) (1,2,0)
+	Generating bitstream for IPIN '7'. Details: IPIN:434 side: (RIGHT,) (1,2,0)
 Added 'mem_right_ipin_7' under 'cby_1__2_'
 Added 2 bits to 'mem_right_ipin_7' under 'cby_1__2_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '8'. Details: IPIN:499 side: (RIGHT,) (1,2,0)
+	Generating bitstream for IPIN '8'. Details: IPIN:435 side: (RIGHT,) (1,2,0)
 Added 'mem_right_ipin_8' under 'cby_1__2_'
 Added 2 bits to 'mem_right_ipin_8' under 'cby_1__2_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '9'. Details: IPIN:500 side: (RIGHT,) (1,2,0)
+	Generating bitstream for IPIN '9'. Details: IPIN:436 side: (RIGHT,) (1,2,0)
 Added 'mem_right_ipin_9' under 'cby_1__2_'
 Added 2 bits to 'mem_right_ipin_9' under 'cby_1__2_'
 	Done
@@ -2592,124 +2529,124 @@ Added 3 bits to 'mem_left_ipin_6' under 'cby_2__1_'
 Added 'mem_left_ipin_7' under 'cby_2__1_'
 Added 3 bits to 'mem_left_ipin_7' under 'cby_2__1_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '0'. Details: IPIN:248 side: (RIGHT,) (2,1,0)
+	Generating bitstream for IPIN '0'. Details: IPIN:312 side: (RIGHT,) (2,1,0)
 Added 'mem_right_ipin_0' under 'cby_2__1_'
 Added 3 bits to 'mem_right_ipin_0' under 'cby_2__1_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '1'. Details: IPIN:249 side: (RIGHT,) (2,1,0)
+	Generating bitstream for IPIN '1'. Details: IPIN:313 side: (RIGHT,) (2,1,0)
 Added 'mem_right_ipin_1' under 'cby_2__1_'
 Added 3 bits to 'mem_right_ipin_1' under 'cby_2__1_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '2'. Details: IPIN:250 side: (RIGHT,) (2,1,0)
+	Generating bitstream for IPIN '2'. Details: IPIN:314 side: (RIGHT,) (2,1,0)
 Added 'mem_right_ipin_2' under 'cby_2__1_'
 Added 3 bits to 'mem_right_ipin_2' under 'cby_2__1_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '3'. Details: IPIN:251 side: (RIGHT,) (2,1,0)
+	Generating bitstream for IPIN '3'. Details: IPIN:315 side: (RIGHT,) (2,1,0)
 Added 'mem_right_ipin_3' under 'cby_2__1_'
 Added 3 bits to 'mem_right_ipin_3' under 'cby_2__1_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '4'. Details: IPIN:252 side: (RIGHT,) (2,1,0)
+	Generating bitstream for IPIN '4'. Details: IPIN:316 side: (RIGHT,) (2,1,0)
 Added 'mem_right_ipin_4' under 'cby_2__1_'
 Added 3 bits to 'mem_right_ipin_4' under 'cby_2__1_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '5'. Details: IPIN:253 side: (RIGHT,) (2,1,0)
+	Generating bitstream for IPIN '5'. Details: IPIN:317 side: (RIGHT,) (2,1,0)
 Added 'mem_right_ipin_5' under 'cby_2__1_'
 Added 2 bits to 'mem_right_ipin_5' under 'cby_2__1_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '6'. Details: IPIN:254 side: (RIGHT,) (2,1,0)
+	Generating bitstream for IPIN '6'. Details: IPIN:318 side: (RIGHT,) (2,1,0)
 Added 'mem_right_ipin_6' under 'cby_2__1_'
 Added 2 bits to 'mem_right_ipin_6' under 'cby_2__1_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '7'. Details: IPIN:255 side: (RIGHT,) (2,1,0)
+	Generating bitstream for IPIN '7'. Details: IPIN:319 side: (RIGHT,) (2,1,0)
 Added 'mem_right_ipin_7' under 'cby_2__1_'
 Added 2 bits to 'mem_right_ipin_7' under 'cby_2__1_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '8'. Details: IPIN:256 side: (RIGHT,) (2,1,0)
+	Generating bitstream for IPIN '8'. Details: IPIN:320 side: (RIGHT,) (2,1,0)
 Added 'mem_right_ipin_8' under 'cby_2__1_'
 Added 2 bits to 'mem_right_ipin_8' under 'cby_2__1_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '9'. Details: IPIN:257 side: (RIGHT,) (2,1,0)
+	Generating bitstream for IPIN '9'. Details: IPIN:321 side: (RIGHT,) (2,1,0)
 Added 'mem_right_ipin_9' under 'cby_2__1_'
 Added 2 bits to 'mem_right_ipin_9' under 'cby_2__1_'
 	Done
 
 	Generating bitstream for Y-direction Connection Block [2][2]
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '0'. Details: IPIN:676 side: (LEFT,) (3,2,0)
+	Generating bitstream for IPIN '0'. Details: IPIN:548 side: (LEFT,) (3,2,0)
 Added 'mem_left_ipin_0' under 'cby_2__2_'
 Added 3 bits to 'mem_left_ipin_0' under 'cby_2__2_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '1'. Details: IPIN:677 side: (LEFT,) (3,2,0)
+	Generating bitstream for IPIN '1'. Details: IPIN:549 side: (LEFT,) (3,2,0)
 Added 'mem_left_ipin_1' under 'cby_2__2_'
 Added 3 bits to 'mem_left_ipin_1' under 'cby_2__2_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '2'. Details: IPIN:678 side: (LEFT,) (3,2,0)
+	Generating bitstream for IPIN '2'. Details: IPIN:550 side: (LEFT,) (3,2,0)
 Added 'mem_left_ipin_2' under 'cby_2__2_'
 Added 3 bits to 'mem_left_ipin_2' under 'cby_2__2_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '3'. Details: IPIN:679 side: (LEFT,) (3,2,0)
+	Generating bitstream for IPIN '3'. Details: IPIN:551 side: (LEFT,) (3,2,0)
 Added 'mem_left_ipin_3' under 'cby_2__2_'
 Added 3 bits to 'mem_left_ipin_3' under 'cby_2__2_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '4'. Details: IPIN:680 side: (LEFT,) (3,2,0)
+	Generating bitstream for IPIN '4'. Details: IPIN:552 side: (LEFT,) (3,2,0)
 Added 'mem_left_ipin_4' under 'cby_2__2_'
 Added 3 bits to 'mem_left_ipin_4' under 'cby_2__2_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '5'. Details: IPIN:681 side: (LEFT,) (3,2,0)
+	Generating bitstream for IPIN '5'. Details: IPIN:553 side: (LEFT,) (3,2,0)
 Added 'mem_left_ipin_5' under 'cby_2__2_'
 Added 3 bits to 'mem_left_ipin_5' under 'cby_2__2_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '6'. Details: IPIN:682 side: (LEFT,) (3,2,0)
+	Generating bitstream for IPIN '6'. Details: IPIN:554 side: (LEFT,) (3,2,0)
 Added 'mem_left_ipin_6' under 'cby_2__2_'
 Added 3 bits to 'mem_left_ipin_6' under 'cby_2__2_'
 	Generating bitstream for IPIN at 'right' side
-	Generating bitstream for IPIN '7'. Details: IPIN:683 side: (LEFT,) (3,2,0)
+	Generating bitstream for IPIN '7'. Details: IPIN:555 side: (LEFT,) (3,2,0)
 Added 'mem_left_ipin_7' under 'cby_2__2_'
 Added 3 bits to 'mem_left_ipin_7' under 'cby_2__2_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '0'. Details: IPIN:574 side: (RIGHT,) (2,2,0)
+	Generating bitstream for IPIN '0'. Details: IPIN:510 side: (RIGHT,) (2,2,0)
 Added 'mem_right_ipin_0' under 'cby_2__2_'
 Added 3 bits to 'mem_right_ipin_0' under 'cby_2__2_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '1'. Details: IPIN:575 side: (RIGHT,) (2,2,0)
+	Generating bitstream for IPIN '1'. Details: IPIN:511 side: (RIGHT,) (2,2,0)
 Added 'mem_right_ipin_1' under 'cby_2__2_'
 Added 3 bits to 'mem_right_ipin_1' under 'cby_2__2_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '2'. Details: IPIN:576 side: (RIGHT,) (2,2,0)
+	Generating bitstream for IPIN '2'. Details: IPIN:512 side: (RIGHT,) (2,2,0)
 Added 'mem_right_ipin_2' under 'cby_2__2_'
 Added 3 bits to 'mem_right_ipin_2' under 'cby_2__2_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '3'. Details: IPIN:577 side: (RIGHT,) (2,2,0)
+	Generating bitstream for IPIN '3'. Details: IPIN:513 side: (RIGHT,) (2,2,0)
 Added 'mem_right_ipin_3' under 'cby_2__2_'
 Added 3 bits to 'mem_right_ipin_3' under 'cby_2__2_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '4'. Details: IPIN:578 side: (RIGHT,) (2,2,0)
+	Generating bitstream for IPIN '4'. Details: IPIN:514 side: (RIGHT,) (2,2,0)
 Added 'mem_right_ipin_4' under 'cby_2__2_'
 Added 3 bits to 'mem_right_ipin_4' under 'cby_2__2_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '5'. Details: IPIN:579 side: (RIGHT,) (2,2,0)
+	Generating bitstream for IPIN '5'. Details: IPIN:515 side: (RIGHT,) (2,2,0)
 Added 'mem_right_ipin_5' under 'cby_2__2_'
 Added 2 bits to 'mem_right_ipin_5' under 'cby_2__2_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '6'. Details: IPIN:580 side: (RIGHT,) (2,2,0)
+	Generating bitstream for IPIN '6'. Details: IPIN:516 side: (RIGHT,) (2,2,0)
 Added 'mem_right_ipin_6' under 'cby_2__2_'
 Added 2 bits to 'mem_right_ipin_6' under 'cby_2__2_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '7'. Details: IPIN:581 side: (RIGHT,) (2,2,0)
+	Generating bitstream for IPIN '7'. Details: IPIN:517 side: (RIGHT,) (2,2,0)
 Added 'mem_right_ipin_7' under 'cby_2__2_'
 Added 2 bits to 'mem_right_ipin_7' under 'cby_2__2_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '8'. Details: IPIN:582 side: (RIGHT,) (2,2,0)
+	Generating bitstream for IPIN '8'. Details: IPIN:518 side: (RIGHT,) (2,2,0)
 Added 'mem_right_ipin_8' under 'cby_2__2_'
 Added 2 bits to 'mem_right_ipin_8' under 'cby_2__2_'
 	Generating bitstream for IPIN at 'left' side
-	Generating bitstream for IPIN '9'. Details: IPIN:583 side: (RIGHT,) (2,2,0)
+	Generating bitstream for IPIN '9'. Details: IPIN:519 side: (RIGHT,) (2,2,0)
 Added 'mem_right_ipin_9' under 'cby_2__2_'
 Added 2 bits to 'mem_right_ipin_9' under 'cby_2__2_'
 	Done
 Done
 Done
-Decoded 5265 configuration bits into 1104 blocks
+Decoded 5214 configuration bits into 1041 blocks
 
 Build fabric-independent bitstream for implementation 'and2'
  took 0.01 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
@@ -2719,9 +2656,9 @@ Overwrite Bitstream
 
 Overwrite Bitstream
  took 0.00 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
-Warning 36: Directory path is empty and nothing will be created.
-Write 5265 architecture independent bitstream into XML file 'fabric_independent_bitstream.xml'
-Write 5265 architecture independent bitstream into XML file 'fabric_independent_bitstream.xml' took 0.01 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
+Warning 35: Directory path is empty and nothing will be created.
+Write 5214 architecture independent bitstream into XML file 'fabric_independent_bitstream.xml'
+Write 5214 architecture independent bitstream into XML file 'fabric_independent_bitstream.xml' took 0.01 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
 
 Build non-fabric bitstream for implementation 'and2'
 
@@ -2782,21 +2719,53 @@ Try to find a configurable block corresponding to module 'mem_bottom_ipin_6' in 
 Try to find a configurable block corresponding to module 'mem_bottom_ipin_7' in FPGA fabric under its parent block 'cbx_1__0_'
 Try to find a configurable block corresponding to module 'mem_bottom_ipin_8' in FPGA fabric under its parent block 'cbx_1__0_'
 Try to find a configurable block corresponding to module 'mem_bottom_ipin_9' in FPGA fabric under its parent block 'cbx_1__0_'
+Try to find a configurable block corresponding to module 'mem_top_ipin_0' in FPGA fabric under its parent block 'cbx_1__0_'
+Try to find a configurable block corresponding to module 'mem_top_ipin_1' in FPGA fabric under its parent block 'cbx_1__0_'
+Try to find a configurable block corresponding to module 'mem_top_ipin_2' in FPGA fabric under its parent block 'cbx_1__0_'
+Try to find a configurable block corresponding to module 'mem_top_ipin_3' in FPGA fabric under its parent block 'cbx_1__0_'
+Try to find a configurable block corresponding to module 'mem_top_ipin_4' in FPGA fabric under its parent block 'cbx_1__0_'
+Try to find a configurable block corresponding to module 'mem_top_ipin_5' in FPGA fabric under its parent block 'cbx_1__0_'
+Try to find a configurable block corresponding to module 'mem_top_ipin_6' in FPGA fabric under its parent block 'cbx_1__0_'
+Try to find a configurable block corresponding to module 'mem_top_ipin_7' in FPGA fabric under its parent block 'cbx_1__0_'
+Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__0' in FPGA fabric under its parent block 'grid_io_1__0_'
+Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__0'
+Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
+Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__1' in FPGA fabric under its parent block 'grid_io_1__0_'
+Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__1'
+Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
+Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__2' in FPGA fabric under its parent block 'grid_io_1__0_'
+Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__2'
+Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
+Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__3' in FPGA fabric under its parent block 'grid_io_1__0_'
+Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__3'
+Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
+Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__4' in FPGA fabric under its parent block 'grid_io_1__0_'
+Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__4'
+Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
+Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__5' in FPGA fabric under its parent block 'grid_io_1__0_'
+Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__5'
+Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
+Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__6' in FPGA fabric under its parent block 'grid_io_1__0_'
+Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__6'
+Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
+Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__7' in FPGA fabric under its parent block 'grid_io_1__0_'
+Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__7'
+Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
 Try to find a configurable block corresponding to module 'mem_top_track_0' in FPGA fabric under its parent block 'sb_2__0_'
 Try to find a configurable block corresponding to module 'mem_top_track_2' in FPGA fabric under its parent block 'sb_2__0_'
 Try to find a configurable block corresponding to module 'mem_top_track_4' in FPGA fabric under its parent block 'sb_2__0_'
 Try to find a configurable block corresponding to module 'mem_top_track_6' in FPGA fabric under its parent block 'sb_2__0_'
 Try to find a configurable block corresponding to module 'mem_top_track_8' in FPGA fabric under its parent block 'sb_2__0_'
-Try to find a configurable block corresponding to module 'mem_top_track_10' in FPGA fabric under its parent block 'sb_2__0_'
-Try to find a configurable block corresponding to module 'mem_top_track_12' in FPGA fabric under its parent block 'sb_2__0_'
-Try to find a configurable block corresponding to module 'mem_top_track_14' in FPGA fabric under its parent block 'sb_2__0_'
-Try to find a configurable block corresponding to module 'mem_top_track_16' in FPGA fabric under its parent block 'sb_2__0_'
-Try to find a configurable block corresponding to module 'mem_top_track_18' in FPGA fabric under its parent block 'sb_2__0_'
 Try to find a configurable block corresponding to module 'mem_left_track_1' in FPGA fabric under its parent block 'sb_2__0_'
 Try to find a configurable block corresponding to module 'mem_left_track_3' in FPGA fabric under its parent block 'sb_2__0_'
 Try to find a configurable block corresponding to module 'mem_left_track_5' in FPGA fabric under its parent block 'sb_2__0_'
 Try to find a configurable block corresponding to module 'mem_left_track_7' in FPGA fabric under its parent block 'sb_2__0_'
 Try to find a configurable block corresponding to module 'mem_left_track_9' in FPGA fabric under its parent block 'sb_2__0_'
+Try to find a configurable block corresponding to module 'mem_left_track_11' in FPGA fabric under its parent block 'sb_2__0_'
+Try to find a configurable block corresponding to module 'mem_left_track_13' in FPGA fabric under its parent block 'sb_2__0_'
+Try to find a configurable block corresponding to module 'mem_left_track_15' in FPGA fabric under its parent block 'sb_2__0_'
+Try to find a configurable block corresponding to module 'mem_left_track_17' in FPGA fabric under its parent block 'sb_2__0_'
+Try to find a configurable block corresponding to module 'mem_left_track_19' in FPGA fabric under its parent block 'sb_2__0_'
 Try to find a configurable block corresponding to module 'mem_bottom_ipin_0' in FPGA fabric under its parent block 'cbx_2__0_'
 Try to find a configurable block corresponding to module 'mem_bottom_ipin_1' in FPGA fabric under its parent block 'cbx_2__0_'
 Try to find a configurable block corresponding to module 'mem_bottom_ipin_2' in FPGA fabric under its parent block 'cbx_2__0_'
@@ -2815,52 +2784,28 @@ Try to find a configurable block corresponding to module 'mem_top_ipin_4' in FPG
 Try to find a configurable block corresponding to module 'mem_top_ipin_5' in FPGA fabric under its parent block 'cbx_2__0_'
 Try to find a configurable block corresponding to module 'mem_top_ipin_6' in FPGA fabric under its parent block 'cbx_2__0_'
 Try to find a configurable block corresponding to module 'mem_top_ipin_7' in FPGA fabric under its parent block 'cbx_2__0_'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__0' in FPGA fabric under its parent block 'grid_io_3__1_'
+Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__0' in FPGA fabric under its parent block 'grid_io_2__0_'
 Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__0'
 Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__1' in FPGA fabric under its parent block 'grid_io_3__1_'
+Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__1' in FPGA fabric under its parent block 'grid_io_2__0_'
 Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__1'
 Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__2' in FPGA fabric under its parent block 'grid_io_3__1_'
+Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__2' in FPGA fabric under its parent block 'grid_io_2__0_'
 Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__2'
 Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__3' in FPGA fabric under its parent block 'grid_io_3__1_'
+Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__3' in FPGA fabric under its parent block 'grid_io_2__0_'
 Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__3'
 Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__4' in FPGA fabric under its parent block 'grid_io_3__1_'
+Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__4' in FPGA fabric under its parent block 'grid_io_2__0_'
 Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__4'
 Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__5' in FPGA fabric under its parent block 'grid_io_3__1_'
+Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__5' in FPGA fabric under its parent block 'grid_io_2__0_'
 Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__5'
 Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__6' in FPGA fabric under its parent block 'grid_io_3__1_'
+Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__6' in FPGA fabric under its parent block 'grid_io_2__0_'
 Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__6'
 Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__7' in FPGA fabric under its parent block 'grid_io_3__1_'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__7'
-Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__0' in FPGA fabric under its parent block 'grid_io_3__2_'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__0'
-Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__1' in FPGA fabric under its parent block 'grid_io_3__2_'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__1'
-Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__2' in FPGA fabric under its parent block 'grid_io_3__2_'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__2'
-Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__3' in FPGA fabric under its parent block 'grid_io_3__2_'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__3'
-Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__4' in FPGA fabric under its parent block 'grid_io_3__2_'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__4'
-Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__5' in FPGA fabric under its parent block 'grid_io_3__2_'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__5'
-Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__6' in FPGA fabric under its parent block 'grid_io_3__2_'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__6'
-Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__7' in FPGA fabric under its parent block 'grid_io_3__2_'
+Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__7' in FPGA fabric under its parent block 'grid_io_2__0_'
 Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__7'
 Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
 Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__0' in FPGA fabric under its parent block 'grid_io_2__3_'
@@ -2941,38 +2886,6 @@ Try to find a configurable block corresponding to module 'mem_left_ipin_6' in FP
 Try to find a configurable block corresponding to module 'mem_left_ipin_7' in FPGA fabric under its parent block 'cby_0__2_'
 Try to find a configurable block corresponding to module 'mem_left_ipin_8' in FPGA fabric under its parent block 'cby_0__2_'
 Try to find a configurable block corresponding to module 'mem_left_ipin_9' in FPGA fabric under its parent block 'cby_0__2_'
-Try to find a configurable block corresponding to module 'mem_right_ipin_0' in FPGA fabric under its parent block 'cby_0__2_'
-Try to find a configurable block corresponding to module 'mem_right_ipin_1' in FPGA fabric under its parent block 'cby_0__2_'
-Try to find a configurable block corresponding to module 'mem_right_ipin_2' in FPGA fabric under its parent block 'cby_0__2_'
-Try to find a configurable block corresponding to module 'mem_right_ipin_3' in FPGA fabric under its parent block 'cby_0__2_'
-Try to find a configurable block corresponding to module 'mem_right_ipin_4' in FPGA fabric under its parent block 'cby_0__2_'
-Try to find a configurable block corresponding to module 'mem_right_ipin_5' in FPGA fabric under its parent block 'cby_0__2_'
-Try to find a configurable block corresponding to module 'mem_right_ipin_6' in FPGA fabric under its parent block 'cby_0__2_'
-Try to find a configurable block corresponding to module 'mem_right_ipin_7' in FPGA fabric under its parent block 'cby_0__2_'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__0' in FPGA fabric under its parent block 'grid_io_0__2_'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__0'
-Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__1' in FPGA fabric under its parent block 'grid_io_0__2_'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__1'
-Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__2' in FPGA fabric under its parent block 'grid_io_0__2_'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__2'
-Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__3' in FPGA fabric under its parent block 'grid_io_0__2_'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__3'
-Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__4' in FPGA fabric under its parent block 'grid_io_0__2_'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__4'
-Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__5' in FPGA fabric under its parent block 'grid_io_0__2_'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__5'
-Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__6' in FPGA fabric under its parent block 'grid_io_0__2_'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__6'
-Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__7' in FPGA fabric under its parent block 'grid_io_0__2_'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__7'
-Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
 Try to find a configurable block corresponding to module 'mem_top_track_0' in FPGA fabric under its parent block 'sb_0__1_'
 Try to find a configurable block corresponding to module 'mem_top_track_8' in FPGA fabric under its parent block 'sb_0__1_'
 Try to find a configurable block corresponding to module 'mem_top_track_16' in FPGA fabric under its parent block 'sb_0__1_'
@@ -2998,38 +2911,6 @@ Try to find a configurable block corresponding to module 'mem_left_ipin_6' in FP
 Try to find a configurable block corresponding to module 'mem_left_ipin_7' in FPGA fabric under its parent block 'cby_0__1_'
 Try to find a configurable block corresponding to module 'mem_left_ipin_8' in FPGA fabric under its parent block 'cby_0__1_'
 Try to find a configurable block corresponding to module 'mem_left_ipin_9' in FPGA fabric under its parent block 'cby_0__1_'
-Try to find a configurable block corresponding to module 'mem_right_ipin_0' in FPGA fabric under its parent block 'cby_0__1_'
-Try to find a configurable block corresponding to module 'mem_right_ipin_1' in FPGA fabric under its parent block 'cby_0__1_'
-Try to find a configurable block corresponding to module 'mem_right_ipin_2' in FPGA fabric under its parent block 'cby_0__1_'
-Try to find a configurable block corresponding to module 'mem_right_ipin_3' in FPGA fabric under its parent block 'cby_0__1_'
-Try to find a configurable block corresponding to module 'mem_right_ipin_4' in FPGA fabric under its parent block 'cby_0__1_'
-Try to find a configurable block corresponding to module 'mem_right_ipin_5' in FPGA fabric under its parent block 'cby_0__1_'
-Try to find a configurable block corresponding to module 'mem_right_ipin_6' in FPGA fabric under its parent block 'cby_0__1_'
-Try to find a configurable block corresponding to module 'mem_right_ipin_7' in FPGA fabric under its parent block 'cby_0__1_'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__0' in FPGA fabric under its parent block 'grid_io_0__1_'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__0'
-Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__1' in FPGA fabric under its parent block 'grid_io_0__1_'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__1'
-Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__2' in FPGA fabric under its parent block 'grid_io_0__1_'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__2'
-Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__3' in FPGA fabric under its parent block 'grid_io_0__1_'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__3'
-Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__4' in FPGA fabric under its parent block 'grid_io_0__1_'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__4'
-Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__5' in FPGA fabric under its parent block 'grid_io_0__1_'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__5'
-Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__6' in FPGA fabric under its parent block 'grid_io_0__1_'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__6'
-Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_io__7' in FPGA fabric under its parent block 'grid_io_0__1_'
-Try to find a configurable block corresponding to module 'logical_tile_io_mode_physical__iopad_0' in FPGA fabric under its parent block 'logical_tile_io_mode_io__7'
-Try to find a configurable block corresponding to module 'GPIO_dffr_mem' in FPGA fabric under its parent block 'logical_tile_io_mode_physical__iopad_0'
 Try to find a configurable block corresponding to module 'mem_top_track_0' in FPGA fabric under its parent block 'sb_1__1_'
 Try to find a configurable block corresponding to module 'mem_top_track_8' in FPGA fabric under its parent block 'sb_1__1_'
 Try to find a configurable block corresponding to module 'mem_top_track_16' in FPGA fabric under its parent block 'sb_1__1_'
@@ -3422,11 +3303,6 @@ Try to find a configurable block corresponding to module 'mem_bottom_track_3' in
 Try to find a configurable block corresponding to module 'mem_bottom_track_5' in FPGA fabric under its parent block 'sb_2__2_'
 Try to find a configurable block corresponding to module 'mem_bottom_track_7' in FPGA fabric under its parent block 'sb_2__2_'
 Try to find a configurable block corresponding to module 'mem_bottom_track_9' in FPGA fabric under its parent block 'sb_2__2_'
-Try to find a configurable block corresponding to module 'mem_bottom_track_11' in FPGA fabric under its parent block 'sb_2__2_'
-Try to find a configurable block corresponding to module 'mem_bottom_track_13' in FPGA fabric under its parent block 'sb_2__2_'
-Try to find a configurable block corresponding to module 'mem_bottom_track_15' in FPGA fabric under its parent block 'sb_2__2_'
-Try to find a configurable block corresponding to module 'mem_bottom_track_17' in FPGA fabric under its parent block 'sb_2__2_'
-Try to find a configurable block corresponding to module 'mem_bottom_track_19' in FPGA fabric under its parent block 'sb_2__2_'
 Try to find a configurable block corresponding to module 'mem_left_track_1' in FPGA fabric under its parent block 'sb_2__2_'
 Try to find a configurable block corresponding to module 'mem_left_track_3' in FPGA fabric under its parent block 'sb_2__2_'
 Try to find a configurable block corresponding to module 'mem_left_track_5' in FPGA fabric under its parent block 'sb_2__2_'
@@ -3809,7 +3685,7 @@ Try to find a configurable block corresponding to module 'mem_fle_9_in_2' in FPG
 Try to find a configurable block corresponding to module 'mem_fle_9_in_3' in FPGA fabric under its parent block 'logical_tile_clb_mode_clb__0'
 Try to find a configurable block corresponding to module 'mem_fle_9_in_4' in FPGA fabric under its parent block 'logical_tile_clb_mode_clb__0'
 Try to find a configurable block corresponding to module 'mem_fle_9_in_5' in FPGA fabric under its parent block 'logical_tile_clb_mode_clb__0'
-Built 5265 configuration bits for fabric
+Built 5214 configuration bits for fabric
 
 Build fabric dependent bitstream
  took 0.00 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
@@ -3828,9 +3704,9 @@ Confirm selected options when call command 'write_fabric_bitstream':
 --wl_decremental_order: off
 --no_time_stamp: off
 --verbose: off
-Warning 37: Directory path is empty and nothing will be created.
-Write 5265 fabric bitstream into plain text file 'fabric_bitstream.bit'
-Write 5265 fabric bitstream into plain text file 'fabric_bitstream.bit' took 0.00 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
+Warning 36: Directory path is empty and nothing will be created.
+Write 5214 fabric bitstream into plain text file 'fabric_bitstream.bit'
+Write 5214 fabric bitstream into plain text file 'fabric_bitstream.bit' took 0.00 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
 
 Command line to execute: write_fabric_verilog --file ./SRC --explicit_port_mapping --include_timing --print_user_defined_template --verbose
 
@@ -3902,13 +3778,13 @@ Writing logical tiles...Done
 
 Building physical tiles...
 Writing Verilog Netlist './SRC/lb/grid_io.v' for physical_tile 'io'...Done
-Writing Verilog Netlist './SRC/lb/grid_gp_inpad_bottom.v' for physical tile 'gp_inpad' at bottom side ...Done
-Writing Verilog Netlist './SRC/lb/grid_gp_outpad_bottom.v' for physical tile 'gp_outpad' at bottom side ...Done
+Writing Verilog Netlist './SRC/lb/grid_gp_inpad_left.v' for physical tile 'gp_inpad' at left side ...Done
+Writing Verilog Netlist './SRC/lb/grid_gp_outpad_right.v' for physical tile 'gp_outpad' at right side ...Done
 Writing Verilog Netlist './SRC/lb/grid_clb.v' for physical_tile 'clb'...Done
 Building physical tiles...Done
 
 Writing Verilog netlist for top-level module of FPGA fabric './SRC/fpga_top.v'...Done
-Written 72 Verilog modules in total
+Written 71 Verilog modules in total
 Write Verilog netlists for FPGA fabric
  took 0.04 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
 
@@ -3933,9 +3809,9 @@ Confirm selected options when call command 'write_full_testbench':
 --verbose: off
 Write Verilog full testbenches for FPGA fabric
 
-Warning 38: Directory './SRC' already exists. Will overwrite contents
+Warning 37: Directory './SRC' already exists. Will overwrite contents
 # Write autocheck testbench for FPGA top-level Verilog netlist for 'and2'
-Will use 5266 configuration clock cycles to top testbench
+Will use 5215 configuration clock cycles to top testbench
 # Write autocheck testbench for FPGA top-level Verilog netlist for 'and2' took 0.08 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
 Write Verilog full testbenches for FPGA fabric
  took 0.08 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
@@ -3963,7 +3839,7 @@ Succeed to create directory './SDC'
 Write SDC for constraining clocks for P&R flow './SDC/global_ports.sdc'
 Write SDC for constraining clocks for P&R flow './SDC/global_ports.sdc' took 0.00 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
 Write SDC to disable configurable memory outputs for P&R flow './SDC/disable_configurable_memory_outputs.sdc'
-Write SDC to disable configurable memory outputs for P&R flow './SDC/disable_configurable_memory_outputs.sdc' took 0.01 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
+Write SDC to disable configurable memory outputs for P&R flow './SDC/disable_configurable_memory_outputs.sdc' took 0.02 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
 Write SDC to disable routing multiplexer outputs for P&R flow './SDC/disable_routing_multiplexer_outputs.sdc'
 Write SDC to disable routing multiplexer outputs for P&R flow './SDC/disable_routing_multiplexer_outputs.sdc' took 0.19 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
 Write SDC to disable switch block outputs for P&R flow './SDC/disable_sb_outputs.sdc'
@@ -3982,7 +3858,7 @@ Confirm selected options when call command 'write_sdc_disable_timing_configure_p
 --flatten_names: on
 --no_time_stamp: off
 --verbose: off
-Warning 39: Directory './SDC' already exists. Will overwrite contents
+Warning 38: Directory './SDC' already exists. Will overwrite contents
 Write SDC to disable timing on configuration outputs of programmable cells for P&R flow './SDC/disable_configure_ports.sdc'
 Write SDC to disable timing on configuration outputs of programmable cells for P&R flow './SDC/disable_configure_ports.sdc' took 0.45 seconds (max_rss 60.4 MiB, delta_rss +0.0 MiB)
 
@@ -4004,11 +3880,11 @@ Confirm selected options when call command 'exit':
 
 Finish execution with 0 errors
 
-The entire OpenFPGA flow took 0.978837 seconds
+The entire OpenFPGA flow took 0.968393 seconds
 
 Thank you for using OpenFPGA!
-Incr Slack updates 2 in 2.76e-06 sec
-Full Max Req/Worst Slack updates 1 in 1.04e-06 sec
-Incr Max Req/Worst Slack updates 1 in 6.8e-07 sec
+Incr Slack updates 2 in 2.12e-06 sec
+Full Max Req/Worst Slack updates 1 in 8.8e-07 sec
+Incr Max Req/Worst Slack updates 1 in 6.4e-07 sec
 Incr Criticality updates 0 in 0 sec
-Full Criticality updates 2 in 1.84e-06 sec
+Full Criticality updates 2 in 1.88e-06 sec

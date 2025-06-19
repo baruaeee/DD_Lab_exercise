@@ -4,13 +4,13 @@
 #	Description: Constrain for Timing/Power analysis on the mapped FPGA
 #	Author: Xifan TANG 
 #	Organization: University of Utah 
-#	Date: Thu Jun 19 01:29:45 2025
+#	Date: Thu Jun 19 13:12:38 2025
 #############################################
 
 ##################################################
 # Create clock                                    
 ##################################################
-create_clock clk[0] -period 1.173607989e-09 -waveform {0 5.868039943e-10}
+create_clock clk[0] -period 1.286200924e-09 -waveform {0 6.431004618e-10}
 
 ##################################################
 # Create input and output delays for used I/Os    
@@ -51,31 +51,16 @@ set_disable_timing gfpga_pad_GPIO_PAD[28]
 set_disable_timing gfpga_pad_GPIO_PAD[29]
 set_disable_timing gfpga_pad_GPIO_PAD[30]
 set_disable_timing gfpga_pad_GPIO_PAD[31]
-set_disable_timing gfpga_pad_GPIO_PAD[32]
-set_disable_timing gfpga_pad_GPIO_PAD[33]
-set_disable_timing gfpga_pad_GPIO_PAD[34]
-set_disable_timing gfpga_pad_GPIO_PAD[35]
-set_disable_timing gfpga_pad_GPIO_PAD[36]
-set_disable_timing gfpga_pad_GPIO_PAD[37]
-set_disable_timing gfpga_pad_GPIO_PAD[38]
-set_disable_timing gfpga_pad_GPIO_PAD[39]
-set_disable_timing gfpga_pad_GPIO_PAD[40]
-set_disable_timing gfpga_pad_GPIO_PAD[41]
-set_disable_timing gfpga_pad_GPIO_PAD[42]
-set_disable_timing gfpga_pad_GPIO_PAD[43]
-set_disable_timing gfpga_pad_GPIO_PAD[44]
-set_disable_timing gfpga_pad_GPIO_PAD[45]
-set_disable_timing gfpga_pad_GPIO_PAD[46]
-set_disable_timing gfpga_pad_GPIO_PAD[47]
 
 ##################################################
 # Create input and output delays for used I/Os    
 ##################################################
-set_output_delay -clock clk[0] -max 1.173607989e-09 gfpga_pad_GPOUT_PAD[0]
+set_output_delay -clock clk[0] -max 1.286200924e-09 gfpga_pad_GPOUT_PAD[8]
 
 ##################################################
 # Disable timing for unused I/Os    
 ##################################################
+set_disable_timing gfpga_pad_GPOUT_PAD[0]
 set_disable_timing gfpga_pad_GPOUT_PAD[1]
 set_disable_timing gfpga_pad_GPOUT_PAD[2]
 set_disable_timing gfpga_pad_GPOUT_PAD[3]
@@ -83,12 +68,19 @@ set_disable_timing gfpga_pad_GPOUT_PAD[4]
 set_disable_timing gfpga_pad_GPOUT_PAD[5]
 set_disable_timing gfpga_pad_GPOUT_PAD[6]
 set_disable_timing gfpga_pad_GPOUT_PAD[7]
+set_disable_timing gfpga_pad_GPOUT_PAD[9]
+set_disable_timing gfpga_pad_GPOUT_PAD[10]
+set_disable_timing gfpga_pad_GPOUT_PAD[11]
+set_disable_timing gfpga_pad_GPOUT_PAD[12]
+set_disable_timing gfpga_pad_GPOUT_PAD[13]
+set_disable_timing gfpga_pad_GPOUT_PAD[14]
+set_disable_timing gfpga_pad_GPOUT_PAD[15]
 
 ##################################################
 # Create input and output delays for used I/Os    
 ##################################################
-set_input_delay -clock clk[0] -max 1.173607989e-09 gfpga_pad_GPIN_PAD[0]
-set_input_delay -clock clk[0] -max 1.173607989e-09 gfpga_pad_GPIN_PAD[1]
+set_input_delay -clock clk[0] -max 1.286200924e-09 gfpga_pad_GPIN_PAD[0]
+set_input_delay -clock clk[0] -max 1.286200924e-09 gfpga_pad_GPIN_PAD[1]
 
 ##################################################
 # Disable timing for unused I/Os    
@@ -99,6 +91,14 @@ set_disable_timing gfpga_pad_GPIN_PAD[4]
 set_disable_timing gfpga_pad_GPIN_PAD[5]
 set_disable_timing gfpga_pad_GPIN_PAD[6]
 set_disable_timing gfpga_pad_GPIN_PAD[7]
+set_disable_timing gfpga_pad_GPIN_PAD[8]
+set_disable_timing gfpga_pad_GPIN_PAD[9]
+set_disable_timing gfpga_pad_GPIN_PAD[10]
+set_disable_timing gfpga_pad_GPIN_PAD[11]
+set_disable_timing gfpga_pad_GPIN_PAD[12]
+set_disable_timing gfpga_pad_GPIN_PAD[13]
+set_disable_timing gfpga_pad_GPIN_PAD[14]
+set_disable_timing gfpga_pad_GPIN_PAD[15]
 
 ##################################################
 # Disable timing for global ports                 
@@ -127,20 +127,8 @@ set_disable_timing fpga_top/sb_*__*_/mem_right_track_*/dffr_*_/Q
 set_disable_timing fpga_top/sb_*__*_/mem_right_track_*/dffr_*_/QN
 set_disable_timing fpga_top/sb_*__*_/mem_right_track_*/dffr_*_/Q
 set_disable_timing fpga_top/sb_*__*_/mem_right_track_*/dffr_*_/QN
-set_disable_timing fpga_top/sb_*__*_/mem_right_track_*/dffr_*_/Q
-set_disable_timing fpga_top/sb_*__*_/mem_right_track_*/dffr_*_/QN
 set_disable_timing fpga_top/sb_*__*_/mem_left_track_*/dffr_*_/Q
 set_disable_timing fpga_top/sb_*__*_/mem_left_track_*/dffr_*_/QN
-set_disable_timing fpga_top/sb_*__*_/mem_left_track_*/dffr_*_/Q
-set_disable_timing fpga_top/sb_*__*_/mem_left_track_*/dffr_*_/QN
-set_disable_timing fpga_top/cbx_*__*_/mem_bottom_ipin_*/dffr_*_/Q
-set_disable_timing fpga_top/cbx_*__*_/mem_bottom_ipin_*/dffr_*_/QN
-set_disable_timing fpga_top/cbx_*__*_/mem_bottom_ipin_*/dffr_*_/Q
-set_disable_timing fpga_top/cbx_*__*_/mem_bottom_ipin_*/dffr_*_/QN
-set_disable_timing fpga_top/sb_*__*_/mem_top_track_*/dffr_*_/Q
-set_disable_timing fpga_top/sb_*__*_/mem_top_track_*/dffr_*_/QN
-set_disable_timing fpga_top/sb_*__*_/mem_top_track_*/dffr_*_/Q
-set_disable_timing fpga_top/sb_*__*_/mem_top_track_*/dffr_*_/QN
 set_disable_timing fpga_top/sb_*__*_/mem_left_track_*/dffr_*_/Q
 set_disable_timing fpga_top/sb_*__*_/mem_left_track_*/dffr_*_/QN
 set_disable_timing fpga_top/cbx_*__*_/mem_bottom_ipin_*/dffr_*_/Q
@@ -151,6 +139,12 @@ set_disable_timing fpga_top/cbx_*__*_/mem_top_ipin_*/dffr_*_/Q
 set_disable_timing fpga_top/cbx_*__*_/mem_top_ipin_*/dffr_*_/QN
 set_disable_timing fpga_top/grid_io_*__*_/logical_tile_io_mode_io__*/logical_tile_io_mode_physical__iopad_*/GPIO_dffr_mem/dffr_*_/Q
 set_disable_timing fpga_top/grid_io_*__*_/logical_tile_io_mode_io__*/logical_tile_io_mode_physical__iopad_*/GPIO_dffr_mem/dffr_*_/QN
+set_disable_timing fpga_top/sb_*__*_/mem_top_track_*/dffr_*_/Q
+set_disable_timing fpga_top/sb_*__*_/mem_top_track_*/dffr_*_/QN
+set_disable_timing fpga_top/sb_*__*_/mem_left_track_*/dffr_*_/Q
+set_disable_timing fpga_top/sb_*__*_/mem_left_track_*/dffr_*_/QN
+set_disable_timing fpga_top/sb_*__*_/mem_left_track_*/dffr_*_/Q
+set_disable_timing fpga_top/sb_*__*_/mem_left_track_*/dffr_*_/QN
 set_disable_timing fpga_top/sb_*__*_/mem_right_track_*/dffr_*_/Q
 set_disable_timing fpga_top/sb_*__*_/mem_right_track_*/dffr_*_/QN
 set_disable_timing fpga_top/sb_*__*_/mem_right_track_*/dffr_*_/Q
@@ -163,8 +157,6 @@ set_disable_timing fpga_top/cby_*__*_/mem_left_ipin_*/dffr_*_/Q
 set_disable_timing fpga_top/cby_*__*_/mem_left_ipin_*/dffr_*_/QN
 set_disable_timing fpga_top/cby_*__*_/mem_left_ipin_*/dffr_*_/Q
 set_disable_timing fpga_top/cby_*__*_/mem_left_ipin_*/dffr_*_/QN
-set_disable_timing fpga_top/cby_*__*_/mem_right_ipin_*/dffr_*_/Q
-set_disable_timing fpga_top/cby_*__*_/mem_right_ipin_*/dffr_*_/QN
 set_disable_timing fpga_top/sb_*__*_/mem_top_track_*/dffr_*_/Q
 set_disable_timing fpga_top/sb_*__*_/mem_top_track_*/dffr_*_/QN
 set_disable_timing fpga_top/sb_*__*_/mem_top_track_*/dffr_*_/Q
@@ -223,8 +215,8 @@ set_disable_timing fpga_top/sb_*__*_/mem_top_track_*/dffr_*_/Q
 set_disable_timing fpga_top/sb_*__*_/mem_top_track_*/dffr_*_/QN
 set_disable_timing fpga_top/sb_*__*_/mem_top_track_*/dffr_*_/Q
 set_disable_timing fpga_top/sb_*__*_/mem_top_track_*/dffr_*_/QN
-set_disable_timing fpga_top/sb_*__*_/mem_bottom_track_*/dffr_*_/Q
-set_disable_timing fpga_top/sb_*__*_/mem_bottom_track_*/dffr_*_/QN
+set_disable_timing fpga_top/sb_*__*_/mem_top_track_*/dffr_*_/Q
+set_disable_timing fpga_top/sb_*__*_/mem_top_track_*/dffr_*_/QN
 set_disable_timing fpga_top/sb_*__*_/mem_bottom_track_*/dffr_*_/Q
 set_disable_timing fpga_top/sb_*__*_/mem_bottom_track_*/dffr_*_/QN
 set_disable_timing fpga_top/sb_*__*_/mem_left_track_*/dffr_*_/Q
@@ -239,8 +231,6 @@ set_disable_timing fpga_top/cby_*__*_/mem_right_ipin_*/dffr_*_/Q
 set_disable_timing fpga_top/cby_*__*_/mem_right_ipin_*/dffr_*_/QN
 set_disable_timing fpga_top/cby_*__*_/mem_right_ipin_*/dffr_*_/Q
 set_disable_timing fpga_top/cby_*__*_/mem_right_ipin_*/dffr_*_/QN
-set_disable_timing fpga_top/sb_*__*_/mem_bottom_track_*/dffr_*_/Q
-set_disable_timing fpga_top/sb_*__*_/mem_bottom_track_*/dffr_*_/QN
 set_disable_timing fpga_top/sb_*__*_/mem_bottom_track_*/dffr_*_/Q
 set_disable_timing fpga_top/sb_*__*_/mem_bottom_track_*/dffr_*_/QN
 set_disable_timing fpga_top/sb_*__*_/mem_left_track_*/dffr_*_/Q
@@ -271,6 +261,7 @@ set_disable_timing fpga_top/sb_*__*_/mem_left_track_*/dffr_*_/QN
 # Disable timing for Connection block cbx_1__0_
 ##################################################
 set_disable_timing cbx_1__0_/chanx_left_in[0]
+set_disable_timing cbx_1__0_/chanx_right_in[0]
 set_disable_timing cbx_1__0_/chanx_left_in[1]
 set_disable_timing cbx_1__0_/chanx_right_in[1]
 set_disable_timing cbx_1__0_/chanx_left_in[2]
@@ -286,9 +277,11 @@ set_disable_timing cbx_1__0_/chanx_right_in[6]
 set_disable_timing cbx_1__0_/chanx_left_in[7]
 set_disable_timing cbx_1__0_/chanx_right_in[7]
 set_disable_timing cbx_1__0_/chanx_left_in[8]
+set_disable_timing cbx_1__0_/chanx_right_in[8]
 set_disable_timing cbx_1__0_/chanx_left_in[9]
 set_disable_timing cbx_1__0_/chanx_right_in[9]
 set_disable_timing cbx_1__0_/chanx_left_out[0]
+set_disable_timing cbx_1__0_/chanx_right_out[0]
 set_disable_timing cbx_1__0_/chanx_left_out[1]
 set_disable_timing cbx_1__0_/chanx_right_out[1]
 set_disable_timing cbx_1__0_/chanx_left_out[2]
@@ -304,44 +297,89 @@ set_disable_timing cbx_1__0_/chanx_right_out[6]
 set_disable_timing cbx_1__0_/chanx_left_out[7]
 set_disable_timing cbx_1__0_/chanx_right_out[7]
 set_disable_timing cbx_1__0_/chanx_left_out[8]
+set_disable_timing cbx_1__0_/chanx_right_out[8]
 set_disable_timing cbx_1__0_/chanx_left_out[9]
 set_disable_timing cbx_1__0_/chanx_right_out[9]
+set_disable_timing cbx_1__0_/top_grid_bottom_width_0_height_0_subtile_0__pin_I_2_[0]
 set_disable_timing cbx_1__0_/top_grid_bottom_width_0_height_0_subtile_0__pin_I_6_[0]
 set_disable_timing cbx_1__0_/top_grid_bottom_width_0_height_0_subtile_0__pin_I_10_[0]
+set_disable_timing cbx_1__0_/top_grid_bottom_width_0_height_0_subtile_0__pin_I_14_[0]
 set_disable_timing cbx_1__0_/top_grid_bottom_width_0_height_0_subtile_0__pin_I_18_[0]
 set_disable_timing cbx_1__0_/top_grid_bottom_width_0_height_0_subtile_0__pin_I_22_[0]
 set_disable_timing cbx_1__0_/top_grid_bottom_width_0_height_0_subtile_0__pin_I_26_[0]
 set_disable_timing cbx_1__0_/top_grid_bottom_width_0_height_0_subtile_0__pin_I_30_[0]
 set_disable_timing cbx_1__0_/top_grid_bottom_width_0_height_0_subtile_0__pin_I_34_[0]
 set_disable_timing cbx_1__0_/top_grid_bottom_width_0_height_0_subtile_0__pin_I_38_[0]
+set_disable_timing cbx_1__0_/bottom_grid_top_width_0_height_0_subtile_0__pin_outpad_0_[0]
+set_disable_timing cbx_1__0_/bottom_grid_top_width_0_height_0_subtile_1__pin_outpad_0_[0]
+set_disable_timing cbx_1__0_/bottom_grid_top_width_0_height_0_subtile_2__pin_outpad_0_[0]
+set_disable_timing cbx_1__0_/bottom_grid_top_width_0_height_0_subtile_3__pin_outpad_0_[0]
+set_disable_timing cbx_1__0_/bottom_grid_top_width_0_height_0_subtile_4__pin_outpad_0_[0]
+set_disable_timing cbx_1__0_/bottom_grid_top_width_0_height_0_subtile_5__pin_outpad_0_[0]
+set_disable_timing cbx_1__0_/bottom_grid_top_width_0_height_0_subtile_6__pin_outpad_0_[0]
+set_disable_timing cbx_1__0_/bottom_grid_top_width_0_height_0_subtile_7__pin_outpad_0_[0]
 set_disable_timing cbx_1__0_/mux_bottom_ipin_0/in[1]
+set_disable_timing cbx_1__0_/mux_top_ipin_0/in[1]
+set_disable_timing cbx_1__0_/mux_top_ipin_5/in[1]
+set_disable_timing cbx_1__0_/mux_bottom_ipin_0/in[0]
+set_disable_timing cbx_1__0_/mux_top_ipin_0/in[0]
+set_disable_timing cbx_1__0_/mux_top_ipin_5/in[0]
 set_disable_timing cbx_1__0_/mux_bottom_ipin_1/in[1]
+set_disable_timing cbx_1__0_/mux_top_ipin_1/in[1]
+set_disable_timing cbx_1__0_/mux_top_ipin_6/in[1]
 set_disable_timing cbx_1__0_/mux_bottom_ipin_1/in[0]
+set_disable_timing cbx_1__0_/mux_top_ipin_1/in[0]
+set_disable_timing cbx_1__0_/mux_top_ipin_6/in[0]
 set_disable_timing cbx_1__0_/mux_bottom_ipin_2/in[1]
+set_disable_timing cbx_1__0_/mux_top_ipin_2/in[1]
+set_disable_timing cbx_1__0_/mux_top_ipin_7/in[1]
 set_disable_timing cbx_1__0_/mux_bottom_ipin_2/in[0]
+set_disable_timing cbx_1__0_/mux_top_ipin_2/in[0]
+set_disable_timing cbx_1__0_/mux_top_ipin_7/in[0]
 set_disable_timing cbx_1__0_/mux_bottom_ipin_3/in[1]
+set_disable_timing cbx_1__0_/mux_top_ipin_3/in[1]
 set_disable_timing cbx_1__0_/mux_bottom_ipin_3/in[0]
+set_disable_timing cbx_1__0_/mux_top_ipin_3/in[0]
 set_disable_timing cbx_1__0_/mux_bottom_ipin_4/in[1]
+set_disable_timing cbx_1__0_/mux_top_ipin_4/in[1]
 set_disable_timing cbx_1__0_/mux_bottom_ipin_4/in[0]
+set_disable_timing cbx_1__0_/mux_top_ipin_4/in[0]
 set_disable_timing cbx_1__0_/mux_bottom_ipin_0/in[3]
 set_disable_timing cbx_1__0_/mux_bottom_ipin_5/in[1]
+set_disable_timing cbx_1__0_/mux_top_ipin_0/in[3]
+set_disable_timing cbx_1__0_/mux_top_ipin_5/in[3]
 set_disable_timing cbx_1__0_/mux_bottom_ipin_0/in[2]
 set_disable_timing cbx_1__0_/mux_bottom_ipin_5/in[0]
+set_disable_timing cbx_1__0_/mux_top_ipin_0/in[2]
+set_disable_timing cbx_1__0_/mux_top_ipin_5/in[2]
 set_disable_timing cbx_1__0_/mux_bottom_ipin_1/in[3]
 set_disable_timing cbx_1__0_/mux_bottom_ipin_6/in[1]
+set_disable_timing cbx_1__0_/mux_top_ipin_1/in[3]
+set_disable_timing cbx_1__0_/mux_top_ipin_6/in[3]
 set_disable_timing cbx_1__0_/mux_bottom_ipin_1/in[2]
 set_disable_timing cbx_1__0_/mux_bottom_ipin_6/in[0]
+set_disable_timing cbx_1__0_/mux_top_ipin_1/in[2]
+set_disable_timing cbx_1__0_/mux_top_ipin_6/in[2]
 set_disable_timing cbx_1__0_/mux_bottom_ipin_2/in[3]
 set_disable_timing cbx_1__0_/mux_bottom_ipin_7/in[1]
+set_disable_timing cbx_1__0_/mux_top_ipin_2/in[3]
+set_disable_timing cbx_1__0_/mux_top_ipin_7/in[3]
 set_disable_timing cbx_1__0_/mux_bottom_ipin_2/in[2]
 set_disable_timing cbx_1__0_/mux_bottom_ipin_7/in[0]
+set_disable_timing cbx_1__0_/mux_top_ipin_2/in[2]
+set_disable_timing cbx_1__0_/mux_top_ipin_7/in[2]
 set_disable_timing cbx_1__0_/mux_bottom_ipin_3/in[3]
 set_disable_timing cbx_1__0_/mux_bottom_ipin_8/in[1]
+set_disable_timing cbx_1__0_/mux_top_ipin_3/in[3]
+set_disable_timing cbx_1__0_/mux_bottom_ipin_3/in[2]
 set_disable_timing cbx_1__0_/mux_bottom_ipin_8/in[0]
+set_disable_timing cbx_1__0_/mux_top_ipin_3/in[2]
 set_disable_timing cbx_1__0_/mux_bottom_ipin_4/in[3]
 set_disable_timing cbx_1__0_/mux_bottom_ipin_9/in[1]
+set_disable_timing cbx_1__0_/mux_top_ipin_4/in[3]
 set_disable_timing cbx_1__0_/mux_bottom_ipin_4/in[2]
 set_disable_timing cbx_1__0_/mux_bottom_ipin_9/in[0]
+set_disable_timing cbx_1__0_/mux_top_ipin_4/in[2]
 ##################################################
 # Disable timing for Connection block cbx_1__1_
 ##################################################
@@ -587,7 +625,7 @@ set_disable_timing cbx_1__2_/mux_top_ipin_1/in[3]
 set_disable_timing cbx_1__2_/mux_bottom_ipin_4/in[2]
 set_disable_timing cbx_1__2_/mux_top_ipin_1/in[2]
 ##################################################
-# Disable timing for Connection block cbx_2__0_
+# Disable timing for Connection block cbx_1__0_
 ##################################################
 set_disable_timing cbx_2__0_/chanx_right_in[0]
 set_disable_timing cbx_2__0_/chanx_left_in[1]
@@ -637,6 +675,7 @@ set_disable_timing cbx_2__0_/top_grid_bottom_width_0_height_0_subtile_0__pin_I_2
 set_disable_timing cbx_2__0_/top_grid_bottom_width_0_height_0_subtile_0__pin_I_30_[0]
 set_disable_timing cbx_2__0_/top_grid_bottom_width_0_height_0_subtile_0__pin_I_34_[0]
 set_disable_timing cbx_2__0_/top_grid_bottom_width_0_height_0_subtile_0__pin_I_38_[0]
+set_disable_timing cbx_2__0_/bottom_grid_top_width_0_height_0_subtile_0__pin_outpad_0_[0]
 set_disable_timing cbx_2__0_/bottom_grid_top_width_0_height_0_subtile_1__pin_outpad_0_[0]
 set_disable_timing cbx_2__0_/bottom_grid_top_width_0_height_0_subtile_2__pin_outpad_0_[0]
 set_disable_timing cbx_2__0_/bottom_grid_top_width_0_height_0_subtile_3__pin_outpad_0_[0]
@@ -645,6 +684,7 @@ set_disable_timing cbx_2__0_/bottom_grid_top_width_0_height_0_subtile_5__pin_out
 set_disable_timing cbx_2__0_/bottom_grid_top_width_0_height_0_subtile_6__pin_outpad_0_[0]
 set_disable_timing cbx_2__0_/bottom_grid_top_width_0_height_0_subtile_7__pin_outpad_0_[0]
 set_disable_timing cbx_2__0_/mux_bottom_ipin_0/in[1]
+set_disable_timing cbx_2__0_/mux_top_ipin_0/in[1]
 set_disable_timing cbx_2__0_/mux_top_ipin_5/in[1]
 set_disable_timing cbx_2__0_/mux_bottom_ipin_0/in[0]
 set_disable_timing cbx_2__0_/mux_top_ipin_0/in[0]
@@ -953,7 +993,6 @@ set_disable_timing cbx_2__2_/mux_top_ipin_1/in[2]
 # Disable timing for Connection block cby_0__1_
 ##################################################
 set_disable_timing cby_0__1_/chany_bottom_in[0]
-set_disable_timing cby_0__1_/chany_top_in[0]
 set_disable_timing cby_0__1_/chany_bottom_in[1]
 set_disable_timing cby_0__1_/chany_top_in[1]
 set_disable_timing cby_0__1_/chany_top_in[2]
@@ -968,11 +1007,9 @@ set_disable_timing cby_0__1_/chany_top_in[6]
 set_disable_timing cby_0__1_/chany_bottom_in[7]
 set_disable_timing cby_0__1_/chany_top_in[7]
 set_disable_timing cby_0__1_/chany_bottom_in[8]
-set_disable_timing cby_0__1_/chany_top_in[8]
 set_disable_timing cby_0__1_/chany_bottom_in[9]
 set_disable_timing cby_0__1_/chany_top_in[9]
 set_disable_timing cby_0__1_/chany_bottom_out[0]
-set_disable_timing cby_0__1_/chany_top_out[0]
 set_disable_timing cby_0__1_/chany_bottom_out[1]
 set_disable_timing cby_0__1_/chany_top_out[1]
 set_disable_timing cby_0__1_/chany_top_out[2]
@@ -987,89 +1024,44 @@ set_disable_timing cby_0__1_/chany_top_out[6]
 set_disable_timing cby_0__1_/chany_bottom_out[7]
 set_disable_timing cby_0__1_/chany_top_out[7]
 set_disable_timing cby_0__1_/chany_bottom_out[8]
-set_disable_timing cby_0__1_/chany_top_out[8]
 set_disable_timing cby_0__1_/chany_bottom_out[9]
 set_disable_timing cby_0__1_/chany_top_out[9]
-set_disable_timing cby_0__1_/right_grid_left_width_0_height_0_subtile_0__pin_I_3_[0]
 set_disable_timing cby_0__1_/right_grid_left_width_0_height_0_subtile_0__pin_I_7_[0]
 set_disable_timing cby_0__1_/right_grid_left_width_0_height_0_subtile_0__pin_I_11_[0]
-set_disable_timing cby_0__1_/right_grid_left_width_0_height_0_subtile_0__pin_I_15_[0]
 set_disable_timing cby_0__1_/right_grid_left_width_0_height_0_subtile_0__pin_I_19_[0]
 set_disable_timing cby_0__1_/right_grid_left_width_0_height_0_subtile_0__pin_I_23_[0]
 set_disable_timing cby_0__1_/right_grid_left_width_0_height_0_subtile_0__pin_I_27_[0]
 set_disable_timing cby_0__1_/right_grid_left_width_0_height_0_subtile_0__pin_I_31_[0]
 set_disable_timing cby_0__1_/right_grid_left_width_0_height_0_subtile_0__pin_I_35_[0]
 set_disable_timing cby_0__1_/right_grid_left_width_0_height_0_subtile_0__pin_I_39_[0]
-set_disable_timing cby_0__1_/left_grid_right_width_0_height_0_subtile_0__pin_outpad_0_[0]
-set_disable_timing cby_0__1_/left_grid_right_width_0_height_0_subtile_1__pin_outpad_0_[0]
-set_disable_timing cby_0__1_/left_grid_right_width_0_height_0_subtile_2__pin_outpad_0_[0]
-set_disable_timing cby_0__1_/left_grid_right_width_0_height_0_subtile_3__pin_outpad_0_[0]
-set_disable_timing cby_0__1_/left_grid_right_width_0_height_0_subtile_4__pin_outpad_0_[0]
-set_disable_timing cby_0__1_/left_grid_right_width_0_height_0_subtile_5__pin_outpad_0_[0]
-set_disable_timing cby_0__1_/left_grid_right_width_0_height_0_subtile_6__pin_outpad_0_[0]
-set_disable_timing cby_0__1_/left_grid_right_width_0_height_0_subtile_7__pin_outpad_0_[0]
 set_disable_timing cby_0__1_/mux_left_ipin_0/in[1]
-set_disable_timing cby_0__1_/mux_right_ipin_0/in[1]
-set_disable_timing cby_0__1_/mux_right_ipin_5/in[1]
-set_disable_timing cby_0__1_/mux_left_ipin_0/in[0]
-set_disable_timing cby_0__1_/mux_right_ipin_0/in[0]
-set_disable_timing cby_0__1_/mux_right_ipin_5/in[0]
 set_disable_timing cby_0__1_/mux_left_ipin_1/in[1]
-set_disable_timing cby_0__1_/mux_right_ipin_1/in[1]
-set_disable_timing cby_0__1_/mux_right_ipin_6/in[1]
 set_disable_timing cby_0__1_/mux_left_ipin_1/in[0]
-set_disable_timing cby_0__1_/mux_right_ipin_1/in[0]
-set_disable_timing cby_0__1_/mux_right_ipin_6/in[0]
 set_disable_timing cby_0__1_/mux_left_ipin_2/in[1]
-set_disable_timing cby_0__1_/mux_right_ipin_2/in[1]
-set_disable_timing cby_0__1_/mux_right_ipin_7/in[1]
 set_disable_timing cby_0__1_/mux_left_ipin_2/in[0]
-set_disable_timing cby_0__1_/mux_right_ipin_2/in[0]
-set_disable_timing cby_0__1_/mux_right_ipin_7/in[0]
 set_disable_timing cby_0__1_/mux_left_ipin_3/in[1]
-set_disable_timing cby_0__1_/mux_right_ipin_3/in[1]
 set_disable_timing cby_0__1_/mux_left_ipin_3/in[0]
-set_disable_timing cby_0__1_/mux_right_ipin_3/in[0]
 set_disable_timing cby_0__1_/mux_left_ipin_4/in[1]
-set_disable_timing cby_0__1_/mux_right_ipin_4/in[1]
 set_disable_timing cby_0__1_/mux_left_ipin_4/in[0]
-set_disable_timing cby_0__1_/mux_right_ipin_4/in[0]
 set_disable_timing cby_0__1_/mux_left_ipin_0/in[3]
 set_disable_timing cby_0__1_/mux_left_ipin_5/in[1]
-set_disable_timing cby_0__1_/mux_right_ipin_0/in[3]
-set_disable_timing cby_0__1_/mux_right_ipin_5/in[3]
 set_disable_timing cby_0__1_/mux_left_ipin_0/in[2]
 set_disable_timing cby_0__1_/mux_left_ipin_5/in[0]
-set_disable_timing cby_0__1_/mux_right_ipin_0/in[2]
-set_disable_timing cby_0__1_/mux_right_ipin_5/in[2]
 set_disable_timing cby_0__1_/mux_left_ipin_1/in[3]
 set_disable_timing cby_0__1_/mux_left_ipin_6/in[1]
-set_disable_timing cby_0__1_/mux_right_ipin_1/in[3]
-set_disable_timing cby_0__1_/mux_right_ipin_6/in[3]
 set_disable_timing cby_0__1_/mux_left_ipin_1/in[2]
 set_disable_timing cby_0__1_/mux_left_ipin_6/in[0]
-set_disable_timing cby_0__1_/mux_right_ipin_1/in[2]
-set_disable_timing cby_0__1_/mux_right_ipin_6/in[2]
 set_disable_timing cby_0__1_/mux_left_ipin_2/in[3]
 set_disable_timing cby_0__1_/mux_left_ipin_7/in[1]
-set_disable_timing cby_0__1_/mux_right_ipin_2/in[3]
-set_disable_timing cby_0__1_/mux_right_ipin_7/in[3]
 set_disable_timing cby_0__1_/mux_left_ipin_2/in[2]
 set_disable_timing cby_0__1_/mux_left_ipin_7/in[0]
-set_disable_timing cby_0__1_/mux_right_ipin_2/in[2]
-set_disable_timing cby_0__1_/mux_right_ipin_7/in[2]
 set_disable_timing cby_0__1_/mux_left_ipin_3/in[3]
 set_disable_timing cby_0__1_/mux_left_ipin_8/in[1]
-set_disable_timing cby_0__1_/mux_right_ipin_3/in[3]
-set_disable_timing cby_0__1_/mux_left_ipin_3/in[2]
 set_disable_timing cby_0__1_/mux_left_ipin_8/in[0]
-set_disable_timing cby_0__1_/mux_right_ipin_3/in[2]
 set_disable_timing cby_0__1_/mux_left_ipin_4/in[3]
 set_disable_timing cby_0__1_/mux_left_ipin_9/in[1]
-set_disable_timing cby_0__1_/mux_right_ipin_4/in[3]
 set_disable_timing cby_0__1_/mux_left_ipin_4/in[2]
 set_disable_timing cby_0__1_/mux_left_ipin_9/in[0]
-set_disable_timing cby_0__1_/mux_right_ipin_4/in[2]
 ##################################################
 # Disable timing for Connection block cby_0__1_
 ##################################################
@@ -1121,76 +1113,36 @@ set_disable_timing cby_0__2_/right_grid_left_width_0_height_0_subtile_0__pin_I_2
 set_disable_timing cby_0__2_/right_grid_left_width_0_height_0_subtile_0__pin_I_31_[0]
 set_disable_timing cby_0__2_/right_grid_left_width_0_height_0_subtile_0__pin_I_35_[0]
 set_disable_timing cby_0__2_/right_grid_left_width_0_height_0_subtile_0__pin_I_39_[0]
-set_disable_timing cby_0__2_/left_grid_right_width_0_height_0_subtile_0__pin_outpad_0_[0]
-set_disable_timing cby_0__2_/left_grid_right_width_0_height_0_subtile_1__pin_outpad_0_[0]
-set_disable_timing cby_0__2_/left_grid_right_width_0_height_0_subtile_2__pin_outpad_0_[0]
-set_disable_timing cby_0__2_/left_grid_right_width_0_height_0_subtile_3__pin_outpad_0_[0]
-set_disable_timing cby_0__2_/left_grid_right_width_0_height_0_subtile_4__pin_outpad_0_[0]
-set_disable_timing cby_0__2_/left_grid_right_width_0_height_0_subtile_5__pin_outpad_0_[0]
-set_disable_timing cby_0__2_/left_grid_right_width_0_height_0_subtile_6__pin_outpad_0_[0]
-set_disable_timing cby_0__2_/left_grid_right_width_0_height_0_subtile_7__pin_outpad_0_[0]
 set_disable_timing cby_0__2_/mux_left_ipin_0/in[1]
-set_disable_timing cby_0__2_/mux_right_ipin_0/in[1]
-set_disable_timing cby_0__2_/mux_right_ipin_5/in[1]
 set_disable_timing cby_0__2_/mux_left_ipin_0/in[0]
-set_disable_timing cby_0__2_/mux_right_ipin_0/in[0]
-set_disable_timing cby_0__2_/mux_right_ipin_5/in[0]
 set_disable_timing cby_0__2_/mux_left_ipin_1/in[1]
-set_disable_timing cby_0__2_/mux_right_ipin_1/in[1]
-set_disable_timing cby_0__2_/mux_right_ipin_6/in[1]
 set_disable_timing cby_0__2_/mux_left_ipin_1/in[0]
-set_disable_timing cby_0__2_/mux_right_ipin_1/in[0]
-set_disable_timing cby_0__2_/mux_right_ipin_6/in[0]
 set_disable_timing cby_0__2_/mux_left_ipin_2/in[1]
-set_disable_timing cby_0__2_/mux_right_ipin_2/in[1]
-set_disable_timing cby_0__2_/mux_right_ipin_7/in[1]
 set_disable_timing cby_0__2_/mux_left_ipin_2/in[0]
-set_disable_timing cby_0__2_/mux_right_ipin_2/in[0]
-set_disable_timing cby_0__2_/mux_right_ipin_7/in[0]
 set_disable_timing cby_0__2_/mux_left_ipin_3/in[1]
-set_disable_timing cby_0__2_/mux_right_ipin_3/in[1]
 set_disable_timing cby_0__2_/mux_left_ipin_3/in[0]
-set_disable_timing cby_0__2_/mux_right_ipin_3/in[0]
 set_disable_timing cby_0__2_/mux_left_ipin_4/in[1]
-set_disable_timing cby_0__2_/mux_right_ipin_4/in[1]
 set_disable_timing cby_0__2_/mux_left_ipin_4/in[0]
-set_disable_timing cby_0__2_/mux_right_ipin_4/in[0]
 set_disable_timing cby_0__2_/mux_left_ipin_0/in[3]
 set_disable_timing cby_0__2_/mux_left_ipin_5/in[1]
-set_disable_timing cby_0__2_/mux_right_ipin_0/in[3]
-set_disable_timing cby_0__2_/mux_right_ipin_5/in[3]
 set_disable_timing cby_0__2_/mux_left_ipin_0/in[2]
 set_disable_timing cby_0__2_/mux_left_ipin_5/in[0]
-set_disable_timing cby_0__2_/mux_right_ipin_0/in[2]
-set_disable_timing cby_0__2_/mux_right_ipin_5/in[2]
 set_disable_timing cby_0__2_/mux_left_ipin_1/in[3]
 set_disable_timing cby_0__2_/mux_left_ipin_6/in[1]
-set_disable_timing cby_0__2_/mux_right_ipin_1/in[3]
-set_disable_timing cby_0__2_/mux_right_ipin_6/in[3]
 set_disable_timing cby_0__2_/mux_left_ipin_1/in[2]
 set_disable_timing cby_0__2_/mux_left_ipin_6/in[0]
-set_disable_timing cby_0__2_/mux_right_ipin_1/in[2]
-set_disable_timing cby_0__2_/mux_right_ipin_6/in[2]
 set_disable_timing cby_0__2_/mux_left_ipin_2/in[3]
 set_disable_timing cby_0__2_/mux_left_ipin_7/in[1]
-set_disable_timing cby_0__2_/mux_right_ipin_2/in[3]
-set_disable_timing cby_0__2_/mux_right_ipin_7/in[3]
 set_disable_timing cby_0__2_/mux_left_ipin_2/in[2]
 set_disable_timing cby_0__2_/mux_left_ipin_7/in[0]
-set_disable_timing cby_0__2_/mux_right_ipin_2/in[2]
-set_disable_timing cby_0__2_/mux_right_ipin_7/in[2]
 set_disable_timing cby_0__2_/mux_left_ipin_3/in[3]
 set_disable_timing cby_0__2_/mux_left_ipin_8/in[1]
-set_disable_timing cby_0__2_/mux_right_ipin_3/in[3]
 set_disable_timing cby_0__2_/mux_left_ipin_3/in[2]
 set_disable_timing cby_0__2_/mux_left_ipin_8/in[0]
-set_disable_timing cby_0__2_/mux_right_ipin_3/in[2]
 set_disable_timing cby_0__2_/mux_left_ipin_4/in[3]
 set_disable_timing cby_0__2_/mux_left_ipin_9/in[1]
-set_disable_timing cby_0__2_/mux_right_ipin_4/in[3]
 set_disable_timing cby_0__2_/mux_left_ipin_4/in[2]
 set_disable_timing cby_0__2_/mux_left_ipin_9/in[0]
-set_disable_timing cby_0__2_/mux_right_ipin_4/in[2]
 ##################################################
 # Disable timing for Connection block cby_1__1_
 ##################################################
@@ -1438,7 +1390,6 @@ set_disable_timing cby_1__2_/mux_right_ipin_9/in[0]
 ##################################################
 # Disable timing for Connection block cby_2__1_
 ##################################################
-set_disable_timing cby_2__1_/chany_bottom_in[0]
 set_disable_timing cby_2__1_/chany_top_in[0]
 set_disable_timing cby_2__1_/chany_bottom_in[1]
 set_disable_timing cby_2__1_/chany_top_in[1]
@@ -1458,7 +1409,6 @@ set_disable_timing cby_2__1_/chany_bottom_in[8]
 set_disable_timing cby_2__1_/chany_top_in[8]
 set_disable_timing cby_2__1_/chany_bottom_in[9]
 set_disable_timing cby_2__1_/chany_top_in[9]
-set_disable_timing cby_2__1_/chany_bottom_out[0]
 set_disable_timing cby_2__1_/chany_top_out[0]
 set_disable_timing cby_2__1_/chany_bottom_out[1]
 set_disable_timing cby_2__1_/chany_top_out[1]
@@ -1478,7 +1428,6 @@ set_disable_timing cby_2__1_/chany_bottom_out[8]
 set_disable_timing cby_2__1_/chany_top_out[8]
 set_disable_timing cby_2__1_/chany_bottom_out[9]
 set_disable_timing cby_2__1_/chany_top_out[9]
-set_disable_timing cby_2__1_/right_grid_left_width_0_height_0_subtile_0__pin_outpad_0_[0]
 set_disable_timing cby_2__1_/right_grid_left_width_0_height_0_subtile_1__pin_outpad_0_[0]
 set_disable_timing cby_2__1_/right_grid_left_width_0_height_0_subtile_2__pin_outpad_0_[0]
 set_disable_timing cby_2__1_/right_grid_left_width_0_height_0_subtile_3__pin_outpad_0_[0]
@@ -1496,7 +1445,6 @@ set_disable_timing cby_2__1_/left_grid_right_width_0_height_0_subtile_0__pin_I_2
 set_disable_timing cby_2__1_/left_grid_right_width_0_height_0_subtile_0__pin_I_29_[0]
 set_disable_timing cby_2__1_/left_grid_right_width_0_height_0_subtile_0__pin_I_33_[0]
 set_disable_timing cby_2__1_/left_grid_right_width_0_height_0_subtile_0__pin_I_37_[0]
-set_disable_timing cby_2__1_/mux_left_ipin_0/in[1]
 set_disable_timing cby_2__1_/mux_left_ipin_5/in[1]
 set_disable_timing cby_2__1_/mux_right_ipin_2/in[1]
 set_disable_timing cby_2__1_/mux_left_ipin_0/in[0]
@@ -1563,7 +1511,6 @@ set_disable_timing cby_2__1_/mux_right_ipin_1/in[2]
 ##################################################
 set_disable_timing cby_2__2_/chany_bottom_in[0]
 set_disable_timing cby_2__2_/chany_top_in[0]
-set_disable_timing cby_2__2_/chany_bottom_in[1]
 set_disable_timing cby_2__2_/chany_top_in[1]
 set_disable_timing cby_2__2_/chany_bottom_in[2]
 set_disable_timing cby_2__2_/chany_top_in[2]
@@ -1583,7 +1530,6 @@ set_disable_timing cby_2__2_/chany_bottom_in[9]
 set_disable_timing cby_2__2_/chany_top_in[9]
 set_disable_timing cby_2__2_/chany_bottom_out[0]
 set_disable_timing cby_2__2_/chany_top_out[0]
-set_disable_timing cby_2__2_/chany_bottom_out[1]
 set_disable_timing cby_2__2_/chany_top_out[1]
 set_disable_timing cby_2__2_/chany_bottom_out[2]
 set_disable_timing cby_2__2_/chany_top_out[2]
@@ -1685,7 +1631,6 @@ set_disable_timing cby_2__2_/mux_right_ipin_1/in[2]
 # Disable timing for Switch block sb_0__0_
 ##################################################
 set_disable_timing sb_0__0_/chany_top_out[0]
-set_disable_timing sb_0__0_/chany_top_in[0]
 set_disable_timing sb_0__0_/chany_top_out[1]
 set_disable_timing sb_0__0_/chany_top_in[1]
 set_disable_timing sb_0__0_/chany_top_in[2]
@@ -1700,10 +1645,10 @@ set_disable_timing sb_0__0_/chany_top_in[6]
 set_disable_timing sb_0__0_/chany_top_out[7]
 set_disable_timing sb_0__0_/chany_top_in[7]
 set_disable_timing sb_0__0_/chany_top_out[8]
-set_disable_timing sb_0__0_/chany_top_in[8]
 set_disable_timing sb_0__0_/chany_top_out[9]
 set_disable_timing sb_0__0_/chany_top_in[9]
 set_disable_timing sb_0__0_/chanx_right_out[0]
+set_disable_timing sb_0__0_/chanx_right_in[0]
 set_disable_timing sb_0__0_/chanx_right_out[1]
 set_disable_timing sb_0__0_/chanx_right_in[1]
 set_disable_timing sb_0__0_/chanx_right_out[2]
@@ -1719,10 +1664,9 @@ set_disable_timing sb_0__0_/chanx_right_in[6]
 set_disable_timing sb_0__0_/chanx_right_out[7]
 set_disable_timing sb_0__0_/chanx_right_in[7]
 set_disable_timing sb_0__0_/chanx_right_out[8]
+set_disable_timing sb_0__0_/chanx_right_in[8]
 set_disable_timing sb_0__0_/chanx_right_out[9]
 set_disable_timing sb_0__0_/chanx_right_in[9]
-set_disable_timing sb_0__0_/top_left_grid_right_width_0_height_0_subtile_0__pin_inpad_0_[0]
-set_disable_timing sb_0__0_/top_left_grid_right_width_0_height_0_subtile_1__pin_inpad_0_[0]
 set_disable_timing sb_0__0_/top_left_grid_right_width_0_height_0_subtile_2__pin_inpad_0_[0]
 set_disable_timing sb_0__0_/top_left_grid_right_width_0_height_0_subtile_3__pin_inpad_0_[0]
 set_disable_timing sb_0__0_/top_left_grid_right_width_0_height_0_subtile_4__pin_inpad_0_[0]
@@ -1738,6 +1682,8 @@ set_disable_timing sb_0__0_/right_top_grid_bottom_width_0_height_0_subtile_0__pi
 set_disable_timing sb_0__0_/right_top_grid_bottom_width_0_height_0_subtile_0__pin_O_10_[0]
 set_disable_timing sb_0__0_/right_top_grid_bottom_width_0_height_0_subtile_0__pin_O_14_[0]
 set_disable_timing sb_0__0_/right_top_grid_bottom_width_0_height_0_subtile_0__pin_O_18_[0]
+set_disable_timing sb_0__0_/right_bottom_grid_top_width_0_height_0_subtile_0__pin_inpad_0_[0]
+set_disable_timing sb_0__0_/right_bottom_grid_top_width_0_height_0_subtile_1__pin_inpad_0_[0]
 set_disable_timing sb_0__0_/right_bottom_grid_top_width_0_height_0_subtile_2__pin_inpad_0_[0]
 set_disable_timing sb_0__0_/right_bottom_grid_top_width_0_height_0_subtile_3__pin_inpad_0_[0]
 set_disable_timing sb_0__0_/right_bottom_grid_top_width_0_height_0_subtile_4__pin_inpad_0_[0]
@@ -1831,7 +1777,6 @@ set_disable_timing sb_0__1_/chanx_right_in[8]
 set_disable_timing sb_0__1_/chanx_right_out[9]
 set_disable_timing sb_0__1_/chanx_right_in[9]
 set_disable_timing sb_0__1_/chany_bottom_in[0]
-set_disable_timing sb_0__1_/chany_bottom_out[0]
 set_disable_timing sb_0__1_/chany_bottom_in[1]
 set_disable_timing sb_0__1_/chany_bottom_out[1]
 set_disable_timing sb_0__1_/chany_bottom_out[2]
@@ -1846,7 +1791,6 @@ set_disable_timing sb_0__1_/chany_bottom_out[6]
 set_disable_timing sb_0__1_/chany_bottom_in[7]
 set_disable_timing sb_0__1_/chany_bottom_out[7]
 set_disable_timing sb_0__1_/chany_bottom_in[8]
-set_disable_timing sb_0__1_/chany_bottom_out[8]
 set_disable_timing sb_0__1_/chany_bottom_in[9]
 set_disable_timing sb_0__1_/chany_bottom_out[9]
 set_disable_timing sb_0__1_/top_left_grid_right_width_0_height_0_subtile_0__pin_inpad_0_[0]
@@ -1876,8 +1820,6 @@ set_disable_timing sb_0__1_/bottom_right_grid_left_width_0_height_0_subtile_0__p
 set_disable_timing sb_0__1_/bottom_right_grid_left_width_0_height_0_subtile_0__pin_O_7_[0]
 set_disable_timing sb_0__1_/bottom_right_grid_left_width_0_height_0_subtile_0__pin_O_11_[0]
 set_disable_timing sb_0__1_/bottom_right_grid_left_width_0_height_0_subtile_0__pin_O_15_[0]
-set_disable_timing sb_0__1_/bottom_left_grid_right_width_0_height_0_subtile_0__pin_inpad_0_[0]
-set_disable_timing sb_0__1_/bottom_left_grid_right_width_0_height_0_subtile_1__pin_inpad_0_[0]
 set_disable_timing sb_0__1_/bottom_left_grid_right_width_0_height_0_subtile_2__pin_inpad_0_[0]
 set_disable_timing sb_0__1_/bottom_left_grid_right_width_0_height_0_subtile_3__pin_inpad_0_[0]
 set_disable_timing sb_0__1_/bottom_left_grid_right_width_0_height_0_subtile_4__pin_inpad_0_[0]
@@ -1911,8 +1853,6 @@ set_disable_timing sb_0__1_/mux_bottom_track_9/in[4]
 set_disable_timing sb_0__1_/mux_bottom_track_17/in[3]
 set_disable_timing sb_0__1_/mux_bottom_track_1/in[4]
 set_disable_timing sb_0__1_/mux_bottom_track_9/in[5]
-set_disable_timing sb_0__1_/mux_bottom_track_17/in[4]
-set_disable_timing sb_0__1_/mux_bottom_track_1/in[5]
 set_disable_timing sb_0__1_/mux_bottom_track_9/in[6]
 set_disable_timing sb_0__1_/mux_bottom_track_17/in[5]
 set_disable_timing sb_0__1_/mux_bottom_track_1/in[6]
@@ -2114,6 +2054,7 @@ set_disable_timing sb_1__0_/chanx_right_in[8]
 set_disable_timing sb_1__0_/chanx_right_out[9]
 set_disable_timing sb_1__0_/chanx_right_in[9]
 set_disable_timing sb_1__0_/chanx_left_in[0]
+set_disable_timing sb_1__0_/chanx_left_out[0]
 set_disable_timing sb_1__0_/chanx_left_in[1]
 set_disable_timing sb_1__0_/chanx_left_out[1]
 set_disable_timing sb_1__0_/chanx_left_in[2]
@@ -2129,6 +2070,7 @@ set_disable_timing sb_1__0_/chanx_left_out[6]
 set_disable_timing sb_1__0_/chanx_left_in[7]
 set_disable_timing sb_1__0_/chanx_left_out[7]
 set_disable_timing sb_1__0_/chanx_left_in[8]
+set_disable_timing sb_1__0_/chanx_left_out[8]
 set_disable_timing sb_1__0_/chanx_left_in[9]
 set_disable_timing sb_1__0_/chanx_left_out[9]
 set_disable_timing sb_1__0_/top_left_grid_right_width_0_height_0_subtile_0__pin_O_1_[0]
@@ -2146,11 +2088,21 @@ set_disable_timing sb_1__0_/right_top_grid_bottom_width_0_height_0_subtile_0__pi
 set_disable_timing sb_1__0_/right_top_grid_bottom_width_0_height_0_subtile_0__pin_O_10_[0]
 set_disable_timing sb_1__0_/right_top_grid_bottom_width_0_height_0_subtile_0__pin_O_14_[0]
 set_disable_timing sb_1__0_/right_top_grid_bottom_width_0_height_0_subtile_0__pin_O_18_[0]
+set_disable_timing sb_1__0_/right_bottom_grid_top_width_0_height_0_subtile_0__pin_inpad_0_[0]
+set_disable_timing sb_1__0_/right_bottom_grid_top_width_0_height_0_subtile_1__pin_inpad_0_[0]
+set_disable_timing sb_1__0_/right_bottom_grid_top_width_0_height_0_subtile_2__pin_inpad_0_[0]
+set_disable_timing sb_1__0_/right_bottom_grid_top_width_0_height_0_subtile_3__pin_inpad_0_[0]
+set_disable_timing sb_1__0_/right_bottom_grid_top_width_0_height_0_subtile_4__pin_inpad_0_[0]
+set_disable_timing sb_1__0_/right_bottom_grid_top_width_0_height_0_subtile_5__pin_inpad_0_[0]
+set_disable_timing sb_1__0_/right_bottom_grid_top_width_0_height_0_subtile_6__pin_inpad_0_[0]
+set_disable_timing sb_1__0_/right_bottom_grid_top_width_0_height_0_subtile_7__pin_inpad_0_[0]
 set_disable_timing sb_1__0_/left_top_grid_bottom_width_0_height_0_subtile_0__pin_O_2_[0]
 set_disable_timing sb_1__0_/left_top_grid_bottom_width_0_height_0_subtile_0__pin_O_6_[0]
 set_disable_timing sb_1__0_/left_top_grid_bottom_width_0_height_0_subtile_0__pin_O_10_[0]
 set_disable_timing sb_1__0_/left_top_grid_bottom_width_0_height_0_subtile_0__pin_O_14_[0]
 set_disable_timing sb_1__0_/left_top_grid_bottom_width_0_height_0_subtile_0__pin_O_18_[0]
+set_disable_timing sb_1__0_/left_bottom_grid_top_width_0_height_0_subtile_0__pin_inpad_0_[0]
+set_disable_timing sb_1__0_/left_bottom_grid_top_width_0_height_0_subtile_1__pin_inpad_0_[0]
 set_disable_timing sb_1__0_/left_bottom_grid_top_width_0_height_0_subtile_2__pin_inpad_0_[0]
 set_disable_timing sb_1__0_/left_bottom_grid_top_width_0_height_0_subtile_3__pin_inpad_0_[0]
 set_disable_timing sb_1__0_/left_bottom_grid_top_width_0_height_0_subtile_4__pin_inpad_0_[0]
@@ -2171,11 +2123,21 @@ set_disable_timing sb_1__0_/mux_right_track_8/in[4]
 set_disable_timing sb_1__0_/mux_right_track_16/in[3]
 set_disable_timing sb_1__0_/mux_right_track_0/in[4]
 set_disable_timing sb_1__0_/mux_right_track_8/in[5]
+set_disable_timing sb_1__0_/mux_right_track_16/in[4]
+set_disable_timing sb_1__0_/mux_right_track_0/in[5]
+set_disable_timing sb_1__0_/mux_right_track_8/in[6]
+set_disable_timing sb_1__0_/mux_right_track_16/in[5]
+set_disable_timing sb_1__0_/mux_right_track_0/in[6]
+set_disable_timing sb_1__0_/mux_right_track_8/in[7]
+set_disable_timing sb_1__0_/mux_right_track_16/in[6]
+set_disable_timing sb_1__0_/mux_right_track_0/in[7]
 set_disable_timing sb_1__0_/mux_left_track_1/in[4]
 set_disable_timing sb_1__0_/mux_left_track_9/in[3]
 set_disable_timing sb_1__0_/mux_left_track_17/in[3]
 set_disable_timing sb_1__0_/mux_left_track_1/in[5]
 set_disable_timing sb_1__0_/mux_left_track_9/in[4]
+set_disable_timing sb_1__0_/mux_left_track_17/in[4]
+set_disable_timing sb_1__0_/mux_left_track_1/in[6]
 set_disable_timing sb_1__0_/mux_left_track_9/in[5]
 set_disable_timing sb_1__0_/mux_left_track_17/in[5]
 set_disable_timing sb_1__0_/mux_left_track_1/in[7]
@@ -2638,7 +2600,6 @@ set_disable_timing sb_1__2_/mux_bottom_track_3/in[3]
 ##################################################
 # Disable timing for Switch block sb_2__0_
 ##################################################
-set_disable_timing sb_2__0_/chany_top_out[0]
 set_disable_timing sb_2__0_/chany_top_in[0]
 set_disable_timing sb_2__0_/chany_top_out[1]
 set_disable_timing sb_2__0_/chany_top_in[1]
@@ -2682,58 +2643,56 @@ set_disable_timing sb_2__0_/top_left_grid_right_width_0_height_0_subtile_0__pin_
 set_disable_timing sb_2__0_/top_left_grid_right_width_0_height_0_subtile_0__pin_O_9_[0]
 set_disable_timing sb_2__0_/top_left_grid_right_width_0_height_0_subtile_0__pin_O_13_[0]
 set_disable_timing sb_2__0_/top_left_grid_right_width_0_height_0_subtile_0__pin_O_17_[0]
-set_disable_timing sb_2__0_/top_right_grid_left_width_0_height_0_subtile_0__pin_inpad_0_[0]
-set_disable_timing sb_2__0_/top_right_grid_left_width_0_height_0_subtile_1__pin_inpad_0_[0]
-set_disable_timing sb_2__0_/top_right_grid_left_width_0_height_0_subtile_2__pin_inpad_0_[0]
-set_disable_timing sb_2__0_/top_right_grid_left_width_0_height_0_subtile_3__pin_inpad_0_[0]
-set_disable_timing sb_2__0_/top_right_grid_left_width_0_height_0_subtile_4__pin_inpad_0_[0]
-set_disable_timing sb_2__0_/top_right_grid_left_width_0_height_0_subtile_5__pin_inpad_0_[0]
-set_disable_timing sb_2__0_/top_right_grid_left_width_0_height_0_subtile_6__pin_inpad_0_[0]
-set_disable_timing sb_2__0_/top_right_grid_left_width_0_height_0_subtile_7__pin_inpad_0_[0]
 set_disable_timing sb_2__0_/left_top_grid_bottom_width_0_height_0_subtile_0__pin_O_2_[0]
 set_disable_timing sb_2__0_/left_top_grid_bottom_width_0_height_0_subtile_0__pin_O_6_[0]
 set_disable_timing sb_2__0_/left_top_grid_bottom_width_0_height_0_subtile_0__pin_O_10_[0]
 set_disable_timing sb_2__0_/left_top_grid_bottom_width_0_height_0_subtile_0__pin_O_14_[0]
 set_disable_timing sb_2__0_/left_top_grid_bottom_width_0_height_0_subtile_0__pin_O_18_[0]
+set_disable_timing sb_2__0_/left_bottom_grid_top_width_0_height_0_subtile_0__pin_inpad_0_[0]
+set_disable_timing sb_2__0_/left_bottom_grid_top_width_0_height_0_subtile_1__pin_inpad_0_[0]
+set_disable_timing sb_2__0_/left_bottom_grid_top_width_0_height_0_subtile_2__pin_inpad_0_[0]
+set_disable_timing sb_2__0_/left_bottom_grid_top_width_0_height_0_subtile_3__pin_inpad_0_[0]
+set_disable_timing sb_2__0_/left_bottom_grid_top_width_0_height_0_subtile_4__pin_inpad_0_[0]
+set_disable_timing sb_2__0_/left_bottom_grid_top_width_0_height_0_subtile_5__pin_inpad_0_[0]
+set_disable_timing sb_2__0_/left_bottom_grid_top_width_0_height_0_subtile_6__pin_inpad_0_[0]
+set_disable_timing sb_2__0_/left_bottom_grid_top_width_0_height_0_subtile_7__pin_inpad_0_[0]
 set_disable_timing sb_2__0_/mux_top_track_0/in[0]
 set_disable_timing sb_2__0_/mux_top_track_2/in[0]
 set_disable_timing sb_2__0_/mux_top_track_4/in[0]
 set_disable_timing sb_2__0_/mux_top_track_6/in[0]
 set_disable_timing sb_2__0_/mux_top_track_8/in[0]
-set_disable_timing sb_2__0_/mux_top_track_10/in[0]
-set_disable_timing sb_2__0_/mux_top_track_12/in[0]
-set_disable_timing sb_2__0_/mux_top_track_14/in[0]
-set_disable_timing sb_2__0_/mux_top_track_16/in[0]
-set_disable_timing sb_2__0_/mux_top_track_18/in[0]
-set_disable_timing sb_2__0_/mux_top_track_0/in[1]
-set_disable_timing sb_2__0_/mux_top_track_2/in[1]
-set_disable_timing sb_2__0_/mux_top_track_4/in[1]
 set_disable_timing sb_2__0_/mux_left_track_1/in[1]
 set_disable_timing sb_2__0_/mux_left_track_3/in[1]
 set_disable_timing sb_2__0_/mux_left_track_5/in[1]
 set_disable_timing sb_2__0_/mux_left_track_7/in[1]
 set_disable_timing sb_2__0_/mux_left_track_9/in[1]
+set_disable_timing sb_2__0_/mux_left_track_11/in[1]
+set_disable_timing sb_2__0_/mux_left_track_13/in[1]
+set_disable_timing sb_2__0_/mux_left_track_15/in[1]
+set_disable_timing sb_2__0_/mux_left_track_17/in[1]
+set_disable_timing sb_2__0_/mux_left_track_19/in[1]
+set_disable_timing sb_2__0_/mux_left_track_1/in[2]
+set_disable_timing sb_2__0_/mux_left_track_3/in[2]
+set_disable_timing sb_2__0_/mux_left_track_5/in[2]
 set_disable_timing sb_2__0_/mux_left_track_1/in[0]
+set_disable_timing sb_2__0_/mux_left_track_19/in[0]
+set_disable_timing sb_2__0_/mux_left_track_17/in[0]
+set_disable_timing sb_2__0_/mux_left_track_15/in[0]
+set_disable_timing sb_2__0_/mux_left_track_13/in[0]
+set_disable_timing sb_2__0_/mux_left_track_11/in[0]
 set_disable_timing sb_2__0_/mux_left_track_9/in[0]
 set_disable_timing sb_2__0_/mux_left_track_7/in[0]
 set_disable_timing sb_2__0_/mux_left_track_5/in[0]
 set_disable_timing sb_2__0_/mux_left_track_3/in[0]
-set_disable_timing sb_2__0_/mux_top_track_0/in[2]
-set_disable_timing sb_2__0_/mux_top_track_18/in[1]
-set_disable_timing sb_2__0_/mux_top_track_16/in[1]
-set_disable_timing sb_2__0_/mux_top_track_14/in[1]
-set_disable_timing sb_2__0_/mux_top_track_12/in[1]
-set_disable_timing sb_2__0_/mux_top_track_10/in[1]
 set_disable_timing sb_2__0_/mux_top_track_8/in[1]
 set_disable_timing sb_2__0_/mux_top_track_6/in[1]
-set_disable_timing sb_2__0_/mux_top_track_4/in[2]
-set_disable_timing sb_2__0_/mux_top_track_2/in[2]
+set_disable_timing sb_2__0_/mux_top_track_4/in[1]
+set_disable_timing sb_2__0_/mux_top_track_2/in[1]
 ##################################################
 # Disable timing for Switch block sb_2__1_
 ##################################################
 set_disable_timing sb_2__1_/chany_top_out[0]
 set_disable_timing sb_2__1_/chany_top_in[0]
-set_disable_timing sb_2__1_/chany_top_out[1]
 set_disable_timing sb_2__1_/chany_top_in[1]
 set_disable_timing sb_2__1_/chany_top_out[2]
 set_disable_timing sb_2__1_/chany_top_in[2]
@@ -2751,7 +2710,6 @@ set_disable_timing sb_2__1_/chany_top_out[8]
 set_disable_timing sb_2__1_/chany_top_in[8]
 set_disable_timing sb_2__1_/chany_top_out[9]
 set_disable_timing sb_2__1_/chany_top_in[9]
-set_disable_timing sb_2__1_/chany_bottom_in[0]
 set_disable_timing sb_2__1_/chany_bottom_out[0]
 set_disable_timing sb_2__1_/chany_bottom_in[1]
 set_disable_timing sb_2__1_/chany_bottom_out[1]
@@ -2795,22 +2753,6 @@ set_disable_timing sb_2__1_/top_left_grid_right_width_0_height_0_subtile_0__pin_
 set_disable_timing sb_2__1_/top_left_grid_right_width_0_height_0_subtile_0__pin_O_9_[0]
 set_disable_timing sb_2__1_/top_left_grid_right_width_0_height_0_subtile_0__pin_O_13_[0]
 set_disable_timing sb_2__1_/top_left_grid_right_width_0_height_0_subtile_0__pin_O_17_[0]
-set_disable_timing sb_2__1_/top_right_grid_left_width_0_height_0_subtile_0__pin_inpad_0_[0]
-set_disable_timing sb_2__1_/top_right_grid_left_width_0_height_0_subtile_1__pin_inpad_0_[0]
-set_disable_timing sb_2__1_/top_right_grid_left_width_0_height_0_subtile_2__pin_inpad_0_[0]
-set_disable_timing sb_2__1_/top_right_grid_left_width_0_height_0_subtile_3__pin_inpad_0_[0]
-set_disable_timing sb_2__1_/top_right_grid_left_width_0_height_0_subtile_4__pin_inpad_0_[0]
-set_disable_timing sb_2__1_/top_right_grid_left_width_0_height_0_subtile_5__pin_inpad_0_[0]
-set_disable_timing sb_2__1_/top_right_grid_left_width_0_height_0_subtile_6__pin_inpad_0_[0]
-set_disable_timing sb_2__1_/top_right_grid_left_width_0_height_0_subtile_7__pin_inpad_0_[0]
-set_disable_timing sb_2__1_/bottom_right_grid_left_width_0_height_0_subtile_0__pin_inpad_0_[0]
-set_disable_timing sb_2__1_/bottom_right_grid_left_width_0_height_0_subtile_1__pin_inpad_0_[0]
-set_disable_timing sb_2__1_/bottom_right_grid_left_width_0_height_0_subtile_2__pin_inpad_0_[0]
-set_disable_timing sb_2__1_/bottom_right_grid_left_width_0_height_0_subtile_3__pin_inpad_0_[0]
-set_disable_timing sb_2__1_/bottom_right_grid_left_width_0_height_0_subtile_4__pin_inpad_0_[0]
-set_disable_timing sb_2__1_/bottom_right_grid_left_width_0_height_0_subtile_5__pin_inpad_0_[0]
-set_disable_timing sb_2__1_/bottom_right_grid_left_width_0_height_0_subtile_6__pin_inpad_0_[0]
-set_disable_timing sb_2__1_/bottom_right_grid_left_width_0_height_0_subtile_7__pin_inpad_0_[0]
 set_disable_timing sb_2__1_/bottom_left_grid_right_width_0_height_0_subtile_0__pin_O_1_[0]
 set_disable_timing sb_2__1_/bottom_left_grid_right_width_0_height_0_subtile_0__pin_O_5_[0]
 set_disable_timing sb_2__1_/bottom_left_grid_right_width_0_height_0_subtile_0__pin_O_9_[0]
@@ -2831,27 +2773,11 @@ set_disable_timing sb_2__1_/mux_top_track_8/in[0]
 set_disable_timing sb_2__1_/mux_top_track_16/in[0]
 set_disable_timing sb_2__1_/mux_top_track_0/in[1]
 set_disable_timing sb_2__1_/mux_top_track_8/in[1]
-set_disable_timing sb_2__1_/mux_top_track_16/in[1]
-set_disable_timing sb_2__1_/mux_top_track_0/in[2]
-set_disable_timing sb_2__1_/mux_top_track_8/in[2]
-set_disable_timing sb_2__1_/mux_top_track_16/in[2]
-set_disable_timing sb_2__1_/mux_top_track_0/in[3]
-set_disable_timing sb_2__1_/mux_top_track_8/in[3]
-set_disable_timing sb_2__1_/mux_top_track_16/in[3]
-set_disable_timing sb_2__1_/mux_top_track_0/in[4]
 set_disable_timing sb_2__1_/mux_bottom_track_1/in[0]
 set_disable_timing sb_2__1_/mux_bottom_track_9/in[0]
 set_disable_timing sb_2__1_/mux_bottom_track_17/in[0]
 set_disable_timing sb_2__1_/mux_bottom_track_1/in[1]
 set_disable_timing sb_2__1_/mux_bottom_track_9/in[1]
-set_disable_timing sb_2__1_/mux_bottom_track_17/in[1]
-set_disable_timing sb_2__1_/mux_bottom_track_1/in[2]
-set_disable_timing sb_2__1_/mux_bottom_track_9/in[2]
-set_disable_timing sb_2__1_/mux_bottom_track_17/in[2]
-set_disable_timing sb_2__1_/mux_bottom_track_1/in[3]
-set_disable_timing sb_2__1_/mux_bottom_track_9/in[3]
-set_disable_timing sb_2__1_/mux_bottom_track_17/in[3]
-set_disable_timing sb_2__1_/mux_bottom_track_1/in[4]
 set_disable_timing sb_2__1_/mux_left_track_1/in[3]
 set_disable_timing sb_2__1_/mux_left_track_3/in[3]
 set_disable_timing sb_2__1_/mux_left_track_5/in[3]
@@ -2881,32 +2807,31 @@ set_disable_timing sb_2__1_/mux_left_track_11/in[1]
 set_disable_timing sb_2__1_/mux_left_track_5/in[2]
 set_disable_timing sb_2__1_/mux_left_track_13/in[1]
 set_disable_timing sb_2__1_/mux_left_track_7/in[2]
-set_disable_timing sb_2__1_/mux_top_track_0/in[5]
-set_disable_timing sb_2__1_/mux_bottom_track_17/in[4]
-set_disable_timing sb_2__1_/mux_top_track_16/in[4]
-set_disable_timing sb_2__1_/mux_bottom_track_1/in[5]
+set_disable_timing sb_2__1_/mux_top_track_0/in[2]
+set_disable_timing sb_2__1_/mux_bottom_track_17/in[1]
+set_disable_timing sb_2__1_/mux_top_track_16/in[1]
+set_disable_timing sb_2__1_/mux_bottom_track_1/in[2]
+set_disable_timing sb_2__1_/mux_top_track_8/in[2]
+set_disable_timing sb_2__1_/mux_bottom_track_9/in[2]
+set_disable_timing sb_2__1_/mux_top_track_0/in[3]
+set_disable_timing sb_2__1_/mux_bottom_track_17/in[2]
+set_disable_timing sb_2__1_/mux_top_track_16/in[2]
+set_disable_timing sb_2__1_/mux_bottom_track_1/in[3]
+set_disable_timing sb_2__1_/mux_top_track_8/in[3]
+set_disable_timing sb_2__1_/mux_bottom_track_9/in[3]
+set_disable_timing sb_2__1_/mux_top_track_0/in[4]
+set_disable_timing sb_2__1_/mux_bottom_track_17/in[3]
+set_disable_timing sb_2__1_/mux_top_track_16/in[3]
+set_disable_timing sb_2__1_/mux_bottom_track_1/in[4]
 set_disable_timing sb_2__1_/mux_top_track_8/in[4]
 set_disable_timing sb_2__1_/mux_bottom_track_9/in[4]
-set_disable_timing sb_2__1_/mux_top_track_0/in[6]
-set_disable_timing sb_2__1_/mux_bottom_track_17/in[5]
-set_disable_timing sb_2__1_/mux_top_track_16/in[5]
-set_disable_timing sb_2__1_/mux_bottom_track_1/in[6]
-set_disable_timing sb_2__1_/mux_top_track_8/in[5]
-set_disable_timing sb_2__1_/mux_bottom_track_9/in[5]
-set_disable_timing sb_2__1_/mux_top_track_0/in[7]
-set_disable_timing sb_2__1_/mux_bottom_track_17/in[6]
-set_disable_timing sb_2__1_/mux_top_track_16/in[6]
-set_disable_timing sb_2__1_/mux_bottom_track_1/in[7]
-set_disable_timing sb_2__1_/mux_top_track_8/in[6]
-set_disable_timing sb_2__1_/mux_bottom_track_9/in[6]
-set_disable_timing sb_2__1_/mux_top_track_0/in[8]
-set_disable_timing sb_2__1_/mux_bottom_track_17/in[7]
+set_disable_timing sb_2__1_/mux_top_track_0/in[5]
+set_disable_timing sb_2__1_/mux_bottom_track_17/in[4]
 ##################################################
 # Disable timing for Switch block sb_2__2_
 ##################################################
 set_disable_timing sb_2__2_/chany_bottom_in[0]
 set_disable_timing sb_2__2_/chany_bottom_out[0]
-set_disable_timing sb_2__2_/chany_bottom_in[1]
 set_disable_timing sb_2__2_/chany_bottom_out[1]
 set_disable_timing sb_2__2_/chany_bottom_in[2]
 set_disable_timing sb_2__2_/chany_bottom_out[2]
@@ -2944,14 +2869,6 @@ set_disable_timing sb_2__2_/chanx_left_in[8]
 set_disable_timing sb_2__2_/chanx_left_out[8]
 set_disable_timing sb_2__2_/chanx_left_in[9]
 set_disable_timing sb_2__2_/chanx_left_out[9]
-set_disable_timing sb_2__2_/bottom_right_grid_left_width_0_height_0_subtile_0__pin_inpad_0_[0]
-set_disable_timing sb_2__2_/bottom_right_grid_left_width_0_height_0_subtile_1__pin_inpad_0_[0]
-set_disable_timing sb_2__2_/bottom_right_grid_left_width_0_height_0_subtile_2__pin_inpad_0_[0]
-set_disable_timing sb_2__2_/bottom_right_grid_left_width_0_height_0_subtile_3__pin_inpad_0_[0]
-set_disable_timing sb_2__2_/bottom_right_grid_left_width_0_height_0_subtile_4__pin_inpad_0_[0]
-set_disable_timing sb_2__2_/bottom_right_grid_left_width_0_height_0_subtile_5__pin_inpad_0_[0]
-set_disable_timing sb_2__2_/bottom_right_grid_left_width_0_height_0_subtile_6__pin_inpad_0_[0]
-set_disable_timing sb_2__2_/bottom_right_grid_left_width_0_height_0_subtile_7__pin_inpad_0_[0]
 set_disable_timing sb_2__2_/bottom_left_grid_right_width_0_height_0_subtile_0__pin_O_1_[0]
 set_disable_timing sb_2__2_/bottom_left_grid_right_width_0_height_0_subtile_0__pin_O_5_[0]
 set_disable_timing sb_2__2_/bottom_left_grid_right_width_0_height_0_subtile_0__pin_O_9_[0]
@@ -2975,14 +2892,6 @@ set_disable_timing sb_2__2_/mux_bottom_track_3/in[0]
 set_disable_timing sb_2__2_/mux_bottom_track_5/in[0]
 set_disable_timing sb_2__2_/mux_bottom_track_7/in[0]
 set_disable_timing sb_2__2_/mux_bottom_track_9/in[0]
-set_disable_timing sb_2__2_/mux_bottom_track_11/in[0]
-set_disable_timing sb_2__2_/mux_bottom_track_13/in[0]
-set_disable_timing sb_2__2_/mux_bottom_track_15/in[0]
-set_disable_timing sb_2__2_/mux_bottom_track_17/in[0]
-set_disable_timing sb_2__2_/mux_bottom_track_19/in[0]
-set_disable_timing sb_2__2_/mux_bottom_track_1/in[1]
-set_disable_timing sb_2__2_/mux_bottom_track_3/in[1]
-set_disable_timing sb_2__2_/mux_bottom_track_5/in[1]
 set_disable_timing sb_2__2_/mux_left_track_1/in[1]
 set_disable_timing sb_2__2_/mux_left_track_3/in[1]
 set_disable_timing sb_2__2_/mux_left_track_5/in[1]
@@ -3006,16 +2915,11 @@ set_disable_timing sb_2__2_/mux_left_track_15/in[0]
 set_disable_timing sb_2__2_/mux_left_track_17/in[0]
 set_disable_timing sb_2__2_/mux_left_track_19/in[0]
 set_disable_timing sb_2__2_/mux_left_track_1/in[0]
-set_disable_timing sb_2__2_/mux_bottom_track_19/in[1]
-set_disable_timing sb_2__2_/mux_bottom_track_1/in[2]
-set_disable_timing sb_2__2_/mux_bottom_track_3/in[2]
-set_disable_timing sb_2__2_/mux_bottom_track_5/in[2]
+set_disable_timing sb_2__2_/mux_bottom_track_1/in[1]
+set_disable_timing sb_2__2_/mux_bottom_track_3/in[1]
+set_disable_timing sb_2__2_/mux_bottom_track_5/in[1]
 set_disable_timing sb_2__2_/mux_bottom_track_7/in[1]
 set_disable_timing sb_2__2_/mux_bottom_track_9/in[1]
-set_disable_timing sb_2__2_/mux_bottom_track_11/in[1]
-set_disable_timing sb_2__2_/mux_bottom_track_13/in[1]
-set_disable_timing sb_2__2_/mux_bottom_track_15/in[1]
-set_disable_timing sb_2__2_/mux_bottom_track_17/in[1]
 #######################################
 # Disable Timing for grid[1][1]
 #######################################
@@ -3027,7 +2931,7 @@ set_disable_timing sb_2__2_/mux_bottom_track_17/in[1]
 #######################################
 set_disable_timing grid_clb_1__1_/logical_tile_clb_mode_clb__0/clb_I[0]
 set_disable_timing grid_clb_1__1_/logical_tile_clb_mode_clb__0/clb_I[1]
-set_disable_timing grid_clb_1__1_/logical_tile_clb_mode_clb__0/clb_I[3]
+set_disable_timing grid_clb_1__1_/logical_tile_clb_mode_clb__0/clb_I[2]
 set_disable_timing grid_clb_1__1_/logical_tile_clb_mode_clb__0/clb_I[4]
 set_disable_timing grid_clb_1__1_/logical_tile_clb_mode_clb__0/clb_I[5]
 set_disable_timing grid_clb_1__1_/logical_tile_clb_mode_clb__0/clb_I[6]
@@ -3038,7 +2942,7 @@ set_disable_timing grid_clb_1__1_/logical_tile_clb_mode_clb__0/clb_I[10]
 set_disable_timing grid_clb_1__1_/logical_tile_clb_mode_clb__0/clb_I[11]
 set_disable_timing grid_clb_1__1_/logical_tile_clb_mode_clb__0/clb_I[12]
 set_disable_timing grid_clb_1__1_/logical_tile_clb_mode_clb__0/clb_I[13]
-set_disable_timing grid_clb_1__1_/logical_tile_clb_mode_clb__0/clb_I[15]
+set_disable_timing grid_clb_1__1_/logical_tile_clb_mode_clb__0/clb_I[14]
 set_disable_timing grid_clb_1__1_/logical_tile_clb_mode_clb__0/clb_I[16]
 set_disable_timing grid_clb_1__1_/logical_tile_clb_mode_clb__0/clb_I[17]
 set_disable_timing grid_clb_1__1_/logical_tile_clb_mode_clb__0/clb_I[18]
@@ -5035,186 +4939,95 @@ set_disable_timing grid_io_2__3_/logical_tile_io_mode_io__7/logical_tile_io_mode
 # Disable Timing for unused grid[3][2][0]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node io[0]
+# Disable all the ports for pb_graph_node gp_outpad[0]
 #######################################
-set_disable_timing grid_io_3__2_/logical_tile_io_mode_io__0/*
+set_disable_timing grid_gp_outpad_right_3__2_/logical_tile_gp_outpad_mode_gp_outpad__0/*
 #######################################
-# Disable all the ports for pb_graph_node iopad[0]
+# Disable all the ports for pb_graph_node outpad[0]
 #######################################
-set_disable_timing grid_io_3__2_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/*
+set_disable_timing grid_gp_outpad_right_3__2_/logical_tile_gp_outpad_mode_gp_outpad__0/logical_tile_gp_outpad_mode_default__outpad_0/*
 #######################################
 # Disable Timing for unused grid[3][2][1]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node io[0]
+# Disable all the ports for pb_graph_node gp_outpad[0]
 #######################################
-set_disable_timing grid_io_3__2_/logical_tile_io_mode_io__1/*
+set_disable_timing grid_gp_outpad_right_3__2_/logical_tile_gp_outpad_mode_gp_outpad__1/*
 #######################################
-# Disable all the ports for pb_graph_node iopad[0]
+# Disable all the ports for pb_graph_node outpad[0]
 #######################################
-set_disable_timing grid_io_3__2_/logical_tile_io_mode_io__1/logical_tile_io_mode_physical__iopad_0/*
+set_disable_timing grid_gp_outpad_right_3__2_/logical_tile_gp_outpad_mode_gp_outpad__1/logical_tile_gp_outpad_mode_default__outpad_0/*
 #######################################
 # Disable Timing for unused grid[3][2][2]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node io[0]
+# Disable all the ports for pb_graph_node gp_outpad[0]
 #######################################
-set_disable_timing grid_io_3__2_/logical_tile_io_mode_io__2/*
+set_disable_timing grid_gp_outpad_right_3__2_/logical_tile_gp_outpad_mode_gp_outpad__2/*
 #######################################
-# Disable all the ports for pb_graph_node iopad[0]
+# Disable all the ports for pb_graph_node outpad[0]
 #######################################
-set_disable_timing grid_io_3__2_/logical_tile_io_mode_io__2/logical_tile_io_mode_physical__iopad_0/*
+set_disable_timing grid_gp_outpad_right_3__2_/logical_tile_gp_outpad_mode_gp_outpad__2/logical_tile_gp_outpad_mode_default__outpad_0/*
 #######################################
 # Disable Timing for unused grid[3][2][3]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node io[0]
+# Disable all the ports for pb_graph_node gp_outpad[0]
 #######################################
-set_disable_timing grid_io_3__2_/logical_tile_io_mode_io__3/*
+set_disable_timing grid_gp_outpad_right_3__2_/logical_tile_gp_outpad_mode_gp_outpad__3/*
 #######################################
-# Disable all the ports for pb_graph_node iopad[0]
+# Disable all the ports for pb_graph_node outpad[0]
 #######################################
-set_disable_timing grid_io_3__2_/logical_tile_io_mode_io__3/logical_tile_io_mode_physical__iopad_0/*
+set_disable_timing grid_gp_outpad_right_3__2_/logical_tile_gp_outpad_mode_gp_outpad__3/logical_tile_gp_outpad_mode_default__outpad_0/*
 #######################################
 # Disable Timing for unused grid[3][2][4]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node io[0]
+# Disable all the ports for pb_graph_node gp_outpad[0]
 #######################################
-set_disable_timing grid_io_3__2_/logical_tile_io_mode_io__4/*
+set_disable_timing grid_gp_outpad_right_3__2_/logical_tile_gp_outpad_mode_gp_outpad__4/*
 #######################################
-# Disable all the ports for pb_graph_node iopad[0]
+# Disable all the ports for pb_graph_node outpad[0]
 #######################################
-set_disable_timing grid_io_3__2_/logical_tile_io_mode_io__4/logical_tile_io_mode_physical__iopad_0/*
+set_disable_timing grid_gp_outpad_right_3__2_/logical_tile_gp_outpad_mode_gp_outpad__4/logical_tile_gp_outpad_mode_default__outpad_0/*
 #######################################
 # Disable Timing for unused grid[3][2][5]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node io[0]
+# Disable all the ports for pb_graph_node gp_outpad[0]
 #######################################
-set_disable_timing grid_io_3__2_/logical_tile_io_mode_io__5/*
+set_disable_timing grid_gp_outpad_right_3__2_/logical_tile_gp_outpad_mode_gp_outpad__5/*
 #######################################
-# Disable all the ports for pb_graph_node iopad[0]
+# Disable all the ports for pb_graph_node outpad[0]
 #######################################
-set_disable_timing grid_io_3__2_/logical_tile_io_mode_io__5/logical_tile_io_mode_physical__iopad_0/*
+set_disable_timing grid_gp_outpad_right_3__2_/logical_tile_gp_outpad_mode_gp_outpad__5/logical_tile_gp_outpad_mode_default__outpad_0/*
 #######################################
 # Disable Timing for unused grid[3][2][6]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node io[0]
+# Disable all the ports for pb_graph_node gp_outpad[0]
 #######################################
-set_disable_timing grid_io_3__2_/logical_tile_io_mode_io__6/*
+set_disable_timing grid_gp_outpad_right_3__2_/logical_tile_gp_outpad_mode_gp_outpad__6/*
 #######################################
-# Disable all the ports for pb_graph_node iopad[0]
+# Disable all the ports for pb_graph_node outpad[0]
 #######################################
-set_disable_timing grid_io_3__2_/logical_tile_io_mode_io__6/logical_tile_io_mode_physical__iopad_0/*
+set_disable_timing grid_gp_outpad_right_3__2_/logical_tile_gp_outpad_mode_gp_outpad__6/logical_tile_gp_outpad_mode_default__outpad_0/*
 #######################################
 # Disable Timing for unused grid[3][2][7]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node io[0]
+# Disable all the ports for pb_graph_node gp_outpad[0]
 #######################################
-set_disable_timing grid_io_3__2_/logical_tile_io_mode_io__7/*
+set_disable_timing grid_gp_outpad_right_3__2_/logical_tile_gp_outpad_mode_gp_outpad__7/*
 #######################################
-# Disable all the ports for pb_graph_node iopad[0]
+# Disable all the ports for pb_graph_node outpad[0]
 #######################################
-set_disable_timing grid_io_3__2_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/*
+set_disable_timing grid_gp_outpad_right_3__2_/logical_tile_gp_outpad_mode_gp_outpad__7/logical_tile_gp_outpad_mode_default__outpad_0/*
 #######################################
 # Disable Timing for grid[3][1]
 #######################################
 #######################################
-# Disable Timing for unused grid[3][1][0]
-#######################################
-#######################################
-# Disable all the ports for pb_graph_node io[0]
-#######################################
-set_disable_timing grid_io_3__1_/logical_tile_io_mode_io__0/*
-#######################################
-# Disable all the ports for pb_graph_node iopad[0]
-#######################################
-set_disable_timing grid_io_3__1_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/*
-#######################################
-# Disable Timing for unused grid[3][1][1]
-#######################################
-#######################################
-# Disable all the ports for pb_graph_node io[0]
-#######################################
-set_disable_timing grid_io_3__1_/logical_tile_io_mode_io__1/*
-#######################################
-# Disable all the ports for pb_graph_node iopad[0]
-#######################################
-set_disable_timing grid_io_3__1_/logical_tile_io_mode_io__1/logical_tile_io_mode_physical__iopad_0/*
-#######################################
-# Disable Timing for unused grid[3][1][2]
-#######################################
-#######################################
-# Disable all the ports for pb_graph_node io[0]
-#######################################
-set_disable_timing grid_io_3__1_/logical_tile_io_mode_io__2/*
-#######################################
-# Disable all the ports for pb_graph_node iopad[0]
-#######################################
-set_disable_timing grid_io_3__1_/logical_tile_io_mode_io__2/logical_tile_io_mode_physical__iopad_0/*
-#######################################
-# Disable Timing for unused grid[3][1][3]
-#######################################
-#######################################
-# Disable all the ports for pb_graph_node io[0]
-#######################################
-set_disable_timing grid_io_3__1_/logical_tile_io_mode_io__3/*
-#######################################
-# Disable all the ports for pb_graph_node iopad[0]
-#######################################
-set_disable_timing grid_io_3__1_/logical_tile_io_mode_io__3/logical_tile_io_mode_physical__iopad_0/*
-#######################################
-# Disable Timing for unused grid[3][1][4]
-#######################################
-#######################################
-# Disable all the ports for pb_graph_node io[0]
-#######################################
-set_disable_timing grid_io_3__1_/logical_tile_io_mode_io__4/*
-#######################################
-# Disable all the ports for pb_graph_node iopad[0]
-#######################################
-set_disable_timing grid_io_3__1_/logical_tile_io_mode_io__4/logical_tile_io_mode_physical__iopad_0/*
-#######################################
-# Disable Timing for unused grid[3][1][5]
-#######################################
-#######################################
-# Disable all the ports for pb_graph_node io[0]
-#######################################
-set_disable_timing grid_io_3__1_/logical_tile_io_mode_io__5/*
-#######################################
-# Disable all the ports for pb_graph_node iopad[0]
-#######################################
-set_disable_timing grid_io_3__1_/logical_tile_io_mode_io__5/logical_tile_io_mode_physical__iopad_0/*
-#######################################
-# Disable Timing for unused grid[3][1][6]
-#######################################
-#######################################
-# Disable all the ports for pb_graph_node io[0]
-#######################################
-set_disable_timing grid_io_3__1_/logical_tile_io_mode_io__6/*
-#######################################
-# Disable all the ports for pb_graph_node iopad[0]
-#######################################
-set_disable_timing grid_io_3__1_/logical_tile_io_mode_io__6/logical_tile_io_mode_physical__iopad_0/*
-#######################################
-# Disable Timing for unused grid[3][1][7]
-#######################################
-#######################################
-# Disable all the ports for pb_graph_node io[0]
-#######################################
-set_disable_timing grid_io_3__1_/logical_tile_io_mode_io__7/*
-#######################################
-# Disable all the ports for pb_graph_node iopad[0]
-#######################################
-set_disable_timing grid_io_3__1_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/*
-#######################################
-# Disable Timing for grid[2][0]
-#######################################
-#######################################
-# Disable Timing for unused resources in grid[2][0][0]
+# Disable Timing for unused resources in grid[3][1][0]
 #######################################
 #######################################
 # Disable unused pins for pb_graph_node gp_outpad[0]
@@ -5226,266 +5039,357 @@ set_disable_timing grid_io_3__1_/logical_tile_io_mode_io__7/logical_tile_io_mode
 # Disable unused pins for pb_graph_node outpad[0]
 #######################################
 #######################################
-# Disable Timing for unused grid[2][0][1]
+# Disable Timing for unused grid[3][1][1]
 #######################################
 #######################################
 # Disable all the ports for pb_graph_node gp_outpad[0]
 #######################################
-set_disable_timing grid_gp_outpad_bottom_2__0_/logical_tile_gp_outpad_mode_gp_outpad__1/*
+set_disable_timing grid_gp_outpad_right_3__1_/logical_tile_gp_outpad_mode_gp_outpad__1/*
 #######################################
 # Disable all the ports for pb_graph_node outpad[0]
 #######################################
-set_disable_timing grid_gp_outpad_bottom_2__0_/logical_tile_gp_outpad_mode_gp_outpad__1/logical_tile_gp_outpad_mode_default__outpad_0/*
+set_disable_timing grid_gp_outpad_right_3__1_/logical_tile_gp_outpad_mode_gp_outpad__1/logical_tile_gp_outpad_mode_default__outpad_0/*
+#######################################
+# Disable Timing for unused grid[3][1][2]
+#######################################
+#######################################
+# Disable all the ports for pb_graph_node gp_outpad[0]
+#######################################
+set_disable_timing grid_gp_outpad_right_3__1_/logical_tile_gp_outpad_mode_gp_outpad__2/*
+#######################################
+# Disable all the ports for pb_graph_node outpad[0]
+#######################################
+set_disable_timing grid_gp_outpad_right_3__1_/logical_tile_gp_outpad_mode_gp_outpad__2/logical_tile_gp_outpad_mode_default__outpad_0/*
+#######################################
+# Disable Timing for unused grid[3][1][3]
+#######################################
+#######################################
+# Disable all the ports for pb_graph_node gp_outpad[0]
+#######################################
+set_disable_timing grid_gp_outpad_right_3__1_/logical_tile_gp_outpad_mode_gp_outpad__3/*
+#######################################
+# Disable all the ports for pb_graph_node outpad[0]
+#######################################
+set_disable_timing grid_gp_outpad_right_3__1_/logical_tile_gp_outpad_mode_gp_outpad__3/logical_tile_gp_outpad_mode_default__outpad_0/*
+#######################################
+# Disable Timing for unused grid[3][1][4]
+#######################################
+#######################################
+# Disable all the ports for pb_graph_node gp_outpad[0]
+#######################################
+set_disable_timing grid_gp_outpad_right_3__1_/logical_tile_gp_outpad_mode_gp_outpad__4/*
+#######################################
+# Disable all the ports for pb_graph_node outpad[0]
+#######################################
+set_disable_timing grid_gp_outpad_right_3__1_/logical_tile_gp_outpad_mode_gp_outpad__4/logical_tile_gp_outpad_mode_default__outpad_0/*
+#######################################
+# Disable Timing for unused grid[3][1][5]
+#######################################
+#######################################
+# Disable all the ports for pb_graph_node gp_outpad[0]
+#######################################
+set_disable_timing grid_gp_outpad_right_3__1_/logical_tile_gp_outpad_mode_gp_outpad__5/*
+#######################################
+# Disable all the ports for pb_graph_node outpad[0]
+#######################################
+set_disable_timing grid_gp_outpad_right_3__1_/logical_tile_gp_outpad_mode_gp_outpad__5/logical_tile_gp_outpad_mode_default__outpad_0/*
+#######################################
+# Disable Timing for unused grid[3][1][6]
+#######################################
+#######################################
+# Disable all the ports for pb_graph_node gp_outpad[0]
+#######################################
+set_disable_timing grid_gp_outpad_right_3__1_/logical_tile_gp_outpad_mode_gp_outpad__6/*
+#######################################
+# Disable all the ports for pb_graph_node outpad[0]
+#######################################
+set_disable_timing grid_gp_outpad_right_3__1_/logical_tile_gp_outpad_mode_gp_outpad__6/logical_tile_gp_outpad_mode_default__outpad_0/*
+#######################################
+# Disable Timing for unused grid[3][1][7]
+#######################################
+#######################################
+# Disable all the ports for pb_graph_node gp_outpad[0]
+#######################################
+set_disable_timing grid_gp_outpad_right_3__1_/logical_tile_gp_outpad_mode_gp_outpad__7/*
+#######################################
+# Disable all the ports for pb_graph_node outpad[0]
+#######################################
+set_disable_timing grid_gp_outpad_right_3__1_/logical_tile_gp_outpad_mode_gp_outpad__7/logical_tile_gp_outpad_mode_default__outpad_0/*
+#######################################
+# Disable Timing for grid[2][0]
+#######################################
+#######################################
+# Disable Timing for unused grid[2][0][0]
+#######################################
+#######################################
+# Disable all the ports for pb_graph_node io[0]
+#######################################
+set_disable_timing grid_io_2__0_/logical_tile_io_mode_io__0/*
+#######################################
+# Disable all the ports for pb_graph_node iopad[0]
+#######################################
+set_disable_timing grid_io_2__0_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/*
+#######################################
+# Disable Timing for unused grid[2][0][1]
+#######################################
+#######################################
+# Disable all the ports for pb_graph_node io[0]
+#######################################
+set_disable_timing grid_io_2__0_/logical_tile_io_mode_io__1/*
+#######################################
+# Disable all the ports for pb_graph_node iopad[0]
+#######################################
+set_disable_timing grid_io_2__0_/logical_tile_io_mode_io__1/logical_tile_io_mode_physical__iopad_0/*
 #######################################
 # Disable Timing for unused grid[2][0][2]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node gp_outpad[0]
+# Disable all the ports for pb_graph_node io[0]
 #######################################
-set_disable_timing grid_gp_outpad_bottom_2__0_/logical_tile_gp_outpad_mode_gp_outpad__2/*
+set_disable_timing grid_io_2__0_/logical_tile_io_mode_io__2/*
 #######################################
-# Disable all the ports for pb_graph_node outpad[0]
+# Disable all the ports for pb_graph_node iopad[0]
 #######################################
-set_disable_timing grid_gp_outpad_bottom_2__0_/logical_tile_gp_outpad_mode_gp_outpad__2/logical_tile_gp_outpad_mode_default__outpad_0/*
+set_disable_timing grid_io_2__0_/logical_tile_io_mode_io__2/logical_tile_io_mode_physical__iopad_0/*
 #######################################
 # Disable Timing for unused grid[2][0][3]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node gp_outpad[0]
+# Disable all the ports for pb_graph_node io[0]
 #######################################
-set_disable_timing grid_gp_outpad_bottom_2__0_/logical_tile_gp_outpad_mode_gp_outpad__3/*
+set_disable_timing grid_io_2__0_/logical_tile_io_mode_io__3/*
 #######################################
-# Disable all the ports for pb_graph_node outpad[0]
+# Disable all the ports for pb_graph_node iopad[0]
 #######################################
-set_disable_timing grid_gp_outpad_bottom_2__0_/logical_tile_gp_outpad_mode_gp_outpad__3/logical_tile_gp_outpad_mode_default__outpad_0/*
+set_disable_timing grid_io_2__0_/logical_tile_io_mode_io__3/logical_tile_io_mode_physical__iopad_0/*
 #######################################
 # Disable Timing for unused grid[2][0][4]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node gp_outpad[0]
+# Disable all the ports for pb_graph_node io[0]
 #######################################
-set_disable_timing grid_gp_outpad_bottom_2__0_/logical_tile_gp_outpad_mode_gp_outpad__4/*
+set_disable_timing grid_io_2__0_/logical_tile_io_mode_io__4/*
 #######################################
-# Disable all the ports for pb_graph_node outpad[0]
+# Disable all the ports for pb_graph_node iopad[0]
 #######################################
-set_disable_timing grid_gp_outpad_bottom_2__0_/logical_tile_gp_outpad_mode_gp_outpad__4/logical_tile_gp_outpad_mode_default__outpad_0/*
+set_disable_timing grid_io_2__0_/logical_tile_io_mode_io__4/logical_tile_io_mode_physical__iopad_0/*
 #######################################
 # Disable Timing for unused grid[2][0][5]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node gp_outpad[0]
+# Disable all the ports for pb_graph_node io[0]
 #######################################
-set_disable_timing grid_gp_outpad_bottom_2__0_/logical_tile_gp_outpad_mode_gp_outpad__5/*
+set_disable_timing grid_io_2__0_/logical_tile_io_mode_io__5/*
 #######################################
-# Disable all the ports for pb_graph_node outpad[0]
+# Disable all the ports for pb_graph_node iopad[0]
 #######################################
-set_disable_timing grid_gp_outpad_bottom_2__0_/logical_tile_gp_outpad_mode_gp_outpad__5/logical_tile_gp_outpad_mode_default__outpad_0/*
+set_disable_timing grid_io_2__0_/logical_tile_io_mode_io__5/logical_tile_io_mode_physical__iopad_0/*
 #######################################
 # Disable Timing for unused grid[2][0][6]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node gp_outpad[0]
+# Disable all the ports for pb_graph_node io[0]
 #######################################
-set_disable_timing grid_gp_outpad_bottom_2__0_/logical_tile_gp_outpad_mode_gp_outpad__6/*
+set_disable_timing grid_io_2__0_/logical_tile_io_mode_io__6/*
 #######################################
-# Disable all the ports for pb_graph_node outpad[0]
+# Disable all the ports for pb_graph_node iopad[0]
 #######################################
-set_disable_timing grid_gp_outpad_bottom_2__0_/logical_tile_gp_outpad_mode_gp_outpad__6/logical_tile_gp_outpad_mode_default__outpad_0/*
+set_disable_timing grid_io_2__0_/logical_tile_io_mode_io__6/logical_tile_io_mode_physical__iopad_0/*
 #######################################
 # Disable Timing for unused grid[2][0][7]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node gp_outpad[0]
+# Disable all the ports for pb_graph_node io[0]
 #######################################
-set_disable_timing grid_gp_outpad_bottom_2__0_/logical_tile_gp_outpad_mode_gp_outpad__7/*
+set_disable_timing grid_io_2__0_/logical_tile_io_mode_io__7/*
 #######################################
-# Disable all the ports for pb_graph_node outpad[0]
+# Disable all the ports for pb_graph_node iopad[0]
 #######################################
-set_disable_timing grid_gp_outpad_bottom_2__0_/logical_tile_gp_outpad_mode_gp_outpad__7/logical_tile_gp_outpad_mode_default__outpad_0/*
+set_disable_timing grid_io_2__0_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/*
 #######################################
 # Disable Timing for grid[1][0]
 #######################################
 #######################################
-# Disable Timing for unused resources in grid[1][0][0]
+# Disable Timing for unused grid[1][0][0]
 #######################################
 #######################################
-# Disable unused pins for pb_graph_node gp_inpad[0]
+# Disable all the ports for pb_graph_node io[0]
+#######################################
+set_disable_timing grid_io_1__0_/logical_tile_io_mode_io__0/*
+#######################################
+# Disable all the ports for pb_graph_node iopad[0]
+#######################################
+set_disable_timing grid_io_1__0_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/*
+#######################################
+# Disable Timing for unused grid[1][0][1]
 #######################################
 #######################################
-# Disable unused mux_inputs for pb_graph_node gp_inpad[0]
+# Disable all the ports for pb_graph_node io[0]
 #######################################
+set_disable_timing grid_io_1__0_/logical_tile_io_mode_io__1/*
 #######################################
-# Disable unused pins for pb_graph_node inpad[0]
+# Disable all the ports for pb_graph_node iopad[0]
 #######################################
-#######################################
-# Disable Timing for unused resources in grid[1][0][1]
-#######################################
-#######################################
-# Disable unused pins for pb_graph_node gp_inpad[0]
-#######################################
-#######################################
-# Disable unused mux_inputs for pb_graph_node gp_inpad[0]
-#######################################
-#######################################
-# Disable unused pins for pb_graph_node inpad[0]
-#######################################
+set_disable_timing grid_io_1__0_/logical_tile_io_mode_io__1/logical_tile_io_mode_physical__iopad_0/*
 #######################################
 # Disable Timing for unused grid[1][0][2]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node gp_inpad[0]
+# Disable all the ports for pb_graph_node io[0]
 #######################################
-set_disable_timing grid_gp_inpad_bottom_1__0_/logical_tile_gp_inpad_mode_gp_inpad__2/*
+set_disable_timing grid_io_1__0_/logical_tile_io_mode_io__2/*
 #######################################
-# Disable all the ports for pb_graph_node inpad[0]
+# Disable all the ports for pb_graph_node iopad[0]
 #######################################
-set_disable_timing grid_gp_inpad_bottom_1__0_/logical_tile_gp_inpad_mode_gp_inpad__2/logical_tile_gp_inpad_mode_default__inpad_0/*
+set_disable_timing grid_io_1__0_/logical_tile_io_mode_io__2/logical_tile_io_mode_physical__iopad_0/*
 #######################################
 # Disable Timing for unused grid[1][0][3]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node gp_inpad[0]
+# Disable all the ports for pb_graph_node io[0]
 #######################################
-set_disable_timing grid_gp_inpad_bottom_1__0_/logical_tile_gp_inpad_mode_gp_inpad__3/*
+set_disable_timing grid_io_1__0_/logical_tile_io_mode_io__3/*
 #######################################
-# Disable all the ports for pb_graph_node inpad[0]
+# Disable all the ports for pb_graph_node iopad[0]
 #######################################
-set_disable_timing grid_gp_inpad_bottom_1__0_/logical_tile_gp_inpad_mode_gp_inpad__3/logical_tile_gp_inpad_mode_default__inpad_0/*
+set_disable_timing grid_io_1__0_/logical_tile_io_mode_io__3/logical_tile_io_mode_physical__iopad_0/*
 #######################################
 # Disable Timing for unused grid[1][0][4]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node gp_inpad[0]
+# Disable all the ports for pb_graph_node io[0]
 #######################################
-set_disable_timing grid_gp_inpad_bottom_1__0_/logical_tile_gp_inpad_mode_gp_inpad__4/*
+set_disable_timing grid_io_1__0_/logical_tile_io_mode_io__4/*
 #######################################
-# Disable all the ports for pb_graph_node inpad[0]
+# Disable all the ports for pb_graph_node iopad[0]
 #######################################
-set_disable_timing grid_gp_inpad_bottom_1__0_/logical_tile_gp_inpad_mode_gp_inpad__4/logical_tile_gp_inpad_mode_default__inpad_0/*
+set_disable_timing grid_io_1__0_/logical_tile_io_mode_io__4/logical_tile_io_mode_physical__iopad_0/*
 #######################################
 # Disable Timing for unused grid[1][0][5]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node gp_inpad[0]
+# Disable all the ports for pb_graph_node io[0]
 #######################################
-set_disable_timing grid_gp_inpad_bottom_1__0_/logical_tile_gp_inpad_mode_gp_inpad__5/*
+set_disable_timing grid_io_1__0_/logical_tile_io_mode_io__5/*
 #######################################
-# Disable all the ports for pb_graph_node inpad[0]
+# Disable all the ports for pb_graph_node iopad[0]
 #######################################
-set_disable_timing grid_gp_inpad_bottom_1__0_/logical_tile_gp_inpad_mode_gp_inpad__5/logical_tile_gp_inpad_mode_default__inpad_0/*
+set_disable_timing grid_io_1__0_/logical_tile_io_mode_io__5/logical_tile_io_mode_physical__iopad_0/*
 #######################################
 # Disable Timing for unused grid[1][0][6]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node gp_inpad[0]
+# Disable all the ports for pb_graph_node io[0]
 #######################################
-set_disable_timing grid_gp_inpad_bottom_1__0_/logical_tile_gp_inpad_mode_gp_inpad__6/*
+set_disable_timing grid_io_1__0_/logical_tile_io_mode_io__6/*
 #######################################
-# Disable all the ports for pb_graph_node inpad[0]
+# Disable all the ports for pb_graph_node iopad[0]
 #######################################
-set_disable_timing grid_gp_inpad_bottom_1__0_/logical_tile_gp_inpad_mode_gp_inpad__6/logical_tile_gp_inpad_mode_default__inpad_0/*
+set_disable_timing grid_io_1__0_/logical_tile_io_mode_io__6/logical_tile_io_mode_physical__iopad_0/*
 #######################################
 # Disable Timing for unused grid[1][0][7]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node gp_inpad[0]
+# Disable all the ports for pb_graph_node io[0]
 #######################################
-set_disable_timing grid_gp_inpad_bottom_1__0_/logical_tile_gp_inpad_mode_gp_inpad__7/*
+set_disable_timing grid_io_1__0_/logical_tile_io_mode_io__7/*
 #######################################
-# Disable all the ports for pb_graph_node inpad[0]
+# Disable all the ports for pb_graph_node iopad[0]
 #######################################
-set_disable_timing grid_gp_inpad_bottom_1__0_/logical_tile_gp_inpad_mode_gp_inpad__7/logical_tile_gp_inpad_mode_default__inpad_0/*
+set_disable_timing grid_io_1__0_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/*
 #######################################
 # Disable Timing for grid[0][1]
 #######################################
 #######################################
-# Disable Timing for unused grid[0][1][0]
+# Disable Timing for unused resources in grid[0][1][0]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node io[0]
-#######################################
-set_disable_timing grid_io_0__1_/logical_tile_io_mode_io__0/*
-#######################################
-# Disable all the ports for pb_graph_node iopad[0]
-#######################################
-set_disable_timing grid_io_0__1_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/*
-#######################################
-# Disable Timing for unused grid[0][1][1]
+# Disable unused pins for pb_graph_node gp_inpad[0]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node io[0]
+# Disable unused mux_inputs for pb_graph_node gp_inpad[0]
 #######################################
-set_disable_timing grid_io_0__1_/logical_tile_io_mode_io__1/*
 #######################################
-# Disable all the ports for pb_graph_node iopad[0]
+# Disable unused pins for pb_graph_node inpad[0]
 #######################################
-set_disable_timing grid_io_0__1_/logical_tile_io_mode_io__1/logical_tile_io_mode_physical__iopad_0/*
+#######################################
+# Disable Timing for unused resources in grid[0][1][1]
+#######################################
+#######################################
+# Disable unused pins for pb_graph_node gp_inpad[0]
+#######################################
+#######################################
+# Disable unused mux_inputs for pb_graph_node gp_inpad[0]
+#######################################
+#######################################
+# Disable unused pins for pb_graph_node inpad[0]
+#######################################
 #######################################
 # Disable Timing for unused grid[0][1][2]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node io[0]
+# Disable all the ports for pb_graph_node gp_inpad[0]
 #######################################
-set_disable_timing grid_io_0__1_/logical_tile_io_mode_io__2/*
+set_disable_timing grid_gp_inpad_left_0__1_/logical_tile_gp_inpad_mode_gp_inpad__2/*
 #######################################
-# Disable all the ports for pb_graph_node iopad[0]
+# Disable all the ports for pb_graph_node inpad[0]
 #######################################
-set_disable_timing grid_io_0__1_/logical_tile_io_mode_io__2/logical_tile_io_mode_physical__iopad_0/*
+set_disable_timing grid_gp_inpad_left_0__1_/logical_tile_gp_inpad_mode_gp_inpad__2/logical_tile_gp_inpad_mode_default__inpad_0/*
 #######################################
 # Disable Timing for unused grid[0][1][3]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node io[0]
+# Disable all the ports for pb_graph_node gp_inpad[0]
 #######################################
-set_disable_timing grid_io_0__1_/logical_tile_io_mode_io__3/*
+set_disable_timing grid_gp_inpad_left_0__1_/logical_tile_gp_inpad_mode_gp_inpad__3/*
 #######################################
-# Disable all the ports for pb_graph_node iopad[0]
+# Disable all the ports for pb_graph_node inpad[0]
 #######################################
-set_disable_timing grid_io_0__1_/logical_tile_io_mode_io__3/logical_tile_io_mode_physical__iopad_0/*
+set_disable_timing grid_gp_inpad_left_0__1_/logical_tile_gp_inpad_mode_gp_inpad__3/logical_tile_gp_inpad_mode_default__inpad_0/*
 #######################################
 # Disable Timing for unused grid[0][1][4]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node io[0]
+# Disable all the ports for pb_graph_node gp_inpad[0]
 #######################################
-set_disable_timing grid_io_0__1_/logical_tile_io_mode_io__4/*
+set_disable_timing grid_gp_inpad_left_0__1_/logical_tile_gp_inpad_mode_gp_inpad__4/*
 #######################################
-# Disable all the ports for pb_graph_node iopad[0]
+# Disable all the ports for pb_graph_node inpad[0]
 #######################################
-set_disable_timing grid_io_0__1_/logical_tile_io_mode_io__4/logical_tile_io_mode_physical__iopad_0/*
+set_disable_timing grid_gp_inpad_left_0__1_/logical_tile_gp_inpad_mode_gp_inpad__4/logical_tile_gp_inpad_mode_default__inpad_0/*
 #######################################
 # Disable Timing for unused grid[0][1][5]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node io[0]
+# Disable all the ports for pb_graph_node gp_inpad[0]
 #######################################
-set_disable_timing grid_io_0__1_/logical_tile_io_mode_io__5/*
+set_disable_timing grid_gp_inpad_left_0__1_/logical_tile_gp_inpad_mode_gp_inpad__5/*
 #######################################
-# Disable all the ports for pb_graph_node iopad[0]
+# Disable all the ports for pb_graph_node inpad[0]
 #######################################
-set_disable_timing grid_io_0__1_/logical_tile_io_mode_io__5/logical_tile_io_mode_physical__iopad_0/*
+set_disable_timing grid_gp_inpad_left_0__1_/logical_tile_gp_inpad_mode_gp_inpad__5/logical_tile_gp_inpad_mode_default__inpad_0/*
 #######################################
 # Disable Timing for unused grid[0][1][6]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node io[0]
+# Disable all the ports for pb_graph_node gp_inpad[0]
 #######################################
-set_disable_timing grid_io_0__1_/logical_tile_io_mode_io__6/*
+set_disable_timing grid_gp_inpad_left_0__1_/logical_tile_gp_inpad_mode_gp_inpad__6/*
 #######################################
-# Disable all the ports for pb_graph_node iopad[0]
+# Disable all the ports for pb_graph_node inpad[0]
 #######################################
-set_disable_timing grid_io_0__1_/logical_tile_io_mode_io__6/logical_tile_io_mode_physical__iopad_0/*
+set_disable_timing grid_gp_inpad_left_0__1_/logical_tile_gp_inpad_mode_gp_inpad__6/logical_tile_gp_inpad_mode_default__inpad_0/*
 #######################################
 # Disable Timing for unused grid[0][1][7]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node io[0]
+# Disable all the ports for pb_graph_node gp_inpad[0]
 #######################################
-set_disable_timing grid_io_0__1_/logical_tile_io_mode_io__7/*
+set_disable_timing grid_gp_inpad_left_0__1_/logical_tile_gp_inpad_mode_gp_inpad__7/*
 #######################################
-# Disable all the ports for pb_graph_node iopad[0]
+# Disable all the ports for pb_graph_node inpad[0]
 #######################################
-set_disable_timing grid_io_0__1_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/*
+set_disable_timing grid_gp_inpad_left_0__1_/logical_tile_gp_inpad_mode_gp_inpad__7/logical_tile_gp_inpad_mode_default__inpad_0/*
 #######################################
 # Disable Timing for grid[0][2]
 #######################################
@@ -5493,87 +5397,87 @@ set_disable_timing grid_io_0__1_/logical_tile_io_mode_io__7/logical_tile_io_mode
 # Disable Timing for unused grid[0][2][0]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node io[0]
+# Disable all the ports for pb_graph_node gp_inpad[0]
 #######################################
-set_disable_timing grid_io_0__2_/logical_tile_io_mode_io__0/*
+set_disable_timing grid_gp_inpad_left_0__2_/logical_tile_gp_inpad_mode_gp_inpad__0/*
 #######################################
-# Disable all the ports for pb_graph_node iopad[0]
+# Disable all the ports for pb_graph_node inpad[0]
 #######################################
-set_disable_timing grid_io_0__2_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/*
+set_disable_timing grid_gp_inpad_left_0__2_/logical_tile_gp_inpad_mode_gp_inpad__0/logical_tile_gp_inpad_mode_default__inpad_0/*
 #######################################
 # Disable Timing for unused grid[0][2][1]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node io[0]
+# Disable all the ports for pb_graph_node gp_inpad[0]
 #######################################
-set_disable_timing grid_io_0__2_/logical_tile_io_mode_io__1/*
+set_disable_timing grid_gp_inpad_left_0__2_/logical_tile_gp_inpad_mode_gp_inpad__1/*
 #######################################
-# Disable all the ports for pb_graph_node iopad[0]
+# Disable all the ports for pb_graph_node inpad[0]
 #######################################
-set_disable_timing grid_io_0__2_/logical_tile_io_mode_io__1/logical_tile_io_mode_physical__iopad_0/*
+set_disable_timing grid_gp_inpad_left_0__2_/logical_tile_gp_inpad_mode_gp_inpad__1/logical_tile_gp_inpad_mode_default__inpad_0/*
 #######################################
 # Disable Timing for unused grid[0][2][2]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node io[0]
+# Disable all the ports for pb_graph_node gp_inpad[0]
 #######################################
-set_disable_timing grid_io_0__2_/logical_tile_io_mode_io__2/*
+set_disable_timing grid_gp_inpad_left_0__2_/logical_tile_gp_inpad_mode_gp_inpad__2/*
 #######################################
-# Disable all the ports for pb_graph_node iopad[0]
+# Disable all the ports for pb_graph_node inpad[0]
 #######################################
-set_disable_timing grid_io_0__2_/logical_tile_io_mode_io__2/logical_tile_io_mode_physical__iopad_0/*
+set_disable_timing grid_gp_inpad_left_0__2_/logical_tile_gp_inpad_mode_gp_inpad__2/logical_tile_gp_inpad_mode_default__inpad_0/*
 #######################################
 # Disable Timing for unused grid[0][2][3]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node io[0]
+# Disable all the ports for pb_graph_node gp_inpad[0]
 #######################################
-set_disable_timing grid_io_0__2_/logical_tile_io_mode_io__3/*
+set_disable_timing grid_gp_inpad_left_0__2_/logical_tile_gp_inpad_mode_gp_inpad__3/*
 #######################################
-# Disable all the ports for pb_graph_node iopad[0]
+# Disable all the ports for pb_graph_node inpad[0]
 #######################################
-set_disable_timing grid_io_0__2_/logical_tile_io_mode_io__3/logical_tile_io_mode_physical__iopad_0/*
+set_disable_timing grid_gp_inpad_left_0__2_/logical_tile_gp_inpad_mode_gp_inpad__3/logical_tile_gp_inpad_mode_default__inpad_0/*
 #######################################
 # Disable Timing for unused grid[0][2][4]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node io[0]
+# Disable all the ports for pb_graph_node gp_inpad[0]
 #######################################
-set_disable_timing grid_io_0__2_/logical_tile_io_mode_io__4/*
+set_disable_timing grid_gp_inpad_left_0__2_/logical_tile_gp_inpad_mode_gp_inpad__4/*
 #######################################
-# Disable all the ports for pb_graph_node iopad[0]
+# Disable all the ports for pb_graph_node inpad[0]
 #######################################
-set_disable_timing grid_io_0__2_/logical_tile_io_mode_io__4/logical_tile_io_mode_physical__iopad_0/*
+set_disable_timing grid_gp_inpad_left_0__2_/logical_tile_gp_inpad_mode_gp_inpad__4/logical_tile_gp_inpad_mode_default__inpad_0/*
 #######################################
 # Disable Timing for unused grid[0][2][5]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node io[0]
+# Disable all the ports for pb_graph_node gp_inpad[0]
 #######################################
-set_disable_timing grid_io_0__2_/logical_tile_io_mode_io__5/*
+set_disable_timing grid_gp_inpad_left_0__2_/logical_tile_gp_inpad_mode_gp_inpad__5/*
 #######################################
-# Disable all the ports for pb_graph_node iopad[0]
+# Disable all the ports for pb_graph_node inpad[0]
 #######################################
-set_disable_timing grid_io_0__2_/logical_tile_io_mode_io__5/logical_tile_io_mode_physical__iopad_0/*
+set_disable_timing grid_gp_inpad_left_0__2_/logical_tile_gp_inpad_mode_gp_inpad__5/logical_tile_gp_inpad_mode_default__inpad_0/*
 #######################################
 # Disable Timing for unused grid[0][2][6]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node io[0]
+# Disable all the ports for pb_graph_node gp_inpad[0]
 #######################################
-set_disable_timing grid_io_0__2_/logical_tile_io_mode_io__6/*
+set_disable_timing grid_gp_inpad_left_0__2_/logical_tile_gp_inpad_mode_gp_inpad__6/*
 #######################################
-# Disable all the ports for pb_graph_node iopad[0]
+# Disable all the ports for pb_graph_node inpad[0]
 #######################################
-set_disable_timing grid_io_0__2_/logical_tile_io_mode_io__6/logical_tile_io_mode_physical__iopad_0/*
+set_disable_timing grid_gp_inpad_left_0__2_/logical_tile_gp_inpad_mode_gp_inpad__6/logical_tile_gp_inpad_mode_default__inpad_0/*
 #######################################
 # Disable Timing for unused grid[0][2][7]
 #######################################
 #######################################
-# Disable all the ports for pb_graph_node io[0]
+# Disable all the ports for pb_graph_node gp_inpad[0]
 #######################################
-set_disable_timing grid_io_0__2_/logical_tile_io_mode_io__7/*
+set_disable_timing grid_gp_inpad_left_0__2_/logical_tile_gp_inpad_mode_gp_inpad__7/*
 #######################################
-# Disable all the ports for pb_graph_node iopad[0]
+# Disable all the ports for pb_graph_node inpad[0]
 #######################################
-set_disable_timing grid_io_0__2_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/*
+set_disable_timing grid_gp_inpad_left_0__2_/logical_tile_gp_inpad_mode_gp_inpad__7/logical_tile_gp_inpad_mode_default__inpad_0/*

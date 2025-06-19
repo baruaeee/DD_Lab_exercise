@@ -15,8 +15,8 @@ input external delay                                             0.000     0.000
 a.inpad[0] (.input)                                              0.000     0.000
 c.in[0] (.names)                                                 0.286     0.286
 c.out[0] (.names)                                                0.235     0.521
-out:c.outpad[0] (.output)                                        0.457     0.978
-data arrival time                                                          0.978
+out:c.outpad[0] (.output)                                        0.551     1.072
+data arrival time                                                          1.072
 
 clock virtual_io_clock (rise edge)                               0.000     0.000
 clock source latency                                             0.000     0.000
@@ -25,9 +25,9 @@ output external delay                                            0.000     0.000
 data required time                                                         0.000
 --------------------------------------------------------------------------------
 data required time                                                         0.000
-data arrival time                                                         -0.978
+data arrival time                                                         -1.072
 --------------------------------------------------------------------------------
-slack (VIOLATED)                                                          -0.978
+slack (VIOLATED)                                                          -1.072
 
 
 #End of timing report

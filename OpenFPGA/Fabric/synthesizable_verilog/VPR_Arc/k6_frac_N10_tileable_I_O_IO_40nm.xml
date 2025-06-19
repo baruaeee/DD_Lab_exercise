@@ -116,8 +116,8 @@
       <!--Perimeter of 'io' blocks with 'EMPTY' blocks at corners-->
       <perimeter type="io" priority="100"/>
       <!--put input and output pads in bottom-->
-      <region type="gp_inpad" priority="100" startx="1" endx="W-1" incrx="2" starty="0" endy="0"/>
-      <region type="gp_outpad" priority="100" startx="2" endx="W-1" incrx="2" starty="0" endy="0"/>
+      <region type="gp_inpad" priority="100" startx="0" endx="0" incrx="1" starty="1" endy="H-1"/>
+      <region type="gp_outpad" priority="100" startx="W-1" endx="W-1" incrx="1" starty="1" endy="H-1"/>
       <corners type="EMPTY" priority="101"/>
       <!--Fill with 'clb'-->
       <fill type="clb" priority="10"/>
@@ -126,8 +126,8 @@
       <!--Perimeter of 'io' blocks with 'EMPTY' blocks at corners-->
       <perimeter type="io" priority="100"/>
       <!--put input and output pads in bottom-->
-      <region type="gp_inpad" priority="100" startx="1" endx="W-1" incrx="2" starty="0" endy="0"/>
-      <region type="gp_outpad" priority="100" startx="2" endx="W-1" incrx="2" starty="0" endy="0"/>
+      <region type="gp_inpad" priority="101" startx="0" endx="0" incrx="1" starty="1" endy="H-1"/>
+      <region type="gp_outpad" priority="101" startx="W-1" endx="W-1" incrx="1" starty="1" endy="H-1"/>
       <corners type="EMPTY" priority="101"/>
       <!--Fill with 'clb'-->
       <fill type="clb" priority="10"/>
