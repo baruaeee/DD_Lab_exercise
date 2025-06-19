@@ -1,0 +1,2 @@
+#e1(19Jun2025:01:31:52): source ./xcelium.d/env.d/env.history.19Jun2025_01_31_52
+s1(19Jun2025:01:31:52):  xrun ./SRC/and2_include_netlists.v -access +rwc -gui 

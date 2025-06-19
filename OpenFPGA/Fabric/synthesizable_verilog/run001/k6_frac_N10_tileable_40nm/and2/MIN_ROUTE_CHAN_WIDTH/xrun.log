@@ -1,0 +1,8 @@
+xrun(64): 24.03-s004: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.03-s004: Started on Jun 19, 2025 at 01:23:48 CEST
+xrun
+	./SRC/and2_include_netlists.v
+	-access +rwc
+	-gui
+xrun: *E,FILEMIS: Cannot find the provided file ./SRC/and2_include_netlists.v.
+TOOL:	xrun(64)	24.03-s004: Exiting on Jun 19, 2025 at 01:23:48 CEST  (total: 00:00:00)

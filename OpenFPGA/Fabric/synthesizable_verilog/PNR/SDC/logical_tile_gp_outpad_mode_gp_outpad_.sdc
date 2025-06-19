@@ -1,0 +1,15 @@
+#############################################
+#	Synopsys Design Constraints (SDC)
+#	For FPGA fabric 
+#	Description: Timing constraints for Grid logical_tile_gp_outpad_mode_gp_outpad_ in PnR
+#	Author: Xifan TANG 
+#	Organization: University of Utah 
+#	Date: Thu Jun 19 01:29:45 2025
+#############################################
+
+#############################################
+#	Define time unit 
+#############################################
+set_units -time s
+
+set_max_delay -from grid_gp_outpad_bottom/logical_tile_gp_outpad_mode_gp_outpad__0/gp_outpad_outpad[0] -to grid_gp_outpad_bottom/logical_tile_gp_outpad_mode_gp_outpad__0/logical_tile_gp_outpad_mode_default__outpad_0/outpad_outpad[0] 1.39400002e-11
