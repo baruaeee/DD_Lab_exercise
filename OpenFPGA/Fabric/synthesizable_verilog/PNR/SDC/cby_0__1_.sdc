@@ -4,7 +4,7 @@
 #	Description: Constrain timing of Connection Block cby_0__1_ for PnR
 #	Author: Xifan TANG 
 #	Organization: University of Utah 
-#	Date: Thu Jun 19 01:29:45 2025
+#	Date: Thu Jun 19 13:12:37 2025
 #############################################
 
 #############################################
@@ -62,35 +62,3 @@ set_max_delay -from cby_0__1_/chany_bottom_in[8] -to cby_0__1_/right_grid_left_w
 set_max_delay -from cby_0__1_/chany_top_in[8] -to cby_0__1_/right_grid_left_width_0_height_0_subtile_0__pin_I_35_[0] 7.247000222e-11
 set_max_delay -from cby_0__1_/chany_bottom_in[9] -to cby_0__1_/right_grid_left_width_0_height_0_subtile_0__pin_I_39_[0] 7.247000222e-11
 set_max_delay -from cby_0__1_/chany_top_in[9] -to cby_0__1_/right_grid_left_width_0_height_0_subtile_0__pin_I_39_[0] 7.247000222e-11
-set_max_delay -from cby_0__1_/chany_bottom_in[0] -to cby_0__1_/left_grid_right_width_0_height_0_subtile_0__pin_outpad_0_[0] 7.247000222e-11
-set_max_delay -from cby_0__1_/chany_top_in[0] -to cby_0__1_/left_grid_right_width_0_height_0_subtile_0__pin_outpad_0_[0] 7.247000222e-11
-set_max_delay -from cby_0__1_/chany_bottom_in[5] -to cby_0__1_/left_grid_right_width_0_height_0_subtile_0__pin_outpad_0_[0] 7.247000222e-11
-set_max_delay -from cby_0__1_/chany_top_in[5] -to cby_0__1_/left_grid_right_width_0_height_0_subtile_0__pin_outpad_0_[0] 7.247000222e-11
-set_max_delay -from cby_0__1_/chany_bottom_in[1] -to cby_0__1_/left_grid_right_width_0_height_0_subtile_1__pin_outpad_0_[0] 7.247000222e-11
-set_max_delay -from cby_0__1_/chany_top_in[1] -to cby_0__1_/left_grid_right_width_0_height_0_subtile_1__pin_outpad_0_[0] 7.247000222e-11
-set_max_delay -from cby_0__1_/chany_bottom_in[6] -to cby_0__1_/left_grid_right_width_0_height_0_subtile_1__pin_outpad_0_[0] 7.247000222e-11
-set_max_delay -from cby_0__1_/chany_top_in[6] -to cby_0__1_/left_grid_right_width_0_height_0_subtile_1__pin_outpad_0_[0] 7.247000222e-11
-set_max_delay -from cby_0__1_/chany_bottom_in[2] -to cby_0__1_/left_grid_right_width_0_height_0_subtile_2__pin_outpad_0_[0] 7.247000222e-11
-set_max_delay -from cby_0__1_/chany_top_in[2] -to cby_0__1_/left_grid_right_width_0_height_0_subtile_2__pin_outpad_0_[0] 7.247000222e-11
-set_max_delay -from cby_0__1_/chany_bottom_in[7] -to cby_0__1_/left_grid_right_width_0_height_0_subtile_2__pin_outpad_0_[0] 7.247000222e-11
-set_max_delay -from cby_0__1_/chany_top_in[7] -to cby_0__1_/left_grid_right_width_0_height_0_subtile_2__pin_outpad_0_[0] 7.247000222e-11
-set_max_delay -from cby_0__1_/chany_bottom_in[3] -to cby_0__1_/left_grid_right_width_0_height_0_subtile_3__pin_outpad_0_[0] 7.247000222e-11
-set_max_delay -from cby_0__1_/chany_top_in[3] -to cby_0__1_/left_grid_right_width_0_height_0_subtile_3__pin_outpad_0_[0] 7.247000222e-11
-set_max_delay -from cby_0__1_/chany_bottom_in[8] -to cby_0__1_/left_grid_right_width_0_height_0_subtile_3__pin_outpad_0_[0] 7.247000222e-11
-set_max_delay -from cby_0__1_/chany_top_in[8] -to cby_0__1_/left_grid_right_width_0_height_0_subtile_3__pin_outpad_0_[0] 7.247000222e-11
-set_max_delay -from cby_0__1_/chany_bottom_in[4] -to cby_0__1_/left_grid_right_width_0_height_0_subtile_4__pin_outpad_0_[0] 7.247000222e-11
-set_max_delay -from cby_0__1_/chany_top_in[4] -to cby_0__1_/left_grid_right_width_0_height_0_subtile_4__pin_outpad_0_[0] 7.247000222e-11
-set_max_delay -from cby_0__1_/chany_bottom_in[9] -to cby_0__1_/left_grid_right_width_0_height_0_subtile_4__pin_outpad_0_[0] 7.247000222e-11
-set_max_delay -from cby_0__1_/chany_top_in[9] -to cby_0__1_/left_grid_right_width_0_height_0_subtile_4__pin_outpad_0_[0] 7.247000222e-11
-set_max_delay -from cby_0__1_/chany_bottom_in[0] -to cby_0__1_/left_grid_right_width_0_height_0_subtile_5__pin_outpad_0_[0] 7.247000222e-11
-set_max_delay -from cby_0__1_/chany_top_in[0] -to cby_0__1_/left_grid_right_width_0_height_0_subtile_5__pin_outpad_0_[0] 7.247000222e-11
-set_max_delay -from cby_0__1_/chany_bottom_in[5] -to cby_0__1_/left_grid_right_width_0_height_0_subtile_5__pin_outpad_0_[0] 7.247000222e-11
-set_max_delay -from cby_0__1_/chany_top_in[5] -to cby_0__1_/left_grid_right_width_0_height_0_subtile_5__pin_outpad_0_[0] 7.247000222e-11
-set_max_delay -from cby_0__1_/chany_bottom_in[1] -to cby_0__1_/left_grid_right_width_0_height_0_subtile_6__pin_outpad_0_[0] 7.247000222e-11
-set_max_delay -from cby_0__1_/chany_top_in[1] -to cby_0__1_/left_grid_right_width_0_height_0_subtile_6__pin_outpad_0_[0] 7.247000222e-11
-set_max_delay -from cby_0__1_/chany_bottom_in[6] -to cby_0__1_/left_grid_right_width_0_height_0_subtile_6__pin_outpad_0_[0] 7.247000222e-11
-set_max_delay -from cby_0__1_/chany_top_in[6] -to cby_0__1_/left_grid_right_width_0_height_0_subtile_6__pin_outpad_0_[0] 7.247000222e-11
-set_max_delay -from cby_0__1_/chany_bottom_in[2] -to cby_0__1_/left_grid_right_width_0_height_0_subtile_7__pin_outpad_0_[0] 7.247000222e-11
-set_max_delay -from cby_0__1_/chany_top_in[2] -to cby_0__1_/left_grid_right_width_0_height_0_subtile_7__pin_outpad_0_[0] 7.247000222e-11
-set_max_delay -from cby_0__1_/chany_bottom_in[7] -to cby_0__1_/left_grid_right_width_0_height_0_subtile_7__pin_outpad_0_[0] 7.247000222e-11
-set_max_delay -from cby_0__1_/chany_top_in[7] -to cby_0__1_/left_grid_right_width_0_height_0_subtile_7__pin_outpad_0_[0] 7.247000222e-11

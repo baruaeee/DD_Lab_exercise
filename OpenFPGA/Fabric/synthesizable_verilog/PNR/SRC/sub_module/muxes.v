@@ -3,7 +3,7 @@
 //	Description: Multiplexers
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Thu Jun 19 01:29:45 2025
+//	Date: Thu Jun 19 13:12:37 2025
 //-------------------------------------------
 //----- Default net type -----
 // `default_nettype none
@@ -548,6 +548,342 @@ endmodule
 //----- Default net type -----
 // `default_nettype none
 
+// ----- Verilog module for mux_tree_tapbuf_size8 -----
+module mux_tree_tapbuf_size8(in,
+                             sram,
+                             sram_inv,
+                             out);
+//----- INPUT PORTS -----
+input [0:7] in;
+//----- INPUT PORTS -----
+input [0:3] sram;
+//----- INPUT PORTS -----
+input [0:3] sram_inv;
+//----- OUTPUT PORTS -----
+output [0:0] out;
+
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
+
+
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
+
+
+wire [0:0] const1_0_const1;
+wire [0:0] sg13g2_inv_1_0_Y;
+wire [0:0] sg13g2_inv_1_1_Y;
+wire [0:0] sg13g2_inv_1_2_Y;
+wire [0:0] sg13g2_inv_1_3_Y;
+wire [0:0] sg13g2_inv_1_4_Y;
+wire [0:0] sg13g2_inv_1_5_Y;
+wire [0:0] sg13g2_inv_1_6_Y;
+wire [0:0] sg13g2_inv_1_7_Y;
+wire [0:0] sg13g2_mux2_1_0_X;
+wire [0:0] sg13g2_mux2_1_1_X;
+wire [0:0] sg13g2_mux2_1_2_X;
+wire [0:0] sg13g2_mux2_1_3_X;
+wire [0:0] sg13g2_mux2_1_4_X;
+wire [0:0] sg13g2_mux2_1_5_X;
+wire [0:0] sg13g2_mux2_1_6_X;
+wire [0:0] sg13g2_mux2_1_7_X;
+
+// ----- BEGIN Local short connections -----
+// ----- END Local short connections -----
+// ----- BEGIN Local output short connections -----
+// ----- END Local output short connections -----
+
+	sg13g2_inv_1 sg13g2_inv_1_0_ (
+		.A(in[0]),
+		.Y(sg13g2_inv_1_0_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_1_ (
+		.A(in[1]),
+		.Y(sg13g2_inv_1_1_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_2_ (
+		.A(in[2]),
+		.Y(sg13g2_inv_1_2_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_3_ (
+		.A(in[3]),
+		.Y(sg13g2_inv_1_3_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_4_ (
+		.A(in[4]),
+		.Y(sg13g2_inv_1_4_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_5_ (
+		.A(in[5]),
+		.Y(sg13g2_inv_1_5_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_6_ (
+		.A(in[6]),
+		.Y(sg13g2_inv_1_6_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_7_ (
+		.A(in[7]),
+		.Y(sg13g2_inv_1_7_Y));
+
+	const1 const1_0_ (
+		.const1(const1_0_const1));
+
+	sg13g2_inv_4 sg13g2_inv_4_0_ (
+		.A(sg13g2_mux2_1_7_X),
+		.Y(out));
+
+	sg13g2_mux2_1 mux_l1_in_0_ (
+		.A1(sg13g2_inv_1_0_Y),
+		.A0(sg13g2_inv_1_1_Y),
+		.S(sram[0]),
+		.X(sg13g2_mux2_1_0_X));
+
+	sg13g2_mux2_1 mux_l2_in_0_ (
+		.A1(sg13g2_mux2_1_0_X),
+		.A0(sg13g2_inv_1_2_Y),
+		.S(sram[1]),
+		.X(sg13g2_mux2_1_1_X));
+
+	sg13g2_mux2_1 mux_l2_in_1_ (
+		.A1(sg13g2_inv_1_3_Y),
+		.A0(sg13g2_inv_1_4_Y),
+		.S(sram[1]),
+		.X(sg13g2_mux2_1_2_X));
+
+	sg13g2_mux2_1 mux_l2_in_2_ (
+		.A1(sg13g2_inv_1_5_Y),
+		.A0(sg13g2_inv_1_6_Y),
+		.S(sram[1]),
+		.X(sg13g2_mux2_1_3_X));
+
+	sg13g2_mux2_1 mux_l2_in_3_ (
+		.A1(sg13g2_inv_1_7_Y),
+		.A0(const1_0_const1),
+		.S(sram[1]),
+		.X(sg13g2_mux2_1_4_X));
+
+	sg13g2_mux2_1 mux_l3_in_0_ (
+		.A1(sg13g2_mux2_1_1_X),
+		.A0(sg13g2_mux2_1_2_X),
+		.S(sram[2]),
+		.X(sg13g2_mux2_1_5_X));
+
+	sg13g2_mux2_1 mux_l3_in_1_ (
+		.A1(sg13g2_mux2_1_3_X),
+		.A0(sg13g2_mux2_1_4_X),
+		.S(sram[2]),
+		.X(sg13g2_mux2_1_6_X));
+
+	sg13g2_mux2_1 mux_l4_in_0_ (
+		.A1(sg13g2_mux2_1_5_X),
+		.A0(sg13g2_mux2_1_6_X),
+		.S(sram[3]),
+		.X(sg13g2_mux2_1_7_X));
+
+endmodule
+// ----- END Verilog module for mux_tree_tapbuf_size8 -----
+
+//----- Default net type -----
+// `default_nettype wire
+
+
+
+
+//----- Default net type -----
+// `default_nettype none
+
+// ----- Verilog module for mux_tree_tapbuf_size12 -----
+module mux_tree_tapbuf_size12(in,
+                              sram,
+                              sram_inv,
+                              out);
+//----- INPUT PORTS -----
+input [0:11] in;
+//----- INPUT PORTS -----
+input [0:3] sram;
+//----- INPUT PORTS -----
+input [0:3] sram_inv;
+//----- OUTPUT PORTS -----
+output [0:0] out;
+
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
+
+
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
+
+
+wire [0:0] const1_0_const1;
+wire [0:0] sg13g2_inv_1_0_Y;
+wire [0:0] sg13g2_inv_1_10_Y;
+wire [0:0] sg13g2_inv_1_11_Y;
+wire [0:0] sg13g2_inv_1_1_Y;
+wire [0:0] sg13g2_inv_1_2_Y;
+wire [0:0] sg13g2_inv_1_3_Y;
+wire [0:0] sg13g2_inv_1_4_Y;
+wire [0:0] sg13g2_inv_1_5_Y;
+wire [0:0] sg13g2_inv_1_6_Y;
+wire [0:0] sg13g2_inv_1_7_Y;
+wire [0:0] sg13g2_inv_1_8_Y;
+wire [0:0] sg13g2_inv_1_9_Y;
+wire [0:0] sg13g2_mux2_1_0_X;
+wire [0:0] sg13g2_mux2_1_10_X;
+wire [0:0] sg13g2_mux2_1_11_X;
+wire [0:0] sg13g2_mux2_1_1_X;
+wire [0:0] sg13g2_mux2_1_2_X;
+wire [0:0] sg13g2_mux2_1_3_X;
+wire [0:0] sg13g2_mux2_1_4_X;
+wire [0:0] sg13g2_mux2_1_5_X;
+wire [0:0] sg13g2_mux2_1_6_X;
+wire [0:0] sg13g2_mux2_1_7_X;
+wire [0:0] sg13g2_mux2_1_8_X;
+wire [0:0] sg13g2_mux2_1_9_X;
+
+// ----- BEGIN Local short connections -----
+// ----- END Local short connections -----
+// ----- BEGIN Local output short connections -----
+// ----- END Local output short connections -----
+
+	sg13g2_inv_1 sg13g2_inv_1_0_ (
+		.A(in[0]),
+		.Y(sg13g2_inv_1_0_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_1_ (
+		.A(in[1]),
+		.Y(sg13g2_inv_1_1_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_2_ (
+		.A(in[2]),
+		.Y(sg13g2_inv_1_2_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_3_ (
+		.A(in[3]),
+		.Y(sg13g2_inv_1_3_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_4_ (
+		.A(in[4]),
+		.Y(sg13g2_inv_1_4_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_5_ (
+		.A(in[5]),
+		.Y(sg13g2_inv_1_5_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_6_ (
+		.A(in[6]),
+		.Y(sg13g2_inv_1_6_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_7_ (
+		.A(in[7]),
+		.Y(sg13g2_inv_1_7_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_8_ (
+		.A(in[8]),
+		.Y(sg13g2_inv_1_8_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_9_ (
+		.A(in[9]),
+		.Y(sg13g2_inv_1_9_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_10_ (
+		.A(in[10]),
+		.Y(sg13g2_inv_1_10_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_11_ (
+		.A(in[11]),
+		.Y(sg13g2_inv_1_11_Y));
+
+	const1 const1_0_ (
+		.const1(const1_0_const1));
+
+	sg13g2_inv_4 sg13g2_inv_4_0_ (
+		.A(sg13g2_mux2_1_11_X),
+		.Y(out));
+
+	sg13g2_mux2_1 mux_l1_in_0_ (
+		.A1(sg13g2_inv_1_0_Y),
+		.A0(sg13g2_inv_1_1_Y),
+		.S(sram[0]),
+		.X(sg13g2_mux2_1_0_X));
+
+	sg13g2_mux2_1 mux_l1_in_1_ (
+		.A1(sg13g2_inv_1_2_Y),
+		.A0(sg13g2_inv_1_3_Y),
+		.S(sram[0]),
+		.X(sg13g2_mux2_1_1_X));
+
+	sg13g2_mux2_1 mux_l1_in_2_ (
+		.A1(sg13g2_inv_1_4_Y),
+		.A0(sg13g2_inv_1_5_Y),
+		.S(sram[0]),
+		.X(sg13g2_mux2_1_2_X));
+
+	sg13g2_mux2_1 mux_l1_in_3_ (
+		.A1(sg13g2_inv_1_6_Y),
+		.A0(sg13g2_inv_1_7_Y),
+		.S(sram[0]),
+		.X(sg13g2_mux2_1_3_X));
+
+	sg13g2_mux2_1 mux_l1_in_4_ (
+		.A1(sg13g2_inv_1_8_Y),
+		.A0(sg13g2_inv_1_9_Y),
+		.S(sram[0]),
+		.X(sg13g2_mux2_1_4_X));
+
+	sg13g2_mux2_1 mux_l2_in_0_ (
+		.A1(sg13g2_mux2_1_0_X),
+		.A0(sg13g2_mux2_1_1_X),
+		.S(sram[1]),
+		.X(sg13g2_mux2_1_5_X));
+
+	sg13g2_mux2_1 mux_l2_in_1_ (
+		.A1(sg13g2_mux2_1_2_X),
+		.A0(sg13g2_mux2_1_3_X),
+		.S(sram[1]),
+		.X(sg13g2_mux2_1_6_X));
+
+	sg13g2_mux2_1 mux_l2_in_2_ (
+		.A1(sg13g2_mux2_1_4_X),
+		.A0(sg13g2_inv_1_10_Y),
+		.S(sram[1]),
+		.X(sg13g2_mux2_1_7_X));
+
+	sg13g2_mux2_1 mux_l2_in_3_ (
+		.A1(sg13g2_inv_1_11_Y),
+		.A0(const1_0_const1),
+		.S(sram[1]),
+		.X(sg13g2_mux2_1_8_X));
+
+	sg13g2_mux2_1 mux_l3_in_0_ (
+		.A1(sg13g2_mux2_1_5_X),
+		.A0(sg13g2_mux2_1_6_X),
+		.S(sram[2]),
+		.X(sg13g2_mux2_1_9_X));
+
+	sg13g2_mux2_1 mux_l3_in_1_ (
+		.A1(sg13g2_mux2_1_7_X),
+		.A0(sg13g2_mux2_1_8_X),
+		.S(sram[2]),
+		.X(sg13g2_mux2_1_10_X));
+
+	sg13g2_mux2_1 mux_l4_in_0_ (
+		.A1(sg13g2_mux2_1_9_X),
+		.A0(sg13g2_mux2_1_10_X),
+		.S(sram[3]),
+		.X(sg13g2_mux2_1_11_X));
+
+endmodule
+// ----- END Verilog module for mux_tree_tapbuf_size12 -----
+
+//----- Default net type -----
+// `default_nettype wire
+
+
+
+
+//----- Default net type -----
+// `default_nettype none
+
 // ----- Verilog module for mux_tree_tapbuf_size5 -----
 module mux_tree_tapbuf_size5(in,
                              sram,
@@ -766,342 +1102,6 @@ wire [0:0] sg13g2_mux2_1_5_X;
 
 endmodule
 // ----- END Verilog module for mux_tree_tapbuf_size6 -----
-
-//----- Default net type -----
-// `default_nettype wire
-
-
-
-
-//----- Default net type -----
-// `default_nettype none
-
-// ----- Verilog module for mux_tree_tapbuf_size12 -----
-module mux_tree_tapbuf_size12(in,
-                              sram,
-                              sram_inv,
-                              out);
-//----- INPUT PORTS -----
-input [0:11] in;
-//----- INPUT PORTS -----
-input [0:3] sram;
-//----- INPUT PORTS -----
-input [0:3] sram_inv;
-//----- OUTPUT PORTS -----
-output [0:0] out;
-
-//----- BEGIN wire-connection ports -----
-//----- END wire-connection ports -----
-
-
-//----- BEGIN Registered ports -----
-//----- END Registered ports -----
-
-
-wire [0:0] const1_0_const1;
-wire [0:0] sg13g2_inv_1_0_Y;
-wire [0:0] sg13g2_inv_1_10_Y;
-wire [0:0] sg13g2_inv_1_11_Y;
-wire [0:0] sg13g2_inv_1_1_Y;
-wire [0:0] sg13g2_inv_1_2_Y;
-wire [0:0] sg13g2_inv_1_3_Y;
-wire [0:0] sg13g2_inv_1_4_Y;
-wire [0:0] sg13g2_inv_1_5_Y;
-wire [0:0] sg13g2_inv_1_6_Y;
-wire [0:0] sg13g2_inv_1_7_Y;
-wire [0:0] sg13g2_inv_1_8_Y;
-wire [0:0] sg13g2_inv_1_9_Y;
-wire [0:0] sg13g2_mux2_1_0_X;
-wire [0:0] sg13g2_mux2_1_10_X;
-wire [0:0] sg13g2_mux2_1_11_X;
-wire [0:0] sg13g2_mux2_1_1_X;
-wire [0:0] sg13g2_mux2_1_2_X;
-wire [0:0] sg13g2_mux2_1_3_X;
-wire [0:0] sg13g2_mux2_1_4_X;
-wire [0:0] sg13g2_mux2_1_5_X;
-wire [0:0] sg13g2_mux2_1_6_X;
-wire [0:0] sg13g2_mux2_1_7_X;
-wire [0:0] sg13g2_mux2_1_8_X;
-wire [0:0] sg13g2_mux2_1_9_X;
-
-// ----- BEGIN Local short connections -----
-// ----- END Local short connections -----
-// ----- BEGIN Local output short connections -----
-// ----- END Local output short connections -----
-
-	sg13g2_inv_1 sg13g2_inv_1_0_ (
-		.A(in[0]),
-		.Y(sg13g2_inv_1_0_Y));
-
-	sg13g2_inv_1 sg13g2_inv_1_1_ (
-		.A(in[1]),
-		.Y(sg13g2_inv_1_1_Y));
-
-	sg13g2_inv_1 sg13g2_inv_1_2_ (
-		.A(in[2]),
-		.Y(sg13g2_inv_1_2_Y));
-
-	sg13g2_inv_1 sg13g2_inv_1_3_ (
-		.A(in[3]),
-		.Y(sg13g2_inv_1_3_Y));
-
-	sg13g2_inv_1 sg13g2_inv_1_4_ (
-		.A(in[4]),
-		.Y(sg13g2_inv_1_4_Y));
-
-	sg13g2_inv_1 sg13g2_inv_1_5_ (
-		.A(in[5]),
-		.Y(sg13g2_inv_1_5_Y));
-
-	sg13g2_inv_1 sg13g2_inv_1_6_ (
-		.A(in[6]),
-		.Y(sg13g2_inv_1_6_Y));
-
-	sg13g2_inv_1 sg13g2_inv_1_7_ (
-		.A(in[7]),
-		.Y(sg13g2_inv_1_7_Y));
-
-	sg13g2_inv_1 sg13g2_inv_1_8_ (
-		.A(in[8]),
-		.Y(sg13g2_inv_1_8_Y));
-
-	sg13g2_inv_1 sg13g2_inv_1_9_ (
-		.A(in[9]),
-		.Y(sg13g2_inv_1_9_Y));
-
-	sg13g2_inv_1 sg13g2_inv_1_10_ (
-		.A(in[10]),
-		.Y(sg13g2_inv_1_10_Y));
-
-	sg13g2_inv_1 sg13g2_inv_1_11_ (
-		.A(in[11]),
-		.Y(sg13g2_inv_1_11_Y));
-
-	const1 const1_0_ (
-		.const1(const1_0_const1));
-
-	sg13g2_inv_4 sg13g2_inv_4_0_ (
-		.A(sg13g2_mux2_1_11_X),
-		.Y(out));
-
-	sg13g2_mux2_1 mux_l1_in_0_ (
-		.A1(sg13g2_inv_1_0_Y),
-		.A0(sg13g2_inv_1_1_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_0_X));
-
-	sg13g2_mux2_1 mux_l1_in_1_ (
-		.A1(sg13g2_inv_1_2_Y),
-		.A0(sg13g2_inv_1_3_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_1_X));
-
-	sg13g2_mux2_1 mux_l1_in_2_ (
-		.A1(sg13g2_inv_1_4_Y),
-		.A0(sg13g2_inv_1_5_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_2_X));
-
-	sg13g2_mux2_1 mux_l1_in_3_ (
-		.A1(sg13g2_inv_1_6_Y),
-		.A0(sg13g2_inv_1_7_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_3_X));
-
-	sg13g2_mux2_1 mux_l1_in_4_ (
-		.A1(sg13g2_inv_1_8_Y),
-		.A0(sg13g2_inv_1_9_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_4_X));
-
-	sg13g2_mux2_1 mux_l2_in_0_ (
-		.A1(sg13g2_mux2_1_0_X),
-		.A0(sg13g2_mux2_1_1_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_5_X));
-
-	sg13g2_mux2_1 mux_l2_in_1_ (
-		.A1(sg13g2_mux2_1_2_X),
-		.A0(sg13g2_mux2_1_3_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_6_X));
-
-	sg13g2_mux2_1 mux_l2_in_2_ (
-		.A1(sg13g2_mux2_1_4_X),
-		.A0(sg13g2_inv_1_10_Y),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_7_X));
-
-	sg13g2_mux2_1 mux_l2_in_3_ (
-		.A1(sg13g2_inv_1_11_Y),
-		.A0(const1_0_const1),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_8_X));
-
-	sg13g2_mux2_1 mux_l3_in_0_ (
-		.A1(sg13g2_mux2_1_5_X),
-		.A0(sg13g2_mux2_1_6_X),
-		.S(sram[2]),
-		.X(sg13g2_mux2_1_9_X));
-
-	sg13g2_mux2_1 mux_l3_in_1_ (
-		.A1(sg13g2_mux2_1_7_X),
-		.A0(sg13g2_mux2_1_8_X),
-		.S(sram[2]),
-		.X(sg13g2_mux2_1_10_X));
-
-	sg13g2_mux2_1 mux_l4_in_0_ (
-		.A1(sg13g2_mux2_1_9_X),
-		.A0(sg13g2_mux2_1_10_X),
-		.S(sram[3]),
-		.X(sg13g2_mux2_1_11_X));
-
-endmodule
-// ----- END Verilog module for mux_tree_tapbuf_size12 -----
-
-//----- Default net type -----
-// `default_nettype wire
-
-
-
-
-//----- Default net type -----
-// `default_nettype none
-
-// ----- Verilog module for mux_tree_tapbuf_size8 -----
-module mux_tree_tapbuf_size8(in,
-                             sram,
-                             sram_inv,
-                             out);
-//----- INPUT PORTS -----
-input [0:7] in;
-//----- INPUT PORTS -----
-input [0:3] sram;
-//----- INPUT PORTS -----
-input [0:3] sram_inv;
-//----- OUTPUT PORTS -----
-output [0:0] out;
-
-//----- BEGIN wire-connection ports -----
-//----- END wire-connection ports -----
-
-
-//----- BEGIN Registered ports -----
-//----- END Registered ports -----
-
-
-wire [0:0] const1_0_const1;
-wire [0:0] sg13g2_inv_1_0_Y;
-wire [0:0] sg13g2_inv_1_1_Y;
-wire [0:0] sg13g2_inv_1_2_Y;
-wire [0:0] sg13g2_inv_1_3_Y;
-wire [0:0] sg13g2_inv_1_4_Y;
-wire [0:0] sg13g2_inv_1_5_Y;
-wire [0:0] sg13g2_inv_1_6_Y;
-wire [0:0] sg13g2_inv_1_7_Y;
-wire [0:0] sg13g2_mux2_1_0_X;
-wire [0:0] sg13g2_mux2_1_1_X;
-wire [0:0] sg13g2_mux2_1_2_X;
-wire [0:0] sg13g2_mux2_1_3_X;
-wire [0:0] sg13g2_mux2_1_4_X;
-wire [0:0] sg13g2_mux2_1_5_X;
-wire [0:0] sg13g2_mux2_1_6_X;
-wire [0:0] sg13g2_mux2_1_7_X;
-
-// ----- BEGIN Local short connections -----
-// ----- END Local short connections -----
-// ----- BEGIN Local output short connections -----
-// ----- END Local output short connections -----
-
-	sg13g2_inv_1 sg13g2_inv_1_0_ (
-		.A(in[0]),
-		.Y(sg13g2_inv_1_0_Y));
-
-	sg13g2_inv_1 sg13g2_inv_1_1_ (
-		.A(in[1]),
-		.Y(sg13g2_inv_1_1_Y));
-
-	sg13g2_inv_1 sg13g2_inv_1_2_ (
-		.A(in[2]),
-		.Y(sg13g2_inv_1_2_Y));
-
-	sg13g2_inv_1 sg13g2_inv_1_3_ (
-		.A(in[3]),
-		.Y(sg13g2_inv_1_3_Y));
-
-	sg13g2_inv_1 sg13g2_inv_1_4_ (
-		.A(in[4]),
-		.Y(sg13g2_inv_1_4_Y));
-
-	sg13g2_inv_1 sg13g2_inv_1_5_ (
-		.A(in[5]),
-		.Y(sg13g2_inv_1_5_Y));
-
-	sg13g2_inv_1 sg13g2_inv_1_6_ (
-		.A(in[6]),
-		.Y(sg13g2_inv_1_6_Y));
-
-	sg13g2_inv_1 sg13g2_inv_1_7_ (
-		.A(in[7]),
-		.Y(sg13g2_inv_1_7_Y));
-
-	const1 const1_0_ (
-		.const1(const1_0_const1));
-
-	sg13g2_inv_4 sg13g2_inv_4_0_ (
-		.A(sg13g2_mux2_1_7_X),
-		.Y(out));
-
-	sg13g2_mux2_1 mux_l1_in_0_ (
-		.A1(sg13g2_inv_1_0_Y),
-		.A0(sg13g2_inv_1_1_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_0_X));
-
-	sg13g2_mux2_1 mux_l2_in_0_ (
-		.A1(sg13g2_mux2_1_0_X),
-		.A0(sg13g2_inv_1_2_Y),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_1_X));
-
-	sg13g2_mux2_1 mux_l2_in_1_ (
-		.A1(sg13g2_inv_1_3_Y),
-		.A0(sg13g2_inv_1_4_Y),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_2_X));
-
-	sg13g2_mux2_1 mux_l2_in_2_ (
-		.A1(sg13g2_inv_1_5_Y),
-		.A0(sg13g2_inv_1_6_Y),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_3_X));
-
-	sg13g2_mux2_1 mux_l2_in_3_ (
-		.A1(sg13g2_inv_1_7_Y),
-		.A0(const1_0_const1),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_4_X));
-
-	sg13g2_mux2_1 mux_l3_in_0_ (
-		.A1(sg13g2_mux2_1_1_X),
-		.A0(sg13g2_mux2_1_2_X),
-		.S(sram[2]),
-		.X(sg13g2_mux2_1_5_X));
-
-	sg13g2_mux2_1 mux_l3_in_1_ (
-		.A1(sg13g2_mux2_1_3_X),
-		.A0(sg13g2_mux2_1_4_X),
-		.S(sram[2]),
-		.X(sg13g2_mux2_1_6_X));
-
-	sg13g2_mux2_1 mux_l4_in_0_ (
-		.A1(sg13g2_mux2_1_5_X),
-		.A0(sg13g2_mux2_1_6_X),
-		.S(sram[3]),
-		.X(sg13g2_mux2_1_7_X));
-
-endmodule
-// ----- END Verilog module for mux_tree_tapbuf_size8 -----
 
 //----- Default net type -----
 // `default_nettype wire

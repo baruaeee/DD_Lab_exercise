@@ -72,7 +72,7 @@ def batch_find_replace(directory, patterns):
 
 def main():
     # Example usage
-    directory = 'SDC/'
+    directory = '../SDC/'
     
     # Define replacement patterns
     # Each tuple is (find_pattern, replace_pattern)

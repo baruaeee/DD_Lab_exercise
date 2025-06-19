@@ -4,7 +4,7 @@
 #	Description: Clock contraints for PnR
 #	Author: Xifan TANG 
 #	Organization: University of Utah 
-#	Date: Thu Jun 19 01:29:45 2025
+#	Date: Thu Jun 19 13:12:37 2025
 #############################################
 
 #############################################
@@ -15,7 +15,7 @@ set_units -time s
 ##################################################
 # Create clock                                    
 ##################################################
-create_clock -name clk[0] -period 1.173607989e-09 -waveform {0 5.868039943e-10} [get_ports {clk[0]}]
+create_clock -name clk[0] -period 1.286200924e-09 -waveform {0 6.431004618e-10} [get_ports {clk[0]}]
 ##################################################
 # Create programmable clock                       
 ##################################################

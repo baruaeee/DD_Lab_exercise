@@ -61,7 +61,7 @@ set enc_check_rename_command_name 1
 set enc_enable_print_mode_command_reset_options 1
 set init_design_settop 0
 set init_gnd_net {VSS}
-set init_lef_file {../../ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_tech.lef ../../ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_stdcell.lef ../../ihp-sg13g2/libs.ref/sg13g2_io/lef/sg13g2_io.lef}
+set init_lef_file {../../ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_tech.lef ../../ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_stdcell.lef ../../ihp-sg13g2/libs.ref/sg13g2_io/lef/sg13g2_io_notracks.lef}
 set init_mmmc_file {Fabric_MMMC.view}
 set init_pwr_net {VDD}
 set init_verilog {SRC/fabric_netlists.v}
