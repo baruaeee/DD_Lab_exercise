@@ -3,13 +3,13 @@
 //	Description: Fabric Netlist Summary
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Thu Jun 19 14:16:03 2025
+//	Date: Thu Jun 19 20:00:49 2025
 //-------------------------------------------
 // ------ Include defines: preproc flags -----
 `include "./SRC/fpga_defines.v"
 
 // ------ Include user-defined netlists -----
-//`include "../../../../../ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v"
+//`include "../../ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v"
 `include "../../DFF/dffsrq.v"
 `include "../../DFF/dffr.v"
 `include "../../GPIO/gpio_netlist_IHP.v"
@@ -27,10 +27,6 @@
 // ------ Include logic block netlists -----
 `include "./SRC/lb/logical_tile_io_mode_physical__iopad.v"
 `include "./SRC/lb/logical_tile_io_mode_io_.v"
-`include "./SRC/lb/logical_tile_gp_inpad_mode_default__inpad.v"
-`include "./SRC/lb/logical_tile_gp_inpad_mode_gp_inpad_.v"
-`include "./SRC/lb/logical_tile_gp_outpad_mode_default__outpad.v"
-`include "./SRC/lb/logical_tile_gp_outpad_mode_gp_outpad_.v"
 `include "./SRC/lb/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6.v"
 `include "./SRC/lb/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic.v"
 `include "./SRC/lb/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff.v"

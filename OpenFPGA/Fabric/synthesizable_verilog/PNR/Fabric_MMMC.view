@@ -6,8 +6,7 @@ create_library_set -name MAX_TIMING -timing {../../ihp-sg13g2/libs.ref/sg13g2_st
 create_library_set -name MIN_TIMING -timing {../../ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_fast_1p32V_m40C.lib}
 
 
-create_constraint_mode -name CONSTRAINTS -sdc_files {SDC/cbx_1__0_.sdc SDC/cbx_1__1_.sdc SDC/cbx_1__2_.sdc SDC/cby_0__1_.sdc SDC/cby_1__1_.sdc SDC/cby_2__1_.sdc SDC/disable_configurable_memory_outputs.sdc SDC/disable_configure_ports.sdc SDC/disable_routing_multiplexer_outputs.sdc SDC/disable_sb_outputs.sdc SDC/global_ports.sdc SDC/logical_tile_clb_mode_clb_.sdc SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff.sdc SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic.sdc SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric.sdc SDC/logical_tile_clb_mode_default__fle.sdc SDC/logical_tile_gp_inpad_mode_gp_inpad_.sdc SDC/logical_tile_gp_outpad_mode_gp_outpad_.sdc SDC/logical_tile_io_mode_io_.sdc SDC/sb_0__0_.sdc SDC/sb_0__1_.sdc SDC/sb_0__2_.sdc SDC/sb_1__0_.sdc SDC/sb_1__1_.sdc SDC/sb_1__2_.sdc SDC/sb_2__0_.sdc SDC/sb_2__1_.sdc SDC/sb_2__2_.sdc}
-
+create_constraint_mode -name CONSTRAINTS -sdc_files {SDC/cbx_1__0_.sdc SDC/cbx_1__1_.sdc SDC/cbx_1__2_.sdc SDC/cby_0__1_.sdc SDC/cby_1__1_.sdc SDC/cby_2__1_.sdc SDC/disable_configurable_memory_outputs.sdc SDC/disable_configure_ports.sdc SDC/disable_routing_multiplexer_outputs.sdc SDC/disable_sb_outputs.sdc SDC/global_ports.sdc SDC/logical_tile_clb_mode_clb_.sdc SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff.sdc SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic.sdc SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric.sdc SDC/logical_tile_clb_mode_default__fle.sdc SDC/logical_tile_io_mode_io_.sdc SDC/sb_0__0_.sdc SDC/sb_0__1_.sdc SDC/sb_0__2_.sdc SDC/sb_1__0_.sdc SDC/sb_1__1_.sdc SDC/sb_1__2_.sdc SDC/sb_2__0_.sdc SDC/sb_2__1_.sdc SDC/sb_2__2_.sdc}
 
 
 

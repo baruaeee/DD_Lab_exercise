@@ -1,0 +1,1 @@
+/home/bas33767/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/synthesizable_verilog/PNR/SDC/logical_tile_io_mode_io_.sdc

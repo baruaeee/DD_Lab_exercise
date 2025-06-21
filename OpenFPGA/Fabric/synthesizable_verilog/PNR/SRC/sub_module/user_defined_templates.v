@@ -3,7 +3,7 @@
 //	Description: Template for user-defined Verilog modules
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Thu Jun 19 14:16:03 2025
+//	Date: Thu Jun 19 20:00:49 2025
 //-------------------------------------------
 // ----- Template Verilog module for sg13g2_inv_1 -----
 //----- Default net type -----
@@ -273,66 +273,6 @@ output [0:0] Y;
 // ----- Internal logic should end here -----
 endmodule
 // ----- END Verilog module for GPIO -----
-
-//----- Default net type -----
-// `default_nettype wire
-
-
-// ----- Template Verilog module for GPIN -----
-//----- Default net type -----
-// `default_nettype none
-
-// ----- Verilog module for GPIN -----
-module GPIN(A,
-            Y);
-//----- GPIO PORTS -----
-inout [0:0] A;
-//----- OUTPUT PORTS -----
-output [0:0] Y;
-
-//----- BEGIN wire-connection ports -----
-//----- END wire-connection ports -----
-
-
-//----- BEGIN Registered ports -----
-//----- END Registered ports -----
-
-// ----- Internal logic should start here -----
-
-
-// ----- Internal logic should end here -----
-endmodule
-// ----- END Verilog module for GPIN -----
-
-//----- Default net type -----
-// `default_nettype wire
-
-
-// ----- Template Verilog module for GPOUT -----
-//----- Default net type -----
-// `default_nettype none
-
-// ----- Verilog module for GPOUT -----
-module GPOUT(Y,
-             A);
-//----- GPIO PORTS -----
-inout [0:0] Y;
-//----- INPUT PORTS -----
-input [0:0] A;
-
-//----- BEGIN wire-connection ports -----
-//----- END wire-connection ports -----
-
-
-//----- BEGIN Registered ports -----
-//----- END Registered ports -----
-
-// ----- Internal logic should start here -----
-
-
-// ----- Internal logic should end here -----
-endmodule
-// ----- END Verilog module for GPOUT -----
 
 //----- Default net type -----
 // `default_nettype wire

@@ -1,0 +1,1 @@
+/home/bas33767/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/synthesizable_verilog/PNR/SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic.sdc
