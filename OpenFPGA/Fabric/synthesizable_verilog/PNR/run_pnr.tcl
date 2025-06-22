@@ -1,18 +1,22 @@
 source Fabric_design_import.globals
 init_design
 
+
 #View usable partitions
 setDrawView fplan
 
+
+
 #Partitioning
 
-setObjFPlanBox Module grid_clb_1__1_ 202.477 974.131 846.388 1677.941
-setObjFPlanBox Module grid_clb_1__2_ 855.388 974.131 1499.299 1677.941
-setObjFPlanBox Module grid_clb_2__1_ 202.477 205.321 846.388 909.131
-setObjFPlanBox Module grid_clb_2__2_ 855.388 205.321 1499.299 909.131
+#setObjFPlanBox Module grid_clb_1__1_ 202.477 974.131 846.388 1677.941
+#setObjFPlanBox Module grid_clb_1__2_ 855.388 974.131 1499.299 1677.941
+#setObjFPlanBox Module grid_clb_2__1_ 202.477 205.321 846.388 909.131
+#setObjFPlanBox Module grid_clb_2__2_ 855.388 205.321 1499.299 909.131
 
 # Or place in relative floorplan
 # the edges numbered left(0), top(1), right(2), bottom(3)
+# the target utilization is adjusted to ~0.76
 create_relative_floorplan -place grid_clb_1__1_ -ref_type core_boundary -horizontal_edge_separate {1  -5  1} -vertical_edge_separate {0  5  0}
 
 create_relative_floorplan -place grid_clb_1__2_ -ref_type core_boundary -horizontal_edge_separate {1  -5  1} -vertical_edge_separate {2  -5  2}
@@ -20,6 +24,63 @@ create_relative_floorplan -place grid_clb_1__2_ -ref_type core_boundary -horizon
 create_relative_floorplan -place grid_clb_2__1_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  5  0}
 
 create_relative_floorplan -place grid_clb_2__2_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {2  -5  2}
+
+create_relative_floorplan -place sb_0__1_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {1  -10  1} -vertical_edge_separate {2  10  0}
+
+create_relative_floorplan -place sb_0__2_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {1  -96.94  1} -vertical_edge_separate {2  11.34  0}
+
+create_relative_floorplan -place sb_1__0_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -10  1} -vertical_edge_separate {0  0  0}
+
+
+
+create_relative_floorplan -place sb_2__0_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -11.34  1} -vertical_edge_separate {0  79  0}
+
+create_relative_floorplan -place sb_2__1_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -111.34  1} -vertical_edge_separate {2  11.34  0}
+
+create_relative_floorplan -place sb_2__2_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -197  1} -vertical_edge_separate {2  11.34  0}
+
+create_relative_floorplan -place cbx_1__0_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -11.34  1} -vertical_edge_separate {0  151  0}
+
+create_relative_floorplan -place cbx_2__0_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -11.34  1} -vertical_edge_separate {0  233  0}
+
+create_relative_floorplan -place cby_1__1_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -11.34  1} -vertical_edge_separate {0  315  0}
+
+
+create_relative_floorplan -place cbx_1__1_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {1  -177  1} -vertical_edge_separate {2  11.34  0}
+
+create_relative_floorplan -place cbx_2__1_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -275  1} -vertical_edge_separate {2  11.34  0}
+
+create_relative_floorplan -place cbx_2__2_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -362  1} -vertical_edge_separate {2  11.34  0}
+
+create_relative_floorplan -place cby_2__1_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -444  1} -vertical_edge_separate {2  11.34  0}
+
+create_relative_floorplan -place cby_0__1_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {1  -264  1} -vertical_edge_separate {2  11.34  0}
+
+create_relative_floorplan -place cby_0__2_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {1  -351  1} -vertical_edge_separate {2  11.34  0}
+
+
+
+
+create_relative_floorplan -place sb_0__0_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -11.34  1} -vertical_edge_separate {0  410  0}
+
+create_relative_floorplan -place sb_1__1_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -10  1} -vertical_edge_separate {2  50  0}
+
+create_relative_floorplan -place sb_1__2_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -10  1} -vertical_edge_separate {2  160  0}
+
+create_relative_floorplan -place cbx_1__2_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -10  1} -vertical_edge_separate {2  260  0}
+
+create_relative_floorplan -place cby_1__2_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -10  1} -vertical_edge_separate {2  360  0}
+
+create_relative_floorplan -place cby_2__2_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -10  1} -vertical_edge_separate {2  460  0}
+
+
+
+# resize floorplan
+
+loadIoFile Multi_Row_IO_PAD.io
+
+
+floorPlan -site CoreSite -b 0.0 0.0 1855.2 1935.78 400.32 400.26 1455.36 1535.1 425.28 425.46 1430.88 1510.74
 
 # Switching/Connection Blocks are many and
 # to specify as Partition all of them need to be in Core area
@@ -70,31 +131,33 @@ saveDesign fpga_top.enc -tcon
 #setLayerPreference bg -color #c7bfbf
 #setLayerPreference bg -color #aabfba
 
-floorPlan -site CoreSite -r 1 0.75 8 8 8 8
 
 setDesignMode -process 130
 
-globalNetConnect VDD -type pgpin -pin VDD -override -verbose -netlistOverride
-globalNetConnect VSS -type pgpin -pin VSS -override -verbose -netlistOverride
+globalNetConnect vdd -type pgpin -pin VDD -override -verbose -netlistOverride
+globalNetConnect vss -type pgpin -pin VSS -override -verbose -netlistOverride
+
+globalNetConnect vdd -type pgpin -pin vdd -override -verbose -netlistOverride
+globalNetConnect vss -type pgpin -pin vss -override -verbose -netlistOverride
+
+globalNetConnect iovdd -type pgpin -pin iovdd -override -verbose -netlistOverride
+globalNetConnect iovss -type pgpin -pin iovss -override -verbose -netlistOverride
 
 
-
-editPin -pinWidth 0.5 -pinDepth 1.0 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 2 -spreadType center -spacing 16.38 -pin {scan_in scan_out serial_in}
-
-editPin -pinWidth 0.5 -pinDepth 1.0 -snap MGRID -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Top -layer 2 -spreadType center -spacing 20.0 -pin { clk {p_o[0]} {p_o[1]}}
-
-editPin -pinWidth 0.5 -pinDepth 1.0 -snap MGRID -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 2 -spreadType center -spacing 20 -pin {{p_o[7]} rst_n scan_en}
-
-editPin -pinWidth 0.5 -pinDepth 1.0 -snap MGRID -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 2 -spreadType center -spacing 9.0 -pin {{p_o[2]} {p_o[3]} {p_o[4]} {p_o[5]} {p_o[6]}}
+addRing -nets {vdd vss} -type core_rings -follow core -layer {top TopMetal1 bottom TopMetal1 left TopMetal2 right TopMetal2} -width {top 5 bottom 5 left 5 right 5} -spacing {top 5 bottom 5 left 5 right 5} -offset {top 5 bottom 5 left 5 right 5} -center 0 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
 
 
-
-addRing -nets {VDD VSS} -type core_rings -follow core -layer {top TopMetal1 bottom TopMetal1 left TopMetal2 right TopMetal2} -width {top 2 bottom 2 left 2 right 2} -spacing {top 2 bottom 2 left 2 right 2} -offset {top 1 bottom 1 left 1 right 1} -center 0 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
-
-addStripe -nets {VDD VSS} -layer TopMetal2 -direction vertical -width 2 -spacing 2 -set_to_set_distance 15 -start_from left -start_offset 8 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit TopMetal2 -padcore_ring_bottom_layer_limit Metal1 -block_ring_top_layer_limit TopMetal2 -block_ring_bottom_layer_limit Metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+addStripe -nets {vdd vss} -layer TopMetal2 -direction vertical -width 5 -spacing 5 -set_to_set_distance 100 -start_from left -start_offset 90 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit TopMetal2 -padcore_ring_bottom_layer_limit Metal1 -block_ring_top_layer_limit TopMetal2 -block_ring_bottom_layer_limit Metal1 -use_wire_group 0 -snap_wire_center_to_grid None
 
 
-sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { Metal1(1) TopMetal2(7) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) TopMetal2(7) } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1(1) TopMetal2(7) }
+sroute -connect { blockPin corePin floatingStripe } -layerChangeRange { Metal1(1) TopMetal2(7) } -blockPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) TopMetal2(7) } -nets { vdd vss } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1(1) TopMetal2(7) }
+
+sroute -connect { padPin padRing } -layerChangeRange { Metal1(1) TopMetal2(7) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) TopMetal2(7) } -nets { iovdd iovss vdd vss } -allowLayerChange 1 -targetViaLayerRange { Metal1(1) TopMetal2(7) }
+
+
+sroute -connect { padPin } -layerChangeRange { Metal1(1) TopMetal2(7) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) TopMetal2(7) } -nets { vdd vss } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1(1) TopMetal2(7) }
+
+
 
 
 defIn innovus_src/SIPO.scan.def

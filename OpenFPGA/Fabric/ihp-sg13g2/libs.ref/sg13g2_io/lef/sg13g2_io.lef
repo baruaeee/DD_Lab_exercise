@@ -4292,18 +4292,22 @@ MACRO sg13g2_IOPadVss
         RECT 5.000 0.000 75.000 3.000 ;
     END
     PORT
+      CLASS CORE ;
       LAYER Metal3 ;
         RECT 0.000 140.000 80.000 158.000 ;
     END
     PORT
+      CLASS CORE ;
       LAYER Metal4 ;
         RECT 0.000 162.200 80.000 178.000 ;
     END
     PORT
+      CLASS CORE ;
       LAYER Metal5 ;
         RECT 0.000 160.000 80.000 178.000 ;
     END
     PORT
+      CLASS CORE ;
       LAYER TopMetal1 ;
         RECT 0.000 160.000 80.000 178.000 ;
     END
@@ -4483,22 +4487,27 @@ MACRO sg13g2_IOPadVdd
         RECT 5.000 0.000 75.000 3.000 ;
     END
     PORT
+      CLASS CORE ;
       LAYER Metal3 ;
         RECT 0.000 160.000 80.000 178.000 ;
     END
     PORT
+      CLASS CORE ;
       LAYER Metal4 ;
         RECT 0.000 140.000 80.000 155.800 ;
     END
     PORT
+      CLASS CORE ;
       LAYER Metal5 ;
         RECT 0.000 140.000 80.000 158.000 ;
     END
     PORT
+      CLASS CORE ;
       LAYER TopMetal1 ;
         RECT 0.000 140.000 80.000 158.000 ;
     END
     PORT
+      CLASS CORE ;
       LAYER TopMetal2 ;
         RECT 7.500 141.500 72.500 156.500 ;
     END

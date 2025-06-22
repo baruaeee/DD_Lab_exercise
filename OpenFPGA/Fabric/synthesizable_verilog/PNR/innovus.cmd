@@ -1,7 +1,7 @@
 #######################################################
 #                                                     
 #  Innovus Command Logging File                     
-#  Created on Sat Jun 21 16:29:18 2025                
+#  Created on Mon Jun 23 00:27:16 2025                
 #                                                     
 #######################################################
 
@@ -379,922 +379,112 @@ set init_verilog_tolerate_port_mismatch 0
 set lefdefInputCheckColoredShape 0
 set load_netlist_ignore_undefined_cell 1
 init_design
-selectInst grid_io_right_3__1_/logical_tile_io_mode_io__4/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_right_3__1_/logical_tile_io_mode_io__5/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_right_3__1_/logical_tile_io_mode_io__6/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_right_3__1_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_2__0_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_2__0_/logical_tile_io_mode_io__1/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_2__0_/logical_tile_io_mode_io__2/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_2__0_/logical_tile_io_mode_io__3/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_2__0_/logical_tile_io_mode_io__4/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_2__0_/logical_tile_io_mode_io__5/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_2__0_/logical_tile_io_mode_io__6/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_2__0_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_1__0_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_1__0_/logical_tile_io_mode_io__1/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_1__0_/logical_tile_io_mode_io__2/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_1__0_/logical_tile_io_mode_io__3/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_1__0_/logical_tile_io_mode_io__4/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_1__0_/logical_tile_io_mode_io__5/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_1__0_/logical_tile_io_mode_io__6/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_1__0_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__1_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__1_/logical_tile_io_mode_io__1/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__1_/logical_tile_io_mode_io__2/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__1_/logical_tile_io_mode_io__3/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__1_/logical_tile_io_mode_io__4/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__1_/logical_tile_io_mode_io__5/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__1_/logical_tile_io_mode_io__6/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__1_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__2_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__2_/logical_tile_io_mode_io__1/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__2_/logical_tile_io_mode_io__2/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__2_/logical_tile_io_mode_io__3/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__2_/logical_tile_io_mode_io__4/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__2_/logical_tile_io_mode_io__5/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__2_/logical_tile_io_mode_io__6/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__2_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
 setDrawView fplan
-zoomBox -314.01700 -205.27500 2403.70500 2227.66600
-zoomBox 216.73000 312.78800 2180.28400 2070.58800
-zoomBox 758.23900 833.26900 1964.10700 1912.77800
-zoomBox 1099.55000 1148.09300 1840.10300 1811.04600
-zoomBox 1382.09100 1379.34600 1768.66600 1725.41300
-zoomBox 1501.15600 1476.79800 1738.56200 1689.32700
-zoomBox 1529.58000 1500.06200 1731.37500 1680.71200
-zoomBox 1574.27600 1536.64500 1720.07400 1667.16500
-zoomBox 1591.73200 1550.93200 1715.66000 1661.87400
-zoomBox 1581.06600 1535.25800 1726.86400 1665.77800
-zoomBox 1553.75500 1495.12400 1755.55200 1675.77500
-deselectAll
-selectInst grid_io_left_0__2_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__2_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-zoomBox 1415.82500 1376.79500 1802.40500 1722.86700
-zoomBox 1364.90200 1333.10900 1819.70300 1740.25300
-zoomBox 1304.99300 1281.71400 1840.05300 1760.70700
-zoomBox 939.27500 967.97100 1964.28200 1885.57100
-zoomBox 645.41000 715.86800 2064.10400 1985.90200
-zoomBox 458.53200 555.54800 2127.58400 2049.70600
-zoomBox 238.67600 366.93700 2202.26700 2124.77000
-zoomBox -19.97800 145.04100 2290.12900 2213.08000
-zoomBox -324.27700 -116.01300 2393.49600 2316.97400
-zoomBox -682.27600 -423.13600 2515.10400 2439.20200
-zoomBox -1103.45200 -784.45600 2658.17200 2583.00000
-deselectAll
-selectInst grid_io_left_0__2_/logical_tile_io_mode_io__4/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__2_/logical_tile_io_mode_io__3/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__2_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
+zoomBox -418.96300 -492.08100 3342.59100 2875.31300
+pan -2218.97700 -262.89800
+gui_select -rect {-2375.16600 1892.34600 -49.13400 -229.30700}
 selectObject Module grid_clb_1__1_
-deselectAll
-selectObject Module grid_clb_1__1_
-deselectAll
-fit
-selectObject Module grid_clb_1__1_
-gui_ungroup_hinst
-gui_group_hinst
-gui_ungroup_hinst
-gui_group_hinst
-zoomBox -1075.08600 -329.93000 3116.28800 2103.01100
-zoomBox -1255.97100 -607.49500 3675.05700 2254.78800
-zoomBox -1468.77700 -934.04300 4332.43200 2433.34900
-zoomBox -1719.13700 -1318.21700 5105.81500 2643.42100
-zoomBox -2767.87000 -2927.47600 8345.42800 3523.39100
-pan -3022.37900 496.41400
-fit
-zoomBox -1181.12300 -299.00300 3010.25100 2133.93800
-zoomBox -1486.75700 -540.18400 3444.27200 2322.10000
-zoomBox -1846.32600 -823.92600 3954.88500 2543.46700
-zoomBox -2269.34800 -1157.74000 4555.60600 2803.89900
-pan -604.31800 1125.99600
-deselectAll
-selectObject Module grid_clb_1__1_
-gui_ungroup_hinst
-gui_group_hinst
-deselectAll
-selectObject Module grid_clb_1__1_
-uiSetTool move
-getFPlanMode -autoSyncMasterClone -quiet
-setObjFPlanBox Module grid_clb_1__1_ -1727.846 1481.783 -1083.935 2185.593
-uiSetTool select
-deselectAll
-selectObject Module grid_clb_1__1_
-gui_ungroup_hinst
-gui_group_hinst
-deselectAll
-selectObject Module grid_clb_1__1_
-zoomBox -1585.26000 -600.02000 1977.41000 1467.98100
-zoomBox -912.70300 -316.39700 947.03300 763.11200
-zoomBox -802.53000 -269.93700 778.24500 647.64600
-zoomBox -708.88400 -230.44500 634.77500 549.50000
-zoomBox -629.28400 -196.87800 512.82600 466.07600
-deselectAll
-selectObject Module cby_2__1_
+selectObject Module cby_2__2_
 deselectAll
 selectObject Module sb_1__0_
-deselectAll
-zoomBox -972.50100 -470.27500 1215.42700 799.73800
-zoomBox -1632.81100 -991.20200 2558.57200 1441.74400
-zoomBox -2163.39200 -1409.78400 3637.83200 1957.61700
-zoomBox -2897.76100 -1989.13600 5131.61800 2671.62800
-zoomBox -3914.18700 -2791.00600 7199.14200 3659.87900
-zoomBox -3055.31200 -946.68300 3769.66300 3014.96800
-zoomBox -2401.93800 456.35500 1160.74400 2524.36300
-zoomBox -2294.90800 686.18900 733.37200 2443.99600
-zoomBox -2203.93200 881.54800 370.10600 2375.68400
-selectObject Module grid_clb_1__1_
-deselectAll
-selectObject Module grid_clb_1__1_
-deselectAll
-selectObject Module grid_clb_1__1_
-setPreference StrecthRestriction 1
-deselectAll
-selectObject Module grid_clb_1__1_
 uiSetTool move
-setObjFPlanBox Module grid_clb_1__1_ -1727.84600 1491.14100 -1075.25800 2185.59300
-zoomBox -2286.92800 770.46100 741.35200 2528.26800
-zoomBox -2384.57000 639.77100 1178.11200 2707.77900
-zoomBox -2499.44300 486.01800 1691.94800 2918.96900
 getFPlanMode -autoSyncMasterClone -quiet
-setObjFPlanBox Module grid_clb_1__1_ 189.65 996.304 842.238 1690.756
-zoomBox -2696.96200 290.05800 2234.08600 3152.35300
-zoomBox -3202.72000 -211.70800 3622.26000 3749.94600
-zoomBox -2609.91100 -164.94500 3191.32200 3202.46100
-zoomBox -2110.91500 -48.75700 2820.13300 2813.53800
-deselectAll
-selectObject Module grid_clb_2__2_
-getFPlanMode -autoSyncMasterClone -quiet
-setObjFPlanBox Module grid_clb_2__2_ 888.262 990.628 1532.173 1694.438
-getFPlanMode -autoSyncMasterClone -quiet
-setObjFPlanBox Module grid_clb_2__2_ 188.5 188.627 832.18 891.707
-deselectAll
-selectObject Module grid_clb_2__1_
-getFPlanMode -autoSyncMasterClone -quiet
-setObjFPlanBox Module grid_clb_2__1_ 888.887 186.691 1532.798 890.501
-deselectAll
-selectObject Module grid_clb_1__2_
-getFPlanMode -autoSyncMasterClone -quiet
-setObjFPlanBox Module grid_clb_1__2_ 879.116 987.164 1523.027 1690.974
-getFPlanMode -autoSyncMasterClone -quiet
-setObjFPlanBox Module grid_clb_1__2_ 889.276 978.39 1532.956 1681.47
-getFPlanMode -autoSyncMasterClone -quiet
-setObjFPlanBox Module grid_clb_1__2_ 882.51 988.155 1526.19 1691.235
-zoomBox -948.93100 379.13200 2079.35100 2136.94000
-zoomBox -671.53400 481.28000 1902.50600 1975.41700
-zoomBox -435.74700 568.10600 1752.18800 1838.12300
-zoomBox 5.85600 876.58800 1586.64000 1794.17600
-zoomBox 170.98800 990.06400 1514.65500 1770.01400
-zoomBox 311.35000 1086.51900 1453.46800 1749.47700
-zoomBox 399.83800 1175.85000 1370.63800 1739.36400
-zoomBox 475.05300 1251.78100 1300.23300 1730.76800
-zoomBox 593.32900 1371.18200 1189.52100 1717.25000
-zoomBox 678.78300 1457.45000 1109.53200 1707.48400
-zoomBox 712.15600 1491.14100 1078.29300 1703.67000
-zoomBox 740.52300 1519.77800 1051.74000 1700.42800
-getFPlanMode -autoSyncMasterClone -quiet
-setObjFPlanBox Module grid_clb_1__2_ 883.595 994.13 1527.275 1697.21
-getFPlanMode -autoSyncMasterClone -quiet
-setObjFPlanBox Module grid_clb_1__2_ 884.117 987.194 1527.797 1690.274
-getFPlanMode -autoSyncMasterClone -quiet
-setObjFPlanBox Module grid_clb_1__2_ 884.16 988.382 1527.84 1691.462
-zoomBox 680.88200 1462.48900 1111.63200 1712.52400
-zoomBox 598.33500 1383.19800 1194.52800 1729.26600
-zoomBox 545.84100 1332.77400 1247.24400 1739.91300
-zoomBox 411.42500 1203.65900 1382.22800 1767.17500
-zoomBox 325.94700 1121.55100 1468.06800 1784.51100
-zoomBox -32.11300 777.61200 1827.64100 1857.13200
-zoomBox -195.86300 620.32000 1992.08300 1890.34300
-zoomBox -388.51000 435.27000 2185.54400 1929.41500
-zoomBox -881.79300 -38.56000 2680.91100 2029.46100
-zoomBox -1195.48700 -339.88300 2995.93000 2093.08300
-deselectAll
-selectObject Module grid_clb_1__1_
-deselectAll
-selectObject Module grid_clb_2__1_
-uiSetTool select
-selectObject Module grid_clb_2__2_
-selectObject Module grid_clb_1__1_
-selectObject Module grid_clb_1__2_
-deselectAll
-selectObject Module grid_clb_2__1_
-deselectAll
-selectObject Module grid_clb_2__1_
-deselectAll
-selectObject Module grid_clb_1__1_
-deselectAll
-selectObject Module sb_0__0_
-deselectAll
-selectObject Module sb_0__1_
-deselectAll
-selectObject Module grid_clb_1__1_
-undo
-undo
-undo
-undo
-undo
-undo
-undo
-redo
-redo
-redo
-deleteAllFPObjects
-selectObject Module grid_clb_1__1_
-create_relative_floorplan -place grid_clb_1__1_ -ref_type core_boundary -horizontal_edge_separate {1  5  1} -vertical_edge_separate {2  5  2}
-setDrawView fplan
-zoomBox 118.10300 571.04200 2306.04800 1841.06500
-zoomBox 516.18800 847.09900 2096.97900 1764.69100
-zoomBox 1011.60700 1190.65300 1836.79200 1669.64300
-zoomBox 1270.21800 1369.99000 1700.97200 1620.02700
-zoomBox 1011.60400 1190.65100 1836.79200 1669.64300
-zoomBox 671.65000 954.90500 2015.33200 1734.86400
-zoomBox 118.09000 571.03300 2306.05400 1841.06700
-zoomBox -128.17300 194.25800 2900.15200 1952.09100
-zoomBox -284.77800 -45.34400 3277.95700 2022.69500
-zoomBox -940.77900 -1049.01100 4860.54100 2318.44500
-undo
-zoomBox -2151.17300 -1725.45500 5878.33700 2935.38500
-zoomBox -3826.46000 -2661.70900 7287.05100 3789.28200
-zoomBox -3193.85800 -2098.22400 6252.62800 3385.11900
-zoomBox -2656.14500 -1619.26200 5373.36800 3041.58000
-deselectAll
-selectObject Module grid_clb_1__1_
-create_relative_floorplan -place grid_clb_1__1_ -ref_type core_boundary -horizontal_edge_separate {1  5  1} -vertical_edge_separate {1  5  1}
-setDrawView fplan
-zoomBox -2165.23400 -1118.19300 1542.28000 2200.82300
-zoomBox -1747.95900 -692.28500 1403.42800 2128.87900
-zoomBox -1393.27600 -330.26300 1285.40400 2067.72700
-zoomBox -561.55400 438.61100 1083.49100 1911.27700
-zoomBox -256.23700 768.14100 932.30900 1832.14300
-zoomBox -136.99800 896.83600 873.26600 1801.23800
-zoomBox 39.62400 1120.60600 769.54000 1774.03700
-zoomBox 106.90200 1207.28900 727.33200 1762.70600
-zoomBox -39.52900 1018.62400 819.19800 1787.36800
-zoomBox -132.64900 898.64600 877.61800 1803.05100
-zoomBox -242.20200 757.49600 946.34800 1821.50200
-zoomBox -371.08700 591.43700 1027.20700 1843.20900
-create_relative_floorplan -place grid_clb_1__1_ -ref_type core_boundary -horizontal_edge_separate {1  5  1} -vertical_edge_separate {1  -5  1}
-setDrawView fplan
-create_relative_floorplan -place grid_clb_1__1_ -ref_type core_boundary -horizontal_edge_separate {1  5  1} -vertical_edge_separate {1  -5  2}
-setDrawView fplan
-create_relative_floorplan -place grid_clb_1__1_ -ref_type core_boundary -horizontal_edge_separate {1  5  2} -vertical_edge_separate {1  -5  2}
-setDrawView fplan
-undo
-undo
-create_relative_floorplan -place grid_clb_1__1_ -ref_type core_boundary -horizontal_edge_separate {1  -5  2} -vertical_edge_separate {1  -5  2}
-setDrawView fplan
-deselectAll
-zoomBox -913.24800 277.73400 1363.64100 2316.03600
-zoomBox -1161.19200 134.27000 1517.50100 2532.27200
-zoomBox -1452.89100 -34.51200 1698.51300 2786.66700
-zoomBox -1796.06600 -233.07800 1911.46800 3085.95600
-zoomBox -2199.80100 -466.68700 2162.00400 3438.06000
-pan 682.76600 1287.34200
-fit
-selectObject Module grid_clb_1__1_
-deselectAll
-selectObject Module grid_clb_1__1_
-create_relative_floorplan -place grid_clb_1__1_ -ref_type core_boundary -horizontal_edge_separate {1  -5  2} -vertical_edge_separate {1  -5  2}
-setDrawView fplan
-create_relative_floorplan -place grid_clb_1__1_ -ref_type core_boundary -horizontal_edge_separate {1  -5  2} -vertical_edge_separate {2  -5  2}
-setDrawView fplan
-create_relative_floorplan -place grid_clb_1__1_ -ref_type core_boundary -horizontal_edge_separate {2  -5  2} -vertical_edge_separate {2  -5  2}
-setDrawView fplan
-zoomBox -24.72800 180.78600 1938.82700 1938.58700
-zoomBox 205.03100 414.35500 1874.05300 1908.48600
-zoomBox 710.76000 924.84900 1735.74800 1842.43200
-zoomBox 1031.06300 1228.77800 1660.53400 1792.28900
-zoomBox 1176.36400 1357.13100 1631.15800 1764.26900
-zoomBox 1322.79800 1485.40300 1602.09800 1735.43600
-zoomBox 1412.72600 1564.17700 1584.25200 1717.72900
-zoomBox 1434.19400 1582.98200 1579.99200 1713.50200
-zoomBox 1412.72500 1564.17600 1584.25200 1717.72900
-zoomBox 1281.66900 1449.37500 1610.26000 1743.53400
-zoomBox 1109.39200 1298.46600 1644.44800 1777.45500
-zoomBox 1030.60500 1229.45100 1660.08300 1792.96800
-zoomBox 700.57600 940.35600 1725.57600 1857.95000
-zoomBox 549.64600 808.14600 1755.52800 1887.66800
-zoomBox 163.18100 469.61400 1832.22200 1963.76200
-zoomBox -82.58400 254.33200 1880.99400 2012.15300
-create_relative_floorplan -place grid_clb_1__1_ -ref_type core_boundary -horizontal_edge_separate {1  5  1} -vertical_edge_separate {1  5  1}
-setDrawView fplan
-zoomBox 151.11500 1740.35100 491.50200 1600.64000
-zoomBox 100.71300 1422.23900 571.83800 1843.99600
-zoomBox 68.66200 1361.25500 622.92600 1857.44000
-zoomBox -13.40800 1205.10300 753.74100 1891.86500
-zoomBox -65.59800 1105.80200 836.93000 1913.75700
-zoomBox -126.99800 988.97600 934.80000 1939.51200
-create_relative_floorplan -place grid_clb_1__1_ -ref_type core_boundary -horizontal_edge_separate {1  5  1} -vertical_edge_separate {1  -5  1}
-setDrawView fplan
-undo
-create_relative_floorplan -place grid_clb_1__1_ -ref_type core_boundary -horizontal_edge_separate {1  -5  1} -vertical_edge_separate {1  5  1}
-setDrawView fplan
-zoomBox 150.47100 1732.09700 239.75500 1633.19800
-zoomBox 133.14100 1621.36900 263.11200 1737.72100
-zoomBox 125.21800 1607.45300 278.12600 1744.33800
-zoomBox 115.89800 1591.08100 295.78900 1752.12200
-zoomBox 104.93200 1571.82000 316.56900 1761.28000
-zoomBox 37.99300 1454.23800 443.42600 1817.18700
-zoomBox 13.28000 1410.82800 490.26000 1837.82700
-zoomBox -15.79400 1359.75800 545.35900 1862.11000
-zoomBox -49.99900 1299.67600 610.18100 1890.67800
-zoomBox -137.58200 1145.83000 776.16300 1963.82700
-zoomBox -193.27900 1047.99500 881.71600 2010.34500
-zoomBox -258.80400 932.89600 1005.89600 2065.07200
-zoomBox -335.89300 797.48500 1151.98900 2129.45700
-zoomBox -426.58600 638.17800 1323.86400 2205.20400
-zoomBox -533.28300 450.75800 1526.06900 2294.31800
-zoomBox -1211.23200 181.25300 2142.08000 3183.18300
-zoomBox -1521.27600 58.00100 2423.79800 3589.68400
-pan -234.76500 798.42800
-fit
-zoomBox -437.32900 -654.97700 3988.02800 3306.66200
-zoomBox -624.38000 -1392.39200 6581.57400 5058.47500
-pan -2526.27900 -721.40200
-deselectAll
-selectObject Module grid_clb_1__2_
-create_relative_floorplan -place grid_clb_1__2_ -ref_type core_boundary -horizontal_edge_separate {1  -5  1} -vertical_edge_separate {2  -5  2}
-setDrawView fplan
-zoomBox -2465.48800 -940.27200 3659.57300 4542.96500
-zoomBox -967.27500 -53.57500 2794.27900 3313.81900
-zoomBox -47.18500 490.96800 2262.88000 2558.96900
-zoomBox 517.86600 825.38400 1936.53500 2095.39600
-zoomBox 767.41700 973.07700 1792.40700 1890.66200
-zoomBox 864.87700 1030.75700 1736.11900 1810.70500
-zoomBox 947.71800 1079.78500 1688.27400 1742.74100
-zoomBox 864.87700 1030.75700 1736.11900 1810.70500
-zoomBox 767.41600 973.07600 1792.40700 1890.66200
-zoomBox 652.75700 905.21700 1858.62800 1984.72900
-zoomBox 359.16600 731.45800 2028.19200 2225.59300
-zoomBox 164.46000 680.40000 2128.02100 2438.20600
-zoomBox -64.60500 620.33100 2245.46700 2688.33900
-zoomBox -651.13900 466.52300 2546.19400 3328.81900
-zoomBox -1024.13400 368.71100 2737.43600 3736.11900
-zoomBox -1462.95000 253.64000 2962.42600 4215.29600
-pan -62.97400 1041.04700
-deselectAll
-fit
-zoomBox -392.59600 -296.01500 2804.72500 2566.27000
-zoomBox -454.64000 -424.48200 3306.91400 2942.91200
-zoomBox -714.53500 -962.61700 5410.52900 4520.62300
-fit
-pan -1165.49100 269.76600
-selectObject Module grid_clb_2__1_
-zoomBox -1658.81500 -209.31900 1058.90800 2223.62300
-zoomBox -1892.09900 -425.85200 1305.22200 2436.43300
-zoomBox -2166.55100 -680.59600 1595.00300 2686.79800
-zoomBox -2489.43600 -980.29500 1935.92200 2981.34500
-zoomBox -1853.97100 -778.49300 1907.58400 2588.90200
-create_relative_floorplan -place grid_clb_1__2_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {2  -5  2}
-setDrawView fplan
-undo
-create_relative_floorplan -place grid_clb_2__1_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {2  -5  2}
-setDrawView fplan
-create_relative_floorplan -place grid_clb_2__1_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {3  5  3}
-setDrawView fplan
-create_relative_floorplan -place grid_clb_2__1_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {1  5  1}
-setDrawView fplan
-deselectAll
-selectObject Module grid_clb_2__2_
-create_relative_floorplan -place grid_clb_2__2_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {2  -5  2}
-setDrawView fplan
-zoomBox 1416.10000 1046.32400 1625.34600 681.36000
-zoomBox 1280.39700 644.31800 1760.02500 1073.68700
-zoomBox 1237.47500 600.73900 1801.74300 1105.87900
-zoomBox 1186.97800 549.46900 1850.82300 1143.75200
-zoomBox 878.71600 236.48800 2150.43500 1374.94800
-zoomBox 631.01800 -15.00200 2391.18300 1560.72100
-zoomBox 288.18200 -363.08600 2724.39800 1817.84700
-zoomBox 70.16300 -584.44300 2936.29900 1981.36100
-zoomBox -186.33100 -844.86300 3185.59500 2173.73100
-zoomBox -488.08900 -1151.23900 3478.88400 2400.04900
-zoomBox -125.70000 -317.54300 2310.51900 1863.39300
-zoomBox 115.09400 188.37100 1611.23800 1527.73900
-zoomBox 354.08900 469.19000 1272.91000 1291.73100
-zoomBox 430.93500 536.22900 1211.93300 1235.38900
-zoomBox 496.25300 593.21200 1160.10200 1187.49900
-zoomBox 551.77400 641.64800 1116.04600 1146.79200
-zoomBox 598.96700 682.81900 1078.59800 1112.19100
-zoomBox 639.08100 717.81400 1046.76700 1082.78000
-zoomBox 673.17800 747.56000 1019.71100 1057.78100
-zoomBox 702.16000 772.84400 996.71300 1036.53200
-zoomBox 598.96700 682.81900 1078.59800 1112.19100
-zoomBox 430.93300 536.22800 1211.93300 1235.39000
-zoomBox 263.67800 390.31800 1344.64800 1358.01700
-zoomBox 157.31600 297.52900 1429.04600 1435.99900
-zoomBox 32.18500 188.36600 1528.33800 1527.74200
-zoomBox -288.22000 -91.15300 1782.58000 1762.65500
-zoomBox -491.97600 -268.90700 1944.26000 1912.04400
-zoomBox -731.68800 -478.02900 2134.47200 2087.79600
-deselectAll
-selectObject Module grid_clb_2__2_
-deselectAll
-selectObject Module grid_clb_1__1_
-deselectAll
-undo
-undo
-undo
-undo
-undo
-undo
-undo
-undo
-undo
-undo
-redo
-undo
-create_relative_floorplan -place grid_clb_1__1_ -ref_type object -ref {} -horizontal_edge_separate {1  -5  1} -vertical_edge_separate {0  5  0}
-create_relative_floorplan -place grid_clb_1__1_ -ref_type object -ref {} -horizontal_edge_separate {1  -5  1} -vertical_edge_separate {1  5  1}
-create_relative_floorplan -place grid_clb_1__1_ -ref_type core_boundary -horizontal_edge_separate {1  -5  1} -vertical_edge_separate {0  5  0}
-setDrawView fplan
-zoomBox 84.03700 1724.42800 376.95600 934.65800
-zoomBox 175.14400 1708.45000 257.31600 1659.37500
-fit
-undo
-undo
-create_relative_floorplan -place grid_clb_1__1_ -ref_type core_boundary -horizontal_edge_separate {1  -5  1} -vertical_edge_separate {0  5  0}
-create_relative_floorplan -place grid_clb_1__2_ -ref_type core_boundary -horizontal_edge_separate {1  -5  1} -vertical_edge_separate {2  -5  2}
-zoomBox 1468.14700 1752.85500 1581.70800 1627.34100
-fit
-create_relative_floorplan -place grid_clb_2__1_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  5  0}
-zoomBox 141.28000 222.77500 281.73700 145.07500
-fit
-create_relative_floorplan -place grid_clb_2__2_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {2  -5  2}
-selectObject Module sb_1__0_
-deselectAll
-selectObject Module sb_0__2_
-deselectAll
-selectObject Module sb_0__1_
-zoomBox 1238.03700 1038.61800 1372.51700 823.45100
-uiSetTool ruler
-uiSetTool select
-fit
-gui_select -rect {-163.54100 1202.98300 688.16500 1247.80900}
-deselectAll
-deselectAll
-pan -1031.01200 81.49500
-pan -809.86700 924.23500
-selectObject Module sb_1__1_
-pan 980.20800 2074.78400
-pan 203.21400 912.28100
-uiSetTool move
-zoomBox -1518.94000 -1630.81400 2906.41700 2330.82500
-zoomBox -2263.55100 -3454.57100 4942.40500 2996.29800
-zoomBox -2186.64400 -2926.01000 3938.41900 2557.22900
-zoomBox -2065.70800 -2094.84900 2359.65100 1866.79200
-zoomBox -2018.47800 -1770.24700 1743.07800 1597.14900
-zoomBox -1890.54900 -891.01900 73.00800 866.78400
-zoomBox -1851.78100 -624.56700 -433.11000 645.44600
-zoomBox -1986.22500 -1251.41000 731.50500 1181.53800
-zoomBox -2035.86000 -1482.83400 1161.46900 1379.45800
-zoomBox -2338.86300 -2895.57700 3786.21600 2587.67600
-getFPlanMode -autoSyncMasterClone -quiet
-setObjFPlanBox Module sb_1__1_ -280.966 1426.279 -163.158 1555.046
-zoomBox -2054.79600 -2320.31200 3151.52200 2340.45400
-zoomBox -1813.33900 -1831.33700 2612.03200 2130.31500
-deselectAll
-selectObject Module sb_1__2_
-getFPlanMode -autoSyncMasterClone -quiet
-setObjFPlanBox Module sb_1__2_ -268.719 1293.835 -164.008 1408.287
-deselectAll
-selectObject Module sb_2__0_
-getFPlanMode -autoSyncMasterClone -quiet
-setObjFPlanBox Module sb_2__0_ -232.708 1167.886 -139.869 1269.362
-deselectAll
-selectObject Module sb_2__1_
-getFPlanMode -autoSyncMasterClone -quiet
-setObjFPlanBox Module sb_2__1_ -323.067 956.063 -220.058 1068.655
-deselectAll
-selectObject Module sb_2__2_
-getFPlanMode -autoSyncMasterClone -quiet
-setObjFPlanBox Module sb_2__2_ -323.107 795.765 -230.268 897.241
-deselectAll
-selectObject Module cbx_1__0_
-getFPlanMode -autoSyncMasterClone -quiet
-setObjFPlanBox Module cbx_1__0_ -356.215 624.018 -252.694 737.169
-deselectAll
-selectObject Module cbx_2__0_
-getFPlanMode -autoSyncMasterClone -quiet
-setObjFPlanBox Module cbx_2__0_ -367.193 463.719 -263.672 576.87
-deselectAll
-selectObject Module cbx_1__1_
-getFPlanMode -autoSyncMasterClone -quiet
-setObjFPlanBox Module cbx_1__1_ -389.621 326.321 -285.768 439.835
-deselectAll
-selectObject Module cbx_2__1_
-getFPlanMode -autoSyncMasterClone -quiet
-setObjFPlanBox Module cbx_2__1_ -428.891 160.298 -325.038 273.812
-fit
-getIoFlowFlag
-setIoFlowFlag 0
-floorPlan -site CoreSite -r 0.9911732352941 0.761686 25 25 25 25
-uiSetTool select
-getIoFlowFlag
-fit
-gui_select -rect {198.06000 1678.14500 1524.92800 180.93600}
-deselectAll
-deselectAll
-selectObject Module grid_clb_1__2_
-deselectAll
-selectObject Module grid_clb_1__1_
-delete_relative_floorplan grid_clb_1__1_
-delete_relative_floorplan grid_clb_1__2_
-delete_relative_floorplan grid_clb_2__2_
-delete_relative_floorplan grid_clb_2__1_
-gui_select -rect {195.07200 1678.14500 1524.92800 195.87900}
-deselectAll
-getIoFlowFlag
-setIoFlowFlag 0
-floorPlan -site CoreSite -r 1.12032510389 0.89301 25.44 25.38 25.44 27.98
-uiSetTool select
-getIoFlowFlag
-fit
-deselectAll
-zoomBox -656.28200 -434.68300 2061.44100 1998.25900
-zoomBox -295.03300 -94.00100 2015.03200 1974.00000
-setIoFlowFlag 0
-floorPlan -site CoreSite -r 1.01743766805 0.65 25.44 25.8 25.44 31.34
-uiSetTool select
-getIoFlowFlag
-fit
-setIoFlowFlag 0
-floorPlan -site CoreSite -r 1.11455023222 0.391318 25.44 26.22 25.44 34.7
-uiSetTool select
-getIoFlowFlag
-fit
-zoomBox -849.88000 -509.50800 2347.44100 2352.77700
-refineMacro -permutePack
-refineMacro -permutePack
-zoomBox -294.34000 -203.04300 2015.72500 1864.95800
-zoomBox -77.37900 -83.35600 1886.17600 1674.44500
-zoomBox 107.03800 18.37800 1776.06000 1512.50900
-zoomBox 263.79200 104.85100 1682.46100 1374.86300
-zoomBox 107.03700 18.37700 1776.06000 1512.50900
-zoomBox -77.38000 -83.35800 1886.17700 1674.44500
-zoomBox -294.34100 -203.04500 2015.72600 1864.95800
-zoomBox -549.58900 -343.85400 2168.13700 2089.09100
-gui_select -rect {1405.20500 1558.20300 181.70100 187.03400}
+setObjFPlanBox Module sb_1__0_ -301.222 482.275 -199.513 593.446
 create_relative_floorplan -place grid_clb_1__1_ -ref_type core_boundary -horizontal_edge_separate {1  -5  1} -vertical_edge_separate {0  5  0}
 create_relative_floorplan -place grid_clb_1__2_ -ref_type core_boundary -horizontal_edge_separate {1  -5  1} -vertical_edge_separate {2  -5  2}
 create_relative_floorplan -place grid_clb_2__1_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  5  0}
 create_relative_floorplan -place grid_clb_2__2_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {2  -5  2}
+create_relative_floorplan -place sb_0__1_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {1  -10  1} -vertical_edge_separate {2  10  0}
+create_relative_floorplan -place sb_0__2_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {1  -96.94  1} -vertical_edge_separate {2  11.34  0}
+create_relative_floorplan -place sb_1__0_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -10  1} -vertical_edge_separate {0  0  0}
+create_relative_floorplan -place sb_2__0_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -11.34  1} -vertical_edge_separate {0  79  0}
+create_relative_floorplan -place sb_2__1_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -111.34  1} -vertical_edge_separate {2  11.34  0}
+create_relative_floorplan -place sb_2__2_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -197  1} -vertical_edge_separate {2  11.34  0}
+create_relative_floorplan -place cbx_1__0_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -11.34  1} -vertical_edge_separate {0  151  0}
+create_relative_floorplan -place cbx_2__0_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -11.34  1} -vertical_edge_separate {0  233  0}
+create_relative_floorplan -place cby_1__1_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -11.34  1} -vertical_edge_separate {0  315  0}
+create_relative_floorplan -place cbx_1__1_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {1  -177  1} -vertical_edge_separate {2  11.34  0}
+create_relative_floorplan -place cbx_2__1_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -275  1} -vertical_edge_separate {2  11.34  0}
+create_relative_floorplan -place cbx_2__2_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -362  1} -vertical_edge_separate {2  11.34  0}
+create_relative_floorplan -place cby_2__1_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -444  1} -vertical_edge_separate {2  11.34  0}
+create_relative_floorplan -place cby_0__1_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {1  -264  1} -vertical_edge_separate {2  11.34  0}
+create_relative_floorplan -place cby_0__2_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {1  -351  1} -vertical_edge_separate {2  11.34  0}
+create_relative_floorplan -place sb_0__0_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -11.34  1} -vertical_edge_separate {0  410  0}
+create_relative_floorplan -place sb_1__1_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -10  1} -vertical_edge_separate {2  50  0}
+create_relative_floorplan -place sb_1__2_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -10  1} -vertical_edge_separate {2  160  0}
+create_relative_floorplan -place cbx_1__2_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -10  1} -vertical_edge_separate {2  260  0}
+create_relative_floorplan -place cby_1__2_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -10  1} -vertical_edge_separate {2  360  0}
+create_relative_floorplan -place cby_2__2_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -10  1} -vertical_edge_separate {2  460  0}
+loadIoFile Multi_Row_IO_PAD.io
+floorPlan -site CoreSite -b 0.0 0.0 1855.2 1935.78 400.32 400.26 1455.36 1535.1 425.28 425.46 1430.88 1510.74
+fit
+getFPlanMode -autoSyncMasterClone -quiet
+create_relative_floorplan -ref_type object -horizontal_edge_separate {3  -10  1} -vertical_edge_separate {0  0  0} -place sb_1__0_ -ref grid_clb_1__1_ -no_record
+setObjFPlanBox Module sb_1__0_ 1509.872 1983.025 1579.952 2058.625
 deselectAll
 selectObject Module grid_clb_1__2_
-deselectObject Module grid_clb_1__2_
-selectObject Module grid_clb_1__2_
-deselectObject Module grid_clb_1__2_
-alignObject -side right
-spaceObject -fixSide top -space 0
-selectObject Module grid_clb_1__2_
+uiSetTool select
 deselectAll
 selectObject Module grid_clb_1__1_
-deselectAll
 selectObject Module grid_clb_1__2_
+selectObject Module grid_clb_2__2_
+selectObject Module grid_clb_2__1_
+zoomBox -117.49400 31.48600 1904.32000 1841.44100
+zoomBox 4.91300 140.55400 1723.45500 1679.01600
+zoomBox 108.95900 233.26200 1569.72000 1540.95500
+zoomBox 272.57000 379.04500 1327.97100 1323.85400
+zoomBox 336.46700 435.97900 1233.55800 1239.06700
+zoomBox 204.08100 303.14700 1445.73100 1414.68900
+gui_select -rect {1416.81800 923.16900 1020.06800 1019.54500}
 deselectAll
-zoomBox -1164.00500 -834.03700 1536.72600 2533.36100
-zoomBox -1554.73100 -1145.75900 1622.60000 2815.88600
-zoomBox -773.10800 -554.77700 1522.51500 2307.51300
-zoomBox 199.62600 180.70600 1397.95600 1674.84000
-zoomBox 358.97100 301.18600 1377.55200 1571.20100
-zoomBox 494.41500 403.59500 1360.20900 1483.10800
-zoomBox 358.97000 301.18600 1377.55200 1571.20200
-zoomBox 12.15800 38.96300 1421.96100 1796.77100
-zoomBox 172.19000 1718.02500 332.22100 1423.36400
-zoomBox 109.02000 1361.70600 436.11400 1769.54200
-zoomBox 93.10700 1322.49500 477.92400 1802.30300
-zoomBox -4.03500 1083.13600 733.15500 2002.29900
-zoomBox -190.12600 624.59800 1222.09900 2385.42600
-zoomBox 95.14300 743.22400 1115.47600 2015.42300
-zoomBox 381.74300 862.40400 1008.35600 1643.69400
-zoomBox 584.65800 960.62200 911.75500 1368.46200
-zoomBox 670.16700 1002.01100 871.04700 1252.47800
-selectObject Module grid_clb_1__1_
-zoomBox 573.96200 884.47900 1026.69700 1448.97000
-zoomBox 465.30000 751.72700 1202.50400 1670.90700
-zoomBox 288.36200 535.56100 1488.77600 2032.29400
-zoomBox 207.44300 436.70300 1619.69600 2197.56600
-zoomBox 112.24500 320.39900 1773.71900 2392.00300
+gui_select -rect {971.88000 484.65600 864.26000 919.95600}
 deselectAll
-fit
-selectObject Module sb_1__1_
+gui_select -rect {828.92200 926.38200 416.10900 1027.57700}
+deselectAll
+pan 30.51900 254.87500
+gui_select -rect {971.88000 1051.67100 856.22800 1527.12900}
+deselectAll
 deselectAll
 selectObject Module sb_1__1_
 deselectAll
-selectInst grid_io_top_2__3_/logical_tile_io_mode_io__2/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_right_3__2_/logical_tile_io_mode_io__4/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_right_3__1_/logical_tile_io_mode_io__3/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst pad_pReset/gpin
-deselectAll
-selectInst grid_io_top_1__3_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__2_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__2_/logical_tile_io_mode_io__6/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst pad_ccff_head/gpin
-deselectAll
-selectInst grid_io_bottom_1__0_/logical_tile_io_mode_io__6/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_top_2__3_/logical_tile_io_mode_io__2/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_top_2__3_/logical_tile_io_mode_io__2/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_top_2__3_/logical_tile_io_mode_io__3/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_top_2__3_/logical_tile_io_mode_io__4/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_top_2__3_/logical_tile_io_mode_io__5/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_top_2__3_/logical_tile_io_mode_io__6/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_top_2__3_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_right_3__2_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_top_2__3_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_top_2__3_/logical_tile_io_mode_io__2/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_top_2__3_/logical_tile_io_mode_io__3/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_top_2__3_/logical_tile_io_mode_io__4/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_top_2__3_/logical_tile_io_mode_io__5/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_top_2__3_/logical_tile_io_mode_io__6/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_top_2__3_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-setLayerPreference layoutObj -isVisible 1
-setLayerPreference layoutObj -isVisible 0
-setLayerPreference pinObj -isVisible 1
-zoomBox 436.76000 608.27600 1855.42900 1878.28800
-zoomBox 611.01900 775.92900 1816.88800 1855.43900
-zoomBox 992.05900 1142.52200 1732.61300 1805.47600
-zoomBox 1226.06400 1367.65600 1680.85700 1774.79300
-zoomBox 1281.92800 1421.40200 1668.50200 1767.46800
-zoomBox 1083.02200 1230.03700 1712.49400 1793.54900
-zoomBox 759.13700 918.43100 1784.12800 1836.01700
-zoomBox 436.75600 608.27300 1855.42900 1878.28800
-zoomBox 231.74400 411.03400 1900.77100 1905.16900
-zoomBox -9.44600 178.98800 1954.11500 1936.79400
-zoomBox -293.19900 -94.00800 2016.87300 1974.00000
-setLayerPreference pinObj -isVisible 0
-selectInst grid_io_top_2__3_/logical_tile_io_mode_io__5/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_top_2__3_/logical_tile_io_mode_io__6/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_top_2__3_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_right_3__2_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_right_3__2_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__2_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_right_3__2_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_top_2__3_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_right_3__2_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_right_3__2_/logical_tile_io_mode_io__1/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_right_3__2_/logical_tile_io_mode_io__2/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_right_3__2_/logical_tile_io_mode_io__3/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_right_3__2_/logical_tile_io_mode_io__4/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_right_3__2_/logical_tile_io_mode_io__5/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_right_3__2_/logical_tile_io_mode_io__6/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_right_3__2_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_right_3__1_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_right_3__2_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_top_2__3_/logical_tile_io_mode_io__3/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_top_2__3_/logical_tile_io_mode_io__2/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_top_2__3_/logical_tile_io_mode_io__3/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_top_2__3_/logical_tile_io_mode_io__4/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_top_2__3_/logical_tile_io_mode_io__5/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_top_2__3_/logical_tile_io_mode_io__6/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_top_2__3_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_right_3__2_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_right_3__2_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_right_3__1_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_right_3__2_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_right_3__1_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_right_3__1_/logical_tile_io_mode_io__1/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_right_3__1_/logical_tile_io_mode_io__2/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_right_3__1_/logical_tile_io_mode_io__3/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst pad_pReset/gpin
-deselectAll
-selectInst pad_pReset/gpin
-deselectAll
-selectInst pad_prog_clk/gpin
-deselectAll
-selectInst pad_set/gpin
-deselectAll
-selectInst pad_reset/gpin
-deselectAll
-selectInst pad_clk/gpin
-gui_select -rect {612.30100 1803.65800 606.32400 1761.82000}
-deselectAll
-selectInst pad_ccff_head/gpin
-deselectAll
-selectInst pad_ccff_tail/gpout
-deselectAll
-selectInst pad_ccff_tail/gpout
-deselectAll
-selectInst grid_io_top_1__3_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_top_1__3_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_top_1__3_/logical_tile_io_mode_io__1/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_top_1__3_/logical_tile_io_mode_io__2/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_top_1__3_/logical_tile_io_mode_io__3/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_top_1__3_/logical_tile_io_mode_io__4/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_top_1__3_/logical_tile_io_mode_io__5/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_top_1__3_/logical_tile_io_mode_io__6/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_top_1__3_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_top_2__3_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_top_2__3_/logical_tile_io_mode_io__1/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__2_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__2_/logical_tile_io_mode_io__6/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__2_/logical_tile_io_mode_io__5/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__2_/logical_tile_io_mode_io__4/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__2_/logical_tile_io_mode_io__3/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__2_/logical_tile_io_mode_io__2/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__2_/logical_tile_io_mode_io__1/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__2_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__2_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__2_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__2_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__1_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__1_/logical_tile_io_mode_io__6/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__1_/logical_tile_io_mode_io__5/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__1_/logical_tile_io_mode_io__4/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__1_/logical_tile_io_mode_io__3/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__1_/logical_tile_io_mode_io__2/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-gui_select -rect {1658.25800 542.53200 1658.25800 506.67100}
-deselectAll
-selectInst grid_io_left_0__1_/logical_tile_io_mode_io__1/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_left_0__1_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_1__0_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_1__0_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_1__0_/logical_tile_io_mode_io__6/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_1__0_/logical_tile_io_mode_io__5/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_1__0_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_1__0_/logical_tile_io_mode_io__4/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_1__0_/logical_tile_io_mode_io__3/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_1__0_/logical_tile_io_mode_io__2/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_1__0_/logical_tile_io_mode_io__1/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_1__0_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_1__0_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_2__0_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_2__0_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_2__0_/logical_tile_io_mode_io__6/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_2__0_/logical_tile_io_mode_io__5/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_2__0_/logical_tile_io_mode_io__5/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_2__0_/logical_tile_io_mode_io__4/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_2__0_/logical_tile_io_mode_io__3/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_2__0_/logical_tile_io_mode_io__2/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_2__0_/logical_tile_io_mode_io__1/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_2__0_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_1__0_/logical_tile_io_mode_io__4/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_1__0_/logical_tile_io_mode_io__3/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_2__0_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_right_3__1_/logical_tile_io_mode_io__6/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_right_3__1_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_bottom_2__0_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_right_3__1_/logical_tile_io_mode_io__7/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_right_3__1_/logical_tile_io_mode_io__6/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_right_3__1_/logical_tile_io_mode_io__5/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-deselectAll
-selectInst grid_io_right_3__1_/logical_tile_io_mode_io__4/logical_tile_io_mode_physical__iopad_0/GPIO_0_/pad_cell
-loadIoFile IO_PAD.io
-deselectAll
 fit
-loadIoFile IO_PAD.io
-loadIoFile IO_PAD.io
+setFinishFPlanMode -activeObj {core macro fence} -drcRegionObj {macro macroHalo hardBlkg minGap coreSpacing} -direction xy -override false
+saveDesign fabric_floorplan -tcon
+saveDesign fabric_floorplan.enc -tcon
+setDesignMode -process 130
+globalNetConnect vdd -type pgpin -pin VDD -override -verbose -netlistOverride
+globalNetConnect vss -type pgpin -pin VSS -override -verbose -netlistOverride
+globalNetConnect vdd -type pgpin -pin vdd -override -verbose -netlistOverride
+globalNetConnect vss -type pgpin -pin vss -override -verbose -netlistOverride
+globalNetConnect iovdd -type pgpin -pin iovdd -override -verbose -netlistOverride
+globalNetConnect iovss -type pgpin -pin iovss -override -verbose -netlistOverride
+addRing -nets {vdd vss} -type core_rings -follow core -layer {top TopMetal1 bottom TopMetal1 left TopMetal2 right TopMetal2} -width {top 5 bottom 5 left 5 right 5} -spacing {top 5 bottom 5 left 5 right 5} -offset {top 5 bottom 5 left 5 right 5} -center 0 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+addStripe -nets {vdd vss} -layer TopMetal2 -direction vertical -width 5 -spacing 5 -set_to_set_distance 100 -start_from left -start_offset 90 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit TopMetal2 -padcore_ring_bottom_layer_limit Metal1 -block_ring_top_layer_limit TopMetal2 -block_ring_bottom_layer_limit Metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+sroute -connect { blockPin corePin floatingStripe } -layerChangeRange { Metal1(1) TopMetal2(7) } -blockPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) TopMetal2(7) } -nets { vdd vss } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1(1) TopMetal2(7) }
+sroute -connect { padPin padRing } -layerChangeRange { Metal1(1) TopMetal2(7) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) TopMetal2(7) } -nets { iovdd iovss vdd vss } -allowLayerChange 1 -targetViaLayerRange { Metal1(1) TopMetal2(7) }
+sroute -connect { padPin } -layerChangeRange { Metal1(1) TopMetal2(7) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) TopMetal2(7) } -nets { vdd vss } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1(1) TopMetal2(7) }
 fit
-zoomBox -1508.69700 -830.98800 2444.70200 2708.14800
-zoomBox -2107.97900 -1144.16700 2543.07800 3019.52200
-zoomBox -1508.69700 -830.98800 2444.70200 2708.14800
-zoomBox -999.30800 -564.78600 2361.08200 2443.48000
+zoomBox 1397.05900 327.81200 1077.04000 447.81900
+fit
+zoomBox 1415.52100 1598.65700 1550.91400 1321.71700
+fit
+zoomBox 449.31000 1589.42600 707.78700 1457.11000
+fit
+zoomBox 353.91900 610.90600 458.54100 466.28200
+fit
+setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+setEndCapMode -reset
+setEndCapMode -boundary_tap false
+setNanoRouteMode -quiet -drouteAutoStop 0
+setNanoRouteMode -quiet -drouteFixAntenna 0
+setNanoRouteMode -quiet -droutePostRouteSwapVia {}
+setNanoRouteMode -quiet -droutePostRouteSpreadWire 1
+setNanoRouteMode -quiet -drouteUseMultiCutViaEffort {}
+setNanoRouteMode -quiet -drouteOnGridOnly 0
+setNanoRouteMode -quiet -routeIgnoreAntennaTopCellPin 0
+setNanoRouteMode -quiet -timingEngine {}
+setUsefulSkewMode -noBoundary false -maxAllowedDelay 1
+setPlaceMode -reset
+setPlaceMode -congEffort auto -timingDriven 1 -clkGateAware 1 -powerDriven 0 -ignoreScan 1 -reorderScan 1 -ignoreSpare 0 -placeIOPins 0 -moduleAwareSpare 0 -maxRouteLayer 7 -preserveRouting 1 -rmAffectedRouting 0 -checkRoute 0 -swapEEQ 0
+setPlaceMode -fp false
+place_design
