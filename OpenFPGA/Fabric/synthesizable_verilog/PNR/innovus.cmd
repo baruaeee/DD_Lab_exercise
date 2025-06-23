@@ -1,59 +1,23 @@
 #######################################################
 #                                                     
 #  Innovus Command Logging File                     
-#  Created on Mon Jun 23 00:27:16 2025                
+#  Created on Sun Jun 22 21:45:24 2025                
 #                                                     
 #######################################################
 
-#@(#)CDS: Innovus v23.31-s109_1 (64bit) 04/22/2024 16:02 (Linux 3.10.0-693.el7.x86_64)
-#@(#)CDS: NanoRoute 23.31-s109_1 NR240401-0735/23_11-UB (database version 18.20.622_1) {superthreading v2.20}
-#@(#)CDS: AAE 23.11-s030 (64bit) 04/22/2024 (Linux 3.10.0-693.el7.x86_64)
-#@(#)CDS: CTE 23.11-s024_1 () Apr 22 2024 08:03:17 ( )
-#@(#)CDS: SYNTECH 23.11-s010_1 () Apr  5 2024 04:21:08 ( )
-#@(#)CDS: CPE v23.11-s057
-#@(#)CDS: IQuantus/TQuantus 22.1.1-s233 (64bit) Mon Dec 11 23:11:23 PST 2023 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: Innovus v23.14-s088_1 (64bit) 02/28/2025 12:25 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 23.14-s088_1 NR250219-0822/23_14-UB (database version 18.20.661) {superthreading v2.20}
+#@(#)CDS: AAE 23.14-s018 (64bit) 02/28/2025 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 23.14-s036_1 () Feb 22 2025 01:17:26 ( )
+#@(#)CDS: SYNTECH 23.14-s010_1 () Feb 19 2025 23:56:49 ( )
+#@(#)CDS: CPE v23.14-s082
+#@(#)CDS: IQuantus/TQuantus 23.1.1-s336 (64bit) Mon Jan 20 22:11:00 PST 2025 (Linux 3.10.0-693.el7.x86_64)
 
 set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
 suppressMessage ENCEXT-2799
 getVersion
 getVersion
 getVersion
-define_proc_arguments ViaFillQor -info {This procedure extracts Viafill details from innovus db} -define_args {
-        {-window "window coordinates" "" list optional}
-        {-window_size "window size in microns" "" string optional}
-    
-    }
-define_proc_arguments ProcessFills -info {This procedure processes Fill types} -define_args {
-    {-fillInfo "Design Fill data" "" list required}
-				{-csvName "File path for Fill Data csv file" "Path of CSV file" string required}
-				{-selectFill "type of fill to be selected in session" "list of BRIDGE/EXTENSION/STAMP/FLOATING" list required}
-    {-output_data "Boolean Flag to output Fill Data for further processing" "" string required}
-}
-define_proc_arguments FillQor -info {This procedure extracts fill details from innovus db} -define_args {
-    {-layers "Fills Cleanup on which all layers" "list of Metal/Routing layers" list optional}
-				{-selectFill "type of fill to be selected in session" "list of BRIDGE/EXTENSION/STAMP/FLOATING" list optional}
-				{-outData "Boolean Flag to output Fill Data for further processing" "" boolean optional}
-    {-outDataFile "File path for Fill Data csv file" "Path of CSV file" string optional}
-}
-define_proc_arguments ProcessFills_fast -info {This procedure processes Fill types} -define_args {
-    {-fillInfo "Design Fill data" "" list required}
-				{-csvName "File path for Fill Data csv file" "Path of CSV file" string required}
-				{-selectFill "type of fill to be selected in session" "list of BRIDGE/EXTENSION/STAMP/FLOATING" list required}
-    {-output_data "Boolean Flag to output Fill Data for further processing" "" string required}
-}
-define_proc_arguments FillQor_fast -info {This procedure extracts fill details from innovus db} -define_args {
-    {-layers "Fills Cleanup on which all layers" "list of Metal/Routing layers" list optional}
-				{-selectFill "type of fill to be selected in session" "list of BRIDGE/EXTENSION/STAMP/FLOATING" list optional}
-				{-outData "Boolean Flag to output Fill Data for further processing" "" boolean optional}
-    {-outDataFile "File path for Fill Data csv file" "Path of CSV file" string optional}
-}
-define_proc_arguments ProcessFills_fast_stampOnly -info {This procedure processes Fill types} -define_args {
-    {-fillInfo "Design Fill data" "" list required}
-	
-}
-define_proc_arguments FillQor_fast_stampOnly -info {This procedure extracts fill details from innovus db} -define_args {
-    {-layers "Fills Cleanup on which all layers" "list of Metal/Routing layers" list optional}
-}
 win
 set ::TimeLib::tsgMarkCellLatchConstructFlag 1
 set ::dft::debug_attribute 0
@@ -214,8 +178,10 @@ get_message -id GLOBAL-100 -suppress
 get_message -id GLOBAL-100 -suppress
 set timing_aocv_efficient_accurate_mode 1
 get_message -id GLOBAL-100 -suppress
+suppressMessage -silent GLOBAL-100
 unsuppressMessage -silent GLOBAL-100
 get_message -id GLOBAL-100 -suppress
+suppressMessage -silent GLOBAL-100
 unsuppressMessage -silent GLOBAL-100
 set timing_aocv_enable_gba_combine_launch_capture 1
 get_message -id GLOBAL-100 -suppress
@@ -261,8 +227,10 @@ get_message -id GLOBAL-100 -suppress
 get_message -id GLOBAL-100 -suppress
 set timing_disable_efficient_derate_mode 1
 get_message -id GLOBAL-100 -suppress
+suppressMessage -silent GLOBAL-100
 unsuppressMessage -silent GLOBAL-100
 get_message -id GLOBAL-100 -suppress
+suppressMessage -silent GLOBAL-100
 unsuppressMessage -silent GLOBAL-100
 set timing_enable_backward_compatible_latch_thru_mt_mode 0
 get_message -id GLOBAL-100 -suppress
@@ -380,16 +348,13 @@ set lefdefInputCheckColoredShape 0
 set load_netlist_ignore_undefined_cell 1
 init_design
 setDrawView fplan
-zoomBox -418.96300 -492.08100 3342.59100 2875.31300
-pan -2218.97700 -262.89800
-gui_select -rect {-2375.16600 1892.34600 -49.13400 -229.30700}
+pan -1694.44500 75.51800
+gui_select -rect {-1783.27500 1770.78700 -29.06000 -94.00000}
+selectObject Module grid_clb_1__2_
 selectObject Module grid_clb_1__1_
 selectObject Module cby_2__2_
 deselectAll
 selectObject Module sb_1__0_
-uiSetTool move
-getFPlanMode -autoSyncMasterClone -quiet
-setObjFPlanBox Module sb_1__0_ -301.222 482.275 -199.513 593.446
 create_relative_floorplan -place grid_clb_1__1_ -ref_type core_boundary -horizontal_edge_separate {1  -5  1} -vertical_edge_separate {0  5  0}
 create_relative_floorplan -place grid_clb_1__2_ -ref_type core_boundary -horizontal_edge_separate {1  -5  1} -vertical_edge_separate {2  -5  2}
 create_relative_floorplan -place grid_clb_2__1_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  5  0}
@@ -415,42 +380,31 @@ create_relative_floorplan -place sb_1__2_ -ref_type object -ref grid_clb_1__1_ -
 create_relative_floorplan -place cbx_1__2_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -10  1} -vertical_edge_separate {2  260  0}
 create_relative_floorplan -place cby_1__2_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -10  1} -vertical_edge_separate {2  360  0}
 create_relative_floorplan -place cby_2__2_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -10  1} -vertical_edge_separate {2  460  0}
+deselectAll
+fit
 loadIoFile Multi_Row_IO_PAD.io
 floorPlan -site CoreSite -b 0.0 0.0 1855.2 1935.78 400.32 400.26 1455.36 1535.1 425.28 425.46 1430.88 1510.74
-fit
-getFPlanMode -autoSyncMasterClone -quiet
-create_relative_floorplan -ref_type object -horizontal_edge_separate {3  -10  1} -vertical_edge_separate {0  0  0} -place sb_1__0_ -ref grid_clb_1__1_ -no_record
-setObjFPlanBox Module sb_1__0_ 1509.872 1983.025 1579.952 2058.625
-deselectAll
 selectObject Module grid_clb_1__2_
-uiSetTool select
-deselectAll
 selectObject Module grid_clb_1__1_
-selectObject Module grid_clb_1__2_
-selectObject Module grid_clb_2__2_
 selectObject Module grid_clb_2__1_
-zoomBox -117.49400 31.48600 1904.32000 1841.44100
-zoomBox 4.91300 140.55400 1723.45500 1679.01600
-zoomBox 108.95900 233.26200 1569.72000 1540.95500
-zoomBox 272.57000 379.04500 1327.97100 1323.85400
-zoomBox 336.46700 435.97900 1233.55800 1239.06700
-zoomBox 204.08100 303.14700 1445.73100 1414.68900
-gui_select -rect {1416.81800 923.16900 1020.06800 1019.54500}
+selectObject Module grid_clb_2__2_
 deselectAll
-gui_select -rect {971.88000 484.65600 864.26000 919.95600}
+zoomBox -109.89800 -8.83000 1853.65600 1748.97000
+zoomBox 47.46600 63.56500 1716.48700 1557.69500
+gui_select -rect {967.26300 473.80300 863.62400 942.33800}
 deselectAll
-gui_select -rect {828.92200 926.38200 416.10900 1027.57700}
+selectObject Module cbx_1__2_
+gui_select -rect {1416.36600 922.90600 1014.76400 1024.38600}
 deselectAll
-pan 30.51900 254.87500
-gui_select -rect {971.88000 1051.67100 856.22800 1527.12900}
+gui_select -rect {913.28400 920.74600 408.04400 1041.65900}
 deselectAll
+zoomBox 174.10000 276.34900 1592.76800 1546.36000
+zoomBox 281.73800 457.21500 1487.60700 1536.72500
+zoomBox 373.23100 610.95100 1398.22000 1528.53500
+gui_select -rect {881.08500 1503.34100 963.29600 1051.17900}
 deselectAll
-selectObject Module sb_1__1_
 deselectAll
 fit
-setFinishFPlanMode -activeObj {core macro fence} -drcRegionObj {macro macroHalo hardBlkg minGap coreSpacing} -direction xy -override false
-saveDesign fabric_floorplan -tcon
-saveDesign fabric_floorplan.enc -tcon
 setDesignMode -process 130
 globalNetConnect vdd -type pgpin -pin VDD -override -verbose -netlistOverride
 globalNetConnect vss -type pgpin -pin VSS -override -verbose -netlistOverride
@@ -463,15 +417,27 @@ addStripe -nets {vdd vss} -layer TopMetal2 -direction vertical -width 5 -spacing
 sroute -connect { blockPin corePin floatingStripe } -layerChangeRange { Metal1(1) TopMetal2(7) } -blockPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) TopMetal2(7) } -nets { vdd vss } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1(1) TopMetal2(7) }
 sroute -connect { padPin padRing } -layerChangeRange { Metal1(1) TopMetal2(7) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) TopMetal2(7) } -nets { iovdd iovss vdd vss } -allowLayerChange 1 -targetViaLayerRange { Metal1(1) TopMetal2(7) }
 sroute -connect { padPin } -layerChangeRange { Metal1(1) TopMetal2(7) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) TopMetal2(7) } -nets { vdd vss } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1(1) TopMetal2(7) }
-fit
-zoomBox 1397.05900 327.81200 1077.04000 447.81900
-fit
-zoomBox 1415.52100 1598.65700 1550.91400 1321.71700
-fit
-zoomBox 449.31000 1589.42600 707.78700 1457.11000
-fit
-zoomBox 353.91900 610.90600 458.54100 466.28200
-fit
+zoomBox 121.89800 275.46900 1840.44000 1813.93100
+zoomBox 271.63100 420.86700 1732.39200 1728.56000
+zoomBox 599.04100 738.79700 1496.13100 1541.88400
+zoomBox 677.20200 814.69600 1439.72900 1497.32000
+zoomBox 743.64000 879.20900 1391.78800 1459.44000
+zoomBox 800.11200 934.04600 1351.03800 1427.24200
+selectObject Module grid_clb_1__2_
+zoomBox 928.88600 1079.17100 1216.47300 1336.62300
+zoomBox 996.10600 1154.92700 1146.23000 1289.32000
+zoomBox 1007.11800 1167.33700 1134.72300 1281.57100
+zoomBox 1024.43300 1186.85200 1116.62800 1269.38600
+zoomBox 983.15000 1140.32600 1159.76800 1298.43700
+zoomBox 904.06400 1051.19700 1242.41000 1354.08900
+zoomBox 752.56100 880.45400 1400.72700 1460.70100
+zoomBox 553.40600 656.01000 1608.83800 1600.84700
+zoomBox 462.32700 553.36600 1704.01200 1664.93900
+zoomBox 229.11600 290.54200 1947.71100 1829.05100
+zoomBox 80.81000 123.40300 2102.68700 1933.41400
+zoomBox -93.66800 -73.23100 2285.01100 2056.19400
+setMultiCpuUsage -localCpu 8 -cpuPerRemoteHost 1 -remoteHost 0 -keepLicense true
+setDistributeHost -local
 setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
 setEndCapMode -reset
 setEndCapMode -boundary_tap false
@@ -488,3 +454,250 @@ setPlaceMode -reset
 setPlaceMode -congEffort auto -timingDriven 1 -clkGateAware 1 -powerDriven 0 -ignoreScan 1 -reorderScan 1 -ignoreSpare 0 -placeIOPins 0 -moduleAwareSpare 0 -maxRouteLayer 7 -preserveRouting 1 -rmAffectedRouting 0 -checkRoute 0 -swapEEQ 0
 setPlaceMode -fp false
 place_design
+deselectAll
+selectObject Module grid_clb_2__2_
+zoomBox 221.43000 160.74400 1940.02500 1699.25300
+zoomBox 344.48800 252.12000 1805.29400 1559.85300
+zoomBox 449.08800 329.79000 1690.77300 1441.36300
+zoomBox 613.57100 451.92600 1510.68900 1255.03800
+zoomBox 736.91800 536.62600 1385.08700 1116.87600
+zoomBox 785.08900 569.70500 1336.03400 1062.91800
+zoomBox 826.99800 597.18100 1295.30100 1016.41200
+zoomBox 940.51300 671.60300 1184.97100 890.44500
+deselectAll
+selectObject Module grid_clb_2__2_
+deselectAll
+selectObject Module grid_clb_2__2_
+zoomBox 866.99000 594.30400 1265.05100 950.65400
+zoomBox 747.27100 468.43800 1395.44700 1048.69400
+zoomBox 552.33000 263.48600 1607.77600 1208.33500
+deselectAll
+selectWire 925.4800 405.4200 930.4800 1530.2800 7 vss
+deselectAll
+selectObject Module cbx_2__1_
+zoomBox 649.32700 380.94300 1411.88700 1063.59700
+zoomBox 770.03900 527.11900 1168.10200 883.47000
+zoomBox 833.05200 603.42400 1040.84400 789.44200
+zoomBox 843.37400 615.92300 1019.99800 774.03900
+zoomBox 852.14800 626.54700 1002.27900 760.94600
+zoomBox 859.60600 635.57800 987.21700 749.81700
+zoomBox 865.94500 643.25400 974.41500 740.35800
+zoomBox 833.05000 603.42100 1040.84600 789.44300
+zoomBox 770.03500 527.11300 1168.10800 883.47300
+zoomBox 604.74700 326.95900 1501.90700 1130.10900
+zoomBox 332.67600 -2.50100 2051.35700 1536.08500
+deselectAll
+selectObject Module sb_1__2_
+zoomBox 565.18000 361.27000 1620.66600 1306.15500
+zoomBox 671.27500 521.92700 1433.86400 1204.60700
+zoomBox 720.99600 586.00200 1369.19700 1166.28000
+zoomBox 763.25900 640.46500 1314.23000 1133.70200
+zoomBox 799.18200 686.75900 1267.50800 1106.01100
+zoomBox 829.71700 726.10900 1227.79400 1082.47300
+zoomBox 671.27300 521.92400 1433.86400 1204.60600
+zoomBox 462.99500 253.51900 1704.74800 1365.15300
+zoomBox -31.25100 -383.41100 2347.56000 1746.13300
+zoomBox -428.39300 -895.20300 2864.08000 2052.26300
+deselectAll
+timeDesign -preCTS
+optDesign -preCTS
+set_ccopt_property buffer_cells {sg13g2_buf_1 sg13g2_buf_16 sg13g2_buf_2 sg13g2_buf_4 sg13g2_buf_8}
+set_ccopt_property inverter_cells {sg13g2_inv_1 sg13g2_inv_16 sg13g2_inv_2 sg13g2_inv_4 sg13g2_inv_8}
+set_ccopt_property delay_cells {sg13g2_dlygate4sd2_1 sg13g2_dlygate4sd1_1}
+create_ccopt_clock_tree_spec
+clock_opt_design
+selectWire 925.4800 405.4200 930.4800 1530.2800 7 vss
+zoomBox -109.26200 -343.22500 2269.55100 1786.32000
+zoomBox 15.37100 -127.65500 2037.36300 1682.45900
+zoomBox 121.31000 55.58000 1840.00300 1594.17700
+zoomBox 287.89900 343.71700 1529.65400 1455.35300
+zoomBox 529.18000 761.04500 1080.15500 1254.28500
+zoomBox 603.44100 889.48900 941.80900 1192.40100
+zoomBox 631.60800 918.18200 919.22200 1175.65800
+zoomBox 726.08000 965.70400 902.71200 1123.82700
+zoomBox 767.42200 986.50100 895.04000 1100.74600
+zoomBox 783.51900 994.59900 891.99400 1091.70700
+zoomBox 809.22000 1005.81400 887.59300 1075.97500
+deselectAll
+selectMarker 867.0800 1034.0000 879.5600 1037.7800 -1 12 94
+deselectAll
+selectMarker 867.0800 1034.0000 879.5600 1037.7800 -1 12 94
+deselectAll
+selectMarker 854.6000 1034.0000 867.0800 1037.7800 -1 12 94
+setLayerPreference node_overlay -isVisible 1
+setLayerPreference congestH -color {#000066 #0000c9 #0053ff #00fcfa #00a953 #53a900 #f9fc00 #ff5300 #ff5858 #ffffff}
+setLayerPreference congestV -color {#000066 #0000c9 #0053ff #00fcfa #00a953 #53a900 #f9fc00 #ff5300 #ff5858 #ffffff}
+setLayerPreference node_overlay -isVisible 0
+fit
+setLayerPreference node_floorplan -isVisible 1
+setLayerPreference node_floorplan -isVisible 0
+setLayerPreference ioSlot -isVisible 1
+setLayerPreference ioSlot -isVisible 0
+setLayerPreference node_floorplan -isVisible 1
+setLayerPreference node_floorplan -isVisible 0
+zoomBox 149.22200 164.46300 1867.76400 1702.92500
+zoomBox 660.37000 489.64300 1557.46000 1292.73000
+zoomBox 927.19200 659.38800 1395.48000 1078.60600
+zoomBox 1039.63300 730.92000 1327.22100 988.37300
+zoomBox 1066.47600 747.99700 1310.92600 966.83200
+zoomBox 1089.29200 762.51200 1297.07500 948.52200
+zoomBox 1108.68600 774.84900 1285.30200 932.95800
+zoomBox 1089.29200 762.51100 1297.07600 948.52200
+zoomBox 1039.63200 730.91800 1327.22300 988.37300
+zoomBox 1008.05200 710.82800 1346.39400 1013.71600
+zoomBox 970.89900 687.19200 1368.94800 1043.53100
+zoomBox 927.18900 659.38500 1395.48300 1078.60800
+setLayerPreference node_module -isVisible 0
+zoomBox 997.96400 691.66200 1336.30700 994.55100
+zoomBox 1025.60500 704.26800 1313.19600 961.72300
+zoomBox 882.18000 638.85800 1433.11500 1132.06200
+zoomBox 693.64400 552.87400 1590.75000 1355.97500
+zoomBox 246.24600 348.83400 1964.82200 1887.32600
+zoomBox -113.25200 184.88200 2265.40000 2314.28300
+zoomBox 166.83100 253.19500 1885.40800 1791.68800
+zoomBox 514.33500 337.14800 1411.44300 1140.25100
+zoomBox 695.73300 380.97100 1164.03000 800.19700
+zoomBox 726.53800 388.51300 1124.59200 744.85600
+zoomBox 795.12900 407.37600 1082.72300 664.83400
+zoomBox 822.02700 413.90500 1066.48300 632.74500
+setLayerPreference stdCell -isVisible 0
+setLayerPreference stdCell -isVisible 1
+setLayerPreference hinst -isVisible 1
+zoomBox 713.73200 366.21600 1111.78700 722.56000
+zoomBox 605.94000 318.74800 1156.88100 811.95800
+zoomBox 361.87100 211.26800 1258.98700 1014.37800
+zoomBox -35.55500 36.25400 1425.25000 1343.98600
+zoomBox -217.30800 -43.78400 1501.28600 1494.72400
+zoomBox -431.13500 -137.94700 1590.74000 1672.06300
+zoomBox -682.69600 -248.72600 1695.98000 1880.69700
+zoomBox -978.65000 -379.05400 1819.79200 2126.14900
+zoomBox -1326.83200 -532.38200 1965.45300 2414.91600
+zoomBox -846.40500 -327.30600 1952.03700 2177.89700
+zoomBox -103.99400 -5.82900 1917.88000 1804.18000
+timeDesign -postCTS
+optDesign -postCTS
+selectWire 425.4800 757.8400 1431.0800 758.2800 1 vdd
+zoomBox 172.54800 193.77500 1633.35300 1501.50700
+zoomBox 280.54900 271.72800 1522.23400 1383.30100
+zoomBox 372.35000 337.98900 1427.78200 1282.82600
+zoomBox 516.70700 442.18400 1279.25700 1124.82900
+zoomBox 573.08400 482.87600 1221.25200 1063.12500
+zoomBox 661.73700 546.86500 1130.03900 966.09500
+zoomBox 450.37700 394.30900 1347.49900 1197.42500
+zoomBox 45.48000 102.06100 1764.08600 1640.58000
+zoomBox -730.17400 -457.79600 2562.13600 2489.52400
+zoomBox -1016.53800 -664.49000 2856.76800 2802.94600
+zoomBox -1353.43800 -907.65900 3203.39400 3171.67800
+zoomBox -730.17600 -457.79800 2562.13600 2489.52400
+zoomBox -486.76700 -282.10900 2311.69900 2223.11500
+zoomBox -279.86900 -132.77400 2098.82700 1996.66700
+setLayerPreference hinst -isVisible 0
+setLayerPreference hinst -isVisible 1
+setLayerPreference node_module -isVisible 1
+zoomBox 191.53700 257.88700 1652.35500 1565.63100
+zoomBox 481.04000 497.80300 1378.16500 1300.92100
+zoomBox 608.89700 603.76000 1257.07100 1184.01400
+zoomBox 658.83100 645.14100 1209.77900 1138.35700
+zoomBox 610.78400 611.43300 1258.95800 1191.68700
+zoomBox 409.52000 470.23200 1464.96400 1415.08000
+zoomBox 209.19000 329.68700 1670.01300 1637.43500
+zoomBox 81.79500 240.31000 1800.41000 1778.83700
+zoomBox -268.31800 -40.63500 2110.38800 2088.81500
+zoomBox -490.96600 -219.29600 2307.51200 2285.93900
+zoomBox -47.92500 45.92500 1973.97600 1855.95800
+zoomBox 248.21900 254.96800 1709.04300 1562.71700
+zoomBox 363.87500 336.60700 1605.57600 1448.19400
+setNanoRouteMode -quiet -drouteFixAntenna 1
+setNanoRouteMode -quiet -routeInsertAntennaDiode 0
+setNanoRouteMode -quiet -routeWithTimingDriven 0
+setNanoRouteMode -quiet -routeWithEco 0
+setNanoRouteMode -quiet -routeWithLithoDriven 0
+setNanoRouteMode -quiet -droutePostRouteLithoRepair 0
+setNanoRouteMode -quiet -routeWithSiDriven 0
+setNanoRouteMode -quiet -drouteAutoStop 1
+setNanoRouteMode -quiet -routeSelectedNetOnly 0
+setNanoRouteMode -quiet -routeTopRoutingLayer 5
+setNanoRouteMode -quiet -routeBottomRoutingLayer 1
+setNanoRouteMode -quiet -drouteEndIteration 1
+setNanoRouteMode -quiet -routeWithTimingDriven false
+setNanoRouteMode -quiet -routeWithSiDriven false
+routeDesign -globalDetail
+zoomBox 157.19100 136.09200 1875.80800 1674.62100
+zoomBox 268.91200 244.47800 1729.73700 1552.22800
+zoomBox 363.87400 336.60600 1605.57600 1448.19400
+zoomBox 513.20300 481.47700 1410.33300 1284.60000
+zoomBox 699.04400 661.76900 1167.35200 1081.00500
+zoomBox 796.05300 755.88300 1040.51400 974.72800
+zoomBox 825.45200 784.40500 1002.07500 942.52000
+zoomBox 836.93300 795.54400 987.06300 929.94200
+zoomBox 854.98800 813.05900 963.45700 910.16200
+zoomBox 862.03900 819.89900 954.23800 902.43700
+zoomBox 825.44900 784.40300 1002.07500 942.52100
+zoomBox 777.35300 737.74200 1064.95900 995.21100
+zoomBox 729.47800 691.29800 1127.55000 1047.65700
+zoomBox 621.08000 586.13700 1269.27400 1166.40900
+selectObject Module sb_1__2_
+zoomBox 541.46800 528.12900 1304.04900 1210.80200
+zoomBox 337.61600 379.59800 1393.09200 1324.47400
+zoomBox 207.98100 285.14200 1449.71700 1396.76100
+zoomBox 55.46900 174.01800 1516.33500 1481.80500
+zoomBox -123.95700 43.28400 1594.70900 1581.85700
+deselectAll
+selectWire 425.4800 977.0800 1431.0800 977.5200 1 vdd
+deselectAll
+selectObject Module cby_1__1_
+deselectAll
+selectObject Module cbx_2__0_
+deselectAll
+selectObject Module cbx_1__0_
+setLayerPreference datapath -isVisible 1
+setLayerPreference datapath -isVisible 0
+setLayerPreference node_floorplan -isVisible 1
+setLayerPreference node_floorplan -isVisible 0
+setLayerPreference node_floorplan -isVisible 1
+setLayerPreference pinObj -isVisible 1
+setLayerPreference layoutObj -isVisible 1
+zoomBox -319.74400 -87.76400 1702.21600 1722.32200
+zoomBox -123.95700 43.28300 1594.71000 1581.85700
+setLayerPreference node_floorplan -isVisible 0
+setLayerPreference hinst -isVisible 0
+setLayerPreference hinst -isVisible 1
+setLayerPreference hinst -isVisible 0
+deselectAll
+selectObject Module sb_1__2_
+zoomBox 209.21500 275.88700 1450.95200 1387.50700
+zoomBox 339.33200 366.72800 1394.80900 1311.60500
+zoomBox 691.77100 612.78400 1242.73700 1106.01600
+deselectAll
+selectObject Module grid_clb_2__2_
+deselectAll
+selectObject Module grid_clb_2__2_
+deselectAll
+selectObject Module sb_1__2_
+zoomBox 624.22600 556.93700 1272.42100 1137.21000
+zoomBox 544.76100 491.23400 1307.34400 1173.90900
+zoomBox 403.42800 396.50700 1458.90700 1341.38600
+zoomBox 207.81000 265.39700 1668.68200 1573.18900
+zoomBox -62.93900 83.93000 1959.02900 1894.02300
+is_innovus_plus
+zoomBox 65.99000 285.36600 1864.50600 1593.05900 designview.win
+zoomBox 209.02900 380.28800 1737.76800 1491.82700 designview.win
+zoomBox 330.61200 460.97100 1630.04100 1405.78000 designview.win
+zoomBox 433.95800 529.55200 1538.47300 1332.64000 designview.win
+zoomBox 521.80200 587.84600 1460.64000 1270.47100 designview.win
+zoomBox 596.47000 637.39600 1394.48200 1217.62700 designview.win
+zoomBox 798.71800 771.60800 1215.28500 1074.49200 designview.win
+zoomBox 883.94500 828.16500 1139.77000 1014.17400 designview.win
+zoomBox 904.29100 841.66600 1121.74300 999.77400 designview.win
+zoomBox 921.58500 853.14200 1106.42000 987.53500 designview.win
+deselectAll
+zoomBox 860.00500 812.27800 1160.98100 1031.11600 designview.win
+zoomBox 713.87600 715.30700 1290.45400 1134.53400 designview.win
+zoomBox 433.94100 529.54000 1538.48500 1332.64900 designview.win
+zoomBox 65.96000 285.34700 1864.52600 1593.07600 designview.win
+zoomBox -102.32700 173.67100 2013.63300 1712.17600 designview.win
+zoomBox -533.23500 -112.28100 2395.43000 2017.13800 designview.win
+zoomBox -807.26200 -294.12600 2638.22600 2211.07300 designview.win
+zoomBox -1129.64700 -508.06200 2923.86800 2439.23100 designview.win
+zoomBox -807.26300 -294.12600 2638.22500 2211.07300 designview.win
+deselectAll
