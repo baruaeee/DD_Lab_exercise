@@ -1,0 +1,9 @@
+**INFO: Starting Blocking QThread with 4 CPU
+   ____________________________________________________________________
+__/ message from Blocking QThread
+Multi-CPU acceleration using 4 CPU(s).
+**ERROR: (PRL-250):	Not enough swap to start any threads. 
+	Add swap space.  It is recommended to have swap space of number of threads X the RAM. (Note: Does not increase required system RAM.) 
+	Current free swap is 0.00G.
+_______________________________________________________________________
+**ERROR: failed to process QThread Job
