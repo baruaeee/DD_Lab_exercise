@@ -86,37 +86,37 @@ floorPlan -site CoreSite -b 0.0 0.0 1855.2 1935.78 400.32 400.26 1455.36 1535.1 
 # to specify as Partition all of them need to be in Core area
 
 # CLB block (grid_clb_1__1_) master, rest of them will be cloned partition
-definePartition -hinst grid_clb_1__1_ -coreSpacing 1 1 1 1 -railWidth 0.0 -minPitchLeft 2 -minPitchRight 2 -minPitchTop 2 -minPitchBottom 2 -reservedLayer { 1 2 3 4 5 6 7} -pinLayerTop { 3 5 7} -pinLayerLeft { 2 4 6} -pinLayerBottom { 3 5 7} -pinLayerRight { 2 4 6} -placementHalo 1 1 1 1 -routingHalo 0.0 -routingHaloTopLayer 7 -routingHaloBottomLayer 1
+#definePartition -hinst grid_clb_1__1_ -coreSpacing 1 1 1 1 -railWidth 0.0 -minPitchLeft 2 -minPitchRight 2 -minPitchTop 2 -minPitchBottom 2 -reservedLayer { 1 2 3 4 5 6 7} -pinLayerTop { 3 5 7} -pinLayerLeft { 2 4 6} -pinLayerBottom { 3 5 7} -pinLayerRight { 2 4 6} -placementHalo 1 1 1 1 -routingHalo 0.0 -routingHaloTopLayer 7 -routingHaloBottomLayer 1
 
-definePartition -hinst sb_0__0_ -coreSpacing 1 1 1 1 -railWidth 0.0 -minPitchLeft 2 -minPitchRight 2 -minPitchTop 2 -minPitchBottom 2 -reservedLayer { 1 2 3 4 5 6 7} -pinLayerTop { 3 5 7} -pinLayerLeft { 2 4 6} -pinLayerBottom { 3 5 7} -pinLayerRight { 2 4 6} -placementHalo 1 1 1 1 -routingHalo 0.0 -routingHaloTopLayer 7 -routingHaloBottomLayer 1
+#definePartition -hinst sb_0__0_ -coreSpacing 1 1 1 1 -railWidth 0.0 -minPitchLeft 2 -minPitchRight 2 -minPitchTop 2 -minPitchBottom 2 -reservedLayer { 1 2 3 4 5 6 7} -pinLayerTop { 3 5 7} -pinLayerLeft { 2 4 6} -pinLayerBottom { 3 5 7} -pinLayerRight { 2 4 6} -placementHalo 1 1 1 1 -routingHalo 0.0 -routingHaloTopLayer 7 -routingHaloBottomLayer 1
 
-definePartition -hinst sb_0__1_ -coreSpacing 1 1 1 1 -railWidth 0.0 -minPitchLeft 2 -minPitchRight 2 -minPitchTop 2 -minPitchBottom 2 -reservedLayer { 1 2 3 4 5 6 7} -pinLayerTop { 3 5 7} -pinLayerLeft { 2 4 6} -pinLayerBottom { 3 5 7} -pinLayerRight { 2 4 6} -placementHalo 1 1 1 1 -routingHalo 0.0 -routingHaloTopLayer 7 -routingHaloBottomLayer 1
+#definePartition -hinst sb_0__1_ -coreSpacing 1 1 1 1 -railWidth 0.0 -minPitchLeft 2 -minPitchRight 2 -minPitchTop 2 -minPitchBottom 2 -reservedLayer { 1 2 3 4 5 6 7} -pinLayerTop { 3 5 7} -pinLayerLeft { 2 4 6} -pinLayerBottom { 3 5 7} -pinLayerRight { 2 4 6} -placementHalo 1 1 1 1 -routingHalo 0.0 -routingHaloTopLayer 7 -routingHaloBottomLayer 1
 
-definePartition -hinst sb_0__2_ -coreSpacing 1 1 1 1 -railWidth 0.0 -minPitchLeft 2 -minPitchRight 2 -minPitchTop 2 -minPitchBottom 2 -reservedLayer { 1 2 3 4 5 6 7} -pinLayerTop { 3 5 7} -pinLayerLeft { 2 4 6} -pinLayerBottom { 3 5 7} -pinLayerRight { 2 4 6} -placementHalo 1 1 1 1 -routingHalo 0.0 -routingHaloTopLayer 7 -routingHaloBottomLayer 1
+#definePartition -hinst sb_0__2_ -coreSpacing 1 1 1 1 -railWidth 0.0 -minPitchLeft 2 -minPitchRight 2 -minPitchTop 2 -minPitchBottom 2 -reservedLayer { 1 2 3 4 5 6 7} -pinLayerTop { 3 5 7} -pinLayerLeft { 2 4 6} -pinLayerBottom { 3 5 7} -pinLayerRight { 2 4 6} -placementHalo 1 1 1 1 -routingHalo 0.0 -routingHaloTopLayer 7 -routingHaloBottomLayer 1
 
-definePartition -hinst sb_1__0_ -coreSpacing 1 1 1 1 -railWidth 0.0 -minPitchLeft 2 -minPitchRight 2 -minPitchTop 2 -minPitchBottom 2 -reservedLayer { 1 2 3 4 5 6 7} -pinLayerTop { 3 5 7} -pinLayerLeft { 2 4 6} -pinLayerBottom { 3 5 7} -pinLayerRight { 2 4 6} -placementHalo 1 1 1 1 -routingHalo 0.0 -routingHaloTopLayer 7 -routingHaloBottomLayer 1
+#definePartition -hinst sb_1__0_ -coreSpacing 1 1 1 1 -railWidth 0.0 -minPitchLeft 2 -minPitchRight 2 -minPitchTop 2 -minPitchBottom 2 -reservedLayer { 1 2 3 4 5 6 7} -pinLayerTop { 3 5 7} -pinLayerLeft { 2 4 6} -pinLayerBottom { 3 5 7} -pinLayerRight { 2 4 6} -placementHalo 1 1 1 1 -routingHalo 0.0 -routingHaloTopLayer 7 -routingHaloBottomLayer 1
 
-definePartition -hinst sb_1__1_ -coreSpacing 1 1 1 1 -railWidth 0.0 -minPitchLeft 2 -minPitchRight 2 -minPitchTop 2 -minPitchBottom 2 -reservedLayer { 1 2 3 4 5 6 7} -pinLayerTop { 3 5 7} -pinLayerLeft { 2 4 6} -pinLayerBottom { 3 5 7} -pinLayerRight { 2 4 6} -placementHalo 1 1 1 1 -routingHalo 0.0 -routingHaloTopLayer 7 -routingHaloBottomLayer 1
+#definePartition -hinst sb_1__1_ -coreSpacing 1 1 1 1 -railWidth 0.0 -minPitchLeft 2 -minPitchRight 2 -minPitchTop 2 -minPitchBottom 2 -reservedLayer { 1 2 3 4 5 6 7} -pinLayerTop { 3 5 7} -pinLayerLeft { 2 4 6} -pinLayerBottom { 3 5 7} -pinLayerRight { 2 4 6} -placementHalo 1 1 1 1 -routingHalo 0.0 -routingHaloTopLayer 7 -routingHaloBottomLayer 1
 
-definePartition -hinst sb_1__2_ -coreSpacing 1 1 1 1 -railWidth 0.0 -minPitchLeft 2 -minPitchRight 2 -minPitchTop 2 -minPitchBottom 2 -reservedLayer { 1 2 3 4 5 6 7} -pinLayerTop { 3 5 7} -pinLayerLeft { 2 4 6} -pinLayerBottom { 3 5 7} -pinLayerRight { 2 4 6} -placementHalo 1 1 1 1 -routingHalo 0.0 -routingHaloTopLayer 7 -routingHaloBottomLayer 1
+#definePartition -hinst sb_1__2_ -coreSpacing 1 1 1 1 -railWidth 0.0 -minPitchLeft 2 -minPitchRight 2 -minPitchTop 2 -minPitchBottom 2 -reservedLayer { 1 2 3 4 5 6 7} -pinLayerTop { 3 5 7} -pinLayerLeft { 2 4 6} -pinLayerBottom { 3 5 7} -pinLayerRight { 2 4 6} -placementHalo 1 1 1 1 -routingHalo 0.0 -routingHaloTopLayer 7 -routingHaloBottomLayer 1
 
-definePartition -hinst sb_2__0_ -coreSpacing 1 1 1 1 -railWidth 0.0 -minPitchLeft 2 -minPitchRight 2 -minPitchTop 2 -minPitchBottom 2 -reservedLayer { 1 2 3 4 5 6 7} -pinLayerTop { 3 5 7} -pinLayerLeft { 2 4 6} -pinLayerBottom { 3 5 7} -pinLayerRight { 2 4 6} -placementHalo 1 1 1 1 -routingHalo 0.0 -routingHaloTopLayer 7 -routingHaloBottomLayer 1
+#definePartition -hinst sb_2__0_ -coreSpacing 1 1 1 1 -railWidth 0.0 -minPitchLeft 2 -minPitchRight 2 -minPitchTop 2 -minPitchBottom 2 -reservedLayer { 1 2 3 4 5 6 7} -pinLayerTop { 3 5 7} -pinLayerLeft { 2 4 6} -pinLayerBottom { 3 5 7} -pinLayerRight { 2 4 6} -placementHalo 1 1 1 1 -routingHalo 0.0 -routingHaloTopLayer 7 -routingHaloBottomLayer 1
 
-definePartition -hinst sb_2__1_ -coreSpacing 1 1 1 1 -railWidth 0.0 -minPitchLeft 2 -minPitchRight 2 -minPitchTop 2 -minPitchBottom 2 -reservedLayer { 1 2 3 4 5 6 7} -pinLayerTop { 3 5 7} -pinLayerLeft { 2 4 6} -pinLayerBottom { 3 5 7} -pinLayerRight { 2 4 6} -placementHalo 1 1 1 1 -routingHalo 0.0 -routingHaloTopLayer 7 -routingHaloBottomLayer 1
+#definePartition -hinst sb_2__1_ -coreSpacing 1 1 1 1 -railWidth 0.0 -minPitchLeft 2 -minPitchRight 2 -minPitchTop 2 -minPitchBottom 2 -reservedLayer { 1 2 3 4 5 6 7} -pinLayerTop { 3 5 7} -pinLayerLeft { 2 4 6} -pinLayerBottom { 3 5 7} -pinLayerRight { 2 4 6} -placementHalo 1 1 1 1 -routingHalo 0.0 -routingHaloTopLayer 7 -routingHaloBottomLayer 1
 
-definePartition -hinst sb_2__2_ -coreSpacing 1 1 1 1 -railWidth 0.0 -minPitchLeft 2 -minPitchRight 2 -minPitchTop 2 -minPitchBottom 2 -reservedLayer { 1 2 3 4 5 6 7} -pinLayerTop { 3 5 7} -pinLayerLeft { 2 4 6} -pinLayerBottom { 3 5 7} -pinLayerRight { 2 4 6} -placementHalo 1 1 1 1 -routingHalo 0.0 -routingHaloTopLayer 7 -routingHaloBottomLayer 1
+#definePartition -hinst sb_2__2_ -coreSpacing 1 1 1 1 -railWidth 0.0 -minPitchLeft 2 -minPitchRight 2 -minPitchTop 2 -minPitchBottom 2 -reservedLayer { 1 2 3 4 5 6 7} -pinLayerTop { 3 5 7} -pinLayerLeft { 2 4 6} -pinLayerBottom { 3 5 7} -pinLayerRight { 2 4 6} -placementHalo 1 1 1 1 -routingHalo 0.0 -routingHaloTopLayer 7 -routingHaloBottomLayer 1
 
-definePartition -hinst cbx_1__0_ -coreSpacing 1 1 1 1 -railWidth 0.0 -minPitchLeft 2 -minPitchRight 2 -minPitchTop 2 -minPitchBottom 2 -reservedLayer { 1 2 3 4 5 6 7} -pinLayerTop { 3 5 7} -pinLayerLeft { 2 4 6} -pinLayerBottom { 3 5 7} -pinLayerRight { 2 4 6} -placementHalo 1 1 1 1 -routingHalo 0.0 -routingHaloTopLayer 7 -routingHaloBottomLayer 1
+#definePartition -hinst cbx_1__0_ -coreSpacing 1 1 1 1 -railWidth 0.0 -minPitchLeft 2 -minPitchRight 2 -minPitchTop 2 -minPitchBottom 2 -reservedLayer { 1 2 3 4 5 6 7} -pinLayerTop { 3 5 7} -pinLayerLeft { 2 4 6} -pinLayerBottom { 3 5 7} -pinLayerRight { 2 4 6} -placementHalo 1 1 1 1 -routingHalo 0.0 -routingHaloTopLayer 7 -routingHaloBottomLayer 1
 
-definePartition -hinst cbx_1__1_ -coreSpacing 1 1 1 1 -railWidth 0.0 -minPitchLeft 2 -minPitchRight 2 -minPitchTop 2 -minPitchBottom 2 -reservedLayer { 1 2 3 4 5 6 7} -pinLayerTop { 3 5 7} -pinLayerLeft { 2 4 6} -pinLayerBottom { 3 5 7} -pinLayerRight { 2 4 6} -placementHalo 1 1 1 1 -routingHalo 0.0 -routingHaloTopLayer 7 -routingHaloBottomLayer 1
+#definePartition -hinst cbx_1__1_ -coreSpacing 1 1 1 1 -railWidth 0.0 -minPitchLeft 2 -minPitchRight 2 -minPitchTop 2 -minPitchBottom 2 -reservedLayer { 1 2 3 4 5 6 7} -pinLayerTop { 3 5 7} -pinLayerLeft { 2 4 6} -pinLayerBottom { 3 5 7} -pinLayerRight { 2 4 6} -placementHalo 1 1 1 1 -routingHalo 0.0 -routingHaloTopLayer 7 -routingHaloBottomLayer 1
 
-definePartition -hinst cbx_1__2_ -coreSpacing 1 1 1 1 -railWidth 0.0 -minPitchLeft 2 -minPitchRight 2 -minPitchTop 2 -minPitchBottom 2 -reservedLayer { 1 2 3 4 5 6 7} -pinLayerTop { 3 5 7} -pinLayerLeft { 2 4 6} -pinLayerBottom { 3 5 7} -pinLayerRight { 2 4 6} -placementHalo 1 1 1 1 -routingHalo 0.0 -routingHaloTopLayer 7 -routingHaloBottomLayer 1
+#definePartition -hinst cbx_1__2_ -coreSpacing 1 1 1 1 -railWidth 0.0 -minPitchLeft 2 -minPitchRight 2 -minPitchTop 2 -minPitchBottom 2 -reservedLayer { 1 2 3 4 5 6 7} -pinLayerTop { 3 5 7} -pinLayerLeft { 2 4 6} -pinLayerBottom { 3 5 7} -pinLayerRight { 2 4 6} -placementHalo 1 1 1 1 -routingHalo 0.0 -routingHaloTopLayer 7 -routingHaloBottomLayer 1
 
-definePartition -hinst cby_0__1_ -coreSpacing 1 1 1 1 -railWidth 0.0 -minPitchLeft 2 -minPitchRight 2 -minPitchTop 2 -minPitchBottom 2 -reservedLayer { 1 2 3 4 5 6 7} -pinLayerTop { 3 5 7} -pinLayerLeft { 2 4 6} -pinLayerBottom { 3 5 7} -pinLayerRight { 2 4 6} -placementHalo 1 1 1 1 -routingHalo 0.0 -routingHaloTopLayer 7 -routingHaloBottomLayer 1
+#definePartition -hinst cby_0__1_ -coreSpacing 1 1 1 1 -railWidth 0.0 -minPitchLeft 2 -minPitchRight 2 -minPitchTop 2 -minPitchBottom 2 -reservedLayer { 1 2 3 4 5 6 7} -pinLayerTop { 3 5 7} -pinLayerLeft { 2 4 6} -pinLayerBottom { 3 5 7} -pinLayerRight { 2 4 6} -placementHalo 1 1 1 1 -routingHalo 0.0 -routingHaloTopLayer 7 -routingHaloBottomLayer 1
 
-definePartition -hinst cby_1__1_ -coreSpacing 1 1 1 1 -railWidth 0.0 -minPitchLeft 2 -minPitchRight 2 -minPitchTop 2 -minPitchBottom 2 -reservedLayer { 1 2 3 4 5 6 7} -pinLayerTop { 3 5 7} -pinLayerLeft { 2 4 6} -pinLayerBottom { 3 5 7} -pinLayerRight { 2 4 6} -placementHalo 1 1 1 1 -routingHalo 0.0 -routingHaloTopLayer 7 -routingHaloBottomLayer 1
+#definePartition -hinst cby_1__1_ -coreSpacing 1 1 1 1 -railWidth 0.0 -minPitchLeft 2 -minPitchRight 2 -minPitchTop 2 -minPitchBottom 2 -reservedLayer { 1 2 3 4 5 6 7} -pinLayerTop { 3 5 7} -pinLayerLeft { 2 4 6} -pinLayerBottom { 3 5 7} -pinLayerRight { 2 4 6} -placementHalo 1 1 1 1 -routingHalo 0.0 -routingHaloTopLayer 7 -routingHaloBottomLayer 1
 
-definePartition -hinst cby_2__1_ -coreSpacing 1 1 1 1 -railWidth 0.0 -minPitchLeft 2 -minPitchRight 2 -minPitchTop 2 -minPitchBottom 2 -reservedLayer { 1 2 3 4 5 6 7} -pinLayerTop { 3 5 7} -pinLayerLeft { 2 4 6} -pinLayerBottom { 3 5 7} -pinLayerRight { 2 4 6} -placementHalo 1 1 1 1 -routingHalo 0.0 -routingHaloTopLayer 7 -routingHaloBottomLayer 1
+#definePartition -hinst cby_2__1_ -coreSpacing 1 1 1 1 -railWidth 0.0 -minPitchLeft 2 -minPitchRight 2 -minPitchTop 2 -minPitchBottom 2 -reservedLayer { 1 2 3 4 5 6 7} -pinLayerTop { 3 5 7} -pinLayerLeft { 2 4 6} -pinLayerBottom { 3 5 7} -pinLayerRight { 2 4 6} -placementHalo 1 1 1 1 -routingHalo 0.0 -routingHaloTopLayer 7 -routingHaloBottomLayer 1
 
 # run partition
 partition
@@ -160,8 +160,8 @@ sroute -connect { padPin } -layerChangeRange { Metal1(1) TopMetal2(7) } -blockPi
 
 
 
-defIn innovus_src/SIPO.scan.def
-setScanReorderMode -compLogic true
+#defIn innovus_src/SIPO.scan.def
+#setScanReorderMode -compLogic true
 
 
 setMultiCpuUsage -localCpu 8 -cpuPerRemoteHost 1 -remoteHost 0 -keepLicense true
