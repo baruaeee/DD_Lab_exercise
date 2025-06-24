@@ -1,59 +1,23 @@
 #######################################################
 #                                                     
 #  Innovus Command Logging File                     
-#  Created on Tue Jun 24 03:06:57 2025                
+#  Created on Mon Jun 23 21:40:02 2025                
 #                                                     
 #######################################################
 
-#@(#)CDS: Innovus v23.31-s109_1 (64bit) 04/22/2024 16:02 (Linux 3.10.0-693.el7.x86_64)
-#@(#)CDS: NanoRoute 23.31-s109_1 NR240401-0735/23_11-UB (database version 18.20.622_1) {superthreading v2.20}
-#@(#)CDS: AAE 23.11-s030 (64bit) 04/22/2024 (Linux 3.10.0-693.el7.x86_64)
-#@(#)CDS: CTE 23.11-s024_1 () Apr 22 2024 08:03:17 ( )
-#@(#)CDS: SYNTECH 23.11-s010_1 () Apr  5 2024 04:21:08 ( )
-#@(#)CDS: CPE v23.11-s057
-#@(#)CDS: IQuantus/TQuantus 22.1.1-s233 (64bit) Mon Dec 11 23:11:23 PST 2023 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: Innovus v23.14-s088_1 (64bit) 02/28/2025 12:25 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 23.14-s088_1 NR250219-0822/23_14-UB (database version 18.20.661) {superthreading v2.20}
+#@(#)CDS: AAE 23.14-s018 (64bit) 02/28/2025 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 23.14-s036_1 () Feb 22 2025 01:17:26 ( )
+#@(#)CDS: SYNTECH 23.14-s010_1 () Feb 19 2025 23:56:49 ( )
+#@(#)CDS: CPE v23.14-s082
+#@(#)CDS: IQuantus/TQuantus 23.1.1-s336 (64bit) Mon Jan 20 22:11:00 PST 2025 (Linux 3.10.0-693.el7.x86_64)
 
 set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
 suppressMessage ENCEXT-2799
 getVersion
 getVersion
 getVersion
-define_proc_arguments ViaFillQor -info {This procedure extracts Viafill details from innovus db} -define_args {
-        {-window "window coordinates" "" list optional}
-        {-window_size "window size in microns" "" string optional}
-    
-    }
-define_proc_arguments ProcessFills -info {This procedure processes Fill types} -define_args {
-    {-fillInfo "Design Fill data" "" list required}
-				{-csvName "File path for Fill Data csv file" "Path of CSV file" string required}
-				{-selectFill "type of fill to be selected in session" "list of BRIDGE/EXTENSION/STAMP/FLOATING" list required}
-    {-output_data "Boolean Flag to output Fill Data for further processing" "" string required}
-}
-define_proc_arguments FillQor -info {This procedure extracts fill details from innovus db} -define_args {
-    {-layers "Fills Cleanup on which all layers" "list of Metal/Routing layers" list optional}
-				{-selectFill "type of fill to be selected in session" "list of BRIDGE/EXTENSION/STAMP/FLOATING" list optional}
-				{-outData "Boolean Flag to output Fill Data for further processing" "" boolean optional}
-    {-outDataFile "File path for Fill Data csv file" "Path of CSV file" string optional}
-}
-define_proc_arguments ProcessFills_fast -info {This procedure processes Fill types} -define_args {
-    {-fillInfo "Design Fill data" "" list required}
-				{-csvName "File path for Fill Data csv file" "Path of CSV file" string required}
-				{-selectFill "type of fill to be selected in session" "list of BRIDGE/EXTENSION/STAMP/FLOATING" list required}
-    {-output_data "Boolean Flag to output Fill Data for further processing" "" string required}
-}
-define_proc_arguments FillQor_fast -info {This procedure extracts fill details from innovus db} -define_args {
-    {-layers "Fills Cleanup on which all layers" "list of Metal/Routing layers" list optional}
-				{-selectFill "type of fill to be selected in session" "list of BRIDGE/EXTENSION/STAMP/FLOATING" list optional}
-				{-outData "Boolean Flag to output Fill Data for further processing" "" boolean optional}
-    {-outDataFile "File path for Fill Data csv file" "Path of CSV file" string optional}
-}
-define_proc_arguments ProcessFills_fast_stampOnly -info {This procedure processes Fill types} -define_args {
-    {-fillInfo "Design Fill data" "" list required}
-	
-}
-define_proc_arguments FillQor_fast_stampOnly -info {This procedure extracts fill details from innovus db} -define_args {
-    {-layers "Fills Cleanup on which all layers" "list of Metal/Routing layers" list optional}
-}
 win
 set ::TimeLib::tsgMarkCellLatchConstructFlag 1
 set ::dft::debug_attribute 0
@@ -214,8 +178,10 @@ get_message -id GLOBAL-100 -suppress
 get_message -id GLOBAL-100 -suppress
 set timing_aocv_efficient_accurate_mode 1
 get_message -id GLOBAL-100 -suppress
+suppressMessage -silent GLOBAL-100
 unsuppressMessage -silent GLOBAL-100
 get_message -id GLOBAL-100 -suppress
+suppressMessage -silent GLOBAL-100
 unsuppressMessage -silent GLOBAL-100
 set timing_aocv_enable_gba_combine_launch_capture 1
 get_message -id GLOBAL-100 -suppress
@@ -261,8 +227,10 @@ get_message -id GLOBAL-100 -suppress
 get_message -id GLOBAL-100 -suppress
 set timing_disable_efficient_derate_mode 1
 get_message -id GLOBAL-100 -suppress
+suppressMessage -silent GLOBAL-100
 unsuppressMessage -silent GLOBAL-100
 get_message -id GLOBAL-100 -suppress
+suppressMessage -silent GLOBAL-100
 unsuppressMessage -silent GLOBAL-100
 set timing_enable_backward_compatible_latch_thru_mt_mode 0
 get_message -id GLOBAL-100 -suppress
@@ -378,11 +346,11 @@ set init_lef_check_antenna 1
 set init_verilog_tolerate_port_mismatch 0
 set lefdefInputCheckColoredShape 0
 set load_netlist_ignore_undefined_cell 1
+set init_design_uniquify 1
 init_design
 setDrawView fplan
-pan -1264.11000 84.48300
-pan -505.04700 1315.72000
-gui_select -rect {-1819.13700 -88.02400 -41.01500 1737.91300}
+pan -1625.71200 159.19400
+gui_select -rect {-52.96900 -55.15000 -1840.05600 1770.78600}
 selectObject Module grid_clb_1__2_
 selectObject Module grid_clb_1__1_
 selectObject Module cby_2__2_
@@ -429,7 +397,6 @@ addStripe -nets {vdd vss} -layer TopMetal2 -direction vertical -width 5 -spacing
 sroute -connect { blockPin corePin floatingStripe } -layerChangeRange { Metal1(1) TopMetal2(7) } -blockPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) TopMetal2(7) } -nets { vdd vss } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1(1) TopMetal2(7) }
 sroute -connect { padPin padRing } -layerChangeRange { Metal1(1) TopMetal2(7) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) TopMetal2(7) } -nets { iovdd iovss vdd vss } -allowLayerChange 1 -targetViaLayerRange { Metal1(1) TopMetal2(7) }
 sroute -connect { padPin } -layerChangeRange { Metal1(1) TopMetal2(7) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) TopMetal2(7) } -nets { vdd vss } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1(1) TopMetal2(7) }
-setDrawView place
 setMultiCpuUsage -localCpu 8 -cpuPerRemoteHost 1 -remoteHost 0 -keepLicense true
 setDistributeHost -local
 setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
@@ -448,3 +415,41 @@ setPlaceMode -reset
 setPlaceMode -congEffort auto -timingDriven 1 -clkGateAware 1 -powerDriven 0 -ignoreScan 1 -reorderScan 1 -ignoreSpare 0 -placeIOPins 0 -moduleAwareSpare 0 -maxRouteLayer 7 -preserveRouting 1 -rmAffectedRouting 0 -checkRoute 0 -swapEEQ 0
 setPlaceMode -fp false
 place_design
+timeDesign -preCTS
+optDesign -preCTS
+set_ccopt_property buffer_cells {sg13g2_buf_1 sg13g2_buf_16 sg13g2_buf_2 sg13g2_buf_4 sg13g2_buf_8}
+set_ccopt_property inverter_cells {sg13g2_inv_1 sg13g2_inv_16 sg13g2_inv_2 sg13g2_inv_4 sg13g2_inv_8}
+set_ccopt_property delay_cells {sg13g2_dlygate4sd2_1 sg13g2_dlygate4sd1_1}
+create_ccopt_clock_tree_spec
+clock_opt_design
+timeDesign -postCTS
+optDesign -postCTS
+setNanoRouteMode -quiet -drouteFixAntenna 1
+setNanoRouteMode -quiet -routeInsertAntennaDiode 0
+setNanoRouteMode -quiet -routeWithTimingDriven 0
+setNanoRouteMode -quiet -routeWithEco 0
+setNanoRouteMode -quiet -routeWithLithoDriven 0
+setNanoRouteMode -quiet -droutePostRouteLithoRepair 0
+setNanoRouteMode -quiet -routeWithSiDriven 0
+setNanoRouteMode -quiet -drouteAutoStop 1
+setNanoRouteMode -quiet -routeSelectedNetOnly 0
+setNanoRouteMode -quiet -routeTopRoutingLayer 5
+setNanoRouteMode -quiet -routeBottomRoutingLayer 1
+setNanoRouteMode -quiet -drouteEndIteration 1
+setNanoRouteMode -quiet -routeWithTimingDriven false
+setNanoRouteMode -quiet -routeWithSiDriven false
+routeDesign -globalDetail
+setDelayCalMode -SIAware false
+setAnalysisMode -analysisType onChipVariation
+timeDesign -postRoute
+optDesign -postRoute
+saveNetlist pnr_outputs/post_layout_fabric.v
+all_hold_analysis_views 
+all_setup_analysis_views 
+write_sdf  -ideal_clock_network pnr_outputs/post_layout_fabric.sdf
+rcOut -spef pnr_outputs/fabric_RC_BEST.spef -rc_corner RC_BEST
+rcOut -spef pnr_outputs/fabric_RC_WORST.spef -rc_corner RC_WORST
+setDrawView place
+setDrawView place
+is_innovus_plus
+dumpToGIF fabric

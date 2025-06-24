@@ -1,4 +1,5 @@
 source Fabric_design_import.globals
+set init_design_uniquify 1
 init_design
 
 
@@ -119,13 +120,13 @@ floorPlan -site CoreSite -b 0.0 0.0 1855.2 1935.78 400.32 400.26 1455.36 1535.1 
 #definePartition -hinst cby_2__1_ -coreSpacing 1 1 1 1 -railWidth 0.0 -minPitchLeft 2 -minPitchRight 2 -minPitchTop 2 -minPitchBottom 2 -reservedLayer { 1 2 3 4 5 6 7} -pinLayerTop { 3 5 7} -pinLayerLeft { 2 4 6} -pinLayerBottom { 3 5 7} -pinLayerRight { 2 4 6} -placementHalo 1 1 1 1 -routingHalo 0.0 -routingHaloTopLayer 7 -routingHaloBottomLayer 1
 
 # run partition
-partition
+#partition
 
 # save the partitions
-savePartition -dir Partitions -def
+#savePartition -dir Partitions -def
 
 # save design
-saveDesign fpga_top.enc -tcon
+#saveDesign fpga_top.enc -tcon
 
 #setLayerPreference bg -color white
 #setLayerPreference bg -color #c7bfbf
@@ -223,14 +224,14 @@ setAnalysisMode -analysisType onChipVariation
 timeDesign -postRoute
 optDesign -postRoute
 
-saveNetlist pnr_outputs/post_layout_SIPO.v
+saveNetlist pnr_outputs/post_layout_fabric.v
 all_hold_analysis_views 
 all_setup_analysis_views 
-write_sdf  -ideal_clock_network pnr_outputs/post_layout_SIPO.sdf
+write_sdf  -ideal_clock_network pnr_outputs/post_layout_fabric.sdf
 
 
-rcOut -spef pnr_outputs/serial_to_parallel_RC_BEST.spef -rc_corner RC_BEST
-rcOut -spef pnr_outputs/serial_to_parallel_RC_WORST.spef -rc_corner RC_WORST
+rcOut -spef pnr_outputs/fabric_RC_BEST.spef -rc_corner RC_BEST
+rcOut -spef pnr_outputs/fabric_RC_WORST.spef -rc_corner RC_WORST
 
 
 
