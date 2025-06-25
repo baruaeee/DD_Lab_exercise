@@ -210,7 +210,7 @@
       <port type="output" prefix="data_out" size="8"/>
       <port type="clock" prefix="clk" size="1"/>
     </circuit_model>
-    <circuit_model type="hard_logic" name="mult_36x36" prefix="mult_36x36" spice_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/spice/mult_36x36.sp" verilog_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/verilog/mult_36x36.v">
+    <circuit_model type="hard_logic" name="mult_36x36" prefix="mult_36x36" spice_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/spice/mult_36x36.sp" verilog_netlist="../../../../../mult/mult_netlist.v">
       <design_technology type="cmos"/>
       <input_buffer exist="true" circuit_model_name="INVTX1"/>
       <output_buffer exist="true" circuit_model_name="INVTX1"/>

@@ -1,0 +1,5 @@
+vvp compiled_counter
+VCD info: dumpfile counter_formal.vcd opened for output.
+Simulation start
+Simulation Succeed
+0

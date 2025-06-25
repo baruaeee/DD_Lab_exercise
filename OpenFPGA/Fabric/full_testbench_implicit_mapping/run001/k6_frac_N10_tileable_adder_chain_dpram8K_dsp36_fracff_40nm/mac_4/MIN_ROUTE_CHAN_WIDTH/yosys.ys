@@ -1,0 +1,44 @@
+# Yosys synthesis script for mac_4
+# Read verilog files
+read_verilog -nolatches ./benchmark/mac_4.v
+# Read technology library
+read_verilog -lib -specify /home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v
+
+# Technology mapping
+hierarchy -top mac_4
+proc
+techmap -D NO_LUT -map /home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_dff_map.v
+
+# Synthesis
+flatten
+opt_expr
+opt_clean
+check
+opt -nodffe -nosdff
+fsm
+opt -nodffe -nosdff
+wreduce
+peepopt
+opt_clean
+opt -nodffe -nosdff
+memory -nomap
+opt_clean
+opt -fast -full -nodffe -nosdff
+memory_map
+opt -full -nodffe -nosdff
+techmap
+opt -fast -nodffe -nosdff
+clean
+
+# LUT mapping
+abc -lut 6
+
+# FF mapping
+techmap -D NO_LUT -map /home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_dff_map.v
+
+# Check
+synth -run check
+
+# Clean and output blif
+opt_clean -purge
+write_blif mac_4_yosys_out.blif
