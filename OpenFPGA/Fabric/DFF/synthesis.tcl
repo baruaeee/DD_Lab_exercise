@@ -5,7 +5,7 @@ read_libs LIB/sg13g2_stdcell_typ_1p50V_25C.lib
 read_hdl dff.v
 
 # Elaborate the desired module
-elaborate dffsrq
+elaborate MULTI_MODE_DFFSRQ
 
 #read_sdc gpio_sdc.sdc
 
@@ -25,6 +25,6 @@ report_qor    > reports/report_qor.rpt
 
 
 #Outputs
-write_hdl > dffr_netlist.v
-write_sdc > dffr_post_sdc.sdc
+write_hdl > mm_dffsrq_netlist.v
+write_sdc > mm_dffsrq_post_sdc.sdc
 write_sdf -timescale ns -nonegchecks -recrem split -edges check_edge  -setuphold split > delays.sdf
