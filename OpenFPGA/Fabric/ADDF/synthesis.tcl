@@ -3,12 +3,12 @@ read_libs LIB/sg13g2_stdcell_typ_1p20V_25C.lib
 
 
 # Read HDL/Verilod file
-read_hdl mult_36x36.v
+read_hdl adder.v
 
 # Elaborate the desired module
-elaborate mult_36x36
+elaborate ADDF
 
-#read_sdc mult_36x36
+#read_sdc ADDF
 
 set_db syn_generic_effort medium
 set_db syn_map_effort medium
@@ -26,6 +26,6 @@ report_qor    > reports/report_qor.rpt
 
 
 #Outputs
-write_hdl > mult_netlist.v
-write_sdc > mult_post_sdc.sdc
+write_hdl > ADDF_netlist.v
+write_sdc > ADDF_post_sdc.sdc
 write_sdf -timescale ns -nonegchecks -recrem split -edges check_edge  -setuphold split > delays.sdf

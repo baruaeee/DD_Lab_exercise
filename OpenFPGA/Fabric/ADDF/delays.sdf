@@ -1,0 +1,77 @@
+(DELAYFILE
+  (SDFVERSION  "OVI 3.0")
+  (DESIGN      "ADDF")
+  (DATE        "Wed Jun 25 18:03:19 EDT 2025")
+  (VENDOR      "Cadence, Inc.")
+  (PROGRAM     "Genus(TM) Synthesis Solution")
+  (VERSION     "23.14-s090_1")
+  (DIVIDER     .)
+  (VOLTAGE     ::1.2)
+  (PROCESS     "::1.0")
+  (TEMPERATURE ::25.0)
+  (TIMESCALE   1ns)
+  (CELL
+     (CELLTYPE "sg13g2_xnor2_1")
+     (INSTANCE g89__2398)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.000))
+          (PORT B (::0.000))
+          (IOPATH A Y (::0.097) (::0.087))
+          (IOPATH B Y (::0.059) (::0.063))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sg13g2_nand2_1")
+     (INSTANCE g90__5107)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.000))
+          (PORT B (::0.000))
+          (IOPATH A Y (::0.027) (::0.044))
+          (IOPATH B Y (::0.029) (::0.035))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sg13g2_o21ai_1")
+     (INSTANCE g91__6260)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.000))
+          (PORT A2 (::0.000))
+          (PORT B1 (::0.000))
+          (IOPATH A1 Y (::0.078) (::0.050))
+          (COND A1==1'b0&A2==1'b1 (IOPATH B1 Y (::0.029) (::0.036)))
+          (COND A1==1'b1&A2==1'b0 (IOPATH B1 Y (::0.030) (::0.043)))
+          (IOPATH B1 Y (::0.030) (::0.043))
+          (IOPATH A2 Y (::0.070) (::0.044))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sg13g2_xnor2_1")
+     (INSTANCE g92__4319)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.000))
+          (PORT B (::0.000))
+          (IOPATH A Y (::0.082) (::0.085))
+          (IOPATH B Y (::0.076) (::0.085))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "sg13g2_nand2_1")
+     (INSTANCE g93__8428)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.000))
+          (PORT B (::0.000))
+          (IOPATH A Y (::0.025) (::0.035))
+          (IOPATH B Y (::0.027) (::0.039))
+        )
+     )
+  )
+)
