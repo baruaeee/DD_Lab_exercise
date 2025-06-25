@@ -435,7 +435,7 @@ Removed 0 unused cells and 34 unused wires.
 27.2. Executing DEMUXMAP pass.
 Dumping module `\mac_4'.
 
-End of script. Logfile hash: cee6156241, CPU: user 0.05s system 0.01s, MEM: 22.68 MB peak
+End of script. Logfile hash: cee6156241, CPU: user 0.05s system 0.01s, MEM: 22.69 MB peak
 Yosys 0.45+148 (git sha1 1bf908dea, g++ 11.4.0-1ubuntu1~22.04 -fPIC -O3)
-Time spent: 66% 1x abc (0 sec), 7% 14x opt_expr (0 sec), ...
+Time spent: 67% 1x abc (0 sec), 7% 14x opt_expr (0 sec), ...
 0

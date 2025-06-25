@@ -3,7 +3,7 @@
 //	Description: FPGA Verilog full testbench for top-level netlist of design: mac_4
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Wed Jun 25 22:57:37 2025
+//	Date: Thu Jun 26 00:49:40 2025
 //-------------------------------------------
 //----- Default net type -----
 `default_nettype none

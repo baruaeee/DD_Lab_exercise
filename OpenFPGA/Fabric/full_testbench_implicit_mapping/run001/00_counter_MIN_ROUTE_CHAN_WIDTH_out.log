@@ -25,4 +25,4 @@ INFO - iverilog_verification is written in file iverilog_output.txt
 INFO - Launching vvp_verification 
 INFO - vvp_verification is written in file vvp_sim_output.txt
 INFO - VVP Simulation Successful
-INFO - Openfpga_flow completed, Total Time Taken 58 seconds VPR Time a moment Verification Time 57 seconds 
+INFO - Openfpga_flow completed, Total Time Taken a minute VPR Time a moment Verification Time a minute 

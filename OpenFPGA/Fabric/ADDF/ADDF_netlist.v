@@ -4,6 +4,8 @@
 
 // Verification Directory fv/ADDF 
 
+`include "../../../../../ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v"
+
 module ADDF(A, B, CI, CO, SUM);
   input [0:0] A, B, CI;
   output [0:0] CO, SUM;
