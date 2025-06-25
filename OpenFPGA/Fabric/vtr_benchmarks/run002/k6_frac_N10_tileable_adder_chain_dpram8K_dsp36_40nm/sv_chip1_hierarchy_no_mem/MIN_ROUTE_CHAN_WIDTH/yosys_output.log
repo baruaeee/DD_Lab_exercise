@@ -1,0 +1,11 @@
+/run/media/exotic/Cadence/OpenFPGA/build/yosys/bin/yosys yosys.ys
+Traceback (most recent call last):
+  File "/run/media/exotic/Cadence/OpenFPGA/openfpga_flow/scripts/run_fpga_flow.py", line 1020, in run_command
+    command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True
+  File "/usr/lib64/python3.6/subprocess.py", line 423, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/usr/lib64/python3.6/subprocess.py", line 729, in __init__
+    restore_signals, start_new_session)
+  File "/usr/lib64/python3.6/subprocess.py", line 1364, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+OSError: [Errno 8] Exec format error: '/run/media/exotic/Cadence/OpenFPGA/build/yosys/bin/yosys'
