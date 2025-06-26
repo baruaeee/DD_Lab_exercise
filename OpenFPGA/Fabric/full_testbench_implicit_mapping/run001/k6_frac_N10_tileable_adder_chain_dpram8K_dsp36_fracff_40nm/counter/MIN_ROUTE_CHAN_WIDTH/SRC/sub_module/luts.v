@@ -3,7 +3,7 @@
 //	Description: Look-Up Tables
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Fri Jun 27 00:19:52 2025
+//	Date: Fri Jun 27 00:37:15 2025
 //-------------------------------------------
 //----- Default net type -----
 `default_nettype none
@@ -46,12 +46,12 @@ wire [0:0] lut6_out;
 //----- END Registered ports -----
 
 
-wire [0:0] buf4_0_out;
-wire [0:0] buf4_1_out;
-wire [0:0] buf4_2_out;
-wire [0:0] buf4_3_out;
-wire [0:0] buf4_4_out;
-wire [0:0] buf4_5_out;
+wire [0:0] sg13g2_buf_4_0_X;
+wire [0:0] sg13g2_buf_4_1_X;
+wire [0:0] sg13g2_buf_4_2_X;
+wire [0:0] sg13g2_buf_4_3_X;
+wire [0:0] sg13g2_buf_4_4_X;
+wire [0:0] sg13g2_buf_4_5_X;
 wire [0:0] sg13g2_inv_1_0_Y;
 wire [0:0] sg13g2_inv_1_1_Y;
 wire [0:0] sg13g2_inv_1_2_Y;
@@ -100,33 +100,33 @@ wire [0:0] sg13g2_or2_1_1_X;
 		.A(sg13g2_or2_1_1_X),
 		.Y(sg13g2_inv_1_5_Y));
 
-	buf4 buf4_0_ (
-		.in(in[0]),
-		.out(buf4_0_out));
+	sg13g2_buf_4 sg13g2_buf_4_0_ (
+		.A(in[0]),
+		.X(sg13g2_buf_4_0_X));
 
-	buf4 buf4_1_ (
-		.in(in[1]),
-		.out(buf4_1_out));
+	sg13g2_buf_4 sg13g2_buf_4_1_ (
+		.A(in[1]),
+		.X(sg13g2_buf_4_1_X));
 
-	buf4 buf4_2_ (
-		.in(in[2]),
-		.out(buf4_2_out));
+	sg13g2_buf_4 sg13g2_buf_4_2_ (
+		.A(in[2]),
+		.X(sg13g2_buf_4_2_X));
 
-	buf4 buf4_3_ (
-		.in(in[3]),
-		.out(buf4_3_out));
+	sg13g2_buf_4 sg13g2_buf_4_3_ (
+		.A(in[3]),
+		.X(sg13g2_buf_4_3_X));
 
-	buf4 buf4_4_ (
-		.in(sg13g2_or2_1_0_X),
-		.out(buf4_4_out));
+	sg13g2_buf_4 sg13g2_buf_4_4_ (
+		.A(sg13g2_or2_1_0_X),
+		.X(sg13g2_buf_4_4_X));
 
-	buf4 buf4_5_ (
-		.in(sg13g2_or2_1_1_X),
-		.out(buf4_5_out));
+	sg13g2_buf_4 sg13g2_buf_4_5_ (
+		.A(sg13g2_or2_1_1_X),
+		.X(sg13g2_buf_4_5_X));
 
 	frac_lut6_mux frac_lut6_mux_0_ (
 		.in(sram[0:63]),
-		.sram({buf4_0_out, buf4_1_out, buf4_2_out, buf4_3_out, buf4_4_out, buf4_5_out}),
+		.sram({sg13g2_buf_4_0_X, sg13g2_buf_4_1_X, sg13g2_buf_4_2_X, sg13g2_buf_4_3_X, sg13g2_buf_4_4_X, sg13g2_buf_4_5_X}),
 		.sram_inv({sg13g2_inv_1_0_Y, sg13g2_inv_1_1_Y, sg13g2_inv_1_2_Y, sg13g2_inv_1_3_Y, sg13g2_inv_1_4_Y, sg13g2_inv_1_5_Y}),
 		.lut4_out(lut4_out[0:3]),
 		.lut5_out(lut5_out[0:1]),
