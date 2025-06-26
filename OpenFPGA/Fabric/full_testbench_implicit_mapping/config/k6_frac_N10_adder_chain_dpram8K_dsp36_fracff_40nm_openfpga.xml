@@ -41,11 +41,11 @@
         10e-12
       </delay_matrix>
     </circuit_model>
-    <circuit_model type="inv_buf" name="sg13g2_buf_4" prefix="sg13g2_buf_4" is_default="false" verilog_netlist="../../../../../ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v">
+    <circuit_model type="inv_buf" name="buf4" prefix="buf4" is_default="false">
       <design_technology type="cmos" topology="buffer" size="1" num_level="2" f_per_stage="4"/>
       <device_technology device_model_name="logic"/>
-      <port type="input" prefix="in" lib_name="A" size="1"/>
-      <port type="output" prefix="out" lib_name="X" size="1"/>
+      <port type="input" prefix="in" size="1"/>
+      <port type="output" prefix="out" size="1"/>
       <delay_matrix type="rise" in_port="in" out_port="out">
         10e-12
       </delay_matrix>
@@ -158,8 +158,8 @@
       <input_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
       <output_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
       <lut_input_inverter exist="true" circuit_model_name="sg13g2_inv_1"/>
-      <lut_input_buffer exist="true" circuit_model_name="sg13g2_buf_4"/>
-      <lut_intermediate_buffer exist="true" circuit_model_name="sg13g2_buf_4" location_map="-1-1-"/>
+      <lut_input_buffer exist="true" circuit_model_name="buf4"/>
+      <lut_intermediate_buffer exist="true" circuit_model_name="buf4" location_map="-1-1-"/>
       <pass_gate_logic circuit_model_name="TGATE"/>
       <port type="input" prefix="in" size="6" tri_state_map="----11" circuit_model_name="sg13g2_or2_1"/>
       <port type="output" prefix="lut4_out" size="4" lut_frac_level="4" lut_output_mask="0,1,2,3"/>

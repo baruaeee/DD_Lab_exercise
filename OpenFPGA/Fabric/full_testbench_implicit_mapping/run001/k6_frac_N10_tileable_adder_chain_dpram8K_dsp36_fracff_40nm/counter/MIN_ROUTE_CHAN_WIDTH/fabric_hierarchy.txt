@@ -36,12 +36,12 @@ fpga_top:
               frac_lut6:
                 sg13g2_or2_1:
                 sg13g2_inv_1:
-                sg13g2_buf_4:
+                buf4:
                 frac_lut6_mux:
                   sg13g2_inv_1:
                   frac_lut6_mux_basis_input2_mem1:
                     - TGATE
-                  sg13g2_buf_4:
+                  buf4:
               frac_lut6_DFFR_mem:
                 - DFFR
             direct_interc:

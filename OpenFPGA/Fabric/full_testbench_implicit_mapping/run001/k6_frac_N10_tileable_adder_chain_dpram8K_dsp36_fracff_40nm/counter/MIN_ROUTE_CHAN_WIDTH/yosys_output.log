@@ -528,5 +528,5 @@ Removed 0 unused cells and 51 unused wires.
 
 End of script. Logfile hash: 528a56395c, CPU: user 0.06s system 0.01s, MEM: 22.80 MB peak
 Yosys 0.45+148 (git sha1 1bf908dea, g++ 11.4.0-1ubuntu1~22.04 -fPIC -O3)
-Time spent: 63% 1x abc (0 sec), 8% 7x read_verilog (0 sec), ...
+Time spent: 62% 1x abc (0 sec), 9% 7x read_verilog (0 sec), ...
 0
