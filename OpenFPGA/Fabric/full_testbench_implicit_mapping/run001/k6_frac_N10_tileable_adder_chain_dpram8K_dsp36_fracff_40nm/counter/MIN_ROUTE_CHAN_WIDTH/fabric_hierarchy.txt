@@ -34,7 +34,7 @@ fpga_top:
           logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic:
             logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6:
               frac_lut6:
-                OR2:
+                sg13g2_or2_1:
                 sg13g2_inv_1:
                 buf4:
                 frac_lut6_mux:

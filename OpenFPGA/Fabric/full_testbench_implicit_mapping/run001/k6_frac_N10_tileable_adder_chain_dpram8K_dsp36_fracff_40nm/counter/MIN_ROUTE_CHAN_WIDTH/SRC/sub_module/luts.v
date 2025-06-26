@@ -3,7 +3,7 @@
 //	Description: Look-Up Tables
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Thu Jun 26 23:58:47 2025
+//	Date: Fri Jun 27 00:08:11 2025
 //-------------------------------------------
 //----- Default net type -----
 `default_nettype none
@@ -46,8 +46,6 @@ wire [0:0] lut6_out;
 //----- END Registered ports -----
 
 
-wire [0:0] OR2_0_out;
-wire [0:0] OR2_1_out;
 wire [0:0] buf4_0_out;
 wire [0:0] buf4_1_out;
 wire [0:0] buf4_2_out;
@@ -60,21 +58,23 @@ wire [0:0] sg13g2_inv_1_2_Y;
 wire [0:0] sg13g2_inv_1_3_Y;
 wire [0:0] sg13g2_inv_1_4_Y;
 wire [0:0] sg13g2_inv_1_5_Y;
+wire [0:0] sg13g2_or2_1_0_X;
+wire [0:0] sg13g2_or2_1_1_X;
 
 // ----- BEGIN Local short connections -----
 // ----- END Local short connections -----
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	OR2 OR2_0_ (
-		.a(mode[0]),
-		.b(in[4]),
-		.out(OR2_0_out));
+	sg13g2_or2_1 sg13g2_or2_1_0_ (
+		.A(mode[0]),
+		.B(in[4]),
+		.X(sg13g2_or2_1_0_X));
 
-	OR2 OR2_1_ (
-		.a(mode[1]),
-		.b(in[5]),
-		.out(OR2_1_out));
+	sg13g2_or2_1 sg13g2_or2_1_1_ (
+		.A(mode[1]),
+		.B(in[5]),
+		.X(sg13g2_or2_1_1_X));
 
 	sg13g2_inv_1 sg13g2_inv_1_0_ (
 		.A(in[0]),
@@ -93,11 +93,11 @@ wire [0:0] sg13g2_inv_1_5_Y;
 		.Y(sg13g2_inv_1_3_Y));
 
 	sg13g2_inv_1 sg13g2_inv_1_4_ (
-		.A(OR2_0_out),
+		.A(sg13g2_or2_1_0_X),
 		.Y(sg13g2_inv_1_4_Y));
 
 	sg13g2_inv_1 sg13g2_inv_1_5_ (
-		.A(OR2_1_out),
+		.A(sg13g2_or2_1_1_X),
 		.Y(sg13g2_inv_1_5_Y));
 
 	buf4 buf4_0_ (
@@ -117,11 +117,11 @@ wire [0:0] sg13g2_inv_1_5_Y;
 		.out(buf4_3_out));
 
 	buf4 buf4_4_ (
-		.in(OR2_0_out),
+		.in(sg13g2_or2_1_0_X),
 		.out(buf4_4_out));
 
 	buf4 buf4_5_ (
-		.in(OR2_1_out),
+		.in(sg13g2_or2_1_1_X),
 		.out(buf4_5_out));
 
 	frac_lut6_mux frac_lut6_mux_0_ (
