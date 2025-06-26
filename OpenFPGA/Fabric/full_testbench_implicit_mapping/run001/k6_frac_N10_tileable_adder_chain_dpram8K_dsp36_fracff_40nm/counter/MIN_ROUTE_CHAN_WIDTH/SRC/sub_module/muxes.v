@@ -3,7 +3,7 @@
 //	Description: Multiplexers
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Fri Jun 27 00:08:11 2025
+//	Date: Fri Jun 27 00:12:29 2025
 //-------------------------------------------
 //----- Default net type -----
 `default_nettype none
@@ -73,9 +73,9 @@ wire [0:0] sg13g2_inv_1_5_Y;
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	tap_buf4 tap_buf4_0_ (
-		.in(mux_2level_tapbuf_basis_input3_mem3_2_out),
-		.out(out));
+	sg13g2_inv_4 sg13g2_inv_4_0_ (
+		.A(mux_2level_tapbuf_basis_input3_mem3_2_out),
+		.Y(out));
 
 	mux_2level_tapbuf_basis_input3_mem3 mux_l1_in_0_ (
 		.in({sg13g2_inv_1_0_Y, sg13g2_inv_1_1_Y, sg13g2_inv_1_2_Y}),
@@ -151,9 +151,9 @@ wire [0:0] sg13g2_inv_1_1_Y;
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	tap_buf4 tap_buf4_0_ (
-		.in(mux_2level_tapbuf_basis_input2_mem1_1_out),
-		.out(out));
+	sg13g2_inv_4 sg13g2_inv_4_0_ (
+		.A(mux_2level_tapbuf_basis_input2_mem1_1_out),
+		.Y(out));
 
 	mux_2level_tapbuf_basis_input2_mem1 mux_l1_in_0_ (
 		.in({sg13g2_inv_1_0_Y, sg13g2_inv_1_1_Y}),
@@ -229,9 +229,9 @@ wire [0:0] sg13g2_inv_1_2_Y;
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	tap_buf4 tap_buf4_0_ (
-		.in(mux_2level_tapbuf_basis_input2_mem1_2_out),
-		.out(out));
+	sg13g2_inv_4 sg13g2_inv_4_0_ (
+		.A(mux_2level_tapbuf_basis_input2_mem1_2_out),
+		.Y(out));
 
 	mux_2level_tapbuf_basis_input2_mem1 mux_l1_in_0_ (
 		.in({sg13g2_inv_1_0_Y, sg13g2_inv_1_1_Y}),
@@ -317,9 +317,9 @@ wire [0:0] sg13g2_inv_1_3_Y;
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	tap_buf4 tap_buf4_0_ (
-		.in(mux_2level_tapbuf_basis_input3_mem3_1_out),
-		.out(out));
+	sg13g2_inv_4 sg13g2_inv_4_0_ (
+		.A(mux_2level_tapbuf_basis_input3_mem3_1_out),
+		.Y(out));
 
 	mux_2level_tapbuf_basis_input3_mem3 mux_l1_in_0_ (
 		.in({sg13g2_inv_1_0_Y, sg13g2_inv_1_1_Y, sg13g2_inv_1_2_Y}),
@@ -804,9 +804,9 @@ wire [0:0] sg13g2_inv_1_2_Y;
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	tap_buf4 tap_buf4_0_ (
-		.in(mux_1level_tapbuf_basis_input4_mem4_0_out),
-		.out(out));
+	sg13g2_inv_4 sg13g2_inv_4_0_ (
+		.A(mux_1level_tapbuf_basis_input4_mem4_0_out),
+		.Y(out));
 
 	mux_1level_tapbuf_basis_input4_mem4 mux_l1_in_0_ (
 		.in({sg13g2_inv_1_0_Y, sg13g2_inv_1_1_Y, sg13g2_inv_1_2_Y, const1_0_const1}),
@@ -869,9 +869,9 @@ wire [0:0] sg13g2_inv_1_1_Y;
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	tap_buf4 tap_buf4_0_ (
-		.in(mux_1level_tapbuf_basis_input3_mem3_0_out),
-		.out(out));
+	sg13g2_inv_4 sg13g2_inv_4_0_ (
+		.A(mux_1level_tapbuf_basis_input3_mem3_0_out),
+		.Y(out));
 
 	mux_1level_tapbuf_basis_input3_mem3 mux_l1_in_0_ (
 		.in({sg13g2_inv_1_0_Y, sg13g2_inv_1_1_Y, const1_0_const1}),

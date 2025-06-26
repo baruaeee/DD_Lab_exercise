@@ -3,7 +3,7 @@
 //	Description: Essential gates
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Fri Jun 27 00:08:11 2025
+//	Date: Fri Jun 27 00:12:29 2025
 //-------------------------------------------
 //----- Default net type -----
 `default_nettype none
@@ -79,40 +79,6 @@ output [0:0] out;
 `endif
 endmodule
 // ----- END Verilog module for buf4 -----
-
-//----- Default net type -----
-`default_nettype wire
-
-//----- Default net type -----
-`default_nettype none
-
-// ----- Verilog module for tap_buf4 -----
-module tap_buf4(in,
-                out);
-//----- INPUT PORTS -----
-input [0:0] in;
-//----- OUTPUT PORTS -----
-output [0:0] out;
-
-//----- BEGIN wire-connection ports -----
-//----- END wire-connection ports -----
-
-
-//----- BEGIN Registered ports -----
-//----- END Registered ports -----
-
-// ----- Verilog codes of a regular inverter -----
-	assign out = (in === 1'bz)? $random : ~in;
-
-`ifdef ENABLE_TIMING
-// ------ BEGIN Pin-to-pin Timing constraints -----
-	specify
-		(in => out) = (0.01, 0.01);
-	endspecify
-// ------ END Pin-to-pin Timing constraints -----
-`endif
-endmodule
-// ----- END Verilog module for tap_buf4 -----
 
 //----- Default net type -----
 `default_nettype wire

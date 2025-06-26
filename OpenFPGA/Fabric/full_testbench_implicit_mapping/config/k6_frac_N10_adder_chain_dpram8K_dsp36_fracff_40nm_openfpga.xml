@@ -53,11 +53,11 @@
         10e-12
       </delay_matrix>
     </circuit_model>
-    <circuit_model type="inv_buf" name="tap_buf4" prefix="tap_buf4" is_default="false">
+    <circuit_model type="inv_buf" name="sg13g2_inv_4" prefix="sg13g2_inv_4" is_default="false" verilog_netlist="../../../../../ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v">
       <design_technology type="cmos" topology="buffer" size="1" num_level="3" f_per_stage="4"/>
       <device_technology device_model_name="logic"/>
-      <port type="input" prefix="in" size="1"/>
-      <port type="output" prefix="out" size="1"/>
+      <port type="input" prefix="in" lib_name="A" size="1"/>
+      <port type="output" prefix="out" lib_name="Y" size="1"/>
       <delay_matrix type="rise" in_port="in" out_port="out">
         10e-12
       </delay_matrix>
@@ -126,7 +126,7 @@
     <circuit_model type="mux" name="mux_2level_tapbuf" prefix="mux_2level_tapbuf" dump_structural_verilog="true">
       <design_technology type="cmos" structure="multi_level" num_level="2" add_const_input="true" const_input_val="1"/>
       <input_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
-      <output_buffer exist="true" circuit_model_name="tap_buf4"/>
+      <output_buffer exist="true" circuit_model_name="sg13g2_inv_4"/>
       <pass_gate_logic circuit_model_name="TGATE"/>
       <port type="input" prefix="in" size="1"/>
       <port type="output" prefix="out" size="1"/>
@@ -135,7 +135,7 @@
     <circuit_model type="mux" name="mux_1level_tapbuf" prefix="mux_1level_tapbuf" is_default="true" dump_structural_verilog="true">
       <design_technology type="cmos" structure="one_level" add_const_input="true" const_input_val="1"/>
       <input_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
-      <output_buffer exist="true" circuit_model_name="tap_buf4"/>
+      <output_buffer exist="true" circuit_model_name="sg13g2_inv_4"/>
       <pass_gate_logic circuit_model_name="TGATE"/>
       <port type="input" prefix="in" size="1"/>
       <port type="output" prefix="out" size="1"/>
