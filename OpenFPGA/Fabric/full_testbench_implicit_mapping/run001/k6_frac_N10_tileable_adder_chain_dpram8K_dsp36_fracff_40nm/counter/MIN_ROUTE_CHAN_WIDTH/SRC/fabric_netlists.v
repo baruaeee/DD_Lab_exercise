@@ -3,7 +3,7 @@
 //	Description: Fabric Netlist Summary
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Thu Jun 26 22:30:15 2025
+//	Date: Thu Jun 26 23:58:47 2025
 //-------------------------------------------
 // ------ Include defines: preproc flags -----
 `include "./SRC/fpga_defines.v"
@@ -11,7 +11,8 @@
 // ------ Include user-defined netlists -----
 `include "../../../../../ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v"
 `include "../../../../../TGATE/TGATE_netlist.v"
-`include "../../../../../openfpga_cell_library/verilog/dff.v"
+`include "../../../../../DFF/dffsrq.v"
+`include "../../../../../DFF/dffr.v"
 `include "../../../../../GPIO/gpio_netlist_IHP.v"
 `include "../../../../../ADDF/ADDF_netlist.v"
 `include "../../../../../mem/dpram8k.v"

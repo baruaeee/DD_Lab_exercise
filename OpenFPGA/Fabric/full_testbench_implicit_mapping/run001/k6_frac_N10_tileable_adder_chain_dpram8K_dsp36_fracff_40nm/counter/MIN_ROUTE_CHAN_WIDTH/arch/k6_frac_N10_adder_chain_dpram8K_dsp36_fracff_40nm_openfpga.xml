@@ -142,7 +142,7 @@
       <port type="sram" prefix="sram" size="1"/>
     </circuit_model>
     <!--DFF subckt ports should be defined as <D> <Q> <CLK> <RESET> <SET>  -->
-    <circuit_model type="ff" name="MULTI_MODE_DFFSRQ" prefix="MULTI_MODE_DFFSRQ" spice_netlist="/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_cell_library/spice/dff.sp" verilog_netlist="/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_cell_library/verilog/dff.v">
+    <circuit_model type="ff" name="MULTI_MODE_DFFSRQ" prefix="MULTI_MODE_DFFSRQ" spice_netlist="/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_cell_library/spice/dff.sp" verilog_netlist="../../../../../DFF/dffsrq.v">
       <design_technology type="cmos"/>
       <input_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
       <output_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
@@ -169,7 +169,7 @@
       <port type="sram" prefix="mode" size="2" mode_select="true" circuit_model_name="DFFR" default_val="1"/>
     </circuit_model>
     <!--Scan-chain DFF subckt ports should be defined as <D> <Q> <Qb> <CLK> <RESET> <SET>  -->
-    <circuit_model type="ccff" name="DFFR" prefix="DFFR" spice_netlist="/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_cell_library/spice/dff.sp" verilog_netlist="/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_cell_library/verilog/dff.v">
+    <circuit_model type="ccff" name="DFFR" prefix="DFFR" spice_netlist="/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_cell_library/spice/dff.sp" verilog_netlist="../../../../../DFF/dffr.v">
       <design_technology type="cmos"/>
       <input_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
       <output_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
