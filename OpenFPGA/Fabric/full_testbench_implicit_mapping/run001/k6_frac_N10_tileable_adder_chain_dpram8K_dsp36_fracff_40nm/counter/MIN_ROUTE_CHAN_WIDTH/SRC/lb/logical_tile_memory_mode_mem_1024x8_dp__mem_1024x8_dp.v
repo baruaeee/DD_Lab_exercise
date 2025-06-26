@@ -3,7 +3,7 @@
 //	Description: Verilog modules for primitive pb_type: mem_1024x8_dp
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Fri Jun 27 00:37:15 2025
+//	Date: Fri Jun 27 00:43:47 2025
 //-------------------------------------------
 //----- Default net type -----
 `default_nettype none

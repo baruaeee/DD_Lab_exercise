@@ -3,7 +3,7 @@
 //	Description: FPGA Verilog full testbench for top-level netlist of design: counter
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Fri Jun 27 00:37:15 2025
+//	Date: Fri Jun 27 00:43:47 2025
 //-------------------------------------------
 //----- Default net type -----
 `default_nettype none
