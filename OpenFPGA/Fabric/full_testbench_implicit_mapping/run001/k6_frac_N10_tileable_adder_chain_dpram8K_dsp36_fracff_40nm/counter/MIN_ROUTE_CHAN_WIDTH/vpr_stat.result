@@ -6,10 +6,10 @@ memory_blocks = 0
 total_routing_area = 5542.74
 total_logic_block_area = 53894
 total_wire_length = 54
-packing_time = 0.06
-placement_time = 0.01
-routing_time = 0.04
+packing_time = 0.05
+placement_time = 0.00
+routing_time = 0.02
 average_net_length = 6.75000
 critical_path = 1.62724e-09
-total_routing_time = 0.04
+total_routing_time = 0.02
 
