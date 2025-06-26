@@ -1,10 +1,4 @@
-#e1(25Jun2025:21:24:08): source ./xcelium.d/env.d/env.history.25Jun2025_21_24_08
-s1(25Jun2025:21:24:08):  xrun SRC/counter_include_netlists.v -access +rwc -gui 
-#e2(25Jun2025:21:26:39): source ./xcelium.d/env.d/env.history.25Jun2025_21_26_39
-s2(25Jun2025:21:26:39):  xrun SRC/counter_include_netlists.v -access +rwc -gui 
-#e3(25Jun2025:21:43:48): source ./xcelium.d/env.d/env.history.25Jun2025_21_43_48
-s3(25Jun2025:21:43:48):  xrun SRC/counter_include_netlists.v -access +rwc -gui 
-#e4(25Jun2025:21:46:05): source ./xcelium.d/env.d/env.history.25Jun2025_21_46_05
-s4(25Jun2025:21:46:05):  xrun SRC/counter_include_netlists.v -access +rwc -gui 
-#e5(25Jun2025:21:54:08): source ./xcelium.d/env.d/env.history.25Jun2025_21_54_08
-s5(25Jun2025:21:54:08):  xrun SRC/counter_include_netlists.v -access +rwc -gui -64bit 
+#e1(26Jun2025:14:59:17): source ./xcelium.d/env.d/env.history.26Jun2025_14_59_17
+s1(26Jun2025:14:59:17):  xrun SRC/counter_autocheck_top_tb.v -access +rwc -gui -64bit 
+#e2(26Jun2025:15:34:01): source ./xcelium.d/env.d/env.history.26Jun2025_15_34_01
+s2(26Jun2025:15:34:01):  xrun SRC/counter_include_netlists.v -access +rwc -gui -64bit 
