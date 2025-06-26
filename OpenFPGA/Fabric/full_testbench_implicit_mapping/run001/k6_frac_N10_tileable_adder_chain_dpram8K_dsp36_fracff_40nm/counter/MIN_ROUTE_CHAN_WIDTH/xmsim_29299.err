@@ -1,0 +1,81 @@
+csi-xmsim - CSI: Command line:
+xmsim
+    -f /run/media/exotic/Cadence/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/run001/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm/counter/MIN_ROUTE_CHAN_WIDTH/xcelium.d/run.lnx8664.24.03.d/exotic-rhel_29299/xmsim.args
+        -gui
+        -MESSAGES
+        +EMGRLOG xrun.log
+        -XLSTIME 1750902847
+        -XLKEEP
+        -XLMODE ./xcelium.d/run.lnx8664.24.03.d
+        -RUNMODE
+        -CDSLIB ./xcelium.d/run.lnx8664.24.03.d/cds.lib
+        -HDLVAR ./xcelium.d/run.lnx8664.24.03.d/hdl.var
+        -XLNAME xrun
+        -XLVERSION TOOL:	xrun(64)	24.03-s004
+        -XLNAME ./xcelium.d/run.lnx8664.24.03.d/exotic-rhel_29299
+    -CHECK_VERSION TOOL:	xrun(64)	24.03-s004
+    -LOG_FD 4
+    -LOG_FD_NAME xrun.log
+    -cmdnopsim
+    -runlock /run/media/exotic/Cadence/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/run001/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm/counter/MIN_ROUTE_CHAN_WIDTH/xcelium.d/run.lnx8664.24.03.d/.xmlib.lock
+    -runscratch /run/media/exotic/Cadence/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/run001/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm/counter/MIN_ROUTE_CHAN_WIDTH/xcelium.d/run.lnx8664.24.03.d/exotic-rhel_29299
+Observed simulation time : 0 FS + 0
+
+csi-xmsim - CSI: *F,INTERR: INTERNAL EXCEPTION
+-----------------------------------------------------------------
+The tool has encountered an unexpected condition and must exit.
+Contact Cadence Design Systems customer support about this
+problem and provide enough information to help us reproduce it,
+including the logfile that contains this error message.
+  TOOL:	xmsim(64)	24.03-s004 (CL: 638556 )
+  HOSTNAME: exotic-rhel
+  OPERATING SYSTEM: Linux 4.18.0-553.56.1.el8_10.x86_64 #1 SMP Mon Jun 2 12:33:13 EDT 2025 x86_64
+  MESSAGE: T(0): sv_seghandler - trapno -1 addr(0x66fe92c)
+	Stream rts_xfer
+-----------------------------------------------------------------
+
+csi-xmsim - CSI: Cadence Support Investigation, recording details
+External Code in function: <unavailable> offset -65515
+External Code in function: <unavailable> offset -65530
+Simulator Snap Shot: gd (SSS_GD) in snapshot worklib.sg13g2_a21o_2:v (SSS)
+Verilog Syntax Tree: indexed vector type (VST_T_INDEXED_VEC) in module worklib.counter_autocheck_top_tb:v (VST)
+	Scope: counter_autocheck_top_tb
+	Decompile: reg
+Verilog Syntax Tree: logic type (VST_T_LOGIC) in module worklib.counter_autocheck_top_tb:v (VST)
+	Decompile: reg
+Verilog Syntax Tree: static range (VST_R_STATIC_RANGE) in module worklib.counter_autocheck_top_tb:v (VST)
+	Decompile: 0 to 0
+Verilog Syntax Tree: indexed vector type (VST_T_INDEXED_VEC) in module worklib.counter_autocheck_top_tb:v (VST)
+	Scope: counter_autocheck_top_tb
+	Decompile: logic
+Verilog Syntax Tree: logic type (VST_T_LOGIC) in module worklib.counter_autocheck_top_tb:v (VST)
+	Decompile: logic
+Verilog Syntax Tree: wire declaration (VST_D_WIRE) in module worklib.counter_autocheck_top_tb:v (VST)
+	File: /run/media/exotic/Cadence/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/run001/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm/counter/MIN_ROUTE_CHAN_WIDTH/SRC/counter_autocheck_top_tb.v, line 62, position 30
+	Scope: counter_autocheck_top_tb
+	Decompile: logic result_7__benchmark
+	Source  : 	wire [0:0] result_7__benchmark;
+	Position: 	                             ^
+Verilog Syntax Tree: overlay table (VST_OVERLAY_TABLE) in module worklib.counter_autocheck_top_tb:v (SIG) <0x2d35647b>
+	Decompile: counter_autocheck_top_tb
+Verilog Syntax Tree: module declaration (VST_D_MODULE) in module worklib.counter_autocheck_top_tb:v (VST)
+	File: /run/media/exotic/Cadence/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/run001/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm/counter/MIN_ROUTE_CHAN_WIDTH/SRC/counter_autocheck_top_tb.v, line 11, position 30
+	Scope: counter_autocheck_top_tb
+	Decompile: counter_autocheck_top_tb
+	Source  : module counter_autocheck_top_tb;
+	Position:                               ^
+Error: Error processing stack frame(9) - skipping rest of frame!
+External Code in function: <unavailable> offset -65536
+External Code in function: <unavailable> offset -65531
+Intermediate File: string (IF_STRING) in module worklib.counter_autocheck_top_tb:v (VST)
+	Decompile: skip_bits
+Verilog Syntax Tree: module declaration (VST_D_MODULE) in module worklib.sg13g2_a21o_2:v (VST)
+	File: /run/media/exotic/Cadence/DD_Lab_exercise/OpenFPGA/Fabric/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v, line 44, position 19
+	Scope: sg13g2_a21o_2
+	Decompile: sg13g2_a21o_2
+	Source  : module sg13g2_a21o_2 (X, A1, A2, B1);
+	Position:                    ^
+Simulator Snap Shot: top level instance (SSS_TLI) in snapshot worklib.sg13g2_a21o_2:v (SSS)
+Simulator Snap Shot: dynlib (SSS_DYNLIB) in snapshot worklib.sg13g2_a21o_2:v (SSS)
+Intermediate File: map (IF_MAP) in snapshot worklib.sg13g2_a21o_2:v (SSS)
+csi-xmsim - CSI: investigation complete took 0.123 secs, send this file to Cadence Support

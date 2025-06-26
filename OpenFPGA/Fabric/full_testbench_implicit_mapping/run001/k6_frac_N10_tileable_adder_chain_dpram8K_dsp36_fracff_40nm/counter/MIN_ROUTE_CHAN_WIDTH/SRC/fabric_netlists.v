@@ -11,7 +11,7 @@
 // ------ Include user-defined netlists -----
 `include "../../../../../ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v"
 `include "../../../../../TGATE/TGATE.v"
-`include "/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_cell_library/verilog/dff.v"
+`include "../../../../../openfpga_cell_library/verilog/dff.v"
 `include "../../../../../GPIO/gpio_netlist_IHP.v"
 `include "../../../../../ADDF/ADDF_netlist.v"
 `include "../../../../../mem/dpram8k.v"
