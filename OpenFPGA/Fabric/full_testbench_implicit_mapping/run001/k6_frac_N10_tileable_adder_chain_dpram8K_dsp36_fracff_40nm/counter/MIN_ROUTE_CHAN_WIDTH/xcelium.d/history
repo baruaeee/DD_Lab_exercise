@@ -1,0 +1,5 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(27Jun2025:00:09:07):( xrun SRC/counter_include_netlists.v -access +rwc -gui -64bit )&&(./xcelium.d/env.d/env.history.27Jun2025_00_09_07)
