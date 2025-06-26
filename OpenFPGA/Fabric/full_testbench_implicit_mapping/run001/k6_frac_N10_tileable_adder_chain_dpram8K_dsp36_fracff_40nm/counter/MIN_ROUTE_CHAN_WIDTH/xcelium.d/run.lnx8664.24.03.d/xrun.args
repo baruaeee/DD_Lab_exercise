@@ -1,0 +1,9 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+SRC/counter_include_netlists.v
+-access
++rwc
+-gui
+-64bit
