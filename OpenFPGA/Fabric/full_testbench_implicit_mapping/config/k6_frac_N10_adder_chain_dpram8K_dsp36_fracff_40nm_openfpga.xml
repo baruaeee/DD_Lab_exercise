@@ -29,11 +29,11 @@
     </variation_library>
   </technology_library>
   <circuit_library>
-    <circuit_model type="inv_buf" name="INVTX1" prefix="INVTX1" is_default="true">
+    <circuit_model type="inv_buf" name="sg13g2_inv_1" prefix="sg13g2_inv_1" is_default="true" verilog_netlist="../../../../../ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v">
       <design_technology type="cmos" topology="inverter" size="1"/>
       <device_technology device_model_name="logic"/>
-      <port type="input" prefix="in" size="1"/>
-      <port type="output" prefix="out" size="1"/>
+      <port type="input" prefix="in" lib_name="A" size="1"/>
+      <port type="output" prefix="out" lib_name="Y" size="1"/>
       <delay_matrix type="rise" in_port="in" out_port="out">
         10e-12
       </delay_matrix>
@@ -80,7 +80,7 @@
         10e-12 5e-12
       </delay_matrix>
     </circuit_model>
-    <circuit_model type="pass_gate" name="TGATE" prefix="TGATE" is_default="true">
+    <circuit_model type="pass_gate" name="TGATE" prefix="TGATE" is_default="true" verilog_netlist="../../../../../TGATE/TGATE.v">
       <design_technology type="cmos" topology="transmission_gate" nmos_size="1" pmos_size="2"/>
       <device_technology device_model_name="logic"/>
       <input_buffer exist="false"/>
@@ -116,8 +116,8 @@
     </circuit_model>
     <circuit_model type="mux" name="mux_2level" prefix="mux_2level" dump_structural_verilog="true">
       <design_technology type="cmos" structure="multi_level" num_level="2" add_const_input="true" const_input_val="1"/>
-      <input_buffer exist="true" circuit_model_name="INVTX1"/>
-      <output_buffer exist="true" circuit_model_name="INVTX1"/>
+      <input_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
+      <output_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
       <pass_gate_logic circuit_model_name="TGATE"/>
       <port type="input" prefix="in" size="1"/>
       <port type="output" prefix="out" size="1"/>
@@ -125,7 +125,7 @@
     </circuit_model>
     <circuit_model type="mux" name="mux_2level_tapbuf" prefix="mux_2level_tapbuf" dump_structural_verilog="true">
       <design_technology type="cmos" structure="multi_level" num_level="2" add_const_input="true" const_input_val="1"/>
-      <input_buffer exist="true" circuit_model_name="INVTX1"/>
+      <input_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
       <output_buffer exist="true" circuit_model_name="tap_buf4"/>
       <pass_gate_logic circuit_model_name="TGATE"/>
       <port type="input" prefix="in" size="1"/>
@@ -134,7 +134,7 @@
     </circuit_model>
     <circuit_model type="mux" name="mux_1level_tapbuf" prefix="mux_1level_tapbuf" is_default="true" dump_structural_verilog="true">
       <design_technology type="cmos" structure="one_level" add_const_input="true" const_input_val="1"/>
-      <input_buffer exist="true" circuit_model_name="INVTX1"/>
+      <input_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
       <output_buffer exist="true" circuit_model_name="tap_buf4"/>
       <pass_gate_logic circuit_model_name="TGATE"/>
       <port type="input" prefix="in" size="1"/>
@@ -144,8 +144,8 @@
     <!--DFF subckt ports should be defined as <D> <Q> <CLK> <RESET> <SET>  -->
     <circuit_model type="ff" name="MULTI_MODE_DFFSRQ" prefix="MULTI_MODE_DFFSRQ" spice_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/spice/dff.sp" verilog_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/verilog/dff.v">
       <design_technology type="cmos"/>
-      <input_buffer exist="true" circuit_model_name="INVTX1"/>
-      <output_buffer exist="true" circuit_model_name="INVTX1"/>
+      <input_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
+      <output_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
       <port type="input" prefix="D" size="1"/>
       <port type="input" prefix="S" lib_name="SET" size="1"/>
       <port type="input" prefix="R" lib_name="RST" size="1"/>
@@ -155,9 +155,9 @@
     </circuit_model>
     <circuit_model type="lut" name="frac_lut6" prefix="frac_lut6" dump_structural_verilog="true">
       <design_technology type="cmos" fracturable_lut="true"/>
-      <input_buffer exist="true" circuit_model_name="INVTX1"/>
-      <output_buffer exist="true" circuit_model_name="INVTX1"/>
-      <lut_input_inverter exist="true" circuit_model_name="INVTX1"/>
+      <input_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
+      <output_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
+      <lut_input_inverter exist="true" circuit_model_name="sg13g2_inv_1"/>
       <lut_input_buffer exist="true" circuit_model_name="buf4"/>
       <lut_intermediate_buffer exist="true" circuit_model_name="buf4" location_map="-1-1-"/>
       <pass_gate_logic circuit_model_name="TGATE"/>
@@ -169,10 +169,10 @@
       <port type="sram" prefix="mode" size="2" mode_select="true" circuit_model_name="DFFR" default_val="1"/>
     </circuit_model>
     <!--Scan-chain DFF subckt ports should be defined as <D> <Q> <Qb> <CLK> <RESET> <SET>  -->
-    <circuit_model type="ccff" name="DFFR" prefix="DFFR" spice_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/spice/dff.sp" verilog_netlist="../../../../../DFF/dffr.v">
+    <circuit_model type="ccff" name="DFFR" prefix="DFFR" spice_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/spice/dff.sp" verilog_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/verilog/dff.v">
       <design_technology type="cmos"/>
-      <input_buffer exist="true" circuit_model_name="INVTX1"/>
-      <output_buffer exist="true" circuit_model_name="INVTX1"/>
+      <input_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
+      <output_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
       <port type="input" prefix="pReset" lib_name="RST" size="1" is_global="true" default_val="0" is_reset="true" is_prog="true"/>
       <port type="input" prefix="D" size="1"/>
       <port type="output" prefix="Q" size="1"/>
@@ -181,8 +181,8 @@
     </circuit_model>
     <circuit_model type="iopad" name="GPIO" prefix="GPIO" spice_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/spice/gpio.sp" verilog_netlist="../../../../../GPIO/gpio_netlist_IHP.v">
       <design_technology type="cmos"/>
-      <input_buffer exist="true" circuit_model_name="INVTX1"/>
-      <output_buffer exist="true" circuit_model_name="INVTX1"/>
+      <input_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
+      <output_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
       <port type="inout" prefix="PAD" size="1" is_global="true" is_io="true" is_data_io="true"/>
       <port type="sram" prefix="DIR" size="1" mode_select="true" circuit_model_name="DFFR" default_val="1"/>
       <port type="input" prefix="outpad" lib_name="A" size="1"/>
@@ -190,8 +190,8 @@
     </circuit_model>
     <circuit_model type="hard_logic" name="ADDF" prefix="ADDF" is_default="true" spice_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/spice/adder.sp" verilog_netlist="../../../../../ADDF/ADDF_netlist.v">
       <design_technology type="cmos"/>
-      <input_buffer exist="true" circuit_model_name="INVTX1"/>
-      <output_buffer exist="true" circuit_model_name="INVTX1"/>
+      <input_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
+      <output_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
       <port type="input" prefix="a" lib_name="A" size="1"/>
       <port type="input" prefix="b" lib_name="B" size="1"/>
       <port type="input" prefix="cin" lib_name="CI" size="1"/>
@@ -200,8 +200,8 @@
     </circuit_model>
     <circuit_model type="hard_logic" name="dpram_1024x8" prefix="dpram_1024x8" spice_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/spice/dpram.sp" verilog_netlist="../../../../../mem/dpram8k.v">
       <design_technology type="cmos"/>
-      <input_buffer exist="true" circuit_model_name="INVTX1"/>
-      <output_buffer exist="true" circuit_model_name="INVTX1"/>
+      <input_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
+      <output_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
       <port type="input" prefix="waddr" size="10"/>
       <port type="input" prefix="raddr" size="10"/>
       <port type="input" prefix="data_in" size="8"/>
@@ -212,8 +212,8 @@
     </circuit_model>
     <circuit_model type="hard_logic" name="mult_36x36" prefix="mult_36x36" spice_netlist="${OPENFPGA_PATH}/openfpga_flow/openfpga_cell_library/spice/mult_36x36.sp" verilog_netlist="../../../../../mult/mult_netlist.v">
       <design_technology type="cmos"/>
-      <input_buffer exist="true" circuit_model_name="INVTX1"/>
-      <output_buffer exist="true" circuit_model_name="INVTX1"/>
+      <input_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
+      <output_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
       <port type="input" prefix="A" lib_name="a" size="36"/>
       <port type="input" prefix="B" lib_name="b" size="36"/>
       <port type="output" prefix="Y" lib_name="out" size="72"/>

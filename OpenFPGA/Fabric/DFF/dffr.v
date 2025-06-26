@@ -1,6 +1,6 @@
 //`include "../../../../../ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v"
 
-module dffr(RST, CK, D, Q, QN);
+module DFFR(RST, CK, D, Q, QN);
   input RST, CK, D;
   output Q, QN;
   wire RST, CK, D;

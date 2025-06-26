@@ -3,7 +3,7 @@
 //	Description: Multiplexers
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Thu Jun 26 00:49:40 2025
+//	Date: Thu Jun 26 03:16:43 2025
 //-------------------------------------------
 //----- Default net type -----
 `default_nettype none
@@ -30,45 +30,45 @@ output [0:0] out;
 //----- END Registered ports -----
 
 
-wire [0:0] INVTX1_0_out;
-wire [0:0] INVTX1_1_out;
-wire [0:0] INVTX1_2_out;
-wire [0:0] INVTX1_3_out;
-wire [0:0] INVTX1_4_out;
-wire [0:0] INVTX1_5_out;
 wire [0:0] const1_0_const1;
 wire [0:0] mux_2level_tapbuf_basis_input3_mem3_0_out;
 wire [0:0] mux_2level_tapbuf_basis_input3_mem3_1_out;
 wire [0:0] mux_2level_tapbuf_basis_input3_mem3_2_out;
+wire [0:0] sg13g2_inv_1_0_Y;
+wire [0:0] sg13g2_inv_1_1_Y;
+wire [0:0] sg13g2_inv_1_2_Y;
+wire [0:0] sg13g2_inv_1_3_Y;
+wire [0:0] sg13g2_inv_1_4_Y;
+wire [0:0] sg13g2_inv_1_5_Y;
 
 // ----- BEGIN Local short connections -----
 // ----- END Local short connections -----
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	INVTX1 INVTX1_0_ (
-		.in(in[0]),
-		.out(INVTX1_0_out));
+	sg13g2_inv_1 sg13g2_inv_1_0_ (
+		.A(in[0]),
+		.Y(sg13g2_inv_1_0_Y));
 
-	INVTX1 INVTX1_1_ (
-		.in(in[1]),
-		.out(INVTX1_1_out));
+	sg13g2_inv_1 sg13g2_inv_1_1_ (
+		.A(in[1]),
+		.Y(sg13g2_inv_1_1_Y));
 
-	INVTX1 INVTX1_2_ (
-		.in(in[2]),
-		.out(INVTX1_2_out));
+	sg13g2_inv_1 sg13g2_inv_1_2_ (
+		.A(in[2]),
+		.Y(sg13g2_inv_1_2_Y));
 
-	INVTX1 INVTX1_3_ (
-		.in(in[3]),
-		.out(INVTX1_3_out));
+	sg13g2_inv_1 sg13g2_inv_1_3_ (
+		.A(in[3]),
+		.Y(sg13g2_inv_1_3_Y));
 
-	INVTX1 INVTX1_4_ (
-		.in(in[4]),
-		.out(INVTX1_4_out));
+	sg13g2_inv_1 sg13g2_inv_1_4_ (
+		.A(in[4]),
+		.Y(sg13g2_inv_1_4_Y));
 
-	INVTX1 INVTX1_5_ (
-		.in(in[5]),
-		.out(INVTX1_5_out));
+	sg13g2_inv_1 sg13g2_inv_1_5_ (
+		.A(in[5]),
+		.Y(sg13g2_inv_1_5_Y));
 
 	const1 const1_0_ (
 		.const1(const1_0_const1));
@@ -78,13 +78,13 @@ wire [0:0] mux_2level_tapbuf_basis_input3_mem3_2_out;
 		.out(out));
 
 	mux_2level_tapbuf_basis_input3_mem3 mux_l1_in_0_ (
-		.in({INVTX1_0_out, INVTX1_1_out, INVTX1_2_out}),
+		.in({sg13g2_inv_1_0_Y, sg13g2_inv_1_1_Y, sg13g2_inv_1_2_Y}),
 		.mem(sram[0:2]),
 		.mem_inv(sram_inv[0:2]),
 		.out(mux_2level_tapbuf_basis_input3_mem3_0_out));
 
 	mux_2level_tapbuf_basis_input3_mem3 mux_l1_in_1_ (
-		.in({INVTX1_3_out, INVTX1_4_out, INVTX1_5_out}),
+		.in({sg13g2_inv_1_3_Y, sg13g2_inv_1_4_Y, sg13g2_inv_1_5_Y}),
 		.mem(sram[0:2]),
 		.mem_inv(sram_inv[0:2]),
 		.out(mux_2level_tapbuf_basis_input3_mem3_1_out));
@@ -129,24 +129,24 @@ output [0:0] out;
 //----- END Registered ports -----
 
 
-wire [0:0] INVTX1_0_out;
-wire [0:0] INVTX1_1_out;
 wire [0:0] const1_0_const1;
 wire [0:0] mux_2level_tapbuf_basis_input2_mem1_0_out;
 wire [0:0] mux_2level_tapbuf_basis_input2_mem1_1_out;
+wire [0:0] sg13g2_inv_1_0_Y;
+wire [0:0] sg13g2_inv_1_1_Y;
 
 // ----- BEGIN Local short connections -----
 // ----- END Local short connections -----
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	INVTX1 INVTX1_0_ (
-		.in(in[0]),
-		.out(INVTX1_0_out));
+	sg13g2_inv_1 sg13g2_inv_1_0_ (
+		.A(in[0]),
+		.Y(sg13g2_inv_1_0_Y));
 
-	INVTX1 INVTX1_1_ (
-		.in(in[1]),
-		.out(INVTX1_1_out));
+	sg13g2_inv_1 sg13g2_inv_1_1_ (
+		.A(in[1]),
+		.Y(sg13g2_inv_1_1_Y));
 
 	const1 const1_0_ (
 		.const1(const1_0_const1));
@@ -156,7 +156,7 @@ wire [0:0] mux_2level_tapbuf_basis_input2_mem1_1_out;
 		.out(out));
 
 	mux_2level_tapbuf_basis_input2_mem1 mux_l1_in_0_ (
-		.in({INVTX1_0_out, INVTX1_1_out}),
+		.in({sg13g2_inv_1_0_Y, sg13g2_inv_1_1_Y}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(mux_2level_tapbuf_basis_input2_mem1_0_out));
@@ -201,30 +201,30 @@ output [0:0] out;
 //----- END Registered ports -----
 
 
-wire [0:0] INVTX1_0_out;
-wire [0:0] INVTX1_1_out;
-wire [0:0] INVTX1_2_out;
 wire [0:0] const1_0_const1;
 wire [0:0] mux_2level_tapbuf_basis_input2_mem1_0_out;
 wire [0:0] mux_2level_tapbuf_basis_input2_mem1_1_out;
 wire [0:0] mux_2level_tapbuf_basis_input2_mem1_2_out;
+wire [0:0] sg13g2_inv_1_0_Y;
+wire [0:0] sg13g2_inv_1_1_Y;
+wire [0:0] sg13g2_inv_1_2_Y;
 
 // ----- BEGIN Local short connections -----
 // ----- END Local short connections -----
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	INVTX1 INVTX1_0_ (
-		.in(in[0]),
-		.out(INVTX1_0_out));
+	sg13g2_inv_1 sg13g2_inv_1_0_ (
+		.A(in[0]),
+		.Y(sg13g2_inv_1_0_Y));
 
-	INVTX1 INVTX1_1_ (
-		.in(in[1]),
-		.out(INVTX1_1_out));
+	sg13g2_inv_1 sg13g2_inv_1_1_ (
+		.A(in[1]),
+		.Y(sg13g2_inv_1_1_Y));
 
-	INVTX1 INVTX1_2_ (
-		.in(in[2]),
-		.out(INVTX1_2_out));
+	sg13g2_inv_1 sg13g2_inv_1_2_ (
+		.A(in[2]),
+		.Y(sg13g2_inv_1_2_Y));
 
 	const1 const1_0_ (
 		.const1(const1_0_const1));
@@ -234,13 +234,13 @@ wire [0:0] mux_2level_tapbuf_basis_input2_mem1_2_out;
 		.out(out));
 
 	mux_2level_tapbuf_basis_input2_mem1 mux_l1_in_0_ (
-		.in({INVTX1_0_out, INVTX1_1_out}),
+		.in({sg13g2_inv_1_0_Y, sg13g2_inv_1_1_Y}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(mux_2level_tapbuf_basis_input2_mem1_0_out));
 
 	mux_2level_tapbuf_basis_input2_mem1 mux_l1_in_1_ (
-		.in({INVTX1_2_out, const1_0_const1}),
+		.in({sg13g2_inv_1_2_Y, const1_0_const1}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(mux_2level_tapbuf_basis_input2_mem1_1_out));
@@ -285,34 +285,34 @@ output [0:0] out;
 //----- END Registered ports -----
 
 
-wire [0:0] INVTX1_0_out;
-wire [0:0] INVTX1_1_out;
-wire [0:0] INVTX1_2_out;
-wire [0:0] INVTX1_3_out;
 wire [0:0] const1_0_const1;
 wire [0:0] mux_2level_tapbuf_basis_input3_mem3_0_out;
 wire [0:0] mux_2level_tapbuf_basis_input3_mem3_1_out;
+wire [0:0] sg13g2_inv_1_0_Y;
+wire [0:0] sg13g2_inv_1_1_Y;
+wire [0:0] sg13g2_inv_1_2_Y;
+wire [0:0] sg13g2_inv_1_3_Y;
 
 // ----- BEGIN Local short connections -----
 // ----- END Local short connections -----
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	INVTX1 INVTX1_0_ (
-		.in(in[0]),
-		.out(INVTX1_0_out));
+	sg13g2_inv_1 sg13g2_inv_1_0_ (
+		.A(in[0]),
+		.Y(sg13g2_inv_1_0_Y));
 
-	INVTX1 INVTX1_1_ (
-		.in(in[1]),
-		.out(INVTX1_1_out));
+	sg13g2_inv_1 sg13g2_inv_1_1_ (
+		.A(in[1]),
+		.Y(sg13g2_inv_1_1_Y));
 
-	INVTX1 INVTX1_2_ (
-		.in(in[2]),
-		.out(INVTX1_2_out));
+	sg13g2_inv_1 sg13g2_inv_1_2_ (
+		.A(in[2]),
+		.Y(sg13g2_inv_1_2_Y));
 
-	INVTX1 INVTX1_3_ (
-		.in(in[3]),
-		.out(INVTX1_3_out));
+	sg13g2_inv_1 sg13g2_inv_1_3_ (
+		.A(in[3]),
+		.Y(sg13g2_inv_1_3_Y));
 
 	const1 const1_0_ (
 		.const1(const1_0_const1));
@@ -322,13 +322,13 @@ wire [0:0] mux_2level_tapbuf_basis_input3_mem3_1_out;
 		.out(out));
 
 	mux_2level_tapbuf_basis_input3_mem3 mux_l1_in_0_ (
-		.in({INVTX1_0_out, INVTX1_1_out, INVTX1_2_out}),
+		.in({sg13g2_inv_1_0_Y, sg13g2_inv_1_1_Y, sg13g2_inv_1_2_Y}),
 		.mem(sram[0:2]),
 		.mem_inv(sram_inv[0:2]),
 		.out(mux_2level_tapbuf_basis_input3_mem3_0_out));
 
 	mux_2level_tapbuf_basis_input3_mem3 mux_l2_in_0_ (
-		.in({mux_2level_tapbuf_basis_input3_mem3_0_out, INVTX1_3_out, const1_0_const1}),
+		.in({mux_2level_tapbuf_basis_input3_mem3_0_out, sg13g2_inv_1_3_Y, const1_0_const1}),
 		.mem(sram[3:5]),
 		.mem_inv(sram_inv[3:5]),
 		.out(mux_2level_tapbuf_basis_input3_mem3_1_out));
@@ -367,66 +367,6 @@ output [0:0] out;
 //----- END Registered ports -----
 
 
-wire [0:0] INVTX1_0_out;
-wire [0:0] INVTX1_10_out;
-wire [0:0] INVTX1_11_out;
-wire [0:0] INVTX1_12_out;
-wire [0:0] INVTX1_13_out;
-wire [0:0] INVTX1_14_out;
-wire [0:0] INVTX1_15_out;
-wire [0:0] INVTX1_16_out;
-wire [0:0] INVTX1_17_out;
-wire [0:0] INVTX1_18_out;
-wire [0:0] INVTX1_19_out;
-wire [0:0] INVTX1_1_out;
-wire [0:0] INVTX1_20_out;
-wire [0:0] INVTX1_21_out;
-wire [0:0] INVTX1_22_out;
-wire [0:0] INVTX1_23_out;
-wire [0:0] INVTX1_24_out;
-wire [0:0] INVTX1_25_out;
-wire [0:0] INVTX1_26_out;
-wire [0:0] INVTX1_27_out;
-wire [0:0] INVTX1_28_out;
-wire [0:0] INVTX1_29_out;
-wire [0:0] INVTX1_2_out;
-wire [0:0] INVTX1_30_out;
-wire [0:0] INVTX1_31_out;
-wire [0:0] INVTX1_32_out;
-wire [0:0] INVTX1_33_out;
-wire [0:0] INVTX1_34_out;
-wire [0:0] INVTX1_35_out;
-wire [0:0] INVTX1_36_out;
-wire [0:0] INVTX1_37_out;
-wire [0:0] INVTX1_38_out;
-wire [0:0] INVTX1_39_out;
-wire [0:0] INVTX1_3_out;
-wire [0:0] INVTX1_40_out;
-wire [0:0] INVTX1_41_out;
-wire [0:0] INVTX1_42_out;
-wire [0:0] INVTX1_43_out;
-wire [0:0] INVTX1_44_out;
-wire [0:0] INVTX1_45_out;
-wire [0:0] INVTX1_46_out;
-wire [0:0] INVTX1_47_out;
-wire [0:0] INVTX1_48_out;
-wire [0:0] INVTX1_49_out;
-wire [0:0] INVTX1_4_out;
-wire [0:0] INVTX1_50_out;
-wire [0:0] INVTX1_51_out;
-wire [0:0] INVTX1_52_out;
-wire [0:0] INVTX1_53_out;
-wire [0:0] INVTX1_54_out;
-wire [0:0] INVTX1_55_out;
-wire [0:0] INVTX1_56_out;
-wire [0:0] INVTX1_57_out;
-wire [0:0] INVTX1_58_out;
-wire [0:0] INVTX1_59_out;
-wire [0:0] INVTX1_5_out;
-wire [0:0] INVTX1_6_out;
-wire [0:0] INVTX1_7_out;
-wire [0:0] INVTX1_8_out;
-wire [0:0] INVTX1_9_out;
 wire [0:0] const1_0_const1;
 wire [0:0] mux_2level_basis_input5_mem5_0_out;
 wire [0:0] mux_2level_basis_input8_mem8_0_out;
@@ -437,297 +377,357 @@ wire [0:0] mux_2level_basis_input8_mem8_4_out;
 wire [0:0] mux_2level_basis_input8_mem8_5_out;
 wire [0:0] mux_2level_basis_input8_mem8_6_out;
 wire [0:0] mux_2level_basis_input8_mem8_7_out;
+wire [0:0] sg13g2_inv_1_0_Y;
+wire [0:0] sg13g2_inv_1_10_Y;
+wire [0:0] sg13g2_inv_1_11_Y;
+wire [0:0] sg13g2_inv_1_12_Y;
+wire [0:0] sg13g2_inv_1_13_Y;
+wire [0:0] sg13g2_inv_1_14_Y;
+wire [0:0] sg13g2_inv_1_15_Y;
+wire [0:0] sg13g2_inv_1_16_Y;
+wire [0:0] sg13g2_inv_1_17_Y;
+wire [0:0] sg13g2_inv_1_18_Y;
+wire [0:0] sg13g2_inv_1_19_Y;
+wire [0:0] sg13g2_inv_1_1_Y;
+wire [0:0] sg13g2_inv_1_20_Y;
+wire [0:0] sg13g2_inv_1_21_Y;
+wire [0:0] sg13g2_inv_1_22_Y;
+wire [0:0] sg13g2_inv_1_23_Y;
+wire [0:0] sg13g2_inv_1_24_Y;
+wire [0:0] sg13g2_inv_1_25_Y;
+wire [0:0] sg13g2_inv_1_26_Y;
+wire [0:0] sg13g2_inv_1_27_Y;
+wire [0:0] sg13g2_inv_1_28_Y;
+wire [0:0] sg13g2_inv_1_29_Y;
+wire [0:0] sg13g2_inv_1_2_Y;
+wire [0:0] sg13g2_inv_1_30_Y;
+wire [0:0] sg13g2_inv_1_31_Y;
+wire [0:0] sg13g2_inv_1_32_Y;
+wire [0:0] sg13g2_inv_1_33_Y;
+wire [0:0] sg13g2_inv_1_34_Y;
+wire [0:0] sg13g2_inv_1_35_Y;
+wire [0:0] sg13g2_inv_1_36_Y;
+wire [0:0] sg13g2_inv_1_37_Y;
+wire [0:0] sg13g2_inv_1_38_Y;
+wire [0:0] sg13g2_inv_1_39_Y;
+wire [0:0] sg13g2_inv_1_3_Y;
+wire [0:0] sg13g2_inv_1_40_Y;
+wire [0:0] sg13g2_inv_1_41_Y;
+wire [0:0] sg13g2_inv_1_42_Y;
+wire [0:0] sg13g2_inv_1_43_Y;
+wire [0:0] sg13g2_inv_1_44_Y;
+wire [0:0] sg13g2_inv_1_45_Y;
+wire [0:0] sg13g2_inv_1_46_Y;
+wire [0:0] sg13g2_inv_1_47_Y;
+wire [0:0] sg13g2_inv_1_48_Y;
+wire [0:0] sg13g2_inv_1_49_Y;
+wire [0:0] sg13g2_inv_1_4_Y;
+wire [0:0] sg13g2_inv_1_50_Y;
+wire [0:0] sg13g2_inv_1_51_Y;
+wire [0:0] sg13g2_inv_1_52_Y;
+wire [0:0] sg13g2_inv_1_53_Y;
+wire [0:0] sg13g2_inv_1_54_Y;
+wire [0:0] sg13g2_inv_1_55_Y;
+wire [0:0] sg13g2_inv_1_56_Y;
+wire [0:0] sg13g2_inv_1_57_Y;
+wire [0:0] sg13g2_inv_1_58_Y;
+wire [0:0] sg13g2_inv_1_59_Y;
+wire [0:0] sg13g2_inv_1_5_Y;
+wire [0:0] sg13g2_inv_1_6_Y;
+wire [0:0] sg13g2_inv_1_7_Y;
+wire [0:0] sg13g2_inv_1_8_Y;
+wire [0:0] sg13g2_inv_1_9_Y;
 
 // ----- BEGIN Local short connections -----
 // ----- END Local short connections -----
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	INVTX1 INVTX1_0_ (
-		.in(in[0]),
-		.out(INVTX1_0_out));
+	sg13g2_inv_1 sg13g2_inv_1_0_ (
+		.A(in[0]),
+		.Y(sg13g2_inv_1_0_Y));
 
-	INVTX1 INVTX1_1_ (
-		.in(in[1]),
-		.out(INVTX1_1_out));
+	sg13g2_inv_1 sg13g2_inv_1_1_ (
+		.A(in[1]),
+		.Y(sg13g2_inv_1_1_Y));
 
-	INVTX1 INVTX1_2_ (
-		.in(in[2]),
-		.out(INVTX1_2_out));
+	sg13g2_inv_1 sg13g2_inv_1_2_ (
+		.A(in[2]),
+		.Y(sg13g2_inv_1_2_Y));
 
-	INVTX1 INVTX1_3_ (
-		.in(in[3]),
-		.out(INVTX1_3_out));
+	sg13g2_inv_1 sg13g2_inv_1_3_ (
+		.A(in[3]),
+		.Y(sg13g2_inv_1_3_Y));
 
-	INVTX1 INVTX1_4_ (
-		.in(in[4]),
-		.out(INVTX1_4_out));
+	sg13g2_inv_1 sg13g2_inv_1_4_ (
+		.A(in[4]),
+		.Y(sg13g2_inv_1_4_Y));
 
-	INVTX1 INVTX1_5_ (
-		.in(in[5]),
-		.out(INVTX1_5_out));
+	sg13g2_inv_1 sg13g2_inv_1_5_ (
+		.A(in[5]),
+		.Y(sg13g2_inv_1_5_Y));
 
-	INVTX1 INVTX1_6_ (
-		.in(in[6]),
-		.out(INVTX1_6_out));
+	sg13g2_inv_1 sg13g2_inv_1_6_ (
+		.A(in[6]),
+		.Y(sg13g2_inv_1_6_Y));
 
-	INVTX1 INVTX1_7_ (
-		.in(in[7]),
-		.out(INVTX1_7_out));
+	sg13g2_inv_1 sg13g2_inv_1_7_ (
+		.A(in[7]),
+		.Y(sg13g2_inv_1_7_Y));
 
-	INVTX1 INVTX1_8_ (
-		.in(in[8]),
-		.out(INVTX1_8_out));
+	sg13g2_inv_1 sg13g2_inv_1_8_ (
+		.A(in[8]),
+		.Y(sg13g2_inv_1_8_Y));
 
-	INVTX1 INVTX1_9_ (
-		.in(in[9]),
-		.out(INVTX1_9_out));
+	sg13g2_inv_1 sg13g2_inv_1_9_ (
+		.A(in[9]),
+		.Y(sg13g2_inv_1_9_Y));
 
-	INVTX1 INVTX1_10_ (
-		.in(in[10]),
-		.out(INVTX1_10_out));
+	sg13g2_inv_1 sg13g2_inv_1_10_ (
+		.A(in[10]),
+		.Y(sg13g2_inv_1_10_Y));
 
-	INVTX1 INVTX1_11_ (
-		.in(in[11]),
-		.out(INVTX1_11_out));
+	sg13g2_inv_1 sg13g2_inv_1_11_ (
+		.A(in[11]),
+		.Y(sg13g2_inv_1_11_Y));
 
-	INVTX1 INVTX1_12_ (
-		.in(in[12]),
-		.out(INVTX1_12_out));
+	sg13g2_inv_1 sg13g2_inv_1_12_ (
+		.A(in[12]),
+		.Y(sg13g2_inv_1_12_Y));
 
-	INVTX1 INVTX1_13_ (
-		.in(in[13]),
-		.out(INVTX1_13_out));
+	sg13g2_inv_1 sg13g2_inv_1_13_ (
+		.A(in[13]),
+		.Y(sg13g2_inv_1_13_Y));
 
-	INVTX1 INVTX1_14_ (
-		.in(in[14]),
-		.out(INVTX1_14_out));
+	sg13g2_inv_1 sg13g2_inv_1_14_ (
+		.A(in[14]),
+		.Y(sg13g2_inv_1_14_Y));
 
-	INVTX1 INVTX1_15_ (
-		.in(in[15]),
-		.out(INVTX1_15_out));
+	sg13g2_inv_1 sg13g2_inv_1_15_ (
+		.A(in[15]),
+		.Y(sg13g2_inv_1_15_Y));
 
-	INVTX1 INVTX1_16_ (
-		.in(in[16]),
-		.out(INVTX1_16_out));
+	sg13g2_inv_1 sg13g2_inv_1_16_ (
+		.A(in[16]),
+		.Y(sg13g2_inv_1_16_Y));
 
-	INVTX1 INVTX1_17_ (
-		.in(in[17]),
-		.out(INVTX1_17_out));
+	sg13g2_inv_1 sg13g2_inv_1_17_ (
+		.A(in[17]),
+		.Y(sg13g2_inv_1_17_Y));
 
-	INVTX1 INVTX1_18_ (
-		.in(in[18]),
-		.out(INVTX1_18_out));
+	sg13g2_inv_1 sg13g2_inv_1_18_ (
+		.A(in[18]),
+		.Y(sg13g2_inv_1_18_Y));
 
-	INVTX1 INVTX1_19_ (
-		.in(in[19]),
-		.out(INVTX1_19_out));
+	sg13g2_inv_1 sg13g2_inv_1_19_ (
+		.A(in[19]),
+		.Y(sg13g2_inv_1_19_Y));
 
-	INVTX1 INVTX1_20_ (
-		.in(in[20]),
-		.out(INVTX1_20_out));
+	sg13g2_inv_1 sg13g2_inv_1_20_ (
+		.A(in[20]),
+		.Y(sg13g2_inv_1_20_Y));
 
-	INVTX1 INVTX1_21_ (
-		.in(in[21]),
-		.out(INVTX1_21_out));
+	sg13g2_inv_1 sg13g2_inv_1_21_ (
+		.A(in[21]),
+		.Y(sg13g2_inv_1_21_Y));
 
-	INVTX1 INVTX1_22_ (
-		.in(in[22]),
-		.out(INVTX1_22_out));
+	sg13g2_inv_1 sg13g2_inv_1_22_ (
+		.A(in[22]),
+		.Y(sg13g2_inv_1_22_Y));
 
-	INVTX1 INVTX1_23_ (
-		.in(in[23]),
-		.out(INVTX1_23_out));
+	sg13g2_inv_1 sg13g2_inv_1_23_ (
+		.A(in[23]),
+		.Y(sg13g2_inv_1_23_Y));
 
-	INVTX1 INVTX1_24_ (
-		.in(in[24]),
-		.out(INVTX1_24_out));
+	sg13g2_inv_1 sg13g2_inv_1_24_ (
+		.A(in[24]),
+		.Y(sg13g2_inv_1_24_Y));
 
-	INVTX1 INVTX1_25_ (
-		.in(in[25]),
-		.out(INVTX1_25_out));
+	sg13g2_inv_1 sg13g2_inv_1_25_ (
+		.A(in[25]),
+		.Y(sg13g2_inv_1_25_Y));
 
-	INVTX1 INVTX1_26_ (
-		.in(in[26]),
-		.out(INVTX1_26_out));
+	sg13g2_inv_1 sg13g2_inv_1_26_ (
+		.A(in[26]),
+		.Y(sg13g2_inv_1_26_Y));
 
-	INVTX1 INVTX1_27_ (
-		.in(in[27]),
-		.out(INVTX1_27_out));
+	sg13g2_inv_1 sg13g2_inv_1_27_ (
+		.A(in[27]),
+		.Y(sg13g2_inv_1_27_Y));
 
-	INVTX1 INVTX1_28_ (
-		.in(in[28]),
-		.out(INVTX1_28_out));
+	sg13g2_inv_1 sg13g2_inv_1_28_ (
+		.A(in[28]),
+		.Y(sg13g2_inv_1_28_Y));
 
-	INVTX1 INVTX1_29_ (
-		.in(in[29]),
-		.out(INVTX1_29_out));
+	sg13g2_inv_1 sg13g2_inv_1_29_ (
+		.A(in[29]),
+		.Y(sg13g2_inv_1_29_Y));
 
-	INVTX1 INVTX1_30_ (
-		.in(in[30]),
-		.out(INVTX1_30_out));
+	sg13g2_inv_1 sg13g2_inv_1_30_ (
+		.A(in[30]),
+		.Y(sg13g2_inv_1_30_Y));
 
-	INVTX1 INVTX1_31_ (
-		.in(in[31]),
-		.out(INVTX1_31_out));
+	sg13g2_inv_1 sg13g2_inv_1_31_ (
+		.A(in[31]),
+		.Y(sg13g2_inv_1_31_Y));
 
-	INVTX1 INVTX1_32_ (
-		.in(in[32]),
-		.out(INVTX1_32_out));
+	sg13g2_inv_1 sg13g2_inv_1_32_ (
+		.A(in[32]),
+		.Y(sg13g2_inv_1_32_Y));
 
-	INVTX1 INVTX1_33_ (
-		.in(in[33]),
-		.out(INVTX1_33_out));
+	sg13g2_inv_1 sg13g2_inv_1_33_ (
+		.A(in[33]),
+		.Y(sg13g2_inv_1_33_Y));
 
-	INVTX1 INVTX1_34_ (
-		.in(in[34]),
-		.out(INVTX1_34_out));
+	sg13g2_inv_1 sg13g2_inv_1_34_ (
+		.A(in[34]),
+		.Y(sg13g2_inv_1_34_Y));
 
-	INVTX1 INVTX1_35_ (
-		.in(in[35]),
-		.out(INVTX1_35_out));
+	sg13g2_inv_1 sg13g2_inv_1_35_ (
+		.A(in[35]),
+		.Y(sg13g2_inv_1_35_Y));
 
-	INVTX1 INVTX1_36_ (
-		.in(in[36]),
-		.out(INVTX1_36_out));
+	sg13g2_inv_1 sg13g2_inv_1_36_ (
+		.A(in[36]),
+		.Y(sg13g2_inv_1_36_Y));
 
-	INVTX1 INVTX1_37_ (
-		.in(in[37]),
-		.out(INVTX1_37_out));
+	sg13g2_inv_1 sg13g2_inv_1_37_ (
+		.A(in[37]),
+		.Y(sg13g2_inv_1_37_Y));
 
-	INVTX1 INVTX1_38_ (
-		.in(in[38]),
-		.out(INVTX1_38_out));
+	sg13g2_inv_1 sg13g2_inv_1_38_ (
+		.A(in[38]),
+		.Y(sg13g2_inv_1_38_Y));
 
-	INVTX1 INVTX1_39_ (
-		.in(in[39]),
-		.out(INVTX1_39_out));
+	sg13g2_inv_1 sg13g2_inv_1_39_ (
+		.A(in[39]),
+		.Y(sg13g2_inv_1_39_Y));
 
-	INVTX1 INVTX1_40_ (
-		.in(in[40]),
-		.out(INVTX1_40_out));
+	sg13g2_inv_1 sg13g2_inv_1_40_ (
+		.A(in[40]),
+		.Y(sg13g2_inv_1_40_Y));
 
-	INVTX1 INVTX1_41_ (
-		.in(in[41]),
-		.out(INVTX1_41_out));
+	sg13g2_inv_1 sg13g2_inv_1_41_ (
+		.A(in[41]),
+		.Y(sg13g2_inv_1_41_Y));
 
-	INVTX1 INVTX1_42_ (
-		.in(in[42]),
-		.out(INVTX1_42_out));
+	sg13g2_inv_1 sg13g2_inv_1_42_ (
+		.A(in[42]),
+		.Y(sg13g2_inv_1_42_Y));
 
-	INVTX1 INVTX1_43_ (
-		.in(in[43]),
-		.out(INVTX1_43_out));
+	sg13g2_inv_1 sg13g2_inv_1_43_ (
+		.A(in[43]),
+		.Y(sg13g2_inv_1_43_Y));
 
-	INVTX1 INVTX1_44_ (
-		.in(in[44]),
-		.out(INVTX1_44_out));
+	sg13g2_inv_1 sg13g2_inv_1_44_ (
+		.A(in[44]),
+		.Y(sg13g2_inv_1_44_Y));
 
-	INVTX1 INVTX1_45_ (
-		.in(in[45]),
-		.out(INVTX1_45_out));
+	sg13g2_inv_1 sg13g2_inv_1_45_ (
+		.A(in[45]),
+		.Y(sg13g2_inv_1_45_Y));
 
-	INVTX1 INVTX1_46_ (
-		.in(in[46]),
-		.out(INVTX1_46_out));
+	sg13g2_inv_1 sg13g2_inv_1_46_ (
+		.A(in[46]),
+		.Y(sg13g2_inv_1_46_Y));
 
-	INVTX1 INVTX1_47_ (
-		.in(in[47]),
-		.out(INVTX1_47_out));
+	sg13g2_inv_1 sg13g2_inv_1_47_ (
+		.A(in[47]),
+		.Y(sg13g2_inv_1_47_Y));
 
-	INVTX1 INVTX1_48_ (
-		.in(in[48]),
-		.out(INVTX1_48_out));
+	sg13g2_inv_1 sg13g2_inv_1_48_ (
+		.A(in[48]),
+		.Y(sg13g2_inv_1_48_Y));
 
-	INVTX1 INVTX1_49_ (
-		.in(in[49]),
-		.out(INVTX1_49_out));
+	sg13g2_inv_1 sg13g2_inv_1_49_ (
+		.A(in[49]),
+		.Y(sg13g2_inv_1_49_Y));
 
-	INVTX1 INVTX1_50_ (
-		.in(in[50]),
-		.out(INVTX1_50_out));
+	sg13g2_inv_1 sg13g2_inv_1_50_ (
+		.A(in[50]),
+		.Y(sg13g2_inv_1_50_Y));
 
-	INVTX1 INVTX1_51_ (
-		.in(in[51]),
-		.out(INVTX1_51_out));
+	sg13g2_inv_1 sg13g2_inv_1_51_ (
+		.A(in[51]),
+		.Y(sg13g2_inv_1_51_Y));
 
-	INVTX1 INVTX1_52_ (
-		.in(in[52]),
-		.out(INVTX1_52_out));
+	sg13g2_inv_1 sg13g2_inv_1_52_ (
+		.A(in[52]),
+		.Y(sg13g2_inv_1_52_Y));
 
-	INVTX1 INVTX1_53_ (
-		.in(in[53]),
-		.out(INVTX1_53_out));
+	sg13g2_inv_1 sg13g2_inv_1_53_ (
+		.A(in[53]),
+		.Y(sg13g2_inv_1_53_Y));
 
-	INVTX1 INVTX1_54_ (
-		.in(in[54]),
-		.out(INVTX1_54_out));
+	sg13g2_inv_1 sg13g2_inv_1_54_ (
+		.A(in[54]),
+		.Y(sg13g2_inv_1_54_Y));
 
-	INVTX1 INVTX1_55_ (
-		.in(in[55]),
-		.out(INVTX1_55_out));
+	sg13g2_inv_1 sg13g2_inv_1_55_ (
+		.A(in[55]),
+		.Y(sg13g2_inv_1_55_Y));
 
-	INVTX1 INVTX1_56_ (
-		.in(in[56]),
-		.out(INVTX1_56_out));
+	sg13g2_inv_1 sg13g2_inv_1_56_ (
+		.A(in[56]),
+		.Y(sg13g2_inv_1_56_Y));
 
-	INVTX1 INVTX1_57_ (
-		.in(in[57]),
-		.out(INVTX1_57_out));
+	sg13g2_inv_1 sg13g2_inv_1_57_ (
+		.A(in[57]),
+		.Y(sg13g2_inv_1_57_Y));
 
-	INVTX1 INVTX1_58_ (
-		.in(in[58]),
-		.out(INVTX1_58_out));
+	sg13g2_inv_1 sg13g2_inv_1_58_ (
+		.A(in[58]),
+		.Y(sg13g2_inv_1_58_Y));
 
-	INVTX1 INVTX1_59_ (
-		.in(in[59]),
-		.out(INVTX1_59_out));
+	sg13g2_inv_1 sg13g2_inv_1_59_ (
+		.A(in[59]),
+		.Y(sg13g2_inv_1_59_Y));
 
-	INVTX1 INVTX1_60_ (
-		.in(mux_2level_basis_input8_mem8_7_out),
-		.out(out));
+	sg13g2_inv_1 sg13g2_inv_1_60_ (
+		.A(mux_2level_basis_input8_mem8_7_out),
+		.Y(out));
 
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
 	mux_2level_basis_input8_mem8 mux_l1_in_0_ (
-		.in({INVTX1_0_out, INVTX1_1_out, INVTX1_2_out, INVTX1_3_out, INVTX1_4_out, INVTX1_5_out, INVTX1_6_out, INVTX1_7_out}),
+		.in({sg13g2_inv_1_0_Y, sg13g2_inv_1_1_Y, sg13g2_inv_1_2_Y, sg13g2_inv_1_3_Y, sg13g2_inv_1_4_Y, sg13g2_inv_1_5_Y, sg13g2_inv_1_6_Y, sg13g2_inv_1_7_Y}),
 		.mem(sram[0:7]),
 		.mem_inv(sram_inv[0:7]),
 		.out(mux_2level_basis_input8_mem8_0_out));
 
 	mux_2level_basis_input8_mem8 mux_l1_in_1_ (
-		.in({INVTX1_8_out, INVTX1_9_out, INVTX1_10_out, INVTX1_11_out, INVTX1_12_out, INVTX1_13_out, INVTX1_14_out, INVTX1_15_out}),
+		.in({sg13g2_inv_1_8_Y, sg13g2_inv_1_9_Y, sg13g2_inv_1_10_Y, sg13g2_inv_1_11_Y, sg13g2_inv_1_12_Y, sg13g2_inv_1_13_Y, sg13g2_inv_1_14_Y, sg13g2_inv_1_15_Y}),
 		.mem(sram[0:7]),
 		.mem_inv(sram_inv[0:7]),
 		.out(mux_2level_basis_input8_mem8_1_out));
 
 	mux_2level_basis_input8_mem8 mux_l1_in_2_ (
-		.in({INVTX1_16_out, INVTX1_17_out, INVTX1_18_out, INVTX1_19_out, INVTX1_20_out, INVTX1_21_out, INVTX1_22_out, INVTX1_23_out}),
+		.in({sg13g2_inv_1_16_Y, sg13g2_inv_1_17_Y, sg13g2_inv_1_18_Y, sg13g2_inv_1_19_Y, sg13g2_inv_1_20_Y, sg13g2_inv_1_21_Y, sg13g2_inv_1_22_Y, sg13g2_inv_1_23_Y}),
 		.mem(sram[0:7]),
 		.mem_inv(sram_inv[0:7]),
 		.out(mux_2level_basis_input8_mem8_2_out));
 
 	mux_2level_basis_input8_mem8 mux_l1_in_3_ (
-		.in({INVTX1_24_out, INVTX1_25_out, INVTX1_26_out, INVTX1_27_out, INVTX1_28_out, INVTX1_29_out, INVTX1_30_out, INVTX1_31_out}),
+		.in({sg13g2_inv_1_24_Y, sg13g2_inv_1_25_Y, sg13g2_inv_1_26_Y, sg13g2_inv_1_27_Y, sg13g2_inv_1_28_Y, sg13g2_inv_1_29_Y, sg13g2_inv_1_30_Y, sg13g2_inv_1_31_Y}),
 		.mem(sram[0:7]),
 		.mem_inv(sram_inv[0:7]),
 		.out(mux_2level_basis_input8_mem8_3_out));
 
 	mux_2level_basis_input8_mem8 mux_l1_in_4_ (
-		.in({INVTX1_32_out, INVTX1_33_out, INVTX1_34_out, INVTX1_35_out, INVTX1_36_out, INVTX1_37_out, INVTX1_38_out, INVTX1_39_out}),
+		.in({sg13g2_inv_1_32_Y, sg13g2_inv_1_33_Y, sg13g2_inv_1_34_Y, sg13g2_inv_1_35_Y, sg13g2_inv_1_36_Y, sg13g2_inv_1_37_Y, sg13g2_inv_1_38_Y, sg13g2_inv_1_39_Y}),
 		.mem(sram[0:7]),
 		.mem_inv(sram_inv[0:7]),
 		.out(mux_2level_basis_input8_mem8_4_out));
 
 	mux_2level_basis_input8_mem8 mux_l1_in_5_ (
-		.in({INVTX1_40_out, INVTX1_41_out, INVTX1_42_out, INVTX1_43_out, INVTX1_44_out, INVTX1_45_out, INVTX1_46_out, INVTX1_47_out}),
+		.in({sg13g2_inv_1_40_Y, sg13g2_inv_1_41_Y, sg13g2_inv_1_42_Y, sg13g2_inv_1_43_Y, sg13g2_inv_1_44_Y, sg13g2_inv_1_45_Y, sg13g2_inv_1_46_Y, sg13g2_inv_1_47_Y}),
 		.mem(sram[0:7]),
 		.mem_inv(sram_inv[0:7]),
 		.out(mux_2level_basis_input8_mem8_5_out));
 
 	mux_2level_basis_input8_mem8 mux_l1_in_6_ (
-		.in({INVTX1_48_out, INVTX1_49_out, INVTX1_50_out, INVTX1_51_out, INVTX1_52_out, INVTX1_53_out, INVTX1_54_out, INVTX1_55_out}),
+		.in({sg13g2_inv_1_48_Y, sg13g2_inv_1_49_Y, sg13g2_inv_1_50_Y, sg13g2_inv_1_51_Y, sg13g2_inv_1_52_Y, sg13g2_inv_1_53_Y, sg13g2_inv_1_54_Y, sg13g2_inv_1_55_Y}),
 		.mem(sram[0:7]),
 		.mem_inv(sram_inv[0:7]),
 		.out(mux_2level_basis_input8_mem8_6_out));
@@ -739,7 +739,7 @@ wire [0:0] mux_2level_basis_input8_mem8_7_out;
 		.out(mux_2level_basis_input8_mem8_7_out));
 
 	mux_2level_basis_input5_mem5 mux_l1_in_7_ (
-		.in({INVTX1_56_out, INVTX1_57_out, INVTX1_58_out, INVTX1_59_out, const1_0_const1}),
+		.in({sg13g2_inv_1_56_Y, sg13g2_inv_1_57_Y, sg13g2_inv_1_58_Y, sg13g2_inv_1_59_Y, const1_0_const1}),
 		.mem(sram[0:4]),
 		.mem_inv(sram_inv[0:4]),
 		.out(mux_2level_basis_input5_mem5_0_out));
@@ -778,28 +778,28 @@ output [0:0] out;
 //----- END Registered ports -----
 
 
-wire [0:0] INVTX1_0_out;
-wire [0:0] INVTX1_1_out;
-wire [0:0] INVTX1_2_out;
 wire [0:0] const1_0_const1;
 wire [0:0] mux_1level_tapbuf_basis_input4_mem4_0_out;
+wire [0:0] sg13g2_inv_1_0_Y;
+wire [0:0] sg13g2_inv_1_1_Y;
+wire [0:0] sg13g2_inv_1_2_Y;
 
 // ----- BEGIN Local short connections -----
 // ----- END Local short connections -----
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	INVTX1 INVTX1_0_ (
-		.in(in[0]),
-		.out(INVTX1_0_out));
+	sg13g2_inv_1 sg13g2_inv_1_0_ (
+		.A(in[0]),
+		.Y(sg13g2_inv_1_0_Y));
 
-	INVTX1 INVTX1_1_ (
-		.in(in[1]),
-		.out(INVTX1_1_out));
+	sg13g2_inv_1 sg13g2_inv_1_1_ (
+		.A(in[1]),
+		.Y(sg13g2_inv_1_1_Y));
 
-	INVTX1 INVTX1_2_ (
-		.in(in[2]),
-		.out(INVTX1_2_out));
+	sg13g2_inv_1 sg13g2_inv_1_2_ (
+		.A(in[2]),
+		.Y(sg13g2_inv_1_2_Y));
 
 	const1 const1_0_ (
 		.const1(const1_0_const1));
@@ -809,7 +809,7 @@ wire [0:0] mux_1level_tapbuf_basis_input4_mem4_0_out;
 		.out(out));
 
 	mux_1level_tapbuf_basis_input4_mem4 mux_l1_in_0_ (
-		.in({INVTX1_0_out, INVTX1_1_out, INVTX1_2_out, const1_0_const1}),
+		.in({sg13g2_inv_1_0_Y, sg13g2_inv_1_1_Y, sg13g2_inv_1_2_Y, const1_0_const1}),
 		.mem(sram[0:3]),
 		.mem_inv(sram_inv[0:3]),
 		.out(mux_1level_tapbuf_basis_input4_mem4_0_out));
@@ -848,23 +848,23 @@ output [0:0] out;
 //----- END Registered ports -----
 
 
-wire [0:0] INVTX1_0_out;
-wire [0:0] INVTX1_1_out;
 wire [0:0] const1_0_const1;
 wire [0:0] mux_1level_tapbuf_basis_input3_mem3_0_out;
+wire [0:0] sg13g2_inv_1_0_Y;
+wire [0:0] sg13g2_inv_1_1_Y;
 
 // ----- BEGIN Local short connections -----
 // ----- END Local short connections -----
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	INVTX1 INVTX1_0_ (
-		.in(in[0]),
-		.out(INVTX1_0_out));
+	sg13g2_inv_1 sg13g2_inv_1_0_ (
+		.A(in[0]),
+		.Y(sg13g2_inv_1_0_Y));
 
-	INVTX1 INVTX1_1_ (
-		.in(in[1]),
-		.out(INVTX1_1_out));
+	sg13g2_inv_1 sg13g2_inv_1_1_ (
+		.A(in[1]),
+		.Y(sg13g2_inv_1_1_Y));
 
 	const1 const1_0_ (
 		.const1(const1_0_const1));
@@ -874,7 +874,7 @@ wire [0:0] mux_1level_tapbuf_basis_input3_mem3_0_out;
 		.out(out));
 
 	mux_1level_tapbuf_basis_input3_mem3 mux_l1_in_0_ (
-		.in({INVTX1_0_out, INVTX1_1_out, const1_0_const1}),
+		.in({sg13g2_inv_1_0_Y, sg13g2_inv_1_1_Y, const1_0_const1}),
 		.mem(sram[0:2]),
 		.mem_inv(sram_inv[0:2]),
 		.out(mux_1level_tapbuf_basis_input3_mem3_0_out));
@@ -919,70 +919,6 @@ output [0:0] lut6_out;
 //----- END Registered ports -----
 
 
-wire [0:0] INVTX1_0_out;
-wire [0:0] INVTX1_10_out;
-wire [0:0] INVTX1_11_out;
-wire [0:0] INVTX1_12_out;
-wire [0:0] INVTX1_13_out;
-wire [0:0] INVTX1_14_out;
-wire [0:0] INVTX1_15_out;
-wire [0:0] INVTX1_16_out;
-wire [0:0] INVTX1_17_out;
-wire [0:0] INVTX1_18_out;
-wire [0:0] INVTX1_19_out;
-wire [0:0] INVTX1_1_out;
-wire [0:0] INVTX1_20_out;
-wire [0:0] INVTX1_21_out;
-wire [0:0] INVTX1_22_out;
-wire [0:0] INVTX1_23_out;
-wire [0:0] INVTX1_24_out;
-wire [0:0] INVTX1_25_out;
-wire [0:0] INVTX1_26_out;
-wire [0:0] INVTX1_27_out;
-wire [0:0] INVTX1_28_out;
-wire [0:0] INVTX1_29_out;
-wire [0:0] INVTX1_2_out;
-wire [0:0] INVTX1_30_out;
-wire [0:0] INVTX1_31_out;
-wire [0:0] INVTX1_32_out;
-wire [0:0] INVTX1_33_out;
-wire [0:0] INVTX1_34_out;
-wire [0:0] INVTX1_35_out;
-wire [0:0] INVTX1_36_out;
-wire [0:0] INVTX1_37_out;
-wire [0:0] INVTX1_38_out;
-wire [0:0] INVTX1_39_out;
-wire [0:0] INVTX1_3_out;
-wire [0:0] INVTX1_40_out;
-wire [0:0] INVTX1_41_out;
-wire [0:0] INVTX1_42_out;
-wire [0:0] INVTX1_43_out;
-wire [0:0] INVTX1_44_out;
-wire [0:0] INVTX1_45_out;
-wire [0:0] INVTX1_46_out;
-wire [0:0] INVTX1_47_out;
-wire [0:0] INVTX1_48_out;
-wire [0:0] INVTX1_49_out;
-wire [0:0] INVTX1_4_out;
-wire [0:0] INVTX1_50_out;
-wire [0:0] INVTX1_51_out;
-wire [0:0] INVTX1_52_out;
-wire [0:0] INVTX1_53_out;
-wire [0:0] INVTX1_54_out;
-wire [0:0] INVTX1_55_out;
-wire [0:0] INVTX1_56_out;
-wire [0:0] INVTX1_57_out;
-wire [0:0] INVTX1_58_out;
-wire [0:0] INVTX1_59_out;
-wire [0:0] INVTX1_5_out;
-wire [0:0] INVTX1_60_out;
-wire [0:0] INVTX1_61_out;
-wire [0:0] INVTX1_62_out;
-wire [0:0] INVTX1_63_out;
-wire [0:0] INVTX1_6_out;
-wire [0:0] INVTX1_7_out;
-wire [0:0] INVTX1_8_out;
-wire [0:0] INVTX1_9_out;
 wire [0:0] buf4_0_out;
 wire [0:0] buf4_10_out;
 wire [0:0] buf4_11_out;
@@ -1062,484 +998,548 @@ wire [0:0] frac_lut6_mux_basis_input2_mem1_6_out;
 wire [0:0] frac_lut6_mux_basis_input2_mem1_7_out;
 wire [0:0] frac_lut6_mux_basis_input2_mem1_8_out;
 wire [0:0] frac_lut6_mux_basis_input2_mem1_9_out;
+wire [0:0] sg13g2_inv_1_0_Y;
+wire [0:0] sg13g2_inv_1_10_Y;
+wire [0:0] sg13g2_inv_1_11_Y;
+wire [0:0] sg13g2_inv_1_12_Y;
+wire [0:0] sg13g2_inv_1_13_Y;
+wire [0:0] sg13g2_inv_1_14_Y;
+wire [0:0] sg13g2_inv_1_15_Y;
+wire [0:0] sg13g2_inv_1_16_Y;
+wire [0:0] sg13g2_inv_1_17_Y;
+wire [0:0] sg13g2_inv_1_18_Y;
+wire [0:0] sg13g2_inv_1_19_Y;
+wire [0:0] sg13g2_inv_1_1_Y;
+wire [0:0] sg13g2_inv_1_20_Y;
+wire [0:0] sg13g2_inv_1_21_Y;
+wire [0:0] sg13g2_inv_1_22_Y;
+wire [0:0] sg13g2_inv_1_23_Y;
+wire [0:0] sg13g2_inv_1_24_Y;
+wire [0:0] sg13g2_inv_1_25_Y;
+wire [0:0] sg13g2_inv_1_26_Y;
+wire [0:0] sg13g2_inv_1_27_Y;
+wire [0:0] sg13g2_inv_1_28_Y;
+wire [0:0] sg13g2_inv_1_29_Y;
+wire [0:0] sg13g2_inv_1_2_Y;
+wire [0:0] sg13g2_inv_1_30_Y;
+wire [0:0] sg13g2_inv_1_31_Y;
+wire [0:0] sg13g2_inv_1_32_Y;
+wire [0:0] sg13g2_inv_1_33_Y;
+wire [0:0] sg13g2_inv_1_34_Y;
+wire [0:0] sg13g2_inv_1_35_Y;
+wire [0:0] sg13g2_inv_1_36_Y;
+wire [0:0] sg13g2_inv_1_37_Y;
+wire [0:0] sg13g2_inv_1_38_Y;
+wire [0:0] sg13g2_inv_1_39_Y;
+wire [0:0] sg13g2_inv_1_3_Y;
+wire [0:0] sg13g2_inv_1_40_Y;
+wire [0:0] sg13g2_inv_1_41_Y;
+wire [0:0] sg13g2_inv_1_42_Y;
+wire [0:0] sg13g2_inv_1_43_Y;
+wire [0:0] sg13g2_inv_1_44_Y;
+wire [0:0] sg13g2_inv_1_45_Y;
+wire [0:0] sg13g2_inv_1_46_Y;
+wire [0:0] sg13g2_inv_1_47_Y;
+wire [0:0] sg13g2_inv_1_48_Y;
+wire [0:0] sg13g2_inv_1_49_Y;
+wire [0:0] sg13g2_inv_1_4_Y;
+wire [0:0] sg13g2_inv_1_50_Y;
+wire [0:0] sg13g2_inv_1_51_Y;
+wire [0:0] sg13g2_inv_1_52_Y;
+wire [0:0] sg13g2_inv_1_53_Y;
+wire [0:0] sg13g2_inv_1_54_Y;
+wire [0:0] sg13g2_inv_1_55_Y;
+wire [0:0] sg13g2_inv_1_56_Y;
+wire [0:0] sg13g2_inv_1_57_Y;
+wire [0:0] sg13g2_inv_1_58_Y;
+wire [0:0] sg13g2_inv_1_59_Y;
+wire [0:0] sg13g2_inv_1_5_Y;
+wire [0:0] sg13g2_inv_1_60_Y;
+wire [0:0] sg13g2_inv_1_61_Y;
+wire [0:0] sg13g2_inv_1_62_Y;
+wire [0:0] sg13g2_inv_1_63_Y;
+wire [0:0] sg13g2_inv_1_6_Y;
+wire [0:0] sg13g2_inv_1_7_Y;
+wire [0:0] sg13g2_inv_1_8_Y;
+wire [0:0] sg13g2_inv_1_9_Y;
 
 // ----- BEGIN Local short connections -----
 // ----- END Local short connections -----
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	INVTX1 INVTX1_0_ (
-		.in(in[0]),
-		.out(INVTX1_0_out));
-
-	INVTX1 INVTX1_1_ (
-		.in(in[1]),
-		.out(INVTX1_1_out));
-
-	INVTX1 INVTX1_2_ (
-		.in(in[2]),
-		.out(INVTX1_2_out));
-
-	INVTX1 INVTX1_3_ (
-		.in(in[3]),
-		.out(INVTX1_3_out));
-
-	INVTX1 INVTX1_4_ (
-		.in(in[4]),
-		.out(INVTX1_4_out));
-
-	INVTX1 INVTX1_5_ (
-		.in(in[5]),
-		.out(INVTX1_5_out));
-
-	INVTX1 INVTX1_6_ (
-		.in(in[6]),
-		.out(INVTX1_6_out));
-
-	INVTX1 INVTX1_7_ (
-		.in(in[7]),
-		.out(INVTX1_7_out));
-
-	INVTX1 INVTX1_8_ (
-		.in(in[8]),
-		.out(INVTX1_8_out));
-
-	INVTX1 INVTX1_9_ (
-		.in(in[9]),
-		.out(INVTX1_9_out));
-
-	INVTX1 INVTX1_10_ (
-		.in(in[10]),
-		.out(INVTX1_10_out));
-
-	INVTX1 INVTX1_11_ (
-		.in(in[11]),
-		.out(INVTX1_11_out));
-
-	INVTX1 INVTX1_12_ (
-		.in(in[12]),
-		.out(INVTX1_12_out));
-
-	INVTX1 INVTX1_13_ (
-		.in(in[13]),
-		.out(INVTX1_13_out));
-
-	INVTX1 INVTX1_14_ (
-		.in(in[14]),
-		.out(INVTX1_14_out));
-
-	INVTX1 INVTX1_15_ (
-		.in(in[15]),
-		.out(INVTX1_15_out));
-
-	INVTX1 INVTX1_16_ (
-		.in(in[16]),
-		.out(INVTX1_16_out));
-
-	INVTX1 INVTX1_17_ (
-		.in(in[17]),
-		.out(INVTX1_17_out));
-
-	INVTX1 INVTX1_18_ (
-		.in(in[18]),
-		.out(INVTX1_18_out));
-
-	INVTX1 INVTX1_19_ (
-		.in(in[19]),
-		.out(INVTX1_19_out));
-
-	INVTX1 INVTX1_20_ (
-		.in(in[20]),
-		.out(INVTX1_20_out));
-
-	INVTX1 INVTX1_21_ (
-		.in(in[21]),
-		.out(INVTX1_21_out));
-
-	INVTX1 INVTX1_22_ (
-		.in(in[22]),
-		.out(INVTX1_22_out));
-
-	INVTX1 INVTX1_23_ (
-		.in(in[23]),
-		.out(INVTX1_23_out));
-
-	INVTX1 INVTX1_24_ (
-		.in(in[24]),
-		.out(INVTX1_24_out));
-
-	INVTX1 INVTX1_25_ (
-		.in(in[25]),
-		.out(INVTX1_25_out));
-
-	INVTX1 INVTX1_26_ (
-		.in(in[26]),
-		.out(INVTX1_26_out));
-
-	INVTX1 INVTX1_27_ (
-		.in(in[27]),
-		.out(INVTX1_27_out));
-
-	INVTX1 INVTX1_28_ (
-		.in(in[28]),
-		.out(INVTX1_28_out));
-
-	INVTX1 INVTX1_29_ (
-		.in(in[29]),
-		.out(INVTX1_29_out));
-
-	INVTX1 INVTX1_30_ (
-		.in(in[30]),
-		.out(INVTX1_30_out));
-
-	INVTX1 INVTX1_31_ (
-		.in(in[31]),
-		.out(INVTX1_31_out));
-
-	INVTX1 INVTX1_32_ (
-		.in(in[32]),
-		.out(INVTX1_32_out));
-
-	INVTX1 INVTX1_33_ (
-		.in(in[33]),
-		.out(INVTX1_33_out));
-
-	INVTX1 INVTX1_34_ (
-		.in(in[34]),
-		.out(INVTX1_34_out));
-
-	INVTX1 INVTX1_35_ (
-		.in(in[35]),
-		.out(INVTX1_35_out));
-
-	INVTX1 INVTX1_36_ (
-		.in(in[36]),
-		.out(INVTX1_36_out));
-
-	INVTX1 INVTX1_37_ (
-		.in(in[37]),
-		.out(INVTX1_37_out));
-
-	INVTX1 INVTX1_38_ (
-		.in(in[38]),
-		.out(INVTX1_38_out));
-
-	INVTX1 INVTX1_39_ (
-		.in(in[39]),
-		.out(INVTX1_39_out));
-
-	INVTX1 INVTX1_40_ (
-		.in(in[40]),
-		.out(INVTX1_40_out));
-
-	INVTX1 INVTX1_41_ (
-		.in(in[41]),
-		.out(INVTX1_41_out));
-
-	INVTX1 INVTX1_42_ (
-		.in(in[42]),
-		.out(INVTX1_42_out));
-
-	INVTX1 INVTX1_43_ (
-		.in(in[43]),
-		.out(INVTX1_43_out));
-
-	INVTX1 INVTX1_44_ (
-		.in(in[44]),
-		.out(INVTX1_44_out));
-
-	INVTX1 INVTX1_45_ (
-		.in(in[45]),
-		.out(INVTX1_45_out));
-
-	INVTX1 INVTX1_46_ (
-		.in(in[46]),
-		.out(INVTX1_46_out));
-
-	INVTX1 INVTX1_47_ (
-		.in(in[47]),
-		.out(INVTX1_47_out));
-
-	INVTX1 INVTX1_48_ (
-		.in(in[48]),
-		.out(INVTX1_48_out));
-
-	INVTX1 INVTX1_49_ (
-		.in(in[49]),
-		.out(INVTX1_49_out));
-
-	INVTX1 INVTX1_50_ (
-		.in(in[50]),
-		.out(INVTX1_50_out));
-
-	INVTX1 INVTX1_51_ (
-		.in(in[51]),
-		.out(INVTX1_51_out));
-
-	INVTX1 INVTX1_52_ (
-		.in(in[52]),
-		.out(INVTX1_52_out));
-
-	INVTX1 INVTX1_53_ (
-		.in(in[53]),
-		.out(INVTX1_53_out));
-
-	INVTX1 INVTX1_54_ (
-		.in(in[54]),
-		.out(INVTX1_54_out));
-
-	INVTX1 INVTX1_55_ (
-		.in(in[55]),
-		.out(INVTX1_55_out));
-
-	INVTX1 INVTX1_56_ (
-		.in(in[56]),
-		.out(INVTX1_56_out));
-
-	INVTX1 INVTX1_57_ (
-		.in(in[57]),
-		.out(INVTX1_57_out));
-
-	INVTX1 INVTX1_58_ (
-		.in(in[58]),
-		.out(INVTX1_58_out));
-
-	INVTX1 INVTX1_59_ (
-		.in(in[59]),
-		.out(INVTX1_59_out));
-
-	INVTX1 INVTX1_60_ (
-		.in(in[60]),
-		.out(INVTX1_60_out));
-
-	INVTX1 INVTX1_61_ (
-		.in(in[61]),
-		.out(INVTX1_61_out));
-
-	INVTX1 INVTX1_62_ (
-		.in(in[62]),
-		.out(INVTX1_62_out));
-
-	INVTX1 INVTX1_63_ (
-		.in(in[63]),
-		.out(INVTX1_63_out));
-
-	INVTX1 INVTX1_64_ (
-		.in(frac_lut6_mux_basis_input2_mem1_56_out),
-		.out(lut4_out[0]));
-
-	INVTX1 INVTX1_65_ (
-		.in(frac_lut6_mux_basis_input2_mem1_57_out),
-		.out(lut4_out[1]));
-
-	INVTX1 INVTX1_66_ (
-		.in(frac_lut6_mux_basis_input2_mem1_58_out),
-		.out(lut4_out[2]));
-
-	INVTX1 INVTX1_67_ (
-		.in(frac_lut6_mux_basis_input2_mem1_59_out),
-		.out(lut4_out[3]));
-
-	INVTX1 INVTX1_68_ (
-		.in(frac_lut6_mux_basis_input2_mem1_60_out),
-		.out(lut5_out[0]));
-
-	INVTX1 INVTX1_69_ (
-		.in(frac_lut6_mux_basis_input2_mem1_61_out),
-		.out(lut5_out[1]));
-
-	INVTX1 INVTX1_70_ (
-		.in(frac_lut6_mux_basis_input2_mem1_62_out),
-		.out(lut6_out));
+	sg13g2_inv_1 sg13g2_inv_1_0_ (
+		.A(in[0]),
+		.Y(sg13g2_inv_1_0_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_1_ (
+		.A(in[1]),
+		.Y(sg13g2_inv_1_1_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_2_ (
+		.A(in[2]),
+		.Y(sg13g2_inv_1_2_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_3_ (
+		.A(in[3]),
+		.Y(sg13g2_inv_1_3_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_4_ (
+		.A(in[4]),
+		.Y(sg13g2_inv_1_4_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_5_ (
+		.A(in[5]),
+		.Y(sg13g2_inv_1_5_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_6_ (
+		.A(in[6]),
+		.Y(sg13g2_inv_1_6_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_7_ (
+		.A(in[7]),
+		.Y(sg13g2_inv_1_7_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_8_ (
+		.A(in[8]),
+		.Y(sg13g2_inv_1_8_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_9_ (
+		.A(in[9]),
+		.Y(sg13g2_inv_1_9_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_10_ (
+		.A(in[10]),
+		.Y(sg13g2_inv_1_10_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_11_ (
+		.A(in[11]),
+		.Y(sg13g2_inv_1_11_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_12_ (
+		.A(in[12]),
+		.Y(sg13g2_inv_1_12_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_13_ (
+		.A(in[13]),
+		.Y(sg13g2_inv_1_13_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_14_ (
+		.A(in[14]),
+		.Y(sg13g2_inv_1_14_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_15_ (
+		.A(in[15]),
+		.Y(sg13g2_inv_1_15_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_16_ (
+		.A(in[16]),
+		.Y(sg13g2_inv_1_16_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_17_ (
+		.A(in[17]),
+		.Y(sg13g2_inv_1_17_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_18_ (
+		.A(in[18]),
+		.Y(sg13g2_inv_1_18_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_19_ (
+		.A(in[19]),
+		.Y(sg13g2_inv_1_19_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_20_ (
+		.A(in[20]),
+		.Y(sg13g2_inv_1_20_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_21_ (
+		.A(in[21]),
+		.Y(sg13g2_inv_1_21_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_22_ (
+		.A(in[22]),
+		.Y(sg13g2_inv_1_22_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_23_ (
+		.A(in[23]),
+		.Y(sg13g2_inv_1_23_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_24_ (
+		.A(in[24]),
+		.Y(sg13g2_inv_1_24_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_25_ (
+		.A(in[25]),
+		.Y(sg13g2_inv_1_25_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_26_ (
+		.A(in[26]),
+		.Y(sg13g2_inv_1_26_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_27_ (
+		.A(in[27]),
+		.Y(sg13g2_inv_1_27_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_28_ (
+		.A(in[28]),
+		.Y(sg13g2_inv_1_28_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_29_ (
+		.A(in[29]),
+		.Y(sg13g2_inv_1_29_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_30_ (
+		.A(in[30]),
+		.Y(sg13g2_inv_1_30_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_31_ (
+		.A(in[31]),
+		.Y(sg13g2_inv_1_31_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_32_ (
+		.A(in[32]),
+		.Y(sg13g2_inv_1_32_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_33_ (
+		.A(in[33]),
+		.Y(sg13g2_inv_1_33_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_34_ (
+		.A(in[34]),
+		.Y(sg13g2_inv_1_34_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_35_ (
+		.A(in[35]),
+		.Y(sg13g2_inv_1_35_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_36_ (
+		.A(in[36]),
+		.Y(sg13g2_inv_1_36_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_37_ (
+		.A(in[37]),
+		.Y(sg13g2_inv_1_37_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_38_ (
+		.A(in[38]),
+		.Y(sg13g2_inv_1_38_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_39_ (
+		.A(in[39]),
+		.Y(sg13g2_inv_1_39_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_40_ (
+		.A(in[40]),
+		.Y(sg13g2_inv_1_40_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_41_ (
+		.A(in[41]),
+		.Y(sg13g2_inv_1_41_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_42_ (
+		.A(in[42]),
+		.Y(sg13g2_inv_1_42_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_43_ (
+		.A(in[43]),
+		.Y(sg13g2_inv_1_43_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_44_ (
+		.A(in[44]),
+		.Y(sg13g2_inv_1_44_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_45_ (
+		.A(in[45]),
+		.Y(sg13g2_inv_1_45_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_46_ (
+		.A(in[46]),
+		.Y(sg13g2_inv_1_46_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_47_ (
+		.A(in[47]),
+		.Y(sg13g2_inv_1_47_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_48_ (
+		.A(in[48]),
+		.Y(sg13g2_inv_1_48_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_49_ (
+		.A(in[49]),
+		.Y(sg13g2_inv_1_49_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_50_ (
+		.A(in[50]),
+		.Y(sg13g2_inv_1_50_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_51_ (
+		.A(in[51]),
+		.Y(sg13g2_inv_1_51_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_52_ (
+		.A(in[52]),
+		.Y(sg13g2_inv_1_52_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_53_ (
+		.A(in[53]),
+		.Y(sg13g2_inv_1_53_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_54_ (
+		.A(in[54]),
+		.Y(sg13g2_inv_1_54_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_55_ (
+		.A(in[55]),
+		.Y(sg13g2_inv_1_55_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_56_ (
+		.A(in[56]),
+		.Y(sg13g2_inv_1_56_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_57_ (
+		.A(in[57]),
+		.Y(sg13g2_inv_1_57_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_58_ (
+		.A(in[58]),
+		.Y(sg13g2_inv_1_58_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_59_ (
+		.A(in[59]),
+		.Y(sg13g2_inv_1_59_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_60_ (
+		.A(in[60]),
+		.Y(sg13g2_inv_1_60_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_61_ (
+		.A(in[61]),
+		.Y(sg13g2_inv_1_61_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_62_ (
+		.A(in[62]),
+		.Y(sg13g2_inv_1_62_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_63_ (
+		.A(in[63]),
+		.Y(sg13g2_inv_1_63_Y));
+
+	sg13g2_inv_1 sg13g2_inv_1_64_ (
+		.A(frac_lut6_mux_basis_input2_mem1_56_out),
+		.Y(lut4_out[0]));
+
+	sg13g2_inv_1 sg13g2_inv_1_65_ (
+		.A(frac_lut6_mux_basis_input2_mem1_57_out),
+		.Y(lut4_out[1]));
+
+	sg13g2_inv_1 sg13g2_inv_1_66_ (
+		.A(frac_lut6_mux_basis_input2_mem1_58_out),
+		.Y(lut4_out[2]));
+
+	sg13g2_inv_1 sg13g2_inv_1_67_ (
+		.A(frac_lut6_mux_basis_input2_mem1_59_out),
+		.Y(lut4_out[3]));
+
+	sg13g2_inv_1 sg13g2_inv_1_68_ (
+		.A(frac_lut6_mux_basis_input2_mem1_60_out),
+		.Y(lut5_out[0]));
+
+	sg13g2_inv_1 sg13g2_inv_1_69_ (
+		.A(frac_lut6_mux_basis_input2_mem1_61_out),
+		.Y(lut5_out[1]));
+
+	sg13g2_inv_1 sg13g2_inv_1_70_ (
+		.A(frac_lut6_mux_basis_input2_mem1_62_out),
+		.Y(lut6_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_0_ (
-		.in({INVTX1_0_out, INVTX1_1_out}),
+		.in({sg13g2_inv_1_0_Y, sg13g2_inv_1_1_Y}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_0_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_1_ (
-		.in({INVTX1_2_out, INVTX1_3_out}),
+		.in({sg13g2_inv_1_2_Y, sg13g2_inv_1_3_Y}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_1_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_2_ (
-		.in({INVTX1_4_out, INVTX1_5_out}),
+		.in({sg13g2_inv_1_4_Y, sg13g2_inv_1_5_Y}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_2_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_3_ (
-		.in({INVTX1_6_out, INVTX1_7_out}),
+		.in({sg13g2_inv_1_6_Y, sg13g2_inv_1_7_Y}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_3_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_4_ (
-		.in({INVTX1_8_out, INVTX1_9_out}),
+		.in({sg13g2_inv_1_8_Y, sg13g2_inv_1_9_Y}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_4_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_5_ (
-		.in({INVTX1_10_out, INVTX1_11_out}),
+		.in({sg13g2_inv_1_10_Y, sg13g2_inv_1_11_Y}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_5_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_6_ (
-		.in({INVTX1_12_out, INVTX1_13_out}),
+		.in({sg13g2_inv_1_12_Y, sg13g2_inv_1_13_Y}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_6_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_7_ (
-		.in({INVTX1_14_out, INVTX1_15_out}),
+		.in({sg13g2_inv_1_14_Y, sg13g2_inv_1_15_Y}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_7_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_8_ (
-		.in({INVTX1_16_out, INVTX1_17_out}),
+		.in({sg13g2_inv_1_16_Y, sg13g2_inv_1_17_Y}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_8_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_9_ (
-		.in({INVTX1_18_out, INVTX1_19_out}),
+		.in({sg13g2_inv_1_18_Y, sg13g2_inv_1_19_Y}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_9_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_10_ (
-		.in({INVTX1_20_out, INVTX1_21_out}),
+		.in({sg13g2_inv_1_20_Y, sg13g2_inv_1_21_Y}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_10_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_11_ (
-		.in({INVTX1_22_out, INVTX1_23_out}),
+		.in({sg13g2_inv_1_22_Y, sg13g2_inv_1_23_Y}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_11_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_12_ (
-		.in({INVTX1_24_out, INVTX1_25_out}),
+		.in({sg13g2_inv_1_24_Y, sg13g2_inv_1_25_Y}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_12_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_13_ (
-		.in({INVTX1_26_out, INVTX1_27_out}),
+		.in({sg13g2_inv_1_26_Y, sg13g2_inv_1_27_Y}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_13_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_14_ (
-		.in({INVTX1_28_out, INVTX1_29_out}),
+		.in({sg13g2_inv_1_28_Y, sg13g2_inv_1_29_Y}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_14_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_15_ (
-		.in({INVTX1_30_out, INVTX1_31_out}),
+		.in({sg13g2_inv_1_30_Y, sg13g2_inv_1_31_Y}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_15_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_16_ (
-		.in({INVTX1_32_out, INVTX1_33_out}),
+		.in({sg13g2_inv_1_32_Y, sg13g2_inv_1_33_Y}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_16_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_17_ (
-		.in({INVTX1_34_out, INVTX1_35_out}),
+		.in({sg13g2_inv_1_34_Y, sg13g2_inv_1_35_Y}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_17_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_18_ (
-		.in({INVTX1_36_out, INVTX1_37_out}),
+		.in({sg13g2_inv_1_36_Y, sg13g2_inv_1_37_Y}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_18_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_19_ (
-		.in({INVTX1_38_out, INVTX1_39_out}),
+		.in({sg13g2_inv_1_38_Y, sg13g2_inv_1_39_Y}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_19_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_20_ (
-		.in({INVTX1_40_out, INVTX1_41_out}),
+		.in({sg13g2_inv_1_40_Y, sg13g2_inv_1_41_Y}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_20_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_21_ (
-		.in({INVTX1_42_out, INVTX1_43_out}),
+		.in({sg13g2_inv_1_42_Y, sg13g2_inv_1_43_Y}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_21_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_22_ (
-		.in({INVTX1_44_out, INVTX1_45_out}),
+		.in({sg13g2_inv_1_44_Y, sg13g2_inv_1_45_Y}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_22_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_23_ (
-		.in({INVTX1_46_out, INVTX1_47_out}),
+		.in({sg13g2_inv_1_46_Y, sg13g2_inv_1_47_Y}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_23_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_24_ (
-		.in({INVTX1_48_out, INVTX1_49_out}),
+		.in({sg13g2_inv_1_48_Y, sg13g2_inv_1_49_Y}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_24_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_25_ (
-		.in({INVTX1_50_out, INVTX1_51_out}),
+		.in({sg13g2_inv_1_50_Y, sg13g2_inv_1_51_Y}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_25_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_26_ (
-		.in({INVTX1_52_out, INVTX1_53_out}),
+		.in({sg13g2_inv_1_52_Y, sg13g2_inv_1_53_Y}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_26_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_27_ (
-		.in({INVTX1_54_out, INVTX1_55_out}),
+		.in({sg13g2_inv_1_54_Y, sg13g2_inv_1_55_Y}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_27_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_28_ (
-		.in({INVTX1_56_out, INVTX1_57_out}),
+		.in({sg13g2_inv_1_56_Y, sg13g2_inv_1_57_Y}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_28_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_29_ (
-		.in({INVTX1_58_out, INVTX1_59_out}),
+		.in({sg13g2_inv_1_58_Y, sg13g2_inv_1_59_Y}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_29_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_30_ (
-		.in({INVTX1_60_out, INVTX1_61_out}),
+		.in({sg13g2_inv_1_60_Y, sg13g2_inv_1_61_Y}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_30_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_31_ (
-		.in({INVTX1_62_out, INVTX1_63_out}),
+		.in({sg13g2_inv_1_62_Y, sg13g2_inv_1_63_Y}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_31_out));
