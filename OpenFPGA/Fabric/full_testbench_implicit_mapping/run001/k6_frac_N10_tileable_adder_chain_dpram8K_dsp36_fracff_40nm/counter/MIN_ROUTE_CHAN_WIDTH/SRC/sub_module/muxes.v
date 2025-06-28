@@ -3,7 +3,7 @@
 //	Description: Multiplexers
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Fri Jun 27 00:43:47 2025
+//	Date: Sat Jun 28 14:09:21 2025
 //-------------------------------------------
 //----- Default net type -----
 `default_nettype none
@@ -73,9 +73,9 @@ wire [0:0] sg13g2_inv_1_5_Y;
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	sg13g2_inv_4 sg13g2_inv_4_0_ (
-		.A(mux_2level_tapbuf_basis_input3_mem3_2_out),
-		.Y(out));
+	tap_buf4 tap_buf4_0_ (
+		.in(mux_2level_tapbuf_basis_input3_mem3_2_out),
+		.out(out));
 
 	mux_2level_tapbuf_basis_input3_mem3 mux_l1_in_0_ (
 		.in({sg13g2_inv_1_0_Y, sg13g2_inv_1_1_Y, sg13g2_inv_1_2_Y}),
@@ -151,9 +151,9 @@ wire [0:0] sg13g2_inv_1_1_Y;
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	sg13g2_inv_4 sg13g2_inv_4_0_ (
-		.A(mux_2level_tapbuf_basis_input2_mem1_1_out),
-		.Y(out));
+	tap_buf4 tap_buf4_0_ (
+		.in(mux_2level_tapbuf_basis_input2_mem1_1_out),
+		.out(out));
 
 	mux_2level_tapbuf_basis_input2_mem1 mux_l1_in_0_ (
 		.in({sg13g2_inv_1_0_Y, sg13g2_inv_1_1_Y}),
@@ -229,9 +229,9 @@ wire [0:0] sg13g2_inv_1_2_Y;
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	sg13g2_inv_4 sg13g2_inv_4_0_ (
-		.A(mux_2level_tapbuf_basis_input2_mem1_2_out),
-		.Y(out));
+	tap_buf4 tap_buf4_0_ (
+		.in(mux_2level_tapbuf_basis_input2_mem1_2_out),
+		.out(out));
 
 	mux_2level_tapbuf_basis_input2_mem1 mux_l1_in_0_ (
 		.in({sg13g2_inv_1_0_Y, sg13g2_inv_1_1_Y}),
@@ -317,9 +317,9 @@ wire [0:0] sg13g2_inv_1_3_Y;
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	sg13g2_inv_4 sg13g2_inv_4_0_ (
-		.A(mux_2level_tapbuf_basis_input3_mem3_1_out),
-		.Y(out));
+	tap_buf4 tap_buf4_0_ (
+		.in(mux_2level_tapbuf_basis_input3_mem3_1_out),
+		.out(out));
 
 	mux_2level_tapbuf_basis_input3_mem3 mux_l1_in_0_ (
 		.in({sg13g2_inv_1_0_Y, sg13g2_inv_1_1_Y, sg13g2_inv_1_2_Y}),
@@ -804,9 +804,9 @@ wire [0:0] sg13g2_inv_1_2_Y;
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	sg13g2_inv_4 sg13g2_inv_4_0_ (
-		.A(mux_1level_tapbuf_basis_input4_mem4_0_out),
-		.Y(out));
+	tap_buf4 tap_buf4_0_ (
+		.in(mux_1level_tapbuf_basis_input4_mem4_0_out),
+		.out(out));
 
 	mux_1level_tapbuf_basis_input4_mem4 mux_l1_in_0_ (
 		.in({sg13g2_inv_1_0_Y, sg13g2_inv_1_1_Y, sg13g2_inv_1_2_Y, const1_0_const1}),
@@ -869,9 +869,9 @@ wire [0:0] sg13g2_inv_1_1_Y;
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	sg13g2_inv_4 sg13g2_inv_4_0_ (
-		.A(mux_1level_tapbuf_basis_input3_mem3_0_out),
-		.Y(out));
+	tap_buf4 tap_buf4_0_ (
+		.in(mux_1level_tapbuf_basis_input3_mem3_0_out),
+		.out(out));
 
 	mux_1level_tapbuf_basis_input3_mem3 mux_l1_in_0_ (
 		.in({sg13g2_inv_1_0_Y, sg13g2_inv_1_1_Y, const1_0_const1}),
@@ -982,22 +982,22 @@ wire [0:0] frac_lut6_mux_basis_input2_mem1_6_out;
 wire [0:0] frac_lut6_mux_basis_input2_mem1_7_out;
 wire [0:0] frac_lut6_mux_basis_input2_mem1_8_out;
 wire [0:0] frac_lut6_mux_basis_input2_mem1_9_out;
-wire [0:0] sg13g2_buf_1_0_X;
-wire [0:0] sg13g2_buf_1_10_X;
-wire [0:0] sg13g2_buf_1_11_X;
-wire [0:0] sg13g2_buf_1_12_X;
-wire [0:0] sg13g2_buf_1_13_X;
-wire [0:0] sg13g2_buf_1_14_X;
-wire [0:0] sg13g2_buf_1_15_X;
-wire [0:0] sg13g2_buf_1_1_X;
-wire [0:0] sg13g2_buf_1_2_X;
-wire [0:0] sg13g2_buf_1_3_X;
-wire [0:0] sg13g2_buf_1_4_X;
-wire [0:0] sg13g2_buf_1_5_X;
-wire [0:0] sg13g2_buf_1_6_X;
-wire [0:0] sg13g2_buf_1_7_X;
-wire [0:0] sg13g2_buf_1_8_X;
-wire [0:0] sg13g2_buf_1_9_X;
+wire [0:0] sg13g2_buf_4_0_X;
+wire [0:0] sg13g2_buf_4_10_X;
+wire [0:0] sg13g2_buf_4_11_X;
+wire [0:0] sg13g2_buf_4_12_X;
+wire [0:0] sg13g2_buf_4_13_X;
+wire [0:0] sg13g2_buf_4_14_X;
+wire [0:0] sg13g2_buf_4_15_X;
+wire [0:0] sg13g2_buf_4_1_X;
+wire [0:0] sg13g2_buf_4_2_X;
+wire [0:0] sg13g2_buf_4_3_X;
+wire [0:0] sg13g2_buf_4_4_X;
+wire [0:0] sg13g2_buf_4_5_X;
+wire [0:0] sg13g2_buf_4_6_X;
+wire [0:0] sg13g2_buf_4_7_X;
+wire [0:0] sg13g2_buf_4_8_X;
+wire [0:0] sg13g2_buf_4_9_X;
 wire [0:0] sg13g2_inv_1_0_Y;
 wire [0:0] sg13g2_inv_1_10_Y;
 wire [0:0] sg13g2_inv_1_11_Y;
@@ -1641,49 +1641,49 @@ wire [0:0] sg13g2_inv_1_9_Y;
 		.out(frac_lut6_mux_basis_input2_mem1_47_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l3_in_0_ (
-		.in({sg13g2_buf_1_0_X, sg13g2_buf_1_1_X}),
+		.in({sg13g2_buf_4_0_X, sg13g2_buf_4_1_X}),
 		.mem(sram[2]),
 		.mem_inv(sram_inv[2]),
 		.out(frac_lut6_mux_basis_input2_mem1_48_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l3_in_1_ (
-		.in({sg13g2_buf_1_2_X, sg13g2_buf_1_3_X}),
+		.in({sg13g2_buf_4_2_X, sg13g2_buf_4_3_X}),
 		.mem(sram[2]),
 		.mem_inv(sram_inv[2]),
 		.out(frac_lut6_mux_basis_input2_mem1_49_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l3_in_2_ (
-		.in({sg13g2_buf_1_4_X, sg13g2_buf_1_5_X}),
+		.in({sg13g2_buf_4_4_X, sg13g2_buf_4_5_X}),
 		.mem(sram[2]),
 		.mem_inv(sram_inv[2]),
 		.out(frac_lut6_mux_basis_input2_mem1_50_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l3_in_3_ (
-		.in({sg13g2_buf_1_6_X, sg13g2_buf_1_7_X}),
+		.in({sg13g2_buf_4_6_X, sg13g2_buf_4_7_X}),
 		.mem(sram[2]),
 		.mem_inv(sram_inv[2]),
 		.out(frac_lut6_mux_basis_input2_mem1_51_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l3_in_4_ (
-		.in({sg13g2_buf_1_8_X, sg13g2_buf_1_9_X}),
+		.in({sg13g2_buf_4_8_X, sg13g2_buf_4_9_X}),
 		.mem(sram[2]),
 		.mem_inv(sram_inv[2]),
 		.out(frac_lut6_mux_basis_input2_mem1_52_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l3_in_5_ (
-		.in({sg13g2_buf_1_10_X, sg13g2_buf_1_11_X}),
+		.in({sg13g2_buf_4_10_X, sg13g2_buf_4_11_X}),
 		.mem(sram[2]),
 		.mem_inv(sram_inv[2]),
 		.out(frac_lut6_mux_basis_input2_mem1_53_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l3_in_6_ (
-		.in({sg13g2_buf_1_12_X, sg13g2_buf_1_13_X}),
+		.in({sg13g2_buf_4_12_X, sg13g2_buf_4_13_X}),
 		.mem(sram[2]),
 		.mem_inv(sram_inv[2]),
 		.out(frac_lut6_mux_basis_input2_mem1_54_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l3_in_7_ (
-		.in({sg13g2_buf_1_14_X, sg13g2_buf_1_15_X}),
+		.in({sg13g2_buf_4_14_X, sg13g2_buf_4_15_X}),
 		.mem(sram[2]),
 		.mem_inv(sram_inv[2]),
 		.out(frac_lut6_mux_basis_input2_mem1_55_out));
@@ -1730,69 +1730,69 @@ wire [0:0] sg13g2_inv_1_9_Y;
 		.mem_inv(sram_inv[5]),
 		.out(frac_lut6_mux_basis_input2_mem1_62_out));
 
-	sg13g2_buf_1 sg13g2_buf_1_0_ (
+	sg13g2_buf_4 sg13g2_buf_4_0_ (
 		.A(frac_lut6_mux_basis_input2_mem1_32_out),
-		.X(sg13g2_buf_1_0_X));
+		.X(sg13g2_buf_4_0_X));
 
-	sg13g2_buf_1 sg13g2_buf_1_1_ (
+	sg13g2_buf_4 sg13g2_buf_4_1_ (
 		.A(frac_lut6_mux_basis_input2_mem1_33_out),
-		.X(sg13g2_buf_1_1_X));
+		.X(sg13g2_buf_4_1_X));
 
-	sg13g2_buf_1 sg13g2_buf_1_2_ (
+	sg13g2_buf_4 sg13g2_buf_4_2_ (
 		.A(frac_lut6_mux_basis_input2_mem1_34_out),
-		.X(sg13g2_buf_1_2_X));
+		.X(sg13g2_buf_4_2_X));
 
-	sg13g2_buf_1 sg13g2_buf_1_3_ (
+	sg13g2_buf_4 sg13g2_buf_4_3_ (
 		.A(frac_lut6_mux_basis_input2_mem1_35_out),
-		.X(sg13g2_buf_1_3_X));
+		.X(sg13g2_buf_4_3_X));
 
-	sg13g2_buf_1 sg13g2_buf_1_4_ (
+	sg13g2_buf_4 sg13g2_buf_4_4_ (
 		.A(frac_lut6_mux_basis_input2_mem1_36_out),
-		.X(sg13g2_buf_1_4_X));
+		.X(sg13g2_buf_4_4_X));
 
-	sg13g2_buf_1 sg13g2_buf_1_5_ (
+	sg13g2_buf_4 sg13g2_buf_4_5_ (
 		.A(frac_lut6_mux_basis_input2_mem1_37_out),
-		.X(sg13g2_buf_1_5_X));
+		.X(sg13g2_buf_4_5_X));
 
-	sg13g2_buf_1 sg13g2_buf_1_6_ (
+	sg13g2_buf_4 sg13g2_buf_4_6_ (
 		.A(frac_lut6_mux_basis_input2_mem1_38_out),
-		.X(sg13g2_buf_1_6_X));
+		.X(sg13g2_buf_4_6_X));
 
-	sg13g2_buf_1 sg13g2_buf_1_7_ (
+	sg13g2_buf_4 sg13g2_buf_4_7_ (
 		.A(frac_lut6_mux_basis_input2_mem1_39_out),
-		.X(sg13g2_buf_1_7_X));
+		.X(sg13g2_buf_4_7_X));
 
-	sg13g2_buf_1 sg13g2_buf_1_8_ (
+	sg13g2_buf_4 sg13g2_buf_4_8_ (
 		.A(frac_lut6_mux_basis_input2_mem1_40_out),
-		.X(sg13g2_buf_1_8_X));
+		.X(sg13g2_buf_4_8_X));
 
-	sg13g2_buf_1 sg13g2_buf_1_9_ (
+	sg13g2_buf_4 sg13g2_buf_4_9_ (
 		.A(frac_lut6_mux_basis_input2_mem1_41_out),
-		.X(sg13g2_buf_1_9_X));
+		.X(sg13g2_buf_4_9_X));
 
-	sg13g2_buf_1 sg13g2_buf_1_10_ (
+	sg13g2_buf_4 sg13g2_buf_4_10_ (
 		.A(frac_lut6_mux_basis_input2_mem1_42_out),
-		.X(sg13g2_buf_1_10_X));
+		.X(sg13g2_buf_4_10_X));
 
-	sg13g2_buf_1 sg13g2_buf_1_11_ (
+	sg13g2_buf_4 sg13g2_buf_4_11_ (
 		.A(frac_lut6_mux_basis_input2_mem1_43_out),
-		.X(sg13g2_buf_1_11_X));
+		.X(sg13g2_buf_4_11_X));
 
-	sg13g2_buf_1 sg13g2_buf_1_12_ (
+	sg13g2_buf_4 sg13g2_buf_4_12_ (
 		.A(frac_lut6_mux_basis_input2_mem1_44_out),
-		.X(sg13g2_buf_1_12_X));
+		.X(sg13g2_buf_4_12_X));
 
-	sg13g2_buf_1 sg13g2_buf_1_13_ (
+	sg13g2_buf_4 sg13g2_buf_4_13_ (
 		.A(frac_lut6_mux_basis_input2_mem1_45_out),
-		.X(sg13g2_buf_1_13_X));
+		.X(sg13g2_buf_4_13_X));
 
-	sg13g2_buf_1 sg13g2_buf_1_14_ (
+	sg13g2_buf_4 sg13g2_buf_4_14_ (
 		.A(frac_lut6_mux_basis_input2_mem1_46_out),
-		.X(sg13g2_buf_1_14_X));
+		.X(sg13g2_buf_4_14_X));
 
-	sg13g2_buf_1 sg13g2_buf_1_15_ (
+	sg13g2_buf_4 sg13g2_buf_4_15_ (
 		.A(frac_lut6_mux_basis_input2_mem1_47_out),
-		.X(sg13g2_buf_1_15_X));
+		.X(sg13g2_buf_4_15_X));
 
 endmodule
 // ----- END Verilog module for frac_lut6_mux -----

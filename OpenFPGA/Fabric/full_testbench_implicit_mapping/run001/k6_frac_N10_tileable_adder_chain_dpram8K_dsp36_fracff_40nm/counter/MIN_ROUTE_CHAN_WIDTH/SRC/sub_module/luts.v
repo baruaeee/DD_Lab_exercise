@@ -3,7 +3,7 @@
 //	Description: Look-Up Tables
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Fri Jun 27 00:43:47 2025
+//	Date: Sat Jun 28 14:09:21 2025
 //-------------------------------------------
 //----- Default net type -----
 `default_nettype none
@@ -46,35 +46,35 @@ wire [0:0] lut6_out;
 //----- END Registered ports -----
 
 
-wire [0:0] sg13g2_buf_1_0_X;
-wire [0:0] sg13g2_buf_1_1_X;
-wire [0:0] sg13g2_buf_1_2_X;
-wire [0:0] sg13g2_buf_1_3_X;
-wire [0:0] sg13g2_buf_1_4_X;
-wire [0:0] sg13g2_buf_1_5_X;
+wire [0:0] OR2_0_out;
+wire [0:0] OR2_1_out;
+wire [0:0] sg13g2_buf_4_0_X;
+wire [0:0] sg13g2_buf_4_1_X;
+wire [0:0] sg13g2_buf_4_2_X;
+wire [0:0] sg13g2_buf_4_3_X;
+wire [0:0] sg13g2_buf_4_4_X;
+wire [0:0] sg13g2_buf_4_5_X;
 wire [0:0] sg13g2_inv_1_0_Y;
 wire [0:0] sg13g2_inv_1_1_Y;
 wire [0:0] sg13g2_inv_1_2_Y;
 wire [0:0] sg13g2_inv_1_3_Y;
 wire [0:0] sg13g2_inv_1_4_Y;
 wire [0:0] sg13g2_inv_1_5_Y;
-wire [0:0] sg13g2_or2_1_0_X;
-wire [0:0] sg13g2_or2_1_1_X;
 
 // ----- BEGIN Local short connections -----
 // ----- END Local short connections -----
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	sg13g2_or2_1 sg13g2_or2_1_0_ (
-		.A(mode[0]),
-		.B(in[4]),
-		.X(sg13g2_or2_1_0_X));
+	OR2 OR2_0_ (
+		.a(mode[0]),
+		.b(in[4]),
+		.out(OR2_0_out));
 
-	sg13g2_or2_1 sg13g2_or2_1_1_ (
-		.A(mode[1]),
-		.B(in[5]),
-		.X(sg13g2_or2_1_1_X));
+	OR2 OR2_1_ (
+		.a(mode[1]),
+		.b(in[5]),
+		.out(OR2_1_out));
 
 	sg13g2_inv_1 sg13g2_inv_1_0_ (
 		.A(in[0]),
@@ -93,40 +93,40 @@ wire [0:0] sg13g2_or2_1_1_X;
 		.Y(sg13g2_inv_1_3_Y));
 
 	sg13g2_inv_1 sg13g2_inv_1_4_ (
-		.A(sg13g2_or2_1_0_X),
+		.A(OR2_0_out),
 		.Y(sg13g2_inv_1_4_Y));
 
 	sg13g2_inv_1 sg13g2_inv_1_5_ (
-		.A(sg13g2_or2_1_1_X),
+		.A(OR2_1_out),
 		.Y(sg13g2_inv_1_5_Y));
 
-	sg13g2_buf_1 sg13g2_buf_1_0_ (
+	sg13g2_buf_4 sg13g2_buf_4_0_ (
 		.A(in[0]),
-		.X(sg13g2_buf_1_0_X));
+		.X(sg13g2_buf_4_0_X));
 
-	sg13g2_buf_1 sg13g2_buf_1_1_ (
+	sg13g2_buf_4 sg13g2_buf_4_1_ (
 		.A(in[1]),
-		.X(sg13g2_buf_1_1_X));
+		.X(sg13g2_buf_4_1_X));
 
-	sg13g2_buf_1 sg13g2_buf_1_2_ (
+	sg13g2_buf_4 sg13g2_buf_4_2_ (
 		.A(in[2]),
-		.X(sg13g2_buf_1_2_X));
+		.X(sg13g2_buf_4_2_X));
 
-	sg13g2_buf_1 sg13g2_buf_1_3_ (
+	sg13g2_buf_4 sg13g2_buf_4_3_ (
 		.A(in[3]),
-		.X(sg13g2_buf_1_3_X));
+		.X(sg13g2_buf_4_3_X));
 
-	sg13g2_buf_1 sg13g2_buf_1_4_ (
-		.A(sg13g2_or2_1_0_X),
-		.X(sg13g2_buf_1_4_X));
+	sg13g2_buf_4 sg13g2_buf_4_4_ (
+		.A(OR2_0_out),
+		.X(sg13g2_buf_4_4_X));
 
-	sg13g2_buf_1 sg13g2_buf_1_5_ (
-		.A(sg13g2_or2_1_1_X),
-		.X(sg13g2_buf_1_5_X));
+	sg13g2_buf_4 sg13g2_buf_4_5_ (
+		.A(OR2_1_out),
+		.X(sg13g2_buf_4_5_X));
 
 	frac_lut6_mux frac_lut6_mux_0_ (
 		.in(sram[0:63]),
-		.sram({sg13g2_buf_1_0_X, sg13g2_buf_1_1_X, sg13g2_buf_1_2_X, sg13g2_buf_1_3_X, sg13g2_buf_1_4_X, sg13g2_buf_1_5_X}),
+		.sram({sg13g2_buf_4_0_X, sg13g2_buf_4_1_X, sg13g2_buf_4_2_X, sg13g2_buf_4_3_X, sg13g2_buf_4_4_X, sg13g2_buf_4_5_X}),
 		.sram_inv({sg13g2_inv_1_0_Y, sg13g2_inv_1_1_Y, sg13g2_inv_1_2_Y, sg13g2_inv_1_3_Y, sg13g2_inv_1_4_Y, sg13g2_inv_1_5_Y}),
 		.lut4_out(lut4_out[0:3]),
 		.lut5_out(lut5_out[0:1]),
