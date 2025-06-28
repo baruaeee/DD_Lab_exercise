@@ -80,7 +80,7 @@
         10e-12 5e-12
       </delay_matrix>
     </circuit_model>
-    <circuit_model type="pass_gate" name="TGATE" prefix="TGATE" is_default="true" verilog_netlist="../../../../../TGATE/TGATE_netlist.v">
+    <circuit_model type="pass_gate" name="TGATE" prefix="TGATE" is_default="true" verilog_netlist="../../../../../TGATE/TGATE.v">
       <design_technology type="cmos" topology="transmission_gate" nmos_size="1" pmos_size="2"/>
       <device_technology device_model_name="logic"/>
       <input_buffer exist="false"/>
