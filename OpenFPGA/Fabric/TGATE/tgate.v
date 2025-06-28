@@ -1,27 +1,7 @@
-module transmission_gate (
-    inout in,     // Bidirectional input/output port
-    inout out,    // Bidirectional input/output port  
-    input sel,    // Select signal (active high)
-    input selb    // Select bar signal (active low)
-);
 
-// Internal wire for the control signal
-wire control;
-
-// Generate control signal: transmission gate is ON when sel=1 AND selb=0
-// This ensures both sel and selb are complementary for proper operation
-and gate1(control, sel, ~selb);
-
-// Bidirectional switches implemented using bufif1 (buffer if true)
-// When control=1, signals can pass through bidirectionally
-// When control=0, the transmission gate is in high-impedance state
-bufif1 switch1(out, in, control);   // in drives out when control=1
-bufif1 switch2(in, out, control);   // out drives in when control=1
-
-endmodule
 
 // Unidirectional transmission gate using tri-state logic
-module transmission_gate_alt (
+module TGATE (
     input in,     // Input signal
     output out,   // Output signal
     input sel,    // Select signal (active high)
@@ -47,7 +27,7 @@ wire out;
 reg sel, selb;
 
 // Instantiate the transmission gate
-transmission_gate_alt dut (
+TGATE dut (
     .in(in),
     .out(out),
     .sel(sel),

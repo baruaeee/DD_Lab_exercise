@@ -3,7 +3,7 @@
 //	Description: Verilog modules for pb_type: io
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Sun Jun 29 00:55:11 2025
+//	Date: Sun Jun 29 01:04:15 2025
 //-------------------------------------------
 // ----- BEGIN Physical programmable logic block Verilog module: io -----
 //----- Default net type -----
