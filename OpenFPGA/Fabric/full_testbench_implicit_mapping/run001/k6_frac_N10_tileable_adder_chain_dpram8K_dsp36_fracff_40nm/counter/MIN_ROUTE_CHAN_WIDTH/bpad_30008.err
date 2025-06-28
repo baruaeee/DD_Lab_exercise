@@ -1,0 +1,95 @@
+Operating system: Linux
+                  0.0.0 Linux 4.18.0-553.56.1.el8_10.x86_64 #1 SMP Mon Jun 2 12:33:13 EDT 2025 x86_64
+CPU: amd64
+     family 6 model 61 stepping 4
+     1 CPU
+
+GPU: UNKNOWN
+
+Crash reason:  DUMP_REQUESTED
+Crash address: 0xebd15406
+Process uptime: not available
+
+Thread 0 (crashed)
+ 0  libcbreakpad.so + 0x36406
+    rax = 0x0000000006042780   rdx = 0x0000000000000000
+    rcx = 0x000014afebd13cb2   rbx = 0x00000000069186c0
+    rsi = 0x0000000000000001   rdi = 0x0000000006918048
+    rbp = 0x0000000006918600   rsp = 0x0000000006917fb0
+     r8 = 0x0000000000000000    r9 = 0x0000000000000000
+    r10 = 0x0000000006918170   r11 = 0x0000000006918160
+    r12 = 0x000000000000001e   r13 = 0x00000000069198d8
+    r14 = 0x0000000006918640   r15 = 0x0000000000000000
+    rip = 0x000014afebd15406
+    Found by: given as instruction pointer in context
+ 1  libcbreakpad.so + 0x34672
+    rbp = 0x0000000006918750   rsp = 0x0000000006918610
+    rip = 0x000014afebd13672
+    Found by: previous frame's frame pointer
+ 2  xmsim + 0x1871d14
+    rbp = 0x00000000069198c0   rsp = 0x0000000006918760
+    rip = 0x0000000001c71d14
+    Found by: previous frame's frame pointer
+
+Thread 1
+ 0  libpthread-2.28.so + 0x11e20
+    rax = 0xfffffffffffffdfc   rdx = 0x0000000000000000
+    rcx = 0x000014afec6d8e20   rbx = 0x000014afeb51e240
+    rsi = 0x0000000000000000   rdi = 0x000014afeb51e240
+    rbp = 0x0000000000000000   rsp = 0x000014afeb51e210
+     r8 = 0x0000000000000000    r9 = 0x0000000000000000
+    r10 = 0x0000000000000000   r11 = 0x0000000000200293
+    r12 = 0x0000000000000000   r13 = 0x0000000000000050
+    r14 = 0x0000000000000001   r15 = 0x00000000000000c8
+    rip = 0x000014afec6d8e20
+    Found by: given as instruction pointer in context
+ 1  xmsim + 0x2144240
+    rsp = 0x000014afeb51e220   rip = 0x0000000002544240
+    Found by: stack scanning
+ 2  xmsim + 0x2144513
+    rsp = 0x000014afeb51e240   rip = 0x0000000002544513
+    Found by: stack scanning
+ 3  xmsim + 0x2146434
+    rsp = 0x000014afeb51e270   rip = 0x0000000002546434
+    Found by: stack scanning
+
+Loaded modules:
+0x00400000 - 0x02844fff  xmsim  ???  (main)  (WARNING: No symbols, xmsim, C5CAB872E265293B20B5CFA893F916590)
+0x14afe8058000 - 0x14afe80b6fff  libdwapi.so  ???
+0x14afe8f98000 - 0x14afe8faefff  libml_uvm.so  ???
+0x14afe97bc000 - 0x14afe97cffff  libresolv-2.28.so  ???
+0x14afe99d4000 - 0x14afe99d8fff  libnss_dns-2.28.so  ???
+0x14afe9ddc000 - 0x14afe9df1fff  libz.so.1.2.11  ???
+0x14afe9ff4000 - 0x14afea101fff  libsqlite3.so.0.8.6  ???
+0x14afea308000 - 0x14afea35bfff  libsoftokn3.so  ???
+0x14afea561000 - 0x14afea567fff  librt-2.28.so  ???
+0x14afea769000 - 0x14afea7a4fff  libnspr4.so  ???
+0x14afea9aa000 - 0x14afea9acfff  libplds4.so  ???
+0x14afeabae000 - 0x14afeabb1fff  libplc4.so  ???
+0x14afeadb3000 - 0x14afeaddefff  libnssutil3.so  ???
+0x14afeafe7000 - 0x14afeb11cfff  libnss3.so  ???
+0x14afeb528000 - 0x14afeb63afff  libStrapNC.so  ???
+0x14afeb6f0000 - 0x14afeb781fff  libdcapi.so  ???
+0x14afeb7b1000 - 0x14afeb7bbfff  libnss_files-2.28.so  ???
+0x14afebc46000 - 0x14afebcd5fff  libxmjudy.so.1.0.3  ???
+0x14afebcdf000 - 0x14afebd32fff  libcbreakpad.so  ???  (WARNING: No symbols, libcbreakpad.so, 33070AA24DC7BEB3909BACB04DD5B8FF0)
+0x14afebd50000 - 0x14afebf1cfff  libc-2.28.so  ???
+0x14afec127000 - 0x14afec13afff  libgcc_s.so.1  ???
+0x14afec141000 - 0x14afec2c1fff  libm-2.28.so  ???
+0x14afec4c3000 - 0x14afec4c5fff  libdl-2.28.so  ???
+0x14afec6c7000 - 0x14afec6e1fff  libpthread-2.28.so  ???  (WARNING: No symbols, libpthread-2.28.so, C35792D9A08E014060E3E8A7A67A53EE0)
+0x14afec8e7000 - 0x14afec915fff  ld-2.28.so  ???
+0x14afec918000 - 0x14afec927fff  waves.dsn  ???
+0x14afec92e000 - 0x14afecaacfff  libstdc++.so.6.0.28  ???
+0x14afecb09000 - 0x14afecb0dfff  libxdt.so  ???
+0x7fffbf1be000 - 0x7fffbf1bffff  linux-gate.so  ???
+
+******BACKTRACE*****
+use_backtrace() (libcbreakpad.so) [0x14afebd131a3]
+cbpad_generate_dump_on_demand (libcbreakpad.so) [0x14afebd13630]
+vserror (xmsim) [0x1c71d14]
+serror (xmsim) [0x1c74007]
+sv_seghandler_aux (xmsim) [0xd31ac4]
+sv_seghandler (xmsim) [0xd3240d]
+<unknown> (libpthread.so.0) [0x14afec6d9990]
+******BACKTRACE END*****

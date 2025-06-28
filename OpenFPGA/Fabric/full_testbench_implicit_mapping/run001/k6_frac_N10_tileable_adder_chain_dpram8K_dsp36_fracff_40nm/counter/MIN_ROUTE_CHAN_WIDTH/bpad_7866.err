@@ -1,0 +1,101 @@
+Operating system: Linux
+                  0.0.0 Linux 4.18.0-553.56.1.el8_10.x86_64 #1 SMP Mon Jun 2 12:33:13 EDT 2025 x86_64
+CPU: amd64
+     family 6 model 61 stepping 4
+     1 CPU
+
+GPU: UNKNOWN
+
+Crash reason:  DUMP_REQUESTED
+Crash address: 0x20f23406
+Process uptime: not available
+
+Thread 0 (crashed)
+ 0  libcbreakpad.so + 0x36406
+    rax = 0x00000000051cc780   rdx = 0x0000000000000000
+    rcx = 0x0000153b20f21cb2   rbx = 0x0000000005ac06c0
+    rsi = 0x0000000000000001   rdi = 0x0000000005ac0048
+    rbp = 0x0000000005ac0600   rsp = 0x0000000005abffb0
+     r8 = 0x0000000000000000    r9 = 0x0000000000000000
+    r10 = 0x0000000005ac0170   r11 = 0x0000000005ac0160
+    r12 = 0x000000000000001e   r13 = 0x0000000005ac18d8
+    r14 = 0x0000000005ac0640   r15 = 0x0000000000000000
+    rip = 0x0000153b20f23406
+    Found by: given as instruction pointer in context
+ 1  libcbreakpad.so + 0x34672
+    rbp = 0x0000000005ac0750   rsp = 0x0000000005ac0610
+    rip = 0x0000153b20f21672
+    Found by: previous frame's frame pointer
+ 2  xmsim + 0x1871d14
+    rbp = 0x0000000005ac18c0   rsp = 0x0000000005ac0760
+    rip = 0x0000000001c71d14
+    Found by: previous frame's frame pointer
+
+Thread 1
+ 0  libpthread-2.28.so + 0x11e20
+    rax = 0xfffffffffffffdfc   rdx = 0x0000000000000000
+    rcx = 0x0000153b218e6e20   rbx = 0x0000153b1b28a240
+    rsi = 0x0000000000000000   rdi = 0x0000153b1b28a240
+    rbp = 0x0000000000000000   rsp = 0x0000153b1b28a210
+     r8 = 0x0000000000000000    r9 = 0x0000000000000000
+    r10 = 0x0000000000000000   r11 = 0x0000000000200293
+    r12 = 0x0000000000000000   r13 = 0x0000000000000050
+    r14 = 0x0000000000000001   r15 = 0x00000000000000c8
+    rip = 0x0000153b218e6e20
+    Found by: given as instruction pointer in context
+ 1  xmsim + 0x2144240
+    rsp = 0x0000153b1b28a220   rip = 0x0000000002544240
+    Found by: stack scanning
+ 2  xmsim + 0x2144513
+    rsp = 0x0000153b1b28a240   rip = 0x0000000002544513
+    Found by: stack scanning
+ 3  xmsim + 0x2146434
+    rsp = 0x0000153b1b28a270   rip = 0x0000000002546434
+    Found by: stack scanning
+
+Loaded modules:
+0x00400000 - 0x02844fff  xmsim  ???  (main)  (WARNING: No symbols, xmsim, C5CAB872E265293B20B5CFA893F916590)
+0x153b1840f000 - 0x153b1846dfff  libdwapi.so  ???
+0x153b19d50000 - 0x153b19d65fff  libz.so.1.2.11  ???
+0x153b19f68000 - 0x153b1a075fff  libsqlite3.so.0.8.6  ???
+0x153b1a27c000 - 0x153b1a2cffff  libsoftokn3.so  ???
+0x153b1a4d5000 - 0x153b1a510fff  libnspr4.so  ???
+0x153b1a716000 - 0x153b1a718fff  libplds4.so  ???
+0x153b1a91a000 - 0x153b1a91dfff  libplc4.so  ???
+0x153b1ab1f000 - 0x153b1ab4afff  libnssutil3.so  ???
+0x153b1ad53000 - 0x153b1ae88fff  libnss3.so  ???
+0x153b1b294000 - 0x153b1b316fff  libpcre2-8.so.0.7.1  ???
+0x153b1b518000 - 0x153b1b53efff  libselinux.so.1  ???
+0x153b1b743000 - 0x153b1b749fff  libuuid.so.1.3.0  ???
+0x153b1b94b000 - 0x153b1b997fff  libblkid.so.1.1.0  ???
+0x153b1bb9e000 - 0x153b1bbf3fff  libmount.so.1.1.0  ???
+0x153b1bdf8000 - 0x153b1bdfefff  librt-2.28.so  ???
+0x153b20047000 - 0x153b2005dfff  libml_uvm.so  ???
+0x153b2006b000 - 0x153b2010efff  libnss_myhostname.so.2  ???
+0x153b20317000 - 0x153b2032afff  libresolv-2.28.so  ???
+0x153b2052f000 - 0x153b20533fff  libnss_dns-2.28.so  ???
+0x153b20736000 - 0x153b20848fff  libStrapNC.so  ???
+0x153b208fe000 - 0x153b2098ffff  libdcapi.so  ???
+0x153b209bf000 - 0x153b209c9fff  libnss_files-2.28.so  ???
+0x153b20e54000 - 0x153b20ee3fff  libxmjudy.so.1.0.3  ???
+0x153b20eed000 - 0x153b20f40fff  libcbreakpad.so  ???  (WARNING: No symbols, libcbreakpad.so, 33070AA24DC7BEB3909BACB04DD5B8FF0)
+0x153b20f5e000 - 0x153b2112afff  libc-2.28.so  ???
+0x153b21335000 - 0x153b21348fff  libgcc_s.so.1  ???
+0x153b2134f000 - 0x153b214cffff  libm-2.28.so  ???
+0x153b216d1000 - 0x153b216d3fff  libdl-2.28.so  ???
+0x153b218d5000 - 0x153b218effff  libpthread-2.28.so  ???  (WARNING: No symbols, libpthread-2.28.so, C35792D9A08E014060E3E8A7A67A53EE0)
+0x153b21af5000 - 0x153b21b23fff  ld-2.28.so  ???
+0x153b21b26000 - 0x153b21b35fff  waves.dsn  ???
+0x153b21b3c000 - 0x153b21cbafff  libstdc++.so.6.0.28  ???
+0x153b21d17000 - 0x153b21d1bfff  libxdt.so  ???
+0x7ffe780a6000 - 0x7ffe780a7fff  linux-gate.so  ???
+
+******BACKTRACE*****
+use_backtrace() (libcbreakpad.so) [0x153b20f211a3]
+cbpad_generate_dump_on_demand (libcbreakpad.so) [0x153b20f21630]
+vserror (xmsim) [0x1c71d14]
+serror (xmsim) [0x1c74007]
+sv_seghandler_aux (xmsim) [0xd31ac4]
+sv_seghandler (xmsim) [0xd3240d]
+<unknown> (libpthread.so.0) [0x153b218e7990]
+******BACKTRACE END*****

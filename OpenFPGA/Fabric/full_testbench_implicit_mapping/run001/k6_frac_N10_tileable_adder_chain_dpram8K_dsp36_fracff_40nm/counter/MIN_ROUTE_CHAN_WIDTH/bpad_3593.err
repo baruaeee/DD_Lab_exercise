@@ -1,0 +1,99 @@
+Operating system: Linux
+                  0.0.0 Linux 4.18.0-553.56.1.el8_10.x86_64 #1 SMP Mon Jun 2 12:33:13 EDT 2025 x86_64
+CPU: amd64
+     family 6 model 61 stepping 4
+     1 CPU
+
+GPU: UNKNOWN
+
+Crash reason:  DUMP_REQUESTED
+Crash address: 0xcca0c406
+Process uptime: not available
+
+Thread 0 (crashed)
+ 0  libcbreakpad.so + 0x36406
+    rax = 0x0000000005d37780   rdx = 0x0000000000000000
+    rcx = 0x00001544cca0acb2   rbx = 0x000000000660c6c0
+    rsi = 0x0000000000000001   rdi = 0x000000000660c048
+    rbp = 0x000000000660c600   rsp = 0x000000000660bfb0
+     r8 = 0x0000000000000000    r9 = 0x0000000000000000
+    r10 = 0x000000000660c170   r11 = 0x000000000660c160
+    r12 = 0x000000000000001e   r13 = 0x000000000660d8d8
+    r14 = 0x000000000660c640   r15 = 0x0000000000000000
+    rip = 0x00001544cca0c406
+    Found by: given as instruction pointer in context
+ 1  libcbreakpad.so + 0x34672
+    rbp = 0x000000000660c750   rsp = 0x000000000660c610
+    rip = 0x00001544cca0a672
+    Found by: previous frame's frame pointer
+ 2  xmsim + 0x1871d14
+    rbp = 0x000000000660d8c0   rsp = 0x000000000660c760
+    rip = 0x0000000001c71d14
+    Found by: previous frame's frame pointer
+
+Thread 1
+ 0  libc-2.28.so + 0x108178
+    rax = 0xfffffffffffffdfc   rdx = 0x0000000000000000
+    rcx = 0x00001544ccb4f178   rbx = 0x00001544cc215d30
+    rsi = 0x00001544cc215d30   rdi = 0x00001544cc215d30
+    rbp = 0x00001544cc215d30   rsp = 0x00001544cc215d00
+     r8 = 0x0000000000000000    r9 = 0x00001544ccbd73a0
+    r10 = 0xfffffffffffff7cb   r11 = 0x0000000000200293
+    r12 = 0x0000000000685700   r13 = 0x00001544cc8b950f
+    r14 = 0x0000000000000000   r15 = 0x00001544cc21c840
+    rip = 0x00001544ccb4f178
+    Found by: given as instruction pointer in context
+ 1  libc-2.28.so + 0x10807e
+    rbp = 0x00001544cc215d30   rsp = 0x00001544cc215d30
+    rip = 0x00001544ccb4f07e
+    Found by: stack scanning
+ 2  xmsim + 0x2016625
+    rsp = 0x00001544cc215d70   rip = 0x0000000002416625
+    Found by: stack scanning
+ 3  xmsim + 0x376f6c
+    rsp = 0x00001544cc215da8   rip = 0x0000000000776f6c
+    Found by: stack scanning
+ 4  xmsim + 0x24656e
+    rsp = 0x00001544cc215ec8   rip = 0x000000000064656e
+    Found by: stack scanning
+
+Loaded modules:
+0x00400000 - 0x02844fff  xmsim  ???  (main)  (WARNING: No symbols, xmsim, C5CAB872E265293B20B5CFA893F916590)
+0x1544c4d31000 - 0x1544c4d8ffff  libdwapi.so  ???
+0x1544c5c71000 - 0x1544c5c87fff  libml_uvm.so  ???
+0x1544c6495000 - 0x1544c64a8fff  libresolv-2.28.so  ???
+0x1544c66ad000 - 0x1544c66b1fff  libnss_dns-2.28.so  ???
+0x1544c6ab5000 - 0x1544c6acafff  libz.so.1.2.11  ???
+0x1544c6ccd000 - 0x1544c6ddafff  libsqlite3.so.0.8.6  ???
+0x1544c6fe1000 - 0x1544c7034fff  libsoftokn3.so  ???
+0x1544c723a000 - 0x1544c7240fff  librt-2.28.so  ???
+0x1544c7442000 - 0x1544c747dfff  libnspr4.so  ???
+0x1544c7683000 - 0x1544c7685fff  libplds4.so  ???
+0x1544c7887000 - 0x1544c788afff  libplc4.so  ???
+0x1544c7a8c000 - 0x1544c7ab7fff  libnssutil3.so  ???
+0x1544c7cc0000 - 0x1544c7df5fff  libnss3.so  ???
+0x1544cc21f000 - 0x1544cc331fff  libStrapNC.so  ???
+0x1544cc3e7000 - 0x1544cc478fff  libdcapi.so  ???
+0x1544cc4a8000 - 0x1544cc4b2fff  libnss_files-2.28.so  ???
+0x1544cc93d000 - 0x1544cc9ccfff  libxmjudy.so.1.0.3  ???
+0x1544cc9d6000 - 0x1544cca29fff  libcbreakpad.so  ???  (WARNING: No symbols, libcbreakpad.so, 33070AA24DC7BEB3909BACB04DD5B8FF0)
+0x1544cca47000 - 0x1544ccc13fff  libc-2.28.so  ???  (WARNING: No symbols, libc-2.28.so, 472F348DE1B7067A75AA81230629EB080)
+0x1544cce1e000 - 0x1544cce31fff  libgcc_s.so.1  ???
+0x1544cce38000 - 0x1544ccfb8fff  libm-2.28.so  ???
+0x1544cd1ba000 - 0x1544cd1bcfff  libdl-2.28.so  ???
+0x1544cd3be000 - 0x1544cd3d8fff  libpthread-2.28.so  ???
+0x1544cd5de000 - 0x1544cd60cfff  ld-2.28.so  ???
+0x1544cd60f000 - 0x1544cd61efff  waves.dsn  ???
+0x1544cd625000 - 0x1544cd7a3fff  libstdc++.so.6.0.28  ???
+0x1544cd800000 - 0x1544cd804fff  libxdt.so  ???
+0x7ffceb9d8000 - 0x7ffceb9d9fff  linux-gate.so  ???
+
+******BACKTRACE*****
+use_backtrace() (libcbreakpad.so) [0x1544cca0a1a3]
+cbpad_generate_dump_on_demand (libcbreakpad.so) [0x1544cca0a630]
+vserror (xmsim) [0x1c71d14]
+serror (xmsim) [0x1c74007]
+sv_seghandler_aux (xmsim) [0xd31ac4]
+sv_seghandler (xmsim) [0xd3240d]
+<unknown> (libpthread.so.0) [0x1544cd3d0990]
+******BACKTRACE END*****

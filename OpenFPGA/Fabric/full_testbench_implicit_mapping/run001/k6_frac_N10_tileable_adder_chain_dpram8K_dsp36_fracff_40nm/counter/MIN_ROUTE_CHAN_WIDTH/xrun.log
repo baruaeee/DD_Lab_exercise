@@ -1,0 +1,23 @@
+xrun(64): 24.03-s004: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.03-s004: Started on Jun 28, 2025 at 17:28:08 EDT
+xrun
+	SRC/counter_include_netlists.v
+	-access +rwc
+	-gui
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/xcelium/files/xmsimrc
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm counter_autocheck_top_tb.result_0__benchmark counter_autocheck_top_tb.result_0__fpga
+Created probe 1
+xcelium> run
+Simulation start
+Simulation interrupted at 7743790 PS + 6653443
+xcelium> exit
+...Regained control from SimVision
+-------------------------------------
+TOOL:	xrun(64)	24.03-s004: Exiting on Jun 28, 2025 at 17:29:21 EDT  (total: 00:01:13)
