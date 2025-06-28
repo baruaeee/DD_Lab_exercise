@@ -3,7 +3,7 @@
 //	Description: Essential gates
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Sat Jun 28 14:32:14 2025
+//	Date: Sat Jun 28 14:40:34 2025
 //-------------------------------------------
 //----- Default net type -----
 `default_nettype none
@@ -45,44 +45,6 @@ output [0:0] const1;
 	assign const1[0] = 1'b1;
 endmodule
 // ----- END Verilog module for const1 -----
-
-//----- Default net type -----
-`default_nettype wire
-
-//----- Default net type -----
-`default_nettype none
-
-// ----- Verilog module for OR2 -----
-module OR2(a,
-           b,
-           out);
-//----- INPUT PORTS -----
-input [0:0] a;
-//----- INPUT PORTS -----
-input [0:0] b;
-//----- OUTPUT PORTS -----
-output [0:0] out;
-
-//----- BEGIN wire-connection ports -----
-//----- END wire-connection ports -----
-
-
-//----- BEGIN Registered ports -----
-//----- END Registered ports -----
-
-// ----- Verilog codes of a 2-input 1-output AND gate -----
-	assign out[0] = a[0] | b[0];
-
-`ifdef ENABLE_TIMING
-// ------ BEGIN Pin-to-pin Timing constraints -----
-	specify
-		(a => out) = (0.01, 0.01);
-		(b => out) = (0.005, 0.005);
-	endspecify
-// ------ END Pin-to-pin Timing constraints -----
-`endif
-endmodule
-// ----- END Verilog module for OR2 -----
 
 //----- Default net type -----
 `default_nettype wire
