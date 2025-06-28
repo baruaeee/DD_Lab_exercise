@@ -18,11 +18,13 @@ module TGATE (
     output wire out          // Output signal
 );
 
-wire ctrl, ctrlb;
+wire control;
 
-and g1(ctrl, sel, ~selb);
+// Control logic: gate is ON when sel=1 AND selb=0
+and gate1(control, sel, ~selb);
 
+// Unidirectional transmission: in drives out when enabled
+assign out = control ? in : 1'bz;
 
-assign out = ctrl ? in : 1'bz;
 
 endmodule
