@@ -3,7 +3,7 @@
 //	Description: Top-level Verilog module for FPGA
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Sat Jun 28 14:40:34 2025
+//	Date: Sat Jun 28 15:02:25 2025
 //-------------------------------------------
 //----- Default net type -----
 `default_nettype none

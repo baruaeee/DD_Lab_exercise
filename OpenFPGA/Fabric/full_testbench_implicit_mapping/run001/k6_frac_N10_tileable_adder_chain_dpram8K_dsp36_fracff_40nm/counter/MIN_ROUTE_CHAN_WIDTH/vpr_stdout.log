@@ -28,7 +28,7 @@ mode 'io[physical]' is defined by user to be disabled in packing
 mode 'fle[physical]' is defined by user to be disabled in packing
 mode 'fabric[default]' is defined by user to be disabled in packing
 mode 'frac_logic[default]' is defined by user to be disabled in packing
-# Loading Architecture Description took 0.01 seconds (max_rss 22.6 MiB, delta_rss +0.0 MiB)
+# Loading Architecture Description took 0.01 seconds (max_rss 22.8 MiB, delta_rss +0.0 MiB)
 
 Timing analysis: ON
 Circuit netlist file: counter.net
@@ -145,7 +145,7 @@ AnalysisOpts.post_synth_netlist_unconn_input_handling: UNCONNECTED
 AnalysisOpts.post_synth_netlist_unconn_output_handling: UNCONNECTED
 
 # Building complex block graph
-# Building complex block graph took 0.16 seconds (max_rss 25.6 MiB, delta_rss +3.0 MiB)
+# Building complex block graph took 0.15 seconds (max_rss 25.6 MiB, delta_rss +2.8 MiB)
 Circuit file: counter.blif
 # Load circuit
 Found constant-zero generator '$false'
@@ -269,11 +269,11 @@ Logic Element (fle) detailed count:
   LEs used for logic only             : 6
   LEs used for registers only         : 0
 
-Incr Slack updates 1 in 3.92e-06 sec
-Full Max Req/Worst Slack updates 1 in 2.24e-06 sec
+Incr Slack updates 1 in 5.48e-06 sec
+Full Max Req/Worst Slack updates 1 in 2.2e-06 sec
 Incr Max Req/Worst Slack updates 0 in 0 sec
 Incr Criticality updates 0 in 0 sec
-Full Criticality updates 1 in 3.2e-06 sec
+Full Criticality updates 1 in 3.12e-06 sec
 FPGA sized to 3 x 3 (auto)
 Device Utilization: 0.25 (target 1.00)
 	Block Utilization: 0.31 Type: io
@@ -299,7 +299,7 @@ Netlist conversion complete.
 Begin loading packed FPGA netlist file.
 Netlist generated from file 'counter.net'.
 Detected 0 constant generators (to see names run with higher pack verbosity)
-Finished loading packed FPGA netlist file (took 0.020618 seconds).
+Finished loading packed FPGA netlist file (took 0.0207 seconds).
 Warning 7: Treated 0 constant nets as global which will not be routed (to see net names increase packer verbosity).
 # Load packing took 0.02 seconds (max_rss 65.1 MiB, delta_rss +38.1 MiB)
 Warning 8: Netlist contains 0 global net to non-global architecture pin connections
@@ -493,8 +493,8 @@ io                 Uniform                6.45             100.00          0.00 
                    Centroid               3.23             0.00            0.00           100.00       
 
 
-Placement Quench timing analysis took 1.952e-05 seconds (1.42e-05 STA, 5.32e-06 slack) (1 full updates: 1 setup, 0 hold, 0 combined).
-Placement Total  timing analysis took 0.000341202 seconds (0.000311762 STA, 2.944e-05 slack) (4 full updates: 4 setup, 0 hold, 0 combined).
+Placement Quench timing analysis took 1.988e-05 seconds (1.468e-05 STA, 5.2e-06 slack) (1 full updates: 1 setup, 0 hold, 0 combined).
+Placement Total  timing analysis took 0.000325802 seconds (0.000295162 STA, 3.064e-05 slack) (4 full updates: 4 setup, 0 hold, 0 combined).
 update_td_costs: connections 0 nets 0 sum_nets 0 total 0
 # Placement took 0.00 seconds (max_rss 65.3 MiB, delta_rss +0.0 MiB)
 
@@ -537,11 +537,11 @@ Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wireleng
       (sec)     fac Updt    push    Nets   Conns                                       (ns)       (ns)       (ns)       (ns)       (ns)     Iter
 ---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
    1    0.0     0.0    0     245       8       8       2 ( 0.414%)      26 ( 9.8%)    0.906     -10.70     -0.906    -0.5280     -0.066      N/A
-Incr Slack updates 4 in 9.6e-06 sec
-Full Max Req/Worst Slack updates 1 in 2.36e-06 sec
-Incr Max Req/Worst Slack updates 3 in 3.8e-06 sec
-Incr Criticality updates 3 in 6.64e-06 sec
-Full Criticality updates 1 in 3.52e-06 sec
+Incr Slack updates 4 in 8.8e-06 sec
+Full Max Req/Worst Slack updates 1 in 3.84e-06 sec
+Incr Max Req/Worst Slack updates 3 in 3.68e-06 sec
+Incr Criticality updates 3 in 6.32e-06 sec
+Full Criticality updates 1 in 3.96e-06 sec
    2    0.0     0.5    0     100       2       2       2 ( 0.414%)      26 ( 9.8%)    0.906     -10.70     -0.906    -0.5280     -0.066      N/A
    3    0.0     0.6    0     102       2       2       2 ( 0.414%)      26 ( 9.8%)    0.906     -10.70     -0.906    -0.5280     -0.066      N/A
    4    0.0     0.8    0     106       2       2       0 ( 0.000%)      28 (10.6%)    0.906     -10.86     -0.906    -0.5280     -0.066      N/A
@@ -1024,12 +1024,12 @@ Final setup slack histogram:
 Final geomean non-virtual intra-domain period: 1.62724 ns (614.539 MHz)
 Final fanout-weighted geomean non-virtual intra-domain period: 1.62724 ns (614.539 MHz)
 
-Incr Slack updates 1 in 5.96e-06 sec
-Full Max Req/Worst Slack updates 1 in 1.76e-06 sec
+Incr Slack updates 1 in 4.84e-06 sec
+Full Max Req/Worst Slack updates 1 in 1.88e-06 sec
 Incr Max Req/Worst Slack updates 0 in 0 sec
 Incr Criticality updates 0 in 0 sec
-Full Criticality updates 1 in 3e-06 sec
-Flow timing analysis took 0.00343611 seconds (0.00283478 STA, 0.000601326 slack) (83 full updates: 5 setup, 0 hold, 78 combined).
+Full Criticality updates 1 in 3.24e-06 sec
+Flow timing analysis took 0.00355458 seconds (0.00290914 STA, 0.000645442 slack) (83 full updates: 5 setup, 0 hold, 78 combined).
 VPR succeeded
 The entire flow of VPR took 0.31 seconds (max_rss 65.3 MiB)
 
@@ -2637,11 +2637,11 @@ Confirm selected options when call command 'exit':
 
 Finish execution with 0 errors
 
-The entire OpenFPGA flow took 0.429673 seconds
+The entire OpenFPGA flow took 0.427472 seconds
 
 Thank you for using OpenFPGA!
-Incr Slack updates 77 in 0.000120201 sec
-Full Max Req/Worst Slack updates 5 in 9.28e-06 sec
-Incr Max Req/Worst Slack updates 72 in 8.7361e-05 sec
-Incr Criticality updates 63 in 0.00013212 sec
-Full Criticality updates 14 in 3.3121e-05 sec
+Incr Slack updates 77 in 0.000131562 sec
+Full Max Req/Worst Slack updates 5 in 8.76e-06 sec
+Incr Max Req/Worst Slack updates 72 in 8.78e-05 sec
+Incr Criticality updates 63 in 0.00013052 sec
+Full Criticality updates 14 in 3.352e-05 sec
