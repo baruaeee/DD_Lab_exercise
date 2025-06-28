@@ -21,9 +21,8 @@ module TGATE (
 wire ctrl, ctrlb;
 
 and g1(ctrl, sel, ~selb);
-not g2(ctrlb, ctrl);
+
 
 assign out = ctrl ? in : 1'bz;
-assign in = ctrl ? out : 1'bz;
 
 endmodule

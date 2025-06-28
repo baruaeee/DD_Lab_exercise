@@ -1,9 +1,0 @@
-//
-// File created by:  xrun
-// Do not modify this file
-//
-tgate.v
--access
-+rwc
--gui
--64bit

@@ -3,7 +3,7 @@
 //	Description: Verilog modules for physical tile: clb]
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Sun Jun 29 00:31:28 2025
+//	Date: Sun Jun 29 00:55:11 2025
 //-------------------------------------------
 // ----- BEGIN Grid Verilog module: grid_clb -----
 //----- Default net type -----

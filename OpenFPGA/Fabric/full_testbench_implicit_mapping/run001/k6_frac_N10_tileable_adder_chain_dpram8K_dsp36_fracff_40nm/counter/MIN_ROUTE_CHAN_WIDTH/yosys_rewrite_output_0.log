@@ -458,7 +458,7 @@ Removed 0 unused cells and 21 unused wires.
 27.2. Executing DEMUXMAP pass.
 Dumping module `\counter'.
 
-End of script. Logfile hash: 6d460f86fd, CPU: user 0.06s system 0.00s, MEM: 22.67 MB peak
+End of script. Logfile hash: 6d460f86fd, CPU: user 0.06s system 0.01s, MEM: 22.34 MB peak
 Yosys 0.45+148 (git sha1 1bf908dea, g++ 11.4.0-1ubuntu1~22.04 -fPIC -O3)
 Time spent: 64% 1x abc (0 sec), 8% 15x opt_expr (0 sec), ...
 0
