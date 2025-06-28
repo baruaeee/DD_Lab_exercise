@@ -3,7 +3,7 @@
 //	Description: Verilog modules for primitive pb_type: mult_36x36
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Sat Jun 28 14:09:21 2025
+//	Date: Sat Jun 28 14:32:14 2025
 //-------------------------------------------
 //----- Default net type -----
 `default_nettype none

@@ -48,7 +48,7 @@ fpga_top:
             mux_1level_tapbuf_size2:
               sg13g2_inv_1:
               const1:
-              tap_buf4:
+              sg13g2_inv_4:
               mux_1level_tapbuf_basis_input3_mem3:
                 - TGATE
             mux_1level_tapbuf_size2_mem:
@@ -62,7 +62,7 @@ fpga_top:
           mux_1level_tapbuf_size3:
             sg13g2_inv_1:
             const1:
-            tap_buf4:
+            sg13g2_inv_4:
             mux_1level_tapbuf_basis_input4_mem4:
               - TGATE
           mux_1level_tapbuf_size3_mem:
@@ -83,7 +83,7 @@ fpga_top:
     mux_2level_tapbuf_size2:
       sg13g2_inv_1:
       const1:
-      tap_buf4:
+      sg13g2_inv_4:
       mux_2level_tapbuf_basis_input2_mem1:
         - TGATE
     mux_2level_tapbuf_size2_mem:
@@ -91,7 +91,7 @@ fpga_top:
     mux_2level_tapbuf_size3:
       sg13g2_inv_1:
       const1:
-      tap_buf4:
+      sg13g2_inv_4:
       mux_2level_tapbuf_basis_input2_mem1:
         - TGATE
     mux_2level_tapbuf_size3_mem:
@@ -100,7 +100,7 @@ fpga_top:
     mux_2level_tapbuf_size2:
       sg13g2_inv_1:
       const1:
-      tap_buf4:
+      sg13g2_inv_4:
       mux_2level_tapbuf_basis_input2_mem1:
         - TGATE
     mux_2level_tapbuf_size2_mem:
@@ -109,7 +109,7 @@ fpga_top:
     mux_2level_tapbuf_size4:
       sg13g2_inv_1:
       const1:
-      tap_buf4:
+      sg13g2_inv_4:
       mux_2level_tapbuf_basis_input3_mem3:
         - TGATE
     mux_2level_tapbuf_size4_mem:
@@ -117,7 +117,7 @@ fpga_top:
     mux_2level_tapbuf_size3:
       sg13g2_inv_1:
       const1:
-      tap_buf4:
+      sg13g2_inv_4:
       mux_2level_tapbuf_basis_input2_mem1:
         - TGATE
     mux_2level_tapbuf_size3_mem:
@@ -125,7 +125,7 @@ fpga_top:
     mux_2level_tapbuf_size2:
       sg13g2_inv_1:
       const1:
-      tap_buf4:
+      sg13g2_inv_4:
       mux_2level_tapbuf_basis_input2_mem1:
         - TGATE
     mux_2level_tapbuf_size2_mem:
@@ -134,7 +134,7 @@ fpga_top:
     mux_2level_tapbuf_size3:
       sg13g2_inv_1:
       const1:
-      tap_buf4:
+      sg13g2_inv_4:
       mux_2level_tapbuf_basis_input2_mem1:
         - TGATE
     mux_2level_tapbuf_size3_mem:
@@ -142,7 +142,7 @@ fpga_top:
     mux_2level_tapbuf_size4:
       sg13g2_inv_1:
       const1:
-      tap_buf4:
+      sg13g2_inv_4:
       mux_2level_tapbuf_basis_input3_mem3:
         - TGATE
     mux_2level_tapbuf_size4_mem:
@@ -150,7 +150,7 @@ fpga_top:
     mux_2level_tapbuf_size2:
       sg13g2_inv_1:
       const1:
-      tap_buf4:
+      sg13g2_inv_4:
       mux_2level_tapbuf_basis_input2_mem1:
         - TGATE
     mux_2level_tapbuf_size2_mem:
@@ -159,7 +159,7 @@ fpga_top:
     mux_2level_tapbuf_size6:
       sg13g2_inv_1:
       const1:
-      tap_buf4:
+      sg13g2_inv_4:
       mux_2level_tapbuf_basis_input3_mem3:
         - TGATE
     mux_2level_tapbuf_size6_mem:
@@ -167,7 +167,7 @@ fpga_top:
     mux_2level_tapbuf_size2:
       sg13g2_inv_1:
       const1:
-      tap_buf4:
+      sg13g2_inv_4:
       mux_2level_tapbuf_basis_input2_mem1:
         - TGATE
     mux_2level_tapbuf_size2_mem:
@@ -176,7 +176,7 @@ fpga_top:
     mux_2level_tapbuf_size6:
       sg13g2_inv_1:
       const1:
-      tap_buf4:
+      sg13g2_inv_4:
       mux_2level_tapbuf_basis_input3_mem3:
         - TGATE
     mux_2level_tapbuf_size6_mem:
@@ -185,7 +185,7 @@ fpga_top:
     mux_2level_tapbuf_size6:
       sg13g2_inv_1:
       const1:
-      tap_buf4:
+      sg13g2_inv_4:
       mux_2level_tapbuf_basis_input3_mem3:
         - TGATE
     mux_2level_tapbuf_size6_mem:
@@ -194,7 +194,7 @@ fpga_top:
     mux_2level_tapbuf_size6:
       sg13g2_inv_1:
       const1:
-      tap_buf4:
+      sg13g2_inv_4:
       mux_2level_tapbuf_basis_input3_mem3:
         - TGATE
     mux_2level_tapbuf_size6_mem:

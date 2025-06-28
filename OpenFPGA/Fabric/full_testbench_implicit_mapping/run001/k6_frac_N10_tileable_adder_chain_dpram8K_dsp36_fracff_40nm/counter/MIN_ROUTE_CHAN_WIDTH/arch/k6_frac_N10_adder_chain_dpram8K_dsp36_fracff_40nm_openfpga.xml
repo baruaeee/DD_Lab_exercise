@@ -53,11 +53,11 @@
         10e-12
       </delay_matrix>
     </circuit_model>
-    <circuit_model type="inv_buf" name="tap_buf4" prefix="tap_buf4" is_default="false">
+    <circuit_model type="inv_buf" name="sg13g2_inv_4" prefix="sg13g2_inv_4" is_default="false" verilog_netlist="../../../../../ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v">
       <design_technology type="cmos" topology="buffer" size="1" num_level="3" f_per_stage="4"/>
       <device_technology device_model_name="logic"/>
-      <port type="input" prefix="in" size="1"/>
-      <port type="output" prefix="out" size="1"/>
+      <port type="input" prefix="in" lib_name="A" size="1"/>
+      <port type="output" prefix="out" lib_name="Y" size="1"/>
       <delay_matrix type="rise" in_port="in" out_port="out">
         10e-12
       </delay_matrix>
@@ -126,7 +126,7 @@
     <circuit_model type="mux" name="mux_2level_tapbuf" prefix="mux_2level_tapbuf" dump_structural_verilog="true">
       <design_technology type="cmos" structure="multi_level" num_level="2" add_const_input="true" const_input_val="1"/>
       <input_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
-      <output_buffer exist="true" circuit_model_name="tap_buf4"/>
+      <output_buffer exist="true" circuit_model_name="sg13g2_inv_4"/>
       <pass_gate_logic circuit_model_name="TGATE"/>
       <port type="input" prefix="in" size="1"/>
       <port type="output" prefix="out" size="1"/>
@@ -135,14 +135,14 @@
     <circuit_model type="mux" name="mux_1level_tapbuf" prefix="mux_1level_tapbuf" is_default="true" dump_structural_verilog="true">
       <design_technology type="cmos" structure="one_level" add_const_input="true" const_input_val="1"/>
       <input_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
-      <output_buffer exist="true" circuit_model_name="tap_buf4"/>
+      <output_buffer exist="true" circuit_model_name="sg13g2_inv_4"/>
       <pass_gate_logic circuit_model_name="TGATE"/>
       <port type="input" prefix="in" size="1"/>
       <port type="output" prefix="out" size="1"/>
       <port type="sram" prefix="sram" size="1"/>
     </circuit_model>
     <!--DFF subckt ports should be defined as <D> <Q> <CLK> <RESET> <SET>  -->
-    <circuit_model type="ff" name="MULTI_MODE_DFFSRQ" prefix="MULTI_MODE_DFFSRQ" spice_netlist="/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_cell_library/spice/dff.sp" verilog_netlist="/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_cell_library/verilog/dff.v">
+    <circuit_model type="ff" name="MULTI_MODE_DFFSRQ" prefix="MULTI_MODE_DFFSRQ" spice_netlist="/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_cell_library/spice/dff.sp" verilog_netlist="../../../../../openfpga_cell_library/verilog/dff.v">
       <design_technology type="cmos"/>
       <input_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
       <output_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
@@ -169,7 +169,7 @@
       <port type="sram" prefix="mode" size="2" mode_select="true" circuit_model_name="DFFR" default_val="1"/>
     </circuit_model>
     <!--Scan-chain DFF subckt ports should be defined as <D> <Q> <Qb> <CLK> <RESET> <SET>  -->
-    <circuit_model type="ccff" name="DFFR" prefix="DFFR" spice_netlist="/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_cell_library/spice/dff.sp" verilog_netlist="/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_cell_library/verilog/dff.v">
+    <circuit_model type="ccff" name="DFFR" prefix="DFFR" spice_netlist="/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_cell_library/spice/dff.sp" verilog_netlist="../../../../../openfpga_cell_library/verilog/dff.v">
       <design_technology type="cmos"/>
       <input_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
       <output_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
@@ -179,7 +179,7 @@
       <port type="output" prefix="QN" size="1"/>
       <port type="clock" prefix="prog_clk" lib_name="CK" size="1" is_global="true" default_val="0" is_prog="true"/>
     </circuit_model>
-    <circuit_model type="iopad" name="GPIO" prefix="GPIO" spice_netlist="/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_cell_library/spice/gpio.sp" verilog_netlist="/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_cell_library/verilog/gpio.v">
+    <circuit_model type="iopad" name="GPIO" prefix="GPIO" spice_netlist="/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_cell_library/spice/gpio.sp" verilog_netlist="../../../../../openfpga_cell_library/verilog/gpio.v">
       <design_technology type="cmos"/>
       <input_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
       <output_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
@@ -188,7 +188,7 @@
       <port type="input" prefix="outpad" lib_name="A" size="1"/>
       <port type="output" prefix="inpad" lib_name="Y" size="1"/>
     </circuit_model>
-    <circuit_model type="hard_logic" name="ADDF" prefix="ADDF" is_default="true" spice_netlist="/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_cell_library/spice/adder.sp" verilog_netlist="/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_cell_library/verilog/adder.v">
+    <circuit_model type="hard_logic" name="ADDF" prefix="ADDF" is_default="true" spice_netlist="/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_cell_library/spice/adder.sp" verilog_netlist="../../../../../openfpga_cell_library/verilog/adder.v">
       <design_technology type="cmos"/>
       <input_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
       <output_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
@@ -198,7 +198,7 @@
       <port type="output" prefix="sumout" lib_name="SUM" size="1"/>
       <port type="output" prefix="cout" lib_name="CO" size="1"/>
     </circuit_model>
-    <circuit_model type="hard_logic" name="dpram_1024x8" prefix="dpram_1024x8" spice_netlist="/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_cell_library/spice/dpram.sp" verilog_netlist="/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_cell_library/verilog/dpram8k.v">
+    <circuit_model type="hard_logic" name="dpram_1024x8" prefix="dpram_1024x8" spice_netlist="/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_cell_library/spice/dpram.sp" verilog_netlist="../../../../../openfpga_cell_library/verilog/dpram8k.v">
       <design_technology type="cmos"/>
       <input_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
       <output_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
@@ -210,7 +210,7 @@
       <port type="output" prefix="data_out" size="8"/>
       <port type="clock" prefix="clk" size="1"/>
     </circuit_model>
-    <circuit_model type="hard_logic" name="mult_36x36" prefix="mult_36x36" spice_netlist="/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_cell_library/spice/mult_36x36.sp" verilog_netlist="/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_cell_library/verilog/mult_36x36.v">
+    <circuit_model type="hard_logic" name="mult_36x36" prefix="mult_36x36" spice_netlist="/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_cell_library/spice/mult_36x36.sp" verilog_netlist="../../../../../openfpga_cell_library/verilog/mult_36x36.v">
       <design_technology type="cmos"/>
       <input_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
       <output_buffer exist="true" circuit_model_name="sg13g2_inv_1"/>
