@@ -3,7 +3,7 @@
 //	Description: Multiplexer primitives
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Sat Jun 28 23:35:56 2025
+//	Date: Sat Jun 28 23:57:53 2025
 //-------------------------------------------
 //----- Default net type -----
 `default_nettype none
@@ -38,20 +38,20 @@ output [0:0] out;
 
 	TGATE TGATE_0_ (
 		.in(in[0]),
-		.sel(mem[0]),
-		.selb(mem_inv[0]),
+		.selb(mem[0]),
+		.sel(mem_inv[0]),
 		.out(out));
 
 	TGATE TGATE_1_ (
 		.in(in[1]),
-		.sel(mem[1]),
-		.selb(mem_inv[1]),
+		.selb(mem[1]),
+		.sel(mem_inv[1]),
 		.out(out));
 
 	TGATE TGATE_2_ (
 		.in(in[2]),
-		.sel(mem[2]),
-		.selb(mem_inv[2]),
+		.selb(mem[2]),
+		.sel(mem_inv[2]),
 		.out(out));
 
 endmodule
@@ -96,14 +96,14 @@ output [0:0] out;
 
 	TGATE TGATE_0_ (
 		.in(in[0]),
-		.sel(mem),
-		.selb(mem_inv),
+		.selb(mem),
+		.sel(mem_inv),
 		.out(out));
 
 	TGATE TGATE_1_ (
 		.in(in[1]),
-		.sel(mem_inv),
-		.selb(mem),
+		.selb(mem_inv),
+		.sel(mem),
 		.out(out));
 
 endmodule
@@ -148,50 +148,50 @@ output [0:0] out;
 
 	TGATE TGATE_0_ (
 		.in(in[0]),
-		.sel(mem[0]),
-		.selb(mem_inv[0]),
+		.selb(mem[0]),
+		.sel(mem_inv[0]),
 		.out(out));
 
 	TGATE TGATE_1_ (
 		.in(in[1]),
-		.sel(mem[1]),
-		.selb(mem_inv[1]),
+		.selb(mem[1]),
+		.sel(mem_inv[1]),
 		.out(out));
 
 	TGATE TGATE_2_ (
 		.in(in[2]),
-		.sel(mem[2]),
-		.selb(mem_inv[2]),
+		.selb(mem[2]),
+		.sel(mem_inv[2]),
 		.out(out));
 
 	TGATE TGATE_3_ (
 		.in(in[3]),
-		.sel(mem[3]),
-		.selb(mem_inv[3]),
+		.selb(mem[3]),
+		.sel(mem_inv[3]),
 		.out(out));
 
 	TGATE TGATE_4_ (
 		.in(in[4]),
-		.sel(mem[4]),
-		.selb(mem_inv[4]),
+		.selb(mem[4]),
+		.sel(mem_inv[4]),
 		.out(out));
 
 	TGATE TGATE_5_ (
 		.in(in[5]),
-		.sel(mem[5]),
-		.selb(mem_inv[5]),
+		.selb(mem[5]),
+		.sel(mem_inv[5]),
 		.out(out));
 
 	TGATE TGATE_6_ (
 		.in(in[6]),
-		.sel(mem[6]),
-		.selb(mem_inv[6]),
+		.selb(mem[6]),
+		.sel(mem_inv[6]),
 		.out(out));
 
 	TGATE TGATE_7_ (
 		.in(in[7]),
-		.sel(mem[7]),
-		.selb(mem_inv[7]),
+		.selb(mem[7]),
+		.sel(mem_inv[7]),
 		.out(out));
 
 endmodule
@@ -236,32 +236,32 @@ output [0:0] out;
 
 	TGATE TGATE_0_ (
 		.in(in[0]),
-		.sel(mem[0]),
-		.selb(mem_inv[0]),
+		.selb(mem[0]),
+		.sel(mem_inv[0]),
 		.out(out));
 
 	TGATE TGATE_1_ (
 		.in(in[1]),
-		.sel(mem[1]),
-		.selb(mem_inv[1]),
+		.selb(mem[1]),
+		.sel(mem_inv[1]),
 		.out(out));
 
 	TGATE TGATE_2_ (
 		.in(in[2]),
-		.sel(mem[2]),
-		.selb(mem_inv[2]),
+		.selb(mem[2]),
+		.sel(mem_inv[2]),
 		.out(out));
 
 	TGATE TGATE_3_ (
 		.in(in[3]),
-		.sel(mem[3]),
-		.selb(mem_inv[3]),
+		.selb(mem[3]),
+		.sel(mem_inv[3]),
 		.out(out));
 
 	TGATE TGATE_4_ (
 		.in(in[4]),
-		.sel(mem[4]),
-		.selb(mem_inv[4]),
+		.selb(mem[4]),
+		.sel(mem_inv[4]),
 		.out(out));
 
 endmodule
@@ -306,26 +306,26 @@ output [0:0] out;
 
 	TGATE TGATE_0_ (
 		.in(in[0]),
-		.sel(mem[0]),
-		.selb(mem_inv[0]),
+		.selb(mem[0]),
+		.sel(mem_inv[0]),
 		.out(out));
 
 	TGATE TGATE_1_ (
 		.in(in[1]),
-		.sel(mem[1]),
-		.selb(mem_inv[1]),
+		.selb(mem[1]),
+		.sel(mem_inv[1]),
 		.out(out));
 
 	TGATE TGATE_2_ (
 		.in(in[2]),
-		.sel(mem[2]),
-		.selb(mem_inv[2]),
+		.selb(mem[2]),
+		.sel(mem_inv[2]),
 		.out(out));
 
 	TGATE TGATE_3_ (
 		.in(in[3]),
-		.sel(mem[3]),
-		.selb(mem_inv[3]),
+		.selb(mem[3]),
+		.sel(mem_inv[3]),
 		.out(out));
 
 endmodule
@@ -370,20 +370,20 @@ output [0:0] out;
 
 	TGATE TGATE_0_ (
 		.in(in[0]),
-		.sel(mem[0]),
-		.selb(mem_inv[0]),
+		.selb(mem[0]),
+		.sel(mem_inv[0]),
 		.out(out));
 
 	TGATE TGATE_1_ (
 		.in(in[1]),
-		.sel(mem[1]),
-		.selb(mem_inv[1]),
+		.selb(mem[1]),
+		.sel(mem_inv[1]),
 		.out(out));
 
 	TGATE TGATE_2_ (
 		.in(in[2]),
-		.sel(mem[2]),
-		.selb(mem_inv[2]),
+		.selb(mem[2]),
+		.sel(mem_inv[2]),
 		.out(out));
 
 endmodule
@@ -428,14 +428,14 @@ output [0:0] out;
 
 	TGATE TGATE_0_ (
 		.in(in[0]),
-		.sel(mem),
-		.selb(mem_inv),
+		.selb(mem),
+		.sel(mem_inv),
 		.out(out));
 
 	TGATE TGATE_1_ (
 		.in(in[1]),
-		.sel(mem_inv),
-		.selb(mem),
+		.selb(mem_inv),
+		.sel(mem),
 		.out(out));
 
 endmodule

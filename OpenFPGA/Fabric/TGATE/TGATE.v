@@ -6,7 +6,8 @@ module TGATE (
 );
 
     // NMOS and PMOS transistors
-    assign out = (sel & ~selb) ? in : 1'bz;  // NMOS: Pass 'a' when control is high
+    assign selb = ~ sel;
+    assign out = sel ? in : 1'bz;  // NMOS: Pass 'a' when control is high
 
 endmodule
 

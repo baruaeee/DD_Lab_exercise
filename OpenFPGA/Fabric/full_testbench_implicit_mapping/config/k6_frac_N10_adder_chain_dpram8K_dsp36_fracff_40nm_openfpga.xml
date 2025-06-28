@@ -86,8 +86,8 @@
       <input_buffer exist="false"/>
       <output_buffer exist="false"/>
       <port type="input" prefix="in" size="1"/>
-      <port type="input" prefix="sel" size="1"/>
       <port type="input" prefix="selb" size="1"/>
+      <port type="input" prefix="sel" size="1"/>
       <port type="output" prefix="out" size="1"/>
       <delay_matrix type="rise" in_port="in sel selb" out_port="out">
         10e-12 5e-12 5e-12
