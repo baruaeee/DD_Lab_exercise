@@ -1,4 +1,4 @@
-module TGATE (
+module tgate (
     input wire in,          // Input signal
     input wire sel,    // Control signal
     input wire selb,    // Control signal
@@ -11,3 +11,19 @@ module TGATE (
 
 endmodule
 
+module TGATE (
+    input wire in,          // Input signal
+    input wire sel,    // Control signal
+    input wire selb,    // Control signal
+    output wire out          // Output signal
+);
+
+wire ctrl, ctrlb;
+
+and g1(ctrl, sel, ~selb);
+not g2(ctrlb, ctrl);
+
+assign out = ctrl ? in : 1'bz;
+assign in = ctrl ? out : 1'bz;
+
+endmodule

@@ -1,13 +1,1 @@
 vvp compiled_counter
-VCD info: dumpfile counter_formal.vcd opened for output.
-Simulation start
-Mismatch on result_0__fpga at time =            7862.34ns
-Mismatch on result_1__fpga at time =            7862.34ns
-Mismatch on result_3__fpga at time =            7862.34ns
-Mismatch on result_4__fpga at time =            7862.34ns
-Mismatch on result_5__fpga at time =            7862.34ns
-Mismatch on result_6__fpga at time =            7862.34ns
-Mismatch on result_7__fpga at time =            7862.34ns
-Mismatch on result_2__fpga at time =            7866.34ns
-Simulation Failed with           8 error(s)
-0
