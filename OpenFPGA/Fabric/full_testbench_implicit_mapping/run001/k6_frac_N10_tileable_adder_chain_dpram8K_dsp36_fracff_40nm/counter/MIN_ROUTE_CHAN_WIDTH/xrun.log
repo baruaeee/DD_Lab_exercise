@@ -1,0 +1,37 @@
+xrun(64): 24.03-s004: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.03-s004: Started on Jun 29, 2025 at 02:10:35 CEST
+xrun
+	SRC/counter_include_netlists.v
+	-access +rwc
+	-gui
+	-64bit
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /eda/cadence/2024-25/RHELx86/XCELIUM_24.03.004/tools/xcelium/files/xmsimrc
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm counter_autocheck_top_tb.result_0__benchmark counter_autocheck_top_tb.result_0__fpga
+Created probe 1
+xcelium> run
+Time	sel	selb	in	out	Status
+Simulation start
+0.00ns	0	1	0	z	OFF
+Test 1: TG OFF, in=0, out should be Z
+30.00ns	0	1	1	z	OFF
+Test 2: TG OFF, in=1, out should be Z
+50.00ns	1	0	1	1	 ON
+Test 3: TG ON, in=1, out should be 1
+70.00ns	1	0	0	0	 ON
+Test 4: TG ON, in=0, out should be 0
+90.00ns	0	1	0	z	OFF
+Test 5: TG OFF, in=0, out should be Z
+110.00ns	0	1	1	z	OFF
+Test 6: TG OFF, in=1, out should remain Z
+Simulation complete via $finish(1) at time 140 NS + 0
+/home/bas33767/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/TGATE/tgate.v:72     #20 $finish;
+xcelium> ^C
+xcelium> exit
+TOOL:	xrun(64)	24.03-s004: Exiting on Jun 29, 2025 at 02:10:56 CEST  (total: 00:00:21)

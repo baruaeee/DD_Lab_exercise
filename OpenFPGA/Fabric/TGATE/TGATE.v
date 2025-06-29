@@ -5,9 +5,8 @@ module tgate (
     output wire out          // Output signal
 );
 
-    // NMOS and PMOS transistors
-    assign selb = ~ sel;
-    assign out = sel ? in : 1'bz;  // NMOS: Pass 'a' when control is high
+    assign out = (sel & ~selb) ? in : 1'bz;
+    assign in = (selb & ~sel) ? out : 1'bz;
 
 endmodule
 
