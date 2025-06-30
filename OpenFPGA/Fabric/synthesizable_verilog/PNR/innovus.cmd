@@ -1,7 +1,7 @@
 #######################################################
 #                                                     
 #  Innovus Command Logging File                     
-#  Created on Mon Jun 23 21:40:02 2025                
+#  Created on Mon Jun 30 09:08:51 2025                
 #                                                     
 #######################################################
 
@@ -349,15 +349,36 @@ set load_netlist_ignore_undefined_cell 1
 set init_design_uniquify 1
 init_design
 setDrawView fplan
-pan -1625.71200 159.19400
-gui_select -rect {-52.96900 -55.15000 -1840.05600 1770.78600}
+zoomBox -485.56900 -368.32900 2711.75300 2493.95700
+zoomBox -749.28800 -748.01900 3676.07100 3213.62200
+pan -1465.57800 -113.22900
 selectObject Module grid_clb_1__2_
+selectObject Module grid_clb_2__1_
+selectObject Module grid_clb_2__2_
 selectObject Module grid_clb_1__1_
+deselectAll
+selectObject Module grid_clb_2__2_
+selectObject Module grid_clb_2__1_
+selectObject Module grid_clb_1__2_
 selectObject Module cby_2__2_
+selectObject Module cby_2__1_
+selectObject Module cby_1__2_
+selectObject Module cby_1__1_
+selectObject Module cby_0__2_
+selectObject Module cby_0__1_
+selectObject Module cbx_2__2_
+selectObject Module cbx_1__2_
+selectObject Module cbx_2__1_
+selectObject Module cbx_1__1_
+selectObject Module cbx_2__0_
+selectObject Module cbx_1__0_
+selectObject Module sb_2__2_
+selectObject Module sb_2__1_
+selectObject Module sb_2__0_
+selectObject Module sb_1__2_
 deselectAll
-selectObject Module sb_1__0_
+gui_select -rect {-1287.43000 -49.57900 -1785.49700 179.41700}
 deselectAll
-fit
 create_relative_floorplan -place grid_clb_1__1_ -ref_type core_boundary -horizontal_edge_separate {1  -5  1} -vertical_edge_separate {0  5  0}
 create_relative_floorplan -place grid_clb_1__2_ -ref_type core_boundary -horizontal_edge_separate {1  -5  1} -vertical_edge_separate {2  -5  2}
 create_relative_floorplan -place grid_clb_2__1_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  5  0}
@@ -385,6 +406,61 @@ create_relative_floorplan -place cby_1__2_ -ref_type object -ref grid_clb_1__1_ 
 create_relative_floorplan -place cby_2__2_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -10  1} -vertical_edge_separate {2  460  0}
 loadIoFile Multi_Row_IO_PAD.io
 floorPlan -site CoreSite -b 0.0 0.0 1855.2 1935.78 400.32 400.26 1455.36 1535.1 425.28 425.46 1430.88 1510.74
+fit
+selectObject Module grid_clb_2__2_
+gui_select -rect {400.07600 1555.57700 1458.60100 410.89400}
+deselectAll
+deselectAll
+selectObject Module grid_clb_2__2_
+gui_select -rect {1372.44200 961.69600 409.30700 1112.47400}
+deselectAll
+deselectAll
+selectObject Module sb_1__1_
+deselectAll
+zoomBox 44.19400 237.89900 1762.73500 1776.36000
+zoomBox 163.58000 368.62400 1624.34000 1676.31600
+selectObject Module sb_1__1_
+uiSetTool move
+getFPlanMode -autoSyncMasterClone -quiet
+create_relative_floorplan -ref_type object -horizontal_edge_separate {3  -10  1} -vertical_edge_separate {2  50  0} -place sb_1__1_ -ref grid_clb_1__1_ -no_record
+setObjFPlanBox Module sb_1__1_ 903.586 992.42 968.866 1064.24
+getFPlanMode -autoSyncMasterClone -quiet
+create_relative_floorplan -ref_type object -horizontal_edge_separate {3  -10  1} -vertical_edge_separate {2  50  0} -place sb_1__1_ -ref grid_clb_1__1_ -no_record
+setObjFPlanBox Module sb_1__1_ 909.256 990.531 974.536 1062.351
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+uiSetTool select
+undo
+undo
+undo
+undo
+fit
+zoomBox -96.72300 80.87400 1925.09000 1890.82800
+zoomBox 43.33900 231.92100 1761.88000 1770.38200
+zoomBox 162.39200 360.31100 1623.15200 1668.00300
+zoomBox 263.58700 469.44300 1505.23300 1580.98100
+deselectAll
+selectObject Module sb_1__1_
+deselectAll
+selectObject Module sb_1__1_
+create_relative_floorplan -place sb_1__1_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -10  1} -vertical_edge_separate {2  55  0}
+create_relative_floorplan -place sb_1__1_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -10  1} -vertical_edge_separate {2  60  0}
+create_relative_floorplan -place sb_1__1_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -10  1} -vertical_edge_separate {2  70  0}
+deselectAll
+fit
 setDesignMode -process 130
 globalNetConnect vdd -type pgpin -pin VDD -override -verbose -netlistOverride
 globalNetConnect vss -type pgpin -pin VSS -override -verbose -netlistOverride
@@ -397,6 +473,17 @@ addStripe -nets {vdd vss} -layer TopMetal2 -direction vertical -width 5 -spacing
 sroute -connect { blockPin corePin floatingStripe } -layerChangeRange { Metal1(1) TopMetal2(7) } -blockPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) TopMetal2(7) } -nets { vdd vss } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1(1) TopMetal2(7) }
 sroute -connect { padPin padRing } -layerChangeRange { Metal1(1) TopMetal2(7) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) TopMetal2(7) } -nets { iovdd iovss vdd vss } -allowLayerChange 1 -targetViaLayerRange { Metal1(1) TopMetal2(7) }
 sroute -connect { padPin } -layerChangeRange { Metal1(1) TopMetal2(7) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) TopMetal2(7) } -nets { vdd vss } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1(1) TopMetal2(7) }
+zoomBox 1523.22000 1324.79400 1427.83000 1521.72900
+zoomBox 1286.31500 1247.90200 1644.52800 1568.57900
+zoomBox 1098.33500 1065.43800 1784.55900 1679.75500
+zoomBox 1028.93400 998.07400 1836.25700 1720.80000
+zoomBox 947.28600 918.82100 1897.07800 1769.08800
+zoomBox 851.22900 825.58400 1968.63200 1825.89800
+zoomBox 48.35800 46.27400 2566.70500 2300.73200
+zoomBox -206.33200 -200.94300 2756.42900 2451.36100
+setDrawView place
+setDrawView place
+setDrawView fplan
 setMultiCpuUsage -localCpu 8 -cpuPerRemoteHost 1 -remoteHost 0 -keepLicense true
 setDistributeHost -local
 setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
@@ -415,6 +502,11 @@ setPlaceMode -reset
 setPlaceMode -congEffort auto -timingDriven 1 -clkGateAware 1 -powerDriven 0 -ignoreScan 1 -reorderScan 1 -ignoreSpare 0 -placeIOPins 0 -moduleAwareSpare 0 -maxRouteLayer 7 -preserveRouting 1 -rmAffectedRouting 0 -checkRoute 0 -swapEEQ 0
 setPlaceMode -fp false
 place_design
+setDrawView place
+zoomBox 34.04100 60.70300 2174.63700 1976.99300
+zoomBox 127.91700 162.88600 1947.42400 1791.73300
+zoomBox 207.71200 249.74200 1754.29300 1634.26200
+zoomBox 275.53700 323.57000 1590.13100 1500.41200
 timeDesign -preCTS
 optDesign -preCTS
 set_ccopt_property buffer_cells {sg13g2_buf_1 sg13g2_buf_16 sg13g2_buf_2 sg13g2_buf_4 sg13g2_buf_8}
@@ -449,7 +541,4 @@ all_setup_analysis_views
 write_sdf  -ideal_clock_network pnr_outputs/post_layout_fabric.sdf
 rcOut -spef pnr_outputs/fabric_RC_BEST.spef -rc_corner RC_BEST
 rcOut -spef pnr_outputs/fabric_RC_WORST.spef -rc_corner RC_WORST
-setDrawView place
-setDrawView place
-is_innovus_plus
-dumpToGIF fabric
+selectWire 425.4800 1207.6600 1431.0800 1208.1000 1 vss

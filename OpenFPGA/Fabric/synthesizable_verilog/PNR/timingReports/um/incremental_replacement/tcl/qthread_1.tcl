@@ -13,18 +13,3 @@ specific view and clock} dp 3 metric timing.min_pulse_width.endpoints.wns.analys
 ::goMC::um:set_metric_safe {timing.hold.analysis_views.number} {1}
 ::goMC::um:set_metric_safe {timing.setup.analysis_views} {WORST_CASE}
 ::goMC::um:set_metric_safe {timing.setup.analysis_views.number} {1}
-::goMC::um:set_metric_safe {timing.setup.feps} {5478}
-::goMC::um:set_metric_safe {timing.setup.feps.analysis_view:WORST_CASE} {5478}
-::goMC::um:set_metric_safe {timing.setup.feps.path_group:in2reg} {5478}
-::goMC::um:set_metric_safe {timing.setup.feps.path_group:in2reg.analysis_view:WORST_CASE} {5478}
-::goMC::um:set_metric_safe {timing.setup.tns} {-974.062 ns}
-::goMC::um:set_metric_safe {timing.setup.tns.analysis_view:WORST_CASE} {-974.062 ns}
-::goMC::um:set_metric_safe {timing.setup.tns.path_group:in2reg} {-974.062 ns}
-::goMC::um:set_metric_safe {timing.setup.tns.path_group:in2reg.analysis_view:WORST_CASE} {-974.062 ns}
-::goMC::um:set_metric_safe {timing.setup.wns} {-0.957 ns}
-::goMC::um:set_metric_safe {timing.setup.wns.analysis_view:WORST_CASE} {-0.957 ns}
-::goMC::um:set_metric_safe {timing.setup.wns.path_group:in2reg} {-0.957 ns}
-::goMC::um:set_metric_safe {timing.setup.wns.path_group:in2reg.analysis_view:WORST_CASE} {-0.957 ns}
-::goMC::um:set_metric_safe {timing.setup.worst_path.capture_clock} {}
-::goMC::um:set_metric_safe {timing.setup.worst_path.launch_clock} {@}
-::goMC::um:set_metric_safe {timing.setup.worst_path.view} {WORST_CASE}
