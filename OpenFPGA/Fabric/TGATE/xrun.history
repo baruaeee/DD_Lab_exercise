@@ -1,0 +1,4 @@
+#e1(30Jun2025:20:16:11): source ./xcelium.d/env.d/env.history.30Jun2025_20_16_11
+s1(30Jun2025:20:16:11):  xrun tgate.v -access +rwc -gui 
+#e2(30Jun2025:20:22:03): source ./xcelium.d/env.d/env.history.30Jun2025_20_22_03
+s2(30Jun2025:20:22:03):  xrun tgate.v -access +rwc -tcl -nolog -nocopyright -neverwarn 

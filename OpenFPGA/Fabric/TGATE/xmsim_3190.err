@@ -1,0 +1,63 @@
+csi-xmsim - CSI: Command line:
+xmsim
+    -f /run/media/exotic/Cadence/DD_Lab_exercise/OpenFPGA/Fabric/TGATE/xcelium.d/run.lnx8664.24.03.d/exotic-rhel_3190/xmsim.args
+        -gui
+        -MESSAGES
+        +EMGRLOG xrun.log
+        -XLSTIME 1751328969
+        -XLKEEP
+        -XLMODE ./xcelium.d/run.lnx8664.24.03.d
+        -RUNMODE
+        -CDSLIB ./xcelium.d/run.lnx8664.24.03.d/cds.lib
+        -HDLVAR ./xcelium.d/run.lnx8664.24.03.d/hdl.var
+        -XLNAME xrun
+        -XLVERSION TOOL:	xrun(64)	24.03-s004
+        -XLNAME ./xcelium.d/run.lnx8664.24.03.d/exotic-rhel_3190
+    -CHECK_VERSION TOOL:	xrun(64)	24.03-s004
+    -LOG_FD 4
+    -LOG_FD_NAME xrun.log
+    -cmdnopsim
+    -runlock /run/media/exotic/Cadence/DD_Lab_exercise/OpenFPGA/Fabric/TGATE/xcelium.d/run.lnx8664.24.03.d/.xmlib.lock
+    -runscratch /run/media/exotic/Cadence/DD_Lab_exercise/OpenFPGA/Fabric/TGATE/xcelium.d/run.lnx8664.24.03.d/exotic-rhel_3190
+Observed simulation time : 0 FS + 0
+
+csi-xmsim - CSI: *F,INTERR: INTERNAL EXCEPTION
+-----------------------------------------------------------------
+The tool has encountered an unexpected condition and must exit.
+Contact Cadence Design Systems customer support about this
+problem and provide enough information to help us reproduce it,
+including the logfile that contains this error message.
+  TOOL:	xmsim(64)	24.03-s004 (CL: 638556 )
+  HOSTNAME: exotic-rhel
+  OPERATING SYSTEM: Linux 4.18.0-553.56.1.el8_10.x86_64 #1 SMP Mon Jun 2 12:33:13 EDT 2025 x86_64
+  MESSAGE: T(0): sv_seghandler - trapno -1 addr(0x5d0fe6c)
+	Stream rts_xfer
+-----------------------------------------------------------------
+
+csi-xmsim - CSI: Cadence Support Investigation, recording details
+External Code in function: <unavailable> offset -65516
+External Code in function: <unavailable> offset -65530
+Simulator Snap Shot: gd (SSS_GD) in snapshot worklib.tb_transmission_gate:v (SSS)
+Verilog Syntax Tree: register declaration (VST_D_REG) in module worklib.tb_transmission_gate:v (VST)
+	File: /run/media/exotic/Cadence/DD_Lab_exercise/OpenFPGA/Fabric/TGATE/tgate.v, line 25, position 5
+	Scope: tb_transmission_gate
+	Decompile: reg in
+	Source  : reg in;
+	Position:      ^
+Error: Error processing stack frame(8) - skipping rest of frame!
+Error: Error processing stack frame(9) - skipping rest of frame!
+External Code in function: <unavailable> offset -65536
+External Code in function: <unavailable> offset -65531
+Verilog Syntax Tree: module declaration (VST_D_MODULE) in module worklib.tb_transmission_gate:v (VST)
+	File: /run/media/exotic/Cadence/DD_Lab_exercise/OpenFPGA/Fabric/TGATE/tgate.v, line 22, position 26
+	Scope: tb_transmission_gate
+	Decompile: tb_transmission_gate
+	Source  : module tb_transmission_gate;
+	Position:                           ^
+Intermediate File: string (IF_STRING) in module worklib.tb_transmission_gate:v (VST)
+	Decompile: selb
+Simulator Snap Shot: top level instance (SSS_TLI) in snapshot worklib.tb_transmission_gate:v (SSS)
+Intermediate File: array of pointers (IF_PTRBLK) in snapshot worklib.tb_transmission_gate:v (SSS)
+Intermediate File: data block (IF_BLK) in snapshot worklib.tb_transmission_gate:v (SSS)
+Simulator Snap Shot: root (SSS_ROOT) in snapshot worklib.tb_transmission_gate:v (SSS)
+csi-xmsim - CSI: investigation complete took 0.034 secs, send this file to Cadence Support

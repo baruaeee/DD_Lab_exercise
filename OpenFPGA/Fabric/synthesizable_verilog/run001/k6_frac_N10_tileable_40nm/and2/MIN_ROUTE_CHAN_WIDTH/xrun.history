@@ -1,0 +1,8 @@
+#e1(30Jun2025:11:34:22): source ./xcelium.d/env.d/env.history.30Jun2025_11_34_22
+s1(30Jun2025:11:34:22):  xrun SRC/and2_include_netlists.v -access +rwc -gui 
+#e2(30Jun2025:11:41:32): source ./xcelium.d/env.d/env.history.30Jun2025_11_41_32
+s2(30Jun2025:11:41:32):  xrun SRC/and2_include_netlists.v -access +rwc -gui 
+#e3(30Jun2025:11:42:30): source ./xcelium.d/env.d/env.history.30Jun2025_11_42_30
+s3(30Jun2025:11:42:30):  xrun SRC/and2_include_netlists.v -access +rwc -gui 
+#e4(30Jun2025:11:43:26): source ./xcelium.d/env.d/env.history.30Jun2025_11_43_26
+s4(30Jun2025:11:43:26):  xrun SRC/and2_include_netlists.v -access +rwc -gui 

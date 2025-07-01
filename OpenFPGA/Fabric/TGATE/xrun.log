@@ -1,0 +1,60 @@
+xrun(64): 24.03-s004: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.03-s004: Started on Jun 30, 2025 at 20:16:09 EDT
+xrun
+	tgate.v
+	-access +rwc
+	-gui
+file: tgate.v
+	module worklib.TGATE:v
+		errors: 0, warnings: 0
+	module worklib.tb_transmission_gate:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		tb_transmission_gate
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.TGATE:v <0x78f07ec8>
+			streams:   0, words:     0
+		worklib.tb_transmission_gate:v <0x454cdf11>
+			streams:   5, words: 11183
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Primitives:          1       1
+		Registers:           3       3
+		Scalar wires:        5       -
+		Initial blocks:      1       1
+		Cont. assignments:   0       1
+		Pseudo assignments:  3       -
+	Writing initial simulation snapshot: worklib.tb_transmission_gate:v
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/xcelium/files/xmsimrc
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm tb_transmission_gate.selb tb_transmission_gate.sel tb_transmission_gate.out tb_transmission_gate.in
+Created probe 1
+xcelium> run
+Observed simulation time : 0 FS + 0
+xmsim: *F,INTERR: INTERNAL EXCEPTION
+-----------------------------------------------------------------
+The tool has encountered an unexpected condition and must exit.
+Contact Cadence Design Systems customer support about this
+problem and provide enough information to help us reproduce it,
+including the logfile that contains this error message.
+  TOOL:	xmsim(64)	24.03-s004 (CL: 638556 )
+  HOSTNAME: exotic-rhel
+  OPERATING SYSTEM: Linux 4.18.0-553.56.1.el8_10.x86_64 #1 SMP Mon Jun 2 12:33:13 EDT 2025 x86_64
+  MESSAGE: T(0): sv_seghandler - trapno -1 addr(0x5d0fe6c)
+	Stream rts_xfer
+-----------------------------------------------------------------
+Stack trace information is captured in file /run/media/exotic/Cadence/DD_Lab_exercise/OpenFPGA/Fabric/TGATE/bpad_3190.err 
+csi-xmsim - CSI: Cadence Support Investigation, sending details to /run/media/exotic/Cadence/DD_Lab_exercise/OpenFPGA/Fabric/TGATE/xmsim_3190.err
+csi-xmsim - CSI: investigation complete, send /run/media/exotic/Cadence/DD_Lab_exercise/OpenFPGA/Fabric/TGATE/xmsim_3190.err to Cadence Support
