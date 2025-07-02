@@ -6,7 +6,18 @@
 //	Date: Sun Jun 29 02:52:31 2025
 //-------------------------------------------
 //----- Default net type -----
-`default_nettype none
+module TGATE (
+    input wire in,          // Input signal
+    input wire sel,    // Control signal
+    input wire selb,    // Control signal
+    output wire out          // Output signal
+);
+
+    assign out = (sel & ~selb) ? in : 1'bz;
+    assign in = (selb & ~sel) ? out : 1'bz;
+
+
+endmodule
 
 // ----- Verilog module for mux_2level_tapbuf_basis_input3_mem3 -----
 module mux_2level_tapbuf_basis_input3_mem3(in,
@@ -35,6 +46,7 @@ output [0:0] out;
 // ----- END Local short connections -----
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
+
 
 	TGATE TGATE_0_ (
 		.in(in[0]),
