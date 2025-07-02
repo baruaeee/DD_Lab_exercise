@@ -1,8 +1,0 @@
-//
-// File created by:  xrun
-// Do not modify this file
-
-s1::(30Jun2025:11:34:22):( xrun SRC/and2_include_netlists.v -access +rwc -gui )&&(./xcelium.d/env.d/env.history.30Jun2025_11_34_22)
-s2::(30Jun2025:11:41:32):( xrun SRC/and2_include_netlists.v -access +rwc -gui )&&(./xcelium.d/env.d/env.history.30Jun2025_11_41_32)
-s3::(30Jun2025:11:42:30):( xrun SRC/and2_include_netlists.v -access +rwc -gui )&&(./xcelium.d/env.d/env.history.30Jun2025_11_42_30)
-s4::(30Jun2025:11:43:26):( xrun SRC/and2_include_netlists.v -access +rwc -gui )&&(./xcelium.d/env.d/env.history.30Jun2025_11_43_26)
