@@ -3,10 +3,10 @@
 //	Description: Verilog modules for primitive pb_type: ff
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Thu Jun 19 20:00:49 2025
+//	Date: Wed Jul  2 18:47:17 2025
 //-------------------------------------------
 //----- Default net type -----
-// `default_nettype none
+// // `default_nettype none
 
 // ----- Verilog module for logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff -----
 module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff(set,
@@ -56,7 +56,7 @@ endmodule
 // ----- END Verilog module for logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff -----
 
 //----- Default net type -----
-// `default_nettype wire
+// // `default_nettype wire
 
 
 

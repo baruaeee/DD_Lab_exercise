@@ -3,11 +3,11 @@
 //	Description: Verilog modules for pb_type: fabric
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Thu Jun 19 20:00:49 2025
+//	Date: Wed Jul  2 18:47:17 2025
 //-------------------------------------------
 // ----- BEGIN Physical programmable logic block Verilog module: fabric -----
 //----- Default net type -----
-// `default_nettype none
+// // `default_nettype none
 
 // ----- Verilog module for logical_tile_clb_mode_default__fle_mode_physical__fabric -----
 module logical_tile_clb_mode_default__fle_mode_physical__fabric(pReset,
@@ -173,7 +173,7 @@ endmodule
 // ----- END Verilog module for logical_tile_clb_mode_default__fle_mode_physical__fabric -----
 
 //----- Default net type -----
-// `default_nettype wire
+// // `default_nettype wire
 
 
 

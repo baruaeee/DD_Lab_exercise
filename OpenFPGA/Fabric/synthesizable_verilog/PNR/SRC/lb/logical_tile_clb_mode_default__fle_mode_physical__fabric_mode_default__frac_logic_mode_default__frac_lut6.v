@@ -3,10 +3,10 @@
 //	Description: Verilog modules for primitive pb_type: frac_lut6
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Thu Jun 19 20:00:49 2025
+//	Date: Wed Jul  2 18:47:17 2025
 //-------------------------------------------
 //----- Default net type -----
-// `default_nettype none
+// // `default_nettype none
 
 // ----- Verilog module for logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6 -----
 module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6(pReset,
@@ -61,7 +61,7 @@ wire [0:63] frac_lut6_0_sram_inv;
 		.lut5_out(frac_lut6_lut5_out[0:1]),
 		.lut6_out(frac_lut6_lut6_out));
 
-	frac_lut6_dffr_mem frac_lut6_dffr_mem (
+	frac_lut6_DFFR_mem frac_lut6_DFFR_mem (
 		.pReset(pReset),
 		.prog_clk(prog_clk),
 		.ccff_head(ccff_head),
@@ -73,7 +73,7 @@ endmodule
 // ----- END Verilog module for logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6 -----
 
 //----- Default net type -----
-// `default_nettype wire
+// // `default_nettype wire
 
 
 
