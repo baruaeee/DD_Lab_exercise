@@ -3,10 +3,10 @@
 //	Description: Essential gates
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Wed Jul  2 18:47:17 2025
+//	Date: Thu Jul  3 20:29:28 2025
 //-------------------------------------------
 //----- Default net type -----
-// // `default_nettype none
+// `default_nettype none
 
 // ----- Verilog module for const0 -----
 module const0(const0);
@@ -25,10 +25,10 @@ endmodule
 // ----- END Verilog module for const0 -----
 
 //----- Default net type -----
-// // `default_nettype wire
+// `default_nettype wire
 
 //----- Default net type -----
-// // `default_nettype none
+// `default_nettype none
 
 // ----- Verilog module for const1 -----
 module const1(const1);
@@ -47,5 +47,5 @@ endmodule
 // ----- END Verilog module for const1 -----
 
 //----- Default net type -----
-// // `default_nettype wire
+// `default_nettype wire
 

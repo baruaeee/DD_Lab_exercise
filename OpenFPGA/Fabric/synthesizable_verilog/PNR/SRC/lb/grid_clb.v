@@ -3,11 +3,11 @@
 //	Description: Verilog modules for physical tile: clb]
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Wed Jul  2 18:47:17 2025
+//	Date: Thu Jul  3 20:29:28 2025
 //-------------------------------------------
 // ----- BEGIN Grid Verilog module: grid_clb -----
 //----- Default net type -----
-// // `default_nettype none
+// `default_nettype none
 
 // ----- Verilog module for grid_clb -----
 module grid_clb(pReset,
@@ -245,7 +245,7 @@ endmodule
 // ----- END Verilog module for grid_clb -----
 
 //----- Default net type -----
-// // `default_nettype wire
+// `default_nettype wire
 
 
 

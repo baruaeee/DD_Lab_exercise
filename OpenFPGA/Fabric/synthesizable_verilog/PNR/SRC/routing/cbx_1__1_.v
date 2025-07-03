@@ -3,10 +3,10 @@
 //	Description: Verilog modules for Unique Connection Blocks[1][1]
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Wed Jul  2 18:47:17 2025
+//	Date: Thu Jul  3 20:29:28 2025
 //-------------------------------------------
 //----- Default net type -----
-// // `default_nettype none
+// `default_nettype none
 
 // ----- Verilog module for cbx_1__1_ -----
 module cbx_1__1_(pReset,
@@ -531,7 +531,7 @@ endmodule
 // ----- END Verilog module for cbx_1__1_ -----
 
 //----- Default net type -----
-// // `default_nettype wire
+// `default_nettype wire
 
 
 

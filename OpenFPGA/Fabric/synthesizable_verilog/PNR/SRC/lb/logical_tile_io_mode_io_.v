@@ -3,11 +3,11 @@
 //	Description: Verilog modules for pb_type: io
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Wed Jul  2 18:47:17 2025
+//	Date: Thu Jul  3 20:29:28 2025
 //-------------------------------------------
 // ----- BEGIN Physical programmable logic block Verilog module: io -----
 //----- Default net type -----
-// // `default_nettype none
+// `default_nettype none
 
 // ----- Verilog module for logical_tile_io_mode_io_ -----
 module logical_tile_io_mode_io_(pReset,
@@ -71,7 +71,7 @@ endmodule
 // ----- END Verilog module for logical_tile_io_mode_io_ -----
 
 //----- Default net type -----
-// // `default_nettype wire
+// `default_nettype wire
 
 
 

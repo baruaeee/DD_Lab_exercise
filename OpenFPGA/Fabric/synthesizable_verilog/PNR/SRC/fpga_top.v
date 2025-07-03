@@ -3,10 +3,10 @@
 //	Description: Top-level Verilog module for FPGA
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Wed Jul  2 18:47:17 2025
+//	Date: Thu Jul  3 20:29:28 2025
 //-------------------------------------------
 //----- Default net type -----
-// // `default_nettype none
+// `default_nettype none
 
 // ----- Verilog module for fpga_top -----
 module fpga_top(pReset,
@@ -514,6 +514,7 @@ wire padout_pReset, padout_prog_clk, padout_set, padout_reset, padout_clk, padou
   GPIN pad_ccff_head(.Y(padout_ccff_head), .A(padin_ccff_head));
   GPOUT pad_ccff_tail(.A(padout_ccff_tail), .Y(padin_ccff_tail));
 // end adding input and output pads
+
 
 	grid_io_top grid_io_top_1__3_ (
 		.pReset(pReset),
@@ -1717,7 +1718,7 @@ endmodule
 // ----- END Verilog module for fpga_top -----
 
 //----- Default net type -----
-// // `default_nettype wire
+// `default_nettype wire
 
 
 
