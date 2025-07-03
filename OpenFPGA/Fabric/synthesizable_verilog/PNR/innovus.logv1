@@ -1,0 +1,20 @@
+[07/03 15:14:16      0s] 
+[07/03 15:14:16      0s] Cadence Innovus(TM) Implementation System.
+[07/03 15:14:16      0s] Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+[07/03 15:14:16      0s] 
+[07/03 15:14:16      0s] Version:	v23.14-s088_1, built Fri Feb 28 12:25:44 PST 2025
+[07/03 15:14:16      0s] Options:	
+[07/03 15:14:16      0s] Date:		Thu Jul  3 15:14:16 2025
+[07/03 15:14:16      0s] Host:		exotic-rhel (x86_64 w/Linux 4.18.0-553.56.1.el8_10.x86_64) (1core*2cpus*Intel(R) Core(TM) i5-5300U CPU @ 2.30GHz 3072KB)
+[07/03 15:14:16      0s] OS:		Red Hat Enterprise Linux 8.10 (Ootpa)
+[07/03 15:14:16      0s] 
+[07/03 15:14:16      0s] License:
+[07/03 15:14:28      0s] 		[15:14:28.304554] Configured Lic search path (23.02-s006): /run/media/exotic/Cadence/Installed/license/license_x.dat:/run/media/exotic/Cadence/Installed/license/license_mentors.dat
+
+[07/03 15:14:30      1s] 		invs	Innovus Implementation System	23.1	checkout succeeded
+[07/03 15:14:30      1s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[07/03 15:16:45    127s] Memory management switch to non-aggressive memory release mode.
+[07/03 15:16:45    127s] 
+[07/03 15:16:45    127s] OS Mmap count monitoring thread starts. Limit of OS Mmap count is 65530
+[07/03 15:16:45    127s] 
+[07/03 15:17:03    135s] Reset Parastics called with the command setExtractRCMode -reset
