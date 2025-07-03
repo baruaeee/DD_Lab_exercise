@@ -214,7 +214,7 @@ Incr Slack updates 1 in 2.32e-06 sec
 Full Max Req/Worst Slack updates 1 in 1.56e-06 sec
 Incr Max Req/Worst Slack updates 0 in 0 sec
 Incr Criticality updates 0 in 0 sec
-Full Criticality updates 1 in 1.48e-06 sec
+Full Criticality updates 1 in 1.76e-06 sec
 FPGA sized to 4 x 4 (2x2)
 Device Utilization: 0.09 (target 1.00)
 	Block Utilization: 0.05 Type: io
@@ -238,7 +238,7 @@ Netlist conversion complete.
 Begin loading packed FPGA netlist file.
 Netlist generated from file 'and2.net'.
 Detected 0 constant generators (to see names run with higher pack verbosity)
-Finished loading packed FPGA netlist file (took 0.021354 seconds).
+Finished loading packed FPGA netlist file (took 0.021344 seconds).
 Warning 6: Treated 0 constant nets as global which will not be routed (to see net names increase packer verbosity).
 # Load packing took 0.02 seconds (max_rss 60.1 MiB, delta_rss +38.0 MiB)
 Warning 7: Netlist contains 0 global net to non-global architecture pin connections
@@ -397,8 +397,8 @@ clb                Uniform                22.22            50.00           50.00
                    Median                 11.11            0.00            100.00         0.00         
 
 
-Placement Quench timing analysis took 5.28e-06 seconds (2.72e-06 STA, 2.56e-06 slack) (1 full updates: 1 setup, 0 hold, 0 combined).
-Placement Total  timing analysis took 4.8841e-05 seconds (3.4361e-05 STA, 1.448e-05 slack) (4 full updates: 4 setup, 0 hold, 0 combined).
+Placement Quench timing analysis took 5.68e-06 seconds (3.04e-06 STA, 2.64e-06 slack) (1 full updates: 1 setup, 0 hold, 0 combined).
+Placement Total  timing analysis took 5.0241e-05 seconds (3.6481e-05 STA, 1.376e-05 slack) (4 full updates: 4 setup, 0 hold, 0 combined).
 update_td_costs: connections 0 nets 0 sum_nets 0 total 0
 # Placement took 0.00 seconds (max_rss 60.3 MiB, delta_rss +0.0 MiB)
 
@@ -422,11 +422,11 @@ Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wireleng
       (sec)     fac Updt    push    Nets   Conns                                       (ns)       (ns)       (ns)       (ns)       (ns)     Iter
 ---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
    1    0.0     0.0    0      43       3       3       0 ( 0.000%)      10 ( 4.2%)    1.076     -1.076     -1.076      0.000      0.000      N/A
-Incr Slack updates 4 in 3.2e-06 sec
-Full Max Req/Worst Slack updates 3 in 3.44e-06 sec
-Incr Max Req/Worst Slack updates 1 in 6.4e-07 sec
-Incr Criticality updates 1 in 8.4e-07 sec
-Full Criticality updates 3 in 3.12e-06 sec
+Incr Slack updates 4 in 3.52e-06 sec
+Full Max Req/Worst Slack updates 3 in 2.76e-06 sec
+Incr Max Req/Worst Slack updates 1 in 6e-07 sec
+Incr Criticality updates 1 in 8e-07 sec
+Full Criticality updates 3 in 2.76e-06 sec
 Restoring best routing
 Critical path: 1.07567 ns
 Successfully routed after 1 routing iterations.
@@ -569,12 +569,12 @@ Final setup slack histogram:
 Final geomean non-virtual intra-domain period: nan ns (nan MHz)
 Final fanout-weighted geomean non-virtual intra-domain period: nan ns (nan MHz)
 
-Incr Slack updates 1 in 2.08e-06 sec
-Full Max Req/Worst Slack updates 1 in 1.08e-06 sec
+Incr Slack updates 1 in 2.4e-06 sec
+Full Max Req/Worst Slack updates 1 in 1.16e-06 sec
 Incr Max Req/Worst Slack updates 0 in 0 sec
 Incr Criticality updates 0 in 0 sec
 Full Criticality updates 1 in 1e-06 sec
-Flow timing analysis took 0.000139802 seconds (0.000105122 STA, 3.468e-05 slack) (8 full updates: 5 setup, 0 hold, 3 combined).
+Flow timing analysis took 0.000142801 seconds (0.000108041 STA, 3.476e-05 slack) (8 full updates: 5 setup, 0 hold, 3 combined).
 VPR succeeded
 The entire flow of VPR took 0.09 seconds (max_rss 60.3 MiB)
 
@@ -4029,7 +4029,7 @@ Write SDC for constrain Switch Block timing for P&R flow took 0.00 seconds (max_
 Write SDC for constrain Connection Block timing for P&R flow
 Write SDC for constrain Connection Block timing for P&R flow took 0.00 seconds (max_rss 60.3 MiB, delta_rss +0.0 MiB)
 Write SDC for constraining grid timing for P&R flow
-Write SDC for constraining grid timing for P&R flow took 0.01 seconds (max_rss 60.3 MiB, delta_rss +0.0 MiB)
+Write SDC for constraining grid timing for P&R flow took 0.02 seconds (max_rss 60.3 MiB, delta_rss +0.0 MiB)
 
 Command line to execute: write_sdc_disable_timing_configure_ports --file ./SDC/disable_configure_ports.sdc --flatten_names
 
@@ -4060,11 +4060,11 @@ Confirm selected options when call command 'exit':
 
 Finish execution with 0 errors
 
-The entire OpenFPGA flow took 0.908587 seconds
+The entire OpenFPGA flow took 0.905069 seconds
 
 Thank you for using OpenFPGA!
-Incr Slack updates 2 in 2.28e-06 sec
-Full Max Req/Worst Slack updates 1 in 1.16e-06 sec
-Incr Max Req/Worst Slack updates 1 in 6e-07 sec
+Incr Slack updates 2 in 2.36e-06 sec
+Full Max Req/Worst Slack updates 1 in 1.08e-06 sec
+Incr Max Req/Worst Slack updates 1 in 6.8e-07 sec
 Incr Criticality updates 0 in 0 sec
-Full Criticality updates 2 in 1.8e-06 sec
+Full Criticality updates 2 in 1.96e-06 sec

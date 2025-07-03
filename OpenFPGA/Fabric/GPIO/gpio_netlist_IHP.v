@@ -5,7 +5,7 @@
 // Verification Directory fv/GPIO 
 //use in opefpga simulation + Xcelium
 //`include "../../../../../ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v"
-//`include "../../../../../ihp-sg13g2/libs.ref/sg13g2_io/verilog/sg13g2_io.v"
+`include "../../../../../ihp-sg13g2/libs.ref/sg13g2_io/verilog/sg13g2_io.v"
 
 // use in genus synthesis
 //`include "../../ihp-sg13g2/libs.ref/sg13g2_io/verilog/sg13g2_io.v"
