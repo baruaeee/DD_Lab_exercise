@@ -34,366 +34,366 @@ fpga_top:
           logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic:
             logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6:
               frac_lut6:
-                sg13g2_or2_1:
-                sg13g2_inv_1:
-                sg13g2_buf_4:
+                OR2x2_ASAP7_75t_R:
+                INVx1_ASAP7_75t_R:
+                BUFx4_ASAP7_75t_R:
                 frac_lut6_mux:
-                  - sg13g2_inv_1
-                  - sg13g2_mux2_1
-                  - sg13g2_buf_4
+                  - INVx1_ASAP7_75t_R
+                  - MUX2
+                  - BUFx4_ASAP7_75t_R
               frac_lut6_DFFR_mem:
                 - DFFR
             mux_tree_size2:
-              - sg13g2_inv_1
+              - INVx1_ASAP7_75t_R
               - const1
-              - sg13g2_mux2_1
+              - MUX2
             mux_tree_size2_mem:
               - DFFR
             direct_interc:
           logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff:
-            - dffsrq
+            - DFFSRQ
           mux_tree_size2:
-            - sg13g2_inv_1
+            - INVx1_ASAP7_75t_R
             - const1
-            - sg13g2_mux2_1
+            - MUX2
           mux_tree_size2_mem:
             - DFFR
           direct_interc:
         direct_interc:
       direct_interc:
       mux_tree_size60:
-        - sg13g2_inv_1
+        - INVx1_ASAP7_75t_R
         - const1
-        - sg13g2_mux2_1
+        - MUX2
       mux_tree_size60_mem:
         - DFFR
   sb_0__0_:
     mux_tree_tapbuf_size3:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size3_mem:
       - DFFR
     mux_tree_tapbuf_size2:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size2_mem:
       - DFFR
   sb_0__1_:
     mux_tree_tapbuf_size8:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size8_mem:
       - DFFR
     mux_tree_tapbuf_size7:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size7_mem:
       - DFFR
     mux_tree_tapbuf_size3:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size3_mem:
       - DFFR
     mux_tree_tapbuf_size4:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size4_mem:
       - DFFR
     mux_tree_tapbuf_size2:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size2_mem:
       - DFFR
   sb_0__2_:
     mux_tree_tapbuf_size3:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size3_mem:
       - DFFR
     mux_tree_tapbuf_size2:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size2_mem:
       - DFFR
   sb_1__0_:
     mux_tree_tapbuf_size5:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size5_mem:
       - DFFR
     mux_tree_tapbuf_size4:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size4_mem:
       - DFFR
     mux_tree_tapbuf_size3:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size3_mem:
       - DFFR
     mux_tree_tapbuf_size2:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size2_mem:
       - DFFR
     mux_tree_tapbuf_size8:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size8_mem:
       - DFFR
     mux_tree_tapbuf_size7:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size7_mem:
       - DFFR
     mux_tree_tapbuf_size9:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size9_mem:
       - DFFR
   sb_1__1_:
     mux_tree_tapbuf_size12:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size12_mem:
       - DFFR
     mux_tree_tapbuf_size9:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size9_mem:
       - DFFR
   sb_1__2_:
     mux_tree_tapbuf_size8:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size8_mem:
       - DFFR
     mux_tree_tapbuf_size7:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size7_mem:
       - DFFR
     mux_tree_tapbuf_size4:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size4_mem:
       - DFFR
     mux_tree_tapbuf_size3:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size3_mem:
       - DFFR
     mux_tree_tapbuf_size2:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size2_mem:
       - DFFR
   sb_2__0_:
     mux_tree_tapbuf_size3:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size3_mem:
       - DFFR
     mux_tree_tapbuf_size2:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size2_mem:
       - DFFR
   sb_2__1_:
     mux_tree_tapbuf_size9:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size9_mem:
       - DFFR
     mux_tree_tapbuf_size7:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size7_mem:
       - DFFR
     mux_tree_tapbuf_size8:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size8_mem:
       - DFFR
     mux_tree_tapbuf_size4:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size4_mem:
       - DFFR
     mux_tree_tapbuf_size3:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size3_mem:
       - DFFR
     mux_tree_tapbuf_size2:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size2_mem:
       - DFFR
   sb_2__2_:
     mux_tree_tapbuf_size3:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size3_mem:
       - DFFR
     mux_tree_tapbuf_size2:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size2_mem:
       - DFFR
   cbx_1__0_:
     mux_tree_tapbuf_size4:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size4_mem:
       - DFFR
     mux_tree_tapbuf_size2:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size2_mem:
       - DFFR
   cbx_1__1_:
     mux_tree_tapbuf_size4:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size4_mem:
       - DFFR
     mux_tree_tapbuf_size2:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size2_mem:
       - DFFR
   cbx_1__2_:
     mux_tree_tapbuf_size4:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size4_mem:
       - DFFR
     mux_tree_tapbuf_size2:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size2_mem:
       - DFFR
   cby_0__1_:
     mux_tree_tapbuf_size4:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size4_mem:
       - DFFR
     mux_tree_tapbuf_size2:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size2_mem:
       - DFFR
   cby_1__1_:
     mux_tree_tapbuf_size4:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size4_mem:
       - DFFR
     mux_tree_tapbuf_size2:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size2_mem:
       - DFFR
   cby_2__1_:
     mux_tree_tapbuf_size4:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size4_mem:
       - DFFR
     mux_tree_tapbuf_size2:
-      - sg13g2_inv_1
+      - INVx1_ASAP7_75t_R
       - const1
-      - sg13g2_inv_4
-      - sg13g2_mux2_1
+      - INVx4_ASAP7_75t_R
+      - MUX2
     mux_tree_tapbuf_size2_mem:
       - DFFR

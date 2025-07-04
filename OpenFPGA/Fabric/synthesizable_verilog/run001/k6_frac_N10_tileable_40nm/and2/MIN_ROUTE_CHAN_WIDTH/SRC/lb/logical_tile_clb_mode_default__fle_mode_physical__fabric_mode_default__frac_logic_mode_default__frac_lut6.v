@@ -3,7 +3,7 @@
 //	Description: Verilog modules for primitive pb_type: frac_lut6
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Thu Jul  3 20:29:28 2025
+//	Date: Fri Jul  4 19:47:58 2025
 //-------------------------------------------
 //----- Default net type -----
 `default_nettype none

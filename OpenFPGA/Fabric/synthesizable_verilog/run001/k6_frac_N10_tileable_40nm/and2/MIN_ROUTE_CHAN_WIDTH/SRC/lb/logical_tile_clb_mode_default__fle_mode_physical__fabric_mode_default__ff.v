@@ -3,7 +3,7 @@
 //	Description: Verilog modules for primitive pb_type: ff
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Thu Jul  3 20:29:28 2025
+//	Date: Fri Jul  4 19:47:58 2025
 //-------------------------------------------
 //----- Default net type -----
 `default_nettype none
@@ -45,7 +45,7 @@ wire [0:0] ff_clk;
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	dffsrq dffsrq_0_ (
+	DFFSRQ DFFSRQ_0_ (
 		.SET(set),
 		.RST(reset),
 		.CK(clk),

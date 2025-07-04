@@ -3,7 +3,7 @@
 //	Description: Multiplexers
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Thu Jul  3 20:29:28 2025
+//	Date: Fri Jul  4 19:47:58 2025
 //-------------------------------------------
 //----- Default net type -----
 `default_nettype none
@@ -30,67 +30,67 @@ output [0:0] out;
 //----- END Registered ports -----
 
 
+wire [0:0] INVx1_ASAP7_75t_R_0_Y;
+wire [0:0] INVx1_ASAP7_75t_R_1_Y;
+wire [0:0] INVx1_ASAP7_75t_R_2_Y;
+wire [0:0] INVx1_ASAP7_75t_R_3_Y;
+wire [0:0] MUX2_0_Y;
+wire [0:0] MUX2_1_Y;
+wire [0:0] MUX2_2_Y;
+wire [0:0] MUX2_3_Y;
 wire [0:0] const1_0_const1;
-wire [0:0] sg13g2_inv_1_0_Y;
-wire [0:0] sg13g2_inv_1_1_Y;
-wire [0:0] sg13g2_inv_1_2_Y;
-wire [0:0] sg13g2_inv_1_3_Y;
-wire [0:0] sg13g2_mux2_1_0_X;
-wire [0:0] sg13g2_mux2_1_1_X;
-wire [0:0] sg13g2_mux2_1_2_X;
-wire [0:0] sg13g2_mux2_1_3_X;
 
 // ----- BEGIN Local short connections -----
 // ----- END Local short connections -----
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	sg13g2_inv_1 sg13g2_inv_1_0_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_0_ (
 		.A(in[0]),
-		.Y(sg13g2_inv_1_0_Y));
+		.Y(INVx1_ASAP7_75t_R_0_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_1_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_1_ (
 		.A(in[1]),
-		.Y(sg13g2_inv_1_1_Y));
+		.Y(INVx1_ASAP7_75t_R_1_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_2_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_2_ (
 		.A(in[2]),
-		.Y(sg13g2_inv_1_2_Y));
+		.Y(INVx1_ASAP7_75t_R_2_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_3_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_3_ (
 		.A(in[3]),
-		.Y(sg13g2_inv_1_3_Y));
+		.Y(INVx1_ASAP7_75t_R_3_Y));
 
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	sg13g2_inv_4 sg13g2_inv_4_0_ (
-		.A(sg13g2_mux2_1_3_X),
+	INVx4_ASAP7_75t_R INVx4_ASAP7_75t_R_0_ (
+		.A(MUX2_3_Y),
 		.Y(out));
 
-	sg13g2_mux2_1 mux_l1_in_0_ (
-		.A1(sg13g2_inv_1_0_Y),
-		.A0(sg13g2_inv_1_1_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_0_X));
+	MUX2 mux_l1_in_0_ (
+		.B(INVx1_ASAP7_75t_R_0_Y),
+		.A(INVx1_ASAP7_75t_R_1_Y),
+		.S0(sram[0]),
+		.Y(MUX2_0_Y));
 
-	sg13g2_mux2_1 mux_l2_in_0_ (
-		.A1(sg13g2_mux2_1_0_X),
-		.A0(sg13g2_inv_1_2_Y),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_1_X));
+	MUX2 mux_l2_in_0_ (
+		.B(MUX2_0_Y),
+		.A(INVx1_ASAP7_75t_R_2_Y),
+		.S0(sram[1]),
+		.Y(MUX2_1_Y));
 
-	sg13g2_mux2_1 mux_l2_in_1_ (
-		.A1(sg13g2_inv_1_3_Y),
-		.A0(const1_0_const1),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_2_X));
+	MUX2 mux_l2_in_1_ (
+		.B(INVx1_ASAP7_75t_R_3_Y),
+		.A(const1_0_const1),
+		.S0(sram[1]),
+		.Y(MUX2_2_Y));
 
-	sg13g2_mux2_1 mux_l3_in_0_ (
-		.A1(sg13g2_mux2_1_1_X),
-		.A0(sg13g2_mux2_1_2_X),
-		.S(sram[2]),
-		.X(sg13g2_mux2_1_3_X));
+	MUX2 mux_l3_in_0_ (
+		.B(MUX2_1_Y),
+		.A(MUX2_2_Y),
+		.S0(sram[2]),
+		.Y(MUX2_3_Y));
 
 endmodule
 // ----- END Verilog module for mux_tree_tapbuf_size4 -----
@@ -126,43 +126,43 @@ output [0:0] out;
 //----- END Registered ports -----
 
 
+wire [0:0] INVx1_ASAP7_75t_R_0_Y;
+wire [0:0] INVx1_ASAP7_75t_R_1_Y;
+wire [0:0] MUX2_0_Y;
+wire [0:0] MUX2_1_Y;
 wire [0:0] const1_0_const1;
-wire [0:0] sg13g2_inv_1_0_Y;
-wire [0:0] sg13g2_inv_1_1_Y;
-wire [0:0] sg13g2_mux2_1_0_X;
-wire [0:0] sg13g2_mux2_1_1_X;
 
 // ----- BEGIN Local short connections -----
 // ----- END Local short connections -----
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	sg13g2_inv_1 sg13g2_inv_1_0_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_0_ (
 		.A(in[0]),
-		.Y(sg13g2_inv_1_0_Y));
+		.Y(INVx1_ASAP7_75t_R_0_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_1_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_1_ (
 		.A(in[1]),
-		.Y(sg13g2_inv_1_1_Y));
+		.Y(INVx1_ASAP7_75t_R_1_Y));
 
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	sg13g2_inv_4 sg13g2_inv_4_0_ (
-		.A(sg13g2_mux2_1_1_X),
+	INVx4_ASAP7_75t_R INVx4_ASAP7_75t_R_0_ (
+		.A(MUX2_1_Y),
 		.Y(out));
 
-	sg13g2_mux2_1 mux_l1_in_0_ (
-		.A1(sg13g2_inv_1_0_Y),
-		.A0(sg13g2_inv_1_1_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_0_X));
+	MUX2 mux_l1_in_0_ (
+		.B(INVx1_ASAP7_75t_R_0_Y),
+		.A(INVx1_ASAP7_75t_R_1_Y),
+		.S0(sram[0]),
+		.Y(MUX2_0_Y));
 
-	sg13g2_mux2_1 mux_l2_in_0_ (
-		.A1(sg13g2_mux2_1_0_X),
-		.A0(const1_0_const1),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_1_X));
+	MUX2 mux_l2_in_0_ (
+		.B(MUX2_0_Y),
+		.A(const1_0_const1),
+		.S0(sram[1]),
+		.Y(MUX2_1_Y));
 
 endmodule
 // ----- END Verilog module for mux_tree_tapbuf_size2 -----
@@ -198,55 +198,55 @@ output [0:0] out;
 //----- END Registered ports -----
 
 
+wire [0:0] INVx1_ASAP7_75t_R_0_Y;
+wire [0:0] INVx1_ASAP7_75t_R_1_Y;
+wire [0:0] INVx1_ASAP7_75t_R_2_Y;
+wire [0:0] MUX2_0_Y;
+wire [0:0] MUX2_1_Y;
+wire [0:0] MUX2_2_Y;
 wire [0:0] const1_0_const1;
-wire [0:0] sg13g2_inv_1_0_Y;
-wire [0:0] sg13g2_inv_1_1_Y;
-wire [0:0] sg13g2_inv_1_2_Y;
-wire [0:0] sg13g2_mux2_1_0_X;
-wire [0:0] sg13g2_mux2_1_1_X;
-wire [0:0] sg13g2_mux2_1_2_X;
 
 // ----- BEGIN Local short connections -----
 // ----- END Local short connections -----
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	sg13g2_inv_1 sg13g2_inv_1_0_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_0_ (
 		.A(in[0]),
-		.Y(sg13g2_inv_1_0_Y));
+		.Y(INVx1_ASAP7_75t_R_0_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_1_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_1_ (
 		.A(in[1]),
-		.Y(sg13g2_inv_1_1_Y));
+		.Y(INVx1_ASAP7_75t_R_1_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_2_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_2_ (
 		.A(in[2]),
-		.Y(sg13g2_inv_1_2_Y));
+		.Y(INVx1_ASAP7_75t_R_2_Y));
 
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	sg13g2_inv_4 sg13g2_inv_4_0_ (
-		.A(sg13g2_mux2_1_2_X),
+	INVx4_ASAP7_75t_R INVx4_ASAP7_75t_R_0_ (
+		.A(MUX2_2_Y),
 		.Y(out));
 
-	sg13g2_mux2_1 mux_l1_in_0_ (
-		.A1(sg13g2_inv_1_0_Y),
-		.A0(sg13g2_inv_1_1_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_0_X));
+	MUX2 mux_l1_in_0_ (
+		.B(INVx1_ASAP7_75t_R_0_Y),
+		.A(INVx1_ASAP7_75t_R_1_Y),
+		.S0(sram[0]),
+		.Y(MUX2_0_Y));
 
-	sg13g2_mux2_1 mux_l1_in_1_ (
-		.A1(sg13g2_inv_1_2_Y),
-		.A0(const1_0_const1),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_1_X));
+	MUX2 mux_l1_in_1_ (
+		.B(INVx1_ASAP7_75t_R_2_Y),
+		.A(const1_0_const1),
+		.S0(sram[0]),
+		.Y(MUX2_1_Y));
 
-	sg13g2_mux2_1 mux_l2_in_0_ (
-		.A1(sg13g2_mux2_1_0_X),
-		.A0(sg13g2_mux2_1_1_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_2_X));
+	MUX2 mux_l2_in_0_ (
+		.B(MUX2_0_Y),
+		.A(MUX2_1_Y),
+		.S0(sram[1]),
+		.Y(MUX2_2_Y));
 
 endmodule
 // ----- END Verilog module for mux_tree_tapbuf_size3 -----
@@ -282,127 +282,127 @@ output [0:0] out;
 //----- END Registered ports -----
 
 
+wire [0:0] INVx1_ASAP7_75t_R_0_Y;
+wire [0:0] INVx1_ASAP7_75t_R_1_Y;
+wire [0:0] INVx1_ASAP7_75t_R_2_Y;
+wire [0:0] INVx1_ASAP7_75t_R_3_Y;
+wire [0:0] INVx1_ASAP7_75t_R_4_Y;
+wire [0:0] INVx1_ASAP7_75t_R_5_Y;
+wire [0:0] INVx1_ASAP7_75t_R_6_Y;
+wire [0:0] INVx1_ASAP7_75t_R_7_Y;
+wire [0:0] INVx1_ASAP7_75t_R_8_Y;
+wire [0:0] MUX2_0_Y;
+wire [0:0] MUX2_1_Y;
+wire [0:0] MUX2_2_Y;
+wire [0:0] MUX2_3_Y;
+wire [0:0] MUX2_4_Y;
+wire [0:0] MUX2_5_Y;
+wire [0:0] MUX2_6_Y;
+wire [0:0] MUX2_7_Y;
+wire [0:0] MUX2_8_Y;
 wire [0:0] const1_0_const1;
-wire [0:0] sg13g2_inv_1_0_Y;
-wire [0:0] sg13g2_inv_1_1_Y;
-wire [0:0] sg13g2_inv_1_2_Y;
-wire [0:0] sg13g2_inv_1_3_Y;
-wire [0:0] sg13g2_inv_1_4_Y;
-wire [0:0] sg13g2_inv_1_5_Y;
-wire [0:0] sg13g2_inv_1_6_Y;
-wire [0:0] sg13g2_inv_1_7_Y;
-wire [0:0] sg13g2_inv_1_8_Y;
-wire [0:0] sg13g2_mux2_1_0_X;
-wire [0:0] sg13g2_mux2_1_1_X;
-wire [0:0] sg13g2_mux2_1_2_X;
-wire [0:0] sg13g2_mux2_1_3_X;
-wire [0:0] sg13g2_mux2_1_4_X;
-wire [0:0] sg13g2_mux2_1_5_X;
-wire [0:0] sg13g2_mux2_1_6_X;
-wire [0:0] sg13g2_mux2_1_7_X;
-wire [0:0] sg13g2_mux2_1_8_X;
 
 // ----- BEGIN Local short connections -----
 // ----- END Local short connections -----
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	sg13g2_inv_1 sg13g2_inv_1_0_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_0_ (
 		.A(in[0]),
-		.Y(sg13g2_inv_1_0_Y));
+		.Y(INVx1_ASAP7_75t_R_0_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_1_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_1_ (
 		.A(in[1]),
-		.Y(sg13g2_inv_1_1_Y));
+		.Y(INVx1_ASAP7_75t_R_1_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_2_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_2_ (
 		.A(in[2]),
-		.Y(sg13g2_inv_1_2_Y));
+		.Y(INVx1_ASAP7_75t_R_2_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_3_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_3_ (
 		.A(in[3]),
-		.Y(sg13g2_inv_1_3_Y));
+		.Y(INVx1_ASAP7_75t_R_3_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_4_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_4_ (
 		.A(in[4]),
-		.Y(sg13g2_inv_1_4_Y));
+		.Y(INVx1_ASAP7_75t_R_4_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_5_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_5_ (
 		.A(in[5]),
-		.Y(sg13g2_inv_1_5_Y));
+		.Y(INVx1_ASAP7_75t_R_5_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_6_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_6_ (
 		.A(in[6]),
-		.Y(sg13g2_inv_1_6_Y));
+		.Y(INVx1_ASAP7_75t_R_6_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_7_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_7_ (
 		.A(in[7]),
-		.Y(sg13g2_inv_1_7_Y));
+		.Y(INVx1_ASAP7_75t_R_7_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_8_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_8_ (
 		.A(in[8]),
-		.Y(sg13g2_inv_1_8_Y));
+		.Y(INVx1_ASAP7_75t_R_8_Y));
 
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	sg13g2_inv_4 sg13g2_inv_4_0_ (
-		.A(sg13g2_mux2_1_8_X),
+	INVx4_ASAP7_75t_R INVx4_ASAP7_75t_R_0_ (
+		.A(MUX2_8_Y),
 		.Y(out));
 
-	sg13g2_mux2_1 mux_l1_in_0_ (
-		.A1(sg13g2_inv_1_0_Y),
-		.A0(sg13g2_inv_1_1_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_0_X));
+	MUX2 mux_l1_in_0_ (
+		.B(INVx1_ASAP7_75t_R_0_Y),
+		.A(INVx1_ASAP7_75t_R_1_Y),
+		.S0(sram[0]),
+		.Y(MUX2_0_Y));
 
-	sg13g2_mux2_1 mux_l1_in_1_ (
-		.A1(sg13g2_inv_1_2_Y),
-		.A0(sg13g2_inv_1_3_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_1_X));
+	MUX2 mux_l1_in_1_ (
+		.B(INVx1_ASAP7_75t_R_2_Y),
+		.A(INVx1_ASAP7_75t_R_3_Y),
+		.S0(sram[0]),
+		.Y(MUX2_1_Y));
 
-	sg13g2_mux2_1 mux_l2_in_0_ (
-		.A1(sg13g2_mux2_1_0_X),
-		.A0(sg13g2_mux2_1_1_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_2_X));
+	MUX2 mux_l2_in_0_ (
+		.B(MUX2_0_Y),
+		.A(MUX2_1_Y),
+		.S0(sram[1]),
+		.Y(MUX2_2_Y));
 
-	sg13g2_mux2_1 mux_l2_in_1_ (
-		.A1(sg13g2_inv_1_4_Y),
-		.A0(sg13g2_inv_1_5_Y),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_3_X));
+	MUX2 mux_l2_in_1_ (
+		.B(INVx1_ASAP7_75t_R_4_Y),
+		.A(INVx1_ASAP7_75t_R_5_Y),
+		.S0(sram[1]),
+		.Y(MUX2_3_Y));
 
-	sg13g2_mux2_1 mux_l2_in_2_ (
-		.A1(sg13g2_inv_1_6_Y),
-		.A0(sg13g2_inv_1_7_Y),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_4_X));
+	MUX2 mux_l2_in_2_ (
+		.B(INVx1_ASAP7_75t_R_6_Y),
+		.A(INVx1_ASAP7_75t_R_7_Y),
+		.S0(sram[1]),
+		.Y(MUX2_4_Y));
 
-	sg13g2_mux2_1 mux_l2_in_3_ (
-		.A1(sg13g2_inv_1_8_Y),
-		.A0(const1_0_const1),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_5_X));
+	MUX2 mux_l2_in_3_ (
+		.B(INVx1_ASAP7_75t_R_8_Y),
+		.A(const1_0_const1),
+		.S0(sram[1]),
+		.Y(MUX2_5_Y));
 
-	sg13g2_mux2_1 mux_l3_in_0_ (
-		.A1(sg13g2_mux2_1_2_X),
-		.A0(sg13g2_mux2_1_3_X),
-		.S(sram[2]),
-		.X(sg13g2_mux2_1_6_X));
+	MUX2 mux_l3_in_0_ (
+		.B(MUX2_2_Y),
+		.A(MUX2_3_Y),
+		.S0(sram[2]),
+		.Y(MUX2_6_Y));
 
-	sg13g2_mux2_1 mux_l3_in_1_ (
-		.A1(sg13g2_mux2_1_4_X),
-		.A0(sg13g2_mux2_1_5_X),
-		.S(sram[2]),
-		.X(sg13g2_mux2_1_7_X));
+	MUX2 mux_l3_in_1_ (
+		.B(MUX2_4_Y),
+		.A(MUX2_5_Y),
+		.S0(sram[2]),
+		.Y(MUX2_7_Y));
 
-	sg13g2_mux2_1 mux_l4_in_0_ (
-		.A1(sg13g2_mux2_1_6_X),
-		.A0(sg13g2_mux2_1_7_X),
-		.S(sram[3]),
-		.X(sg13g2_mux2_1_8_X));
+	MUX2 mux_l4_in_0_ (
+		.B(MUX2_6_Y),
+		.A(MUX2_7_Y),
+		.S0(sram[3]),
+		.Y(MUX2_8_Y));
 
 endmodule
 // ----- END Verilog module for mux_tree_tapbuf_size9 -----
@@ -438,103 +438,103 @@ output [0:0] out;
 //----- END Registered ports -----
 
 
+wire [0:0] INVx1_ASAP7_75t_R_0_Y;
+wire [0:0] INVx1_ASAP7_75t_R_1_Y;
+wire [0:0] INVx1_ASAP7_75t_R_2_Y;
+wire [0:0] INVx1_ASAP7_75t_R_3_Y;
+wire [0:0] INVx1_ASAP7_75t_R_4_Y;
+wire [0:0] INVx1_ASAP7_75t_R_5_Y;
+wire [0:0] INVx1_ASAP7_75t_R_6_Y;
+wire [0:0] MUX2_0_Y;
+wire [0:0] MUX2_1_Y;
+wire [0:0] MUX2_2_Y;
+wire [0:0] MUX2_3_Y;
+wire [0:0] MUX2_4_Y;
+wire [0:0] MUX2_5_Y;
+wire [0:0] MUX2_6_Y;
 wire [0:0] const1_0_const1;
-wire [0:0] sg13g2_inv_1_0_Y;
-wire [0:0] sg13g2_inv_1_1_Y;
-wire [0:0] sg13g2_inv_1_2_Y;
-wire [0:0] sg13g2_inv_1_3_Y;
-wire [0:0] sg13g2_inv_1_4_Y;
-wire [0:0] sg13g2_inv_1_5_Y;
-wire [0:0] sg13g2_inv_1_6_Y;
-wire [0:0] sg13g2_mux2_1_0_X;
-wire [0:0] sg13g2_mux2_1_1_X;
-wire [0:0] sg13g2_mux2_1_2_X;
-wire [0:0] sg13g2_mux2_1_3_X;
-wire [0:0] sg13g2_mux2_1_4_X;
-wire [0:0] sg13g2_mux2_1_5_X;
-wire [0:0] sg13g2_mux2_1_6_X;
 
 // ----- BEGIN Local short connections -----
 // ----- END Local short connections -----
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	sg13g2_inv_1 sg13g2_inv_1_0_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_0_ (
 		.A(in[0]),
-		.Y(sg13g2_inv_1_0_Y));
+		.Y(INVx1_ASAP7_75t_R_0_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_1_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_1_ (
 		.A(in[1]),
-		.Y(sg13g2_inv_1_1_Y));
+		.Y(INVx1_ASAP7_75t_R_1_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_2_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_2_ (
 		.A(in[2]),
-		.Y(sg13g2_inv_1_2_Y));
+		.Y(INVx1_ASAP7_75t_R_2_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_3_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_3_ (
 		.A(in[3]),
-		.Y(sg13g2_inv_1_3_Y));
+		.Y(INVx1_ASAP7_75t_R_3_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_4_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_4_ (
 		.A(in[4]),
-		.Y(sg13g2_inv_1_4_Y));
+		.Y(INVx1_ASAP7_75t_R_4_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_5_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_5_ (
 		.A(in[5]),
-		.Y(sg13g2_inv_1_5_Y));
+		.Y(INVx1_ASAP7_75t_R_5_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_6_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_6_ (
 		.A(in[6]),
-		.Y(sg13g2_inv_1_6_Y));
+		.Y(INVx1_ASAP7_75t_R_6_Y));
 
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	sg13g2_inv_4 sg13g2_inv_4_0_ (
-		.A(sg13g2_mux2_1_6_X),
+	INVx4_ASAP7_75t_R INVx4_ASAP7_75t_R_0_ (
+		.A(MUX2_6_Y),
 		.Y(out));
 
-	sg13g2_mux2_1 mux_l1_in_0_ (
-		.A1(sg13g2_inv_1_0_Y),
-		.A0(sg13g2_inv_1_1_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_0_X));
+	MUX2 mux_l1_in_0_ (
+		.B(INVx1_ASAP7_75t_R_0_Y),
+		.A(INVx1_ASAP7_75t_R_1_Y),
+		.S0(sram[0]),
+		.Y(MUX2_0_Y));
 
-	sg13g2_mux2_1 mux_l1_in_1_ (
-		.A1(sg13g2_inv_1_2_Y),
-		.A0(sg13g2_inv_1_3_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_1_X));
+	MUX2 mux_l1_in_1_ (
+		.B(INVx1_ASAP7_75t_R_2_Y),
+		.A(INVx1_ASAP7_75t_R_3_Y),
+		.S0(sram[0]),
+		.Y(MUX2_1_Y));
 
-	sg13g2_mux2_1 mux_l1_in_2_ (
-		.A1(sg13g2_inv_1_4_Y),
-		.A0(sg13g2_inv_1_5_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_2_X));
+	MUX2 mux_l1_in_2_ (
+		.B(INVx1_ASAP7_75t_R_4_Y),
+		.A(INVx1_ASAP7_75t_R_5_Y),
+		.S0(sram[0]),
+		.Y(MUX2_2_Y));
 
-	sg13g2_mux2_1 mux_l1_in_3_ (
-		.A1(sg13g2_inv_1_6_Y),
-		.A0(const1_0_const1),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_3_X));
+	MUX2 mux_l1_in_3_ (
+		.B(INVx1_ASAP7_75t_R_6_Y),
+		.A(const1_0_const1),
+		.S0(sram[0]),
+		.Y(MUX2_3_Y));
 
-	sg13g2_mux2_1 mux_l2_in_0_ (
-		.A1(sg13g2_mux2_1_0_X),
-		.A0(sg13g2_mux2_1_1_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_4_X));
+	MUX2 mux_l2_in_0_ (
+		.B(MUX2_0_Y),
+		.A(MUX2_1_Y),
+		.S0(sram[1]),
+		.Y(MUX2_4_Y));
 
-	sg13g2_mux2_1 mux_l2_in_1_ (
-		.A1(sg13g2_mux2_1_2_X),
-		.A0(sg13g2_mux2_1_3_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_5_X));
+	MUX2 mux_l2_in_1_ (
+		.B(MUX2_2_Y),
+		.A(MUX2_3_Y),
+		.S0(sram[1]),
+		.Y(MUX2_5_Y));
 
-	sg13g2_mux2_1 mux_l3_in_0_ (
-		.A1(sg13g2_mux2_1_4_X),
-		.A0(sg13g2_mux2_1_5_X),
-		.S(sram[2]),
-		.X(sg13g2_mux2_1_6_X));
+	MUX2 mux_l3_in_0_ (
+		.B(MUX2_4_Y),
+		.A(MUX2_5_Y),
+		.S0(sram[2]),
+		.Y(MUX2_6_Y));
 
 endmodule
 // ----- END Verilog module for mux_tree_tapbuf_size7 -----
@@ -570,115 +570,115 @@ output [0:0] out;
 //----- END Registered ports -----
 
 
+wire [0:0] INVx1_ASAP7_75t_R_0_Y;
+wire [0:0] INVx1_ASAP7_75t_R_1_Y;
+wire [0:0] INVx1_ASAP7_75t_R_2_Y;
+wire [0:0] INVx1_ASAP7_75t_R_3_Y;
+wire [0:0] INVx1_ASAP7_75t_R_4_Y;
+wire [0:0] INVx1_ASAP7_75t_R_5_Y;
+wire [0:0] INVx1_ASAP7_75t_R_6_Y;
+wire [0:0] INVx1_ASAP7_75t_R_7_Y;
+wire [0:0] MUX2_0_Y;
+wire [0:0] MUX2_1_Y;
+wire [0:0] MUX2_2_Y;
+wire [0:0] MUX2_3_Y;
+wire [0:0] MUX2_4_Y;
+wire [0:0] MUX2_5_Y;
+wire [0:0] MUX2_6_Y;
+wire [0:0] MUX2_7_Y;
 wire [0:0] const1_0_const1;
-wire [0:0] sg13g2_inv_1_0_Y;
-wire [0:0] sg13g2_inv_1_1_Y;
-wire [0:0] sg13g2_inv_1_2_Y;
-wire [0:0] sg13g2_inv_1_3_Y;
-wire [0:0] sg13g2_inv_1_4_Y;
-wire [0:0] sg13g2_inv_1_5_Y;
-wire [0:0] sg13g2_inv_1_6_Y;
-wire [0:0] sg13g2_inv_1_7_Y;
-wire [0:0] sg13g2_mux2_1_0_X;
-wire [0:0] sg13g2_mux2_1_1_X;
-wire [0:0] sg13g2_mux2_1_2_X;
-wire [0:0] sg13g2_mux2_1_3_X;
-wire [0:0] sg13g2_mux2_1_4_X;
-wire [0:0] sg13g2_mux2_1_5_X;
-wire [0:0] sg13g2_mux2_1_6_X;
-wire [0:0] sg13g2_mux2_1_7_X;
 
 // ----- BEGIN Local short connections -----
 // ----- END Local short connections -----
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	sg13g2_inv_1 sg13g2_inv_1_0_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_0_ (
 		.A(in[0]),
-		.Y(sg13g2_inv_1_0_Y));
+		.Y(INVx1_ASAP7_75t_R_0_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_1_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_1_ (
 		.A(in[1]),
-		.Y(sg13g2_inv_1_1_Y));
+		.Y(INVx1_ASAP7_75t_R_1_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_2_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_2_ (
 		.A(in[2]),
-		.Y(sg13g2_inv_1_2_Y));
+		.Y(INVx1_ASAP7_75t_R_2_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_3_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_3_ (
 		.A(in[3]),
-		.Y(sg13g2_inv_1_3_Y));
+		.Y(INVx1_ASAP7_75t_R_3_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_4_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_4_ (
 		.A(in[4]),
-		.Y(sg13g2_inv_1_4_Y));
+		.Y(INVx1_ASAP7_75t_R_4_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_5_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_5_ (
 		.A(in[5]),
-		.Y(sg13g2_inv_1_5_Y));
+		.Y(INVx1_ASAP7_75t_R_5_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_6_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_6_ (
 		.A(in[6]),
-		.Y(sg13g2_inv_1_6_Y));
+		.Y(INVx1_ASAP7_75t_R_6_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_7_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_7_ (
 		.A(in[7]),
-		.Y(sg13g2_inv_1_7_Y));
+		.Y(INVx1_ASAP7_75t_R_7_Y));
 
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	sg13g2_inv_4 sg13g2_inv_4_0_ (
-		.A(sg13g2_mux2_1_7_X),
+	INVx4_ASAP7_75t_R INVx4_ASAP7_75t_R_0_ (
+		.A(MUX2_7_Y),
 		.Y(out));
 
-	sg13g2_mux2_1 mux_l1_in_0_ (
-		.A1(sg13g2_inv_1_0_Y),
-		.A0(sg13g2_inv_1_1_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_0_X));
+	MUX2 mux_l1_in_0_ (
+		.B(INVx1_ASAP7_75t_R_0_Y),
+		.A(INVx1_ASAP7_75t_R_1_Y),
+		.S0(sram[0]),
+		.Y(MUX2_0_Y));
 
-	sg13g2_mux2_1 mux_l2_in_0_ (
-		.A1(sg13g2_mux2_1_0_X),
-		.A0(sg13g2_inv_1_2_Y),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_1_X));
+	MUX2 mux_l2_in_0_ (
+		.B(MUX2_0_Y),
+		.A(INVx1_ASAP7_75t_R_2_Y),
+		.S0(sram[1]),
+		.Y(MUX2_1_Y));
 
-	sg13g2_mux2_1 mux_l2_in_1_ (
-		.A1(sg13g2_inv_1_3_Y),
-		.A0(sg13g2_inv_1_4_Y),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_2_X));
+	MUX2 mux_l2_in_1_ (
+		.B(INVx1_ASAP7_75t_R_3_Y),
+		.A(INVx1_ASAP7_75t_R_4_Y),
+		.S0(sram[1]),
+		.Y(MUX2_2_Y));
 
-	sg13g2_mux2_1 mux_l2_in_2_ (
-		.A1(sg13g2_inv_1_5_Y),
-		.A0(sg13g2_inv_1_6_Y),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_3_X));
+	MUX2 mux_l2_in_2_ (
+		.B(INVx1_ASAP7_75t_R_5_Y),
+		.A(INVx1_ASAP7_75t_R_6_Y),
+		.S0(sram[1]),
+		.Y(MUX2_3_Y));
 
-	sg13g2_mux2_1 mux_l2_in_3_ (
-		.A1(sg13g2_inv_1_7_Y),
-		.A0(const1_0_const1),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_4_X));
+	MUX2 mux_l2_in_3_ (
+		.B(INVx1_ASAP7_75t_R_7_Y),
+		.A(const1_0_const1),
+		.S0(sram[1]),
+		.Y(MUX2_4_Y));
 
-	sg13g2_mux2_1 mux_l3_in_0_ (
-		.A1(sg13g2_mux2_1_1_X),
-		.A0(sg13g2_mux2_1_2_X),
-		.S(sram[2]),
-		.X(sg13g2_mux2_1_5_X));
+	MUX2 mux_l3_in_0_ (
+		.B(MUX2_1_Y),
+		.A(MUX2_2_Y),
+		.S0(sram[2]),
+		.Y(MUX2_5_Y));
 
-	sg13g2_mux2_1 mux_l3_in_1_ (
-		.A1(sg13g2_mux2_1_3_X),
-		.A0(sg13g2_mux2_1_4_X),
-		.S(sram[2]),
-		.X(sg13g2_mux2_1_6_X));
+	MUX2 mux_l3_in_1_ (
+		.B(MUX2_3_Y),
+		.A(MUX2_4_Y),
+		.S0(sram[2]),
+		.Y(MUX2_6_Y));
 
-	sg13g2_mux2_1 mux_l4_in_0_ (
-		.A1(sg13g2_mux2_1_5_X),
-		.A0(sg13g2_mux2_1_6_X),
-		.S(sram[3]),
-		.X(sg13g2_mux2_1_7_X));
+	MUX2 mux_l4_in_0_ (
+		.B(MUX2_5_Y),
+		.A(MUX2_6_Y),
+		.S0(sram[3]),
+		.Y(MUX2_7_Y));
 
 endmodule
 // ----- END Verilog module for mux_tree_tapbuf_size8 -----
@@ -714,163 +714,163 @@ output [0:0] out;
 //----- END Registered ports -----
 
 
+wire [0:0] INVx1_ASAP7_75t_R_0_Y;
+wire [0:0] INVx1_ASAP7_75t_R_10_Y;
+wire [0:0] INVx1_ASAP7_75t_R_11_Y;
+wire [0:0] INVx1_ASAP7_75t_R_1_Y;
+wire [0:0] INVx1_ASAP7_75t_R_2_Y;
+wire [0:0] INVx1_ASAP7_75t_R_3_Y;
+wire [0:0] INVx1_ASAP7_75t_R_4_Y;
+wire [0:0] INVx1_ASAP7_75t_R_5_Y;
+wire [0:0] INVx1_ASAP7_75t_R_6_Y;
+wire [0:0] INVx1_ASAP7_75t_R_7_Y;
+wire [0:0] INVx1_ASAP7_75t_R_8_Y;
+wire [0:0] INVx1_ASAP7_75t_R_9_Y;
+wire [0:0] MUX2_0_Y;
+wire [0:0] MUX2_10_Y;
+wire [0:0] MUX2_11_Y;
+wire [0:0] MUX2_1_Y;
+wire [0:0] MUX2_2_Y;
+wire [0:0] MUX2_3_Y;
+wire [0:0] MUX2_4_Y;
+wire [0:0] MUX2_5_Y;
+wire [0:0] MUX2_6_Y;
+wire [0:0] MUX2_7_Y;
+wire [0:0] MUX2_8_Y;
+wire [0:0] MUX2_9_Y;
 wire [0:0] const1_0_const1;
-wire [0:0] sg13g2_inv_1_0_Y;
-wire [0:0] sg13g2_inv_1_10_Y;
-wire [0:0] sg13g2_inv_1_11_Y;
-wire [0:0] sg13g2_inv_1_1_Y;
-wire [0:0] sg13g2_inv_1_2_Y;
-wire [0:0] sg13g2_inv_1_3_Y;
-wire [0:0] sg13g2_inv_1_4_Y;
-wire [0:0] sg13g2_inv_1_5_Y;
-wire [0:0] sg13g2_inv_1_6_Y;
-wire [0:0] sg13g2_inv_1_7_Y;
-wire [0:0] sg13g2_inv_1_8_Y;
-wire [0:0] sg13g2_inv_1_9_Y;
-wire [0:0] sg13g2_mux2_1_0_X;
-wire [0:0] sg13g2_mux2_1_10_X;
-wire [0:0] sg13g2_mux2_1_11_X;
-wire [0:0] sg13g2_mux2_1_1_X;
-wire [0:0] sg13g2_mux2_1_2_X;
-wire [0:0] sg13g2_mux2_1_3_X;
-wire [0:0] sg13g2_mux2_1_4_X;
-wire [0:0] sg13g2_mux2_1_5_X;
-wire [0:0] sg13g2_mux2_1_6_X;
-wire [0:0] sg13g2_mux2_1_7_X;
-wire [0:0] sg13g2_mux2_1_8_X;
-wire [0:0] sg13g2_mux2_1_9_X;
 
 // ----- BEGIN Local short connections -----
 // ----- END Local short connections -----
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	sg13g2_inv_1 sg13g2_inv_1_0_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_0_ (
 		.A(in[0]),
-		.Y(sg13g2_inv_1_0_Y));
+		.Y(INVx1_ASAP7_75t_R_0_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_1_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_1_ (
 		.A(in[1]),
-		.Y(sg13g2_inv_1_1_Y));
+		.Y(INVx1_ASAP7_75t_R_1_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_2_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_2_ (
 		.A(in[2]),
-		.Y(sg13g2_inv_1_2_Y));
+		.Y(INVx1_ASAP7_75t_R_2_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_3_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_3_ (
 		.A(in[3]),
-		.Y(sg13g2_inv_1_3_Y));
+		.Y(INVx1_ASAP7_75t_R_3_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_4_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_4_ (
 		.A(in[4]),
-		.Y(sg13g2_inv_1_4_Y));
+		.Y(INVx1_ASAP7_75t_R_4_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_5_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_5_ (
 		.A(in[5]),
-		.Y(sg13g2_inv_1_5_Y));
+		.Y(INVx1_ASAP7_75t_R_5_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_6_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_6_ (
 		.A(in[6]),
-		.Y(sg13g2_inv_1_6_Y));
+		.Y(INVx1_ASAP7_75t_R_6_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_7_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_7_ (
 		.A(in[7]),
-		.Y(sg13g2_inv_1_7_Y));
+		.Y(INVx1_ASAP7_75t_R_7_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_8_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_8_ (
 		.A(in[8]),
-		.Y(sg13g2_inv_1_8_Y));
+		.Y(INVx1_ASAP7_75t_R_8_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_9_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_9_ (
 		.A(in[9]),
-		.Y(sg13g2_inv_1_9_Y));
+		.Y(INVx1_ASAP7_75t_R_9_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_10_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_10_ (
 		.A(in[10]),
-		.Y(sg13g2_inv_1_10_Y));
+		.Y(INVx1_ASAP7_75t_R_10_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_11_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_11_ (
 		.A(in[11]),
-		.Y(sg13g2_inv_1_11_Y));
+		.Y(INVx1_ASAP7_75t_R_11_Y));
 
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	sg13g2_inv_4 sg13g2_inv_4_0_ (
-		.A(sg13g2_mux2_1_11_X),
+	INVx4_ASAP7_75t_R INVx4_ASAP7_75t_R_0_ (
+		.A(MUX2_11_Y),
 		.Y(out));
 
-	sg13g2_mux2_1 mux_l1_in_0_ (
-		.A1(sg13g2_inv_1_0_Y),
-		.A0(sg13g2_inv_1_1_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_0_X));
+	MUX2 mux_l1_in_0_ (
+		.B(INVx1_ASAP7_75t_R_0_Y),
+		.A(INVx1_ASAP7_75t_R_1_Y),
+		.S0(sram[0]),
+		.Y(MUX2_0_Y));
 
-	sg13g2_mux2_1 mux_l1_in_1_ (
-		.A1(sg13g2_inv_1_2_Y),
-		.A0(sg13g2_inv_1_3_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_1_X));
+	MUX2 mux_l1_in_1_ (
+		.B(INVx1_ASAP7_75t_R_2_Y),
+		.A(INVx1_ASAP7_75t_R_3_Y),
+		.S0(sram[0]),
+		.Y(MUX2_1_Y));
 
-	sg13g2_mux2_1 mux_l1_in_2_ (
-		.A1(sg13g2_inv_1_4_Y),
-		.A0(sg13g2_inv_1_5_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_2_X));
+	MUX2 mux_l1_in_2_ (
+		.B(INVx1_ASAP7_75t_R_4_Y),
+		.A(INVx1_ASAP7_75t_R_5_Y),
+		.S0(sram[0]),
+		.Y(MUX2_2_Y));
 
-	sg13g2_mux2_1 mux_l1_in_3_ (
-		.A1(sg13g2_inv_1_6_Y),
-		.A0(sg13g2_inv_1_7_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_3_X));
+	MUX2 mux_l1_in_3_ (
+		.B(INVx1_ASAP7_75t_R_6_Y),
+		.A(INVx1_ASAP7_75t_R_7_Y),
+		.S0(sram[0]),
+		.Y(MUX2_3_Y));
 
-	sg13g2_mux2_1 mux_l1_in_4_ (
-		.A1(sg13g2_inv_1_8_Y),
-		.A0(sg13g2_inv_1_9_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_4_X));
+	MUX2 mux_l1_in_4_ (
+		.B(INVx1_ASAP7_75t_R_8_Y),
+		.A(INVx1_ASAP7_75t_R_9_Y),
+		.S0(sram[0]),
+		.Y(MUX2_4_Y));
 
-	sg13g2_mux2_1 mux_l2_in_0_ (
-		.A1(sg13g2_mux2_1_0_X),
-		.A0(sg13g2_mux2_1_1_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_5_X));
+	MUX2 mux_l2_in_0_ (
+		.B(MUX2_0_Y),
+		.A(MUX2_1_Y),
+		.S0(sram[1]),
+		.Y(MUX2_5_Y));
 
-	sg13g2_mux2_1 mux_l2_in_1_ (
-		.A1(sg13g2_mux2_1_2_X),
-		.A0(sg13g2_mux2_1_3_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_6_X));
+	MUX2 mux_l2_in_1_ (
+		.B(MUX2_2_Y),
+		.A(MUX2_3_Y),
+		.S0(sram[1]),
+		.Y(MUX2_6_Y));
 
-	sg13g2_mux2_1 mux_l2_in_2_ (
-		.A1(sg13g2_mux2_1_4_X),
-		.A0(sg13g2_inv_1_10_Y),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_7_X));
+	MUX2 mux_l2_in_2_ (
+		.B(MUX2_4_Y),
+		.A(INVx1_ASAP7_75t_R_10_Y),
+		.S0(sram[1]),
+		.Y(MUX2_7_Y));
 
-	sg13g2_mux2_1 mux_l2_in_3_ (
-		.A1(sg13g2_inv_1_11_Y),
-		.A0(const1_0_const1),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_8_X));
+	MUX2 mux_l2_in_3_ (
+		.B(INVx1_ASAP7_75t_R_11_Y),
+		.A(const1_0_const1),
+		.S0(sram[1]),
+		.Y(MUX2_8_Y));
 
-	sg13g2_mux2_1 mux_l3_in_0_ (
-		.A1(sg13g2_mux2_1_5_X),
-		.A0(sg13g2_mux2_1_6_X),
-		.S(sram[2]),
-		.X(sg13g2_mux2_1_9_X));
+	MUX2 mux_l3_in_0_ (
+		.B(MUX2_5_Y),
+		.A(MUX2_6_Y),
+		.S0(sram[2]),
+		.Y(MUX2_9_Y));
 
-	sg13g2_mux2_1 mux_l3_in_1_ (
-		.A1(sg13g2_mux2_1_7_X),
-		.A0(sg13g2_mux2_1_8_X),
-		.S(sram[2]),
-		.X(sg13g2_mux2_1_10_X));
+	MUX2 mux_l3_in_1_ (
+		.B(MUX2_7_Y),
+		.A(MUX2_8_Y),
+		.S0(sram[2]),
+		.Y(MUX2_10_Y));
 
-	sg13g2_mux2_1 mux_l4_in_0_ (
-		.A1(sg13g2_mux2_1_9_X),
-		.A0(sg13g2_mux2_1_10_X),
-		.S(sram[3]),
-		.X(sg13g2_mux2_1_11_X));
+	MUX2 mux_l4_in_0_ (
+		.B(MUX2_9_Y),
+		.A(MUX2_10_Y),
+		.S0(sram[3]),
+		.Y(MUX2_11_Y));
 
 endmodule
 // ----- END Verilog module for mux_tree_tapbuf_size12 -----
@@ -906,79 +906,79 @@ output [0:0] out;
 //----- END Registered ports -----
 
 
+wire [0:0] INVx1_ASAP7_75t_R_0_Y;
+wire [0:0] INVx1_ASAP7_75t_R_1_Y;
+wire [0:0] INVx1_ASAP7_75t_R_2_Y;
+wire [0:0] INVx1_ASAP7_75t_R_3_Y;
+wire [0:0] INVx1_ASAP7_75t_R_4_Y;
+wire [0:0] MUX2_0_Y;
+wire [0:0] MUX2_1_Y;
+wire [0:0] MUX2_2_Y;
+wire [0:0] MUX2_3_Y;
+wire [0:0] MUX2_4_Y;
 wire [0:0] const1_0_const1;
-wire [0:0] sg13g2_inv_1_0_Y;
-wire [0:0] sg13g2_inv_1_1_Y;
-wire [0:0] sg13g2_inv_1_2_Y;
-wire [0:0] sg13g2_inv_1_3_Y;
-wire [0:0] sg13g2_inv_1_4_Y;
-wire [0:0] sg13g2_mux2_1_0_X;
-wire [0:0] sg13g2_mux2_1_1_X;
-wire [0:0] sg13g2_mux2_1_2_X;
-wire [0:0] sg13g2_mux2_1_3_X;
-wire [0:0] sg13g2_mux2_1_4_X;
 
 // ----- BEGIN Local short connections -----
 // ----- END Local short connections -----
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	sg13g2_inv_1 sg13g2_inv_1_0_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_0_ (
 		.A(in[0]),
-		.Y(sg13g2_inv_1_0_Y));
+		.Y(INVx1_ASAP7_75t_R_0_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_1_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_1_ (
 		.A(in[1]),
-		.Y(sg13g2_inv_1_1_Y));
+		.Y(INVx1_ASAP7_75t_R_1_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_2_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_2_ (
 		.A(in[2]),
-		.Y(sg13g2_inv_1_2_Y));
+		.Y(INVx1_ASAP7_75t_R_2_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_3_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_3_ (
 		.A(in[3]),
-		.Y(sg13g2_inv_1_3_Y));
+		.Y(INVx1_ASAP7_75t_R_3_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_4_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_4_ (
 		.A(in[4]),
-		.Y(sg13g2_inv_1_4_Y));
+		.Y(INVx1_ASAP7_75t_R_4_Y));
 
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	sg13g2_inv_4 sg13g2_inv_4_0_ (
-		.A(sg13g2_mux2_1_4_X),
+	INVx4_ASAP7_75t_R INVx4_ASAP7_75t_R_0_ (
+		.A(MUX2_4_Y),
 		.Y(out));
 
-	sg13g2_mux2_1 mux_l1_in_0_ (
-		.A1(sg13g2_inv_1_0_Y),
-		.A0(sg13g2_inv_1_1_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_0_X));
+	MUX2 mux_l1_in_0_ (
+		.B(INVx1_ASAP7_75t_R_0_Y),
+		.A(INVx1_ASAP7_75t_R_1_Y),
+		.S0(sram[0]),
+		.Y(MUX2_0_Y));
 
-	sg13g2_mux2_1 mux_l1_in_1_ (
-		.A1(sg13g2_inv_1_2_Y),
-		.A0(sg13g2_inv_1_3_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_1_X));
+	MUX2 mux_l1_in_1_ (
+		.B(INVx1_ASAP7_75t_R_2_Y),
+		.A(INVx1_ASAP7_75t_R_3_Y),
+		.S0(sram[0]),
+		.Y(MUX2_1_Y));
 
-	sg13g2_mux2_1 mux_l2_in_0_ (
-		.A1(sg13g2_mux2_1_0_X),
-		.A0(sg13g2_mux2_1_1_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_2_X));
+	MUX2 mux_l2_in_0_ (
+		.B(MUX2_0_Y),
+		.A(MUX2_1_Y),
+		.S0(sram[1]),
+		.Y(MUX2_2_Y));
 
-	sg13g2_mux2_1 mux_l2_in_1_ (
-		.A1(sg13g2_inv_1_4_Y),
-		.A0(const1_0_const1),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_3_X));
+	MUX2 mux_l2_in_1_ (
+		.B(INVx1_ASAP7_75t_R_4_Y),
+		.A(const1_0_const1),
+		.S0(sram[1]),
+		.Y(MUX2_3_Y));
 
-	sg13g2_mux2_1 mux_l3_in_0_ (
-		.A1(sg13g2_mux2_1_2_X),
-		.A0(sg13g2_mux2_1_3_X),
-		.S(sram[2]),
-		.X(sg13g2_mux2_1_4_X));
+	MUX2 mux_l3_in_0_ (
+		.B(MUX2_2_Y),
+		.A(MUX2_3_Y),
+		.S0(sram[2]),
+		.Y(MUX2_4_Y));
 
 endmodule
 // ----- END Verilog module for mux_tree_tapbuf_size5 -----
@@ -1014,739 +1014,739 @@ output [0:0] out;
 //----- END Registered ports -----
 
 
+wire [0:0] INVx1_ASAP7_75t_R_0_Y;
+wire [0:0] INVx1_ASAP7_75t_R_10_Y;
+wire [0:0] INVx1_ASAP7_75t_R_11_Y;
+wire [0:0] INVx1_ASAP7_75t_R_12_Y;
+wire [0:0] INVx1_ASAP7_75t_R_13_Y;
+wire [0:0] INVx1_ASAP7_75t_R_14_Y;
+wire [0:0] INVx1_ASAP7_75t_R_15_Y;
+wire [0:0] INVx1_ASAP7_75t_R_16_Y;
+wire [0:0] INVx1_ASAP7_75t_R_17_Y;
+wire [0:0] INVx1_ASAP7_75t_R_18_Y;
+wire [0:0] INVx1_ASAP7_75t_R_19_Y;
+wire [0:0] INVx1_ASAP7_75t_R_1_Y;
+wire [0:0] INVx1_ASAP7_75t_R_20_Y;
+wire [0:0] INVx1_ASAP7_75t_R_21_Y;
+wire [0:0] INVx1_ASAP7_75t_R_22_Y;
+wire [0:0] INVx1_ASAP7_75t_R_23_Y;
+wire [0:0] INVx1_ASAP7_75t_R_24_Y;
+wire [0:0] INVx1_ASAP7_75t_R_25_Y;
+wire [0:0] INVx1_ASAP7_75t_R_26_Y;
+wire [0:0] INVx1_ASAP7_75t_R_27_Y;
+wire [0:0] INVx1_ASAP7_75t_R_28_Y;
+wire [0:0] INVx1_ASAP7_75t_R_29_Y;
+wire [0:0] INVx1_ASAP7_75t_R_2_Y;
+wire [0:0] INVx1_ASAP7_75t_R_30_Y;
+wire [0:0] INVx1_ASAP7_75t_R_31_Y;
+wire [0:0] INVx1_ASAP7_75t_R_32_Y;
+wire [0:0] INVx1_ASAP7_75t_R_33_Y;
+wire [0:0] INVx1_ASAP7_75t_R_34_Y;
+wire [0:0] INVx1_ASAP7_75t_R_35_Y;
+wire [0:0] INVx1_ASAP7_75t_R_36_Y;
+wire [0:0] INVx1_ASAP7_75t_R_37_Y;
+wire [0:0] INVx1_ASAP7_75t_R_38_Y;
+wire [0:0] INVx1_ASAP7_75t_R_39_Y;
+wire [0:0] INVx1_ASAP7_75t_R_3_Y;
+wire [0:0] INVx1_ASAP7_75t_R_40_Y;
+wire [0:0] INVx1_ASAP7_75t_R_41_Y;
+wire [0:0] INVx1_ASAP7_75t_R_42_Y;
+wire [0:0] INVx1_ASAP7_75t_R_43_Y;
+wire [0:0] INVx1_ASAP7_75t_R_44_Y;
+wire [0:0] INVx1_ASAP7_75t_R_45_Y;
+wire [0:0] INVx1_ASAP7_75t_R_46_Y;
+wire [0:0] INVx1_ASAP7_75t_R_47_Y;
+wire [0:0] INVx1_ASAP7_75t_R_48_Y;
+wire [0:0] INVx1_ASAP7_75t_R_49_Y;
+wire [0:0] INVx1_ASAP7_75t_R_4_Y;
+wire [0:0] INVx1_ASAP7_75t_R_50_Y;
+wire [0:0] INVx1_ASAP7_75t_R_51_Y;
+wire [0:0] INVx1_ASAP7_75t_R_52_Y;
+wire [0:0] INVx1_ASAP7_75t_R_53_Y;
+wire [0:0] INVx1_ASAP7_75t_R_54_Y;
+wire [0:0] INVx1_ASAP7_75t_R_55_Y;
+wire [0:0] INVx1_ASAP7_75t_R_56_Y;
+wire [0:0] INVx1_ASAP7_75t_R_57_Y;
+wire [0:0] INVx1_ASAP7_75t_R_58_Y;
+wire [0:0] INVx1_ASAP7_75t_R_59_Y;
+wire [0:0] INVx1_ASAP7_75t_R_5_Y;
+wire [0:0] INVx1_ASAP7_75t_R_6_Y;
+wire [0:0] INVx1_ASAP7_75t_R_7_Y;
+wire [0:0] INVx1_ASAP7_75t_R_8_Y;
+wire [0:0] INVx1_ASAP7_75t_R_9_Y;
+wire [0:0] MUX2_0_Y;
+wire [0:0] MUX2_10_Y;
+wire [0:0] MUX2_11_Y;
+wire [0:0] MUX2_12_Y;
+wire [0:0] MUX2_13_Y;
+wire [0:0] MUX2_14_Y;
+wire [0:0] MUX2_15_Y;
+wire [0:0] MUX2_16_Y;
+wire [0:0] MUX2_17_Y;
+wire [0:0] MUX2_18_Y;
+wire [0:0] MUX2_19_Y;
+wire [0:0] MUX2_1_Y;
+wire [0:0] MUX2_20_Y;
+wire [0:0] MUX2_21_Y;
+wire [0:0] MUX2_22_Y;
+wire [0:0] MUX2_23_Y;
+wire [0:0] MUX2_24_Y;
+wire [0:0] MUX2_25_Y;
+wire [0:0] MUX2_26_Y;
+wire [0:0] MUX2_27_Y;
+wire [0:0] MUX2_28_Y;
+wire [0:0] MUX2_29_Y;
+wire [0:0] MUX2_2_Y;
+wire [0:0] MUX2_30_Y;
+wire [0:0] MUX2_31_Y;
+wire [0:0] MUX2_32_Y;
+wire [0:0] MUX2_33_Y;
+wire [0:0] MUX2_34_Y;
+wire [0:0] MUX2_35_Y;
+wire [0:0] MUX2_36_Y;
+wire [0:0] MUX2_37_Y;
+wire [0:0] MUX2_38_Y;
+wire [0:0] MUX2_39_Y;
+wire [0:0] MUX2_3_Y;
+wire [0:0] MUX2_40_Y;
+wire [0:0] MUX2_41_Y;
+wire [0:0] MUX2_42_Y;
+wire [0:0] MUX2_43_Y;
+wire [0:0] MUX2_44_Y;
+wire [0:0] MUX2_45_Y;
+wire [0:0] MUX2_46_Y;
+wire [0:0] MUX2_47_Y;
+wire [0:0] MUX2_48_Y;
+wire [0:0] MUX2_49_Y;
+wire [0:0] MUX2_4_Y;
+wire [0:0] MUX2_50_Y;
+wire [0:0] MUX2_51_Y;
+wire [0:0] MUX2_52_Y;
+wire [0:0] MUX2_53_Y;
+wire [0:0] MUX2_54_Y;
+wire [0:0] MUX2_55_Y;
+wire [0:0] MUX2_56_Y;
+wire [0:0] MUX2_57_Y;
+wire [0:0] MUX2_58_Y;
+wire [0:0] MUX2_59_Y;
+wire [0:0] MUX2_5_Y;
+wire [0:0] MUX2_6_Y;
+wire [0:0] MUX2_7_Y;
+wire [0:0] MUX2_8_Y;
+wire [0:0] MUX2_9_Y;
 wire [0:0] const1_0_const1;
-wire [0:0] sg13g2_inv_1_0_Y;
-wire [0:0] sg13g2_inv_1_10_Y;
-wire [0:0] sg13g2_inv_1_11_Y;
-wire [0:0] sg13g2_inv_1_12_Y;
-wire [0:0] sg13g2_inv_1_13_Y;
-wire [0:0] sg13g2_inv_1_14_Y;
-wire [0:0] sg13g2_inv_1_15_Y;
-wire [0:0] sg13g2_inv_1_16_Y;
-wire [0:0] sg13g2_inv_1_17_Y;
-wire [0:0] sg13g2_inv_1_18_Y;
-wire [0:0] sg13g2_inv_1_19_Y;
-wire [0:0] sg13g2_inv_1_1_Y;
-wire [0:0] sg13g2_inv_1_20_Y;
-wire [0:0] sg13g2_inv_1_21_Y;
-wire [0:0] sg13g2_inv_1_22_Y;
-wire [0:0] sg13g2_inv_1_23_Y;
-wire [0:0] sg13g2_inv_1_24_Y;
-wire [0:0] sg13g2_inv_1_25_Y;
-wire [0:0] sg13g2_inv_1_26_Y;
-wire [0:0] sg13g2_inv_1_27_Y;
-wire [0:0] sg13g2_inv_1_28_Y;
-wire [0:0] sg13g2_inv_1_29_Y;
-wire [0:0] sg13g2_inv_1_2_Y;
-wire [0:0] sg13g2_inv_1_30_Y;
-wire [0:0] sg13g2_inv_1_31_Y;
-wire [0:0] sg13g2_inv_1_32_Y;
-wire [0:0] sg13g2_inv_1_33_Y;
-wire [0:0] sg13g2_inv_1_34_Y;
-wire [0:0] sg13g2_inv_1_35_Y;
-wire [0:0] sg13g2_inv_1_36_Y;
-wire [0:0] sg13g2_inv_1_37_Y;
-wire [0:0] sg13g2_inv_1_38_Y;
-wire [0:0] sg13g2_inv_1_39_Y;
-wire [0:0] sg13g2_inv_1_3_Y;
-wire [0:0] sg13g2_inv_1_40_Y;
-wire [0:0] sg13g2_inv_1_41_Y;
-wire [0:0] sg13g2_inv_1_42_Y;
-wire [0:0] sg13g2_inv_1_43_Y;
-wire [0:0] sg13g2_inv_1_44_Y;
-wire [0:0] sg13g2_inv_1_45_Y;
-wire [0:0] sg13g2_inv_1_46_Y;
-wire [0:0] sg13g2_inv_1_47_Y;
-wire [0:0] sg13g2_inv_1_48_Y;
-wire [0:0] sg13g2_inv_1_49_Y;
-wire [0:0] sg13g2_inv_1_4_Y;
-wire [0:0] sg13g2_inv_1_50_Y;
-wire [0:0] sg13g2_inv_1_51_Y;
-wire [0:0] sg13g2_inv_1_52_Y;
-wire [0:0] sg13g2_inv_1_53_Y;
-wire [0:0] sg13g2_inv_1_54_Y;
-wire [0:0] sg13g2_inv_1_55_Y;
-wire [0:0] sg13g2_inv_1_56_Y;
-wire [0:0] sg13g2_inv_1_57_Y;
-wire [0:0] sg13g2_inv_1_58_Y;
-wire [0:0] sg13g2_inv_1_59_Y;
-wire [0:0] sg13g2_inv_1_5_Y;
-wire [0:0] sg13g2_inv_1_6_Y;
-wire [0:0] sg13g2_inv_1_7_Y;
-wire [0:0] sg13g2_inv_1_8_Y;
-wire [0:0] sg13g2_inv_1_9_Y;
-wire [0:0] sg13g2_mux2_1_0_X;
-wire [0:0] sg13g2_mux2_1_10_X;
-wire [0:0] sg13g2_mux2_1_11_X;
-wire [0:0] sg13g2_mux2_1_12_X;
-wire [0:0] sg13g2_mux2_1_13_X;
-wire [0:0] sg13g2_mux2_1_14_X;
-wire [0:0] sg13g2_mux2_1_15_X;
-wire [0:0] sg13g2_mux2_1_16_X;
-wire [0:0] sg13g2_mux2_1_17_X;
-wire [0:0] sg13g2_mux2_1_18_X;
-wire [0:0] sg13g2_mux2_1_19_X;
-wire [0:0] sg13g2_mux2_1_1_X;
-wire [0:0] sg13g2_mux2_1_20_X;
-wire [0:0] sg13g2_mux2_1_21_X;
-wire [0:0] sg13g2_mux2_1_22_X;
-wire [0:0] sg13g2_mux2_1_23_X;
-wire [0:0] sg13g2_mux2_1_24_X;
-wire [0:0] sg13g2_mux2_1_25_X;
-wire [0:0] sg13g2_mux2_1_26_X;
-wire [0:0] sg13g2_mux2_1_27_X;
-wire [0:0] sg13g2_mux2_1_28_X;
-wire [0:0] sg13g2_mux2_1_29_X;
-wire [0:0] sg13g2_mux2_1_2_X;
-wire [0:0] sg13g2_mux2_1_30_X;
-wire [0:0] sg13g2_mux2_1_31_X;
-wire [0:0] sg13g2_mux2_1_32_X;
-wire [0:0] sg13g2_mux2_1_33_X;
-wire [0:0] sg13g2_mux2_1_34_X;
-wire [0:0] sg13g2_mux2_1_35_X;
-wire [0:0] sg13g2_mux2_1_36_X;
-wire [0:0] sg13g2_mux2_1_37_X;
-wire [0:0] sg13g2_mux2_1_38_X;
-wire [0:0] sg13g2_mux2_1_39_X;
-wire [0:0] sg13g2_mux2_1_3_X;
-wire [0:0] sg13g2_mux2_1_40_X;
-wire [0:0] sg13g2_mux2_1_41_X;
-wire [0:0] sg13g2_mux2_1_42_X;
-wire [0:0] sg13g2_mux2_1_43_X;
-wire [0:0] sg13g2_mux2_1_44_X;
-wire [0:0] sg13g2_mux2_1_45_X;
-wire [0:0] sg13g2_mux2_1_46_X;
-wire [0:0] sg13g2_mux2_1_47_X;
-wire [0:0] sg13g2_mux2_1_48_X;
-wire [0:0] sg13g2_mux2_1_49_X;
-wire [0:0] sg13g2_mux2_1_4_X;
-wire [0:0] sg13g2_mux2_1_50_X;
-wire [0:0] sg13g2_mux2_1_51_X;
-wire [0:0] sg13g2_mux2_1_52_X;
-wire [0:0] sg13g2_mux2_1_53_X;
-wire [0:0] sg13g2_mux2_1_54_X;
-wire [0:0] sg13g2_mux2_1_55_X;
-wire [0:0] sg13g2_mux2_1_56_X;
-wire [0:0] sg13g2_mux2_1_57_X;
-wire [0:0] sg13g2_mux2_1_58_X;
-wire [0:0] sg13g2_mux2_1_59_X;
-wire [0:0] sg13g2_mux2_1_5_X;
-wire [0:0] sg13g2_mux2_1_6_X;
-wire [0:0] sg13g2_mux2_1_7_X;
-wire [0:0] sg13g2_mux2_1_8_X;
-wire [0:0] sg13g2_mux2_1_9_X;
 
 // ----- BEGIN Local short connections -----
 // ----- END Local short connections -----
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	sg13g2_inv_1 sg13g2_inv_1_0_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_0_ (
 		.A(in[0]),
-		.Y(sg13g2_inv_1_0_Y));
+		.Y(INVx1_ASAP7_75t_R_0_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_1_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_1_ (
 		.A(in[1]),
-		.Y(sg13g2_inv_1_1_Y));
+		.Y(INVx1_ASAP7_75t_R_1_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_2_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_2_ (
 		.A(in[2]),
-		.Y(sg13g2_inv_1_2_Y));
+		.Y(INVx1_ASAP7_75t_R_2_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_3_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_3_ (
 		.A(in[3]),
-		.Y(sg13g2_inv_1_3_Y));
+		.Y(INVx1_ASAP7_75t_R_3_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_4_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_4_ (
 		.A(in[4]),
-		.Y(sg13g2_inv_1_4_Y));
+		.Y(INVx1_ASAP7_75t_R_4_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_5_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_5_ (
 		.A(in[5]),
-		.Y(sg13g2_inv_1_5_Y));
+		.Y(INVx1_ASAP7_75t_R_5_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_6_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_6_ (
 		.A(in[6]),
-		.Y(sg13g2_inv_1_6_Y));
+		.Y(INVx1_ASAP7_75t_R_6_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_7_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_7_ (
 		.A(in[7]),
-		.Y(sg13g2_inv_1_7_Y));
+		.Y(INVx1_ASAP7_75t_R_7_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_8_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_8_ (
 		.A(in[8]),
-		.Y(sg13g2_inv_1_8_Y));
+		.Y(INVx1_ASAP7_75t_R_8_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_9_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_9_ (
 		.A(in[9]),
-		.Y(sg13g2_inv_1_9_Y));
+		.Y(INVx1_ASAP7_75t_R_9_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_10_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_10_ (
 		.A(in[10]),
-		.Y(sg13g2_inv_1_10_Y));
+		.Y(INVx1_ASAP7_75t_R_10_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_11_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_11_ (
 		.A(in[11]),
-		.Y(sg13g2_inv_1_11_Y));
+		.Y(INVx1_ASAP7_75t_R_11_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_12_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_12_ (
 		.A(in[12]),
-		.Y(sg13g2_inv_1_12_Y));
+		.Y(INVx1_ASAP7_75t_R_12_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_13_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_13_ (
 		.A(in[13]),
-		.Y(sg13g2_inv_1_13_Y));
+		.Y(INVx1_ASAP7_75t_R_13_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_14_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_14_ (
 		.A(in[14]),
-		.Y(sg13g2_inv_1_14_Y));
+		.Y(INVx1_ASAP7_75t_R_14_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_15_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_15_ (
 		.A(in[15]),
-		.Y(sg13g2_inv_1_15_Y));
+		.Y(INVx1_ASAP7_75t_R_15_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_16_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_16_ (
 		.A(in[16]),
-		.Y(sg13g2_inv_1_16_Y));
+		.Y(INVx1_ASAP7_75t_R_16_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_17_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_17_ (
 		.A(in[17]),
-		.Y(sg13g2_inv_1_17_Y));
+		.Y(INVx1_ASAP7_75t_R_17_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_18_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_18_ (
 		.A(in[18]),
-		.Y(sg13g2_inv_1_18_Y));
+		.Y(INVx1_ASAP7_75t_R_18_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_19_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_19_ (
 		.A(in[19]),
-		.Y(sg13g2_inv_1_19_Y));
+		.Y(INVx1_ASAP7_75t_R_19_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_20_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_20_ (
 		.A(in[20]),
-		.Y(sg13g2_inv_1_20_Y));
+		.Y(INVx1_ASAP7_75t_R_20_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_21_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_21_ (
 		.A(in[21]),
-		.Y(sg13g2_inv_1_21_Y));
+		.Y(INVx1_ASAP7_75t_R_21_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_22_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_22_ (
 		.A(in[22]),
-		.Y(sg13g2_inv_1_22_Y));
+		.Y(INVx1_ASAP7_75t_R_22_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_23_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_23_ (
 		.A(in[23]),
-		.Y(sg13g2_inv_1_23_Y));
+		.Y(INVx1_ASAP7_75t_R_23_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_24_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_24_ (
 		.A(in[24]),
-		.Y(sg13g2_inv_1_24_Y));
+		.Y(INVx1_ASAP7_75t_R_24_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_25_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_25_ (
 		.A(in[25]),
-		.Y(sg13g2_inv_1_25_Y));
+		.Y(INVx1_ASAP7_75t_R_25_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_26_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_26_ (
 		.A(in[26]),
-		.Y(sg13g2_inv_1_26_Y));
+		.Y(INVx1_ASAP7_75t_R_26_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_27_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_27_ (
 		.A(in[27]),
-		.Y(sg13g2_inv_1_27_Y));
+		.Y(INVx1_ASAP7_75t_R_27_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_28_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_28_ (
 		.A(in[28]),
-		.Y(sg13g2_inv_1_28_Y));
+		.Y(INVx1_ASAP7_75t_R_28_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_29_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_29_ (
 		.A(in[29]),
-		.Y(sg13g2_inv_1_29_Y));
+		.Y(INVx1_ASAP7_75t_R_29_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_30_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_30_ (
 		.A(in[30]),
-		.Y(sg13g2_inv_1_30_Y));
+		.Y(INVx1_ASAP7_75t_R_30_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_31_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_31_ (
 		.A(in[31]),
-		.Y(sg13g2_inv_1_31_Y));
+		.Y(INVx1_ASAP7_75t_R_31_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_32_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_32_ (
 		.A(in[32]),
-		.Y(sg13g2_inv_1_32_Y));
+		.Y(INVx1_ASAP7_75t_R_32_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_33_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_33_ (
 		.A(in[33]),
-		.Y(sg13g2_inv_1_33_Y));
+		.Y(INVx1_ASAP7_75t_R_33_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_34_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_34_ (
 		.A(in[34]),
-		.Y(sg13g2_inv_1_34_Y));
+		.Y(INVx1_ASAP7_75t_R_34_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_35_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_35_ (
 		.A(in[35]),
-		.Y(sg13g2_inv_1_35_Y));
+		.Y(INVx1_ASAP7_75t_R_35_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_36_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_36_ (
 		.A(in[36]),
-		.Y(sg13g2_inv_1_36_Y));
+		.Y(INVx1_ASAP7_75t_R_36_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_37_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_37_ (
 		.A(in[37]),
-		.Y(sg13g2_inv_1_37_Y));
+		.Y(INVx1_ASAP7_75t_R_37_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_38_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_38_ (
 		.A(in[38]),
-		.Y(sg13g2_inv_1_38_Y));
+		.Y(INVx1_ASAP7_75t_R_38_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_39_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_39_ (
 		.A(in[39]),
-		.Y(sg13g2_inv_1_39_Y));
+		.Y(INVx1_ASAP7_75t_R_39_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_40_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_40_ (
 		.A(in[40]),
-		.Y(sg13g2_inv_1_40_Y));
+		.Y(INVx1_ASAP7_75t_R_40_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_41_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_41_ (
 		.A(in[41]),
-		.Y(sg13g2_inv_1_41_Y));
+		.Y(INVx1_ASAP7_75t_R_41_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_42_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_42_ (
 		.A(in[42]),
-		.Y(sg13g2_inv_1_42_Y));
+		.Y(INVx1_ASAP7_75t_R_42_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_43_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_43_ (
 		.A(in[43]),
-		.Y(sg13g2_inv_1_43_Y));
+		.Y(INVx1_ASAP7_75t_R_43_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_44_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_44_ (
 		.A(in[44]),
-		.Y(sg13g2_inv_1_44_Y));
+		.Y(INVx1_ASAP7_75t_R_44_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_45_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_45_ (
 		.A(in[45]),
-		.Y(sg13g2_inv_1_45_Y));
+		.Y(INVx1_ASAP7_75t_R_45_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_46_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_46_ (
 		.A(in[46]),
-		.Y(sg13g2_inv_1_46_Y));
+		.Y(INVx1_ASAP7_75t_R_46_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_47_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_47_ (
 		.A(in[47]),
-		.Y(sg13g2_inv_1_47_Y));
+		.Y(INVx1_ASAP7_75t_R_47_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_48_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_48_ (
 		.A(in[48]),
-		.Y(sg13g2_inv_1_48_Y));
+		.Y(INVx1_ASAP7_75t_R_48_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_49_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_49_ (
 		.A(in[49]),
-		.Y(sg13g2_inv_1_49_Y));
+		.Y(INVx1_ASAP7_75t_R_49_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_50_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_50_ (
 		.A(in[50]),
-		.Y(sg13g2_inv_1_50_Y));
+		.Y(INVx1_ASAP7_75t_R_50_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_51_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_51_ (
 		.A(in[51]),
-		.Y(sg13g2_inv_1_51_Y));
+		.Y(INVx1_ASAP7_75t_R_51_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_52_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_52_ (
 		.A(in[52]),
-		.Y(sg13g2_inv_1_52_Y));
+		.Y(INVx1_ASAP7_75t_R_52_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_53_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_53_ (
 		.A(in[53]),
-		.Y(sg13g2_inv_1_53_Y));
+		.Y(INVx1_ASAP7_75t_R_53_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_54_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_54_ (
 		.A(in[54]),
-		.Y(sg13g2_inv_1_54_Y));
+		.Y(INVx1_ASAP7_75t_R_54_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_55_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_55_ (
 		.A(in[55]),
-		.Y(sg13g2_inv_1_55_Y));
+		.Y(INVx1_ASAP7_75t_R_55_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_56_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_56_ (
 		.A(in[56]),
-		.Y(sg13g2_inv_1_56_Y));
+		.Y(INVx1_ASAP7_75t_R_56_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_57_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_57_ (
 		.A(in[57]),
-		.Y(sg13g2_inv_1_57_Y));
+		.Y(INVx1_ASAP7_75t_R_57_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_58_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_58_ (
 		.A(in[58]),
-		.Y(sg13g2_inv_1_58_Y));
+		.Y(INVx1_ASAP7_75t_R_58_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_59_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_59_ (
 		.A(in[59]),
-		.Y(sg13g2_inv_1_59_Y));
+		.Y(INVx1_ASAP7_75t_R_59_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_60_ (
-		.A(sg13g2_mux2_1_59_X),
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_60_ (
+		.A(MUX2_59_Y),
 		.Y(out));
 
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	sg13g2_mux2_1 mux_l1_in_0_ (
-		.A1(sg13g2_inv_1_0_Y),
-		.A0(sg13g2_inv_1_1_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_0_X));
+	MUX2 mux_l1_in_0_ (
+		.B(INVx1_ASAP7_75t_R_0_Y),
+		.A(INVx1_ASAP7_75t_R_1_Y),
+		.S0(sram[0]),
+		.Y(MUX2_0_Y));
 
-	sg13g2_mux2_1 mux_l1_in_1_ (
-		.A1(sg13g2_inv_1_2_Y),
-		.A0(sg13g2_inv_1_3_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_1_X));
+	MUX2 mux_l1_in_1_ (
+		.B(INVx1_ASAP7_75t_R_2_Y),
+		.A(INVx1_ASAP7_75t_R_3_Y),
+		.S0(sram[0]),
+		.Y(MUX2_1_Y));
 
-	sg13g2_mux2_1 mux_l1_in_2_ (
-		.A1(sg13g2_inv_1_4_Y),
-		.A0(sg13g2_inv_1_5_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_2_X));
+	MUX2 mux_l1_in_2_ (
+		.B(INVx1_ASAP7_75t_R_4_Y),
+		.A(INVx1_ASAP7_75t_R_5_Y),
+		.S0(sram[0]),
+		.Y(MUX2_2_Y));
 
-	sg13g2_mux2_1 mux_l1_in_3_ (
-		.A1(sg13g2_inv_1_6_Y),
-		.A0(sg13g2_inv_1_7_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_3_X));
+	MUX2 mux_l1_in_3_ (
+		.B(INVx1_ASAP7_75t_R_6_Y),
+		.A(INVx1_ASAP7_75t_R_7_Y),
+		.S0(sram[0]),
+		.Y(MUX2_3_Y));
 
-	sg13g2_mux2_1 mux_l1_in_4_ (
-		.A1(sg13g2_inv_1_8_Y),
-		.A0(sg13g2_inv_1_9_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_4_X));
+	MUX2 mux_l1_in_4_ (
+		.B(INVx1_ASAP7_75t_R_8_Y),
+		.A(INVx1_ASAP7_75t_R_9_Y),
+		.S0(sram[0]),
+		.Y(MUX2_4_Y));
 
-	sg13g2_mux2_1 mux_l1_in_5_ (
-		.A1(sg13g2_inv_1_10_Y),
-		.A0(sg13g2_inv_1_11_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_5_X));
+	MUX2 mux_l1_in_5_ (
+		.B(INVx1_ASAP7_75t_R_10_Y),
+		.A(INVx1_ASAP7_75t_R_11_Y),
+		.S0(sram[0]),
+		.Y(MUX2_5_Y));
 
-	sg13g2_mux2_1 mux_l1_in_6_ (
-		.A1(sg13g2_inv_1_12_Y),
-		.A0(sg13g2_inv_1_13_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_6_X));
+	MUX2 mux_l1_in_6_ (
+		.B(INVx1_ASAP7_75t_R_12_Y),
+		.A(INVx1_ASAP7_75t_R_13_Y),
+		.S0(sram[0]),
+		.Y(MUX2_6_Y));
 
-	sg13g2_mux2_1 mux_l1_in_7_ (
-		.A1(sg13g2_inv_1_14_Y),
-		.A0(sg13g2_inv_1_15_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_7_X));
+	MUX2 mux_l1_in_7_ (
+		.B(INVx1_ASAP7_75t_R_14_Y),
+		.A(INVx1_ASAP7_75t_R_15_Y),
+		.S0(sram[0]),
+		.Y(MUX2_7_Y));
 
-	sg13g2_mux2_1 mux_l1_in_8_ (
-		.A1(sg13g2_inv_1_16_Y),
-		.A0(sg13g2_inv_1_17_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_8_X));
+	MUX2 mux_l1_in_8_ (
+		.B(INVx1_ASAP7_75t_R_16_Y),
+		.A(INVx1_ASAP7_75t_R_17_Y),
+		.S0(sram[0]),
+		.Y(MUX2_8_Y));
 
-	sg13g2_mux2_1 mux_l1_in_9_ (
-		.A1(sg13g2_inv_1_18_Y),
-		.A0(sg13g2_inv_1_19_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_9_X));
+	MUX2 mux_l1_in_9_ (
+		.B(INVx1_ASAP7_75t_R_18_Y),
+		.A(INVx1_ASAP7_75t_R_19_Y),
+		.S0(sram[0]),
+		.Y(MUX2_9_Y));
 
-	sg13g2_mux2_1 mux_l1_in_10_ (
-		.A1(sg13g2_inv_1_20_Y),
-		.A0(sg13g2_inv_1_21_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_10_X));
+	MUX2 mux_l1_in_10_ (
+		.B(INVx1_ASAP7_75t_R_20_Y),
+		.A(INVx1_ASAP7_75t_R_21_Y),
+		.S0(sram[0]),
+		.Y(MUX2_10_Y));
 
-	sg13g2_mux2_1 mux_l1_in_11_ (
-		.A1(sg13g2_inv_1_22_Y),
-		.A0(sg13g2_inv_1_23_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_11_X));
+	MUX2 mux_l1_in_11_ (
+		.B(INVx1_ASAP7_75t_R_22_Y),
+		.A(INVx1_ASAP7_75t_R_23_Y),
+		.S0(sram[0]),
+		.Y(MUX2_11_Y));
 
-	sg13g2_mux2_1 mux_l1_in_12_ (
-		.A1(sg13g2_inv_1_24_Y),
-		.A0(sg13g2_inv_1_25_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_12_X));
+	MUX2 mux_l1_in_12_ (
+		.B(INVx1_ASAP7_75t_R_24_Y),
+		.A(INVx1_ASAP7_75t_R_25_Y),
+		.S0(sram[0]),
+		.Y(MUX2_12_Y));
 
-	sg13g2_mux2_1 mux_l1_in_13_ (
-		.A1(sg13g2_inv_1_26_Y),
-		.A0(sg13g2_inv_1_27_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_13_X));
+	MUX2 mux_l1_in_13_ (
+		.B(INVx1_ASAP7_75t_R_26_Y),
+		.A(INVx1_ASAP7_75t_R_27_Y),
+		.S0(sram[0]),
+		.Y(MUX2_13_Y));
 
-	sg13g2_mux2_1 mux_l1_in_14_ (
-		.A1(sg13g2_inv_1_28_Y),
-		.A0(sg13g2_inv_1_29_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_14_X));
+	MUX2 mux_l1_in_14_ (
+		.B(INVx1_ASAP7_75t_R_28_Y),
+		.A(INVx1_ASAP7_75t_R_29_Y),
+		.S0(sram[0]),
+		.Y(MUX2_14_Y));
 
-	sg13g2_mux2_1 mux_l1_in_15_ (
-		.A1(sg13g2_inv_1_30_Y),
-		.A0(sg13g2_inv_1_31_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_15_X));
+	MUX2 mux_l1_in_15_ (
+		.B(INVx1_ASAP7_75t_R_30_Y),
+		.A(INVx1_ASAP7_75t_R_31_Y),
+		.S0(sram[0]),
+		.Y(MUX2_15_Y));
 
-	sg13g2_mux2_1 mux_l1_in_16_ (
-		.A1(sg13g2_inv_1_32_Y),
-		.A0(sg13g2_inv_1_33_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_16_X));
+	MUX2 mux_l1_in_16_ (
+		.B(INVx1_ASAP7_75t_R_32_Y),
+		.A(INVx1_ASAP7_75t_R_33_Y),
+		.S0(sram[0]),
+		.Y(MUX2_16_Y));
 
-	sg13g2_mux2_1 mux_l1_in_17_ (
-		.A1(sg13g2_inv_1_34_Y),
-		.A0(sg13g2_inv_1_35_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_17_X));
+	MUX2 mux_l1_in_17_ (
+		.B(INVx1_ASAP7_75t_R_34_Y),
+		.A(INVx1_ASAP7_75t_R_35_Y),
+		.S0(sram[0]),
+		.Y(MUX2_17_Y));
 
-	sg13g2_mux2_1 mux_l1_in_18_ (
-		.A1(sg13g2_inv_1_36_Y),
-		.A0(sg13g2_inv_1_37_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_18_X));
+	MUX2 mux_l1_in_18_ (
+		.B(INVx1_ASAP7_75t_R_36_Y),
+		.A(INVx1_ASAP7_75t_R_37_Y),
+		.S0(sram[0]),
+		.Y(MUX2_18_Y));
 
-	sg13g2_mux2_1 mux_l1_in_19_ (
-		.A1(sg13g2_inv_1_38_Y),
-		.A0(sg13g2_inv_1_39_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_19_X));
+	MUX2 mux_l1_in_19_ (
+		.B(INVx1_ASAP7_75t_R_38_Y),
+		.A(INVx1_ASAP7_75t_R_39_Y),
+		.S0(sram[0]),
+		.Y(MUX2_19_Y));
 
-	sg13g2_mux2_1 mux_l1_in_20_ (
-		.A1(sg13g2_inv_1_40_Y),
-		.A0(sg13g2_inv_1_41_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_20_X));
+	MUX2 mux_l1_in_20_ (
+		.B(INVx1_ASAP7_75t_R_40_Y),
+		.A(INVx1_ASAP7_75t_R_41_Y),
+		.S0(sram[0]),
+		.Y(MUX2_20_Y));
 
-	sg13g2_mux2_1 mux_l1_in_21_ (
-		.A1(sg13g2_inv_1_42_Y),
-		.A0(sg13g2_inv_1_43_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_21_X));
+	MUX2 mux_l1_in_21_ (
+		.B(INVx1_ASAP7_75t_R_42_Y),
+		.A(INVx1_ASAP7_75t_R_43_Y),
+		.S0(sram[0]),
+		.Y(MUX2_21_Y));
 
-	sg13g2_mux2_1 mux_l1_in_22_ (
-		.A1(sg13g2_inv_1_44_Y),
-		.A0(sg13g2_inv_1_45_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_22_X));
+	MUX2 mux_l1_in_22_ (
+		.B(INVx1_ASAP7_75t_R_44_Y),
+		.A(INVx1_ASAP7_75t_R_45_Y),
+		.S0(sram[0]),
+		.Y(MUX2_22_Y));
 
-	sg13g2_mux2_1 mux_l1_in_23_ (
-		.A1(sg13g2_inv_1_46_Y),
-		.A0(sg13g2_inv_1_47_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_23_X));
+	MUX2 mux_l1_in_23_ (
+		.B(INVx1_ASAP7_75t_R_46_Y),
+		.A(INVx1_ASAP7_75t_R_47_Y),
+		.S0(sram[0]),
+		.Y(MUX2_23_Y));
 
-	sg13g2_mux2_1 mux_l1_in_24_ (
-		.A1(sg13g2_inv_1_48_Y),
-		.A0(sg13g2_inv_1_49_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_24_X));
+	MUX2 mux_l1_in_24_ (
+		.B(INVx1_ASAP7_75t_R_48_Y),
+		.A(INVx1_ASAP7_75t_R_49_Y),
+		.S0(sram[0]),
+		.Y(MUX2_24_Y));
 
-	sg13g2_mux2_1 mux_l1_in_25_ (
-		.A1(sg13g2_inv_1_50_Y),
-		.A0(sg13g2_inv_1_51_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_25_X));
+	MUX2 mux_l1_in_25_ (
+		.B(INVx1_ASAP7_75t_R_50_Y),
+		.A(INVx1_ASAP7_75t_R_51_Y),
+		.S0(sram[0]),
+		.Y(MUX2_25_Y));
 
-	sg13g2_mux2_1 mux_l1_in_26_ (
-		.A1(sg13g2_inv_1_52_Y),
-		.A0(sg13g2_inv_1_53_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_26_X));
+	MUX2 mux_l1_in_26_ (
+		.B(INVx1_ASAP7_75t_R_52_Y),
+		.A(INVx1_ASAP7_75t_R_53_Y),
+		.S0(sram[0]),
+		.Y(MUX2_26_Y));
 
-	sg13g2_mux2_1 mux_l1_in_27_ (
-		.A1(sg13g2_inv_1_54_Y),
-		.A0(sg13g2_inv_1_55_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_27_X));
+	MUX2 mux_l1_in_27_ (
+		.B(INVx1_ASAP7_75t_R_54_Y),
+		.A(INVx1_ASAP7_75t_R_55_Y),
+		.S0(sram[0]),
+		.Y(MUX2_27_Y));
 
-	sg13g2_mux2_1 mux_l1_in_28_ (
-		.A1(sg13g2_inv_1_56_Y),
-		.A0(sg13g2_inv_1_57_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_28_X));
+	MUX2 mux_l1_in_28_ (
+		.B(INVx1_ASAP7_75t_R_56_Y),
+		.A(INVx1_ASAP7_75t_R_57_Y),
+		.S0(sram[0]),
+		.Y(MUX2_28_Y));
 
-	sg13g2_mux2_1 mux_l2_in_0_ (
-		.A1(sg13g2_mux2_1_0_X),
-		.A0(sg13g2_mux2_1_1_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_29_X));
+	MUX2 mux_l2_in_0_ (
+		.B(MUX2_0_Y),
+		.A(MUX2_1_Y),
+		.S0(sram[1]),
+		.Y(MUX2_29_Y));
 
-	sg13g2_mux2_1 mux_l2_in_1_ (
-		.A1(sg13g2_mux2_1_2_X),
-		.A0(sg13g2_mux2_1_3_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_30_X));
+	MUX2 mux_l2_in_1_ (
+		.B(MUX2_2_Y),
+		.A(MUX2_3_Y),
+		.S0(sram[1]),
+		.Y(MUX2_30_Y));
 
-	sg13g2_mux2_1 mux_l2_in_2_ (
-		.A1(sg13g2_mux2_1_4_X),
-		.A0(sg13g2_mux2_1_5_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_31_X));
+	MUX2 mux_l2_in_2_ (
+		.B(MUX2_4_Y),
+		.A(MUX2_5_Y),
+		.S0(sram[1]),
+		.Y(MUX2_31_Y));
 
-	sg13g2_mux2_1 mux_l2_in_3_ (
-		.A1(sg13g2_mux2_1_6_X),
-		.A0(sg13g2_mux2_1_7_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_32_X));
+	MUX2 mux_l2_in_3_ (
+		.B(MUX2_6_Y),
+		.A(MUX2_7_Y),
+		.S0(sram[1]),
+		.Y(MUX2_32_Y));
 
-	sg13g2_mux2_1 mux_l2_in_4_ (
-		.A1(sg13g2_mux2_1_8_X),
-		.A0(sg13g2_mux2_1_9_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_33_X));
+	MUX2 mux_l2_in_4_ (
+		.B(MUX2_8_Y),
+		.A(MUX2_9_Y),
+		.S0(sram[1]),
+		.Y(MUX2_33_Y));
 
-	sg13g2_mux2_1 mux_l2_in_5_ (
-		.A1(sg13g2_mux2_1_10_X),
-		.A0(sg13g2_mux2_1_11_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_34_X));
+	MUX2 mux_l2_in_5_ (
+		.B(MUX2_10_Y),
+		.A(MUX2_11_Y),
+		.S0(sram[1]),
+		.Y(MUX2_34_Y));
 
-	sg13g2_mux2_1 mux_l2_in_6_ (
-		.A1(sg13g2_mux2_1_12_X),
-		.A0(sg13g2_mux2_1_13_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_35_X));
+	MUX2 mux_l2_in_6_ (
+		.B(MUX2_12_Y),
+		.A(MUX2_13_Y),
+		.S0(sram[1]),
+		.Y(MUX2_35_Y));
 
-	sg13g2_mux2_1 mux_l2_in_7_ (
-		.A1(sg13g2_mux2_1_14_X),
-		.A0(sg13g2_mux2_1_15_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_36_X));
+	MUX2 mux_l2_in_7_ (
+		.B(MUX2_14_Y),
+		.A(MUX2_15_Y),
+		.S0(sram[1]),
+		.Y(MUX2_36_Y));
 
-	sg13g2_mux2_1 mux_l2_in_8_ (
-		.A1(sg13g2_mux2_1_16_X),
-		.A0(sg13g2_mux2_1_17_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_37_X));
+	MUX2 mux_l2_in_8_ (
+		.B(MUX2_16_Y),
+		.A(MUX2_17_Y),
+		.S0(sram[1]),
+		.Y(MUX2_37_Y));
 
-	sg13g2_mux2_1 mux_l2_in_9_ (
-		.A1(sg13g2_mux2_1_18_X),
-		.A0(sg13g2_mux2_1_19_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_38_X));
+	MUX2 mux_l2_in_9_ (
+		.B(MUX2_18_Y),
+		.A(MUX2_19_Y),
+		.S0(sram[1]),
+		.Y(MUX2_38_Y));
 
-	sg13g2_mux2_1 mux_l2_in_10_ (
-		.A1(sg13g2_mux2_1_20_X),
-		.A0(sg13g2_mux2_1_21_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_39_X));
+	MUX2 mux_l2_in_10_ (
+		.B(MUX2_20_Y),
+		.A(MUX2_21_Y),
+		.S0(sram[1]),
+		.Y(MUX2_39_Y));
 
-	sg13g2_mux2_1 mux_l2_in_11_ (
-		.A1(sg13g2_mux2_1_22_X),
-		.A0(sg13g2_mux2_1_23_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_40_X));
+	MUX2 mux_l2_in_11_ (
+		.B(MUX2_22_Y),
+		.A(MUX2_23_Y),
+		.S0(sram[1]),
+		.Y(MUX2_40_Y));
 
-	sg13g2_mux2_1 mux_l2_in_12_ (
-		.A1(sg13g2_mux2_1_24_X),
-		.A0(sg13g2_mux2_1_25_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_41_X));
+	MUX2 mux_l2_in_12_ (
+		.B(MUX2_24_Y),
+		.A(MUX2_25_Y),
+		.S0(sram[1]),
+		.Y(MUX2_41_Y));
 
-	sg13g2_mux2_1 mux_l2_in_13_ (
-		.A1(sg13g2_mux2_1_26_X),
-		.A0(sg13g2_mux2_1_27_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_42_X));
+	MUX2 mux_l2_in_13_ (
+		.B(MUX2_26_Y),
+		.A(MUX2_27_Y),
+		.S0(sram[1]),
+		.Y(MUX2_42_Y));
 
-	sg13g2_mux2_1 mux_l2_in_14_ (
-		.A1(sg13g2_mux2_1_28_X),
-		.A0(sg13g2_inv_1_58_Y),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_43_X));
+	MUX2 mux_l2_in_14_ (
+		.B(MUX2_28_Y),
+		.A(INVx1_ASAP7_75t_R_58_Y),
+		.S0(sram[1]),
+		.Y(MUX2_43_Y));
 
-	sg13g2_mux2_1 mux_l2_in_15_ (
-		.A1(sg13g2_inv_1_59_Y),
-		.A0(const1_0_const1),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_44_X));
+	MUX2 mux_l2_in_15_ (
+		.B(INVx1_ASAP7_75t_R_59_Y),
+		.A(const1_0_const1),
+		.S0(sram[1]),
+		.Y(MUX2_44_Y));
 
-	sg13g2_mux2_1 mux_l3_in_0_ (
-		.A1(sg13g2_mux2_1_29_X),
-		.A0(sg13g2_mux2_1_30_X),
-		.S(sram[2]),
-		.X(sg13g2_mux2_1_45_X));
+	MUX2 mux_l3_in_0_ (
+		.B(MUX2_29_Y),
+		.A(MUX2_30_Y),
+		.S0(sram[2]),
+		.Y(MUX2_45_Y));
 
-	sg13g2_mux2_1 mux_l3_in_1_ (
-		.A1(sg13g2_mux2_1_31_X),
-		.A0(sg13g2_mux2_1_32_X),
-		.S(sram[2]),
-		.X(sg13g2_mux2_1_46_X));
+	MUX2 mux_l3_in_1_ (
+		.B(MUX2_31_Y),
+		.A(MUX2_32_Y),
+		.S0(sram[2]),
+		.Y(MUX2_46_Y));
 
-	sg13g2_mux2_1 mux_l3_in_2_ (
-		.A1(sg13g2_mux2_1_33_X),
-		.A0(sg13g2_mux2_1_34_X),
-		.S(sram[2]),
-		.X(sg13g2_mux2_1_47_X));
+	MUX2 mux_l3_in_2_ (
+		.B(MUX2_33_Y),
+		.A(MUX2_34_Y),
+		.S0(sram[2]),
+		.Y(MUX2_47_Y));
 
-	sg13g2_mux2_1 mux_l3_in_3_ (
-		.A1(sg13g2_mux2_1_35_X),
-		.A0(sg13g2_mux2_1_36_X),
-		.S(sram[2]),
-		.X(sg13g2_mux2_1_48_X));
+	MUX2 mux_l3_in_3_ (
+		.B(MUX2_35_Y),
+		.A(MUX2_36_Y),
+		.S0(sram[2]),
+		.Y(MUX2_48_Y));
 
-	sg13g2_mux2_1 mux_l3_in_4_ (
-		.A1(sg13g2_mux2_1_37_X),
-		.A0(sg13g2_mux2_1_38_X),
-		.S(sram[2]),
-		.X(sg13g2_mux2_1_49_X));
+	MUX2 mux_l3_in_4_ (
+		.B(MUX2_37_Y),
+		.A(MUX2_38_Y),
+		.S0(sram[2]),
+		.Y(MUX2_49_Y));
 
-	sg13g2_mux2_1 mux_l3_in_5_ (
-		.A1(sg13g2_mux2_1_39_X),
-		.A0(sg13g2_mux2_1_40_X),
-		.S(sram[2]),
-		.X(sg13g2_mux2_1_50_X));
+	MUX2 mux_l3_in_5_ (
+		.B(MUX2_39_Y),
+		.A(MUX2_40_Y),
+		.S0(sram[2]),
+		.Y(MUX2_50_Y));
 
-	sg13g2_mux2_1 mux_l3_in_6_ (
-		.A1(sg13g2_mux2_1_41_X),
-		.A0(sg13g2_mux2_1_42_X),
-		.S(sram[2]),
-		.X(sg13g2_mux2_1_51_X));
+	MUX2 mux_l3_in_6_ (
+		.B(MUX2_41_Y),
+		.A(MUX2_42_Y),
+		.S0(sram[2]),
+		.Y(MUX2_51_Y));
 
-	sg13g2_mux2_1 mux_l3_in_7_ (
-		.A1(sg13g2_mux2_1_43_X),
-		.A0(sg13g2_mux2_1_44_X),
-		.S(sram[2]),
-		.X(sg13g2_mux2_1_52_X));
+	MUX2 mux_l3_in_7_ (
+		.B(MUX2_43_Y),
+		.A(MUX2_44_Y),
+		.S0(sram[2]),
+		.Y(MUX2_52_Y));
 
-	sg13g2_mux2_1 mux_l4_in_0_ (
-		.A1(sg13g2_mux2_1_45_X),
-		.A0(sg13g2_mux2_1_46_X),
-		.S(sram[3]),
-		.X(sg13g2_mux2_1_53_X));
+	MUX2 mux_l4_in_0_ (
+		.B(MUX2_45_Y),
+		.A(MUX2_46_Y),
+		.S0(sram[3]),
+		.Y(MUX2_53_Y));
 
-	sg13g2_mux2_1 mux_l4_in_1_ (
-		.A1(sg13g2_mux2_1_47_X),
-		.A0(sg13g2_mux2_1_48_X),
-		.S(sram[3]),
-		.X(sg13g2_mux2_1_54_X));
+	MUX2 mux_l4_in_1_ (
+		.B(MUX2_47_Y),
+		.A(MUX2_48_Y),
+		.S0(sram[3]),
+		.Y(MUX2_54_Y));
 
-	sg13g2_mux2_1 mux_l4_in_2_ (
-		.A1(sg13g2_mux2_1_49_X),
-		.A0(sg13g2_mux2_1_50_X),
-		.S(sram[3]),
-		.X(sg13g2_mux2_1_55_X));
+	MUX2 mux_l4_in_2_ (
+		.B(MUX2_49_Y),
+		.A(MUX2_50_Y),
+		.S0(sram[3]),
+		.Y(MUX2_55_Y));
 
-	sg13g2_mux2_1 mux_l4_in_3_ (
-		.A1(sg13g2_mux2_1_51_X),
-		.A0(sg13g2_mux2_1_52_X),
-		.S(sram[3]),
-		.X(sg13g2_mux2_1_56_X));
+	MUX2 mux_l4_in_3_ (
+		.B(MUX2_51_Y),
+		.A(MUX2_52_Y),
+		.S0(sram[3]),
+		.Y(MUX2_56_Y));
 
-	sg13g2_mux2_1 mux_l5_in_0_ (
-		.A1(sg13g2_mux2_1_53_X),
-		.A0(sg13g2_mux2_1_54_X),
-		.S(sram[4]),
-		.X(sg13g2_mux2_1_57_X));
+	MUX2 mux_l5_in_0_ (
+		.B(MUX2_53_Y),
+		.A(MUX2_54_Y),
+		.S0(sram[4]),
+		.Y(MUX2_57_Y));
 
-	sg13g2_mux2_1 mux_l5_in_1_ (
-		.A1(sg13g2_mux2_1_55_X),
-		.A0(sg13g2_mux2_1_56_X),
-		.S(sram[4]),
-		.X(sg13g2_mux2_1_58_X));
+	MUX2 mux_l5_in_1_ (
+		.B(MUX2_55_Y),
+		.A(MUX2_56_Y),
+		.S0(sram[4]),
+		.Y(MUX2_58_Y));
 
-	sg13g2_mux2_1 mux_l6_in_0_ (
-		.A1(sg13g2_mux2_1_57_X),
-		.A0(sg13g2_mux2_1_58_X),
-		.S(sram[5]),
-		.X(sg13g2_mux2_1_59_X));
+	MUX2 mux_l6_in_0_ (
+		.B(MUX2_57_Y),
+		.A(MUX2_58_Y),
+		.S0(sram[5]),
+		.Y(MUX2_59_Y));
 
 endmodule
 // ----- END Verilog module for mux_tree_size60 -----
@@ -1782,43 +1782,43 @@ output [0:0] out;
 //----- END Registered ports -----
 
 
+wire [0:0] INVx1_ASAP7_75t_R_0_Y;
+wire [0:0] INVx1_ASAP7_75t_R_1_Y;
+wire [0:0] MUX2_0_Y;
+wire [0:0] MUX2_1_Y;
 wire [0:0] const1_0_const1;
-wire [0:0] sg13g2_inv_1_0_Y;
-wire [0:0] sg13g2_inv_1_1_Y;
-wire [0:0] sg13g2_mux2_1_0_X;
-wire [0:0] sg13g2_mux2_1_1_X;
 
 // ----- BEGIN Local short connections -----
 // ----- END Local short connections -----
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	sg13g2_inv_1 sg13g2_inv_1_0_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_0_ (
 		.A(in[0]),
-		.Y(sg13g2_inv_1_0_Y));
+		.Y(INVx1_ASAP7_75t_R_0_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_1_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_1_ (
 		.A(in[1]),
-		.Y(sg13g2_inv_1_1_Y));
+		.Y(INVx1_ASAP7_75t_R_1_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_2_ (
-		.A(sg13g2_mux2_1_1_X),
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_2_ (
+		.A(MUX2_1_Y),
 		.Y(out));
 
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	sg13g2_mux2_1 mux_l1_in_0_ (
-		.A1(sg13g2_inv_1_0_Y),
-		.A0(sg13g2_inv_1_1_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_0_X));
+	MUX2 mux_l1_in_0_ (
+		.B(INVx1_ASAP7_75t_R_0_Y),
+		.A(INVx1_ASAP7_75t_R_1_Y),
+		.S0(sram[0]),
+		.Y(MUX2_0_Y));
 
-	sg13g2_mux2_1 mux_l2_in_0_ (
-		.A1(sg13g2_mux2_1_0_X),
-		.A0(const1_0_const1),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_1_X));
+	MUX2 mux_l2_in_0_ (
+		.B(MUX2_0_Y),
+		.A(const1_0_const1),
+		.S0(sram[1]),
+		.Y(MUX2_1_Y));
 
 endmodule
 // ----- END Verilog module for mux_tree_size2 -----
@@ -1857,884 +1857,884 @@ output [0:0] lut6_out;
 //----- END Registered ports -----
 
 
-wire [0:0] sg13g2_buf_4_0_X;
-wire [0:0] sg13g2_buf_4_10_X;
-wire [0:0] sg13g2_buf_4_11_X;
-wire [0:0] sg13g2_buf_4_12_X;
-wire [0:0] sg13g2_buf_4_13_X;
-wire [0:0] sg13g2_buf_4_14_X;
-wire [0:0] sg13g2_buf_4_15_X;
-wire [0:0] sg13g2_buf_4_16_X;
-wire [0:0] sg13g2_buf_4_17_X;
-wire [0:0] sg13g2_buf_4_18_X;
-wire [0:0] sg13g2_buf_4_19_X;
-wire [0:0] sg13g2_buf_4_1_X;
-wire [0:0] sg13g2_buf_4_2_X;
-wire [0:0] sg13g2_buf_4_3_X;
-wire [0:0] sg13g2_buf_4_4_X;
-wire [0:0] sg13g2_buf_4_5_X;
-wire [0:0] sg13g2_buf_4_6_X;
-wire [0:0] sg13g2_buf_4_7_X;
-wire [0:0] sg13g2_buf_4_8_X;
-wire [0:0] sg13g2_buf_4_9_X;
-wire [0:0] sg13g2_inv_1_0_Y;
-wire [0:0] sg13g2_inv_1_10_Y;
-wire [0:0] sg13g2_inv_1_11_Y;
-wire [0:0] sg13g2_inv_1_12_Y;
-wire [0:0] sg13g2_inv_1_13_Y;
-wire [0:0] sg13g2_inv_1_14_Y;
-wire [0:0] sg13g2_inv_1_15_Y;
-wire [0:0] sg13g2_inv_1_16_Y;
-wire [0:0] sg13g2_inv_1_17_Y;
-wire [0:0] sg13g2_inv_1_18_Y;
-wire [0:0] sg13g2_inv_1_19_Y;
-wire [0:0] sg13g2_inv_1_1_Y;
-wire [0:0] sg13g2_inv_1_20_Y;
-wire [0:0] sg13g2_inv_1_21_Y;
-wire [0:0] sg13g2_inv_1_22_Y;
-wire [0:0] sg13g2_inv_1_23_Y;
-wire [0:0] sg13g2_inv_1_24_Y;
-wire [0:0] sg13g2_inv_1_25_Y;
-wire [0:0] sg13g2_inv_1_26_Y;
-wire [0:0] sg13g2_inv_1_27_Y;
-wire [0:0] sg13g2_inv_1_28_Y;
-wire [0:0] sg13g2_inv_1_29_Y;
-wire [0:0] sg13g2_inv_1_2_Y;
-wire [0:0] sg13g2_inv_1_30_Y;
-wire [0:0] sg13g2_inv_1_31_Y;
-wire [0:0] sg13g2_inv_1_32_Y;
-wire [0:0] sg13g2_inv_1_33_Y;
-wire [0:0] sg13g2_inv_1_34_Y;
-wire [0:0] sg13g2_inv_1_35_Y;
-wire [0:0] sg13g2_inv_1_36_Y;
-wire [0:0] sg13g2_inv_1_37_Y;
-wire [0:0] sg13g2_inv_1_38_Y;
-wire [0:0] sg13g2_inv_1_39_Y;
-wire [0:0] sg13g2_inv_1_3_Y;
-wire [0:0] sg13g2_inv_1_40_Y;
-wire [0:0] sg13g2_inv_1_41_Y;
-wire [0:0] sg13g2_inv_1_42_Y;
-wire [0:0] sg13g2_inv_1_43_Y;
-wire [0:0] sg13g2_inv_1_44_Y;
-wire [0:0] sg13g2_inv_1_45_Y;
-wire [0:0] sg13g2_inv_1_46_Y;
-wire [0:0] sg13g2_inv_1_47_Y;
-wire [0:0] sg13g2_inv_1_48_Y;
-wire [0:0] sg13g2_inv_1_49_Y;
-wire [0:0] sg13g2_inv_1_4_Y;
-wire [0:0] sg13g2_inv_1_50_Y;
-wire [0:0] sg13g2_inv_1_51_Y;
-wire [0:0] sg13g2_inv_1_52_Y;
-wire [0:0] sg13g2_inv_1_53_Y;
-wire [0:0] sg13g2_inv_1_54_Y;
-wire [0:0] sg13g2_inv_1_55_Y;
-wire [0:0] sg13g2_inv_1_56_Y;
-wire [0:0] sg13g2_inv_1_57_Y;
-wire [0:0] sg13g2_inv_1_58_Y;
-wire [0:0] sg13g2_inv_1_59_Y;
-wire [0:0] sg13g2_inv_1_5_Y;
-wire [0:0] sg13g2_inv_1_60_Y;
-wire [0:0] sg13g2_inv_1_61_Y;
-wire [0:0] sg13g2_inv_1_62_Y;
-wire [0:0] sg13g2_inv_1_63_Y;
-wire [0:0] sg13g2_inv_1_6_Y;
-wire [0:0] sg13g2_inv_1_7_Y;
-wire [0:0] sg13g2_inv_1_8_Y;
-wire [0:0] sg13g2_inv_1_9_Y;
-wire [0:0] sg13g2_mux2_1_0_X;
-wire [0:0] sg13g2_mux2_1_10_X;
-wire [0:0] sg13g2_mux2_1_11_X;
-wire [0:0] sg13g2_mux2_1_12_X;
-wire [0:0] sg13g2_mux2_1_13_X;
-wire [0:0] sg13g2_mux2_1_14_X;
-wire [0:0] sg13g2_mux2_1_15_X;
-wire [0:0] sg13g2_mux2_1_16_X;
-wire [0:0] sg13g2_mux2_1_17_X;
-wire [0:0] sg13g2_mux2_1_18_X;
-wire [0:0] sg13g2_mux2_1_19_X;
-wire [0:0] sg13g2_mux2_1_1_X;
-wire [0:0] sg13g2_mux2_1_20_X;
-wire [0:0] sg13g2_mux2_1_21_X;
-wire [0:0] sg13g2_mux2_1_22_X;
-wire [0:0] sg13g2_mux2_1_23_X;
-wire [0:0] sg13g2_mux2_1_24_X;
-wire [0:0] sg13g2_mux2_1_25_X;
-wire [0:0] sg13g2_mux2_1_26_X;
-wire [0:0] sg13g2_mux2_1_27_X;
-wire [0:0] sg13g2_mux2_1_28_X;
-wire [0:0] sg13g2_mux2_1_29_X;
-wire [0:0] sg13g2_mux2_1_2_X;
-wire [0:0] sg13g2_mux2_1_30_X;
-wire [0:0] sg13g2_mux2_1_31_X;
-wire [0:0] sg13g2_mux2_1_32_X;
-wire [0:0] sg13g2_mux2_1_33_X;
-wire [0:0] sg13g2_mux2_1_34_X;
-wire [0:0] sg13g2_mux2_1_35_X;
-wire [0:0] sg13g2_mux2_1_36_X;
-wire [0:0] sg13g2_mux2_1_37_X;
-wire [0:0] sg13g2_mux2_1_38_X;
-wire [0:0] sg13g2_mux2_1_39_X;
-wire [0:0] sg13g2_mux2_1_3_X;
-wire [0:0] sg13g2_mux2_1_40_X;
-wire [0:0] sg13g2_mux2_1_41_X;
-wire [0:0] sg13g2_mux2_1_42_X;
-wire [0:0] sg13g2_mux2_1_43_X;
-wire [0:0] sg13g2_mux2_1_44_X;
-wire [0:0] sg13g2_mux2_1_45_X;
-wire [0:0] sg13g2_mux2_1_46_X;
-wire [0:0] sg13g2_mux2_1_47_X;
-wire [0:0] sg13g2_mux2_1_48_X;
-wire [0:0] sg13g2_mux2_1_49_X;
-wire [0:0] sg13g2_mux2_1_4_X;
-wire [0:0] sg13g2_mux2_1_50_X;
-wire [0:0] sg13g2_mux2_1_51_X;
-wire [0:0] sg13g2_mux2_1_52_X;
-wire [0:0] sg13g2_mux2_1_53_X;
-wire [0:0] sg13g2_mux2_1_54_X;
-wire [0:0] sg13g2_mux2_1_55_X;
-wire [0:0] sg13g2_mux2_1_56_X;
-wire [0:0] sg13g2_mux2_1_57_X;
-wire [0:0] sg13g2_mux2_1_58_X;
-wire [0:0] sg13g2_mux2_1_59_X;
-wire [0:0] sg13g2_mux2_1_5_X;
-wire [0:0] sg13g2_mux2_1_60_X;
-wire [0:0] sg13g2_mux2_1_61_X;
-wire [0:0] sg13g2_mux2_1_62_X;
-wire [0:0] sg13g2_mux2_1_6_X;
-wire [0:0] sg13g2_mux2_1_7_X;
-wire [0:0] sg13g2_mux2_1_8_X;
-wire [0:0] sg13g2_mux2_1_9_X;
+wire [0:0] BUFx4_ASAP7_75t_R_0_Y;
+wire [0:0] BUFx4_ASAP7_75t_R_10_Y;
+wire [0:0] BUFx4_ASAP7_75t_R_11_Y;
+wire [0:0] BUFx4_ASAP7_75t_R_12_Y;
+wire [0:0] BUFx4_ASAP7_75t_R_13_Y;
+wire [0:0] BUFx4_ASAP7_75t_R_14_Y;
+wire [0:0] BUFx4_ASAP7_75t_R_15_Y;
+wire [0:0] BUFx4_ASAP7_75t_R_16_Y;
+wire [0:0] BUFx4_ASAP7_75t_R_17_Y;
+wire [0:0] BUFx4_ASAP7_75t_R_18_Y;
+wire [0:0] BUFx4_ASAP7_75t_R_19_Y;
+wire [0:0] BUFx4_ASAP7_75t_R_1_Y;
+wire [0:0] BUFx4_ASAP7_75t_R_2_Y;
+wire [0:0] BUFx4_ASAP7_75t_R_3_Y;
+wire [0:0] BUFx4_ASAP7_75t_R_4_Y;
+wire [0:0] BUFx4_ASAP7_75t_R_5_Y;
+wire [0:0] BUFx4_ASAP7_75t_R_6_Y;
+wire [0:0] BUFx4_ASAP7_75t_R_7_Y;
+wire [0:0] BUFx4_ASAP7_75t_R_8_Y;
+wire [0:0] BUFx4_ASAP7_75t_R_9_Y;
+wire [0:0] INVx1_ASAP7_75t_R_0_Y;
+wire [0:0] INVx1_ASAP7_75t_R_10_Y;
+wire [0:0] INVx1_ASAP7_75t_R_11_Y;
+wire [0:0] INVx1_ASAP7_75t_R_12_Y;
+wire [0:0] INVx1_ASAP7_75t_R_13_Y;
+wire [0:0] INVx1_ASAP7_75t_R_14_Y;
+wire [0:0] INVx1_ASAP7_75t_R_15_Y;
+wire [0:0] INVx1_ASAP7_75t_R_16_Y;
+wire [0:0] INVx1_ASAP7_75t_R_17_Y;
+wire [0:0] INVx1_ASAP7_75t_R_18_Y;
+wire [0:0] INVx1_ASAP7_75t_R_19_Y;
+wire [0:0] INVx1_ASAP7_75t_R_1_Y;
+wire [0:0] INVx1_ASAP7_75t_R_20_Y;
+wire [0:0] INVx1_ASAP7_75t_R_21_Y;
+wire [0:0] INVx1_ASAP7_75t_R_22_Y;
+wire [0:0] INVx1_ASAP7_75t_R_23_Y;
+wire [0:0] INVx1_ASAP7_75t_R_24_Y;
+wire [0:0] INVx1_ASAP7_75t_R_25_Y;
+wire [0:0] INVx1_ASAP7_75t_R_26_Y;
+wire [0:0] INVx1_ASAP7_75t_R_27_Y;
+wire [0:0] INVx1_ASAP7_75t_R_28_Y;
+wire [0:0] INVx1_ASAP7_75t_R_29_Y;
+wire [0:0] INVx1_ASAP7_75t_R_2_Y;
+wire [0:0] INVx1_ASAP7_75t_R_30_Y;
+wire [0:0] INVx1_ASAP7_75t_R_31_Y;
+wire [0:0] INVx1_ASAP7_75t_R_32_Y;
+wire [0:0] INVx1_ASAP7_75t_R_33_Y;
+wire [0:0] INVx1_ASAP7_75t_R_34_Y;
+wire [0:0] INVx1_ASAP7_75t_R_35_Y;
+wire [0:0] INVx1_ASAP7_75t_R_36_Y;
+wire [0:0] INVx1_ASAP7_75t_R_37_Y;
+wire [0:0] INVx1_ASAP7_75t_R_38_Y;
+wire [0:0] INVx1_ASAP7_75t_R_39_Y;
+wire [0:0] INVx1_ASAP7_75t_R_3_Y;
+wire [0:0] INVx1_ASAP7_75t_R_40_Y;
+wire [0:0] INVx1_ASAP7_75t_R_41_Y;
+wire [0:0] INVx1_ASAP7_75t_R_42_Y;
+wire [0:0] INVx1_ASAP7_75t_R_43_Y;
+wire [0:0] INVx1_ASAP7_75t_R_44_Y;
+wire [0:0] INVx1_ASAP7_75t_R_45_Y;
+wire [0:0] INVx1_ASAP7_75t_R_46_Y;
+wire [0:0] INVx1_ASAP7_75t_R_47_Y;
+wire [0:0] INVx1_ASAP7_75t_R_48_Y;
+wire [0:0] INVx1_ASAP7_75t_R_49_Y;
+wire [0:0] INVx1_ASAP7_75t_R_4_Y;
+wire [0:0] INVx1_ASAP7_75t_R_50_Y;
+wire [0:0] INVx1_ASAP7_75t_R_51_Y;
+wire [0:0] INVx1_ASAP7_75t_R_52_Y;
+wire [0:0] INVx1_ASAP7_75t_R_53_Y;
+wire [0:0] INVx1_ASAP7_75t_R_54_Y;
+wire [0:0] INVx1_ASAP7_75t_R_55_Y;
+wire [0:0] INVx1_ASAP7_75t_R_56_Y;
+wire [0:0] INVx1_ASAP7_75t_R_57_Y;
+wire [0:0] INVx1_ASAP7_75t_R_58_Y;
+wire [0:0] INVx1_ASAP7_75t_R_59_Y;
+wire [0:0] INVx1_ASAP7_75t_R_5_Y;
+wire [0:0] INVx1_ASAP7_75t_R_60_Y;
+wire [0:0] INVx1_ASAP7_75t_R_61_Y;
+wire [0:0] INVx1_ASAP7_75t_R_62_Y;
+wire [0:0] INVx1_ASAP7_75t_R_63_Y;
+wire [0:0] INVx1_ASAP7_75t_R_6_Y;
+wire [0:0] INVx1_ASAP7_75t_R_7_Y;
+wire [0:0] INVx1_ASAP7_75t_R_8_Y;
+wire [0:0] INVx1_ASAP7_75t_R_9_Y;
+wire [0:0] MUX2_0_Y;
+wire [0:0] MUX2_10_Y;
+wire [0:0] MUX2_11_Y;
+wire [0:0] MUX2_12_Y;
+wire [0:0] MUX2_13_Y;
+wire [0:0] MUX2_14_Y;
+wire [0:0] MUX2_15_Y;
+wire [0:0] MUX2_16_Y;
+wire [0:0] MUX2_17_Y;
+wire [0:0] MUX2_18_Y;
+wire [0:0] MUX2_19_Y;
+wire [0:0] MUX2_1_Y;
+wire [0:0] MUX2_20_Y;
+wire [0:0] MUX2_21_Y;
+wire [0:0] MUX2_22_Y;
+wire [0:0] MUX2_23_Y;
+wire [0:0] MUX2_24_Y;
+wire [0:0] MUX2_25_Y;
+wire [0:0] MUX2_26_Y;
+wire [0:0] MUX2_27_Y;
+wire [0:0] MUX2_28_Y;
+wire [0:0] MUX2_29_Y;
+wire [0:0] MUX2_2_Y;
+wire [0:0] MUX2_30_Y;
+wire [0:0] MUX2_31_Y;
+wire [0:0] MUX2_32_Y;
+wire [0:0] MUX2_33_Y;
+wire [0:0] MUX2_34_Y;
+wire [0:0] MUX2_35_Y;
+wire [0:0] MUX2_36_Y;
+wire [0:0] MUX2_37_Y;
+wire [0:0] MUX2_38_Y;
+wire [0:0] MUX2_39_Y;
+wire [0:0] MUX2_3_Y;
+wire [0:0] MUX2_40_Y;
+wire [0:0] MUX2_41_Y;
+wire [0:0] MUX2_42_Y;
+wire [0:0] MUX2_43_Y;
+wire [0:0] MUX2_44_Y;
+wire [0:0] MUX2_45_Y;
+wire [0:0] MUX2_46_Y;
+wire [0:0] MUX2_47_Y;
+wire [0:0] MUX2_48_Y;
+wire [0:0] MUX2_49_Y;
+wire [0:0] MUX2_4_Y;
+wire [0:0] MUX2_50_Y;
+wire [0:0] MUX2_51_Y;
+wire [0:0] MUX2_52_Y;
+wire [0:0] MUX2_53_Y;
+wire [0:0] MUX2_54_Y;
+wire [0:0] MUX2_55_Y;
+wire [0:0] MUX2_56_Y;
+wire [0:0] MUX2_57_Y;
+wire [0:0] MUX2_58_Y;
+wire [0:0] MUX2_59_Y;
+wire [0:0] MUX2_5_Y;
+wire [0:0] MUX2_60_Y;
+wire [0:0] MUX2_61_Y;
+wire [0:0] MUX2_62_Y;
+wire [0:0] MUX2_6_Y;
+wire [0:0] MUX2_7_Y;
+wire [0:0] MUX2_8_Y;
+wire [0:0] MUX2_9_Y;
 
 // ----- BEGIN Local short connections -----
 // ----- END Local short connections -----
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	sg13g2_inv_1 sg13g2_inv_1_0_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_0_ (
 		.A(in[0]),
-		.Y(sg13g2_inv_1_0_Y));
+		.Y(INVx1_ASAP7_75t_R_0_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_1_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_1_ (
 		.A(in[1]),
-		.Y(sg13g2_inv_1_1_Y));
+		.Y(INVx1_ASAP7_75t_R_1_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_2_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_2_ (
 		.A(in[2]),
-		.Y(sg13g2_inv_1_2_Y));
+		.Y(INVx1_ASAP7_75t_R_2_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_3_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_3_ (
 		.A(in[3]),
-		.Y(sg13g2_inv_1_3_Y));
+		.Y(INVx1_ASAP7_75t_R_3_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_4_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_4_ (
 		.A(in[4]),
-		.Y(sg13g2_inv_1_4_Y));
+		.Y(INVx1_ASAP7_75t_R_4_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_5_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_5_ (
 		.A(in[5]),
-		.Y(sg13g2_inv_1_5_Y));
+		.Y(INVx1_ASAP7_75t_R_5_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_6_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_6_ (
 		.A(in[6]),
-		.Y(sg13g2_inv_1_6_Y));
+		.Y(INVx1_ASAP7_75t_R_6_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_7_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_7_ (
 		.A(in[7]),
-		.Y(sg13g2_inv_1_7_Y));
+		.Y(INVx1_ASAP7_75t_R_7_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_8_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_8_ (
 		.A(in[8]),
-		.Y(sg13g2_inv_1_8_Y));
+		.Y(INVx1_ASAP7_75t_R_8_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_9_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_9_ (
 		.A(in[9]),
-		.Y(sg13g2_inv_1_9_Y));
+		.Y(INVx1_ASAP7_75t_R_9_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_10_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_10_ (
 		.A(in[10]),
-		.Y(sg13g2_inv_1_10_Y));
+		.Y(INVx1_ASAP7_75t_R_10_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_11_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_11_ (
 		.A(in[11]),
-		.Y(sg13g2_inv_1_11_Y));
+		.Y(INVx1_ASAP7_75t_R_11_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_12_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_12_ (
 		.A(in[12]),
-		.Y(sg13g2_inv_1_12_Y));
+		.Y(INVx1_ASAP7_75t_R_12_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_13_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_13_ (
 		.A(in[13]),
-		.Y(sg13g2_inv_1_13_Y));
+		.Y(INVx1_ASAP7_75t_R_13_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_14_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_14_ (
 		.A(in[14]),
-		.Y(sg13g2_inv_1_14_Y));
+		.Y(INVx1_ASAP7_75t_R_14_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_15_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_15_ (
 		.A(in[15]),
-		.Y(sg13g2_inv_1_15_Y));
+		.Y(INVx1_ASAP7_75t_R_15_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_16_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_16_ (
 		.A(in[16]),
-		.Y(sg13g2_inv_1_16_Y));
+		.Y(INVx1_ASAP7_75t_R_16_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_17_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_17_ (
 		.A(in[17]),
-		.Y(sg13g2_inv_1_17_Y));
+		.Y(INVx1_ASAP7_75t_R_17_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_18_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_18_ (
 		.A(in[18]),
-		.Y(sg13g2_inv_1_18_Y));
+		.Y(INVx1_ASAP7_75t_R_18_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_19_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_19_ (
 		.A(in[19]),
-		.Y(sg13g2_inv_1_19_Y));
+		.Y(INVx1_ASAP7_75t_R_19_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_20_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_20_ (
 		.A(in[20]),
-		.Y(sg13g2_inv_1_20_Y));
+		.Y(INVx1_ASAP7_75t_R_20_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_21_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_21_ (
 		.A(in[21]),
-		.Y(sg13g2_inv_1_21_Y));
+		.Y(INVx1_ASAP7_75t_R_21_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_22_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_22_ (
 		.A(in[22]),
-		.Y(sg13g2_inv_1_22_Y));
+		.Y(INVx1_ASAP7_75t_R_22_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_23_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_23_ (
 		.A(in[23]),
-		.Y(sg13g2_inv_1_23_Y));
+		.Y(INVx1_ASAP7_75t_R_23_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_24_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_24_ (
 		.A(in[24]),
-		.Y(sg13g2_inv_1_24_Y));
+		.Y(INVx1_ASAP7_75t_R_24_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_25_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_25_ (
 		.A(in[25]),
-		.Y(sg13g2_inv_1_25_Y));
+		.Y(INVx1_ASAP7_75t_R_25_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_26_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_26_ (
 		.A(in[26]),
-		.Y(sg13g2_inv_1_26_Y));
+		.Y(INVx1_ASAP7_75t_R_26_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_27_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_27_ (
 		.A(in[27]),
-		.Y(sg13g2_inv_1_27_Y));
+		.Y(INVx1_ASAP7_75t_R_27_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_28_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_28_ (
 		.A(in[28]),
-		.Y(sg13g2_inv_1_28_Y));
+		.Y(INVx1_ASAP7_75t_R_28_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_29_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_29_ (
 		.A(in[29]),
-		.Y(sg13g2_inv_1_29_Y));
+		.Y(INVx1_ASAP7_75t_R_29_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_30_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_30_ (
 		.A(in[30]),
-		.Y(sg13g2_inv_1_30_Y));
+		.Y(INVx1_ASAP7_75t_R_30_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_31_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_31_ (
 		.A(in[31]),
-		.Y(sg13g2_inv_1_31_Y));
+		.Y(INVx1_ASAP7_75t_R_31_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_32_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_32_ (
 		.A(in[32]),
-		.Y(sg13g2_inv_1_32_Y));
+		.Y(INVx1_ASAP7_75t_R_32_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_33_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_33_ (
 		.A(in[33]),
-		.Y(sg13g2_inv_1_33_Y));
+		.Y(INVx1_ASAP7_75t_R_33_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_34_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_34_ (
 		.A(in[34]),
-		.Y(sg13g2_inv_1_34_Y));
+		.Y(INVx1_ASAP7_75t_R_34_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_35_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_35_ (
 		.A(in[35]),
-		.Y(sg13g2_inv_1_35_Y));
+		.Y(INVx1_ASAP7_75t_R_35_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_36_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_36_ (
 		.A(in[36]),
-		.Y(sg13g2_inv_1_36_Y));
+		.Y(INVx1_ASAP7_75t_R_36_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_37_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_37_ (
 		.A(in[37]),
-		.Y(sg13g2_inv_1_37_Y));
+		.Y(INVx1_ASAP7_75t_R_37_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_38_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_38_ (
 		.A(in[38]),
-		.Y(sg13g2_inv_1_38_Y));
+		.Y(INVx1_ASAP7_75t_R_38_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_39_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_39_ (
 		.A(in[39]),
-		.Y(sg13g2_inv_1_39_Y));
+		.Y(INVx1_ASAP7_75t_R_39_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_40_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_40_ (
 		.A(in[40]),
-		.Y(sg13g2_inv_1_40_Y));
+		.Y(INVx1_ASAP7_75t_R_40_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_41_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_41_ (
 		.A(in[41]),
-		.Y(sg13g2_inv_1_41_Y));
+		.Y(INVx1_ASAP7_75t_R_41_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_42_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_42_ (
 		.A(in[42]),
-		.Y(sg13g2_inv_1_42_Y));
+		.Y(INVx1_ASAP7_75t_R_42_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_43_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_43_ (
 		.A(in[43]),
-		.Y(sg13g2_inv_1_43_Y));
+		.Y(INVx1_ASAP7_75t_R_43_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_44_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_44_ (
 		.A(in[44]),
-		.Y(sg13g2_inv_1_44_Y));
+		.Y(INVx1_ASAP7_75t_R_44_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_45_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_45_ (
 		.A(in[45]),
-		.Y(sg13g2_inv_1_45_Y));
+		.Y(INVx1_ASAP7_75t_R_45_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_46_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_46_ (
 		.A(in[46]),
-		.Y(sg13g2_inv_1_46_Y));
+		.Y(INVx1_ASAP7_75t_R_46_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_47_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_47_ (
 		.A(in[47]),
-		.Y(sg13g2_inv_1_47_Y));
+		.Y(INVx1_ASAP7_75t_R_47_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_48_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_48_ (
 		.A(in[48]),
-		.Y(sg13g2_inv_1_48_Y));
+		.Y(INVx1_ASAP7_75t_R_48_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_49_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_49_ (
 		.A(in[49]),
-		.Y(sg13g2_inv_1_49_Y));
+		.Y(INVx1_ASAP7_75t_R_49_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_50_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_50_ (
 		.A(in[50]),
-		.Y(sg13g2_inv_1_50_Y));
+		.Y(INVx1_ASAP7_75t_R_50_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_51_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_51_ (
 		.A(in[51]),
-		.Y(sg13g2_inv_1_51_Y));
+		.Y(INVx1_ASAP7_75t_R_51_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_52_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_52_ (
 		.A(in[52]),
-		.Y(sg13g2_inv_1_52_Y));
+		.Y(INVx1_ASAP7_75t_R_52_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_53_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_53_ (
 		.A(in[53]),
-		.Y(sg13g2_inv_1_53_Y));
+		.Y(INVx1_ASAP7_75t_R_53_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_54_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_54_ (
 		.A(in[54]),
-		.Y(sg13g2_inv_1_54_Y));
+		.Y(INVx1_ASAP7_75t_R_54_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_55_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_55_ (
 		.A(in[55]),
-		.Y(sg13g2_inv_1_55_Y));
+		.Y(INVx1_ASAP7_75t_R_55_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_56_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_56_ (
 		.A(in[56]),
-		.Y(sg13g2_inv_1_56_Y));
+		.Y(INVx1_ASAP7_75t_R_56_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_57_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_57_ (
 		.A(in[57]),
-		.Y(sg13g2_inv_1_57_Y));
+		.Y(INVx1_ASAP7_75t_R_57_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_58_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_58_ (
 		.A(in[58]),
-		.Y(sg13g2_inv_1_58_Y));
+		.Y(INVx1_ASAP7_75t_R_58_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_59_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_59_ (
 		.A(in[59]),
-		.Y(sg13g2_inv_1_59_Y));
+		.Y(INVx1_ASAP7_75t_R_59_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_60_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_60_ (
 		.A(in[60]),
-		.Y(sg13g2_inv_1_60_Y));
+		.Y(INVx1_ASAP7_75t_R_60_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_61_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_61_ (
 		.A(in[61]),
-		.Y(sg13g2_inv_1_61_Y));
+		.Y(INVx1_ASAP7_75t_R_61_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_62_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_62_ (
 		.A(in[62]),
-		.Y(sg13g2_inv_1_62_Y));
+		.Y(INVx1_ASAP7_75t_R_62_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_63_ (
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_63_ (
 		.A(in[63]),
-		.Y(sg13g2_inv_1_63_Y));
+		.Y(INVx1_ASAP7_75t_R_63_Y));
 
-	sg13g2_inv_1 sg13g2_inv_1_64_ (
-		.A(sg13g2_mux2_1_60_X),
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_64_ (
+		.A(MUX2_60_Y),
 		.Y(lut5_out[0]));
 
-	sg13g2_inv_1 sg13g2_inv_1_65_ (
-		.A(sg13g2_mux2_1_61_X),
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_65_ (
+		.A(MUX2_61_Y),
 		.Y(lut5_out[1]));
 
-	sg13g2_inv_1 sg13g2_inv_1_66_ (
-		.A(sg13g2_mux2_1_62_X),
+	INVx1_ASAP7_75t_R INVx1_ASAP7_75t_R_66_ (
+		.A(MUX2_62_Y),
 		.Y(lut6_out));
 
-	sg13g2_mux2_1 mux_l1_in_0_ (
-		.A1(sg13g2_inv_1_0_Y),
-		.A0(sg13g2_inv_1_1_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_0_X));
-
-	sg13g2_mux2_1 mux_l1_in_1_ (
-		.A1(sg13g2_inv_1_2_Y),
-		.A0(sg13g2_inv_1_3_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_1_X));
-
-	sg13g2_mux2_1 mux_l1_in_2_ (
-		.A1(sg13g2_inv_1_4_Y),
-		.A0(sg13g2_inv_1_5_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_2_X));
-
-	sg13g2_mux2_1 mux_l1_in_3_ (
-		.A1(sg13g2_inv_1_6_Y),
-		.A0(sg13g2_inv_1_7_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_3_X));
-
-	sg13g2_mux2_1 mux_l1_in_4_ (
-		.A1(sg13g2_inv_1_8_Y),
-		.A0(sg13g2_inv_1_9_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_4_X));
-
-	sg13g2_mux2_1 mux_l1_in_5_ (
-		.A1(sg13g2_inv_1_10_Y),
-		.A0(sg13g2_inv_1_11_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_5_X));
-
-	sg13g2_mux2_1 mux_l1_in_6_ (
-		.A1(sg13g2_inv_1_12_Y),
-		.A0(sg13g2_inv_1_13_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_6_X));
-
-	sg13g2_mux2_1 mux_l1_in_7_ (
-		.A1(sg13g2_inv_1_14_Y),
-		.A0(sg13g2_inv_1_15_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_7_X));
-
-	sg13g2_mux2_1 mux_l1_in_8_ (
-		.A1(sg13g2_inv_1_16_Y),
-		.A0(sg13g2_inv_1_17_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_8_X));
-
-	sg13g2_mux2_1 mux_l1_in_9_ (
-		.A1(sg13g2_inv_1_18_Y),
-		.A0(sg13g2_inv_1_19_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_9_X));
-
-	sg13g2_mux2_1 mux_l1_in_10_ (
-		.A1(sg13g2_inv_1_20_Y),
-		.A0(sg13g2_inv_1_21_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_10_X));
-
-	sg13g2_mux2_1 mux_l1_in_11_ (
-		.A1(sg13g2_inv_1_22_Y),
-		.A0(sg13g2_inv_1_23_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_11_X));
-
-	sg13g2_mux2_1 mux_l1_in_12_ (
-		.A1(sg13g2_inv_1_24_Y),
-		.A0(sg13g2_inv_1_25_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_12_X));
-
-	sg13g2_mux2_1 mux_l1_in_13_ (
-		.A1(sg13g2_inv_1_26_Y),
-		.A0(sg13g2_inv_1_27_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_13_X));
-
-	sg13g2_mux2_1 mux_l1_in_14_ (
-		.A1(sg13g2_inv_1_28_Y),
-		.A0(sg13g2_inv_1_29_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_14_X));
-
-	sg13g2_mux2_1 mux_l1_in_15_ (
-		.A1(sg13g2_inv_1_30_Y),
-		.A0(sg13g2_inv_1_31_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_15_X));
-
-	sg13g2_mux2_1 mux_l1_in_16_ (
-		.A1(sg13g2_inv_1_32_Y),
-		.A0(sg13g2_inv_1_33_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_16_X));
-
-	sg13g2_mux2_1 mux_l1_in_17_ (
-		.A1(sg13g2_inv_1_34_Y),
-		.A0(sg13g2_inv_1_35_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_17_X));
-
-	sg13g2_mux2_1 mux_l1_in_18_ (
-		.A1(sg13g2_inv_1_36_Y),
-		.A0(sg13g2_inv_1_37_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_18_X));
-
-	sg13g2_mux2_1 mux_l1_in_19_ (
-		.A1(sg13g2_inv_1_38_Y),
-		.A0(sg13g2_inv_1_39_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_19_X));
-
-	sg13g2_mux2_1 mux_l1_in_20_ (
-		.A1(sg13g2_inv_1_40_Y),
-		.A0(sg13g2_inv_1_41_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_20_X));
-
-	sg13g2_mux2_1 mux_l1_in_21_ (
-		.A1(sg13g2_inv_1_42_Y),
-		.A0(sg13g2_inv_1_43_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_21_X));
-
-	sg13g2_mux2_1 mux_l1_in_22_ (
-		.A1(sg13g2_inv_1_44_Y),
-		.A0(sg13g2_inv_1_45_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_22_X));
-
-	sg13g2_mux2_1 mux_l1_in_23_ (
-		.A1(sg13g2_inv_1_46_Y),
-		.A0(sg13g2_inv_1_47_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_23_X));
-
-	sg13g2_mux2_1 mux_l1_in_24_ (
-		.A1(sg13g2_inv_1_48_Y),
-		.A0(sg13g2_inv_1_49_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_24_X));
-
-	sg13g2_mux2_1 mux_l1_in_25_ (
-		.A1(sg13g2_inv_1_50_Y),
-		.A0(sg13g2_inv_1_51_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_25_X));
-
-	sg13g2_mux2_1 mux_l1_in_26_ (
-		.A1(sg13g2_inv_1_52_Y),
-		.A0(sg13g2_inv_1_53_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_26_X));
-
-	sg13g2_mux2_1 mux_l1_in_27_ (
-		.A1(sg13g2_inv_1_54_Y),
-		.A0(sg13g2_inv_1_55_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_27_X));
-
-	sg13g2_mux2_1 mux_l1_in_28_ (
-		.A1(sg13g2_inv_1_56_Y),
-		.A0(sg13g2_inv_1_57_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_28_X));
-
-	sg13g2_mux2_1 mux_l1_in_29_ (
-		.A1(sg13g2_inv_1_58_Y),
-		.A0(sg13g2_inv_1_59_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_29_X));
-
-	sg13g2_mux2_1 mux_l1_in_30_ (
-		.A1(sg13g2_inv_1_60_Y),
-		.A0(sg13g2_inv_1_61_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_30_X));
-
-	sg13g2_mux2_1 mux_l1_in_31_ (
-		.A1(sg13g2_inv_1_62_Y),
-		.A0(sg13g2_inv_1_63_Y),
-		.S(sram[0]),
-		.X(sg13g2_mux2_1_31_X));
-
-	sg13g2_mux2_1 mux_l2_in_0_ (
-		.A1(sg13g2_mux2_1_0_X),
-		.A0(sg13g2_mux2_1_1_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_32_X));
-
-	sg13g2_mux2_1 mux_l2_in_1_ (
-		.A1(sg13g2_mux2_1_2_X),
-		.A0(sg13g2_mux2_1_3_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_33_X));
-
-	sg13g2_mux2_1 mux_l2_in_2_ (
-		.A1(sg13g2_mux2_1_4_X),
-		.A0(sg13g2_mux2_1_5_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_34_X));
-
-	sg13g2_mux2_1 mux_l2_in_3_ (
-		.A1(sg13g2_mux2_1_6_X),
-		.A0(sg13g2_mux2_1_7_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_35_X));
-
-	sg13g2_mux2_1 mux_l2_in_4_ (
-		.A1(sg13g2_mux2_1_8_X),
-		.A0(sg13g2_mux2_1_9_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_36_X));
-
-	sg13g2_mux2_1 mux_l2_in_5_ (
-		.A1(sg13g2_mux2_1_10_X),
-		.A0(sg13g2_mux2_1_11_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_37_X));
-
-	sg13g2_mux2_1 mux_l2_in_6_ (
-		.A1(sg13g2_mux2_1_12_X),
-		.A0(sg13g2_mux2_1_13_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_38_X));
-
-	sg13g2_mux2_1 mux_l2_in_7_ (
-		.A1(sg13g2_mux2_1_14_X),
-		.A0(sg13g2_mux2_1_15_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_39_X));
-
-	sg13g2_mux2_1 mux_l2_in_8_ (
-		.A1(sg13g2_mux2_1_16_X),
-		.A0(sg13g2_mux2_1_17_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_40_X));
-
-	sg13g2_mux2_1 mux_l2_in_9_ (
-		.A1(sg13g2_mux2_1_18_X),
-		.A0(sg13g2_mux2_1_19_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_41_X));
-
-	sg13g2_mux2_1 mux_l2_in_10_ (
-		.A1(sg13g2_mux2_1_20_X),
-		.A0(sg13g2_mux2_1_21_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_42_X));
-
-	sg13g2_mux2_1 mux_l2_in_11_ (
-		.A1(sg13g2_mux2_1_22_X),
-		.A0(sg13g2_mux2_1_23_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_43_X));
-
-	sg13g2_mux2_1 mux_l2_in_12_ (
-		.A1(sg13g2_mux2_1_24_X),
-		.A0(sg13g2_mux2_1_25_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_44_X));
-
-	sg13g2_mux2_1 mux_l2_in_13_ (
-		.A1(sg13g2_mux2_1_26_X),
-		.A0(sg13g2_mux2_1_27_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_45_X));
-
-	sg13g2_mux2_1 mux_l2_in_14_ (
-		.A1(sg13g2_mux2_1_28_X),
-		.A0(sg13g2_mux2_1_29_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_46_X));
-
-	sg13g2_mux2_1 mux_l2_in_15_ (
-		.A1(sg13g2_mux2_1_30_X),
-		.A0(sg13g2_mux2_1_31_X),
-		.S(sram[1]),
-		.X(sg13g2_mux2_1_47_X));
-
-	sg13g2_mux2_1 mux_l3_in_0_ (
-		.A1(sg13g2_buf_4_0_X),
-		.A0(sg13g2_buf_4_1_X),
-		.S(sram[2]),
-		.X(sg13g2_mux2_1_48_X));
-
-	sg13g2_mux2_1 mux_l3_in_1_ (
-		.A1(sg13g2_buf_4_2_X),
-		.A0(sg13g2_buf_4_3_X),
-		.S(sram[2]),
-		.X(sg13g2_mux2_1_49_X));
-
-	sg13g2_mux2_1 mux_l3_in_2_ (
-		.A1(sg13g2_buf_4_4_X),
-		.A0(sg13g2_buf_4_5_X),
-		.S(sram[2]),
-		.X(sg13g2_mux2_1_50_X));
-
-	sg13g2_mux2_1 mux_l3_in_3_ (
-		.A1(sg13g2_buf_4_6_X),
-		.A0(sg13g2_buf_4_7_X),
-		.S(sram[2]),
-		.X(sg13g2_mux2_1_51_X));
-
-	sg13g2_mux2_1 mux_l3_in_4_ (
-		.A1(sg13g2_buf_4_8_X),
-		.A0(sg13g2_buf_4_9_X),
-		.S(sram[2]),
-		.X(sg13g2_mux2_1_52_X));
-
-	sg13g2_mux2_1 mux_l3_in_5_ (
-		.A1(sg13g2_buf_4_10_X),
-		.A0(sg13g2_buf_4_11_X),
-		.S(sram[2]),
-		.X(sg13g2_mux2_1_53_X));
-
-	sg13g2_mux2_1 mux_l3_in_6_ (
-		.A1(sg13g2_buf_4_12_X),
-		.A0(sg13g2_buf_4_13_X),
-		.S(sram[2]),
-		.X(sg13g2_mux2_1_54_X));
-
-	sg13g2_mux2_1 mux_l3_in_7_ (
-		.A1(sg13g2_buf_4_14_X),
-		.A0(sg13g2_buf_4_15_X),
-		.S(sram[2]),
-		.X(sg13g2_mux2_1_55_X));
-
-	sg13g2_mux2_1 mux_l4_in_0_ (
-		.A1(sg13g2_mux2_1_48_X),
-		.A0(sg13g2_mux2_1_49_X),
-		.S(sram[3]),
-		.X(sg13g2_mux2_1_56_X));
-
-	sg13g2_mux2_1 mux_l4_in_1_ (
-		.A1(sg13g2_mux2_1_50_X),
-		.A0(sg13g2_mux2_1_51_X),
-		.S(sram[3]),
-		.X(sg13g2_mux2_1_57_X));
-
-	sg13g2_mux2_1 mux_l4_in_2_ (
-		.A1(sg13g2_mux2_1_52_X),
-		.A0(sg13g2_mux2_1_53_X),
-		.S(sram[3]),
-		.X(sg13g2_mux2_1_58_X));
-
-	sg13g2_mux2_1 mux_l4_in_3_ (
-		.A1(sg13g2_mux2_1_54_X),
-		.A0(sg13g2_mux2_1_55_X),
-		.S(sram[3]),
-		.X(sg13g2_mux2_1_59_X));
-
-	sg13g2_mux2_1 mux_l5_in_0_ (
-		.A1(sg13g2_buf_4_16_X),
-		.A0(sg13g2_buf_4_17_X),
-		.S(sram[4]),
-		.X(sg13g2_mux2_1_60_X));
-
-	sg13g2_mux2_1 mux_l5_in_1_ (
-		.A1(sg13g2_buf_4_18_X),
-		.A0(sg13g2_buf_4_19_X),
-		.S(sram[4]),
-		.X(sg13g2_mux2_1_61_X));
-
-	sg13g2_mux2_1 mux_l6_in_0_ (
-		.A1(sg13g2_mux2_1_60_X),
-		.A0(sg13g2_mux2_1_61_X),
-		.S(sram[5]),
-		.X(sg13g2_mux2_1_62_X));
-
-	sg13g2_buf_4 sg13g2_buf_4_0_ (
-		.A(sg13g2_mux2_1_32_X),
-		.X(sg13g2_buf_4_0_X));
-
-	sg13g2_buf_4 sg13g2_buf_4_1_ (
-		.A(sg13g2_mux2_1_33_X),
-		.X(sg13g2_buf_4_1_X));
-
-	sg13g2_buf_4 sg13g2_buf_4_2_ (
-		.A(sg13g2_mux2_1_34_X),
-		.X(sg13g2_buf_4_2_X));
-
-	sg13g2_buf_4 sg13g2_buf_4_3_ (
-		.A(sg13g2_mux2_1_35_X),
-		.X(sg13g2_buf_4_3_X));
-
-	sg13g2_buf_4 sg13g2_buf_4_4_ (
-		.A(sg13g2_mux2_1_36_X),
-		.X(sg13g2_buf_4_4_X));
-
-	sg13g2_buf_4 sg13g2_buf_4_5_ (
-		.A(sg13g2_mux2_1_37_X),
-		.X(sg13g2_buf_4_5_X));
-
-	sg13g2_buf_4 sg13g2_buf_4_6_ (
-		.A(sg13g2_mux2_1_38_X),
-		.X(sg13g2_buf_4_6_X));
-
-	sg13g2_buf_4 sg13g2_buf_4_7_ (
-		.A(sg13g2_mux2_1_39_X),
-		.X(sg13g2_buf_4_7_X));
-
-	sg13g2_buf_4 sg13g2_buf_4_8_ (
-		.A(sg13g2_mux2_1_40_X),
-		.X(sg13g2_buf_4_8_X));
-
-	sg13g2_buf_4 sg13g2_buf_4_9_ (
-		.A(sg13g2_mux2_1_41_X),
-		.X(sg13g2_buf_4_9_X));
-
-	sg13g2_buf_4 sg13g2_buf_4_10_ (
-		.A(sg13g2_mux2_1_42_X),
-		.X(sg13g2_buf_4_10_X));
-
-	sg13g2_buf_4 sg13g2_buf_4_11_ (
-		.A(sg13g2_mux2_1_43_X),
-		.X(sg13g2_buf_4_11_X));
-
-	sg13g2_buf_4 sg13g2_buf_4_12_ (
-		.A(sg13g2_mux2_1_44_X),
-		.X(sg13g2_buf_4_12_X));
-
-	sg13g2_buf_4 sg13g2_buf_4_13_ (
-		.A(sg13g2_mux2_1_45_X),
-		.X(sg13g2_buf_4_13_X));
-
-	sg13g2_buf_4 sg13g2_buf_4_14_ (
-		.A(sg13g2_mux2_1_46_X),
-		.X(sg13g2_buf_4_14_X));
-
-	sg13g2_buf_4 sg13g2_buf_4_15_ (
-		.A(sg13g2_mux2_1_47_X),
-		.X(sg13g2_buf_4_15_X));
-
-	sg13g2_buf_4 sg13g2_buf_4_16_ (
-		.A(sg13g2_mux2_1_56_X),
-		.X(sg13g2_buf_4_16_X));
-
-	sg13g2_buf_4 sg13g2_buf_4_17_ (
-		.A(sg13g2_mux2_1_57_X),
-		.X(sg13g2_buf_4_17_X));
-
-	sg13g2_buf_4 sg13g2_buf_4_18_ (
-		.A(sg13g2_mux2_1_58_X),
-		.X(sg13g2_buf_4_18_X));
-
-	sg13g2_buf_4 sg13g2_buf_4_19_ (
-		.A(sg13g2_mux2_1_59_X),
-		.X(sg13g2_buf_4_19_X));
+	MUX2 mux_l1_in_0_ (
+		.B(INVx1_ASAP7_75t_R_0_Y),
+		.A(INVx1_ASAP7_75t_R_1_Y),
+		.S0(sram[0]),
+		.Y(MUX2_0_Y));
+
+	MUX2 mux_l1_in_1_ (
+		.B(INVx1_ASAP7_75t_R_2_Y),
+		.A(INVx1_ASAP7_75t_R_3_Y),
+		.S0(sram[0]),
+		.Y(MUX2_1_Y));
+
+	MUX2 mux_l1_in_2_ (
+		.B(INVx1_ASAP7_75t_R_4_Y),
+		.A(INVx1_ASAP7_75t_R_5_Y),
+		.S0(sram[0]),
+		.Y(MUX2_2_Y));
+
+	MUX2 mux_l1_in_3_ (
+		.B(INVx1_ASAP7_75t_R_6_Y),
+		.A(INVx1_ASAP7_75t_R_7_Y),
+		.S0(sram[0]),
+		.Y(MUX2_3_Y));
+
+	MUX2 mux_l1_in_4_ (
+		.B(INVx1_ASAP7_75t_R_8_Y),
+		.A(INVx1_ASAP7_75t_R_9_Y),
+		.S0(sram[0]),
+		.Y(MUX2_4_Y));
+
+	MUX2 mux_l1_in_5_ (
+		.B(INVx1_ASAP7_75t_R_10_Y),
+		.A(INVx1_ASAP7_75t_R_11_Y),
+		.S0(sram[0]),
+		.Y(MUX2_5_Y));
+
+	MUX2 mux_l1_in_6_ (
+		.B(INVx1_ASAP7_75t_R_12_Y),
+		.A(INVx1_ASAP7_75t_R_13_Y),
+		.S0(sram[0]),
+		.Y(MUX2_6_Y));
+
+	MUX2 mux_l1_in_7_ (
+		.B(INVx1_ASAP7_75t_R_14_Y),
+		.A(INVx1_ASAP7_75t_R_15_Y),
+		.S0(sram[0]),
+		.Y(MUX2_7_Y));
+
+	MUX2 mux_l1_in_8_ (
+		.B(INVx1_ASAP7_75t_R_16_Y),
+		.A(INVx1_ASAP7_75t_R_17_Y),
+		.S0(sram[0]),
+		.Y(MUX2_8_Y));
+
+	MUX2 mux_l1_in_9_ (
+		.B(INVx1_ASAP7_75t_R_18_Y),
+		.A(INVx1_ASAP7_75t_R_19_Y),
+		.S0(sram[0]),
+		.Y(MUX2_9_Y));
+
+	MUX2 mux_l1_in_10_ (
+		.B(INVx1_ASAP7_75t_R_20_Y),
+		.A(INVx1_ASAP7_75t_R_21_Y),
+		.S0(sram[0]),
+		.Y(MUX2_10_Y));
+
+	MUX2 mux_l1_in_11_ (
+		.B(INVx1_ASAP7_75t_R_22_Y),
+		.A(INVx1_ASAP7_75t_R_23_Y),
+		.S0(sram[0]),
+		.Y(MUX2_11_Y));
+
+	MUX2 mux_l1_in_12_ (
+		.B(INVx1_ASAP7_75t_R_24_Y),
+		.A(INVx1_ASAP7_75t_R_25_Y),
+		.S0(sram[0]),
+		.Y(MUX2_12_Y));
+
+	MUX2 mux_l1_in_13_ (
+		.B(INVx1_ASAP7_75t_R_26_Y),
+		.A(INVx1_ASAP7_75t_R_27_Y),
+		.S0(sram[0]),
+		.Y(MUX2_13_Y));
+
+	MUX2 mux_l1_in_14_ (
+		.B(INVx1_ASAP7_75t_R_28_Y),
+		.A(INVx1_ASAP7_75t_R_29_Y),
+		.S0(sram[0]),
+		.Y(MUX2_14_Y));
+
+	MUX2 mux_l1_in_15_ (
+		.B(INVx1_ASAP7_75t_R_30_Y),
+		.A(INVx1_ASAP7_75t_R_31_Y),
+		.S0(sram[0]),
+		.Y(MUX2_15_Y));
+
+	MUX2 mux_l1_in_16_ (
+		.B(INVx1_ASAP7_75t_R_32_Y),
+		.A(INVx1_ASAP7_75t_R_33_Y),
+		.S0(sram[0]),
+		.Y(MUX2_16_Y));
+
+	MUX2 mux_l1_in_17_ (
+		.B(INVx1_ASAP7_75t_R_34_Y),
+		.A(INVx1_ASAP7_75t_R_35_Y),
+		.S0(sram[0]),
+		.Y(MUX2_17_Y));
+
+	MUX2 mux_l1_in_18_ (
+		.B(INVx1_ASAP7_75t_R_36_Y),
+		.A(INVx1_ASAP7_75t_R_37_Y),
+		.S0(sram[0]),
+		.Y(MUX2_18_Y));
+
+	MUX2 mux_l1_in_19_ (
+		.B(INVx1_ASAP7_75t_R_38_Y),
+		.A(INVx1_ASAP7_75t_R_39_Y),
+		.S0(sram[0]),
+		.Y(MUX2_19_Y));
+
+	MUX2 mux_l1_in_20_ (
+		.B(INVx1_ASAP7_75t_R_40_Y),
+		.A(INVx1_ASAP7_75t_R_41_Y),
+		.S0(sram[0]),
+		.Y(MUX2_20_Y));
+
+	MUX2 mux_l1_in_21_ (
+		.B(INVx1_ASAP7_75t_R_42_Y),
+		.A(INVx1_ASAP7_75t_R_43_Y),
+		.S0(sram[0]),
+		.Y(MUX2_21_Y));
+
+	MUX2 mux_l1_in_22_ (
+		.B(INVx1_ASAP7_75t_R_44_Y),
+		.A(INVx1_ASAP7_75t_R_45_Y),
+		.S0(sram[0]),
+		.Y(MUX2_22_Y));
+
+	MUX2 mux_l1_in_23_ (
+		.B(INVx1_ASAP7_75t_R_46_Y),
+		.A(INVx1_ASAP7_75t_R_47_Y),
+		.S0(sram[0]),
+		.Y(MUX2_23_Y));
+
+	MUX2 mux_l1_in_24_ (
+		.B(INVx1_ASAP7_75t_R_48_Y),
+		.A(INVx1_ASAP7_75t_R_49_Y),
+		.S0(sram[0]),
+		.Y(MUX2_24_Y));
+
+	MUX2 mux_l1_in_25_ (
+		.B(INVx1_ASAP7_75t_R_50_Y),
+		.A(INVx1_ASAP7_75t_R_51_Y),
+		.S0(sram[0]),
+		.Y(MUX2_25_Y));
+
+	MUX2 mux_l1_in_26_ (
+		.B(INVx1_ASAP7_75t_R_52_Y),
+		.A(INVx1_ASAP7_75t_R_53_Y),
+		.S0(sram[0]),
+		.Y(MUX2_26_Y));
+
+	MUX2 mux_l1_in_27_ (
+		.B(INVx1_ASAP7_75t_R_54_Y),
+		.A(INVx1_ASAP7_75t_R_55_Y),
+		.S0(sram[0]),
+		.Y(MUX2_27_Y));
+
+	MUX2 mux_l1_in_28_ (
+		.B(INVx1_ASAP7_75t_R_56_Y),
+		.A(INVx1_ASAP7_75t_R_57_Y),
+		.S0(sram[0]),
+		.Y(MUX2_28_Y));
+
+	MUX2 mux_l1_in_29_ (
+		.B(INVx1_ASAP7_75t_R_58_Y),
+		.A(INVx1_ASAP7_75t_R_59_Y),
+		.S0(sram[0]),
+		.Y(MUX2_29_Y));
+
+	MUX2 mux_l1_in_30_ (
+		.B(INVx1_ASAP7_75t_R_60_Y),
+		.A(INVx1_ASAP7_75t_R_61_Y),
+		.S0(sram[0]),
+		.Y(MUX2_30_Y));
+
+	MUX2 mux_l1_in_31_ (
+		.B(INVx1_ASAP7_75t_R_62_Y),
+		.A(INVx1_ASAP7_75t_R_63_Y),
+		.S0(sram[0]),
+		.Y(MUX2_31_Y));
+
+	MUX2 mux_l2_in_0_ (
+		.B(MUX2_0_Y),
+		.A(MUX2_1_Y),
+		.S0(sram[1]),
+		.Y(MUX2_32_Y));
+
+	MUX2 mux_l2_in_1_ (
+		.B(MUX2_2_Y),
+		.A(MUX2_3_Y),
+		.S0(sram[1]),
+		.Y(MUX2_33_Y));
+
+	MUX2 mux_l2_in_2_ (
+		.B(MUX2_4_Y),
+		.A(MUX2_5_Y),
+		.S0(sram[1]),
+		.Y(MUX2_34_Y));
+
+	MUX2 mux_l2_in_3_ (
+		.B(MUX2_6_Y),
+		.A(MUX2_7_Y),
+		.S0(sram[1]),
+		.Y(MUX2_35_Y));
+
+	MUX2 mux_l2_in_4_ (
+		.B(MUX2_8_Y),
+		.A(MUX2_9_Y),
+		.S0(sram[1]),
+		.Y(MUX2_36_Y));
+
+	MUX2 mux_l2_in_5_ (
+		.B(MUX2_10_Y),
+		.A(MUX2_11_Y),
+		.S0(sram[1]),
+		.Y(MUX2_37_Y));
+
+	MUX2 mux_l2_in_6_ (
+		.B(MUX2_12_Y),
+		.A(MUX2_13_Y),
+		.S0(sram[1]),
+		.Y(MUX2_38_Y));
+
+	MUX2 mux_l2_in_7_ (
+		.B(MUX2_14_Y),
+		.A(MUX2_15_Y),
+		.S0(sram[1]),
+		.Y(MUX2_39_Y));
+
+	MUX2 mux_l2_in_8_ (
+		.B(MUX2_16_Y),
+		.A(MUX2_17_Y),
+		.S0(sram[1]),
+		.Y(MUX2_40_Y));
+
+	MUX2 mux_l2_in_9_ (
+		.B(MUX2_18_Y),
+		.A(MUX2_19_Y),
+		.S0(sram[1]),
+		.Y(MUX2_41_Y));
+
+	MUX2 mux_l2_in_10_ (
+		.B(MUX2_20_Y),
+		.A(MUX2_21_Y),
+		.S0(sram[1]),
+		.Y(MUX2_42_Y));
+
+	MUX2 mux_l2_in_11_ (
+		.B(MUX2_22_Y),
+		.A(MUX2_23_Y),
+		.S0(sram[1]),
+		.Y(MUX2_43_Y));
+
+	MUX2 mux_l2_in_12_ (
+		.B(MUX2_24_Y),
+		.A(MUX2_25_Y),
+		.S0(sram[1]),
+		.Y(MUX2_44_Y));
+
+	MUX2 mux_l2_in_13_ (
+		.B(MUX2_26_Y),
+		.A(MUX2_27_Y),
+		.S0(sram[1]),
+		.Y(MUX2_45_Y));
+
+	MUX2 mux_l2_in_14_ (
+		.B(MUX2_28_Y),
+		.A(MUX2_29_Y),
+		.S0(sram[1]),
+		.Y(MUX2_46_Y));
+
+	MUX2 mux_l2_in_15_ (
+		.B(MUX2_30_Y),
+		.A(MUX2_31_Y),
+		.S0(sram[1]),
+		.Y(MUX2_47_Y));
+
+	MUX2 mux_l3_in_0_ (
+		.B(BUFx4_ASAP7_75t_R_0_Y),
+		.A(BUFx4_ASAP7_75t_R_1_Y),
+		.S0(sram[2]),
+		.Y(MUX2_48_Y));
+
+	MUX2 mux_l3_in_1_ (
+		.B(BUFx4_ASAP7_75t_R_2_Y),
+		.A(BUFx4_ASAP7_75t_R_3_Y),
+		.S0(sram[2]),
+		.Y(MUX2_49_Y));
+
+	MUX2 mux_l3_in_2_ (
+		.B(BUFx4_ASAP7_75t_R_4_Y),
+		.A(BUFx4_ASAP7_75t_R_5_Y),
+		.S0(sram[2]),
+		.Y(MUX2_50_Y));
+
+	MUX2 mux_l3_in_3_ (
+		.B(BUFx4_ASAP7_75t_R_6_Y),
+		.A(BUFx4_ASAP7_75t_R_7_Y),
+		.S0(sram[2]),
+		.Y(MUX2_51_Y));
+
+	MUX2 mux_l3_in_4_ (
+		.B(BUFx4_ASAP7_75t_R_8_Y),
+		.A(BUFx4_ASAP7_75t_R_9_Y),
+		.S0(sram[2]),
+		.Y(MUX2_52_Y));
+
+	MUX2 mux_l3_in_5_ (
+		.B(BUFx4_ASAP7_75t_R_10_Y),
+		.A(BUFx4_ASAP7_75t_R_11_Y),
+		.S0(sram[2]),
+		.Y(MUX2_53_Y));
+
+	MUX2 mux_l3_in_6_ (
+		.B(BUFx4_ASAP7_75t_R_12_Y),
+		.A(BUFx4_ASAP7_75t_R_13_Y),
+		.S0(sram[2]),
+		.Y(MUX2_54_Y));
+
+	MUX2 mux_l3_in_7_ (
+		.B(BUFx4_ASAP7_75t_R_14_Y),
+		.A(BUFx4_ASAP7_75t_R_15_Y),
+		.S0(sram[2]),
+		.Y(MUX2_55_Y));
+
+	MUX2 mux_l4_in_0_ (
+		.B(MUX2_48_Y),
+		.A(MUX2_49_Y),
+		.S0(sram[3]),
+		.Y(MUX2_56_Y));
+
+	MUX2 mux_l4_in_1_ (
+		.B(MUX2_50_Y),
+		.A(MUX2_51_Y),
+		.S0(sram[3]),
+		.Y(MUX2_57_Y));
+
+	MUX2 mux_l4_in_2_ (
+		.B(MUX2_52_Y),
+		.A(MUX2_53_Y),
+		.S0(sram[3]),
+		.Y(MUX2_58_Y));
+
+	MUX2 mux_l4_in_3_ (
+		.B(MUX2_54_Y),
+		.A(MUX2_55_Y),
+		.S0(sram[3]),
+		.Y(MUX2_59_Y));
+
+	MUX2 mux_l5_in_0_ (
+		.B(BUFx4_ASAP7_75t_R_16_Y),
+		.A(BUFx4_ASAP7_75t_R_17_Y),
+		.S0(sram[4]),
+		.Y(MUX2_60_Y));
+
+	MUX2 mux_l5_in_1_ (
+		.B(BUFx4_ASAP7_75t_R_18_Y),
+		.A(BUFx4_ASAP7_75t_R_19_Y),
+		.S0(sram[4]),
+		.Y(MUX2_61_Y));
+
+	MUX2 mux_l6_in_0_ (
+		.B(MUX2_60_Y),
+		.A(MUX2_61_Y),
+		.S0(sram[5]),
+		.Y(MUX2_62_Y));
+
+	BUFx4_ASAP7_75t_R BUFx4_ASAP7_75t_R_0_ (
+		.A(MUX2_32_Y),
+		.Y(BUFx4_ASAP7_75t_R_0_Y));
+
+	BUFx4_ASAP7_75t_R BUFx4_ASAP7_75t_R_1_ (
+		.A(MUX2_33_Y),
+		.Y(BUFx4_ASAP7_75t_R_1_Y));
+
+	BUFx4_ASAP7_75t_R BUFx4_ASAP7_75t_R_2_ (
+		.A(MUX2_34_Y),
+		.Y(BUFx4_ASAP7_75t_R_2_Y));
+
+	BUFx4_ASAP7_75t_R BUFx4_ASAP7_75t_R_3_ (
+		.A(MUX2_35_Y),
+		.Y(BUFx4_ASAP7_75t_R_3_Y));
+
+	BUFx4_ASAP7_75t_R BUFx4_ASAP7_75t_R_4_ (
+		.A(MUX2_36_Y),
+		.Y(BUFx4_ASAP7_75t_R_4_Y));
+
+	BUFx4_ASAP7_75t_R BUFx4_ASAP7_75t_R_5_ (
+		.A(MUX2_37_Y),
+		.Y(BUFx4_ASAP7_75t_R_5_Y));
+
+	BUFx4_ASAP7_75t_R BUFx4_ASAP7_75t_R_6_ (
+		.A(MUX2_38_Y),
+		.Y(BUFx4_ASAP7_75t_R_6_Y));
+
+	BUFx4_ASAP7_75t_R BUFx4_ASAP7_75t_R_7_ (
+		.A(MUX2_39_Y),
+		.Y(BUFx4_ASAP7_75t_R_7_Y));
+
+	BUFx4_ASAP7_75t_R BUFx4_ASAP7_75t_R_8_ (
+		.A(MUX2_40_Y),
+		.Y(BUFx4_ASAP7_75t_R_8_Y));
+
+	BUFx4_ASAP7_75t_R BUFx4_ASAP7_75t_R_9_ (
+		.A(MUX2_41_Y),
+		.Y(BUFx4_ASAP7_75t_R_9_Y));
+
+	BUFx4_ASAP7_75t_R BUFx4_ASAP7_75t_R_10_ (
+		.A(MUX2_42_Y),
+		.Y(BUFx4_ASAP7_75t_R_10_Y));
+
+	BUFx4_ASAP7_75t_R BUFx4_ASAP7_75t_R_11_ (
+		.A(MUX2_43_Y),
+		.Y(BUFx4_ASAP7_75t_R_11_Y));
+
+	BUFx4_ASAP7_75t_R BUFx4_ASAP7_75t_R_12_ (
+		.A(MUX2_44_Y),
+		.Y(BUFx4_ASAP7_75t_R_12_Y));
+
+	BUFx4_ASAP7_75t_R BUFx4_ASAP7_75t_R_13_ (
+		.A(MUX2_45_Y),
+		.Y(BUFx4_ASAP7_75t_R_13_Y));
+
+	BUFx4_ASAP7_75t_R BUFx4_ASAP7_75t_R_14_ (
+		.A(MUX2_46_Y),
+		.Y(BUFx4_ASAP7_75t_R_14_Y));
+
+	BUFx4_ASAP7_75t_R BUFx4_ASAP7_75t_R_15_ (
+		.A(MUX2_47_Y),
+		.Y(BUFx4_ASAP7_75t_R_15_Y));
+
+	BUFx4_ASAP7_75t_R BUFx4_ASAP7_75t_R_16_ (
+		.A(MUX2_56_Y),
+		.Y(BUFx4_ASAP7_75t_R_16_Y));
+
+	BUFx4_ASAP7_75t_R BUFx4_ASAP7_75t_R_17_ (
+		.A(MUX2_57_Y),
+		.Y(BUFx4_ASAP7_75t_R_17_Y));
+
+	BUFx4_ASAP7_75t_R BUFx4_ASAP7_75t_R_18_ (
+		.A(MUX2_58_Y),
+		.Y(BUFx4_ASAP7_75t_R_18_Y));
+
+	BUFx4_ASAP7_75t_R BUFx4_ASAP7_75t_R_19_ (
+		.A(MUX2_59_Y),
+		.Y(BUFx4_ASAP7_75t_R_19_Y));
 
 endmodule
 // ----- END Verilog module for frac_lut6_mux -----

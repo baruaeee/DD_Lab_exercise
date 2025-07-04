@@ -3,15 +3,15 @@
 //	Description: Template for user-defined Verilog modules
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Thu Jul  3 20:29:28 2025
+//	Date: Fri Jul  4 19:47:58 2025
 //-------------------------------------------
-// ----- Template Verilog module for sg13g2_inv_1 -----
+// ----- Template Verilog module for INVx1_ASAP7_75t_R -----
 //----- Default net type -----
 `default_nettype none
 
-// ----- Verilog module for sg13g2_inv_1 -----
-module sg13g2_inv_1(A,
-                    Y);
+// ----- Verilog module for INVx1_ASAP7_75t_R -----
+module INVx1_ASAP7_75t_R(A,
+                         Y);
 //----- INPUT PORTS -----
 input [0:0] A;
 //----- OUTPUT PORTS -----
@@ -29,49 +29,19 @@ output [0:0] Y;
 
 // ----- Internal logic should end here -----
 endmodule
-// ----- END Verilog module for sg13g2_inv_1 -----
+// ----- END Verilog module for INVx1_ASAP7_75t_R -----
 
 //----- Default net type -----
 `default_nettype wire
 
 
-// ----- Template Verilog module for sg13g2_buf_4 -----
+// ----- Template Verilog module for BUFx4_ASAP7_75t_R -----
 //----- Default net type -----
 `default_nettype none
 
-// ----- Verilog module for sg13g2_buf_4 -----
-module sg13g2_buf_4(A,
-                    X);
-//----- INPUT PORTS -----
-input [0:0] A;
-//----- OUTPUT PORTS -----
-output [0:0] X;
-
-//----- BEGIN wire-connection ports -----
-//----- END wire-connection ports -----
-
-
-//----- BEGIN Registered ports -----
-//----- END Registered ports -----
-
-// ----- Internal logic should start here -----
-
-
-// ----- Internal logic should end here -----
-endmodule
-// ----- END Verilog module for sg13g2_buf_4 -----
-
-//----- Default net type -----
-`default_nettype wire
-
-
-// ----- Template Verilog module for sg13g2_inv_4 -----
-//----- Default net type -----
-`default_nettype none
-
-// ----- Verilog module for sg13g2_inv_4 -----
-module sg13g2_inv_4(A,
-                    Y);
+// ----- Verilog module for BUFx4_ASAP7_75t_R -----
+module BUFx4_ASAP7_75t_R(A,
+                         Y);
 //----- INPUT PORTS -----
 input [0:0] A;
 //----- OUTPUT PORTS -----
@@ -89,26 +59,56 @@ output [0:0] Y;
 
 // ----- Internal logic should end here -----
 endmodule
-// ----- END Verilog module for sg13g2_inv_4 -----
+// ----- END Verilog module for BUFx4_ASAP7_75t_R -----
 
 //----- Default net type -----
 `default_nettype wire
 
 
-// ----- Template Verilog module for sg13g2_or2_1 -----
+// ----- Template Verilog module for INVx4_ASAP7_75t_R -----
 //----- Default net type -----
 `default_nettype none
 
-// ----- Verilog module for sg13g2_or2_1 -----
-module sg13g2_or2_1(A,
-                    B,
-                    X);
+// ----- Verilog module for INVx4_ASAP7_75t_R -----
+module INVx4_ASAP7_75t_R(A,
+                         Y);
+//----- INPUT PORTS -----
+input [0:0] A;
+//----- OUTPUT PORTS -----
+output [0:0] Y;
+
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
+
+
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
+
+// ----- Internal logic should start here -----
+
+
+// ----- Internal logic should end here -----
+endmodule
+// ----- END Verilog module for INVx4_ASAP7_75t_R -----
+
+//----- Default net type -----
+`default_nettype wire
+
+
+// ----- Template Verilog module for OR2x2_ASAP7_75t_R -----
+//----- Default net type -----
+`default_nettype none
+
+// ----- Verilog module for OR2x2_ASAP7_75t_R -----
+module OR2x2_ASAP7_75t_R(A,
+                         B,
+                         Y);
 //----- INPUT PORTS -----
 input [0:0] A;
 //----- INPUT PORTS -----
 input [0:0] B;
 //----- OUTPUT PORTS -----
-output [0:0] X;
+output [0:0] Y;
 
 //----- BEGIN wire-connection ports -----
 //----- END wire-connection ports -----
@@ -122,29 +122,29 @@ output [0:0] X;
 
 // ----- Internal logic should end here -----
 endmodule
-// ----- END Verilog module for sg13g2_or2_1 -----
+// ----- END Verilog module for OR2x2_ASAP7_75t_R -----
 
 //----- Default net type -----
 `default_nettype wire
 
 
-// ----- Template Verilog module for sg13g2_mux2_1 -----
+// ----- Template Verilog module for MUX2 -----
 //----- Default net type -----
 `default_nettype none
 
-// ----- Verilog module for sg13g2_mux2_1 -----
-module sg13g2_mux2_1(A1,
-                     A0,
-                     S,
-                     X);
+// ----- Verilog module for MUX2 -----
+module MUX2(B,
+            A,
+            S0,
+            Y);
 //----- INPUT PORTS -----
-input [0:0] A1;
+input [0:0] B;
 //----- INPUT PORTS -----
-input [0:0] A0;
+input [0:0] A;
 //----- INPUT PORTS -----
-input [0:0] S;
+input [0:0] S0;
 //----- OUTPUT PORTS -----
-output [0:0] X;
+output [0:0] Y;
 
 //----- BEGIN wire-connection ports -----
 //----- END wire-connection ports -----
@@ -158,18 +158,18 @@ output [0:0] X;
 
 // ----- Internal logic should end here -----
 endmodule
-// ----- END Verilog module for sg13g2_mux2_1 -----
+// ----- END Verilog module for MUX2 -----
 
 //----- Default net type -----
 `default_nettype wire
 
 
-// ----- Template Verilog module for dffsrq -----
+// ----- Template Verilog module for DFFSRQ -----
 //----- Default net type -----
 `default_nettype none
 
-// ----- Verilog module for dffsrq -----
-module dffsrq(SET,
+// ----- Verilog module for DFFSRQ -----
+module DFFSRQ(SET,
               RST,
               CK,
               D,
@@ -197,7 +197,7 @@ output [0:0] Q;
 
 // ----- Internal logic should end here -----
 endmodule
-// ----- END Verilog module for dffsrq -----
+// ----- END Verilog module for DFFSRQ -----
 
 //----- Default net type -----
 `default_nettype wire

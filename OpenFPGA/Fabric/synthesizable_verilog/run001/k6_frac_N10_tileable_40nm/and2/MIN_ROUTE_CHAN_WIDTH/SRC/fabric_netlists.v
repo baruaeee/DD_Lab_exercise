@@ -3,16 +3,17 @@
 //	Description: Fabric Netlist Summary
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Thu Jul  3 20:29:28 2025
+//	Date: Fri Jul  4 19:47:58 2025
 //-------------------------------------------
 // ------ Include defines: preproc flags -----
 `include "./SRC/fpga_defines.v"
 
 // ------ Include user-defined netlists -----
-`include "../../../../../ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v"
-`include "../../../../../DFF/dffsrq.v"
-`include "../../../../../DFF/dffr.v"
-`include "../../../../../GPIO/gpio_netlist_IHP.v"
+`include "../../../../../PDK/asap7/asap7sc7p5t_28/Verilog/asap7sc7p5t_INVBUF_RVT_TT_201020.v"
+`include "../../../../../PDK/asap7/asap7sc7p5t_28/Verilog/asap7sc7p5t_SIMPLE_RVT_TT_201020.v"
+`include "../../../../../MUX/mux2.v"
+`include "/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_cell_library/verilog/dff.v"
+`include "../../../../../GPIO/gpio_asap7.v"
 // ------ Include primitive module netlists -----
 `include "./SRC/sub_module/inv_buf_passgate.v"
 `include "./SRC/sub_module/arch_encoder.v"
