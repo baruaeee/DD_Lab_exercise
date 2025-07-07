@@ -1,4 +1,4 @@
-/home/ubuntu/Desktop/OpenFPGA/build/openfpga/openfpga -batch -f counter_run.openfpga
+/home/cae_sajib/Desktop/OpenFPGA/build/openfpga/openfpga -batch -f counter_run.openfpga
 Reading script file counter_run.openfpga...
 
             ___                   _____ ____   ____    _     
@@ -39,12 +39,12 @@ THE SOFTWARE.
 
 
 
-Command line to execute: vpr /home/ubuntu/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/run001/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm/counter/MIN_ROUTE_CHAN_WIDTH/arch/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm.xml counter.blif --clock_modeling ideal
+Command line to execute: vpr /home/cae_sajib/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/run001/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm/counter/MIN_ROUTE_CHAN_WIDTH/arch/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm.xml counter.blif --clock_modeling ideal
 VPR FPGA Placement and Routing.
-Version: 8.1.0-dev+v8.0.0-10893-g9eef18c4f
-Revision: v8.0.0-10893-g9eef18c4f
-Compiled: 2024-10-05T14:51:22
-Compiler: GNU 11.4.0 on Linux-6.8.0-1012-oracle aarch64
+Version: 9.0.0-dev+v8.0.0-13067-g7950a1bac
+Revision: v8.0.0-13067-g7950a1bac
+Compiled: 2025-07-05T15:40:21
+Compiler: GNU 11.4.0 on Linux-6.8.0-60-generic x86_64
 Build Info: release IPO VTR_ASSERT_LEVEL=2
 
 University of Toronto
@@ -53,10 +53,10 @@ vtr-users@googlegroups.com
 This is free open source code under MIT license.
 
 VPR was run with the following command-line:
-vpr /home/ubuntu/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/run001/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm/counter/MIN_ROUTE_CHAN_WIDTH/arch/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm.xml counter.blif --clock_modeling ideal
+vpr /home/cae_sajib/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/run001/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm/counter/MIN_ROUTE_CHAN_WIDTH/arch/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm.xml counter.blif --clock_modeling ideal
 
 
-Architecture file: /home/ubuntu/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/run001/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm/counter/MIN_ROUTE_CHAN_WIDTH/arch/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm.xml
+Architecture file: /home/cae_sajib/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/run001/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm/counter/MIN_ROUTE_CHAN_WIDTH/arch/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm.xml
 Circuit name: counter
 
 # Loading Architecture Description
@@ -70,7 +70,7 @@ mode 'io[physical]' is defined by user to be disabled in packing
 mode 'fle[physical]' is defined by user to be disabled in packing
 mode 'fabric[default]' is defined by user to be disabled in packing
 mode 'frac_logic[default]' is defined by user to be disabled in packing
-# Loading Architecture Description took 0.01 seconds (max_rss 22.7 MiB, delta_rss +0.0 MiB)
+# Loading Architecture Description took 0.01 seconds (max_rss 23.5 MiB, delta_rss +0.0 MiB)
 
 Timing analysis: ON
 Circuit netlist file: counter.net
@@ -81,12 +81,13 @@ Vpr floorplanning constraints file: not specified
 
 Packer: ENABLED
 Placer: ENABLED
+Analytical Placer: DISABLED
 Router: ENABLED
 Analysis: ENABLED
 
 VPR was run with the following options:
 
-NetlistOpts.abosrb_buffer_luts            : true
+NetlistOpts.absorb_buffer_luts            : true
 NetlistOpts.sweep_dangling_primary_ios    : true
 NetlistOpts.sweep_dangling_nets           : true
 NetlistOpts.sweep_dangling_blocks         : true
@@ -100,8 +101,6 @@ PackerOpts.beta_clustering: 0.900000
 PackerOpts.cluster_seed_type: BLEND2
 PackerOpts.connection_driven: true
 PackerOpts.global_clocks: true
-PackerOpts.hill_climbing_flag: false
-PackerOpts.inter_cluster_net_delay: 1.000000
 PackerOpts.timing_driven: true
 PackerOpts.target_external_pin_util: auto
 
@@ -109,7 +108,6 @@ PlacerOpts.place_freq: PLACE_ONCE
 PlacerOpts.place_algorithm: CRITICALITY_TIMING_PLACE
 PlacerOpts.pad_loc_type: FREE
 PlacerOpts.constraints_file: No constraints file given
-PlacerOpts.place_cost_exp: 1.000000
 PlacerOpts.place_chan_width: 100
 PlacerOpts.inner_loop_recompute_divider: 0
 PlacerOpts.recompute_crit_iter: 1
@@ -124,7 +122,7 @@ PlacerOpts.tsu_abs_margin: 0.000000
 PlacerOpts.post_place_timing_report_file: 
 PlacerOpts.allowed_tiles_for_delay_model: 
 PlacerOpts.delay_model_reducer: MIN
-PlacerOpts.delay_model_type: DELTA
+PlacerOpts.delay_model_type: SIMPLE
 PlacerOpts.rlim_escape_fraction: 0.000000
 PlacerOpts.move_stats_file: 
 PlacerOpts.placement_saves_per_temperature: 0
@@ -136,7 +134,7 @@ AnnealSched.inner_num: 0.500000
 
 RouterOpts.route_type: DETAILED
 RouterOpts.flat_routing: false
-RouterOpts.has_choking_spot: false
+RouterOpts.choke_points: on
 RouterOpts.router_algorithm: TIMING_DRIVEN
 RouterOpts.base_cost_type: DELAY_NORMALIZED_LENGTH
 RouterOpts.fixed_channel_width: NO_FIXED_CHANNEL_WIDTH
@@ -156,6 +154,7 @@ RouterOpts.min_channel_width_hint: 0
 RouterOpts.read_rr_edge_metadata: false
 RouterOpts.exit_after_first_routing_iteration: false
 RouterOpts.astar_fac: 1.200000
+RouterOpts.astar_offset: 0.000000
 RouterOpts.router_profiler_astar_fac: 1.200000
 RouterOpts.criticality_exp: 1.000000
 RouterOpts.max_criticality: 0.990000
@@ -187,13 +186,13 @@ AnalysisOpts.post_synth_netlist_unconn_input_handling: UNCONNECTED
 AnalysisOpts.post_synth_netlist_unconn_output_handling: UNCONNECTED
 
 # Building complex block graph
-# Building complex block graph took 0.18 seconds (max_rss 25.6 MiB, delta_rss +2.9 MiB)
+# Building complex block graph took 0.11 seconds (max_rss 23.5 MiB, delta_rss +0.0 MiB)
 Circuit file: counter.blif
 # Load circuit
 Found constant-zero generator '$false'
 Found constant-one generator '$true'
 Found constant-zero generator '$undef'
-# Load circuit took 0.00 seconds (max_rss 25.8 MiB, delta_rss +0.2 MiB)
+# Load circuit took 0.00 seconds (max_rss 23.5 MiB, delta_rss +0.0 MiB)
 # Clean circuit
 Absorbed 8 LUT buffers
 Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
@@ -207,16 +206,22 @@ Swept output(s)     : 0 (0 dangling, 0 constant)
 Swept net(s)        : 3
 Swept block(s)      : 3
 Constant Pins Marked: 0
-# Clean circuit took 0.00 seconds (max_rss 25.8 MiB, delta_rss +0.0 MiB)
+# Clean circuit took 0.00 seconds (max_rss 23.5 MiB, delta_rss +0.0 MiB)
 # Compress circuit
-# Compress circuit took 0.00 seconds (max_rss 26.0 MiB, delta_rss +0.1 MiB)
+# Compress circuit took 0.00 seconds (max_rss 23.5 MiB, delta_rss +0.0 MiB)
 # Verify circuit
-# Verify circuit took 0.00 seconds (max_rss 26.0 MiB, delta_rss +0.0 MiB)
+# Verify circuit took 0.00 seconds (max_rss 23.5 MiB, delta_rss +0.0 MiB)
 Circuit Statistics:
   Blocks: 27
     .input :       2
+    .names :       9
+        1-LUT:       1
+        2-LUT:       2
+        3-LUT:       2
+        4-LUT:       1
+        5-LUT:       1
+        6-LUT:       2
     .output:       8
-    6-LUT  :       9
     dffr   :       8
   Nets  : 19
     Avg Fanout:     3.4
@@ -227,7 +232,7 @@ Circuit Statistics:
   Timing Graph Nodes: 83
   Timing Graph Edges: 120
   Timing Graph Levels: 8
-# Build Timing Graph took 0.00 seconds (max_rss 26.1 MiB, delta_rss +0.1 MiB)
+# Build Timing Graph took 0.00 seconds (max_rss 23.5 MiB, delta_rss +0.0 MiB)
 Netlist contains 1 clocks
   Netlist Clock 'clk' Fanout: 8 pins (9.6%), 8 blocks (29.6%)
 # Load Timing Constraints
@@ -239,71 +244,38 @@ Setting default timing constraints:
 Timing constraints created 1 clocks
   Constrained Clock 'clk' Source: 'clk.inpad[0]'
 
-# Load Timing Constraints took 0.00 seconds (max_rss 26.1 MiB, delta_rss +0.0 MiB)
+# Load Timing Constraints took 0.00 seconds (max_rss 23.5 MiB, delta_rss +0.0 MiB)
 # Packing
-Begin packing 'counter.blif'.
-
-After removing unused inputs...
-	total blocks: 27, total nets: 19, total inputs: 2, total outputs: 8
-Begin prepacking.
+## Prepacker
 
 There is one chain in this architecture called "chain" with the following starting points:
 	clb[0]/fle[0]/arithmetic[0]/adder[0].cin[0]
 
-0 attraction groups were created during prepacking.
-Finish prepacking.
+## Prepacker took 0.00 seconds (max_rss 23.5 MiB, delta_rss +0.0 MiB)
+## Initializing Pre-Cluster Timing
 Using inter-cluster delay: 1.33777e-09
-Packing with pin utilization targets: io:1,1 clb:0.8,1 memory:1,1 mult_36:1,1
+## Initializing Pre-Cluster Timing took 0.00 seconds (max_rss 23.5 MiB, delta_rss +0.0 MiB)
+Begin packing 'counter.blif'.
+
+After removing unused inputs...
+	total blocks: 27, total nets: 19, total inputs: 2, total outputs: 8
+Packing with pin utilization targets: io:1,1 clb:0.8,0.6 memory:1,1 mult_36:1,1
 Packing with high fanout thresholds: io:128 clb:32 memory:128 mult_36:128
 Starting Clustering - Clustering Progress: 
 -------------------   --------------------------   ---------
 Molecules processed   Number of clusters created   FPGA size
 -------------------   --------------------------   ---------
-     1/27        3%                            0     3 x 3     
-     2/27        7%                            1     3 x 3     
-     3/27       11%                            1     3 x 3     
-     4/27       14%                            1     3 x 3     
-     5/27       18%                            1     3 x 3     
-     6/27       22%                            1     3 x 3     
-     7/27       25%                            1     3 x 3     
-     8/27       29%                            1     3 x 3     
-     9/27       33%                            1     3 x 3     
-    10/27       37%                            1     3 x 3     
-    11/27       40%                            1     3 x 3     
-    12/27       44%                            1     3 x 3     
-    13/27       48%                            1     3 x 3     
-    14/27       51%                            1     3 x 3     
-    15/27       55%                            1     3 x 3     
-    16/27       59%                            1     3 x 3     
     17/27       62%                            1     3 x 3     
-Failed route at end, repack cluster trying detailed routing at each stage.
-    18/27       66%                            0     3 x 3     
-    19/27       70%                            1     3 x 3     
-    20/27       74%                            1     3 x 3     
-    21/27       77%                            1     3 x 3     
-    22/27       81%                            1     3 x 3     
-    23/27       85%                            1     3 x 3     
-    24/27       88%                            1     3 x 3     
-    25/27       92%                            1     3 x 3     
-    26/27       96%                            1     3 x 3     
-    27/27      100%                            1     3 x 3     
-    28/27      103%                            1     3 x 3     
-    29/27      107%                            1     3 x 3     
-    30/27      111%                            1     3 x 3     
-    31/27      114%                            1     3 x 3     
-    32/27      118%                            1     3 x 3     
-    33/27      122%                            1     3 x 3     
-    34/27      125%                            1     3 x 3     
-    35/27      129%                            1     3 x 3     
-    36/27      133%                            2     3 x 3     
-    37/27      137%                            3     3 x 3     
-    38/27      140%                            4     3 x 3     
-    39/27      144%                            5     3 x 3     
-    40/27      148%                            6     3 x 3     
-    41/27      151%                            7     3 x 3     
-    42/27      155%                            8     3 x 3     
-    43/27      159%                            9     3 x 3     
-    44/27      162%                           10     3 x 3     
+    18/27       66%                            2     3 x 3     
+    19/27       70%                            3     3 x 3     
+    20/27       74%                            4     3 x 3     
+    21/27       77%                            5     3 x 3     
+    22/27       81%                            6     3 x 3     
+    23/27       85%                            7     3 x 3     
+    24/27       88%                            8     3 x 3     
+    25/27       92%                            9     3 x 3     
+    26/27       96%                           10     3 x 3     
+    27/27      100%                           11     3 x 3     
 
 Logic Element (fle) detailed count:
   Total number of Logic Elements used : 6
@@ -311,11 +283,6 @@ Logic Element (fle) detailed count:
   LEs used for logic only             : 6
   LEs used for registers only         : 0
 
-Incr Slack updates 1 in 6.28e-06 sec
-Full Max Req/Worst Slack updates 1 in 3.32e-06 sec
-Incr Max Req/Worst Slack updates 0 in 0 sec
-Incr Criticality updates 0 in 0 sec
-Full Criticality updates 1 in 3.24e-06 sec
 FPGA sized to 3 x 3 (auto)
 Device Utilization: 0.25 (target 1.00)
 	Block Utilization: 0.31 Type: io
@@ -336,15 +303,20 @@ Absorbed logical nets 9 out of 19 nets, 10 nets not absorbed.
 
 Netlist conversion complete.
 
-# Packing took 0.06 seconds (max_rss 27.0 MiB, delta_rss +0.9 MiB)
+Incr Slack updates 1 in 3.257e-06 sec
+Full Max Req/Worst Slack updates 1 in 3.591e-06 sec
+Incr Max Req/Worst Slack updates 0 in 0 sec
+Incr Criticality updates 0 in 0 sec
+Full Criticality updates 1 in 4.294e-06 sec
+# Packing took 0.05 seconds (max_rss 23.5 MiB, delta_rss +0.0 MiB)
 # Load packing
 Begin loading packed FPGA netlist file.
 Netlist generated from file 'counter.net'.
 Detected 0 constant generators (to see names run with higher pack verbosity)
-Finished loading packed FPGA netlist file (took 0.023192 seconds).
+Finished loading packed FPGA netlist file (took 0.034062 seconds).
 Warning 7: Treated 0 constant nets as global which will not be routed (to see net names increase packer verbosity).
-# Load packing took 0.02 seconds (max_rss 65.1 MiB, delta_rss +38.1 MiB)
 Warning 8: Netlist contains 0 global net to non-global architecture pin connections
+Completed clustering consistency check successfully.
 Cluster level netlist and block usage statistics
 Netlist num_nets: 10
 Netlist num_blocks: 11
@@ -371,9 +343,19 @@ Pb types usage...
      lut6    : 2
       lut    : 2
 
+# Load packing took 0.10 seconds (max_rss 59.5 MiB, delta_rss +36.0 MiB)
 # Create Device
 ## Build Device Grid
 FPGA sized to 3 x 3: 9 grid tiles (auto)
+## Build Device Grid took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
+Warning 9: Tileable routing resource graph does not support clock modeling yet! Related options are ignored...
+## Build tileable routing resource graph
+X-direction routing channel width is 100
+Y-direction routing channel width is 100
+## Build tileable routing resource graph took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
+  RR Graph Nodes: 619
+  RR Graph Edges: 2305
+# Create Device took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 
 Resource usage...
 	Netlist
@@ -399,71 +381,53 @@ Device Utilization: 0.25 (target 1.00)
 	Physical Tile clb:
 	Block Utilization: 1.00 Logical Block: clb
 
-## Build Device Grid took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
-Warning 9: Tileable routing resource graph does not support clock modeling yet! Related options are ignored...
-## Build tileable routing resource graph
-X-direction routing channel width is 100
-Y-direction routing channel width is 100
-## Build tileable routing resource graph took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
-  RR Graph Nodes: 619
-  RR Graph Edges: 2305
-# Create Device took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
 
 # Computing router lookahead map
 ## Computing wire lookahead
-## Computing wire lookahead took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+## Computing wire lookahead took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 ## Computing src/opin lookahead
-Warning 10: Found no more ample locations for SOURCE in io
-Warning 11: Found no more ample locations for OPIN in io
-Warning 12: Found no more ample locations for SOURCE in clb
-Warning 13: Found no more ample locations for OPIN in clb
-## Computing src/opin lookahead took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
-# Computing router lookahead map took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+Warning 10: Found no more sample locations for SOURCE in io
+Warning 11: Found no more sample locations for OPIN in io
+Warning 12: Found no more sample locations for SOURCE in clb
+Warning 13: Found no more sample locations for OPIN in clb
+## Computing src/opin lookahead took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
+# Computing router lookahead map took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
+# Compressed grid construction
+# Compressed grid construction took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
+
+Bounding box mode is Cube
+
 # Computing placement delta delay look-up
 Warning 14: Tileable routing resource graph does not support clock modeling yet! Related options are ignored...
 ## Build tileable routing resource graph
 X-direction routing channel width is 64
 Y-direction routing channel width is 64
-## Build tileable routing resource graph took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+## Build tileable routing resource graph took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
   RR Graph Nodes: 475
   RR Graph Edges: 1633
 ## Computing router lookahead map
 ### Computing wire lookahead
-### Computing wire lookahead took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+### Computing wire lookahead took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 ### Computing src/opin lookahead
-Warning 15: Found no more ample locations for SOURCE in io
-Warning 16: Found no more ample locations for OPIN in io
-Warning 17: Found no more ample locations for SOURCE in clb
-Warning 18: Found no more ample locations for OPIN in clb
-### Computing src/opin lookahead took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
-## Computing router lookahead map took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
-## Computing delta delays
-Warning 19: No routing path for connection to sink_rr 163, leaving unrouted to retry later
-Warning 20: No routing path for connection to sink_rr 195, leaving unrouted to retry later
-Warning 21: No routing path for connection to sink_rr 195, leaving unrouted to retry later
-Warning 22: No routing path for connection to sink_rr 40, leaving unrouted to retry later
-Warning 23: No routing path for connection to sink_rr 40, leaving unrouted to retry later
-Warning 24: No routing path for connection to sink_rr 195, leaving unrouted to retry later
-## Computing delta delays took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
-# Computing placement delta delay look-up took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
-
-Bounding box mode is Cube
-
+Warning 15: Found no more sample locations for SOURCE in io
+Warning 16: Found no more sample locations for OPIN in io
+Warning 17: Found no more sample locations for SOURCE in clb
+Warning 18: Found no more sample locations for OPIN in clb
+### Computing src/opin lookahead took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
+## Computing router lookahead map took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
+Serial Connection Router is being destroyed. Time spent on path search: 0.000 seconds.
+# Computing placement delta delay look-up took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 # Placement
 ## Initial Placement
 Initial placement iteration 0 has finished successfully
-## Initial Placement took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+## Initial Placement took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 Using simple RL 'Softmax agent' for choosing move and block types
 
-There are 8 point to point connections in this circuit.
-
-
-BB estimate of min-dist (placement) wire length: 16
-
 Completed placement consistency check successfully.
-Initial placement cost: 1 bb_cost: 0.25 td_cost: 5.03203e-10
+Initial placement cost: 1 bb_cost: 0.375 td_cost: 4.09947e-10
+Initial placement BB estimate of wirelength: 24
 Initial placement estimated Critical Path Delay (CPD): 0.906 ns
-Initial placement estimated setup Total Negative Slack (sTNS): -9.31931 ns
+Initial placement estimated setup Total Negative Slack (sTNS): -9.15272 ns
 Initial placement estimated setup Worst Negative Slack (sWNS): -0.906 ns
 
 Initial placement estimated setup slack histogram:
@@ -477,21 +441,19 @@ Initial placement estimated setup slack histogram:
 [ -3.2e-10: -2.3e-10) 0 (  0.0%) |
 [ -2.3e-10: -1.5e-10) 0 (  0.0%) |
 [ -1.5e-10: -6.6e-11) 8 ( 33.3%) |*************************************************
-Placement contains 0 placement macros involving 0 blocks (average macro size nan)
+Placement contains 0 placement macros involving 0 blocks (average macro size -nan)
 
 Moves per temperature: 12
-Warning 25: Starting t: 6 of 11 configurations accepted.
+Warning 19: Starting t: 8 of 11 configurations accepted.
 
 ---- ------ ------- ------- ---------- ---------- ------- ---------- -------- ------- ------- ------ -------- --------- ------
 Tnum   Time       T Av Cost Av BB Cost Av TD Cost     CPD       sTNS     sWNS Ac Rate Std Dev  R lim Crit Exp Tot Moves  Alpha
       (sec)                                          (ns)       (ns)     (ns)                                                 
 ---- ------ ------- ------- ---------- ---------- ------- ---------- -------- ------- ------- ------ -------- --------- ------
-   1    0.0 5.9e-06   0.999       0.25 5.0144e-10   0.906      -9.32   -0.906   0.417  0.0007    2.0     1.00        12  0.200
-   2    0.0 0.0e+00   1.000       0.25 4.9996e-10   0.906      -9.31   -0.906   0.417  0.0003    2.0     1.00        24  0.950
-## Placement Quench took 0.00 seconds (max_rss 65.2 MiB)
+   1    0.0 0.0e+00   1.000       0.38 4.0995e-10   0.906      -9.15   -0.906   0.750  0.0000    2.0     1.00        12  1.000
+   2    0.0 0.0e+00   1.000       0.38 4.0995e-10   0.906      -9.15   -0.906   0.833  0.0000    2.0     1.00        24  0.950
+## Placement Quench took 0.00 seconds (max_rss 59.5 MiB)
 post-quench CPD = 0.906 (ns) 
-
-BB estimate of min-dist (placement) wire length: 16
 
 Completed placement consistency check successfully.
 
@@ -500,9 +462,11 @@ Swaps called: 35
 Aborted Move Reasons:
   No moves aborted
 
+BB estimate of min-dist (placement) wire length: 24
+
 Placement estimated critical path delay (least slack): 0.906 ns, Fmax: 1103.75 MHz
 Placement estimated setup Worst Negative Slack (sWNS): -0.906 ns
-Placement estimated setup Total Negative Slack (sTNS): -9.31224 ns
+Placement estimated setup Total Negative Slack (sTNS): -9.15272 ns
 
 Placement estimated setup slack histogram:
 [ -9.1e-10: -8.2e-10) 4 ( 16.7%) |*************************
@@ -519,7 +483,7 @@ Placement estimated setup slack histogram:
 Placement estimated geomean non-virtual intra-domain period: 0.906 ns (1103.75 MHz)
 Placement estimated fanout-weighted geomean non-virtual intra-domain period: 0.906 ns (1103.75 MHz)
 
-Placement cost: 0.999263, bb_cost: 0.25, td_cost: 4.99081e-10, 
+Placement cost: 1, bb_cost: 0.375, td_cost: 4.09947e-10, 
 
 Placement resource usage:
   io  implemented as io : 10
@@ -527,50 +491,57 @@ Placement resource usage:
 
 Placement number of temperatures: 2
 Placement total # of swap attempts: 35
-	Swaps accepted: 16 (45.7 %)
-	Swaps rejected: 12 (34.3 %)
-	Swaps aborted:  7 (20.0 %)
+	Swaps accepted: 27 (77.1 %)
+	Swaps rejected:  0 ( 0.0 %)
+	Swaps aborted:  8 (22.9 %)
 
 
 Placement perturbation distribution by block and move type: 
 ------------------ ----------------- ---------------- ---------------- --------------- ------------ 
     Block Type         Move Type       (%) of Total      Accepted(%)     Rejected(%)    Aborted(%)
 ------------------ ----------------- ---------------- ---------------- --------------- ------------ 
-io                 Uniform                6.45             100.00          0.00           0.00         
-                   Median                 32.26            70.00           10.00          20.00        
-                   Centroid               29.03            22.22           77.78          0.00         
-                   W. Centroid            22.58            57.14           42.86          0.00         
-                   W. Median              6.45             50.00           50.00          0.00         
+io                 Uniform                15.15            100.00          0.00           0.00         
+                   Median                 24.24            75.00           0.00           25.00        
+                   Centroid               9.09             100.00          0.00           0.00         
+                   W. Centroid            36.36            100.00          0.00           0.00         
+                   W. Median              3.03             100.00          0.00           0.00         
 
-                   Centroid               3.23             0.00            0.00           100.00       
+clb                Uniform                3.03             0.00            0.00           100.00       
+                   Median                 3.03             0.00            0.00           100.00       
+                   W. Centroid            6.06             0.00            0.00           100.00       
 
 
-Placement Quench timing analysis took 1.916e-05 seconds (1.424e-05 STA, 4.92e-06 slack) (1 full updates: 1 setup, 0 hold, 0 combined).
-Placement Total  timing analysis took 0.000353002 seconds (0.000294402 STA, 5.86e-05 slack) (4 full updates: 4 setup, 0 hold, 0 combined).
+Placement Quench timing analysis took 1.8308e-05 seconds (1.2034e-05 STA, 6.274e-06 slack) (1 full updates: 1 setup, 0 hold, 0 combined).
+Placement Total  timing analysis took 0.000322331 seconds (0.000287855 STA, 3.4476e-05 slack) (4 full updates: 4 setup, 0 hold, 0 combined).
 update_td_costs: connections 0 nets 0 sum_nets 0 total 0
-# Placement took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+Incr Slack updates 4 in 8.606e-06 sec
+Full Max Req/Worst Slack updates 1 in 4.064e-06 sec
+Incr Max Req/Worst Slack updates 3 in 5.643e-06 sec
+Incr Criticality updates 3 in 7.794e-06 sec
+Full Criticality updates 1 in 3.793e-06 sec
+# Placement took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 
 # Routing
 Initializing minimum channel width search based on maximum CLB pins
 
 Attempting to route at 66 channels (binary search bounds: [-1, -1])
-Warning 26: Tileable routing resource graph does not support clock modeling yet! Related options are ignored...
+Warning 20: Tileable routing resource graph does not support clock modeling yet! Related options are ignored...
 ## Build tileable routing resource graph
 X-direction routing channel width is 66
 Y-direction routing channel width is 66
-## Build tileable routing resource graph took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+## Build tileable routing resource graph took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
   RR Graph Nodes: 483
   RR Graph Edges: 1717
 ## Computing router lookahead map
 ### Computing wire lookahead
-### Computing wire lookahead took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+### Computing wire lookahead took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 ### Computing src/opin lookahead
-Warning 27: Found no more ample locations for SOURCE in io
-Warning 28: Found no more ample locations for OPIN in io
-Warning 29: Found no more ample locations for SOURCE in clb
-Warning 30: Found no more ample locations for OPIN in clb
-### Computing src/opin lookahead took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
-## Computing router lookahead map took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+Warning 21: Found no more sample locations for SOURCE in io
+Warning 22: Found no more sample locations for OPIN in io
+Warning 23: Found no more sample locations for SOURCE in clb
+Warning 24: Found no more sample locations for OPIN in clb
+### Computing src/opin lookahead took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
+## Computing router lookahead map took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 ## Initializing router criticalities
 Initial Net Connection Criticality Histogram:
 [        0:      0.1) 2 ( 20.0%) |*************************
@@ -583,23 +554,15 @@ Initial Net Connection Criticality Histogram:
 [      0.7:      0.8) 0 (  0.0%) |
 [      0.8:      0.9) 0 (  0.0%) |
 [      0.9:        1) 0 (  0.0%) |
-## Initializing router criticalities took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+## Initializing router criticalities took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 ---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
 Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wirelength      CPD       sTNS       sWNS       hTNS       hWNS Est Succ
       (sec)     fac Updt    push    Nets   Conns                                       (ns)       (ns)       (ns)       (ns)       (ns)     Iter
 ---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
-   1    0.0     0.0    0     245       8       8       2 ( 0.414%)      26 ( 9.8%)    0.906     -10.70     -0.906    -0.5280     -0.066      N/A
-Incr Slack updates 4 in 3.848e-05 sec
-Full Max Req/Worst Slack updates 1 in 2.56e-06 sec
-Incr Max Req/Worst Slack updates 3 in 3.8e-06 sec
-Incr Criticality updates 3 in 6.08e-06 sec
-Full Criticality updates 1 in 3.68e-06 sec
-   2    0.0     0.5    0     100       2       2       2 ( 0.414%)      26 ( 9.8%)    0.906     -10.70     -0.906    -0.5280     -0.066      N/A
-   3    0.0     0.6    0     102       2       2       2 ( 0.414%)      26 ( 9.8%)    0.906     -10.70     -0.906    -0.5280     -0.066      N/A
-   4    0.0     0.8    0     106       2       2       0 ( 0.000%)      28 (10.6%)    0.906     -10.86     -0.906    -0.5280     -0.066      N/A
+   1    0.0     0.0    0     317       8       8       0 ( 0.000%)      34 (12.9%)    0.917     -11.32     -0.917    -0.5280     -0.066      N/A
 Restoring best routing
-Critical path: 0.906 ns
-Successfully routed after 4 routing iterations.
+Critical path: 0.916937 ns
+Successfully routed after 1 routing iterations.
 Final Net Connection Criticality Histogram:
 [        0:      0.1) 2 ( 20.0%) |*********************************
 [      0.1:      0.2) 0 (  0.0%) |
@@ -609,28 +572,29 @@ Final Net Connection Criticality Histogram:
 [      0.5:      0.6) 2 ( 20.0%) |*********************************
 [      0.6:      0.7) 0 (  0.0%) |
 [      0.7:      0.8) 0 (  0.0%) |
-[      0.8:      0.9) 3 ( 30.0%) |*************************************************
-[      0.9:        1) 0 (  0.0%) |
-Router Stats: total_nets_routed: 14 total_connections_routed: 14 total_heap_pushes: 553 total_heap_pops: 463 
+[      0.8:      0.9) 0 (  0.0%) |
+[      0.9:        1) 3 ( 30.0%) |*************************************************
+Router Stats: total_nets_routed: 8 total_connections_routed: 8 total_heap_pushes: 317 total_heap_pops: 262 
+Serial Connection Router is being destroyed. Time spent on path search: 0.000 seconds.
 
 Attempting to route at 34 channels (binary search bounds: [-1, 66])
-Warning 31: Tileable routing resource graph does not support clock modeling yet! Related options are ignored...
+Warning 25: Tileable routing resource graph does not support clock modeling yet! Related options are ignored...
 ## Build tileable routing resource graph
 X-direction routing channel width is 34
 Y-direction routing channel width is 34
-## Build tileable routing resource graph took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+## Build tileable routing resource graph took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
   RR Graph Nodes: 355
   RR Graph Edges: 1093
 ## Computing router lookahead map
 ### Computing wire lookahead
-### Computing wire lookahead took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+### Computing wire lookahead took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 ### Computing src/opin lookahead
-Warning 32: Found no more ample locations for SOURCE in io
-Warning 33: Found no more ample locations for OPIN in io
-Warning 34: Found no more ample locations for SOURCE in clb
-Warning 35: Found no more ample locations for OPIN in clb
-### Computing src/opin lookahead took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
-## Computing router lookahead map took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+Warning 26: Found no more sample locations for SOURCE in io
+Warning 27: Found no more sample locations for OPIN in io
+Warning 28: Found no more sample locations for SOURCE in clb
+Warning 29: Found no more sample locations for OPIN in clb
+### Computing src/opin lookahead took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
+## Computing router lookahead map took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 ## Initializing router criticalities
 Initial Net Connection Criticality Histogram:
 [        0:      0.1) 2 ( 20.0%) |*************************
@@ -643,203 +607,89 @@ Initial Net Connection Criticality Histogram:
 [      0.7:      0.8) 0 (  0.0%) |
 [      0.8:      0.9) 0 (  0.0%) |
 [      0.9:        1) 0 (  0.0%) |
-## Initializing router criticalities took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+## Initializing router criticalities took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 ---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
 Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wirelength      CPD       sTNS       sWNS       hTNS       hWNS Est Succ
       (sec)     fac Updt    push    Nets   Conns                                       (ns)       (ns)       (ns)       (ns)       (ns)     Iter
 ---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
-   1    0.0     0.0    0     276       8       8       3 ( 0.845%)      38 (27.9%)    0.906     -11.65     -0.906    -0.5280     -0.066      N/A
-   2    0.0     0.5    0     123       3       3       3 ( 0.845%)      38 (27.9%)    0.906     -11.65     -0.906    -0.5280     -0.066      N/A
-   3    0.0     0.6    0     137       3       3       3 ( 0.845%)      40 (29.4%)    0.906     -11.81     -0.906    -0.5280     -0.066      N/A
-   4    0.0     0.8    0     102       2       2       1 ( 0.282%)      40 (29.4%)    0.906     -11.81     -0.906    -0.5280     -0.066      N/A
-   5    0.0     1.1    0      51       1       1       0 ( 0.000%)      42 (30.9%)    0.906     -11.97     -0.906    -0.5280     -0.066      N/A
+   1    0.0     0.0    0     287       8       8       3 ( 0.845%)      46 (33.8%)    1.152     -12.28     -1.152    -0.5280     -0.066      N/A
+   2    0.0     0.5    0      82       2       2       3 ( 0.845%)      46 (33.8%)    1.152     -12.28     -1.152    -0.5280     -0.066      N/A
+   3    0.0     0.6    0      48       1       1       0 ( 0.000%)      48 (35.3%)    1.152     -12.44     -1.152    -0.5280     -0.066      N/A
 Restoring best routing
-Critical path: 0.906 ns
-Successfully routed after 5 routing iterations.
-Final Net Connection Criticality Histogram:
-[        0:      0.1) 2 ( 20.0%) |*********************************
-[      0.1:      0.2) 0 (  0.0%) |
-[      0.2:      0.3) 0 (  0.0%) |
-[      0.3:      0.4) 0 (  0.0%) |
-[      0.4:      0.5) 0 (  0.0%) |
-[      0.5:      0.6) 0 (  0.0%) |
-[      0.6:      0.7) 3 ( 30.0%) |*************************************************
-[      0.7:      0.8) 2 ( 20.0%) |*********************************
-[      0.8:      0.9) 1 ( 10.0%) |****************
-[      0.9:        1) 2 ( 20.0%) |*********************************
-Router Stats: total_nets_routed: 17 total_connections_routed: 17 total_heap_pushes: 689 total_heap_pops: 593 
-
-Attempting to route at 18 channels (binary search bounds: [-1, 34])
-Warning 36: Tileable routing resource graph does not support clock modeling yet! Related options are ignored...
-## Build tileable routing resource graph
-X-direction routing channel width is 18
-Y-direction routing channel width is 18
-## Build tileable routing resource graph took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
-  RR Graph Nodes: 291
-  RR Graph Edges: 629
-## Computing router lookahead map
-### Computing wire lookahead
-### Computing wire lookahead took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
-### Computing src/opin lookahead
-Warning 37: Found no more ample locations for SOURCE in io
-Warning 38: Found no more ample locations for OPIN in io
-Warning 39: Found no more ample locations for SOURCE in clb
-Warning 40: Found no more ample locations for OPIN in clb
-### Computing src/opin lookahead took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
-## Computing router lookahead map took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
-## Initializing router criticalities
-Initial Net Connection Criticality Histogram:
-[        0:      0.1) 8 ( 80.0%) |*************************************************
-[      0.1:      0.2) 0 (  0.0%) |
-[      0.2:      0.3) 0 (  0.0%) |
-[      0.3:      0.4) 0 (  0.0%) |
-[      0.4:      0.5) 0 (  0.0%) |
-[      0.5:      0.6) 0 (  0.0%) |
-[      0.6:      0.7) 0 (  0.0%) |
-[      0.7:      0.8) 0 (  0.0%) |
-[      0.8:      0.9) 0 (  0.0%) |
-[      0.9:        1) 2 ( 20.0%) |************
-## Initializing router criticalities took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
----- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
-Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wirelength      CPD       sTNS       sWNS       hTNS       hWNS Est Succ
-      (sec)     fac Updt    push    Nets   Conns                                       (ns)       (ns)       (ns)       (ns)       (ns)     Iter
----- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
-Cannot route from clb[0].O[18] (RR node: 82 class: 22 capacity: 1 fan-in: 0 fan-out: 1 SOURCE:82  (1,1,0)) to io[2].outpad[0] (RR node: 10 class: 4 capacity: 1 fan-in: 1 fan-out: 0 SINK:10  (1,0,0)) -- no possible path
-Failed to route connection from '$abc$239$new_n24' to 'out:result[3]' for net 'result[3]' (#7)
-Routing failed for sink 1 of net 7
-
-Attempting to route at 26 channels (binary search bounds: [18, 34])
-Warning 41: Tileable routing resource graph does not support clock modeling yet! Related options are ignored...
-## Build tileable routing resource graph
-X-direction routing channel width is 26
-Y-direction routing channel width is 26
-## Build tileable routing resource graph took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
-  RR Graph Nodes: 323
-  RR Graph Edges: 913
-## Computing router lookahead map
-### Computing wire lookahead
-### Computing wire lookahead took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
-### Computing src/opin lookahead
-Warning 42: Found no more ample locations for SOURCE in io
-Warning 43: Found no more ample locations for OPIN in io
-Warning 44: Found no more ample locations for SOURCE in clb
-Warning 45: Found no more ample locations for OPIN in clb
-### Computing src/opin lookahead took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
-## Computing router lookahead map took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
-## Initializing router criticalities
-Initial Net Connection Criticality Histogram:
-[        0:      0.1) 2 ( 20.0%) |*************************
-[      0.1:      0.2) 0 (  0.0%) |
-[      0.2:      0.3) 0 (  0.0%) |
-[      0.3:      0.4) 4 ( 40.0%) |*************************************************
-[      0.4:      0.5) 4 ( 40.0%) |*************************************************
-[      0.5:      0.6) 0 (  0.0%) |
-[      0.6:      0.7) 0 (  0.0%) |
-[      0.7:      0.8) 0 (  0.0%) |
-[      0.8:      0.9) 0 (  0.0%) |
-[      0.9:        1) 0 (  0.0%) |
-## Initializing router criticalities took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
----- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
-Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wirelength      CPD       sTNS       sWNS       hTNS       hWNS Est Succ
-      (sec)     fac Updt    push    Nets   Conns                                       (ns)       (ns)       (ns)       (ns)       (ns)     Iter
----- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
-   1    0.0     0.0    0     156       8       8       0 ( 0.000%)      32 (30.8%)    0.906     -11.19     -0.906    -0.5280     -0.066      N/A
-Restoring best routing
-Critical path: 0.906 ns
-Successfully routed after 1 routing iterations.
+Critical path: 1.15164 ns
+Successfully routed after 3 routing iterations.
 Final Net Connection Criticality Histogram:
 [        0:      0.1) 2 ( 20.0%) |*************************************************
 [      0.1:      0.2) 0 (  0.0%) |
 [      0.2:      0.3) 0 (  0.0%) |
-[      0.3:      0.4) 0 (  0.0%) |
-[      0.4:      0.5) 2 ( 20.0%) |*************************************************
+[      0.3:      0.4) 1 ( 10.0%) |*************************
+[      0.4:      0.5) 1 ( 10.0%) |*************************
 [      0.5:      0.6) 2 ( 20.0%) |*************************************************
-[      0.6:      0.7) 0 (  0.0%) |
-[      0.7:      0.8) 0 (  0.0%) |
-[      0.8:      0.9) 2 ( 20.0%) |*************************************************
+[      0.6:      0.7) 1 ( 10.0%) |*************************
+[      0.7:      0.8) 1 ( 10.0%) |*************************
+[      0.8:      0.9) 0 (  0.0%) |
 [      0.9:        1) 2 ( 20.0%) |*************************************************
-Router Stats: total_nets_routed: 8 total_connections_routed: 8 total_heap_pushes: 156 total_heap_pops: 133 
+Router Stats: total_nets_routed: 11 total_connections_routed: 11 total_heap_pushes: 417 total_heap_pops: 363 
+Serial Connection Router is being destroyed. Time spent on path search: 0.000 seconds.
 
-Attempting to route at 22 channels (binary search bounds: [18, 26])
-Warning 46: Tileable routing resource graph does not support clock modeling yet! Related options are ignored...
+Attempting to route at 18 channels (binary search bounds: [-1, 34])
+Warning 30: Tileable routing resource graph does not support clock modeling yet! Related options are ignored...
 ## Build tileable routing resource graph
-X-direction routing channel width is 22
-Y-direction routing channel width is 22
-## Build tileable routing resource graph took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
-  RR Graph Nodes: 307
-  RR Graph Edges: 705
+X-direction routing channel width is 18
+Y-direction routing channel width is 18
+## Build tileable routing resource graph took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
+  RR Graph Nodes: 291
+  RR Graph Edges: 629
 ## Computing router lookahead map
 ### Computing wire lookahead
-### Computing wire lookahead took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+### Computing wire lookahead took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 ### Computing src/opin lookahead
-Warning 47: Found no more ample locations for SOURCE in io
-Warning 48: Found no more ample locations for OPIN in io
-Warning 49: Found no more ample locations for SOURCE in clb
-Warning 50: Found no more ample locations for OPIN in clb
-### Computing src/opin lookahead took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
-## Computing router lookahead map took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+Warning 31: Found no more sample locations for SOURCE in io
+Warning 32: Found no more sample locations for OPIN in io
+Warning 33: Found no more sample locations for SOURCE in clb
+Warning 34: Found no more sample locations for OPIN in clb
+### Computing src/opin lookahead took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
+## Computing router lookahead map took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 ## Initializing router criticalities
 Initial Net Connection Criticality Histogram:
-[        0:      0.1) 2 ( 20.0%) |*************************
+[        0:      0.1) 9 ( 90.0%) |*************************************************
 [      0.1:      0.2) 0 (  0.0%) |
 [      0.2:      0.3) 0 (  0.0%) |
-[      0.3:      0.4) 4 ( 40.0%) |*************************************************
-[      0.4:      0.5) 4 ( 40.0%) |*************************************************
-[      0.5:      0.6) 0 (  0.0%) |
-[      0.6:      0.7) 0 (  0.0%) |
-[      0.7:      0.8) 0 (  0.0%) |
-[      0.8:      0.9) 0 (  0.0%) |
-[      0.9:        1) 0 (  0.0%) |
-## Initializing router criticalities took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
----- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
-Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wirelength      CPD       sTNS       sWNS       hTNS       hWNS Est Succ
-      (sec)     fac Updt    push    Nets   Conns                                       (ns)       (ns)       (ns)       (ns)       (ns)     Iter
----- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
-   1    0.0     0.0    0     146       8       8       4 ( 1.303%)      28 (31.8%)    0.906     -10.88     -0.906    -0.5280     -0.066      N/A
-   2    0.0     0.5    0      74       4       4       4 ( 1.303%)      28 (31.8%)    0.906     -10.88     -0.906    -0.5280     -0.066      N/A
-   3    0.0     0.6    0      78       4       4       4 ( 1.303%)      28 (31.8%)    0.906     -10.88     -0.906    -0.5280     -0.066      N/A
-   4    0.0     0.8    0      65       3       3       3 ( 0.977%)      30 (34.1%)    0.906     -11.03     -0.906    -0.5280     -0.066      N/A
-   5    0.0     1.1    0      56       2       2       3 ( 0.977%)      30 (34.1%)    0.906     -11.03     -0.906    -0.5280     -0.066      N/A
-   6    0.0     1.4    0      72       2       2       3 ( 0.977%)      30 (34.1%)    0.906     -11.03     -0.906    -0.5280     -0.066      N/A
-   7    0.0     1.9    0      67       3       3       3 ( 0.977%)      38 (43.2%)    1.393     -11.66     -1.393    -0.5280     -0.066      N/A
-   8    0.0     2.4    0     117       4       4       1 ( 0.326%)      42 (47.7%)    1.627     -11.97     -1.627    -0.5280     -0.066      N/A
-   9    0.0     3.1    0      56       2       2       3 ( 0.977%)      34 (38.6%)    1.001     -11.34     -1.001    -0.5280     -0.066      N/A
-  10    0.0     4.1    0      77       3       3       3 ( 0.977%)      42 (47.7%)    1.393     -11.97     -1.393    -0.5280     -0.066       15
-  11    0.0     5.3    0     121       4       4       0 ( 0.000%)      54 (61.4%)    1.627     -12.90     -1.627    -0.5280     -0.066      inf
-Restoring best routing
-Critical path: 1.62724 ns
-Successfully routed after 11 routing iterations.
-Final Net Connection Criticality Histogram:
-[        0:      0.1) 2 ( 20.0%) |********************
-[      0.1:      0.2) 0 (  0.0%) |
-[      0.2:      0.3) 0 (  0.0%) |
-[      0.3:      0.4) 5 ( 50.0%) |*************************************************
+[      0.3:      0.4) 0 (  0.0%) |
 [      0.4:      0.5) 0 (  0.0%) |
 [      0.5:      0.6) 0 (  0.0%) |
-[      0.6:      0.7) 2 ( 20.0%) |********************
+[      0.6:      0.7) 0 (  0.0%) |
 [      0.7:      0.8) 0 (  0.0%) |
 [      0.8:      0.9) 0 (  0.0%) |
-[      0.9:        1) 1 ( 10.0%) |**********
-Router Stats: total_nets_routed: 39 total_connections_routed: 39 total_heap_pushes: 929 total_heap_pops: 827 
+[      0.9:        1) 1 ( 10.0%) |*****
+## Initializing router criticalities took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
+---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
+Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wirelength      CPD       sTNS       sWNS       hTNS       hWNS Est Succ
+      (sec)     fac Updt    push    Nets   Conns                                       (ns)       (ns)       (ns)       (ns)       (ns)     Iter
+---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
+Cannot route from clb[0].O[18] (RR node: 82 class: 22 capacity: 1 fan-in: 0 fan-out: 1 SOURCE:82  (1,1,0)) to io[2].outpad[0] (RR node: 197 class: 4 capacity: 1 fan-in: 1 fan-out: 0 SINK:197  (1,2,0)) -- no possible path
+Failed to route connection from '$abc$222$new_n24' to 'out:result[6]' for net 'result[6]' (#8)
+Routing failed for sink 1 of net 8
+Serial Connection Router is being destroyed. Time spent on path search: 0.000 seconds.
 
-Attempting to route at 20 channels (binary search bounds: [18, 22])
-Warning 51: Tileable routing resource graph does not support clock modeling yet! Related options are ignored...
+Attempting to route at 26 channels (binary search bounds: [18, 34])
+Warning 35: Tileable routing resource graph does not support clock modeling yet! Related options are ignored...
 ## Build tileable routing resource graph
-X-direction routing channel width is 20
-Y-direction routing channel width is 20
-## Build tileable routing resource graph took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
-  RR Graph Nodes: 299
-  RR Graph Edges: 561
+X-direction routing channel width is 26
+Y-direction routing channel width is 26
+## Build tileable routing resource graph took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
+  RR Graph Nodes: 323
+  RR Graph Edges: 913
 ## Computing router lookahead map
 ### Computing wire lookahead
-### Computing wire lookahead took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+### Computing wire lookahead took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 ### Computing src/opin lookahead
-Warning 52: Found no more ample locations for SOURCE in io
-Warning 53: Found no more ample locations for OPIN in io
-Warning 54: Found no more ample locations for SOURCE in clb
-Warning 55: Found no more ample locations for OPIN in clb
-### Computing src/opin lookahead took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
-## Computing router lookahead map took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+Warning 36: Found no more sample locations for SOURCE in io
+Warning 37: Found no more sample locations for OPIN in io
+Warning 38: Found no more sample locations for SOURCE in clb
+Warning 39: Found no more sample locations for OPIN in clb
+### Computing src/opin lookahead took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
+## Computing router lookahead map took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 ## Initializing router criticalities
 Initial Net Connection Criticality Histogram:
 [        0:      0.1) 2 ( 20.0%) |*************************
@@ -852,118 +702,290 @@ Initial Net Connection Criticality Histogram:
 [      0.7:      0.8) 0 (  0.0%) |
 [      0.8:      0.9) 0 (  0.0%) |
 [      0.9:        1) 0 (  0.0%) |
-## Initializing router criticalities took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+## Initializing router criticalities took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 ---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
 Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wirelength      CPD       sTNS       sWNS       hTNS       hWNS Est Succ
       (sec)     fac Updt    push    Nets   Conns                                       (ns)       (ns)       (ns)       (ns)       (ns)     Iter
 ---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
-   1    0.0     0.0    0     254       8       8      21 ( 7.023%)      64 (80.0%)    1.145     -13.62     -1.145    -0.5280     -0.066      N/A
-   2    0.0     0.5    0     246       8       8      14 ( 4.682%)      64 (80.0%)    1.147     -13.63     -1.147    -0.5280     -0.066      N/A
-   3    0.0     0.6    0     235       7       7      12 ( 4.013%)      66 (82.5%)    1.148     -13.79     -1.148    -0.5280     -0.066      N/A
-   4    0.0     0.8    0     190       6       6      10 ( 3.344%)      64 (80.0%)    1.148     -13.63     -1.148    -0.5280     -0.066      N/A
-   5    0.0     1.1    0     170       5       5      10 ( 3.344%)      64 (80.0%)    1.148     -13.63     -1.148    -0.5280     -0.066      N/A
-   6    0.0     1.4    0     165       5       5      12 ( 4.013%)      66 (82.5%)    1.148     -13.79     -1.148    -0.5280     -0.066      N/A
-   7    0.0     1.9    0     190       6       6      10 ( 3.344%)      64 (80.0%)    1.148     -13.63     -1.148    -0.5280     -0.066      N/A
-   8    0.0     2.4    0     159       5       5      12 ( 4.013%)      66 (82.5%)    1.148     -13.79     -1.148    -0.5280     -0.066      N/A
-   9    0.0     3.1    0     189       6       6      10 ( 3.344%)      64 (80.0%)    1.148     -13.63     -1.148    -0.5280     -0.066      N/A
-  10    0.0     4.1    0     158       5       5      12 ( 4.013%)      66 (82.5%)    1.148     -13.79     -1.148    -0.5280     -0.066      inf
-  11    0.0     5.3    0     189       6       6      10 ( 3.344%)      64 (80.0%)    1.148     -13.63     -1.148    -0.5280     -0.066      inf
-  12    0.0     6.9    0     154       5       5      12 ( 4.013%)      66 (82.5%)    1.148     -13.79     -1.148    -0.5280     -0.066      162
-  13    0.0     9.0    0     187       6       6      10 ( 3.344%)      64 (80.0%)    1.148     -13.63     -1.148    -0.5280     -0.066      inf
-  14    0.0    11.6    0     139       5       5      12 ( 4.013%)      66 (82.5%)    1.148     -13.79     -1.148    -0.5280     -0.066      inf
-  15    0.0    15.1    0     182       6       6      10 ( 3.344%)      64 (80.0%)    1.148     -13.63     -1.148    -0.5280     -0.066      inf
-  16    0.0    19.7    0     148       5       5      10 ( 3.344%)      64 (80.0%)    1.148     -13.63     -1.148    -0.5280     -0.066      287
-  17    0.0    25.6    0     137       5       5      12 ( 4.013%)      66 (82.5%)    1.148     -13.79     -1.148    -0.5280     -0.066      377
-  18    0.0    33.3    0     183       6       6      10 ( 3.344%)      64 (80.0%)    1.148     -13.63     -1.148    -0.5280     -0.066      inf
-  19    0.0    43.3    0     134       5       5      12 ( 4.013%)      66 (82.5%)    1.148     -13.79     -1.148    -0.5280     -0.066      275
-  20    0.0    56.2    0     183       6       6      10 ( 3.344%)      64 (80.0%)    1.148     -13.63     -1.148    -0.5280     -0.066     2181
-  21    0.0    73.1    0     133       5       5      12 ( 4.013%)      66 (82.5%)    1.148     -13.79     -1.148    -0.5280     -0.066      inf
-  22    0.0    95.0    0     183       6       6      10 ( 3.344%)      64 (80.0%)    1.148     -13.63     -1.148    -0.5280     -0.066      inf
-  23    0.0   123.5    0     133       5       5      12 ( 4.013%)      66 (82.5%)    1.148     -13.79     -1.148    -0.5280     -0.066      737
-  24    0.0   160.6    0     184       6       6      10 ( 3.344%)      64 (80.0%)    1.148     -13.63     -1.148    -0.5280     -0.066      inf
-  25    0.0   208.8    0     162       5       5      12 ( 4.013%)      68 (85.0%)    1.301     -13.94     -1.301    -0.5280     -0.066      inf
-  26    0.0   271.4    0     155       5       5      12 ( 4.013%)      68 (85.0%)    1.301     -13.94     -1.301    -0.5280     -0.066      inf
-  27    0.0   352.8    0     174       5       5      16 ( 5.351%)      72 (90.0%)    1.301     -14.24     -1.301    -0.5280     -0.066      inf
-  28    0.0   458.7    0     164       6       6      17 ( 5.686%)      64 (80.0%)    1.148     -13.63     -1.148    -0.5280     -0.066      inf
-  29    0.0   596.3    0     153       6       6      10 ( 3.344%)      64 (80.0%)    1.148     -13.63     -1.148    -0.5280     -0.066      inf
-  30    0.0   775.1    0     132       5       5      12 ( 4.013%)      66 (82.5%)    1.148     -13.79     -1.148    -0.5280     -0.066      inf
-  31    0.0  1000.0    0     179       6       6      10 ( 3.344%)      64 (80.0%)    1.148     -13.63     -1.148    -0.5280     -0.066      inf
-  32    0.0  1000.0    0     132       5       5      12 ( 4.013%)      66 (82.5%)    1.148     -13.79     -1.148    -0.5280     -0.066      inf
-  33    0.0  1000.0    0     175       6       6      10 ( 3.344%)      64 (80.0%)    1.148     -13.63     -1.148    -0.5280     -0.066      inf
-  34    0.0  1000.0    0     132       5       5      12 ( 4.013%)      66 (82.5%)    1.148     -13.79     -1.148    -0.5280     -0.066      inf
-  35    0.0  1000.0    0     175       6       6      10 ( 3.344%)      64 (80.0%)    1.148     -13.63     -1.148    -0.5280     -0.066      inf
-  36    0.0  1000.0    0     143       5       5      10 ( 3.344%)      64 (80.0%)    1.148     -13.63     -1.148    -0.5280     -0.066      inf
-  37    0.0  1000.0    0     132       5       5      12 ( 4.013%)      66 (82.5%)    1.148     -13.79     -1.148    -0.5280     -0.066      687
-  38    0.0  1000.0    0     175       6       6      10 ( 3.344%)      64 (80.0%)    1.148     -13.63     -1.148    -0.5280     -0.066     1035
-  39    0.0  1000.0    0     132       5       5      12 ( 4.013%)      66 (82.5%)    1.148     -13.79     -1.148    -0.5280     -0.066      659
-  40    0.0  1000.0    0     175       6       6      10 ( 3.344%)      64 (80.0%)    1.148     -13.63     -1.148    -0.5280     -0.066      983
-  41    0.0  1000.0    0     132       5       5      12 ( 4.013%)      66 (82.5%)    1.148     -13.79     -1.148    -0.5280     -0.066      404
-  42    0.0  1000.0    0     175       6       6      10 ( 3.344%)      64 (80.0%)    1.148     -13.63     -1.148    -0.5280     -0.066      520
-  43    0.0  1000.0    0     141       5       5      10 ( 3.344%)      64 (80.0%)    1.148     -13.63     -1.148    -0.5280     -0.066      434
-  44    0.0  1000.0    0     132       5       5      12 ( 4.013%)      66 (82.5%)    1.148     -13.79     -1.148    -0.5280     -0.066      392
-  45    0.0  1000.0    0     177       6       6      10 ( 3.344%)      64 (80.0%)    1.148     -13.63     -1.148    -0.5280     -0.066      355
-  46    0.0  1000.0    0     132       5       5      12 ( 4.013%)      66 (82.5%)    1.148     -13.79     -1.148    -0.5280     -0.066      336
-  47    0.0  1000.0    0     177       6       6      10 ( 3.344%)      64 (80.0%)    1.148     -13.63     -1.148    -0.5280     -0.066      399
-  48    0.0  1000.0    0     132       5       5      12 ( 4.013%)      66 (82.5%)    1.148     -13.79     -1.148    -0.5280     -0.066      377
-  49    0.0  1000.0    0     177       6       6      10 ( 3.344%)      64 (80.0%)    1.148     -13.63     -1.148    -0.5280     -0.066      351
-  50    0.0  1000.0    0     132       5       5      12 ( 4.013%)      66 (82.5%)    1.148     -13.79     -1.148    -0.5280     -0.066      340
+   1    0.0     0.0    0     327       8       8      12 ( 3.715%)      82 (78.8%)    2.014     -15.09     -2.014    -0.5280     -0.066      N/A
+   2    0.0     0.5    0     221       5       5       9 ( 2.786%)      82 (78.8%)    2.014     -15.09     -2.014    -0.5280     -0.066      N/A
+   3    0.0     0.6    0     190       5       5       7 ( 2.167%)      88 (84.6%)    2.014     -15.55     -2.014    -0.5280     -0.066      N/A
+   4    0.0     0.8    0     173       4       4       9 ( 2.786%)      82 (78.8%)    2.014     -15.09     -2.014    -0.5280     -0.066      N/A
+   5    0.0     1.1    0     137       4       4      12 ( 3.715%)      92 (88.5%)    2.014     -15.87     -2.014    -0.5280     -0.066      N/A
+   6    0.0     1.4    0     131       3       3      11 ( 3.406%)      86 (82.7%)    2.014     -15.41     -2.014    -0.5280     -0.066      N/A
+   7    0.0     1.9    0     154       3       3       9 ( 2.786%)      86 (82.7%)    2.014     -15.41     -2.014    -0.5280     -0.066      N/A
+   8    0.0     2.4    0     177       5       5       7 ( 2.167%)      92 (88.5%)    2.014     -15.87     -2.014    -0.5280     -0.066      N/A
+   9    0.0     3.1    0     204       5       5       7 ( 2.167%)      92 (88.5%)    2.014     -15.87     -2.014    -0.5280     -0.066      N/A
+  10    0.0     4.1    0     189       5       5       7 ( 2.167%)      92 (88.5%)    2.014     -15.87     -2.014    -0.5280     -0.066       21
+  11    0.0     5.3    0     143       3       3      11 ( 3.406%)      86 (82.7%)    2.014     -15.41     -2.014    -0.5280     -0.066       26
+  12    0.0     6.9    0     155       3       3       9 ( 2.786%)      86 (82.7%)    2.014     -15.41     -2.014    -0.5280     -0.066      108
+  13    0.0     9.0    0     192       5       5       7 ( 2.167%)      92 (88.5%)    2.014     -15.87     -2.014    -0.5280     -0.066      inf
+  14    0.0    11.6    0     237       6       6       7 ( 2.167%)      98 (94.2%)    2.014     -16.33     -2.014    -0.5280     -0.066      inf
+  15    0.0    15.1    0     181       5       5       7 ( 2.167%)      98 (94.2%)    2.014     -16.33     -2.014    -0.5280     -0.066      inf
+  16    0.0    19.7    0     116       3       3      14 ( 4.334%)      94 (90.4%)    2.014     -16.02     -2.014    -0.5280     -0.066      863
+  17    0.0    25.6    0     144       3       3      11 ( 3.406%)      86 (82.7%)    2.014     -15.41     -2.014    -0.5280     -0.066      inf
+  18    0.0    33.3    0     156       4       4      24 ( 7.430%)      88 (84.6%)    2.171     -15.57     -2.171    -0.5280     -0.066      inf
+  19    0.0    43.3    0     241       6       6      14 ( 4.334%)      86 (82.7%)    2.171     -15.40     -2.171    -0.5280     -0.066      inf
+  20    0.0    56.2    0     247       6       6      18 ( 5.573%)      90 (86.5%)    2.171     -15.72     -2.171    -0.5280     -0.066      inf
+  21    0.0    73.1    0     262       6       6      13 ( 4.025%)      86 (82.7%)    2.171     -15.40     -2.171    -0.5280     -0.066      inf
+  22    0.0    95.0    0     172       4       4      14 ( 4.334%)      86 (82.7%)    2.171     -15.40     -2.171    -0.5280     -0.066      inf
+  23    0.0   123.5    0     251       6       6      11 ( 3.406%)      84 (80.8%)    2.171     -15.26     -2.171    -0.5280     -0.066      inf
+  24    0.0   160.6    0     214       6       6      15 ( 4.644%)      88 (84.6%)    2.171     -15.58     -2.171    -0.5280     -0.066      inf
+  25    0.0   208.8    0     182       5       5      12 ( 3.715%)      84 (80.8%)    2.171     -15.25     -2.171    -0.5280     -0.066      inf
+  26    0.0   271.4    0     168       5       5      11 ( 3.406%)      84 (80.8%)    2.171     -15.26     -2.171    -0.5280     -0.066      inf
+  27    0.0   352.8    0     218       6       6      15 ( 4.644%)      88 (84.6%)    2.171     -15.58     -2.171    -0.5280     -0.066      inf
+  28    0.0   458.7    0     185       5       5      12 ( 3.715%)      84 (80.8%)    2.171     -15.25     -2.171    -0.5280     -0.066      inf
+  29    0.0   596.3    0     172       5       5      15 ( 4.644%)      84 (80.8%)    2.171     -15.25     -2.171    -0.5280     -0.066      inf
+  30    0.0   775.1    0     262       6       6      13 ( 4.025%)      86 (82.7%)    2.171     -15.40     -2.171    -0.5280     -0.066      inf
+  31    0.0  1000.0    0     159       4       4      17 ( 5.263%)      90 (86.5%)    2.014     -15.71     -2.014    -0.5280     -0.066      238
+  32    0.0  1000.0    0     200       6       6       7 ( 2.167%)      88 (84.6%)    2.014     -15.55     -2.014    -0.5280     -0.066      504
+  33    0.0  1000.0    0     151       4       4       9 ( 2.786%)      82 (78.8%)    2.014     -15.09     -2.014    -0.5280     -0.066      149
+  34    0.0  1000.0    0     174       5       5       7 ( 2.167%)      88 (84.6%)    2.014     -15.55     -2.014    -0.5280     -0.066      127
+  35    0.0  1000.0    0     110       3       3      14 ( 4.334%)      86 (82.7%)    2.014     -15.41     -2.014    -0.5280     -0.066       88
+  36    0.0  1000.0    0     176       5       5       7 ( 2.167%)      92 (88.5%)    2.014     -15.87     -2.014    -0.5280     -0.066      103
+  37    0.0  1000.0    0     232       6       6       7 ( 2.167%)      98 (94.2%)    2.014     -16.33     -2.014    -0.5280     -0.066      106
+  38    0.0  1000.0    0     177       5       5       7 ( 2.167%)      98 (94.2%)    2.014     -16.33     -2.014    -0.5280     -0.066       98
+  39    0.0  1000.0    0     112       3       3      14 ( 4.334%)      94 (90.4%)    2.014     -16.02     -2.014    -0.5280     -0.066       89
+  40    0.0  1000.0    0     165       4       4       9 ( 2.786%)      86 (82.7%)    2.014     -15.41     -2.014    -0.5280     -0.066      107
+  41    0.0  1000.0    0     168       4       4       9 ( 2.786%)      86 (82.7%)    2.014     -15.41     -2.014    -0.5280     -0.066      118
+  42    0.0  1000.0    0     195       5       5       7 ( 2.167%)      92 (88.5%)    2.014     -15.87     -2.014    -0.5280     -0.066      122
+  43    0.0  1000.0    0     185       5       5       7 ( 2.167%)      92 (88.5%)    2.014     -15.87     -2.014    -0.5280     -0.066      113
+  44    0.0  1000.0    0     178       4       4      16 ( 4.954%)      88 (84.6%)    2.014     -15.56     -2.014    -0.5280     -0.066      110
+  45    0.0  1000.0    0     197       5       5       7 ( 2.167%)      92 (88.5%)    2.014     -15.87     -2.014    -0.5280     -0.066      144
+  46    0.0  1000.0    0     173       4       4       9 ( 2.786%)      86 (82.7%)    2.014     -15.41     -2.014    -0.5280     -0.066      136
+  47    0.0  1000.0    0     206       5       5      14 ( 4.334%)      94 (90.4%)    2.014     -16.03     -2.014    -0.5280     -0.066      134
+  48    0.0  1000.0    0     198       5       5       7 ( 2.167%)      92 (88.5%)    2.014     -15.87     -2.014    -0.5280     -0.066      170
+  49    0.0  1000.0    0     174       4       4       9 ( 2.786%)      86 (82.7%)    2.014     -15.41     -2.014    -0.5280     -0.066      171
+  50    0.0  1000.0    0     201       5       5       7 ( 2.167%)      92 (88.5%)    2.014     -15.87     -2.014    -0.5280     -0.066      180
 Routing failed.
 
 Failed routing attempt
-Total number of overused nodes: 12
+Total number of overused nodes: 7
 Routing Failure Diagnostics: Printing Overused Nodes Information
 ------ ------- ---------- --------- -------- ------------ ------- ------- ------- ------- ------- ------- -------
    No.  NodeId  Occupancy  Capacity  RR Node    Direction    Side     PTC   Block    Xlow    Ylow   Xhigh   Yhigh
                                         type                          NUM    Name                                 
 ------ ------- ---------- --------- -------- ------------ ------- ------- ------- ------- ------- ------- -------
-     0     224          2         1    CHANX      DEC_DIR     N/A       5      io       1       0       1       0
-     1     228          2         1    CHANX      DEC_DIR     N/A       9      io       1       0       1       0
-     2     231          2         1    CHANX      INC_DIR     N/A      12      io       1       0       1       0
-     3     232          2         1    CHANX      DEC_DIR     N/A      13      io       1       0       1       0
-     4     236          2         1    CHANX      DEC_DIR     N/A      17      io       1       0       1       0
-     5     245          2         1    CHANX      INC_DIR     N/A       6     clb       1       1       1       1
-     6     249          2         1    CHANX      INC_DIR     N/A      10     clb       1       1       1       1
-     7     265          2         1    CHANY      INC_DIR     N/A       6      io       0       1       0       1
-     8     269          2         1    CHANY      INC_DIR     N/A      10      io       0       1       0       1
-     9     288          2         1    CHANY      DEC_DIR     N/A       9     clb       1       1       1       1
-    10     292          2         1    CHANY      DEC_DIR     N/A      13     clb       1       1       1       1
-    11     296          2         1    CHANY      DEC_DIR     N/A      17     clb       1       1       1       1
+     0     219          2         1    CHANX      INC_DIR     N/A       0      io       1       0       1       0
+     1     234          2         1    CHANX      DEC_DIR     N/A      15      io       1       0       1       0
+     2     255          2         1    CHANX      INC_DIR     N/A      10     clb       1       1       1       1
+     3     262          2         1    CHANX      DEC_DIR     N/A      17     clb       1       1       1       1
+     4     278          2         1    CHANY      DEC_DIR     N/A       7      io       0       1       0       1
+     5     283          2         1    CHANY      INC_DIR     N/A      12      io       0       1       0       1
+     6     311          2         1    CHANY      INC_DIR     N/A      14     clb       1       1       1       1
 
 Final Net Connection Criticality Histogram:
-[        0:      0.1) 2 ( 20.0%) |*********************************
+[        0:      0.1) 2 ( 20.0%) |*************************************************
 [      0.1:      0.2) 0 (  0.0%) |
 [      0.2:      0.3) 0 (  0.0%) |
-[      0.3:      0.4) 0 (  0.0%) |
-[      0.4:      0.5) 0 (  0.0%) |
-[      0.5:      0.6) 2 ( 20.0%) |*********************************
-[      0.6:      0.7) 0 (  0.0%) |
-[      0.7:      0.8) 1 ( 10.0%) |****************
-[      0.8:      0.9) 2 ( 20.0%) |*********************************
-[      0.9:        1) 3 ( 30.0%) |*************************************************
-Router Stats: total_nets_routed: 279 total_connections_routed: 279 total_heap_pushes: 8222 total_heap_pops: 7550 
-Warning 56: Tileable routing resource graph does not support clock modeling yet! Related options are ignored...
+[      0.3:      0.4) 1 ( 10.0%) |*************************
+[      0.4:      0.5) 2 ( 20.0%) |*************************************************
+[      0.5:      0.6) 1 ( 10.0%) |*************************
+[      0.6:      0.7) 2 ( 20.0%) |*************************************************
+[      0.7:      0.8) 1 ( 10.0%) |*************************
+[      0.8:      0.9) 0 (  0.0%) |
+[      0.9:        1) 1 ( 10.0%) |*************************
+Router Stats: total_nets_routed: 236 total_connections_routed: 236 total_heap_pushes: 9332 total_heap_pops: 8633 
+Serial Connection Router is being destroyed. Time spent on path search: 0.001 seconds.
+
+Attempting to route at 30 channels (binary search bounds: [26, 34])
+Warning 40: Tileable routing resource graph does not support clock modeling yet! Related options are ignored...
 ## Build tileable routing resource graph
-X-direction routing channel width is 22
-Y-direction routing channel width is 22
-## Build tileable routing resource graph took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
-  RR Graph Nodes: 307
-  RR Graph Edges: 705
-Best routing used a channel width factor of 22.
-# Routing took 0.02 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+X-direction routing channel width is 30
+Y-direction routing channel width is 30
+## Build tileable routing resource graph took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
+  RR Graph Nodes: 339
+  RR Graph Edges: 953
+## Computing router lookahead map
+### Computing wire lookahead
+### Computing wire lookahead took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
+### Computing src/opin lookahead
+Warning 41: Found no more sample locations for SOURCE in io
+Warning 42: Found no more sample locations for OPIN in io
+Warning 43: Found no more sample locations for SOURCE in clb
+Warning 44: Found no more sample locations for OPIN in clb
+### Computing src/opin lookahead took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
+## Computing router lookahead map took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
+## Initializing router criticalities
+Initial Net Connection Criticality Histogram:
+[        0:      0.1) 2 ( 20.0%) |*************************
+[      0.1:      0.2) 0 (  0.0%) |
+[      0.2:      0.3) 0 (  0.0%) |
+[      0.3:      0.4) 4 ( 40.0%) |*************************************************
+[      0.4:      0.5) 4 ( 40.0%) |*************************************************
+[      0.5:      0.6) 0 (  0.0%) |
+[      0.6:      0.7) 0 (  0.0%) |
+[      0.7:      0.8) 0 (  0.0%) |
+[      0.8:      0.9) 0 (  0.0%) |
+[      0.9:        1) 0 (  0.0%) |
+## Initializing router criticalities took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
+---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
+Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wirelength      CPD       sTNS       sWNS       hTNS       hWNS Est Succ
+      (sec)     fac Updt    push    Nets   Conns                                       (ns)       (ns)       (ns)       (ns)       (ns)     Iter
+---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
+   1    0.0     0.0    0     206       8       8       8 ( 2.360%)      46 (38.3%)    1.150     -12.26     -1.150    -0.5280     -0.066      N/A
+   2    0.0     0.5    0     145       4       4       8 ( 2.360%)      46 (38.3%)    1.150     -12.26     -1.150    -0.5280     -0.066      N/A
+   3    0.0     0.6    0     157       4       4       2 ( 0.590%)      46 (38.3%)    1.153     -12.26     -1.153    -0.5280     -0.066      N/A
+   4    0.0     0.8    0      49       1       1       0 ( 0.000%)      50 (41.7%)    1.153     -12.57     -1.153    -0.5280     -0.066      N/A
+Restoring best routing
+Critical path: 1.15252 ns
+Successfully routed after 4 routing iterations.
+Final Net Connection Criticality Histogram:
+[        0:      0.1) 2 ( 20.0%) |*************************************************
+[      0.1:      0.2) 0 (  0.0%) |
+[      0.2:      0.3) 0 (  0.0%) |
+[      0.3:      0.4) 2 ( 20.0%) |*************************************************
+[      0.4:      0.5) 1 ( 10.0%) |*************************
+[      0.5:      0.6) 0 (  0.0%) |
+[      0.6:      0.7) 1 ( 10.0%) |*************************
+[      0.7:      0.8) 1 ( 10.0%) |*************************
+[      0.8:      0.9) 1 ( 10.0%) |*************************
+[      0.9:        1) 2 ( 20.0%) |*************************************************
+Router Stats: total_nets_routed: 17 total_connections_routed: 17 total_heap_pushes: 557 total_heap_pops: 487 
+Serial Connection Router is being destroyed. Time spent on path search: 0.000 seconds.
+
+Attempting to route at 28 channels (binary search bounds: [26, 30])
+Warning 45: Tileable routing resource graph does not support clock modeling yet! Related options are ignored...
+## Build tileable routing resource graph
+X-direction routing channel width is 28
+Y-direction routing channel width is 28
+## Build tileable routing resource graph took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
+  RR Graph Nodes: 331
+  RR Graph Edges: 729
+## Computing router lookahead map
+### Computing wire lookahead
+### Computing wire lookahead took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
+### Computing src/opin lookahead
+Warning 46: Found no more sample locations for SOURCE in io
+Warning 47: Found no more sample locations for OPIN in io
+Warning 48: Found no more sample locations for SOURCE in clb
+Warning 49: Found no more sample locations for OPIN in clb
+### Computing src/opin lookahead took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
+## Computing router lookahead map took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
+## Initializing router criticalities
+Initial Net Connection Criticality Histogram:
+[        0:      0.1) 2 ( 20.0%) |*************************
+[      0.1:      0.2) 0 (  0.0%) |
+[      0.2:      0.3) 0 (  0.0%) |
+[      0.3:      0.4) 4 ( 40.0%) |*************************************************
+[      0.4:      0.5) 4 ( 40.0%) |*************************************************
+[      0.5:      0.6) 0 (  0.0%) |
+[      0.6:      0.7) 0 (  0.0%) |
+[      0.7:      0.8) 0 (  0.0%) |
+[      0.8:      0.9) 0 (  0.0%) |
+[      0.9:        1) 0 (  0.0%) |
+## Initializing router criticalities took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
+---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
+Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wirelength      CPD       sTNS       sWNS       hTNS       hWNS Est Succ
+      (sec)     fac Updt    push    Nets   Conns                                       (ns)       (ns)       (ns)       (ns)       (ns)     Iter
+---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
+   1    0.0     0.0    0     335       8       8      18 ( 5.438%)      80 (71.4%)    2.063     -14.83     -2.063    -0.5280     -0.066      N/A
+   2    0.0     0.5    0     274       5       5       7 ( 2.115%)      80 (71.4%)    2.063     -14.83     -2.063    -0.5280     -0.066      N/A
+   3    0.0     0.6    0     138       4       4       9 ( 2.719%)      82 (73.2%)    2.063     -14.99     -2.063    -0.5280     -0.066      N/A
+   4    0.0     0.8    0     141       4       4       7 ( 2.115%)      82 (73.2%)    2.063     -14.99     -2.063    -0.5280     -0.066      N/A
+   5    0.0     1.1    0     178       4       4       6 ( 1.813%)      84 (75.0%)    2.063     -15.14     -2.063    -0.5280     -0.066      N/A
+   6    0.0     1.4    0     144       4       4       6 ( 1.813%)      82 (73.2%)    2.063     -14.99     -2.063    -0.5280     -0.066      N/A
+   7    0.0     1.9    0     142       4       4       7 ( 2.115%)      82 (73.2%)    2.063     -14.99     -2.063    -0.5280     -0.066      N/A
+   8    0.0     2.4    0     179       4       4       6 ( 1.813%)      84 (75.0%)    2.063     -15.14     -2.063    -0.5280     -0.066      N/A
+   9    0.0     3.1    0     142       4       4       6 ( 1.813%)      82 (73.2%)    2.063     -14.99     -2.063    -0.5280     -0.066      N/A
+  10    0.0     4.1    0     142       4       4       7 ( 2.115%)      82 (73.2%)    2.063     -14.99     -2.063    -0.5280     -0.066      inf
+  11    0.0     5.3    0     111       4       4       9 ( 2.719%)      82 (73.2%)    2.063     -14.99     -2.063    -0.5280     -0.066      inf
+  12    0.0     6.9    0     202       4       4       9 ( 2.719%)      84 (75.0%)    2.063     -15.14     -2.063    -0.5280     -0.066      inf
+  13    0.0     9.0    0     139       4       4       7 ( 2.115%)      80 (71.4%)    2.063     -14.83     -2.063    -0.5280     -0.066      inf
+  14    0.0    11.6    0     119       4       4       6 ( 1.813%)      84 (75.0%)    2.063     -15.14     -2.063    -0.5280     -0.066      inf
+  15    0.0    15.1    0     206       4       4       7 ( 2.115%)      82 (73.2%)    2.063     -14.99     -2.063    -0.5280     -0.066      inf
+  16    0.0    19.7    0     129       4       4       6 ( 1.813%)      82 (73.2%)    2.063     -14.99     -2.063    -0.5280     -0.066      inf
+  17    0.0    25.6    0     122       4       4       6 ( 1.813%)      84 (75.0%)    2.063     -15.14     -2.063    -0.5280     -0.066      124
+  18    0.0    33.3    0      98       3       3      10 ( 3.021%)      80 (71.4%)    2.063     -14.83     -2.063    -0.5280     -0.066       98
+  19    0.0    43.3    0     132       4       4       6 ( 1.813%)      82 (73.2%)    2.063     -14.99     -2.063    -0.5280     -0.066      213
+  20    0.0    56.2    0     123       4       4       7 ( 2.115%)      82 (73.2%)    2.063     -14.99     -2.063    -0.5280     -0.066      123
+  21    0.0    73.1    0     174       4       4       6 ( 1.813%)      84 (75.0%)    2.063     -15.14     -2.063    -0.5280     -0.066      109
+  22    0.0    95.0    0     166       4       4       6 ( 1.813%)      84 (75.0%)    2.063     -15.14     -2.063    -0.5280     -0.066       98
+  23    0.0   123.5    0     135       4       4       7 ( 2.115%)      82 (73.2%)    2.063     -14.99     -2.063    -0.5280     -0.066      124
+  24    0.0   160.6    0      86       3       3      11 ( 3.323%)      80 (71.4%)    2.063     -14.83     -2.063    -0.5280     -0.066      168
+  25    0.0   208.8    0     125       4       4       6 ( 1.813%)      82 (73.2%)    2.063     -14.99     -2.063    -0.5280     -0.066      inf
+  26    0.0   271.4    0     133       5       5       7 ( 2.115%)      82 (73.2%)    2.063     -14.99     -2.063    -0.5280     -0.066      inf
+  27    0.0   352.8    0     159       4       4       6 ( 1.813%)      84 (75.0%)    2.063     -15.14     -2.063    -0.5280     -0.066      inf
+  28    0.0   458.7    0     118       4       4       7 ( 2.115%)      80 (71.4%)    2.063     -14.83     -2.063    -0.5280     -0.066      inf
+  29    0.0   596.3    0     115       4       4       9 ( 2.719%)      82 (73.2%)    2.063     -14.99     -2.063    -0.5280     -0.066      inf
+  30    0.0   775.1    0     127       4       4       7 ( 2.115%)      82 (73.2%)    2.063     -14.99     -2.063    -0.5280     -0.066      inf
+  31    0.0  1000.0    0     158       4       4       6 ( 1.813%)      84 (75.0%)    2.063     -15.14     -2.063    -0.5280     -0.066      inf
+  32    0.0  1000.0    0     121       4       4       6 ( 1.813%)      82 (73.2%)    2.063     -14.99     -2.063    -0.5280     -0.066      inf
+  33    0.0  1000.0    0     118       4       4       7 ( 2.115%)      82 (73.2%)    2.063     -14.99     -2.063    -0.5280     -0.066      620
+  34    0.0  1000.0    0     159       4       4       6 ( 1.813%)      84 (75.0%)    2.063     -15.14     -2.063    -0.5280     -0.066      800
+  35    0.0  1000.0    0     128       4       4       7 ( 2.115%)      80 (71.4%)    2.063     -14.83     -2.063    -0.5280     -0.066      254
+  36    0.0  1000.0    0     110       4       4       9 ( 2.719%)      82 (73.2%)    2.063     -14.99     -2.063    -0.5280     -0.066      304
+  37    0.0  1000.0    0     121       4       4       6 ( 1.813%)      84 (75.0%)    2.063     -15.14     -2.063    -0.5280     -0.066      inf
+  38    0.0  1000.0    0     161       4       4       7 ( 2.115%)      82 (73.2%)    2.063     -14.99     -2.063    -0.5280     -0.066      inf
+  39    0.0  1000.0    0     121       4       4       6 ( 1.813%)      82 (73.2%)    2.063     -14.99     -2.063    -0.5280     -0.066    28791
+  40    0.0  1000.0    0     129       4       4       7 ( 2.115%)      82 (73.2%)    2.063     -14.99     -2.063    -0.5280     -0.066      968
+  41    0.0  1000.0    0     165       4       4       6 ( 1.813%)      84 (75.0%)    2.063     -15.14     -2.063    -0.5280     -0.066     1405
+  42    0.0  1000.0    0     121       4       4       6 ( 1.813%)      82 (73.2%)    2.063     -14.99     -2.063    -0.5280     -0.066      686
+  43    0.0  1000.0    0     127       4       4       7 ( 2.115%)      82 (73.2%)    2.063     -14.99     -2.063    -0.5280     -0.066      333
+  44    0.0  1000.0    0     116       4       4       7 ( 2.115%)      82 (73.2%)    2.063     -14.99     -2.063    -0.5280     -0.066      401
+  45    0.0  1000.0    0     103       4       4      10 ( 3.021%)      80 (71.4%)    2.063     -14.83     -2.063    -0.5280     -0.066      328
+  46    0.0  1000.0    0     124       4       4       7 ( 2.115%)      80 (71.4%)    2.063     -14.83     -2.063    -0.5280     -0.066     1219
+  47    0.0  1000.0    0     173       4       4       9 ( 2.719%)      84 (75.0%)    2.063     -15.14     -2.063    -0.5280     -0.066     1277
+  48    0.0  1000.0    0     131       4       4       7 ( 2.115%)      82 (73.2%)    2.063     -14.99     -2.063    -0.5280     -0.066      inf
+  49    0.0  1000.0    0      86       3       3      11 ( 3.323%)      80 (71.4%)    2.063     -14.83     -2.063    -0.5280     -0.066      inf
+  50    0.0  1000.0    0     129       4       4       6 ( 1.813%)      82 (73.2%)    2.063     -14.99     -2.063    -0.5280     -0.066      inf
+Routing failed.
+
+Failed routing attempt
+Total number of overused nodes: 6
+Routing Failure Diagnostics: Printing Overused Nodes Information
+------ ------- ---------- --------- -------- ------------ ------- ------- ------- ------- ------- ------- -------
+   No.  NodeId  Occupancy  Capacity  RR Node    Direction    Side     PTC   Block    Xlow    Ylow   Xhigh   Yhigh
+                                        type                          NUM    Name                                 
+------ ------- ---------- --------- -------- ------------ ------- ------- ------- ------- ------- ------- -------
+     0     246          2         1    CHANX      DEC_DIR     N/A      27      io       1       0       1       0
+     1     247          2         1    CHANX      INC_DIR     N/A       0     clb       1       1       1       1
+     2     266          2         1    CHANX      DEC_DIR     N/A      19     clb       1       1       1       1
+     3     299          2         1    CHANY      INC_DIR     N/A      24      io       0       1       0       1
+     4     306          2         1    CHANY      DEC_DIR     N/A       3     clb       1       1       1       1
+     5     319          2         1    CHANY      INC_DIR     N/A      16     clb       1       1       1       1
+
+Final Net Connection Criticality Histogram:
+[        0:      0.1) 2 ( 20.0%) |*************************************************
+[      0.1:      0.2) 1 ( 10.0%) |*************************
+[      0.2:      0.3) 1 ( 10.0%) |*************************
+[      0.3:      0.4) 0 (  0.0%) |
+[      0.4:      0.5) 2 ( 20.0%) |*************************************************
+[      0.5:      0.6) 1 ( 10.0%) |*************************
+[      0.6:      0.7) 1 ( 10.0%) |*************************
+[      0.7:      0.8) 1 ( 10.0%) |*************************
+[      0.8:      0.9) 0 (  0.0%) |
+[      0.9:        1) 1 ( 10.0%) |*************************
+Router Stats: total_nets_routed: 203 total_connections_routed: 203 total_heap_pushes: 7135 total_heap_pops: 6539 
+Serial Connection Router is being destroyed. Time spent on path search: 0.001 seconds.
+Warning 50: Tileable routing resource graph does not support clock modeling yet! Related options are ignored...
+## Build tileable routing resource graph
+X-direction routing channel width is 30
+Y-direction routing channel width is 30
+## Build tileable routing resource graph took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
+  RR Graph Nodes: 339
+  RR Graph Edges: 953
+Best routing used a channel width factor of 30.
+# Routing took 0.03 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 
 Checking to ensure routing is legal...
 # Checking to ensure non-configurable edges are legal
-# Checking to ensure non-configurable edges are legal took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+# Checking to ensure non-configurable edges are legal took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 Completed routing consistency check successfully.
 
-Serial number (magic cookie) for the routing is: -233610
-Circuit successfully routed with a channel width factor of 22.
+Serial number (magic cookie) for the routing is: -257720
+Circuit successfully routed with a channel width factor of 30.
+Incr Slack updates 114 in 0.000222132 sec
+Full Max Req/Worst Slack updates 7 in 1.8566e-05 sec
+Incr Max Req/Worst Slack updates 107 in 0.000196472 sec
+Incr Criticality updates 100 in 0.000276744 sec
+Full Criticality updates 14 in 4.7271e-05 sec
 # Synchronize the packed netlist to routing optimization
 ## Annotating rr_node with routed nets
-## Annotating rr_node with routed nets took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+## Annotating rr_node with routed nets took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 Found 0 mismatches between routing and packing results.
 Fixed 0 routing traces due to mismatch between routing and packing results.
-# Synchronize the packed netlist to routing optimization took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+# Synchronize the packed netlist to routing optimization took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 Final Clustering Statistics: 
 ----------   --------   ------------------------------------   --------------------------
 Block Type   # Blocks   Avg. # of input clocks and pins used   Avg. # of output pins used
@@ -976,17 +998,17 @@ Block Type   # Blocks   Avg. # of input clocks and pins used   Avg. # of output 
 Absorbed logical nets 9 out of 19 nets, 10 nets not absorbed.
 
 
-Average number of bends per net: 5.75000  Maximum # of bends: 16
+Average number of bends per net: 5.25000  Maximum # of bends: 10
 
 Number of global nets: 2
 Number of routed nets (nonglobal): 8
 Wire length results (in units of 1 clb segments)...
-	Total wirelength: 54, average net length: 6.75000
-	Maximum net length: 17
+	Total wirelength: 50, average net length: 6.25000
+	Maximum net length: 11
 
 Wire length results in terms of physical segments...
-	Total wiring segments used: 54, average wire segments per net: 6.75000
-	Maximum segments used by a net: 17
+	Total wiring segments used: 50, average wire segments per net: 6.25000
+	Maximum segments used by a net: 11
 	Total local nets with reserved CLB opins: 0
 Total number of nets absorbed: 0
 
@@ -994,126 +1016,126 @@ Routing channel utilization histogram:
 [        1:      inf) 0 (  0.0%) |
 [      0.9:        1) 0 (  0.0%) |
 [      0.8:      0.9) 0 (  0.0%) |
-[      0.7:      0.8) 4 ( 50.0%) |*************************************************
+[      0.7:      0.8) 0 (  0.0%) |
 [      0.5:      0.6) 0 (  0.0%) |
-[      0.4:      0.5) 0 (  0.0%) |
-[      0.3:      0.4) 0 (  0.0%) |
+[      0.4:      0.5) 3 ( 37.5%) |*************************************
+[      0.3:      0.4) 1 ( 12.5%) |************
 [      0.2:      0.3) 0 (  0.0%) |
 [      0.1:      0.2) 0 (  0.0%) |
 [        0:      0.1) 4 ( 50.0%) |*************************************************
-Maximum routing channel utilization:      0.68 at (1,0)
+Maximum routing channel utilization:      0.43 at (1,0)
 
 X - Directed channels:   j max occ ave occ capacity
                       ---- ------- ------- --------
-                         0      15   5.000       22
-                         1      14   4.667       22
+                         0      13   4.333       30
+                         1      13   4.333       30
 Y - Directed channels:   i max occ ave occ capacity
                       ---- ------- ------- --------
-                         0      13   4.333       22
-                         1      12   4.000       22
+                         0      11   3.667       30
+                         1      13   4.333       30
 
-Total tracks in x-direction: 44, in y-direction: 44
+Total tracks in x-direction: 60, in y-direction: 60
 
 Logic area (in minimum width transistor areas, excludes I/Os and empty grid tiles)...
 	Total logic block area (Warning, need to add pitch of routing to blocks with height > 3): 53894
 	Total used logic block area: 53894
 
 Routing area (in minimum width transistor areas)...
-	Total routing area: 5542.74, per logic tile: 615.860
+	Total routing area: 8136.41, per logic tile: 904.046
 
 Total Number of Wiring Segments by Direction: direction length number
                                               --------- ------ -------
-                                                      X      4     44
-                                                      Y      4     44
+                                                      X      4     60
+                                                      Y      4     60
 
 X - Directed Wiring Segment usage by length: length utilization
                                              ------ -----------
-                                             4       0.659
+                                             4       0.433
 
 Y - Directed Wiring Segment usage by length: length utilization
                                              ------ -----------
-                                             4       0.568
+                                             4         0.4
 
 Segment occupancy by length: Length utilization
                              ------ -----------
-                             L4           0.614
+                             L4           0.417
 
 Segment occupancy by type: name type utilization
                            ---- ---- -----------
-                             L4    0       0.614
+                             L4    0       0.417
 
 Final hold Worst Negative Slack (hWNS): -0.066 ns
 Final hold Total Negative Slack (hTNS): -0.528 ns
 
 Final hold slack histogram:
-[ -6.6e-11:  9.3e-11) 8 ( 33.3%) |*************************************************
-[  9.3e-11:  2.5e-10) 0 (  0.0%) |
-[  2.5e-10:  4.1e-10) 8 ( 33.3%) |*************************************************
-[  4.1e-10:  5.7e-10) 5 ( 20.8%) |*******************************
-[  5.7e-10:  7.3e-10) 0 (  0.0%) |
-[  7.3e-10:  8.9e-10) 0 (  0.0%) |
-[  8.9e-10:    1e-09) 2 (  8.3%) |************
-[    1e-09:  1.2e-09) 0 (  0.0%) |
-[  1.2e-09:  1.4e-09) 0 (  0.0%) |
-[  1.4e-09:  1.5e-09) 1 (  4.2%) |******
+[ -6.6e-11:  4.6e-11) 8 ( 33.3%) |***************************************
+[  4.6e-11:  1.6e-10) 0 (  0.0%) |
+[  1.6e-10:  2.7e-10) 0 (  0.0%) |
+[  2.7e-10:  3.8e-10) 10 ( 41.7%) |*************************************************
+[  3.8e-10:  4.9e-10) 1 (  4.2%) |*****
+[  4.9e-10:    6e-10) 0 (  0.0%) |
+[    6e-10:  7.2e-10) 1 (  4.2%) |*****
+[  7.2e-10:  8.3e-10) 1 (  4.2%) |*****
+[  8.3e-10:  9.4e-10) 1 (  4.2%) |*****
+[  9.4e-10:  1.1e-09) 2 (  8.3%) |**********
 
-Final critical path delay (least slack): 1.62724 ns, Fmax: 614.539 MHz
-Final setup Worst Negative Slack (sWNS): -1.62724 ns
-Final setup Total Negative Slack (sTNS): -12.9045 ns
+Final critical path delay (least slack): 1.15252 ns, Fmax: 867.661 MHz
+Final setup Worst Negative Slack (sWNS): -1.15252 ns
+Final setup Total Negative Slack (sTNS): -12.5716 ns
 
 Final setup slack histogram:
-[ -1.6e-09: -1.5e-09) 1 (  4.2%) |******
-[ -1.5e-09: -1.3e-09) 0 (  0.0%) |
-[ -1.3e-09: -1.2e-09) 0 (  0.0%) |
-[ -1.2e-09:   -1e-09) 1 (  4.2%) |******
-[   -1e-09: -8.5e-10) 5 ( 20.8%) |*******************************
-[ -8.5e-10: -6.9e-10) 0 (  0.0%) |
-[ -6.9e-10: -5.3e-10) 7 ( 29.2%) |*******************************************
-[ -5.3e-10: -3.8e-10) 2 (  8.3%) |************
-[ -3.8e-10: -2.2e-10) 0 (  0.0%) |
-[ -2.2e-10: -6.6e-11) 8 ( 33.3%) |*************************************************
+[ -1.2e-09:   -1e-09) 2 (  8.3%) |************
+[   -1e-09: -9.4e-10) 1 (  4.2%) |******
+[ -9.4e-10: -8.3e-10) 5 ( 20.8%) |*******************************
+[ -8.3e-10: -7.2e-10) 1 (  4.2%) |******
+[ -7.2e-10: -6.1e-10) 0 (  0.0%) |
+[ -6.1e-10:   -5e-10) 5 ( 20.8%) |*******************************
+[   -5e-10: -3.9e-10) 2 (  8.3%) |************
+[ -3.9e-10: -2.8e-10) 0 (  0.0%) |
+[ -2.8e-10: -1.7e-10) 0 (  0.0%) |
+[ -1.7e-10: -6.6e-11) 8 ( 33.3%) |*************************************************
 
-Final geomean non-virtual intra-domain period: 1.62724 ns (614.539 MHz)
-Final fanout-weighted geomean non-virtual intra-domain period: 1.62724 ns (614.539 MHz)
+Final geomean non-virtual intra-domain period: 1.15252 ns (867.661 MHz)
+Final fanout-weighted geomean non-virtual intra-domain period: 1.15252 ns (867.661 MHz)
 
-Incr Slack updates 1 in 4.736e-05 sec
-Full Max Req/Worst Slack updates 1 in 2.16e-06 sec
+Incr Slack updates 1 in 4.217e-06 sec
+Full Max Req/Worst Slack updates 1 in 2.859e-06 sec
 Incr Max Req/Worst Slack updates 0 in 0 sec
 Incr Criticality updates 0 in 0 sec
-Full Criticality updates 1 in 3.28e-06 sec
-Flow timing analysis took 0.00399474 seconds (0.0031005 STA, 0.000894245 slack) (83 full updates: 5 setup, 0 hold, 78 combined).
+Full Criticality updates 1 in 3.82e-06 sec
+Flow timing analysis took 0.00470697 seconds (0.00367105 STA, 0.00103592 slack) (120 full updates: 5 setup, 0 hold, 115 combined).
 VPR succeeded
-The entire flow of VPR took 0.35 seconds (max_rss 65.2 MiB)
+The entire flow of VPR took 0.30 seconds (max_rss 59.5 MiB)
 
-Command line to execute: read_openfpga_arch -f /home/ubuntu/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/run001/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm/counter/MIN_ROUTE_CHAN_WIDTH/arch/k6_frac_N10_adder_chain_dpram8K_dsp36_fracff_40nm_openfpga.xml
+Command line to execute: read_openfpga_arch -f /home/cae_sajib/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/run001/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm/counter/MIN_ROUTE_CHAN_WIDTH/arch/k6_frac_N10_adder_chain_dpram8K_dsp36_fracff_40nm_openfpga_IHP_sg13g2_cds.xml
 
 Confirm selected options when call command 'read_openfpga_arch':
---file, -f: /home/ubuntu/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/run001/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm/counter/MIN_ROUTE_CHAN_WIDTH/arch/k6_frac_N10_adder_chain_dpram8K_dsp36_fracff_40nm_openfpga.xml
-Reading XML architecture '/home/ubuntu/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/run001/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm/counter/MIN_ROUTE_CHAN_WIDTH/arch/k6_frac_N10_adder_chain_dpram8K_dsp36_fracff_40nm_openfpga.xml'...
+--file, -f: /home/cae_sajib/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/run001/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm/counter/MIN_ROUTE_CHAN_WIDTH/arch/k6_frac_N10_adder_chain_dpram8K_dsp36_fracff_40nm_openfpga_IHP_sg13g2_cds.xml
+Reading XML architecture '/home/cae_sajib/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/run001/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm/counter/MIN_ROUTE_CHAN_WIDTH/arch/k6_frac_N10_adder_chain_dpram8K_dsp36_fracff_40nm_openfpga_IHP_sg13g2_cds.xml'...
 Read OpenFPGA architecture
-Warning 57: Automatically set circuit model 'frac_lut6' to be default in its type.
-Warning 58: Automatically set circuit model 'MULTI_MODE_DFFSRQ' to be default in its type.
-Warning 59: Automatically set circuit model 'DFFR' to be default in its type.
-Warning 60: Automatically set circuit model 'GPIO' to be default in its type.
+Warning 51: Automatically set circuit model 'frac_lut6' to be default in its type.
+Warning 52: Automatically set circuit model 'MULTI_MODE_DFFSRQ' to be default in its type.
+Warning 53: Automatically set circuit model 'DFFR' to be default in its type.
+Warning 54: Automatically set circuit model 'GPIO' to be default in its type.
 Use the default configurable memory model 'DFFR' for circuit model 'mux_2level' port 'sram')
 Use the default configurable memory model 'DFFR' for circuit model 'mux_2level_tapbuf' port 'sram')
 Use the default configurable memory model 'DFFR' for circuit model 'mux_1level_tapbuf' port 'sram')
 Use the default configurable memory model 'DFFR' for circuit model 'frac_lut6' port 'sram')
-Read OpenFPGA architecture took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+Read OpenFPGA architecture took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 Check circuit library
 Checking circuit library passed.
-Check circuit library took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+Check circuit library took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 Found 0 errors when checking configurable memory circuit models!
 Found 0 errors when checking configuration protocol!
 Found 0 errors when checking tile annotation!
 
-Command line to execute: read_openfpga_simulation_setting -f /home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_simulation_settings/fixed_sim_openfpga.xml
+Command line to execute: read_openfpga_simulation_setting -f /home/cae_sajib/Desktop/OpenFPGA/openfpga_flow/openfpga_simulation_settings/fixed_sim_openfpga.xml
 
 Confirm selected options when call command 'read_openfpga_simulation_setting':
---file, -f: /home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_simulation_settings/fixed_sim_openfpga.xml
-Reading XML simulation setting '/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_simulation_settings/fixed_sim_openfpga.xml'...
+--file, -f: /home/cae_sajib/Desktop/OpenFPGA/openfpga_flow/openfpga_simulation_settings/fixed_sim_openfpga.xml
+Reading XML simulation setting '/home/cae_sajib/Desktop/OpenFPGA/openfpga_flow/openfpga_simulation_settings/fixed_sim_openfpga.xml'...
 Read OpenFPGA simulation settings
-Read OpenFPGA simulation settings took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+Read OpenFPGA simulation settings took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 
 Command line to execute: link_openfpga_arch --sort_gsb_chan_node_in_edges
 
@@ -1123,7 +1145,7 @@ Confirm selected options when call command 'link_openfpga_arch':
 --verbose: off
 Link OpenFPGA architecture to VPR architecture
 # Build fast look-up for physical tile pins
-# Build fast look-up for physical tile pins took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+# Build fast look-up for physical tile pins took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 
 Building annotation for physical modes in pb_type...Done
 Check physical mode annotation for pb_types passed.
@@ -1145,51 +1167,40 @@ Binded 2 routing resource graph switches to circuit models
 Binded 1 routing segments to circuit models
 Binded 1 direct connections to circuit models
 # Annotating rr_node with routed nets
-# Annotating rr_node with routed nets took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+# Annotating rr_node with routed nets took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 Loaded node-to-net mapping
-Annotating previous nodes for rr_node...Done with 78 nodes mapping
-Built 705 incoming edges for routing resource graph
+Annotating previous nodes for rr_node...Done with 0 nodes mapping
+Built 953 incoming edges for routing resource graph
 # Build General Switch Block(GSB) annotation on top of routing resource graph
-[25%] Backannotated GSB[0][0]
-[50%] Backannotated GSB[0][1]
-[75%] Backannotated GSB[1][0]
-[100%] Backannotated GSB[1][1]
-Backannotated 4 General Switch Blocks (GSBs).
-# Build General Switch Block(GSB) annotation on top of routing resource graph took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+[25%] Backannotated GSB[0][0][50%] Backannotated GSB[0][1][75%] Backannotated GSB[1][0][100%] Backannotated GSB[1][1]Backannotated 4 General Switch Blocks (GSBs).
+# Build General Switch Block(GSB) annotation on top of routing resource graph took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 # Sort incoming edges for each routing track output node of General Switch Block(GSB)
-[25%] Sorted incoming edges for each routing track output node of GSB[0][0]
-[50%] Sorted incoming edges for each routing track output node of GSB[0][1]
-[75%] Sorted incoming edges for each routing track output node of GSB[1][0]
-[100%] Sorted incoming edges for each routing track output node of GSB[1][1]
-Sorted incoming edges for each routing track output node of 4 General Switch Blocks (GSBs).
-# Sort incoming edges for each routing track output node of General Switch Block(GSB) took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+[25%] Sorted incoming edges for each routing track output node of GSB[0][0][50%] Sorted incoming edges for each routing track output node of GSB[0][1][75%] Sorted incoming edges for each routing track output node of GSB[1][0][100%] Sorted incoming edges for each routing track output node of GSB[1][1]Sorted incoming edges for each routing track output node of 4 General Switch Blocks (GSBs).
+# Sort incoming edges for each routing track output node of General Switch Block(GSB) took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 # Sort incoming edges for each input pin node of General Switch Block(GSB)
-[25%] Sorted incoming edges for each input pin node of GSB[0][0]
-[50%] Sorted incoming edges for each input pin node of GSB[0][1]
-[75%] Sorted incoming edges for each input pin node of GSB[1][0]
-[100%] Sorted incoming edges for each input pin node of GSB[1][1]
-Sorted incoming edges for each input pin node of 4 General Switch Blocks (GSBs).
-# Sort incoming edges for each input pin node of General Switch Block(GSB) took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+[25%] Sorted incoming edges for each input pin node of GSB[0][0][50%] Sorted incoming edges for each input pin node of GSB[0][1][75%] Sorted incoming edges for each input pin node of GSB[1][0][100%] Sorted incoming edges for each input pin node of GSB[1][1]Sorted incoming edges for each input pin node of 4 General Switch Blocks (GSBs).
+# Sort incoming edges for each input pin node of General Switch Block(GSB) took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 # Build a library of physical multiplexers
-Built a multiplexer library of 8 physical multiplexers.
+Built a multiplexer library of 9 physical multiplexers.
 Maximum multiplexer size is 64.
 	model 'mux_2level_tapbuf', input_size='7'
-	model 'mux_2level_tapbuf', input_size='3'
-	model 'mux_2level_tapbuf', input_size='4'
 	model 'mux_2level_tapbuf', input_size='5'
+	model 'mux_2level_tapbuf', input_size='4'
+	model 'mux_2level_tapbuf', input_size='3'
+	model 'mux_2level_tapbuf', input_size='6'
 	model 'mux_2level', input_size='61'
 	model 'mux_1level_tapbuf', input_size='4'
 	model 'mux_1level_tapbuf', input_size='3'
 	model 'frac_lut6', input_size='64'
-# Build a library of physical multiplexers took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+# Build a library of physical multiplexers took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 # Build the annotation about direct connection between tiles
 Built 0 tile-to-tile direct connections
-# Build the annotation about direct connection between tiles took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+# Build the annotation about direct connection between tiles took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 Building annotation for post-routing and clustering synchornization results...Done
 Building annotation for mapped blocks on grid locations...Done
 Will apply operating clock frequency 500 [MHz] to simulations
 Will apply 10 operating clock cycles to simulations
-Link OpenFPGA architecture to VPR architecture took 0.01 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+Link OpenFPGA architecture to VPR architecture took 0.01 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 
 Command line to execute: check_netlist_naming_conflict --fix --report ./netlist_renaming.xml
 
@@ -1199,14 +1210,14 @@ Confirm selected options when call command 'check_netlist_naming_conflict':
 Check naming violations of netlist blocks and nets
 Fixed 42 naming conflicts in the netlist.
 Naming fix-up report is generated to file './netlist_renaming.xml'
-Check naming violations of netlist blocks and nets took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+Check naming violations of netlist blocks and nets took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 
 Command line to execute: lut_truth_table_fixup
 
 Confirm selected options when call command 'lut_truth_table_fixup':
 --verbose: off
 Fix up LUT truth tables after packing optimization
-Fix up LUT truth tables after packing optimization took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+Fix up LUT truth tables after packing optimization took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 
 Command line to execute: build_fabric --compress_routing
 
@@ -1223,55 +1234,55 @@ Confirm selected options when call command 'build_fabric':
 --verbose: off
 Identify unique General Switch Blocks (GSBs)
 Detected 4 unique general switch blocks from a total of 4 (compression rate=0.00%)
-Identify unique General Switch Blocks (GSBs) took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+Identify unique General Switch Blocks (GSBs) took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 
 
 Build fabric module graph
 # Build constant generator modules
-# Build constant generator modules took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+# Build constant generator modules took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 # Build user-defined modules
-# Build user-defined modules took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+# Build user-defined modules took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 # Build essential (inverter/buffer/logic gate) modules
-# Build essential (inverter/buffer/logic gate) modules took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+# Build essential (inverter/buffer/logic gate) modules took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 # Build local encoder (for multiplexers) modules
-# Build local encoder (for multiplexers) modules took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+# Build local encoder (for multiplexers) modules took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 # Building multiplexer modules
-# Building multiplexer modules took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+# Building multiplexer modules took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 # Build Look-Up Table (LUT) modules
-# Build Look-Up Table (LUT) modules took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+# Build Look-Up Table (LUT) modules took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 # Build wire modules
-# Build wire modules took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+# Build wire modules took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 # Build memory modules
-# Build memory modules took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+# Build memory modules took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 # Build grid modules
 Building logical tiles...Done
 Building physical tiles...Done
-# Build grid modules took 0.02 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+# Build grid modules took 0.01 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 # Build unique routing modules...
-# Build unique routing modules... took 0.01 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+# Build unique routing modules... took 0.01 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 # Build FPGA fabric module
 ## Add grid instances to top module
-## Add grid instances to top module took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+## Add grid instances to top module took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 ## Add switch block instances to top module
-## Add switch block instances to top module took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+## Add switch block instances to top module took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 ## Add connection block instances to top module
-## Add connection block instances to top module took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+## Add connection block instances to top module took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 ## Add connection block instances to top module
-## Add connection block instances to top module took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+## Add connection block instances to top module took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 ## Add module nets between grids and GSBs
-## Add module nets between grids and GSBs took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+## Add module nets between grids and GSBs took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 ## Add module nets for inter-tile connections
-## Add module nets for inter-tile connections took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+## Add module nets for inter-tile connections took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 ## Build configurable regions for the top module
-## Build configurable regions for the top module took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+## Build configurable regions for the top module took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 ## Add module nets for configuration buses
-## Add module nets for configuration buses took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
-# Build FPGA fabric module took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
-Build fabric module graph took 0.03 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+## Add module nets for configuration buses took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
+# Build FPGA fabric module took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
+Build fabric module graph took 0.02 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 Create I/O location mapping for top module
-Create I/O location mapping for top module took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+Create I/O location mapping for top module took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 Create global port info for top module
-Create global port info for top module took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+Create global port info for top module took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 
 Command line to execute: write_fabric_hierarchy --file ./fabric_hierarchy.txt
 
@@ -1282,10 +1293,10 @@ Confirm selected options when call command 'write_fabric_hierarchy':
 --depth: off
 --exclude_empty_modules: off
 --verbose: off
-Warning 61: Directory '.' already exists. Will overwrite contents
+Warning 55: Directory '.' already exists. Will overwrite contents
 Write fabric hierarchy to plain-text file './fabric_hierarchy.txt'
 Outputted 1 modules as root
-Write fabric hierarchy to plain-text file './fabric_hierarchy.txt' took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+Write fabric hierarchy to plain-text file './fabric_hierarchy.txt' took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 
 Command line to execute: repack
 
@@ -1294,9 +1305,9 @@ Confirm selected options when call command 'repack':
 --ignore_global_nets_on_pins: off
 --verbose: off
 Build routing resource graph for the physical implementation of logical tile
-Build routing resource graph for the physical implementation of logical tile took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+Build routing resource graph for the physical implementation of logical tile took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 Repack clustered blocks to physical implementation of logical tile
-Repack clustered block '$abc$239$new_n24'...Done
+Repack clustered block '$abc$222$new_n24'...Done
 Repack clustered block 'out:result[0]'...Done
 Repack clustered block 'out:result[1]'...Done
 Repack clustered block 'out:result[2]'...Done
@@ -1307,12 +1318,12 @@ Repack clustered block 'out:result[6]'...Done
 Repack clustered block 'out:result[7]'...Done
 Repack clustered block 'clk'...Done
 Repack clustered block 'reset'...Done
-Repack clustered blocks to physical implementation of logical tile took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+Repack clustered blocks to physical implementation of logical tile took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 Identify wire LUTs created by repacking
 Identified 0 wire LUTs created by repacker
-Identify wire LUTs created by repacking took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+Identify wire LUTs created by repacking took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 Build truth tables for physical LUTs
-Build truth tables for physical LUTs took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+Build truth tables for physical LUTs took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 
 Command line to execute: build_architecture_bitstream --verbose --write_file fabric_independent_bitstream.xml
 
@@ -1324,8 +1335,8 @@ Confirm selected options when call command 'build_architecture_bitstream':
 
 Build fabric-independent bitstream for implementation 'counter'
 
-Reserved 439 configurable blocks
-Reserved 2350 configuration bits
+Reserved 483 configurable blocks
+Reserved 2626 configuration bits
 Building grid bitstream...
 Generating bitstream for core grids...Added 66 bits to 'frac_lut6_DFFR_mem' under 'logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6_0'
 Added 3 bits to 'mem_frac_logic_out_0' under 'logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0'
@@ -1486,316 +1497,481 @@ Building routing bitstream...
 Generating bitstream for Switch blocks...
 	Generating bitstream for Switch blocks[0][0]...
 Added 'mem_top_track_0' under 'sb_0__0_'
-Prev node '4294967295' for src_node '263'
+Prev node '4294967295' for src_node '279'
 Added 2 bits to 'mem_top_track_0' under 'sb_0__0_'
 Added 'mem_top_track_2' under 'sb_0__0_'
-Prev node '224' for src_node '265'
-Path: 0 -> Driver node '49' for src_node '265'
-Path: 1 -> Driver node '224' for src_node '265'
+Prev node '4294967295' for src_node '281'
 Added 2 bits to 'mem_top_track_2' under 'sb_0__0_'
 Added 'mem_top_track_4' under 'sb_0__0_'
-Prev node '4294967295' for src_node '267'
+Prev node '4294967295' for src_node '283'
 Added 2 bits to 'mem_top_track_4' under 'sb_0__0_'
 Added 'mem_top_track_6' under 'sb_0__0_'
-Prev node '4294967295' for src_node '269'
+Prev node '4294967295' for src_node '285'
 Added 2 bits to 'mem_top_track_6' under 'sb_0__0_'
 Added 'mem_top_track_8' under 'sb_0__0_'
-Prev node '230' for src_node '271'
-Path: 0 -> Driver node '52' for src_node '271'
-Path: 1 -> Driver node '230' for src_node '271'
+Prev node '4294967295' for src_node '287'
 Added 2 bits to 'mem_top_track_8' under 'sb_0__0_'
 Added 'mem_top_track_10' under 'sb_0__0_'
-Prev node '232' for src_node '273'
-Path: 0 -> Driver node '53' for src_node '273'
-Path: 1 -> Driver node '232' for src_node '273'
+Prev node '232' for src_node '289'
+Path: 0 -> Driver node '53' for src_node '289'
+Path: 1 -> Driver node '54' for src_node '289'
+Path: 2 -> Driver node '232' for src_node '289'
 Added 2 bits to 'mem_top_track_10' under 'sb_0__0_'
 Added 'mem_top_track_12' under 'sb_0__0_'
-Prev node '4294967295' for src_node '275'
+Prev node '234' for src_node '291'
+Path: 0 -> Driver node '54' for src_node '291'
+Path: 1 -> Driver node '55' for src_node '291'
+Path: 2 -> Driver node '234' for src_node '291'
 Added 2 bits to 'mem_top_track_12' under 'sb_0__0_'
 Added 'mem_top_track_14' under 'sb_0__0_'
-Prev node '236' for src_node '277'
-Path: 0 -> Driver node '55' for src_node '277'
-Path: 1 -> Driver node '236' for src_node '277'
+Prev node '236' for src_node '293'
+Path: 0 -> Driver node '48' for src_node '293'
+Path: 1 -> Driver node '55' for src_node '293'
+Path: 2 -> Driver node '236' for src_node '293'
 Added 2 bits to 'mem_top_track_14' under 'sb_0__0_'
+Added 'mem_top_track_16' under 'sb_0__0_'
+Prev node '238' for src_node '295'
+Path: 0 -> Driver node '49' for src_node '295'
+Path: 1 -> Driver node '238' for src_node '295'
+Added 2 bits to 'mem_top_track_16' under 'sb_0__0_'
+Added 'mem_top_track_18' under 'sb_0__0_'
+Prev node '240' for src_node '297'
+Path: 0 -> Driver node '50' for src_node '297'
+Path: 1 -> Driver node '240' for src_node '297'
+Added 2 bits to 'mem_top_track_18' under 'sb_0__0_'
+Added 'mem_top_track_20' under 'sb_0__0_'
+Prev node '4294967295' for src_node '299'
+Added 2 bits to 'mem_top_track_20' under 'sb_0__0_'
+Added 'mem_top_track_22' under 'sb_0__0_'
+Prev node '4294967295' for src_node '301'
+Added 2 bits to 'mem_top_track_22' under 'sb_0__0_'
+Added 'mem_top_track_24' under 'sb_0__0_'
+Prev node '4294967295' for src_node '303'
+Added 2 bits to 'mem_top_track_24' under 'sb_0__0_'
+Added 'mem_top_track_26' under 'sb_0__0_'
+Prev node '4294967295' for src_node '305'
+Added 2 bits to 'mem_top_track_26' under 'sb_0__0_'
+Added 'mem_top_track_28' under 'sb_0__0_'
+Prev node '4294967295' for src_node '307'
+Added 2 bits to 'mem_top_track_28' under 'sb_0__0_'
 Added 'mem_right_track_0' under 'sb_0__0_'
-Prev node '284' for src_node '219'
-Path: 0 -> Driver node '284' for src_node '219'
-Added 2 bits to 'mem_right_track_0' under 'sb_0__0_'
+Prev node '100' for src_node '219'
+Path: 0 -> Driver node '308' for src_node '219'
+Path: 1 -> Driver node '100' for src_node '219'
+Added 6 bits to 'mem_right_track_0' under 'sb_0__0_'
 Added 'mem_right_track_2' under 'sb_0__0_'
-Prev node '264' for src_node '221'
-Path: 0 -> Driver node '264' for src_node '221'
-Added 2 bits to 'mem_right_track_2' under 'sb_0__0_'
+Prev node '4294967295' for src_node '221'
+Added 6 bits to 'mem_right_track_2' under 'sb_0__0_'
 Added 'mem_right_track_4' under 'sb_0__0_'
-Prev node '266' for src_node '223'
-Path: 0 -> Driver node '266' for src_node '223'
-Added 2 bits to 'mem_right_track_4' under 'sb_0__0_'
+Prev node '4294967295' for src_node '223'
+Added 6 bits to 'mem_right_track_4' under 'sb_0__0_'
 Added 'mem_right_track_6' under 'sb_0__0_'
 Prev node '4294967295' for src_node '225'
 Added 2 bits to 'mem_right_track_6' under 'sb_0__0_'
 Added 'mem_right_track_8' under 'sb_0__0_'
-Prev node '270' for src_node '227'
-Path: 0 -> Driver node '270' for src_node '227'
+Prev node '286' for src_node '227'
+Path: 0 -> Driver node '286' for src_node '227'
 Added 2 bits to 'mem_right_track_8' under 'sb_0__0_'
 Added 'mem_right_track_10' under 'sb_0__0_'
-Prev node '4294967295' for src_node '229'
+Prev node '288' for src_node '229'
+Path: 0 -> Driver node '288' for src_node '229'
 Added 2 bits to 'mem_right_track_10' under 'sb_0__0_'
 Added 'mem_right_track_12' under 'sb_0__0_'
-Prev node '274' for src_node '231'
-Path: 0 -> Driver node '274' for src_node '231'
+Prev node '290' for src_node '231'
+Path: 0 -> Driver node '290' for src_node '231'
 Added 2 bits to 'mem_right_track_12' under 'sb_0__0_'
 Added 'mem_right_track_14' under 'sb_0__0_'
-Prev node '276' for src_node '233'
-Path: 0 -> Driver node '276' for src_node '233'
+Prev node '4294967295' for src_node '233'
 Added 2 bits to 'mem_right_track_14' under 'sb_0__0_'
 Added 'mem_right_track_16' under 'sb_0__0_'
 Prev node '108' for src_node '235'
-Path: 0 -> Driver node '278' for src_node '235'
+Path: 0 -> Driver node '294' for src_node '235'
 Path: 1 -> Driver node '108' for src_node '235'
 Added 2 bits to 'mem_right_track_16' under 'sb_0__0_'
 Added 'mem_right_track_18' under 'sb_0__0_'
-Prev node '280' for src_node '237'
-Path: 0 -> Driver node '280' for src_node '237'
-Added 2 bits to 'mem_right_track_18' under 'sb_0__0_'
+Prev node '4294967295' for src_node '237'
+Added 6 bits to 'mem_right_track_18' under 'sb_0__0_'
 Added 'mem_right_track_20' under 'sb_0__0_'
 Prev node '4294967295' for src_node '239'
 Added 2 bits to 'mem_right_track_20' under 'sb_0__0_'
+Added 'mem_right_track_22' under 'sb_0__0_'
+Prev node '300' for src_node '241'
+Path: 0 -> Driver node '300' for src_node '241'
+Added 2 bits to 'mem_right_track_22' under 'sb_0__0_'
+Added 'mem_right_track_24' under 'sb_0__0_'
+Prev node '4294967295' for src_node '243'
+Added 2 bits to 'mem_right_track_24' under 'sb_0__0_'
+Added 'mem_right_track_26' under 'sb_0__0_'
+Prev node '304' for src_node '245'
+Path: 0 -> Driver node '304' for src_node '245'
+Added 2 bits to 'mem_right_track_26' under 'sb_0__0_'
+Added 'mem_right_track_28' under 'sb_0__0_'
+Prev node '4294967295' for src_node '247'
+Added 2 bits to 'mem_right_track_28' under 'sb_0__0_'
 	Done
 
 	Generating bitstream for Switch blocks[0][1]...
 Added 'mem_right_track_0' under 'sb_0__1_'
-Prev node '4294967295' for src_node '241'
+Prev node '4294967295' for src_node '249'
 Added 2 bits to 'mem_right_track_0' under 'sb_0__1_'
 Added 'mem_right_track_2' under 'sb_0__1_'
-Prev node '279' for src_node '243'
-Path: 0 -> Driver node '204' for src_node '243'
-Path: 1 -> Driver node '279' for src_node '243'
+Prev node '4294967295' for src_node '251'
 Added 2 bits to 'mem_right_track_2' under 'sb_0__1_'
 Added 'mem_right_track_4' under 'sb_0__1_'
-Prev node '277' for src_node '245'
-Path: 0 -> Driver node '205' for src_node '245'
-Path: 1 -> Driver node '277' for src_node '245'
+Prev node '4294967295' for src_node '253'
 Added 2 bits to 'mem_right_track_4' under 'sb_0__1_'
 Added 'mem_right_track_6' under 'sb_0__1_'
-Prev node '4294967295' for src_node '247'
+Prev node '4294967295' for src_node '255'
 Added 2 bits to 'mem_right_track_6' under 'sb_0__1_'
 Added 'mem_right_track_8' under 'sb_0__1_'
-Prev node '273' for src_node '249'
-Path: 0 -> Driver node '207' for src_node '249'
-Path: 1 -> Driver node '273' for src_node '249'
+Prev node '4294967295' for src_node '257'
 Added 2 bits to 'mem_right_track_8' under 'sb_0__1_'
 Added 'mem_right_track_10' under 'sb_0__1_'
-Prev node '271' for src_node '251'
-Path: 0 -> Driver node '208' for src_node '251'
-Path: 1 -> Driver node '271' for src_node '251'
+Prev node '295' for src_node '259'
+Path: 0 -> Driver node '208' for src_node '259'
+Path: 1 -> Driver node '209' for src_node '259'
+Path: 2 -> Driver node '295' for src_node '259'
 Added 2 bits to 'mem_right_track_10' under 'sb_0__1_'
 Added 'mem_right_track_12' under 'sb_0__1_'
-Prev node '4294967295' for src_node '253'
+Prev node '293' for src_node '261'
+Path: 0 -> Driver node '209' for src_node '261'
+Path: 1 -> Driver node '210' for src_node '261'
+Path: 2 -> Driver node '293' for src_node '261'
 Added 2 bits to 'mem_right_track_12' under 'sb_0__1_'
 Added 'mem_right_track_14' under 'sb_0__1_'
-Prev node '4294967295' for src_node '255'
+Prev node '291' for src_node '263'
+Path: 0 -> Driver node '203' for src_node '263'
+Path: 1 -> Driver node '210' for src_node '263'
+Path: 2 -> Driver node '291' for src_node '263'
 Added 2 bits to 'mem_right_track_14' under 'sb_0__1_'
+Added 'mem_right_track_16' under 'sb_0__1_'
+Prev node '289' for src_node '265'
+Path: 0 -> Driver node '204' for src_node '265'
+Path: 1 -> Driver node '289' for src_node '265'
+Added 2 bits to 'mem_right_track_16' under 'sb_0__1_'
+Added 'mem_right_track_18' under 'sb_0__1_'
+Prev node '4294967295' for src_node '267'
+Added 2 bits to 'mem_right_track_18' under 'sb_0__1_'
+Added 'mem_right_track_20' under 'sb_0__1_'
+Prev node '4294967295' for src_node '269'
+Added 2 bits to 'mem_right_track_20' under 'sb_0__1_'
+Added 'mem_right_track_22' under 'sb_0__1_'
+Prev node '4294967295' for src_node '271'
+Added 2 bits to 'mem_right_track_22' under 'sb_0__1_'
+Added 'mem_right_track_24' under 'sb_0__1_'
+Prev node '4294967295' for src_node '273'
+Added 2 bits to 'mem_right_track_24' under 'sb_0__1_'
+Added 'mem_right_track_26' under 'sb_0__1_'
+Prev node '4294967295' for src_node '275'
+Added 2 bits to 'mem_right_track_26' under 'sb_0__1_'
+Added 'mem_right_track_28' under 'sb_0__1_'
+Prev node '4294967295' for src_node '277'
+Added 2 bits to 'mem_right_track_28' under 'sb_0__1_'
 Added 'mem_bottom_track_1' under 'sb_0__1_'
-Prev node '260' for src_node '264'
-Path: 0 -> Driver node '260' for src_node '264'
+Prev node '4294967295' for src_node '280'
 Added 2 bits to 'mem_bottom_track_1' under 'sb_0__1_'
 Added 'mem_bottom_track_3' under 'sb_0__1_'
-Prev node '258' for src_node '266'
-Path: 0 -> Driver node '258' for src_node '266'
+Prev node '4294967295' for src_node '282'
 Added 2 bits to 'mem_bottom_track_3' under 'sb_0__1_'
 Added 'mem_bottom_track_5' under 'sb_0__1_'
-Prev node '4294967295' for src_node '268'
+Prev node '4294967295' for src_node '284'
 Added 2 bits to 'mem_bottom_track_5' under 'sb_0__1_'
 Added 'mem_bottom_track_7' under 'sb_0__1_'
-Prev node '254' for src_node '270'
-Path: 0 -> Driver node '254' for src_node '270'
+Prev node '270' for src_node '286'
+Path: 0 -> Driver node '270' for src_node '286'
 Added 2 bits to 'mem_bottom_track_7' under 'sb_0__1_'
 Added 'mem_bottom_track_9' under 'sb_0__1_'
-Prev node '4294967295' for src_node '272'
+Prev node '268' for src_node '288'
+Path: 0 -> Driver node '268' for src_node '288'
 Added 2 bits to 'mem_bottom_track_9' under 'sb_0__1_'
 Added 'mem_bottom_track_11' under 'sb_0__1_'
-Prev node '250' for src_node '274'
-Path: 0 -> Driver node '250' for src_node '274'
+Prev node '266' for src_node '290'
+Path: 0 -> Driver node '266' for src_node '290'
 Added 2 bits to 'mem_bottom_track_11' under 'sb_0__1_'
 Added 'mem_bottom_track_13' under 'sb_0__1_'
-Prev node '248' for src_node '276'
-Path: 0 -> Driver node '248' for src_node '276'
+Prev node '4294967295' for src_node '292'
 Added 2 bits to 'mem_bottom_track_13' under 'sb_0__1_'
 Added 'mem_bottom_track_15' under 'sb_0__1_'
-Prev node '4294967295' for src_node '278'
+Prev node '262' for src_node '294'
+Path: 0 -> Driver node '262' for src_node '294'
 Added 2 bits to 'mem_bottom_track_15' under 'sb_0__1_'
+Added 'mem_bottom_track_17' under 'sb_0__1_'
+Prev node '4294967295' for src_node '296'
+Added 2 bits to 'mem_bottom_track_17' under 'sb_0__1_'
+Added 'mem_bottom_track_19' under 'sb_0__1_'
+Prev node '4294967295' for src_node '298'
+Added 2 bits to 'mem_bottom_track_19' under 'sb_0__1_'
+Added 'mem_bottom_track_21' under 'sb_0__1_'
+Prev node '256' for src_node '300'
+Path: 0 -> Driver node '256' for src_node '300'
+Added 2 bits to 'mem_bottom_track_21' under 'sb_0__1_'
+Added 'mem_bottom_track_23' under 'sb_0__1_'
+Prev node '4294967295' for src_node '302'
+Added 2 bits to 'mem_bottom_track_23' under 'sb_0__1_'
+Added 'mem_bottom_track_25' under 'sb_0__1_'
+Prev node '252' for src_node '304'
+Path: 0 -> Driver node '252' for src_node '304'
+Added 2 bits to 'mem_bottom_track_25' under 'sb_0__1_'
+Added 'mem_bottom_track_27' under 'sb_0__1_'
+Prev node '4294967295' for src_node '306'
+Added 2 bits to 'mem_bottom_track_27' under 'sb_0__1_'
+Added 'mem_bottom_track_29' under 'sb_0__1_'
+Prev node '4294967295' for src_node '308'
+Added 2 bits to 'mem_bottom_track_29' under 'sb_0__1_'
 	Done
 
 	Generating bitstream for Switch blocks[1][0]...
 Added 'mem_top_track_0' under 'sb_1__0_'
-Prev node '90' for src_node '285'
-Path: 0 -> Driver node '90' for src_node '285'
+Prev node '219' for src_node '309'
+Path: 0 -> Driver node '90' for src_node '309'
+Path: 1 -> Driver node '91' for src_node '309'
+Path: 2 -> Driver node '98' for src_node '309'
+Path: 3 -> Driver node '176' for src_node '309'
+Path: 4 -> Driver node '177' for src_node '309'
+Path: 5 -> Driver node '219' for src_node '309'
 Added 6 bits to 'mem_top_track_0' under 'sb_1__0_'
 Added 'mem_top_track_2' under 'sb_1__0_'
-Prev node '4294967295' for src_node '287'
-Added 2 bits to 'mem_top_track_2' under 'sb_1__0_'
+Prev node '4294967295' for src_node '311'
+Added 6 bits to 'mem_top_track_2' under 'sb_1__0_'
 Added 'mem_top_track_4' under 'sb_1__0_'
-Prev node '237' for src_node '289'
-Path: 0 -> Driver node '92' for src_node '289'
-Path: 1 -> Driver node '174' for src_node '289'
-Path: 2 -> Driver node '237' for src_node '289'
-Added 2 bits to 'mem_top_track_4' under 'sb_1__0_'
+Prev node '245' for src_node '313'
+Path: 0 -> Driver node '92' for src_node '313'
+Path: 1 -> Driver node '93' for src_node '313'
+Path: 2 -> Driver node '171' for src_node '313'
+Path: 3 -> Driver node '178' for src_node '313'
+Path: 4 -> Driver node '245' for src_node '313'
+Added 6 bits to 'mem_top_track_4' under 'sb_1__0_'
 Added 'mem_top_track_6' under 'sb_1__0_'
-Prev node '235' for src_node '291'
-Path: 0 -> Driver node '93' for src_node '291'
-Path: 1 -> Driver node '175' for src_node '291'
-Path: 2 -> Driver node '235' for src_node '291'
-Added 2 bits to 'mem_top_track_6' under 'sb_1__0_'
+Prev node '4294967295' for src_node '315'
+Added 6 bits to 'mem_top_track_6' under 'sb_1__0_'
 Added 'mem_top_track_8' under 'sb_1__0_'
-Prev node '233' for src_node '293'
-Path: 0 -> Driver node '94' for src_node '293'
-Path: 1 -> Driver node '176' for src_node '293'
-Path: 2 -> Driver node '233' for src_node '293'
-Added 2 bits to 'mem_top_track_8' under 'sb_1__0_'
+Prev node '4294967295' for src_node '317'
+Added 6 bits to 'mem_top_track_8' under 'sb_1__0_'
 Added 'mem_top_track_10' under 'sb_1__0_'
-Prev node '231' for src_node '295'
-Path: 0 -> Driver node '90' for src_node '295'
-Path: 1 -> Driver node '95' for src_node '295'
-Path: 2 -> Driver node '177' for src_node '295'
-Path: 3 -> Driver node '231' for src_node '295'
+Prev node '96' for src_node '319'
+Path: 0 -> Driver node '95' for src_node '319'
+Path: 1 -> Driver node '96' for src_node '319'
 Added 6 bits to 'mem_top_track_10' under 'sb_1__0_'
 Added 'mem_top_track_12' under 'sb_1__0_'
-Prev node '4294967295' for src_node '297'
+Prev node '4294967295' for src_node '321'
 Added 6 bits to 'mem_top_track_12' under 'sb_1__0_'
 Added 'mem_top_track_14' under 'sb_1__0_'
-Prev node '227' for src_node '299'
-Path: 0 -> Driver node '97' for src_node '299'
-Path: 1 -> Driver node '227' for src_node '299'
-Added 2 bits to 'mem_top_track_14' under 'sb_1__0_'
+Prev node '235' for src_node '323'
+Path: 0 -> Driver node '90' for src_node '323'
+Path: 1 -> Driver node '97' for src_node '323'
+Path: 2 -> Driver node '98' for src_node '323'
+Path: 3 -> Driver node '176' for src_node '323'
+Path: 4 -> Driver node '235' for src_node '323'
+Added 6 bits to 'mem_top_track_14' under 'sb_1__0_'
 Added 'mem_top_track_16' under 'sb_1__0_'
-Prev node '98' for src_node '301'
-Path: 0 -> Driver node '98' for src_node '301'
-Added 2 bits to 'mem_top_track_16' under 'sb_1__0_'
+Prev node '98' for src_node '325'
+Path: 0 -> Driver node '91' for src_node '325'
+Path: 1 -> Driver node '98' for src_node '325'
+Added 6 bits to 'mem_top_track_16' under 'sb_1__0_'
 Added 'mem_top_track_18' under 'sb_1__0_'
-Prev node '223' for src_node '303'
-Path: 0 -> Driver node '99' for src_node '303'
-Path: 1 -> Driver node '223' for src_node '303'
-Added 2 bits to 'mem_top_track_18' under 'sb_1__0_'
+Prev node '231' for src_node '327'
+Path: 0 -> Driver node '92' for src_node '327'
+Path: 1 -> Driver node '99' for src_node '327'
+Path: 2 -> Driver node '171' for src_node '327'
+Path: 3 -> Driver node '178' for src_node '327'
+Path: 4 -> Driver node '231' for src_node '327'
+Added 6 bits to 'mem_top_track_18' under 'sb_1__0_'
 Added 'mem_top_track_20' under 'sb_1__0_'
-Prev node '4294967295' for src_node '305'
-Added 2 bits to 'mem_top_track_20' under 'sb_1__0_'
+Prev node '229' for src_node '329'
+Path: 0 -> Driver node '93' for src_node '329'
+Path: 1 -> Driver node '171' for src_node '329'
+Path: 2 -> Driver node '172' for src_node '329'
+Path: 3 -> Driver node '229' for src_node '329'
+Added 6 bits to 'mem_top_track_20' under 'sb_1__0_'
+Added 'mem_top_track_22' under 'sb_1__0_'
+Prev node '227' for src_node '331'
+Path: 0 -> Driver node '94' for src_node '331'
+Path: 1 -> Driver node '172' for src_node '331'
+Path: 2 -> Driver node '173' for src_node '331'
+Path: 3 -> Driver node '227' for src_node '331'
+Added 6 bits to 'mem_top_track_22' under 'sb_1__0_'
+Added 'mem_top_track_24' under 'sb_1__0_'
+Prev node '4294967295' for src_node '333'
+Added 6 bits to 'mem_top_track_24' under 'sb_1__0_'
+Added 'mem_top_track_26' under 'sb_1__0_'
+Prev node '4294967295' for src_node '335'
+Added 6 bits to 'mem_top_track_26' under 'sb_1__0_'
+Added 'mem_top_track_28' under 'sb_1__0_'
+Prev node '90' for src_node '337'
+Path: 0 -> Driver node '90' for src_node '337'
+Added 6 bits to 'mem_top_track_28' under 'sb_1__0_'
 Added 'mem_left_track_1' under 'sb_1__0_'
-Prev node '100' for src_node '220'
-Path: 0 -> Driver node '286' for src_node '220'
-Path: 1 -> Driver node '100' for src_node '220'
-Added 2 bits to 'mem_left_track_1' under 'sb_1__0_'
+Prev node '4294967295' for src_node '220'
+Added 6 bits to 'mem_left_track_1' under 'sb_1__0_'
 Added 'mem_left_track_3' under 'sb_1__0_'
-Prev node '4294967295' for src_node '222'
-Added 2 bits to 'mem_left_track_3' under 'sb_1__0_'
+Prev node '338' for src_node '222'
+Path: 0 -> Driver node '338' for src_node '222'
+Added 6 bits to 'mem_left_track_3' under 'sb_1__0_'
 Added 'mem_left_track_5' under 'sb_1__0_'
-Prev node '304' for src_node '224'
-Path: 0 -> Driver node '304' for src_node '224'
-Added 2 bits to 'mem_left_track_5' under 'sb_1__0_'
+Prev node '4294967295' for src_node '224'
+Added 6 bits to 'mem_left_track_5' under 'sb_1__0_'
 Added 'mem_left_track_7' under 'sb_1__0_'
 Prev node '4294967295' for src_node '226'
 Added 2 bits to 'mem_left_track_7' under 'sb_1__0_'
 Added 'mem_left_track_9' under 'sb_1__0_'
-Prev node '300' for src_node '228'
-Path: 0 -> Driver node '300' for src_node '228'
+Prev node '4294967295' for src_node '228'
 Added 2 bits to 'mem_left_track_9' under 'sb_1__0_'
 Added 'mem_left_track_11' under 'sb_1__0_'
-Prev node '298' for src_node '230'
-Path: 0 -> Driver node '298' for src_node '230'
+Prev node '4294967295' for src_node '230'
 Added 2 bits to 'mem_left_track_11' under 'sb_1__0_'
 Added 'mem_left_track_13' under 'sb_1__0_'
 Prev node '106' for src_node '232'
-Path: 0 -> Driver node '296' for src_node '232'
+Path: 0 -> Driver node '328' for src_node '232'
 Path: 1 -> Driver node '106' for src_node '232'
 Added 2 bits to 'mem_left_track_13' under 'sb_1__0_'
 Added 'mem_left_track_15' under 'sb_1__0_'
-Prev node '4294967295' for src_node '234'
+Prev node '107' for src_node '234'
+Path: 0 -> Driver node '326' for src_node '234'
+Path: 1 -> Driver node '107' for src_node '234'
 Added 2 bits to 'mem_left_track_15' under 'sb_1__0_'
 Added 'mem_left_track_17' under 'sb_1__0_'
-Prev node '292' for src_node '236'
-Path: 0 -> Driver node '292' for src_node '236'
+Prev node '324' for src_node '236'
+Path: 0 -> Driver node '324' for src_node '236'
 Added 2 bits to 'mem_left_track_17' under 'sb_1__0_'
 Added 'mem_left_track_19' under 'sb_1__0_'
-Prev node '109' for src_node '238'
-Path: 0 -> Driver node '290' for src_node '238'
-Path: 1 -> Driver node '109' for src_node '238'
-Added 2 bits to 'mem_left_track_19' under 'sb_1__0_'
+Prev node '322' for src_node '238'
+Path: 0 -> Driver node '322' for src_node '238'
+Added 6 bits to 'mem_left_track_19' under 'sb_1__0_'
 Added 'mem_left_track_21' under 'sb_1__0_'
-Prev node '4294967295' for src_node '240'
+Prev node '320' for src_node '240'
+Path: 0 -> Driver node '320' for src_node '240'
 Added 2 bits to 'mem_left_track_21' under 'sb_1__0_'
+Added 'mem_left_track_23' under 'sb_1__0_'
+Prev node '4294967295' for src_node '242'
+Added 2 bits to 'mem_left_track_23' under 'sb_1__0_'
+Added 'mem_left_track_25' under 'sb_1__0_'
+Prev node '4294967295' for src_node '244'
+Added 2 bits to 'mem_left_track_25' under 'sb_1__0_'
+Added 'mem_left_track_27' under 'sb_1__0_'
+Prev node '4294967295' for src_node '246'
+Added 2 bits to 'mem_left_track_27' under 'sb_1__0_'
+Added 'mem_left_track_29' under 'sb_1__0_'
+Prev node '4294967295' for src_node '248'
+Added 2 bits to 'mem_left_track_29' under 'sb_1__0_'
 	Done
 
 	Generating bitstream for Switch blocks[1][1]...
 Added 'mem_bottom_track_1' under 'sb_1__1_'
-Prev node '4294967295' for src_node '286'
-Added 2 bits to 'mem_bottom_track_1' under 'sb_1__1_'
+Prev node '4294967295' for src_node '310'
+Added 6 bits to 'mem_bottom_track_1' under 'sb_1__1_'
 Added 'mem_bottom_track_3' under 'sb_1__1_'
-Prev node '4294967295' for src_node '288'
-Added 2 bits to 'mem_bottom_track_3' under 'sb_1__1_'
+Prev node '4294967295' for src_node '312'
+Added 6 bits to 'mem_bottom_track_3' under 'sb_1__1_'
 Added 'mem_bottom_track_5' under 'sb_1__1_'
-Prev node '4294967295' for src_node '290'
+Prev node '4294967295' for src_node '314'
 Added 6 bits to 'mem_bottom_track_5' under 'sb_1__1_'
 Added 'mem_bottom_track_7' under 'sb_1__1_'
-Prev node '96' for src_node '292'
-Path: 0 -> Driver node '174' for src_node '292'
-Path: 1 -> Driver node '91' for src_node '292'
-Path: 2 -> Driver node '96' for src_node '292'
+Prev node '4294967295' for src_node '316'
 Added 6 bits to 'mem_bottom_track_7' under 'sb_1__1_'
 Added 'mem_bottom_track_9' under 'sb_1__1_'
-Prev node '4294967295' for src_node '294'
-Added 2 bits to 'mem_bottom_track_9' under 'sb_1__1_'
+Prev node '4294967295' for src_node '318'
+Added 6 bits to 'mem_bottom_track_9' under 'sb_1__1_'
 Added 'mem_bottom_track_11' under 'sb_1__1_'
-Prev node '4294967295' for src_node '296'
-Added 2 bits to 'mem_bottom_track_11' under 'sb_1__1_'
+Prev node '261' for src_node '320'
+Path: 0 -> Driver node '176' for src_node '320'
+Path: 1 -> Driver node '177' for src_node '320'
+Path: 2 -> Driver node '95' for src_node '320'
+Path: 3 -> Driver node '261' for src_node '320'
+Added 6 bits to 'mem_bottom_track_11' under 'sb_1__1_'
 Added 'mem_bottom_track_13' under 'sb_1__1_'
-Prev node '99' for src_node '298'
-Path: 0 -> Driver node '177' for src_node '298'
-Path: 1 -> Driver node '99' for src_node '298'
-Added 2 bits to 'mem_bottom_track_13' under 'sb_1__1_'
+Prev node '263' for src_node '322'
+Path: 0 -> Driver node '177' for src_node '322'
+Path: 1 -> Driver node '178' for src_node '322'
+Path: 2 -> Driver node '96' for src_node '322'
+Path: 3 -> Driver node '263' for src_node '322'
+Added 6 bits to 'mem_bottom_track_13' under 'sb_1__1_'
 Added 'mem_bottom_track_15' under 'sb_1__1_'
-Prev node '257' for src_node '300'
-Path: 0 -> Driver node '178' for src_node '300'
-Path: 1 -> Driver node '90' for src_node '300'
-Path: 2 -> Driver node '257' for src_node '300'
-Added 2 bits to 'mem_bottom_track_15' under 'sb_1__1_'
+Prev node '265' for src_node '324'
+Path: 0 -> Driver node '171' for src_node '324'
+Path: 1 -> Driver node '178' for src_node '324'
+Path: 2 -> Driver node '90' for src_node '324'
+Path: 3 -> Driver node '97' for src_node '324'
+Path: 4 -> Driver node '265' for src_node '324'
+Added 6 bits to 'mem_bottom_track_15' under 'sb_1__1_'
 Added 'mem_bottom_track_17' under 'sb_1__1_'
-Prev node '4294967295' for src_node '302'
-Added 2 bits to 'mem_bottom_track_17' under 'sb_1__1_'
+Prev node '4294967295' for src_node '326'
+Added 6 bits to 'mem_bottom_track_17' under 'sb_1__1_'
 Added 'mem_bottom_track_19' under 'sb_1__1_'
-Prev node '261' for src_node '304'
-Path: 0 -> Driver node '91' for src_node '304'
-Path: 1 -> Driver node '261' for src_node '304'
-Added 2 bits to 'mem_bottom_track_19' under 'sb_1__1_'
+Prev node '4294967295' for src_node '328'
+Added 6 bits to 'mem_bottom_track_19' under 'sb_1__1_'
 Added 'mem_bottom_track_21' under 'sb_1__1_'
-Prev node '4294967295' for src_node '306'
-Added 2 bits to 'mem_bottom_track_21' under 'sb_1__1_'
+Prev node '4294967295' for src_node '330'
+Added 6 bits to 'mem_bottom_track_21' under 'sb_1__1_'
+Added 'mem_bottom_track_23' under 'sb_1__1_'
+Prev node '4294967295' for src_node '332'
+Added 6 bits to 'mem_bottom_track_23' under 'sb_1__1_'
+Added 'mem_bottom_track_25' under 'sb_1__1_'
+Prev node '4294967295' for src_node '334'
+Added 6 bits to 'mem_bottom_track_25' under 'sb_1__1_'
+Added 'mem_bottom_track_27' under 'sb_1__1_'
+Prev node '4294967295' for src_node '336'
+Added 6 bits to 'mem_bottom_track_27' under 'sb_1__1_'
+Added 'mem_bottom_track_29' under 'sb_1__1_'
+Prev node '97' for src_node '338'
+Path: 0 -> Driver node '171' for src_node '338'
+Path: 1 -> Driver node '178' for src_node '338'
+Path: 2 -> Driver node '96' for src_node '338'
+Path: 3 -> Driver node '97' for src_node '338'
+Added 6 bits to 'mem_bottom_track_29' under 'sb_1__1_'
 Added 'mem_left_track_1' under 'sb_1__1_'
-Prev node '4294967295' for src_node '242'
+Prev node '337' for src_node '250'
+Path: 0 -> Driver node '337' for src_node '250'
 Added 2 bits to 'mem_left_track_1' under 'sb_1__1_'
 Added 'mem_left_track_3' under 'sb_1__1_'
-Prev node '285' for src_node '244'
-Path: 0 -> Driver node '285' for src_node '244'
+Prev node '309' for src_node '252'
+Path: 0 -> Driver node '309' for src_node '252'
 Added 2 bits to 'mem_left_track_3' under 'sb_1__1_'
 Added 'mem_left_track_5' under 'sb_1__1_'
-Prev node '4294967295' for src_node '246'
+Prev node '4294967295' for src_node '254'
 Added 2 bits to 'mem_left_track_5' under 'sb_1__1_'
 Added 'mem_left_track_7' under 'sb_1__1_'
-Prev node '289' for src_node '248'
-Path: 0 -> Driver node '289' for src_node '248'
+Prev node '313' for src_node '256'
+Path: 0 -> Driver node '313' for src_node '256'
 Added 2 bits to 'mem_left_track_7' under 'sb_1__1_'
 Added 'mem_left_track_9' under 'sb_1__1_'
-Prev node '291' for src_node '250'
-Path: 0 -> Driver node '291' for src_node '250'
+Prev node '4294967295' for src_node '258'
 Added 2 bits to 'mem_left_track_9' under 'sb_1__1_'
 Added 'mem_left_track_11' under 'sb_1__1_'
-Prev node '293' for src_node '252'
-Path: 0 -> Driver node '293' for src_node '252'
+Prev node '4294967295' for src_node '260'
 Added 2 bits to 'mem_left_track_11' under 'sb_1__1_'
 Added 'mem_left_track_13' under 'sb_1__1_'
-Prev node '295' for src_node '254'
-Path: 0 -> Driver node '295' for src_node '254'
+Prev node '319' for src_node '262'
+Path: 0 -> Driver node '319' for src_node '262'
 Added 2 bits to 'mem_left_track_13' under 'sb_1__1_'
 Added 'mem_left_track_15' under 'sb_1__1_'
-Prev node '4294967295' for src_node '256'
+Prev node '4294967295' for src_node '264'
 Added 2 bits to 'mem_left_track_15' under 'sb_1__1_'
+Added 'mem_left_track_17' under 'sb_1__1_'
+Prev node '323' for src_node '266'
+Path: 0 -> Driver node '323' for src_node '266'
+Added 2 bits to 'mem_left_track_17' under 'sb_1__1_'
+Added 'mem_left_track_19' under 'sb_1__1_'
+Prev node '325' for src_node '268'
+Path: 0 -> Driver node '325' for src_node '268'
+Added 2 bits to 'mem_left_track_19' under 'sb_1__1_'
+Added 'mem_left_track_21' under 'sb_1__1_'
+Prev node '327' for src_node '270'
+Path: 0 -> Driver node '327' for src_node '270'
+Added 2 bits to 'mem_left_track_21' under 'sb_1__1_'
+Added 'mem_left_track_23' under 'sb_1__1_'
+Prev node '329' for src_node '272'
+Path: 0 -> Driver node '329' for src_node '272'
+Added 2 bits to 'mem_left_track_23' under 'sb_1__1_'
+Added 'mem_left_track_25' under 'sb_1__1_'
+Prev node '331' for src_node '274'
+Path: 0 -> Driver node '331' for src_node '274'
+Added 2 bits to 'mem_left_track_25' under 'sb_1__1_'
+Added 'mem_left_track_27' under 'sb_1__1_'
+Prev node '4294967295' for src_node '276'
+Added 2 bits to 'mem_left_track_27' under 'sb_1__1_'
+Added 'mem_left_track_29' under 'sb_1__1_'
+Prev node '4294967295' for src_node '278'
+Added 2 bits to 'mem_left_track_29' under 'sb_1__1_'
 	Done
 Done
 Generating bitstream for X-direction Connection blocks ...
@@ -1827,59 +2003,59 @@ Added 6 bits to 'mem_bottom_ipin_5' under 'cbx_1__0_'
 	Generating bitstream for IPIN at 'top' side
 	Generating bitstream for IPIN '6'. Details: IPIN:138 side: (BOTTOM,) (1,1,0)
 Added 'mem_bottom_ipin_6' under 'cbx_1__0_'
-Added 2 bits to 'mem_bottom_ipin_6' under 'cbx_1__0_'
+Added 6 bits to 'mem_bottom_ipin_6' under 'cbx_1__0_'
 	Generating bitstream for IPIN at 'top' side
 	Generating bitstream for IPIN '7'. Details: IPIN:139 side: (BOTTOM,) (1,1,0)
 Added 'mem_bottom_ipin_7' under 'cbx_1__0_'
-Added 2 bits to 'mem_bottom_ipin_7' under 'cbx_1__0_'
+Added 6 bits to 'mem_bottom_ipin_7' under 'cbx_1__0_'
 	Generating bitstream for IPIN at 'top' side
 	Generating bitstream for IPIN '8'. Details: IPIN:140 side: (BOTTOM,) (1,1,0)
 Added 'mem_bottom_ipin_8' under 'cbx_1__0_'
-Added 2 bits to 'mem_bottom_ipin_8' under 'cbx_1__0_'
+Added 6 bits to 'mem_bottom_ipin_8' under 'cbx_1__0_'
 	Generating bitstream for IPIN at 'top' side
 	Generating bitstream for IPIN '9'. Details: IPIN:141 side: (BOTTOM,) (1,1,0)
 Added 'mem_bottom_ipin_9' under 'cbx_1__0_'
-Added 2 bits to 'mem_bottom_ipin_9' under 'cbx_1__0_'
+Added 6 bits to 'mem_bottom_ipin_9' under 'cbx_1__0_'
 	Generating bitstream for IPIN at 'top' side
 	Generating bitstream for IPIN '10'. Details: IPIN:142 side: (BOTTOM,) (1,1,0)
 Added 'mem_bottom_ipin_10' under 'cbx_1__0_'
-Added 2 bits to 'mem_bottom_ipin_10' under 'cbx_1__0_'
+Added 6 bits to 'mem_bottom_ipin_10' under 'cbx_1__0_'
 	Generating bitstream for IPIN at 'top' side
 	Generating bitstream for IPIN '11'. Details: IPIN:143 side: (BOTTOM,) (1,1,0)
 Added 'mem_bottom_ipin_11' under 'cbx_1__0_'
-Added 2 bits to 'mem_bottom_ipin_11' under 'cbx_1__0_'
+Added 6 bits to 'mem_bottom_ipin_11' under 'cbx_1__0_'
 	Generating bitstream for IPIN at 'top' side
 	Generating bitstream for IPIN '12'. Details: IPIN:144 side: (BOTTOM,) (1,1,0)
 Added 'mem_bottom_ipin_12' under 'cbx_1__0_'
-Added 2 bits to 'mem_bottom_ipin_12' under 'cbx_1__0_'
+Added 6 bits to 'mem_bottom_ipin_12' under 'cbx_1__0_'
 	Generating bitstream for IPIN at 'top' side
 	Generating bitstream for IPIN '13'. Details: IPIN:145 side: (BOTTOM,) (1,1,0)
 Added 'mem_bottom_ipin_13' under 'cbx_1__0_'
-Added 2 bits to 'mem_bottom_ipin_13' under 'cbx_1__0_'
+Added 6 bits to 'mem_bottom_ipin_13' under 'cbx_1__0_'
 	Generating bitstream for IPIN at 'top' side
 	Generating bitstream for IPIN '14'. Details: IPIN:146 side: (BOTTOM,) (1,1,0)
 Added 'mem_bottom_ipin_14' under 'cbx_1__0_'
-Added 2 bits to 'mem_bottom_ipin_14' under 'cbx_1__0_'
+Added 6 bits to 'mem_bottom_ipin_14' under 'cbx_1__0_'
 	Generating bitstream for IPIN at 'top' side
 	Generating bitstream for IPIN '15'. Details: IPIN:147 side: (BOTTOM,) (1,1,0)
 Added 'mem_bottom_ipin_15' under 'cbx_1__0_'
-Added 2 bits to 'mem_bottom_ipin_15' under 'cbx_1__0_'
+Added 6 bits to 'mem_bottom_ipin_15' under 'cbx_1__0_'
 	Generating bitstream for IPIN at 'top' side
 	Generating bitstream for IPIN '16'. Details: IPIN:148 side: (BOTTOM,) (1,1,0)
 Added 'mem_bottom_ipin_16' under 'cbx_1__0_'
-Added 2 bits to 'mem_bottom_ipin_16' under 'cbx_1__0_'
+Added 6 bits to 'mem_bottom_ipin_16' under 'cbx_1__0_'
 	Generating bitstream for IPIN at 'top' side
 	Generating bitstream for IPIN '17'. Details: IPIN:149 side: (BOTTOM,) (1,1,0)
 Added 'mem_bottom_ipin_17' under 'cbx_1__0_'
-Added 2 bits to 'mem_bottom_ipin_17' under 'cbx_1__0_'
+Added 6 bits to 'mem_bottom_ipin_17' under 'cbx_1__0_'
 	Generating bitstream for IPIN at 'top' side
 	Generating bitstream for IPIN '18'. Details: IPIN:150 side: (BOTTOM,) (1,1,0)
 Added 'mem_bottom_ipin_18' under 'cbx_1__0_'
-Added 2 bits to 'mem_bottom_ipin_18' under 'cbx_1__0_'
+Added 6 bits to 'mem_bottom_ipin_18' under 'cbx_1__0_'
 	Generating bitstream for IPIN at 'top' side
 	Generating bitstream for IPIN '19'. Details: IPIN:151 side: (BOTTOM,) (1,1,0)
 Added 'mem_bottom_ipin_19' under 'cbx_1__0_'
-Added 2 bits to 'mem_bottom_ipin_19' under 'cbx_1__0_'
+Added 6 bits to 'mem_bottom_ipin_19' under 'cbx_1__0_'
 	Generating bitstream for IPIN at 'bottom' side
 	Generating bitstream for IPIN '0'. Details: IPIN:24 side: (TOP,) (1,0,0)
 Added 'mem_top_ipin_0' under 'cbx_1__0_'
@@ -2101,26 +2277,26 @@ Added 6 bits to 'mem_right_ipin_19' under 'cby_1__1_'
 	Done
 Done
 Done
-Decoded 2350 configuration bits into 439 blocks
+Decoded 2626 configuration bits into 483 blocks
 
 Build fabric-independent bitstream for implementation 'counter'
- took 0.01 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+ took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 
 Overwrite Bitstream
 
 
 Overwrite Bitstream
- took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
-Warning 62: Directory path is empty and nothing will be created.
-Write 2350 architecture independent bitstream into XML file 'fabric_independent_bitstream.xml'
-Write 2350 architecture independent bitstream into XML file 'fabric_independent_bitstream.xml' took 0.01 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+ took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
+Warning 56: Directory path is empty and nothing will be created.
+Write 2626 architecture independent bitstream into XML file 'fabric_independent_bitstream.xml'
+Write 2626 architecture independent bitstream into XML file 'fabric_independent_bitstream.xml' took 0.01 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 
 Build non-fabric bitstream for implementation 'counter'
 
 Done
 
 Build non-fabric bitstream for implementation 'counter'
- took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+ took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 
 Command line to execute: build_fabric_bitstream --verbose
 
@@ -2137,6 +2313,13 @@ Try to find a configurable block corresponding to module 'mem_top_track_8' in FP
 Try to find a configurable block corresponding to module 'mem_top_track_10' in FPGA fabric under its parent block 'sb_0__0_'
 Try to find a configurable block corresponding to module 'mem_top_track_12' in FPGA fabric under its parent block 'sb_0__0_'
 Try to find a configurable block corresponding to module 'mem_top_track_14' in FPGA fabric under its parent block 'sb_0__0_'
+Try to find a configurable block corresponding to module 'mem_top_track_16' in FPGA fabric under its parent block 'sb_0__0_'
+Try to find a configurable block corresponding to module 'mem_top_track_18' in FPGA fabric under its parent block 'sb_0__0_'
+Try to find a configurable block corresponding to module 'mem_top_track_20' in FPGA fabric under its parent block 'sb_0__0_'
+Try to find a configurable block corresponding to module 'mem_top_track_22' in FPGA fabric under its parent block 'sb_0__0_'
+Try to find a configurable block corresponding to module 'mem_top_track_24' in FPGA fabric under its parent block 'sb_0__0_'
+Try to find a configurable block corresponding to module 'mem_top_track_26' in FPGA fabric under its parent block 'sb_0__0_'
+Try to find a configurable block corresponding to module 'mem_top_track_28' in FPGA fabric under its parent block 'sb_0__0_'
 Try to find a configurable block corresponding to module 'mem_right_track_0' in FPGA fabric under its parent block 'sb_0__0_'
 Try to find a configurable block corresponding to module 'mem_right_track_2' in FPGA fabric under its parent block 'sb_0__0_'
 Try to find a configurable block corresponding to module 'mem_right_track_4' in FPGA fabric under its parent block 'sb_0__0_'
@@ -2148,6 +2331,10 @@ Try to find a configurable block corresponding to module 'mem_right_track_14' in
 Try to find a configurable block corresponding to module 'mem_right_track_16' in FPGA fabric under its parent block 'sb_0__0_'
 Try to find a configurable block corresponding to module 'mem_right_track_18' in FPGA fabric under its parent block 'sb_0__0_'
 Try to find a configurable block corresponding to module 'mem_right_track_20' in FPGA fabric under its parent block 'sb_0__0_'
+Try to find a configurable block corresponding to module 'mem_right_track_22' in FPGA fabric under its parent block 'sb_0__0_'
+Try to find a configurable block corresponding to module 'mem_right_track_24' in FPGA fabric under its parent block 'sb_0__0_'
+Try to find a configurable block corresponding to module 'mem_right_track_26' in FPGA fabric under its parent block 'sb_0__0_'
+Try to find a configurable block corresponding to module 'mem_right_track_28' in FPGA fabric under its parent block 'sb_0__0_'
 Try to find a configurable block corresponding to module 'mem_top_track_0' in FPGA fabric under its parent block 'sb_1__0_'
 Try to find a configurable block corresponding to module 'mem_top_track_2' in FPGA fabric under its parent block 'sb_1__0_'
 Try to find a configurable block corresponding to module 'mem_top_track_4' in FPGA fabric under its parent block 'sb_1__0_'
@@ -2159,6 +2346,10 @@ Try to find a configurable block corresponding to module 'mem_top_track_14' in F
 Try to find a configurable block corresponding to module 'mem_top_track_16' in FPGA fabric under its parent block 'sb_1__0_'
 Try to find a configurable block corresponding to module 'mem_top_track_18' in FPGA fabric under its parent block 'sb_1__0_'
 Try to find a configurable block corresponding to module 'mem_top_track_20' in FPGA fabric under its parent block 'sb_1__0_'
+Try to find a configurable block corresponding to module 'mem_top_track_22' in FPGA fabric under its parent block 'sb_1__0_'
+Try to find a configurable block corresponding to module 'mem_top_track_24' in FPGA fabric under its parent block 'sb_1__0_'
+Try to find a configurable block corresponding to module 'mem_top_track_26' in FPGA fabric under its parent block 'sb_1__0_'
+Try to find a configurable block corresponding to module 'mem_top_track_28' in FPGA fabric under its parent block 'sb_1__0_'
 Try to find a configurable block corresponding to module 'mem_left_track_1' in FPGA fabric under its parent block 'sb_1__0_'
 Try to find a configurable block corresponding to module 'mem_left_track_3' in FPGA fabric under its parent block 'sb_1__0_'
 Try to find a configurable block corresponding to module 'mem_left_track_5' in FPGA fabric under its parent block 'sb_1__0_'
@@ -2170,6 +2361,10 @@ Try to find a configurable block corresponding to module 'mem_left_track_15' in 
 Try to find a configurable block corresponding to module 'mem_left_track_17' in FPGA fabric under its parent block 'sb_1__0_'
 Try to find a configurable block corresponding to module 'mem_left_track_19' in FPGA fabric under its parent block 'sb_1__0_'
 Try to find a configurable block corresponding to module 'mem_left_track_21' in FPGA fabric under its parent block 'sb_1__0_'
+Try to find a configurable block corresponding to module 'mem_left_track_23' in FPGA fabric under its parent block 'sb_1__0_'
+Try to find a configurable block corresponding to module 'mem_left_track_25' in FPGA fabric under its parent block 'sb_1__0_'
+Try to find a configurable block corresponding to module 'mem_left_track_27' in FPGA fabric under its parent block 'sb_1__0_'
+Try to find a configurable block corresponding to module 'mem_left_track_29' in FPGA fabric under its parent block 'sb_1__0_'
 Try to find a configurable block corresponding to module 'mem_bottom_ipin_0' in FPGA fabric under its parent block 'cbx_1__0_'
 Try to find a configurable block corresponding to module 'mem_bottom_ipin_1' in FPGA fabric under its parent block 'cbx_1__0_'
 Try to find a configurable block corresponding to module 'mem_bottom_ipin_2' in FPGA fabric under its parent block 'cbx_1__0_'
@@ -2278,6 +2473,13 @@ Try to find a configurable block corresponding to module 'mem_right_track_8' in 
 Try to find a configurable block corresponding to module 'mem_right_track_10' in FPGA fabric under its parent block 'sb_0__1_'
 Try to find a configurable block corresponding to module 'mem_right_track_12' in FPGA fabric under its parent block 'sb_0__1_'
 Try to find a configurable block corresponding to module 'mem_right_track_14' in FPGA fabric under its parent block 'sb_0__1_'
+Try to find a configurable block corresponding to module 'mem_right_track_16' in FPGA fabric under its parent block 'sb_0__1_'
+Try to find a configurable block corresponding to module 'mem_right_track_18' in FPGA fabric under its parent block 'sb_0__1_'
+Try to find a configurable block corresponding to module 'mem_right_track_20' in FPGA fabric under its parent block 'sb_0__1_'
+Try to find a configurable block corresponding to module 'mem_right_track_22' in FPGA fabric under its parent block 'sb_0__1_'
+Try to find a configurable block corresponding to module 'mem_right_track_24' in FPGA fabric under its parent block 'sb_0__1_'
+Try to find a configurable block corresponding to module 'mem_right_track_26' in FPGA fabric under its parent block 'sb_0__1_'
+Try to find a configurable block corresponding to module 'mem_right_track_28' in FPGA fabric under its parent block 'sb_0__1_'
 Try to find a configurable block corresponding to module 'mem_bottom_track_1' in FPGA fabric under its parent block 'sb_0__1_'
 Try to find a configurable block corresponding to module 'mem_bottom_track_3' in FPGA fabric under its parent block 'sb_0__1_'
 Try to find a configurable block corresponding to module 'mem_bottom_track_5' in FPGA fabric under its parent block 'sb_0__1_'
@@ -2286,6 +2488,13 @@ Try to find a configurable block corresponding to module 'mem_bottom_track_9' in
 Try to find a configurable block corresponding to module 'mem_bottom_track_11' in FPGA fabric under its parent block 'sb_0__1_'
 Try to find a configurable block corresponding to module 'mem_bottom_track_13' in FPGA fabric under its parent block 'sb_0__1_'
 Try to find a configurable block corresponding to module 'mem_bottom_track_15' in FPGA fabric under its parent block 'sb_0__1_'
+Try to find a configurable block corresponding to module 'mem_bottom_track_17' in FPGA fabric under its parent block 'sb_0__1_'
+Try to find a configurable block corresponding to module 'mem_bottom_track_19' in FPGA fabric under its parent block 'sb_0__1_'
+Try to find a configurable block corresponding to module 'mem_bottom_track_21' in FPGA fabric under its parent block 'sb_0__1_'
+Try to find a configurable block corresponding to module 'mem_bottom_track_23' in FPGA fabric under its parent block 'sb_0__1_'
+Try to find a configurable block corresponding to module 'mem_bottom_track_25' in FPGA fabric under its parent block 'sb_0__1_'
+Try to find a configurable block corresponding to module 'mem_bottom_track_27' in FPGA fabric under its parent block 'sb_0__1_'
+Try to find a configurable block corresponding to module 'mem_bottom_track_29' in FPGA fabric under its parent block 'sb_0__1_'
 Try to find a configurable block corresponding to module 'mem_right_ipin_0' in FPGA fabric under its parent block 'cby_0__1_'
 Try to find a configurable block corresponding to module 'mem_right_ipin_1' in FPGA fabric under its parent block 'cby_0__1_'
 Try to find a configurable block corresponding to module 'mem_right_ipin_2' in FPGA fabric under its parent block 'cby_0__1_'
@@ -2329,6 +2538,10 @@ Try to find a configurable block corresponding to module 'mem_bottom_track_15' i
 Try to find a configurable block corresponding to module 'mem_bottom_track_17' in FPGA fabric under its parent block 'sb_1__1_'
 Try to find a configurable block corresponding to module 'mem_bottom_track_19' in FPGA fabric under its parent block 'sb_1__1_'
 Try to find a configurable block corresponding to module 'mem_bottom_track_21' in FPGA fabric under its parent block 'sb_1__1_'
+Try to find a configurable block corresponding to module 'mem_bottom_track_23' in FPGA fabric under its parent block 'sb_1__1_'
+Try to find a configurable block corresponding to module 'mem_bottom_track_25' in FPGA fabric under its parent block 'sb_1__1_'
+Try to find a configurable block corresponding to module 'mem_bottom_track_27' in FPGA fabric under its parent block 'sb_1__1_'
+Try to find a configurable block corresponding to module 'mem_bottom_track_29' in FPGA fabric under its parent block 'sb_1__1_'
 Try to find a configurable block corresponding to module 'mem_left_track_1' in FPGA fabric under its parent block 'sb_1__1_'
 Try to find a configurable block corresponding to module 'mem_left_track_3' in FPGA fabric under its parent block 'sb_1__1_'
 Try to find a configurable block corresponding to module 'mem_left_track_5' in FPGA fabric under its parent block 'sb_1__1_'
@@ -2337,6 +2550,13 @@ Try to find a configurable block corresponding to module 'mem_left_track_9' in F
 Try to find a configurable block corresponding to module 'mem_left_track_11' in FPGA fabric under its parent block 'sb_1__1_'
 Try to find a configurable block corresponding to module 'mem_left_track_13' in FPGA fabric under its parent block 'sb_1__1_'
 Try to find a configurable block corresponding to module 'mem_left_track_15' in FPGA fabric under its parent block 'sb_1__1_'
+Try to find a configurable block corresponding to module 'mem_left_track_17' in FPGA fabric under its parent block 'sb_1__1_'
+Try to find a configurable block corresponding to module 'mem_left_track_19' in FPGA fabric under its parent block 'sb_1__1_'
+Try to find a configurable block corresponding to module 'mem_left_track_21' in FPGA fabric under its parent block 'sb_1__1_'
+Try to find a configurable block corresponding to module 'mem_left_track_23' in FPGA fabric under its parent block 'sb_1__1_'
+Try to find a configurable block corresponding to module 'mem_left_track_25' in FPGA fabric under its parent block 'sb_1__1_'
+Try to find a configurable block corresponding to module 'mem_left_track_27' in FPGA fabric under its parent block 'sb_1__1_'
+Try to find a configurable block corresponding to module 'mem_left_track_29' in FPGA fabric under its parent block 'sb_1__1_'
 Try to find a configurable block corresponding to module 'mem_bottom_ipin_0' in FPGA fabric under its parent block 'cbx_1__1_'
 Try to find a configurable block corresponding to module 'mem_bottom_ipin_1' in FPGA fabric under its parent block 'cbx_1__1_'
 Try to find a configurable block corresponding to module 'mem_bottom_ipin_2' in FPGA fabric under its parent block 'cbx_1__1_'
@@ -2554,10 +2774,10 @@ Try to find a configurable block corresponding to module 'mem_fle_9_in_2' in FPG
 Try to find a configurable block corresponding to module 'mem_fle_9_in_3' in FPGA fabric under its parent block 'logical_tile_clb_mode_clb__0'
 Try to find a configurable block corresponding to module 'mem_fle_9_in_4' in FPGA fabric under its parent block 'logical_tile_clb_mode_clb__0'
 Try to find a configurable block corresponding to module 'mem_fle_9_in_5' in FPGA fabric under its parent block 'logical_tile_clb_mode_clb__0'
-Built 2350 configuration bits for fabric
+Built 2626 configuration bits for fabric
 
 Build fabric dependent bitstream
- took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+ took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 
 Command line to execute: write_fabric_bitstream --file fabric_bitstream.bit --format plain_text
 
@@ -2573,9 +2793,9 @@ Confirm selected options when call command 'write_fabric_bitstream':
 --wl_decremental_order: off
 --no_time_stamp: off
 --verbose: off
-Warning 63: Directory path is empty and nothing will be created.
-Write 2350 fabric bitstream into plain text file 'fabric_bitstream.bit'
-Write 2350 fabric bitstream into plain text file 'fabric_bitstream.bit' took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+Warning 57: Directory path is empty and nothing will be created.
+Write 2626 fabric bitstream into plain text file 'fabric_bitstream.bit'
+Write 2626 fabric bitstream into plain text file 'fabric_bitstream.bit' took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 
 Command line to execute: write_fabric_verilog --file ./SRC --explicit_port_mapping --include_timing --verbose
 
@@ -2588,6 +2808,7 @@ Confirm selected options when call command 'write_fabric_verilog':
 --default_net_type: off
 --no_time_stamp: off
 --use_relative_path: off
+--little_endian, -le: off
 --verbose: on
 Write Verilog netlists for FPGA fabric
 
@@ -2659,11 +2880,11 @@ Writing Verilog Netlist './SRC/lb/grid_mult_36.v' for physical_tile 'mult_36'...
 Building physical tiles...Done
 
 Writing Verilog netlist for top-level module of FPGA fabric './SRC/fpga_top.v'...Done
-Written 71 Verilog modules in total
+Written 74 Verilog modules in total
 Write Verilog netlists for FPGA fabric
- took 0.04 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+ took 0.04 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 
-Command line to execute: write_full_testbench --file ./SRC --reference_benchmark_file_path counter_output_verilog.v  --include_signal_init --bitstream fabric_bitstream.bit --pin_constraints_file /home/ubuntu/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/config/pin_constraints_reset.xml --bus_group_file /home/ubuntu/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/config/counter8_bus_group.xml
+Command line to execute: write_full_testbench --file ./SRC --reference_benchmark_file_path counter_output_verilog.v  --include_signal_init --bitstream fabric_bitstream.bit --pin_constraints_file /home/cae_sajib/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/config/pin_constraints_reset.xml --bus_group_file /home/cae_sajib/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/config/counter8_bus_group.xml
 
 Confirm selected options when call command 'write_full_testbench':
 --file, -f: ./SRC
@@ -2671,8 +2892,8 @@ Confirm selected options when call command 'write_full_testbench':
 --bitstream: fabric_bitstream.bit
 --simulator: off
 --fabric_netlist_file_path: off
---pin_constraints_file, -pcf: /home/ubuntu/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/config/pin_constraints_reset.xml
---bus_group_file, -bgf: /home/ubuntu/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/config/counter8_bus_group.xml
+--pin_constraints_file, -pcf: /home/cae_sajib/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/config/pin_constraints_reset.xml
+--bus_group_file, -bgf: /home/cae_sajib/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/config/counter8_bus_group.xml
 --reference_benchmark_file_path: counter_output_verilog.v
 --fast_configuration: off
 --explicit_port_mapping: off
@@ -2681,19 +2902,20 @@ Confirm selected options when call command 'write_full_testbench':
 --include_signal_init: on
 --no_time_stamp: off
 --use_relative_path: off
+--little_endian, -le: off
 --verbose: off
 Read Pin Constraints
-Read Pin Constraints took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+Read Pin Constraints took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 Read Bus Group
-Read Bus Group took 0.00 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+Read Bus Group took 0.00 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 Write Verilog full testbenches for FPGA fabric
 
-Warning 64: Directory './SRC' already exists. Will overwrite contents
+Warning 58: Directory './SRC' already exists. Will overwrite contents
 # Write autocheck testbench for FPGA top-level Verilog netlist for 'counter'
-Will use 2351 configuration clock cycles to top testbench
-# Write autocheck testbench for FPGA top-level Verilog netlist for 'counter' took 0.02 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+Will use 2627 configuration clock cycles to top testbench
+# Write autocheck testbench for FPGA top-level Verilog netlist for 'counter' took 0.05 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 Write Verilog full testbenches for FPGA fabric
- took 0.02 seconds (max_rss 65.2 MiB, delta_rss +0.0 MiB)
+ took 0.05 seconds (max_rss 59.5 MiB, delta_rss +0.0 MiB)
 
 Command line to execute: exit
 
@@ -2701,12 +2923,7 @@ Confirm selected options when call command 'exit':
 
 Finish execution with 0 errors
 
-The entire OpenFPGA flow took 0.445785 seconds
+The entire OpenFPGA flow took 0.453898 seconds
 
 Thank you for using OpenFPGA!
-Incr Slack updates 77 in 0.000215362 sec
-Full Max Req/Worst Slack updates 5 in 9.56e-06 sec
-Incr Max Req/Worst Slack updates 72 in 9.4921e-05 sec
-Incr Criticality updates 63 in 0.000160002 sec
-Full Criticality updates 14 in 3.336e-05 sec
 0

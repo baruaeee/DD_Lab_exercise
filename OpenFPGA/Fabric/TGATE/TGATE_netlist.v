@@ -3,14 +3,24 @@
 // Generated on: Jun 26 2025 21:45:23 CEST (Jun 26 2025 19:45:23 UTC)
 
 // Verification Directory fv/TGATE 
+//`include "../../../../../ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v"
 
-module TGATE(in, sel, selb, out);
+//`include "../../../../../PDK/ihp_sg13g2/ixc013g2ng_stdcell/verilog/ixc013g2ng_primitives.v"
+//`include "../../../../../PDK/ihp_sg13g2/ixc013g2ng_stdcell/verilog/ixc013g2ng_stdcell.v"
+
+//module TGATE(in, sel, selb, out);
+module tgate(in, sel, selb, out);
   input in, sel, selb;
   output out;
   wire in, sel, selb;
   wire out;
   wire n_0;
-  sg13g2_ebufn_2 g3__2398(.A (in), .TE_B (n_0), .Z (out));
-  sg13g2_nand2b_1 g16__5107(.A_N (selb), .B (sel), .Y (n_0));
+  //sg13g2_ebufn_2 g3__2398(.A (in), .TE_B (n_0), .Z (out));
+
+  BTLJIX1 g3__2398(.Q(out), .A(in), .EN(n_0));
+
+  //sg13g2_nand2b_1 g16__5107(.A_N (selb), .B (sel), .Y (n_0));
+
+  NA2I1JIX0 g16__5107(.Q(n_0), .AN(selb), .B(sel));
 endmodule
 

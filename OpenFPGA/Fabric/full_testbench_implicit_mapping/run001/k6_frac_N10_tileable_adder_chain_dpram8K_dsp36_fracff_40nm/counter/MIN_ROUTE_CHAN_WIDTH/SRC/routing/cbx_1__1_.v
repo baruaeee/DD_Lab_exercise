@@ -3,7 +3,7 @@
 //	Description: Verilog modules for Unique Connection Blocks[1][1]
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Sun Jun 29 02:52:31 2025
+//	Date: Mon Jul  7 01:01:47 2025
 //-------------------------------------------
 //----- Default net type -----
 `default_nettype none
@@ -30,15 +30,15 @@ input [0:0] pReset;
 //----- GLOBAL PORTS -----
 input [0:0] prog_clk;
 //----- INPUT PORTS -----
-input [0:10] chanx_left_in;
+input [0:14] chanx_left_in;
 //----- INPUT PORTS -----
-input [0:10] chanx_right_in;
+input [0:14] chanx_right_in;
 //----- INPUT PORTS -----
 input [0:0] ccff_head;
 //----- OUTPUT PORTS -----
-output [0:10] chanx_left_out;
+output [0:14] chanx_left_out;
 //----- OUTPUT PORTS -----
-output [0:10] chanx_right_out;
+output [0:14] chanx_right_out;
 //----- OUTPUT PORTS -----
 output [0:0] top_grid_bottom_width_0_height_0_subtile_0__pin_outpad_0_;
 //----- OUTPUT PORTS -----
@@ -138,47 +138,79 @@ wire [0:0] mux_2level_tapbuf_size6_mem_6_ccff_tail;
 // ----- Local connection due to Wire 11 -----
 // ----- Net source id 0 -----
 // ----- Net sink id 0 -----
-	assign chanx_left_out[0] = chanx_right_in[0];
+	assign chanx_right_out[11] = chanx_left_in[11];
 // ----- Local connection due to Wire 12 -----
 // ----- Net source id 0 -----
 // ----- Net sink id 0 -----
-	assign chanx_left_out[1] = chanx_right_in[1];
+	assign chanx_right_out[12] = chanx_left_in[12];
 // ----- Local connection due to Wire 13 -----
 // ----- Net source id 0 -----
 // ----- Net sink id 0 -----
-	assign chanx_left_out[2] = chanx_right_in[2];
+	assign chanx_right_out[13] = chanx_left_in[13];
 // ----- Local connection due to Wire 14 -----
 // ----- Net source id 0 -----
 // ----- Net sink id 0 -----
-	assign chanx_left_out[3] = chanx_right_in[3];
+	assign chanx_right_out[14] = chanx_left_in[14];
 // ----- Local connection due to Wire 15 -----
 // ----- Net source id 0 -----
 // ----- Net sink id 0 -----
-	assign chanx_left_out[4] = chanx_right_in[4];
+	assign chanx_left_out[0] = chanx_right_in[0];
 // ----- Local connection due to Wire 16 -----
 // ----- Net source id 0 -----
 // ----- Net sink id 0 -----
-	assign chanx_left_out[5] = chanx_right_in[5];
+	assign chanx_left_out[1] = chanx_right_in[1];
 // ----- Local connection due to Wire 17 -----
 // ----- Net source id 0 -----
 // ----- Net sink id 0 -----
-	assign chanx_left_out[6] = chanx_right_in[6];
+	assign chanx_left_out[2] = chanx_right_in[2];
 // ----- Local connection due to Wire 18 -----
 // ----- Net source id 0 -----
 // ----- Net sink id 0 -----
-	assign chanx_left_out[7] = chanx_right_in[7];
+	assign chanx_left_out[3] = chanx_right_in[3];
 // ----- Local connection due to Wire 19 -----
 // ----- Net source id 0 -----
 // ----- Net sink id 0 -----
-	assign chanx_left_out[8] = chanx_right_in[8];
+	assign chanx_left_out[4] = chanx_right_in[4];
 // ----- Local connection due to Wire 20 -----
 // ----- Net source id 0 -----
 // ----- Net sink id 0 -----
-	assign chanx_left_out[9] = chanx_right_in[9];
+	assign chanx_left_out[5] = chanx_right_in[5];
 // ----- Local connection due to Wire 21 -----
 // ----- Net source id 0 -----
 // ----- Net sink id 0 -----
+	assign chanx_left_out[6] = chanx_right_in[6];
+// ----- Local connection due to Wire 22 -----
+// ----- Net source id 0 -----
+// ----- Net sink id 0 -----
+	assign chanx_left_out[7] = chanx_right_in[7];
+// ----- Local connection due to Wire 23 -----
+// ----- Net source id 0 -----
+// ----- Net sink id 0 -----
+	assign chanx_left_out[8] = chanx_right_in[8];
+// ----- Local connection due to Wire 24 -----
+// ----- Net source id 0 -----
+// ----- Net sink id 0 -----
+	assign chanx_left_out[9] = chanx_right_in[9];
+// ----- Local connection due to Wire 25 -----
+// ----- Net source id 0 -----
+// ----- Net sink id 0 -----
 	assign chanx_left_out[10] = chanx_right_in[10];
+// ----- Local connection due to Wire 26 -----
+// ----- Net source id 0 -----
+// ----- Net sink id 0 -----
+	assign chanx_left_out[11] = chanx_right_in[11];
+// ----- Local connection due to Wire 27 -----
+// ----- Net source id 0 -----
+// ----- Net sink id 0 -----
+	assign chanx_left_out[12] = chanx_right_in[12];
+// ----- Local connection due to Wire 28 -----
+// ----- Net source id 0 -----
+// ----- Net sink id 0 -----
+	assign chanx_left_out[13] = chanx_right_in[13];
+// ----- Local connection due to Wire 29 -----
+// ----- Net source id 0 -----
+// ----- Net sink id 0 -----
+	assign chanx_left_out[14] = chanx_right_in[14];
 // ----- END Local short connections -----
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
@@ -190,43 +222,43 @@ wire [0:0] mux_2level_tapbuf_size6_mem_6_ccff_tail;
 		.out(top_grid_bottom_width_0_height_0_subtile_0__pin_outpad_0_));
 
 	mux_2level_tapbuf_size6 mux_bottom_ipin_1 (
-		.in({chanx_left_in[0], chanx_right_in[0], chanx_left_in[1], chanx_right_in[1], chanx_left_in[6], chanx_right_in[6]}),
+		.in({chanx_left_in[1], chanx_right_in[1], chanx_left_in[6], chanx_right_in[6], chanx_left_in[11], chanx_right_in[11]}),
 		.sram(mux_2level_tapbuf_size6_1_sram[0:5]),
 		.sram_inv(mux_2level_tapbuf_size6_1_sram_inv[0:5]),
 		.out(top_grid_bottom_width_0_height_0_subtile_1__pin_outpad_0_));
 
 	mux_2level_tapbuf_size6 mux_bottom_ipin_2 (
-		.in({chanx_left_in[1], chanx_right_in[1], chanx_left_in[2], chanx_right_in[2], chanx_left_in[7], chanx_right_in[7]}),
+		.in({chanx_left_in[2], chanx_right_in[2], chanx_left_in[7], chanx_right_in[7], chanx_left_in[12], chanx_right_in[12]}),
 		.sram(mux_2level_tapbuf_size6_2_sram[0:5]),
 		.sram_inv(mux_2level_tapbuf_size6_2_sram_inv[0:5]),
 		.out(top_grid_bottom_width_0_height_0_subtile_2__pin_outpad_0_));
 
 	mux_2level_tapbuf_size6 mux_bottom_ipin_3 (
-		.in({chanx_left_in[2], chanx_right_in[2], chanx_left_in[3], chanx_right_in[3], chanx_left_in[8], chanx_right_in[8]}),
+		.in({chanx_left_in[3], chanx_right_in[3], chanx_left_in[8], chanx_right_in[8], chanx_left_in[13], chanx_right_in[13]}),
 		.sram(mux_2level_tapbuf_size6_3_sram[0:5]),
 		.sram_inv(mux_2level_tapbuf_size6_3_sram_inv[0:5]),
 		.out(top_grid_bottom_width_0_height_0_subtile_3__pin_outpad_0_));
 
 	mux_2level_tapbuf_size6 mux_bottom_ipin_4 (
-		.in({chanx_left_in[3], chanx_right_in[3], chanx_left_in[4], chanx_right_in[4], chanx_left_in[9], chanx_right_in[9]}),
+		.in({chanx_left_in[4], chanx_right_in[4], chanx_left_in[9], chanx_right_in[9], chanx_left_in[14], chanx_right_in[14]}),
 		.sram(mux_2level_tapbuf_size6_4_sram[0:5]),
 		.sram_inv(mux_2level_tapbuf_size6_4_sram_inv[0:5]),
 		.out(top_grid_bottom_width_0_height_0_subtile_4__pin_outpad_0_));
 
 	mux_2level_tapbuf_size6 mux_bottom_ipin_5 (
-		.in({chanx_left_in[4], chanx_right_in[4], chanx_left_in[5], chanx_right_in[5], chanx_left_in[10], chanx_right_in[10]}),
+		.in({chanx_left_in[0], chanx_right_in[0], chanx_left_in[5], chanx_right_in[5], chanx_left_in[10], chanx_right_in[10]}),
 		.sram(mux_2level_tapbuf_size6_5_sram[0:5]),
 		.sram_inv(mux_2level_tapbuf_size6_5_sram_inv[0:5]),
 		.out(top_grid_bottom_width_0_height_0_subtile_5__pin_outpad_0_));
 
 	mux_2level_tapbuf_size6 mux_bottom_ipin_6 (
-		.in({chanx_left_in[0], chanx_right_in[0], chanx_left_in[5], chanx_right_in[5], chanx_left_in[6], chanx_right_in[6]}),
+		.in({chanx_left_in[1], chanx_right_in[1], chanx_left_in[6], chanx_right_in[6], chanx_left_in[11], chanx_right_in[11]}),
 		.sram(mux_2level_tapbuf_size6_6_sram[0:5]),
 		.sram_inv(mux_2level_tapbuf_size6_6_sram_inv[0:5]),
 		.out(top_grid_bottom_width_0_height_0_subtile_6__pin_outpad_0_));
 
 	mux_2level_tapbuf_size6 mux_bottom_ipin_7 (
-		.in({chanx_left_in[1], chanx_right_in[1], chanx_left_in[6], chanx_right_in[6], chanx_left_in[7], chanx_right_in[7]}),
+		.in({chanx_left_in[2], chanx_right_in[2], chanx_left_in[7], chanx_right_in[7], chanx_left_in[12], chanx_right_in[12]}),
 		.sram(mux_2level_tapbuf_size6_7_sram[0:5]),
 		.sram_inv(mux_2level_tapbuf_size6_7_sram_inv[0:5]),
 		.out(top_grid_bottom_width_0_height_0_subtile_7__pin_outpad_0_));

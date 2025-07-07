@@ -3,19 +3,20 @@
 //	Description: Fabric Netlist Summary
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Sun Jun 29 02:52:31 2025
+//	Date: Mon Jul  7 01:01:47 2025
 //-------------------------------------------
 // ------ Include defines: preproc flags -----
 `include "./SRC/fpga_defines.v"
 
 // ------ Include user-defined netlists -----
-`include "../../../../../ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v"
-//`include "../../../../../TGATE/TGATE_netlist.v"
-`include "../../../../../openfpga_cell_library/verilog/dff.v"
-`include "../../../../../openfpga_cell_library/verilog/gpio.v"
-`include "../../../../../openfpga_cell_library/verilog/adder.v"
-`include "../../../../../openfpga_cell_library/verilog/dpram8k.v"
-`include "../../../../../openfpga_cell_library/verilog/mult_36x36.v"
+`include "../../../../../PDK/ihp_sg13g2/ixc013g2ng_stdcell/verilog/ixc013g2ng_stdcell.v"
+`include "../../../../../TGATE/TGATE_netlist.v"
+`include "../../../../../DFF/mm_dffsrq_ihp_sg13g2_cds_netlist.v"
+`include "../../../../../DFF/dffr_ihp_sg13g2_cds_netlist.v"
+`include "../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v"
+`include "../../../../../ADDF/ADDF_ihp_sg13g2_cds_netlist.v"
+`include "../../../../../mem/dpram8k.v"
+`include "../../../../../mult/mult_ihp_sg13g2_cds_netlist.v"
 // ------ Include primitive module netlists -----
 `include "./SRC/sub_module/inv_buf_passgate.v"
 `include "./SRC/sub_module/arch_encoder.v"

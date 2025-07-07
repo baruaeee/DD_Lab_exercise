@@ -1,0 +1,128 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[22:59:23.381884] Configured Lic search path (23.02-s003): 5280@hs-lic3.oth-regensburg.de:27003@hs-lic1.oth-regensburg.de:27003@hs-lic1.oth-regensburg.de:
+
+Version: 23.11-s100_1, built Mon Apr 22 02:28:10 PDT 2024
+Options: 
+Date:    Fri Jul 04 22:59:23 2025
+Host:    ei-vm-018.othr.de (x86_64 w/Linux 4.18.0-553.58.1.el8_10.x86_64) (32cores*32cpus*1physical cpu*AMD Ryzen Threadripper PRO 5965WX 24-Cores 512KB) (198059936KB)
+PID:     14102
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+Checking out license: Genus_Synthesis
+[22:59:23.176249] Periodic Lic check successful
+[22:59:23.700546] Feature usage summary:
+[22:59:23.700546] Genus_Synthesis
+
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Finished executable startup (0 seconds elapsed).
+
+Loading tool scripts...
+Finished loading tool scripts (9 seconds elapsed).
+
+WARNING: This version of the tool is 438 days old.
+@genus:root: 1> read_libs /home/bas33767/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/PDK/asap7/asap7sc7p5t_28/LIB/NLDM/TT/Test/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.lib
+Error   : Parsing error. [LBR-130]
+        : Syntax error/unsupported construct 'Unexpected characters found at the end of the library' (File /home/bas33767/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/PDK/asap7/asap7sc7p5t_28/LIB/NLDM/TT/Test/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.lib, Line 6857)
+        : Invalid liberty syntax is parsed, or unsupported liberty syntax is encountered.
+Error   : Fail to load library file. [LBR-522]
+        : Attempt to read .lib library '/home/bas33767/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/PDK/asap7/asap7sc7p5t_28/LIB/NLDM/TT/Test/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.lib' failed (File /home/bas33767/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/PDK/asap7/asap7sc7p5t_28/LIB/NLDM/TT/Test/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.lib)
+        : Fix the library read error, then reload the library.
+
+  Message Summary for Library asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.lib:
+  **********************************************************************
+  Fail to load library file. [LBR-522]: 1
+  Parsing error. [LBR-130]: 1
+  **********************************************************************
+ 
+Bad technology libraries.
+Error   : The data value for this attribute is invalid. [TUI-24] [::legacy::set_attribute]
+        : The value '  { /home/bas33767/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/PDK/asap7/asap7sc7p5t_28/LIB/NLDM/TT/Test/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.lib } ' cannot be set for attribute 'library'.
+        : To see the usage/description for this attribute, type '::legacy::set_attribute -h <attr_name> *' (in legacy UI mode) or 'help * <attr_name> -detail' (in CUI mode).
+1
+@genus:root: 2> read_libs /home/bas33767/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/PDK/asap7/asap7sc7p5t_28/LIB/NLDM/TT/Test/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.lib
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.700000, 25.000000) in library 'asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+@genus:root: 3> read_hdl ../openfpga_cell_library/verilog/gpio.v
+@genus:root: 4> 
+@genus:root: 4> # Elaborate the desired module
+@genus:root: 5> elaborate GPIO
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'GPIO' from file '../openfpga_cell_library/verilog/gpio.v'.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'GPIO'.
+Checking for analog nets...
+Check completed for analog nets.
+Checking for source RTL...
+Check completed for source RTL.
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+
+Stage: post_elab
+-------------------------------------------------------
+| Trick             | Accepts | Rejects | Runtime (s) | 
+-------------------------------------------------------
+| ume_constant_bmux |       0 |       0 |        0.00 | 
+| ume_merge         |       0 |       0 |        0.00 | 
+| ume_ssm           |       0 |       0 |        0.00 | 
+| ume_cse           |       0 |       0 |        0.00 | 
+| ume_shrink        |       0 |       0 |        0.00 | 
+| ume_sweep         |       0 |       0 |        0.00 | 
+-------------------------------------------------------
+Starting optimize datapath shifters [v1.0] (stage: post_elab, startdef: GPIO, recur: true)
+Completed optimize datapath shifters (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting clip mux common data inputs [v1.0] (stage: post_elab, startdef: GPIO, recur: true)
+Completed clip mux common data inputs (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting clip the non-user hierarchies [v2.0] (stage: post_elab, startdef: GPIO, recur: true)
+Completed clip the non-user hierarchies (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting basic netlist cleanup [v1.0] (stage: post_elab, startdef: GPIO, recur: true)
+Completed basic netlist cleanup (accepts: 0, rejects: 0, runtime: 0.000s)
+
+Stage: post_elab
+--------------------------------------------------------------------
+| Transform                      | Accepts | Rejects | Runtime (s) | 
+--------------------------------------------------------------------
+| hlo_optimize_datapath_shifters |       0 |       0 |        0.00 | 
+| hlo_clip_mux_input             |       0 |       0 |        0.00 | 
+| hlo_clip                       |       0 |       0 |        0.00 | 
+| hlo_cleanup                    |       0 |       0 |        0.00 | 
+--------------------------------------------------------------------
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+design:GPIO
+@genus:root: 6> 
+@genus:root: 6> #read_sdc gpio_sdc.sdc
+@genus:root: 7> 
+@genus:root: 7> set_db syn_generic_effort medium
+  Setting attribute of root '/': 'syn_generic_effort' = medium
+1 medium
+@genus:root: 8> set_db syn_map_effort medium
+  Setting attribute of root '/': 'syn_map_effort' = medium
+1 medium
+@genus:root: 9> set_db syn_opt_effort medium
+  Setting attribute of root '/': 'syn_opt_effort' = medium
+1 medium
+@genus:root: 10> syn_generic
+Error   : Synthesis can't be performed because libraries do not have usable basic gates. [LBR-172] [syn_generic]
+        : At least one usable two-input and/or/nand/nor gate (module inversion at inputs) is required for mapping. Ensure that the loaded libraries contain at least one such cell. A library cell is considered not usable if it has a 'dont_use' or a 'dont_touch' attribute set to 'true' in the .lib files. Thus to make the cell usable, use 'set_attribute preserve false <libcell>' and 'set_attribute avoid false <libcell>'(in legacy_ui) or 'set_db <libcell> .preserve false' and 'set_db <libcell> .avoid false' (in common_ui)
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   syn_gen
+1
+@genus:root: 11> exit
+
+Lic Summary:
+[01:53:30.295883] Cdslmd servers: hs-lic3
+[01:53:30.820176] Feature usage summary:
+[01:53:30.820177] Genus_Synthesis
+
+Normal exit.

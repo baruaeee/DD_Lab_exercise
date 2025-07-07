@@ -3,7 +3,7 @@
 //	Description: Top-level Verilog module for FPGA
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Sun Jun 29 02:52:31 2025
+//	Date: Mon Jul  7 01:01:47 2025
 //-------------------------------------------
 //----- Default net type -----
 `default_nettype none
@@ -51,8 +51,8 @@ wire [0:0] cbx_1__0__0_bottom_grid_top_width_0_height_0_subtile_5__pin_outpad_0_
 wire [0:0] cbx_1__0__0_bottom_grid_top_width_0_height_0_subtile_6__pin_outpad_0_;
 wire [0:0] cbx_1__0__0_bottom_grid_top_width_0_height_0_subtile_7__pin_outpad_0_;
 wire [0:0] cbx_1__0__0_ccff_tail;
-wire [0:10] cbx_1__0__0_chanx_left_out;
-wire [0:10] cbx_1__0__0_chanx_right_out;
+wire [0:14] cbx_1__0__0_chanx_left_out;
+wire [0:14] cbx_1__0__0_chanx_right_out;
 wire [0:0] cbx_1__0__0_top_grid_bottom_width_0_height_0_subtile_0__pin_I_20_;
 wire [0:0] cbx_1__0__0_top_grid_bottom_width_0_height_0_subtile_0__pin_I_21_;
 wire [0:0] cbx_1__0__0_top_grid_bottom_width_0_height_0_subtile_0__pin_I_22_;
@@ -74,8 +74,8 @@ wire [0:0] cbx_1__0__0_top_grid_bottom_width_0_height_0_subtile_0__pin_I_37_;
 wire [0:0] cbx_1__0__0_top_grid_bottom_width_0_height_0_subtile_0__pin_I_38_;
 wire [0:0] cbx_1__0__0_top_grid_bottom_width_0_height_0_subtile_0__pin_I_39_;
 wire [0:0] cbx_1__1__0_ccff_tail;
-wire [0:10] cbx_1__1__0_chanx_left_out;
-wire [0:10] cbx_1__1__0_chanx_right_out;
+wire [0:14] cbx_1__1__0_chanx_left_out;
+wire [0:14] cbx_1__1__0_chanx_right_out;
 wire [0:0] cbx_1__1__0_top_grid_bottom_width_0_height_0_subtile_0__pin_outpad_0_;
 wire [0:0] cbx_1__1__0_top_grid_bottom_width_0_height_0_subtile_1__pin_outpad_0_;
 wire [0:0] cbx_1__1__0_top_grid_bottom_width_0_height_0_subtile_2__pin_outpad_0_;
@@ -85,8 +85,8 @@ wire [0:0] cbx_1__1__0_top_grid_bottom_width_0_height_0_subtile_5__pin_outpad_0_
 wire [0:0] cbx_1__1__0_top_grid_bottom_width_0_height_0_subtile_6__pin_outpad_0_;
 wire [0:0] cbx_1__1__0_top_grid_bottom_width_0_height_0_subtile_7__pin_outpad_0_;
 wire [0:0] cby_0__1__0_ccff_tail;
-wire [0:10] cby_0__1__0_chany_bottom_out;
-wire [0:10] cby_0__1__0_chany_top_out;
+wire [0:14] cby_0__1__0_chany_bottom_out;
+wire [0:14] cby_0__1__0_chany_top_out;
 wire [0:0] cby_0__1__0_left_grid_right_width_0_height_0_subtile_0__pin_outpad_0_;
 wire [0:0] cby_0__1__0_left_grid_right_width_0_height_0_subtile_1__pin_outpad_0_;
 wire [0:0] cby_0__1__0_left_grid_right_width_0_height_0_subtile_2__pin_outpad_0_;
@@ -96,8 +96,8 @@ wire [0:0] cby_0__1__0_left_grid_right_width_0_height_0_subtile_5__pin_outpad_0_
 wire [0:0] cby_0__1__0_left_grid_right_width_0_height_0_subtile_6__pin_outpad_0_;
 wire [0:0] cby_0__1__0_left_grid_right_width_0_height_0_subtile_7__pin_outpad_0_;
 wire [0:0] cby_1__1__0_ccff_tail;
-wire [0:10] cby_1__1__0_chany_bottom_out;
-wire [0:10] cby_1__1__0_chany_top_out;
+wire [0:14] cby_1__1__0_chany_bottom_out;
+wire [0:14] cby_1__1__0_chany_top_out;
 wire [0:0] cby_1__1__0_left_grid_right_width_0_height_0_subtile_0__pin_I_0_;
 wire [0:0] cby_1__1__0_left_grid_right_width_0_height_0_subtile_0__pin_I_10_;
 wire [0:0] cby_1__1__0_left_grid_right_width_0_height_0_subtile_0__pin_I_11_;
@@ -185,17 +185,17 @@ wire [0:0] grid_io_top_0_bottom_width_0_height_0_subtile_6__pin_inpad_0_;
 wire [0:0] grid_io_top_0_bottom_width_0_height_0_subtile_7__pin_inpad_0_;
 wire [0:0] grid_io_top_0_ccff_tail;
 wire [0:0] sb_0__0__0_ccff_tail;
-wire [0:10] sb_0__0__0_chanx_right_out;
-wire [0:10] sb_0__0__0_chany_top_out;
+wire [0:14] sb_0__0__0_chanx_right_out;
+wire [0:14] sb_0__0__0_chany_top_out;
 wire [0:0] sb_0__1__0_ccff_tail;
-wire [0:10] sb_0__1__0_chanx_right_out;
-wire [0:10] sb_0__1__0_chany_bottom_out;
+wire [0:14] sb_0__1__0_chanx_right_out;
+wire [0:14] sb_0__1__0_chany_bottom_out;
 wire [0:0] sb_1__0__0_ccff_tail;
-wire [0:10] sb_1__0__0_chanx_left_out;
-wire [0:10] sb_1__0__0_chany_top_out;
+wire [0:14] sb_1__0__0_chanx_left_out;
+wire [0:14] sb_1__0__0_chany_top_out;
 wire [0:0] sb_1__1__0_ccff_tail;
-wire [0:10] sb_1__1__0_chanx_left_out;
-wire [0:10] sb_1__1__0_chany_bottom_out;
+wire [0:14] sb_1__1__0_chanx_left_out;
+wire [0:14] sb_1__1__0_chany_bottom_out;
 
 // ----- BEGIN Local short connections -----
 // ----- END Local short connections -----
@@ -368,7 +368,7 @@ wire [0:10] sb_1__1__0_chany_bottom_out;
 	sb_0__0_ sb_0__0_ (
 		.pReset(pReset),
 		.prog_clk(prog_clk),
-		.chany_top_in(cby_0__1__0_chany_bottom_out[0:10]),
+		.chany_top_in(cby_0__1__0_chany_bottom_out[0:14]),
 		.top_left_grid_right_width_0_height_0_subtile_0__pin_inpad_0_(grid_io_left_0_right_width_0_height_0_subtile_0__pin_inpad_0_),
 		.top_left_grid_right_width_0_height_0_subtile_1__pin_inpad_0_(grid_io_left_0_right_width_0_height_0_subtile_1__pin_inpad_0_),
 		.top_left_grid_right_width_0_height_0_subtile_2__pin_inpad_0_(grid_io_left_0_right_width_0_height_0_subtile_2__pin_inpad_0_),
@@ -377,7 +377,7 @@ wire [0:10] sb_1__1__0_chany_bottom_out;
 		.top_left_grid_right_width_0_height_0_subtile_5__pin_inpad_0_(grid_io_left_0_right_width_0_height_0_subtile_5__pin_inpad_0_),
 		.top_left_grid_right_width_0_height_0_subtile_6__pin_inpad_0_(grid_io_left_0_right_width_0_height_0_subtile_6__pin_inpad_0_),
 		.top_left_grid_right_width_0_height_0_subtile_7__pin_inpad_0_(grid_io_left_0_right_width_0_height_0_subtile_7__pin_inpad_0_),
-		.chanx_right_in(cbx_1__0__0_chanx_left_out[0:10]),
+		.chanx_right_in(cbx_1__0__0_chanx_left_out[0:14]),
 		.right_top_grid_bottom_width_0_height_0_subtile_0__pin_O_10_(grid_clb_0_bottom_width_0_height_0_subtile_0__pin_O_10_),
 		.right_top_grid_bottom_width_0_height_0_subtile_0__pin_O_11_(grid_clb_0_bottom_width_0_height_0_subtile_0__pin_O_11_),
 		.right_top_grid_bottom_width_0_height_0_subtile_0__pin_O_12_(grid_clb_0_bottom_width_0_height_0_subtile_0__pin_O_12_),
@@ -397,14 +397,14 @@ wire [0:10] sb_1__1__0_chany_bottom_out;
 		.right_bottom_grid_top_width_0_height_0_subtile_6__pin_inpad_0_(grid_io_bottom_0_top_width_0_height_0_subtile_6__pin_inpad_0_),
 		.right_bottom_grid_top_width_0_height_0_subtile_7__pin_inpad_0_(grid_io_bottom_0_top_width_0_height_0_subtile_7__pin_inpad_0_),
 		.ccff_head(ccff_head),
-		.chany_top_out(sb_0__0__0_chany_top_out[0:10]),
-		.chanx_right_out(sb_0__0__0_chanx_right_out[0:10]),
+		.chany_top_out(sb_0__0__0_chany_top_out[0:14]),
+		.chanx_right_out(sb_0__0__0_chanx_right_out[0:14]),
 		.ccff_tail(sb_0__0__0_ccff_tail));
 
 	sb_0__1_ sb_0__1_ (
 		.pReset(pReset),
 		.prog_clk(prog_clk),
-		.chanx_right_in(cbx_1__1__0_chanx_left_out[0:10]),
+		.chanx_right_in(cbx_1__1__0_chanx_left_out[0:14]),
 		.right_top_grid_bottom_width_0_height_0_subtile_0__pin_inpad_0_(grid_io_top_0_bottom_width_0_height_0_subtile_0__pin_inpad_0_),
 		.right_top_grid_bottom_width_0_height_0_subtile_1__pin_inpad_0_(grid_io_top_0_bottom_width_0_height_0_subtile_1__pin_inpad_0_),
 		.right_top_grid_bottom_width_0_height_0_subtile_2__pin_inpad_0_(grid_io_top_0_bottom_width_0_height_0_subtile_2__pin_inpad_0_),
@@ -413,7 +413,7 @@ wire [0:10] sb_1__1__0_chany_bottom_out;
 		.right_top_grid_bottom_width_0_height_0_subtile_5__pin_inpad_0_(grid_io_top_0_bottom_width_0_height_0_subtile_5__pin_inpad_0_),
 		.right_top_grid_bottom_width_0_height_0_subtile_6__pin_inpad_0_(grid_io_top_0_bottom_width_0_height_0_subtile_6__pin_inpad_0_),
 		.right_top_grid_bottom_width_0_height_0_subtile_7__pin_inpad_0_(grid_io_top_0_bottom_width_0_height_0_subtile_7__pin_inpad_0_),
-		.chany_bottom_in(cby_0__1__0_chany_top_out[0:10]),
+		.chany_bottom_in(cby_0__1__0_chany_top_out[0:14]),
 		.bottom_left_grid_right_width_0_height_0_subtile_0__pin_inpad_0_(grid_io_left_0_right_width_0_height_0_subtile_0__pin_inpad_0_),
 		.bottom_left_grid_right_width_0_height_0_subtile_1__pin_inpad_0_(grid_io_left_0_right_width_0_height_0_subtile_1__pin_inpad_0_),
 		.bottom_left_grid_right_width_0_height_0_subtile_2__pin_inpad_0_(grid_io_left_0_right_width_0_height_0_subtile_2__pin_inpad_0_),
@@ -423,14 +423,14 @@ wire [0:10] sb_1__1__0_chany_bottom_out;
 		.bottom_left_grid_right_width_0_height_0_subtile_6__pin_inpad_0_(grid_io_left_0_right_width_0_height_0_subtile_6__pin_inpad_0_),
 		.bottom_left_grid_right_width_0_height_0_subtile_7__pin_inpad_0_(grid_io_left_0_right_width_0_height_0_subtile_7__pin_inpad_0_),
 		.ccff_head(grid_io_top_0_ccff_tail),
-		.chanx_right_out(sb_0__1__0_chanx_right_out[0:10]),
-		.chany_bottom_out(sb_0__1__0_chany_bottom_out[0:10]),
+		.chanx_right_out(sb_0__1__0_chanx_right_out[0:14]),
+		.chany_bottom_out(sb_0__1__0_chany_bottom_out[0:14]),
 		.ccff_tail(sb_0__1__0_ccff_tail));
 
 	sb_1__0_ sb_1__0_ (
 		.pReset(pReset),
 		.prog_clk(prog_clk),
-		.chany_top_in(cby_1__1__0_chany_bottom_out[0:10]),
+		.chany_top_in(cby_1__1__0_chany_bottom_out[0:14]),
 		.top_left_grid_right_width_0_height_0_subtile_0__pin_O_0_(grid_clb_0_right_width_0_height_0_subtile_0__pin_O_0_),
 		.top_left_grid_right_width_0_height_0_subtile_0__pin_O_1_(grid_clb_0_right_width_0_height_0_subtile_0__pin_O_1_),
 		.top_left_grid_right_width_0_height_0_subtile_0__pin_O_2_(grid_clb_0_right_width_0_height_0_subtile_0__pin_O_2_),
@@ -449,7 +449,7 @@ wire [0:10] sb_1__1__0_chany_bottom_out;
 		.top_right_grid_left_width_0_height_0_subtile_5__pin_inpad_0_(grid_io_right_0_left_width_0_height_0_subtile_5__pin_inpad_0_),
 		.top_right_grid_left_width_0_height_0_subtile_6__pin_inpad_0_(grid_io_right_0_left_width_0_height_0_subtile_6__pin_inpad_0_),
 		.top_right_grid_left_width_0_height_0_subtile_7__pin_inpad_0_(grid_io_right_0_left_width_0_height_0_subtile_7__pin_inpad_0_),
-		.chanx_left_in(cbx_1__0__0_chanx_right_out[0:10]),
+		.chanx_left_in(cbx_1__0__0_chanx_right_out[0:14]),
 		.left_top_grid_bottom_width_0_height_0_subtile_0__pin_O_10_(grid_clb_0_bottom_width_0_height_0_subtile_0__pin_O_10_),
 		.left_top_grid_bottom_width_0_height_0_subtile_0__pin_O_11_(grid_clb_0_bottom_width_0_height_0_subtile_0__pin_O_11_),
 		.left_top_grid_bottom_width_0_height_0_subtile_0__pin_O_12_(grid_clb_0_bottom_width_0_height_0_subtile_0__pin_O_12_),
@@ -469,14 +469,14 @@ wire [0:10] sb_1__1__0_chany_bottom_out;
 		.left_bottom_grid_top_width_0_height_0_subtile_6__pin_inpad_0_(grid_io_bottom_0_top_width_0_height_0_subtile_6__pin_inpad_0_),
 		.left_bottom_grid_top_width_0_height_0_subtile_7__pin_inpad_0_(grid_io_bottom_0_top_width_0_height_0_subtile_7__pin_inpad_0_),
 		.ccff_head(sb_0__0__0_ccff_tail),
-		.chany_top_out(sb_1__0__0_chany_top_out[0:10]),
-		.chanx_left_out(sb_1__0__0_chanx_left_out[0:10]),
+		.chany_top_out(sb_1__0__0_chany_top_out[0:14]),
+		.chanx_left_out(sb_1__0__0_chanx_left_out[0:14]),
 		.ccff_tail(sb_1__0__0_ccff_tail));
 
 	sb_1__1_ sb_1__1_ (
 		.pReset(pReset),
 		.prog_clk(prog_clk),
-		.chany_bottom_in(cby_1__1__0_chany_top_out[0:10]),
+		.chany_bottom_in(cby_1__1__0_chany_top_out[0:14]),
 		.bottom_right_grid_left_width_0_height_0_subtile_0__pin_inpad_0_(grid_io_right_0_left_width_0_height_0_subtile_0__pin_inpad_0_),
 		.bottom_right_grid_left_width_0_height_0_subtile_1__pin_inpad_0_(grid_io_right_0_left_width_0_height_0_subtile_1__pin_inpad_0_),
 		.bottom_right_grid_left_width_0_height_0_subtile_2__pin_inpad_0_(grid_io_right_0_left_width_0_height_0_subtile_2__pin_inpad_0_),
@@ -495,7 +495,7 @@ wire [0:10] sb_1__1__0_chany_bottom_out;
 		.bottom_left_grid_right_width_0_height_0_subtile_0__pin_O_7_(grid_clb_0_right_width_0_height_0_subtile_0__pin_O_7_),
 		.bottom_left_grid_right_width_0_height_0_subtile_0__pin_O_8_(grid_clb_0_right_width_0_height_0_subtile_0__pin_O_8_),
 		.bottom_left_grid_right_width_0_height_0_subtile_0__pin_O_9_(grid_clb_0_right_width_0_height_0_subtile_0__pin_O_9_),
-		.chanx_left_in(cbx_1__1__0_chanx_right_out[0:10]),
+		.chanx_left_in(cbx_1__1__0_chanx_right_out[0:14]),
 		.left_top_grid_bottom_width_0_height_0_subtile_0__pin_inpad_0_(grid_io_top_0_bottom_width_0_height_0_subtile_0__pin_inpad_0_),
 		.left_top_grid_bottom_width_0_height_0_subtile_1__pin_inpad_0_(grid_io_top_0_bottom_width_0_height_0_subtile_1__pin_inpad_0_),
 		.left_top_grid_bottom_width_0_height_0_subtile_2__pin_inpad_0_(grid_io_top_0_bottom_width_0_height_0_subtile_2__pin_inpad_0_),
@@ -505,18 +505,18 @@ wire [0:10] sb_1__1__0_chany_bottom_out;
 		.left_top_grid_bottom_width_0_height_0_subtile_6__pin_inpad_0_(grid_io_top_0_bottom_width_0_height_0_subtile_6__pin_inpad_0_),
 		.left_top_grid_bottom_width_0_height_0_subtile_7__pin_inpad_0_(grid_io_top_0_bottom_width_0_height_0_subtile_7__pin_inpad_0_),
 		.ccff_head(grid_io_left_0_ccff_tail),
-		.chany_bottom_out(sb_1__1__0_chany_bottom_out[0:10]),
-		.chanx_left_out(sb_1__1__0_chanx_left_out[0:10]),
+		.chany_bottom_out(sb_1__1__0_chany_bottom_out[0:14]),
+		.chanx_left_out(sb_1__1__0_chanx_left_out[0:14]),
 		.ccff_tail(sb_1__1__0_ccff_tail));
 
 	cbx_1__0_ cbx_1__0_ (
 		.pReset(pReset),
 		.prog_clk(prog_clk),
-		.chanx_left_in(sb_0__0__0_chanx_right_out[0:10]),
-		.chanx_right_in(sb_1__0__0_chanx_left_out[0:10]),
+		.chanx_left_in(sb_0__0__0_chanx_right_out[0:14]),
+		.chanx_right_in(sb_1__0__0_chanx_left_out[0:14]),
 		.ccff_head(sb_1__0__0_ccff_tail),
-		.chanx_left_out(cbx_1__0__0_chanx_left_out[0:10]),
-		.chanx_right_out(cbx_1__0__0_chanx_right_out[0:10]),
+		.chanx_left_out(cbx_1__0__0_chanx_left_out[0:14]),
+		.chanx_right_out(cbx_1__0__0_chanx_right_out[0:14]),
 		.top_grid_bottom_width_0_height_0_subtile_0__pin_I_20_(cbx_1__0__0_top_grid_bottom_width_0_height_0_subtile_0__pin_I_20_),
 		.top_grid_bottom_width_0_height_0_subtile_0__pin_I_21_(cbx_1__0__0_top_grid_bottom_width_0_height_0_subtile_0__pin_I_21_),
 		.top_grid_bottom_width_0_height_0_subtile_0__pin_I_22_(cbx_1__0__0_top_grid_bottom_width_0_height_0_subtile_0__pin_I_22_),
@@ -550,11 +550,11 @@ wire [0:10] sb_1__1__0_chany_bottom_out;
 	cbx_1__1_ cbx_1__1_ (
 		.pReset(pReset),
 		.prog_clk(prog_clk),
-		.chanx_left_in(sb_0__1__0_chanx_right_out[0:10]),
-		.chanx_right_in(sb_1__1__0_chanx_left_out[0:10]),
+		.chanx_left_in(sb_0__1__0_chanx_right_out[0:14]),
+		.chanx_right_in(sb_1__1__0_chanx_left_out[0:14]),
 		.ccff_head(sb_1__1__0_ccff_tail),
-		.chanx_left_out(cbx_1__1__0_chanx_left_out[0:10]),
-		.chanx_right_out(cbx_1__1__0_chanx_right_out[0:10]),
+		.chanx_left_out(cbx_1__1__0_chanx_left_out[0:14]),
+		.chanx_right_out(cbx_1__1__0_chanx_right_out[0:14]),
 		.top_grid_bottom_width_0_height_0_subtile_0__pin_outpad_0_(cbx_1__1__0_top_grid_bottom_width_0_height_0_subtile_0__pin_outpad_0_),
 		.top_grid_bottom_width_0_height_0_subtile_1__pin_outpad_0_(cbx_1__1__0_top_grid_bottom_width_0_height_0_subtile_1__pin_outpad_0_),
 		.top_grid_bottom_width_0_height_0_subtile_2__pin_outpad_0_(cbx_1__1__0_top_grid_bottom_width_0_height_0_subtile_2__pin_outpad_0_),
@@ -568,11 +568,11 @@ wire [0:10] sb_1__1__0_chany_bottom_out;
 	cby_0__1_ cby_0__1_ (
 		.pReset(pReset),
 		.prog_clk(prog_clk),
-		.chany_bottom_in(sb_0__0__0_chany_top_out[0:10]),
-		.chany_top_in(sb_0__1__0_chany_bottom_out[0:10]),
+		.chany_bottom_in(sb_0__0__0_chany_top_out[0:14]),
+		.chany_top_in(sb_0__1__0_chany_bottom_out[0:14]),
 		.ccff_head(sb_0__1__0_ccff_tail),
-		.chany_bottom_out(cby_0__1__0_chany_bottom_out[0:10]),
-		.chany_top_out(cby_0__1__0_chany_top_out[0:10]),
+		.chany_bottom_out(cby_0__1__0_chany_bottom_out[0:14]),
+		.chany_top_out(cby_0__1__0_chany_top_out[0:14]),
 		.left_grid_right_width_0_height_0_subtile_0__pin_outpad_0_(cby_0__1__0_left_grid_right_width_0_height_0_subtile_0__pin_outpad_0_),
 		.left_grid_right_width_0_height_0_subtile_1__pin_outpad_0_(cby_0__1__0_left_grid_right_width_0_height_0_subtile_1__pin_outpad_0_),
 		.left_grid_right_width_0_height_0_subtile_2__pin_outpad_0_(cby_0__1__0_left_grid_right_width_0_height_0_subtile_2__pin_outpad_0_),
@@ -586,11 +586,11 @@ wire [0:10] sb_1__1__0_chany_bottom_out;
 	cby_1__1_ cby_1__1_ (
 		.pReset(pReset),
 		.prog_clk(prog_clk),
-		.chany_bottom_in(sb_1__0__0_chany_top_out[0:10]),
-		.chany_top_in(sb_1__1__0_chany_bottom_out[0:10]),
+		.chany_bottom_in(sb_1__0__0_chany_top_out[0:14]),
+		.chany_top_in(sb_1__1__0_chany_bottom_out[0:14]),
 		.ccff_head(cbx_1__1__0_ccff_tail),
-		.chany_bottom_out(cby_1__1__0_chany_bottom_out[0:10]),
-		.chany_top_out(cby_1__1__0_chany_top_out[0:10]),
+		.chany_bottom_out(cby_1__1__0_chany_bottom_out[0:14]),
+		.chany_top_out(cby_1__1__0_chany_top_out[0:14]),
 		.right_grid_left_width_0_height_0_subtile_0__pin_outpad_0_(cby_1__1__0_right_grid_left_width_0_height_0_subtile_0__pin_outpad_0_),
 		.right_grid_left_width_0_height_0_subtile_1__pin_outpad_0_(cby_1__1__0_right_grid_left_width_0_height_0_subtile_1__pin_outpad_0_),
 		.right_grid_left_width_0_height_0_subtile_2__pin_outpad_0_(cby_1__1__0_right_grid_left_width_0_height_0_subtile_2__pin_outpad_0_),

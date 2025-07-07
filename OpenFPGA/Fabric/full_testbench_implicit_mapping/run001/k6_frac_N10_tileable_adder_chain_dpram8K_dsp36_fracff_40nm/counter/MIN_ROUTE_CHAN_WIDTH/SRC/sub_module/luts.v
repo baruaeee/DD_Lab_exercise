@@ -3,7 +3,7 @@
 //	Description: Look-Up Tables
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Sun Jun 29 02:52:31 2025
+//	Date: Mon Jul  7 01:01:47 2025
 //-------------------------------------------
 //----- Default net type -----
 `default_nettype none
@@ -46,88 +46,88 @@ wire [0:0] lut6_out;
 //----- END Registered ports -----
 
 
-wire [0:0] sg13g2_buf_4_0_X;
-wire [0:0] sg13g2_buf_4_1_X;
-wire [0:0] sg13g2_buf_4_2_X;
-wire [0:0] sg13g2_buf_4_3_X;
-wire [0:0] sg13g2_buf_4_4_X;
-wire [0:0] sg13g2_buf_4_5_X;
-wire [0:0] sg13g2_inv_1_0_Y;
-wire [0:0] sg13g2_inv_1_1_Y;
-wire [0:0] sg13g2_inv_1_2_Y;
-wire [0:0] sg13g2_inv_1_3_Y;
-wire [0:0] sg13g2_inv_1_4_Y;
-wire [0:0] sg13g2_inv_1_5_Y;
-wire [0:0] sg13g2_or2_1_0_X;
-wire [0:0] sg13g2_or2_1_1_X;
+wire [0:0] BUFJIX4_0_Q;
+wire [0:0] BUFJIX4_1_Q;
+wire [0:0] BUFJIX4_2_Q;
+wire [0:0] BUFJIX4_3_Q;
+wire [0:0] BUFJIX4_4_Q;
+wire [0:0] BUFJIX4_5_Q;
+wire [0:0] INVJIX0_0_Q;
+wire [0:0] INVJIX0_1_Q;
+wire [0:0] INVJIX0_2_Q;
+wire [0:0] INVJIX0_3_Q;
+wire [0:0] INVJIX0_4_Q;
+wire [0:0] INVJIX0_5_Q;
+wire [0:0] OR2JIX0_0_Q;
+wire [0:0] OR2JIX0_1_Q;
 
 // ----- BEGIN Local short connections -----
 // ----- END Local short connections -----
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	sg13g2_or2_1 sg13g2_or2_1_0_ (
+	OR2JIX0 OR2JIX0_0_ (
 		.A(mode[0]),
 		.B(in[4]),
-		.X(sg13g2_or2_1_0_X));
+		.Q(OR2JIX0_0_Q));
 
-	sg13g2_or2_1 sg13g2_or2_1_1_ (
+	OR2JIX0 OR2JIX0_1_ (
 		.A(mode[1]),
 		.B(in[5]),
-		.X(sg13g2_or2_1_1_X));
+		.Q(OR2JIX0_1_Q));
 
-	sg13g2_inv_1 sg13g2_inv_1_0_ (
+	INVJIX0 INVJIX0_0_ (
 		.A(in[0]),
-		.Y(sg13g2_inv_1_0_Y));
+		.Q(INVJIX0_0_Q));
 
-	sg13g2_inv_1 sg13g2_inv_1_1_ (
+	INVJIX0 INVJIX0_1_ (
 		.A(in[1]),
-		.Y(sg13g2_inv_1_1_Y));
+		.Q(INVJIX0_1_Q));
 
-	sg13g2_inv_1 sg13g2_inv_1_2_ (
+	INVJIX0 INVJIX0_2_ (
 		.A(in[2]),
-		.Y(sg13g2_inv_1_2_Y));
+		.Q(INVJIX0_2_Q));
 
-	sg13g2_inv_1 sg13g2_inv_1_3_ (
+	INVJIX0 INVJIX0_3_ (
 		.A(in[3]),
-		.Y(sg13g2_inv_1_3_Y));
+		.Q(INVJIX0_3_Q));
 
-	sg13g2_inv_1 sg13g2_inv_1_4_ (
-		.A(sg13g2_or2_1_0_X),
-		.Y(sg13g2_inv_1_4_Y));
+	INVJIX0 INVJIX0_4_ (
+		.A(OR2JIX0_0_Q),
+		.Q(INVJIX0_4_Q));
 
-	sg13g2_inv_1 sg13g2_inv_1_5_ (
-		.A(sg13g2_or2_1_1_X),
-		.Y(sg13g2_inv_1_5_Y));
+	INVJIX0 INVJIX0_5_ (
+		.A(OR2JIX0_1_Q),
+		.Q(INVJIX0_5_Q));
 
-	sg13g2_buf_4 sg13g2_buf_4_0_ (
+	BUFJIX4 BUFJIX4_0_ (
 		.A(in[0]),
-		.X(sg13g2_buf_4_0_X));
+		.Q(BUFJIX4_0_Q));
 
-	sg13g2_buf_4 sg13g2_buf_4_1_ (
+	BUFJIX4 BUFJIX4_1_ (
 		.A(in[1]),
-		.X(sg13g2_buf_4_1_X));
+		.Q(BUFJIX4_1_Q));
 
-	sg13g2_buf_4 sg13g2_buf_4_2_ (
+	BUFJIX4 BUFJIX4_2_ (
 		.A(in[2]),
-		.X(sg13g2_buf_4_2_X));
+		.Q(BUFJIX4_2_Q));
 
-	sg13g2_buf_4 sg13g2_buf_4_3_ (
+	BUFJIX4 BUFJIX4_3_ (
 		.A(in[3]),
-		.X(sg13g2_buf_4_3_X));
+		.Q(BUFJIX4_3_Q));
 
-	sg13g2_buf_4 sg13g2_buf_4_4_ (
-		.A(sg13g2_or2_1_0_X),
-		.X(sg13g2_buf_4_4_X));
+	BUFJIX4 BUFJIX4_4_ (
+		.A(OR2JIX0_0_Q),
+		.Q(BUFJIX4_4_Q));
 
-	sg13g2_buf_4 sg13g2_buf_4_5_ (
-		.A(sg13g2_or2_1_1_X),
-		.X(sg13g2_buf_4_5_X));
+	BUFJIX4 BUFJIX4_5_ (
+		.A(OR2JIX0_1_Q),
+		.Q(BUFJIX4_5_Q));
 
 	frac_lut6_mux frac_lut6_mux_0_ (
 		.in(sram[0:63]),
-		.sram({sg13g2_buf_4_0_X, sg13g2_buf_4_1_X, sg13g2_buf_4_2_X, sg13g2_buf_4_3_X, sg13g2_buf_4_4_X, sg13g2_buf_4_5_X}),
-		.sram_inv({sg13g2_inv_1_0_Y, sg13g2_inv_1_1_Y, sg13g2_inv_1_2_Y, sg13g2_inv_1_3_Y, sg13g2_inv_1_4_Y, sg13g2_inv_1_5_Y}),
+		.sram({BUFJIX4_0_Q, BUFJIX4_1_Q, BUFJIX4_2_Q, BUFJIX4_3_Q, BUFJIX4_4_Q, BUFJIX4_5_Q}),
+		.sram_inv({INVJIX0_0_Q, INVJIX0_1_Q, INVJIX0_2_Q, INVJIX0_3_Q, INVJIX0_4_Q, INVJIX0_5_Q}),
 		.lut4_out(lut4_out[0:3]),
 		.lut5_out(lut5_out[0:1]),
 		.lut6_out(lut6_out));

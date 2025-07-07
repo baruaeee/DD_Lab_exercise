@@ -1,12 +1,12 @@
 # Run VPR for the 'and' design
 #--write_rr_graph example_rr_graph.xml
-vpr /home/ubuntu/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/run001/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm/counter/MIN_ROUTE_CHAN_WIDTH/arch/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm.xml counter.blif --clock_modeling ideal
+vpr /home/cae_sajib/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/run001/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm/counter/MIN_ROUTE_CHAN_WIDTH/arch/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm.xml counter.blif --clock_modeling ideal
 
 # Read OpenFPGA architecture definition
-read_openfpga_arch -f /home/ubuntu/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/run001/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm/counter/MIN_ROUTE_CHAN_WIDTH/arch/k6_frac_N10_adder_chain_dpram8K_dsp36_fracff_40nm_openfpga.xml
+read_openfpga_arch -f /home/cae_sajib/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/run001/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm/counter/MIN_ROUTE_CHAN_WIDTH/arch/k6_frac_N10_adder_chain_dpram8K_dsp36_fracff_40nm_openfpga_IHP_sg13g2_cds.xml
 
 # Read OpenFPGA simulation settings
-read_openfpga_simulation_setting -f /home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_simulation_settings/fixed_sim_openfpga.xml
+read_openfpga_simulation_setting -f /home/cae_sajib/Desktop/OpenFPGA/openfpga_flow/openfpga_simulation_settings/fixed_sim_openfpga.xml
 
 # Annotate the OpenFPGA architecture to VPR data base
 # to debug use --verbose options
@@ -52,7 +52,7 @@ write_fabric_verilog --file ./SRC --explicit_port_mapping --include_timing --ver
 #  - Enable top-level testbench which is a full verification including programming circuit and core logic of FPGA
 #  - Enable pre-configured top-level testbench which is a fast verification skipping programming phase
 #  - Simulation ini file is optional and is needed only when you need to interface different HDL simulators using openfpga flow-run scripts
-write_full_testbench --file ./SRC --reference_benchmark_file_path counter_output_verilog.v  --include_signal_init --bitstream fabric_bitstream.bit --pin_constraints_file /home/ubuntu/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/config/pin_constraints_reset.xml --bus_group_file /home/ubuntu/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/config/counter8_bus_group.xml
+write_full_testbench --file ./SRC --reference_benchmark_file_path counter_output_verilog.v  --include_signal_init --bitstream fabric_bitstream.bit --pin_constraints_file /home/cae_sajib/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/config/pin_constraints_reset.xml --bus_group_file /home/cae_sajib/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/config/counter8_bus_group.xml
 
 # Finish and exit OpenFPGA
 exit

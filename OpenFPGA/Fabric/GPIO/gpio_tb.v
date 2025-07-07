@@ -3,7 +3,10 @@
 //`include "/home/cae1/Desktop/FPGA-OpenFPGA/Fabric/tasks/synthesizable_verilog/sky130_osu_sc_18T_hs.v"
 //`include "/home/cae1/Desktop/FPGA-OpenFPGA/Synthesis/GPIO/outputs/gpio_netlist.v"
 //`include "gpio.v"
-`include "gpio1.v"
+`include "../PDK/asap7/asap7sc7p5t_28/Verilog/asap7sc7p5t_INVBUF_RVT_TT_201020.v"
+`include "../PDK/asap7/asap7sc7p5t_28/Verilog/asap7sc7p5t_SIMPLE_RVT_TT_201020.v"
+
+`include "gpio_asap7.v"
 
 module tb_GPIO;
 

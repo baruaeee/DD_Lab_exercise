@@ -1,11 +1,13 @@
 # Read Liberty file
-read_libs LIB/sg13g2_stdcell_typ_1p50V_25C.lib
+#read_libs LIB/sg13g2_stdcell_typ_1p50V_25C.lib
+read_libs LIB/ihp_13g2_cds/ixc013g2ng_stdcell_typ_1p20V_25C.lib
 
 # Read HDL/Verilod file
-read_hdl dff.v
+read_hdl ../openfpga_cell_library/verilog/dff.v
 
 # Elaborate the desired module
 elaborate MULTI_MODE_DFFSRQ
+#elaborate DFFR
 
 #read_sdc gpio_sdc.sdc
 
@@ -25,6 +27,7 @@ report_qor    > reports/report_qor.rpt
 
 
 #Outputs
-write_hdl > mm_dffsrq_netlist.v
-write_sdc > mm_dffsrq_post_sdc.sdc
+#write_hdl > dffr_ihp_sg13g2_cds_netlist.v
+write_hdl > mm_dffsrq_ihp_sg13g2_cds_netlist.v
+#write_sdc > mm_dffsrq_post_sdc.sdc
 write_sdf -timescale ns -nonegchecks -recrem split -edges check_edge  -setuphold split > delays.sdf

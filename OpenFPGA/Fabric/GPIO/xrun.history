@@ -4,3 +4,13 @@ s1(13Jun2025:20:36:26):  xrun gpio_tb.v -access +rwc -gui
 s2(14Jun2025:10:03:08):  /run/media/exotic/Cadence/Installed/XCELIUM_24.03.004/tools/bin/xrun gpio_tb.v -access +rwc -gui 
 #e3(14Jun2025:18:15:25): source ./xcelium.d/env.d/env.history.14Jun2025_18_15_25
 s3(14Jun2025:18:15:25):  xrun gpio_tb.v -access +rwc -gui 
+#e4(04Jul2025:20:00:17): source ./xcelium.d/env.d/env.history.04Jul2025_20_00_17
+s4(04Jul2025:20:00:17):  xrun gpio_tb.v -access +rwc -gui 
+#e5(04Jul2025:20:02:34): source ./xcelium.d/env.d/env.history.04Jul2025_20_02_34
+s5(04Jul2025:20:02:34):  xrun gpio_tb.v -access +rwc -gui 
+#e6(05Jul2025:14:10:48): source ./xcelium.d/env.d/env.history.05Jul2025_14_10_48
+s6(05Jul2025:14:10:48):  xrun tri-buff.v -access +rwc -gui 
+#e7(05Jul2025:14:14:04): source ./xcelium.d/env.d/env.history.05Jul2025_14_14_04
+s7(05Jul2025:14:14:04):  xrun tri-buff.v -access +rwc -gui 
+#e8(05Jul2025:21:42:05): source ./xcelium.d/env.d/env.history.05Jul2025_21_42_05
+s8(05Jul2025:21:42:05):  xrun gpio_tb.v -access +rwc -gui 

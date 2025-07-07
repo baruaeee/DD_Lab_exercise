@@ -34,23 +34,23 @@ fpga_top:
           logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic:
             logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut6:
               frac_lut6:
-                sg13g2_or2_1:
-                sg13g2_inv_1:
-                sg13g2_buf_4:
+                OR2JIX0:
+                INVJIX0:
+                BUFJIX4:
                 frac_lut6_mux:
-                  sg13g2_inv_1:
+                  INVJIX0:
                   frac_lut6_mux_basis_input2_mem1:
-                    - TGATE
-                  sg13g2_buf_4:
+                    - tgate
+                  BUFJIX4:
               frac_lut6_DFFR_mem:
                 - DFFR
             direct_interc:
             mux_1level_tapbuf_size2:
-              sg13g2_inv_1:
+              INVJIX0:
               const1:
-              sg13g2_inv_4:
+              INVJIX4:
               mux_1level_tapbuf_basis_input3_mem3:
-                - TGATE
+                - tgate
             mux_1level_tapbuf_size2_mem:
               - DFFR
           logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff:
@@ -60,142 +60,178 @@ fpga_top:
           logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder:
             - ADDF
           mux_1level_tapbuf_size3:
-            sg13g2_inv_1:
+            INVJIX0:
             const1:
-            sg13g2_inv_4:
+            INVJIX4:
             mux_1level_tapbuf_basis_input4_mem4:
-              - TGATE
+              - tgate
           mux_1level_tapbuf_size3_mem:
             - DFFR
           direct_interc:
         direct_interc:
       direct_interc:
       mux_2level_size60:
-        sg13g2_inv_1:
+        INVJIX0:
         const1:
         mux_2level_basis_input8_mem8:
-          - TGATE
+          - tgate
         mux_2level_basis_input5_mem5:
-          - TGATE
+          - tgate
       mux_2level_size60_mem:
         - DFFR
   sb_0__0_:
-    mux_2level_tapbuf_size2:
-      sg13g2_inv_1:
-      const1:
-      sg13g2_inv_4:
-      mux_2level_tapbuf_basis_input2_mem1:
-        - TGATE
-    mux_2level_tapbuf_size2_mem:
-      - DFFR
     mux_2level_tapbuf_size3:
-      sg13g2_inv_1:
+      INVJIX0:
       const1:
-      sg13g2_inv_4:
+      INVJIX4:
       mux_2level_tapbuf_basis_input2_mem1:
-        - TGATE
+        - tgate
     mux_2level_tapbuf_size3_mem:
       - DFFR
-  sb_0__1_:
     mux_2level_tapbuf_size2:
-      sg13g2_inv_1:
+      INVJIX0:
       const1:
-      sg13g2_inv_4:
+      INVJIX4:
       mux_2level_tapbuf_basis_input2_mem1:
-        - TGATE
+        - tgate
+    mux_2level_tapbuf_size2_mem:
+      - DFFR
+    mux_2level_tapbuf_size4:
+      INVJIX0:
+      const1:
+      INVJIX4:
+      mux_2level_tapbuf_basis_input3_mem3:
+        - tgate
+    mux_2level_tapbuf_size4_mem:
+      - DFFR
+  sb_0__1_:
+    mux_2level_tapbuf_size3:
+      INVJIX0:
+      const1:
+      INVJIX4:
+      mux_2level_tapbuf_basis_input2_mem1:
+        - tgate
+    mux_2level_tapbuf_size3_mem:
+      - DFFR
+    mux_2level_tapbuf_size2:
+      INVJIX0:
+      const1:
+      INVJIX4:
+      mux_2level_tapbuf_basis_input2_mem1:
+        - tgate
     mux_2level_tapbuf_size2_mem:
       - DFFR
   sb_1__0_:
-    mux_2level_tapbuf_size4:
-      sg13g2_inv_1:
+    mux_2level_tapbuf_size6:
+      INVJIX0:
       const1:
-      sg13g2_inv_4:
+      INVJIX4:
       mux_2level_tapbuf_basis_input3_mem3:
-        - TGATE
+        - tgate
+    mux_2level_tapbuf_size6_mem:
+      - DFFR
+    mux_2level_tapbuf_size5:
+      INVJIX0:
+      const1:
+      INVJIX4:
+      mux_2level_tapbuf_basis_input3_mem3:
+        - tgate
+      mux_2level_tapbuf_basis_input2_mem2:
+        - tgate
+    mux_2level_tapbuf_size5_mem:
+      - DFFR
+    mux_2level_tapbuf_size4:
+      INVJIX0:
+      const1:
+      INVJIX4:
+      mux_2level_tapbuf_basis_input3_mem3:
+        - tgate
     mux_2level_tapbuf_size4_mem:
       - DFFR
     mux_2level_tapbuf_size3:
-      sg13g2_inv_1:
+      INVJIX0:
       const1:
-      sg13g2_inv_4:
+      INVJIX4:
       mux_2level_tapbuf_basis_input2_mem1:
-        - TGATE
+        - tgate
     mux_2level_tapbuf_size3_mem:
-      - DFFR
-    mux_2level_tapbuf_size2:
-      sg13g2_inv_1:
-      const1:
-      sg13g2_inv_4:
-      mux_2level_tapbuf_basis_input2_mem1:
-        - TGATE
-    mux_2level_tapbuf_size2_mem:
       - DFFR
   sb_1__1_:
-    mux_2level_tapbuf_size3:
-      sg13g2_inv_1:
+    mux_2level_tapbuf_size6:
+      INVJIX0:
       const1:
-      sg13g2_inv_4:
-      mux_2level_tapbuf_basis_input2_mem1:
-        - TGATE
-    mux_2level_tapbuf_size3_mem:
+      INVJIX4:
+      mux_2level_tapbuf_basis_input3_mem3:
+        - tgate
+    mux_2level_tapbuf_size6_mem:
+      - DFFR
+    mux_2level_tapbuf_size5:
+      INVJIX0:
+      const1:
+      INVJIX4:
+      mux_2level_tapbuf_basis_input3_mem3:
+        - tgate
+      mux_2level_tapbuf_basis_input2_mem2:
+        - tgate
+    mux_2level_tapbuf_size5_mem:
       - DFFR
     mux_2level_tapbuf_size4:
-      sg13g2_inv_1:
+      INVJIX0:
       const1:
-      sg13g2_inv_4:
+      INVJIX4:
       mux_2level_tapbuf_basis_input3_mem3:
-        - TGATE
+        - tgate
     mux_2level_tapbuf_size4_mem:
       - DFFR
-    mux_2level_tapbuf_size2:
-      sg13g2_inv_1:
+    mux_2level_tapbuf_size3:
+      INVJIX0:
       const1:
-      sg13g2_inv_4:
+      INVJIX4:
       mux_2level_tapbuf_basis_input2_mem1:
-        - TGATE
+        - tgate
+    mux_2level_tapbuf_size3_mem:
+      - DFFR
+    mux_2level_tapbuf_size2:
+      INVJIX0:
+      const1:
+      INVJIX4:
+      mux_2level_tapbuf_basis_input2_mem1:
+        - tgate
     mux_2level_tapbuf_size2_mem:
       - DFFR
   cbx_1__0_:
     mux_2level_tapbuf_size6:
-      sg13g2_inv_1:
+      INVJIX0:
       const1:
-      sg13g2_inv_4:
+      INVJIX4:
       mux_2level_tapbuf_basis_input3_mem3:
-        - TGATE
+        - tgate
     mux_2level_tapbuf_size6_mem:
-      - DFFR
-    mux_2level_tapbuf_size2:
-      sg13g2_inv_1:
-      const1:
-      sg13g2_inv_4:
-      mux_2level_tapbuf_basis_input2_mem1:
-        - TGATE
-    mux_2level_tapbuf_size2_mem:
       - DFFR
   cbx_1__1_:
     mux_2level_tapbuf_size6:
-      sg13g2_inv_1:
+      INVJIX0:
       const1:
-      sg13g2_inv_4:
+      INVJIX4:
       mux_2level_tapbuf_basis_input3_mem3:
-        - TGATE
+        - tgate
     mux_2level_tapbuf_size6_mem:
       - DFFR
   cby_0__1_:
     mux_2level_tapbuf_size6:
-      sg13g2_inv_1:
+      INVJIX0:
       const1:
-      sg13g2_inv_4:
+      INVJIX4:
       mux_2level_tapbuf_basis_input3_mem3:
-        - TGATE
+        - tgate
     mux_2level_tapbuf_size6_mem:
       - DFFR
   cby_1__1_:
     mux_2level_tapbuf_size6:
-      sg13g2_inv_1:
+      INVJIX0:
       const1:
-      sg13g2_inv_4:
+      INVJIX4:
       mux_2level_tapbuf_basis_input3_mem3:
-        - TGATE
+        - tgate
     mux_2level_tapbuf_size6_mem:
       - DFFR

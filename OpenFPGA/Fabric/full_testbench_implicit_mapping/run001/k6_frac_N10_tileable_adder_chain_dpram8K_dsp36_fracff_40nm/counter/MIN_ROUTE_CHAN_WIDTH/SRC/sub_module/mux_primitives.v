@@ -3,21 +3,10 @@
 //	Description: Multiplexer primitives
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Sun Jun 29 02:52:31 2025
+//	Date: Mon Jul  7 01:01:47 2025
 //-------------------------------------------
 //----- Default net type -----
-module TGATE (
-    input wire in,          // Input signal
-    input wire sel,    // Control signal
-    input wire selb,    // Control signal
-    output wire out          // Output signal
-);
-
-    assign out = (sel & ~selb) ? in : 1'bz;
-    assign in = (selb & ~sel) ? out : 1'bz;
-
-
-endmodule
+`default_nettype none
 
 // ----- Verilog module for mux_2level_tapbuf_basis_input3_mem3 -----
 module mux_2level_tapbuf_basis_input3_mem3(in,
@@ -47,20 +36,19 @@ output [0:0] out;
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-
-	TGATE TGATE_0_ (
+	tgate tgate_0_ (
 		.in(in[0]),
 		.sel(mem[0]),
 		.selb(mem_inv[0]),
 		.out(out));
 
-	TGATE TGATE_1_ (
+	tgate tgate_1_ (
 		.in(in[1]),
 		.sel(mem[1]),
 		.selb(mem_inv[1]),
 		.out(out));
 
-	TGATE TGATE_2_ (
+	tgate tgate_2_ (
 		.in(in[2]),
 		.sel(mem[2]),
 		.selb(mem_inv[2]),
@@ -106,13 +94,13 @@ output [0:0] out;
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	TGATE TGATE_0_ (
+	tgate tgate_0_ (
 		.in(in[0]),
 		.sel(mem),
 		.selb(mem_inv),
 		.out(out));
 
-	TGATE TGATE_1_ (
+	tgate tgate_1_ (
 		.in(in[1]),
 		.sel(mem_inv),
 		.selb(mem),
@@ -120,6 +108,58 @@ output [0:0] out;
 
 endmodule
 // ----- END Verilog module for mux_2level_tapbuf_basis_input2_mem1 -----
+
+//----- Default net type -----
+`default_nettype wire
+
+
+
+
+//----- Default net type -----
+`default_nettype none
+
+// ----- Verilog module for mux_2level_tapbuf_basis_input2_mem2 -----
+module mux_2level_tapbuf_basis_input2_mem2(in,
+                                           mem,
+                                           mem_inv,
+                                           out);
+//----- INPUT PORTS -----
+input [0:1] in;
+//----- INPUT PORTS -----
+input [0:1] mem;
+//----- INPUT PORTS -----
+input [0:1] mem_inv;
+//----- OUTPUT PORTS -----
+output [0:0] out;
+
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
+
+
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
+
+
+
+// ----- BEGIN Local short connections -----
+// ----- END Local short connections -----
+// ----- BEGIN Local output short connections -----
+// ----- END Local output short connections -----
+
+	tgate tgate_0_ (
+		.in(in[0]),
+		.sel(mem[0]),
+		.selb(mem_inv[0]),
+		.out(out));
+
+	tgate tgate_1_ (
+		.in(in[1]),
+		.sel(mem[1]),
+		.selb(mem_inv[1]),
+		.out(out));
+
+endmodule
+// ----- END Verilog module for mux_2level_tapbuf_basis_input2_mem2 -----
 
 //----- Default net type -----
 `default_nettype wire
@@ -158,49 +198,49 @@ output [0:0] out;
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	TGATE TGATE_0_ (
+	tgate tgate_0_ (
 		.in(in[0]),
 		.sel(mem[0]),
 		.selb(mem_inv[0]),
 		.out(out));
 
-	TGATE TGATE_1_ (
+	tgate tgate_1_ (
 		.in(in[1]),
 		.sel(mem[1]),
 		.selb(mem_inv[1]),
 		.out(out));
 
-	TGATE TGATE_2_ (
+	tgate tgate_2_ (
 		.in(in[2]),
 		.sel(mem[2]),
 		.selb(mem_inv[2]),
 		.out(out));
 
-	TGATE TGATE_3_ (
+	tgate tgate_3_ (
 		.in(in[3]),
 		.sel(mem[3]),
 		.selb(mem_inv[3]),
 		.out(out));
 
-	TGATE TGATE_4_ (
+	tgate tgate_4_ (
 		.in(in[4]),
 		.sel(mem[4]),
 		.selb(mem_inv[4]),
 		.out(out));
 
-	TGATE TGATE_5_ (
+	tgate tgate_5_ (
 		.in(in[5]),
 		.sel(mem[5]),
 		.selb(mem_inv[5]),
 		.out(out));
 
-	TGATE TGATE_6_ (
+	tgate tgate_6_ (
 		.in(in[6]),
 		.sel(mem[6]),
 		.selb(mem_inv[6]),
 		.out(out));
 
-	TGATE TGATE_7_ (
+	tgate tgate_7_ (
 		.in(in[7]),
 		.sel(mem[7]),
 		.selb(mem_inv[7]),
@@ -246,31 +286,31 @@ output [0:0] out;
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	TGATE TGATE_0_ (
+	tgate tgate_0_ (
 		.in(in[0]),
 		.sel(mem[0]),
 		.selb(mem_inv[0]),
 		.out(out));
 
-	TGATE TGATE_1_ (
+	tgate tgate_1_ (
 		.in(in[1]),
 		.sel(mem[1]),
 		.selb(mem_inv[1]),
 		.out(out));
 
-	TGATE TGATE_2_ (
+	tgate tgate_2_ (
 		.in(in[2]),
 		.sel(mem[2]),
 		.selb(mem_inv[2]),
 		.out(out));
 
-	TGATE TGATE_3_ (
+	tgate tgate_3_ (
 		.in(in[3]),
 		.sel(mem[3]),
 		.selb(mem_inv[3]),
 		.out(out));
 
-	TGATE TGATE_4_ (
+	tgate tgate_4_ (
 		.in(in[4]),
 		.sel(mem[4]),
 		.selb(mem_inv[4]),
@@ -316,25 +356,25 @@ output [0:0] out;
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	TGATE TGATE_0_ (
+	tgate tgate_0_ (
 		.in(in[0]),
 		.sel(mem[0]),
 		.selb(mem_inv[0]),
 		.out(out));
 
-	TGATE TGATE_1_ (
+	tgate tgate_1_ (
 		.in(in[1]),
 		.sel(mem[1]),
 		.selb(mem_inv[1]),
 		.out(out));
 
-	TGATE TGATE_2_ (
+	tgate tgate_2_ (
 		.in(in[2]),
 		.sel(mem[2]),
 		.selb(mem_inv[2]),
 		.out(out));
 
-	TGATE TGATE_3_ (
+	tgate tgate_3_ (
 		.in(in[3]),
 		.sel(mem[3]),
 		.selb(mem_inv[3]),
@@ -380,19 +420,19 @@ output [0:0] out;
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	TGATE TGATE_0_ (
+	tgate tgate_0_ (
 		.in(in[0]),
 		.sel(mem[0]),
 		.selb(mem_inv[0]),
 		.out(out));
 
-	TGATE TGATE_1_ (
+	tgate tgate_1_ (
 		.in(in[1]),
 		.sel(mem[1]),
 		.selb(mem_inv[1]),
 		.out(out));
 
-	TGATE TGATE_2_ (
+	tgate tgate_2_ (
 		.in(in[2]),
 		.sel(mem[2]),
 		.selb(mem_inv[2]),
@@ -438,13 +478,13 @@ output [0:0] out;
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	TGATE TGATE_0_ (
+	tgate tgate_0_ (
 		.in(in[0]),
 		.sel(mem),
 		.selb(mem_inv),
 		.out(out));
 
-	TGATE TGATE_1_ (
+	tgate tgate_1_ (
 		.in(in[1]),
 		.sel(mem_inv),
 		.selb(mem),

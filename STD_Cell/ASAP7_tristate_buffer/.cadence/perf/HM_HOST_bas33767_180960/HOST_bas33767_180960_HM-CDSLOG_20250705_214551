@@ -1,0 +1,154 @@
+\# Program start time:     UTC 2025.07.05 19:45:42.812
+\# Local time: GMT+02:00 (UTC+02:00) 2025.07.05 21:45:42.812
+\o Program:		@(#)$CDS: Virtuoso Studio version IC23.1-64b 05/22/2024 07:43 (cpgbld16) $
+\o Hierarchy:		/mnt/cae_storage_sw/eda/cadence/2024-25/RHELx86/IC_23.10.070/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC23.1-64b.ISR7.27  (64-bit addresses)
+\# Command line:	/eda/cadence/2024-25/RHELx86/IC_23.10.070/tools.lnx86/dfII/bin/64bit/virtuoso -beanhost ei-vm-018.othr.de -beanport 11903 -beanbinlog  -beanLogFile /home/bas33767/Desktop/DD_Lab_exercise/STD_Cell/ASAP7_tristate_buffer/logs_bas33767/logs0/amps_Service1.log -mpssession virtuoso179717 -mpshost ei-vm-018.othr.de -davinciService DaVinciService_179717_1751744737 -scopedPid 179717 -axlSession fnxSession0 -axlServiceIdFlag 1 -uuid 299e0e2e-23bb-4dd4-b6a4-0c55114cc87e -heartbeat /dev/shm/swift-heartbeat.vUq8w4nr3l -log /home/bas33767/Desktop/DD_Lab_exercise/STD_Cell/ASAP7_tristate_buffer/logs_bas33767/logs0/Service1.log -adeBrokerAddress ei-vm-018.othr.de:33499 -noautostart -nographE -lscs 000175E1894CBE06FF0966E38F1FFC06BC4D26E7DB49CA318F7A26B8DA47CC37D16033A6861FCD28867C66E3BF1FFC06BC4D66E38F1FFC06BC4D0E8A0FFB7CE2D42400001E6E -interactive -offlineExprEval -upfrontMode -fenixMode explorer -heartbeatTimeout  -lingerTimeout 300 -pointlifetime -1
+\# Host name (type):	ei-vm-018.othr.de (x86_64)
+\# Operating system:	Linux 4.18.0-553.58.1.el8_10.x86_64 #1 SMP Thu Jun 12 14:27:07 EDT 2025
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:5405 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 12011000)
+\# X resource pool:	base 0x400000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        730 MB
+\# Available memory:	    172,165 MB
+\# System memory:	    193,418 MB
+\# Maximum memory size:	    192,861 MB
+\# Max mem available:	    172,338 MB
+\# Initial memory used:	        173 MB
+\#        process size:	      1,686 MB
+\# Thread usage limits (effective/default):	maxthreads 773444/773444 maxload 32.00/32.00
+\# Qt version:		5.15.9
+\# Window Manager:	other
+\# User Name:		bas33767
+\o Working Directory:	ei-vm-018.othr.de:/home/bas33767/Desktop/DD_Lab_exercise/STD_Cell/ASAP7_tristate_buffer
+\# Process Id:		180960
+\o 
+\o COPYRIGHT (C) 1992-2024  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2024  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading im.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Load shared object file /eda/cadence/2024-25/RHELx86/PEGASUSDFM_24.10.000/tools.lnx86/ret/lib/64bit/libretboot.so
+\o Load shared object file /eda/cadence/2024-25/RHELx86/PEGASUSDFM_24.10.000/tools.lnx86/lpa/lib/64bit/libretclef.so
+\o 
+\o Load shared object file /eda/cadence/2024-25/RHELx86/PEGASUSDFM_24.10.000/tools.lnx86/lpa/lib/64bit/libretmb.so
+\o 
+\o Hotspot Browser 1.0.0 (May  5 2016 12:15:38)
+\o Loading /eda/cadence/2024-25/RHELx86/PEGASUSDFM_24.10.000/tools.lnx86/mmg/bin/64bit/etc/context/6.1.0/64bit/ccp.cxt
+\o Loading pegasusui.cxt
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading layers.cxt 
+\o Loading drv.cxt 
+\o Loading ams.cxt 
+\o Loading oasis.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading socket.cxt 
+\o Loading analog.cxt 
+\o Loading par.cxt 
+\o Loading asimenv.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading amps.cxt 
+\o Loading adexlCore.cxt 
+\o Loading adexl.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\o Loading adexlDM.cxt 
+\o Loading cpf.cxt 
+\o Loading cli.cxt 
+\o Loading lp.cxt 
+\o Loading sipLayout.cxt 
+\o Loading diagCenter.cxt 
+\o INFO (ELI-00333) Client process connection mode is LSCS.
+\# [21:45:42.432532] Configured Lic search path (23.02-s006): 5280@hs-lic3.oth-regensburg.de:27003@hs-lic1.oth-regensburg.de:27003@hs-lic1.oth-regensburg.de:
+\# Memory report: using         344 MB, process size 1,907 MB at UTC 2025.07.05 19:45:47.288
+\o //
+\o //  Calibre Skill Interface * (v2024.4_12.9) *
+\o //
+\o //                         Copyright Siemens 1996-2020     
+\o //                             All Rights Reserved.
+\o //         THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+\o //            WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+\o //              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+\o //
+\o //
+\o loading vars from /home/bas33767/Desktop/asap7/asap7_pdk_r1p7/cdslib/setup/cdsenv for tool layout
+\o ---------------------------------------------------------------------------------------------------
+\o    ###     ######     ###    ########  ########    ########  ########  ##    ## 
+\o   ## ##   ##    ##   ## ##   ##     ## ##    ##    ##     ## ##     ## ##   ##  
+\o  ##   ##  ##        ##   ##  ##     ##     ##      ##     ## ##     ## ##  ##   
+\o ##     ##  ######  ##     ## ########     ##       ########  ##     ## #####    
+\o #########       ## ######### ##          ##        ##        ##     ## ##  ##   
+\o ##     ## ##    ## ##     ## ##          ##        ##        ##     ## ##   ##  
+\o ##     ##  ######  ##     ## ##          ##        ##        ########  ##    ## 
+\o ---------------------------------------------------------------------------------------------------
+\o  
+\o  
+\o  BSD 3-Clause License 
+\o   
+\o  Copyright 2020 Lawrence T. Clark, Vinay Vashishtha, or Arizona State 
+\o  University 
+\o   
+\o  Redistribution and use in source and binary forms, with or without 
+\o  modification, are permitted provided that the following conditions are met: 
+\o   
+\o  1. Redistributions of source code must retain the above copyright notice, 
+\o  this list of conditions and the following disclaimer. 
+\o   
+\o  2. Redistributions in binary form must reproduce the above copyright 
+\o  notice, this list of conditions and the following disclaimer in the 
+\o  documentation and/or other materials provided with the distribution. 
+\o   
+\o  3. Neither the name of the copyright holder nor the names of its 
+\o  contributors may be used to endorse or promote products derived from this 
+\o  software without specific prior written permission. 
+\o   
+\o  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
+\o  AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
+\o  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
+\o  ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE 
+\o  LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
+\o  CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
+\o  SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+\o  INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+\o  CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
+\o  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
+\o  POSSIBILITY OF SUCH DAMAGE. 
+\p > 
+\o  Loading le.cxt 
+\o Loading tilp.cxt 
+\o Loading validator.cxt 
+\o Loading vrf.cxt 
+\o Loading multiTechPlugin.cxt 
+\o Loading exportDie.cxt 
+\# Loading perfDiag...
+\# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
+\# The Health Monitor tool is installed. You can access it from CIW - Tools - Diagnostic Center or use the shell command 'cdsPerfDiag -p 180960' to open it when Virtuoso freezes.
+\# (PerfDiag): Use backtrace from GLIBC.

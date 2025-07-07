@@ -1,11 +1,11 @@
-/home/ubuntu/Desktop/OpenFPGA/build/yosys/bin/yosys yosys.ys
+/home/cae_sajib/Desktop/OpenFPGA/build/yosys/bin/yosys yosys.ys
 
  /----------------------------------------------------------------------------\
  |  yosys -- Yosys Open SYnthesis Suite                                       |
- |  Copyright (C) 2012 - 2024  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Copyright (C) 2012 - 2025  Claire Xenia Wolf <claire@yosyshq.com>         |
  |  Distributed under an ISC-like license, type "license" to see terms        |
  \----------------------------------------------------------------------------/
- Yosys 0.45+148 (git sha1 1bf908dea, g++ 11.4.0-1ubuntu1~22.04 -fPIC -O3)
+ Yosys 0.54+29 (git sha1 7b0c1fe49, g++ 11.4.0-1ubuntu1~22.04 -fPIC -O3)
 
 -- Executing script file `yosys.ys' --
 
@@ -14,8 +14,8 @@ Parsing Verilog input from `./benchmark/counter.v' to AST representation.
 Generating RTLIL representation for module `\counter'.
 Successfully finished Verilog frontend.
 
-2. Executing Verilog-2005 frontend: /home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v
-Parsing Verilog input from `/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v' to AST representation.
+2. Executing Verilog-2005 frontend: /home/cae_sajib/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v
+Parsing Verilog input from `/home/cae_sajib/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v' to AST representation.
 Generating RTLIL representation for module `\dpram_1024x8_core'.
 Generating RTLIL representation for module `\dpram_1024x8'.
 Generating RTLIL representation for module `\mult_36'.
@@ -41,56 +41,24 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 4.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:207$16 in module dffsn.
-Marked 1 switch rules as full_case in process $proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:176$13 in module dffrn.
-Marked 1 switch rules as full_case in process $proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:145$10 in module dffs.
-Marked 1 switch rules as full_case in process $proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:114$7 in module dffr.
 Marked 1 switch rules as full_case in process $proc$./benchmark/counter.v:22$1 in module counter.
 Removed a total of 0 dead cases.
 
 4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
-Removed 4 redundant assignments.
-Promoted 8 assignments to connections.
+Removed 0 redundant assignments.
+Promoted 2 assignments to connections.
 
 4.4. Executing PROC_INIT pass (extract init attributes).
-Found init rule in `\dffsn.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:0$18'.
-  Set init value: \Q = 1'0
-Found init rule in `\dffrn.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:0$15'.
-  Set init value: \Q = 1'0
-Found init rule in `\dffs.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:0$12'.
-  Set init value: \Q = 1'0
-Found init rule in `\dffr.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:0$9'.
-  Set init value: \Q = 1'0
-Found init rule in `\dff.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:0$6'.
-  Set init value: \Q = 1'0
 Found init rule in `\counter.$proc$./benchmark/counter.v:0$3'.
   Set init value: \result = 8'00000000
 
 4.5. Executing PROC_ARST pass (detect async resets in processes).
-Found async reset \SN in `\dffsn.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:207$16'.
-Found async reset \RN in `\dffrn.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:176$13'.
-Found async reset \S in `\dffs.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:145$10'.
-Found async reset \R in `\dffr.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:114$7'.
 Found async reset \reset in `\counter.$proc$./benchmark/counter.v:22$1'.
 
 4.6. Executing PROC_ROM pass (convert switches to ROMs).
 Converted 0 switches.
 
 4.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\dffsn.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:0$18'.
-Creating decoders for process `\dffsn.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:207$16'.
-     1/1: $0\Q[0:0]
-Creating decoders for process `\dffrn.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:0$15'.
-Creating decoders for process `\dffrn.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:176$13'.
-     1/1: $0\Q[0:0]
-Creating decoders for process `\dffs.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:0$12'.
-Creating decoders for process `\dffs.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:145$10'.
-     1/1: $0\Q[0:0]
-Creating decoders for process `\dffr.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:0$9'.
-Creating decoders for process `\dffr.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:114$7'.
-     1/1: $0\Q[0:0]
-Creating decoders for process `\dff.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:0$6'.
-Creating decoders for process `\dff.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:89$5'.
 Creating decoders for process `\counter.$proc$./benchmark/counter.v:0$3'.
 Creating decoders for process `\counter.$proc$./benchmark/counter.v:22$1'.
      1/1: $1\result[7:0]
@@ -98,32 +66,12 @@ Creating decoders for process `\counter.$proc$./benchmark/counter.v:22$1'.
 4.8. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 4.9. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\dffsn.\Q' using process `\dffsn.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:207$16'.
-  created $adff cell `$procdff$23' with positive edge clock and positive level reset.
-Creating register for signal `\dffrn.\Q' using process `\dffrn.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:176$13'.
-  created $adff cell `$procdff$28' with positive edge clock and positive level reset.
-Creating register for signal `\dffs.\Q' using process `\dffs.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:145$10'.
-  created $adff cell `$procdff$31' with positive edge clock and positive level reset.
-Creating register for signal `\dffr.\Q' using process `\dffr.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:114$7'.
-  created $adff cell `$procdff$34' with positive edge clock and positive level reset.
-Creating register for signal `\dff.\Q' using process `\dff.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:89$5'.
-  created $dff cell `$procdff$35' with positive edge clock.
 Creating register for signal `\counter.\result' using process `\counter.$proc$./benchmark/counter.v:22$1'.
-  created $adff cell `$procdff$38' with positive edge clock and positive level reset.
+  created $adff cell `$procdff$21' with positive edge clock and positive level reset.
 
 4.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 4.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Removing empty process `dffsn.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:0$18'.
-Removing empty process `dffsn.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:207$16'.
-Removing empty process `dffrn.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:0$15'.
-Removing empty process `dffrn.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:176$13'.
-Removing empty process `dffs.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:0$12'.
-Removing empty process `dffs.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:145$10'.
-Removing empty process `dffr.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:0$9'.
-Removing empty process `dffr.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:114$7'.
-Removing empty process `dff.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:0$6'.
-Removing empty process `dff.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:89$5'.
 Removing empty process `counter.$proc$./benchmark/counter.v:0$3'.
 Removing empty process `counter.$proc$./benchmark/counter.v:22$1'.
 Cleaned up 0 empty switches.
@@ -134,8 +82,8 @@ Optimizing module counter.
 
 5. Executing TECHMAP pass (map to technology primitives).
 
-5.1. Executing Verilog-2005 frontend: /home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_dff_map.v
-Parsing Verilog input from `/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_dff_map.v' to AST representation.
+5.1. Executing Verilog-2005 frontend: /home/cae_sajib/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_dff_map.v
+Parsing Verilog input from `/home/cae_sajib/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_dff_map.v' to AST representation.
 Generating RTLIL representation for module `\$_DFF_P_'.
 Generating RTLIL representation for module `\$_DFF_PP0_'.
 Generating RTLIL representation for module `\$_DFF_PP1_'.
@@ -375,8 +323,8 @@ Optimizing module counter.
 
 22. Executing TECHMAP pass (map to technology primitives).
 
-22.1. Executing Verilog-2005 frontend: /home/ubuntu/Desktop/OpenFPGA/build/yosys/bin/../share/yosys/techmap.v
-Parsing Verilog input from `/home/ubuntu/Desktop/OpenFPGA/build/yosys/bin/../share/yosys/techmap.v' to AST representation.
+22.1. Executing Verilog-2005 frontend: /home/cae_sajib/Desktop/OpenFPGA/build/yosys/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/home/cae_sajib/Desktop/OpenFPGA/build/yosys/bin/../share/yosys/techmap.v' to AST representation.
 Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
 Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
 Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
@@ -416,7 +364,7 @@ Using extmapper simplemap for cells of type $mux.
 Using extmapper simplemap for cells of type $not.
 Using extmapper simplemap for cells of type $or.
 No more expansions possible.
-<suppressed ~259 debug messages>
+<suppressed ~261 debug messages>
 
 23. Executing OPT pass (performing simple optimizations).
 
@@ -473,8 +421,8 @@ Removing temp directory.
 
 25. Executing TECHMAP pass (map to technology primitives).
 
-25.1. Executing Verilog-2005 frontend: /home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_dff_map.v
-Parsing Verilog input from `/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_dff_map.v' to AST representation.
+25.1. Executing Verilog-2005 frontend: /home/cae_sajib/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_dff_map.v
+Parsing Verilog input from `/home/cae_sajib/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_dff_map.v' to AST representation.
 Generating RTLIL representation for module `\$_DFF_P_'.
 Generating RTLIL representation for module `\$_DFF_PP0_'.
 Generating RTLIL representation for module `\$_DFF_PP1_'.
@@ -490,6 +438,7 @@ No more expansions possible.
 26. Executing SYNTH pass.
 
 26.1. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `counter'. Setting top module to counter.
 
 26.1.1. Analyzing design hierarchy..
 Top module:  \counter
@@ -526,7 +475,7 @@ Removed 0 unused cells and 51 unused wires.
 
 28. Executing BLIF backend.
 
-End of script. Logfile hash: 528a56395c, CPU: user 0.06s system 0.01s, MEM: 22.70 MB peak
-Yosys 0.45+148 (git sha1 1bf908dea, g++ 11.4.0-1ubuntu1~22.04 -fPIC -O3)
-Time spent: 62% 1x abc (0 sec), 8% 7x read_verilog (0 sec), ...
+End of script. Logfile hash: 1041d76e66, CPU: user 0.07s system 0.01s, MEM: 23.50 MB peak
+Yosys 0.54+29 (git sha1 7b0c1fe49, g++ 11.4.0-1ubuntu1~22.04 -fPIC -O3)
+Time spent: 63% 1x abc (0 sec), 9% 7x read_verilog (0 sec), ...
 0

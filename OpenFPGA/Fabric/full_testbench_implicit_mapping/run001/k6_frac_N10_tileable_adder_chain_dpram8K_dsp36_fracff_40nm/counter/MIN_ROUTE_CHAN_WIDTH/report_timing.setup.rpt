@@ -3,60 +3,6 @@
 # Output precision: 3
 
 #Path 1
-Startpoint: result[3].Q[0] (dffr clocked by clk)
-Endpoint  : out:result[3].outpad[0] (.output clocked by clk)
-Path Type : setup
-
-Point                                                             Incr      Path
---------------------------------------------------------------------------------
-clock clk (rise edge)                                            0.000     0.000
-clock source latency                                             0.000     0.000
-clk.inpad[0] (.input)                                            0.000     0.000
-result[3].C[0] (dffr)                                            0.042     0.042
-result[3].Q[0] (dffr) [clock-to-output]                          0.124     0.166
-out:result[3].outpad[0] (.output)                                1.461     1.627
-data arrival time                                                          1.627
-
-clock clk (rise edge)                                            0.000     0.000
-clock source latency                                             0.000     0.000
-clock uncertainty                                                0.000     0.000
-output external delay                                            0.000     0.000
-data required time                                                         0.000
---------------------------------------------------------------------------------
-data required time                                                         0.000
-data arrival time                                                         -1.627
---------------------------------------------------------------------------------
-slack (VIOLATED)                                                          -1.627
-
-
-#Path 2
-Startpoint: result[7].Q[0] (dffr clocked by clk)
-Endpoint  : out:result[7].outpad[0] (.output clocked by clk)
-Path Type : setup
-
-Point                                                             Incr      Path
---------------------------------------------------------------------------------
-clock clk (rise edge)                                            0.000     0.000
-clock source latency                                             0.000     0.000
-clk.inpad[0] (.input)                                            0.000     0.000
-result[7].C[0] (dffr)                                            0.042     0.042
-result[7].Q[0] (dffr) [clock-to-output]                          0.124     0.166
-out:result[7].outpad[0] (.output)                                0.915     1.082
-data arrival time                                                          1.082
-
-clock clk (rise edge)                                            0.000     0.000
-clock source latency                                             0.000     0.000
-clock uncertainty                                                0.000     0.000
-output external delay                                            0.000     0.000
-data required time                                                         0.000
---------------------------------------------------------------------------------
-data required time                                                         0.000
-data arrival time                                                         -1.082
---------------------------------------------------------------------------------
-slack (VIOLATED)                                                          -1.082
-
-
-#Path 3
 Startpoint: result[6].Q[0] (dffr clocked by clk)
 Endpoint  : out:result[6].outpad[0] (.output clocked by clk)
 Path Type : setup
@@ -68,8 +14,8 @@ clock source latency                                             0.000     0.000
 clk.inpad[0] (.input)                                            0.000     0.000
 result[6].C[0] (dffr)                                            0.042     0.042
 result[6].Q[0] (dffr) [clock-to-output]                          0.124     0.166
-out:result[6].outpad[0] (.output)                                0.835     1.001
-data arrival time                                                          1.001
+out:result[6].outpad[0] (.output)                                0.986     1.153
+data arrival time                                                          1.153
 
 clock clk (rise edge)                                            0.000     0.000
 clock source latency                                             0.000     0.000
@@ -78,142 +24,14 @@ output external delay                                            0.000     0.000
 data required time                                                         0.000
 --------------------------------------------------------------------------------
 data required time                                                         0.000
-data arrival time                                                         -1.001
+data arrival time                                                         -1.153
 --------------------------------------------------------------------------------
-slack (VIOLATED)                                                          -1.001
+slack (VIOLATED)                                                          -1.153
 
 
-#Path 4
-Startpoint: result[5].Q[0] (dffr clocked by clk)
-Endpoint  : result[7].D[0] (dffr clocked by clk)
-Path Type : setup
-
-Point                                                                                                                    Incr      Path
----------------------------------------------------------------------------------------------------------------------------------------
-clock clk (rise edge)                                                                                                   0.000     0.000
-clock source latency                                                                                                    0.000     0.000
-clk.inpad[0] (.input)                                                                                                   0.000     0.000
-result[5].C[0] (dffr)                                                                                                   0.042     0.042
-result[5].Q[0] (dffr) [clock-to-output]                                                                                 0.124     0.166
-$abc$239$new_n24.in[0] (.names)                                                                                         0.120     0.286
-$abc$239$new_n24.out[0] (.names)                                                                                        0.261     0.547
-$techmap$add$./benchmark/counter.v:27$2.$auto$alumacc.cc:485:replace_alu$116.Y[7].in[2] (.names)                        0.100     0.647
-$techmap$add$./benchmark/counter.v:27$2.$auto$alumacc.cc:485:replace_alu$116.Y[7].out[0] (.names)                       0.235     0.882
-result[7].D[0] (dffr)                                                                                                   0.000     0.882
-data arrival time                                                                                                                 0.882
-
-clock clk (rise edge)                                                                                                   0.000     0.000
-clock source latency                                                                                                    0.000     0.000
-clk.inpad[0] (.input)                                                                                                   0.000     0.000
-result[7].C[0] (dffr)                                                                                                   0.042     0.042
-clock uncertainty                                                                                                       0.000     0.042
-cell setup time                                                                                                        -0.066    -0.024
-data required time                                                                                                               -0.024
----------------------------------------------------------------------------------------------------------------------------------------
-data required time                                                                                                               -0.024
-data arrival time                                                                                                                -0.882
----------------------------------------------------------------------------------------------------------------------------------------
-slack (VIOLATED)                                                                                                                 -0.906
-
-
-#Path 5
-Startpoint: result[5].Q[0] (dffr clocked by clk)
-Endpoint  : result[6].D[0] (dffr clocked by clk)
-Path Type : setup
-
-Point                                                                                                                    Incr      Path
----------------------------------------------------------------------------------------------------------------------------------------
-clock clk (rise edge)                                                                                                   0.000     0.000
-clock source latency                                                                                                    0.000     0.000
-clk.inpad[0] (.input)                                                                                                   0.000     0.000
-result[5].C[0] (dffr)                                                                                                   0.042     0.042
-result[5].Q[0] (dffr) [clock-to-output]                                                                                 0.124     0.166
-$abc$239$new_n24.in[0] (.names)                                                                                         0.120     0.286
-$abc$239$new_n24.out[0] (.names)                                                                                        0.261     0.547
-$techmap$add$./benchmark/counter.v:27$2.$auto$alumacc.cc:485:replace_alu$116.Y[6].in[1] (.names)                        0.100     0.647
-$techmap$add$./benchmark/counter.v:27$2.$auto$alumacc.cc:485:replace_alu$116.Y[6].out[0] (.names)                       0.235     0.882
-result[6].D[0] (dffr)                                                                                                   0.000     0.882
-data arrival time                                                                                                                 0.882
-
-clock clk (rise edge)                                                                                                   0.000     0.000
-clock source latency                                                                                                    0.000     0.000
-clk.inpad[0] (.input)                                                                                                   0.000     0.000
-result[6].C[0] (dffr)                                                                                                   0.042     0.042
-clock uncertainty                                                                                                       0.000     0.042
-cell setup time                                                                                                        -0.066    -0.024
-data required time                                                                                                               -0.024
----------------------------------------------------------------------------------------------------------------------------------------
-data required time                                                                                                               -0.024
-data arrival time                                                                                                                -0.882
----------------------------------------------------------------------------------------------------------------------------------------
-slack (VIOLATED)                                                                                                                 -0.906
-
-
-#Path 6
-Startpoint: result[5].Q[0] (dffr clocked by clk)
-Endpoint  : result[5].D[0] (dffr clocked by clk)
-Path Type : setup
-
-Point                                                                                                                    Incr      Path
----------------------------------------------------------------------------------------------------------------------------------------
-clock clk (rise edge)                                                                                                   0.000     0.000
-clock source latency                                                                                                    0.000     0.000
-clk.inpad[0] (.input)                                                                                                   0.000     0.000
-result[5].C[0] (dffr)                                                                                                   0.042     0.042
-result[5].Q[0] (dffr) [clock-to-output]                                                                                 0.124     0.166
-$techmap$add$./benchmark/counter.v:27$2.$auto$alumacc.cc:485:replace_alu$116.Y[5].in[0] (.names)                        0.120     0.286
-$techmap$add$./benchmark/counter.v:27$2.$auto$alumacc.cc:485:replace_alu$116.Y[5].out[0] (.names)                       0.261     0.547
-result[5].D[0] (dffr)                                                                                                   0.335     0.882
-data arrival time                                                                                                                 0.882
-
-clock clk (rise edge)                                                                                                   0.000     0.000
-clock source latency                                                                                                    0.000     0.000
-clk.inpad[0] (.input)                                                                                                   0.000     0.000
-result[5].C[0] (dffr)                                                                                                   0.042     0.042
-clock uncertainty                                                                                                       0.000     0.042
-cell setup time                                                                                                        -0.066    -0.024
-data required time                                                                                                               -0.024
----------------------------------------------------------------------------------------------------------------------------------------
-data required time                                                                                                               -0.024
-data arrival time                                                                                                                -0.882
----------------------------------------------------------------------------------------------------------------------------------------
-slack (VIOLATED)                                                                                                                 -0.906
-
-
-#Path 7
-Startpoint: result[4].Q[0] (dffr clocked by clk)
-Endpoint  : result[4].D[0] (dffr clocked by clk)
-Path Type : setup
-
-Point                                                                                                                    Incr      Path
----------------------------------------------------------------------------------------------------------------------------------------
-clock clk (rise edge)                                                                                                   0.000     0.000
-clock source latency                                                                                                    0.000     0.000
-clk.inpad[0] (.input)                                                                                                   0.000     0.000
-result[4].C[0] (dffr)                                                                                                   0.042     0.042
-result[4].Q[0] (dffr) [clock-to-output]                                                                                 0.124     0.166
-$techmap$add$./benchmark/counter.v:27$2.$auto$alumacc.cc:485:replace_alu$116.Y[4].in[0] (.names)                        0.120     0.286
-$techmap$add$./benchmark/counter.v:27$2.$auto$alumacc.cc:485:replace_alu$116.Y[4].out[0] (.names)                       0.235     0.521
-result[4].D[0] (dffr)                                                                                                   0.335     0.856
-data arrival time                                                                                                                 0.856
-
-clock clk (rise edge)                                                                                                   0.000     0.000
-clock source latency                                                                                                    0.000     0.000
-clk.inpad[0] (.input)                                                                                                   0.000     0.000
-result[4].C[0] (dffr)                                                                                                   0.042     0.042
-clock uncertainty                                                                                                       0.000     0.042
-cell setup time                                                                                                        -0.066    -0.024
-data required time                                                                                                               -0.024
----------------------------------------------------------------------------------------------------------------------------------------
-data required time                                                                                                               -0.024
-data arrival time                                                                                                                -0.856
----------------------------------------------------------------------------------------------------------------------------------------
-slack (VIOLATED)                                                                                                                 -0.880
-
-
-#Path 8
-Startpoint: result[1].Q[0] (dffr clocked by clk)
-Endpoint  : out:result[1].outpad[0] (.output clocked by clk)
+#Path 2
+Startpoint: result[3].Q[0] (dffr clocked by clk)
+Endpoint  : out:result[3].outpad[0] (.output clocked by clk)
 Path Type : setup
 
 Point                                                             Incr      Path
@@ -221,10 +39,10 @@ Point                                                             Incr      Path
 clock clk (rise edge)                                            0.000     0.000
 clock source latency                                             0.000     0.000
 clk.inpad[0] (.input)                                            0.000     0.000
-result[1].C[0] (dffr)                                            0.042     0.042
-result[1].Q[0] (dffr) [clock-to-output]                          0.124     0.166
-out:result[1].outpad[0] (.output)                                0.444     0.610
-data arrival time                                                          0.610
+result[3].C[0] (dffr)                                            0.042     0.042
+result[3].Q[0] (dffr) [clock-to-output]                          0.124     0.166
+out:result[3].outpad[0] (.output)                                0.907     1.074
+data arrival time                                                          1.074
 
 clock clk (rise edge)                                            0.000     0.000
 clock source latency                                             0.000     0.000
@@ -233,12 +51,167 @@ output external delay                                            0.000     0.000
 data required time                                                         0.000
 --------------------------------------------------------------------------------
 data required time                                                         0.000
-data arrival time                                                         -0.610
+data arrival time                                                         -1.074
 --------------------------------------------------------------------------------
-slack (VIOLATED)                                                          -0.610
+slack (VIOLATED)                                                          -1.074
 
 
-#Path 9
+#Path 3
+Startpoint: result[0].Q[0] (dffr clocked by clk)
+Endpoint  : out:result[0].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+result[0].C[0] (dffr)                                            0.042     0.042
+result[0].Q[0] (dffr) [clock-to-output]                          0.124     0.166
+out:result[0].outpad[0] (.output)                                0.832     0.998
+data arrival time                                                          0.998
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -0.998
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.998
+
+
+#Path 4
+Startpoint: result[5].Q[0] (dffr clocked by clk)
+Endpoint  : result[7].D[0] (dffr clocked by clk)
+Path Type : setup
+
+Point                                                                                                                   Incr      Path
+--------------------------------------------------------------------------------------------------------------------------------------
+clock clk (rise edge)                                                                                                  0.000     0.000
+clock source latency                                                                                                   0.000     0.000
+clk.inpad[0] (.input)                                                                                                  0.000     0.000
+result[5].C[0] (dffr)                                                                                                  0.042     0.042
+result[5].Q[0] (dffr) [clock-to-output]                                                                                0.124     0.166
+$abc$222$new_n24.in[0] (.names)                                                                                        0.120     0.286
+$abc$222$new_n24.out[0] (.names)                                                                                       0.261     0.547
+$techmap$add$./benchmark/counter.v:27$2.$auto$alumacc.cc:495:replace_alu$99.Y[7].in[2] (.names)                        0.100     0.647
+$techmap$add$./benchmark/counter.v:27$2.$auto$alumacc.cc:495:replace_alu$99.Y[7].out[0] (.names)                       0.235     0.882
+result[7].D[0] (dffr)                                                                                                  0.000     0.882
+data arrival time                                                                                                                0.882
+
+clock clk (rise edge)                                                                                                  0.000     0.000
+clock source latency                                                                                                   0.000     0.000
+clk.inpad[0] (.input)                                                                                                  0.000     0.000
+result[7].C[0] (dffr)                                                                                                  0.042     0.042
+clock uncertainty                                                                                                      0.000     0.042
+cell setup time                                                                                                       -0.066    -0.024
+data required time                                                                                                              -0.024
+--------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                              -0.024
+data arrival time                                                                                                               -0.882
+--------------------------------------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                                                -0.906
+
+
+#Path 5
+Startpoint: result[5].Q[0] (dffr clocked by clk)
+Endpoint  : result[6].D[0] (dffr clocked by clk)
+Path Type : setup
+
+Point                                                                                                                   Incr      Path
+--------------------------------------------------------------------------------------------------------------------------------------
+clock clk (rise edge)                                                                                                  0.000     0.000
+clock source latency                                                                                                   0.000     0.000
+clk.inpad[0] (.input)                                                                                                  0.000     0.000
+result[5].C[0] (dffr)                                                                                                  0.042     0.042
+result[5].Q[0] (dffr) [clock-to-output]                                                                                0.124     0.166
+$abc$222$new_n24.in[0] (.names)                                                                                        0.120     0.286
+$abc$222$new_n24.out[0] (.names)                                                                                       0.261     0.547
+$techmap$add$./benchmark/counter.v:27$2.$auto$alumacc.cc:495:replace_alu$99.Y[6].in[1] (.names)                        0.100     0.647
+$techmap$add$./benchmark/counter.v:27$2.$auto$alumacc.cc:495:replace_alu$99.Y[6].out[0] (.names)                       0.235     0.882
+result[6].D[0] (dffr)                                                                                                  0.000     0.882
+data arrival time                                                                                                                0.882
+
+clock clk (rise edge)                                                                                                  0.000     0.000
+clock source latency                                                                                                   0.000     0.000
+clk.inpad[0] (.input)                                                                                                  0.000     0.000
+result[6].C[0] (dffr)                                                                                                  0.042     0.042
+clock uncertainty                                                                                                      0.000     0.042
+cell setup time                                                                                                       -0.066    -0.024
+data required time                                                                                                              -0.024
+--------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                              -0.024
+data arrival time                                                                                                               -0.882
+--------------------------------------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                                                -0.906
+
+
+#Path 6
+Startpoint: result[5].Q[0] (dffr clocked by clk)
+Endpoint  : result[5].D[0] (dffr clocked by clk)
+Path Type : setup
+
+Point                                                                                                                   Incr      Path
+--------------------------------------------------------------------------------------------------------------------------------------
+clock clk (rise edge)                                                                                                  0.000     0.000
+clock source latency                                                                                                   0.000     0.000
+clk.inpad[0] (.input)                                                                                                  0.000     0.000
+result[5].C[0] (dffr)                                                                                                  0.042     0.042
+result[5].Q[0] (dffr) [clock-to-output]                                                                                0.124     0.166
+$techmap$add$./benchmark/counter.v:27$2.$auto$alumacc.cc:495:replace_alu$99.Y[5].in[0] (.names)                        0.120     0.286
+$techmap$add$./benchmark/counter.v:27$2.$auto$alumacc.cc:495:replace_alu$99.Y[5].out[0] (.names)                       0.261     0.547
+result[5].D[0] (dffr)                                                                                                  0.335     0.882
+data arrival time                                                                                                                0.882
+
+clock clk (rise edge)                                                                                                  0.000     0.000
+clock source latency                                                                                                   0.000     0.000
+clk.inpad[0] (.input)                                                                                                  0.000     0.000
+result[5].C[0] (dffr)                                                                                                  0.042     0.042
+clock uncertainty                                                                                                      0.000     0.042
+cell setup time                                                                                                       -0.066    -0.024
+data required time                                                                                                              -0.024
+--------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                              -0.024
+data arrival time                                                                                                               -0.882
+--------------------------------------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                                                -0.906
+
+
+#Path 7
+Startpoint: result[4].Q[0] (dffr clocked by clk)
+Endpoint  : result[4].D[0] (dffr clocked by clk)
+Path Type : setup
+
+Point                                                                                                                   Incr      Path
+--------------------------------------------------------------------------------------------------------------------------------------
+clock clk (rise edge)                                                                                                  0.000     0.000
+clock source latency                                                                                                   0.000     0.000
+clk.inpad[0] (.input)                                                                                                  0.000     0.000
+result[4].C[0] (dffr)                                                                                                  0.042     0.042
+result[4].Q[0] (dffr) [clock-to-output]                                                                                0.124     0.166
+$techmap$add$./benchmark/counter.v:27$2.$auto$alumacc.cc:495:replace_alu$99.Y[4].in[0] (.names)                        0.120     0.286
+$techmap$add$./benchmark/counter.v:27$2.$auto$alumacc.cc:495:replace_alu$99.Y[4].out[0] (.names)                       0.235     0.521
+result[4].D[0] (dffr)                                                                                                  0.335     0.856
+data arrival time                                                                                                                0.856
+
+clock clk (rise edge)                                                                                                  0.000     0.000
+clock source latency                                                                                                   0.000     0.000
+clk.inpad[0] (.input)                                                                                                  0.000     0.000
+result[4].C[0] (dffr)                                                                                                  0.042     0.042
+clock uncertainty                                                                                                      0.000     0.042
+cell setup time                                                                                                       -0.066    -0.024
+data required time                                                                                                              -0.024
+--------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                              -0.024
+data arrival time                                                                                                               -0.856
+--------------------------------------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                                                -0.880
+
+
+#Path 8
 Startpoint: result[5].Q[0] (dffr clocked by clk)
 Endpoint  : out:result[5].outpad[0] (.output clocked by clk)
 Path Type : setup
@@ -250,8 +223,8 @@ clock source latency                                             0.000     0.000
 clk.inpad[0] (.input)                                            0.000     0.000
 result[5].C[0] (dffr)                                            0.042     0.042
 result[5].Q[0] (dffr) [clock-to-output]                          0.124     0.166
-out:result[5].outpad[0] (.output)                                0.444     0.610
-data arrival time                                                          0.610
+out:result[5].outpad[0] (.output)                                0.673     0.840
+data arrival time                                                          0.840
 
 clock clk (rise edge)                                            0.000     0.000
 clock source latency                                             0.000     0.000
@@ -260,12 +233,163 @@ output external delay                                            0.000     0.000
 data required time                                                         0.000
 --------------------------------------------------------------------------------
 data required time                                                         0.000
-data arrival time                                                         -0.610
+data arrival time                                                         -0.840
 --------------------------------------------------------------------------------
-slack (VIOLATED)                                                          -0.610
+slack (VIOLATED)                                                          -0.840
+
+
+#Path 9
+Startpoint: result[7].Q[0] (dffr clocked by clk)
+Endpoint  : out:result[7].outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+result[7].C[0] (dffr)                                            0.042     0.042
+result[7].Q[0] (dffr) [clock-to-output]                          0.124     0.166
+out:result[7].outpad[0] (.output)                                0.596     0.763
+data arrival time                                                          0.763
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -0.763
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.763
 
 
 #Path 10
+Startpoint: result[3].Q[0] (dffr clocked by clk)
+Endpoint  : result[3].D[0] (dffr clocked by clk)
+Path Type : setup
+
+Point                                                                                                                   Incr      Path
+--------------------------------------------------------------------------------------------------------------------------------------
+clock clk (rise edge)                                                                                                  0.000     0.000
+clock source latency                                                                                                   0.000     0.000
+clk.inpad[0] (.input)                                                                                                  0.000     0.000
+result[3].C[0] (dffr)                                                                                                  0.042     0.042
+result[3].Q[0] (dffr) [clock-to-output]                                                                                0.124     0.166
+$techmap$add$./benchmark/counter.v:27$2.$auto$alumacc.cc:495:replace_alu$99.Y[3].in[0] (.names)                        0.120     0.286
+$techmap$add$./benchmark/counter.v:27$2.$auto$alumacc.cc:495:replace_alu$99.Y[3].out[0] (.names)                       0.235     0.521
+result[3].D[0] (dffr)                                                                                                  0.000     0.521
+data arrival time                                                                                                                0.521
+
+clock clk (rise edge)                                                                                                  0.000     0.000
+clock source latency                                                                                                   0.000     0.000
+clk.inpad[0] (.input)                                                                                                  0.000     0.000
+result[3].C[0] (dffr)                                                                                                  0.042     0.042
+clock uncertainty                                                                                                      0.000     0.042
+cell setup time                                                                                                       -0.066    -0.024
+data required time                                                                                                              -0.024
+--------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                              -0.024
+data arrival time                                                                                                               -0.521
+--------------------------------------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                                                -0.545
+
+
+#Path 11
+Startpoint: result[2].Q[0] (dffr clocked by clk)
+Endpoint  : result[2].D[0] (dffr clocked by clk)
+Path Type : setup
+
+Point                                                                                                                   Incr      Path
+--------------------------------------------------------------------------------------------------------------------------------------
+clock clk (rise edge)                                                                                                  0.000     0.000
+clock source latency                                                                                                   0.000     0.000
+clk.inpad[0] (.input)                                                                                                  0.000     0.000
+result[2].C[0] (dffr)                                                                                                  0.042     0.042
+result[2].Q[0] (dffr) [clock-to-output]                                                                                0.124     0.166
+$techmap$add$./benchmark/counter.v:27$2.$auto$alumacc.cc:495:replace_alu$99.Y[2].in[0] (.names)                        0.120     0.286
+$techmap$add$./benchmark/counter.v:27$2.$auto$alumacc.cc:495:replace_alu$99.Y[2].out[0] (.names)                       0.235     0.521
+result[2].D[0] (dffr)                                                                                                  0.000     0.521
+data arrival time                                                                                                                0.521
+
+clock clk (rise edge)                                                                                                  0.000     0.000
+clock source latency                                                                                                   0.000     0.000
+clk.inpad[0] (.input)                                                                                                  0.000     0.000
+result[2].C[0] (dffr)                                                                                                  0.042     0.042
+clock uncertainty                                                                                                      0.000     0.042
+cell setup time                                                                                                       -0.066    -0.024
+data required time                                                                                                              -0.024
+--------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                              -0.024
+data arrival time                                                                                                               -0.521
+--------------------------------------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                                                -0.545
+
+
+#Path 12
+Startpoint: result[1].Q[0] (dffr clocked by clk)
+Endpoint  : result[1].D[0] (dffr clocked by clk)
+Path Type : setup
+
+Point                                                                                                                   Incr      Path
+--------------------------------------------------------------------------------------------------------------------------------------
+clock clk (rise edge)                                                                                                  0.000     0.000
+clock source latency                                                                                                   0.000     0.000
+clk.inpad[0] (.input)                                                                                                  0.000     0.000
+result[1].C[0] (dffr)                                                                                                  0.042     0.042
+result[1].Q[0] (dffr) [clock-to-output]                                                                                0.124     0.166
+$techmap$add$./benchmark/counter.v:27$2.$auto$alumacc.cc:495:replace_alu$99.Y[1].in[0] (.names)                        0.120     0.286
+$techmap$add$./benchmark/counter.v:27$2.$auto$alumacc.cc:495:replace_alu$99.Y[1].out[0] (.names)                       0.235     0.521
+result[1].D[0] (dffr)                                                                                                  0.000     0.521
+data arrival time                                                                                                                0.521
+
+clock clk (rise edge)                                                                                                  0.000     0.000
+clock source latency                                                                                                   0.000     0.000
+clk.inpad[0] (.input)                                                                                                  0.000     0.000
+result[1].C[0] (dffr)                                                                                                  0.042     0.042
+clock uncertainty                                                                                                      0.000     0.042
+cell setup time                                                                                                       -0.066    -0.024
+data required time                                                                                                              -0.024
+--------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                              -0.024
+data arrival time                                                                                                               -0.521
+--------------------------------------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                                                -0.545
+
+
+#Path 13
+Startpoint: result[0].Q[0] (dffr clocked by clk)
+Endpoint  : result[0].D[0] (dffr clocked by clk)
+Path Type : setup
+
+Point                                                                                                                   Incr      Path
+--------------------------------------------------------------------------------------------------------------------------------------
+clock clk (rise edge)                                                                                                  0.000     0.000
+clock source latency                                                                                                   0.000     0.000
+clk.inpad[0] (.input)                                                                                                  0.000     0.000
+result[0].C[0] (dffr)                                                                                                  0.042     0.042
+result[0].Q[0] (dffr) [clock-to-output]                                                                                0.124     0.166
+$techmap$add$./benchmark/counter.v:27$2.$auto$alumacc.cc:495:replace_alu$99.X[0].in[0] (.names)                        0.120     0.286
+$techmap$add$./benchmark/counter.v:27$2.$auto$alumacc.cc:495:replace_alu$99.X[0].out[0] (.names)                       0.235     0.521
+result[0].D[0] (dffr)                                                                                                  0.000     0.521
+data arrival time                                                                                                                0.521
+
+clock clk (rise edge)                                                                                                  0.000     0.000
+clock source latency                                                                                                   0.000     0.000
+clk.inpad[0] (.input)                                                                                                  0.000     0.000
+result[0].C[0] (dffr)                                                                                                  0.042     0.042
+clock uncertainty                                                                                                      0.000     0.042
+cell setup time                                                                                                       -0.066    -0.024
+data required time                                                                                                              -0.024
+--------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                              -0.024
+data arrival time                                                                                                               -0.521
+--------------------------------------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                                                -0.545
+
+
+#Path 14
 Startpoint: result[2].Q[0] (dffr clocked by clk)
 Endpoint  : out:result[2].outpad[0] (.output clocked by clk)
 Path Type : setup
@@ -277,8 +401,8 @@ clock source latency                                             0.000     0.000
 clk.inpad[0] (.input)                                            0.000     0.000
 result[2].C[0] (dffr)                                            0.042     0.042
 result[2].Q[0] (dffr) [clock-to-output]                          0.124     0.166
-out:result[2].outpad[0] (.output)                                0.443     0.610
-data arrival time                                                          0.610
+out:result[2].outpad[0] (.output)                                0.363     0.530
+data arrival time                                                          0.530
 
 clock clk (rise edge)                                            0.000     0.000
 clock source latency                                             0.000     0.000
@@ -287,133 +411,9 @@ output external delay                                            0.000     0.000
 data required time                                                         0.000
 --------------------------------------------------------------------------------
 data required time                                                         0.000
-data arrival time                                                         -0.610
+data arrival time                                                         -0.530
 --------------------------------------------------------------------------------
-slack (VIOLATED)                                                          -0.610
-
-
-#Path 11
-Startpoint: result[3].Q[0] (dffr clocked by clk)
-Endpoint  : result[3].D[0] (dffr clocked by clk)
-Path Type : setup
-
-Point                                                                                                                    Incr      Path
----------------------------------------------------------------------------------------------------------------------------------------
-clock clk (rise edge)                                                                                                   0.000     0.000
-clock source latency                                                                                                    0.000     0.000
-clk.inpad[0] (.input)                                                                                                   0.000     0.000
-result[3].C[0] (dffr)                                                                                                   0.042     0.042
-result[3].Q[0] (dffr) [clock-to-output]                                                                                 0.124     0.166
-$techmap$add$./benchmark/counter.v:27$2.$auto$alumacc.cc:485:replace_alu$116.Y[3].in[0] (.names)                        0.120     0.286
-$techmap$add$./benchmark/counter.v:27$2.$auto$alumacc.cc:485:replace_alu$116.Y[3].out[0] (.names)                       0.235     0.521
-result[3].D[0] (dffr)                                                                                                   0.000     0.521
-data arrival time                                                                                                                 0.521
-
-clock clk (rise edge)                                                                                                   0.000     0.000
-clock source latency                                                                                                    0.000     0.000
-clk.inpad[0] (.input)                                                                                                   0.000     0.000
-result[3].C[0] (dffr)                                                                                                   0.042     0.042
-clock uncertainty                                                                                                       0.000     0.042
-cell setup time                                                                                                        -0.066    -0.024
-data required time                                                                                                               -0.024
----------------------------------------------------------------------------------------------------------------------------------------
-data required time                                                                                                               -0.024
-data arrival time                                                                                                                -0.521
----------------------------------------------------------------------------------------------------------------------------------------
-slack (VIOLATED)                                                                                                                 -0.545
-
-
-#Path 12
-Startpoint: result[2].Q[0] (dffr clocked by clk)
-Endpoint  : result[2].D[0] (dffr clocked by clk)
-Path Type : setup
-
-Point                                                                                                                    Incr      Path
----------------------------------------------------------------------------------------------------------------------------------------
-clock clk (rise edge)                                                                                                   0.000     0.000
-clock source latency                                                                                                    0.000     0.000
-clk.inpad[0] (.input)                                                                                                   0.000     0.000
-result[2].C[0] (dffr)                                                                                                   0.042     0.042
-result[2].Q[0] (dffr) [clock-to-output]                                                                                 0.124     0.166
-$techmap$add$./benchmark/counter.v:27$2.$auto$alumacc.cc:485:replace_alu$116.Y[2].in[0] (.names)                        0.120     0.286
-$techmap$add$./benchmark/counter.v:27$2.$auto$alumacc.cc:485:replace_alu$116.Y[2].out[0] (.names)                       0.235     0.521
-result[2].D[0] (dffr)                                                                                                   0.000     0.521
-data arrival time                                                                                                                 0.521
-
-clock clk (rise edge)                                                                                                   0.000     0.000
-clock source latency                                                                                                    0.000     0.000
-clk.inpad[0] (.input)                                                                                                   0.000     0.000
-result[2].C[0] (dffr)                                                                                                   0.042     0.042
-clock uncertainty                                                                                                       0.000     0.042
-cell setup time                                                                                                        -0.066    -0.024
-data required time                                                                                                               -0.024
----------------------------------------------------------------------------------------------------------------------------------------
-data required time                                                                                                               -0.024
-data arrival time                                                                                                                -0.521
----------------------------------------------------------------------------------------------------------------------------------------
-slack (VIOLATED)                                                                                                                 -0.545
-
-
-#Path 13
-Startpoint: result[1].Q[0] (dffr clocked by clk)
-Endpoint  : result[1].D[0] (dffr clocked by clk)
-Path Type : setup
-
-Point                                                                                                                    Incr      Path
----------------------------------------------------------------------------------------------------------------------------------------
-clock clk (rise edge)                                                                                                   0.000     0.000
-clock source latency                                                                                                    0.000     0.000
-clk.inpad[0] (.input)                                                                                                   0.000     0.000
-result[1].C[0] (dffr)                                                                                                   0.042     0.042
-result[1].Q[0] (dffr) [clock-to-output]                                                                                 0.124     0.166
-$techmap$add$./benchmark/counter.v:27$2.$auto$alumacc.cc:485:replace_alu$116.Y[1].in[0] (.names)                        0.120     0.286
-$techmap$add$./benchmark/counter.v:27$2.$auto$alumacc.cc:485:replace_alu$116.Y[1].out[0] (.names)                       0.235     0.521
-result[1].D[0] (dffr)                                                                                                   0.000     0.521
-data arrival time                                                                                                                 0.521
-
-clock clk (rise edge)                                                                                                   0.000     0.000
-clock source latency                                                                                                    0.000     0.000
-clk.inpad[0] (.input)                                                                                                   0.000     0.000
-result[1].C[0] (dffr)                                                                                                   0.042     0.042
-clock uncertainty                                                                                                       0.000     0.042
-cell setup time                                                                                                        -0.066    -0.024
-data required time                                                                                                               -0.024
----------------------------------------------------------------------------------------------------------------------------------------
-data required time                                                                                                               -0.024
-data arrival time                                                                                                                -0.521
----------------------------------------------------------------------------------------------------------------------------------------
-slack (VIOLATED)                                                                                                                 -0.545
-
-
-#Path 14
-Startpoint: result[0].Q[0] (dffr clocked by clk)
-Endpoint  : result[0].D[0] (dffr clocked by clk)
-Path Type : setup
-
-Point                                                                                                                    Incr      Path
----------------------------------------------------------------------------------------------------------------------------------------
-clock clk (rise edge)                                                                                                   0.000     0.000
-clock source latency                                                                                                    0.000     0.000
-clk.inpad[0] (.input)                                                                                                   0.000     0.000
-result[0].C[0] (dffr)                                                                                                   0.042     0.042
-result[0].Q[0] (dffr) [clock-to-output]                                                                                 0.124     0.166
-$techmap$add$./benchmark/counter.v:27$2.$auto$alumacc.cc:485:replace_alu$116.X[0].in[0] (.names)                        0.120     0.286
-$techmap$add$./benchmark/counter.v:27$2.$auto$alumacc.cc:485:replace_alu$116.X[0].out[0] (.names)                       0.235     0.521
-result[0].D[0] (dffr)                                                                                                   0.000     0.521
-data arrival time                                                                                                                 0.521
-
-clock clk (rise edge)                                                                                                   0.000     0.000
-clock source latency                                                                                                    0.000     0.000
-clk.inpad[0] (.input)                                                                                                   0.000     0.000
-result[0].C[0] (dffr)                                                                                                   0.042     0.042
-clock uncertainty                                                                                                       0.000     0.042
-cell setup time                                                                                                        -0.066    -0.024
-data required time                                                                                                               -0.024
----------------------------------------------------------------------------------------------------------------------------------------
-data required time                                                                                                               -0.024
-data arrival time                                                                                                                -0.521
----------------------------------------------------------------------------------------------------------------------------------------
-slack (VIOLATED)                                                                                                                 -0.545
+slack (VIOLATED)                                                          -0.530
 
 
 #Path 15
@@ -428,8 +428,8 @@ clock source latency                                             0.000     0.000
 clk.inpad[0] (.input)                                            0.000     0.000
 result[4].C[0] (dffr)                                            0.042     0.042
 result[4].Q[0] (dffr) [clock-to-output]                          0.124     0.166
-out:result[4].outpad[0] (.output)                                0.363     0.529
-data arrival time                                                          0.529
+out:result[4].outpad[0] (.output)                                0.290     0.456
+data arrival time                                                          0.456
 
 clock clk (rise edge)                                            0.000     0.000
 clock source latency                                             0.000     0.000
@@ -438,14 +438,14 @@ output external delay                                            0.000     0.000
 data required time                                                         0.000
 --------------------------------------------------------------------------------
 data required time                                                         0.000
-data arrival time                                                         -0.529
+data arrival time                                                         -0.456
 --------------------------------------------------------------------------------
-slack (VIOLATED)                                                          -0.529
+slack (VIOLATED)                                                          -0.456
 
 
 #Path 16
-Startpoint: result[0].Q[0] (dffr clocked by clk)
-Endpoint  : out:result[0].outpad[0] (.output clocked by clk)
+Startpoint: result[1].Q[0] (dffr clocked by clk)
+Endpoint  : out:result[1].outpad[0] (.output clocked by clk)
 Path Type : setup
 
 Point                                                             Incr      Path
@@ -453,10 +453,10 @@ Point                                                             Incr      Path
 clock clk (rise edge)                                            0.000     0.000
 clock source latency                                             0.000     0.000
 clk.inpad[0] (.input)                                            0.000     0.000
-result[0].C[0] (dffr)                                            0.042     0.042
-result[0].Q[0] (dffr) [clock-to-output]                          0.124     0.166
-out:result[0].outpad[0] (.output)                                0.363     0.529
-data arrival time                                                          0.529
+result[1].C[0] (dffr)                                            0.042     0.042
+result[1].Q[0] (dffr) [clock-to-output]                          0.124     0.166
+out:result[1].outpad[0] (.output)                                0.286     0.452
+data arrival time                                                          0.452
 
 clock clk (rise edge)                                            0.000     0.000
 clock source latency                                             0.000     0.000
@@ -465,9 +465,9 @@ output external delay                                            0.000     0.000
 data required time                                                         0.000
 --------------------------------------------------------------------------------
 data required time                                                         0.000
-data arrival time                                                         -0.529
+data arrival time                                                         -0.452
 --------------------------------------------------------------------------------
-slack (VIOLATED)                                                          -0.529
+slack (VIOLATED)                                                          -0.452
 
 
 #Path 17

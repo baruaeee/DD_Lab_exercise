@@ -1,6 +1,19 @@
 # Read Liberty file
 read_libs sky130_fd_sc_hd__tt_025C_1v80.lib
 
+
+
+set lib_dir "../PDK/asap7/asap7sc7p5t_28/LIB/NLDM"
+
+# Get all .sdc files in the directory
+set lib_files [glob -nocomplain -directory $lib_dir *.lib]
+
+# Read each SDC file
+foreach sdc_file $sdc_files {
+    read_sdc $sdc_file
+}
+
+
 # Read HDL/Verilod file
 read_hdl gpio.v
 

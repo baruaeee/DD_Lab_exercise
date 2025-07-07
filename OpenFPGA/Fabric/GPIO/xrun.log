@@ -1,26 +1,380 @@
 xrun(64): 24.03-s004: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	24.03-s004: Started on Jun 14, 2025 at 18:15:23 CEST
+TOOL:	xrun(64)	24.03-s004: Started on Jul 05, 2025 at 21:42:05 CEST
 xrun
 	gpio_tb.v
 	-access +rwc
 	-gui
+file: gpio_tb.v
+	module worklib.BUFx10_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.BUFx12_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.BUFx12f_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.BUFx16f_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.BUFx24_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.BUFx2_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.BUFx3_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.BUFx4_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.BUFx4f_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.BUFx5_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.BUFx6f_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.BUFx8_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.CKINVDCx10_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.CKINVDCx11_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.CKINVDCx12_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.CKINVDCx14_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.CKINVDCx16_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.CKINVDCx20_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.CKINVDCx5p33_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.CKINVDCx6p67_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.CKINVDCx8_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.CKINVDCx9p33_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.HB1xp67_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.HB2xp67_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.HB3xp67_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.HB4xp67_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.INVx11_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.INVx13_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.INVx1_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.INVx2_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.INVx3_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.INVx4_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.INVx5_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.INVx6_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.INVx8_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.INVxp33_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.INVxp67_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	primitive worklib.altos_latch:v
+		errors: 0, warnings: 0
+	primitive worklib.altos_dff_err:v
+		errors: 0, warnings: 0
+	primitive worklib.altos_dff:v
+		errors: 0, warnings: 0
+	primitive worklib.altos_dff_r_err:v
+		errors: 0, warnings: 0
+	primitive worklib.altos_dff_r:v
+		errors: 0, warnings: 0
+	primitive worklib.altos_dff_s_err:v
+		errors: 0, warnings: 0
+	primitive worklib.altos_dff_s:v
+		errors: 0, warnings: 0
+	primitive worklib.altos_dff_sr_err:v
+		errors: 0, warnings: 0
+	primitive worklib.altos_dff_sr_0:v
+		errors: 0, warnings: 0
+	primitive worklib.altos_dff_sr_1:v
+		errors: 0, warnings: 0
+	primitive worklib.altos_latch_r:v
+		errors: 0, warnings: 0
+	primitive worklib.altos_latch_s:v
+		errors: 0, warnings: 0
+	primitive worklib.altos_latch_sr_0:v
+		errors: 0, warnings: 0
+	primitive worklib.altos_latch_sr_1:v
+		errors: 0, warnings: 0
+	module worklib.AND2x2_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.AND2x4_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.AND2x6_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.AND3x1_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.AND3x2_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.AND3x4_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.AND4x1_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.AND4x2_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.AND5x1_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.AND5x2_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.FAx1_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.HAxp5_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.MAJIxp5_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.MAJx2_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.MAJx3_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.NAND2x1_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.NAND2x1p5_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.NAND2x2_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.NAND2xp33_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.NAND2xp5_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.NAND2xp67_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.NAND3x1_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.NAND3x2_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.NAND3xp33_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.NAND4xp25_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.NAND4xp75_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.NAND5xp2_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.NOR2x1_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.NOR2x1p5_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.NOR2x2_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.NOR2xp33_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.NOR2xp67_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.NOR3x1_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.NOR3x2_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.NOR3xp33_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.NOR4xp25_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.NOR4xp75_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.NOR5xp2_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.OR2x2_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.OR2x4_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.OR2x6_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.OR3x1_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.OR3x2_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.OR3x4_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.OR4x1_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.OR4x2_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.OR5x1_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.OR5x2_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.TIEHIx1_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.TIELOx1_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.XNOR2x1_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.XNOR2x2_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.XNOR2xp5_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.XOR2x1_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.XOR2x2_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.XOR2xp5_ASAP7_75t_R:v
+		errors: 0, warnings: 0
+	module worklib.GPIO1:v
+		errors: 0, warnings: 0
+	module worklib.GPIO:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		BUFx10_ASAP7_75t_R
+		BUFx12_ASAP7_75t_R
+		BUFx12f_ASAP7_75t_R
+		BUFx16f_ASAP7_75t_R
+		BUFx24_ASAP7_75t_R
+		BUFx2_ASAP7_75t_R
+		BUFx3_ASAP7_75t_R
+		BUFx4_ASAP7_75t_R
+		BUFx4f_ASAP7_75t_R
+		BUFx5_ASAP7_75t_R
+		BUFx6f_ASAP7_75t_R
+		BUFx8_ASAP7_75t_R
+		CKINVDCx10_ASAP7_75t_R
+		CKINVDCx11_ASAP7_75t_R
+		CKINVDCx12_ASAP7_75t_R
+		CKINVDCx14_ASAP7_75t_R
+		CKINVDCx16_ASAP7_75t_R
+		CKINVDCx20_ASAP7_75t_R
+		CKINVDCx5p33_ASAP7_75t_R
+		CKINVDCx6p67_ASAP7_75t_R
+		CKINVDCx8_ASAP7_75t_R
+		CKINVDCx9p33_ASAP7_75t_R
+		HB1xp67_ASAP7_75t_R
+		HB2xp67_ASAP7_75t_R
+		HB3xp67_ASAP7_75t_R
+		HB4xp67_ASAP7_75t_R
+		INVx11_ASAP7_75t_R
+		INVx13_ASAP7_75t_R
+		INVx2_ASAP7_75t_R
+		INVx3_ASAP7_75t_R
+		INVx4_ASAP7_75t_R
+		INVx5_ASAP7_75t_R
+		INVx6_ASAP7_75t_R
+		INVx8_ASAP7_75t_R
+		INVxp33_ASAP7_75t_R
+		INVxp67_ASAP7_75t_R
+		AND2x4_ASAP7_75t_R
+		AND2x6_ASAP7_75t_R
+		AND3x1_ASAP7_75t_R
+		AND3x2_ASAP7_75t_R
+		AND3x4_ASAP7_75t_R
+		AND4x1_ASAP7_75t_R
+		AND4x2_ASAP7_75t_R
+		AND5x1_ASAP7_75t_R
+		AND5x2_ASAP7_75t_R
+		FAx1_ASAP7_75t_R
+		HAxp5_ASAP7_75t_R
+		MAJIxp5_ASAP7_75t_R
+		MAJx2_ASAP7_75t_R
+		MAJx3_ASAP7_75t_R
+		NAND2x1_ASAP7_75t_R
+		NAND2x1p5_ASAP7_75t_R
+		NAND2x2_ASAP7_75t_R
+		NAND2xp33_ASAP7_75t_R
+		NAND2xp5_ASAP7_75t_R
+		NAND2xp67_ASAP7_75t_R
+		NAND3x1_ASAP7_75t_R
+		NAND3x2_ASAP7_75t_R
+		NAND3xp33_ASAP7_75t_R
+		NAND4xp25_ASAP7_75t_R
+		NAND4xp75_ASAP7_75t_R
+		NAND5xp2_ASAP7_75t_R
+		NOR2x1_ASAP7_75t_R
+		NOR2x1p5_ASAP7_75t_R
+		NOR2x2_ASAP7_75t_R
+		NOR2xp33_ASAP7_75t_R
+		NOR2xp67_ASAP7_75t_R
+		NOR3x1_ASAP7_75t_R
+		NOR3x2_ASAP7_75t_R
+		NOR3xp33_ASAP7_75t_R
+		NOR4xp25_ASAP7_75t_R
+		NOR4xp75_ASAP7_75t_R
+		NOR5xp2_ASAP7_75t_R
+		OR2x4_ASAP7_75t_R
+		OR2x6_ASAP7_75t_R
+		OR3x1_ASAP7_75t_R
+		OR3x2_ASAP7_75t_R
+		OR3x4_ASAP7_75t_R
+		OR4x1_ASAP7_75t_R
+		OR4x2_ASAP7_75t_R
+		OR5x1_ASAP7_75t_R
+		OR5x2_ASAP7_75t_R
+		TIEHIx1_ASAP7_75t_R
+		TIELOx1_ASAP7_75t_R
+		XNOR2x1_ASAP7_75t_R
+		XNOR2x2_ASAP7_75t_R
+		XNOR2xp5_ASAP7_75t_R
+		XOR2x1_ASAP7_75t_R
+		XOR2x2_ASAP7_75t_R
+		XOR2xp5_ASAP7_75t_R
+		GPIO1
+		tb_GPIO
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.GPIO:v <0x5f997db8>
+			streams:   0, words:     0
+		worklib.XOR2xp5_ASAP7_75t_R:v <0x16542653>
+			streams:   0, words:     0
+		worklib.XOR2x2_ASAP7_75t_R:v <0x2fc53712>
+			streams:   0, words:     0
+		worklib.XOR2x1_ASAP7_75t_R:v <0x7469761a>
+			streams:   0, words:     0
+		worklib.XNOR2xp5_ASAP7_75t_R:v <0x72db61d6>
+			streams:   0, words:     0
+		worklib.XNOR2x2_ASAP7_75t_R:v <0x45f43d90>
+			streams:   0, words:     0
+		worklib.XNOR2x1_ASAP7_75t_R:v <0x11829bde>
+			streams:   0, words:     0
+		worklib.MAJx3_ASAP7_75t_R:v <0x5fc0f5c9>
+			streams:   0, words:     0
+		worklib.MAJx2_ASAP7_75t_R:v <0x78342dd3>
+			streams:   0, words:     0
+		worklib.MAJIxp5_ASAP7_75t_R:v <0x3194c022>
+			streams:   0, words:     0
+		worklib.HAxp5_ASAP7_75t_R:v <0x53ac4b9c>
+			streams:   0, words:     0
+		worklib.FAx1_ASAP7_75t_R:v <0x7793a774>
+			streams:   0, words:     0
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                101      96
+		UDPs:                     0      14
+		Primitives:             216       4
+		Timing outputs:          98      57
+		Registers:                4      18
+		Scalar wires:           298       -
+		Initial blocks:           1       1
+		Cont. assignments:        1       3
+		Pseudo assignments:       2       -
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.BUFx10_ASAP7_75t_R:v
 xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
 
 -------------------------------------
 Relinquished control to SimVision...
 xcelium> 
+xcelium> source /eda/cadence/2024-25/RHELx86/XCELIUM_24.03.004/tools/xcelium/files/xmsimrc
 xcelium> database -open waves -into waves.shm -default
 Created default SHM database waves
 xcelium> probe -create -shm tb_GPIO.Y tb_GPIO.PAD tb_GPIO.DIR tb_GPIO.A
 Created probe 1
 xcelium> run
 Test Case 1: DIR=1, A=0 -> Y=0, PAD=0
-Test Case 2: DIR=1, A=0 -> Y=1, PAD=1
-Test Case 3: DIR=1, A=0 -> Y=0, PAD=0
+Test Case 2: DIR=1, A=0 -> Y=x, PAD=x
+Test Case 3: DIR=1, A=0 -> Y=x, PAD=x
 Simulation complete via $finish(1) at time 60 NS + 0
-./gpio_tb.v:59         $finish;
+./gpio_tb.v:62         $finish;
 xcelium> ^C
 xcelium> exit
-...Regained control from SimVision
--------------------------------------
-TOOL:	xrun(64)	24.03-s004: Exiting on Jun 14, 2025 at 18:16:34 CEST  (total: 00:01:11)
+TOOL:	xrun(64)	24.03-s004: Exiting on Jul 05, 2025 at 21:43:41 CEST  (total: 00:01:36)

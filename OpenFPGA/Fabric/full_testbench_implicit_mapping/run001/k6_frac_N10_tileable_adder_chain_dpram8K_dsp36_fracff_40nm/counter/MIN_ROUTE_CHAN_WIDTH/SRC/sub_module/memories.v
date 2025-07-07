@@ -3,7 +3,7 @@
 //	Description: Memories used in FPGA
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Sun Jun 29 02:52:31 2025
+//	Date: Mon Jul  7 01:01:47 2025
 //-------------------------------------------
 //----- Default net type -----
 `default_nettype none
@@ -97,128 +97,6 @@ endmodule
 //----- Default net type -----
 `default_nettype none
 
-// ----- Verilog module for mux_2level_tapbuf_size2_mem -----
-module mux_2level_tapbuf_size2_mem(pReset,
-                                   prog_clk,
-                                   ccff_head,
-                                   ccff_tail,
-                                   mem_out,
-                                   mem_outb);
-//----- GLOBAL PORTS -----
-input [0:0] pReset;
-//----- GLOBAL PORTS -----
-input [0:0] prog_clk;
-//----- INPUT PORTS -----
-input [0:0] ccff_head;
-//----- OUTPUT PORTS -----
-output [0:0] ccff_tail;
-//----- OUTPUT PORTS -----
-output [0:1] mem_out;
-//----- OUTPUT PORTS -----
-output [0:1] mem_outb;
-
-//----- BEGIN wire-connection ports -----
-//----- END wire-connection ports -----
-
-
-//----- BEGIN Registered ports -----
-//----- END Registered ports -----
-
-
-
-// ----- BEGIN Local short connections -----
-// ----- END Local short connections -----
-// ----- BEGIN Local output short connections -----
-	assign ccff_tail[0] = mem_out[1];
-// ----- END Local output short connections -----
-
-	DFFR DFFR_0_ (
-		.RST(pReset),
-		.CK(prog_clk),
-		.D(ccff_head),
-		.Q(mem_out[0]),
-		.QN(mem_outb[0]));
-
-	DFFR DFFR_1_ (
-		.RST(pReset),
-		.CK(prog_clk),
-		.D(mem_out[0]),
-		.Q(mem_out[1]),
-		.QN(mem_outb[1]));
-
-endmodule
-// ----- END Verilog module for mux_2level_tapbuf_size2_mem -----
-
-//----- Default net type -----
-`default_nettype wire
-
-
-
-
-//----- Default net type -----
-`default_nettype none
-
-// ----- Verilog module for mux_2level_tapbuf_size3_mem -----
-module mux_2level_tapbuf_size3_mem(pReset,
-                                   prog_clk,
-                                   ccff_head,
-                                   ccff_tail,
-                                   mem_out,
-                                   mem_outb);
-//----- GLOBAL PORTS -----
-input [0:0] pReset;
-//----- GLOBAL PORTS -----
-input [0:0] prog_clk;
-//----- INPUT PORTS -----
-input [0:0] ccff_head;
-//----- OUTPUT PORTS -----
-output [0:0] ccff_tail;
-//----- OUTPUT PORTS -----
-output [0:1] mem_out;
-//----- OUTPUT PORTS -----
-output [0:1] mem_outb;
-
-//----- BEGIN wire-connection ports -----
-//----- END wire-connection ports -----
-
-
-//----- BEGIN Registered ports -----
-//----- END Registered ports -----
-
-
-
-// ----- BEGIN Local short connections -----
-// ----- END Local short connections -----
-// ----- BEGIN Local output short connections -----
-	assign ccff_tail[0] = mem_out[1];
-// ----- END Local output short connections -----
-
-	DFFR DFFR_0_ (
-		.RST(pReset),
-		.CK(prog_clk),
-		.D(ccff_head),
-		.Q(mem_out[0]),
-		.QN(mem_outb[0]));
-
-	DFFR DFFR_1_ (
-		.RST(pReset),
-		.CK(prog_clk),
-		.D(mem_out[0]),
-		.Q(mem_out[1]),
-		.QN(mem_outb[1]));
-
-endmodule
-// ----- END Verilog module for mux_2level_tapbuf_size3_mem -----
-
-//----- Default net type -----
-`default_nettype wire
-
-
-
-
-//----- Default net type -----
-`default_nettype none
-
 // ----- Verilog module for mux_2level_tapbuf_size4_mem -----
 module mux_2level_tapbuf_size4_mem(pReset,
                                    prog_clk,
@@ -298,6 +176,217 @@ output [0:5] mem_outb;
 
 endmodule
 // ----- END Verilog module for mux_2level_tapbuf_size4_mem -----
+
+//----- Default net type -----
+`default_nettype wire
+
+
+
+
+//----- Default net type -----
+`default_nettype none
+
+// ----- Verilog module for mux_2level_tapbuf_size3_mem -----
+module mux_2level_tapbuf_size3_mem(pReset,
+                                   prog_clk,
+                                   ccff_head,
+                                   ccff_tail,
+                                   mem_out,
+                                   mem_outb);
+//----- GLOBAL PORTS -----
+input [0:0] pReset;
+//----- GLOBAL PORTS -----
+input [0:0] prog_clk;
+//----- INPUT PORTS -----
+input [0:0] ccff_head;
+//----- OUTPUT PORTS -----
+output [0:0] ccff_tail;
+//----- OUTPUT PORTS -----
+output [0:1] mem_out;
+//----- OUTPUT PORTS -----
+output [0:1] mem_outb;
+
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
+
+
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
+
+
+
+// ----- BEGIN Local short connections -----
+// ----- END Local short connections -----
+// ----- BEGIN Local output short connections -----
+	assign ccff_tail[0] = mem_out[1];
+// ----- END Local output short connections -----
+
+	DFFR DFFR_0_ (
+		.RST(pReset),
+		.CK(prog_clk),
+		.D(ccff_head),
+		.Q(mem_out[0]),
+		.QN(mem_outb[0]));
+
+	DFFR DFFR_1_ (
+		.RST(pReset),
+		.CK(prog_clk),
+		.D(mem_out[0]),
+		.Q(mem_out[1]),
+		.QN(mem_outb[1]));
+
+endmodule
+// ----- END Verilog module for mux_2level_tapbuf_size3_mem -----
+
+//----- Default net type -----
+`default_nettype wire
+
+
+
+
+//----- Default net type -----
+`default_nettype none
+
+// ----- Verilog module for mux_2level_tapbuf_size2_mem -----
+module mux_2level_tapbuf_size2_mem(pReset,
+                                   prog_clk,
+                                   ccff_head,
+                                   ccff_tail,
+                                   mem_out,
+                                   mem_outb);
+//----- GLOBAL PORTS -----
+input [0:0] pReset;
+//----- GLOBAL PORTS -----
+input [0:0] prog_clk;
+//----- INPUT PORTS -----
+input [0:0] ccff_head;
+//----- OUTPUT PORTS -----
+output [0:0] ccff_tail;
+//----- OUTPUT PORTS -----
+output [0:1] mem_out;
+//----- OUTPUT PORTS -----
+output [0:1] mem_outb;
+
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
+
+
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
+
+
+
+// ----- BEGIN Local short connections -----
+// ----- END Local short connections -----
+// ----- BEGIN Local output short connections -----
+	assign ccff_tail[0] = mem_out[1];
+// ----- END Local output short connections -----
+
+	DFFR DFFR_0_ (
+		.RST(pReset),
+		.CK(prog_clk),
+		.D(ccff_head),
+		.Q(mem_out[0]),
+		.QN(mem_outb[0]));
+
+	DFFR DFFR_1_ (
+		.RST(pReset),
+		.CK(prog_clk),
+		.D(mem_out[0]),
+		.Q(mem_out[1]),
+		.QN(mem_outb[1]));
+
+endmodule
+// ----- END Verilog module for mux_2level_tapbuf_size2_mem -----
+
+//----- Default net type -----
+`default_nettype wire
+
+
+
+
+//----- Default net type -----
+`default_nettype none
+
+// ----- Verilog module for mux_2level_tapbuf_size5_mem -----
+module mux_2level_tapbuf_size5_mem(pReset,
+                                   prog_clk,
+                                   ccff_head,
+                                   ccff_tail,
+                                   mem_out,
+                                   mem_outb);
+//----- GLOBAL PORTS -----
+input [0:0] pReset;
+//----- GLOBAL PORTS -----
+input [0:0] prog_clk;
+//----- INPUT PORTS -----
+input [0:0] ccff_head;
+//----- OUTPUT PORTS -----
+output [0:0] ccff_tail;
+//----- OUTPUT PORTS -----
+output [0:5] mem_out;
+//----- OUTPUT PORTS -----
+output [0:5] mem_outb;
+
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
+
+
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
+
+
+
+// ----- BEGIN Local short connections -----
+// ----- END Local short connections -----
+// ----- BEGIN Local output short connections -----
+	assign ccff_tail[0] = mem_out[5];
+// ----- END Local output short connections -----
+
+	DFFR DFFR_0_ (
+		.RST(pReset),
+		.CK(prog_clk),
+		.D(ccff_head),
+		.Q(mem_out[0]),
+		.QN(mem_outb[0]));
+
+	DFFR DFFR_1_ (
+		.RST(pReset),
+		.CK(prog_clk),
+		.D(mem_out[0]),
+		.Q(mem_out[1]),
+		.QN(mem_outb[1]));
+
+	DFFR DFFR_2_ (
+		.RST(pReset),
+		.CK(prog_clk),
+		.D(mem_out[1]),
+		.Q(mem_out[2]),
+		.QN(mem_outb[2]));
+
+	DFFR DFFR_3_ (
+		.RST(pReset),
+		.CK(prog_clk),
+		.D(mem_out[2]),
+		.Q(mem_out[3]),
+		.QN(mem_outb[3]));
+
+	DFFR DFFR_4_ (
+		.RST(pReset),
+		.CK(prog_clk),
+		.D(mem_out[3]),
+		.Q(mem_out[4]),
+		.QN(mem_outb[4]));
+
+	DFFR DFFR_5_ (
+		.RST(pReset),
+		.CK(prog_clk),
+		.D(mem_out[4]),
+		.Q(mem_out[5]),
+		.QN(mem_outb[5]));
+
+endmodule
+// ----- END Verilog module for mux_2level_tapbuf_size5_mem -----
 
 //----- Default net type -----
 `default_nettype wire

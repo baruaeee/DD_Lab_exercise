@@ -1,3 +1,9 @@
 ## Source the path.sh
 
-##
+## Error
+## from envyaml import EnvYAML
+## INFO (00_and2_MIN_ROUTE_CHAN_WIDTH) - ModuleNotFoundError: No module named 'envyaml'
+
+
+python3 -m pip install -r requirements.txt
+sudo apt install gtkwave
