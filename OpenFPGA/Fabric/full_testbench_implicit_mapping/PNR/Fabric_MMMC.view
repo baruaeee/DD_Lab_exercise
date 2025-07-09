@@ -1,0 +1,19 @@
+# Version:1.0 MMMC View Definition File
+# Do Not Remove Above Line
+create_rc_corner -name RC_BEST -cap_table {/eda/cadence/pdks/ihp_sg13g2/ixc013g2ng_stdcell/lef/captable/SG13.captable} -T {40} -preRoute_res {1.0} -preRoute_cap {1.0} -preRoute_clkres {0.0} -preRoute_clkcap {0.0} -postRoute_res {1.0} -postRoute_cap {1.0} -postRoute_xcap {1.0} -postRoute_clkres {0.0} -postRoute_clkcap {0.0}
+create_rc_corner -name RC_WORST -cap_table {/eda/cadence/pdks/ihp_sg13g2/ixc013g2ng_stdcell/lef/captable/SG13.captable} -T {125} -preRoute_res {1.0} -preRoute_cap {1.0} -preRoute_clkres {0.0} -preRoute_clkcap {0.0} -postRoute_res {1.0} -postRoute_cap {1.0} -postRoute_xcap {1.0} -postRoute_clkres {0.0} -postRoute_clkcap {0.0}
+create_library_set -name MAX_TIMING -timing {/eda/cadence/pdks/ihp_sg13g2/ixc013g2ng_stdcell/lib/ixc013g2ng_stdcell_slow_1p08V_125C.lib /home/bas33767/Desktop/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_slow_1p08V_3p0V_125C.lib /home/bas33767/Desktop/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_sram/lib/RM_IHPSG13_1P_1024x8_c2_bm_bist_slow_1p08V_125C.lib}
+create_library_set -name MIN_TIMING -timing {/eda/cadence/pdks/ihp_sg13g2/ixc013g2ng_stdcell/lib/ixc013g2ng_stdcell_fast_1p32V_m40C.lib /home/bas33767/Desktop/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_fast_1p32V_3p6V_m40C.lib /home/bas33767/Desktop/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_sram/lib/RM_IHPSG13_1P_1024x8_c2_bm_bist_fast_1p32V_m55C.lib}
+
+
+create_constraint_mode -name CONSTRAINTS -sdc_files {SDC/cbx_1__0_.sdc SDC/cbx_1__1_.sdc SDC/cby_0__1_.sdc SDC/cby_1__1_.sdc SDC/disable_configurable_memory_outputs.sdc SDC/disable_configure_ports.sdc SDC/disable_routing_multiplexer_outputs.sdc SDC/disable_sb_outputs.sdc SDC/global_ports.sdc SDC/logical_tile_clb_mode_clb_.sdc SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff.sdc SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic.sdc SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric.sdc SDC/logical_tile_clb_mode_default__fle.sdc SDC/logical_tile_io_mode_io_.sdc SDC/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp.sdc SDC/logical_tile_memory_mode_memory_.sdc SDC/logical_tile_mult_36_mode_mult_36_.sdc SDC/logical_tile_mult_36_mode_mult_36x36__mult_36x36_slice_mode_default__mult_36x36.sdc SDC/logical_tile_mult_36_mode_mult_36x36__mult_36x36_slice.sdc SDC/sb_0__0_.sdc SDC/sb_0__1_.sdc SDC/sb_1__0_.sdc SDC/sb_1__1_.sdc}
+
+#create_constraint_mode -name CONSTRAINTS -sdc_files {SDC/and2_fpga_top_analysis.sdc}
+
+
+
+create_delay_corner -name MIN_DEALY -library_set {MIN_TIMING} -rc_corner {RC_WORST}
+create_delay_corner -name MAX_DEALY -library_set {MAX_TIMING} -rc_corner {RC_BEST}
+create_analysis_view -name Best_CASE -constraint_mode {CONSTRAINTS} -delay_corner {MIN_DEALY}
+create_analysis_view -name WORST_CASE -constraint_mode {CONSTRAINTS} -delay_corner {MAX_DEALY}
+set_analysis_view -setup {WORST_CASE} -hold {Best_CASE}
