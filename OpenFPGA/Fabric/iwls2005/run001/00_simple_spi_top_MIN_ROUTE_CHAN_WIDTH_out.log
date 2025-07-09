@@ -1,0 +1,20 @@
+* * * * * * * * * * * * * * * * * * * * 
+RunDirectory : /home/cae_sajib/Desktop/RZ_home/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/iwls2005/run001
+python3 /home/cae_sajib/Desktop/OpenFPGA/openfpga_flow/scripts/run_fpga_flow.py /home/cae_sajib/Desktop/RZ_home/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/iwls2005/config/VPR_arch/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm.xml /home/cae_sajib/Desktop/OpenFPGA/openfpga_flow/benchmarks/iwls2005/simple_spi/rtl/fifo4.v /home/cae_sajib/Desktop/OpenFPGA/openfpga_flow/benchmarks/iwls2005/simple_spi/rtl/simple_spi_top.v --top_module simple_spi_top --run_dir /home/cae_sajib/Desktop/RZ_home/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/iwls2005/run001/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm/simple_spi_top/MIN_ROUTE_CHAN_WIDTH --fpga_flow yosys_vpr --openfpga_shell_template /home/cae_sajib/Desktop/RZ_home/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/iwls2005/config/openfpga_shell/iwls_benchmark_example_script.openfpga --openfpga_arch_file /home/cae_sajib/Desktop/RZ_home/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/iwls2005/config/openfpga_arch/k6_frac_N10_adder_chain_dpram8K_dsp36_fracff_40nm_openfpga_IHP_sg13g2_cds.xml --openfpga_sim_setting_file /home/cae_sajib/Desktop/OpenFPGA/openfpga_flow/openfpga_simulation_settings/fixed_sim_openfpga.xml --openfpga_vpr_device_layout --device 13x13 --vpr_route_chan_width 300 --openfpga_vpr_pack_stats_file vpr_pack_block_usage.txt --yosys_tmpl /home/cae_sajib/Desktop/OpenFPGA/openfpga_flow/misc/ys_tmpl_yosys_vpr_bram_dsp_dff_flow.ys --vpr_fpga_verilog --vpr_fpga_verilog_dir /home/cae_sajib/Desktop/RZ_home/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/iwls2005/run001/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm/simple_spi_top/MIN_ROUTE_CHAN_WIDTH --vpr_fpga_x2p_rename_illegal_port --debug --flow_config /home/cae_sajib/Desktop/RZ_home/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/iwls2005/config/task.conf --default_tool_path /home/cae_sajib/Desktop/OpenFPGA/openfpga_flow/scripts/../misc/fpgaflow_default_tool_path.conf --TOP simple_spi_top --READ_VERILOG_OPTIONS -nolatches --YOSYS_BRAM_MAP_RULES /home/cae_sajib/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_40nm_bram.txt --YOSYS_BRAM_MAP_VERILOG /home/cae_sajib/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_40nm_bram_map.v --YOSYS_CELL_SIM_VERILOG /home/cae_sajib/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v --YOSYS_DFF_MAP_VERILOG /home/cae_sajib/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_dff_map.v --YOSYS_DSP_MAP_PARAMETERS -D DSP_A_MAXWIDTH=36 -D DSP_B_MAXWIDTH=36 -D DSP_A_MINWIDTH=2 -D DSP_B_MINWIDTH=2 -D DSP_NAME=mult_36x36 --YOSYS_DSP_MAP_VERILOG /home/cae_sajib/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_40nm_dsp_map.v
+* * * * * * * * * * * * * * * * * * * * 
+INFO - Validating command line arguments
+INFO - Setting loggger in debug mode
+INFO - Run directory : /home/cae_sajib/Desktop/RZ_home/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/iwls2005/run001/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm/simple_spi_top/MIN_ROUTE_CHAN_WIDTH
+INFO - Running "yosys_vpr" Flow
+INFO - Extracted lut_size size from arch XML = 6
+INFO - Running Yosys with lut_size = 6
+INFO - Launching Run yosys 
+INFO - Run yosys is written in file yosys_output.log
+INFO - Launching Yosys 
+INFO - Yosys is written in file yosys_rewrite.log
+INFO - Running OpenFPGA Shell Engine 
+INFO - Launching OpenFPGA Shell Run 
+INFO - OpenFPGAShell Revision: v8.0.0-13067-g7950a1bac Compiled: 2025-07-05T15:40:21
+INFO - OpenFPGA Shell Run is written in file openfpgashell.log
+INFO - vpr result extracted in file vpr_stat.result
+INFO - Openfpga_flow completed, Total Time Taken 38 seconds VPR Time 38 seconds 

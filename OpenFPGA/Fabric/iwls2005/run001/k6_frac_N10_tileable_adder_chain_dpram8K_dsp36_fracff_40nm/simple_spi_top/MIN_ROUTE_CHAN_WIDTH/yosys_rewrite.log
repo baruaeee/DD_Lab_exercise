@@ -1,0 +1,24 @@
+/home/cae_sajib/Desktop/OpenFPGA/build/yosys/bin/yosys -p read_blif simple_spi_top.blif; write_verilog simple_spi_top_output_verilog.v
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2025  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.54+29 (git sha1 7b0c1fe49, g++ 11.4.0-1ubuntu1~22.04 -fPIC -O3)
+
+-- Running command `read_blif simple_spi_top.blif; write_verilog simple_spi_top_output_verilog.v' --
+
+1. Executing BLIF frontend.
+
+2. Executing Verilog backend.
+
+2.1. Executing BMUXMAP pass.
+
+2.2. Executing DEMUXMAP pass.
+Dumping module `\simple_spi_top'.
+
+End of script. Logfile hash: 384d759572, CPU: user 0.01s system 0.01s, MEM: 23.00 MB peak
+Yosys 0.54+29 (git sha1 7b0c1fe49, g++ 11.4.0-1ubuntu1~22.04 -fPIC -O3)
+Time spent: 58% 2x read_blif (0 sec), 31% 2x write_verilog (0 sec), ...
+0

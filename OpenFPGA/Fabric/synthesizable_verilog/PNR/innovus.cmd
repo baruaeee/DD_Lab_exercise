@@ -1,17 +1,17 @@
 #######################################################
 #                                                     
 #  Innovus Command Logging File                     
-#  Created on Thu Jul  3 20:46:10 2025                
+#  Created on Tue Jul  8 10:45:26 2025                
 #                                                     
 #######################################################
 
-#@(#)CDS: Innovus v23.31-s109_1 (64bit) 04/22/2024 16:02 (Linux 3.10.0-693.el7.x86_64)
-#@(#)CDS: NanoRoute 23.31-s109_1 NR240401-0735/23_11-UB (database version 18.20.622_1) {superthreading v2.20}
-#@(#)CDS: AAE 23.11-s030 (64bit) 04/22/2024 (Linux 3.10.0-693.el7.x86_64)
-#@(#)CDS: CTE 23.11-s024_1 () Apr 22 2024 08:03:17 ( )
-#@(#)CDS: SYNTECH 23.11-s010_1 () Apr  5 2024 04:21:08 ( )
-#@(#)CDS: CPE v23.11-s057
-#@(#)CDS: IQuantus/TQuantus 22.1.1-s233 (64bit) Mon Dec 11 23:11:23 PST 2023 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: Innovus v23.14-s088_1 (64bit) 02/28/2025 12:25 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 23.14-s088_1 NR250219-0822/23_14-UB (database version 18.20.661) {superthreading v2.20}
+#@(#)CDS: AAE 23.14-s018 (64bit) 02/28/2025 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 23.14-s036_1 () Feb 22 2025 01:17:26 ( )
+#@(#)CDS: SYNTECH 23.14-s010_1 () Feb 19 2025 23:56:49 ( )
+#@(#)CDS: CPE v23.14-s082
+#@(#)CDS: IQuantus/TQuantus 23.1.1-s336 (64bit) Mon Jan 20 22:11:00 PST 2025 (Linux 3.10.0-693.el7.x86_64)
 
 set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
 suppressMessage ENCEXT-2799
@@ -381,79 +381,26 @@ set load_netlist_ignore_undefined_cell 1
 set init_design_uniquify 1
 init_design
 setDrawView fplan
-zoomBox -2831.58300 -1517.76700 2374.72100 3142.98600
-zoomBox -2539.61300 -1186.39600 1885.74600 2775.24500
-zoomBox -2291.43800 -904.73000 1470.11700 2462.66500
-pan -491.48400 1391.57500
-selectObject Module grid_clb_1__2_
-deselectAll
-selectObject Module grid_clb_2__1_
-deselectAll
-selectObject Module grid_clb_2__2_
-deselectAll
+zoomBox -295.03200 -714.40000 2015.03200 1353.60000
+zoomBox 207.74700 -245.06300 1626.41500 1024.94800
+zoomBox -523.28700 -932.40400 2194.43700 1500.53900
+zoomBox -2356.99300 -2748.47800 3768.07300 2734.76300
+pan -624.39200 268.56400
+zoomBox -2981.38500 -2088.42900 2224.92100 2572.32600
+gui_select -rect {-2381.95300 1892.07100 -58.31000 -707.71400}
+zoomBox -2231.91000 -1241.76500 1529.64700 2125.63100
+zoomBox -1939.20900 -911.10900 1258.11400 1951.17800
 selectObject Module grid_clb_1__1_
-deselectAll
-gui_select -rect {-2442.29000 1951.71700 -33.53200 -495.97000}
-deselectAll
-zoomBox -2033.70600 -255.80000 276.36000 1812.20200
-zoomBox -1881.74400 -98.01000 81.81200 1659.79200
-zoomBox -1752.57600 36.11100 -83.55300 1530.24300
-zoomBox -1892.41300 -100.67800 71.14400 1657.12500
-zoomBox -2056.92800 -261.60600 253.14000 1806.39800
-zoomBox -2250.47400 -450.93300 467.25300 1982.01300
-zoomBox -2746.05800 -935.71400 1015.50200 2431.68500
-zoomBox -3061.21500 -1244.00100 1364.15000 2717.64500
-zoomBox -2796.72400 -859.28700 964.83700 2508.11300
-gui_select -rect {-2407.42900 1783.05100 -42.46300 -353.20400}
-deselectAll
 selectObject Module cby_2__2_
+deselectAll
 selectObject Module sb_1__0_
 deselectAll
-selectObject Module grid_clb_1__1_
-deselectAll
-zoomBox -3019.13700 -1206.21700 1406.22900 2755.43000
-zoomBox -3280.80000 -1614.37000 1925.51300 3046.39100
-zoomBox -1900.76000 -468.23400 1296.56700 2394.05600
-zoomBox -1571.30700 -194.62100 1146.42100 2238.32600
-zoomBox -883.47700 456.57800 785.54800 1950.71200
-zoomBox -1012.64600 277.87600 950.91400 2035.68100
-fit
-pan -1261.12200 484.93400
-zoomBox -2325.10400 -817.12000 2100.25400 3144.52000
-zoomBox -2608.99300 -1188.90300 2597.31100 3471.85000
+zoomBox -2479.35600 -1141.46600 1946.00500 2820.17700
+pan 400.74400 1252.01600
 create_relative_floorplan -place grid_clb_1__1_ -ref_type core_boundary -horizontal_edge_separate {1  -5  1} -vertical_edge_separate {0  5  0}
 create_relative_floorplan -place grid_clb_1__2_ -ref_type core_boundary -horizontal_edge_separate {1  -5  1} -vertical_edge_separate {2  -5  2}
 create_relative_floorplan -place grid_clb_2__1_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  5  0}
 create_relative_floorplan -place grid_clb_2__2_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {2  -5  2}
-selectObject Module grid_clb_1__1_
-zoomBox -1262.74100 -151.92600 1934.58100 2710.36000
-zoomBox -941.35500 95.62900 1776.36900 2528.57200
-zoomBox -515.97700 548.32400 1447.57900 2306.12600
-deselectAll
-selectObject Module grid_clb_1__1_
-zoomBox -838.91400 3.91700 1878.81200 2436.86200
-deselectAll
-selectObject Module grid_clb_1__1_
-deselectAll
-selectObject Module grid_clb_1__1_
-zoomBox 124.42000 1754.79400 381.07400 1603.61300
-zoomBox 111.41200 1540.94500 413.35800 1811.25100
-zoomBox 96.10900 1513.44000 451.34000 1831.44800
-zoomBox 78.10500 1481.08200 496.02400 1855.20900
-zoomBox 32.00500 1398.22800 610.44100 1916.05200
-zoomBox 111.41000 1540.94300 413.35800 1811.25100
-zoomBox 135.47400 1584.19400 353.63100 1779.49100
-zoomBox 144.87200 1601.08500 330.30500 1767.08700
-fit
-deselectAll
-zoomBox 156.22200 1746.87900 317.59800 1648.26000
-fit
-pan -564.81500 126.32200
-fit
-selectObject Module grid_clb_1__1_
-deselectAll
-selectObject Module grid_clb_1__1_
-deselectAll
 create_relative_floorplan -place sb_0__1_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {1  -10  1} -vertical_edge_separate {2  10  0}
 create_relative_floorplan -place sb_0__2_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {1  -96.94  1} -vertical_edge_separate {2  11.34  0}
 create_relative_floorplan -place sb_1__0_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -10  1} -vertical_edge_separate {0  0  0}
@@ -475,55 +422,10 @@ create_relative_floorplan -place sb_1__2_ -ref_type object -ref grid_clb_1__1_ -
 create_relative_floorplan -place cbx_1__2_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -10  1} -vertical_edge_separate {2  260  0}
 create_relative_floorplan -place cby_1__2_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -10  1} -vertical_edge_separate {2  360  0}
 create_relative_floorplan -place cby_2__2_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -10  1} -vertical_edge_separate {2  460  0}
-zoomBox 10.55600 383.40900 1429.22500 1653.42100
-zoomBox -75.59500 250.62100 1593.42800 1744.75300
-zoomBox -178.09200 95.54300 1785.46500 1853.34600
-selectObject Module sb_0__1_
-deselectAll
-selectObject Module cby_2__1_
+fit
+selectObject Module grid_clb_1__2_
 loadIoFile Multi_Row_IO_PAD.io
 floorPlan -site CoreSite -b 0.0 0.0 1855.2 1935.78 400.32 400.26 1455.36 1535.1 425.28 425.46 1430.88 1510.74
-deselectAll
-fit
-setDrawView place
-setDrawView fplan
-selectObject Module grid_clb_1__1_
-selectObject Module grid_clb_1__2_
-selectObject Module grid_clb_2__2_
-selectObject Module grid_clb_2__1_
-deselectAll
-selectObject Module grid_clb_2__2_
-deselectAll
-selectObject Module grid_clb_1__1_
-selectObject Module grid_clb_1__2_
-selectObject Module grid_clb_2__2_
-deselectAll
-selectObject Module sb_0__1_
-deselectAll
-selectObject Module sb_0__2_
-deselectAll
-selectObject Module cby_0__1_
-deselectAll
-selectObject Module cby_0__2_
-deselectAll
-selectObject Module sb_1__1_
-deselectAll
-selectObject Module sb_0__0_
-deselectAll
-selectObject Module cbx_1__0_
-deselectAll
-selectObject Module sb_1__0_
-deselectAll
-selectObject Module sb_2__0_
-deselectAll
-selectObject Module cby_2__1_
-deselectAll
-selectObject Module cbx_2__2_
-deselectAll
-selectObject Module cby_2__1_
-selectObject Module cbx_2__2_
-selectObject Module sb_2__2_
-selectObject Module sb_2__1_
 deselectAll
 setDesignMode -process 130
 globalNetConnect vdd -type pgpin -pin VDD -override -verbose -netlistOverride
@@ -537,167 +439,40 @@ addStripe -nets {vdd vss} -layer TopMetal2 -direction vertical -width 5 -spacing
 sroute -connect { blockPin corePin floatingStripe } -layerChangeRange { Metal1(1) TopMetal2(7) } -blockPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) TopMetal2(7) } -nets { vdd vss } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1(1) TopMetal2(7) }
 sroute -connect { padPin padRing } -layerChangeRange { Metal1(1) TopMetal2(7) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) TopMetal2(7) } -nets { iovdd iovss vdd vss } -allowLayerChange 1 -targetViaLayerRange { Metal1(1) TopMetal2(7) }
 sroute -connect { padPin } -layerChangeRange { Metal1(1) TopMetal2(7) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) TopMetal2(7) } -nets { vdd vss } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1(1) TopMetal2(7) }
+zoomBox -188.79300 -46.48400 1774.76100 1711.31600
+zoomBox -98.49000 -6.09500 1570.53100 1488.03500
+zoomBox -21.73200 28.23500 1396.93600 1298.24600
+zoomBox 43.51200 57.41600 1249.38000 1136.92500
+zoomBox 146.10800 103.30200 1017.34800 883.24800
+zoomBox -21.73300 28.23400 1396.93600 1298.24600
+zoomBox -295.03400 -94.00200 2015.03300 1974.00100
+zoomBox -95.17500 -24.34200 1573.84900 1469.79100
+zoomBox -17.12200 2.86300 1401.54900 1272.87600
+zoomBox -79.30600 -89.11800 1589.71900 1405.01600
+zoomBox -152.46400 -197.33000 1811.09600 1560.47500
+zoomBox -238.53100 -324.63800 2071.53900 1743.36800
+zoomBox -339.78700 -474.41200 2377.94300 1958.53600
 setDrawView place
-zoomBox 335.75000 40.90700 1796.51000 1348.59900
-zoomBox 478.33000 73.78800 1719.97600 1185.32600
-zoomBox 599.52300 101.73700 1654.92200 1046.54400
-zoomBox 702.53700 125.49400 1599.62600 928.58000
-zoomBox 863.56000 163.49500 1511.70700 743.72500
-zoomBox 1023.71600 241.47000 1421.76000 597.80400
-zoomBox 1094.44900 275.90800 1382.03500 533.35900
-selectWire 482.4600 360.0800 1373.1400 378.0800 3 vss
-zoomBox 1004.91800 216.76500 1473.20400 635.98100
-zoomBox 859.13000 120.46200 1621.65500 803.08500
-zoomBox 621.73900 -36.35200 1863.38500 1075.18600
-zoomBox 235.18800 -291.69800 2257.00100 1518.25600
-zoomBox -394.24600 -707.48700 2897.93900 2239.72100
-zoomBox -1020.75600 -1121.34300 3535.90000 2957.83700
-zoomBox -115.44900 -49.98700 2682.90800 2455.14000
-zoomBox 457.28600 547.89300 2175.82800 2086.35500
-zoomBox 841.61700 906.48700 1897.01700 1851.29500
-zoomBox 933.36700 992.09300 1830.45700 1795.18000
-zoomBox 1078.93200 1111.24900 1727.08000 1691.48000
-zoomBox 1225.17600 1230.96200 1623.22100 1587.29700
-zoomBox 1289.76500 1283.83300 1577.35200 1541.28500
+zoomBox 342.79800 392.02000 1548.67000 1471.53300
+zoomBox 603.03400 722.34800 1232.50800 1285.86200
+zoomBox 738.87900 894.78100 1067.47000 1188.94000
+zoomBox 761.13200 923.02700 1040.43500 1173.06300
+zoomBox 603.03100 722.34300 1232.51100 1285.86200
+zoomBox 424.45700 495.67200 1449.46000 1413.26800
+zoomBox 246.71200 270.05300 1665.40200 1540.08300
+zoomBox 0.69900 -42.22300 1964.28400 1715.60500
+zoomBox -339.80400 -474.43700 2377.96100 1958.54300
+setDrawView fplan
+selectObject Module grid_clb_1__1_
+selectObject Module grid_clb_1__2_
+selectObject Module grid_clb_2__2_
+selectObject Module grid_clb_2__1_
+zoomBox 69.91400 146.92500 1738.96200 1641.07900
+zoomBox 167.72500 295.26100 1586.41600 1565.29200
+zoomBox 321.53200 528.51900 1346.53700 1446.11700
+zoomBox 201.84700 281.50900 1620.53900 1551.54100
+zoomBox 125.73500 124.42800 1794.78500 1618.58400
 deselectAll
-selectInst pad_pwr2
-zoomBox 1253.19500 1260.19700 1591.53300 1563.08200
-zoomBox 1210.17200 1232.39100 1608.21700 1588.72600
-zoomBox 1159.28400 1200.31300 1627.57200 1619.53100
-zoomBox 1104.86800 1166.21000 1655.79500 1659.40700
-zoomBox 1231.92500 1250.63900 1570.26400 1553.52500
-zoomBox 1262.25700 1270.79400 1549.84600 1528.24800
-zoomBox 1127.08100 1195.01600 1595.37400 1614.23800
-zoomBox 1061.54600 1162.19500 1612.47900 1655.39800
-zoomBox 1200.70700 1243.87700 1539.04900 1546.76500
-zoomBox 1291.91100 1295.05100 1499.69600 1481.06300
-zoomBox 1316.54700 1308.11500 1493.16400 1466.22500
-zoomBox 1337.48700 1319.21900 1487.61200 1453.61300
-zoomBox 1298.47500 1288.48700 1506.26000 1474.49900
-zoomBox 1273.66600 1268.94300 1518.11900 1487.78100
-zoomBox 1210.14000 1218.89900 1548.48500 1521.79000
-zoomBox 1066.30000 1105.58700 1617.24100 1598.79700
-is_innovus_plus
-setLayerPreference node_layer -winName .uiCellView.win -isVisible 1
-setLayerPreference node_misc -winName .uiCellView.win -isVisible 1
-zoomBox -115.10800 -56.03100 239.12400 249.56900 .uiCellView.win
-zoomBox -68.77200 -9.00100 148.77100 178.67600 .uiCellView.win
-zoomBox -42.68100 -7.36500 114.49400 128.23200 .uiCellView.win
-zoomBox -32.49200 -6.72600 101.10800 108.53200 .uiCellView.win
-zoomBox -23.83200 -6.18300 89.72900 91.78700 .uiCellView.win
-zoomBox -43.86700 -12.54100 113.31100 123.05800 .uiCellView.win
-zoomBox -89.23000 -26.93700 166.70800 193.86400 .uiCellView.win
-zoomBox -40.52000 50.56500 116.65800 186.16400 .uiCellView.win
-zoomBox -18.34300 84.57100 95.21900 182.54200 .uiCellView.win
-zoomBox -52.81100 31.96100 132.10600 191.49100 .uiCellView.win
-zoomBox -28.63300 72.92600 104.97000 188.18700 .uiCellView.win
-zoomBox -4.34300 113.90500 77.70700 184.69100 .uiCellView.win
-zoomBox -9.32600 107.27800 87.20500 190.55600 .uiCellView.win
-zoomBox -15.18700 99.48200 98.37900 197.45700 .uiCellView.win
-zoomBox -22.08300 90.31100 111.52400 205.57500 .uiCellView.win
-zoomBox -30.19600 79.52100 126.98900 215.12600 .uiCellView.win
-zoomBox -39.74000 66.82600 145.18400 226.36200 .uiCellView.win
-zoomBox -50.96800 51.89100 166.59000 239.58100 .uiCellView.win
-zoomBox -64.17800 34.32100 191.77300 255.13300 .uiCellView.win
-deselectAll
-selectInst Corner_TR2
-is_innovus_plus
-is_innovus_plus
-zoomBox -67.52800 -70.83800 306.18800 251.57100 .uiCellView.win
-zoomBox -110.10300 -132.38900 407.15100 313.85200 .uiCellView.win
-zoomBox -137.17800 -171.53200 471.35600 353.45800 .uiCellView.win
-zoomBox -32.27600 33.77900 108.67300 155.37700 .uiCellView.win
-zoomBox -11.52600 49.29100 90.31000 137.14600 .uiCellView.win
-zoomBox -3.42300 55.34900 83.13800 130.02600 .uiCellView.win
-zoomBox -11.52700 49.29000 90.31000 137.14600 .uiCellView.win
-zoomBox -32.27800 33.77700 108.67300 155.37700 .uiCellView.win
-zoomBox -45.47400 23.91200 120.35100 166.97100 .uiCellView.win
-deselectAll
-selectWire 425.4800 1426.9000 1431.0800 1427.3400 1 vss
-zoomBox 844.17500 903.61500 1741.29000 1706.72400
-fit
-zoomBox 1437.06100 290.88600 1064.73100 463.20400
-zoomBox 1089.99200 268.79700 1359.00200 509.61800
-zoomBox 1012.86800 219.60800 1385.20000 552.92500
-zoomBox 1104.69500 270.66700 1373.70600 511.48900
-zoomBox 1140.55700 290.60700 1369.21700 495.30700
-zoomBox 1070.45600 262.77000 1386.94200 546.09300
-zoomBox 973.42900 224.24300 1411.47300 616.38600
-zoomBox 1113.59400 276.94000 1382.60900 517.76600
-zoomBox 1220.22200 317.02900 1360.65100 442.74300
-zoomBox 1265.15600 333.92200 1351.39800 411.12700
-deselectAll
-selectWire 482.4600 360.0800 1373.1400 378.0800 3 vss
-deselectAll
-selectWire 482.4600 360.0800 1373.1400 378.0800 3 vss
-deselectAll
-selectWire 482.4600 360.0800 1373.1400 378.0800 3 vss
-fit
-fit
-zoomBox 175.69400 -19.97800 1894.23500 1518.48300
-zoomBox 346.43600 10.03500 1807.19600 1317.72700
-zoomBox 491.56600 35.54600 1733.21300 1147.08500
-zoomBox 719.78400 75.66300 1616.87400 878.75000
-zoomBox 808.91200 91.33000 1571.43900 773.95400
-zoomBox 971.78800 126.64200 1522.71400 619.83800
-zoomBox 807.81600 83.66400 1570.34400 766.28900
-zoomBox 908.87800 106.30200 1557.02700 686.53400
-zoomBox 994.78100 125.54500 1545.70800 618.74200
-zoomBox 625.39700 6.76700 1680.80100 951.57900
-zoomBox 328.58400 -88.67500 1789.35200 1219.02400
-zoomBox 139.83200 -149.36900 1858.38300 1389.10100
-zoomBox -30.83300 -212.14300 1990.99200 1597.82200
-zoomBox -231.61600 -285.99400 2147.00200 1843.37700
-zoomBox 423.82000 -93.63800 1884.58900 1214.06200
-zoomBox 700.18000 -29.13700 1755.58600 915.67700
-zoomBox 968.34600 59.37400 1616.49800 639.60800
-gui_select -rect {1471.43900 204.43200 1351.53500 424.11600}
-deselectAll
-deselectAll
-::uiSetTool defineArea ::Rda_Route::RoutePowerPin::advancedSetAreaBBox
-uiSetTool select
-setSrouteMode -viaConnectToShape { noshape }
-sroute -connect { padPin padRing } -layerChangeRange { Metal1(1) TopMetal2(7) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) TopMetal2(7) } -area { 1466.408 202.755 1359.082 410.701 } -nets { iovdd iovss vdd vss } -allowLayerChange 1 -targetViaLayerRange { Metal1(1) TopMetal2(7) }
-::uiSetTool defineArea ::Rda_Route::RoutePowerPin::advancedSetAreaBBox
-uiSetTool select
-setSrouteMode -viaConnectToShape { noshape }
-sroute -connect { padPin padRing } -layerChangeRange { Metal1(1) TopMetal2(7) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) TopMetal2(7) } -area { 1469.762 206.948 1343.151 410.701 } -nets { iovdd iovss vdd vss } -allowLayerChange 1 -targetViaLayerRange { Metal1(1) TopMetal2(7) }
-::uiSetTool defineArea ::Rda_Route::RoutePowerPin::advancedSetAreaBBox
-uiSetTool select
-setSrouteMode -viaConnectToShape { noshape }
-sroute -connect { padPin padRing } -layerChangeRange { Metal1(1) TopMetal2(7) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) TopMetal2(7) } -area { 1471.439 211.979 1358.243 294.151 } -nets { iovdd iovss vdd vss } -allowLayerChange 1 -targetViaLayerRange { Metal1(1) TopMetal2(7) }
-selectInst Corner_BR2
-::uiSetTool defineArea ::Rda_Route::RoutePowerPin::advancedSetAreaBBox
-uiSetTool select
-setSrouteMode -viaConnectToShape { noshape }
-sroute -connect { padPin padRing } -layerChangeRange { Metal1(1) TopMetal2(7) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) TopMetal2(7) } -area { 1469.762 330.206 1356.566 405.67 } -nets { iovdd iovss vdd vss } -allowLayerChange 1 -targetViaLayerRange { Metal1(1) TopMetal2(7) }
-deselectAll
-zoomBox 778.65800 -17.27400 1675.75500 785.81900
-zoomBox 658.02900 -66.01700 1713.43800 878.79900
-zoomBox 809.37700 -49.83800 1706.47500 753.25600
-zoomBox 902.16200 2.38500 1664.69600 685.01600
-zoomBox 981.03000 46.77600 1629.18400 627.01200
-zoomBox 1048.06700 84.50800 1598.99800 577.70900
-zoomBox 1101.73400 122.78100 1570.02600 542.00200
-zoomBox 1147.35200 155.31300 1545.40000 511.65100
-zoomBox 971.66200 79.92500 1619.81700 660.16200
-zoomBox 796.78900 4.88700 1693.88900 807.98300
-zoomBox 554.74900 -98.97200 1796.41000 1012.58000
-zoomBox 219.74500 -242.72200 1938.30800 1295.75900
-zoomBox -243.92700 -441.68200 2134.70600 1687.70200
-zoomBox -62.90000 -222.22900 1655.66300 1316.25200
-zoomBox 7.79900 -136.52300 1468.57800 1171.18600
-zoomBox -94.54200 -295.47800 1927.29800 1514.50000
-zoomBox 27.39600 -158.29800 1488.17600 1149.41200
-zoomBox 75.01800 -104.72300 1316.68100 1006.83000
-zoomBox 149.90400 -20.47700 1047.00500 782.62000
-zoomBox 78.58500 -143.50300 1320.24700 968.05000
-zoomBox 25.00900 -226.55800 1485.78900 1081.15200
-zoomBox -38.02000 -324.27000 1680.54500 1214.21300
-zoomBox -112.17300 -439.22600 1909.67000 1370.75500
-zoomBox -302.04400 -733.57400 2496.35600 1771.59100
-zoomBox -1180.80900 -1227.18500 2692.41000 2240.17300
-fit
 setMultiCpuUsage -localCpu 8 -cpuPerRemoteHost 1 -remoteHost 0 -keepLicense true
 setDistributeHost -local
 setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
@@ -716,3 +491,41 @@ setPlaceMode -reset
 setPlaceMode -congEffort auto -timingDriven 1 -clkGateAware 1 -powerDriven 0 -ignoreScan 1 -reorderScan 1 -ignoreSpare 0 -placeIOPins 0 -moduleAwareSpare 0 -maxRouteLayer 7 -preserveRouting 1 -rmAffectedRouting 0 -checkRoute 0 -swapEEQ 0
 setPlaceMode -fp false
 place_design
+timeDesign -preCTS
+optDesign -preCTS
+set_ccopt_property buffer_cells {sg13g2_buf_1 sg13g2_buf_16 sg13g2_buf_2 sg13g2_buf_4 sg13g2_buf_8}
+set_ccopt_property inverter_cells {sg13g2_inv_1 sg13g2_inv_16 sg13g2_inv_2 sg13g2_inv_4 sg13g2_inv_8}
+set_ccopt_property delay_cells {sg13g2_dlygate4sd2_1 sg13g2_dlygate4sd1_1}
+create_ccopt_clock_tree_spec
+clock_opt_design
+timeDesign -postCTS
+optDesign -postCTS
+setNanoRouteMode -quiet -drouteFixAntenna 1
+setNanoRouteMode -quiet -routeInsertAntennaDiode 0
+setNanoRouteMode -quiet -routeWithTimingDriven 0
+setNanoRouteMode -quiet -routeWithEco 0
+setNanoRouteMode -quiet -routeWithLithoDriven 0
+setNanoRouteMode -quiet -droutePostRouteLithoRepair 0
+setNanoRouteMode -quiet -routeWithSiDriven 0
+setNanoRouteMode -quiet -drouteAutoStop 1
+setNanoRouteMode -quiet -routeSelectedNetOnly 0
+setNanoRouteMode -quiet -routeTopRoutingLayer 5
+setNanoRouteMode -quiet -routeBottomRoutingLayer 1
+setNanoRouteMode -quiet -drouteEndIteration 1
+setNanoRouteMode -quiet -routeWithTimingDriven false
+setNanoRouteMode -quiet -routeWithSiDriven false
+routeDesign -globalDetail
+setDelayCalMode -SIAware false
+setAnalysisMode -analysisType onChipVariation
+timeDesign -postRoute
+optDesign -postRoute
+saveNetlist pnr_outputs/post_layout_fabric.v
+all_hold_analysis_views 
+all_setup_analysis_views 
+write_sdf  -ideal_clock_network pnr_outputs/post_layout_fabric.sdf
+rcOut -spef pnr_outputs/fabric_RC_BEST.spef -rc_corner RC_BEST
+rcOut -spef pnr_outputs/fabric_RC_WORST.spef -rc_corner RC_WORST
+selectObject Module grid_clb_1__2_
+deselectAll
+selectWire 425.4800 1309.7200 1431.0800 1310.1600 1 vdd
+setDrawView place

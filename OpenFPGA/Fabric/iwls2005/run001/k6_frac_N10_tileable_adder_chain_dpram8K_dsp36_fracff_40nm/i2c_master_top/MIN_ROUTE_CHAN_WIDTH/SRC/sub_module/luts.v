@@ -3,7 +3,7 @@
 //	Description: Look-Up Tables
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Tue Jun 17 22:26:18 2025
+//	Date: Mon Jul  7 22:55:56 2025
 //-------------------------------------------
 //----- Default net type -----
 `default_nettype none
@@ -46,88 +46,88 @@ wire [0:0] lut6_out;
 //----- END Registered ports -----
 
 
-wire [0:0] INVTX1_0_out;
-wire [0:0] INVTX1_1_out;
-wire [0:0] INVTX1_2_out;
-wire [0:0] INVTX1_3_out;
-wire [0:0] INVTX1_4_out;
-wire [0:0] INVTX1_5_out;
-wire [0:0] OR2_0_out;
-wire [0:0] OR2_1_out;
-wire [0:0] buf4_0_out;
-wire [0:0] buf4_1_out;
-wire [0:0] buf4_2_out;
-wire [0:0] buf4_3_out;
-wire [0:0] buf4_4_out;
-wire [0:0] buf4_5_out;
+wire [0:0] BUFJIX4_0_Q;
+wire [0:0] BUFJIX4_1_Q;
+wire [0:0] BUFJIX4_2_Q;
+wire [0:0] BUFJIX4_3_Q;
+wire [0:0] BUFJIX4_4_Q;
+wire [0:0] BUFJIX4_5_Q;
+wire [0:0] INVJIX0_0_Q;
+wire [0:0] INVJIX0_1_Q;
+wire [0:0] INVJIX0_2_Q;
+wire [0:0] INVJIX0_3_Q;
+wire [0:0] INVJIX0_4_Q;
+wire [0:0] INVJIX0_5_Q;
+wire [0:0] OR2JIX0_0_Q;
+wire [0:0] OR2JIX0_1_Q;
 
 // ----- BEGIN Local short connections -----
 // ----- END Local short connections -----
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	OR2 OR2_0_ (
-		.a(mode[0]),
-		.b(in[4]),
-		.out(OR2_0_out));
+	OR2JIX0 OR2JIX0_0_ (
+		.A(mode[0]),
+		.B(in[4]),
+		.Q(OR2JIX0_0_Q));
 
-	OR2 OR2_1_ (
-		.a(mode[1]),
-		.b(in[5]),
-		.out(OR2_1_out));
+	OR2JIX0 OR2JIX0_1_ (
+		.A(mode[1]),
+		.B(in[5]),
+		.Q(OR2JIX0_1_Q));
 
-	INVTX1 INVTX1_0_ (
-		.in(in[0]),
-		.out(INVTX1_0_out));
+	INVJIX0 INVJIX0_0_ (
+		.A(in[0]),
+		.Q(INVJIX0_0_Q));
 
-	INVTX1 INVTX1_1_ (
-		.in(in[1]),
-		.out(INVTX1_1_out));
+	INVJIX0 INVJIX0_1_ (
+		.A(in[1]),
+		.Q(INVJIX0_1_Q));
 
-	INVTX1 INVTX1_2_ (
-		.in(in[2]),
-		.out(INVTX1_2_out));
+	INVJIX0 INVJIX0_2_ (
+		.A(in[2]),
+		.Q(INVJIX0_2_Q));
 
-	INVTX1 INVTX1_3_ (
-		.in(in[3]),
-		.out(INVTX1_3_out));
+	INVJIX0 INVJIX0_3_ (
+		.A(in[3]),
+		.Q(INVJIX0_3_Q));
 
-	INVTX1 INVTX1_4_ (
-		.in(OR2_0_out),
-		.out(INVTX1_4_out));
+	INVJIX0 INVJIX0_4_ (
+		.A(OR2JIX0_0_Q),
+		.Q(INVJIX0_4_Q));
 
-	INVTX1 INVTX1_5_ (
-		.in(OR2_1_out),
-		.out(INVTX1_5_out));
+	INVJIX0 INVJIX0_5_ (
+		.A(OR2JIX0_1_Q),
+		.Q(INVJIX0_5_Q));
 
-	buf4 buf4_0_ (
-		.in(in[0]),
-		.out(buf4_0_out));
+	BUFJIX4 BUFJIX4_0_ (
+		.A(in[0]),
+		.Q(BUFJIX4_0_Q));
 
-	buf4 buf4_1_ (
-		.in(in[1]),
-		.out(buf4_1_out));
+	BUFJIX4 BUFJIX4_1_ (
+		.A(in[1]),
+		.Q(BUFJIX4_1_Q));
 
-	buf4 buf4_2_ (
-		.in(in[2]),
-		.out(buf4_2_out));
+	BUFJIX4 BUFJIX4_2_ (
+		.A(in[2]),
+		.Q(BUFJIX4_2_Q));
 
-	buf4 buf4_3_ (
-		.in(in[3]),
-		.out(buf4_3_out));
+	BUFJIX4 BUFJIX4_3_ (
+		.A(in[3]),
+		.Q(BUFJIX4_3_Q));
 
-	buf4 buf4_4_ (
-		.in(OR2_0_out),
-		.out(buf4_4_out));
+	BUFJIX4 BUFJIX4_4_ (
+		.A(OR2JIX0_0_Q),
+		.Q(BUFJIX4_4_Q));
 
-	buf4 buf4_5_ (
-		.in(OR2_1_out),
-		.out(buf4_5_out));
+	BUFJIX4 BUFJIX4_5_ (
+		.A(OR2JIX0_1_Q),
+		.Q(BUFJIX4_5_Q));
 
 	frac_lut6_mux frac_lut6_mux_0_ (
 		.in(sram[0:63]),
-		.sram({buf4_0_out, buf4_1_out, buf4_2_out, buf4_3_out, buf4_4_out, buf4_5_out}),
-		.sram_inv({INVTX1_0_out, INVTX1_1_out, INVTX1_2_out, INVTX1_3_out, INVTX1_4_out, INVTX1_5_out}),
+		.sram({BUFJIX4_0_Q, BUFJIX4_1_Q, BUFJIX4_2_Q, BUFJIX4_3_Q, BUFJIX4_4_Q, BUFJIX4_5_Q}),
+		.sram_inv({INVJIX0_0_Q, INVJIX0_1_Q, INVJIX0_2_Q, INVJIX0_3_Q, INVJIX0_4_Q, INVJIX0_5_Q}),
 		.lut4_out(lut4_out[0:3]),
 		.lut5_out(lut5_out[0:1]),
 		.lut6_out(lut6_out));

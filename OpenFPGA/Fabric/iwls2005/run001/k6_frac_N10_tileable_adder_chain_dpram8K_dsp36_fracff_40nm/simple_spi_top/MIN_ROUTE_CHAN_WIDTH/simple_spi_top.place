@@ -1,0 +1,50 @@
+Netlist_File: simple_spi_top.net Netlist_ID: SHA256:a228315e29eb266c384dde0396e8f9440ce98fd7e629fa2e1e4f76bbd370798d
+Array size: 7 x 7 logic blocks
+
+#block name	x	y	subblk	layer	block number
+#----------	--	--	------	-----	------------
+$abc$2023$new_n389	4	3	0	0	#0
+$0\treg[7:0][0]	4	2	0	0	#1
+$0\treg[7:0][1]	4	1	0	0	#2
+$0\treg[7:0][3]	5	1	0	0	#3
+$0\treg[7:0][5]	5	2	0	0	#4
+$0\clkcnt[11:0][0]	4	5	0	0	#5
+$0\clkcnt[11:0][6]	5	4	0	0	#6
+$0\clkcnt[11:0][9]	3	4	0	0	#7
+$0\bcnt[2:0][1]	3	3	0	0	#8
+$0\spif[0:0]	1	2	0	0	#9
+$0\dat_o[7:0][3]	3	1	0	0	#10
+$0\dat_o[7:0][6]	5	3	0	0	#11
+$abc$2023$new_n470	1	3	0	0	#12
+$abc$2023$new_n273	4	4	0	0	#13
+$abc$2023$memory\rfifo.mem$wrmux[0][0][0]$y$1687[0]	5	5	0	0	#14
+$abc$2023$memory\rfifo.mem$wrmux[0][0][0]$y$1687[2]	3	2	0	0	#15
+$abc$2023$memory\rfifo.mem$wrmux[0][0][0]$y$1687[4]	1	1	0	0	#16
+out:dat_o[0]	4	6	6	0	#17
+out:dat_o[1]	6	4	2	0	#18
+out:dat_o[2]	3	6	7	0	#19
+out:dat_o[3]	3	0	7	0	#20
+out:dat_o[4]	3	6	2	0	#21
+out:dat_o[5]	0	3	6	0	#22
+out:dat_o[6]	6	3	3	0	#23
+out:dat_o[7]	0	2	1	0	#24
+out:ack_o	6	3	2	0	#25
+out:inta_o	4	6	1	0	#26
+out:sck_o	3	0	2	0	#27
+out:mosi_o	3	0	4	0	#28
+clk_i		2	0	7	0	#29
+rst_i		0	1	7	0	#30
+cyc_i		6	2	5	0	#31
+stb_i		6	2	0	0	#32
+adr_i[0]	5	0	7	0	#33
+adr_i[1]	6	2	6	0	#34
+we_i		5	0	6	0	#35
+dat_i[0]	4	0	7	0	#36
+dat_i[1]	3	0	1	0	#37
+dat_i[2]	4	0	5	0	#38
+dat_i[3]	5	0	4	0	#39
+dat_i[4]	4	0	6	0	#40
+dat_i[5]	4	0	3	0	#41
+dat_i[6]	2	0	0	0	#42
+dat_i[7]	6	1	4	0	#43
+miso_i		4	0	4	0	#44

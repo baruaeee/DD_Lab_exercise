@@ -1,9 +1,9 @@
 Cluster level netlist and block usage statistics
-Netlist num_nets: 239
-Netlist num_blocks: 59
+Netlist num_nets: 233
+Netlist num_blocks: 58
 Netlist EMPTY blocks: 0.
 Netlist io blocks: 33.
-Netlist clb blocks: 26.
+Netlist clb blocks: 25.
 Netlist mult_36 blocks: 0.
 Netlist memory blocks: 0.
 Netlist inputs pins: 19

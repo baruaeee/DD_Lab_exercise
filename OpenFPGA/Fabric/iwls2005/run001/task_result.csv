@@ -1,0 +1,4 @@
+name,TotalRunTime,average_net_length,clb_blocks,critical_path,io_blocks,memory_blocks,mult_blocks,packing_time,placement_time,routing_time,total_logic_block_area,total_routing_area,total_routing_time,total_wire_length
+00_simple_spi_top_MIN_ROUTE_CHAN_WIDTH,39,7.96241,17,2.8645600000000003e-09,28,0,0,7.40,0.05,0.05,916198,620306,0.05,1059
+00_spi_top_MIN_ROUTE_CHAN_WIDTH,125,15.7746,76,6.942350000000001e-09,90,0,0,13.20,0.20,0.20,4.09594e+06,2.58198e+06,0.2,9307
+00_i2c_master_top_MIN_ROUTE_CHAN_WIDTH,50,9.36797,25,3.4753300000000002e-09,33,0,0,5.37,0.05,0.07,1.34735e+06,1.11081e+06,0.07,2164

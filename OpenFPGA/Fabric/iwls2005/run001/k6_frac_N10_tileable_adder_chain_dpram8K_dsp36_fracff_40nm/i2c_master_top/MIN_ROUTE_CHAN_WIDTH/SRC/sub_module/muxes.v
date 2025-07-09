@@ -3,7 +3,7 @@
 //	Description: Multiplexers
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Tue Jun 17 22:26:18 2025
+//	Date: Mon Jul  7 22:55:56 2025
 //-------------------------------------------
 //----- Default net type -----
 `default_nettype none
@@ -30,56 +30,56 @@ output [0:0] out;
 //----- END Registered ports -----
 
 
-wire [0:0] INVTX1_0_out;
-wire [0:0] INVTX1_10_out;
-wire [0:0] INVTX1_11_out;
-wire [0:0] INVTX1_12_out;
-wire [0:0] INVTX1_13_out;
-wire [0:0] INVTX1_14_out;
-wire [0:0] INVTX1_15_out;
-wire [0:0] INVTX1_16_out;
-wire [0:0] INVTX1_17_out;
-wire [0:0] INVTX1_18_out;
-wire [0:0] INVTX1_19_out;
-wire [0:0] INVTX1_1_out;
-wire [0:0] INVTX1_20_out;
-wire [0:0] INVTX1_21_out;
-wire [0:0] INVTX1_22_out;
-wire [0:0] INVTX1_23_out;
-wire [0:0] INVTX1_24_out;
-wire [0:0] INVTX1_25_out;
-wire [0:0] INVTX1_26_out;
-wire [0:0] INVTX1_27_out;
-wire [0:0] INVTX1_28_out;
-wire [0:0] INVTX1_29_out;
-wire [0:0] INVTX1_2_out;
-wire [0:0] INVTX1_30_out;
-wire [0:0] INVTX1_31_out;
-wire [0:0] INVTX1_32_out;
-wire [0:0] INVTX1_33_out;
-wire [0:0] INVTX1_34_out;
-wire [0:0] INVTX1_35_out;
-wire [0:0] INVTX1_36_out;
-wire [0:0] INVTX1_37_out;
-wire [0:0] INVTX1_38_out;
-wire [0:0] INVTX1_39_out;
-wire [0:0] INVTX1_3_out;
-wire [0:0] INVTX1_40_out;
-wire [0:0] INVTX1_41_out;
-wire [0:0] INVTX1_42_out;
-wire [0:0] INVTX1_43_out;
-wire [0:0] INVTX1_44_out;
-wire [0:0] INVTX1_45_out;
-wire [0:0] INVTX1_46_out;
-wire [0:0] INVTX1_47_out;
-wire [0:0] INVTX1_48_out;
-wire [0:0] INVTX1_49_out;
-wire [0:0] INVTX1_4_out;
-wire [0:0] INVTX1_5_out;
-wire [0:0] INVTX1_6_out;
-wire [0:0] INVTX1_7_out;
-wire [0:0] INVTX1_8_out;
-wire [0:0] INVTX1_9_out;
+wire [0:0] INVJIX0_0_Q;
+wire [0:0] INVJIX0_10_Q;
+wire [0:0] INVJIX0_11_Q;
+wire [0:0] INVJIX0_12_Q;
+wire [0:0] INVJIX0_13_Q;
+wire [0:0] INVJIX0_14_Q;
+wire [0:0] INVJIX0_15_Q;
+wire [0:0] INVJIX0_16_Q;
+wire [0:0] INVJIX0_17_Q;
+wire [0:0] INVJIX0_18_Q;
+wire [0:0] INVJIX0_19_Q;
+wire [0:0] INVJIX0_1_Q;
+wire [0:0] INVJIX0_20_Q;
+wire [0:0] INVJIX0_21_Q;
+wire [0:0] INVJIX0_22_Q;
+wire [0:0] INVJIX0_23_Q;
+wire [0:0] INVJIX0_24_Q;
+wire [0:0] INVJIX0_25_Q;
+wire [0:0] INVJIX0_26_Q;
+wire [0:0] INVJIX0_27_Q;
+wire [0:0] INVJIX0_28_Q;
+wire [0:0] INVJIX0_29_Q;
+wire [0:0] INVJIX0_2_Q;
+wire [0:0] INVJIX0_30_Q;
+wire [0:0] INVJIX0_31_Q;
+wire [0:0] INVJIX0_32_Q;
+wire [0:0] INVJIX0_33_Q;
+wire [0:0] INVJIX0_34_Q;
+wire [0:0] INVJIX0_35_Q;
+wire [0:0] INVJIX0_36_Q;
+wire [0:0] INVJIX0_37_Q;
+wire [0:0] INVJIX0_38_Q;
+wire [0:0] INVJIX0_39_Q;
+wire [0:0] INVJIX0_3_Q;
+wire [0:0] INVJIX0_40_Q;
+wire [0:0] INVJIX0_41_Q;
+wire [0:0] INVJIX0_42_Q;
+wire [0:0] INVJIX0_43_Q;
+wire [0:0] INVJIX0_44_Q;
+wire [0:0] INVJIX0_45_Q;
+wire [0:0] INVJIX0_46_Q;
+wire [0:0] INVJIX0_47_Q;
+wire [0:0] INVJIX0_48_Q;
+wire [0:0] INVJIX0_49_Q;
+wire [0:0] INVJIX0_4_Q;
+wire [0:0] INVJIX0_5_Q;
+wire [0:0] INVJIX0_6_Q;
+wire [0:0] INVJIX0_7_Q;
+wire [0:0] INVJIX0_8_Q;
+wire [0:0] INVJIX0_9_Q;
 wire [0:0] const1_0_const1;
 wire [0:0] mux_2level_tapbuf_basis_input2_mem2_0_out;
 wire [0:0] mux_2level_tapbuf_basis_input8_mem8_0_out;
@@ -95,245 +95,245 @@ wire [0:0] mux_2level_tapbuf_basis_input8_mem8_6_out;
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	INVTX1 INVTX1_0_ (
-		.in(in[0]),
-		.out(INVTX1_0_out));
+	INVJIX0 INVJIX0_0_ (
+		.A(in[0]),
+		.Q(INVJIX0_0_Q));
 
-	INVTX1 INVTX1_1_ (
-		.in(in[1]),
-		.out(INVTX1_1_out));
+	INVJIX0 INVJIX0_1_ (
+		.A(in[1]),
+		.Q(INVJIX0_1_Q));
 
-	INVTX1 INVTX1_2_ (
-		.in(in[2]),
-		.out(INVTX1_2_out));
+	INVJIX0 INVJIX0_2_ (
+		.A(in[2]),
+		.Q(INVJIX0_2_Q));
 
-	INVTX1 INVTX1_3_ (
-		.in(in[3]),
-		.out(INVTX1_3_out));
+	INVJIX0 INVJIX0_3_ (
+		.A(in[3]),
+		.Q(INVJIX0_3_Q));
 
-	INVTX1 INVTX1_4_ (
-		.in(in[4]),
-		.out(INVTX1_4_out));
+	INVJIX0 INVJIX0_4_ (
+		.A(in[4]),
+		.Q(INVJIX0_4_Q));
 
-	INVTX1 INVTX1_5_ (
-		.in(in[5]),
-		.out(INVTX1_5_out));
+	INVJIX0 INVJIX0_5_ (
+		.A(in[5]),
+		.Q(INVJIX0_5_Q));
 
-	INVTX1 INVTX1_6_ (
-		.in(in[6]),
-		.out(INVTX1_6_out));
+	INVJIX0 INVJIX0_6_ (
+		.A(in[6]),
+		.Q(INVJIX0_6_Q));
 
-	INVTX1 INVTX1_7_ (
-		.in(in[7]),
-		.out(INVTX1_7_out));
+	INVJIX0 INVJIX0_7_ (
+		.A(in[7]),
+		.Q(INVJIX0_7_Q));
 
-	INVTX1 INVTX1_8_ (
-		.in(in[8]),
-		.out(INVTX1_8_out));
+	INVJIX0 INVJIX0_8_ (
+		.A(in[8]),
+		.Q(INVJIX0_8_Q));
 
-	INVTX1 INVTX1_9_ (
-		.in(in[9]),
-		.out(INVTX1_9_out));
+	INVJIX0 INVJIX0_9_ (
+		.A(in[9]),
+		.Q(INVJIX0_9_Q));
 
-	INVTX1 INVTX1_10_ (
-		.in(in[10]),
-		.out(INVTX1_10_out));
+	INVJIX0 INVJIX0_10_ (
+		.A(in[10]),
+		.Q(INVJIX0_10_Q));
 
-	INVTX1 INVTX1_11_ (
-		.in(in[11]),
-		.out(INVTX1_11_out));
+	INVJIX0 INVJIX0_11_ (
+		.A(in[11]),
+		.Q(INVJIX0_11_Q));
 
-	INVTX1 INVTX1_12_ (
-		.in(in[12]),
-		.out(INVTX1_12_out));
+	INVJIX0 INVJIX0_12_ (
+		.A(in[12]),
+		.Q(INVJIX0_12_Q));
 
-	INVTX1 INVTX1_13_ (
-		.in(in[13]),
-		.out(INVTX1_13_out));
+	INVJIX0 INVJIX0_13_ (
+		.A(in[13]),
+		.Q(INVJIX0_13_Q));
 
-	INVTX1 INVTX1_14_ (
-		.in(in[14]),
-		.out(INVTX1_14_out));
+	INVJIX0 INVJIX0_14_ (
+		.A(in[14]),
+		.Q(INVJIX0_14_Q));
 
-	INVTX1 INVTX1_15_ (
-		.in(in[15]),
-		.out(INVTX1_15_out));
+	INVJIX0 INVJIX0_15_ (
+		.A(in[15]),
+		.Q(INVJIX0_15_Q));
 
-	INVTX1 INVTX1_16_ (
-		.in(in[16]),
-		.out(INVTX1_16_out));
+	INVJIX0 INVJIX0_16_ (
+		.A(in[16]),
+		.Q(INVJIX0_16_Q));
 
-	INVTX1 INVTX1_17_ (
-		.in(in[17]),
-		.out(INVTX1_17_out));
+	INVJIX0 INVJIX0_17_ (
+		.A(in[17]),
+		.Q(INVJIX0_17_Q));
 
-	INVTX1 INVTX1_18_ (
-		.in(in[18]),
-		.out(INVTX1_18_out));
+	INVJIX0 INVJIX0_18_ (
+		.A(in[18]),
+		.Q(INVJIX0_18_Q));
 
-	INVTX1 INVTX1_19_ (
-		.in(in[19]),
-		.out(INVTX1_19_out));
+	INVJIX0 INVJIX0_19_ (
+		.A(in[19]),
+		.Q(INVJIX0_19_Q));
 
-	INVTX1 INVTX1_20_ (
-		.in(in[20]),
-		.out(INVTX1_20_out));
+	INVJIX0 INVJIX0_20_ (
+		.A(in[20]),
+		.Q(INVJIX0_20_Q));
 
-	INVTX1 INVTX1_21_ (
-		.in(in[21]),
-		.out(INVTX1_21_out));
+	INVJIX0 INVJIX0_21_ (
+		.A(in[21]),
+		.Q(INVJIX0_21_Q));
 
-	INVTX1 INVTX1_22_ (
-		.in(in[22]),
-		.out(INVTX1_22_out));
+	INVJIX0 INVJIX0_22_ (
+		.A(in[22]),
+		.Q(INVJIX0_22_Q));
 
-	INVTX1 INVTX1_23_ (
-		.in(in[23]),
-		.out(INVTX1_23_out));
+	INVJIX0 INVJIX0_23_ (
+		.A(in[23]),
+		.Q(INVJIX0_23_Q));
 
-	INVTX1 INVTX1_24_ (
-		.in(in[24]),
-		.out(INVTX1_24_out));
+	INVJIX0 INVJIX0_24_ (
+		.A(in[24]),
+		.Q(INVJIX0_24_Q));
 
-	INVTX1 INVTX1_25_ (
-		.in(in[25]),
-		.out(INVTX1_25_out));
+	INVJIX0 INVJIX0_25_ (
+		.A(in[25]),
+		.Q(INVJIX0_25_Q));
 
-	INVTX1 INVTX1_26_ (
-		.in(in[26]),
-		.out(INVTX1_26_out));
+	INVJIX0 INVJIX0_26_ (
+		.A(in[26]),
+		.Q(INVJIX0_26_Q));
 
-	INVTX1 INVTX1_27_ (
-		.in(in[27]),
-		.out(INVTX1_27_out));
+	INVJIX0 INVJIX0_27_ (
+		.A(in[27]),
+		.Q(INVJIX0_27_Q));
 
-	INVTX1 INVTX1_28_ (
-		.in(in[28]),
-		.out(INVTX1_28_out));
+	INVJIX0 INVJIX0_28_ (
+		.A(in[28]),
+		.Q(INVJIX0_28_Q));
 
-	INVTX1 INVTX1_29_ (
-		.in(in[29]),
-		.out(INVTX1_29_out));
+	INVJIX0 INVJIX0_29_ (
+		.A(in[29]),
+		.Q(INVJIX0_29_Q));
 
-	INVTX1 INVTX1_30_ (
-		.in(in[30]),
-		.out(INVTX1_30_out));
+	INVJIX0 INVJIX0_30_ (
+		.A(in[30]),
+		.Q(INVJIX0_30_Q));
 
-	INVTX1 INVTX1_31_ (
-		.in(in[31]),
-		.out(INVTX1_31_out));
+	INVJIX0 INVJIX0_31_ (
+		.A(in[31]),
+		.Q(INVJIX0_31_Q));
 
-	INVTX1 INVTX1_32_ (
-		.in(in[32]),
-		.out(INVTX1_32_out));
+	INVJIX0 INVJIX0_32_ (
+		.A(in[32]),
+		.Q(INVJIX0_32_Q));
 
-	INVTX1 INVTX1_33_ (
-		.in(in[33]),
-		.out(INVTX1_33_out));
+	INVJIX0 INVJIX0_33_ (
+		.A(in[33]),
+		.Q(INVJIX0_33_Q));
 
-	INVTX1 INVTX1_34_ (
-		.in(in[34]),
-		.out(INVTX1_34_out));
+	INVJIX0 INVJIX0_34_ (
+		.A(in[34]),
+		.Q(INVJIX0_34_Q));
 
-	INVTX1 INVTX1_35_ (
-		.in(in[35]),
-		.out(INVTX1_35_out));
+	INVJIX0 INVJIX0_35_ (
+		.A(in[35]),
+		.Q(INVJIX0_35_Q));
 
-	INVTX1 INVTX1_36_ (
-		.in(in[36]),
-		.out(INVTX1_36_out));
+	INVJIX0 INVJIX0_36_ (
+		.A(in[36]),
+		.Q(INVJIX0_36_Q));
 
-	INVTX1 INVTX1_37_ (
-		.in(in[37]),
-		.out(INVTX1_37_out));
+	INVJIX0 INVJIX0_37_ (
+		.A(in[37]),
+		.Q(INVJIX0_37_Q));
 
-	INVTX1 INVTX1_38_ (
-		.in(in[38]),
-		.out(INVTX1_38_out));
+	INVJIX0 INVJIX0_38_ (
+		.A(in[38]),
+		.Q(INVJIX0_38_Q));
 
-	INVTX1 INVTX1_39_ (
-		.in(in[39]),
-		.out(INVTX1_39_out));
+	INVJIX0 INVJIX0_39_ (
+		.A(in[39]),
+		.Q(INVJIX0_39_Q));
 
-	INVTX1 INVTX1_40_ (
-		.in(in[40]),
-		.out(INVTX1_40_out));
+	INVJIX0 INVJIX0_40_ (
+		.A(in[40]),
+		.Q(INVJIX0_40_Q));
 
-	INVTX1 INVTX1_41_ (
-		.in(in[41]),
-		.out(INVTX1_41_out));
+	INVJIX0 INVJIX0_41_ (
+		.A(in[41]),
+		.Q(INVJIX0_41_Q));
 
-	INVTX1 INVTX1_42_ (
-		.in(in[42]),
-		.out(INVTX1_42_out));
+	INVJIX0 INVJIX0_42_ (
+		.A(in[42]),
+		.Q(INVJIX0_42_Q));
 
-	INVTX1 INVTX1_43_ (
-		.in(in[43]),
-		.out(INVTX1_43_out));
+	INVJIX0 INVJIX0_43_ (
+		.A(in[43]),
+		.Q(INVJIX0_43_Q));
 
-	INVTX1 INVTX1_44_ (
-		.in(in[44]),
-		.out(INVTX1_44_out));
+	INVJIX0 INVJIX0_44_ (
+		.A(in[44]),
+		.Q(INVJIX0_44_Q));
 
-	INVTX1 INVTX1_45_ (
-		.in(in[45]),
-		.out(INVTX1_45_out));
+	INVJIX0 INVJIX0_45_ (
+		.A(in[45]),
+		.Q(INVJIX0_45_Q));
 
-	INVTX1 INVTX1_46_ (
-		.in(in[46]),
-		.out(INVTX1_46_out));
+	INVJIX0 INVJIX0_46_ (
+		.A(in[46]),
+		.Q(INVJIX0_46_Q));
 
-	INVTX1 INVTX1_47_ (
-		.in(in[47]),
-		.out(INVTX1_47_out));
+	INVJIX0 INVJIX0_47_ (
+		.A(in[47]),
+		.Q(INVJIX0_47_Q));
 
-	INVTX1 INVTX1_48_ (
-		.in(in[48]),
-		.out(INVTX1_48_out));
+	INVJIX0 INVJIX0_48_ (
+		.A(in[48]),
+		.Q(INVJIX0_48_Q));
 
-	INVTX1 INVTX1_49_ (
-		.in(in[49]),
-		.out(INVTX1_49_out));
+	INVJIX0 INVJIX0_49_ (
+		.A(in[49]),
+		.Q(INVJIX0_49_Q));
 
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	tap_buf4 tap_buf4_0_ (
-		.in(mux_2level_tapbuf_basis_input8_mem8_6_out),
-		.out(out));
+	INVJIX4 INVJIX4_0_ (
+		.A(mux_2level_tapbuf_basis_input8_mem8_6_out),
+		.Q(out));
 
 	mux_2level_tapbuf_basis_input8_mem8 mux_l1_in_0_ (
-		.in({INVTX1_0_out, INVTX1_1_out, INVTX1_2_out, INVTX1_3_out, INVTX1_4_out, INVTX1_5_out, INVTX1_6_out, INVTX1_7_out}),
+		.in({INVJIX0_0_Q, INVJIX0_1_Q, INVJIX0_2_Q, INVJIX0_3_Q, INVJIX0_4_Q, INVJIX0_5_Q, INVJIX0_6_Q, INVJIX0_7_Q}),
 		.mem(sram[0:7]),
 		.mem_inv(sram_inv[0:7]),
 		.out(mux_2level_tapbuf_basis_input8_mem8_0_out));
 
 	mux_2level_tapbuf_basis_input8_mem8 mux_l1_in_1_ (
-		.in({INVTX1_8_out, INVTX1_9_out, INVTX1_10_out, INVTX1_11_out, INVTX1_12_out, INVTX1_13_out, INVTX1_14_out, INVTX1_15_out}),
+		.in({INVJIX0_8_Q, INVJIX0_9_Q, INVJIX0_10_Q, INVJIX0_11_Q, INVJIX0_12_Q, INVJIX0_13_Q, INVJIX0_14_Q, INVJIX0_15_Q}),
 		.mem(sram[0:7]),
 		.mem_inv(sram_inv[0:7]),
 		.out(mux_2level_tapbuf_basis_input8_mem8_1_out));
 
 	mux_2level_tapbuf_basis_input8_mem8 mux_l1_in_2_ (
-		.in({INVTX1_16_out, INVTX1_17_out, INVTX1_18_out, INVTX1_19_out, INVTX1_20_out, INVTX1_21_out, INVTX1_22_out, INVTX1_23_out}),
+		.in({INVJIX0_16_Q, INVJIX0_17_Q, INVJIX0_18_Q, INVJIX0_19_Q, INVJIX0_20_Q, INVJIX0_21_Q, INVJIX0_22_Q, INVJIX0_23_Q}),
 		.mem(sram[0:7]),
 		.mem_inv(sram_inv[0:7]),
 		.out(mux_2level_tapbuf_basis_input8_mem8_2_out));
 
 	mux_2level_tapbuf_basis_input8_mem8 mux_l1_in_3_ (
-		.in({INVTX1_24_out, INVTX1_25_out, INVTX1_26_out, INVTX1_27_out, INVTX1_28_out, INVTX1_29_out, INVTX1_30_out, INVTX1_31_out}),
+		.in({INVJIX0_24_Q, INVJIX0_25_Q, INVJIX0_26_Q, INVJIX0_27_Q, INVJIX0_28_Q, INVJIX0_29_Q, INVJIX0_30_Q, INVJIX0_31_Q}),
 		.mem(sram[0:7]),
 		.mem_inv(sram_inv[0:7]),
 		.out(mux_2level_tapbuf_basis_input8_mem8_3_out));
 
 	mux_2level_tapbuf_basis_input8_mem8 mux_l1_in_4_ (
-		.in({INVTX1_32_out, INVTX1_33_out, INVTX1_34_out, INVTX1_35_out, INVTX1_36_out, INVTX1_37_out, INVTX1_38_out, INVTX1_39_out}),
+		.in({INVJIX0_32_Q, INVJIX0_33_Q, INVJIX0_34_Q, INVJIX0_35_Q, INVJIX0_36_Q, INVJIX0_37_Q, INVJIX0_38_Q, INVJIX0_39_Q}),
 		.mem(sram[0:7]),
 		.mem_inv(sram_inv[0:7]),
 		.out(mux_2level_tapbuf_basis_input8_mem8_4_out));
 
 	mux_2level_tapbuf_basis_input8_mem8 mux_l1_in_5_ (
-		.in({INVTX1_40_out, INVTX1_41_out, INVTX1_42_out, INVTX1_43_out, INVTX1_44_out, INVTX1_45_out, INVTX1_46_out, INVTX1_47_out}),
+		.in({INVJIX0_40_Q, INVJIX0_41_Q, INVJIX0_42_Q, INVJIX0_43_Q, INVJIX0_44_Q, INVJIX0_45_Q, INVJIX0_46_Q, INVJIX0_47_Q}),
 		.mem(sram[0:7]),
 		.mem_inv(sram_inv[0:7]),
 		.out(mux_2level_tapbuf_basis_input8_mem8_5_out));
@@ -345,7 +345,7 @@ wire [0:0] mux_2level_tapbuf_basis_input8_mem8_6_out;
 		.out(mux_2level_tapbuf_basis_input8_mem8_6_out));
 
 	mux_2level_tapbuf_basis_input2_mem2 mux_l1_in_6_ (
-		.in({INVTX1_48_out, INVTX1_49_out}),
+		.in({INVJIX0_48_Q, INVJIX0_49_Q}),
 		.mem(sram[0:1]),
 		.mem_inv(sram_inv[0:1]),
 		.out(mux_2level_tapbuf_basis_input2_mem2_0_out));
@@ -384,9 +384,9 @@ output [0:0] out;
 //----- END Registered ports -----
 
 
-wire [0:0] INVTX1_0_out;
-wire [0:0] INVTX1_1_out;
-wire [0:0] INVTX1_2_out;
+wire [0:0] INVJIX0_0_Q;
+wire [0:0] INVJIX0_1_Q;
+wire [0:0] INVJIX0_2_Q;
 wire [0:0] const1_0_const1;
 wire [0:0] mux_2level_tapbuf_basis_input2_mem1_0_out;
 wire [0:0] mux_2level_tapbuf_basis_input2_mem1_1_out;
@@ -397,33 +397,33 @@ wire [0:0] mux_2level_tapbuf_basis_input2_mem1_2_out;
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	INVTX1 INVTX1_0_ (
-		.in(in[0]),
-		.out(INVTX1_0_out));
+	INVJIX0 INVJIX0_0_ (
+		.A(in[0]),
+		.Q(INVJIX0_0_Q));
 
-	INVTX1 INVTX1_1_ (
-		.in(in[1]),
-		.out(INVTX1_1_out));
+	INVJIX0 INVJIX0_1_ (
+		.A(in[1]),
+		.Q(INVJIX0_1_Q));
 
-	INVTX1 INVTX1_2_ (
-		.in(in[2]),
-		.out(INVTX1_2_out));
+	INVJIX0 INVJIX0_2_ (
+		.A(in[2]),
+		.Q(INVJIX0_2_Q));
 
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	tap_buf4 tap_buf4_0_ (
-		.in(mux_2level_tapbuf_basis_input2_mem1_2_out),
-		.out(out));
+	INVJIX4 INVJIX4_0_ (
+		.A(mux_2level_tapbuf_basis_input2_mem1_2_out),
+		.Q(out));
 
 	mux_2level_tapbuf_basis_input2_mem1 mux_l1_in_0_ (
-		.in({INVTX1_0_out, INVTX1_1_out}),
+		.in({INVJIX0_0_Q, INVJIX0_1_Q}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(mux_2level_tapbuf_basis_input2_mem1_0_out));
 
 	mux_2level_tapbuf_basis_input2_mem1 mux_l1_in_1_ (
-		.in({INVTX1_2_out, const1_0_const1}),
+		.in({INVJIX0_2_Q, const1_0_const1}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(mux_2level_tapbuf_basis_input2_mem1_1_out));
@@ -468,16 +468,16 @@ output [0:0] out;
 //----- END Registered ports -----
 
 
-wire [0:0] INVTX1_0_out;
-wire [0:0] INVTX1_1_out;
-wire [0:0] INVTX1_2_out;
-wire [0:0] INVTX1_3_out;
-wire [0:0] INVTX1_4_out;
-wire [0:0] INVTX1_5_out;
-wire [0:0] INVTX1_6_out;
-wire [0:0] INVTX1_7_out;
-wire [0:0] INVTX1_8_out;
-wire [0:0] INVTX1_9_out;
+wire [0:0] INVJIX0_0_Q;
+wire [0:0] INVJIX0_1_Q;
+wire [0:0] INVJIX0_2_Q;
+wire [0:0] INVJIX0_3_Q;
+wire [0:0] INVJIX0_4_Q;
+wire [0:0] INVJIX0_5_Q;
+wire [0:0] INVJIX0_6_Q;
+wire [0:0] INVJIX0_7_Q;
+wire [0:0] INVJIX0_8_Q;
+wire [0:0] INVJIX0_9_Q;
 wire [0:0] const1_0_const1;
 wire [0:0] mux_2level_tapbuf_basis_input2_mem2_0_out;
 wire [0:0] mux_2level_tapbuf_basis_input4_mem4_0_out;
@@ -489,61 +489,61 @@ wire [0:0] mux_2level_tapbuf_basis_input4_mem4_2_out;
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	INVTX1 INVTX1_0_ (
-		.in(in[0]),
-		.out(INVTX1_0_out));
+	INVJIX0 INVJIX0_0_ (
+		.A(in[0]),
+		.Q(INVJIX0_0_Q));
 
-	INVTX1 INVTX1_1_ (
-		.in(in[1]),
-		.out(INVTX1_1_out));
+	INVJIX0 INVJIX0_1_ (
+		.A(in[1]),
+		.Q(INVJIX0_1_Q));
 
-	INVTX1 INVTX1_2_ (
-		.in(in[2]),
-		.out(INVTX1_2_out));
+	INVJIX0 INVJIX0_2_ (
+		.A(in[2]),
+		.Q(INVJIX0_2_Q));
 
-	INVTX1 INVTX1_3_ (
-		.in(in[3]),
-		.out(INVTX1_3_out));
+	INVJIX0 INVJIX0_3_ (
+		.A(in[3]),
+		.Q(INVJIX0_3_Q));
 
-	INVTX1 INVTX1_4_ (
-		.in(in[4]),
-		.out(INVTX1_4_out));
+	INVJIX0 INVJIX0_4_ (
+		.A(in[4]),
+		.Q(INVJIX0_4_Q));
 
-	INVTX1 INVTX1_5_ (
-		.in(in[5]),
-		.out(INVTX1_5_out));
+	INVJIX0 INVJIX0_5_ (
+		.A(in[5]),
+		.Q(INVJIX0_5_Q));
 
-	INVTX1 INVTX1_6_ (
-		.in(in[6]),
-		.out(INVTX1_6_out));
+	INVJIX0 INVJIX0_6_ (
+		.A(in[6]),
+		.Q(INVJIX0_6_Q));
 
-	INVTX1 INVTX1_7_ (
-		.in(in[7]),
-		.out(INVTX1_7_out));
+	INVJIX0 INVJIX0_7_ (
+		.A(in[7]),
+		.Q(INVJIX0_7_Q));
 
-	INVTX1 INVTX1_8_ (
-		.in(in[8]),
-		.out(INVTX1_8_out));
+	INVJIX0 INVJIX0_8_ (
+		.A(in[8]),
+		.Q(INVJIX0_8_Q));
 
-	INVTX1 INVTX1_9_ (
-		.in(in[9]),
-		.out(INVTX1_9_out));
+	INVJIX0 INVJIX0_9_ (
+		.A(in[9]),
+		.Q(INVJIX0_9_Q));
 
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	tap_buf4 tap_buf4_0_ (
-		.in(mux_2level_tapbuf_basis_input4_mem4_2_out),
-		.out(out));
+	INVJIX4 INVJIX4_0_ (
+		.A(mux_2level_tapbuf_basis_input4_mem4_2_out),
+		.Q(out));
 
 	mux_2level_tapbuf_basis_input4_mem4 mux_l1_in_0_ (
-		.in({INVTX1_0_out, INVTX1_1_out, INVTX1_2_out, INVTX1_3_out}),
+		.in({INVJIX0_0_Q, INVJIX0_1_Q, INVJIX0_2_Q, INVJIX0_3_Q}),
 		.mem(sram[0:3]),
 		.mem_inv(sram_inv[0:3]),
 		.out(mux_2level_tapbuf_basis_input4_mem4_0_out));
 
 	mux_2level_tapbuf_basis_input4_mem4 mux_l1_in_1_ (
-		.in({INVTX1_4_out, INVTX1_5_out, INVTX1_6_out, INVTX1_7_out}),
+		.in({INVJIX0_4_Q, INVJIX0_5_Q, INVJIX0_6_Q, INVJIX0_7_Q}),
 		.mem(sram[0:3]),
 		.mem_inv(sram_inv[0:3]),
 		.out(mux_2level_tapbuf_basis_input4_mem4_1_out));
@@ -555,7 +555,7 @@ wire [0:0] mux_2level_tapbuf_basis_input4_mem4_2_out;
 		.out(mux_2level_tapbuf_basis_input4_mem4_2_out));
 
 	mux_2level_tapbuf_basis_input2_mem2 mux_l1_in_2_ (
-		.in({INVTX1_8_out, INVTX1_9_out}),
+		.in({INVJIX0_8_Q, INVJIX0_9_Q}),
 		.mem(sram[0:1]),
 		.mem_inv(sram_inv[0:1]),
 		.out(mux_2level_tapbuf_basis_input2_mem2_0_out));
@@ -594,15 +594,15 @@ output [0:0] out;
 //----- END Registered ports -----
 
 
-wire [0:0] INVTX1_0_out;
-wire [0:0] INVTX1_1_out;
-wire [0:0] INVTX1_2_out;
-wire [0:0] INVTX1_3_out;
-wire [0:0] INVTX1_4_out;
-wire [0:0] INVTX1_5_out;
-wire [0:0] INVTX1_6_out;
-wire [0:0] INVTX1_7_out;
-wire [0:0] INVTX1_8_out;
+wire [0:0] INVJIX0_0_Q;
+wire [0:0] INVJIX0_1_Q;
+wire [0:0] INVJIX0_2_Q;
+wire [0:0] INVJIX0_3_Q;
+wire [0:0] INVJIX0_4_Q;
+wire [0:0] INVJIX0_5_Q;
+wire [0:0] INVJIX0_6_Q;
+wire [0:0] INVJIX0_7_Q;
+wire [0:0] INVJIX0_8_Q;
 wire [0:0] const1_0_const1;
 wire [0:0] mux_2level_tapbuf_basis_input4_mem4_0_out;
 wire [0:0] mux_2level_tapbuf_basis_input4_mem4_1_out;
@@ -613,63 +613,63 @@ wire [0:0] mux_2level_tapbuf_basis_input4_mem4_2_out;
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	INVTX1 INVTX1_0_ (
-		.in(in[0]),
-		.out(INVTX1_0_out));
+	INVJIX0 INVJIX0_0_ (
+		.A(in[0]),
+		.Q(INVJIX0_0_Q));
 
-	INVTX1 INVTX1_1_ (
-		.in(in[1]),
-		.out(INVTX1_1_out));
+	INVJIX0 INVJIX0_1_ (
+		.A(in[1]),
+		.Q(INVJIX0_1_Q));
 
-	INVTX1 INVTX1_2_ (
-		.in(in[2]),
-		.out(INVTX1_2_out));
+	INVJIX0 INVJIX0_2_ (
+		.A(in[2]),
+		.Q(INVJIX0_2_Q));
 
-	INVTX1 INVTX1_3_ (
-		.in(in[3]),
-		.out(INVTX1_3_out));
+	INVJIX0 INVJIX0_3_ (
+		.A(in[3]),
+		.Q(INVJIX0_3_Q));
 
-	INVTX1 INVTX1_4_ (
-		.in(in[4]),
-		.out(INVTX1_4_out));
+	INVJIX0 INVJIX0_4_ (
+		.A(in[4]),
+		.Q(INVJIX0_4_Q));
 
-	INVTX1 INVTX1_5_ (
-		.in(in[5]),
-		.out(INVTX1_5_out));
+	INVJIX0 INVJIX0_5_ (
+		.A(in[5]),
+		.Q(INVJIX0_5_Q));
 
-	INVTX1 INVTX1_6_ (
-		.in(in[6]),
-		.out(INVTX1_6_out));
+	INVJIX0 INVJIX0_6_ (
+		.A(in[6]),
+		.Q(INVJIX0_6_Q));
 
-	INVTX1 INVTX1_7_ (
-		.in(in[7]),
-		.out(INVTX1_7_out));
+	INVJIX0 INVJIX0_7_ (
+		.A(in[7]),
+		.Q(INVJIX0_7_Q));
 
-	INVTX1 INVTX1_8_ (
-		.in(in[8]),
-		.out(INVTX1_8_out));
+	INVJIX0 INVJIX0_8_ (
+		.A(in[8]),
+		.Q(INVJIX0_8_Q));
 
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	tap_buf4 tap_buf4_0_ (
-		.in(mux_2level_tapbuf_basis_input4_mem4_2_out),
-		.out(out));
+	INVJIX4 INVJIX4_0_ (
+		.A(mux_2level_tapbuf_basis_input4_mem4_2_out),
+		.Q(out));
 
 	mux_2level_tapbuf_basis_input4_mem4 mux_l1_in_0_ (
-		.in({INVTX1_0_out, INVTX1_1_out, INVTX1_2_out, INVTX1_3_out}),
+		.in({INVJIX0_0_Q, INVJIX0_1_Q, INVJIX0_2_Q, INVJIX0_3_Q}),
 		.mem(sram[0:3]),
 		.mem_inv(sram_inv[0:3]),
 		.out(mux_2level_tapbuf_basis_input4_mem4_0_out));
 
 	mux_2level_tapbuf_basis_input4_mem4 mux_l1_in_1_ (
-		.in({INVTX1_4_out, INVTX1_5_out, INVTX1_6_out, INVTX1_7_out}),
+		.in({INVJIX0_4_Q, INVJIX0_5_Q, INVJIX0_6_Q, INVJIX0_7_Q}),
 		.mem(sram[0:3]),
 		.mem_inv(sram_inv[0:3]),
 		.out(mux_2level_tapbuf_basis_input4_mem4_1_out));
 
 	mux_2level_tapbuf_basis_input4_mem4 mux_l2_in_0_ (
-		.in({mux_2level_tapbuf_basis_input4_mem4_0_out, mux_2level_tapbuf_basis_input4_mem4_1_out, INVTX1_8_out, const1_0_const1}),
+		.in({mux_2level_tapbuf_basis_input4_mem4_0_out, mux_2level_tapbuf_basis_input4_mem4_1_out, INVJIX0_8_Q, const1_0_const1}),
 		.mem(sram[4:7]),
 		.mem_inv(sram_inv[4:7]),
 		.out(mux_2level_tapbuf_basis_input4_mem4_2_out));
@@ -708,14 +708,14 @@ output [0:0] out;
 //----- END Registered ports -----
 
 
-wire [0:0] INVTX1_0_out;
-wire [0:0] INVTX1_1_out;
-wire [0:0] INVTX1_2_out;
-wire [0:0] INVTX1_3_out;
-wire [0:0] INVTX1_4_out;
-wire [0:0] INVTX1_5_out;
-wire [0:0] INVTX1_6_out;
-wire [0:0] INVTX1_7_out;
+wire [0:0] INVJIX0_0_Q;
+wire [0:0] INVJIX0_1_Q;
+wire [0:0] INVJIX0_2_Q;
+wire [0:0] INVJIX0_3_Q;
+wire [0:0] INVJIX0_4_Q;
+wire [0:0] INVJIX0_5_Q;
+wire [0:0] INVJIX0_6_Q;
+wire [0:0] INVJIX0_7_Q;
 wire [0:0] const1_0_const1;
 wire [0:0] mux_2level_tapbuf_basis_input3_mem3_0_out;
 wire [0:0] mux_2level_tapbuf_basis_input3_mem3_1_out;
@@ -727,59 +727,59 @@ wire [0:0] mux_2level_tapbuf_basis_input3_mem3_3_out;
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	INVTX1 INVTX1_0_ (
-		.in(in[0]),
-		.out(INVTX1_0_out));
+	INVJIX0 INVJIX0_0_ (
+		.A(in[0]),
+		.Q(INVJIX0_0_Q));
 
-	INVTX1 INVTX1_1_ (
-		.in(in[1]),
-		.out(INVTX1_1_out));
+	INVJIX0 INVJIX0_1_ (
+		.A(in[1]),
+		.Q(INVJIX0_1_Q));
 
-	INVTX1 INVTX1_2_ (
-		.in(in[2]),
-		.out(INVTX1_2_out));
+	INVJIX0 INVJIX0_2_ (
+		.A(in[2]),
+		.Q(INVJIX0_2_Q));
 
-	INVTX1 INVTX1_3_ (
-		.in(in[3]),
-		.out(INVTX1_3_out));
+	INVJIX0 INVJIX0_3_ (
+		.A(in[3]),
+		.Q(INVJIX0_3_Q));
 
-	INVTX1 INVTX1_4_ (
-		.in(in[4]),
-		.out(INVTX1_4_out));
+	INVJIX0 INVJIX0_4_ (
+		.A(in[4]),
+		.Q(INVJIX0_4_Q));
 
-	INVTX1 INVTX1_5_ (
-		.in(in[5]),
-		.out(INVTX1_5_out));
+	INVJIX0 INVJIX0_5_ (
+		.A(in[5]),
+		.Q(INVJIX0_5_Q));
 
-	INVTX1 INVTX1_6_ (
-		.in(in[6]),
-		.out(INVTX1_6_out));
+	INVJIX0 INVJIX0_6_ (
+		.A(in[6]),
+		.Q(INVJIX0_6_Q));
 
-	INVTX1 INVTX1_7_ (
-		.in(in[7]),
-		.out(INVTX1_7_out));
+	INVJIX0 INVJIX0_7_ (
+		.A(in[7]),
+		.Q(INVJIX0_7_Q));
 
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	tap_buf4 tap_buf4_0_ (
-		.in(mux_2level_tapbuf_basis_input3_mem3_3_out),
-		.out(out));
+	INVJIX4 INVJIX4_0_ (
+		.A(mux_2level_tapbuf_basis_input3_mem3_3_out),
+		.Q(out));
 
 	mux_2level_tapbuf_basis_input3_mem3 mux_l1_in_0_ (
-		.in({INVTX1_0_out, INVTX1_1_out, INVTX1_2_out}),
+		.in({INVJIX0_0_Q, INVJIX0_1_Q, INVJIX0_2_Q}),
 		.mem(sram[0:2]),
 		.mem_inv(sram_inv[0:2]),
 		.out(mux_2level_tapbuf_basis_input3_mem3_0_out));
 
 	mux_2level_tapbuf_basis_input3_mem3 mux_l1_in_1_ (
-		.in({INVTX1_3_out, INVTX1_4_out, INVTX1_5_out}),
+		.in({INVJIX0_3_Q, INVJIX0_4_Q, INVJIX0_5_Q}),
 		.mem(sram[0:2]),
 		.mem_inv(sram_inv[0:2]),
 		.out(mux_2level_tapbuf_basis_input3_mem3_1_out));
 
 	mux_2level_tapbuf_basis_input3_mem3 mux_l1_in_2_ (
-		.in({INVTX1_6_out, INVTX1_7_out, const1_0_const1}),
+		.in({INVJIX0_6_Q, INVJIX0_7_Q, const1_0_const1}),
 		.mem(sram[0:2]),
 		.mem_inv(sram_inv[0:2]),
 		.out(mux_2level_tapbuf_basis_input3_mem3_2_out));
@@ -824,8 +824,8 @@ output [0:0] out;
 //----- END Registered ports -----
 
 
-wire [0:0] INVTX1_0_out;
-wire [0:0] INVTX1_1_out;
+wire [0:0] INVJIX0_0_Q;
+wire [0:0] INVJIX0_1_Q;
 wire [0:0] const1_0_const1;
 wire [0:0] mux_2level_tapbuf_basis_input2_mem1_0_out;
 wire [0:0] mux_2level_tapbuf_basis_input2_mem1_1_out;
@@ -835,23 +835,23 @@ wire [0:0] mux_2level_tapbuf_basis_input2_mem1_1_out;
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	INVTX1 INVTX1_0_ (
-		.in(in[0]),
-		.out(INVTX1_0_out));
+	INVJIX0 INVJIX0_0_ (
+		.A(in[0]),
+		.Q(INVJIX0_0_Q));
 
-	INVTX1 INVTX1_1_ (
-		.in(in[1]),
-		.out(INVTX1_1_out));
+	INVJIX0 INVJIX0_1_ (
+		.A(in[1]),
+		.Q(INVJIX0_1_Q));
 
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	tap_buf4 tap_buf4_0_ (
-		.in(mux_2level_tapbuf_basis_input2_mem1_1_out),
-		.out(out));
+	INVJIX4 INVJIX4_0_ (
+		.A(mux_2level_tapbuf_basis_input2_mem1_1_out),
+		.Q(out));
 
 	mux_2level_tapbuf_basis_input2_mem1 mux_l1_in_0_ (
-		.in({INVTX1_0_out, INVTX1_1_out}),
+		.in({INVJIX0_0_Q, INVJIX0_1_Q}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(mux_2level_tapbuf_basis_input2_mem1_0_out));
@@ -896,13 +896,13 @@ output [0:0] out;
 //----- END Registered ports -----
 
 
-wire [0:0] INVTX1_0_out;
-wire [0:0] INVTX1_1_out;
-wire [0:0] INVTX1_2_out;
-wire [0:0] INVTX1_3_out;
-wire [0:0] INVTX1_4_out;
-wire [0:0] INVTX1_5_out;
-wire [0:0] INVTX1_6_out;
+wire [0:0] INVJIX0_0_Q;
+wire [0:0] INVJIX0_1_Q;
+wire [0:0] INVJIX0_2_Q;
+wire [0:0] INVJIX0_3_Q;
+wire [0:0] INVJIX0_4_Q;
+wire [0:0] INVJIX0_5_Q;
+wire [0:0] INVJIX0_6_Q;
 wire [0:0] const1_0_const1;
 wire [0:0] mux_2level_tapbuf_basis_input2_mem2_0_out;
 wire [0:0] mux_2level_tapbuf_basis_input3_mem3_0_out;
@@ -914,49 +914,49 @@ wire [0:0] mux_2level_tapbuf_basis_input3_mem3_2_out;
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	INVTX1 INVTX1_0_ (
-		.in(in[0]),
-		.out(INVTX1_0_out));
+	INVJIX0 INVJIX0_0_ (
+		.A(in[0]),
+		.Q(INVJIX0_0_Q));
 
-	INVTX1 INVTX1_1_ (
-		.in(in[1]),
-		.out(INVTX1_1_out));
+	INVJIX0 INVJIX0_1_ (
+		.A(in[1]),
+		.Q(INVJIX0_1_Q));
 
-	INVTX1 INVTX1_2_ (
-		.in(in[2]),
-		.out(INVTX1_2_out));
+	INVJIX0 INVJIX0_2_ (
+		.A(in[2]),
+		.Q(INVJIX0_2_Q));
 
-	INVTX1 INVTX1_3_ (
-		.in(in[3]),
-		.out(INVTX1_3_out));
+	INVJIX0 INVJIX0_3_ (
+		.A(in[3]),
+		.Q(INVJIX0_3_Q));
 
-	INVTX1 INVTX1_4_ (
-		.in(in[4]),
-		.out(INVTX1_4_out));
+	INVJIX0 INVJIX0_4_ (
+		.A(in[4]),
+		.Q(INVJIX0_4_Q));
 
-	INVTX1 INVTX1_5_ (
-		.in(in[5]),
-		.out(INVTX1_5_out));
+	INVJIX0 INVJIX0_5_ (
+		.A(in[5]),
+		.Q(INVJIX0_5_Q));
 
-	INVTX1 INVTX1_6_ (
-		.in(in[6]),
-		.out(INVTX1_6_out));
+	INVJIX0 INVJIX0_6_ (
+		.A(in[6]),
+		.Q(INVJIX0_6_Q));
 
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	tap_buf4 tap_buf4_0_ (
-		.in(mux_2level_tapbuf_basis_input3_mem3_2_out),
-		.out(out));
+	INVJIX4 INVJIX4_0_ (
+		.A(mux_2level_tapbuf_basis_input3_mem3_2_out),
+		.Q(out));
 
 	mux_2level_tapbuf_basis_input3_mem3 mux_l1_in_0_ (
-		.in({INVTX1_0_out, INVTX1_1_out, INVTX1_2_out}),
+		.in({INVJIX0_0_Q, INVJIX0_1_Q, INVJIX0_2_Q}),
 		.mem(sram[0:2]),
 		.mem_inv(sram_inv[0:2]),
 		.out(mux_2level_tapbuf_basis_input3_mem3_0_out));
 
 	mux_2level_tapbuf_basis_input3_mem3 mux_l1_in_1_ (
-		.in({INVTX1_3_out, INVTX1_4_out, INVTX1_5_out}),
+		.in({INVJIX0_3_Q, INVJIX0_4_Q, INVJIX0_5_Q}),
 		.mem(sram[0:2]),
 		.mem_inv(sram_inv[0:2]),
 		.out(mux_2level_tapbuf_basis_input3_mem3_1_out));
@@ -968,7 +968,7 @@ wire [0:0] mux_2level_tapbuf_basis_input3_mem3_2_out;
 		.out(mux_2level_tapbuf_basis_input3_mem3_2_out));
 
 	mux_2level_tapbuf_basis_input2_mem2 mux_l1_in_2_ (
-		.in({INVTX1_6_out, const1_0_const1}),
+		.in({INVJIX0_6_Q, const1_0_const1}),
 		.mem(sram[0:1]),
 		.mem_inv(sram_inv[0:1]),
 		.out(mux_2level_tapbuf_basis_input2_mem2_0_out));
@@ -1007,12 +1007,12 @@ output [0:0] out;
 //----- END Registered ports -----
 
 
-wire [0:0] INVTX1_0_out;
-wire [0:0] INVTX1_1_out;
-wire [0:0] INVTX1_2_out;
-wire [0:0] INVTX1_3_out;
-wire [0:0] INVTX1_4_out;
-wire [0:0] INVTX1_5_out;
+wire [0:0] INVJIX0_0_Q;
+wire [0:0] INVJIX0_1_Q;
+wire [0:0] INVJIX0_2_Q;
+wire [0:0] INVJIX0_3_Q;
+wire [0:0] INVJIX0_4_Q;
+wire [0:0] INVJIX0_5_Q;
 wire [0:0] const1_0_const1;
 wire [0:0] mux_2level_tapbuf_basis_input3_mem3_0_out;
 wire [0:0] mux_2level_tapbuf_basis_input3_mem3_1_out;
@@ -1023,45 +1023,45 @@ wire [0:0] mux_2level_tapbuf_basis_input3_mem3_2_out;
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	INVTX1 INVTX1_0_ (
-		.in(in[0]),
-		.out(INVTX1_0_out));
+	INVJIX0 INVJIX0_0_ (
+		.A(in[0]),
+		.Q(INVJIX0_0_Q));
 
-	INVTX1 INVTX1_1_ (
-		.in(in[1]),
-		.out(INVTX1_1_out));
+	INVJIX0 INVJIX0_1_ (
+		.A(in[1]),
+		.Q(INVJIX0_1_Q));
 
-	INVTX1 INVTX1_2_ (
-		.in(in[2]),
-		.out(INVTX1_2_out));
+	INVJIX0 INVJIX0_2_ (
+		.A(in[2]),
+		.Q(INVJIX0_2_Q));
 
-	INVTX1 INVTX1_3_ (
-		.in(in[3]),
-		.out(INVTX1_3_out));
+	INVJIX0 INVJIX0_3_ (
+		.A(in[3]),
+		.Q(INVJIX0_3_Q));
 
-	INVTX1 INVTX1_4_ (
-		.in(in[4]),
-		.out(INVTX1_4_out));
+	INVJIX0 INVJIX0_4_ (
+		.A(in[4]),
+		.Q(INVJIX0_4_Q));
 
-	INVTX1 INVTX1_5_ (
-		.in(in[5]),
-		.out(INVTX1_5_out));
+	INVJIX0 INVJIX0_5_ (
+		.A(in[5]),
+		.Q(INVJIX0_5_Q));
 
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	tap_buf4 tap_buf4_0_ (
-		.in(mux_2level_tapbuf_basis_input3_mem3_2_out),
-		.out(out));
+	INVJIX4 INVJIX4_0_ (
+		.A(mux_2level_tapbuf_basis_input3_mem3_2_out),
+		.Q(out));
 
 	mux_2level_tapbuf_basis_input3_mem3 mux_l1_in_0_ (
-		.in({INVTX1_0_out, INVTX1_1_out, INVTX1_2_out}),
+		.in({INVJIX0_0_Q, INVJIX0_1_Q, INVJIX0_2_Q}),
 		.mem(sram[0:2]),
 		.mem_inv(sram_inv[0:2]),
 		.out(mux_2level_tapbuf_basis_input3_mem3_0_out));
 
 	mux_2level_tapbuf_basis_input3_mem3 mux_l1_in_1_ (
-		.in({INVTX1_3_out, INVTX1_4_out, INVTX1_5_out}),
+		.in({INVJIX0_3_Q, INVJIX0_4_Q, INVJIX0_5_Q}),
 		.mem(sram[0:2]),
 		.mem_inv(sram_inv[0:2]),
 		.out(mux_2level_tapbuf_basis_input3_mem3_1_out));
@@ -1106,10 +1106,10 @@ output [0:0] out;
 //----- END Registered ports -----
 
 
-wire [0:0] INVTX1_0_out;
-wire [0:0] INVTX1_1_out;
-wire [0:0] INVTX1_2_out;
-wire [0:0] INVTX1_3_out;
+wire [0:0] INVJIX0_0_Q;
+wire [0:0] INVJIX0_1_Q;
+wire [0:0] INVJIX0_2_Q;
+wire [0:0] INVJIX0_3_Q;
 wire [0:0] const1_0_const1;
 wire [0:0] mux_2level_tapbuf_basis_input3_mem3_0_out;
 wire [0:0] mux_2level_tapbuf_basis_input3_mem3_1_out;
@@ -1119,37 +1119,37 @@ wire [0:0] mux_2level_tapbuf_basis_input3_mem3_1_out;
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	INVTX1 INVTX1_0_ (
-		.in(in[0]),
-		.out(INVTX1_0_out));
+	INVJIX0 INVJIX0_0_ (
+		.A(in[0]),
+		.Q(INVJIX0_0_Q));
 
-	INVTX1 INVTX1_1_ (
-		.in(in[1]),
-		.out(INVTX1_1_out));
+	INVJIX0 INVJIX0_1_ (
+		.A(in[1]),
+		.Q(INVJIX0_1_Q));
 
-	INVTX1 INVTX1_2_ (
-		.in(in[2]),
-		.out(INVTX1_2_out));
+	INVJIX0 INVJIX0_2_ (
+		.A(in[2]),
+		.Q(INVJIX0_2_Q));
 
-	INVTX1 INVTX1_3_ (
-		.in(in[3]),
-		.out(INVTX1_3_out));
+	INVJIX0 INVJIX0_3_ (
+		.A(in[3]),
+		.Q(INVJIX0_3_Q));
 
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	tap_buf4 tap_buf4_0_ (
-		.in(mux_2level_tapbuf_basis_input3_mem3_1_out),
-		.out(out));
+	INVJIX4 INVJIX4_0_ (
+		.A(mux_2level_tapbuf_basis_input3_mem3_1_out),
+		.Q(out));
 
 	mux_2level_tapbuf_basis_input3_mem3 mux_l1_in_0_ (
-		.in({INVTX1_0_out, INVTX1_1_out, INVTX1_2_out}),
+		.in({INVJIX0_0_Q, INVJIX0_1_Q, INVJIX0_2_Q}),
 		.mem(sram[0:2]),
 		.mem_inv(sram_inv[0:2]),
 		.out(mux_2level_tapbuf_basis_input3_mem3_0_out));
 
 	mux_2level_tapbuf_basis_input3_mem3 mux_l2_in_0_ (
-		.in({mux_2level_tapbuf_basis_input3_mem3_0_out, INVTX1_3_out, const1_0_const1}),
+		.in({mux_2level_tapbuf_basis_input3_mem3_0_out, INVJIX0_3_Q, const1_0_const1}),
 		.mem(sram[3:5]),
 		.mem_inv(sram_inv[3:5]),
 		.out(mux_2level_tapbuf_basis_input3_mem3_1_out));
@@ -1188,18 +1188,18 @@ output [0:0] out;
 //----- END Registered ports -----
 
 
-wire [0:0] INVTX1_0_out;
-wire [0:0] INVTX1_10_out;
-wire [0:0] INVTX1_11_out;
-wire [0:0] INVTX1_1_out;
-wire [0:0] INVTX1_2_out;
-wire [0:0] INVTX1_3_out;
-wire [0:0] INVTX1_4_out;
-wire [0:0] INVTX1_5_out;
-wire [0:0] INVTX1_6_out;
-wire [0:0] INVTX1_7_out;
-wire [0:0] INVTX1_8_out;
-wire [0:0] INVTX1_9_out;
+wire [0:0] INVJIX0_0_Q;
+wire [0:0] INVJIX0_10_Q;
+wire [0:0] INVJIX0_11_Q;
+wire [0:0] INVJIX0_1_Q;
+wire [0:0] INVJIX0_2_Q;
+wire [0:0] INVJIX0_3_Q;
+wire [0:0] INVJIX0_4_Q;
+wire [0:0] INVJIX0_5_Q;
+wire [0:0] INVJIX0_6_Q;
+wire [0:0] INVJIX0_7_Q;
+wire [0:0] INVJIX0_8_Q;
+wire [0:0] INVJIX0_9_Q;
 wire [0:0] const1_0_const1;
 wire [0:0] mux_2level_tapbuf_basis_input4_mem4_0_out;
 wire [0:0] mux_2level_tapbuf_basis_input4_mem4_1_out;
@@ -1211,75 +1211,75 @@ wire [0:0] mux_2level_tapbuf_basis_input4_mem4_3_out;
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	INVTX1 INVTX1_0_ (
-		.in(in[0]),
-		.out(INVTX1_0_out));
+	INVJIX0 INVJIX0_0_ (
+		.A(in[0]),
+		.Q(INVJIX0_0_Q));
 
-	INVTX1 INVTX1_1_ (
-		.in(in[1]),
-		.out(INVTX1_1_out));
+	INVJIX0 INVJIX0_1_ (
+		.A(in[1]),
+		.Q(INVJIX0_1_Q));
 
-	INVTX1 INVTX1_2_ (
-		.in(in[2]),
-		.out(INVTX1_2_out));
+	INVJIX0 INVJIX0_2_ (
+		.A(in[2]),
+		.Q(INVJIX0_2_Q));
 
-	INVTX1 INVTX1_3_ (
-		.in(in[3]),
-		.out(INVTX1_3_out));
+	INVJIX0 INVJIX0_3_ (
+		.A(in[3]),
+		.Q(INVJIX0_3_Q));
 
-	INVTX1 INVTX1_4_ (
-		.in(in[4]),
-		.out(INVTX1_4_out));
+	INVJIX0 INVJIX0_4_ (
+		.A(in[4]),
+		.Q(INVJIX0_4_Q));
 
-	INVTX1 INVTX1_5_ (
-		.in(in[5]),
-		.out(INVTX1_5_out));
+	INVJIX0 INVJIX0_5_ (
+		.A(in[5]),
+		.Q(INVJIX0_5_Q));
 
-	INVTX1 INVTX1_6_ (
-		.in(in[6]),
-		.out(INVTX1_6_out));
+	INVJIX0 INVJIX0_6_ (
+		.A(in[6]),
+		.Q(INVJIX0_6_Q));
 
-	INVTX1 INVTX1_7_ (
-		.in(in[7]),
-		.out(INVTX1_7_out));
+	INVJIX0 INVJIX0_7_ (
+		.A(in[7]),
+		.Q(INVJIX0_7_Q));
 
-	INVTX1 INVTX1_8_ (
-		.in(in[8]),
-		.out(INVTX1_8_out));
+	INVJIX0 INVJIX0_8_ (
+		.A(in[8]),
+		.Q(INVJIX0_8_Q));
 
-	INVTX1 INVTX1_9_ (
-		.in(in[9]),
-		.out(INVTX1_9_out));
+	INVJIX0 INVJIX0_9_ (
+		.A(in[9]),
+		.Q(INVJIX0_9_Q));
 
-	INVTX1 INVTX1_10_ (
-		.in(in[10]),
-		.out(INVTX1_10_out));
+	INVJIX0 INVJIX0_10_ (
+		.A(in[10]),
+		.Q(INVJIX0_10_Q));
 
-	INVTX1 INVTX1_11_ (
-		.in(in[11]),
-		.out(INVTX1_11_out));
+	INVJIX0 INVJIX0_11_ (
+		.A(in[11]),
+		.Q(INVJIX0_11_Q));
 
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	tap_buf4 tap_buf4_0_ (
-		.in(mux_2level_tapbuf_basis_input4_mem4_3_out),
-		.out(out));
+	INVJIX4 INVJIX4_0_ (
+		.A(mux_2level_tapbuf_basis_input4_mem4_3_out),
+		.Q(out));
 
 	mux_2level_tapbuf_basis_input4_mem4 mux_l1_in_0_ (
-		.in({INVTX1_0_out, INVTX1_1_out, INVTX1_2_out, INVTX1_3_out}),
+		.in({INVJIX0_0_Q, INVJIX0_1_Q, INVJIX0_2_Q, INVJIX0_3_Q}),
 		.mem(sram[0:3]),
 		.mem_inv(sram_inv[0:3]),
 		.out(mux_2level_tapbuf_basis_input4_mem4_0_out));
 
 	mux_2level_tapbuf_basis_input4_mem4 mux_l1_in_1_ (
-		.in({INVTX1_4_out, INVTX1_5_out, INVTX1_6_out, INVTX1_7_out}),
+		.in({INVJIX0_4_Q, INVJIX0_5_Q, INVJIX0_6_Q, INVJIX0_7_Q}),
 		.mem(sram[0:3]),
 		.mem_inv(sram_inv[0:3]),
 		.out(mux_2level_tapbuf_basis_input4_mem4_1_out));
 
 	mux_2level_tapbuf_basis_input4_mem4 mux_l1_in_2_ (
-		.in({INVTX1_8_out, INVTX1_9_out, INVTX1_10_out, INVTX1_11_out}),
+		.in({INVJIX0_8_Q, INVJIX0_9_Q, INVJIX0_10_Q, INVJIX0_11_Q}),
 		.mem(sram[0:3]),
 		.mem_inv(sram_inv[0:3]),
 		.out(mux_2level_tapbuf_basis_input4_mem4_2_out));
@@ -1324,19 +1324,19 @@ output [0:0] out;
 //----- END Registered ports -----
 
 
-wire [0:0] INVTX1_0_out;
-wire [0:0] INVTX1_10_out;
-wire [0:0] INVTX1_11_out;
-wire [0:0] INVTX1_12_out;
-wire [0:0] INVTX1_1_out;
-wire [0:0] INVTX1_2_out;
-wire [0:0] INVTX1_3_out;
-wire [0:0] INVTX1_4_out;
-wire [0:0] INVTX1_5_out;
-wire [0:0] INVTX1_6_out;
-wire [0:0] INVTX1_7_out;
-wire [0:0] INVTX1_8_out;
-wire [0:0] INVTX1_9_out;
+wire [0:0] INVJIX0_0_Q;
+wire [0:0] INVJIX0_10_Q;
+wire [0:0] INVJIX0_11_Q;
+wire [0:0] INVJIX0_12_Q;
+wire [0:0] INVJIX0_1_Q;
+wire [0:0] INVJIX0_2_Q;
+wire [0:0] INVJIX0_3_Q;
+wire [0:0] INVJIX0_4_Q;
+wire [0:0] INVJIX0_5_Q;
+wire [0:0] INVJIX0_6_Q;
+wire [0:0] INVJIX0_7_Q;
+wire [0:0] INVJIX0_8_Q;
+wire [0:0] INVJIX0_9_Q;
 wire [0:0] const1_0_const1;
 wire [0:0] mux_2level_tapbuf_basis_input2_mem2_0_out;
 wire [0:0] mux_2level_tapbuf_basis_input4_mem4_0_out;
@@ -1349,79 +1349,79 @@ wire [0:0] mux_2level_tapbuf_basis_input4_mem4_3_out;
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	INVTX1 INVTX1_0_ (
-		.in(in[0]),
-		.out(INVTX1_0_out));
+	INVJIX0 INVJIX0_0_ (
+		.A(in[0]),
+		.Q(INVJIX0_0_Q));
 
-	INVTX1 INVTX1_1_ (
-		.in(in[1]),
-		.out(INVTX1_1_out));
+	INVJIX0 INVJIX0_1_ (
+		.A(in[1]),
+		.Q(INVJIX0_1_Q));
 
-	INVTX1 INVTX1_2_ (
-		.in(in[2]),
-		.out(INVTX1_2_out));
+	INVJIX0 INVJIX0_2_ (
+		.A(in[2]),
+		.Q(INVJIX0_2_Q));
 
-	INVTX1 INVTX1_3_ (
-		.in(in[3]),
-		.out(INVTX1_3_out));
+	INVJIX0 INVJIX0_3_ (
+		.A(in[3]),
+		.Q(INVJIX0_3_Q));
 
-	INVTX1 INVTX1_4_ (
-		.in(in[4]),
-		.out(INVTX1_4_out));
+	INVJIX0 INVJIX0_4_ (
+		.A(in[4]),
+		.Q(INVJIX0_4_Q));
 
-	INVTX1 INVTX1_5_ (
-		.in(in[5]),
-		.out(INVTX1_5_out));
+	INVJIX0 INVJIX0_5_ (
+		.A(in[5]),
+		.Q(INVJIX0_5_Q));
 
-	INVTX1 INVTX1_6_ (
-		.in(in[6]),
-		.out(INVTX1_6_out));
+	INVJIX0 INVJIX0_6_ (
+		.A(in[6]),
+		.Q(INVJIX0_6_Q));
 
-	INVTX1 INVTX1_7_ (
-		.in(in[7]),
-		.out(INVTX1_7_out));
+	INVJIX0 INVJIX0_7_ (
+		.A(in[7]),
+		.Q(INVJIX0_7_Q));
 
-	INVTX1 INVTX1_8_ (
-		.in(in[8]),
-		.out(INVTX1_8_out));
+	INVJIX0 INVJIX0_8_ (
+		.A(in[8]),
+		.Q(INVJIX0_8_Q));
 
-	INVTX1 INVTX1_9_ (
-		.in(in[9]),
-		.out(INVTX1_9_out));
+	INVJIX0 INVJIX0_9_ (
+		.A(in[9]),
+		.Q(INVJIX0_9_Q));
 
-	INVTX1 INVTX1_10_ (
-		.in(in[10]),
-		.out(INVTX1_10_out));
+	INVJIX0 INVJIX0_10_ (
+		.A(in[10]),
+		.Q(INVJIX0_10_Q));
 
-	INVTX1 INVTX1_11_ (
-		.in(in[11]),
-		.out(INVTX1_11_out));
+	INVJIX0 INVJIX0_11_ (
+		.A(in[11]),
+		.Q(INVJIX0_11_Q));
 
-	INVTX1 INVTX1_12_ (
-		.in(in[12]),
-		.out(INVTX1_12_out));
+	INVJIX0 INVJIX0_12_ (
+		.A(in[12]),
+		.Q(INVJIX0_12_Q));
 
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	tap_buf4 tap_buf4_0_ (
-		.in(mux_2level_tapbuf_basis_input4_mem4_3_out),
-		.out(out));
+	INVJIX4 INVJIX4_0_ (
+		.A(mux_2level_tapbuf_basis_input4_mem4_3_out),
+		.Q(out));
 
 	mux_2level_tapbuf_basis_input4_mem4 mux_l1_in_0_ (
-		.in({INVTX1_0_out, INVTX1_1_out, INVTX1_2_out, INVTX1_3_out}),
+		.in({INVJIX0_0_Q, INVJIX0_1_Q, INVJIX0_2_Q, INVJIX0_3_Q}),
 		.mem(sram[0:3]),
 		.mem_inv(sram_inv[0:3]),
 		.out(mux_2level_tapbuf_basis_input4_mem4_0_out));
 
 	mux_2level_tapbuf_basis_input4_mem4 mux_l1_in_1_ (
-		.in({INVTX1_4_out, INVTX1_5_out, INVTX1_6_out, INVTX1_7_out}),
+		.in({INVJIX0_4_Q, INVJIX0_5_Q, INVJIX0_6_Q, INVJIX0_7_Q}),
 		.mem(sram[0:3]),
 		.mem_inv(sram_inv[0:3]),
 		.out(mux_2level_tapbuf_basis_input4_mem4_1_out));
 
 	mux_2level_tapbuf_basis_input4_mem4 mux_l1_in_2_ (
-		.in({INVTX1_8_out, INVTX1_9_out, INVTX1_10_out, INVTX1_11_out}),
+		.in({INVJIX0_8_Q, INVJIX0_9_Q, INVJIX0_10_Q, INVJIX0_11_Q}),
 		.mem(sram[0:3]),
 		.mem_inv(sram_inv[0:3]),
 		.out(mux_2level_tapbuf_basis_input4_mem4_2_out));
@@ -1433,7 +1433,7 @@ wire [0:0] mux_2level_tapbuf_basis_input4_mem4_3_out;
 		.out(mux_2level_tapbuf_basis_input4_mem4_3_out));
 
 	mux_2level_tapbuf_basis_input2_mem2 mux_l1_in_3_ (
-		.in({INVTX1_12_out, const1_0_const1}),
+		.in({INVJIX0_12_Q, const1_0_const1}),
 		.mem(sram[0:1]),
 		.mem_inv(sram_inv[0:1]),
 		.out(mux_2level_tapbuf_basis_input2_mem2_0_out));
@@ -1472,17 +1472,17 @@ output [0:0] out;
 //----- END Registered ports -----
 
 
-wire [0:0] INVTX1_0_out;
-wire [0:0] INVTX1_10_out;
-wire [0:0] INVTX1_1_out;
-wire [0:0] INVTX1_2_out;
-wire [0:0] INVTX1_3_out;
-wire [0:0] INVTX1_4_out;
-wire [0:0] INVTX1_5_out;
-wire [0:0] INVTX1_6_out;
-wire [0:0] INVTX1_7_out;
-wire [0:0] INVTX1_8_out;
-wire [0:0] INVTX1_9_out;
+wire [0:0] INVJIX0_0_Q;
+wire [0:0] INVJIX0_10_Q;
+wire [0:0] INVJIX0_1_Q;
+wire [0:0] INVJIX0_2_Q;
+wire [0:0] INVJIX0_3_Q;
+wire [0:0] INVJIX0_4_Q;
+wire [0:0] INVJIX0_5_Q;
+wire [0:0] INVJIX0_6_Q;
+wire [0:0] INVJIX0_7_Q;
+wire [0:0] INVJIX0_8_Q;
+wire [0:0] INVJIX0_9_Q;
 wire [0:0] const1_0_const1;
 wire [0:0] mux_2level_tapbuf_basis_input3_mem3_0_out;
 wire [0:0] mux_2level_tapbuf_basis_input4_mem4_0_out;
@@ -1494,65 +1494,65 @@ wire [0:0] mux_2level_tapbuf_basis_input4_mem4_2_out;
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	INVTX1 INVTX1_0_ (
-		.in(in[0]),
-		.out(INVTX1_0_out));
+	INVJIX0 INVJIX0_0_ (
+		.A(in[0]),
+		.Q(INVJIX0_0_Q));
 
-	INVTX1 INVTX1_1_ (
-		.in(in[1]),
-		.out(INVTX1_1_out));
+	INVJIX0 INVJIX0_1_ (
+		.A(in[1]),
+		.Q(INVJIX0_1_Q));
 
-	INVTX1 INVTX1_2_ (
-		.in(in[2]),
-		.out(INVTX1_2_out));
+	INVJIX0 INVJIX0_2_ (
+		.A(in[2]),
+		.Q(INVJIX0_2_Q));
 
-	INVTX1 INVTX1_3_ (
-		.in(in[3]),
-		.out(INVTX1_3_out));
+	INVJIX0 INVJIX0_3_ (
+		.A(in[3]),
+		.Q(INVJIX0_3_Q));
 
-	INVTX1 INVTX1_4_ (
-		.in(in[4]),
-		.out(INVTX1_4_out));
+	INVJIX0 INVJIX0_4_ (
+		.A(in[4]),
+		.Q(INVJIX0_4_Q));
 
-	INVTX1 INVTX1_5_ (
-		.in(in[5]),
-		.out(INVTX1_5_out));
+	INVJIX0 INVJIX0_5_ (
+		.A(in[5]),
+		.Q(INVJIX0_5_Q));
 
-	INVTX1 INVTX1_6_ (
-		.in(in[6]),
-		.out(INVTX1_6_out));
+	INVJIX0 INVJIX0_6_ (
+		.A(in[6]),
+		.Q(INVJIX0_6_Q));
 
-	INVTX1 INVTX1_7_ (
-		.in(in[7]),
-		.out(INVTX1_7_out));
+	INVJIX0 INVJIX0_7_ (
+		.A(in[7]),
+		.Q(INVJIX0_7_Q));
 
-	INVTX1 INVTX1_8_ (
-		.in(in[8]),
-		.out(INVTX1_8_out));
+	INVJIX0 INVJIX0_8_ (
+		.A(in[8]),
+		.Q(INVJIX0_8_Q));
 
-	INVTX1 INVTX1_9_ (
-		.in(in[9]),
-		.out(INVTX1_9_out));
+	INVJIX0 INVJIX0_9_ (
+		.A(in[9]),
+		.Q(INVJIX0_9_Q));
 
-	INVTX1 INVTX1_10_ (
-		.in(in[10]),
-		.out(INVTX1_10_out));
+	INVJIX0 INVJIX0_10_ (
+		.A(in[10]),
+		.Q(INVJIX0_10_Q));
 
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	tap_buf4 tap_buf4_0_ (
-		.in(mux_2level_tapbuf_basis_input4_mem4_2_out),
-		.out(out));
+	INVJIX4 INVJIX4_0_ (
+		.A(mux_2level_tapbuf_basis_input4_mem4_2_out),
+		.Q(out));
 
 	mux_2level_tapbuf_basis_input4_mem4 mux_l1_in_0_ (
-		.in({INVTX1_0_out, INVTX1_1_out, INVTX1_2_out, INVTX1_3_out}),
+		.in({INVJIX0_0_Q, INVJIX0_1_Q, INVJIX0_2_Q, INVJIX0_3_Q}),
 		.mem(sram[0:3]),
 		.mem_inv(sram_inv[0:3]),
 		.out(mux_2level_tapbuf_basis_input4_mem4_0_out));
 
 	mux_2level_tapbuf_basis_input4_mem4 mux_l1_in_1_ (
-		.in({INVTX1_4_out, INVTX1_5_out, INVTX1_6_out, INVTX1_7_out}),
+		.in({INVJIX0_4_Q, INVJIX0_5_Q, INVJIX0_6_Q, INVJIX0_7_Q}),
 		.mem(sram[0:3]),
 		.mem_inv(sram_inv[0:3]),
 		.out(mux_2level_tapbuf_basis_input4_mem4_1_out));
@@ -1564,7 +1564,7 @@ wire [0:0] mux_2level_tapbuf_basis_input4_mem4_2_out;
 		.out(mux_2level_tapbuf_basis_input4_mem4_2_out));
 
 	mux_2level_tapbuf_basis_input3_mem3 mux_l1_in_2_ (
-		.in({INVTX1_8_out, INVTX1_9_out, INVTX1_10_out}),
+		.in({INVJIX0_8_Q, INVJIX0_9_Q, INVJIX0_10_Q}),
 		.mem(sram[0:2]),
 		.mem_inv(sram_inv[0:2]),
 		.out(mux_2level_tapbuf_basis_input3_mem3_0_out));
@@ -1603,11 +1603,11 @@ output [0:0] out;
 //----- END Registered ports -----
 
 
-wire [0:0] INVTX1_0_out;
-wire [0:0] INVTX1_1_out;
-wire [0:0] INVTX1_2_out;
-wire [0:0] INVTX1_3_out;
-wire [0:0] INVTX1_4_out;
+wire [0:0] INVJIX0_0_Q;
+wire [0:0] INVJIX0_1_Q;
+wire [0:0] INVJIX0_2_Q;
+wire [0:0] INVJIX0_3_Q;
+wire [0:0] INVJIX0_4_Q;
 wire [0:0] const1_0_const1;
 wire [0:0] mux_2level_tapbuf_basis_input2_mem2_0_out;
 wire [0:0] mux_2level_tapbuf_basis_input3_mem3_0_out;
@@ -1618,35 +1618,35 @@ wire [0:0] mux_2level_tapbuf_basis_input3_mem3_1_out;
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	INVTX1 INVTX1_0_ (
-		.in(in[0]),
-		.out(INVTX1_0_out));
+	INVJIX0 INVJIX0_0_ (
+		.A(in[0]),
+		.Q(INVJIX0_0_Q));
 
-	INVTX1 INVTX1_1_ (
-		.in(in[1]),
-		.out(INVTX1_1_out));
+	INVJIX0 INVJIX0_1_ (
+		.A(in[1]),
+		.Q(INVJIX0_1_Q));
 
-	INVTX1 INVTX1_2_ (
-		.in(in[2]),
-		.out(INVTX1_2_out));
+	INVJIX0 INVJIX0_2_ (
+		.A(in[2]),
+		.Q(INVJIX0_2_Q));
 
-	INVTX1 INVTX1_3_ (
-		.in(in[3]),
-		.out(INVTX1_3_out));
+	INVJIX0 INVJIX0_3_ (
+		.A(in[3]),
+		.Q(INVJIX0_3_Q));
 
-	INVTX1 INVTX1_4_ (
-		.in(in[4]),
-		.out(INVTX1_4_out));
+	INVJIX0 INVJIX0_4_ (
+		.A(in[4]),
+		.Q(INVJIX0_4_Q));
 
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	tap_buf4 tap_buf4_0_ (
-		.in(mux_2level_tapbuf_basis_input3_mem3_1_out),
-		.out(out));
+	INVJIX4 INVJIX4_0_ (
+		.A(mux_2level_tapbuf_basis_input3_mem3_1_out),
+		.Q(out));
 
 	mux_2level_tapbuf_basis_input3_mem3 mux_l1_in_0_ (
-		.in({INVTX1_0_out, INVTX1_1_out, INVTX1_2_out}),
+		.in({INVJIX0_0_Q, INVJIX0_1_Q, INVJIX0_2_Q}),
 		.mem(sram[0:2]),
 		.mem_inv(sram_inv[0:2]),
 		.out(mux_2level_tapbuf_basis_input3_mem3_0_out));
@@ -1658,7 +1658,7 @@ wire [0:0] mux_2level_tapbuf_basis_input3_mem3_1_out;
 		.out(mux_2level_tapbuf_basis_input3_mem3_1_out));
 
 	mux_2level_tapbuf_basis_input2_mem2 mux_l1_in_1_ (
-		.in({INVTX1_3_out, INVTX1_4_out}),
+		.in({INVJIX0_3_Q, INVJIX0_4_Q}),
 		.mem(sram[0:1]),
 		.mem_inv(sram_inv[0:1]),
 		.out(mux_2level_tapbuf_basis_input2_mem2_0_out));
@@ -1697,20 +1697,20 @@ output [0:0] out;
 //----- END Registered ports -----
 
 
-wire [0:0] INVTX1_0_out;
-wire [0:0] INVTX1_10_out;
-wire [0:0] INVTX1_11_out;
-wire [0:0] INVTX1_12_out;
-wire [0:0] INVTX1_13_out;
-wire [0:0] INVTX1_1_out;
-wire [0:0] INVTX1_2_out;
-wire [0:0] INVTX1_3_out;
-wire [0:0] INVTX1_4_out;
-wire [0:0] INVTX1_5_out;
-wire [0:0] INVTX1_6_out;
-wire [0:0] INVTX1_7_out;
-wire [0:0] INVTX1_8_out;
-wire [0:0] INVTX1_9_out;
+wire [0:0] INVJIX0_0_Q;
+wire [0:0] INVJIX0_10_Q;
+wire [0:0] INVJIX0_11_Q;
+wire [0:0] INVJIX0_12_Q;
+wire [0:0] INVJIX0_13_Q;
+wire [0:0] INVJIX0_1_Q;
+wire [0:0] INVJIX0_2_Q;
+wire [0:0] INVJIX0_3_Q;
+wire [0:0] INVJIX0_4_Q;
+wire [0:0] INVJIX0_5_Q;
+wire [0:0] INVJIX0_6_Q;
+wire [0:0] INVJIX0_7_Q;
+wire [0:0] INVJIX0_8_Q;
+wire [0:0] INVJIX0_9_Q;
 wire [0:0] const1_0_const1;
 wire [0:0] mux_2level_tapbuf_basis_input3_mem3_0_out;
 wire [0:0] mux_2level_tapbuf_basis_input4_mem4_0_out;
@@ -1723,83 +1723,83 @@ wire [0:0] mux_2level_tapbuf_basis_input4_mem4_3_out;
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	INVTX1 INVTX1_0_ (
-		.in(in[0]),
-		.out(INVTX1_0_out));
+	INVJIX0 INVJIX0_0_ (
+		.A(in[0]),
+		.Q(INVJIX0_0_Q));
 
-	INVTX1 INVTX1_1_ (
-		.in(in[1]),
-		.out(INVTX1_1_out));
+	INVJIX0 INVJIX0_1_ (
+		.A(in[1]),
+		.Q(INVJIX0_1_Q));
 
-	INVTX1 INVTX1_2_ (
-		.in(in[2]),
-		.out(INVTX1_2_out));
+	INVJIX0 INVJIX0_2_ (
+		.A(in[2]),
+		.Q(INVJIX0_2_Q));
 
-	INVTX1 INVTX1_3_ (
-		.in(in[3]),
-		.out(INVTX1_3_out));
+	INVJIX0 INVJIX0_3_ (
+		.A(in[3]),
+		.Q(INVJIX0_3_Q));
 
-	INVTX1 INVTX1_4_ (
-		.in(in[4]),
-		.out(INVTX1_4_out));
+	INVJIX0 INVJIX0_4_ (
+		.A(in[4]),
+		.Q(INVJIX0_4_Q));
 
-	INVTX1 INVTX1_5_ (
-		.in(in[5]),
-		.out(INVTX1_5_out));
+	INVJIX0 INVJIX0_5_ (
+		.A(in[5]),
+		.Q(INVJIX0_5_Q));
 
-	INVTX1 INVTX1_6_ (
-		.in(in[6]),
-		.out(INVTX1_6_out));
+	INVJIX0 INVJIX0_6_ (
+		.A(in[6]),
+		.Q(INVJIX0_6_Q));
 
-	INVTX1 INVTX1_7_ (
-		.in(in[7]),
-		.out(INVTX1_7_out));
+	INVJIX0 INVJIX0_7_ (
+		.A(in[7]),
+		.Q(INVJIX0_7_Q));
 
-	INVTX1 INVTX1_8_ (
-		.in(in[8]),
-		.out(INVTX1_8_out));
+	INVJIX0 INVJIX0_8_ (
+		.A(in[8]),
+		.Q(INVJIX0_8_Q));
 
-	INVTX1 INVTX1_9_ (
-		.in(in[9]),
-		.out(INVTX1_9_out));
+	INVJIX0 INVJIX0_9_ (
+		.A(in[9]),
+		.Q(INVJIX0_9_Q));
 
-	INVTX1 INVTX1_10_ (
-		.in(in[10]),
-		.out(INVTX1_10_out));
+	INVJIX0 INVJIX0_10_ (
+		.A(in[10]),
+		.Q(INVJIX0_10_Q));
 
-	INVTX1 INVTX1_11_ (
-		.in(in[11]),
-		.out(INVTX1_11_out));
+	INVJIX0 INVJIX0_11_ (
+		.A(in[11]),
+		.Q(INVJIX0_11_Q));
 
-	INVTX1 INVTX1_12_ (
-		.in(in[12]),
-		.out(INVTX1_12_out));
+	INVJIX0 INVJIX0_12_ (
+		.A(in[12]),
+		.Q(INVJIX0_12_Q));
 
-	INVTX1 INVTX1_13_ (
-		.in(in[13]),
-		.out(INVTX1_13_out));
+	INVJIX0 INVJIX0_13_ (
+		.A(in[13]),
+		.Q(INVJIX0_13_Q));
 
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	tap_buf4 tap_buf4_0_ (
-		.in(mux_2level_tapbuf_basis_input4_mem4_3_out),
-		.out(out));
+	INVJIX4 INVJIX4_0_ (
+		.A(mux_2level_tapbuf_basis_input4_mem4_3_out),
+		.Q(out));
 
 	mux_2level_tapbuf_basis_input4_mem4 mux_l1_in_0_ (
-		.in({INVTX1_0_out, INVTX1_1_out, INVTX1_2_out, INVTX1_3_out}),
+		.in({INVJIX0_0_Q, INVJIX0_1_Q, INVJIX0_2_Q, INVJIX0_3_Q}),
 		.mem(sram[0:3]),
 		.mem_inv(sram_inv[0:3]),
 		.out(mux_2level_tapbuf_basis_input4_mem4_0_out));
 
 	mux_2level_tapbuf_basis_input4_mem4 mux_l1_in_1_ (
-		.in({INVTX1_4_out, INVTX1_5_out, INVTX1_6_out, INVTX1_7_out}),
+		.in({INVJIX0_4_Q, INVJIX0_5_Q, INVJIX0_6_Q, INVJIX0_7_Q}),
 		.mem(sram[0:3]),
 		.mem_inv(sram_inv[0:3]),
 		.out(mux_2level_tapbuf_basis_input4_mem4_1_out));
 
 	mux_2level_tapbuf_basis_input4_mem4 mux_l1_in_2_ (
-		.in({INVTX1_8_out, INVTX1_9_out, INVTX1_10_out, INVTX1_11_out}),
+		.in({INVJIX0_8_Q, INVJIX0_9_Q, INVJIX0_10_Q, INVJIX0_11_Q}),
 		.mem(sram[0:3]),
 		.mem_inv(sram_inv[0:3]),
 		.out(mux_2level_tapbuf_basis_input4_mem4_2_out));
@@ -1811,7 +1811,7 @@ wire [0:0] mux_2level_tapbuf_basis_input4_mem4_3_out;
 		.out(mux_2level_tapbuf_basis_input4_mem4_3_out));
 
 	mux_2level_tapbuf_basis_input3_mem3 mux_l1_in_3_ (
-		.in({INVTX1_12_out, INVTX1_13_out, const1_0_const1}),
+		.in({INVJIX0_12_Q, INVJIX0_13_Q, const1_0_const1}),
 		.mem(sram[0:2]),
 		.mem_inv(sram_inv[0:2]),
 		.out(mux_2level_tapbuf_basis_input3_mem3_0_out));
@@ -1850,66 +1850,66 @@ output [0:0] out;
 //----- END Registered ports -----
 
 
-wire [0:0] INVTX1_0_out;
-wire [0:0] INVTX1_10_out;
-wire [0:0] INVTX1_11_out;
-wire [0:0] INVTX1_12_out;
-wire [0:0] INVTX1_13_out;
-wire [0:0] INVTX1_14_out;
-wire [0:0] INVTX1_15_out;
-wire [0:0] INVTX1_16_out;
-wire [0:0] INVTX1_17_out;
-wire [0:0] INVTX1_18_out;
-wire [0:0] INVTX1_19_out;
-wire [0:0] INVTX1_1_out;
-wire [0:0] INVTX1_20_out;
-wire [0:0] INVTX1_21_out;
-wire [0:0] INVTX1_22_out;
-wire [0:0] INVTX1_23_out;
-wire [0:0] INVTX1_24_out;
-wire [0:0] INVTX1_25_out;
-wire [0:0] INVTX1_26_out;
-wire [0:0] INVTX1_27_out;
-wire [0:0] INVTX1_28_out;
-wire [0:0] INVTX1_29_out;
-wire [0:0] INVTX1_2_out;
-wire [0:0] INVTX1_30_out;
-wire [0:0] INVTX1_31_out;
-wire [0:0] INVTX1_32_out;
-wire [0:0] INVTX1_33_out;
-wire [0:0] INVTX1_34_out;
-wire [0:0] INVTX1_35_out;
-wire [0:0] INVTX1_36_out;
-wire [0:0] INVTX1_37_out;
-wire [0:0] INVTX1_38_out;
-wire [0:0] INVTX1_39_out;
-wire [0:0] INVTX1_3_out;
-wire [0:0] INVTX1_40_out;
-wire [0:0] INVTX1_41_out;
-wire [0:0] INVTX1_42_out;
-wire [0:0] INVTX1_43_out;
-wire [0:0] INVTX1_44_out;
-wire [0:0] INVTX1_45_out;
-wire [0:0] INVTX1_46_out;
-wire [0:0] INVTX1_47_out;
-wire [0:0] INVTX1_48_out;
-wire [0:0] INVTX1_49_out;
-wire [0:0] INVTX1_4_out;
-wire [0:0] INVTX1_50_out;
-wire [0:0] INVTX1_51_out;
-wire [0:0] INVTX1_52_out;
-wire [0:0] INVTX1_53_out;
-wire [0:0] INVTX1_54_out;
-wire [0:0] INVTX1_55_out;
-wire [0:0] INVTX1_56_out;
-wire [0:0] INVTX1_57_out;
-wire [0:0] INVTX1_58_out;
-wire [0:0] INVTX1_59_out;
-wire [0:0] INVTX1_5_out;
-wire [0:0] INVTX1_6_out;
-wire [0:0] INVTX1_7_out;
-wire [0:0] INVTX1_8_out;
-wire [0:0] INVTX1_9_out;
+wire [0:0] INVJIX0_0_Q;
+wire [0:0] INVJIX0_10_Q;
+wire [0:0] INVJIX0_11_Q;
+wire [0:0] INVJIX0_12_Q;
+wire [0:0] INVJIX0_13_Q;
+wire [0:0] INVJIX0_14_Q;
+wire [0:0] INVJIX0_15_Q;
+wire [0:0] INVJIX0_16_Q;
+wire [0:0] INVJIX0_17_Q;
+wire [0:0] INVJIX0_18_Q;
+wire [0:0] INVJIX0_19_Q;
+wire [0:0] INVJIX0_1_Q;
+wire [0:0] INVJIX0_20_Q;
+wire [0:0] INVJIX0_21_Q;
+wire [0:0] INVJIX0_22_Q;
+wire [0:0] INVJIX0_23_Q;
+wire [0:0] INVJIX0_24_Q;
+wire [0:0] INVJIX0_25_Q;
+wire [0:0] INVJIX0_26_Q;
+wire [0:0] INVJIX0_27_Q;
+wire [0:0] INVJIX0_28_Q;
+wire [0:0] INVJIX0_29_Q;
+wire [0:0] INVJIX0_2_Q;
+wire [0:0] INVJIX0_30_Q;
+wire [0:0] INVJIX0_31_Q;
+wire [0:0] INVJIX0_32_Q;
+wire [0:0] INVJIX0_33_Q;
+wire [0:0] INVJIX0_34_Q;
+wire [0:0] INVJIX0_35_Q;
+wire [0:0] INVJIX0_36_Q;
+wire [0:0] INVJIX0_37_Q;
+wire [0:0] INVJIX0_38_Q;
+wire [0:0] INVJIX0_39_Q;
+wire [0:0] INVJIX0_3_Q;
+wire [0:0] INVJIX0_40_Q;
+wire [0:0] INVJIX0_41_Q;
+wire [0:0] INVJIX0_42_Q;
+wire [0:0] INVJIX0_43_Q;
+wire [0:0] INVJIX0_44_Q;
+wire [0:0] INVJIX0_45_Q;
+wire [0:0] INVJIX0_46_Q;
+wire [0:0] INVJIX0_47_Q;
+wire [0:0] INVJIX0_48_Q;
+wire [0:0] INVJIX0_49_Q;
+wire [0:0] INVJIX0_4_Q;
+wire [0:0] INVJIX0_50_Q;
+wire [0:0] INVJIX0_51_Q;
+wire [0:0] INVJIX0_52_Q;
+wire [0:0] INVJIX0_53_Q;
+wire [0:0] INVJIX0_54_Q;
+wire [0:0] INVJIX0_55_Q;
+wire [0:0] INVJIX0_56_Q;
+wire [0:0] INVJIX0_57_Q;
+wire [0:0] INVJIX0_58_Q;
+wire [0:0] INVJIX0_59_Q;
+wire [0:0] INVJIX0_5_Q;
+wire [0:0] INVJIX0_6_Q;
+wire [0:0] INVJIX0_7_Q;
+wire [0:0] INVJIX0_8_Q;
+wire [0:0] INVJIX0_9_Q;
 wire [0:0] const1_0_const1;
 wire [0:0] mux_2level_basis_input5_mem5_0_out;
 wire [0:0] mux_2level_basis_input8_mem8_0_out;
@@ -1926,291 +1926,291 @@ wire [0:0] mux_2level_basis_input8_mem8_7_out;
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	INVTX1 INVTX1_0_ (
-		.in(in[0]),
-		.out(INVTX1_0_out));
+	INVJIX0 INVJIX0_0_ (
+		.A(in[0]),
+		.Q(INVJIX0_0_Q));
 
-	INVTX1 INVTX1_1_ (
-		.in(in[1]),
-		.out(INVTX1_1_out));
+	INVJIX0 INVJIX0_1_ (
+		.A(in[1]),
+		.Q(INVJIX0_1_Q));
 
-	INVTX1 INVTX1_2_ (
-		.in(in[2]),
-		.out(INVTX1_2_out));
+	INVJIX0 INVJIX0_2_ (
+		.A(in[2]),
+		.Q(INVJIX0_2_Q));
 
-	INVTX1 INVTX1_3_ (
-		.in(in[3]),
-		.out(INVTX1_3_out));
+	INVJIX0 INVJIX0_3_ (
+		.A(in[3]),
+		.Q(INVJIX0_3_Q));
 
-	INVTX1 INVTX1_4_ (
-		.in(in[4]),
-		.out(INVTX1_4_out));
+	INVJIX0 INVJIX0_4_ (
+		.A(in[4]),
+		.Q(INVJIX0_4_Q));
 
-	INVTX1 INVTX1_5_ (
-		.in(in[5]),
-		.out(INVTX1_5_out));
+	INVJIX0 INVJIX0_5_ (
+		.A(in[5]),
+		.Q(INVJIX0_5_Q));
 
-	INVTX1 INVTX1_6_ (
-		.in(in[6]),
-		.out(INVTX1_6_out));
+	INVJIX0 INVJIX0_6_ (
+		.A(in[6]),
+		.Q(INVJIX0_6_Q));
 
-	INVTX1 INVTX1_7_ (
-		.in(in[7]),
-		.out(INVTX1_7_out));
+	INVJIX0 INVJIX0_7_ (
+		.A(in[7]),
+		.Q(INVJIX0_7_Q));
 
-	INVTX1 INVTX1_8_ (
-		.in(in[8]),
-		.out(INVTX1_8_out));
+	INVJIX0 INVJIX0_8_ (
+		.A(in[8]),
+		.Q(INVJIX0_8_Q));
 
-	INVTX1 INVTX1_9_ (
-		.in(in[9]),
-		.out(INVTX1_9_out));
+	INVJIX0 INVJIX0_9_ (
+		.A(in[9]),
+		.Q(INVJIX0_9_Q));
 
-	INVTX1 INVTX1_10_ (
-		.in(in[10]),
-		.out(INVTX1_10_out));
+	INVJIX0 INVJIX0_10_ (
+		.A(in[10]),
+		.Q(INVJIX0_10_Q));
 
-	INVTX1 INVTX1_11_ (
-		.in(in[11]),
-		.out(INVTX1_11_out));
+	INVJIX0 INVJIX0_11_ (
+		.A(in[11]),
+		.Q(INVJIX0_11_Q));
 
-	INVTX1 INVTX1_12_ (
-		.in(in[12]),
-		.out(INVTX1_12_out));
+	INVJIX0 INVJIX0_12_ (
+		.A(in[12]),
+		.Q(INVJIX0_12_Q));
 
-	INVTX1 INVTX1_13_ (
-		.in(in[13]),
-		.out(INVTX1_13_out));
+	INVJIX0 INVJIX0_13_ (
+		.A(in[13]),
+		.Q(INVJIX0_13_Q));
 
-	INVTX1 INVTX1_14_ (
-		.in(in[14]),
-		.out(INVTX1_14_out));
+	INVJIX0 INVJIX0_14_ (
+		.A(in[14]),
+		.Q(INVJIX0_14_Q));
 
-	INVTX1 INVTX1_15_ (
-		.in(in[15]),
-		.out(INVTX1_15_out));
+	INVJIX0 INVJIX0_15_ (
+		.A(in[15]),
+		.Q(INVJIX0_15_Q));
 
-	INVTX1 INVTX1_16_ (
-		.in(in[16]),
-		.out(INVTX1_16_out));
+	INVJIX0 INVJIX0_16_ (
+		.A(in[16]),
+		.Q(INVJIX0_16_Q));
 
-	INVTX1 INVTX1_17_ (
-		.in(in[17]),
-		.out(INVTX1_17_out));
+	INVJIX0 INVJIX0_17_ (
+		.A(in[17]),
+		.Q(INVJIX0_17_Q));
 
-	INVTX1 INVTX1_18_ (
-		.in(in[18]),
-		.out(INVTX1_18_out));
+	INVJIX0 INVJIX0_18_ (
+		.A(in[18]),
+		.Q(INVJIX0_18_Q));
 
-	INVTX1 INVTX1_19_ (
-		.in(in[19]),
-		.out(INVTX1_19_out));
+	INVJIX0 INVJIX0_19_ (
+		.A(in[19]),
+		.Q(INVJIX0_19_Q));
 
-	INVTX1 INVTX1_20_ (
-		.in(in[20]),
-		.out(INVTX1_20_out));
+	INVJIX0 INVJIX0_20_ (
+		.A(in[20]),
+		.Q(INVJIX0_20_Q));
 
-	INVTX1 INVTX1_21_ (
-		.in(in[21]),
-		.out(INVTX1_21_out));
+	INVJIX0 INVJIX0_21_ (
+		.A(in[21]),
+		.Q(INVJIX0_21_Q));
 
-	INVTX1 INVTX1_22_ (
-		.in(in[22]),
-		.out(INVTX1_22_out));
+	INVJIX0 INVJIX0_22_ (
+		.A(in[22]),
+		.Q(INVJIX0_22_Q));
 
-	INVTX1 INVTX1_23_ (
-		.in(in[23]),
-		.out(INVTX1_23_out));
+	INVJIX0 INVJIX0_23_ (
+		.A(in[23]),
+		.Q(INVJIX0_23_Q));
 
-	INVTX1 INVTX1_24_ (
-		.in(in[24]),
-		.out(INVTX1_24_out));
+	INVJIX0 INVJIX0_24_ (
+		.A(in[24]),
+		.Q(INVJIX0_24_Q));
 
-	INVTX1 INVTX1_25_ (
-		.in(in[25]),
-		.out(INVTX1_25_out));
+	INVJIX0 INVJIX0_25_ (
+		.A(in[25]),
+		.Q(INVJIX0_25_Q));
 
-	INVTX1 INVTX1_26_ (
-		.in(in[26]),
-		.out(INVTX1_26_out));
+	INVJIX0 INVJIX0_26_ (
+		.A(in[26]),
+		.Q(INVJIX0_26_Q));
 
-	INVTX1 INVTX1_27_ (
-		.in(in[27]),
-		.out(INVTX1_27_out));
+	INVJIX0 INVJIX0_27_ (
+		.A(in[27]),
+		.Q(INVJIX0_27_Q));
 
-	INVTX1 INVTX1_28_ (
-		.in(in[28]),
-		.out(INVTX1_28_out));
+	INVJIX0 INVJIX0_28_ (
+		.A(in[28]),
+		.Q(INVJIX0_28_Q));
 
-	INVTX1 INVTX1_29_ (
-		.in(in[29]),
-		.out(INVTX1_29_out));
+	INVJIX0 INVJIX0_29_ (
+		.A(in[29]),
+		.Q(INVJIX0_29_Q));
 
-	INVTX1 INVTX1_30_ (
-		.in(in[30]),
-		.out(INVTX1_30_out));
+	INVJIX0 INVJIX0_30_ (
+		.A(in[30]),
+		.Q(INVJIX0_30_Q));
 
-	INVTX1 INVTX1_31_ (
-		.in(in[31]),
-		.out(INVTX1_31_out));
+	INVJIX0 INVJIX0_31_ (
+		.A(in[31]),
+		.Q(INVJIX0_31_Q));
 
-	INVTX1 INVTX1_32_ (
-		.in(in[32]),
-		.out(INVTX1_32_out));
+	INVJIX0 INVJIX0_32_ (
+		.A(in[32]),
+		.Q(INVJIX0_32_Q));
 
-	INVTX1 INVTX1_33_ (
-		.in(in[33]),
-		.out(INVTX1_33_out));
+	INVJIX0 INVJIX0_33_ (
+		.A(in[33]),
+		.Q(INVJIX0_33_Q));
 
-	INVTX1 INVTX1_34_ (
-		.in(in[34]),
-		.out(INVTX1_34_out));
+	INVJIX0 INVJIX0_34_ (
+		.A(in[34]),
+		.Q(INVJIX0_34_Q));
 
-	INVTX1 INVTX1_35_ (
-		.in(in[35]),
-		.out(INVTX1_35_out));
+	INVJIX0 INVJIX0_35_ (
+		.A(in[35]),
+		.Q(INVJIX0_35_Q));
 
-	INVTX1 INVTX1_36_ (
-		.in(in[36]),
-		.out(INVTX1_36_out));
+	INVJIX0 INVJIX0_36_ (
+		.A(in[36]),
+		.Q(INVJIX0_36_Q));
 
-	INVTX1 INVTX1_37_ (
-		.in(in[37]),
-		.out(INVTX1_37_out));
+	INVJIX0 INVJIX0_37_ (
+		.A(in[37]),
+		.Q(INVJIX0_37_Q));
 
-	INVTX1 INVTX1_38_ (
-		.in(in[38]),
-		.out(INVTX1_38_out));
+	INVJIX0 INVJIX0_38_ (
+		.A(in[38]),
+		.Q(INVJIX0_38_Q));
 
-	INVTX1 INVTX1_39_ (
-		.in(in[39]),
-		.out(INVTX1_39_out));
+	INVJIX0 INVJIX0_39_ (
+		.A(in[39]),
+		.Q(INVJIX0_39_Q));
 
-	INVTX1 INVTX1_40_ (
-		.in(in[40]),
-		.out(INVTX1_40_out));
+	INVJIX0 INVJIX0_40_ (
+		.A(in[40]),
+		.Q(INVJIX0_40_Q));
 
-	INVTX1 INVTX1_41_ (
-		.in(in[41]),
-		.out(INVTX1_41_out));
+	INVJIX0 INVJIX0_41_ (
+		.A(in[41]),
+		.Q(INVJIX0_41_Q));
 
-	INVTX1 INVTX1_42_ (
-		.in(in[42]),
-		.out(INVTX1_42_out));
+	INVJIX0 INVJIX0_42_ (
+		.A(in[42]),
+		.Q(INVJIX0_42_Q));
 
-	INVTX1 INVTX1_43_ (
-		.in(in[43]),
-		.out(INVTX1_43_out));
+	INVJIX0 INVJIX0_43_ (
+		.A(in[43]),
+		.Q(INVJIX0_43_Q));
 
-	INVTX1 INVTX1_44_ (
-		.in(in[44]),
-		.out(INVTX1_44_out));
+	INVJIX0 INVJIX0_44_ (
+		.A(in[44]),
+		.Q(INVJIX0_44_Q));
 
-	INVTX1 INVTX1_45_ (
-		.in(in[45]),
-		.out(INVTX1_45_out));
+	INVJIX0 INVJIX0_45_ (
+		.A(in[45]),
+		.Q(INVJIX0_45_Q));
 
-	INVTX1 INVTX1_46_ (
-		.in(in[46]),
-		.out(INVTX1_46_out));
+	INVJIX0 INVJIX0_46_ (
+		.A(in[46]),
+		.Q(INVJIX0_46_Q));
 
-	INVTX1 INVTX1_47_ (
-		.in(in[47]),
-		.out(INVTX1_47_out));
+	INVJIX0 INVJIX0_47_ (
+		.A(in[47]),
+		.Q(INVJIX0_47_Q));
 
-	INVTX1 INVTX1_48_ (
-		.in(in[48]),
-		.out(INVTX1_48_out));
+	INVJIX0 INVJIX0_48_ (
+		.A(in[48]),
+		.Q(INVJIX0_48_Q));
 
-	INVTX1 INVTX1_49_ (
-		.in(in[49]),
-		.out(INVTX1_49_out));
+	INVJIX0 INVJIX0_49_ (
+		.A(in[49]),
+		.Q(INVJIX0_49_Q));
 
-	INVTX1 INVTX1_50_ (
-		.in(in[50]),
-		.out(INVTX1_50_out));
+	INVJIX0 INVJIX0_50_ (
+		.A(in[50]),
+		.Q(INVJIX0_50_Q));
 
-	INVTX1 INVTX1_51_ (
-		.in(in[51]),
-		.out(INVTX1_51_out));
+	INVJIX0 INVJIX0_51_ (
+		.A(in[51]),
+		.Q(INVJIX0_51_Q));
 
-	INVTX1 INVTX1_52_ (
-		.in(in[52]),
-		.out(INVTX1_52_out));
+	INVJIX0 INVJIX0_52_ (
+		.A(in[52]),
+		.Q(INVJIX0_52_Q));
 
-	INVTX1 INVTX1_53_ (
-		.in(in[53]),
-		.out(INVTX1_53_out));
+	INVJIX0 INVJIX0_53_ (
+		.A(in[53]),
+		.Q(INVJIX0_53_Q));
 
-	INVTX1 INVTX1_54_ (
-		.in(in[54]),
-		.out(INVTX1_54_out));
+	INVJIX0 INVJIX0_54_ (
+		.A(in[54]),
+		.Q(INVJIX0_54_Q));
 
-	INVTX1 INVTX1_55_ (
-		.in(in[55]),
-		.out(INVTX1_55_out));
+	INVJIX0 INVJIX0_55_ (
+		.A(in[55]),
+		.Q(INVJIX0_55_Q));
 
-	INVTX1 INVTX1_56_ (
-		.in(in[56]),
-		.out(INVTX1_56_out));
+	INVJIX0 INVJIX0_56_ (
+		.A(in[56]),
+		.Q(INVJIX0_56_Q));
 
-	INVTX1 INVTX1_57_ (
-		.in(in[57]),
-		.out(INVTX1_57_out));
+	INVJIX0 INVJIX0_57_ (
+		.A(in[57]),
+		.Q(INVJIX0_57_Q));
 
-	INVTX1 INVTX1_58_ (
-		.in(in[58]),
-		.out(INVTX1_58_out));
+	INVJIX0 INVJIX0_58_ (
+		.A(in[58]),
+		.Q(INVJIX0_58_Q));
 
-	INVTX1 INVTX1_59_ (
-		.in(in[59]),
-		.out(INVTX1_59_out));
+	INVJIX0 INVJIX0_59_ (
+		.A(in[59]),
+		.Q(INVJIX0_59_Q));
 
-	INVTX1 INVTX1_60_ (
-		.in(mux_2level_basis_input8_mem8_7_out),
-		.out(out));
+	INVJIX0 INVJIX0_60_ (
+		.A(mux_2level_basis_input8_mem8_7_out),
+		.Q(out));
 
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
 	mux_2level_basis_input8_mem8 mux_l1_in_0_ (
-		.in({INVTX1_0_out, INVTX1_1_out, INVTX1_2_out, INVTX1_3_out, INVTX1_4_out, INVTX1_5_out, INVTX1_6_out, INVTX1_7_out}),
+		.in({INVJIX0_0_Q, INVJIX0_1_Q, INVJIX0_2_Q, INVJIX0_3_Q, INVJIX0_4_Q, INVJIX0_5_Q, INVJIX0_6_Q, INVJIX0_7_Q}),
 		.mem(sram[0:7]),
 		.mem_inv(sram_inv[0:7]),
 		.out(mux_2level_basis_input8_mem8_0_out));
 
 	mux_2level_basis_input8_mem8 mux_l1_in_1_ (
-		.in({INVTX1_8_out, INVTX1_9_out, INVTX1_10_out, INVTX1_11_out, INVTX1_12_out, INVTX1_13_out, INVTX1_14_out, INVTX1_15_out}),
+		.in({INVJIX0_8_Q, INVJIX0_9_Q, INVJIX0_10_Q, INVJIX0_11_Q, INVJIX0_12_Q, INVJIX0_13_Q, INVJIX0_14_Q, INVJIX0_15_Q}),
 		.mem(sram[0:7]),
 		.mem_inv(sram_inv[0:7]),
 		.out(mux_2level_basis_input8_mem8_1_out));
 
 	mux_2level_basis_input8_mem8 mux_l1_in_2_ (
-		.in({INVTX1_16_out, INVTX1_17_out, INVTX1_18_out, INVTX1_19_out, INVTX1_20_out, INVTX1_21_out, INVTX1_22_out, INVTX1_23_out}),
+		.in({INVJIX0_16_Q, INVJIX0_17_Q, INVJIX0_18_Q, INVJIX0_19_Q, INVJIX0_20_Q, INVJIX0_21_Q, INVJIX0_22_Q, INVJIX0_23_Q}),
 		.mem(sram[0:7]),
 		.mem_inv(sram_inv[0:7]),
 		.out(mux_2level_basis_input8_mem8_2_out));
 
 	mux_2level_basis_input8_mem8 mux_l1_in_3_ (
-		.in({INVTX1_24_out, INVTX1_25_out, INVTX1_26_out, INVTX1_27_out, INVTX1_28_out, INVTX1_29_out, INVTX1_30_out, INVTX1_31_out}),
+		.in({INVJIX0_24_Q, INVJIX0_25_Q, INVJIX0_26_Q, INVJIX0_27_Q, INVJIX0_28_Q, INVJIX0_29_Q, INVJIX0_30_Q, INVJIX0_31_Q}),
 		.mem(sram[0:7]),
 		.mem_inv(sram_inv[0:7]),
 		.out(mux_2level_basis_input8_mem8_3_out));
 
 	mux_2level_basis_input8_mem8 mux_l1_in_4_ (
-		.in({INVTX1_32_out, INVTX1_33_out, INVTX1_34_out, INVTX1_35_out, INVTX1_36_out, INVTX1_37_out, INVTX1_38_out, INVTX1_39_out}),
+		.in({INVJIX0_32_Q, INVJIX0_33_Q, INVJIX0_34_Q, INVJIX0_35_Q, INVJIX0_36_Q, INVJIX0_37_Q, INVJIX0_38_Q, INVJIX0_39_Q}),
 		.mem(sram[0:7]),
 		.mem_inv(sram_inv[0:7]),
 		.out(mux_2level_basis_input8_mem8_4_out));
 
 	mux_2level_basis_input8_mem8 mux_l1_in_5_ (
-		.in({INVTX1_40_out, INVTX1_41_out, INVTX1_42_out, INVTX1_43_out, INVTX1_44_out, INVTX1_45_out, INVTX1_46_out, INVTX1_47_out}),
+		.in({INVJIX0_40_Q, INVJIX0_41_Q, INVJIX0_42_Q, INVJIX0_43_Q, INVJIX0_44_Q, INVJIX0_45_Q, INVJIX0_46_Q, INVJIX0_47_Q}),
 		.mem(sram[0:7]),
 		.mem_inv(sram_inv[0:7]),
 		.out(mux_2level_basis_input8_mem8_5_out));
 
 	mux_2level_basis_input8_mem8 mux_l1_in_6_ (
-		.in({INVTX1_48_out, INVTX1_49_out, INVTX1_50_out, INVTX1_51_out, INVTX1_52_out, INVTX1_53_out, INVTX1_54_out, INVTX1_55_out}),
+		.in({INVJIX0_48_Q, INVJIX0_49_Q, INVJIX0_50_Q, INVJIX0_51_Q, INVJIX0_52_Q, INVJIX0_53_Q, INVJIX0_54_Q, INVJIX0_55_Q}),
 		.mem(sram[0:7]),
 		.mem_inv(sram_inv[0:7]),
 		.out(mux_2level_basis_input8_mem8_6_out));
@@ -2222,7 +2222,7 @@ wire [0:0] mux_2level_basis_input8_mem8_7_out;
 		.out(mux_2level_basis_input8_mem8_7_out));
 
 	mux_2level_basis_input5_mem5 mux_l1_in_7_ (
-		.in({INVTX1_56_out, INVTX1_57_out, INVTX1_58_out, INVTX1_59_out, const1_0_const1}),
+		.in({INVJIX0_56_Q, INVJIX0_57_Q, INVJIX0_58_Q, INVJIX0_59_Q, const1_0_const1}),
 		.mem(sram[0:4]),
 		.mem_inv(sram_inv[0:4]),
 		.out(mux_2level_basis_input5_mem5_0_out));
@@ -2261,9 +2261,9 @@ output [0:0] out;
 //----- END Registered ports -----
 
 
-wire [0:0] INVTX1_0_out;
-wire [0:0] INVTX1_1_out;
-wire [0:0] INVTX1_2_out;
+wire [0:0] INVJIX0_0_Q;
+wire [0:0] INVJIX0_1_Q;
+wire [0:0] INVJIX0_2_Q;
 wire [0:0] const1_0_const1;
 wire [0:0] mux_1level_tapbuf_basis_input4_mem4_0_out;
 
@@ -2272,27 +2272,27 @@ wire [0:0] mux_1level_tapbuf_basis_input4_mem4_0_out;
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	INVTX1 INVTX1_0_ (
-		.in(in[0]),
-		.out(INVTX1_0_out));
+	INVJIX0 INVJIX0_0_ (
+		.A(in[0]),
+		.Q(INVJIX0_0_Q));
 
-	INVTX1 INVTX1_1_ (
-		.in(in[1]),
-		.out(INVTX1_1_out));
+	INVJIX0 INVJIX0_1_ (
+		.A(in[1]),
+		.Q(INVJIX0_1_Q));
 
-	INVTX1 INVTX1_2_ (
-		.in(in[2]),
-		.out(INVTX1_2_out));
+	INVJIX0 INVJIX0_2_ (
+		.A(in[2]),
+		.Q(INVJIX0_2_Q));
 
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	tap_buf4 tap_buf4_0_ (
-		.in(mux_1level_tapbuf_basis_input4_mem4_0_out),
-		.out(out));
+	INVJIX4 INVJIX4_0_ (
+		.A(mux_1level_tapbuf_basis_input4_mem4_0_out),
+		.Q(out));
 
 	mux_1level_tapbuf_basis_input4_mem4 mux_l1_in_0_ (
-		.in({INVTX1_0_out, INVTX1_1_out, INVTX1_2_out, const1_0_const1}),
+		.in({INVJIX0_0_Q, INVJIX0_1_Q, INVJIX0_2_Q, const1_0_const1}),
 		.mem(sram[0:3]),
 		.mem_inv(sram_inv[0:3]),
 		.out(mux_1level_tapbuf_basis_input4_mem4_0_out));
@@ -2331,8 +2331,8 @@ output [0:0] out;
 //----- END Registered ports -----
 
 
-wire [0:0] INVTX1_0_out;
-wire [0:0] INVTX1_1_out;
+wire [0:0] INVJIX0_0_Q;
+wire [0:0] INVJIX0_1_Q;
 wire [0:0] const1_0_const1;
 wire [0:0] mux_1level_tapbuf_basis_input3_mem3_0_out;
 
@@ -2341,23 +2341,23 @@ wire [0:0] mux_1level_tapbuf_basis_input3_mem3_0_out;
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	INVTX1 INVTX1_0_ (
-		.in(in[0]),
-		.out(INVTX1_0_out));
+	INVJIX0 INVJIX0_0_ (
+		.A(in[0]),
+		.Q(INVJIX0_0_Q));
 
-	INVTX1 INVTX1_1_ (
-		.in(in[1]),
-		.out(INVTX1_1_out));
+	INVJIX0 INVJIX0_1_ (
+		.A(in[1]),
+		.Q(INVJIX0_1_Q));
 
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
-	tap_buf4 tap_buf4_0_ (
-		.in(mux_1level_tapbuf_basis_input3_mem3_0_out),
-		.out(out));
+	INVJIX4 INVJIX4_0_ (
+		.A(mux_1level_tapbuf_basis_input3_mem3_0_out),
+		.Q(out));
 
 	mux_1level_tapbuf_basis_input3_mem3 mux_l1_in_0_ (
-		.in({INVTX1_0_out, INVTX1_1_out, const1_0_const1}),
+		.in({INVJIX0_0_Q, INVJIX0_1_Q, const1_0_const1}),
 		.mem(sram[0:2]),
 		.mem_inv(sram_inv[0:2]),
 		.out(mux_1level_tapbuf_basis_input3_mem3_0_out));
@@ -2402,86 +2402,86 @@ output [0:0] lut6_out;
 //----- END Registered ports -----
 
 
-wire [0:0] INVTX1_0_out;
-wire [0:0] INVTX1_10_out;
-wire [0:0] INVTX1_11_out;
-wire [0:0] INVTX1_12_out;
-wire [0:0] INVTX1_13_out;
-wire [0:0] INVTX1_14_out;
-wire [0:0] INVTX1_15_out;
-wire [0:0] INVTX1_16_out;
-wire [0:0] INVTX1_17_out;
-wire [0:0] INVTX1_18_out;
-wire [0:0] INVTX1_19_out;
-wire [0:0] INVTX1_1_out;
-wire [0:0] INVTX1_20_out;
-wire [0:0] INVTX1_21_out;
-wire [0:0] INVTX1_22_out;
-wire [0:0] INVTX1_23_out;
-wire [0:0] INVTX1_24_out;
-wire [0:0] INVTX1_25_out;
-wire [0:0] INVTX1_26_out;
-wire [0:0] INVTX1_27_out;
-wire [0:0] INVTX1_28_out;
-wire [0:0] INVTX1_29_out;
-wire [0:0] INVTX1_2_out;
-wire [0:0] INVTX1_30_out;
-wire [0:0] INVTX1_31_out;
-wire [0:0] INVTX1_32_out;
-wire [0:0] INVTX1_33_out;
-wire [0:0] INVTX1_34_out;
-wire [0:0] INVTX1_35_out;
-wire [0:0] INVTX1_36_out;
-wire [0:0] INVTX1_37_out;
-wire [0:0] INVTX1_38_out;
-wire [0:0] INVTX1_39_out;
-wire [0:0] INVTX1_3_out;
-wire [0:0] INVTX1_40_out;
-wire [0:0] INVTX1_41_out;
-wire [0:0] INVTX1_42_out;
-wire [0:0] INVTX1_43_out;
-wire [0:0] INVTX1_44_out;
-wire [0:0] INVTX1_45_out;
-wire [0:0] INVTX1_46_out;
-wire [0:0] INVTX1_47_out;
-wire [0:0] INVTX1_48_out;
-wire [0:0] INVTX1_49_out;
-wire [0:0] INVTX1_4_out;
-wire [0:0] INVTX1_50_out;
-wire [0:0] INVTX1_51_out;
-wire [0:0] INVTX1_52_out;
-wire [0:0] INVTX1_53_out;
-wire [0:0] INVTX1_54_out;
-wire [0:0] INVTX1_55_out;
-wire [0:0] INVTX1_56_out;
-wire [0:0] INVTX1_57_out;
-wire [0:0] INVTX1_58_out;
-wire [0:0] INVTX1_59_out;
-wire [0:0] INVTX1_5_out;
-wire [0:0] INVTX1_60_out;
-wire [0:0] INVTX1_61_out;
-wire [0:0] INVTX1_62_out;
-wire [0:0] INVTX1_63_out;
-wire [0:0] INVTX1_6_out;
-wire [0:0] INVTX1_7_out;
-wire [0:0] INVTX1_8_out;
-wire [0:0] INVTX1_9_out;
-wire [0:0] buf4_0_out;
-wire [0:0] buf4_10_out;
-wire [0:0] buf4_11_out;
-wire [0:0] buf4_12_out;
-wire [0:0] buf4_13_out;
-wire [0:0] buf4_14_out;
-wire [0:0] buf4_15_out;
-wire [0:0] buf4_1_out;
-wire [0:0] buf4_2_out;
-wire [0:0] buf4_3_out;
-wire [0:0] buf4_4_out;
-wire [0:0] buf4_5_out;
-wire [0:0] buf4_6_out;
-wire [0:0] buf4_7_out;
-wire [0:0] buf4_8_out;
-wire [0:0] buf4_9_out;
+wire [0:0] BUFJIX4_0_Q;
+wire [0:0] BUFJIX4_10_Q;
+wire [0:0] BUFJIX4_11_Q;
+wire [0:0] BUFJIX4_12_Q;
+wire [0:0] BUFJIX4_13_Q;
+wire [0:0] BUFJIX4_14_Q;
+wire [0:0] BUFJIX4_15_Q;
+wire [0:0] BUFJIX4_1_Q;
+wire [0:0] BUFJIX4_2_Q;
+wire [0:0] BUFJIX4_3_Q;
+wire [0:0] BUFJIX4_4_Q;
+wire [0:0] BUFJIX4_5_Q;
+wire [0:0] BUFJIX4_6_Q;
+wire [0:0] BUFJIX4_7_Q;
+wire [0:0] BUFJIX4_8_Q;
+wire [0:0] BUFJIX4_9_Q;
+wire [0:0] INVJIX0_0_Q;
+wire [0:0] INVJIX0_10_Q;
+wire [0:0] INVJIX0_11_Q;
+wire [0:0] INVJIX0_12_Q;
+wire [0:0] INVJIX0_13_Q;
+wire [0:0] INVJIX0_14_Q;
+wire [0:0] INVJIX0_15_Q;
+wire [0:0] INVJIX0_16_Q;
+wire [0:0] INVJIX0_17_Q;
+wire [0:0] INVJIX0_18_Q;
+wire [0:0] INVJIX0_19_Q;
+wire [0:0] INVJIX0_1_Q;
+wire [0:0] INVJIX0_20_Q;
+wire [0:0] INVJIX0_21_Q;
+wire [0:0] INVJIX0_22_Q;
+wire [0:0] INVJIX0_23_Q;
+wire [0:0] INVJIX0_24_Q;
+wire [0:0] INVJIX0_25_Q;
+wire [0:0] INVJIX0_26_Q;
+wire [0:0] INVJIX0_27_Q;
+wire [0:0] INVJIX0_28_Q;
+wire [0:0] INVJIX0_29_Q;
+wire [0:0] INVJIX0_2_Q;
+wire [0:0] INVJIX0_30_Q;
+wire [0:0] INVJIX0_31_Q;
+wire [0:0] INVJIX0_32_Q;
+wire [0:0] INVJIX0_33_Q;
+wire [0:0] INVJIX0_34_Q;
+wire [0:0] INVJIX0_35_Q;
+wire [0:0] INVJIX0_36_Q;
+wire [0:0] INVJIX0_37_Q;
+wire [0:0] INVJIX0_38_Q;
+wire [0:0] INVJIX0_39_Q;
+wire [0:0] INVJIX0_3_Q;
+wire [0:0] INVJIX0_40_Q;
+wire [0:0] INVJIX0_41_Q;
+wire [0:0] INVJIX0_42_Q;
+wire [0:0] INVJIX0_43_Q;
+wire [0:0] INVJIX0_44_Q;
+wire [0:0] INVJIX0_45_Q;
+wire [0:0] INVJIX0_46_Q;
+wire [0:0] INVJIX0_47_Q;
+wire [0:0] INVJIX0_48_Q;
+wire [0:0] INVJIX0_49_Q;
+wire [0:0] INVJIX0_4_Q;
+wire [0:0] INVJIX0_50_Q;
+wire [0:0] INVJIX0_51_Q;
+wire [0:0] INVJIX0_52_Q;
+wire [0:0] INVJIX0_53_Q;
+wire [0:0] INVJIX0_54_Q;
+wire [0:0] INVJIX0_55_Q;
+wire [0:0] INVJIX0_56_Q;
+wire [0:0] INVJIX0_57_Q;
+wire [0:0] INVJIX0_58_Q;
+wire [0:0] INVJIX0_59_Q;
+wire [0:0] INVJIX0_5_Q;
+wire [0:0] INVJIX0_60_Q;
+wire [0:0] INVJIX0_61_Q;
+wire [0:0] INVJIX0_62_Q;
+wire [0:0] INVJIX0_63_Q;
+wire [0:0] INVJIX0_6_Q;
+wire [0:0] INVJIX0_7_Q;
+wire [0:0] INVJIX0_8_Q;
+wire [0:0] INVJIX0_9_Q;
 wire [0:0] frac_lut6_mux_basis_input2_mem1_0_out;
 wire [0:0] frac_lut6_mux_basis_input2_mem1_10_out;
 wire [0:0] frac_lut6_mux_basis_input2_mem1_11_out;
@@ -2551,478 +2551,478 @@ wire [0:0] frac_lut6_mux_basis_input2_mem1_9_out;
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	INVTX1 INVTX1_0_ (
-		.in(in[0]),
-		.out(INVTX1_0_out));
-
-	INVTX1 INVTX1_1_ (
-		.in(in[1]),
-		.out(INVTX1_1_out));
-
-	INVTX1 INVTX1_2_ (
-		.in(in[2]),
-		.out(INVTX1_2_out));
-
-	INVTX1 INVTX1_3_ (
-		.in(in[3]),
-		.out(INVTX1_3_out));
-
-	INVTX1 INVTX1_4_ (
-		.in(in[4]),
-		.out(INVTX1_4_out));
-
-	INVTX1 INVTX1_5_ (
-		.in(in[5]),
-		.out(INVTX1_5_out));
-
-	INVTX1 INVTX1_6_ (
-		.in(in[6]),
-		.out(INVTX1_6_out));
-
-	INVTX1 INVTX1_7_ (
-		.in(in[7]),
-		.out(INVTX1_7_out));
-
-	INVTX1 INVTX1_8_ (
-		.in(in[8]),
-		.out(INVTX1_8_out));
-
-	INVTX1 INVTX1_9_ (
-		.in(in[9]),
-		.out(INVTX1_9_out));
-
-	INVTX1 INVTX1_10_ (
-		.in(in[10]),
-		.out(INVTX1_10_out));
-
-	INVTX1 INVTX1_11_ (
-		.in(in[11]),
-		.out(INVTX1_11_out));
-
-	INVTX1 INVTX1_12_ (
-		.in(in[12]),
-		.out(INVTX1_12_out));
-
-	INVTX1 INVTX1_13_ (
-		.in(in[13]),
-		.out(INVTX1_13_out));
-
-	INVTX1 INVTX1_14_ (
-		.in(in[14]),
-		.out(INVTX1_14_out));
-
-	INVTX1 INVTX1_15_ (
-		.in(in[15]),
-		.out(INVTX1_15_out));
-
-	INVTX1 INVTX1_16_ (
-		.in(in[16]),
-		.out(INVTX1_16_out));
-
-	INVTX1 INVTX1_17_ (
-		.in(in[17]),
-		.out(INVTX1_17_out));
-
-	INVTX1 INVTX1_18_ (
-		.in(in[18]),
-		.out(INVTX1_18_out));
-
-	INVTX1 INVTX1_19_ (
-		.in(in[19]),
-		.out(INVTX1_19_out));
-
-	INVTX1 INVTX1_20_ (
-		.in(in[20]),
-		.out(INVTX1_20_out));
-
-	INVTX1 INVTX1_21_ (
-		.in(in[21]),
-		.out(INVTX1_21_out));
-
-	INVTX1 INVTX1_22_ (
-		.in(in[22]),
-		.out(INVTX1_22_out));
-
-	INVTX1 INVTX1_23_ (
-		.in(in[23]),
-		.out(INVTX1_23_out));
-
-	INVTX1 INVTX1_24_ (
-		.in(in[24]),
-		.out(INVTX1_24_out));
-
-	INVTX1 INVTX1_25_ (
-		.in(in[25]),
-		.out(INVTX1_25_out));
-
-	INVTX1 INVTX1_26_ (
-		.in(in[26]),
-		.out(INVTX1_26_out));
-
-	INVTX1 INVTX1_27_ (
-		.in(in[27]),
-		.out(INVTX1_27_out));
-
-	INVTX1 INVTX1_28_ (
-		.in(in[28]),
-		.out(INVTX1_28_out));
-
-	INVTX1 INVTX1_29_ (
-		.in(in[29]),
-		.out(INVTX1_29_out));
-
-	INVTX1 INVTX1_30_ (
-		.in(in[30]),
-		.out(INVTX1_30_out));
-
-	INVTX1 INVTX1_31_ (
-		.in(in[31]),
-		.out(INVTX1_31_out));
-
-	INVTX1 INVTX1_32_ (
-		.in(in[32]),
-		.out(INVTX1_32_out));
-
-	INVTX1 INVTX1_33_ (
-		.in(in[33]),
-		.out(INVTX1_33_out));
-
-	INVTX1 INVTX1_34_ (
-		.in(in[34]),
-		.out(INVTX1_34_out));
-
-	INVTX1 INVTX1_35_ (
-		.in(in[35]),
-		.out(INVTX1_35_out));
-
-	INVTX1 INVTX1_36_ (
-		.in(in[36]),
-		.out(INVTX1_36_out));
-
-	INVTX1 INVTX1_37_ (
-		.in(in[37]),
-		.out(INVTX1_37_out));
-
-	INVTX1 INVTX1_38_ (
-		.in(in[38]),
-		.out(INVTX1_38_out));
-
-	INVTX1 INVTX1_39_ (
-		.in(in[39]),
-		.out(INVTX1_39_out));
-
-	INVTX1 INVTX1_40_ (
-		.in(in[40]),
-		.out(INVTX1_40_out));
-
-	INVTX1 INVTX1_41_ (
-		.in(in[41]),
-		.out(INVTX1_41_out));
-
-	INVTX1 INVTX1_42_ (
-		.in(in[42]),
-		.out(INVTX1_42_out));
-
-	INVTX1 INVTX1_43_ (
-		.in(in[43]),
-		.out(INVTX1_43_out));
-
-	INVTX1 INVTX1_44_ (
-		.in(in[44]),
-		.out(INVTX1_44_out));
-
-	INVTX1 INVTX1_45_ (
-		.in(in[45]),
-		.out(INVTX1_45_out));
-
-	INVTX1 INVTX1_46_ (
-		.in(in[46]),
-		.out(INVTX1_46_out));
-
-	INVTX1 INVTX1_47_ (
-		.in(in[47]),
-		.out(INVTX1_47_out));
-
-	INVTX1 INVTX1_48_ (
-		.in(in[48]),
-		.out(INVTX1_48_out));
-
-	INVTX1 INVTX1_49_ (
-		.in(in[49]),
-		.out(INVTX1_49_out));
-
-	INVTX1 INVTX1_50_ (
-		.in(in[50]),
-		.out(INVTX1_50_out));
-
-	INVTX1 INVTX1_51_ (
-		.in(in[51]),
-		.out(INVTX1_51_out));
-
-	INVTX1 INVTX1_52_ (
-		.in(in[52]),
-		.out(INVTX1_52_out));
-
-	INVTX1 INVTX1_53_ (
-		.in(in[53]),
-		.out(INVTX1_53_out));
-
-	INVTX1 INVTX1_54_ (
-		.in(in[54]),
-		.out(INVTX1_54_out));
-
-	INVTX1 INVTX1_55_ (
-		.in(in[55]),
-		.out(INVTX1_55_out));
-
-	INVTX1 INVTX1_56_ (
-		.in(in[56]),
-		.out(INVTX1_56_out));
-
-	INVTX1 INVTX1_57_ (
-		.in(in[57]),
-		.out(INVTX1_57_out));
-
-	INVTX1 INVTX1_58_ (
-		.in(in[58]),
-		.out(INVTX1_58_out));
-
-	INVTX1 INVTX1_59_ (
-		.in(in[59]),
-		.out(INVTX1_59_out));
-
-	INVTX1 INVTX1_60_ (
-		.in(in[60]),
-		.out(INVTX1_60_out));
-
-	INVTX1 INVTX1_61_ (
-		.in(in[61]),
-		.out(INVTX1_61_out));
-
-	INVTX1 INVTX1_62_ (
-		.in(in[62]),
-		.out(INVTX1_62_out));
-
-	INVTX1 INVTX1_63_ (
-		.in(in[63]),
-		.out(INVTX1_63_out));
-
-	INVTX1 INVTX1_64_ (
-		.in(frac_lut6_mux_basis_input2_mem1_56_out),
-		.out(lut4_out[0]));
-
-	INVTX1 INVTX1_65_ (
-		.in(frac_lut6_mux_basis_input2_mem1_57_out),
-		.out(lut4_out[1]));
-
-	INVTX1 INVTX1_66_ (
-		.in(frac_lut6_mux_basis_input2_mem1_58_out),
-		.out(lut4_out[2]));
-
-	INVTX1 INVTX1_67_ (
-		.in(frac_lut6_mux_basis_input2_mem1_59_out),
-		.out(lut4_out[3]));
-
-	INVTX1 INVTX1_68_ (
-		.in(frac_lut6_mux_basis_input2_mem1_60_out),
-		.out(lut5_out[0]));
-
-	INVTX1 INVTX1_69_ (
-		.in(frac_lut6_mux_basis_input2_mem1_61_out),
-		.out(lut5_out[1]));
-
-	INVTX1 INVTX1_70_ (
-		.in(frac_lut6_mux_basis_input2_mem1_62_out),
-		.out(lut6_out));
+	INVJIX0 INVJIX0_0_ (
+		.A(in[0]),
+		.Q(INVJIX0_0_Q));
+
+	INVJIX0 INVJIX0_1_ (
+		.A(in[1]),
+		.Q(INVJIX0_1_Q));
+
+	INVJIX0 INVJIX0_2_ (
+		.A(in[2]),
+		.Q(INVJIX0_2_Q));
+
+	INVJIX0 INVJIX0_3_ (
+		.A(in[3]),
+		.Q(INVJIX0_3_Q));
+
+	INVJIX0 INVJIX0_4_ (
+		.A(in[4]),
+		.Q(INVJIX0_4_Q));
+
+	INVJIX0 INVJIX0_5_ (
+		.A(in[5]),
+		.Q(INVJIX0_5_Q));
+
+	INVJIX0 INVJIX0_6_ (
+		.A(in[6]),
+		.Q(INVJIX0_6_Q));
+
+	INVJIX0 INVJIX0_7_ (
+		.A(in[7]),
+		.Q(INVJIX0_7_Q));
+
+	INVJIX0 INVJIX0_8_ (
+		.A(in[8]),
+		.Q(INVJIX0_8_Q));
+
+	INVJIX0 INVJIX0_9_ (
+		.A(in[9]),
+		.Q(INVJIX0_9_Q));
+
+	INVJIX0 INVJIX0_10_ (
+		.A(in[10]),
+		.Q(INVJIX0_10_Q));
+
+	INVJIX0 INVJIX0_11_ (
+		.A(in[11]),
+		.Q(INVJIX0_11_Q));
+
+	INVJIX0 INVJIX0_12_ (
+		.A(in[12]),
+		.Q(INVJIX0_12_Q));
+
+	INVJIX0 INVJIX0_13_ (
+		.A(in[13]),
+		.Q(INVJIX0_13_Q));
+
+	INVJIX0 INVJIX0_14_ (
+		.A(in[14]),
+		.Q(INVJIX0_14_Q));
+
+	INVJIX0 INVJIX0_15_ (
+		.A(in[15]),
+		.Q(INVJIX0_15_Q));
+
+	INVJIX0 INVJIX0_16_ (
+		.A(in[16]),
+		.Q(INVJIX0_16_Q));
+
+	INVJIX0 INVJIX0_17_ (
+		.A(in[17]),
+		.Q(INVJIX0_17_Q));
+
+	INVJIX0 INVJIX0_18_ (
+		.A(in[18]),
+		.Q(INVJIX0_18_Q));
+
+	INVJIX0 INVJIX0_19_ (
+		.A(in[19]),
+		.Q(INVJIX0_19_Q));
+
+	INVJIX0 INVJIX0_20_ (
+		.A(in[20]),
+		.Q(INVJIX0_20_Q));
+
+	INVJIX0 INVJIX0_21_ (
+		.A(in[21]),
+		.Q(INVJIX0_21_Q));
+
+	INVJIX0 INVJIX0_22_ (
+		.A(in[22]),
+		.Q(INVJIX0_22_Q));
+
+	INVJIX0 INVJIX0_23_ (
+		.A(in[23]),
+		.Q(INVJIX0_23_Q));
+
+	INVJIX0 INVJIX0_24_ (
+		.A(in[24]),
+		.Q(INVJIX0_24_Q));
+
+	INVJIX0 INVJIX0_25_ (
+		.A(in[25]),
+		.Q(INVJIX0_25_Q));
+
+	INVJIX0 INVJIX0_26_ (
+		.A(in[26]),
+		.Q(INVJIX0_26_Q));
+
+	INVJIX0 INVJIX0_27_ (
+		.A(in[27]),
+		.Q(INVJIX0_27_Q));
+
+	INVJIX0 INVJIX0_28_ (
+		.A(in[28]),
+		.Q(INVJIX0_28_Q));
+
+	INVJIX0 INVJIX0_29_ (
+		.A(in[29]),
+		.Q(INVJIX0_29_Q));
+
+	INVJIX0 INVJIX0_30_ (
+		.A(in[30]),
+		.Q(INVJIX0_30_Q));
+
+	INVJIX0 INVJIX0_31_ (
+		.A(in[31]),
+		.Q(INVJIX0_31_Q));
+
+	INVJIX0 INVJIX0_32_ (
+		.A(in[32]),
+		.Q(INVJIX0_32_Q));
+
+	INVJIX0 INVJIX0_33_ (
+		.A(in[33]),
+		.Q(INVJIX0_33_Q));
+
+	INVJIX0 INVJIX0_34_ (
+		.A(in[34]),
+		.Q(INVJIX0_34_Q));
+
+	INVJIX0 INVJIX0_35_ (
+		.A(in[35]),
+		.Q(INVJIX0_35_Q));
+
+	INVJIX0 INVJIX0_36_ (
+		.A(in[36]),
+		.Q(INVJIX0_36_Q));
+
+	INVJIX0 INVJIX0_37_ (
+		.A(in[37]),
+		.Q(INVJIX0_37_Q));
+
+	INVJIX0 INVJIX0_38_ (
+		.A(in[38]),
+		.Q(INVJIX0_38_Q));
+
+	INVJIX0 INVJIX0_39_ (
+		.A(in[39]),
+		.Q(INVJIX0_39_Q));
+
+	INVJIX0 INVJIX0_40_ (
+		.A(in[40]),
+		.Q(INVJIX0_40_Q));
+
+	INVJIX0 INVJIX0_41_ (
+		.A(in[41]),
+		.Q(INVJIX0_41_Q));
+
+	INVJIX0 INVJIX0_42_ (
+		.A(in[42]),
+		.Q(INVJIX0_42_Q));
+
+	INVJIX0 INVJIX0_43_ (
+		.A(in[43]),
+		.Q(INVJIX0_43_Q));
+
+	INVJIX0 INVJIX0_44_ (
+		.A(in[44]),
+		.Q(INVJIX0_44_Q));
+
+	INVJIX0 INVJIX0_45_ (
+		.A(in[45]),
+		.Q(INVJIX0_45_Q));
+
+	INVJIX0 INVJIX0_46_ (
+		.A(in[46]),
+		.Q(INVJIX0_46_Q));
+
+	INVJIX0 INVJIX0_47_ (
+		.A(in[47]),
+		.Q(INVJIX0_47_Q));
+
+	INVJIX0 INVJIX0_48_ (
+		.A(in[48]),
+		.Q(INVJIX0_48_Q));
+
+	INVJIX0 INVJIX0_49_ (
+		.A(in[49]),
+		.Q(INVJIX0_49_Q));
+
+	INVJIX0 INVJIX0_50_ (
+		.A(in[50]),
+		.Q(INVJIX0_50_Q));
+
+	INVJIX0 INVJIX0_51_ (
+		.A(in[51]),
+		.Q(INVJIX0_51_Q));
+
+	INVJIX0 INVJIX0_52_ (
+		.A(in[52]),
+		.Q(INVJIX0_52_Q));
+
+	INVJIX0 INVJIX0_53_ (
+		.A(in[53]),
+		.Q(INVJIX0_53_Q));
+
+	INVJIX0 INVJIX0_54_ (
+		.A(in[54]),
+		.Q(INVJIX0_54_Q));
+
+	INVJIX0 INVJIX0_55_ (
+		.A(in[55]),
+		.Q(INVJIX0_55_Q));
+
+	INVJIX0 INVJIX0_56_ (
+		.A(in[56]),
+		.Q(INVJIX0_56_Q));
+
+	INVJIX0 INVJIX0_57_ (
+		.A(in[57]),
+		.Q(INVJIX0_57_Q));
+
+	INVJIX0 INVJIX0_58_ (
+		.A(in[58]),
+		.Q(INVJIX0_58_Q));
+
+	INVJIX0 INVJIX0_59_ (
+		.A(in[59]),
+		.Q(INVJIX0_59_Q));
+
+	INVJIX0 INVJIX0_60_ (
+		.A(in[60]),
+		.Q(INVJIX0_60_Q));
+
+	INVJIX0 INVJIX0_61_ (
+		.A(in[61]),
+		.Q(INVJIX0_61_Q));
+
+	INVJIX0 INVJIX0_62_ (
+		.A(in[62]),
+		.Q(INVJIX0_62_Q));
+
+	INVJIX0 INVJIX0_63_ (
+		.A(in[63]),
+		.Q(INVJIX0_63_Q));
+
+	INVJIX0 INVJIX0_64_ (
+		.A(frac_lut6_mux_basis_input2_mem1_56_out),
+		.Q(lut4_out[0]));
+
+	INVJIX0 INVJIX0_65_ (
+		.A(frac_lut6_mux_basis_input2_mem1_57_out),
+		.Q(lut4_out[1]));
+
+	INVJIX0 INVJIX0_66_ (
+		.A(frac_lut6_mux_basis_input2_mem1_58_out),
+		.Q(lut4_out[2]));
+
+	INVJIX0 INVJIX0_67_ (
+		.A(frac_lut6_mux_basis_input2_mem1_59_out),
+		.Q(lut4_out[3]));
+
+	INVJIX0 INVJIX0_68_ (
+		.A(frac_lut6_mux_basis_input2_mem1_60_out),
+		.Q(lut5_out[0]));
+
+	INVJIX0 INVJIX0_69_ (
+		.A(frac_lut6_mux_basis_input2_mem1_61_out),
+		.Q(lut5_out[1]));
+
+	INVJIX0 INVJIX0_70_ (
+		.A(frac_lut6_mux_basis_input2_mem1_62_out),
+		.Q(lut6_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_0_ (
-		.in({INVTX1_0_out, INVTX1_1_out}),
+		.in({INVJIX0_0_Q, INVJIX0_1_Q}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_0_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_1_ (
-		.in({INVTX1_2_out, INVTX1_3_out}),
+		.in({INVJIX0_2_Q, INVJIX0_3_Q}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_1_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_2_ (
-		.in({INVTX1_4_out, INVTX1_5_out}),
+		.in({INVJIX0_4_Q, INVJIX0_5_Q}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_2_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_3_ (
-		.in({INVTX1_6_out, INVTX1_7_out}),
+		.in({INVJIX0_6_Q, INVJIX0_7_Q}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_3_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_4_ (
-		.in({INVTX1_8_out, INVTX1_9_out}),
+		.in({INVJIX0_8_Q, INVJIX0_9_Q}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_4_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_5_ (
-		.in({INVTX1_10_out, INVTX1_11_out}),
+		.in({INVJIX0_10_Q, INVJIX0_11_Q}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_5_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_6_ (
-		.in({INVTX1_12_out, INVTX1_13_out}),
+		.in({INVJIX0_12_Q, INVJIX0_13_Q}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_6_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_7_ (
-		.in({INVTX1_14_out, INVTX1_15_out}),
+		.in({INVJIX0_14_Q, INVJIX0_15_Q}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_7_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_8_ (
-		.in({INVTX1_16_out, INVTX1_17_out}),
+		.in({INVJIX0_16_Q, INVJIX0_17_Q}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_8_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_9_ (
-		.in({INVTX1_18_out, INVTX1_19_out}),
+		.in({INVJIX0_18_Q, INVJIX0_19_Q}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_9_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_10_ (
-		.in({INVTX1_20_out, INVTX1_21_out}),
+		.in({INVJIX0_20_Q, INVJIX0_21_Q}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_10_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_11_ (
-		.in({INVTX1_22_out, INVTX1_23_out}),
+		.in({INVJIX0_22_Q, INVJIX0_23_Q}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_11_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_12_ (
-		.in({INVTX1_24_out, INVTX1_25_out}),
+		.in({INVJIX0_24_Q, INVJIX0_25_Q}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_12_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_13_ (
-		.in({INVTX1_26_out, INVTX1_27_out}),
+		.in({INVJIX0_26_Q, INVJIX0_27_Q}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_13_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_14_ (
-		.in({INVTX1_28_out, INVTX1_29_out}),
+		.in({INVJIX0_28_Q, INVJIX0_29_Q}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_14_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_15_ (
-		.in({INVTX1_30_out, INVTX1_31_out}),
+		.in({INVJIX0_30_Q, INVJIX0_31_Q}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_15_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_16_ (
-		.in({INVTX1_32_out, INVTX1_33_out}),
+		.in({INVJIX0_32_Q, INVJIX0_33_Q}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_16_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_17_ (
-		.in({INVTX1_34_out, INVTX1_35_out}),
+		.in({INVJIX0_34_Q, INVJIX0_35_Q}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_17_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_18_ (
-		.in({INVTX1_36_out, INVTX1_37_out}),
+		.in({INVJIX0_36_Q, INVJIX0_37_Q}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_18_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_19_ (
-		.in({INVTX1_38_out, INVTX1_39_out}),
+		.in({INVJIX0_38_Q, INVJIX0_39_Q}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_19_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_20_ (
-		.in({INVTX1_40_out, INVTX1_41_out}),
+		.in({INVJIX0_40_Q, INVJIX0_41_Q}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_20_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_21_ (
-		.in({INVTX1_42_out, INVTX1_43_out}),
+		.in({INVJIX0_42_Q, INVJIX0_43_Q}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_21_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_22_ (
-		.in({INVTX1_44_out, INVTX1_45_out}),
+		.in({INVJIX0_44_Q, INVJIX0_45_Q}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_22_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_23_ (
-		.in({INVTX1_46_out, INVTX1_47_out}),
+		.in({INVJIX0_46_Q, INVJIX0_47_Q}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_23_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_24_ (
-		.in({INVTX1_48_out, INVTX1_49_out}),
+		.in({INVJIX0_48_Q, INVJIX0_49_Q}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_24_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_25_ (
-		.in({INVTX1_50_out, INVTX1_51_out}),
+		.in({INVJIX0_50_Q, INVJIX0_51_Q}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_25_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_26_ (
-		.in({INVTX1_52_out, INVTX1_53_out}),
+		.in({INVJIX0_52_Q, INVJIX0_53_Q}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_26_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_27_ (
-		.in({INVTX1_54_out, INVTX1_55_out}),
+		.in({INVJIX0_54_Q, INVJIX0_55_Q}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_27_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_28_ (
-		.in({INVTX1_56_out, INVTX1_57_out}),
+		.in({INVJIX0_56_Q, INVJIX0_57_Q}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_28_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_29_ (
-		.in({INVTX1_58_out, INVTX1_59_out}),
+		.in({INVJIX0_58_Q, INVJIX0_59_Q}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_29_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_30_ (
-		.in({INVTX1_60_out, INVTX1_61_out}),
+		.in({INVJIX0_60_Q, INVJIX0_61_Q}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_30_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l1_in_31_ (
-		.in({INVTX1_62_out, INVTX1_63_out}),
+		.in({INVJIX0_62_Q, INVJIX0_63_Q}),
 		.mem(sram[0]),
 		.mem_inv(sram_inv[0]),
 		.out(frac_lut6_mux_basis_input2_mem1_31_out));
@@ -3124,49 +3124,49 @@ wire [0:0] frac_lut6_mux_basis_input2_mem1_9_out;
 		.out(frac_lut6_mux_basis_input2_mem1_47_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l3_in_0_ (
-		.in({buf4_0_out, buf4_1_out}),
+		.in({BUFJIX4_0_Q, BUFJIX4_1_Q}),
 		.mem(sram[2]),
 		.mem_inv(sram_inv[2]),
 		.out(frac_lut6_mux_basis_input2_mem1_48_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l3_in_1_ (
-		.in({buf4_2_out, buf4_3_out}),
+		.in({BUFJIX4_2_Q, BUFJIX4_3_Q}),
 		.mem(sram[2]),
 		.mem_inv(sram_inv[2]),
 		.out(frac_lut6_mux_basis_input2_mem1_49_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l3_in_2_ (
-		.in({buf4_4_out, buf4_5_out}),
+		.in({BUFJIX4_4_Q, BUFJIX4_5_Q}),
 		.mem(sram[2]),
 		.mem_inv(sram_inv[2]),
 		.out(frac_lut6_mux_basis_input2_mem1_50_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l3_in_3_ (
-		.in({buf4_6_out, buf4_7_out}),
+		.in({BUFJIX4_6_Q, BUFJIX4_7_Q}),
 		.mem(sram[2]),
 		.mem_inv(sram_inv[2]),
 		.out(frac_lut6_mux_basis_input2_mem1_51_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l3_in_4_ (
-		.in({buf4_8_out, buf4_9_out}),
+		.in({BUFJIX4_8_Q, BUFJIX4_9_Q}),
 		.mem(sram[2]),
 		.mem_inv(sram_inv[2]),
 		.out(frac_lut6_mux_basis_input2_mem1_52_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l3_in_5_ (
-		.in({buf4_10_out, buf4_11_out}),
+		.in({BUFJIX4_10_Q, BUFJIX4_11_Q}),
 		.mem(sram[2]),
 		.mem_inv(sram_inv[2]),
 		.out(frac_lut6_mux_basis_input2_mem1_53_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l3_in_6_ (
-		.in({buf4_12_out, buf4_13_out}),
+		.in({BUFJIX4_12_Q, BUFJIX4_13_Q}),
 		.mem(sram[2]),
 		.mem_inv(sram_inv[2]),
 		.out(frac_lut6_mux_basis_input2_mem1_54_out));
 
 	frac_lut6_mux_basis_input2_mem1 mux_l3_in_7_ (
-		.in({buf4_14_out, buf4_15_out}),
+		.in({BUFJIX4_14_Q, BUFJIX4_15_Q}),
 		.mem(sram[2]),
 		.mem_inv(sram_inv[2]),
 		.out(frac_lut6_mux_basis_input2_mem1_55_out));
@@ -3213,69 +3213,69 @@ wire [0:0] frac_lut6_mux_basis_input2_mem1_9_out;
 		.mem_inv(sram_inv[5]),
 		.out(frac_lut6_mux_basis_input2_mem1_62_out));
 
-	buf4 buf4_0_ (
-		.in(frac_lut6_mux_basis_input2_mem1_32_out),
-		.out(buf4_0_out));
+	BUFJIX4 BUFJIX4_0_ (
+		.A(frac_lut6_mux_basis_input2_mem1_32_out),
+		.Q(BUFJIX4_0_Q));
 
-	buf4 buf4_1_ (
-		.in(frac_lut6_mux_basis_input2_mem1_33_out),
-		.out(buf4_1_out));
+	BUFJIX4 BUFJIX4_1_ (
+		.A(frac_lut6_mux_basis_input2_mem1_33_out),
+		.Q(BUFJIX4_1_Q));
 
-	buf4 buf4_2_ (
-		.in(frac_lut6_mux_basis_input2_mem1_34_out),
-		.out(buf4_2_out));
+	BUFJIX4 BUFJIX4_2_ (
+		.A(frac_lut6_mux_basis_input2_mem1_34_out),
+		.Q(BUFJIX4_2_Q));
 
-	buf4 buf4_3_ (
-		.in(frac_lut6_mux_basis_input2_mem1_35_out),
-		.out(buf4_3_out));
+	BUFJIX4 BUFJIX4_3_ (
+		.A(frac_lut6_mux_basis_input2_mem1_35_out),
+		.Q(BUFJIX4_3_Q));
 
-	buf4 buf4_4_ (
-		.in(frac_lut6_mux_basis_input2_mem1_36_out),
-		.out(buf4_4_out));
+	BUFJIX4 BUFJIX4_4_ (
+		.A(frac_lut6_mux_basis_input2_mem1_36_out),
+		.Q(BUFJIX4_4_Q));
 
-	buf4 buf4_5_ (
-		.in(frac_lut6_mux_basis_input2_mem1_37_out),
-		.out(buf4_5_out));
+	BUFJIX4 BUFJIX4_5_ (
+		.A(frac_lut6_mux_basis_input2_mem1_37_out),
+		.Q(BUFJIX4_5_Q));
 
-	buf4 buf4_6_ (
-		.in(frac_lut6_mux_basis_input2_mem1_38_out),
-		.out(buf4_6_out));
+	BUFJIX4 BUFJIX4_6_ (
+		.A(frac_lut6_mux_basis_input2_mem1_38_out),
+		.Q(BUFJIX4_6_Q));
 
-	buf4 buf4_7_ (
-		.in(frac_lut6_mux_basis_input2_mem1_39_out),
-		.out(buf4_7_out));
+	BUFJIX4 BUFJIX4_7_ (
+		.A(frac_lut6_mux_basis_input2_mem1_39_out),
+		.Q(BUFJIX4_7_Q));
 
-	buf4 buf4_8_ (
-		.in(frac_lut6_mux_basis_input2_mem1_40_out),
-		.out(buf4_8_out));
+	BUFJIX4 BUFJIX4_8_ (
+		.A(frac_lut6_mux_basis_input2_mem1_40_out),
+		.Q(BUFJIX4_8_Q));
 
-	buf4 buf4_9_ (
-		.in(frac_lut6_mux_basis_input2_mem1_41_out),
-		.out(buf4_9_out));
+	BUFJIX4 BUFJIX4_9_ (
+		.A(frac_lut6_mux_basis_input2_mem1_41_out),
+		.Q(BUFJIX4_9_Q));
 
-	buf4 buf4_10_ (
-		.in(frac_lut6_mux_basis_input2_mem1_42_out),
-		.out(buf4_10_out));
+	BUFJIX4 BUFJIX4_10_ (
+		.A(frac_lut6_mux_basis_input2_mem1_42_out),
+		.Q(BUFJIX4_10_Q));
 
-	buf4 buf4_11_ (
-		.in(frac_lut6_mux_basis_input2_mem1_43_out),
-		.out(buf4_11_out));
+	BUFJIX4 BUFJIX4_11_ (
+		.A(frac_lut6_mux_basis_input2_mem1_43_out),
+		.Q(BUFJIX4_11_Q));
 
-	buf4 buf4_12_ (
-		.in(frac_lut6_mux_basis_input2_mem1_44_out),
-		.out(buf4_12_out));
+	BUFJIX4 BUFJIX4_12_ (
+		.A(frac_lut6_mux_basis_input2_mem1_44_out),
+		.Q(BUFJIX4_12_Q));
 
-	buf4 buf4_13_ (
-		.in(frac_lut6_mux_basis_input2_mem1_45_out),
-		.out(buf4_13_out));
+	BUFJIX4 BUFJIX4_13_ (
+		.A(frac_lut6_mux_basis_input2_mem1_45_out),
+		.Q(BUFJIX4_13_Q));
 
-	buf4 buf4_14_ (
-		.in(frac_lut6_mux_basis_input2_mem1_46_out),
-		.out(buf4_14_out));
+	BUFJIX4 BUFJIX4_14_ (
+		.A(frac_lut6_mux_basis_input2_mem1_46_out),
+		.Q(BUFJIX4_14_Q));
 
-	buf4 buf4_15_ (
-		.in(frac_lut6_mux_basis_input2_mem1_47_out),
-		.out(buf4_15_out));
+	BUFJIX4 BUFJIX4_15_ (
+		.A(frac_lut6_mux_basis_input2_mem1_47_out),
+		.Q(BUFJIX4_15_Q));
 
 endmodule
 // ----- END Verilog module for frac_lut6_mux -----

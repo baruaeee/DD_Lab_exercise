@@ -33,10 +33,10 @@
 		<block previous="$0\rxack[0:0]" current="_0\rxack_0_0_"/>
 		<block previous="$0\al[0:0]" current="_0\al_0_0_"/>
 		<block previous="$0\cr[7:0][4]" current="_0\cr_7_0__4_"/>
-		<block previous="$abc$3702$new_n271" current="_abc_3702_new_n271"/>
-		<block previous="$abc$3702$new_n272" current="_abc_3702_new_n272"/>
-		<block previous="$abc$3702$new_n273" current="_abc_3702_new_n273"/>
-		<block previous="$abc$3702$new_n274" current="_abc_3702_new_n274"/>
+		<block previous="$abc$3685$new_n271" current="_abc_3685_new_n271"/>
+		<block previous="$abc$3685$new_n272" current="_abc_3685_new_n272"/>
+		<block previous="$abc$3685$new_n273" current="_abc_3685_new_n273"/>
+		<block previous="$abc$3685$new_n274" current="_abc_3685_new_n274"/>
 		<block previous="$0\cr[7:0][5]" current="_0\cr_7_0__5_"/>
 		<block previous="$0\cr[7:0][6]" current="_0\cr_7_0__6_"/>
 		<block previous="$0\cr[7:0][7]" current="_0\cr_7_0__7_"/>
@@ -45,7 +45,7 @@
 		<block previous="$0\cr[7:0][2]" current="_0\cr_7_0__2_"/>
 		<block previous="$0\cr[7:0][0]" current="_0\cr_7_0__0_"/>
 		<block previous="$0\prer[15:0][8]" current="_0\prer_15_0__8_"/>
-		<block previous="$abc$3702$new_n283" current="_abc_3702_new_n283"/>
+		<block previous="$abc$3685$new_n283" current="_abc_3685_new_n283"/>
 		<block previous="$0\prer[15:0][9]" current="_0\prer_15_0__9_"/>
 		<block previous="$0\prer[15:0][10]" current="_0\prer_15_0__10_"/>
 		<block previous="$0\prer[15:0][11]" current="_0\prer_15_0__11_"/>
@@ -54,7 +54,7 @@
 		<block previous="$0\prer[15:0][14]" current="_0\prer_15_0__14_"/>
 		<block previous="$0\prer[15:0][15]" current="_0\prer_15_0__15_"/>
 		<block previous="$0\prer[15:0][0]" current="_0\prer_15_0__0_"/>
-		<block previous="$abc$3702$new_n292" current="_abc_3702_new_n292"/>
+		<block previous="$abc$3685$new_n292" current="_abc_3685_new_n292"/>
 		<block previous="$0\prer[15:0][1]" current="_0\prer_15_0__1_"/>
 		<block previous="$0\prer[15:0][2]" current="_0\prer_15_0__2_"/>
 		<block previous="$0\prer[15:0][3]" current="_0\prer_15_0__3_"/>
@@ -63,7 +63,7 @@
 		<block previous="$0\prer[15:0][6]" current="_0\prer_15_0__6_"/>
 		<block previous="$0\prer[15:0][7]" current="_0\prer_15_0__7_"/>
 		<block previous="$0\ctr[7:0][0]" current="_0\ctr_7_0__0_"/>
-		<block previous="$abc$3702$new_n301" current="_abc_3702_new_n301"/>
+		<block previous="$abc$3685$new_n301" current="_abc_3685_new_n301"/>
 		<block previous="$0\ctr[7:0][1]" current="_0\ctr_7_0__1_"/>
 		<block previous="$0\ctr[7:0][2]" current="_0\ctr_7_0__2_"/>
 		<block previous="$0\ctr[7:0][3]" current="_0\ctr_7_0__3_"/>
@@ -72,7 +72,7 @@
 		<block previous="$0\ctr[7:0][6]" current="_0\ctr_7_0__6_"/>
 		<block previous="$0\ctr[7:0][7]" current="_0\ctr_7_0__7_"/>
 		<block previous="$0\txr[7:0][0]" current="_0\txr_7_0__0_"/>
-		<block previous="$abc$3702$new_n310" current="_abc_3702_new_n310"/>
+		<block previous="$abc$3685$new_n310" current="_abc_3685_new_n310"/>
 		<block previous="$0\txr[7:0][1]" current="_0\txr_7_0__1_"/>
 		<block previous="$0\txr[7:0][2]" current="_0\txr_7_0__2_"/>
 		<block previous="$0\txr[7:0][3]" current="_0\txr_7_0__3_"/>
@@ -81,218 +81,211 @@
 		<block previous="$0\txr[7:0][6]" current="_0\txr_7_0__6_"/>
 		<block previous="$0\txr[7:0][7]" current="_0\txr_7_0__7_"/>
 		<block previous="$0\wb_dat_o[7:0][0]" current="_0\wb_dat_o_7_0__0_"/>
-		<block previous="$abc$3702$new_n319" current="_abc_3702_new_n319"/>
-		<block previous="$abc$3702$new_n320" current="_abc_3702_new_n320"/>
+		<block previous="$abc$3685$new_n319" current="_abc_3685_new_n319"/>
+		<block previous="$abc$3685$new_n320" current="_abc_3685_new_n320"/>
 		<block previous="$0\wb_dat_o[7:0][1]" current="_0\wb_dat_o_7_0__1_"/>
-		<block previous="$abc$3702$new_n322" current="_abc_3702_new_n322"/>
-		<block previous="$abc$3702$new_n323" current="_abc_3702_new_n323"/>
-		<block previous="$0\wb_dat_o[7:0][5]" current="_0\wb_dat_o_7_0__5_"/>
-		<block previous="$abc$3702$new_n334" current="_abc_3702_new_n334"/>
-		<block previous="$abc$3702$new_n335" current="_abc_3702_new_n335"/>
-		<block previous="$0\wb_dat_o[7:0][6]" current="_0\wb_dat_o_7_0__6_"/>
-		<block previous="$abc$3702$new_n337" current="_abc_3702_new_n337"/>
-		<block previous="$abc$3702$new_n338" current="_abc_3702_new_n338"/>
-		<block previous="$0\wb_dat_o[7:0][7]" current="_0\wb_dat_o_7_0__7_"/>
-		<block previous="$abc$3702$new_n340" current="_abc_3702_new_n340"/>
-		<block previous="$abc$3702$new_n341" current="_abc_3702_new_n341"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cmd_ack[0:0]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cmd_ack_0_0_"/>
-		<block previous="$abc$3702$new_n344" current="_abc_3702_new_n344"/>
-		<block previous="$abc$3702$new_n345" current="_abc_3702_new_n345"/>
-		<block previous="$abc$3702$new_n346" current="_abc_3702_new_n346"/>
-		<block previous="$abc$3702$new_n347" current="_abc_3702_new_n347"/>
-		<block previous="$abc$3702$new_n348" current="_abc_3702_new_n348"/>
-		<block previous="$abc$3702$new_n349" current="_abc_3702_new_n349"/>
-		<block previous="$abc$3702$new_n350" current="_abc_3702_new_n350"/>
-		<block previous="$abc$3702$new_n351" current="_abc_3702_new_n351"/>
-		<block previous="$abc$3702$new_n352" current="_abc_3702_new_n352"/>
-		<block previous="$abc$3702$new_n353" current="_abc_3702_new_n353"/>
-		<block previous="$abc$3702$new_n354" current="_abc_3702_new_n354"/>
-		<block previous="$abc$3702$new_n357" current="_abc_3702_new_n357"/>
-		<block previous="$abc$3702$new_n358" current="_abc_3702_new_n358"/>
-		<block previous="$abc$3702$new_n359" current="_abc_3702_new_n359"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\sda_chk[0:0]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\sda_chk_0_0_"/>
-		<block previous="$abc$3702$new_n361" current="_abc_3702_new_n361"/>
-		<block previous="$abc$3702$new_n362" current="_abc_3702_new_n362"/>
-		<block previous="$abc$3702$new_n364" current="_abc_3702_new_n364"/>
-		<block previous="$abc$3702$new_n365" current="_abc_3702_new_n365"/>
-		<block previous="$abc$3702$new_n366" current="_abc_3702_new_n366"/>
-		<block previous="$abc$3702$new_n367" current="_abc_3702_new_n367"/>
-		<block previous="$abc$3702$new_n368" current="_abc_3702_new_n368"/>
-		<block previous="$abc$3702$new_n369" current="_abc_3702_new_n369"/>
-		<block previous="$abc$3702$new_n370" current="_abc_3702_new_n370"/>
-		<block previous="$abc$3702$new_n371" current="_abc_3702_new_n371"/>
-		<block previous="$abc$3702$new_n372" current="_abc_3702_new_n372"/>
-		<block previous="$abc$3702$new_n373" current="_abc_3702_new_n373"/>
-		<block previous="$abc$3702$new_n377" current="_abc_3702_new_n377"/>
-		<block previous="$abc$3702$new_n378" current="_abc_3702_new_n378"/>
-		<block previous="$abc$3702$new_n379" current="_abc_3702_new_n379"/>
-		<block previous="$abc$3702$new_n380" current="_abc_3702_new_n380"/>
-		<block previous="$abc$3702$new_n383" current="_abc_3702_new_n383"/>
-		<block previous="$abc$3702$new_n384" current="_abc_3702_new_n384"/>
-		<block previous="$abc$3702$new_n386" current="_abc_3702_new_n386"/>
-		<block previous="$abc$3702$new_n387" current="_abc_3702_new_n387"/>
-		<block previous="$abc$3702$new_n388" current="_abc_3702_new_n388"/>
-		<block previous="$abc$3702$new_n389" current="_abc_3702_new_n389"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\c_state[16:0][0]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\c_state_16_0__0_"/>
-		<block previous="$abc$3702$new_n391" current="_abc_3702_new_n391"/>
-		<block previous="$abc$3702$new_n392" current="_abc_3702_new_n392"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\c_state[16:0][1]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\c_state_16_0__1_"/>
-		<block previous="$abc$3702$new_n394" current="_abc_3702_new_n394"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\c_state[16:0][2]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\c_state_16_0__2_"/>
-		<block previous="$abc$3702$new_n396" current="_abc_3702_new_n396"/>
-		<block previous="$abc$3702$new_n397" current="_abc_3702_new_n397"/>
-		<block previous="$abc$3702$new_n398" current="_abc_3702_new_n398"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\c_state[16:0][3]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\c_state_16_0__3_"/>
-		<block previous="$abc$3702$new_n402" current="_abc_3702_new_n402"/>
-		<block previous="$abc$3702$new_n403" current="_abc_3702_new_n403"/>
-		<block previous="$abc$3702$new_n404" current="_abc_3702_new_n404"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\c_state[16:0][5]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\c_state_16_0__5_"/>
-		<block previous="$abc$3702$new_n406" current="_abc_3702_new_n406"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\c_state[16:0][6]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\c_state_16_0__6_"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\c_state[16:0][8]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\c_state_16_0__8_"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\c_state[16:0][9]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\c_state_16_0__9_"/>
-		<block previous="$abc$3702$new_n413" current="_abc_3702_new_n413"/>
-		<block previous="$abc$3702$new_n414" current="_abc_3702_new_n414"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\c_state[16:0][10]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\c_state_16_0__10_"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\c_state[16:0][11]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\c_state_16_0__11_"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\c_state[16:0][12]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\c_state_16_0__12_"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\c_state[16:0][13]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\c_state_16_0__13_"/>
-		<block previous="$abc$3702$new_n421" current="_abc_3702_new_n421"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\c_state[16:0][14]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\c_state_16_0__14_"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\c_state[16:0][15]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\c_state_16_0__15_"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\c_state[16:0][16]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\c_state_16_0__16_"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\sda_oen[0:0]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\sda_oen_0_0_"/>
-		<block previous="$abc$3702$new_n428" current="_abc_3702_new_n428"/>
-		<block previous="$abc$3702$new_n429" current="_abc_3702_new_n429"/>
-		<block previous="$abc$3702$new_n430" current="_abc_3702_new_n430"/>
-		<block previous="$abc$3702$new_n431" current="_abc_3702_new_n431"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\scl_oen[0:0]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\scl_oen_0_0_"/>
-		<block previous="$abc$3702$new_n433" current="_abc_3702_new_n433"/>
-		<block previous="$abc$3702$new_n435" current="_abc_3702_new_n435"/>
-		<block previous="$abc$3702$new_n436" current="_abc_3702_new_n436"/>
-		<block previous="$abc$3702$new_n438" current="_abc_3702_new_n438"/>
-		<block previous="$abc$3702$new_n439" current="_abc_3702_new_n439"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\dout[0:0]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\dout_0_0_"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\al[0:0]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\al_0_0_"/>
-		<block previous="$abc$3702$new_n442" current="_abc_3702_new_n442"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cmd_stop[0:0]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cmd_stop_0_0_"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\busy[0:0]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\busy_0_0_"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\sto_condition[0:0]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\sto_condition_0_0_"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\sta_condition[0:0]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\sta_condition_0_0_"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\dSDA[0:0]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\dSDA_0_0_"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\dSCL[0:0]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\dSCL_0_0_"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\sSDA[0:0]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\sSDA_0_0_"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\sSCL[0:0]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\sSCL_0_0_"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\clk_en[0:0]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\clk_en_0_0_"/>
-		<block previous="$abc$3702$new_n452" current="_abc_3702_new_n452"/>
-		<block previous="$abc$3702$new_n453" current="_abc_3702_new_n453"/>
-		<block previous="$abc$3702$new_n454" current="_abc_3702_new_n454"/>
-		<block previous="$abc$3702$new_n455" current="_abc_3702_new_n455"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cnt[15:0][0]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cnt_15_0__0_"/>
-		<block previous="$abc$3702$new_n457" current="_abc_3702_new_n457"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cnt[15:0][1]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cnt_15_0__1_"/>
-		<block previous="$abc$3702$new_n459" current="_abc_3702_new_n459"/>
-		<block previous="$abc$3702$new_n460" current="_abc_3702_new_n460"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cnt[15:0][2]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cnt_15_0__2_"/>
-		<block previous="$abc$3702$new_n462" current="_abc_3702_new_n462"/>
-		<block previous="$abc$3702$new_n463" current="_abc_3702_new_n463"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cnt[15:0][3]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cnt_15_0__3_"/>
-		<block previous="$abc$3702$new_n465" current="_abc_3702_new_n465"/>
-		<block previous="$abc$3702$new_n466" current="_abc_3702_new_n466"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cnt[15:0][4]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cnt_15_0__4_"/>
-		<block previous="$abc$3702$new_n468" current="_abc_3702_new_n468"/>
-		<block previous="$abc$3702$new_n469" current="_abc_3702_new_n469"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cnt[15:0][5]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cnt_15_0__5_"/>
-		<block previous="$abc$3702$new_n471" current="_abc_3702_new_n471"/>
-		<block previous="$abc$3702$new_n472" current="_abc_3702_new_n472"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cnt[15:0][6]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cnt_15_0__6_"/>
-		<block previous="$abc$3702$new_n474" current="_abc_3702_new_n474"/>
-		<block previous="$abc$3702$new_n475" current="_abc_3702_new_n475"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cnt[15:0][7]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cnt_15_0__7_"/>
-		<block previous="$abc$3702$new_n477" current="_abc_3702_new_n477"/>
-		<block previous="$abc$3702$new_n478" current="_abc_3702_new_n478"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cnt[15:0][8]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cnt_15_0__8_"/>
-		<block previous="$abc$3702$new_n480" current="_abc_3702_new_n480"/>
-		<block previous="$abc$3702$new_n481" current="_abc_3702_new_n481"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cnt[15:0][9]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cnt_15_0__9_"/>
-		<block previous="$abc$3702$new_n483" current="_abc_3702_new_n483"/>
-		<block previous="$abc$3702$new_n484" current="_abc_3702_new_n484"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cnt[15:0][10]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cnt_15_0__10_"/>
-		<block previous="$abc$3702$new_n486" current="_abc_3702_new_n486"/>
-		<block previous="$abc$3702$new_n487" current="_abc_3702_new_n487"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cnt[15:0][11]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cnt_15_0__11_"/>
-		<block previous="$abc$3702$new_n489" current="_abc_3702_new_n489"/>
-		<block previous="$abc$3702$new_n490" current="_abc_3702_new_n490"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cnt[15:0][12]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cnt_15_0__12_"/>
-		<block previous="$abc$3702$new_n492" current="_abc_3702_new_n492"/>
-		<block previous="$abc$3702$new_n493" current="_abc_3702_new_n493"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cnt[15:0][13]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cnt_15_0__13_"/>
-		<block previous="$abc$3702$new_n495" current="_abc_3702_new_n495"/>
-		<block previous="$abc$3702$new_n496" current="_abc_3702_new_n496"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cnt[15:0][14]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cnt_15_0__14_"/>
-		<block previous="$abc$3702$new_n498" current="_abc_3702_new_n498"/>
-		<block previous="$abc$3702$new_n499" current="_abc_3702_new_n499"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cnt[15:0][15]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cnt_15_0__15_"/>
-		<block previous="$abc$3702$flatten\byte_controller.$0\sr[7:0][0]" current="_abc_3702_flatten\byte_controller__0\sr_7_0__0_"/>
-		<block previous="$abc$3702$flatten\byte_controller.$0\sr[7:0][1]" current="_abc_3702_flatten\byte_controller__0\sr_7_0__1_"/>
-		<block previous="$abc$3702$flatten\byte_controller.$0\sr[7:0][2]" current="_abc_3702_flatten\byte_controller__0\sr_7_0__2_"/>
-		<block previous="$abc$3702$flatten\byte_controller.$0\sr[7:0][3]" current="_abc_3702_flatten\byte_controller__0\sr_7_0__3_"/>
-		<block previous="$abc$3702$flatten\byte_controller.$0\sr[7:0][4]" current="_abc_3702_flatten\byte_controller__0\sr_7_0__4_"/>
-		<block previous="$abc$3702$flatten\byte_controller.$0\sr[7:0][5]" current="_abc_3702_flatten\byte_controller__0\sr_7_0__5_"/>
-		<block previous="$abc$3702$flatten\byte_controller.$0\sr[7:0][6]" current="_abc_3702_flatten\byte_controller__0\sr_7_0__6_"/>
-		<block previous="$abc$3702$flatten\byte_controller.$0\sr[7:0][7]" current="_abc_3702_flatten\byte_controller__0\sr_7_0__7_"/>
-		<block previous="$abc$3702$flatten\byte_controller.$0\dcnt[2:0][0]" current="_abc_3702_flatten\byte_controller__0\dcnt_2_0__0_"/>
-		<block previous="$abc$3702$flatten\byte_controller.$0\dcnt[2:0][1]" current="_abc_3702_flatten\byte_controller__0\dcnt_2_0__1_"/>
-		<block previous="$abc$3702$flatten\byte_controller.$0\dcnt[2:0][2]" current="_abc_3702_flatten\byte_controller__0\dcnt_2_0__2_"/>
-		<block previous="$abc$3702$flatten\byte_controller.$0\ack_out[0:0]" current="_abc_3702_flatten\byte_controller__0\ack_out_0_0_"/>
-		<block previous="$abc$3702$new_n513" current="_abc_3702_new_n513"/>
-		<block previous="$abc$3702$new_n514" current="_abc_3702_new_n514"/>
-		<block previous="$abc$3702$flatten\byte_controller.$0\core_cmd[3:0][0]" current="_abc_3702_flatten\byte_controller__0\core_cmd_3_0__0_"/>
-		<block previous="$abc$3702$new_n516" current="_abc_3702_new_n516"/>
-		<block previous="$abc$3702$new_n517" current="_abc_3702_new_n517"/>
-		<block previous="$abc$3702$new_n518" current="_abc_3702_new_n518"/>
-		<block previous="$abc$3702$new_n519" current="_abc_3702_new_n519"/>
-		<block previous="$abc$3702$new_n520" current="_abc_3702_new_n520"/>
-		<block previous="$abc$3702$flatten\byte_controller.$0\core_cmd[3:0][1]" current="_abc_3702_flatten\byte_controller__0\core_cmd_3_0__1_"/>
-		<block previous="$abc$3702$new_n522" current="_abc_3702_new_n522"/>
-		<block previous="$abc$3702$new_n523" current="_abc_3702_new_n523"/>
-		<block previous="$abc$3702$flatten\byte_controller.$0\core_cmd[3:0][2]" current="_abc_3702_flatten\byte_controller__0\core_cmd_3_0__2_"/>
-		<block previous="$abc$3702$new_n525" current="_abc_3702_new_n525"/>
-		<block previous="$abc$3702$new_n526" current="_abc_3702_new_n526"/>
-		<block previous="$abc$3702$new_n527" current="_abc_3702_new_n527"/>
-		<block previous="$abc$3702$new_n528" current="_abc_3702_new_n528"/>
-		<block previous="$abc$3702$new_n529" current="_abc_3702_new_n529"/>
-		<block previous="$abc$3702$new_n530" current="_abc_3702_new_n530"/>
-		<block previous="$abc$3702$new_n532" current="_abc_3702_new_n532"/>
-		<block previous="$abc$3702$new_n534" current="_abc_3702_new_n534"/>
-		<block previous="$abc$3702$new_n536" current="_abc_3702_new_n536"/>
-		<block previous="$abc$3702$flatten\byte_controller.$0\c_state[4:0][0]" current="_abc_3702_flatten\byte_controller__0\c_state_4_0__0_"/>
-		<block previous="$abc$3702$flatten\byte_controller.$0\c_state[4:0][1]" current="_abc_3702_flatten\byte_controller__0\c_state_4_0__1_"/>
-		<block previous="$abc$3702$new_n539" current="_abc_3702_new_n539"/>
-		<block previous="$abc$3702$flatten\byte_controller.$0\c_state[4:0][2]" current="_abc_3702_flatten\byte_controller__0\c_state_4_0__2_"/>
-		<block previous="$abc$3702$new_n541" current="_abc_3702_new_n541"/>
-		<block previous="$abc$3702$flatten\byte_controller.$0\c_state[4:0][3]" current="_abc_3702_flatten\byte_controller__0\c_state_4_0__3_"/>
-		<block previous="$abc$3702$new_n543" current="_abc_3702_new_n543"/>
-		<block previous="$abc$3702$flatten\byte_controller.$0\c_state[4:0][4]" current="_abc_3702_flatten\byte_controller__0\c_state_4_0__4_"/>
-		<block previous="$abc$3702$new_n545" current="_abc_3702_new_n545"/>
-		<block previous="$abc$3702$flatten\byte_controller.$0\core_txd[0:0]" current="_abc_3702_flatten\byte_controller__0\core_txd_0_0_"/>
-		<block previous="$abc$3702$new_n547" current="_abc_3702_new_n547"/>
-		<block previous="$abc$3702$flatten\byte_controller.$0\shift[0:0]" current="_abc_3702_flatten\byte_controller__0\shift_0_0_"/>
-		<block previous="$abc$3702$flatten\byte_controller.$0\ld[0:0]" current="_abc_3702_flatten\byte_controller__0\ld_0_0_"/>
-		<block previous="$abc$3702$flatten\byte_controller.$0\cmd_ack[0:0]" current="_abc_3702_flatten\byte_controller__0\cmd_ack_0_0_"/>
-		<block previous="$0\wb_ack_o[0:0]" current="_0\wb_ack_o_0_0_"/>
-		<block previous="$abc$3702$new_n553" current="_abc_3702_new_n553"/>
-		<block previous="$0\wb_dat_o[7:0][2]" current="_0\wb_dat_o_7_0__2_"/>
-		<block previous="$abc$3702$new_n555" current="_abc_3702_new_n555"/>
+		<block previous="$abc$3685$new_n322" current="_abc_3685_new_n322"/>
+		<block previous="$abc$3685$new_n323" current="_abc_3685_new_n323"/>
 		<block previous="$0\wb_dat_o[7:0][3]" current="_0\wb_dat_o_7_0__3_"/>
-		<block previous="$abc$3702$new_n557" current="_abc_3702_new_n557"/>
+		<block previous="$abc$3685$new_n328" current="_abc_3685_new_n328"/>
+		<block previous="$0\wb_dat_o[7:0][5]" current="_0\wb_dat_o_7_0__5_"/>
+		<block previous="$abc$3685$new_n334" current="_abc_3685_new_n334"/>
+		<block previous="$abc$3685$new_n335" current="_abc_3685_new_n335"/>
+		<block previous="$0\wb_dat_o[7:0][6]" current="_0\wb_dat_o_7_0__6_"/>
+		<block previous="$abc$3685$new_n337" current="_abc_3685_new_n337"/>
+		<block previous="$abc$3685$new_n338" current="_abc_3685_new_n338"/>
+		<block previous="$0\wb_dat_o[7:0][7]" current="_0\wb_dat_o_7_0__7_"/>
+		<block previous="$abc$3685$new_n340" current="_abc_3685_new_n340"/>
+		<block previous="$abc$3685$new_n341" current="_abc_3685_new_n341"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cmd_ack[0:0]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cmd_ack_0_0_"/>
+		<block previous="$abc$3685$new_n343" current="_abc_3685_new_n343"/>
+		<block previous="$abc$3685$new_n344" current="_abc_3685_new_n344"/>
+		<block previous="$abc$3685$new_n345" current="_abc_3685_new_n345"/>
+		<block previous="$abc$3685$new_n346" current="_abc_3685_new_n346"/>
+		<block previous="$abc$3685$new_n347" current="_abc_3685_new_n347"/>
+		<block previous="$abc$3685$new_n348" current="_abc_3685_new_n348"/>
+		<block previous="$abc$3685$new_n349" current="_abc_3685_new_n349"/>
+		<block previous="$abc$3685$new_n350" current="_abc_3685_new_n350"/>
+		<block previous="$abc$3685$new_n352" current="_abc_3685_new_n352"/>
+		<block previous="$abc$3685$new_n353" current="_abc_3685_new_n353"/>
+		<block previous="$abc$3685$new_n354" current="_abc_3685_new_n354"/>
+		<block previous="$abc$3685$new_n355" current="_abc_3685_new_n355"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\sda_chk[0:0]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\sda_chk_0_0_"/>
+		<block previous="$abc$3685$new_n357" current="_abc_3685_new_n357"/>
+		<block previous="$abc$3685$new_n358" current="_abc_3685_new_n358"/>
+		<block previous="$abc$3685$new_n359" current="_abc_3685_new_n359"/>
+		<block previous="$abc$3685$new_n360" current="_abc_3685_new_n360"/>
+		<block previous="$abc$3685$new_n361" current="_abc_3685_new_n361"/>
+		<block previous="$abc$3685$new_n362" current="_abc_3685_new_n362"/>
+		<block previous="$abc$3685$new_n363" current="_abc_3685_new_n363"/>
+		<block previous="$abc$3685$new_n364" current="_abc_3685_new_n364"/>
+		<block previous="$abc$3685$new_n365" current="_abc_3685_new_n365"/>
+		<block previous="$abc$3685$new_n366" current="_abc_3685_new_n366"/>
+		<block previous="$abc$3685$new_n367" current="_abc_3685_new_n367"/>
+		<block previous="$abc$3685$new_n368" current="_abc_3685_new_n368"/>
+		<block previous="$abc$3685$new_n369" current="_abc_3685_new_n369"/>
+		<block previous="$abc$3685$new_n370" current="_abc_3685_new_n370"/>
+		<block previous="$abc$3685$new_n371" current="_abc_3685_new_n371"/>
+		<block previous="$abc$3685$new_n372" current="_abc_3685_new_n372"/>
+		<block previous="$abc$3685$new_n373" current="_abc_3685_new_n373"/>
+		<block previous="$abc$3685$new_n374" current="_abc_3685_new_n374"/>
+		<block previous="$abc$3685$new_n375" current="_abc_3685_new_n375"/>
+		<block previous="$abc$3685$new_n376" current="_abc_3685_new_n376"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\c_state[16:0][0]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\c_state_16_0__0_"/>
+		<block previous="$abc$3685$new_n378" current="_abc_3685_new_n378"/>
+		<block previous="$abc$3685$new_n379" current="_abc_3685_new_n379"/>
+		<block previous="$abc$3685$new_n380" current="_abc_3685_new_n380"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\c_state[16:0][1]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\c_state_16_0__1_"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\c_state[16:0][2]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\c_state_16_0__2_"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\c_state[16:0][3]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\c_state_16_0__3_"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\c_state[16:0][4]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\c_state_16_0__4_"/>
+		<block previous="$abc$3685$new_n386" current="_abc_3685_new_n386"/>
+		<block previous="$abc$3685$new_n387" current="_abc_3685_new_n387"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\c_state[16:0][5]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\c_state_16_0__5_"/>
+		<block previous="$abc$3685$new_n389" current="_abc_3685_new_n389"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\c_state[16:0][6]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\c_state_16_0__6_"/>
+		<block previous="$abc$3685$new_n391" current="_abc_3685_new_n391"/>
+		<block previous="$abc$3685$new_n392" current="_abc_3685_new_n392"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\c_state[16:0][7]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\c_state_16_0__7_"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\c_state[16:0][8]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\c_state_16_0__8_"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\c_state[16:0][9]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\c_state_16_0__9_"/>
+		<block previous="$abc$3685$new_n396" current="_abc_3685_new_n396"/>
+		<block previous="$abc$3685$new_n397" current="_abc_3685_new_n397"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\c_state[16:0][10]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\c_state_16_0__10_"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\c_state[16:0][11]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\c_state_16_0__11_"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\c_state[16:0][12]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\c_state_16_0__12_"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\c_state[16:0][13]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\c_state_16_0__13_"/>
+		<block previous="$abc$3685$new_n405" current="_abc_3685_new_n405"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\c_state[16:0][14]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\c_state_16_0__14_"/>
+		<block previous="$abc$3685$new_n407" current="_abc_3685_new_n407"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\c_state[16:0][15]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\c_state_16_0__15_"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\c_state[16:0][16]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\c_state_16_0__16_"/>
+		<block previous="$abc$3685$new_n415" current="_abc_3685_new_n415"/>
+		<block previous="$abc$3685$new_n416" current="_abc_3685_new_n416"/>
+		<block previous="$abc$3685$new_n417" current="_abc_3685_new_n417"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\scl_oen[0:0]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\scl_oen_0_0_"/>
+		<block previous="$abc$3685$new_n421" current="_abc_3685_new_n421"/>
+		<block previous="$abc$3685$new_n422" current="_abc_3685_new_n422"/>
+		<block previous="$abc$3685$new_n423" current="_abc_3685_new_n423"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\dout[0:0]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\dout_0_0_"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\al[0:0]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\al_0_0_"/>
+		<block previous="$abc$3685$new_n426" current="_abc_3685_new_n426"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cmd_stop[0:0]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cmd_stop_0_0_"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\busy[0:0]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\busy_0_0_"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\sto_condition[0:0]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\sto_condition_0_0_"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\sta_condition[0:0]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\sta_condition_0_0_"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\dSDA[0:0]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\dSDA_0_0_"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\dSCL[0:0]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\dSCL_0_0_"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\sSDA[0:0]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\sSDA_0_0_"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\sSCL[0:0]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\sSCL_0_0_"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\clk_en[0:0]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\clk_en_0_0_"/>
+		<block previous="$abc$3685$new_n436" current="_abc_3685_new_n436"/>
+		<block previous="$abc$3685$new_n437" current="_abc_3685_new_n437"/>
+		<block previous="$abc$3685$new_n438" current="_abc_3685_new_n438"/>
+		<block previous="$abc$3685$new_n439" current="_abc_3685_new_n439"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cnt[15:0][0]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cnt_15_0__0_"/>
+		<block previous="$abc$3685$new_n441" current="_abc_3685_new_n441"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cnt[15:0][1]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cnt_15_0__1_"/>
+		<block previous="$abc$3685$new_n443" current="_abc_3685_new_n443"/>
+		<block previous="$abc$3685$new_n444" current="_abc_3685_new_n444"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cnt[15:0][2]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cnt_15_0__2_"/>
+		<block previous="$abc$3685$new_n446" current="_abc_3685_new_n446"/>
+		<block previous="$abc$3685$new_n447" current="_abc_3685_new_n447"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cnt[15:0][3]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cnt_15_0__3_"/>
+		<block previous="$abc$3685$new_n449" current="_abc_3685_new_n449"/>
+		<block previous="$abc$3685$new_n450" current="_abc_3685_new_n450"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cnt[15:0][4]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cnt_15_0__4_"/>
+		<block previous="$abc$3685$new_n452" current="_abc_3685_new_n452"/>
+		<block previous="$abc$3685$new_n453" current="_abc_3685_new_n453"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cnt[15:0][5]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cnt_15_0__5_"/>
+		<block previous="$abc$3685$new_n455" current="_abc_3685_new_n455"/>
+		<block previous="$abc$3685$new_n456" current="_abc_3685_new_n456"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cnt[15:0][6]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cnt_15_0__6_"/>
+		<block previous="$abc$3685$new_n458" current="_abc_3685_new_n458"/>
+		<block previous="$abc$3685$new_n459" current="_abc_3685_new_n459"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cnt[15:0][7]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cnt_15_0__7_"/>
+		<block previous="$abc$3685$new_n461" current="_abc_3685_new_n461"/>
+		<block previous="$abc$3685$new_n462" current="_abc_3685_new_n462"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cnt[15:0][8]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cnt_15_0__8_"/>
+		<block previous="$abc$3685$new_n464" current="_abc_3685_new_n464"/>
+		<block previous="$abc$3685$new_n465" current="_abc_3685_new_n465"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cnt[15:0][9]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cnt_15_0__9_"/>
+		<block previous="$abc$3685$new_n467" current="_abc_3685_new_n467"/>
+		<block previous="$abc$3685$new_n468" current="_abc_3685_new_n468"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cnt[15:0][10]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cnt_15_0__10_"/>
+		<block previous="$abc$3685$new_n470" current="_abc_3685_new_n470"/>
+		<block previous="$abc$3685$new_n471" current="_abc_3685_new_n471"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cnt[15:0][11]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cnt_15_0__11_"/>
+		<block previous="$abc$3685$new_n473" current="_abc_3685_new_n473"/>
+		<block previous="$abc$3685$new_n474" current="_abc_3685_new_n474"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cnt[15:0][12]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cnt_15_0__12_"/>
+		<block previous="$abc$3685$new_n476" current="_abc_3685_new_n476"/>
+		<block previous="$abc$3685$new_n477" current="_abc_3685_new_n477"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cnt[15:0][13]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cnt_15_0__13_"/>
+		<block previous="$abc$3685$new_n479" current="_abc_3685_new_n479"/>
+		<block previous="$abc$3685$new_n480" current="_abc_3685_new_n480"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cnt[15:0][14]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cnt_15_0__14_"/>
+		<block previous="$abc$3685$new_n482" current="_abc_3685_new_n482"/>
+		<block previous="$abc$3685$new_n483" current="_abc_3685_new_n483"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cnt[15:0][15]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cnt_15_0__15_"/>
+		<block previous="$abc$3685$flatten\byte_controller.$0\sr[7:0][0]" current="_abc_3685_flatten\byte_controller__0\sr_7_0__0_"/>
+		<block previous="$abc$3685$flatten\byte_controller.$0\sr[7:0][1]" current="_abc_3685_flatten\byte_controller__0\sr_7_0__1_"/>
+		<block previous="$abc$3685$flatten\byte_controller.$0\sr[7:0][2]" current="_abc_3685_flatten\byte_controller__0\sr_7_0__2_"/>
+		<block previous="$abc$3685$flatten\byte_controller.$0\sr[7:0][3]" current="_abc_3685_flatten\byte_controller__0\sr_7_0__3_"/>
+		<block previous="$abc$3685$flatten\byte_controller.$0\sr[7:0][4]" current="_abc_3685_flatten\byte_controller__0\sr_7_0__4_"/>
+		<block previous="$abc$3685$flatten\byte_controller.$0\sr[7:0][5]" current="_abc_3685_flatten\byte_controller__0\sr_7_0__5_"/>
+		<block previous="$abc$3685$flatten\byte_controller.$0\sr[7:0][6]" current="_abc_3685_flatten\byte_controller__0\sr_7_0__6_"/>
+		<block previous="$abc$3685$flatten\byte_controller.$0\sr[7:0][7]" current="_abc_3685_flatten\byte_controller__0\sr_7_0__7_"/>
+		<block previous="$abc$3685$flatten\byte_controller.$0\dcnt[2:0][0]" current="_abc_3685_flatten\byte_controller__0\dcnt_2_0__0_"/>
+		<block previous="$abc$3685$flatten\byte_controller.$0\dcnt[2:0][1]" current="_abc_3685_flatten\byte_controller__0\dcnt_2_0__1_"/>
+		<block previous="$abc$3685$flatten\byte_controller.$0\dcnt[2:0][2]" current="_abc_3685_flatten\byte_controller__0\dcnt_2_0__2_"/>
+		<block previous="$abc$3685$flatten\byte_controller.$0\ack_out[0:0]" current="_abc_3685_flatten\byte_controller__0\ack_out_0_0_"/>
+		<block previous="$abc$3685$new_n497" current="_abc_3685_new_n497"/>
+		<block previous="$abc$3685$new_n498" current="_abc_3685_new_n498"/>
+		<block previous="$abc$3685$flatten\byte_controller.$0\core_cmd[3:0][0]" current="_abc_3685_flatten\byte_controller__0\core_cmd_3_0__0_"/>
+		<block previous="$abc$3685$new_n500" current="_abc_3685_new_n500"/>
+		<block previous="$abc$3685$new_n501" current="_abc_3685_new_n501"/>
+		<block previous="$abc$3685$new_n502" current="_abc_3685_new_n502"/>
+		<block previous="$abc$3685$new_n503" current="_abc_3685_new_n503"/>
+		<block previous="$abc$3685$flatten\byte_controller.$0\core_cmd[3:0][1]" current="_abc_3685_flatten\byte_controller__0\core_cmd_3_0__1_"/>
+		<block previous="$abc$3685$new_n505" current="_abc_3685_new_n505"/>
+		<block previous="$abc$3685$new_n506" current="_abc_3685_new_n506"/>
+		<block previous="$abc$3685$new_n507" current="_abc_3685_new_n507"/>
+		<block previous="$abc$3685$new_n508" current="_abc_3685_new_n508"/>
+		<block previous="$abc$3685$new_n509" current="_abc_3685_new_n509"/>
+		<block previous="$abc$3685$flatten\byte_controller.$0\core_cmd[3:0][2]" current="_abc_3685_flatten\byte_controller__0\core_cmd_3_0__2_"/>
+		<block previous="$abc$3685$new_n511" current="_abc_3685_new_n511"/>
+		<block previous="$abc$3685$new_n512" current="_abc_3685_new_n512"/>
+		<block previous="$abc$3685$new_n513" current="_abc_3685_new_n513"/>
+		<block previous="$abc$3685$new_n514" current="_abc_3685_new_n514"/>
+		<block previous="$abc$3685$new_n515" current="_abc_3685_new_n515"/>
+		<block previous="$abc$3685$flatten\byte_controller.$0\core_cmd[3:0][3]" current="_abc_3685_flatten\byte_controller__0\core_cmd_3_0__3_"/>
+		<block previous="$abc$3685$new_n517" current="_abc_3685_new_n517"/>
+		<block previous="$abc$3685$new_n518" current="_abc_3685_new_n518"/>
+		<block previous="$abc$3685$new_n519" current="_abc_3685_new_n519"/>
+		<block previous="$abc$3685$new_n520" current="_abc_3685_new_n520"/>
+		<block previous="$abc$3685$new_n521" current="_abc_3685_new_n521"/>
+		<block previous="$abc$3685$flatten\byte_controller.$0\c_state[4:0][0]" current="_abc_3685_flatten\byte_controller__0\c_state_4_0__0_"/>
+		<block previous="$abc$3685$new_n525" current="_abc_3685_new_n525"/>
+		<block previous="$abc$3685$flatten\byte_controller.$0\c_state[4:0][2]" current="_abc_3685_flatten\byte_controller__0\c_state_4_0__2_"/>
+		<block previous="$abc$3685$new_n528" current="_abc_3685_new_n528"/>
+		<block previous="$abc$3685$flatten\byte_controller.$0\c_state[4:0][3]" current="_abc_3685_flatten\byte_controller__0\c_state_4_0__3_"/>
+		<block previous="$abc$3685$new_n530" current="_abc_3685_new_n530"/>
+		<block previous="$abc$3685$flatten\byte_controller.$0\c_state[4:0][4]" current="_abc_3685_flatten\byte_controller__0\c_state_4_0__4_"/>
+		<block previous="$abc$3685$new_n532" current="_abc_3685_new_n532"/>
+		<block previous="$abc$3685$flatten\byte_controller.$0\core_txd[0:0]" current="_abc_3685_flatten\byte_controller__0\core_txd_0_0_"/>
+		<block previous="$abc$3685$flatten\byte_controller.$0\shift[0:0]" current="_abc_3685_flatten\byte_controller__0\shift_0_0_"/>
+		<block previous="$abc$3685$flatten\byte_controller.$0\ld[0:0]" current="_abc_3685_flatten\byte_controller__0\ld_0_0_"/>
+		<block previous="$abc$3685$flatten\byte_controller.$0\cmd_ack[0:0]" current="_abc_3685_flatten\byte_controller__0\cmd_ack_0_0_"/>
+		<block previous="$0\wb_ack_o[0:0]" current="_0\wb_ack_o_0_0_"/>
+		<block previous="$abc$3685$new_n538" current="_abc_3685_new_n538"/>
+		<block previous="$0\wb_dat_o[7:0][2]" current="_0\wb_dat_o_7_0__2_"/>
+		<block previous="$abc$3685$new_n540" current="_abc_3685_new_n540"/>
 		<block previous="$0\wb_dat_o[7:0][4]" current="_0\wb_dat_o_7_0__4_"/>
-		<block previous="$abc$3702$new_n559" current="_abc_3702_new_n559"/>
-		<block previous="$abc$3702$new_n560" current="_abc_3702_new_n560"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\c_state[16:0][4]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\c_state_16_0__4_"/>
-		<block previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\c_state[16:0][7]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\c_state_16_0__7_"/>
-		<block previous="$abc$3702$new_n563" current="_abc_3702_new_n563"/>
-		<block previous="$abc$3702$flatten\byte_controller.$0\core_cmd[3:0][3]" current="_abc_3702_flatten\byte_controller__0\core_cmd_3_0__3_"/>
+		<block previous="$abc$3685$new_n542" current="_abc_3685_new_n542"/>
+		<block previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\sda_oen[0:0]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\sda_oen_0_0_"/>
+		<block previous="$abc$3685$new_n544" current="_abc_3685_new_n544"/>
+		<block previous="$abc$3685$flatten\byte_controller.$0\c_state[4:0][1]" current="_abc_3685_flatten\byte_controller__0\c_state_4_0__1_"/>
 		<block previous="cr[1]" current="cr_1_"/>
 		<block previous="cr[2]" current="cr_2_"/>
 		<block previous="byte_controller.write" current="byte_controller_write"/>
@@ -439,11 +432,11 @@
 		<net previous="byte_controller.ack_out" current="byte_controller_ack_out"/>
 		<net previous="$0\rxack[0:0]" current="_0\rxack_0_0_"/>
 		<net previous="$0\al[0:0]" current="_0\al_0_0_"/>
-		<net previous="$abc$3702$new_n273" current="_abc_3702_new_n273"/>
-		<net previous="$abc$3702$new_n271" current="_abc_3702_new_n271"/>
+		<net previous="$abc$3685$new_n273" current="_abc_3685_new_n273"/>
+		<net previous="$abc$3685$new_n271" current="_abc_3685_new_n271"/>
 		<net previous="$0\cr[7:0][4]" current="_0\cr_7_0__4_"/>
-		<net previous="$abc$3702$new_n272" current="_abc_3702_new_n272"/>
-		<net previous="$abc$3702$new_n274" current="_abc_3702_new_n274"/>
+		<net previous="$abc$3685$new_n272" current="_abc_3685_new_n272"/>
+		<net previous="$abc$3685$new_n274" current="_abc_3685_new_n274"/>
 		<net previous="$0\cr[7:0][5]" current="_0\cr_7_0__5_"/>
 		<net previous="$0\cr[7:0][6]" current="_0\cr_7_0__6_"/>
 		<net previous="$0\cr[7:0][7]" current="_0\cr_7_0__7_"/>
@@ -453,7 +446,7 @@
 		<net previous="cr[2]" current="cr_2_"/>
 		<net previous="$0\cr[7:0][2]" current="_0\cr_7_0__2_"/>
 		<net previous="$0\cr[7:0][0]" current="_0\cr_7_0__0_"/>
-		<net previous="$abc$3702$new_n283" current="_abc_3702_new_n283"/>
+		<net previous="$abc$3685$new_n283" current="_abc_3685_new_n283"/>
 		<net previous="byte_controller.bit_controller.clk_cnt[8]" current="byte_controller_bit_controller_clk_cnt_8_"/>
 		<net previous="$0\prer[15:0][8]" current="_0\prer_15_0__8_"/>
 		<net previous="byte_controller.bit_controller.clk_cnt[9]" current="byte_controller_bit_controller_clk_cnt_9_"/>
@@ -470,7 +463,7 @@
 		<net previous="$0\prer[15:0][14]" current="_0\prer_15_0__14_"/>
 		<net previous="byte_controller.bit_controller.clk_cnt[15]" current="byte_controller_bit_controller_clk_cnt_15_"/>
 		<net previous="$0\prer[15:0][15]" current="_0\prer_15_0__15_"/>
-		<net previous="$abc$3702$new_n292" current="_abc_3702_new_n292"/>
+		<net previous="$abc$3685$new_n292" current="_abc_3685_new_n292"/>
 		<net previous="byte_controller.bit_controller.clk_cnt[0]" current="byte_controller_bit_controller_clk_cnt_0_"/>
 		<net previous="$0\prer[15:0][0]" current="_0\prer_15_0__0_"/>
 		<net previous="byte_controller.bit_controller.clk_cnt[1]" current="byte_controller_bit_controller_clk_cnt_1_"/>
@@ -487,7 +480,7 @@
 		<net previous="$0\prer[15:0][6]" current="_0\prer_15_0__6_"/>
 		<net previous="byte_controller.bit_controller.clk_cnt[7]" current="byte_controller_bit_controller_clk_cnt_7_"/>
 		<net previous="$0\prer[15:0][7]" current="_0\prer_15_0__7_"/>
-		<net previous="$abc$3702$new_n301" current="_abc_3702_new_n301"/>
+		<net previous="$abc$3685$new_n301" current="_abc_3685_new_n301"/>
 		<net previous="ctr[0]" current="ctr_0_"/>
 		<net previous="$0\ctr[7:0][0]" current="_0\ctr_7_0__0_"/>
 		<net previous="ctr[1]" current="ctr_1_"/>
@@ -502,7 +495,7 @@
 		<net previous="$0\ctr[7:0][5]" current="_0\ctr_7_0__5_"/>
 		<net previous="$0\ctr[7:0][6]" current="_0\ctr_7_0__6_"/>
 		<net previous="$0\ctr[7:0][7]" current="_0\ctr_7_0__7_"/>
-		<net previous="$abc$3702$new_n310" current="_abc_3702_new_n310"/>
+		<net previous="$abc$3685$new_n310" current="_abc_3685_new_n310"/>
 		<net previous="byte_controller.din[0]" current="byte_controller_din_0_"/>
 		<net previous="$0\txr[7:0][0]" current="_0\txr_7_0__0_"/>
 		<net previous="byte_controller.din[1]" current="byte_controller_din_1_"/>
@@ -519,158 +512,152 @@
 		<net previous="$0\txr[7:0][6]" current="_0\txr_7_0__6_"/>
 		<net previous="byte_controller.din[7]" current="byte_controller_din_7_"/>
 		<net previous="$0\txr[7:0][7]" current="_0\txr_7_0__7_"/>
-		<net previous="$abc$3702$new_n319" current="_abc_3702_new_n319"/>
-		<net previous="$0\wb_dat_o[7:0][0]" current="_0\wb_dat_o_7_0__0_"/>
-		<net previous="$abc$3702$new_n320" current="_abc_3702_new_n320"/>
+		<net previous="$abc$3685$new_n320" current="_abc_3685_new_n320"/>
+		<net previous="$abc$3685$new_n319" current="_abc_3685_new_n319"/>
 		<net previous="byte_controller.dout[0]" current="byte_controller_dout_0_"/>
-		<net previous="$abc$3702$new_n323" current="_abc_3702_new_n323"/>
-		<net previous="$abc$3702$new_n322" current="_abc_3702_new_n322"/>
+		<net previous="$0\wb_dat_o[7:0][0]" current="_0\wb_dat_o_7_0__0_"/>
+		<net previous="$abc$3685$new_n323" current="_abc_3685_new_n323"/>
+		<net previous="$abc$3685$new_n322" current="_abc_3685_new_n322"/>
 		<net previous="byte_controller.dout[1]" current="byte_controller_dout_1_"/>
 		<net previous="$0\wb_dat_o[7:0][1]" current="_0\wb_dat_o_7_0__1_"/>
-		<net previous="$abc$3702$new_n335" current="_abc_3702_new_n335"/>
-		<net previous="$abc$3702$new_n334" current="_abc_3702_new_n334"/>
+		<net previous="$abc$3685$new_n328" current="_abc_3685_new_n328"/>
+		<net previous="$0\wb_dat_o[7:0][3]" current="_0\wb_dat_o_7_0__3_"/>
+		<net previous="byte_controller.dout[3]" current="byte_controller_dout_3_"/>
+		<net previous="$abc$3685$new_n335" current="_abc_3685_new_n335"/>
+		<net previous="$abc$3685$new_n334" current="_abc_3685_new_n334"/>
 		<net previous="byte_controller.dout[5]" current="byte_controller_dout_5_"/>
 		<net previous="$0\wb_dat_o[7:0][5]" current="_0\wb_dat_o_7_0__5_"/>
-		<net previous="$abc$3702$new_n337" current="_abc_3702_new_n337"/>
-		<net previous="$0\wb_dat_o[7:0][6]" current="_0\wb_dat_o_7_0__6_"/>
-		<net previous="$abc$3702$new_n338" current="_abc_3702_new_n338"/>
+		<net previous="$abc$3685$new_n338" current="_abc_3685_new_n338"/>
+		<net previous="$abc$3685$new_n337" current="_abc_3685_new_n337"/>
 		<net previous="byte_controller.dout[6]" current="byte_controller_dout_6_"/>
+		<net previous="$0\wb_dat_o[7:0][6]" current="_0\wb_dat_o_7_0__6_"/>
 		<net previous="byte_controller.bit_controller.busy" current="byte_controller_bit_controller_busy"/>
-		<net previous="$abc$3702$new_n340" current="_abc_3702_new_n340"/>
-		<net previous="$abc$3702$new_n341" current="_abc_3702_new_n341"/>
+		<net previous="$abc$3685$new_n340" current="_abc_3685_new_n340"/>
+		<net previous="$abc$3685$new_n341" current="_abc_3685_new_n341"/>
 		<net previous="byte_controller.dout[7]" current="byte_controller_dout_7_"/>
 		<net previous="$0\wb_dat_o[7:0][7]" current="_0\wb_dat_o_7_0__7_"/>
-		<net previous="$abc$3702$new_n358" current="_abc_3702_new_n358"/>
-		<net previous="$abc$3702$new_n348" current="_abc_3702_new_n348"/>
-		<net previous="$abc$3702$new_n377" current="_abc_3702_new_n377"/>
-		<net previous="$abc$3702$new_n378" current="_abc_3702_new_n378"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cmd_ack[0:0]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cmd_ack_0_0_"/>
-		<net previous="$abc$3702$new_n347" current="_abc_3702_new_n347"/>
-		<net previous="$abc$3702$new_n346" current="_abc_3702_new_n346"/>
-		<net previous="$abc$3702$new_n345" current="_abc_3702_new_n345"/>
-		<net previous="$abc$3702$new_n344" current="_abc_3702_new_n344"/>
-		<net previous="byte_controller.bit_controller.c_state[1]" current="byte_controller_bit_controller_c_state_1_"/>
-		<net previous="byte_controller.bit_controller.c_state[0]" current="byte_controller_bit_controller_c_state_0_"/>
-		<net previous="byte_controller.bit_controller.c_state[3]" current="byte_controller_bit_controller_c_state_3_"/>
+		<net previous="$abc$3685$new_n355" current="_abc_3685_new_n355"/>
+		<net previous="byte_controller.bit_controller.clk_en" current="byte_controller_bit_controller_clk_en"/>
+		<net previous="$abc$3685$new_n371" current="_abc_3685_new_n371"/>
+		<net previous="$abc$3685$new_n343" current="_abc_3685_new_n343"/>
+		<net previous="$abc$3685$new_n348" current="_abc_3685_new_n348"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cmd_ack[0:0]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cmd_ack_0_0_"/>
+		<net previous="$abc$3685$new_n344" current="_abc_3685_new_n344"/>
+		<net previous="byte_controller.bit_controller.c_state[12]" current="byte_controller_bit_controller_c_state_12_"/>
+		<net previous="$abc$3685$new_n347" current="_abc_3685_new_n347"/>
+		<net previous="$abc$3685$new_n346" current="_abc_3685_new_n346"/>
+		<net previous="$abc$3685$new_n345" current="_abc_3685_new_n345"/>
+		<net previous="byte_controller.bit_controller.c_state[13]" current="byte_controller_bit_controller_c_state_13_"/>
+		<net previous="byte_controller.bit_controller.c_state[14]" current="byte_controller_bit_controller_c_state_14_"/>
+		<net previous="byte_controller.bit_controller.c_state[15]" current="byte_controller_bit_controller_c_state_15_"/>
 		<net previous="byte_controller.bit_controller.c_state[2]" current="byte_controller_bit_controller_c_state_2_"/>
+		<net previous="byte_controller.bit_controller.c_state[1]" current="byte_controller_bit_controller_c_state_1_"/>
+		<net previous="byte_controller.bit_controller.c_state[3]" current="byte_controller_bit_controller_c_state_3_"/>
+		<net previous="byte_controller.bit_controller.c_state[0]" current="byte_controller_bit_controller_c_state_0_"/>
 		<net previous="byte_controller.bit_controller.c_state[6]" current="byte_controller_bit_controller_c_state_6_"/>
 		<net previous="byte_controller.bit_controller.c_state[5]" current="byte_controller_bit_controller_c_state_5_"/>
-		<net previous="byte_controller.bit_controller.c_state[4]" current="byte_controller_bit_controller_c_state_4_"/>
 		<net previous="byte_controller.bit_controller.c_state[7]" current="byte_controller_bit_controller_c_state_7_"/>
-		<net previous="byte_controller.bit_controller.c_state[12]" current="byte_controller_bit_controller_c_state_12_"/>
-		<net previous="byte_controller.bit_controller.c_state[14]" current="byte_controller_bit_controller_c_state_14_"/>
-		<net previous="byte_controller.bit_controller.c_state[13]" current="byte_controller_bit_controller_c_state_13_"/>
-		<net previous="byte_controller.bit_controller.c_state[15]" current="byte_controller_bit_controller_c_state_15_"/>
-		<net previous="byte_controller.bit_controller.c_state[16]" current="byte_controller_bit_controller_c_state_16_"/>
-		<net previous="$abc$3702$new_n349" current="_abc_3702_new_n349"/>
-		<net previous="$abc$3702$new_n352" current="_abc_3702_new_n352"/>
-		<net previous="$abc$3702$new_n351" current="_abc_3702_new_n351"/>
-		<net previous="$abc$3702$new_n350" current="_abc_3702_new_n350"/>
+		<net previous="byte_controller.bit_controller.c_state[4]" current="byte_controller_bit_controller_c_state_4_"/>
 		<net previous="byte_controller.bit_controller.c_state[9]" current="byte_controller_bit_controller_c_state_9_"/>
+		<net previous="byte_controller.bit_controller.c_state[16]" current="byte_controller_bit_controller_c_state_16_"/>
 		<net previous="byte_controller.bit_controller.c_state[11]" current="byte_controller_bit_controller_c_state_11_"/>
 		<net previous="byte_controller.bit_controller.c_state[10]" current="byte_controller_bit_controller_c_state_10_"/>
 		<net previous="byte_controller.bit_controller.c_state[8]" current="byte_controller_bit_controller_c_state_8_"/>
-		<net previous="$abc$3702$new_n354" current="_abc_3702_new_n354"/>
-		<net previous="$abc$3702$new_n353" current="_abc_3702_new_n353"/>
-		<net previous="$abc$3702$new_n357" current="_abc_3702_new_n357"/>
-		<net previous="byte_controller.bit_controller.clk_en" current="byte_controller_bit_controller_clk_en"/>
-		<net previous="$abc$3702$new_n359" current="_abc_3702_new_n359"/>
-		<net previous="$abc$3702$new_n386" current="_abc_3702_new_n386"/>
-		<net previous="$abc$3702$new_n373" current="_abc_3702_new_n373"/>
-		<net previous="$abc$3702$new_n433" current="_abc_3702_new_n433"/>
-		<net previous="$abc$3702$new_n370" current="_abc_3702_new_n370"/>
-		<net previous="$abc$3702$new_n361" current="_abc_3702_new_n361"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\sda_chk[0:0]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\sda_chk_0_0_"/>
-		<net previous="$abc$3702$new_n367" current="_abc_3702_new_n367"/>
-		<net previous="$abc$3702$new_n365" current="_abc_3702_new_n365"/>
-		<net previous="$abc$3702$new_n362" current="_abc_3702_new_n362"/>
-		<net previous="$abc$3702$new_n364" current="_abc_3702_new_n364"/>
-		<net previous="$abc$3702$new_n366" current="_abc_3702_new_n366"/>
-		<net previous="$abc$3702$new_n368" current="_abc_3702_new_n368"/>
-		<net previous="$abc$3702$new_n369" current="_abc_3702_new_n369"/>
-		<net previous="$abc$3702$new_n371" current="_abc_3702_new_n371"/>
-		<net previous="$abc$3702$new_n372" current="_abc_3702_new_n372"/>
-		<net previous="$abc$3702$new_n560" current="_abc_3702_new_n560"/>
-		<net previous="$abc$3702$new_n380" current="_abc_3702_new_n380"/>
-		<net previous="$abc$3702$new_n389" current="_abc_3702_new_n389"/>
-		<net previous="$abc$3702$new_n379" current="_abc_3702_new_n379"/>
-		<net previous="$abc$3702$new_n383" current="_abc_3702_new_n383"/>
-		<net previous="$abc$3702$new_n384" current="_abc_3702_new_n384"/>
-		<net previous="$abc$3702$new_n387" current="_abc_3702_new_n387"/>
-		<net previous="$abc$3702$new_n388" current="_abc_3702_new_n388"/>
+		<net previous="$abc$3685$new_n350" current="_abc_3685_new_n350"/>
+		<net previous="$abc$3685$new_n349" current="_abc_3685_new_n349"/>
+		<net previous="$abc$3685$new_n352" current="_abc_3685_new_n352"/>
+		<net previous="$abc$3685$new_n353" current="_abc_3685_new_n353"/>
+		<net previous="$abc$3685$new_n354" current="_abc_3685_new_n354"/>
+		<net previous="$abc$3685$new_n374" current="_abc_3685_new_n374"/>
+		<net previous="$abc$3685$new_n357" current="_abc_3685_new_n357"/>
+		<net previous="$abc$3685$new_n367" current="_abc_3685_new_n367"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\sda_chk[0:0]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\sda_chk_0_0_"/>
+		<net previous="$abc$3685$new_n364" current="_abc_3685_new_n364"/>
+		<net previous="$abc$3685$new_n362" current="_abc_3685_new_n362"/>
+		<net previous="$abc$3685$new_n363" current="_abc_3685_new_n363"/>
+		<net previous="$abc$3685$new_n361" current="_abc_3685_new_n361"/>
+		<net previous="$abc$3685$new_n359" current="_abc_3685_new_n359"/>
+		<net previous="$abc$3685$new_n358" current="_abc_3685_new_n358"/>
+		<net previous="$abc$3685$new_n360" current="_abc_3685_new_n360"/>
+		<net previous="$abc$3685$new_n366" current="_abc_3685_new_n366"/>
+		<net previous="$abc$3685$new_n365" current="_abc_3685_new_n365"/>
+		<net previous="$abc$3685$new_n369" current="_abc_3685_new_n369"/>
+		<net previous="$abc$3685$new_n373" current="_abc_3685_new_n373"/>
+		<net previous="$abc$3685$new_n372" current="_abc_3685_new_n372"/>
+		<net previous="$abc$3685$new_n368" current="_abc_3685_new_n368"/>
+		<net previous="$abc$3685$new_n370" current="_abc_3685_new_n370"/>
+		<net previous="$abc$3685$new_n375" current="_abc_3685_new_n375"/>
 		<net previous="byte_controller.bit_controller.sda_chk" current="byte_controller_bit_controller_sda_chk"/>
-		<net previous="$abc$3702$new_n391" current="_abc_3702_new_n391"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\c_state[16:0][0]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\c_state_16_0__0_"/>
+		<net previous="$abc$3685$new_n376" current="_abc_3685_new_n376"/>
+		<net previous="$abc$3685$new_n380" current="_abc_3685_new_n380"/>
+		<net previous="$abc$3685$new_n378" current="_abc_3685_new_n378"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\c_state[16:0][0]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\c_state_16_0__0_"/>
 		<net previous="byte_controller.bit_controller.cmd[0]" current="byte_controller_bit_controller_cmd_0_"/>
-		<net previous="$abc$3702$new_n392" current="_abc_3702_new_n392"/>
+		<net previous="$abc$3685$new_n379" current="_abc_3685_new_n379"/>
 		<net previous="byte_controller.bit_controller.cmd[1]" current="byte_controller_bit_controller_cmd_1_"/>
 		<net previous="byte_controller.bit_controller.cmd[2]" current="byte_controller_bit_controller_cmd_2_"/>
 		<net previous="byte_controller.bit_controller.cmd[3]" current="byte_controller_bit_controller_cmd_3_"/>
-		<net previous="$abc$3702$new_n394" current="_abc_3702_new_n394"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\c_state[16:0][1]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\c_state_16_0__1_"/>
-		<net previous="$abc$3702$new_n396" current="_abc_3702_new_n396"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\c_state[16:0][2]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\c_state_16_0__2_"/>
-		<net previous="$abc$3702$new_n398" current="_abc_3702_new_n398"/>
-		<net previous="$abc$3702$new_n397" current="_abc_3702_new_n397"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\c_state[16:0][3]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\c_state_16_0__3_"/>
-		<net previous="$abc$3702$new_n404" current="_abc_3702_new_n404"/>
-		<net previous="$abc$3702$new_n403" current="_abc_3702_new_n403"/>
-		<net previous="$abc$3702$new_n402" current="_abc_3702_new_n402"/>
-		<net previous="$abc$3702$new_n406" current="_abc_3702_new_n406"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\c_state[16:0][5]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\c_state_16_0__5_"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\c_state[16:0][6]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\c_state_16_0__6_"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\c_state[16:0][8]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\c_state_16_0__8_"/>
-		<net previous="$abc$3702$new_n413" current="_abc_3702_new_n413"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\c_state[16:0][9]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\c_state_16_0__9_"/>
-		<net previous="$abc$3702$new_n414" current="_abc_3702_new_n414"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\c_state[16:0][10]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\c_state_16_0__10_"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\c_state[16:0][11]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\c_state_16_0__11_"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\c_state[16:0][12]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\c_state_16_0__12_"/>
-		<net previous="$abc$3702$new_n421" current="_abc_3702_new_n421"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\c_state[16:0][13]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\c_state_16_0__13_"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\c_state[16:0][14]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\c_state_16_0__14_"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\c_state[16:0][15]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\c_state_16_0__15_"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\c_state[16:0][16]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\c_state_16_0__16_"/>
-		<net previous="$abc$3702$new_n431" current="_abc_3702_new_n431"/>
-		<net previous="$abc$3702$new_n430" current="_abc_3702_new_n430"/>
-		<net previous="byte_controller.bit_controller.din" current="byte_controller_bit_controller_din"/>
-		<net previous="$abc$3702$new_n429" current="_abc_3702_new_n429"/>
-		<net previous="$abc$3702$new_n428" current="_abc_3702_new_n428"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\sda_oen[0:0]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\sda_oen_0_0_"/>
-		<net previous="$abc$3702$new_n439" current="_abc_3702_new_n439"/>
-		<net previous="$abc$3702$new_n436" current="_abc_3702_new_n436"/>
-		<net previous="$abc$3702$new_n438" current="_abc_3702_new_n438"/>
-		<net previous="$abc$3702$new_n435" current="_abc_3702_new_n435"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\scl_oen[0:0]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\scl_oen_0_0_"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\c_state[16:0][1]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\c_state_16_0__1_"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\c_state[16:0][2]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\c_state_16_0__2_"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\c_state[16:0][3]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\c_state_16_0__3_"/>
+		<net previous="$abc$3685$new_n387" current="_abc_3685_new_n387"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\c_state[16:0][4]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\c_state_16_0__4_"/>
+		<net previous="$abc$3685$new_n386" current="_abc_3685_new_n386"/>
+		<net previous="$abc$3685$new_n389" current="_abc_3685_new_n389"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\c_state[16:0][5]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\c_state_16_0__5_"/>
+		<net previous="$abc$3685$new_n391" current="_abc_3685_new_n391"/>
+		<net previous="$abc$3685$new_n392" current="_abc_3685_new_n392"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\c_state[16:0][6]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\c_state_16_0__6_"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\c_state[16:0][7]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\c_state_16_0__7_"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\c_state[16:0][8]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\c_state_16_0__8_"/>
+		<net previous="$abc$3685$new_n396" current="_abc_3685_new_n396"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\c_state[16:0][9]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\c_state_16_0__9_"/>
+		<net previous="$abc$3685$new_n397" current="_abc_3685_new_n397"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\c_state[16:0][10]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\c_state_16_0__10_"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\c_state[16:0][11]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\c_state_16_0__11_"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\c_state[16:0][12]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\c_state_16_0__12_"/>
+		<net previous="$abc$3685$new_n405" current="_abc_3685_new_n405"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\c_state[16:0][13]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\c_state_16_0__13_"/>
+		<net previous="$abc$3685$new_n407" current="_abc_3685_new_n407"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\c_state[16:0][14]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\c_state_16_0__14_"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\c_state[16:0][15]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\c_state_16_0__15_"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\c_state[16:0][16]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\c_state_16_0__16_"/>
+		<net previous="$abc$3685$new_n416" current="_abc_3685_new_n416"/>
+		<net previous="$abc$3685$new_n415" current="_abc_3685_new_n415"/>
+		<net previous="$abc$3685$new_n417" current="_abc_3685_new_n417"/>
+		<net previous="$abc$3685$new_n423" current="_abc_3685_new_n423"/>
+		<net previous="$abc$3685$new_n421" current="_abc_3685_new_n421"/>
+		<net previous="$abc$3685$new_n422" current="_abc_3685_new_n422"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\scl_oen[0:0]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\scl_oen_0_0_"/>
 		<net previous="byte_controller.bit_controller.sSCL" current="byte_controller_bit_controller_sSCL"/>
 		<net previous="byte_controller.bit_controller.dSCL" current="byte_controller_bit_controller_dSCL"/>
 		<net previous="byte_controller.bit_controller.dout" current="byte_controller_bit_controller_dout"/>
 		<net previous="byte_controller.bit_controller.sSDA" current="byte_controller_bit_controller_sSDA"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\dout[0:0]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\dout_0_0_"/>
-		<net previous="$abc$3702$new_n442" current="_abc_3702_new_n442"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\al[0:0]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\al_0_0_"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\dout[0:0]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\dout_0_0_"/>
+		<net previous="$abc$3685$new_n426" current="_abc_3685_new_n426"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\al[0:0]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\al_0_0_"/>
 		<net previous="byte_controller.bit_controller.sto_condition" current="byte_controller_bit_controller_sto_condition"/>
 		<net previous="byte_controller.bit_controller.cmd_stop" current="byte_controller_bit_controller_cmd_stop"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cmd_stop[0:0]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cmd_stop_0_0_"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cmd_stop[0:0]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cmd_stop_0_0_"/>
 		<net previous="byte_controller.bit_controller.sta_condition" current="byte_controller_bit_controller_sta_condition"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\busy[0:0]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\busy_0_0_"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\busy[0:0]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\busy_0_0_"/>
 		<net previous="byte_controller.bit_controller.dSDA" current="byte_controller_bit_controller_dSDA"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\sto_condition[0:0]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\sto_condition_0_0_"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\dSDA[0:0]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\dSDA_0_0_"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\sta_condition[0:0]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\sta_condition_0_0_"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\dSCL[0:0]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\dSCL_0_0_"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\sSDA[0:0]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\sSDA_0_0_"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\sSCL[0:0]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\sSCL_0_0_"/>
-		<net previous="$abc$3702$new_n455" current="_abc_3702_new_n455"/>
-		<net previous="$abc$3702$new_n452" current="_abc_3702_new_n452"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\sto_condition[0:0]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\sto_condition_0_0_"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\dSDA[0:0]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\dSDA_0_0_"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\sta_condition[0:0]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\sta_condition_0_0_"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\dSCL[0:0]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\dSCL_0_0_"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\sSDA[0:0]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\sSDA_0_0_"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\sSCL[0:0]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\sSCL_0_0_"/>
+		<net previous="$abc$3685$new_n439" current="_abc_3685_new_n439"/>
+		<net previous="$abc$3685$new_n436" current="_abc_3685_new_n436"/>
 		<net previous="byte_controller.bit_controller.cnt[15]" current="byte_controller_bit_controller_cnt_15_"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\clk_en[0:0]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\clk_en_0_0_"/>
-		<net previous="$abc$3702$new_n453" current="_abc_3702_new_n453"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\clk_en[0:0]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\clk_en_0_0_"/>
+		<net previous="$abc$3685$new_n437" current="_abc_3685_new_n437"/>
 		<net previous="byte_controller.bit_controller.cnt[14]" current="byte_controller_bit_controller_cnt_14_"/>
 		<net previous="byte_controller.bit_controller.cnt[13]" current="byte_controller_bit_controller_cnt_13_"/>
 		<net previous="byte_controller.bit_controller.cnt[12]" current="byte_controller_bit_controller_cnt_12_"/>
 		<net previous="byte_controller.bit_controller.cnt[11]" current="byte_controller_bit_controller_cnt_11_"/>
-		<net previous="$abc$3702$new_n454" current="_abc_3702_new_n454"/>
+		<net previous="$abc$3685$new_n438" current="_abc_3685_new_n438"/>
 		<net previous="byte_controller.bit_controller.cnt[10]" current="byte_controller_bit_controller_cnt_10_"/>
 		<net previous="byte_controller.bit_controller.cnt[9]" current="byte_controller_bit_controller_cnt_9_"/>
 		<net previous="byte_controller.bit_controller.cnt[8]" current="byte_controller_bit_controller_cnt_8_"/>
@@ -683,124 +670,123 @@
 		<net previous="byte_controller.bit_controller.cnt[1]" current="byte_controller_bit_controller_cnt_1_"/>
 		<net previous="byte_controller.bit_controller.cnt[0]" current="byte_controller_bit_controller_cnt_0_"/>
 		<net previous="byte_controller.bit_controller.dscl_oen" current="byte_controller_bit_controller_dscl_oen"/>
-		<net previous="$abc$3702$new_n457" current="_abc_3702_new_n457"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cnt[15:0][0]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cnt_15_0__0_"/>
-		<net previous="$abc$3702$new_n460" current="_abc_3702_new_n460"/>
-		<net previous="$abc$3702$new_n459" current="_abc_3702_new_n459"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cnt[15:0][1]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cnt_15_0__1_"/>
-		<net previous="$abc$3702$new_n463" current="_abc_3702_new_n463"/>
-		<net previous="$abc$3702$new_n462" current="_abc_3702_new_n462"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cnt[15:0][2]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cnt_15_0__2_"/>
-		<net previous="$abc$3702$new_n466" current="_abc_3702_new_n466"/>
-		<net previous="$abc$3702$new_n465" current="_abc_3702_new_n465"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cnt[15:0][3]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cnt_15_0__3_"/>
-		<net previous="$abc$3702$new_n469" current="_abc_3702_new_n469"/>
-		<net previous="$abc$3702$new_n468" current="_abc_3702_new_n468"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cnt[15:0][4]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cnt_15_0__4_"/>
-		<net previous="$abc$3702$new_n472" current="_abc_3702_new_n472"/>
-		<net previous="$abc$3702$new_n471" current="_abc_3702_new_n471"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cnt[15:0][5]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cnt_15_0__5_"/>
-		<net previous="$abc$3702$new_n475" current="_abc_3702_new_n475"/>
-		<net previous="$abc$3702$new_n474" current="_abc_3702_new_n474"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cnt[15:0][6]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cnt_15_0__6_"/>
-		<net previous="$abc$3702$new_n477" current="_abc_3702_new_n477"/>
-		<net previous="$abc$3702$new_n478" current="_abc_3702_new_n478"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cnt[15:0][7]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cnt_15_0__7_"/>
-		<net previous="$abc$3702$new_n480" current="_abc_3702_new_n480"/>
-		<net previous="$abc$3702$new_n481" current="_abc_3702_new_n481"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cnt[15:0][8]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cnt_15_0__8_"/>
-		<net previous="$abc$3702$new_n483" current="_abc_3702_new_n483"/>
-		<net previous="$abc$3702$new_n484" current="_abc_3702_new_n484"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cnt[15:0][9]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cnt_15_0__9_"/>
-		<net previous="$abc$3702$new_n486" current="_abc_3702_new_n486"/>
-		<net previous="$abc$3702$new_n487" current="_abc_3702_new_n487"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cnt[15:0][10]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cnt_15_0__10_"/>
-		<net previous="$abc$3702$new_n489" current="_abc_3702_new_n489"/>
-		<net previous="$abc$3702$new_n490" current="_abc_3702_new_n490"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cnt[15:0][11]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cnt_15_0__11_"/>
-		<net previous="$abc$3702$new_n492" current="_abc_3702_new_n492"/>
-		<net previous="$abc$3702$new_n493" current="_abc_3702_new_n493"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cnt[15:0][12]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cnt_15_0__12_"/>
-		<net previous="$abc$3702$new_n495" current="_abc_3702_new_n495"/>
-		<net previous="$abc$3702$new_n496" current="_abc_3702_new_n496"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cnt[15:0][13]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cnt_15_0__13_"/>
-		<net previous="$abc$3702$new_n498" current="_abc_3702_new_n498"/>
-		<net previous="$abc$3702$new_n499" current="_abc_3702_new_n499"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cnt[15:0][14]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cnt_15_0__14_"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\cnt[15:0][15]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\cnt_15_0__15_"/>
+		<net previous="$abc$3685$new_n441" current="_abc_3685_new_n441"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cnt[15:0][0]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cnt_15_0__0_"/>
+		<net previous="$abc$3685$new_n444" current="_abc_3685_new_n444"/>
+		<net previous="$abc$3685$new_n443" current="_abc_3685_new_n443"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cnt[15:0][1]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cnt_15_0__1_"/>
+		<net previous="$abc$3685$new_n447" current="_abc_3685_new_n447"/>
+		<net previous="$abc$3685$new_n446" current="_abc_3685_new_n446"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cnt[15:0][2]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cnt_15_0__2_"/>
+		<net previous="$abc$3685$new_n450" current="_abc_3685_new_n450"/>
+		<net previous="$abc$3685$new_n449" current="_abc_3685_new_n449"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cnt[15:0][3]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cnt_15_0__3_"/>
+		<net previous="$abc$3685$new_n453" current="_abc_3685_new_n453"/>
+		<net previous="$abc$3685$new_n452" current="_abc_3685_new_n452"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cnt[15:0][4]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cnt_15_0__4_"/>
+		<net previous="$abc$3685$new_n456" current="_abc_3685_new_n456"/>
+		<net previous="$abc$3685$new_n455" current="_abc_3685_new_n455"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cnt[15:0][5]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cnt_15_0__5_"/>
+		<net previous="$abc$3685$new_n459" current="_abc_3685_new_n459"/>
+		<net previous="$abc$3685$new_n458" current="_abc_3685_new_n458"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cnt[15:0][6]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cnt_15_0__6_"/>
+		<net previous="$abc$3685$new_n461" current="_abc_3685_new_n461"/>
+		<net previous="$abc$3685$new_n462" current="_abc_3685_new_n462"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cnt[15:0][7]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cnt_15_0__7_"/>
+		<net previous="$abc$3685$new_n464" current="_abc_3685_new_n464"/>
+		<net previous="$abc$3685$new_n465" current="_abc_3685_new_n465"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cnt[15:0][8]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cnt_15_0__8_"/>
+		<net previous="$abc$3685$new_n467" current="_abc_3685_new_n467"/>
+		<net previous="$abc$3685$new_n468" current="_abc_3685_new_n468"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cnt[15:0][9]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cnt_15_0__9_"/>
+		<net previous="$abc$3685$new_n470" current="_abc_3685_new_n470"/>
+		<net previous="$abc$3685$new_n471" current="_abc_3685_new_n471"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cnt[15:0][10]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cnt_15_0__10_"/>
+		<net previous="$abc$3685$new_n473" current="_abc_3685_new_n473"/>
+		<net previous="$abc$3685$new_n474" current="_abc_3685_new_n474"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cnt[15:0][11]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cnt_15_0__11_"/>
+		<net previous="$abc$3685$new_n476" current="_abc_3685_new_n476"/>
+		<net previous="$abc$3685$new_n477" current="_abc_3685_new_n477"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cnt[15:0][12]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cnt_15_0__12_"/>
+		<net previous="$abc$3685$new_n479" current="_abc_3685_new_n479"/>
+		<net previous="$abc$3685$new_n480" current="_abc_3685_new_n480"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cnt[15:0][13]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cnt_15_0__13_"/>
+		<net previous="$abc$3685$new_n482" current="_abc_3685_new_n482"/>
+		<net previous="$abc$3685$new_n483" current="_abc_3685_new_n483"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cnt[15:0][14]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cnt_15_0__14_"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\cnt[15:0][15]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\cnt_15_0__15_"/>
 		<net previous="byte_controller.ld" current="byte_controller_ld"/>
 		<net previous="byte_controller.shift" current="byte_controller_shift"/>
-		<net previous="$abc$3702$flatten\byte_controller.$0\sr[7:0][0]" current="_abc_3702_flatten\byte_controller__0\sr_7_0__0_"/>
-		<net previous="$abc$3702$flatten\byte_controller.$0\sr[7:0][1]" current="_abc_3702_flatten\byte_controller__0\sr_7_0__1_"/>
+		<net previous="$abc$3685$flatten\byte_controller.$0\sr[7:0][0]" current="_abc_3685_flatten\byte_controller__0\sr_7_0__0_"/>
+		<net previous="$abc$3685$flatten\byte_controller.$0\sr[7:0][1]" current="_abc_3685_flatten\byte_controller__0\sr_7_0__1_"/>
 		<net previous="byte_controller.dout[2]" current="byte_controller_dout_2_"/>
-		<net previous="$abc$3702$flatten\byte_controller.$0\sr[7:0][2]" current="_abc_3702_flatten\byte_controller__0\sr_7_0__2_"/>
-		<net previous="byte_controller.dout[3]" current="byte_controller_dout_3_"/>
-		<net previous="$abc$3702$flatten\byte_controller.$0\sr[7:0][3]" current="_abc_3702_flatten\byte_controller__0\sr_7_0__3_"/>
+		<net previous="$abc$3685$flatten\byte_controller.$0\sr[7:0][2]" current="_abc_3685_flatten\byte_controller__0\sr_7_0__2_"/>
+		<net previous="$abc$3685$flatten\byte_controller.$0\sr[7:0][3]" current="_abc_3685_flatten\byte_controller__0\sr_7_0__3_"/>
 		<net previous="byte_controller.dout[4]" current="byte_controller_dout_4_"/>
-		<net previous="$abc$3702$flatten\byte_controller.$0\sr[7:0][4]" current="_abc_3702_flatten\byte_controller__0\sr_7_0__4_"/>
-		<net previous="$abc$3702$flatten\byte_controller.$0\sr[7:0][5]" current="_abc_3702_flatten\byte_controller__0\sr_7_0__5_"/>
-		<net previous="$abc$3702$flatten\byte_controller.$0\sr[7:0][6]" current="_abc_3702_flatten\byte_controller__0\sr_7_0__6_"/>
-		<net previous="$abc$3702$flatten\byte_controller.$0\sr[7:0][7]" current="_abc_3702_flatten\byte_controller__0\sr_7_0__7_"/>
+		<net previous="$abc$3685$flatten\byte_controller.$0\sr[7:0][4]" current="_abc_3685_flatten\byte_controller__0\sr_7_0__4_"/>
+		<net previous="$abc$3685$flatten\byte_controller.$0\sr[7:0][5]" current="_abc_3685_flatten\byte_controller__0\sr_7_0__5_"/>
+		<net previous="$abc$3685$flatten\byte_controller.$0\sr[7:0][6]" current="_abc_3685_flatten\byte_controller__0\sr_7_0__6_"/>
+		<net previous="$abc$3685$flatten\byte_controller.$0\sr[7:0][7]" current="_abc_3685_flatten\byte_controller__0\sr_7_0__7_"/>
 		<net previous="byte_controller.dcnt[0]" current="byte_controller_dcnt_0_"/>
-		<net previous="$abc$3702$flatten\byte_controller.$0\dcnt[2:0][0]" current="_abc_3702_flatten\byte_controller__0\dcnt_2_0__0_"/>
+		<net previous="$abc$3685$flatten\byte_controller.$0\dcnt[2:0][0]" current="_abc_3685_flatten\byte_controller__0\dcnt_2_0__0_"/>
 		<net previous="byte_controller.dcnt[1]" current="byte_controller_dcnt_1_"/>
-		<net previous="$abc$3702$flatten\byte_controller.$0\dcnt[2:0][1]" current="_abc_3702_flatten\byte_controller__0\dcnt_2_0__1_"/>
+		<net previous="$abc$3685$flatten\byte_controller.$0\dcnt[2:0][1]" current="_abc_3685_flatten\byte_controller__0\dcnt_2_0__1_"/>
 		<net previous="byte_controller.dcnt[2]" current="byte_controller_dcnt_2_"/>
-		<net previous="$abc$3702$flatten\byte_controller.$0\dcnt[2:0][2]" current="_abc_3702_flatten\byte_controller__0\dcnt_2_0__2_"/>
-		<net previous="$abc$3702$new_n513" current="_abc_3702_new_n513"/>
-		<net previous="$abc$3702$flatten\byte_controller.$0\ack_out[0:0]" current="_abc_3702_flatten\byte_controller__0\ack_out_0_0_"/>
+		<net previous="$abc$3685$flatten\byte_controller.$0\dcnt[2:0][2]" current="_abc_3685_flatten\byte_controller__0\dcnt_2_0__2_"/>
+		<net previous="$abc$3685$new_n497" current="_abc_3685_new_n497"/>
+		<net previous="$abc$3685$flatten\byte_controller.$0\ack_out[0:0]" current="_abc_3685_flatten\byte_controller__0\ack_out_0_0_"/>
 		<net previous="byte_controller.bit_controller.cmd_ack" current="byte_controller_bit_controller_cmd_ack"/>
-		<net previous="$abc$3702$new_n514" current="_abc_3702_new_n514"/>
+		<net previous="$abc$3685$new_n498" current="_abc_3685_new_n498"/>
 		<net previous="byte_controller.c_state[3]" current="byte_controller_c_state_3_"/>
 		<net previous="byte_controller.c_state[2]" current="byte_controller_c_state_2_"/>
-		<net previous="byte_controller.c_state[1]" current="byte_controller_c_state_1_"/>
 		<net previous="byte_controller.c_state[4]" current="byte_controller_c_state_4_"/>
+		<net previous="byte_controller.c_state[1]" current="byte_controller_c_state_1_"/>
 		<net previous="byte_controller.c_state[0]" current="byte_controller_c_state_0_"/>
-		<net previous="$abc$3702$new_n516" current="_abc_3702_new_n516"/>
-		<net previous="$abc$3702$new_n518" current="_abc_3702_new_n518"/>
-		<net previous="$abc$3702$flatten\byte_controller.$0\core_cmd[3:0][0]" current="_abc_3702_flatten\byte_controller__0\core_cmd_3_0__0_"/>
-		<net previous="$abc$3702$new_n517" current="_abc_3702_new_n517"/>
-		<net previous="$abc$3702$new_n520" current="_abc_3702_new_n520"/>
-		<net previous="$abc$3702$new_n519" current="_abc_3702_new_n519"/>
-		<net previous="$abc$3702$new_n523" current="_abc_3702_new_n523"/>
-		<net previous="$abc$3702$new_n522" current="_abc_3702_new_n522"/>
-		<net previous="$abc$3702$flatten\byte_controller.$0\core_cmd[3:0][1]" current="_abc_3702_flatten\byte_controller__0\core_cmd_3_0__1_"/>
-		<net previous="$abc$3702$new_n528" current="_abc_3702_new_n528"/>
-		<net previous="$abc$3702$new_n525" current="_abc_3702_new_n525"/>
-		<net previous="$abc$3702$new_n530" current="_abc_3702_new_n530"/>
-		<net previous="$abc$3702$flatten\byte_controller.$0\core_cmd[3:0][2]" current="_abc_3702_flatten\byte_controller__0\core_cmd_3_0__2_"/>
-		<net previous="$abc$3702$new_n527" current="_abc_3702_new_n527"/>
-		<net previous="$abc$3702$new_n526" current="_abc_3702_new_n526"/>
-		<net previous="$abc$3702$new_n529" current="_abc_3702_new_n529"/>
-		<net previous="$abc$3702$new_n532" current="_abc_3702_new_n532"/>
-		<net previous="$abc$3702$new_n534" current="_abc_3702_new_n534"/>
-		<net previous="$abc$3702$new_n536" current="_abc_3702_new_n536"/>
-		<net previous="$abc$3702$flatten\byte_controller.$0\c_state[4:0][0]" current="_abc_3702_flatten\byte_controller__0\c_state_4_0__0_"/>
-		<net previous="$abc$3702$new_n539" current="_abc_3702_new_n539"/>
-		<net previous="$abc$3702$flatten\byte_controller.$0\c_state[4:0][1]" current="_abc_3702_flatten\byte_controller__0\c_state_4_0__1_"/>
-		<net previous="$abc$3702$new_n541" current="_abc_3702_new_n541"/>
-		<net previous="$abc$3702$flatten\byte_controller.$0\c_state[4:0][2]" current="_abc_3702_flatten\byte_controller__0\c_state_4_0__2_"/>
-		<net previous="$abc$3702$new_n543" current="_abc_3702_new_n543"/>
-		<net previous="$abc$3702$flatten\byte_controller.$0\c_state[4:0][3]" current="_abc_3702_flatten\byte_controller__0\c_state_4_0__3_"/>
-		<net previous="$abc$3702$new_n545" current="_abc_3702_new_n545"/>
-		<net previous="$abc$3702$flatten\byte_controller.$0\c_state[4:0][4]" current="_abc_3702_flatten\byte_controller__0\c_state_4_0__4_"/>
-		<net previous="$abc$3702$new_n547" current="_abc_3702_new_n547"/>
-		<net previous="$abc$3702$flatten\byte_controller.$0\core_txd[0:0]" current="_abc_3702_flatten\byte_controller__0\core_txd_0_0_"/>
-		<net previous="$abc$3702$flatten\byte_controller.$0\shift[0:0]" current="_abc_3702_flatten\byte_controller__0\shift_0_0_"/>
-		<net previous="$abc$3702$flatten\byte_controller.$0\ld[0:0]" current="_abc_3702_flatten\byte_controller__0\ld_0_0_"/>
-		<net previous="$abc$3702$flatten\byte_controller.$0\cmd_ack[0:0]" current="_abc_3702_flatten\byte_controller__0\cmd_ack_0_0_"/>
+		<net previous="$abc$3685$new_n500" current="_abc_3685_new_n500"/>
+		<net previous="$abc$3685$new_n503" current="_abc_3685_new_n503"/>
+		<net previous="$abc$3685$flatten\byte_controller.$0\core_cmd[3:0][0]" current="_abc_3685_flatten\byte_controller__0\core_cmd_3_0__0_"/>
+		<net previous="$abc$3685$new_n502" current="_abc_3685_new_n502"/>
+		<net previous="$abc$3685$new_n501" current="_abc_3685_new_n501"/>
+		<net previous="$abc$3685$new_n508" current="_abc_3685_new_n508"/>
+		<net previous="$abc$3685$new_n509" current="_abc_3685_new_n509"/>
+		<net previous="$abc$3685$new_n505" current="_abc_3685_new_n505"/>
+		<net previous="$abc$3685$flatten\byte_controller.$0\core_cmd[3:0][1]" current="_abc_3685_flatten\byte_controller__0\core_cmd_3_0__1_"/>
+		<net previous="$abc$3685$new_n506" current="_abc_3685_new_n506"/>
+		<net previous="$abc$3685$new_n507" current="_abc_3685_new_n507"/>
+		<net previous="$abc$3685$new_n511" current="_abc_3685_new_n511"/>
+		<net previous="$abc$3685$new_n512" current="_abc_3685_new_n512"/>
+		<net previous="$abc$3685$flatten\byte_controller.$0\core_cmd[3:0][2]" current="_abc_3685_flatten\byte_controller__0\core_cmd_3_0__2_"/>
+		<net previous="$abc$3685$new_n513" current="_abc_3685_new_n513"/>
+		<net previous="$abc$3685$new_n514" current="_abc_3685_new_n514"/>
+		<net previous="$abc$3685$new_n515" current="_abc_3685_new_n515"/>
+		<net previous="$abc$3685$new_n517" current="_abc_3685_new_n517"/>
+		<net previous="$abc$3685$new_n519" current="_abc_3685_new_n519"/>
+		<net previous="$abc$3685$new_n521" current="_abc_3685_new_n521"/>
+		<net previous="$abc$3685$flatten\byte_controller.$0\core_cmd[3:0][3]" current="_abc_3685_flatten\byte_controller__0\core_cmd_3_0__3_"/>
+		<net previous="$abc$3685$new_n518" current="_abc_3685_new_n518"/>
+		<net previous="$abc$3685$new_n520" current="_abc_3685_new_n520"/>
+		<net previous="$abc$3685$flatten\byte_controller.$0\c_state[4:0][0]" current="_abc_3685_flatten\byte_controller__0\c_state_4_0__0_"/>
+		<net previous="$abc$3685$new_n525" current="_abc_3685_new_n525"/>
+		<net previous="$abc$3685$new_n528" current="_abc_3685_new_n528"/>
+		<net previous="$abc$3685$flatten\byte_controller.$0\c_state[4:0][2]" current="_abc_3685_flatten\byte_controller__0\c_state_4_0__2_"/>
+		<net previous="$abc$3685$new_n530" current="_abc_3685_new_n530"/>
+		<net previous="$abc$3685$flatten\byte_controller.$0\c_state[4:0][3]" current="_abc_3685_flatten\byte_controller__0\c_state_4_0__3_"/>
+		<net previous="$abc$3685$new_n532" current="_abc_3685_new_n532"/>
+		<net previous="$abc$3685$flatten\byte_controller.$0\c_state[4:0][4]" current="_abc_3685_flatten\byte_controller__0\c_state_4_0__4_"/>
+		<net previous="$abc$3685$flatten\byte_controller.$0\core_txd[0:0]" current="_abc_3685_flatten\byte_controller__0\core_txd_0_0_"/>
+		<net previous="$abc$3685$flatten\byte_controller.$0\shift[0:0]" current="_abc_3685_flatten\byte_controller__0\shift_0_0_"/>
+		<net previous="$abc$3685$flatten\byte_controller.$0\ld[0:0]" current="_abc_3685_flatten\byte_controller__0\ld_0_0_"/>
+		<net previous="$abc$3685$flatten\byte_controller.$0\cmd_ack[0:0]" current="_abc_3685_flatten\byte_controller__0\cmd_ack_0_0_"/>
 		<net previous="$0\wb_ack_o[0:0]" current="_0\wb_ack_o_0_0_"/>
-		<net previous="$abc$3702$new_n553" current="_abc_3702_new_n553"/>
+		<net previous="$abc$3685$new_n538" current="_abc_3685_new_n538"/>
 		<net previous="$0\wb_dat_o[7:0][2]" current="_0\wb_dat_o_7_0__2_"/>
-		<net previous="$abc$3702$new_n555" current="_abc_3702_new_n555"/>
-		<net previous="$0\wb_dat_o[7:0][3]" current="_0\wb_dat_o_7_0__3_"/>
-		<net previous="$abc$3702$new_n557" current="_abc_3702_new_n557"/>
+		<net previous="$abc$3685$new_n540" current="_abc_3685_new_n540"/>
 		<net previous="$0\wb_dat_o[7:0][4]" current="_0\wb_dat_o_7_0__4_"/>
-		<net previous="$abc$3702$new_n559" current="_abc_3702_new_n559"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\c_state[16:0][4]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\c_state_16_0__4_"/>
-		<net previous="$abc$3702$flatten\byte_controller.\bit_controller.$0\c_state[16:0][7]" current="_abc_3702_flatten\byte_controller_\bit_controller__0\c_state_16_0__7_"/>
-		<net previous="$abc$3702$new_n563" current="_abc_3702_new_n563"/>
-		<net previous="$abc$3702$flatten\byte_controller.$0\core_cmd[3:0][3]" current="_abc_3702_flatten\byte_controller__0\core_cmd_3_0__3_"/>
+		<net previous="$abc$3685$new_n542" current="_abc_3685_new_n542"/>
+		<net previous="byte_controller.bit_controller.din" current="byte_controller_bit_controller_din"/>
+		<net previous="$abc$3685$flatten\byte_controller.\bit_controller.$0\sda_oen[0:0]" current="_abc_3685_flatten\byte_controller_\bit_controller__0\sda_oen_0_0_"/>
+		<net previous="$abc$3685$new_n544" current="_abc_3685_new_n544"/>
+		<net previous="$abc$3685$flatten\byte_controller.$0\c_state[4:0][1]" current="_abc_3685_flatten\byte_controller__0\c_state_4_0__1_"/>
 		<net previous="byte_controller.write" current="byte_controller_write"/>
 		<net previous="byte_controller.read" current="byte_controller_read"/>
 		<net previous="byte_controller.stop" current="byte_controller_stop"/>

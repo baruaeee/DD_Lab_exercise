@@ -1,0 +1,38 @@
+
+## Install in redhat 8.10 ##
+sudo yum -y install bison flex openssl openssl-devel readline-devel tcl-devel tk-devel gcc-c++ libffi-devel swig cmake
+
+sudo dnf -y install gcc-toolset-11
+scl enable gcc-toolset-11 bash
+
+## gtkwave (optional)
+sudo yum -y install https://dl.fedoraproject.org/pub/epel/8/Everything/x86_64/Packages/g/gtkwave-3.3.118-1.el8.x86_64.rpm
+
+##### iverilog #####
+sudo dnf -y groupinstall "Development Tools"
+sudo yum -y install https://rpmfind.net/linux/almalinux/8.10/PowerTools/x86_64/os/Packages/gperf-3.1-5.el8.x86_64.rpm
+
+git clone https://github.com/steveicarus/iverilog.git
+cd iverilog
+git checkout --track -b v11-branch origin/v11-branch
+git pull
+sh autoconf.sh
+./configure
+make
+sudo make install
+
+##### eigen install #####
+git clone https://gitlab.com/libeigen/eigen.git
+cd eigen && mkdir build && cd build
+cmake ..
+sudo make install
+
+#### Python upgrade (if python version below 3.7)
+sudo yum groupinstall -y "Development Tools"
+sudo alternatives --config python3
+---select suitable python version as default---
+
+##### OpenFPGA install #####
+git clone https://github.com/LNIS-Projects/OpenFPGA.git
+cd OpenFPGA
+make all

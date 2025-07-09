@@ -3,8 +3,167 @@
 //	Description: Template for user-defined Verilog modules
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Tue Jun 17 22:26:18 2025
+//	Date: Mon Jul  7 22:55:56 2025
 //-------------------------------------------
+// ----- Template Verilog module for INVJIX0 -----
+//----- Default net type -----
+`default_nettype none
+
+// ----- Verilog module for INVJIX0 -----
+module INVJIX0(A,
+               Q);
+//----- INPUT PORTS -----
+input [0:0] A;
+//----- OUTPUT PORTS -----
+output [0:0] Q;
+
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
+
+
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
+
+// ----- Internal logic should start here -----
+
+
+// ----- Internal logic should end here -----
+endmodule
+// ----- END Verilog module for INVJIX0 -----
+
+//----- Default net type -----
+`default_nettype wire
+
+
+// ----- Template Verilog module for BUFJIX4 -----
+//----- Default net type -----
+`default_nettype none
+
+// ----- Verilog module for BUFJIX4 -----
+module BUFJIX4(A,
+               Q);
+//----- INPUT PORTS -----
+input [0:0] A;
+//----- OUTPUT PORTS -----
+output [0:0] Q;
+
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
+
+
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
+
+// ----- Internal logic should start here -----
+
+
+// ----- Internal logic should end here -----
+endmodule
+// ----- END Verilog module for BUFJIX4 -----
+
+//----- Default net type -----
+`default_nettype wire
+
+
+// ----- Template Verilog module for INVJIX4 -----
+//----- Default net type -----
+`default_nettype none
+
+// ----- Verilog module for INVJIX4 -----
+module INVJIX4(A,
+               Q);
+//----- INPUT PORTS -----
+input [0:0] A;
+//----- OUTPUT PORTS -----
+output [0:0] Q;
+
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
+
+
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
+
+// ----- Internal logic should start here -----
+
+
+// ----- Internal logic should end here -----
+endmodule
+// ----- END Verilog module for INVJIX4 -----
+
+//----- Default net type -----
+`default_nettype wire
+
+
+// ----- Template Verilog module for OR2JIX0 -----
+//----- Default net type -----
+`default_nettype none
+
+// ----- Verilog module for OR2JIX0 -----
+module OR2JIX0(A,
+               B,
+               Q);
+//----- INPUT PORTS -----
+input [0:0] A;
+//----- INPUT PORTS -----
+input [0:0] B;
+//----- OUTPUT PORTS -----
+output [0:0] Q;
+
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
+
+
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
+
+// ----- Internal logic should start here -----
+
+
+// ----- Internal logic should end here -----
+endmodule
+// ----- END Verilog module for OR2JIX0 -----
+
+//----- Default net type -----
+`default_nettype wire
+
+
+// ----- Template Verilog module for tgate -----
+//----- Default net type -----
+`default_nettype none
+
+// ----- Verilog module for tgate -----
+module tgate(in,
+             sel,
+             selb,
+             out);
+//----- INPUT PORTS -----
+input [0:0] in;
+//----- INPUT PORTS -----
+input [0:0] sel;
+//----- INPUT PORTS -----
+input [0:0] selb;
+//----- OUTPUT PORTS -----
+output [0:0] out;
+
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
+
+
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
+
+// ----- Internal logic should start here -----
+
+
+// ----- Internal logic should end here -----
+endmodule
+// ----- END Verilog module for tgate -----
+
+//----- Default net type -----
+`default_nettype wire
+
+
 // ----- Template Verilog module for MULTI_MODE_DFFSRQ -----
 //----- Default net type -----
 `default_nettype none

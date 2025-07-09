@@ -4,9 +4,9 @@
 # Parse input files
 #########################
 # Read verilog files
-read_verilog -nolatches ./benchmark/i2c_master_defines.v ./benchmark/timescale.v ./benchmark/i2c_master_top.v ./benchmark/i2c_master_byte_ctrl.v ./benchmark/i2c_master_bit_ctrl.v
+read_verilog -nolatches ./benchmark/i2c_master_defines.v ./benchmark/i2c_master_byte_ctrl.v ./benchmark/timescale.v ./benchmark/i2c_master_bit_ctrl.v ./benchmark/i2c_master_top.v
 # Read technology library
-read_verilog -lib -specify /home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v
+read_verilog -lib -specify /home/cae_sajib/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v
 
 #########################
 # Prepare for synthesis
@@ -43,7 +43,7 @@ opt_clean
 # Avoid merging any registers into DSP, reserve memory port registers first
 memory_dff
 wreduce t:$mul
-techmap -map +/mul2dsp.v -map /home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_40nm_dsp_map.v -D DSP_A_MAXWIDTH=36 -D DSP_B_MAXWIDTH=36 -D DSP_A_MINWIDTH=2 -D DSP_B_MINWIDTH=2 -D DSP_NAME=mult_36x36
+techmap -map +/mul2dsp.v -map /home/cae_sajib/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_40nm_dsp_map.v -D DSP_A_MAXWIDTH=36 -D DSP_B_MAXWIDTH=36 -D DSP_A_MINWIDTH=2 -D DSP_B_MINWIDTH=2 -D DSP_NAME=mult_36x36
 select a:mul2dsp
 setattr -unset mul2dsp
 opt_expr -fine
@@ -69,8 +69,8 @@ opt_clean
 #########################
 # Map logics to BRAMs
 #########################
-memory_bram -rules /home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_40nm_bram.txt
-techmap -map /home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_40nm_bram_map.v
+memory_bram -rules /home/cae_sajib/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_40nm_bram.txt
+techmap -map /home/cae_sajib/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_40nm_bram_map.v
 opt -fast -mux_undef -undriven -fine -nodffe -nosdff
 memory_map
 opt -undriven -fine -nodffe -nosdff
@@ -78,7 +78,7 @@ opt -undriven -fine -nodffe -nosdff
 #########################
 # Map flip-flops
 #########################
-techmap -map /home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_dff_map.v
+techmap -map /home/cae_sajib/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_dff_map.v
 opt_expr -mux_undef
 simplemap
 opt_expr

@@ -1,0 +1,104 @@
+
+sudo subscription-manager repos --enable=rhel-server-rhscl-7-rpms
+sudo yum -y install devtoolset-12-gcc.x86_64
+sudo yum -y install devtoolset-12-gcc-c++.x86_64
+sudo yum -y install devtoolset-12-gdb.x86_64
+sudo yum -y install devtoolset-12-make.x86_64
+. /opt/rh/devtoolset-12/enable
+sudo yum -y install autoconf automake  doxygen expect valgrind  texinfo python3-pip
+
+
+
+sudo dnf -y install gcc-toolset-11
+scl enable gcc-toolset-11 bash
+
+sudo yum -y install bison flex openssl openssl-devel readline-devel tcl-devel tk-devel
+
+## eigen install
+git clone https://gitlab.com/libeigen/eigen.git
+cd eigen && mkdir build && cd build
+cmake
+sudo make install
+
+
+## Swig install
+sudo dnf install swig
+========or===============
+wget http://prdownloads.sourceforge.net/swig/swig-3.0.0.tar.gz
+tar -xzvf swig-3.0.0.tar.gz
+(ref. https://www.swig.org/Doc4.2/SWIGDocumentation.html#Preface_unix_installation)
+cd swig-3.0.0
+./configure && make
+sudo make install
+
+## gcc install
+sudo dnf install gcc-c++
+=======or==========
+git clone https://github.com/gcc-mirror/gcc/
+wget https://ftp.gnu.org/gnu/gcc/gcc-9.3.0/gcc-9.3.0.tar.gz
+tar -xzvf gcc-9.3.0.tar.gz
+cd gcc-9.3.0
+mkdir build
+./contrib/download_prerequisites --directory=build
+cd    build
+../configure                                           \
+    --prefix=/usr                                      \
+    --disable-multilib                                 \
+    --with-system-zlib                                 \
+    --enable-languages=c,c++,d,fortran,go,objc,obj-c++ \
+    --program-suffix=-9.3.0
+
+make -j$(nproc)
+sudo make install -j$(nproc)
+
+
+## cmake install
+sudo yum -y install cmake
+=======or=========
+wget https://cmake.org/files/v3.30/cmake-3.30.4.tar.gz
+tar -xzvf cmake-3.30.4.tar.gz
+cd cmake-3.30.4
+sudo yum -y install openssl openssl-devel
+./bootstrap --prefix=/usr/local
+make -j$(nproc)
+sudo make install
+==================
+
+
+wget https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.44/pcre2-10.44.tar.gz
+tar -xzvf pcre2-10.44.tar.gz
+cd  pcre2-10.44
+sudo yum -y install readline-devel
+sudo yum install -y bzip2-devel.x86_64
+./configure --prefix=/usr                       \
+            --docdir=/usr/share/doc/pcre2-10.44 \
+            --enable-unicode                    \
+            --enable-jit                        \
+            --enable-pcre2-16                   \
+            --enable-pcre2-32                   \
+            --enable-pcre2grep-libz             \
+            --enable-pcre2grep-libbz2           \
+            --enable-pcre2test-libreadline      \
+            --disable-static                    &&
+make
+sudo make install
+
+
+
+sudo yum install tbb-devel -y
+
+clang-11 clang-12 clang-13 clang-14  clang-format-14
+https://developers.redhat.com/HW/ClangLLVM-RHEL-7#setup_your_development_environment
+
+sudo pip3 install lxml
+
+
+
+sudo yum -y install gtk3-devel libX11-devel
+
+ccache exuberant-ctags gperf  iverilog  libc6-dev  libcairo2-dev  libevent-dev  libffi-dev  libfontconfig1-dev  liblist-moreutils-perl  libxml2-utils tcl8.6-dev  tcllib  qtbase5-dev  libncurses5-dev  libreadline-dev  libx11-dev  libxft-dev  libxml++2.6-dev  pkg-config
+
+https://openfpga.readthedocs.io/en/master/tutorials/getting_started/compile/
+Verify the compilation--(run from the OpenFPGA root folder)
+python3 openfpga_flow/scripts/run_fpga_task.py compilation_verification --debug --show_thread_logs
+

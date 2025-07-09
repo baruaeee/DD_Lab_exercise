@@ -1,11 +1,11 @@
-/home/ubuntu/Desktop/OpenFPGA/build/yosys/bin/yosys yosys.ys
+/home/cae_sajib/Desktop/OpenFPGA/build/yosys/bin/yosys yosys.ys
 
  /----------------------------------------------------------------------------\
  |  yosys -- Yosys Open SYnthesis Suite                                       |
- |  Copyright (C) 2012 - 2024  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Copyright (C) 2012 - 2025  Claire Xenia Wolf <claire@yosyshq.com>         |
  |  Distributed under an ISC-like license, type "license" to see terms        |
  \----------------------------------------------------------------------------/
- Yosys 0.45+148 (git sha1 1bf908dea, g++ 11.4.0-1ubuntu1~22.04 -fPIC -O3)
+ Yosys 0.54+29 (git sha1 7b0c1fe49, g++ 11.4.0-1ubuntu1~22.04 -fPIC -O3)
 
 -- Executing script file `yosys.ys' --
 
@@ -13,30 +13,30 @@
 Parsing Verilog input from `./benchmark/i2c_master_defines.v' to AST representation.
 Successfully finished Verilog frontend.
 
-2. Executing Verilog-2005 frontend: ./benchmark/timescale.v
-Parsing Verilog input from `./benchmark/timescale.v' to AST representation.
-Successfully finished Verilog frontend.
-
-3. Executing Verilog-2005 frontend: ./benchmark/i2c_master_top.v
-Parsing Verilog input from `./benchmark/i2c_master_top.v' to AST representation.
-Warning: Encountered `translate_off' comment! Such legacy hot comments are supported by Yosys, but are not part of any formal language specification. Using a portable and standards-compliant construct such as `ifdef is recommended!
-Generating RTLIL representation for module `\i2c_master_top'.
-Successfully finished Verilog frontend.
-
-4. Executing Verilog-2005 frontend: ./benchmark/i2c_master_byte_ctrl.v
+2. Executing Verilog-2005 frontend: ./benchmark/i2c_master_byte_ctrl.v
 Parsing Verilog input from `./benchmark/i2c_master_byte_ctrl.v' to AST representation.
+Warning: Encountered `translate_off' comment! Such legacy hot comments are supported by Yosys, but are not part of any formal language specification. Using a portable and standards-compliant construct such as `ifdef is recommended!
 Warning: Encountered `full_case' comment! Such legacy hot comments are supported by Yosys, but are not part of any formal language specification. Using the Verilog `full_case' attribute or the SystemVerilog `unique' or `unique0' keywords is recommended!
 Warning: Encountered `parallel_case' comment! Such legacy hot comments are supported by Yosys, but are not part of any formal language specification. Using the Verilog `parallel_case' attribute or the SystemVerilog `unique' or `priority' keywords is recommended!
 Generating RTLIL representation for module `\i2c_master_byte_ctrl'.
 Successfully finished Verilog frontend.
 
-5. Executing Verilog-2005 frontend: ./benchmark/i2c_master_bit_ctrl.v
+3. Executing Verilog-2005 frontend: ./benchmark/timescale.v
+Parsing Verilog input from `./benchmark/timescale.v' to AST representation.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: ./benchmark/i2c_master_bit_ctrl.v
 Parsing Verilog input from `./benchmark/i2c_master_bit_ctrl.v' to AST representation.
 Generating RTLIL representation for module `\i2c_master_bit_ctrl'.
 Successfully finished Verilog frontend.
 
-6. Executing Verilog-2005 frontend: /home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v
-Parsing Verilog input from `/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v' to AST representation.
+5. Executing Verilog-2005 frontend: ./benchmark/i2c_master_top.v
+Parsing Verilog input from `./benchmark/i2c_master_top.v' to AST representation.
+Generating RTLIL representation for module `\i2c_master_top'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: /home/cae_sajib/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v
+Parsing Verilog input from `/home/cae_sajib/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v' to AST representation.
 Generating RTLIL representation for module `\dpram_1024x8_core'.
 Generating RTLIL representation for module `\dpram_1024x8'.
 Generating RTLIL representation for module `\mult_36'.
@@ -66,109 +66,97 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 8.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:207$100 in module dffsn.
-Marked 1 switch rules as full_case in process $proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:176$97 in module dffrn.
-Marked 1 switch rules as full_case in process $proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:145$94 in module dffs.
-Marked 1 switch rules as full_case in process $proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:114$91 in module dffr.
-Marked 2 switch rules as full_case in process $proc$./benchmark/i2c_master_bit_ctrl.v:335$85 in module i2c_master_bit_ctrl.
-Marked 2 switch rules as full_case in process $proc$./benchmark/i2c_master_bit_ctrl.v:299$72 in module i2c_master_bit_ctrl.
-Marked 2 switch rules as full_case in process $proc$./benchmark/i2c_master_bit_ctrl.v:291$69 in module i2c_master_bit_ctrl.
-Marked 2 switch rules as full_case in process $proc$./benchmark/i2c_master_bit_ctrl.v:278$64 in module i2c_master_bit_ctrl.
-Marked 2 switch rules as full_case in process $proc$./benchmark/i2c_master_bit_ctrl.v:260$56 in module i2c_master_bit_ctrl.
-Marked 2 switch rules as full_case in process $proc$./benchmark/i2c_master_bit_ctrl.v:232$54 in module i2c_master_bit_ctrl.
-Marked 4 switch rules as full_case in process $proc$./benchmark/i2c_master_bit_ctrl.v:196$46 in module i2c_master_bit_ctrl.
-Marked 10 switch rules as full_case in process $proc$./benchmark/i2c_master_byte_ctrl.v:201$40 in module i2c_master_byte_ctrl.
-Marked 3 switch rules as full_case in process $proc$./benchmark/i2c_master_byte_ctrl.v:184$35 in module i2c_master_byte_ctrl.
-Marked 3 switch rules as full_case in process $proc$./benchmark/i2c_master_byte_ctrl.v:173$33 in module i2c_master_byte_ctrl.
-Marked 2 switch rules as full_case in process $proc$./benchmark/i2c_master_top.v:285$26 in module i2c_master_top.
-Marked 2 switch rules as full_case in process $proc$./benchmark/i2c_master_top.v:261$16 in module i2c_master_top.
-Marked 3 switch rules as full_case in process $proc$./benchmark/i2c_master_top.v:202$11 in module i2c_master_top.
-Marked 2 switch rules as full_case in process $proc$./benchmark/i2c_master_top.v:178$9 in module i2c_master_top.
-Marked 1 switch rules as full_case in process $proc$./benchmark/i2c_master_top.v:163$8 in module i2c_master_top.
+Marked 2 switch rules as full_case in process $proc$./benchmark/i2c_master_top.v:285$85 in module i2c_master_top.
+Marked 2 switch rules as full_case in process $proc$./benchmark/i2c_master_top.v:261$75 in module i2c_master_top.
+Marked 3 switch rules as full_case in process $proc$./benchmark/i2c_master_top.v:202$70 in module i2c_master_top.
+Marked 2 switch rules as full_case in process $proc$./benchmark/i2c_master_top.v:178$68 in module i2c_master_top.
+Marked 1 switch rules as full_case in process $proc$./benchmark/i2c_master_top.v:163$67 in module i2c_master_top.
+Marked 2 switch rules as full_case in process $proc$./benchmark/i2c_master_bit_ctrl.v:335$57 in module i2c_master_bit_ctrl.
+Marked 2 switch rules as full_case in process $proc$./benchmark/i2c_master_bit_ctrl.v:299$44 in module i2c_master_bit_ctrl.
+Marked 2 switch rules as full_case in process $proc$./benchmark/i2c_master_bit_ctrl.v:291$41 in module i2c_master_bit_ctrl.
+Marked 2 switch rules as full_case in process $proc$./benchmark/i2c_master_bit_ctrl.v:278$36 in module i2c_master_bit_ctrl.
+Marked 2 switch rules as full_case in process $proc$./benchmark/i2c_master_bit_ctrl.v:260$28 in module i2c_master_bit_ctrl.
+Marked 2 switch rules as full_case in process $proc$./benchmark/i2c_master_bit_ctrl.v:232$26 in module i2c_master_bit_ctrl.
+Marked 4 switch rules as full_case in process $proc$./benchmark/i2c_master_bit_ctrl.v:196$18 in module i2c_master_bit_ctrl.
+Marked 10 switch rules as full_case in process $proc$./benchmark/i2c_master_byte_ctrl.v:201$12 in module i2c_master_byte_ctrl.
+Marked 3 switch rules as full_case in process $proc$./benchmark/i2c_master_byte_ctrl.v:184$7 in module i2c_master_byte_ctrl.
+Marked 3 switch rules as full_case in process $proc$./benchmark/i2c_master_byte_ctrl.v:173$5 in module i2c_master_byte_ctrl.
 Removed a total of 0 dead cases.
 
 8.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
-Removed 25 redundant assignments.
-Promoted 8 assignments to connections.
+Removed 21 redundant assignments.
+Promoted 2 assignments to connections.
 
 8.4. Executing PROC_INIT pass (extract init attributes).
-Found init rule in `\dffsn.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:0$102'.
-  Set init value: \Q = 1'0
-Found init rule in `\dffrn.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:0$99'.
-  Set init value: \Q = 1'0
-Found init rule in `\dffs.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:0$96'.
-  Set init value: \Q = 1'0
-Found init rule in `\dffr.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:0$93'.
-  Set init value: \Q = 1'0
-Found init rule in `\dff.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:0$90'.
-  Set init value: \Q = 1'0
 
 8.5. Executing PROC_ARST pass (detect async resets in processes).
-Found async reset \SN in `\dffsn.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:207$100'.
-Found async reset \RN in `\dffrn.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:176$97'.
-Found async reset \S in `\dffs.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:145$94'.
-Found async reset \R in `\dffr.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:114$91'.
-Found async reset \nReset in `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:335$85'.
-Found async reset \nReset in `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:299$72'.
-Found async reset \nReset in `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:291$69'.
-Found async reset \nReset in `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:278$64'.
-Found async reset \nReset in `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:260$56'.
-Found async reset \nReset in `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:232$54'.
-Found async reset \nReset in `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:196$46'.
-Found async reset \nReset in `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:201$40'.
-Found async reset \nReset in `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:184$35'.
-Found async reset \nReset in `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:173$33'.
-Found async reset \rst_i in `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:285$26'.
-Found async reset \rst_i in `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:261$16'.
-Found async reset \rst_i in `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:202$11'.
-Found async reset \rst_i in `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:178$9'.
+Found async reset \rst_i in `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:285$85'.
+Found async reset \rst_i in `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:261$75'.
+Found async reset \rst_i in `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:202$70'.
+Found async reset \rst_i in `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:178$68'.
+Found async reset \nReset in `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:335$57'.
+Found async reset \nReset in `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:299$44'.
+Found async reset \nReset in `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:291$41'.
+Found async reset \nReset in `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:278$36'.
+Found async reset \nReset in `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:260$28'.
+Found async reset \nReset in `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:232$26'.
+Found async reset \nReset in `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:196$18'.
+Found async reset \nReset in `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:201$12'.
+Found async reset \nReset in `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:184$7'.
+Found async reset \nReset in `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:173$5'.
 
 8.6. Executing PROC_ROM pass (convert switches to ROMs).
 Converted 0 switches.
 <suppressed ~45 debug messages>
 
 8.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\dffsn.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:0$102'.
-Creating decoders for process `\dffsn.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:207$100'.
-     1/1: $0\Q[0:0]
-Creating decoders for process `\dffrn.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:0$99'.
-Creating decoders for process `\dffrn.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:176$97'.
-     1/1: $0\Q[0:0]
-Creating decoders for process `\dffs.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:0$96'.
-Creating decoders for process `\dffs.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:145$94'.
-     1/1: $0\Q[0:0]
-Creating decoders for process `\dffr.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:0$93'.
-Creating decoders for process `\dffr.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:114$91'.
-     1/1: $0\Q[0:0]
-Creating decoders for process `\dff.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:0$90'.
-Creating decoders for process `\dff.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:89$89'.
-Creating decoders for process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:335$85'.
+Creating decoders for process `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:285$85'.
+     1/1: $0\wb_inta_o[0:0]
+Creating decoders for process `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:261$75'.
+     1/4: $0\irq_flag[0:0]
+     2/4: $0\tip[0:0]
+     3/4: $0\rxack[0:0]
+     4/4: $0\al[0:0]
+Creating decoders for process `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:202$70'.
+     1/4: $0\cr[7:0] [7:4]
+     2/4: $0\cr[7:0] [3]
+     3/4: $0\cr[7:0] [2:1]
+     4/4: $0\cr[7:0] [0]
+Creating decoders for process `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:178$68'.
+     1/4: $0\prer[15:0] [15:8]
+     2/4: $0\prer[15:0] [7:0]
+     3/4: $0\ctr[7:0]
+     4/4: $0\txr[7:0]
+Creating decoders for process `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:163$67'.
+     1/1: $0\wb_dat_o[7:0]
+Creating decoders for process `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:159$63'.
+Creating decoders for process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:335$57'.
      1/5: $0\cmd_ack[0:0]
      2/5: $0\sda_chk[0:0]
      3/5: $0\c_state[16:0]
      4/5: $0\sda_oen[0:0]
      5/5: $0\scl_oen[0:0]
-Creating decoders for process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:309$82'.
+Creating decoders for process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:309$54'.
      1/1: $0\dout[0:0]
-Creating decoders for process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:299$72'.
+Creating decoders for process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:299$44'.
      1/1: $0\al[0:0]
-Creating decoders for process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:291$69'.
+Creating decoders for process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:291$41'.
      1/1: $0\cmd_stop[0:0]
-Creating decoders for process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:278$64'.
+Creating decoders for process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:278$36'.
      1/1: $0\busy[0:0]
-Creating decoders for process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:260$56'.
+Creating decoders for process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:260$28'.
      1/2: $0\sto_condition[0:0]
      2/2: $0\sta_condition[0:0]
-Creating decoders for process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:232$54'.
+Creating decoders for process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:232$26'.
      1/4: $0\dSDA[0:0]
      2/4: $0\dSCL[0:0]
      3/4: $0\sSDA[0:0]
      4/4: $0\sSCL[0:0]
-Creating decoders for process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:196$46'.
+Creating decoders for process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:196$18'.
      1/2: $0\clk_en[0:0]
      2/2: $0\cnt[15:0]
-Creating decoders for process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:189$43'.
-Creating decoders for process `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:201$40'.
+Creating decoders for process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:189$15'.
+Creating decoders for process `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:201$12'.
      1/7: $0\cmd_ack[0:0]
      2/7: $0\ld[0:0]
      3/7: $0\shift[0:0]
@@ -176,177 +164,137 @@ Creating decoders for process `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_maste
      5/7: $0\c_state[4:0]
      6/7: $0\core_cmd[3:0]
      7/7: $0\ack_out[0:0]
-Creating decoders for process `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:184$35'.
+Creating decoders for process `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:184$7'.
      1/1: $0\dcnt[2:0]
-Creating decoders for process `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:173$33'.
+Creating decoders for process `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:173$5'.
      1/1: $0\sr[7:0]
-Creating decoders for process `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:285$26'.
-     1/1: $0\wb_inta_o[0:0]
-Creating decoders for process `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:261$16'.
-     1/4: $0\irq_flag[0:0]
-     2/4: $0\tip[0:0]
-     3/4: $0\rxack[0:0]
-     4/4: $0\al[0:0]
-Creating decoders for process `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:202$11'.
-     1/4: $0\cr[7:0] [7:4]
-     2/4: $0\cr[7:0] [3]
-     3/4: $0\cr[7:0] [2:1]
-     4/4: $0\cr[7:0] [0]
-Creating decoders for process `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:178$9'.
-     1/4: $0\prer[15:0] [15:8]
-     2/4: $0\prer[15:0] [7:0]
-     3/4: $0\ctr[7:0]
-     4/4: $0\txr[7:0]
-Creating decoders for process `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:163$8'.
-     1/1: $0\wb_dat_o[7:0]
-Creating decoders for process `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:159$4'.
 
 8.8. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 8.9. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\dffsn.\Q' using process `\dffsn.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:207$100'.
+Creating register for signal `\i2c_master_top.\wb_inta_o' using process `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:285$85'.
   created $adff cell `$procdff$537' with positive edge clock and positive level reset.
-Creating register for signal `\dffrn.\Q' using process `\dffrn.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:176$97'.
+Creating register for signal `\i2c_master_top.\al' using process `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:261$75'.
   created $adff cell `$procdff$542' with positive edge clock and positive level reset.
-Creating register for signal `\dffs.\Q' using process `\dffs.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:145$94'.
-  created $adff cell `$procdff$545' with positive edge clock and positive level reset.
-Creating register for signal `\dffr.\Q' using process `\dffr.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:114$91'.
-  created $adff cell `$procdff$548' with positive edge clock and positive level reset.
-Creating register for signal `\dff.\Q' using process `\dff.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:89$89'.
-  created $dff cell `$procdff$549' with positive edge clock.
-Creating register for signal `\i2c_master_bit_ctrl.\cmd_ack' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:335$85'.
-  created $adff cell `$procdff$554' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master_bit_ctrl.\scl_oen' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:335$85'.
-  created $adff cell `$procdff$559' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master_bit_ctrl.\sda_oen' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:335$85'.
-  created $adff cell `$procdff$564' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master_bit_ctrl.\c_state' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:335$85'.
-  created $adff cell `$procdff$569' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master_bit_ctrl.\sda_chk' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:335$85'.
-  created $adff cell `$procdff$574' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master_bit_ctrl.\dout' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:309$82'.
-  created $dff cell `$procdff$575' with positive edge clock.
-Creating register for signal `\i2c_master_bit_ctrl.\al' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:299$72'.
-  created $adff cell `$procdff$580' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master_bit_ctrl.\cmd_stop' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:291$69'.
-  created $adff cell `$procdff$585' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master_bit_ctrl.\busy' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:278$64'.
-  created $adff cell `$procdff$590' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master_bit_ctrl.\sta_condition' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:260$56'.
-  created $adff cell `$procdff$595' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master_bit_ctrl.\sto_condition' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:260$56'.
-  created $adff cell `$procdff$600' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master_bit_ctrl.\sSCL' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:232$54'.
-  created $adff cell `$procdff$605' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master_bit_ctrl.\sSDA' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:232$54'.
+Creating register for signal `\i2c_master_top.\rxack' using process `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:261$75'.
+  created $adff cell `$procdff$547' with positive edge clock and positive level reset.
+Creating register for signal `\i2c_master_top.\tip' using process `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:261$75'.
+  created $adff cell `$procdff$552' with positive edge clock and positive level reset.
+Creating register for signal `\i2c_master_top.\irq_flag' using process `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:261$75'.
+  created $adff cell `$procdff$557' with positive edge clock and positive level reset.
+Creating register for signal `\i2c_master_top.\cr' using process `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:202$70'.
+  created $adff cell `$procdff$562' with positive edge clock and positive level reset.
+Creating register for signal `\i2c_master_top.\prer' using process `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:178$68'.
+  created $adff cell `$procdff$567' with positive edge clock and positive level reset.
+Creating register for signal `\i2c_master_top.\ctr' using process `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:178$68'.
+  created $adff cell `$procdff$572' with positive edge clock and positive level reset.
+Creating register for signal `\i2c_master_top.\txr' using process `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:178$68'.
+  created $adff cell `$procdff$577' with positive edge clock and positive level reset.
+Creating register for signal `\i2c_master_top.\wb_dat_o' using process `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:163$67'.
+  created $dff cell `$procdff$578' with positive edge clock.
+Creating register for signal `\i2c_master_top.\wb_ack_o' using process `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:159$63'.
+  created $dff cell `$procdff$579' with positive edge clock.
+Creating register for signal `\i2c_master_bit_ctrl.\cmd_ack' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:335$57'.
+  created $adff cell `$procdff$584' with positive edge clock and positive level reset.
+Creating register for signal `\i2c_master_bit_ctrl.\scl_oen' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:335$57'.
+  created $adff cell `$procdff$589' with positive edge clock and positive level reset.
+Creating register for signal `\i2c_master_bit_ctrl.\sda_oen' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:335$57'.
+  created $adff cell `$procdff$594' with positive edge clock and positive level reset.
+Creating register for signal `\i2c_master_bit_ctrl.\c_state' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:335$57'.
+  created $adff cell `$procdff$599' with positive edge clock and positive level reset.
+Creating register for signal `\i2c_master_bit_ctrl.\sda_chk' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:335$57'.
+  created $adff cell `$procdff$604' with positive edge clock and positive level reset.
+Creating register for signal `\i2c_master_bit_ctrl.\dout' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:309$54'.
+  created $dff cell `$procdff$605' with positive edge clock.
+Creating register for signal `\i2c_master_bit_ctrl.\al' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:299$44'.
   created $adff cell `$procdff$610' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master_bit_ctrl.\dSCL' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:232$54'.
+Creating register for signal `\i2c_master_bit_ctrl.\cmd_stop' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:291$41'.
   created $adff cell `$procdff$615' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master_bit_ctrl.\dSDA' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:232$54'.
+Creating register for signal `\i2c_master_bit_ctrl.\busy' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:278$36'.
   created $adff cell `$procdff$620' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master_bit_ctrl.\clk_en' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:196$46'.
+Creating register for signal `\i2c_master_bit_ctrl.\sta_condition' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:260$28'.
   created $adff cell `$procdff$625' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master_bit_ctrl.\cnt' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:196$46'.
+Creating register for signal `\i2c_master_bit_ctrl.\sto_condition' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:260$28'.
   created $adff cell `$procdff$630' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master_bit_ctrl.\dscl_oen' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:189$43'.
-  created $dff cell `$procdff$631' with positive edge clock.
-Creating register for signal `\i2c_master_byte_ctrl.\cmd_ack' using process `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:201$40'.
-  created $adff cell `$procdff$636' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master_byte_ctrl.\ack_out' using process `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:201$40'.
-  created $adff cell `$procdff$641' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master_byte_ctrl.\core_cmd' using process `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:201$40'.
-  created $adff cell `$procdff$646' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master_byte_ctrl.\core_txd' using process `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:201$40'.
-  created $adff cell `$procdff$651' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master_byte_ctrl.\shift' using process `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:201$40'.
-  created $adff cell `$procdff$656' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master_byte_ctrl.\ld' using process `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:201$40'.
-  created $adff cell `$procdff$661' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master_byte_ctrl.\c_state' using process `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:201$40'.
+Creating register for signal `\i2c_master_bit_ctrl.\sSCL' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:232$26'.
+  created $adff cell `$procdff$635' with positive edge clock and positive level reset.
+Creating register for signal `\i2c_master_bit_ctrl.\sSDA' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:232$26'.
+  created $adff cell `$procdff$640' with positive edge clock and positive level reset.
+Creating register for signal `\i2c_master_bit_ctrl.\dSCL' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:232$26'.
+  created $adff cell `$procdff$645' with positive edge clock and positive level reset.
+Creating register for signal `\i2c_master_bit_ctrl.\dSDA' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:232$26'.
+  created $adff cell `$procdff$650' with positive edge clock and positive level reset.
+Creating register for signal `\i2c_master_bit_ctrl.\clk_en' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:196$18'.
+  created $adff cell `$procdff$655' with positive edge clock and positive level reset.
+Creating register for signal `\i2c_master_bit_ctrl.\cnt' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:196$18'.
+  created $adff cell `$procdff$660' with positive edge clock and positive level reset.
+Creating register for signal `\i2c_master_bit_ctrl.\dscl_oen' using process `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:189$15'.
+  created $dff cell `$procdff$661' with positive edge clock.
+Creating register for signal `\i2c_master_byte_ctrl.\cmd_ack' using process `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:201$12'.
   created $adff cell `$procdff$666' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master_byte_ctrl.\dcnt' using process `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:184$35'.
+Creating register for signal `\i2c_master_byte_ctrl.\ack_out' using process `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:201$12'.
   created $adff cell `$procdff$671' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master_byte_ctrl.\sr' using process `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:173$33'.
+Creating register for signal `\i2c_master_byte_ctrl.\core_cmd' using process `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:201$12'.
   created $adff cell `$procdff$676' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master_top.\wb_inta_o' using process `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:285$26'.
+Creating register for signal `\i2c_master_byte_ctrl.\core_txd' using process `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:201$12'.
   created $adff cell `$procdff$681' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master_top.\rxack' using process `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:261$16'.
+Creating register for signal `\i2c_master_byte_ctrl.\shift' using process `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:201$12'.
   created $adff cell `$procdff$686' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master_top.\tip' using process `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:261$16'.
+Creating register for signal `\i2c_master_byte_ctrl.\ld' using process `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:201$12'.
   created $adff cell `$procdff$691' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master_top.\irq_flag' using process `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:261$16'.
+Creating register for signal `\i2c_master_byte_ctrl.\c_state' using process `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:201$12'.
   created $adff cell `$procdff$696' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master_top.\al' using process `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:261$16'.
+Creating register for signal `\i2c_master_byte_ctrl.\dcnt' using process `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:184$7'.
   created $adff cell `$procdff$701' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master_top.\cr' using process `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:202$11'.
+Creating register for signal `\i2c_master_byte_ctrl.\sr' using process `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:173$5'.
   created $adff cell `$procdff$706' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master_top.\prer' using process `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:178$9'.
-  created $adff cell `$procdff$711' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master_top.\ctr' using process `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:178$9'.
-  created $adff cell `$procdff$716' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master_top.\txr' using process `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:178$9'.
-  created $adff cell `$procdff$721' with positive edge clock and positive level reset.
-Creating register for signal `\i2c_master_top.\wb_dat_o' using process `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:163$8'.
-  created $dff cell `$procdff$722' with positive edge clock.
-Creating register for signal `\i2c_master_top.\wb_ack_o' using process `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:159$4'.
-  created $dff cell `$procdff$723' with positive edge clock.
 
 8.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 8.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Removing empty process `dffsn.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:0$102'.
-Removing empty process `dffsn.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:207$100'.
-Removing empty process `dffrn.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:0$99'.
-Removing empty process `dffrn.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:176$97'.
-Removing empty process `dffs.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:0$96'.
-Removing empty process `dffs.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:145$94'.
-Removing empty process `dffr.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:0$93'.
-Removing empty process `dffr.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:114$91'.
-Removing empty process `dff.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:0$90'.
-Removing empty process `dff.$proc$/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v:89$89'.
-Found and cleaned up 4 empty switches in `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:335$85'.
-Removing empty process `i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:335$85'.
-Found and cleaned up 1 empty switch in `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:309$82'.
-Removing empty process `i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:309$82'.
-Found and cleaned up 1 empty switch in `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:299$72'.
-Removing empty process `i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:299$72'.
-Found and cleaned up 2 empty switches in `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:291$69'.
-Removing empty process `i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:291$69'.
-Found and cleaned up 1 empty switch in `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:278$64'.
-Removing empty process `i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:278$64'.
-Found and cleaned up 1 empty switch in `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:260$56'.
-Removing empty process `i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:260$56'.
-Found and cleaned up 1 empty switch in `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:232$54'.
-Removing empty process `i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:232$54'.
-Found and cleaned up 3 empty switches in `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:196$46'.
-Removing empty process `i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:196$46'.
-Removing empty process `i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:189$43'.
-Found and cleaned up 15 empty switches in `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:201$40'.
-Removing empty process `i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:201$40'.
-Found and cleaned up 3 empty switches in `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:184$35'.
-Removing empty process `i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:184$35'.
-Found and cleaned up 3 empty switches in `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:173$33'.
-Removing empty process `i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:173$33'.
-Found and cleaned up 1 empty switch in `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:285$26'.
-Removing empty process `i2c_master_top.$proc$./benchmark/i2c_master_top.v:285$26'.
-Found and cleaned up 1 empty switch in `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:261$16'.
-Removing empty process `i2c_master_top.$proc$./benchmark/i2c_master_top.v:261$16'.
-Found and cleaned up 4 empty switches in `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:202$11'.
-Removing empty process `i2c_master_top.$proc$./benchmark/i2c_master_top.v:202$11'.
-Found and cleaned up 3 empty switches in `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:178$9'.
-Removing empty process `i2c_master_top.$proc$./benchmark/i2c_master_top.v:178$9'.
-Found and cleaned up 1 empty switch in `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:163$8'.
-Removing empty process `i2c_master_top.$proc$./benchmark/i2c_master_top.v:163$8'.
-Removing empty process `i2c_master_top.$proc$./benchmark/i2c_master_top.v:159$4'.
+Found and cleaned up 1 empty switch in `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:285$85'.
+Removing empty process `i2c_master_top.$proc$./benchmark/i2c_master_top.v:285$85'.
+Found and cleaned up 1 empty switch in `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:261$75'.
+Removing empty process `i2c_master_top.$proc$./benchmark/i2c_master_top.v:261$75'.
+Found and cleaned up 4 empty switches in `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:202$70'.
+Removing empty process `i2c_master_top.$proc$./benchmark/i2c_master_top.v:202$70'.
+Found and cleaned up 3 empty switches in `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:178$68'.
+Removing empty process `i2c_master_top.$proc$./benchmark/i2c_master_top.v:178$68'.
+Found and cleaned up 1 empty switch in `\i2c_master_top.$proc$./benchmark/i2c_master_top.v:163$67'.
+Removing empty process `i2c_master_top.$proc$./benchmark/i2c_master_top.v:163$67'.
+Removing empty process `i2c_master_top.$proc$./benchmark/i2c_master_top.v:159$63'.
+Found and cleaned up 4 empty switches in `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:335$57'.
+Removing empty process `i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:335$57'.
+Found and cleaned up 1 empty switch in `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:309$54'.
+Removing empty process `i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:309$54'.
+Found and cleaned up 1 empty switch in `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:299$44'.
+Removing empty process `i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:299$44'.
+Found and cleaned up 2 empty switches in `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:291$41'.
+Removing empty process `i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:291$41'.
+Found and cleaned up 1 empty switch in `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:278$36'.
+Removing empty process `i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:278$36'.
+Found and cleaned up 1 empty switch in `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:260$28'.
+Removing empty process `i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:260$28'.
+Found and cleaned up 1 empty switch in `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:232$26'.
+Removing empty process `i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:232$26'.
+Found and cleaned up 3 empty switches in `\i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:196$18'.
+Removing empty process `i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:196$18'.
+Removing empty process `i2c_master_bit_ctrl.$proc$./benchmark/i2c_master_bit_ctrl.v:189$15'.
+Found and cleaned up 15 empty switches in `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:201$12'.
+Removing empty process `i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:201$12'.
+Found and cleaned up 3 empty switches in `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:184$7'.
+Removing empty process `i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:184$7'.
+Found and cleaned up 3 empty switches in `\i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:173$5'.
+Removing empty process `i2c_master_byte_ctrl.$proc$./benchmark/i2c_master_byte_ctrl.v:173$5'.
 Cleaned up 45 empty switches.
 
 8.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module i2c_master_top.
+<suppressed ~21 debug messages>
 Optimizing module i2c_master_bit_ctrl.
 <suppressed ~36 debug messages>
 Optimizing module i2c_master_byte_ctrl.
 <suppressed ~26 debug messages>
-Optimizing module i2c_master_top.
-<suppressed ~21 debug messages>
 
 9. Executing FLATTEN pass (flatten design).
 Deleting now unused module i2c_master_bit_ctrl.
@@ -385,11 +333,11 @@ Removed 0 multiplexer ports.
 
 14.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \i2c_master_top.
-    New ctrl vector for $pmux cell $flatten\byte_controller.\bit_controller.$procmux$104: $auto$opt_reduce.cc:134:opt_pmux$727
-    New ctrl vector for $pmux cell $flatten\byte_controller.\bit_controller.$procmux$115: { $auto$opt_reduce.cc:134:opt_pmux$731 $auto$opt_reduce.cc:134:opt_pmux$729 }
-    New ctrl vector for $pmux cell $flatten\byte_controller.\bit_controller.$procmux$140: { $flatten\byte_controller.\bit_controller.$procmux$133_CMP $flatten\byte_controller.\bit_controller.$procmux$132_CMP $flatten\byte_controller.\bit_controller.$procmux$131_CMP $flatten\byte_controller.\bit_controller.$procmux$130_CMP $flatten\byte_controller.\bit_controller.$procmux$129_CMP $flatten\byte_controller.\bit_controller.$procmux$127_CMP $flatten\byte_controller.\bit_controller.$procmux$126_CMP $flatten\byte_controller.\bit_controller.$procmux$125_CMP $flatten\byte_controller.\bit_controller.$procmux$123_CMP $flatten\byte_controller.\bit_controller.$procmux$122_CMP $flatten\byte_controller.\bit_controller.$procmux$121_CMP $flatten\byte_controller.\bit_controller.$procmux$119_CMP $flatten\byte_controller.\bit_controller.$procmux$118_CMP $flatten\byte_controller.\bit_controller.$procmux$117_CMP $auto$opt_reduce.cc:134:opt_pmux$733 }
-    New ctrl vector for $pmux cell $flatten\byte_controller.\bit_controller.$procmux$171: { $auto$opt_reduce.cc:134:opt_pmux$739 $auto$opt_reduce.cc:134:opt_pmux$737 $auto$opt_reduce.cc:134:opt_pmux$735 }
-    New ctrl vector for $pmux cell $flatten\byte_controller.\bit_controller.$procmux$195: { $auto$opt_reduce.cc:134:opt_pmux$743 $auto$opt_reduce.cc:134:opt_pmux$741 }
+    New ctrl vector for $pmux cell $flatten\byte_controller.\bit_controller.$procmux$196: $auto$opt_reduce.cc:137:opt_pmux$710
+    New ctrl vector for $pmux cell $flatten\byte_controller.\bit_controller.$procmux$207: { $auto$opt_reduce.cc:137:opt_pmux$714 $auto$opt_reduce.cc:137:opt_pmux$712 }
+    New ctrl vector for $pmux cell $flatten\byte_controller.\bit_controller.$procmux$232: { $flatten\byte_controller.\bit_controller.$procmux$225_CMP $flatten\byte_controller.\bit_controller.$procmux$224_CMP $flatten\byte_controller.\bit_controller.$procmux$223_CMP $flatten\byte_controller.\bit_controller.$procmux$222_CMP $flatten\byte_controller.\bit_controller.$procmux$221_CMP $flatten\byte_controller.\bit_controller.$procmux$219_CMP $flatten\byte_controller.\bit_controller.$procmux$218_CMP $flatten\byte_controller.\bit_controller.$procmux$217_CMP $flatten\byte_controller.\bit_controller.$procmux$215_CMP $flatten\byte_controller.\bit_controller.$procmux$214_CMP $flatten\byte_controller.\bit_controller.$procmux$213_CMP $flatten\byte_controller.\bit_controller.$procmux$211_CMP $flatten\byte_controller.\bit_controller.$procmux$210_CMP $flatten\byte_controller.\bit_controller.$procmux$209_CMP $auto$opt_reduce.cc:137:opt_pmux$716 }
+    New ctrl vector for $pmux cell $flatten\byte_controller.\bit_controller.$procmux$263: { $auto$opt_reduce.cc:137:opt_pmux$722 $auto$opt_reduce.cc:137:opt_pmux$720 $auto$opt_reduce.cc:137:opt_pmux$718 }
+    New ctrl vector for $pmux cell $flatten\byte_controller.\bit_controller.$procmux$287: { $auto$opt_reduce.cc:137:opt_pmux$726 $auto$opt_reduce.cc:137:opt_pmux$724 }
   Optimizing cells in module \i2c_master_top.
 Performed a total of 5 changes.
 
@@ -482,46 +430,46 @@ Optimizing module i2c_master_top.
 18.9. Finished OPT passes. (There is nothing left to do.)
 
 19. Executing WREDUCE pass (reducing word size of cells).
-Removed top 2 bits (of 3) from port B of cell i2c_master_top.$procmux$493_CMP0 ($eq).
-Removed top 1 bits (of 3) from port B of cell i2c_master_top.$procmux$511_CMP0 ($eq).
-Removed top 1 bits (of 3) from port B of cell i2c_master_top.$procmux$518_CMP0 ($eq).
-Removed top 15 bits (of 16) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$sub$./benchmark/i2c_master_bit_ctrl.v:220$53 ($sub).
-Removed top 2 bits (of 4) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$eq$./benchmark/i2c_master_bit_ctrl.v:297$71 ($eq).
-Removed top 4 bits (of 17) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$106_CMP0 ($eq).
-Removed top 8 bits (of 17) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$107_CMP0 ($eq).
-Removed top 12 bits (of 17) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$108_CMP0 ($eq).
-Removed top 1 bits (of 17) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$117_CMP0 ($eq).
-Removed top 2 bits (of 17) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$118_CMP0 ($eq).
-Removed top 3 bits (of 17) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$119_CMP0 ($eq).
-Removed top 5 bits (of 17) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$121_CMP0 ($eq).
-Removed top 6 bits (of 17) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$122_CMP0 ($eq).
-Removed top 7 bits (of 17) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$123_CMP0 ($eq).
-Removed top 9 bits (of 17) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$125_CMP0 ($eq).
-Removed top 10 bits (of 17) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$126_CMP0 ($eq).
-Removed top 11 bits (of 17) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$127_CMP0 ($eq).
-Removed top 13 bits (of 17) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$129_CMP0 ($eq).
-Removed top 14 bits (of 17) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$130_CMP0 ($eq).
-Removed top 15 bits (of 17) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$131_CMP0 ($eq).
-Removed top 16 bits (of 17) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$132_CMP0 ($eq).
-Removed top 3 bits (of 17) from mux cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$159 ($pmux).
-Removed top 1 bits (of 4) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$161_CMP0 ($eq).
-Removed top 3 bits (of 4) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$163_CMP0 ($eq).
-Removed top 1 bits (of 4) from mux cell i2c_master_top.$flatten\byte_controller.$procmux$401 ($mux).
-Removed top 2 bits (of 4) from mux cell i2c_master_top.$flatten\byte_controller.$procmux$377 ($mux).
-Removed top 2 bits (of 5) from mux cell i2c_master_top.$flatten\byte_controller.$procmux$350 ($mux).
-Removed top 1 bits (of 5) from mux cell i2c_master_top.$flatten\byte_controller.$procmux$344 ($mux).
-Removed top 1 bits (of 5) from mux cell i2c_master_top.$flatten\byte_controller.$procmux$338 ($mux).
-Removed top 2 bits (of 5) from port B of cell i2c_master_top.$flatten\byte_controller.$procmux$308_CMP0 ($eq).
-Removed top 3 bits (of 5) from port B of cell i2c_master_top.$flatten\byte_controller.$procmux$302_CMP0 ($eq).
-Removed top 4 bits (of 5) from port B of cell i2c_master_top.$flatten\byte_controller.$procmux$289_CMP0 ($eq).
-Removed top 1 bits (of 5) from port B of cell i2c_master_top.$flatten\byte_controller.$procmux$277_CMP0 ($eq).
-Removed top 2 bits (of 3) from port B of cell i2c_master_top.$flatten\byte_controller.$sub$./benchmark/i2c_master_byte_ctrl.v:192$37 ($sub).
-Removed top 1 bits (of 5) from wire i2c_master_top.$flatten\byte_controller.$procmux$338_Y.
-Removed top 1 bits (of 5) from wire i2c_master_top.$flatten\byte_controller.$procmux$344_Y.
-Removed top 2 bits (of 5) from wire i2c_master_top.$flatten\byte_controller.$procmux$350_Y.
-Removed top 2 bits (of 4) from wire i2c_master_top.$flatten\byte_controller.$procmux$377_Y.
-Removed top 1 bits (of 4) from wire i2c_master_top.$flatten\byte_controller.$procmux$401_Y.
-Removed top 3 bits (of 17) from wire i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$159_Y.
+Removed top 2 bits (of 3) from port B of cell i2c_master_top.$procmux$155_CMP0 ($eq).
+Removed top 1 bits (of 3) from port B of cell i2c_master_top.$procmux$173_CMP0 ($eq).
+Removed top 1 bits (of 3) from port B of cell i2c_master_top.$procmux$180_CMP0 ($eq).
+Removed top 15 bits (of 16) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$sub$./benchmark/i2c_master_bit_ctrl.v:220$25 ($sub).
+Removed top 2 bits (of 4) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$eq$./benchmark/i2c_master_bit_ctrl.v:297$43 ($eq).
+Removed top 4 bits (of 17) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$198_CMP0 ($eq).
+Removed top 8 bits (of 17) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$199_CMP0 ($eq).
+Removed top 12 bits (of 17) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$200_CMP0 ($eq).
+Removed top 1 bits (of 17) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$209_CMP0 ($eq).
+Removed top 2 bits (of 17) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$210_CMP0 ($eq).
+Removed top 3 bits (of 17) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$211_CMP0 ($eq).
+Removed top 5 bits (of 17) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$213_CMP0 ($eq).
+Removed top 6 bits (of 17) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$214_CMP0 ($eq).
+Removed top 7 bits (of 17) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$215_CMP0 ($eq).
+Removed top 9 bits (of 17) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$217_CMP0 ($eq).
+Removed top 10 bits (of 17) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$218_CMP0 ($eq).
+Removed top 11 bits (of 17) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$219_CMP0 ($eq).
+Removed top 13 bits (of 17) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$221_CMP0 ($eq).
+Removed top 14 bits (of 17) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$222_CMP0 ($eq).
+Removed top 15 bits (of 17) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$223_CMP0 ($eq).
+Removed top 16 bits (of 17) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$224_CMP0 ($eq).
+Removed top 3 bits (of 17) from mux cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$251 ($pmux).
+Removed top 1 bits (of 4) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$253_CMP0 ($eq).
+Removed top 3 bits (of 4) from port B of cell i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$255_CMP0 ($eq).
+Removed top 1 bits (of 4) from mux cell i2c_master_top.$flatten\byte_controller.$procmux$493 ($mux).
+Removed top 2 bits (of 4) from mux cell i2c_master_top.$flatten\byte_controller.$procmux$469 ($mux).
+Removed top 2 bits (of 5) from mux cell i2c_master_top.$flatten\byte_controller.$procmux$442 ($mux).
+Removed top 1 bits (of 5) from mux cell i2c_master_top.$flatten\byte_controller.$procmux$436 ($mux).
+Removed top 1 bits (of 5) from mux cell i2c_master_top.$flatten\byte_controller.$procmux$430 ($mux).
+Removed top 2 bits (of 5) from port B of cell i2c_master_top.$flatten\byte_controller.$procmux$400_CMP0 ($eq).
+Removed top 3 bits (of 5) from port B of cell i2c_master_top.$flatten\byte_controller.$procmux$394_CMP0 ($eq).
+Removed top 4 bits (of 5) from port B of cell i2c_master_top.$flatten\byte_controller.$procmux$381_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell i2c_master_top.$flatten\byte_controller.$procmux$369_CMP0 ($eq).
+Removed top 2 bits (of 3) from port B of cell i2c_master_top.$flatten\byte_controller.$sub$./benchmark/i2c_master_byte_ctrl.v:192$9 ($sub).
+Removed top 1 bits (of 5) from wire i2c_master_top.$flatten\byte_controller.$procmux$430_Y.
+Removed top 1 bits (of 5) from wire i2c_master_top.$flatten\byte_controller.$procmux$436_Y.
+Removed top 2 bits (of 5) from wire i2c_master_top.$flatten\byte_controller.$procmux$442_Y.
+Removed top 2 bits (of 4) from wire i2c_master_top.$flatten\byte_controller.$procmux$469_Y.
+Removed top 1 bits (of 4) from wire i2c_master_top.$flatten\byte_controller.$procmux$493_Y.
+Removed top 3 bits (of 17) from wire i2c_master_top.$flatten\byte_controller.\bit_controller.$procmux$251_Y.
 
 20. Executing PEEPOPT pass (run peephole optimizers).
 
@@ -538,14 +486,14 @@ Removed 22 unused cells and 40 unused wires.
 
 25. Executing TECHMAP pass (map to technology primitives).
 
-25.1. Executing Verilog-2005 frontend: /home/ubuntu/Desktop/OpenFPGA/build/yosys/bin/../share/yosys/mul2dsp.v
-Parsing Verilog input from `/home/ubuntu/Desktop/OpenFPGA/build/yosys/bin/../share/yosys/mul2dsp.v' to AST representation.
+25.1. Executing Verilog-2005 frontend: /home/cae_sajib/Desktop/OpenFPGA/build/yosys/bin/../share/yosys/mul2dsp.v
+Parsing Verilog input from `/home/cae_sajib/Desktop/OpenFPGA/build/yosys/bin/../share/yosys/mul2dsp.v' to AST representation.
 Generating RTLIL representation for module `\_80_mul'.
 Generating RTLIL representation for module `\_90_soft_mul'.
 Successfully finished Verilog frontend.
 
-25.2. Executing Verilog-2005 frontend: /home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_40nm_dsp_map.v
-Parsing Verilog input from `/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_40nm_dsp_map.v' to AST representation.
+25.2. Executing Verilog-2005 frontend: /home/cae_sajib/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_40nm_dsp_map.v
+Parsing Verilog input from `/home/cae_sajib/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_40nm_dsp_map.v' to AST representation.
 Generating RTLIL representation for module `\mult_36x36'.
 Successfully finished Verilog frontend.
 
@@ -562,8 +510,8 @@ Warning: Selection "functions" did not match any module.
 
 28. Executing TECHMAP pass (map to technology primitives).
 
-28.1. Executing Verilog-2005 frontend: /home/ubuntu/Desktop/OpenFPGA/build/yosys/bin/../share/yosys/techmap.v
-Parsing Verilog input from `/home/ubuntu/Desktop/OpenFPGA/build/yosys/bin/../share/yosys/techmap.v' to AST representation.
+28.1. Executing Verilog-2005 frontend: /home/cae_sajib/Desktop/OpenFPGA/build/yosys/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/home/cae_sajib/Desktop/OpenFPGA/build/yosys/bin/../share/yosys/techmap.v' to AST representation.
 Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
 Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
 Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
@@ -613,7 +561,7 @@ Using template $paramod\_90_lcu_brent_kung\WIDTH=32'0000000000000000000000000001
 Using extmapper simplemap for cells of type $pos.
 Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000011 for cells of type $lcu.
 No more expansions possible.
-<suppressed ~762 debug messages>
+<suppressed ~764 debug messages>
 
 29. Executing ALUMACC pass (create $alu and $macc cells).
 Extracting $alu and $macc cells in module i2c_master_top:
@@ -752,8 +700,8 @@ Finding unused cells or wires in module \i2c_master_top..
 
 37. Executing TECHMAP pass (map to technology primitives).
 
-37.1. Executing Verilog-2005 frontend: /home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_40nm_bram_map.v
-Parsing Verilog input from `/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_40nm_bram_map.v' to AST representation.
+37.1. Executing Verilog-2005 frontend: /home/cae_sajib/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_40nm_bram_map.v
+Parsing Verilog input from `/home/cae_sajib/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_40nm_bram_map.v' to AST representation.
 Generating RTLIL representation for module `\$__MY_DPRAM_1024x8'.
 Successfully finished Verilog frontend.
 
@@ -814,8 +762,8 @@ Optimizing module i2c_master_top.
 
 41. Executing TECHMAP pass (map to technology primitives).
 
-41.1. Executing Verilog-2005 frontend: /home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_dff_map.v
-Parsing Verilog input from `/home/ubuntu/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_dff_map.v' to AST representation.
+41.1. Executing Verilog-2005 frontend: /home/cae_sajib/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_dff_map.v
+Parsing Verilog input from `/home/cae_sajib/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_dff_map.v' to AST representation.
 Generating RTLIL representation for module `\$_DFF_P_'.
 Generating RTLIL representation for module `\$_DFF_PP0_'.
 Generating RTLIL representation for module `\$_DFF_PP1_'.
@@ -909,13 +857,14 @@ ABC: + lutpack -S 1
 ABC: + write_blif <abc-temp-dir>/output.blif 
 
 49.1.2. Re-integrating ABC results.
-ABC RESULTS:              $lut cells:      266
+ABC RESULTS:              $lut cells:      259
 ABC RESULTS:        internal signals:      811
 ABC RESULTS:           input signals:      136
 ABC RESULTS:          output signals:      127
 Removing temp directory.
 
 50. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `i2c_master_top'. Setting top module to i2c_master_top.
 
 50.1. Analyzing design hierarchy..
 Top module:  \i2c_master_top
@@ -928,8 +877,8 @@ Removed 0 unused modules.
 
 === i2c_master_top ===
 
-   Number of wires:                943
-   Number of wire bits:           2044
+   Number of wires:                936
+   Number of wire bits:           2037
    Number of public wires:         103
    Number of public wire bits:     263
    Number of ports:                 17
@@ -937,8 +886,8 @@ Removed 0 unused modules.
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                396
-     $lut                          266
+   Number of cells:                389
+     $lut                          259
      $scopeinfo                      2
      dff                            11
      dffrn                          94
@@ -952,7 +901,7 @@ Removed 2 unused cells and 662 unused wires.
 53. Executing BLIF backend.
 
 Warnings: 6 unique messages, 6 total
-End of script. Logfile hash: 4fb5e4f3fe, CPU: user 0.59s system 0.02s, MEM: 25.45 MB peak
-Yosys 0.45+148 (git sha1 1bf908dea, g++ 11.4.0-1ubuntu1~22.04 -fPIC -O3)
-Time spent: 33% 1x abc (0 sec), 19% 24x opt_expr (0 sec), ...
+End of script. Logfile hash: 7725743c96, CPU: user 0.94s system 0.05s, MEM: 25.86 MB peak
+Yosys 0.54+29 (git sha1 7b0c1fe49, g++ 11.4.0-1ubuntu1~22.04 -fPIC -O3)
+Time spent: 28% 1x abc (0 sec), 22% 24x opt_expr (0 sec), ...
 0
