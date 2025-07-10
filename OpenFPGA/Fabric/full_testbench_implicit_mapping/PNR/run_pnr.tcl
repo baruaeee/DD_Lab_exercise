@@ -1,4 +1,4 @@
-source Fabric_design_import.globals
+source ../../../../PNR/Fabric_design_import.globals
 set init_design_uniquify 1
 init_design
 

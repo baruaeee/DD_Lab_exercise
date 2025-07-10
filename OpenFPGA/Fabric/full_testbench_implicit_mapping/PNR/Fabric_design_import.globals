@@ -60,7 +60,7 @@ set enc_enable_print_mode_command_reset_options 1
 set init_design_settop 0
 set init_gnd_net {VSS iovss vss}
 set init_import_mode { -discardFloatingVNets 0 -keepEmptyModule 1}
-set init_lef_file {/eda/cadence/pdks/ihp_sg13g2/ixc013g2ng_stdcell/lef/ixc013g2ng_tech.lef /eda/cadence/pdks/ihp_sg13g2/ixc013g2ng_stdcell/lef/ixc013g2ng_stdcell_v5p7.lef /eda/cadence/pdks/ihp_sg13g2/ixc013g2ng_stdcell/lef/ixc013g2ng_phys.lef ../../../../../IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lef/sg13g2_io.lef ../../../../../IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_sram/lef/RM_IHPSG13_1P_1024x8_c2_bm_bist.lef}
+set init_lef_file {/eda/cadence/pdks/ihp_sg13g2/ixc013g2ng_stdcell/lef/ixc013g2ng_tech.lef /eda/cadence/pdks/ihp_sg13g2/ixc013g2ng_stdcell/lef/ixc013g2ng_stdcell_v5p7.lef /eda/cadence/pdks/ihp_sg13g2/ixc013g2ng_stdcell/lef/ixc013g2ng_phys.lef ../../../../../ihp-sg13g2/libs.ref/sg13g2_io/lef/sg13g2_io.lef ../../../../../ihp-sg13g2/libs.ref/sg13g2_sram/lef/RM_IHPSG13_1P_1024x8_c2_bm_bist.lef}
 set init_mmmc_file {../../../../PNR/Fabric_MMMC.view}
 set init_pwr_net {VDD iovdd vdd}
 set init_verilog {SRC/fabric_netlists.v}

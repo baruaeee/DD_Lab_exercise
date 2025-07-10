@@ -2,14 +2,14 @@
 ## Install in redhat 8.10 ##
 sudo yum -y install bison flex openssl openssl-devel readline-devel tcl-devel tk-devel gcc-c++ libffi-devel swig cmake
 
-sudo dnf -y install gcc-toolset-11
-scl enable gcc-toolset-11 bash
+sudo dnf -y install gcc-toolset-14
+scl enable gcc-toolset-14 bash
 
 ## gtkwave (optional)
 sudo yum -y install https://dl.fedoraproject.org/pub/epel/8/Everything/x86_64/Packages/g/gtkwave-3.3.118-1.el8.x86_64.rpm
 
 ##### iverilog #####
-sudo dnf -y groupinstall "Development Tools"
+sudo yum -y install autoconf
 sudo yum -y install https://rpmfind.net/linux/almalinux/8.10/PowerTools/x86_64/os/Packages/gperf-3.1-5.el8.x86_64.rpm
 
 git clone https://github.com/steveicarus/iverilog.git
@@ -23,16 +23,33 @@ sudo make install
 
 ##### eigen install #####
 git clone https://gitlab.com/libeigen/eigen.git
-cd eigen && mkdir build && cd build
-cmake ..
+cd eigen && mkdir build && cd build && cmake ..
 sudo make install
 
 #### Python upgrade (if python version below 3.7)
-sudo yum groupinstall -y "Development Tools"
+#### while running OpenFPGA tasks, if there are any error related to python syntex
+#### (e.g. variable, etc. out of range, the following version may need to be installed)
+#### python3.12 will not work with OpenFPGA (python3.11 should work)
+
+wget https://www.python.org/ftp/python/3.10.12/Python-3.10.12.tgz
+tar -xzvf Python-3.10.12.tgz && cd Python-3.10.12
+sudo ./configure --with-system-ffi --with-computed-gotos --enable-loadable-sqlite-extensions
+sudo make -j ${nproc}
+sudo make altinstall
+
+sudo alternatives --install /usr/bin/python3 python3 /usr/local/bin/python3.10 60 --slave /usr/bin/pip3 pip3 /usr/local/bin/pip3.10
+
 sudo alternatives --config python3
 ---select suitable python version as default---
+
+#### pip install (if not installed) ####
+wget https://bootstrap.pypa.io/get-pip.py
+python3 ./get-pip.py
+python3 -m pip install -r requirements.txt
 
 ##### OpenFPGA install #####
 git clone https://github.com/LNIS-Projects/OpenFPGA.git
 cd OpenFPGA
 make all
+
+

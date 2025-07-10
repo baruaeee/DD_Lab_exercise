@@ -1,7 +1,7 @@
 #######################################################
 #                                                     
 #  Innovus Command Logging File                     
-#  Created on Wed Jul  9 19:42:07 2025                
+#  Created on Wed Jul  9 21:41:26 2025                
 #                                                     
 #######################################################
 
@@ -193,7 +193,7 @@ set init_design_settop 0
 set init_gnd_net {VSS iovss vss}
 setImportMode -discardFloatingVNets 0 -keepEmptyModule 1
 set init_import_mode { -discardFloatingVNets 0 -keepEmptyModule 1}
-set init_lef_file {/eda/cadence/pdks/ihp_sg13g2/ixc013g2ng_stdcell/lef/ixc013g2ng_tech.lef /eda/cadence/pdks/ihp_sg13g2/ixc013g2ng_stdcell/lef/ixc013g2ng_stdcell_v5p7.lef /eda/cadence/pdks/ihp_sg13g2/ixc013g2ng_stdcell/lef/ixc013g2ng_phys.lef ../../../../../IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lef/sg13g2_io.lef ../../../../../IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_sram/lef/RM_IHPSG13_1P_1024x8_c2_bm_bist.lef}
+set init_lef_file {/eda/cadence/pdks/ihp_sg13g2/ixc013g2ng_stdcell/lef/ixc013g2ng_tech.lef /eda/cadence/pdks/ihp_sg13g2/ixc013g2ng_stdcell/lef/ixc013g2ng_stdcell_v5p7.lef /eda/cadence/pdks/ihp_sg13g2/ixc013g2ng_stdcell/lef/ixc013g2ng_phys.lef ../../../../../ihp-sg13g2/libs.ref/sg13g2_io/lef/sg13g2_io.lef ../../../../../ihp-sg13g2/libs.ref/sg13g2_sram/lef/RM_IHPSG13_1P_1024x8_c2_bm_bist.lef}
 set init_mmmc_file ../../../../PNR/Fabric_MMMC.view
 set init_pwr_net {VDD iovdd vdd}
 set init_verilog SRC/fabric_netlists.v
@@ -367,5 +367,3 @@ set lefdefInputCheckColoredShape 0
 set load_netlist_ignore_undefined_cell 1
 set init_design_uniquify 1
 init_design
-zoomBox -334.69400 -167.25000 958.60100 990.52500
-zoomBox -232.55200 -114.79900 866.74900 869.31000
