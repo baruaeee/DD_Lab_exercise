@@ -475,7 +475,7 @@ Removed 0 unused cells and 51 unused wires.
 
 28. Executing BLIF backend.
 
-End of script. Logfile hash: a2b6b6892a, CPU: user 0.08s system 0.01s, MEM: 23.50 MB peak
+End of script. Logfile hash: a2b6b6892a, CPU: user 0.07s system 0.02s, MEM: 23.50 MB peak
 Yosys 0.55+3 (git sha1 e60cf3e2f, g++ 11.4.0-1ubuntu1~22.04 -fPIC -O3)
-Time spent: 62% 1x abc (0 sec), 10% 7x read_verilog (0 sec), ...
+Time spent: 62% 1x abc (0 sec), 11% 7x read_verilog (0 sec), ...
 0

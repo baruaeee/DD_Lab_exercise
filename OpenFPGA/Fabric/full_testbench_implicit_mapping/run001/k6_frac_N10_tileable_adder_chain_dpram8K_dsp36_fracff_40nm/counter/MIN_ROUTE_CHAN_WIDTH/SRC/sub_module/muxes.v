@@ -3,107 +3,8 @@
 //	Description: Multiplexers
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Wed Jul  9 19:06:47 2025
+//	Date: Sun Jul 13 00:17:12 2025
 //-------------------------------------------
-//----- Default net type -----
-// `default_nettype none
-
-// ----- Verilog module for mux_2level_tapbuf_size6 -----
-module mux_2level_tapbuf_size6(in,
-                               sram,
-                               sram_inv,
-                               out);
-//----- INPUT PORTS -----
-input [0:5] in;
-//----- INPUT PORTS -----
-input [0:5] sram;
-//----- INPUT PORTS -----
-input [0:5] sram_inv;
-//----- OUTPUT PORTS -----
-output [0:0] out;
-
-//----- BEGIN wire-connection ports -----
-//----- END wire-connection ports -----
-
-
-//----- BEGIN Registered ports -----
-//----- END Registered ports -----
-
-
-wire [0:0] INVJIX0_0_Q;
-wire [0:0] INVJIX0_1_Q;
-wire [0:0] INVJIX0_2_Q;
-wire [0:0] INVJIX0_3_Q;
-wire [0:0] INVJIX0_4_Q;
-wire [0:0] INVJIX0_5_Q;
-wire [0:0] const1_0_const1;
-wire [0:0] mux_2level_tapbuf_basis_input3_mem3_0_out;
-wire [0:0] mux_2level_tapbuf_basis_input3_mem3_1_out;
-wire [0:0] mux_2level_tapbuf_basis_input3_mem3_2_out;
-
-// ----- BEGIN Local short connections -----
-// ----- END Local short connections -----
-// ----- BEGIN Local output short connections -----
-// ----- END Local output short connections -----
-
-	INVJIX0 INVJIX0_0_ (
-		.A(in[0]),
-		.Q(INVJIX0_0_Q));
-
-	INVJIX0 INVJIX0_1_ (
-		.A(in[1]),
-		.Q(INVJIX0_1_Q));
-
-	INVJIX0 INVJIX0_2_ (
-		.A(in[2]),
-		.Q(INVJIX0_2_Q));
-
-	INVJIX0 INVJIX0_3_ (
-		.A(in[3]),
-		.Q(INVJIX0_3_Q));
-
-	INVJIX0 INVJIX0_4_ (
-		.A(in[4]),
-		.Q(INVJIX0_4_Q));
-
-	INVJIX0 INVJIX0_5_ (
-		.A(in[5]),
-		.Q(INVJIX0_5_Q));
-
-	const1 const1_0_ (
-		.const1(const1_0_const1));
-
-	INVJIX4 INVJIX4_0_ (
-		.A(mux_2level_tapbuf_basis_input3_mem3_2_out),
-		.Q(out));
-
-	mux_2level_tapbuf_basis_input3_mem3 mux_l1_in_0_ (
-		.in({INVJIX0_0_Q, INVJIX0_1_Q, INVJIX0_2_Q}),
-		.mem(sram[0:2]),
-		.mem_inv(sram_inv[0:2]),
-		.out(mux_2level_tapbuf_basis_input3_mem3_0_out));
-
-	mux_2level_tapbuf_basis_input3_mem3 mux_l1_in_1_ (
-		.in({INVJIX0_3_Q, INVJIX0_4_Q, INVJIX0_5_Q}),
-		.mem(sram[0:2]),
-		.mem_inv(sram_inv[0:2]),
-		.out(mux_2level_tapbuf_basis_input3_mem3_1_out));
-
-	mux_2level_tapbuf_basis_input3_mem3 mux_l2_in_0_ (
-		.in({mux_2level_tapbuf_basis_input3_mem3_0_out, mux_2level_tapbuf_basis_input3_mem3_1_out, const1_0_const1}),
-		.mem(sram[3:5]),
-		.mem_inv(sram_inv[3:5]),
-		.out(mux_2level_tapbuf_basis_input3_mem3_2_out));
-
-endmodule
-// ----- END Verilog module for mux_2level_tapbuf_size6 -----
-
-//----- Default net type -----
-// `default_nettype wire
-
-
-
-
 //----- Default net type -----
 // `default_nettype none
 
@@ -179,6 +80,78 @@ wire [0:0] mux_2level_tapbuf_basis_input3_mem3_1_out;
 
 endmodule
 // ----- END Verilog module for mux_2level_tapbuf_size4 -----
+
+//----- Default net type -----
+// `default_nettype wire
+
+
+
+
+//----- Default net type -----
+// `default_nettype none
+
+// ----- Verilog module for mux_2level_tapbuf_size2 -----
+module mux_2level_tapbuf_size2(in,
+                               sram,
+                               sram_inv,
+                               out);
+//----- INPUT PORTS -----
+input [0:1] in;
+//----- INPUT PORTS -----
+input [0:1] sram;
+//----- INPUT PORTS -----
+input [0:1] sram_inv;
+//----- OUTPUT PORTS -----
+output [0:0] out;
+
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
+
+
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
+
+
+wire [0:0] INVJIX0_0_Q;
+wire [0:0] INVJIX0_1_Q;
+wire [0:0] const1_0_const1;
+wire [0:0] mux_2level_tapbuf_basis_input2_mem1_0_out;
+wire [0:0] mux_2level_tapbuf_basis_input2_mem1_1_out;
+
+// ----- BEGIN Local short connections -----
+// ----- END Local short connections -----
+// ----- BEGIN Local output short connections -----
+// ----- END Local output short connections -----
+
+	INVJIX0 INVJIX0_0_ (
+		.A(in[0]),
+		.Q(INVJIX0_0_Q));
+
+	INVJIX0 INVJIX0_1_ (
+		.A(in[1]),
+		.Q(INVJIX0_1_Q));
+
+	const1 const1_0_ (
+		.const1(const1_0_const1));
+
+	INVJIX4 INVJIX4_0_ (
+		.A(mux_2level_tapbuf_basis_input2_mem1_1_out),
+		.Q(out));
+
+	mux_2level_tapbuf_basis_input2_mem1 mux_l1_in_0_ (
+		.in({INVJIX0_0_Q, INVJIX0_1_Q}),
+		.mem(sram[0]),
+		.mem_inv(sram_inv[0]),
+		.out(mux_2level_tapbuf_basis_input2_mem1_0_out));
+
+	mux_2level_tapbuf_basis_input2_mem1 mux_l2_in_0_ (
+		.in({mux_2level_tapbuf_basis_input2_mem1_0_out, const1_0_const1}),
+		.mem(sram[1]),
+		.mem_inv(sram_inv[1]),
+		.out(mux_2level_tapbuf_basis_input2_mem1_1_out));
+
+endmodule
+// ----- END Verilog module for mux_2level_tapbuf_size2 -----
 
 //----- Default net type -----
 // `default_nettype wire
@@ -273,17 +246,17 @@ endmodule
 //----- Default net type -----
 // `default_nettype none
 
-// ----- Verilog module for mux_2level_tapbuf_size2 -----
-module mux_2level_tapbuf_size2(in,
-                               sram,
-                               sram_inv,
-                               out);
+// ----- Verilog module for mux_2level_tapbuf_size13 -----
+module mux_2level_tapbuf_size13(in,
+                                sram,
+                                sram_inv,
+                                out);
 //----- INPUT PORTS -----
-input [0:1] in;
+input [0:12] in;
 //----- INPUT PORTS -----
-input [0:1] sram;
+input [0:7] sram;
 //----- INPUT PORTS -----
-input [0:1] sram_inv;
+input [0:7] sram_inv;
 //----- OUTPUT PORTS -----
 output [0:0] out;
 
@@ -296,10 +269,24 @@ output [0:0] out;
 
 
 wire [0:0] INVJIX0_0_Q;
+wire [0:0] INVJIX0_10_Q;
+wire [0:0] INVJIX0_11_Q;
+wire [0:0] INVJIX0_12_Q;
 wire [0:0] INVJIX0_1_Q;
+wire [0:0] INVJIX0_2_Q;
+wire [0:0] INVJIX0_3_Q;
+wire [0:0] INVJIX0_4_Q;
+wire [0:0] INVJIX0_5_Q;
+wire [0:0] INVJIX0_6_Q;
+wire [0:0] INVJIX0_7_Q;
+wire [0:0] INVJIX0_8_Q;
+wire [0:0] INVJIX0_9_Q;
 wire [0:0] const1_0_const1;
-wire [0:0] mux_2level_tapbuf_basis_input2_mem1_0_out;
-wire [0:0] mux_2level_tapbuf_basis_input2_mem1_1_out;
+wire [0:0] mux_2level_tapbuf_basis_input2_mem2_0_out;
+wire [0:0] mux_2level_tapbuf_basis_input4_mem4_0_out;
+wire [0:0] mux_2level_tapbuf_basis_input4_mem4_1_out;
+wire [0:0] mux_2level_tapbuf_basis_input4_mem4_2_out;
+wire [0:0] mux_2level_tapbuf_basis_input4_mem4_3_out;
 
 // ----- BEGIN Local short connections -----
 // ----- END Local short connections -----
@@ -314,27 +301,823 @@ wire [0:0] mux_2level_tapbuf_basis_input2_mem1_1_out;
 		.A(in[1]),
 		.Q(INVJIX0_1_Q));
 
+	INVJIX0 INVJIX0_2_ (
+		.A(in[2]),
+		.Q(INVJIX0_2_Q));
+
+	INVJIX0 INVJIX0_3_ (
+		.A(in[3]),
+		.Q(INVJIX0_3_Q));
+
+	INVJIX0 INVJIX0_4_ (
+		.A(in[4]),
+		.Q(INVJIX0_4_Q));
+
+	INVJIX0 INVJIX0_5_ (
+		.A(in[5]),
+		.Q(INVJIX0_5_Q));
+
+	INVJIX0 INVJIX0_6_ (
+		.A(in[6]),
+		.Q(INVJIX0_6_Q));
+
+	INVJIX0 INVJIX0_7_ (
+		.A(in[7]),
+		.Q(INVJIX0_7_Q));
+
+	INVJIX0 INVJIX0_8_ (
+		.A(in[8]),
+		.Q(INVJIX0_8_Q));
+
+	INVJIX0 INVJIX0_9_ (
+		.A(in[9]),
+		.Q(INVJIX0_9_Q));
+
+	INVJIX0 INVJIX0_10_ (
+		.A(in[10]),
+		.Q(INVJIX0_10_Q));
+
+	INVJIX0 INVJIX0_11_ (
+		.A(in[11]),
+		.Q(INVJIX0_11_Q));
+
+	INVJIX0 INVJIX0_12_ (
+		.A(in[12]),
+		.Q(INVJIX0_12_Q));
+
 	const1 const1_0_ (
 		.const1(const1_0_const1));
 
 	INVJIX4 INVJIX4_0_ (
-		.A(mux_2level_tapbuf_basis_input2_mem1_1_out),
+		.A(mux_2level_tapbuf_basis_input4_mem4_3_out),
 		.Q(out));
 
-	mux_2level_tapbuf_basis_input2_mem1 mux_l1_in_0_ (
-		.in({INVJIX0_0_Q, INVJIX0_1_Q}),
-		.mem(sram[0]),
-		.mem_inv(sram_inv[0]),
-		.out(mux_2level_tapbuf_basis_input2_mem1_0_out));
+	mux_2level_tapbuf_basis_input4_mem4 mux_l1_in_0_ (
+		.in({INVJIX0_0_Q, INVJIX0_1_Q, INVJIX0_2_Q, INVJIX0_3_Q}),
+		.mem(sram[0:3]),
+		.mem_inv(sram_inv[0:3]),
+		.out(mux_2level_tapbuf_basis_input4_mem4_0_out));
 
-	mux_2level_tapbuf_basis_input2_mem1 mux_l2_in_0_ (
-		.in({mux_2level_tapbuf_basis_input2_mem1_0_out, const1_0_const1}),
-		.mem(sram[1]),
-		.mem_inv(sram_inv[1]),
-		.out(mux_2level_tapbuf_basis_input2_mem1_1_out));
+	mux_2level_tapbuf_basis_input4_mem4 mux_l1_in_1_ (
+		.in({INVJIX0_4_Q, INVJIX0_5_Q, INVJIX0_6_Q, INVJIX0_7_Q}),
+		.mem(sram[0:3]),
+		.mem_inv(sram_inv[0:3]),
+		.out(mux_2level_tapbuf_basis_input4_mem4_1_out));
+
+	mux_2level_tapbuf_basis_input4_mem4 mux_l1_in_2_ (
+		.in({INVJIX0_8_Q, INVJIX0_9_Q, INVJIX0_10_Q, INVJIX0_11_Q}),
+		.mem(sram[0:3]),
+		.mem_inv(sram_inv[0:3]),
+		.out(mux_2level_tapbuf_basis_input4_mem4_2_out));
+
+	mux_2level_tapbuf_basis_input4_mem4 mux_l2_in_0_ (
+		.in({mux_2level_tapbuf_basis_input4_mem4_0_out, mux_2level_tapbuf_basis_input4_mem4_1_out, mux_2level_tapbuf_basis_input4_mem4_2_out, mux_2level_tapbuf_basis_input2_mem2_0_out}),
+		.mem(sram[4:7]),
+		.mem_inv(sram_inv[4:7]),
+		.out(mux_2level_tapbuf_basis_input4_mem4_3_out));
+
+	mux_2level_tapbuf_basis_input2_mem2 mux_l1_in_3_ (
+		.in({INVJIX0_12_Q, const1_0_const1}),
+		.mem(sram[0:1]),
+		.mem_inv(sram_inv[0:1]),
+		.out(mux_2level_tapbuf_basis_input2_mem2_0_out));
 
 endmodule
-// ----- END Verilog module for mux_2level_tapbuf_size2 -----
+// ----- END Verilog module for mux_2level_tapbuf_size13 -----
+
+//----- Default net type -----
+// `default_nettype wire
+
+
+
+
+//----- Default net type -----
+// `default_nettype none
+
+// ----- Verilog module for mux_2level_tapbuf_size11 -----
+module mux_2level_tapbuf_size11(in,
+                                sram,
+                                sram_inv,
+                                out);
+//----- INPUT PORTS -----
+input [0:10] in;
+//----- INPUT PORTS -----
+input [0:7] sram;
+//----- INPUT PORTS -----
+input [0:7] sram_inv;
+//----- OUTPUT PORTS -----
+output [0:0] out;
+
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
+
+
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
+
+
+wire [0:0] INVJIX0_0_Q;
+wire [0:0] INVJIX0_10_Q;
+wire [0:0] INVJIX0_1_Q;
+wire [0:0] INVJIX0_2_Q;
+wire [0:0] INVJIX0_3_Q;
+wire [0:0] INVJIX0_4_Q;
+wire [0:0] INVJIX0_5_Q;
+wire [0:0] INVJIX0_6_Q;
+wire [0:0] INVJIX0_7_Q;
+wire [0:0] INVJIX0_8_Q;
+wire [0:0] INVJIX0_9_Q;
+wire [0:0] const1_0_const1;
+wire [0:0] mux_2level_tapbuf_basis_input3_mem3_0_out;
+wire [0:0] mux_2level_tapbuf_basis_input4_mem4_0_out;
+wire [0:0] mux_2level_tapbuf_basis_input4_mem4_1_out;
+wire [0:0] mux_2level_tapbuf_basis_input4_mem4_2_out;
+
+// ----- BEGIN Local short connections -----
+// ----- END Local short connections -----
+// ----- BEGIN Local output short connections -----
+// ----- END Local output short connections -----
+
+	INVJIX0 INVJIX0_0_ (
+		.A(in[0]),
+		.Q(INVJIX0_0_Q));
+
+	INVJIX0 INVJIX0_1_ (
+		.A(in[1]),
+		.Q(INVJIX0_1_Q));
+
+	INVJIX0 INVJIX0_2_ (
+		.A(in[2]),
+		.Q(INVJIX0_2_Q));
+
+	INVJIX0 INVJIX0_3_ (
+		.A(in[3]),
+		.Q(INVJIX0_3_Q));
+
+	INVJIX0 INVJIX0_4_ (
+		.A(in[4]),
+		.Q(INVJIX0_4_Q));
+
+	INVJIX0 INVJIX0_5_ (
+		.A(in[5]),
+		.Q(INVJIX0_5_Q));
+
+	INVJIX0 INVJIX0_6_ (
+		.A(in[6]),
+		.Q(INVJIX0_6_Q));
+
+	INVJIX0 INVJIX0_7_ (
+		.A(in[7]),
+		.Q(INVJIX0_7_Q));
+
+	INVJIX0 INVJIX0_8_ (
+		.A(in[8]),
+		.Q(INVJIX0_8_Q));
+
+	INVJIX0 INVJIX0_9_ (
+		.A(in[9]),
+		.Q(INVJIX0_9_Q));
+
+	INVJIX0 INVJIX0_10_ (
+		.A(in[10]),
+		.Q(INVJIX0_10_Q));
+
+	const1 const1_0_ (
+		.const1(const1_0_const1));
+
+	INVJIX4 INVJIX4_0_ (
+		.A(mux_2level_tapbuf_basis_input4_mem4_2_out),
+		.Q(out));
+
+	mux_2level_tapbuf_basis_input4_mem4 mux_l1_in_0_ (
+		.in({INVJIX0_0_Q, INVJIX0_1_Q, INVJIX0_2_Q, INVJIX0_3_Q}),
+		.mem(sram[0:3]),
+		.mem_inv(sram_inv[0:3]),
+		.out(mux_2level_tapbuf_basis_input4_mem4_0_out));
+
+	mux_2level_tapbuf_basis_input4_mem4 mux_l1_in_1_ (
+		.in({INVJIX0_4_Q, INVJIX0_5_Q, INVJIX0_6_Q, INVJIX0_7_Q}),
+		.mem(sram[0:3]),
+		.mem_inv(sram_inv[0:3]),
+		.out(mux_2level_tapbuf_basis_input4_mem4_1_out));
+
+	mux_2level_tapbuf_basis_input4_mem4 mux_l2_in_0_ (
+		.in({mux_2level_tapbuf_basis_input4_mem4_0_out, mux_2level_tapbuf_basis_input4_mem4_1_out, mux_2level_tapbuf_basis_input3_mem3_0_out, const1_0_const1}),
+		.mem(sram[4:7]),
+		.mem_inv(sram_inv[4:7]),
+		.out(mux_2level_tapbuf_basis_input4_mem4_2_out));
+
+	mux_2level_tapbuf_basis_input3_mem3 mux_l1_in_2_ (
+		.in({INVJIX0_8_Q, INVJIX0_9_Q, INVJIX0_10_Q}),
+		.mem(sram[0:2]),
+		.mem_inv(sram_inv[0:2]),
+		.out(mux_2level_tapbuf_basis_input3_mem3_0_out));
+
+endmodule
+// ----- END Verilog module for mux_2level_tapbuf_size11 -----
+
+//----- Default net type -----
+// `default_nettype wire
+
+
+
+
+//----- Default net type -----
+// `default_nettype none
+
+// ----- Verilog module for mux_2level_tapbuf_size9 -----
+module mux_2level_tapbuf_size9(in,
+                               sram,
+                               sram_inv,
+                               out);
+//----- INPUT PORTS -----
+input [0:8] in;
+//----- INPUT PORTS -----
+input [0:7] sram;
+//----- INPUT PORTS -----
+input [0:7] sram_inv;
+//----- OUTPUT PORTS -----
+output [0:0] out;
+
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
+
+
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
+
+
+wire [0:0] INVJIX0_0_Q;
+wire [0:0] INVJIX0_1_Q;
+wire [0:0] INVJIX0_2_Q;
+wire [0:0] INVJIX0_3_Q;
+wire [0:0] INVJIX0_4_Q;
+wire [0:0] INVJIX0_5_Q;
+wire [0:0] INVJIX0_6_Q;
+wire [0:0] INVJIX0_7_Q;
+wire [0:0] INVJIX0_8_Q;
+wire [0:0] const1_0_const1;
+wire [0:0] mux_2level_tapbuf_basis_input4_mem4_0_out;
+wire [0:0] mux_2level_tapbuf_basis_input4_mem4_1_out;
+wire [0:0] mux_2level_tapbuf_basis_input4_mem4_2_out;
+
+// ----- BEGIN Local short connections -----
+// ----- END Local short connections -----
+// ----- BEGIN Local output short connections -----
+// ----- END Local output short connections -----
+
+	INVJIX0 INVJIX0_0_ (
+		.A(in[0]),
+		.Q(INVJIX0_0_Q));
+
+	INVJIX0 INVJIX0_1_ (
+		.A(in[1]),
+		.Q(INVJIX0_1_Q));
+
+	INVJIX0 INVJIX0_2_ (
+		.A(in[2]),
+		.Q(INVJIX0_2_Q));
+
+	INVJIX0 INVJIX0_3_ (
+		.A(in[3]),
+		.Q(INVJIX0_3_Q));
+
+	INVJIX0 INVJIX0_4_ (
+		.A(in[4]),
+		.Q(INVJIX0_4_Q));
+
+	INVJIX0 INVJIX0_5_ (
+		.A(in[5]),
+		.Q(INVJIX0_5_Q));
+
+	INVJIX0 INVJIX0_6_ (
+		.A(in[6]),
+		.Q(INVJIX0_6_Q));
+
+	INVJIX0 INVJIX0_7_ (
+		.A(in[7]),
+		.Q(INVJIX0_7_Q));
+
+	INVJIX0 INVJIX0_8_ (
+		.A(in[8]),
+		.Q(INVJIX0_8_Q));
+
+	const1 const1_0_ (
+		.const1(const1_0_const1));
+
+	INVJIX4 INVJIX4_0_ (
+		.A(mux_2level_tapbuf_basis_input4_mem4_2_out),
+		.Q(out));
+
+	mux_2level_tapbuf_basis_input4_mem4 mux_l1_in_0_ (
+		.in({INVJIX0_0_Q, INVJIX0_1_Q, INVJIX0_2_Q, INVJIX0_3_Q}),
+		.mem(sram[0:3]),
+		.mem_inv(sram_inv[0:3]),
+		.out(mux_2level_tapbuf_basis_input4_mem4_0_out));
+
+	mux_2level_tapbuf_basis_input4_mem4 mux_l1_in_1_ (
+		.in({INVJIX0_4_Q, INVJIX0_5_Q, INVJIX0_6_Q, INVJIX0_7_Q}),
+		.mem(sram[0:3]),
+		.mem_inv(sram_inv[0:3]),
+		.out(mux_2level_tapbuf_basis_input4_mem4_1_out));
+
+	mux_2level_tapbuf_basis_input4_mem4 mux_l2_in_0_ (
+		.in({mux_2level_tapbuf_basis_input4_mem4_0_out, mux_2level_tapbuf_basis_input4_mem4_1_out, INVJIX0_8_Q, const1_0_const1}),
+		.mem(sram[4:7]),
+		.mem_inv(sram_inv[4:7]),
+		.out(mux_2level_tapbuf_basis_input4_mem4_2_out));
+
+endmodule
+// ----- END Verilog module for mux_2level_tapbuf_size9 -----
+
+//----- Default net type -----
+// `default_nettype wire
+
+
+
+
+//----- Default net type -----
+// `default_nettype none
+
+// ----- Verilog module for mux_2level_tapbuf_size10 -----
+module mux_2level_tapbuf_size10(in,
+                                sram,
+                                sram_inv,
+                                out);
+//----- INPUT PORTS -----
+input [0:9] in;
+//----- INPUT PORTS -----
+input [0:7] sram;
+//----- INPUT PORTS -----
+input [0:7] sram_inv;
+//----- OUTPUT PORTS -----
+output [0:0] out;
+
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
+
+
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
+
+
+wire [0:0] INVJIX0_0_Q;
+wire [0:0] INVJIX0_1_Q;
+wire [0:0] INVJIX0_2_Q;
+wire [0:0] INVJIX0_3_Q;
+wire [0:0] INVJIX0_4_Q;
+wire [0:0] INVJIX0_5_Q;
+wire [0:0] INVJIX0_6_Q;
+wire [0:0] INVJIX0_7_Q;
+wire [0:0] INVJIX0_8_Q;
+wire [0:0] INVJIX0_9_Q;
+wire [0:0] const1_0_const1;
+wire [0:0] mux_2level_tapbuf_basis_input2_mem2_0_out;
+wire [0:0] mux_2level_tapbuf_basis_input4_mem4_0_out;
+wire [0:0] mux_2level_tapbuf_basis_input4_mem4_1_out;
+wire [0:0] mux_2level_tapbuf_basis_input4_mem4_2_out;
+
+// ----- BEGIN Local short connections -----
+// ----- END Local short connections -----
+// ----- BEGIN Local output short connections -----
+// ----- END Local output short connections -----
+
+	INVJIX0 INVJIX0_0_ (
+		.A(in[0]),
+		.Q(INVJIX0_0_Q));
+
+	INVJIX0 INVJIX0_1_ (
+		.A(in[1]),
+		.Q(INVJIX0_1_Q));
+
+	INVJIX0 INVJIX0_2_ (
+		.A(in[2]),
+		.Q(INVJIX0_2_Q));
+
+	INVJIX0 INVJIX0_3_ (
+		.A(in[3]),
+		.Q(INVJIX0_3_Q));
+
+	INVJIX0 INVJIX0_4_ (
+		.A(in[4]),
+		.Q(INVJIX0_4_Q));
+
+	INVJIX0 INVJIX0_5_ (
+		.A(in[5]),
+		.Q(INVJIX0_5_Q));
+
+	INVJIX0 INVJIX0_6_ (
+		.A(in[6]),
+		.Q(INVJIX0_6_Q));
+
+	INVJIX0 INVJIX0_7_ (
+		.A(in[7]),
+		.Q(INVJIX0_7_Q));
+
+	INVJIX0 INVJIX0_8_ (
+		.A(in[8]),
+		.Q(INVJIX0_8_Q));
+
+	INVJIX0 INVJIX0_9_ (
+		.A(in[9]),
+		.Q(INVJIX0_9_Q));
+
+	const1 const1_0_ (
+		.const1(const1_0_const1));
+
+	INVJIX4 INVJIX4_0_ (
+		.A(mux_2level_tapbuf_basis_input4_mem4_2_out),
+		.Q(out));
+
+	mux_2level_tapbuf_basis_input4_mem4 mux_l1_in_0_ (
+		.in({INVJIX0_0_Q, INVJIX0_1_Q, INVJIX0_2_Q, INVJIX0_3_Q}),
+		.mem(sram[0:3]),
+		.mem_inv(sram_inv[0:3]),
+		.out(mux_2level_tapbuf_basis_input4_mem4_0_out));
+
+	mux_2level_tapbuf_basis_input4_mem4 mux_l1_in_1_ (
+		.in({INVJIX0_4_Q, INVJIX0_5_Q, INVJIX0_6_Q, INVJIX0_7_Q}),
+		.mem(sram[0:3]),
+		.mem_inv(sram_inv[0:3]),
+		.out(mux_2level_tapbuf_basis_input4_mem4_1_out));
+
+	mux_2level_tapbuf_basis_input4_mem4 mux_l2_in_0_ (
+		.in({mux_2level_tapbuf_basis_input4_mem4_0_out, mux_2level_tapbuf_basis_input4_mem4_1_out, mux_2level_tapbuf_basis_input2_mem2_0_out, const1_0_const1}),
+		.mem(sram[4:7]),
+		.mem_inv(sram_inv[4:7]),
+		.out(mux_2level_tapbuf_basis_input4_mem4_2_out));
+
+	mux_2level_tapbuf_basis_input2_mem2 mux_l1_in_2_ (
+		.in({INVJIX0_8_Q, INVJIX0_9_Q}),
+		.mem(sram[0:1]),
+		.mem_inv(sram_inv[0:1]),
+		.out(mux_2level_tapbuf_basis_input2_mem2_0_out));
+
+endmodule
+// ----- END Verilog module for mux_2level_tapbuf_size10 -----
+
+//----- Default net type -----
+// `default_nettype wire
+
+
+
+
+//----- Default net type -----
+// `default_nettype none
+
+// ----- Verilog module for mux_2level_tapbuf_size12 -----
+module mux_2level_tapbuf_size12(in,
+                                sram,
+                                sram_inv,
+                                out);
+//----- INPUT PORTS -----
+input [0:11] in;
+//----- INPUT PORTS -----
+input [0:7] sram;
+//----- INPUT PORTS -----
+input [0:7] sram_inv;
+//----- OUTPUT PORTS -----
+output [0:0] out;
+
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
+
+
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
+
+
+wire [0:0] INVJIX0_0_Q;
+wire [0:0] INVJIX0_10_Q;
+wire [0:0] INVJIX0_11_Q;
+wire [0:0] INVJIX0_1_Q;
+wire [0:0] INVJIX0_2_Q;
+wire [0:0] INVJIX0_3_Q;
+wire [0:0] INVJIX0_4_Q;
+wire [0:0] INVJIX0_5_Q;
+wire [0:0] INVJIX0_6_Q;
+wire [0:0] INVJIX0_7_Q;
+wire [0:0] INVJIX0_8_Q;
+wire [0:0] INVJIX0_9_Q;
+wire [0:0] const1_0_const1;
+wire [0:0] mux_2level_tapbuf_basis_input4_mem4_0_out;
+wire [0:0] mux_2level_tapbuf_basis_input4_mem4_1_out;
+wire [0:0] mux_2level_tapbuf_basis_input4_mem4_2_out;
+wire [0:0] mux_2level_tapbuf_basis_input4_mem4_3_out;
+
+// ----- BEGIN Local short connections -----
+// ----- END Local short connections -----
+// ----- BEGIN Local output short connections -----
+// ----- END Local output short connections -----
+
+	INVJIX0 INVJIX0_0_ (
+		.A(in[0]),
+		.Q(INVJIX0_0_Q));
+
+	INVJIX0 INVJIX0_1_ (
+		.A(in[1]),
+		.Q(INVJIX0_1_Q));
+
+	INVJIX0 INVJIX0_2_ (
+		.A(in[2]),
+		.Q(INVJIX0_2_Q));
+
+	INVJIX0 INVJIX0_3_ (
+		.A(in[3]),
+		.Q(INVJIX0_3_Q));
+
+	INVJIX0 INVJIX0_4_ (
+		.A(in[4]),
+		.Q(INVJIX0_4_Q));
+
+	INVJIX0 INVJIX0_5_ (
+		.A(in[5]),
+		.Q(INVJIX0_5_Q));
+
+	INVJIX0 INVJIX0_6_ (
+		.A(in[6]),
+		.Q(INVJIX0_6_Q));
+
+	INVJIX0 INVJIX0_7_ (
+		.A(in[7]),
+		.Q(INVJIX0_7_Q));
+
+	INVJIX0 INVJIX0_8_ (
+		.A(in[8]),
+		.Q(INVJIX0_8_Q));
+
+	INVJIX0 INVJIX0_9_ (
+		.A(in[9]),
+		.Q(INVJIX0_9_Q));
+
+	INVJIX0 INVJIX0_10_ (
+		.A(in[10]),
+		.Q(INVJIX0_10_Q));
+
+	INVJIX0 INVJIX0_11_ (
+		.A(in[11]),
+		.Q(INVJIX0_11_Q));
+
+	const1 const1_0_ (
+		.const1(const1_0_const1));
+
+	INVJIX4 INVJIX4_0_ (
+		.A(mux_2level_tapbuf_basis_input4_mem4_3_out),
+		.Q(out));
+
+	mux_2level_tapbuf_basis_input4_mem4 mux_l1_in_0_ (
+		.in({INVJIX0_0_Q, INVJIX0_1_Q, INVJIX0_2_Q, INVJIX0_3_Q}),
+		.mem(sram[0:3]),
+		.mem_inv(sram_inv[0:3]),
+		.out(mux_2level_tapbuf_basis_input4_mem4_0_out));
+
+	mux_2level_tapbuf_basis_input4_mem4 mux_l1_in_1_ (
+		.in({INVJIX0_4_Q, INVJIX0_5_Q, INVJIX0_6_Q, INVJIX0_7_Q}),
+		.mem(sram[0:3]),
+		.mem_inv(sram_inv[0:3]),
+		.out(mux_2level_tapbuf_basis_input4_mem4_1_out));
+
+	mux_2level_tapbuf_basis_input4_mem4 mux_l1_in_2_ (
+		.in({INVJIX0_8_Q, INVJIX0_9_Q, INVJIX0_10_Q, INVJIX0_11_Q}),
+		.mem(sram[0:3]),
+		.mem_inv(sram_inv[0:3]),
+		.out(mux_2level_tapbuf_basis_input4_mem4_2_out));
+
+	mux_2level_tapbuf_basis_input4_mem4 mux_l2_in_0_ (
+		.in({mux_2level_tapbuf_basis_input4_mem4_0_out, mux_2level_tapbuf_basis_input4_mem4_1_out, mux_2level_tapbuf_basis_input4_mem4_2_out, const1_0_const1}),
+		.mem(sram[4:7]),
+		.mem_inv(sram_inv[4:7]),
+		.out(mux_2level_tapbuf_basis_input4_mem4_3_out));
+
+endmodule
+// ----- END Verilog module for mux_2level_tapbuf_size12 -----
+
+//----- Default net type -----
+// `default_nettype wire
+
+
+
+
+//----- Default net type -----
+// `default_nettype none
+
+// ----- Verilog module for mux_2level_tapbuf_size7 -----
+module mux_2level_tapbuf_size7(in,
+                               sram,
+                               sram_inv,
+                               out);
+//----- INPUT PORTS -----
+input [0:6] in;
+//----- INPUT PORTS -----
+input [0:5] sram;
+//----- INPUT PORTS -----
+input [0:5] sram_inv;
+//----- OUTPUT PORTS -----
+output [0:0] out;
+
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
+
+
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
+
+
+wire [0:0] INVJIX0_0_Q;
+wire [0:0] INVJIX0_1_Q;
+wire [0:0] INVJIX0_2_Q;
+wire [0:0] INVJIX0_3_Q;
+wire [0:0] INVJIX0_4_Q;
+wire [0:0] INVJIX0_5_Q;
+wire [0:0] INVJIX0_6_Q;
+wire [0:0] const1_0_const1;
+wire [0:0] mux_2level_tapbuf_basis_input2_mem2_0_out;
+wire [0:0] mux_2level_tapbuf_basis_input3_mem3_0_out;
+wire [0:0] mux_2level_tapbuf_basis_input3_mem3_1_out;
+wire [0:0] mux_2level_tapbuf_basis_input3_mem3_2_out;
+
+// ----- BEGIN Local short connections -----
+// ----- END Local short connections -----
+// ----- BEGIN Local output short connections -----
+// ----- END Local output short connections -----
+
+	INVJIX0 INVJIX0_0_ (
+		.A(in[0]),
+		.Q(INVJIX0_0_Q));
+
+	INVJIX0 INVJIX0_1_ (
+		.A(in[1]),
+		.Q(INVJIX0_1_Q));
+
+	INVJIX0 INVJIX0_2_ (
+		.A(in[2]),
+		.Q(INVJIX0_2_Q));
+
+	INVJIX0 INVJIX0_3_ (
+		.A(in[3]),
+		.Q(INVJIX0_3_Q));
+
+	INVJIX0 INVJIX0_4_ (
+		.A(in[4]),
+		.Q(INVJIX0_4_Q));
+
+	INVJIX0 INVJIX0_5_ (
+		.A(in[5]),
+		.Q(INVJIX0_5_Q));
+
+	INVJIX0 INVJIX0_6_ (
+		.A(in[6]),
+		.Q(INVJIX0_6_Q));
+
+	const1 const1_0_ (
+		.const1(const1_0_const1));
+
+	INVJIX4 INVJIX4_0_ (
+		.A(mux_2level_tapbuf_basis_input3_mem3_2_out),
+		.Q(out));
+
+	mux_2level_tapbuf_basis_input3_mem3 mux_l1_in_0_ (
+		.in({INVJIX0_0_Q, INVJIX0_1_Q, INVJIX0_2_Q}),
+		.mem(sram[0:2]),
+		.mem_inv(sram_inv[0:2]),
+		.out(mux_2level_tapbuf_basis_input3_mem3_0_out));
+
+	mux_2level_tapbuf_basis_input3_mem3 mux_l1_in_1_ (
+		.in({INVJIX0_3_Q, INVJIX0_4_Q, INVJIX0_5_Q}),
+		.mem(sram[0:2]),
+		.mem_inv(sram_inv[0:2]),
+		.out(mux_2level_tapbuf_basis_input3_mem3_1_out));
+
+	mux_2level_tapbuf_basis_input3_mem3 mux_l2_in_0_ (
+		.in({mux_2level_tapbuf_basis_input3_mem3_0_out, mux_2level_tapbuf_basis_input3_mem3_1_out, mux_2level_tapbuf_basis_input2_mem2_0_out}),
+		.mem(sram[3:5]),
+		.mem_inv(sram_inv[3:5]),
+		.out(mux_2level_tapbuf_basis_input3_mem3_2_out));
+
+	mux_2level_tapbuf_basis_input2_mem2 mux_l1_in_2_ (
+		.in({INVJIX0_6_Q, const1_0_const1}),
+		.mem(sram[0:1]),
+		.mem_inv(sram_inv[0:1]),
+		.out(mux_2level_tapbuf_basis_input2_mem2_0_out));
+
+endmodule
+// ----- END Verilog module for mux_2level_tapbuf_size7 -----
+
+//----- Default net type -----
+// `default_nettype wire
+
+
+
+
+//----- Default net type -----
+// `default_nettype none
+
+// ----- Verilog module for mux_2level_tapbuf_size8 -----
+module mux_2level_tapbuf_size8(in,
+                               sram,
+                               sram_inv,
+                               out);
+//----- INPUT PORTS -----
+input [0:7] in;
+//----- INPUT PORTS -----
+input [0:5] sram;
+//----- INPUT PORTS -----
+input [0:5] sram_inv;
+//----- OUTPUT PORTS -----
+output [0:0] out;
+
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
+
+
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
+
+
+wire [0:0] INVJIX0_0_Q;
+wire [0:0] INVJIX0_1_Q;
+wire [0:0] INVJIX0_2_Q;
+wire [0:0] INVJIX0_3_Q;
+wire [0:0] INVJIX0_4_Q;
+wire [0:0] INVJIX0_5_Q;
+wire [0:0] INVJIX0_6_Q;
+wire [0:0] INVJIX0_7_Q;
+wire [0:0] const1_0_const1;
+wire [0:0] mux_2level_tapbuf_basis_input3_mem3_0_out;
+wire [0:0] mux_2level_tapbuf_basis_input3_mem3_1_out;
+wire [0:0] mux_2level_tapbuf_basis_input3_mem3_2_out;
+wire [0:0] mux_2level_tapbuf_basis_input3_mem3_3_out;
+
+// ----- BEGIN Local short connections -----
+// ----- END Local short connections -----
+// ----- BEGIN Local output short connections -----
+// ----- END Local output short connections -----
+
+	INVJIX0 INVJIX0_0_ (
+		.A(in[0]),
+		.Q(INVJIX0_0_Q));
+
+	INVJIX0 INVJIX0_1_ (
+		.A(in[1]),
+		.Q(INVJIX0_1_Q));
+
+	INVJIX0 INVJIX0_2_ (
+		.A(in[2]),
+		.Q(INVJIX0_2_Q));
+
+	INVJIX0 INVJIX0_3_ (
+		.A(in[3]),
+		.Q(INVJIX0_3_Q));
+
+	INVJIX0 INVJIX0_4_ (
+		.A(in[4]),
+		.Q(INVJIX0_4_Q));
+
+	INVJIX0 INVJIX0_5_ (
+		.A(in[5]),
+		.Q(INVJIX0_5_Q));
+
+	INVJIX0 INVJIX0_6_ (
+		.A(in[6]),
+		.Q(INVJIX0_6_Q));
+
+	INVJIX0 INVJIX0_7_ (
+		.A(in[7]),
+		.Q(INVJIX0_7_Q));
+
+	const1 const1_0_ (
+		.const1(const1_0_const1));
+
+	INVJIX4 INVJIX4_0_ (
+		.A(mux_2level_tapbuf_basis_input3_mem3_3_out),
+		.Q(out));
+
+	mux_2level_tapbuf_basis_input3_mem3 mux_l1_in_0_ (
+		.in({INVJIX0_0_Q, INVJIX0_1_Q, INVJIX0_2_Q}),
+		.mem(sram[0:2]),
+		.mem_inv(sram_inv[0:2]),
+		.out(mux_2level_tapbuf_basis_input3_mem3_0_out));
+
+	mux_2level_tapbuf_basis_input3_mem3 mux_l1_in_1_ (
+		.in({INVJIX0_3_Q, INVJIX0_4_Q, INVJIX0_5_Q}),
+		.mem(sram[0:2]),
+		.mem_inv(sram_inv[0:2]),
+		.out(mux_2level_tapbuf_basis_input3_mem3_1_out));
+
+	mux_2level_tapbuf_basis_input3_mem3 mux_l1_in_2_ (
+		.in({INVJIX0_6_Q, INVJIX0_7_Q, const1_0_const1}),
+		.mem(sram[0:2]),
+		.mem_inv(sram_inv[0:2]),
+		.out(mux_2level_tapbuf_basis_input3_mem3_2_out));
+
+	mux_2level_tapbuf_basis_input3_mem3 mux_l2_in_0_ (
+		.in({mux_2level_tapbuf_basis_input3_mem3_0_out, mux_2level_tapbuf_basis_input3_mem3_1_out, mux_2level_tapbuf_basis_input3_mem3_2_out}),
+		.mem(sram[3:5]),
+		.mem_inv(sram_inv[3:5]),
+		.out(mux_2level_tapbuf_basis_input3_mem3_3_out));
+
+endmodule
+// ----- END Verilog module for mux_2level_tapbuf_size8 -----
 
 //----- Default net type -----
 // `default_nettype wire
@@ -429,6 +1212,105 @@ wire [0:0] mux_2level_tapbuf_basis_input3_mem3_1_out;
 
 endmodule
 // ----- END Verilog module for mux_2level_tapbuf_size5 -----
+
+//----- Default net type -----
+// `default_nettype wire
+
+
+
+
+//----- Default net type -----
+// `default_nettype none
+
+// ----- Verilog module for mux_2level_tapbuf_size6 -----
+module mux_2level_tapbuf_size6(in,
+                               sram,
+                               sram_inv,
+                               out);
+//----- INPUT PORTS -----
+input [0:5] in;
+//----- INPUT PORTS -----
+input [0:5] sram;
+//----- INPUT PORTS -----
+input [0:5] sram_inv;
+//----- OUTPUT PORTS -----
+output [0:0] out;
+
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
+
+
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
+
+
+wire [0:0] INVJIX0_0_Q;
+wire [0:0] INVJIX0_1_Q;
+wire [0:0] INVJIX0_2_Q;
+wire [0:0] INVJIX0_3_Q;
+wire [0:0] INVJIX0_4_Q;
+wire [0:0] INVJIX0_5_Q;
+wire [0:0] const1_0_const1;
+wire [0:0] mux_2level_tapbuf_basis_input3_mem3_0_out;
+wire [0:0] mux_2level_tapbuf_basis_input3_mem3_1_out;
+wire [0:0] mux_2level_tapbuf_basis_input3_mem3_2_out;
+
+// ----- BEGIN Local short connections -----
+// ----- END Local short connections -----
+// ----- BEGIN Local output short connections -----
+// ----- END Local output short connections -----
+
+	INVJIX0 INVJIX0_0_ (
+		.A(in[0]),
+		.Q(INVJIX0_0_Q));
+
+	INVJIX0 INVJIX0_1_ (
+		.A(in[1]),
+		.Q(INVJIX0_1_Q));
+
+	INVJIX0 INVJIX0_2_ (
+		.A(in[2]),
+		.Q(INVJIX0_2_Q));
+
+	INVJIX0 INVJIX0_3_ (
+		.A(in[3]),
+		.Q(INVJIX0_3_Q));
+
+	INVJIX0 INVJIX0_4_ (
+		.A(in[4]),
+		.Q(INVJIX0_4_Q));
+
+	INVJIX0 INVJIX0_5_ (
+		.A(in[5]),
+		.Q(INVJIX0_5_Q));
+
+	const1 const1_0_ (
+		.const1(const1_0_const1));
+
+	INVJIX4 INVJIX4_0_ (
+		.A(mux_2level_tapbuf_basis_input3_mem3_2_out),
+		.Q(out));
+
+	mux_2level_tapbuf_basis_input3_mem3 mux_l1_in_0_ (
+		.in({INVJIX0_0_Q, INVJIX0_1_Q, INVJIX0_2_Q}),
+		.mem(sram[0:2]),
+		.mem_inv(sram_inv[0:2]),
+		.out(mux_2level_tapbuf_basis_input3_mem3_0_out));
+
+	mux_2level_tapbuf_basis_input3_mem3 mux_l1_in_1_ (
+		.in({INVJIX0_3_Q, INVJIX0_4_Q, INVJIX0_5_Q}),
+		.mem(sram[0:2]),
+		.mem_inv(sram_inv[0:2]),
+		.out(mux_2level_tapbuf_basis_input3_mem3_1_out));
+
+	mux_2level_tapbuf_basis_input3_mem3 mux_l2_in_0_ (
+		.in({mux_2level_tapbuf_basis_input3_mem3_0_out, mux_2level_tapbuf_basis_input3_mem3_1_out, const1_0_const1}),
+		.mem(sram[3:5]),
+		.mem_inv(sram_inv[3:5]),
+		.out(mux_2level_tapbuf_basis_input3_mem3_2_out));
+
+endmodule
+// ----- END Verilog module for mux_2level_tapbuf_size6 -----
 
 //----- Default net type -----
 // `default_nettype wire

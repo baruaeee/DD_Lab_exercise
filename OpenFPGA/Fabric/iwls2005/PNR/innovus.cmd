@@ -1,7 +1,7 @@
 #######################################################
 #                                                     
 #  Innovus Command Logging File                     
-#  Created on Mon Jul  7 23:59:09 2025                
+#  Created on Sun Jul 13 18:19:59 2025                
 #                                                     
 #######################################################
 
@@ -369,3 +369,504 @@ set init_verilog_tolerate_port_mismatch 0
 set lefdefInputCheckColoredShape 0
 set load_netlist_ignore_undefined_cell 1
 init_design
+man IMPVL-209
+setDrawView fplan
+pan -1285.34800 955.07900
+zoomBox -4555.49600 -1332.85200 9769.38200 11490.97200
+zoomBox -6023.84900 -2176.58200 10828.95000 12910.27000
+zoomBox -8654.01800 -4738.25800 18787.95100 19828.16200
+zoomBox -7534.06000 -1123.84700 6790.82000 11699.97800
+zoomBox -6853.66700 1071.96800 -497.64000 6761.96900
+zoomBox -6425.32900 1754.13500 -2521.93300 5248.50800
+zoomBox -6323.07300 1916.98700 -3005.18600 4887.20400
+zoomBox -6060.38900 2039.95900 -3240.18500 4564.64400
+zoomBox -5837.10900 2144.48500 -3439.93400 4290.46800
+zoomBox -5647.32000 2233.33200 -3609.72100 4057.41800
+zoomBox -5348.87600 2373.04400 -3876.71100 3690.94600
+zoomBox -5232.32200 2427.60700 -3980.98100 3547.82400
+zoomBox -5348.87600 2373.04400 -3876.71100 3690.94600
+zoomBox -5837.10900 2144.48500 -3439.93400 4290.46800
+zoomBox -6632.11500 1772.31400 -2728.71600 5266.68900
+zoomBox -6995.69200 1602.11000 -2403.45800 5713.14000
+zoomBox -7423.43000 1401.87000 -2020.80100 6238.37600
+zoomBox -7926.65000 1166.29400 -1570.61600 6856.30100
+zoomBox -8518.67400 889.14500 -1040.98700 7583.27100
+zoomBox -9215.17300 563.08700 -417.89400 8438.53000
+zoomBox -10034.58400 179.49100 315.15700 9444.71800
+zoomBox -10998.59600 -271.80000 1177.57000 10628.46800
+zoomBox -12132.72800 -802.72900 2192.17300 12021.11500
+zoomBox -15036.73400 -2162.20200 4790.11900 15587.06400
+pan 5129.84600 12643.68900
+zoomBox -6768.28700 2989.16900 3581.45600 12254.39800
+zoomBox -5129.91600 5798.71800 272.71500 10635.22600
+zoomBox -4274.67800 7265.32000 -1454.46900 9790.00900
+zoomBox -4166.86800 7502.28300 -1769.69000 9648.26900
+zoomBox -4075.22900 7703.70200 -2037.62800 9527.79000
+zoomBox -4166.86800 7502.28300 -1769.69000 9648.26900
+zoomBox -4274.67800 7265.32000 -1454.46900 9790.00900
+zoomBox -4401.51300 6986.54000 -1083.62000 9956.76200
+zoomBox -4550.73100 6658.56300 -647.32800 10152.94200
+zoomBox -4726.28200 6272.70800 -134.04300 10383.74200
+zoomBox -4932.81200 5818.76000 469.82200 10655.27100
+zoomBox -5175.79000 5284.70500 1180.25100 10974.71800
+zoomBox -4504.83000 5299.50500 897.80600 10136.01700
+zoomBox -3934.51300 5312.08500 657.72800 9423.12100
+pan -225.75000 8444.59000
+zoomBox -3654.10700 4673.15200 249.29800 8167.53300
+zoomBox -4160.26300 4510.07700 431.97800 8621.11300
+pan -1918.88000 7814.86400
+zoomBox -6563.49400 3475.32900 -1160.85700 8311.84200
+zoomBox -7133.31800 3264.41900 -777.27400 8954.43500
+zoomBox -7803.69900 3016.29000 -326.00000 9710.42700
+zoomBox -9520.24600 2380.94500 829.51000 11646.18600
+zoomBox -11896.08800 1501.57500 2428.83300 14325.43700
+zoomBox -7219.41400 4554.99900 1577.87900 12430.45400
+zoomBox -6003.52800 5720.35500 352.51700 11410.37200
+zoomBox -5528.67500 6175.47400 -126.03600 11011.98900
+zoomBox -5870.32300 5706.78700 485.72300 11396.80500
+zoomBox -8184.92100 3469.68700 2164.84000 12734.93200
+zoomBox -11953.85700 -173.05700 4899.00100 14913.84800
+zoomBox -20897.58700 -8817.33100 11387.19600 20084.44100
+zoomBox -14001.57000 -4436.33200 9324.18600 16445.19900
+zoomBox -11091.13200 -2824.95400 8735.76200 14924.34800
+zoomBox -8617.25900 -1455.28300 8235.60100 13631.62400
+zoomBox -6514.46700 -291.06200 7810.46400 12532.80900
+zoomBox -9674.71500 -2803.60100 10152.17900 14945.70100
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site CoreSite -r 0.999445285641 0.699831 8 8 8 8
+uiSetTool select
+getIoFlowFlag
+fit
+setIoFlowFlag 0
+floorPlan -site CoreSite -r 0.999167230521 0.699636 26 26 26 26
+uiSetTool select
+getIoFlowFlag
+fit
+setIoFlowFlag 0
+floorPlan -site CoreSite -r 0.99890727443 0.699454 26.22 26.22 26.04 26.04
+uiSetTool select
+getIoFlowFlag
+fit
+zoomBox 3556.76700 291.04300 8993.06300 5157.68800
+zoomBox 4926.77700 507.66800 8854.50100 4023.81900
+zoomBox 6472.51200 845.40700 8522.80900 2680.86000
+zoomBox 7341.06800 1040.63200 8411.33700 1998.75100
+zoomBox 7799.70500 1143.87500 8358.39200 1644.01900
+zoomBox 8039.11500 1197.76700 8330.75500 1458.84700
+zoomBox 8140.00500 1220.47800 8319.10900 1380.81400
+zoomBox 8216.75400 1237.75400 8310.24900 1321.45200
+zoomBox 8240.01300 1242.98900 8307.56400 1303.46200
+zoomBox 8201.96000 1234.42300 8311.95700 1332.89400
+zoomBox 8111.66000 1214.09600 8322.38000 1402.73500
+zoomBox 7992.96100 1187.37600 8336.08300 1494.54300
+zoomBox 7799.67800 1143.86500 8358.39600 1644.03700
+zoomBox 7484.94700 1073.01600 8394.72800 1887.46400
+zoomBox 6972.46100 957.64900 8453.89000 2283.84400
+zoomBox 6137.96400 769.79500 8550.22500 2929.28400
+zoomBox 4779.12200 463.90800 8707.08900 3980.27700
+zoomBox 3426.59300 159.44300 8863.22500 5026.38900
+zoomBox -1036.44100 -845.22400 9378.43900 8478.31700
+zoomBox -6903.19600 -2165.88000 10055.69800 13015.95000
+zoomBox -4882.60900 -1237.85800 9532.45100 11666.69800
+pan -7906.83800 3215.84300
+zoomBox -11227.94300 2470.86100 -2375.29300 10395.87200
+zoomBox -10268.98400 4905.82100 -4832.35000 9772.76900
+zoomBox -9835.70600 5883.62400 -5907.73800 9399.99400
+zoomBox -9529.71400 6547.78300 -6691.75600 9088.36100
+selectObject Module grid_clb_1__1_
+zoomBox -9698.11500 5687.33300 -5076.97200 9824.24200
+zoomBox -10097.72800 3645.47500 -1245.06900 11570.49400
+zoomBox -10623.02800 961.41000 3792.04900 13865.98100
+create_relative_floorplan -place grid_clb_1__1_ -ref_type core_boundary -horizontal_edge_separate {1  -5  1} -vertical_edge_separate {0  5  0}
+zoomBox -8857.97400 1750.22900 3394.84200 12719.11500
+zoomBox -5157.49200 3915.47000 2367.27000 10651.73800
+zoomBox -2342.41300 5562.64000 1585.56100 9079.01500
+zoomBox -1047.80500 6893.68200 1002.62200 8729.25200
+zoomBox -651.45500 7271.82900 829.98000 8598.03000
+zoomBox -255.07400 7605.35200 654.71400 8419.80600
+zoomBox -160.44700 7684.97300 612.87300 8377.25900
+zoomBox -40.79500 7808.78900 517.92900 8308.96600
+zoomBox 5.93300 7857.14400 480.84900 8282.29500
+zoomBox -40.79600 7808.78800 517.92900 8308.96600
+zoomBox -95.77200 7751.89900 561.55200 8340.34400
+zoomBox -160.44900 7684.97100 612.87300 8377.25900
+zoomBox -236.54000 7606.23200 673.25100 8420.68900
+zoomBox -555.27500 7276.40300 926.16800 8602.61100
+zoomBox -1074.28200 6739.33300 1338.00200 8898.84200
+deselectAll
+fit
+create_relative_floorplan -place grid_clb_1__1_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  5  0}
+zoomBox 1070.39900 -46.54100 -34.34500 1260.29000
+zoomBox -53.74200 45.27800 842.75700 847.83600
+zoomBox 43.37000 101.66500 593.93400 594.53700
+zoomBox 143.41100 136.84400 481.52600 439.52900
+zoomBox 167.29300 145.24100 454.69100 402.52400
+zoomBox 219.51400 163.60400 396.01300 321.60800
+zoomBox 242.57700 171.71300 370.09900 285.87200
+zoomBox 187.59000 152.37600 431.88300 371.07000
+zoomBox 115.31000 126.95800 513.09900 483.06400
+zoomBox 161.30800 169.51200 368.95600 355.40100
+zoomBox 180.69100 187.44300 308.21400 301.60300
+zoomBox 192.59400 198.45400 270.91000 268.56400
+zoomBox 195.43400 201.08300 262.00400 260.67700
+zoomBox 199.90300 205.21700 248.00000 248.27400
+zoomBox 201.64800 206.83100 242.53100 243.43000
+zoomBox 203.13100 208.20300 237.88200 239.31300
+zoomBox 204.39200 209.37000 233.93000 235.81300
+zoomBox 203.13100 208.20300 237.88200 239.31300
+zoomBox 199.90200 205.21500 248.00100 248.27400
+zoomBox 197.84800 203.31500 254.43600 253.97300
+fit
+zoomBox -3121.73800 -1577.69700 11292.42800 11326.05800
+zoomBox -4493.94100 -2311.51300 12463.90100 12869.37500
+zoomBox -3121.73800 -1577.69700 11292.42800 11326.05800
+zoomBox -4322.82800 -2087.74900 12635.01500 13093.14000
+zoomBox -2592.62500 -1353.72300 6259.47600 6570.79700
+zoomBox -1689.44900 -970.55700 2931.40300 3166.09200
+zoomBox -1163.69500 -733.39600 1248.41900 1425.96100
+selectObject Module grid_clb_1__1_
+panCenter -386.70100 368.12600
+pan -1385.48300 1396.08200
+deselectAll
+fit
+pan -4041.74700 270.72600
+zoomBox -5697.54600 -1306.61600 6554.49400 9661.57500
+zoomBox -6511.49000 -2028.25700 7902.67500 10875.49700
+pan -6601.05300 4483.23300
+zoomBox -9252.60500 8824.32200 -712.25900 -611.08200
+zoomBox -1076.01200 411.54100 -639.69200 397.90600
+zoomBox -1244.12300 110.82600 -533.64800 746.85300
+zoomBox -1321.00400 65.73500 -485.15100 814.00200
+zoomBox -1411.45300 12.68700 -428.09600 893.00100
+zoomBox -1517.86300 -49.72300 -360.97200 985.94100
+zoomBox -1643.05200 -123.14600 -282.00300 1095.28300
+zoomBox -1790.33200 -209.52600 -189.09800 1223.92000
+zoomBox -1963.60300 -311.15000 -79.79800 1375.25800
+zoomBox -2407.27500 -571.36200 200.07000 1762.76800
+pan -465.47700 2409.32700
+pan -873.61200 3502.18600
+pan -691.46900 5030.16400
+pan -1109.72300 6055.56200
+is_innovus_plus
+is_innovus_plus
+selectObject Net padin_prog_clk
+selectObject Net padin_pReset
+selectObject Module cbx_10__2_
+selectObject Module cbx_10__0_
+selectObject Module cbx_10__11_
+selectObject Module grid_io_left_0__11_
+selectObject Module grid_io_left_0__10_
+selectObject Module grid_io_left_0__9_
+selectObject Module grid_io_left_0__8_
+selectObject Module grid_io_left_0__7_
+selectObject Module grid_io_left_0__6_
+selectObject Module grid_io_left_0__5_
+selectObject Module grid_io_left_0__4_
+selectObject Module grid_io_left_0__3_
+selectObject Module grid_io_left_0__2_
+selectObject Module grid_io_left_0__1_
+selectObject Module grid_io_bottom_1__0_
+selectObject Module grid_io_bottom_2__0_
+selectObject Module grid_io_bottom_3__0_
+selectObject Module grid_io_bottom_4__0_
+selectObject Module grid_io_bottom_5__0_
+selectObject Module grid_io_bottom_6__0_
+selectObject Module grid_io_bottom_7__0_
+selectObject Module grid_io_bottom_8__0_
+selectObject Module grid_io_bottom_9__0_
+selectObject Module grid_io_bottom_10__0_
+selectObject Module grid_io_bottom_11__0_
+selectObject Module grid_io_right_12__1_
+selectObject Module grid_io_right_12__2_
+selectObject Module grid_io_right_12__3_
+selectObject Module grid_io_right_12__4_
+selectObject Module grid_io_right_12__5_
+selectObject Module grid_io_right_12__6_
+selectObject Module grid_io_right_12__7_
+selectObject Module grid_io_right_12__8_
+selectObject Module grid_io_right_12__9_
+selectObject Module grid_io_right_12__10_
+selectObject Module grid_io_right_12__11_
+selectObject Module grid_io_top_11__12_
+selectObject Module grid_io_top_10__12_
+selectObject Module grid_io_top_9__12_
+selectObject Module grid_io_top_8__12_
+selectObject Module grid_io_top_7__12_
+selectObject Module grid_io_top_6__12_
+selectObject Module grid_io_top_5__12_
+selectObject Module grid_io_top_4__12_
+selectObject Module grid_io_top_3__12_
+selectObject Module grid_io_top_2__12_
+selectObject Module grid_io_top_1__12_
+selectObject Module pad_prog_clk
+selectObject Module pad_pReset
+selectObject IO_Pin {pReset[0]}
+selectObject IO_Pin {prog_clk[0]}
+deselectAll
+selectObject Module sb_8__6_
+zoomBox -5940.41400 1467.13300 -2872.94900 4213.16900
+zoomBox -6402.60000 1289.96100 -2793.81700 4520.59200
+zoomBox -6946.34900 1081.52400 -2700.72100 4882.26700
+zoomBox -7586.05300 836.30400 -2591.19600 5307.76700
+zoomBox -8338.64500 547.81000 -2462.34300 5808.35500
+zoomBox -8017.08300 1161.28700 -3022.22600 5632.75000
+zoomBox -7743.75600 1682.74200 -3498.12700 5483.48600
+zoomBox -7511.42800 2125.97900 -3902.64300 5356.61200
+zoomBox -7313.94900 2502.73000 -4246.48100 5248.76900
+zoomBox -6882.13600 3326.54500 -4998.32700 5012.95600
+zoomBox -6779.05000 3523.21200 -5177.81300 4956.66100
+zoomBox -6691.42700 3690.37900 -5330.37600 4908.81000
+zoomBox -6616.94800 3832.47000 -5460.05400 4868.13700
+zoomBox -6691.42700 3690.37800 -5330.37500 4908.81000
+zoomBox -6779.05000 3523.21100 -5177.81200 4956.66100
+pan -625.58100 10492.83500
+deselectAll
+selectObject Module grid_memory_10__9_
+pan -526.15100 11250.99000
+zoomBox -8096.37700 3731.94100 -6212.56700 5418.35300
+pan -682.36400 11913.61300
+pan -774.97000 12622.78400
+deselectAll
+zoomBox -9796.13900 3393.82000 -7188.79000 5727.95400
+zoomBox -9950.30700 3107.51000 -6882.83700 5853.55000
+zoomBox -10131.68000 2770.67400 -6522.89200 6001.31000
+zoomBox -10879.70100 1362.63800 -5003.38900 6623.19200
+zoomBox -12097.72500 -930.11100 -2529.13100 7635.82300
+zoomBox -13310.09100 -3212.21200 -66.36300 8643.75100
+zoomBox -11546.21700 -796.98900 -1977.62300 7768.94500
+pan 3082.25000 13559.15200
+pan 3725.93300 7666.97900
+pan -6325.42200 4931.32700
+zoomBox -9945.74100 3412.69500 -4069.42800 8673.24900
+zoomBox -9422.57500 4809.21200 -5176.93800 8609.96300
+zoomBox -9534.03900 4245.10900 -4539.17200 8716.58100
+zoomBox -9665.17300 3581.45800 -3788.85900 8842.01300
+zoomBox -10214.47800 801.49800 -645.88100 9367.43500
+zoomBox -11108.93000 -3725.20100 4471.93300 10222.99700
+zoomBox -7411.70000 -2651.27100 3845.47300 7426.30200
+zoomBox -5972.15100 -2227.48900 3596.44600 6338.44800
+zoomBox -3722.20000 -1561.09100 3191.11100 4627.79800
+zoomBox -2844.84500 -1300.83600 3031.47000 3959.72000
+zoomBox -1566.46200 -910.57100 2679.17600 2890.18100
+zoomBox -2429.26500 -1100.42900 3447.05000 4160.12700
+pan 2729.10400 948.73800
+pan 3937.81600 -1985.61900
+selectInst grid_memory_10__9_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b
+deselectAll
+pan -3017.97800 -5626.95900
+pan -2751.90900 -2434.13600
+create_relative_floorplan -place grid_clb_1__2_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  15  0}
+zoomBox -1288.20900 -994.38300 3706.65900 3477.09000
+create_relative_floorplan -place grid_clb_1__2_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  500  0}
+zoomBox -405.54800 -508.17200 2661.92600 2237.87200
+zoomBox 131.92200 -214.17100 2015.73500 1472.24400
+zoomBox 461.99600 -33.61800 1618.89300 1002.05200
+zoomBox 540.79300 9.48500 1524.15600 889.80500
+zoomBox 607.77100 46.12300 1443.63000 794.39500
+zoomBox 664.70200 77.26400 1375.18300 713.29600
+zoomBox 607.77000 46.12200 1443.63000 794.39500
+zoomBox 540.79200 9.48400 1524.15700 889.80600
+create_relative_floorplan -place grid_clb_1__2_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  600  0}
+fit
+panCenter 3118.21700 4385.90700
+pan -5186.90800 2352.22600
+pan -2438.52100 7768.16600
+selectObject Module grid_clb_1__3_
+deselectAll
+selectObject Module grid_clb_3__4_
+deselectAll
+selectObject Module grid_clb_3__3_
+deselectAll
+selectObject Module grid_clb_3__2_
+deselectAll
+selectObject Module grid_clb_1__11_
+deselectAll
+selectObject Module grid_clb_3__1_
+deselectAll
+selectObject Module grid_clb_1__11_
+create_relative_floorplan -place grid_clb_1__3_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  1200  0}
+deselectAll
+selectObject Module sb_2__8_
+pan 3341.17800 8522.62600
+zoomBox -4107.55100 -746.80800 3416.73400 5989.03300
+zoomBox -1820.11200 -348.66700 2800.74100 3787.98300
+zoomBox -1274.03900 -253.62000 2653.68700 3262.53300
+zoomBox -415.33800 -104.15900 2422.44400 2436.26200
+zoomBox -79.98100 -45.78800 2332.13400 2113.57000
+zoomBox -307.95800 -135.54700 2529.82400 2404.87400
+zoomBox -576.16700 -241.14600 2762.40100 2747.58500
+create_relative_floorplan -place grid_clb_1__4_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  1800  0}
+deselectAll
+pan 2111.97900 110.43400
+zoomBox 910.42700 -940.16300 5531.28200 3196.48900
+zoomBox 512.72600 -1241.86700 5949.02600 3624.78200
+zoomBox -1153.19800 -2505.67200 7698.91000 5418.85400
+zoomBox -2811.38600 -3763.60900 9440.66700 7204.59400
+pan 903.45000 -429.17300
+create_relative_floorplan -place grid_clb_1__5_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  2400  0}
+selectObject Module grid_clb_1__5_
+create_relative_floorplan -place grid_clb_1__6_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  3000  0}
+create_relative_floorplan -place grid_clb_1__7_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  3600  0}
+create_relative_floorplan -place grid_clb_1__7_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  4200  0}
+create_relative_floorplan -place grid_clb_1__7_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  3600  0}
+create_relative_floorplan -place grid_clb_1__8_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  4200  0}
+create_relative_floorplan -place grid_clb_1__9_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  4800  0}
+create_relative_floorplan -place grid_clb_1__10_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  5400  0}
+create_relative_floorplan -place grid_clb_1__11_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  6000  0}
+create_relative_floorplan -place grid_clb_1__12_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  6600  0}
+panCenter 1785.11500 3495.69300
+pan -5531.65100 3446.15300
+deselectAll
+selectObject Module grid_clb_3__1_
+deselectAll
+selectObject Module grid_clb_3__6_
+deselectAll
+selectObject Module grid_clb_4__11_
+deselectAll
+selectObject Module grid_clb_5__2_
+deselectAll
+selectObject Module grid_clb_5__3_
+deselectAll
+selectObject Module grid_clb_5__7_
+create_relative_floorplan -place grid_clb_1__2_ -ref_type core_boundary -horizontal_edge_separate {3  600  3} -vertical_edge_separate {0  5  0}
+deselectAll
+zoomBox -5695.25300 -344.30700 1829.04000 6391.54100
+zoomBox -3129.86300 -6.26300 1490.99500 4130.39100
+zoomBox -1996.87100 143.03300 1341.69900 3131.76600
+zoomBox -3007.10900 -192.05400 1613.75000 3944.60100
+zoomBox -3649.55000 -405.14600 1786.75500 4461.50700
+zoomBox -4405.36200 -655.84300 1990.29100 5069.63200
+zoomBox -5294.55300 -950.78000 2229.74500 5785.07300
+create_relative_floorplan -place grid_clb_1__3_ -ref_type core_boundary -horizontal_edge_separate {3  1200 3} -vertical_edge_separate {0  5 0}
+create_relative_floorplan -place grid_clb_1__4_ -ref_type core_boundary -horizontal_edge_separate {3 1800 3} -vertical_edge_separate {0 5 0}
+create_relative_floorplan -place grid_clb_1__5_ -ref_type core_boundary -horizontal_edge_separate {3 2400 3} -vertical_edge_separate {0 5 0}
+create_relative_floorplan -place grid_clb_1__6_ -ref_type core_boundary -horizontal_edge_separate {3 3000 3} -vertical_edge_separate {0 5 0}
+create_relative_floorplan -place grid_clb_1__7_ -ref_type core_boundary -horizontal_edge_separate {3 3600 3} -vertical_edge_separate {0 5 0}
+create_relative_floorplan -place grid_clb_1__8_ -ref_type core_boundary -horizontal_edge_separate {3 4200 3} -vertical_edge_separate {0 5 0}
+create_relative_floorplan -place grid_clb_1__9_ -ref_type core_boundary -horizontal_edge_separate {3 4800 3} -vertical_edge_separate {0 5 0}
+create_relative_floorplan -place grid_clb_1__10_ -ref_type core_boundary -horizontal_edge_separate {3 5400 3} -vertical_edge_separate {0 5 0}
+pan -38.93500 4343.77300
+pan 2199.86000 7176.33400
+create_relative_floorplan -place grid_clb_1__11_ -ref_type core_boundary -horizontal_edge_separate {3 6000 3} -vertical_edge_separate {0 5 0}
+selectObject Module grid_clb_3__1_
+create_relative_floorplan -place grid_clb_3__1_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  600  0}
+zoomBox -4984.24700 829.67900 5430.00700 10152.65900
+zoomBox -6161.11100 185.37500 6090.95300 11153.58800
+zoomBox -7545.65800 -572.62900 6868.53600 12331.15100
+zoomBox -2659.84800 -178.44700 3735.80800 5547.03000
+zoomBox -2080.26800 -131.28700 3356.04000 4735.36900
+create_relative_floorplan -place grid_clb_3__1_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  600  0}
+create_relative_floorplan -place grid_clb_3__2_ -ref_type core_boundary -horizontal_edge_separate {3  600  3} -vertical_edge_separate {0  600  0}
+create_relative_floorplan -place grid_clb_3__3_ -ref_type core_boundary -horizontal_edge_separate {3  1200 3} -vertical_edge_separate {0 600 0}
+create_relative_floorplan -place grid_clb_3__4_ -ref_type core_boundary -horizontal_edge_separate {3 1800 3} -vertical_edge_separate {0 600 0}
+create_relative_floorplan -place grid_clb_3__5_ -ref_type core_boundary -horizontal_edge_separate {3 2400 3} -vertical_edge_separate {0 600 0}
+create_relative_floorplan -place grid_clb_3__6_ -ref_type core_boundary -horizontal_edge_separate {3 3000 3} -vertical_edge_separate {0 600 0}
+create_relative_floorplan -place grid_clb_3__7_ -ref_type core_boundary -horizontal_edge_separate {3 3600 3} -vertical_edge_separate {0 600 0}
+create_relative_floorplan -place grid_clb_3__8_ -ref_type core_boundary -horizontal_edge_separate {3 4200 3} -vertical_edge_separate {0 600 0}
+create_relative_floorplan -place grid_clb_3__9_ -ref_type core_boundary -horizontal_edge_separate {3 4800 3} -vertical_edge_separate {0 600 0}
+create_relative_floorplan -place grid_clb_3__10_ -ref_type core_boundary -horizontal_edge_separate {3 5400 3} -vertical_edge_separate {0 600 0}
+create_relative_floorplan -place grid_clb_3__11_ -ref_type core_boundary -horizontal_edge_separate {3 6000 3} -vertical_edge_separate {0 600 0}
+deselectAll
+zoomBox -327.18200 563.43500 3011.39200 3552.17100
+zoomBox -2080.27100 -131.28900 3356.04000 4735.37000
+zoomBox -2882.00500 -449.00400 3513.65600 5276.47800
+zoomBox -3825.22000 -822.78600 3699.08700 5913.07500
+zoomBox -4934.88500 -1262.52900 3917.24100 6662.01300
+zoomBox -6240.37300 -1779.87400 4173.89300 7543.11700
+zoomBox -7776.24200 -2388.51600 4475.83600 8579.70900
+zoomBox -6057.30600 -1411.36200 4356.96100 7911.63000
+pan -1832.26400 6599.46100
+selectObject Module grid_clb_4__1_
+create_relative_floorplan -place grid_clb_3__1_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0 1200 0}
+create_relative_floorplan -place grid_clb_3__2_ -ref_type core_boundary -horizontal_edge_separate {3  600  3} -vertical_edge_separate {0 1200 0}
+create_relative_floorplan -place grid_clb_3__3_ -ref_type core_boundary -horizontal_edge_separate {3  1200 3} -vertical_edge_separate {0 1200 0}
+create_relative_floorplan -place grid_clb_3__4_ -ref_type core_boundary -horizontal_edge_separate {3 1800 3} -vertical_edge_separate {0 1200 0}
+create_relative_floorplan -place grid_clb_3__5_ -ref_type core_boundary -horizontal_edge_separate {3 2400 3} -vertical_edge_separate {0 1200 0}
+create_relative_floorplan -place grid_clb_3__6_ -ref_type core_boundary -horizontal_edge_separate {3 3000 3} -vertical_edge_separate {0 1200 0}
+create_relative_floorplan -place grid_clb_3__7_ -ref_type core_boundary -horizontal_edge_separate {3 3600 3} -vertical_edge_separate {0 1200 0}
+create_relative_floorplan -place grid_clb_3__8_ -ref_type core_boundary -horizontal_edge_separate {3 4200 3} -vertical_edge_separate {0 1200 0}
+create_relative_floorplan -place grid_clb_3__9_ -ref_type core_boundary -horizontal_edge_separate {3 4800 3} -vertical_edge_separate {0 1200 0}
+create_relative_floorplan -place grid_clb_3__10_ -ref_type core_boundary -horizontal_edge_separate {3 5400 3} -vertical_edge_separate {0 1200 0}
+create_relative_floorplan -place grid_clb_3__11_ -ref_type core_boundary -horizontal_edge_separate {3 6000 3} -vertical_edge_separate {0 1200 0}
+deselectAll
+selectObject Module grid_clb_4__1_
+create_relative_floorplan -place grid_clb_4__1_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0 1800 0}
+create_relative_floorplan -place grid_clb_4__2_ -ref_type core_boundary -horizontal_edge_separate {3  600  3} -vertical_edge_separate {0 1800 0}
+create_relative_floorplan -place grid_clb_4__3_ -ref_type core_boundary -horizontal_edge_separate {3  1200 3} -vertical_edge_separate {0 1800 0}
+create_relative_floorplan -place grid_clb_4__4_ -ref_type core_boundary -horizontal_edge_separate {3 1800 3} -vertical_edge_separate {0 1800 0}
+create_relative_floorplan -place grid_clb_4__5_ -ref_type core_boundary -horizontal_edge_separate {3 2400 3} -vertical_edge_separate {0 1800 0}
+create_relative_floorplan -place grid_clb_4__6_ -ref_type core_boundary -horizontal_edge_separate {3 3000 3} -vertical_edge_separate {0 1800 0}
+create_relative_floorplan -place grid_clb_4__7_ -ref_type core_boundary -horizontal_edge_separate {3 3600 3} -vertical_edge_separate {0 1800 0}
+create_relative_floorplan -place grid_clb_4__8_ -ref_type core_boundary -horizontal_edge_separate {3 4200 3} -vertical_edge_separate {0 1800 0}
+create_relative_floorplan -place grid_clb_4__9_ -ref_type core_boundary -horizontal_edge_separate {3 4800 3} -vertical_edge_separate {0 1800 0}
+create_relative_floorplan -place grid_clb_4__10_ -ref_type core_boundary -horizontal_edge_separate {3 5400 3} -vertical_edge_separate {0 1800 0}
+create_relative_floorplan -place grid_clb_4__11_ -ref_type core_boundary -horizontal_edge_separate {3 6000 3} -vertical_edge_separate {0 1800 0}
+deselectAll
+pan -2438.52800 8283.52700
+selectObject Module grid_clb_5__1_
+deselectAll
+panCenter -2999.04100 8248.44300
+pan 3260.35300 10162.94500
+zoomBox -6450.78200 1103.24600 5801.29700 12071.47200
+zoomBox -8221.32400 99.10000 6192.88600 13002.89500
+pan -4139.65700 8040.71800
+pan 2741.12400 9980.01700
+selectObject Module grid_clb_5__1_
+deselectAll
+selectObject Module grid_clb_4__11_
+create_relative_floorplan -place grid_clb_5__1_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0 2400 0}
+create_relative_floorplan -place grid_clb_5__2_ -ref_type core_boundary -horizontal_edge_separate {3  600  3} -vertical_edge_separate {0 2400 0}
+create_relative_floorplan -place grid_clb_5__3_ -ref_type core_boundary -horizontal_edge_separate {3  1200 3} -vertical_edge_separate {0 2400 0}
+create_relative_floorplan -place grid_clb_5__4_ -ref_type core_boundary -horizontal_edge_separate {3 1800 3} -vertical_edge_separate {0 2400 0}
+create_relative_floorplan -place grid_clb_5__5_ -ref_type core_boundary -horizontal_edge_separate {3 2400 3} -vertical_edge_separate {0 2400 0}
+create_relative_floorplan -place grid_clb_5__6_ -ref_type core_boundary -horizontal_edge_separate {3 3000 3} -vertical_edge_separate {0 2400 0}
+create_relative_floorplan -place grid_clb_5__7_ -ref_type core_boundary -horizontal_edge_separate {3 3600 3} -vertical_edge_separate {0 2400 0}
+create_relative_floorplan -place grid_clb_5__8_ -ref_type core_boundary -horizontal_edge_separate {3 4200 3} -vertical_edge_separate {0 2400 0}
+create_relative_floorplan -place grid_clb_5__9_ -ref_type core_boundary -horizontal_edge_separate {3 4800 3} -vertical_edge_separate {0 2400 0}
+create_relative_floorplan -place grid_clb_5__10_ -ref_type core_boundary -horizontal_edge_separate {3 5400 3} -vertical_edge_separate {0 2400 0}
+create_relative_floorplan -place grid_clb_5__11_ -ref_type core_boundary -horizontal_edge_separate {3 6000 3} -vertical_edge_separate {0 2400 0}
+deselectAll
+selectObject Module grid_clb_6__7_
+deselectAll
+selectObject Module grid_clb_6__8_
+deselectAll
+selectObject Module grid_clb_6__9_
+deselectAll
+selectObject Module grid_clb_6__10_
+deselectAll
+selectObject Module grid_clb_6__11_
+deselectAll
+selectObject Module grid_clb_7__1_
+deselectAll
+selectObject Module grid_clb_7__2_
+deselectAll
+selectObject Module grid_clb_6__7_
+zoomBox -8322.01900 -993.62000 3930.06000 9974.60600
+zoomBox -7218.85600 185.62300 3195.41100 9508.61500
+zoomBox -6281.16900 1187.97900 2570.95900 9112.52300
+zoomBox -5484.13400 2039.98100 2040.17500 8775.84400
+zoomBox -4806.65400 2764.18400 1589.00800 8489.66700
+zoomBox -4230.79700 3379.75600 1205.51700 8246.41700
+pan -1969.16900 7603.52100
+pan -2081.69300 9551.59200
+pan 879.09300 11513.72800
+pan 2053.56200 10690.89700
+pan 534.48900 8672.49900
+create_relative_floorplan -place grid_clb_6__7_ -ref_type core_boundary -horizontal_edge_separate {3 3600 3} -vertical_edge_separate {0 3000 0}
+create_relative_floorplan -place grid_clb_6__8_ -ref_type core_boundary -horizontal_edge_separate {3 4200 3} -vertical_edge_separate {0 3000 0}
+create_relative_floorplan -place grid_clb_6__9_ -ref_type core_boundary -horizontal_edge_separate {3 4800 3} -vertical_edge_separate {0 3000 0}
+create_relative_floorplan -place grid_clb_6__10_ -ref_type core_boundary -horizontal_edge_separate {3 5400 3} -vertical_edge_separate {0 3000 0}
+create_relative_floorplan -place grid_clb_6__11_ -ref_type core_boundary -horizontal_edge_separate {3 6000 3} -vertical_edge_separate {0 3000 0}
+deselectAll
+zoomBox -5492.14100 2617.32400 903.52300 8342.80800
+pan -2300.12200 8101.19200
+pan -49.64300 10541.96900
+pan 4178.28000 10599.88600
+pan 2449.05100 6206.48700
+zoomBox -1963.59900 1890.20200 5560.71100 8626.06600
+zoomBox -4120.79000 877.03200 6293.48300 10200.02900
+zoomBox -7220.36000 -49.21800 7193.85900 12854.58500
+zoomBox -5474.99100 90.63500 6777.09600 11058.86800
+zoomBox -3991.42700 209.51000 6422.84700 9532.50800
+zoomBox -2730.39700 310.55300 6121.73600 8235.10200

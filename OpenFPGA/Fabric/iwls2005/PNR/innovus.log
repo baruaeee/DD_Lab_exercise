@@ -4,17 +4,17 @@ Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
 
 Version:	v23.14-s088_1, built Fri Feb 28 12:25:44 PST 2025
 Options:	
-Date:		Mon Jul  7 23:58:54 2025
+Date:		Sun Jul 13 18:19:42 2025
 Host:		ei-vm-018.othr.de (x86_64 w/Linux 4.18.0-553.58.1.el8_10.x86_64) (32cores*32cpus*AMD Ryzen Threadripper PRO 5965WX 24-Cores 512KB)
 OS:		Red Hat Enterprise Linux 8.10 (Ootpa)
 
 License:
-		[23:58:54.432604] Configured Lic search path (23.02-s006): 5280@hs-lic3.oth-regensburg.de:27003@hs-lic1.oth-regensburg.de:27003@hs-lic1.oth-regensburg.de:
+		[18:19:42.432588] Configured Lic search path (23.02-s006): 5280@hs-lic3.oth-regensburg.de:27003@hs-lic1.oth-regensburg.de:27003@hs-lic1.oth-regensburg.de:
 
 		invs	Innovus Implementation System	23.1	checkout succeeded
 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
 Change the soft stacksize limit to 0.2%RAM (386 mbytes). Set global soft_stack_size_limit to change the value.
-Info: Process UID = 428641 / 907b76bf-c166-4ea2-a085-e298d8e6bd6a / ovF1YXufyi
+Info: Process UID = 455744 / 4cf442ad-237d-4208-b5d8-502e6598b98d / P7HyDkZ5en
 
 **INFO:  MMMC transition support version v31-84 
 
@@ -381,8 +381,8 @@ Info: Process UID = 428641 / 907b76bf-c166-4ea2-a085-e298d8e6bd6a / ovF1YXufyi
 <CMD> set lefdefInputCheckColoredShape 0
 <CMD> set load_netlist_ignore_undefined_cell 1
 <CMD> init_design
-#% Begin Load MMMC data ... (date=07/08 00:04:20, mem=1907.5M)
-#% End Load MMMC data ... (date=07/08 00:04:20, total cpu=0:00:00.0, real=0:00:00.0, peak res=1908.9M, current mem=1908.9M)
+#% Begin Load MMMC data ... (date=07/13 18:20:36, mem=1895.5M)
+#% End Load MMMC data ... (date=07/13 18:20:36, total cpu=0:00:00.0, real=0:00:00.0, peak res=1896.9M, current mem=1896.9M)
 RC_BEST RC_WORST
 
 Loading LEF file /eda/cadence/pdks/ihp_sg13g2/ixc013g2ng_stdcell/lef/ixc013g2ng_tech.lef ...
@@ -488,9 +488,9 @@ Read 14 cells in library 'sg13g2_io_fast_1p32V_3p6V_m40C'
 Reading MIN_TIMING timing library '/home/bas33767/Desktop/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_sram/lib/RM_IHPSG13_1P_1024x8_c2_bm_bist_fast_1p32V_m55C.lib' ...
 **WARN: (TECHLIB-302):	No function defined for cell 'RM_IHPSG13_1P_1024x8_c2_bm_bist'. The cell will only be used for analysis. (File /home/bas33767/Desktop/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_sram/lib/RM_IHPSG13_1P_1024x8_c2_bm_bist_fast_1p32V_m55C.lib)
 Read 1 cells in library 'RM_IHPSG13_1P_1024x8_c2_bm_bist_fast_1p32V_m55C' 
-*** End library_loading (cpu=0.01min, real=0.02min, mem=82.0M, fe_cpu=0.54min, fe_real=5.45min, fe_mem=1870.2M) ***
-#% Begin Load netlist data ... (date=07/08 00:04:21, mem=1927.0M)
-*** Begin netlist parsing (mem=1870.2M) ***
+*** End library_loading (cpu=0.01min, real=0.02min, mem=89.0M, fe_cpu=0.33min, fe_real=0.92min, fe_mem=1867.9M) ***
+#% Begin Load netlist data ... (date=07/13 18:20:37, mem=1918.7M)
+*** Begin netlist parsing (mem=1867.9M) ***
 **WARN: (IMPVL-159):	Pin 'VDD' of cell 'ANTENNACELLP2JI' is defined in LEF but not in the timing library.
 Type 'man IMPVL-159' for more detail.
 **WARN: (IMPVL-159):	Pin 'VSS' of cell 'ANTENNACELLP2JI' is defined in LEF but not in the timing library.
@@ -544,9 +544,9 @@ Type 'man IMPVL-209' for more detail.
 Type 'man IMPVL-209' for more detail.
 	included from	[SRC/fabric_netlists.v:63]
 
-*** Memory Usage v#2 (Current mem = 1921.164M, initial mem = 847.773M) ***
-*** End netlist parsing (cpu=0:00:00.6, real=0:00:00.0, mem=1921.2M) ***
-#% End Load netlist data ... (date=07/08 00:04:21, total cpu=0:00:00.6, real=0:00:00.0, peak res=2024.4M, current mem=2023.6M)
+*** Memory Usage v#2 (Current mem = 1918.855M, initial mem = 847.781M) ***
+*** End netlist parsing (cpu=0:00:00.6, real=0:00:01.0, mem=1918.9M) ***
+#% End Load netlist data ... (date=07/13 18:20:38, total cpu=0:00:00.6, real=0:00:01.0, peak res=2013.6M, current mem=2012.8M)
 Top level cell is fpga_top.
 Hooked 558 DB cells to tlib cells.
 Starting recursive module instantiation check.
@@ -602,7 +602,7 @@ To increase the message display limit, refer to the product command reference ma
 ** info: there are 359 Pad insts.
 ** info: there are 20 macros.
 
-*** Memory Usage v#2 (Current mem = 9400.188M, initial mem = 847.773M) ***
+*** Memory Usage v#2 (Current mem = 9400.879M, initial mem = 847.781M) ***
 Initializing I/O assignment ...
 Adjusting Core to Left to: 0.1800. Core to Bottom to: 0.1800.
 **WARN: (IMPFP-3961):	The techSite 'sg13g2_ioSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
@@ -655,7 +655,7 @@ Initializing multi-corner capacitance tables ...
 Initializing multi-corner resistance tables ...
 *Info: initialize multi-corner CTS.
 Reading timing constraints file 'SDC/cbx_1__0_.sdc' ...
-Current (total cpu=0:02:27, real=0:05:54, peak res=9675.9M, current mem=9341.5M)
+Current (total cpu=0:01:49, real=0:01:20, peak res=9662.5M, current mem=9327.0M)
 **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File SDC/cbx_1__0_.sdc, Line 13).
 
 ------------------------------------------------------------------------------------
@@ -667,10 +667,10 @@ set_max_delay                                     | 1700           | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Reading of timing constraints file SDC/cbx_1__0_.sdc completed, with 1 WARNING
-Ending "Constraint file reading stats" (total cpu=0:00:01.0, real=0:00:01.0, peak res=9416.7M, current mem=9416.7M)
-Current (total cpu=0:02:28, real=0:05:55, peak res=9675.9M, current mem=9416.7M)
+Ending "Constraint file reading stats" (total cpu=0:00:01.0, real=0:00:01.0, peak res=9398.8M, current mem=9398.8M)
+Current (total cpu=0:01:50, real=0:01:21, peak res=9662.5M, current mem=9398.8M)
 Reading timing constraints file 'SDC/cbx_1__11_.sdc' ...
-Current (total cpu=0:02:28, real=0:05:55, peak res=9675.9M, current mem=9416.7M)
+Current (total cpu=0:01:51, real=0:01:21, peak res=9662.5M, current mem=9398.9M)
 **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File SDC/cbx_1__11_.sdc, Line 13).
 
 ------------------------------------------------------------------------------------
@@ -682,10 +682,10 @@ set_max_delay                                     | 700            | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Reading of timing constraints file SDC/cbx_1__11_.sdc completed, with 1 WARNING
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=9417.1M, current mem=9417.1M)
-Current (total cpu=0:02:29, real=0:05:55, peak res=9675.9M, current mem=9417.1M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=9399.4M, current mem=9399.4M)
+Current (total cpu=0:01:51, real=0:01:21, peak res=9662.5M, current mem=9399.4M)
 Reading timing constraints file 'SDC/cbx_1__1_.sdc' ...
-Current (total cpu=0:02:29, real=0:05:56, peak res=9675.9M, current mem=9417.1M)
+Current (total cpu=0:01:51, real=0:01:21, peak res=9662.5M, current mem=9399.4M)
 **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File SDC/cbx_1__1_.sdc, Line 13).
 
 ------------------------------------------------------------------------------------
@@ -697,10 +697,10 @@ set_max_delay                                     | 1300           | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Reading of timing constraints file SDC/cbx_1__1_.sdc completed, with 1 WARNING
-Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=9418.2M, current mem=9418.2M)
-Current (total cpu=0:02:29, real=0:05:56, peak res=9675.9M, current mem=9418.2M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=9400.1M, current mem=9400.1M)
+Current (total cpu=0:01:51, real=0:01:21, peak res=9662.5M, current mem=9400.1M)
 Reading timing constraints file 'SDC/cbx_2__0_.sdc' ...
-Current (total cpu=0:02:29, real=0:05:56, peak res=9675.9M, current mem=9418.2M)
+Current (total cpu=0:01:51, real=0:01:21, peak res=9662.5M, current mem=9400.1M)
 **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File SDC/cbx_2__0_.sdc, Line 13).
 
 ------------------------------------------------------------------------------------
@@ -712,10 +712,10 @@ set_max_delay                                     | 1450           | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Reading of timing constraints file SDC/cbx_2__0_.sdc completed, with 1 WARNING
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=9418.8M, current mem=9418.8M)
-Current (total cpu=0:02:29, real=0:05:56, peak res=9675.9M, current mem=9418.8M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:01.0, peak res=9400.9M, current mem=9400.9M)
+Current (total cpu=0:01:51, real=0:01:22, peak res=9662.5M, current mem=9400.9M)
 Reading timing constraints file 'SDC/cbx_2__10_.sdc' ...
-Current (total cpu=0:02:29, real=0:05:56, peak res=9675.9M, current mem=9418.9M)
+Current (total cpu=0:01:51, real=0:01:22, peak res=9662.5M, current mem=9400.9M)
 **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File SDC/cbx_2__10_.sdc, Line 13).
 
 ------------------------------------------------------------------------------------
@@ -727,10 +727,10 @@ set_max_delay                                     | 300            | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Reading of timing constraints file SDC/cbx_2__10_.sdc completed, with 1 WARNING
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=9419.4M, current mem=9419.4M)
-Current (total cpu=0:02:29, real=0:05:56, peak res=9675.9M, current mem=9419.4M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=9401.7M, current mem=9401.7M)
+Current (total cpu=0:01:52, real=0:01:22, peak res=9662.5M, current mem=9401.7M)
 Reading timing constraints file 'SDC/cbx_2__2_.sdc' ...
-Current (total cpu=0:02:30, real=0:05:56, peak res=9675.9M, current mem=9419.4M)
+Current (total cpu=0:01:52, real=0:01:22, peak res=9662.5M, current mem=9401.7M)
 **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File SDC/cbx_2__2_.sdc, Line 13).
 
 ------------------------------------------------------------------------------------
@@ -742,10 +742,10 @@ set_max_delay                                     | 1050           | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Reading of timing constraints file SDC/cbx_2__2_.sdc completed, with 1 WARNING
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:01.0, peak res=9419.9M, current mem=9419.9M)
-Current (total cpu=0:02:30, real=0:05:57, peak res=9675.9M, current mem=9419.9M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=9402.2M, current mem=9402.2M)
+Current (total cpu=0:01:52, real=0:01:22, peak res=9662.5M, current mem=9402.2M)
 Reading timing constraints file 'SDC/cbx_6__0_.sdc' ...
-Current (total cpu=0:02:30, real=0:05:57, peak res=9675.9M, current mem=9419.9M)
+Current (total cpu=0:01:52, real=0:01:22, peak res=9662.5M, current mem=9402.2M)
 **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File SDC/cbx_6__0_.sdc, Line 13).
 
 ------------------------------------------------------------------------------------
@@ -757,10 +757,10 @@ set_max_delay                                     | 700            | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Reading of timing constraints file SDC/cbx_6__0_.sdc completed, with 1 WARNING
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=9420.8M, current mem=9420.8M)
-Current (total cpu=0:02:30, real=0:05:57, peak res=9675.9M, current mem=9420.8M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=9402.9M, current mem=9402.9M)
+Current (total cpu=0:01:52, real=0:01:23, peak res=9662.5M, current mem=9402.9M)
 Reading timing constraints file 'SDC/cby_0__1_.sdc' ...
-Current (total cpu=0:02:30, real=0:05:57, peak res=9675.9M, current mem=9420.8M)
+Current (total cpu=0:01:52, real=0:01:23, peak res=9662.5M, current mem=9402.9M)
 **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File SDC/cby_0__1_.sdc, Line 13).
 
 ------------------------------------------------------------------------------------
@@ -772,10 +772,10 @@ set_max_delay                                     | 700            | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Reading of timing constraints file SDC/cby_0__1_.sdc completed, with 1 WARNING
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=9421.3M, current mem=9421.3M)
-Current (total cpu=0:02:30, real=0:05:57, peak res=9675.9M, current mem=9421.3M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=9403.6M, current mem=9403.6M)
+Current (total cpu=0:01:53, real=0:01:23, peak res=9662.5M, current mem=9403.6M)
 Reading timing constraints file 'SDC/cby_11__1_.sdc' ...
-Current (total cpu=0:02:30, real=0:05:57, peak res=9675.9M, current mem=9421.4M)
+Current (total cpu=0:01:53, real=0:01:23, peak res=9662.5M, current mem=9403.6M)
 **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File SDC/cby_11__1_.sdc, Line 13).
 
 ------------------------------------------------------------------------------------
@@ -787,10 +787,10 @@ set_max_delay                                     | 1700           | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Reading of timing constraints file SDC/cby_11__1_.sdc completed, with 1 WARNING
-Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=9422.8M, current mem=9422.8M)
-Current (total cpu=0:02:31, real=0:05:57, peak res=9675.9M, current mem=9422.8M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=9404.8M, current mem=9404.8M)
+Current (total cpu=0:01:53, real=0:01:23, peak res=9662.5M, current mem=9404.8M)
 Reading timing constraints file 'SDC/cby_1__1_.sdc' ...
-Current (total cpu=0:02:31, real=0:05:58, peak res=9675.9M, current mem=9422.8M)
+Current (total cpu=0:01:53, real=0:01:23, peak res=9662.5M, current mem=9404.8M)
 **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File SDC/cby_1__1_.sdc, Line 13).
 
 ------------------------------------------------------------------------------------
@@ -802,10 +802,10 @@ set_max_delay                                     | 1300           | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Reading of timing constraints file SDC/cby_1__1_.sdc completed, with 1 WARNING
-Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=9423.3M, current mem=9423.3M)
-Current (total cpu=0:02:31, real=0:05:58, peak res=9675.9M, current mem=9423.3M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=9405.3M, current mem=9405.3M)
+Current (total cpu=0:01:53, real=0:01:23, peak res=9662.5M, current mem=9405.3M)
 Reading timing constraints file 'SDC/cby_2__1_.sdc' ...
-Current (total cpu=0:02:31, real=0:05:58, peak res=9675.9M, current mem=9423.3M)
+Current (total cpu=0:01:53, real=0:01:24, peak res=9662.5M, current mem=9405.3M)
 **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File SDC/cby_2__1_.sdc, Line 13).
 
 ------------------------------------------------------------------------------------
@@ -817,10 +817,10 @@ set_max_delay                                     | 1050           | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Reading of timing constraints file SDC/cby_2__1_.sdc completed, with 1 WARNING
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=9423.8M, current mem=9423.8M)
-Current (total cpu=0:02:31, real=0:05:58, peak res=9675.9M, current mem=9423.8M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=9406.1M, current mem=9406.1M)
+Current (total cpu=0:01:53, real=0:01:24, peak res=9662.5M, current mem=9406.1M)
 Reading timing constraints file 'SDC/cby_2__2_.sdc' ...
-Current (total cpu=0:02:31, real=0:05:58, peak res=9675.9M, current mem=9423.8M)
+Current (total cpu=0:01:54, real=0:01:24, peak res=9662.5M, current mem=9406.1M)
 **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File SDC/cby_2__2_.sdc, Line 13).
 
 ------------------------------------------------------------------------------------
@@ -832,10 +832,10 @@ set_max_delay                                     | 300            | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Reading of timing constraints file SDC/cby_2__2_.sdc completed, with 1 WARNING
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=9424.8M, current mem=9424.8M)
-Current (total cpu=0:02:31, real=0:05:58, peak res=9675.9M, current mem=9424.8M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=9406.6M, current mem=9406.6M)
+Current (total cpu=0:01:54, real=0:01:24, peak res=9662.5M, current mem=9406.6M)
 Reading timing constraints file 'SDC/cby_5__1_.sdc' ...
-Current (total cpu=0:02:32, real=0:05:58, peak res=9675.9M, current mem=9424.8M)
+Current (total cpu=0:01:54, real=0:01:24, peak res=9662.5M, current mem=9406.6M)
 **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File SDC/cby_5__1_.sdc, Line 13).
 
 ------------------------------------------------------------------------------------
@@ -847,10 +847,10 @@ set_max_delay                                     | 3100           | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Reading of timing constraints file SDC/cby_5__1_.sdc completed, with 1 WARNING
-Ending "Constraint file reading stats" (total cpu=0:00:00.3, real=0:00:01.0, peak res=9428.3M, current mem=9428.3M)
-Current (total cpu=0:02:32, real=0:05:59, peak res=9675.9M, current mem=9428.3M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.3, real=0:00:00.0, peak res=9410.4M, current mem=9410.4M)
+Current (total cpu=0:01:54, real=0:01:24, peak res=9662.5M, current mem=9410.4M)
 Reading timing constraints file 'SDC/cby_6__1_.sdc' ...
-Current (total cpu=0:02:32, real=0:05:59, peak res=9675.9M, current mem=9428.3M)
+Current (total cpu=0:01:54, real=0:01:25, peak res=9662.5M, current mem=9410.5M)
 **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File SDC/cby_6__1_.sdc, Line 13).
 
 ------------------------------------------------------------------------------------
@@ -862,10 +862,10 @@ set_max_delay                                     | 2100           | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Reading of timing constraints file SDC/cby_6__1_.sdc completed, with 1 WARNING
-Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=9429.5M, current mem=9429.5M)
-Current (total cpu=0:02:32, real=0:05:59, peak res=9675.9M, current mem=9429.5M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=9411.4M, current mem=9411.4M)
+Current (total cpu=0:01:55, real=0:01:25, peak res=9662.5M, current mem=9411.4M)
 Reading timing constraints file 'SDC/disable_configurable_memory_outputs.sdc' ...
-Current (total cpu=0:02:32, real=0:05:59, peak res=9675.9M, current mem=9429.6M)
+Current (total cpu=0:01:55, real=0:01:25, peak res=9662.5M, current mem=9411.4M)
 ------------------------------------------------------------------------------------
 CONSTRAINT READING SUMMARY                                                          
 ------------------------------------------------------------------------------------
@@ -874,10 +874,10 @@ Constraint                                        | Success        | Fail
 set_disable_timing                                | 504            | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:04:02, real=0:04:01, peak res=10680.5M, current mem=10679.8M)
-Current (total cpu=0:06:34, real=0:10:00, peak res=10680.5M, current mem=10679.8M)
+Ending "Constraint file reading stats" (total cpu=0:04:03, real=0:04:02, peak res=10662.2M, current mem=10661.6M)
+Current (total cpu=0:05:58, real=0:05:27, peak res=10662.2M, current mem=10661.6M)
 Reading timing constraints file 'SDC/disable_configure_ports.sdc' ...
-Current (total cpu=0:06:34, real=0:10:01, peak res=10680.5M, current mem=10679.9M)
+Current (total cpu=0:05:58, real=0:05:27, peak res=10662.2M, current mem=10661.7M)
 ------------------------------------------------------------------------------------
 CONSTRAINT READING SUMMARY                                                          
 ------------------------------------------------------------------------------------
@@ -886,10 +886,10 @@ Constraint                                        | Success        | Fail
 set_disable_timing                                | 500            | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:03:14, real=0:03:13, peak res=11191.5M, current mem=11191.0M)
-Current (total cpu=0:09:48, real=0:13:14, peak res=11191.5M, current mem=11191.0M)
+Ending "Constraint file reading stats" (total cpu=0:03:14, real=0:03:14, peak res=11177.3M, current mem=11176.7M)
+Current (total cpu=0:09:12, real=0:08:41, peak res=11177.3M, current mem=11176.7M)
 Reading timing constraints file 'SDC/disable_routing_multiplexer_outputs.sdc' ...
-Current (total cpu=0:09:49, real=0:13:14, peak res=11191.5M, current mem=11191.0M)
+Current (total cpu=0:09:12, real=0:08:41, peak res=11177.3M, current mem=11176.8M)
 ------------------------------------------------------------------------------------
 CONSTRAINT READING SUMMARY                                                          
 ------------------------------------------------------------------------------------
@@ -898,10 +898,10 @@ Constraint                                        | Success        | Fail
 set_disable_timing                                | 245            | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:18.8, real=0:00:19.0, peak res=11234.1M, current mem=11234.1M)
-Current (total cpu=0:10:07, real=0:13:33, peak res=11234.1M, current mem=11234.1M)
+Ending "Constraint file reading stats" (total cpu=0:00:19.0, real=0:00:19.0, peak res=11219.8M, current mem=11219.8M)
+Current (total cpu=0:09:31, real=0:09:00, peak res=11219.8M, current mem=11219.8M)
 Reading timing constraints file 'SDC/disable_sb_outputs.sdc' ...
-Current (total cpu=0:10:08, real=0:13:33, peak res=11234.1M, current mem=11234.1M)
+Current (total cpu=0:09:31, real=0:09:00, peak res=11219.9M, current mem=11219.9M)
 ------------------------------------------------------------------------------------
 CONSTRAINT READING SUMMARY                                                          
 ------------------------------------------------------------------------------------
@@ -910,10 +910,10 @@ Constraint                                        | Success        | Fail
 set_disable_timing                                | 98             | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:05.4, real=0:00:06.0, peak res=11289.9M, current mem=11289.6M)
-Current (total cpu=0:10:13, real=0:13:39, peak res=11289.9M, current mem=11289.6M)
+Ending "Constraint file reading stats" (total cpu=0:00:05.3, real=0:00:05.0, peak res=11275.7M, current mem=11275.4M)
+Current (total cpu=0:09:36, real=0:09:05, peak res=11275.7M, current mem=11275.4M)
 Reading timing constraints file 'SDC/global_ports.sdc' ...
-Current (total cpu=0:10:13, real=0:13:39, peak res=11289.9M, current mem=11289.6M)
+Current (total cpu=0:09:36, real=0:09:06, peak res=11275.7M, current mem=11275.4M)
 **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File SDC/global_ports.sdc, Line 13).
 
 ------------------------------------------------------------------------------------
@@ -926,10 +926,10 @@ get_ports                                         | 2              | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Reading of timing constraints file SDC/global_ports.sdc completed, with 1 WARNING
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11290.4M, current mem=11290.4M)
-Current (total cpu=0:10:13, real=0:13:39, peak res=11290.4M, current mem=11290.4M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11276.1M, current mem=11276.1M)
+Current (total cpu=0:09:37, real=0:09:06, peak res=11276.1M, current mem=11276.1M)
 Reading timing constraints file 'SDC/logical_tile_clb_mode_clb_.sdc' ...
-Current (total cpu=0:10:13, real=0:13:39, peak res=11290.4M, current mem=11290.4M)
+Current (total cpu=0:09:37, real=0:09:06, peak res=11276.1M, current mem=11276.1M)
 **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File SDC/logical_tile_clb_mode_clb_.sdc, Line 13).
 
 ------------------------------------------------------------------------------------
@@ -941,91 +941,22 @@ set_max_delay                                     | 3601           | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Reading of timing constraints file SDC/logical_tile_clb_mode_clb_.sdc completed, with 1 WARNING
-Ending "Constraint file reading stats" (total cpu=0:00:28.3, real=0:00:28.0, peak res=11358.4M, current mem=11358.4M)
-Current (total cpu=0:10:42, real=0:14:07, peak res=11358.4M, current mem=11358.4M)
+Ending "Constraint file reading stats" (total cpu=0:00:27.7, real=0:00:27.0, peak res=11343.9M, current mem=11343.9M)
+Current (total cpu=0:10:05, real=0:09:34, peak res=11343.9M, current mem=11343.9M)
 Message <TA-968> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
-Current (total cpu=0:10:42, real=0:14:07, peak res=11358.4M, current mem=11358.4M)
-**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc, Line 13).
-
-**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'grid_clb_*__*_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder_2/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder/adder_a[0]' (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc, Line 15).
-
-**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'grid_clb_*__*_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder_2/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder/adder_sumout[0]' (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc, Line 15).
-
-**ERROR: (TCLCMD-1170):	Invalid path description specified for command set_max_delay (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc, Line 15).
-
-**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'grid_clb_*__*_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder_2/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder/adder_a[0]' (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc, Line 16).
-
-**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'grid_clb_*__*_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder_2/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder/adder_sumout[0]' (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc, Line 16).
-
-**ERROR: (TCLCMD-1170):	Invalid path description specified for command set_min_delay (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc, Line 16).
-
-**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'grid_clb_*__*_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder_2/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder/adder_a[0]' (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc, Line 17).
-
-**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'grid_clb_*__*_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder_2/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder/adder_cout[0]' (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc, Line 17).
-
-**ERROR: (TCLCMD-1170):	Invalid path description specified for command set_max_delay (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc, Line 17).
-
-**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'grid_clb_*__*_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder_2/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder/adder_a[0]' (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc, Line 18).
-
-**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'grid_clb_*__*_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder_2/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder/adder_cout[0]' (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc, Line 18).
-
-**ERROR: (TCLCMD-1170):	Invalid path description specified for command set_min_delay (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc, Line 18).
-
-**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'grid_clb_*__*_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder_2/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder/adder_b[0]' (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc, Line 19).
-
-**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'grid_clb_*__*_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder_2/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder/adder_sumout[0]' (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc, Line 19).
-
-**ERROR: (TCLCMD-1170):	Invalid path description specified for command set_max_delay (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc, Line 19).
-
-**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'grid_clb_*__*_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder_2/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder/adder_b[0]' (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc, Line 20).
-
-**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'grid_clb_*__*_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder_2/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder/adder_sumout[0]' (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc, Line 20).
-
-**ERROR: (TCLCMD-1170):	Invalid path description specified for command set_min_delay (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc, Line 20).
-
-**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'grid_clb_*__*_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder_2/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder/adder_b[0]' (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc, Line 21).
-
-**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'grid_clb_*__*_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder_2/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder/adder_cout[0]' (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc, Line 21).
-
-**ERROR: (TCLCMD-1170):	Invalid path description specified for command set_max_delay (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc, Line 21).
-
-**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'grid_clb_*__*_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder_2/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder/adder_b[0]' (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc, Line 22).
-
-**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'grid_clb_*__*_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder_2/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder/adder_cout[0]' (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc, Line 22).
-
-**ERROR: (TCLCMD-1170):	Invalid path description specified for command set_min_delay (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc, Line 22).
-
-**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'grid_clb_*__*_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder_2/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder/adder_cin[0]' (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc, Line 23).
-
-**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'grid_clb_*__*_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder_2/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder/adder_sumout[0]' (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc, Line 23).
-
-**ERROR: (TCLCMD-1170):	Invalid path description specified for command set_max_delay (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc, Line 23).
-
-**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'grid_clb_*__*_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder_2/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder/adder_cin[0]' (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc, Line 24).
-
-**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'grid_clb_*__*_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder_2/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder/adder_sumout[0]' (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc, Line 24).
-
-**ERROR: (TCLCMD-1170):	Invalid path description specified for command set_min_delay (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc, Line 24).
-
-Message <TCLCMD-513> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit. (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc, Line 25).
-
-**ERROR: (TCLCMD-1170):	Invalid path description specified for command set_max_delay (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc, Line 25).
-
-**ERROR: (TCLCMD-1170):	Invalid path description specified for command set_min_delay (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc, Line 26).
-
+Current (total cpu=0:10:05, real=0:09:34, peak res=11343.9M, current mem=11343.9M)
 ------------------------------------------------------------------------------------
 CONSTRAINT READING SUMMARY                                                          
 ------------------------------------------------------------------------------------
 Constraint                                        | Success        | Fail           
 ------------------------------------------------------------------------------------
-set_min_delay                                     | 0              | 6              
-set_max_delay                                     | 0              | 6              
-set_units                                         | 1              | 0              
+set_min_delay                                     | 6              | 0              
+set_max_delay                                     | 6              | 0              
 ------------------------------------------------------------------------------------
-INFO (CTE): Reading of timing constraints file SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder.sdc completed, with 21 Warnings and 12 Errors.
-Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:01.0, peak res=11358.8M, current mem=11358.8M)
-Current (total cpu=0:10:42, real=0:14:08, peak res=11358.8M, current mem=11358.8M)
-Current (total cpu=0:10:42, real=0:14:08, peak res=11358.8M, current mem=11358.8M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=11345.1M, current mem=11345.1M)
+Current (total cpu=0:10:05, real=0:09:34, peak res=11345.1M, current mem=11345.1M)
+Current (total cpu=0:10:05, real=0:09:34, peak res=11345.1M, current mem=11345.1M)
 **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff.sdc, Line 13).
 
 ------------------------------------------------------------------------------------
@@ -1036,9 +967,9 @@ Constraint                                        | Success        | Fail
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Reading of timing constraints file SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff.sdc completed, with 1 WARNING
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11359.2M, current mem=11359.2M)
-Current (total cpu=0:10:42, real=0:14:08, peak res=11359.2M, current mem=11359.2M)
-Current (total cpu=0:10:42, real=0:14:08, peak res=11359.2M, current mem=11359.2M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11345.5M, current mem=11345.5M)
+Current (total cpu=0:10:05, real=0:09:34, peak res=11345.5M, current mem=11345.5M)
+Current (total cpu=0:10:05, real=0:09:34, peak res=11345.5M, current mem=11345.5M)
 **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic.sdc, Line 13).
 
 ------------------------------------------------------------------------------------
@@ -1049,9 +980,9 @@ Constraint                                        | Success        | Fail
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Reading of timing constraints file SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic.sdc completed, with 1 WARNING
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11359.5M, current mem=11359.5M)
-Current (total cpu=0:10:43, real=0:14:08, peak res=11359.5M, current mem=11359.5M)
-Current (total cpu=0:10:43, real=0:14:08, peak res=11359.5M, current mem=11359.5M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11345.9M, current mem=11345.9M)
+Current (total cpu=0:10:05, real=0:09:34, peak res=11345.9M, current mem=11345.9M)
+Current (total cpu=0:10:06, real=0:09:35, peak res=11345.9M, current mem=11345.9M)
 **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric.sdc, Line 13).
 
 ------------------------------------------------------------------------------------
@@ -1063,11 +994,36 @@ set_max_delay                                     | 4              | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Reading of timing constraints file SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric.sdc completed, with 1 WARNING
-Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:01.0, peak res=11360.0M, current mem=11360.0M)
-Current (total cpu=0:10:43, real=0:14:09, peak res=11360.0M, current mem=11360.0M)
-Current (total cpu=0:10:43, real=0:14:09, peak res=11360.0M, current mem=11360.0M)
-Message <TCLCMD-1461> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit. (File SDC/logical_tile_clb_mode_default__fle.sdc, Line 13).
+Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=11346.6M, current mem=11346.6M)
+Current (total cpu=0:10:06, real=0:09:35, peak res=11346.6M, current mem=11346.6M)
+Current (total cpu=0:10:06, real=0:09:35, peak res=11346.6M, current mem=11346.6M)
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File SDC/logical_tile_clb_mode_default__fle.sdc, Line 13).
 
+------------------------------------------------------------------------------------
+CONSTRAINT READING SUMMARY                                                          
+------------------------------------------------------------------------------------
+Constraint                                        | Success        | Fail           
+------------------------------------------------------------------------------------
+set_units                                         | 1              | 0              
+------------------------------------------------------------------------------------
+INFO (CTE): Reading of timing constraints file SDC/logical_tile_clb_mode_default__fle.sdc completed, with 1 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11347.0M, current mem=11347.0M)
+Current (total cpu=0:10:06, real=0:09:35, peak res=11347.0M, current mem=11347.0M)
+Current (total cpu=0:10:06, real=0:09:35, peak res=11347.0M, current mem=11347.0M)
+Message <TCLCMD-1461> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit. (File SDC/logical_tile_io_mode_io_.sdc, Line 13).
+
+------------------------------------------------------------------------------------
+CONSTRAINT READING SUMMARY                                                          
+------------------------------------------------------------------------------------
+Constraint                                        | Success        | Fail           
+------------------------------------------------------------------------------------
+set_max_delay                                     | 2              | 0              
+set_units                                         | 1              | 0              
+------------------------------------------------------------------------------------
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11347.4M, current mem=11347.4M)
+Current (total cpu=0:10:06, real=0:09:35, peak res=11347.4M, current mem=11347.4M)
+Current (total cpu=0:10:06, real=0:09:36, peak res=11347.4M, current mem=11347.4M)
 ------------------------------------------------------------------------------------
 CONSTRAINT READING SUMMARY                                                          
 ------------------------------------------------------------------------------------
@@ -1076,25 +1032,46 @@ Constraint                                        | Success        | Fail
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11360.4M, current mem=11360.4M)
-Current (total cpu=0:10:43, real=0:14:09, peak res=11360.4M, current mem=11360.4M)
-Current (total cpu=0:10:43, real=0:14:09, peak res=11360.4M, current mem=11360.4M)
-**ERROR: (TCLCMD-1170):	Invalid path description specified for command set_max_delay (File SDC/logical_tile_io_mode_io_.sdc, Line 15).
-
-**ERROR: (TCLCMD-1170):	Invalid path description specified for command set_max_delay (File SDC/logical_tile_io_mode_io_.sdc, Line 16).
-
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11347.7M, current mem=11347.7M)
+Current (total cpu=0:10:07, real=0:09:36, peak res=11347.7M, current mem=11347.7M)
+Current (total cpu=0:10:07, real=0:09:36, peak res=11347.7M, current mem=11347.7M)
 ------------------------------------------------------------------------------------
 CONSTRAINT READING SUMMARY                                                          
 ------------------------------------------------------------------------------------
 Constraint                                        | Success        | Fail           
 ------------------------------------------------------------------------------------
-set_max_delay                                     | 0              | 2              
+set_max_delay                                     | 38             | 0              
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
-INFO (CTE): Reading of timing constraints file SDC/logical_tile_io_mode_io_.sdc completed, with 0 Warnings and 2 Errors.
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11360.8M, current mem=11360.8M)
-Current (total cpu=0:10:43, real=0:14:09, peak res=11360.8M, current mem=11360.8M)
-Current (total cpu=0:10:44, real=0:14:09, peak res=11360.8M, current mem=11360.8M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11348.4M, current mem=11348.4M)
+Current (total cpu=0:10:07, real=0:09:36, peak res=11348.4M, current mem=11348.4M)
+Current (total cpu=0:10:07, real=0:09:36, peak res=11348.4M, current mem=11348.4M)
+------------------------------------------------------------------------------------
+CONSTRAINT READING SUMMARY                                                          
+------------------------------------------------------------------------------------
+Constraint                                        | Success        | Fail           
+------------------------------------------------------------------------------------
+set_max_delay                                     | 144            | 0              
+set_units                                         | 1              | 0              
+------------------------------------------------------------------------------------
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=11349.1M, current mem=11349.1M)
+Current (total cpu=0:10:07, real=0:09:36, peak res=11349.1M, current mem=11349.1M)
+Current (total cpu=0:10:07, real=0:09:36, peak res=11349.1M, current mem=11349.1M)
+------------------------------------------------------------------------------------
+CONSTRAINT READING SUMMARY                                                          
+------------------------------------------------------------------------------------
+Constraint                                        | Success        | Fail           
+------------------------------------------------------------------------------------
+set_min_delay                                     | 5184           | 0              
+set_max_delay                                     | 5184           | 0              
+set_units                                         | 1              | 0              
+------------------------------------------------------------------------------------
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:03.6, real=0:00:04.0, peak res=11350.3M, current mem=11350.3M)
+Current (total cpu=0:10:11, real=0:09:40, peak res=11350.3M, current mem=11350.3M)
+Current (total cpu=0:10:11, real=0:09:40, peak res=11350.3M, current mem=11350.3M)
 ------------------------------------------------------------------------------------
 CONSTRAINT READING SUMMARY                                                          
 ------------------------------------------------------------------------------------
@@ -1103,71 +1080,9 @@ Constraint                                        | Success        | Fail
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11361.2M, current mem=11361.2M)
-Current (total cpu=0:10:44, real=0:14:09, peak res=11361.2M, current mem=11361.2M)
-Current (total cpu=0:10:44, real=0:14:09, peak res=11361.2M, current mem=11361.2M)
-**ERROR: (TCLCMD-1170):	Invalid path description specified for command set_max_delay (File SDC/logical_tile_memory_mode_memory_.sdc, Line 15).
-
-**ERROR: (TCLCMD-1170):	Invalid path description specified for command set_max_delay (File SDC/logical_tile_memory_mode_memory_.sdc, Line 16).
-
-**ERROR: (TCLCMD-1170):	Invalid path description specified for command set_max_delay (File SDC/logical_tile_memory_mode_memory_.sdc, Line 17).
-
-**ERROR: (TCLCMD-1170):	Invalid path description specified for command set_max_delay (File SDC/logical_tile_memory_mode_memory_.sdc, Line 18).
-
-**ERROR: (TCLCMD-1170):	Invalid path description specified for command set_max_delay (File SDC/logical_tile_memory_mode_memory_.sdc, Line 19).
-
-**ERROR: (TCLCMD-1170):	Invalid path description specified for command set_max_delay (File SDC/logical_tile_memory_mode_memory_.sdc, Line 20).
-
-Message <TCLCMD-1170> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit. (File SDC/logical_tile_memory_mode_memory_.sdc, Line 21).
-
-------------------------------------------------------------------------------------
-CONSTRAINT READING SUMMARY                                                          
-------------------------------------------------------------------------------------
-Constraint                                        | Success        | Fail           
-------------------------------------------------------------------------------------
-set_max_delay                                     | 0              | 38             
-set_units                                         | 1              | 0              
-------------------------------------------------------------------------------------
-INFO (CTE): Reading of timing constraints file SDC/logical_tile_memory_mode_memory_.sdc completed, with 0 Warnings and 6 Errors.
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:01.0, peak res=11361.5M, current mem=11361.5M)
-Current (total cpu=0:10:44, real=0:14:10, peak res=11361.5M, current mem=11361.5M)
-Current (total cpu=0:10:44, real=0:14:10, peak res=11361.5M, current mem=11361.5M)
-------------------------------------------------------------------------------------
-CONSTRAINT READING SUMMARY                                                          
-------------------------------------------------------------------------------------
-Constraint                                        | Success        | Fail           
-------------------------------------------------------------------------------------
-set_max_delay                                     | 0              | 144            
-set_units                                         | 1              | 0              
-------------------------------------------------------------------------------------
-INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11361.9M, current mem=11361.9M)
-Current (total cpu=0:10:44, real=0:14:10, peak res=11361.9M, current mem=11361.9M)
-Current (total cpu=0:10:44, real=0:14:10, peak res=11361.9M, current mem=11361.9M)
-------------------------------------------------------------------------------------
-CONSTRAINT READING SUMMARY                                                          
-------------------------------------------------------------------------------------
-Constraint                                        | Success        | Fail           
-------------------------------------------------------------------------------------
-set_min_delay                                     | 0              | 5184           
-set_max_delay                                     | 0              | 5184           
-set_units                                         | 1              | 0              
-------------------------------------------------------------------------------------
-INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.7, real=0:00:01.0, peak res=11362.6M, current mem=11362.6M)
-Current (total cpu=0:10:45, real=0:14:11, peak res=11362.6M, current mem=11362.6M)
-Current (total cpu=0:10:45, real=0:14:11, peak res=11362.6M, current mem=11362.6M)
-------------------------------------------------------------------------------------
-CONSTRAINT READING SUMMARY                                                          
-------------------------------------------------------------------------------------
-Constraint                                        | Success        | Fail           
-------------------------------------------------------------------------------------
-set_units                                         | 1              | 0              
-------------------------------------------------------------------------------------
-INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11363.0M, current mem=11363.0M)
-Current (total cpu=0:10:45, real=0:14:11, peak res=11363.0M, current mem=11363.0M)
-Current (total cpu=0:10:45, real=0:14:11, peak res=11363.0M, current mem=11363.0M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11350.7M, current mem=11350.7M)
+Current (total cpu=0:10:11, real=0:09:40, peak res=11350.7M, current mem=11350.7M)
+Current (total cpu=0:10:11, real=0:09:40, peak res=11350.7M, current mem=11350.7M)
 ------------------------------------------------------------------------------------
 CONSTRAINT READING SUMMARY                                                          
 ------------------------------------------------------------------------------------
@@ -1177,9 +1092,9 @@ set_max_delay                                     | 690            | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11364.2M, current mem=11364.2M)
-Current (total cpu=0:10:46, real=0:14:11, peak res=11364.2M, current mem=11364.2M)
-Current (total cpu=0:10:46, real=0:14:11, peak res=11364.2M, current mem=11364.2M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:01.0, peak res=11352.0M, current mem=11352.0M)
+Current (total cpu=0:10:12, real=0:09:41, peak res=11352.0M, current mem=11352.0M)
+Current (total cpu=0:10:12, real=0:09:41, peak res=11352.0M, current mem=11352.0M)
 ------------------------------------------------------------------------------------
 CONSTRAINT READING SUMMARY                                                          
 ------------------------------------------------------------------------------------
@@ -1189,9 +1104,9 @@ set_max_delay                                     | 540            | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:01.0, peak res=11365.4M, current mem=11365.4M)
-Current (total cpu=0:10:46, real=0:14:12, peak res=11365.4M, current mem=11365.4M)
-Current (total cpu=0:10:46, real=0:14:12, peak res=11365.4M, current mem=11365.4M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11352.7M, current mem=11352.7M)
+Current (total cpu=0:10:12, real=0:09:41, peak res=11352.7M, current mem=11352.7M)
+Current (total cpu=0:10:12, real=0:09:41, peak res=11352.7M, current mem=11352.7M)
 ------------------------------------------------------------------------------------
 CONSTRAINT READING SUMMARY                                                          
 ------------------------------------------------------------------------------------
@@ -1201,9 +1116,9 @@ set_max_delay                                     | 1054           | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11366.1M, current mem=11366.1M)
-Current (total cpu=0:10:46, real=0:14:12, peak res=11366.1M, current mem=11366.1M)
-Current (total cpu=0:10:46, real=0:14:12, peak res=11366.1M, current mem=11366.1M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=11353.8M, current mem=11353.8M)
+Current (total cpu=0:10:12, real=0:09:41, peak res=11353.8M, current mem=11353.8M)
+Current (total cpu=0:10:12, real=0:09:41, peak res=11353.8M, current mem=11353.8M)
 ------------------------------------------------------------------------------------
 CONSTRAINT READING SUMMARY                                                          
 ------------------------------------------------------------------------------------
@@ -1213,9 +1128,9 @@ set_max_delay                                     | 1124           | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11366.9M, current mem=11366.9M)
-Current (total cpu=0:10:47, real=0:14:12, peak res=11366.9M, current mem=11366.9M)
-Current (total cpu=0:10:47, real=0:14:12, peak res=11366.9M, current mem=11366.9M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:01.0, peak res=11358.0M, current mem=11358.0M)
+Current (total cpu=0:10:13, real=0:09:42, peak res=11358.0M, current mem=11358.0M)
+Current (total cpu=0:10:13, real=0:09:42, peak res=11358.0M, current mem=11358.0M)
 ------------------------------------------------------------------------------------
 CONSTRAINT READING SUMMARY                                                          
 ------------------------------------------------------------------------------------
@@ -1225,9 +1140,9 @@ set_max_delay                                     | 1798           | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:01.0, peak res=11367.8M, current mem=11367.8M)
-Current (total cpu=0:10:47, real=0:14:13, peak res=11367.8M, current mem=11367.8M)
-Current (total cpu=0:10:47, real=0:14:13, peak res=11367.8M, current mem=11367.8M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=11358.7M, current mem=11358.7M)
+Current (total cpu=0:10:13, real=0:09:42, peak res=11358.7M, current mem=11358.7M)
+Current (total cpu=0:10:13, real=0:09:42, peak res=11358.7M, current mem=11358.7M)
 ------------------------------------------------------------------------------------
 CONSTRAINT READING SUMMARY                                                          
 ------------------------------------------------------------------------------------
@@ -1237,9 +1152,9 @@ set_max_delay                                     | 840            | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11368.7M, current mem=11368.7M)
-Current (total cpu=0:10:47, real=0:14:13, peak res=11368.7M, current mem=11368.7M)
-Current (total cpu=0:10:47, real=0:14:13, peak res=11368.7M, current mem=11368.7M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11359.8M, current mem=11359.8M)
+Current (total cpu=0:10:13, real=0:09:42, peak res=11359.8M, current mem=11359.8M)
+Current (total cpu=0:10:13, real=0:09:43, peak res=11359.8M, current mem=11359.8M)
 ------------------------------------------------------------------------------------
 CONSTRAINT READING SUMMARY                                                          
 ------------------------------------------------------------------------------------
@@ -1249,9 +1164,9 @@ set_max_delay                                     | 690            | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11369.6M, current mem=11369.6M)
-Current (total cpu=0:10:48, real=0:14:13, peak res=11369.6M, current mem=11369.6M)
-Current (total cpu=0:10:48, real=0:14:13, peak res=11369.6M, current mem=11369.6M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11360.7M, current mem=11360.7M)
+Current (total cpu=0:10:14, real=0:09:43, peak res=11360.7M, current mem=11360.7M)
+Current (total cpu=0:10:14, real=0:09:43, peak res=11360.7M, current mem=11360.7M)
 ------------------------------------------------------------------------------------
 CONSTRAINT READING SUMMARY                                                          
 ------------------------------------------------------------------------------------
@@ -1261,9 +1176,9 @@ set_max_delay                                     | 1054           | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11373.8M, current mem=11373.8M)
-Current (total cpu=0:10:48, real=0:14:14, peak res=11373.8M, current mem=11373.8M)
-Current (total cpu=0:10:48, real=0:14:14, peak res=11373.8M, current mem=11373.8M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=11361.2M, current mem=11361.2M)
+Current (total cpu=0:10:14, real=0:09:43, peak res=11361.2M, current mem=11361.2M)
+Current (total cpu=0:10:14, real=0:09:43, peak res=11361.2M, current mem=11361.2M)
 ------------------------------------------------------------------------------------
 CONSTRAINT READING SUMMARY                                                          
 ------------------------------------------------------------------------------------
@@ -1273,9 +1188,9 @@ set_max_delay                                     | 1154           | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=11374.6M, current mem=11374.6M)
-Current (total cpu=0:10:48, real=0:14:14, peak res=11374.6M, current mem=11374.6M)
-Current (total cpu=0:10:48, real=0:14:14, peak res=11374.6M, current mem=11374.6M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=11361.9M, current mem=11361.9M)
+Current (total cpu=0:10:14, real=0:09:43, peak res=11361.9M, current mem=11361.9M)
+Current (total cpu=0:10:14, real=0:09:44, peak res=11361.9M, current mem=11361.9M)
 ------------------------------------------------------------------------------------
 CONSTRAINT READING SUMMARY                                                          
 ------------------------------------------------------------------------------------
@@ -1285,9 +1200,9 @@ set_max_delay                                     | 1074           | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11375.0M, current mem=11375.0M)
-Current (total cpu=0:10:48, real=0:14:14, peak res=11375.0M, current mem=11375.0M)
-Current (total cpu=0:10:49, real=0:14:14, peak res=11375.0M, current mem=11375.0M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11362.8M, current mem=11362.8M)
+Current (total cpu=0:10:15, real=0:09:44, peak res=11362.8M, current mem=11362.8M)
+Current (total cpu=0:10:15, real=0:09:44, peak res=11362.8M, current mem=11362.8M)
 ------------------------------------------------------------------------------------
 CONSTRAINT READING SUMMARY                                                          
 ------------------------------------------------------------------------------------
@@ -1297,9 +1212,9 @@ set_max_delay                                     | 1818           | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=11375.8M, current mem=11375.8M)
-Current (total cpu=0:10:49, real=0:14:15, peak res=11375.8M, current mem=11375.8M)
-Current (total cpu=0:10:49, real=0:14:15, peak res=11375.8M, current mem=11375.8M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=11363.2M, current mem=11363.2M)
+Current (total cpu=0:10:15, real=0:09:44, peak res=11363.2M, current mem=11363.2M)
+Current (total cpu=0:10:15, real=0:09:44, peak res=11363.2M, current mem=11363.2M)
 ------------------------------------------------------------------------------------
 CONSTRAINT READING SUMMARY                                                          
 ------------------------------------------------------------------------------------
@@ -1309,9 +1224,9 @@ set_max_delay                                     | 1034           | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11376.4M, current mem=11376.4M)
-Current (total cpu=0:10:49, real=0:14:15, peak res=11376.4M, current mem=11376.4M)
-Current (total cpu=0:10:49, real=0:14:15, peak res=11376.4M, current mem=11376.4M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=11363.9M, current mem=11363.9M)
+Current (total cpu=0:10:15, real=0:09:44, peak res=11363.9M, current mem=11363.9M)
+Current (total cpu=0:10:16, real=0:09:45, peak res=11363.9M, current mem=11363.9M)
 ------------------------------------------------------------------------------------
 CONSTRAINT READING SUMMARY                                                          
 ------------------------------------------------------------------------------------
@@ -1321,9 +1236,9 @@ set_max_delay                                     | 1698           | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=11377.3M, current mem=11377.3M)
-Current (total cpu=0:10:49, real=0:14:15, peak res=11377.3M, current mem=11377.3M)
-Current (total cpu=0:10:50, real=0:14:15, peak res=11377.3M, current mem=11377.3M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=11364.8M, current mem=11364.8M)
+Current (total cpu=0:10:16, real=0:09:45, peak res=11364.8M, current mem=11364.8M)
+Current (total cpu=0:10:16, real=0:09:45, peak res=11364.8M, current mem=11364.8M)
 ------------------------------------------------------------------------------------
 CONSTRAINT READING SUMMARY                                                          
 ------------------------------------------------------------------------------------
@@ -1333,9 +1248,9 @@ set_max_delay                                     | 904            | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11378.0M, current mem=11378.0M)
-Current (total cpu=0:10:50, real=0:14:16, peak res=11378.0M, current mem=11378.0M)
-Current (total cpu=0:10:50, real=0:14:16, peak res=11378.0M, current mem=11378.0M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11365.5M, current mem=11365.5M)
+Current (total cpu=0:10:16, real=0:09:45, peak res=11365.5M, current mem=11365.5M)
+Current (total cpu=0:10:16, real=0:09:45, peak res=11365.5M, current mem=11365.5M)
 ------------------------------------------------------------------------------------
 CONSTRAINT READING SUMMARY                                                          
 ------------------------------------------------------------------------------------
@@ -1345,9 +1260,9 @@ set_max_delay                                     | 994            | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11378.6M, current mem=11378.6M)
-Current (total cpu=0:10:50, real=0:14:16, peak res=11378.6M, current mem=11378.6M)
-Current (total cpu=0:10:50, real=0:14:16, peak res=11378.6M, current mem=11378.6M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11368.7M, current mem=11368.7M)
+Current (total cpu=0:10:16, real=0:09:45, peak res=11368.7M, current mem=11368.7M)
+Current (total cpu=0:10:17, real=0:09:46, peak res=11368.7M, current mem=11368.7M)
 ------------------------------------------------------------------------------------
 CONSTRAINT READING SUMMARY                                                          
 ------------------------------------------------------------------------------------
@@ -1357,9 +1272,9 @@ set_max_delay                                     | 1738           | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=11382.1M, current mem=11382.1M)
-Current (total cpu=0:10:50, real=0:14:16, peak res=11382.1M, current mem=11382.1M)
-Current (total cpu=0:10:51, real=0:14:16, peak res=11382.1M, current mem=11382.1M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=11369.5M, current mem=11369.5M)
+Current (total cpu=0:10:17, real=0:09:46, peak res=11369.5M, current mem=11369.5M)
+Current (total cpu=0:10:17, real=0:09:46, peak res=11369.5M, current mem=11369.5M)
 ------------------------------------------------------------------------------------
 CONSTRAINT READING SUMMARY                                                          
 ------------------------------------------------------------------------------------
@@ -1369,9 +1284,9 @@ set_max_delay                                     | 1154           | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11382.5M, current mem=11382.5M)
-Current (total cpu=0:10:51, real=0:14:17, peak res=11382.5M, current mem=11382.5M)
-Current (total cpu=0:10:51, real=0:14:17, peak res=11382.5M, current mem=11382.5M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=11370.3M, current mem=11370.3M)
+Current (total cpu=0:10:17, real=0:09:46, peak res=11370.3M, current mem=11370.3M)
+Current (total cpu=0:10:17, real=0:09:46, peak res=11370.3M, current mem=11370.3M)
 ------------------------------------------------------------------------------------
 CONSTRAINT READING SUMMARY                                                          
 ------------------------------------------------------------------------------------
@@ -1381,9 +1296,9 @@ set_max_delay                                     | 1848           | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=11383.5M, current mem=11383.5M)
-Current (total cpu=0:10:51, real=0:14:17, peak res=11383.5M, current mem=11383.5M)
-Current (total cpu=0:10:51, real=0:14:17, peak res=11383.5M, current mem=11383.5M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=11370.7M, current mem=11370.7M)
+Current (total cpu=0:10:18, real=0:09:47, peak res=11370.7M, current mem=11370.7M)
+Current (total cpu=0:10:18, real=0:09:47, peak res=11370.7M, current mem=11370.7M)
 ------------------------------------------------------------------------------------
 CONSTRAINT READING SUMMARY                                                          
 ------------------------------------------------------------------------------------
@@ -1393,9 +1308,9 @@ set_max_delay                                     | 1644           | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=11384.1M, current mem=11384.1M)
-Current (total cpu=0:10:51, real=0:14:17, peak res=11384.1M, current mem=11384.1M)
-Current (total cpu=0:10:52, real=0:14:17, peak res=11384.1M, current mem=11384.1M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=11372.1M, current mem=11372.1M)
+Current (total cpu=0:10:18, real=0:09:47, peak res=11372.1M, current mem=11372.1M)
+Current (total cpu=0:10:18, real=0:09:47, peak res=11372.1M, current mem=11372.1M)
 ------------------------------------------------------------------------------------
 CONSTRAINT READING SUMMARY                                                          
 ------------------------------------------------------------------------------------
@@ -1405,9 +1320,9 @@ set_max_delay                                     | 1254           | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=11385.1M, current mem=11385.1M)
-Current (total cpu=0:10:52, real=0:14:18, peak res=11385.1M, current mem=11385.1M)
-Current (total cpu=0:10:52, real=0:14:18, peak res=11385.1M, current mem=11385.1M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=11372.5M, current mem=11372.5M)
+Current (total cpu=0:10:18, real=0:09:47, peak res=11372.5M, current mem=11372.5M)
+Current (total cpu=0:10:18, real=0:09:47, peak res=11372.5M, current mem=11372.5M)
 ------------------------------------------------------------------------------------
 CONSTRAINT READING SUMMARY                                                          
 ------------------------------------------------------------------------------------
@@ -1417,9 +1332,9 @@ set_max_delay                                     | 1494           | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=11385.7M, current mem=11385.7M)
-Current (total cpu=0:10:52, real=0:14:18, peak res=11385.7M, current mem=11385.7M)
-Current (total cpu=0:10:52, real=0:14:18, peak res=11385.7M, current mem=11385.7M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:01.0, peak res=11373.3M, current mem=11373.3M)
+Current (total cpu=0:10:19, real=0:09:48, peak res=11373.3M, current mem=11373.3M)
+Current (total cpu=0:10:19, real=0:09:48, peak res=11373.3M, current mem=11373.3M)
 ------------------------------------------------------------------------------------
 CONSTRAINT READING SUMMARY                                                          
 ------------------------------------------------------------------------------------
@@ -1429,9 +1344,9 @@ set_max_delay                                     | 1154           | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11386.5M, current mem=11386.5M)
-Current (total cpu=0:10:52, real=0:14:18, peak res=11386.5M, current mem=11386.5M)
-Current (total cpu=0:10:53, real=0:14:18, peak res=11386.5M, current mem=11386.5M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11374.4M, current mem=11374.4M)
+Current (total cpu=0:10:19, real=0:09:48, peak res=11374.4M, current mem=11374.4M)
+Current (total cpu=0:10:19, real=0:09:48, peak res=11374.4M, current mem=11374.4M)
 ------------------------------------------------------------------------------------
 CONSTRAINT READING SUMMARY                                                          
 ------------------------------------------------------------------------------------
@@ -1441,9 +1356,9 @@ set_max_delay                                     | 974            | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=11387.1M, current mem=11387.1M)
-Current (total cpu=0:10:53, real=0:14:19, peak res=11387.1M, current mem=11387.1M)
-Current (total cpu=0:10:53, real=0:14:19, peak res=11387.1M, current mem=11387.1M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=11375.5M, current mem=11375.5M)
+Current (total cpu=0:10:19, real=0:09:48, peak res=11375.5M, current mem=11375.5M)
+Current (total cpu=0:10:19, real=0:09:48, peak res=11375.5M, current mem=11375.5M)
 ------------------------------------------------------------------------------------
 CONSTRAINT READING SUMMARY                                                          
 ------------------------------------------------------------------------------------
@@ -1453,8 +1368,8 @@ set_max_delay                                     | 1798           | 0
 set_units                                         | 1              | 0              
 ------------------------------------------------------------------------------------
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=11388.0M, current mem=11388.0M)
-Current (total cpu=0:10:53, real=0:14:19, peak res=11388.0M, current mem=11388.0M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:01.0, peak res=11375.9M, current mem=11375.9M)
+Current (total cpu=0:10:20, real=0:09:49, peak res=11375.9M, current mem=11375.9M)
 Total number of combinational cells: 208
 Total number of sequential cells: 38
 Total number of tristate cells: 8
@@ -1487,33 +1402,549 @@ WARNING   IMPFP-3961           1  The techSite '%s' has no related standar...
 WARNING   IMPVL-209            2  In Verilog file '%s', check line %d near...
 WARNING   IMPVL-159          531  Pin '%s' of cell '%s' is defined in LEF ...
 WARNING   IMPECO-560         102  The netlist is not unique, because the m...
-WARNING   TCLCMD-513       21128  The software could not find a matching o...
-ERROR     TCLCMD-1170      10564  Invalid path description specified for c...
-WARNING   TCLCMD-1461         51  Skipped unsupported command: %s          
+WARNING   TCLCMD-1461         50  Skipped unsupported command: %s          
 WARNING   TECHLIB-302          2  No function defined for cell '%s'. The c...
-*** Message Summary: 21863 warning(s), 10564 error(s)
+*** Message Summary: 734 warning(s), 0 error(s)
 
-**ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'grid*'
-**ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'grid_*'
-**ERROR: (TCLCMD-917):	Cannot find 'pins' that match 'grid_*'
-**ERROR: (TCLCMD-917):	Cannot find 'pins' that match 'grid_memory/*'
-**ERROR: (TCLCMD-917):	Cannot find 'cells' that match 'grid_memory/*'
-grid_memory_2__1_ grid_memory_2__3_ grid_memory_2__5_ grid_memory_2__7_ grid_memory_2__9_ grid_memory_10__1_ grid_memory_10__3_ grid_memory_10__5_ grid_memory_10__7_ grid_memory_10__9_
-grid_memory_2__1_/logical_tile_memory_mode_memory__0 grid_memory_2__3_/logical_tile_memory_mode_memory__0 grid_memory_2__5_/logical_tile_memory_mode_memory__0 grid_memory_2__7_/logical_tile_memory_mode_memory__0 grid_memory_2__9_/logical_tile_memory_mode_memory__0 grid_memory_10__1_/logical_tile_memory_mode_memory__0 grid_memory_10__3_/logical_tile_memory_mode_memory__0 grid_memory_10__5_/logical_tile_memory_mode_memory__0 grid_memory_10__7_/logical_tile_memory_mode_memory__0 grid_memory_10__9_/logical_tile_memory_mode_memory__0
-grid_memory_2__1_/logical_tile_memory_mode_memory__0 grid_memory_2__3_/logical_tile_memory_mode_memory__0 grid_memory_2__5_/logical_tile_memory_mode_memory__0 grid_memory_2__7_/logical_tile_memory_mode_memory__0 grid_memory_2__9_/logical_tile_memory_mode_memory__0 grid_memory_10__1_/logical_tile_memory_mode_memory__0 grid_memory_10__3_/logical_tile_memory_mode_memory__0 grid_memory_10__5_/logical_tile_memory_mode_memory__0 grid_memory_10__7_/logical_tile_memory_mode_memory__0 grid_memory_10__9_/logical_tile_memory_mode_memory__0
-grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0 grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_0_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_1_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_2_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_3_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_4_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_5_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_6_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_7_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_8_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_9_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_10_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_11_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_12_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_13_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_14_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_15_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_16_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_17_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_18_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_19_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_20_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_21_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_22_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_23_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_24_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_25_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_26_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_27_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_28_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_29_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_30_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_31_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_32_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_33_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_34_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_35_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_36_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_37_ grid_memory_2__1_/logical_tile_memory_mode_memory__0/direct_interc_38_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0 grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_0_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_1_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_2_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_3_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_4_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_5_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_6_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_7_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_8_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_9_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_10_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_11_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_12_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_13_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_14_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_15_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_16_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_17_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_18_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_19_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_20_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_21_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_22_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_23_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_24_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_25_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_26_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_27_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_28_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_29_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_30_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_31_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_32_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_33_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_34_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_35_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_36_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_37_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/direct_interc_38_ grid_memory_2__5_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0 grid_memory_2__5_/logical_tile_memory_mode_memory__0/direct_interc_0_ grid_memory_2__5_/logical_tile_memory_mode_memory__0/direct_interc_1_ grid_memory_2__5_/logical_tile_memory_mode_memory__0/direct_interc_2_ grid_memory_2__5_/logical_tile_memory_mode_memory__0/direct_interc_3_ grid_memory_2__5_/logical_tile_memory_mode_memory__0/direct_interc_4_ grid_memory_2__5_/logical_tile_memory_mode_memory__0/direct_interc_5_ grid_memory_2__5_/logical_tile_memory_mode_memory__0/direct_interc_6_ grid_memory_2__5_/logical_tile_memory_mode_memory__0/direct_interc_7_ grid_memory_2__5_/logical_tile_memory_mode_memory__0/direct_interc_8_ grid_memory_2__5_/logical_tile_memory_mode_memory__0/direct_interc_9_ grid_memory_2__5_/logical_tile_memory_mode_memory__0/direct_interc_10_ grid_memory_2__5_/logical_tile_memory_mode_memory__0/direct_interc_11_ grid_memory_2__5_/logical_tile_memory_mode_memory__0/direct_interc_12_ grid_memory_2__5_/logical_tile_memory_mode_memory__0/direct_interc_13_ grid_memory_2__5_/logical_tile_memory_mode_memory__0/direct_interc_14_ grid_memory_2__5_/logical_tile_memory_mode_memory__0/direct_interc_15_ grid_memory_2__5_/logical_tile_memory_mode_memory__0/direct_interc_16_ grid_memory_2__5_/logical_tile_memory_mode_memory__0/direct_interc_17_ grid_memory_2__5_/logical_tile_memory_mode_memory__0/direct_interc_18_ ...
-grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0 grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0 grid_memory_2__5_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0 grid_memory_2__7_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0 grid_memory_2__9_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0 grid_memory_10__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0 grid_memory_10__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0 grid_memory_10__5_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0 grid_memory_10__7_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0 grid_memory_10__9_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0
-grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_ grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_ grid_memory_2__5_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_ grid_memory_2__7_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_ grid_memory_2__9_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_ grid_memory_10__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_ grid_memory_10__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_ grid_memory_10__5_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_ grid_memory_10__7_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_ grid_memory_10__9_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_
-**ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'grid_memory_*__*_/logical_tile_memory_mode_memory__*/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_*/*'
-
---------------------------------------------------------------------------------
-Exiting Innovus on Tue Jul  8 10:41:00 2025
-  Total CPU time:     0:38:26
-  Total real time:    10:42:09
-  Peak memory (main): 11724.82MB
-
-
-*** Memory Usage v#2 (Current mem = 11748.246M, initial mem = 847.773M) ***
-*** Message Summary: 21875 warning(s), 10570 error(s)
-
---- Ending "Innovus" (totcpu=0:38:24, real=10:42:06, mem=11748.2M) ---
+<CMD> man IMPVL-209
+<CMD> setDrawView fplan
+<CMD> pan -1285.34800 955.07900
+<CMD> zoomBox -4555.49600 -1332.85200 9769.38200 11490.97200
+<CMD> zoomBox -6023.84900 -2176.58200 10828.95000 12910.27000
+<CMD> zoomBox -8654.01800 -4738.25800 18787.95100 19828.16200
+<CMD> zoomBox -7534.06000 -1123.84700 6790.82000 11699.97800
+<CMD> zoomBox -6853.66700 1071.96800 -497.64000 6761.96900
+<CMD> zoomBox -6425.32900 1754.13500 -2521.93300 5248.50800
+<CMD> zoomBox -6323.07300 1916.98700 -3005.18600 4887.20400
+<CMD> zoomBox -6060.38900 2039.95900 -3240.18500 4564.64400
+<CMD> zoomBox -5837.10900 2144.48500 -3439.93400 4290.46800
+<CMD> zoomBox -5647.32000 2233.33200 -3609.72100 4057.41800
+<CMD> zoomBox -5348.87600 2373.04400 -3876.71100 3690.94600
+<CMD> zoomBox -5232.32200 2427.60700 -3980.98100 3547.82400
+<CMD> zoomBox -5348.87600 2373.04400 -3876.71100 3690.94600
+<CMD> zoomBox -5837.10900 2144.48500 -3439.93400 4290.46800
+<CMD> zoomBox -6632.11500 1772.31400 -2728.71600 5266.68900
+<CMD> zoomBox -6995.69200 1602.11000 -2403.45800 5713.14000
+<CMD> zoomBox -7423.43000 1401.87000 -2020.80100 6238.37600
+<CMD> zoomBox -7926.65000 1166.29400 -1570.61600 6856.30100
+<CMD> zoomBox -8518.67400 889.14500 -1040.98700 7583.27100
+<CMD> zoomBox -9215.17300 563.08700 -417.89400 8438.53000
+<CMD> zoomBox -10034.58400 179.49100 315.15700 9444.71800
+<CMD> zoomBox -10998.59600 -271.80000 1177.57000 10628.46800
+<CMD> zoomBox -12132.72800 -802.72900 2192.17300 12021.11500
+<CMD> zoomBox -15036.73400 -2162.20200 4790.11900 15587.06400
+<CMD> pan 5129.84600 12643.68900
+<CMD> zoomBox -6768.28700 2989.16900 3581.45600 12254.39800
+<CMD> zoomBox -5129.91600 5798.71800 272.71500 10635.22600
+<CMD> zoomBox -4274.67800 7265.32000 -1454.46900 9790.00900
+<CMD> zoomBox -4166.86800 7502.28300 -1769.69000 9648.26900
+<CMD> zoomBox -4075.22900 7703.70200 -2037.62800 9527.79000
+<CMD> zoomBox -4166.86800 7502.28300 -1769.69000 9648.26900
+<CMD> zoomBox -4274.67800 7265.32000 -1454.46900 9790.00900
+<CMD> zoomBox -4401.51300 6986.54000 -1083.62000 9956.76200
+<CMD> zoomBox -4550.73100 6658.56300 -647.32800 10152.94200
+<CMD> zoomBox -4726.28200 6272.70800 -134.04300 10383.74200
+<CMD> zoomBox -4932.81200 5818.76000 469.82200 10655.27100
+<CMD> zoomBox -5175.79000 5284.70500 1180.25100 10974.71800
+<CMD> zoomBox -4504.83000 5299.50500 897.80600 10136.01700
+<CMD> zoomBox -3934.51300 5312.08500 657.72800 9423.12100
+<CMD> pan -225.75000 8444.59000
+<CMD> zoomBox -3654.10700 4673.15200 249.29800 8167.53300
+<CMD> zoomBox -4160.26300 4510.07700 431.97800 8621.11300
+<CMD> pan -1918.88000 7814.86400
+<CMD> zoomBox -6563.49400 3475.32900 -1160.85700 8311.84200
+<CMD> zoomBox -7133.31800 3264.41900 -777.27400 8954.43500
+<CMD> zoomBox -7803.69900 3016.29000 -326.00000 9710.42700
+<CMD> zoomBox -9520.24600 2380.94500 829.51000 11646.18600
+<CMD> zoomBox -11896.08800 1501.57500 2428.83300 14325.43700
+<CMD> zoomBox -7219.41400 4554.99900 1577.87900 12430.45400
+<CMD> zoomBox -6003.52800 5720.35500 352.51700 11410.37200
+<CMD> zoomBox -5528.67500 6175.47400 -126.03600 11011.98900
+<CMD> zoomBox -5870.32300 5706.78700 485.72300 11396.80500
+<CMD> zoomBox -8184.92100 3469.68700 2164.84000 12734.93200
+<CMD> zoomBox -11953.85700 -173.05700 4899.00100 14913.84800
+<CMD> zoomBox -20897.58700 -8817.33100 11387.19600 20084.44100
+<CMD> zoomBox -14001.57000 -4436.33200 9324.18600 16445.19900
+<CMD> zoomBox -11091.13200 -2824.95400 8735.76200 14924.34800
+<CMD> zoomBox -8617.25900 -1455.28300 8235.60100 13631.62400
+<CMD> zoomBox -6514.46700 -291.06200 7810.46400 12532.80900
+<CMD> zoomBox -9674.71500 -2803.60100 10152.17900 14945.70100
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -r 0.999445285641 0.699831 8 8 8 8
+Adjusting coreMargin left    to finFet grid (PlacementGrid) : after adjusting :8.4
+Adjusting coreMargin bottom  to finFet grid (PlacementGrid) : after adjusting :8.4
+Adjusting coreMargin right   to finFet grid (PlacementGrid) : after adjusting :8.4
+Adjusting coreMargin top     to finFet grid (PlacementGrid) : after adjusting :8.4
+Adjusting core size to PlacementGrid : width :8069.46 height : 8062.74
+Adjusting Core to Left to: 8.5800. Core to Bottom to: 8.5800.
+**WARN: (IMPFP-3961):	The techSite 'sg13g2_ioSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Adjust TopMetal1 preferred direction offset from 1.64 to 0.21.
+Start create_tracks
+Generated pitch 2.52 in TopMetal1 is different from 2.28 defined in technology file in preferred direction.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -r 0.999167230521 0.699636 26 26 26 26
+Adjusting coreMargin left    to finFet grid (PlacementGrid) : after adjusting :26.04
+Adjusting coreMargin bottom  to finFet grid (PlacementGrid) : after adjusting :26.04
+Adjusting coreMargin right   to finFet grid (PlacementGrid) : after adjusting :26.04
+Adjusting coreMargin top     to finFet grid (PlacementGrid) : after adjusting :26.04
+Adjusting core size to PlacementGrid : width :8071.56 height : 8062.74
+Adjusting Core to Left to: 26.2200. Core to Bottom to: 26.2200.
+**WARN: (IMPFP-3961):	The techSite 'sg13g2_ioSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Adjust TopMetal1 preferred direction offset from 1.64 to 0.21.
+Start create_tracks
+Generated pitch 2.52 in TopMetal1 is different from 2.28 defined in technology file in preferred direction.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -r 0.99890727443 0.699454 26.22 26.22 26.04 26.04
+Adjusting coreMargin left    to finFet grid (PlacementGrid) : after adjusting :26.46
+Adjusting coreMargin bottom  to finFet grid (PlacementGrid) : after adjusting :26.46
+Adjusting core size to PlacementGrid : width :8073.66 height : 8062.74
+Adjusting Core to Left to: 26.6400. Core to Bottom to: 26.6400.
+**WARN: (IMPFP-3961):	The techSite 'sg13g2_ioSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Adjust TopMetal1 preferred direction offset from 1.64 to 0.21.
+Start create_tracks
+Generated pitch 2.52 in TopMetal1 is different from 2.28 defined in technology file in preferred direction.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> zoomBox 3556.76700 291.04300 8993.06300 5157.68800
+<CMD> zoomBox 4926.77700 507.66800 8854.50100 4023.81900
+<CMD> zoomBox 6472.51200 845.40700 8522.80900 2680.86000
+<CMD> zoomBox 7341.06800 1040.63200 8411.33700 1998.75100
+<CMD> zoomBox 7799.70500 1143.87500 8358.39200 1644.01900
+<CMD> zoomBox 8039.11500 1197.76700 8330.75500 1458.84700
+<CMD> zoomBox 8140.00500 1220.47800 8319.10900 1380.81400
+<CMD> zoomBox 8216.75400 1237.75400 8310.24900 1321.45200
+<CMD> zoomBox 8240.01300 1242.98900 8307.56400 1303.46200
+<CMD> zoomBox 8201.96000 1234.42300 8311.95700 1332.89400
+<CMD> zoomBox 8111.66000 1214.09600 8322.38000 1402.73500
+<CMD> zoomBox 7992.96100 1187.37600 8336.08300 1494.54300
+<CMD> zoomBox 7799.67800 1143.86500 8358.39600 1644.03700
+<CMD> zoomBox 7484.94700 1073.01600 8394.72800 1887.46400
+<CMD> zoomBox 6972.46100 957.64900 8453.89000 2283.84400
+<CMD> zoomBox 6137.96400 769.79500 8550.22500 2929.28400
+<CMD> zoomBox 4779.12200 463.90800 8707.08900 3980.27700
+<CMD> zoomBox 3426.59300 159.44300 8863.22500 5026.38900
+<CMD> zoomBox -1036.44100 -845.22400 9378.43900 8478.31700
+<CMD> zoomBox -6903.19600 -2165.88000 10055.69800 13015.95000
+<CMD> zoomBox -4882.60900 -1237.85800 9532.45100 11666.69800
+<CMD> pan -7906.83800 3215.84300
+<CMD> zoomBox -11227.94300 2470.86100 -2375.29300 10395.87200
+<CMD> zoomBox -10268.98400 4905.82100 -4832.35000 9772.76900
+<CMD> zoomBox -9835.70600 5883.62400 -5907.73800 9399.99400
+<CMD> zoomBox -9529.71400 6547.78300 -6691.75600 9088.36100
+<CMD> selectObject Module grid_clb_1__1_
+<CMD> zoomBox -9698.11500 5687.33300 -5076.97200 9824.24200
+<CMD> zoomBox -10097.72800 3645.47500 -1245.06900 11570.49400
+<CMD> zoomBox -10623.02800 961.41000 3792.04900 13865.98100
+<CMD> create_relative_floorplan -place grid_clb_1__1_ -ref_type core_boundary -horizontal_edge_separate {1  -5  1} -vertical_edge_separate {0  5  0}
+<CMD> zoomBox -8857.97400 1750.22900 3394.84200 12719.11500
+<CMD> zoomBox -5157.49200 3915.47000 2367.27000 10651.73800
+<CMD> zoomBox -2342.41300 5562.64000 1585.56100 9079.01500
+<CMD> zoomBox -1047.80500 6893.68200 1002.62200 8729.25200
+<CMD> zoomBox -651.45500 7271.82900 829.98000 8598.03000
+<CMD> zoomBox -255.07400 7605.35200 654.71400 8419.80600
+<CMD> zoomBox -160.44700 7684.97300 612.87300 8377.25900
+<CMD> zoomBox -40.79500 7808.78900 517.92900 8308.96600
+<CMD> zoomBox 5.93300 7857.14400 480.84900 8282.29500
+<CMD> zoomBox -40.79600 7808.78800 517.92900 8308.96600
+<CMD> zoomBox -95.77200 7751.89900 561.55200 8340.34400
+<CMD> zoomBox -160.44900 7684.97100 612.87300 8377.25900
+<CMD> zoomBox -236.54000 7606.23200 673.25100 8420.68900
+<CMD> zoomBox -555.27500 7276.40300 926.16800 8602.61100
+<CMD> zoomBox -1074.28200 6739.33300 1338.00200 8898.84200
+<CMD> deselectAll
+<CMD> fit
+<CMD> create_relative_floorplan -place grid_clb_1__1_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  5  0}
+<CMD> zoomBox 1070.39900 -46.54100 -34.34500 1260.29000
+<CMD> zoomBox -53.74200 45.27800 842.75700 847.83600
+<CMD> zoomBox 43.37000 101.66500 593.93400 594.53700
+<CMD> zoomBox 143.41100 136.84400 481.52600 439.52900
+<CMD> zoomBox 167.29300 145.24100 454.69100 402.52400
+<CMD> zoomBox 219.51400 163.60400 396.01300 321.60800
+<CMD> zoomBox 242.57700 171.71300 370.09900 285.87200
+<CMD> zoomBox 187.59000 152.37600 431.88300 371.07000
+<CMD> zoomBox 115.31000 126.95800 513.09900 483.06400
+<CMD> zoomBox 161.30800 169.51200 368.95600 355.40100
+<CMD> zoomBox 180.69100 187.44300 308.21400 301.60300
+<CMD> zoomBox 192.59400 198.45400 270.91000 268.56400
+<CMD> zoomBox 195.43400 201.08300 262.00400 260.67700
+<CMD> zoomBox 199.90300 205.21700 248.00000 248.27400
+<CMD> zoomBox 201.64800 206.83100 242.53100 243.43000
+<CMD> zoomBox 203.13100 208.20300 237.88200 239.31300
+<CMD> zoomBox 204.39200 209.37000 233.93000 235.81300
+<CMD> zoomBox 203.13100 208.20300 237.88200 239.31300
+<CMD> zoomBox 199.90200 205.21500 248.00100 248.27400
+<CMD> zoomBox 197.84800 203.31500 254.43600 253.97300
+<CMD> fit
+<CMD> zoomBox -3121.73800 -1577.69700 11292.42800 11326.05800
+<CMD> zoomBox -4493.94100 -2311.51300 12463.90100 12869.37500
+<CMD> zoomBox -3121.73800 -1577.69700 11292.42800 11326.05800
+<CMD> zoomBox -4322.82800 -2087.74900 12635.01500 13093.14000
+<CMD> zoomBox -2592.62500 -1353.72300 6259.47600 6570.79700
+<CMD> zoomBox -1689.44900 -970.55700 2931.40300 3166.09200
+<CMD> zoomBox -1163.69500 -733.39600 1248.41900 1425.96100
+<CMD> selectObject Module grid_clb_1__1_
+<CMD> panCenter -386.70100 368.12600
+<CMD> pan -1385.48300 1396.08200
+<CMD> deselectAll
+<CMD> fit
+<CMD> pan -4041.74700 270.72600
+<CMD> zoomBox -5697.54600 -1306.61600 6554.49400 9661.57500
+<CMD> zoomBox -6511.49000 -2028.25700 7902.67500 10875.49700
+<CMD> pan -6601.05300 4483.23300
+<CMD> zoomBox -9252.60500 8824.32200 -712.25900 -611.08200
+<CMD> zoomBox -1076.01200 411.54100 -639.69200 397.90600
+<CMD> zoomBox -1244.12300 110.82600 -533.64800 746.85300
+<CMD> zoomBox -1321.00400 65.73500 -485.15100 814.00200
+<CMD> zoomBox -1411.45300 12.68700 -428.09600 893.00100
+<CMD> zoomBox -1517.86300 -49.72300 -360.97200 985.94100
+<CMD> zoomBox -1643.05200 -123.14600 -282.00300 1095.28300
+<CMD> zoomBox -1790.33200 -209.52600 -189.09800 1223.92000
+<CMD> zoomBox -1963.60300 -311.15000 -79.79800 1375.25800
+<CMD> zoomBox -2407.27500 -571.36200 200.07000 1762.76800
+<CMD> pan -465.47700 2409.32700
+<CMD> pan -873.61200 3502.18600
+<CMD> pan -691.46900 5030.16400
+<CMD> pan -1109.72300 6055.56200
+<CMD> is_innovus_plus
+<CMD> is_innovus_plus
+Loading  (fpga_top)
+Traverse HInst (fpga_top)
+**WARN: (TA-1008):	The software has determined that multi-drive net pReset[0] is comprised of 763148 timing arcs which is above the arc threshold of 10000. The timing global timing_reduce_multi_drive_net_arcs is currently on but the net is not getting reduction.  Maintaining the current multi-drive net structure will have a significant impact on the memory requirements and performance of the analysis.
+**WARN: (TA-1008):	The software has determined that multi-drive net prog_clk[0] is comprised of 763148 timing arcs which is above the arc threshold of 10000. The timing global timing_reduce_multi_drive_net_arcs is currently on but the net is not getting reduction.  Maintaining the current multi-drive net structure will have a significant impact on the memory requirements and performance of the analysis.
+**ERROR: (IMPSYT-7300):	No object selected. Please select at least one object.
+<CMD> selectObject Net padin_prog_clk
+<CMD> selectObject Net padin_pReset
+<CMD> selectObject Module cbx_10__2_
+<CMD> selectObject Module cbx_10__0_
+<CMD> selectObject Module cbx_10__11_
+<CMD> selectObject Module grid_io_left_0__11_
+<CMD> selectObject Module grid_io_left_0__10_
+<CMD> selectObject Module grid_io_left_0__9_
+<CMD> selectObject Module grid_io_left_0__8_
+<CMD> selectObject Module grid_io_left_0__7_
+<CMD> selectObject Module grid_io_left_0__6_
+<CMD> selectObject Module grid_io_left_0__5_
+<CMD> selectObject Module grid_io_left_0__4_
+<CMD> selectObject Module grid_io_left_0__3_
+<CMD> selectObject Module grid_io_left_0__2_
+<CMD> selectObject Module grid_io_left_0__1_
+<CMD> selectObject Module grid_io_bottom_1__0_
+<CMD> selectObject Module grid_io_bottom_2__0_
+<CMD> selectObject Module grid_io_bottom_3__0_
+<CMD> selectObject Module grid_io_bottom_4__0_
+<CMD> selectObject Module grid_io_bottom_5__0_
+<CMD> selectObject Module grid_io_bottom_6__0_
+<CMD> selectObject Module grid_io_bottom_7__0_
+<CMD> selectObject Module grid_io_bottom_8__0_
+<CMD> selectObject Module grid_io_bottom_9__0_
+<CMD> selectObject Module grid_io_bottom_10__0_
+<CMD> selectObject Module grid_io_bottom_11__0_
+<CMD> selectObject Module grid_io_right_12__1_
+<CMD> selectObject Module grid_io_right_12__2_
+<CMD> selectObject Module grid_io_right_12__3_
+<CMD> selectObject Module grid_io_right_12__4_
+<CMD> selectObject Module grid_io_right_12__5_
+<CMD> selectObject Module grid_io_right_12__6_
+<CMD> selectObject Module grid_io_right_12__7_
+<CMD> selectObject Module grid_io_right_12__8_
+<CMD> selectObject Module grid_io_right_12__9_
+<CMD> selectObject Module grid_io_right_12__10_
+<CMD> selectObject Module grid_io_right_12__11_
+<CMD> selectObject Module grid_io_top_11__12_
+<CMD> selectObject Module grid_io_top_10__12_
+<CMD> selectObject Module grid_io_top_9__12_
+<CMD> selectObject Module grid_io_top_8__12_
+<CMD> selectObject Module grid_io_top_7__12_
+<CMD> selectObject Module grid_io_top_6__12_
+<CMD> selectObject Module grid_io_top_5__12_
+<CMD> selectObject Module grid_io_top_4__12_
+<CMD> selectObject Module grid_io_top_3__12_
+<CMD> selectObject Module grid_io_top_2__12_
+<CMD> selectObject Module grid_io_top_1__12_
+<CMD> selectObject Module pad_prog_clk
+<CMD> selectObject Module pad_pReset
+<CMD> selectObject IO_Pin {pReset[0]}
+<CMD> selectObject IO_Pin {prog_clk[0]}
+<CMD> deselectAll
+<CMD> selectObject Module sb_8__6_
+<CMD> zoomBox -5940.41400 1467.13300 -2872.94900 4213.16900
+<CMD> zoomBox -6402.60000 1289.96100 -2793.81700 4520.59200
+<CMD> zoomBox -6946.34900 1081.52400 -2700.72100 4882.26700
+<CMD> zoomBox -7586.05300 836.30400 -2591.19600 5307.76700
+<CMD> zoomBox -8338.64500 547.81000 -2462.34300 5808.35500
+<CMD> zoomBox -8017.08300 1161.28700 -3022.22600 5632.75000
+<CMD> zoomBox -7743.75600 1682.74200 -3498.12700 5483.48600
+<CMD> zoomBox -7511.42800 2125.97900 -3902.64300 5356.61200
+<CMD> zoomBox -7313.94900 2502.73000 -4246.48100 5248.76900
+<CMD> zoomBox -6882.13600 3326.54500 -4998.32700 5012.95600
+<CMD> zoomBox -6779.05000 3523.21200 -5177.81300 4956.66100
+<CMD> zoomBox -6691.42700 3690.37900 -5330.37600 4908.81000
+<CMD> zoomBox -6616.94800 3832.47000 -5460.05400 4868.13700
+<CMD> zoomBox -6691.42700 3690.37800 -5330.37500 4908.81000
+<CMD> zoomBox -6779.05000 3523.21100 -5177.81200 4956.66100
+<CMD> pan -625.58100 10492.83500
+<CMD> deselectAll
+<CMD> selectObject Module grid_memory_10__9_
+<CMD> pan -526.15100 11250.99000
+<CMD> zoomBox -8096.37700 3731.94100 -6212.56700 5418.35300
+<CMD> pan -682.36400 11913.61300
+<CMD> pan -774.97000 12622.78400
+<CMD> deselectAll
+<CMD> zoomBox -9796.13900 3393.82000 -7188.79000 5727.95400
+<CMD> zoomBox -9950.30700 3107.51000 -6882.83700 5853.55000
+<CMD> zoomBox -10131.68000 2770.67400 -6522.89200 6001.31000
+<CMD> zoomBox -10879.70100 1362.63800 -5003.38900 6623.19200
+<CMD> zoomBox -12097.72500 -930.11100 -2529.13100 7635.82300
+<CMD> zoomBox -13310.09100 -3212.21200 -66.36300 8643.75100
+<CMD> zoomBox -11546.21700 -796.98900 -1977.62300 7768.94500
+<CMD> pan 3082.25000 13559.15200
+<CMD> pan 3725.93300 7666.97900
+<CMD> pan -6325.42200 4931.32700
+<CMD> zoomBox -9945.74100 3412.69500 -4069.42800 8673.24900
+<CMD> zoomBox -9422.57500 4809.21200 -5176.93800 8609.96300
+<CMD> zoomBox -9534.03900 4245.10900 -4539.17200 8716.58100
+<CMD> zoomBox -9665.17300 3581.45800 -3788.85900 8842.01300
+<CMD> zoomBox -10214.47800 801.49800 -645.88100 9367.43500
+<CMD> zoomBox -11108.93000 -3725.20100 4471.93300 10222.99700
+<CMD> zoomBox -7411.70000 -2651.27100 3845.47300 7426.30200
+<CMD> zoomBox -5972.15100 -2227.48900 3596.44600 6338.44800
+<CMD> zoomBox -3722.20000 -1561.09100 3191.11100 4627.79800
+<CMD> zoomBox -2844.84500 -1300.83600 3031.47000 3959.72000
+<CMD> zoomBox -1566.46200 -910.57100 2679.17600 2890.18100
+<CMD> zoomBox -2429.26500 -1100.42900 3447.05000 4160.12700
+<CMD> pan 2729.10400 948.73800
+<CMD> pan 3937.81600 -1985.61900
+<CMD> selectInst grid_memory_10__9_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b
+<CMD> deselectAll
+<CMD> pan -3017.97800 -5626.95900
+<CMD> pan -2751.90900 -2434.13600
+<CMD> create_relative_floorplan -place grid_clb_1__2_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  15  0}
+<CMD> zoomBox -1288.20900 -994.38300 3706.65900 3477.09000
+<CMD> create_relative_floorplan -place grid_clb_1__2_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  500  0}
+<CMD> zoomBox -405.54800 -508.17200 2661.92600 2237.87200
+<CMD> zoomBox 131.92200 -214.17100 2015.73500 1472.24400
+<CMD> zoomBox 461.99600 -33.61800 1618.89300 1002.05200
+<CMD> zoomBox 540.79300 9.48500 1524.15600 889.80500
+<CMD> zoomBox 607.77100 46.12300 1443.63000 794.39500
+<CMD> zoomBox 664.70200 77.26400 1375.18300 713.29600
+<CMD> zoomBox 607.77000 46.12200 1443.63000 794.39500
+<CMD> zoomBox 540.79200 9.48400 1524.15700 889.80600
+<CMD> create_relative_floorplan -place grid_clb_1__2_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  600  0}
+<CMD> fit
+<CMD> panCenter 3118.21700 4385.90700
+<CMD> pan -5186.90800 2352.22600
+<CMD> pan -2438.52100 7768.16600
+<CMD> selectObject Module grid_clb_1__3_
+<CMD> deselectAll
+<CMD> selectObject Module grid_clb_3__4_
+<CMD> deselectAll
+<CMD> selectObject Module grid_clb_3__3_
+<CMD> deselectAll
+<CMD> selectObject Module grid_clb_3__2_
+<CMD> deselectAll
+<CMD> selectObject Module grid_clb_1__11_
+<CMD> deselectAll
+<CMD> selectObject Module grid_clb_3__1_
+<CMD> deselectAll
+<CMD> selectObject Module grid_clb_1__11_
+<CMD> create_relative_floorplan -place grid_clb_1__3_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  1200  0}
+<CMD> deselectAll
+<CMD> selectObject Module sb_2__8_
+<CMD> pan 3341.17800 8522.62600
+<CMD> zoomBox -4107.55100 -746.80800 3416.73400 5989.03300
+<CMD> zoomBox -1820.11200 -348.66700 2800.74100 3787.98300
+<CMD> zoomBox -1274.03900 -253.62000 2653.68700 3262.53300
+<CMD> zoomBox -415.33800 -104.15900 2422.44400 2436.26200
+<CMD> zoomBox -79.98100 -45.78800 2332.13400 2113.57000
+<CMD> zoomBox -307.95800 -135.54700 2529.82400 2404.87400
+<CMD> zoomBox -576.16700 -241.14600 2762.40100 2747.58500
+<CMD> create_relative_floorplan -place grid_clb_1__4_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  1800  0}
+<CMD> deselectAll
+<CMD> pan 2111.97900 110.43400
+<CMD> zoomBox 910.42700 -940.16300 5531.28200 3196.48900
+<CMD> zoomBox 512.72600 -1241.86700 5949.02600 3624.78200
+<CMD> zoomBox -1153.19800 -2505.67200 7698.91000 5418.85400
+<CMD> zoomBox -2811.38600 -3763.60900 9440.66700 7204.59400
+<CMD> pan 903.45000 -429.17300
+<CMD> create_relative_floorplan -place grid_clb_1__5_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  2400  0}
+<CMD> selectObject Module grid_clb_1__5_
+<CMD> create_relative_floorplan -place grid_clb_1__6_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  3000  0}
+<CMD> create_relative_floorplan -place grid_clb_1__7_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  3600  0}
+<CMD> create_relative_floorplan -place grid_clb_1__7_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  4200  0}
+<CMD> create_relative_floorplan -place grid_clb_1__7_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  3600  0}
+<CMD> create_relative_floorplan -place grid_clb_1__8_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  4200  0}
+<CMD> create_relative_floorplan -place grid_clb_1__9_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  4800  0}
+<CMD> create_relative_floorplan -place grid_clb_1__10_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  5400  0}
+<CMD> create_relative_floorplan -place grid_clb_1__11_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  6000  0}
+<CMD> create_relative_floorplan -place grid_clb_1__12_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  6600  0}
+**ERROR: (IMPFP-254):	Unrecognized object grid_clb_1__12_.
+**ERROR: (IMPFP-254):	Unrecognized object grid_clb_1__12_.
+<CMD> panCenter 1785.11500 3495.69300
+<CMD> pan -5531.65100 3446.15300
+<CMD> deselectAll
+<CMD> selectObject Module grid_clb_3__1_
+<CMD> deselectAll
+<CMD> selectObject Module grid_clb_3__6_
+<CMD> deselectAll
+<CMD> selectObject Module grid_clb_4__11_
+<CMD> deselectAll
+<CMD> selectObject Module grid_clb_5__2_
+<CMD> deselectAll
+<CMD> selectObject Module grid_clb_5__3_
+<CMD> deselectAll
+<CMD> selectObject Module grid_clb_5__7_
+<CMD> create_relative_floorplan -place grid_clb_1__2_ -ref_type core_boundary -horizontal_edge_separate {3  600  3} -vertical_edge_separate {0  5  0}
+<CMD> deselectAll
+<CMD> zoomBox -5695.25300 -344.30700 1829.04000 6391.54100
+<CMD> zoomBox -3129.86300 -6.26300 1490.99500 4130.39100
+<CMD> zoomBox -1996.87100 143.03300 1341.69900 3131.76600
+<CMD> zoomBox -3007.10900 -192.05400 1613.75000 3944.60100
+<CMD> zoomBox -3649.55000 -405.14600 1786.75500 4461.50700
+<CMD> zoomBox -4405.36200 -655.84300 1990.29100 5069.63200
+<CMD> zoomBox -5294.55300 -950.78000 2229.74500 5785.07300
+<CMD> create_relative_floorplan -place grid_clb_1__3_ -ref_type core_boundary -horizontal_edge_separate {3  1200 3} -vertical_edge_separate {0  5 0}
+<CMD> create_relative_floorplan -place grid_clb_1__4_ -ref_type core_boundary -horizontal_edge_separate {3 1800 3} -vertical_edge_separate {0 5 0}
+<CMD> create_relative_floorplan -place grid_clb_1__5_ -ref_type core_boundary -horizontal_edge_separate {3 2400 3} -vertical_edge_separate {0 5 0}
+<CMD> create_relative_floorplan -place grid_clb_1__6_ -ref_type core_boundary -horizontal_edge_separate {3 3000 3} -vertical_edge_separate {0 5 0}
+<CMD> create_relative_floorplan -place grid_clb_1__7_ -ref_type core_boundary -horizontal_edge_separate {3 3600 3} -vertical_edge_separate {0 5 0}
+<CMD> create_relative_floorplan -place grid_clb_1__8_ -ref_type core_boundary -horizontal_edge_separate {3 4200 3} -vertical_edge_separate {0 5 0}
+<CMD> create_relative_floorplan -place grid_clb_1__9_ -ref_type core_boundary -horizontal_edge_separate {3 4800 3} -vertical_edge_separate {0 5 0}
+<CMD> create_relative_floorplan -place grid_clb_1__10_ -ref_type core_boundary -horizontal_edge_separate {3 5400 3} -vertical_edge_separate {0 5 0}
+<CMD> pan -38.93500 4343.77300
+<CMD> pan 2199.86000 7176.33400
+<CMD> create_relative_floorplan -place grid_clb_1__11_ -ref_type core_boundary -horizontal_edge_separate {3 6000 3} -vertical_edge_separate {0 5 0}
+<CMD> selectObject Module grid_clb_3__1_
+<CMD> create_relative_floorplan -place grid_clb_3__1_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  600  0}
+<CMD> zoomBox -4984.24700 829.67900 5430.00700 10152.65900
+<CMD> zoomBox -6161.11100 185.37500 6090.95300 11153.58800
+<CMD> zoomBox -7545.65800 -572.62900 6868.53600 12331.15100
+<CMD> zoomBox -2659.84800 -178.44700 3735.80800 5547.03000
+<CMD> zoomBox -2080.26800 -131.28700 3356.04000 4735.36900
+<CMD> create_relative_floorplan -place grid_clb_3__1_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  600  0}
+<CMD> create_relative_floorplan -place grid_clb_3__2_ -ref_type core_boundary -horizontal_edge_separate {3  600  3} -vertical_edge_separate {0  600  0}
+<CMD> create_relative_floorplan -place grid_clb_3__3_ -ref_type core_boundary -horizontal_edge_separate {3  1200 3} -vertical_edge_separate {0 600 0}
+<CMD> create_relative_floorplan -place grid_clb_3__4_ -ref_type core_boundary -horizontal_edge_separate {3 1800 3} -vertical_edge_separate {0 600 0}
+<CMD> create_relative_floorplan -place grid_clb_3__5_ -ref_type core_boundary -horizontal_edge_separate {3 2400 3} -vertical_edge_separate {0 600 0}
+<CMD> create_relative_floorplan -place grid_clb_3__6_ -ref_type core_boundary -horizontal_edge_separate {3 3000 3} -vertical_edge_separate {0 600 0}
+<CMD> create_relative_floorplan -place grid_clb_3__7_ -ref_type core_boundary -horizontal_edge_separate {3 3600 3} -vertical_edge_separate {0 600 0}
+<CMD> create_relative_floorplan -place grid_clb_3__8_ -ref_type core_boundary -horizontal_edge_separate {3 4200 3} -vertical_edge_separate {0 600 0}
+<CMD> create_relative_floorplan -place grid_clb_3__9_ -ref_type core_boundary -horizontal_edge_separate {3 4800 3} -vertical_edge_separate {0 600 0}
+<CMD> create_relative_floorplan -place grid_clb_3__10_ -ref_type core_boundary -horizontal_edge_separate {3 5400 3} -vertical_edge_separate {0 600 0}
+<CMD> create_relative_floorplan -place grid_clb_3__11_ -ref_type core_boundary -horizontal_edge_separate {3 6000 3} -vertical_edge_separate {0 600 0}
+<CMD> deselectAll
+<CMD> zoomBox -327.18200 563.43500 3011.39200 3552.17100
+<CMD> zoomBox -2080.27100 -131.28900 3356.04000 4735.37000
+<CMD> zoomBox -2882.00500 -449.00400 3513.65600 5276.47800
+<CMD> zoomBox -3825.22000 -822.78600 3699.08700 5913.07500
+<CMD> zoomBox -4934.88500 -1262.52900 3917.24100 6662.01300
+<CMD> zoomBox -6240.37300 -1779.87400 4173.89300 7543.11700
+<CMD> zoomBox -7776.24200 -2388.51600 4475.83600 8579.70900
+<CMD> zoomBox -6057.30600 -1411.36200 4356.96100 7911.63000
+<CMD> pan -1832.26400 6599.46100
+<CMD> selectObject Module grid_clb_4__1_
+<CMD> create_relative_floorplan -place grid_clb_3__1_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0 1200 0}
+<CMD> create_relative_floorplan -place grid_clb_3__2_ -ref_type core_boundary -horizontal_edge_separate {3  600  3} -vertical_edge_separate {0 1200 0}
+<CMD> create_relative_floorplan -place grid_clb_3__3_ -ref_type core_boundary -horizontal_edge_separate {3  1200 3} -vertical_edge_separate {0 1200 0}
+<CMD> create_relative_floorplan -place grid_clb_3__4_ -ref_type core_boundary -horizontal_edge_separate {3 1800 3} -vertical_edge_separate {0 1200 0}
+<CMD> create_relative_floorplan -place grid_clb_3__5_ -ref_type core_boundary -horizontal_edge_separate {3 2400 3} -vertical_edge_separate {0 1200 0}
+<CMD> create_relative_floorplan -place grid_clb_3__6_ -ref_type core_boundary -horizontal_edge_separate {3 3000 3} -vertical_edge_separate {0 1200 0}
+<CMD> create_relative_floorplan -place grid_clb_3__7_ -ref_type core_boundary -horizontal_edge_separate {3 3600 3} -vertical_edge_separate {0 1200 0}
+<CMD> create_relative_floorplan -place grid_clb_3__8_ -ref_type core_boundary -horizontal_edge_separate {3 4200 3} -vertical_edge_separate {0 1200 0}
+<CMD> create_relative_floorplan -place grid_clb_3__9_ -ref_type core_boundary -horizontal_edge_separate {3 4800 3} -vertical_edge_separate {0 1200 0}
+<CMD> create_relative_floorplan -place grid_clb_3__10_ -ref_type core_boundary -horizontal_edge_separate {3 5400 3} -vertical_edge_separate {0 1200 0}
+<CMD> create_relative_floorplan -place grid_clb_3__11_ -ref_type core_boundary -horizontal_edge_separate {3 6000 3} -vertical_edge_separate {0 1200 0}
+<CMD> deselectAll
+<CMD> selectObject Module grid_clb_4__1_
+<CMD> create_relative_floorplan -place grid_clb_4__1_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0 1800 0}
+<CMD> create_relative_floorplan -place grid_clb_4__2_ -ref_type core_boundary -horizontal_edge_separate {3  600  3} -vertical_edge_separate {0 1800 0}
+<CMD> create_relative_floorplan -place grid_clb_4__3_ -ref_type core_boundary -horizontal_edge_separate {3  1200 3} -vertical_edge_separate {0 1800 0}
+<CMD> create_relative_floorplan -place grid_clb_4__4_ -ref_type core_boundary -horizontal_edge_separate {3 1800 3} -vertical_edge_separate {0 1800 0}
+<CMD> create_relative_floorplan -place grid_clb_4__5_ -ref_type core_boundary -horizontal_edge_separate {3 2400 3} -vertical_edge_separate {0 1800 0}
+<CMD> create_relative_floorplan -place grid_clb_4__6_ -ref_type core_boundary -horizontal_edge_separate {3 3000 3} -vertical_edge_separate {0 1800 0}
+<CMD> create_relative_floorplan -place grid_clb_4__7_ -ref_type core_boundary -horizontal_edge_separate {3 3600 3} -vertical_edge_separate {0 1800 0}
+<CMD> create_relative_floorplan -place grid_clb_4__8_ -ref_type core_boundary -horizontal_edge_separate {3 4200 3} -vertical_edge_separate {0 1800 0}
+<CMD> create_relative_floorplan -place grid_clb_4__9_ -ref_type core_boundary -horizontal_edge_separate {3 4800 3} -vertical_edge_separate {0 1800 0}
+<CMD> create_relative_floorplan -place grid_clb_4__10_ -ref_type core_boundary -horizontal_edge_separate {3 5400 3} -vertical_edge_separate {0 1800 0}
+<CMD> create_relative_floorplan -place grid_clb_4__11_ -ref_type core_boundary -horizontal_edge_separate {3 6000 3} -vertical_edge_separate {0 1800 0}
+<CMD> deselectAll
+<CMD> pan -2438.52800 8283.52700
+<CMD> selectObject Module grid_clb_5__1_
+<CMD> deselectAll
+<CMD> panCenter -2999.04100 8248.44300
+<CMD> pan 3260.35300 10162.94500
+<CMD> zoomBox -6450.78200 1103.24600 5801.29700 12071.47200
+<CMD> zoomBox -8221.32400 99.10000 6192.88600 13002.89500
+<CMD> pan -4139.65700 8040.71800
+<CMD> pan 2741.12400 9980.01700
+<CMD> selectObject Module grid_clb_5__1_
+<CMD> deselectAll
+<CMD> selectObject Module grid_clb_4__11_
+<CMD> create_relative_floorplan -place grid_clb_5__1_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0 2400 0}
+<CMD> create_relative_floorplan -place grid_clb_5__2_ -ref_type core_boundary -horizontal_edge_separate {3  600  3} -vertical_edge_separate {0 2400 0}
+<CMD> create_relative_floorplan -place grid_clb_5__3_ -ref_type core_boundary -horizontal_edge_separate {3  1200 3} -vertical_edge_separate {0 2400 0}
+<CMD> create_relative_floorplan -place grid_clb_5__4_ -ref_type core_boundary -horizontal_edge_separate {3 1800 3} -vertical_edge_separate {0 2400 0}
+<CMD> create_relative_floorplan -place grid_clb_5__5_ -ref_type core_boundary -horizontal_edge_separate {3 2400 3} -vertical_edge_separate {0 2400 0}
+<CMD> create_relative_floorplan -place grid_clb_5__6_ -ref_type core_boundary -horizontal_edge_separate {3 3000 3} -vertical_edge_separate {0 2400 0}
+<CMD> create_relative_floorplan -place grid_clb_5__7_ -ref_type core_boundary -horizontal_edge_separate {3 3600 3} -vertical_edge_separate {0 2400 0}
+<CMD> create_relative_floorplan -place grid_clb_5__8_ -ref_type core_boundary -horizontal_edge_separate {3 4200 3} -vertical_edge_separate {0 2400 0}
+<CMD> create_relative_floorplan -place grid_clb_5__9_ -ref_type core_boundary -horizontal_edge_separate {3 4800 3} -vertical_edge_separate {0 2400 0}
+<CMD> create_relative_floorplan -place grid_clb_5__10_ -ref_type core_boundary -horizontal_edge_separate {3 5400 3} -vertical_edge_separate {0 2400 0}
+<CMD> create_relative_floorplan -place grid_clb_5__11_ -ref_type core_boundary -horizontal_edge_separate {3 6000 3} -vertical_edge_separate {0 2400 0}
+<CMD> deselectAll
+<CMD> selectObject Module grid_clb_6__7_
+<CMD> deselectAll
+<CMD> selectObject Module grid_clb_6__8_
+<CMD> deselectAll
+<CMD> selectObject Module grid_clb_6__9_
+<CMD> deselectAll
+<CMD> selectObject Module grid_clb_6__10_
+<CMD> deselectAll
+<CMD> selectObject Module grid_clb_6__11_
+<CMD> deselectAll
+<CMD> selectObject Module grid_clb_7__1_
+<CMD> deselectAll
+<CMD> selectObject Module grid_clb_7__2_
+<CMD> deselectAll
+<CMD> selectObject Module grid_clb_6__7_
+<CMD> zoomBox -8322.01900 -993.62000 3930.06000 9974.60600
+<CMD> zoomBox -7218.85600 185.62300 3195.41100 9508.61500
+<CMD> zoomBox -6281.16900 1187.97900 2570.95900 9112.52300
+<CMD> zoomBox -5484.13400 2039.98100 2040.17500 8775.84400
+<CMD> zoomBox -4806.65400 2764.18400 1589.00800 8489.66700
+<CMD> zoomBox -4230.79700 3379.75600 1205.51700 8246.41700
+<CMD> pan -1969.16900 7603.52100
+<CMD> pan -2081.69300 9551.59200
+<CMD> pan 879.09300 11513.72800
+<CMD> pan 2053.56200 10690.89700
+<CMD> pan 534.48900 8672.49900
+<CMD> create_relative_floorplan -place grid_clb_6__7_ -ref_type core_boundary -horizontal_edge_separate {3 3600 3} -vertical_edge_separate {0 3000 0}
+<CMD> create_relative_floorplan -place grid_clb_6__8_ -ref_type core_boundary -horizontal_edge_separate {3 4200 3} -vertical_edge_separate {0 3000 0}
+<CMD> create_relative_floorplan -place grid_clb_6__9_ -ref_type core_boundary -horizontal_edge_separate {3 4800 3} -vertical_edge_separate {0 3000 0}
+<CMD> create_relative_floorplan -place grid_clb_6__10_ -ref_type core_boundary -horizontal_edge_separate {3 5400 3} -vertical_edge_separate {0 3000 0}
+<CMD> create_relative_floorplan -place grid_clb_6__11_ -ref_type core_boundary -horizontal_edge_separate {3 6000 3} -vertical_edge_separate {0 3000 0}
+<CMD> deselectAll
+<CMD> zoomBox -5492.14100 2617.32400 903.52300 8342.80800
+<CMD> pan -2300.12200 8101.19200
+<CMD> pan -49.64300 10541.96900
+<CMD> pan 4178.28000 10599.88600
+<CMD> pan 2449.05100 6206.48700
+<CMD> zoomBox -1963.59900 1890.20200 5560.71100 8626.06600
+<CMD> zoomBox -4120.79000 877.03200 6293.48300 10200.02900
+<CMD> zoomBox -7220.36000 -49.21800 7193.85900 12854.58500
+<CMD> zoomBox -5474.99100 90.63500 6777.09600 11058.86800
+<CMD> zoomBox -3991.42700 209.51000 6422.84700 9532.50800
+<CMD> zoomBox -2730.39700 310.55300 6121.73600 8235.10200

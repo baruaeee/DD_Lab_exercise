@@ -28,7 +28,7 @@ sudo make install
 
 #### Python upgrade (if python version below 3.7)
 #### while running OpenFPGA tasks, if there are any error related to python syntex
-#### (e.g. variable, etc. out of range, the following version may need to be installed)
+#### (e.g. variable, etc. out of range, the following version (same version as in working ubunutu) may need to be installed)
 #### python3.12 will not work with OpenFPGA (python3.11 should work)
 
 wget https://www.python.org/ftp/python/3.10.12/Python-3.10.12.tgz

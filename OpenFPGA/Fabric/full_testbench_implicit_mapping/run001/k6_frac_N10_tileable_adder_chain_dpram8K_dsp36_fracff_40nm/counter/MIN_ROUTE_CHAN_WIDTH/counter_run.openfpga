@@ -1,6 +1,6 @@
 # Run VPR for the 'and' design
 #--write_rr_graph example_rr_graph.xml
-vpr /home/cae_sajib/Desktop/RZ_home/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/run001/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm/counter/MIN_ROUTE_CHAN_WIDTH/arch/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm.xml counter.blif --clock_modeling ideal
+vpr /home/cae_sajib/Desktop/RZ_home/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/run001/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm/counter/MIN_ROUTE_CHAN_WIDTH/arch/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm.xml counter.blif --clock_modeling ideal --device 3x2 --route_chan_width 20
 
 # Read OpenFPGA architecture definition
 read_openfpga_arch -f /home/cae_sajib/Desktop/RZ_home/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/run001/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm/counter/MIN_ROUTE_CHAN_WIDTH/arch/k6_frac_N10_adder_chain_dpram8K_dsp36_fracff_40nm_openfpga_IHP_sg13g2_cds.xml

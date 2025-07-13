@@ -1,6 +1,6 @@
 * * * * * * * * * * * * * * * * * * * * 
 RunDirectory : /home/cae_sajib/Desktop/RZ_home/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/run001
-python3 /home/cae_sajib/Desktop/RZ_home/Desktop/OpenFPGA/openfpga_flow/scripts/run_fpga_flow.py /home/cae_sajib/Desktop/RZ_home/Desktop/OpenFPGA/openfpga_flow/vpr_arch/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm.xml /home/cae_sajib/Desktop/RZ_home/Desktop/OpenFPGA/openfpga_flow/benchmarks/micro_benchmark/counters/counter_8bit_async_reset/counter.v --top_module counter --run_dir /home/cae_sajib/Desktop/RZ_home/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/run001/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm/counter/MIN_ROUTE_CHAN_WIDTH --fpga_flow yosys_vpr --openfpga_shell_template /home/cae_sajib/Desktop/RZ_home/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/config/full_testbench_bus_group_example_script.openfpga --openfpga_arch_file /home/cae_sajib/Desktop/RZ_home/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/config/k6_frac_N10_adder_chain_dpram8K_dsp36_fracff_40nm_openfpga_IHP_sg13g2_cds.xml --openfpga_sim_setting_file /home/cae_sajib/Desktop/RZ_home/Desktop/OpenFPGA/openfpga_flow/openfpga_simulation_settings/fixed_sim_openfpga.xml --openfpga_verilog_port_mapping  --yosys_tmpl /home/cae_sajib/Desktop/RZ_home/Desktop/OpenFPGA/openfpga_flow/misc/ys_tmpl_yosys_vpr_dff_flow.ys --ys_rewrite_tmpl /home/cae_sajib/Desktop/RZ_home/Desktop/OpenFPGA/openfpga_flow/misc/ys_tmpl_yosys_vpr_flow_with_rewrite.ys --vpr_fpga_verilog --vpr_fpga_verilog_dir /home/cae_sajib/Desktop/RZ_home/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/run001/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm/counter/MIN_ROUTE_CHAN_WIDTH --vpr_fpga_x2p_rename_illegal_port --end_flow_with_test --debug --flow_config /home/cae_sajib/Desktop/RZ_home/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/config/task.conf --default_tool_path /home/cae_sajib/Desktop/RZ_home/Desktop/OpenFPGA/openfpga_flow/scripts/../misc/fpgaflow_default_tool_path.conf --TOP counter --OPENFPGA_PIN_CONSTRAINTS_FILE /home/cae_sajib/Desktop/RZ_home/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/config/pin_constraints_reset.xml --OPENFPGA_BUS_GROUP_FILE /home/cae_sajib/Desktop/RZ_home/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/config/counter8_bus_group.xml --READ_VERILOG_OPTIONS -nolatches --YOSYS_BRAM_MAP_RULES /home/cae_sajib/Desktop/RZ_home/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_40nm_bram.txt --YOSYS_BRAM_MAP_VERILOG /home/cae_sajib/Desktop/RZ_home/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_40nm_bram_map.v --YOSYS_CELL_SIM_VERILOG /home/cae_sajib/Desktop/RZ_home/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v --YOSYS_DFF_MAP_VERILOG /home/cae_sajib/Desktop/RZ_home/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_dff_map.v --YOSYS_DSP_MAP_PARAMETERS -D DSP_A_MAXWIDTH=36 -D DSP_B_MAXWIDTH=36 -D DSP_A_MINWIDTH=2 -D DSP_B_MINWIDTH=2 -D DSP_NAME=mult_36x36 --YOSYS_DSP_MAP_VERILOG /home/cae_sajib/Desktop/RZ_home/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_40nm_dsp_map.v
+python3 /home/cae_sajib/Desktop/RZ_home/Desktop/OpenFPGA/openfpga_flow/scripts/run_fpga_flow.py /home/cae_sajib/Desktop/RZ_home/Desktop/OpenFPGA/openfpga_flow/vpr_arch/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm.xml /home/cae_sajib/Desktop/RZ_home/Desktop/OpenFPGA/openfpga_flow/benchmarks/micro_benchmark/counters/counter_8bit_async_reset/counter.v --top_module counter --run_dir /home/cae_sajib/Desktop/RZ_home/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/run001/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm/counter/MIN_ROUTE_CHAN_WIDTH --fpga_flow yosys_vpr --openfpga_shell_template /home/cae_sajib/Desktop/RZ_home/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/config/full_testbench_bus_group_example_script.openfpga --openfpga_arch_file /home/cae_sajib/Desktop/RZ_home/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/config/k6_frac_N10_adder_chain_dpram8K_dsp36_fracff_40nm_openfpga_IHP_sg13g2_cds.xml --openfpga_sim_setting_file /home/cae_sajib/Desktop/RZ_home/Desktop/OpenFPGA/openfpga_flow/openfpga_simulation_settings/fixed_sim_openfpga.xml --openfpga_vpr_device_layout --device 3x2 --route_chan_width 20 --openfpga_verilog_port_mapping  --openfpga_fast_configuration  --yosys_tmpl /home/cae_sajib/Desktop/RZ_home/Desktop/OpenFPGA/openfpga_flow/misc/ys_tmpl_yosys_vpr_dff_flow.ys --ys_rewrite_tmpl /home/cae_sajib/Desktop/RZ_home/Desktop/OpenFPGA/openfpga_flow/misc/ys_tmpl_yosys_vpr_flow_with_rewrite.ys --vpr_fpga_verilog --vpr_fpga_verilog_dir /home/cae_sajib/Desktop/RZ_home/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/run001/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm/counter/MIN_ROUTE_CHAN_WIDTH --vpr_fpga_x2p_rename_illegal_port --end_flow_with_test --debug --flow_config /home/cae_sajib/Desktop/RZ_home/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/config/task.conf --default_tool_path /home/cae_sajib/Desktop/RZ_home/Desktop/OpenFPGA/openfpga_flow/scripts/../misc/fpgaflow_default_tool_path.conf --TOP counter --OPENFPGA_PIN_CONSTRAINTS_FILE /home/cae_sajib/Desktop/RZ_home/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/config/pin_constraints_reset.xml --OPENFPGA_BUS_GROUP_FILE /home/cae_sajib/Desktop/RZ_home/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/config/counter8_bus_group.xml --READ_VERILOG_OPTIONS -nolatches --YOSYS_BRAM_MAP_RULES /home/cae_sajib/Desktop/RZ_home/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_40nm_bram.txt --YOSYS_BRAM_MAP_VERILOG /home/cae_sajib/Desktop/RZ_home/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_40nm_bram_map.v --YOSYS_CELL_SIM_VERILOG /home/cae_sajib/Desktop/RZ_home/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_cell_sim.v --YOSYS_DFF_MAP_VERILOG /home/cae_sajib/Desktop/RZ_home/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm_dff_map.v --YOSYS_DSP_MAP_PARAMETERS -D DSP_A_MAXWIDTH=36 -D DSP_B_MAXWIDTH=36 -D DSP_A_MINWIDTH=2 -D DSP_B_MINWIDTH=2 -D DSP_NAME=mult_36x36 --YOSYS_DSP_MAP_VERILOG /home/cae_sajib/Desktop/RZ_home/Desktop/OpenFPGA/openfpga_flow/openfpga_yosys_techlib/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_40nm_dsp_map.v
 * * * * * * * * * * * * * * * * * * * * 
 INFO - Validating command line arguments
 INFO - Setting loggger in debug mode
@@ -21,10 +21,91 @@ INFO - OpenFPGAShell Revision: v8.0.0-13067-g7950a1bac Compiled: 2025-07-08T23:1
 INFO - OpenFPGA Shell Run is written in file openfpgashell.log
 INFO - vpr result extracted in file vpr_stat.result
 INFO - Launching iverilog_verification 
-INFO - iverilog_verification is written in file iverilog_output.txt
-INFO - Launching vvp_verification 
-INFO - vvp_verification is written in file vvp_sim_output.txt
-ERROR - 
+ERROR - iverilog_verification run failed with returncode 83
+ERROR - command iverilog -o compiled_counter ./SRC/counter_include_netlists.v -s counter_autocheck_top_tb -I ./SRC
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../GPIO/gpio_ihp_sg13g2_cds_netlist.v:22: error: Unknown module type: sg13g2_IOPadInOut30mA
+ERROR - -->>./../../../../../mem/dpram8k.v:39: error: Unknown module type: RM_IHPSG13_1P_1024x8_c2_bm_bist
+ERROR - -->>./../../../../../mem/dpram8k.v:59: error: Unknown module type: RM_IHPSG13_1P_1024x8_c2_bm_bist
+ERROR - -->>83 error(s) during elaboration.
 ERROR - Current working directory : /home/cae_sajib/Desktop/RZ_home/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/full_testbench_implicit_mapping/run001/k6_frac_N10_tileable_adder_chain_dpram8K_dsp36_fracff_40nm/counter/MIN_ROUTE_CHAN_WIDTH
-ERROR - Failed to run VVP verification
+ERROR - Failed to run iverilog_verification task
 ERROR - Exiting . . . . . .

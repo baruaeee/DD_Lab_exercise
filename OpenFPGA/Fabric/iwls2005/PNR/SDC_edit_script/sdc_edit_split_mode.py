@@ -87,7 +87,11 @@ def main():
 	#(r'_out\n', '_out*\n'),
 	#(r'_tail\n', '_tail*\n'),
 	(r'grid_clb/', 'grid_clb_*__*_/'),
-	#(r'grid_io_left/', 'grid_io_left_*__*_/'),
+	(r'grid_io_left/', 'grid_io_left_*__*_/'),
+	(r'grid_memory/', 'grid_memory_*__*_/'),
+	(r'grid_mult_36/', 'grid_mult_36_*__*_/'),
+	(r'logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder_2/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder', 'logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__adder_*'),
+	(r'logical_tile_mult_36_mode_mult_36x36__mult_36x36_slice_mode_default__mult_36x36_0/logical_tile_mult_36_mode_mult_36x36__mult_36x36_slice_mode_default__mult_36x36', 'logical_tile_mult_36_mode_mult_36x36__mult_36x36_slice_mode_default__mult_36x36_0'),
 	(r' fpga_top/', ' ') 
         
         # Example 2: Regex pattern replacement

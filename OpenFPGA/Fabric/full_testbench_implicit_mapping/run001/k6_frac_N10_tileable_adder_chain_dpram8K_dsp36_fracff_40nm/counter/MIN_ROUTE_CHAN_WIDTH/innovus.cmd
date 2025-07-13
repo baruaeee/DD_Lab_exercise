@@ -1,7 +1,7 @@
 #######################################################
 #                                                     
 #  Innovus Command Logging File                     
-#  Created on Wed Jul  9 21:41:26 2025                
+#  Created on Sun Jul 13 01:04:35 2025                
 #                                                     
 #######################################################
 
@@ -367,3 +367,30 @@ set lefdefInputCheckColoredShape 0
 set load_netlist_ignore_undefined_cell 1
 set init_design_uniquify 1
 init_design
+setDrawView fplan
+zoomBox -1998.69800 -591.55600 2614.97300 3538.66400
+zoomBox -3424.57700 -988.14300 2961.12700 4728.42500
+zoomBox -2891.74700 -874.14200 2536.10200 3984.94100
+zoomBox -2438.84100 -777.24200 2174.83100 3352.97900
+is_innovus_plus
+setLayerPreference node_layer -winName .uiCellView.win -isVisible 1
+setLayerPreference node_misc -winName .uiCellView.win -isVisible 1
+is_innovus_plus
+selectObject Module grid_clb_3__2_
+deselectObject Module grid_clb_3__2_
+selectObject Module grid_clb_3__1_
+selectObject Module grid_clb_3__1_
+selectObject Module grid_clb_3__1_/logical_tile_clb_mode_clb__0
+selectObject Module grid_clb_3__1_/logical_tile_clb_mode_clb__0
+selectObject Module grid_clb_3__1_/logical_tile_clb_mode_clb__0
+selectObject Module grid_clb_3__1_/logical_tile_clb_mode_clb__0
+deselectObject Module grid_clb_3__1_/logical_tile_clb_mode_clb__0
+selectObject Module grid_clb_3__1_/logical_tile_clb_mode_clb__0
+deselectObject Module grid_clb_3__1_/logical_tile_clb_mode_clb__0
+selectObject Module grid_clb_3__1_/logical_tile_clb_mode_clb__0
+deselectObject Module grid_clb_3__1_/logical_tile_clb_mode_clb__0
+deselectObject Module grid_clb_3__1_
+selectObject Module grid_clb_3__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_3
+deselectObject Module grid_clb_3__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_3
+selectObject Module grid_clb_3__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_5
+selectObject Module grid_clb_3__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_5/logical_tile_clb_mode_default__fle_mode_physical__fabric_0

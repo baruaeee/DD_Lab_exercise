@@ -4,31 +4,80 @@
 #	Description: Disable routing multiplexer outputs for PnR
 #	Author: Xifan TANG 
 #	Organization: University of Utah 
-#	Date: Wed Jul  9 19:06:52 2025
+#	Date: Sun Jul 13 00:17:31 2025
 #############################################
 
+set_disable_timing sb_*__*_/mux_right_track_*/out
 set_disable_timing sb_*__*_/mux_top_track_*/out
-set_disable_timing sb_*__*_/mux_bottom_track_*/out
-set_disable_timing cbx_*__*_/mux_bottom_ipin_*/out
+set_disable_timing sb_*__*_/mux_right_track_*/out
 set_disable_timing cbx_*__*_/mux_top_ipin_*/out
 set_disable_timing cbx_*__*_/mux_bottom_ipin_*/out
+set_disable_timing cbx_*__*_/mux_bottom_ipin_*/out
+set_disable_timing cbx_*__*_/mux_top_ipin_*/out
+set_disable_timing cby_*__*_/mux_right_ipin_*/out
+set_disable_timing cby_*__*_/mux_right_ipin_*/out
 set_disable_timing cby_*__*_/mux_right_ipin_*/out
 set_disable_timing cby_*__*_/mux_left_ipin_*/out
 set_disable_timing cby_*__*_/mux_right_ipin_*/out
+set_disable_timing sb_*__*_/mux_top_track_*/out
+set_disable_timing sb_*__*_/mux_right_track_*/out
+set_disable_timing sb_*__*_/mux_right_track_*/out
+set_disable_timing sb_*__*_/mux_bottom_track_*/out
+set_disable_timing sb_*__*_/mux_top_track_*/out
+set_disable_timing sb_*__*_/mux_top_track_*/out
+set_disable_timing sb_*__*_/mux_bottom_track_*/out
+set_disable_timing sb_*__*_/mux_top_track_*/out
+set_disable_timing sb_*__*_/mux_left_track_*/out
+set_disable_timing sb_*__*_/mux_bottom_track_*/out
+set_disable_timing sb_*__*_/mux_left_track_*/out
+set_disable_timing cbx_*__*_/mux_bottom_ipin_*/out
+set_disable_timing cbx_*__*_/mux_bottom_ipin_*/out
+set_disable_timing cbx_*__*_/mux_bottom_ipin_*/out
+set_disable_timing sb_*__*_/mux_right_track_*/out
 set_disable_timing sb_*__*_/mux_right_track_*/out
 set_disable_timing sb_*__*_/mux_top_track_*/out
 set_disable_timing sb_*__*_/mux_left_track_*/out
 set_disable_timing sb_*__*_/mux_bottom_track_*/out
 set_disable_timing sb_*__*_/mux_top_track_*/out
 set_disable_timing sb_*__*_/mux_right_track_*/out
-set_disable_timing sb_*__*_/mux_right_track_*/out
+set_disable_timing sb_*__*_/mux_top_track_*/out
+set_disable_timing sb_*__*_/mux_left_track_*/out
+set_disable_timing sb_*__*_/mux_left_track_*/out
 set_disable_timing sb_*__*_/mux_bottom_track_*/out
 set_disable_timing sb_*__*_/mux_left_track_*/out
+set_disable_timing sb_*__*_/mux_top_track_*/out
 set_disable_timing sb_*__*_/mux_left_track_*/out
 set_disable_timing sb_*__*_/mux_top_track_*/out
 set_disable_timing sb_*__*_/mux_right_track_*/out
-set_disable_timing sb_*__*_/mux_bottom_track_*/out
 set_disable_timing sb_*__*_/mux_left_track_*/out
+set_disable_timing sb_*__*_/mux_top_track_*/out
+set_disable_timing sb_*__*_/mux_bottom_track_*/out
+set_disable_timing sb_*__*_/mux_top_track_*/out
+set_disable_timing sb_*__*_/mux_bottom_track_*/out
+set_disable_timing sb_*__*_/mux_right_track_*/out
+set_disable_timing sb_*__*_/mux_bottom_track_*/out
+set_disable_timing sb_*__*_/mux_right_track_*/out
+set_disable_timing sb_*__*_/mux_left_track_*/out
+set_disable_timing sb_*__*_/mux_left_track_*/out
+set_disable_timing sb_*__*_/mux_right_track_*/out
+set_disable_timing sb_*__*_/mux_left_track_*/out
+set_disable_timing sb_*__*_/mux_right_track_*/out
+set_disable_timing sb_*__*_/mux_bottom_track_*/out
+set_disable_timing sb_*__*_/mux_right_track_*/out
+set_disable_timing sb_*__*_/mux_bottom_track_*/out
+set_disable_timing sb_*__*_/mux_bottom_track_*/out
+set_disable_timing sb_*__*_/mux_right_track_*/out
+set_disable_timing sb_*__*_/mux_left_track_*/out
+set_disable_timing sb_*__*_/mux_bottom_track_*/out
+set_disable_timing sb_*__*_/mux_right_track_*/out
+set_disable_timing sb_*__*_/mux_left_track_*/out
+set_disable_timing sb_*__*_/mux_top_track_*/out
+set_disable_timing sb_*__*_/mux_top_track_*/out
+set_disable_timing sb_*__*_/mux_bottom_track_*/out
+set_disable_timing sb_*__*_/mux_bottom_track_*/out
+set_disable_timing sb_*__*_/mux_top_track_*/out
+set_disable_timing sb_*__*_/mux_top_track_*/out
+set_disable_timing sb_*__*_/mux_top_track_*/out
 set_disable_timing sb_*__*_/mux_top_track_*/out
 set_disable_timing sb_*__*_/mux_bottom_track_*/out
 set_disable_timing grid_clb_*__*_/logical_tile_clb_mode_clb__*/mux_fle_*_in_*/out

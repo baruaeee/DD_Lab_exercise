@@ -3,7 +3,7 @@
 //	Description: Fabric Netlist Summary
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Wed Jul  9 19:06:49 2025
+//	Date: Sun Jul 13 00:17:15 2025
 //-------------------------------------------
 // ------ Include defines: preproc flags -----
 `include "./SRC/fpga_defines.v"
@@ -54,12 +54,25 @@
 // ------ Include routing module netlists -----
 `include "./SRC/routing/sb_0__0_.v"
 `include "./SRC/routing/sb_0__1_.v"
+`include "./SRC/routing/sb_0__2_.v"
 `include "./SRC/routing/sb_1__0_.v"
 `include "./SRC/routing/sb_1__1_.v"
+`include "./SRC/routing/sb_1__2_.v"
+`include "./SRC/routing/sb_2__0_.v"
+`include "./SRC/routing/sb_2__1_.v"
+`include "./SRC/routing/sb_2__2_.v"
+`include "./SRC/routing/sb_3__0_.v"
+`include "./SRC/routing/sb_3__1_.v"
+`include "./SRC/routing/sb_3__2_.v"
 `include "./SRC/routing/cbx_1__0_.v"
 `include "./SRC/routing/cbx_1__1_.v"
+`include "./SRC/routing/cbx_1__2_.v"
+`include "./SRC/routing/cbx_2__0_.v"
 `include "./SRC/routing/cby_0__1_.v"
 `include "./SRC/routing/cby_1__1_.v"
+`include "./SRC/routing/cby_2__1_.v"
+`include "./SRC/routing/cby_2__2_.v"
+`include "./SRC/routing/cby_3__1_.v"
 
 // ------ Include tile module netlists -----
 

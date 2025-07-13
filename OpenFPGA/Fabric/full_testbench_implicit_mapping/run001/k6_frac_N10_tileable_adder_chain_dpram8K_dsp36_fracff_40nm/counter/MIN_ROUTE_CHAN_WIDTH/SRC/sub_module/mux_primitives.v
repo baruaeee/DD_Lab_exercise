@@ -3,7 +3,7 @@
 //	Description: Multiplexer primitives
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Wed Jul  9 19:06:47 2025
+//	Date: Sun Jul 13 00:17:12 2025
 //-------------------------------------------
 //----- Default net type -----
 // `default_nettype none
@@ -108,6 +108,70 @@ output [0:0] out;
 
 endmodule
 // ----- END Verilog module for mux_2level_tapbuf_basis_input2_mem1 -----
+
+//----- Default net type -----
+// `default_nettype wire
+
+
+
+
+//----- Default net type -----
+// `default_nettype none
+
+// ----- Verilog module for mux_2level_tapbuf_basis_input4_mem4 -----
+module mux_2level_tapbuf_basis_input4_mem4(in,
+                                           mem,
+                                           mem_inv,
+                                           out);
+//----- INPUT PORTS -----
+input [0:3] in;
+//----- INPUT PORTS -----
+input [0:3] mem;
+//----- INPUT PORTS -----
+input [0:3] mem_inv;
+//----- OUTPUT PORTS -----
+output [0:0] out;
+
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
+
+
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
+
+
+
+// ----- BEGIN Local short connections -----
+// ----- END Local short connections -----
+// ----- BEGIN Local output short connections -----
+// ----- END Local output short connections -----
+
+	tgate tgate_0_ (
+		.in(in[0]),
+		.sel(mem[0]),
+		.selb(mem_inv[0]),
+		.out(out));
+
+	tgate tgate_1_ (
+		.in(in[1]),
+		.sel(mem[1]),
+		.selb(mem_inv[1]),
+		.out(out));
+
+	tgate tgate_2_ (
+		.in(in[2]),
+		.sel(mem[2]),
+		.selb(mem_inv[2]),
+		.out(out));
+
+	tgate tgate_3_ (
+		.in(in[3]),
+		.sel(mem[3]),
+		.selb(mem_inv[3]),
+		.out(out));
+
+endmodule
+// ----- END Verilog module for mux_2level_tapbuf_basis_input4_mem4 -----
 
 //----- Default net type -----
 // `default_nettype wire

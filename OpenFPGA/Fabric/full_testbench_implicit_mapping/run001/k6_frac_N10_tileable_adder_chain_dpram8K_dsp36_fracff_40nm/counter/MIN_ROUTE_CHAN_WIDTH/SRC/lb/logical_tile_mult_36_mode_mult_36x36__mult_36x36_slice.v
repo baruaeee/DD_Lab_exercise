@@ -3,7 +3,7 @@
 //	Description: Verilog modules for pb_type: mult_36x36_slice
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Wed Jul  9 19:06:48 2025
+//	Date: Sun Jul 13 00:17:14 2025
 //-------------------------------------------
 // ----- BEGIN Physical programmable logic block Verilog module: mult_36x36_slice -----
 //----- Default net type -----

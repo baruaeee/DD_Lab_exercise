@@ -461,5 +461,5 @@ Dumping module `\counter'.
 
 End of script. Logfile hash: 95222d31c5, CPU: user 0.07s system 0.01s, MEM: 23.50 MB peak
 Yosys 0.55+3 (git sha1 e60cf3e2f, g++ 11.4.0-1ubuntu1~22.04 -fPIC -O3)
-Time spent: 66% 1x abc (0 sec), 7% 15x opt_expr (0 sec), ...
+Time spent: 61% 1x abc (0 sec), 9% 15x opt_expr (0 sec), ...
 0

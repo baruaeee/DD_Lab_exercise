@@ -4,12 +4,20 @@
 #	Description: Disable Switch Block outputs for PnR
 #	Author: Xifan TANG 
 #	Organization: University of Utah 
-#	Date: Wed Jul  9 19:06:52 2025
+#	Date: Sun Jul 13 00:17:31 2025
 #############################################
 
 set_disable_timing sb_*__*_/chany_top_out
 
 set_disable_timing sb_*__*_/chanx_right_out
+
+set_disable_timing sb_*__*_/ccff_tail
+
+set_disable_timing sb_*__*_/chany_top_out
+
+set_disable_timing sb_*__*_/chanx_right_out
+
+set_disable_timing sb_*__*_/chany_bottom_out
 
 set_disable_timing sb_*__*_/ccff_tail
 
@@ -20,6 +28,62 @@ set_disable_timing sb_*__*_/chany_bottom_out
 set_disable_timing sb_*__*_/ccff_tail
 
 set_disable_timing sb_*__*_/chany_top_out
+
+set_disable_timing sb_*__*_/chanx_right_out
+
+set_disable_timing sb_*__*_/chanx_left_out
+
+set_disable_timing sb_*__*_/ccff_tail
+
+set_disable_timing sb_*__*_/chany_top_out
+
+set_disable_timing sb_*__*_/chany_bottom_out
+
+set_disable_timing sb_*__*_/chanx_left_out
+
+set_disable_timing sb_*__*_/ccff_tail
+
+set_disable_timing sb_*__*_/chanx_right_out
+
+set_disable_timing sb_*__*_/chany_bottom_out
+
+set_disable_timing sb_*__*_/chanx_left_out
+
+set_disable_timing sb_*__*_/ccff_tail
+
+set_disable_timing sb_*__*_/chany_top_out
+
+set_disable_timing sb_*__*_/chanx_right_out
+
+set_disable_timing sb_*__*_/chanx_left_out
+
+set_disable_timing sb_*__*_/ccff_tail
+
+set_disable_timing sb_*__*_/chany_top_out
+
+set_disable_timing sb_*__*_/chanx_right_out
+
+set_disable_timing sb_*__*_/chany_bottom_out
+
+set_disable_timing sb_*__*_/ccff_tail
+
+set_disable_timing sb_*__*_/chanx_right_out
+
+set_disable_timing sb_*__*_/chany_bottom_out
+
+set_disable_timing sb_*__*_/chanx_left_out
+
+set_disable_timing sb_*__*_/ccff_tail
+
+set_disable_timing sb_*__*_/chany_top_out
+
+set_disable_timing sb_*__*_/chanx_left_out
+
+set_disable_timing sb_*__*_/ccff_tail
+
+set_disable_timing sb_*__*_/chany_top_out
+
+set_disable_timing sb_*__*_/chany_bottom_out
 
 set_disable_timing sb_*__*_/chanx_left_out
 
