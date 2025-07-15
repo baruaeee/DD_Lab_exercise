@@ -40,6 +40,17 @@ create_relative_floorplan -place grid_clb_1__10_ -ref_type core_boundary -horizo
 
 create_relative_floorplan -place grid_clb_1__11_ -ref_type core_boundary -horizontal_edge_separate {3 6000 3} -vertical_edge_separate {0 5 0}
 
+## memory 2nd Column
+create_relative_floorplan -place grid_memory_2__1_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0 690 0}
+
+create_relative_floorplan -place grid_memory_2__3_ -ref_type core_boundary -horizontal_edge_separate {3  1200 3} -vertical_edge_separate {0 690 0}
+
+create_relative_floorplan -place grid_memory_2__5_ -ref_type core_boundary -horizontal_edge_separate {3 2400 3} -vertical_edge_separate {0 690 0}
+
+create_relative_floorplan -place grid_memory_2__7_ -ref_type core_boundary -horizontal_edge_separate {3 3600 3} -vertical_edge_separate {0 690 0}
+
+create_relative_floorplan -place grid_memory_2__9_ -ref_type core_boundary -horizontal_edge_separate {3 4800 3} -vertical_edge_separate {0 690 0}
+
 ## CLB 3rd Column
 create_relative_floorplan -place grid_clb_3__1_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0 1200 0}
 
@@ -109,6 +120,10 @@ create_relative_floorplan -place grid_clb_5__10_ -ref_type core_boundary -horizo
 
 create_relative_floorplan -place grid_clb_5__11_ -ref_type core_boundary -horizontal_edge_separate {3 6000 3} -vertical_edge_separate {0 2400 0}
 
+## multiplier 6th Column
+
+create_relative_floorplan -place grid_mult_36_6__1_ -ref_type core_boundary -horizontal_edge_separate {3 5 3} -vertical_edge_separate {0 3100 0}
+
 ## CLB 6th Column
 
 create_relative_floorplan -place grid_clb_6__7_ -ref_type core_boundary -horizontal_edge_separate {3 3600 3} -vertical_edge_separate {0 3000 0}
@@ -120,6 +135,111 @@ create_relative_floorplan -place grid_clb_6__9_ -ref_type core_boundary -horizon
 create_relative_floorplan -place grid_clb_6__10_ -ref_type core_boundary -horizontal_edge_separate {3 5400 3} -vertical_edge_separate {0 3000 0}
 
 create_relative_floorplan -place grid_clb_6__11_ -ref_type core_boundary -horizontal_edge_separate {3 6000 3} -vertical_edge_separate {0 3000 0}
+
+## CLB 7th Column
+create_relative_floorplan -place grid_clb_7__1_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0 3600 0}
+
+create_relative_floorplan -place grid_clb_7__2_ -ref_type core_boundary -horizontal_edge_separate {3  600  3} -vertical_edge_separate {0 3600 0}
+
+create_relative_floorplan -place grid_clb_7__3_ -ref_type core_boundary -horizontal_edge_separate {3  1200 3} -vertical_edge_separate {0 3600 0}
+
+create_relative_floorplan -place grid_clb_7__4_ -ref_type core_boundary -horizontal_edge_separate {3 1800 3} -vertical_edge_separate {0 3600 0}
+
+create_relative_floorplan -place grid_clb_7__5_ -ref_type core_boundary -horizontal_edge_separate {3 2400 3} -vertical_edge_separate {0 3600 0}
+
+create_relative_floorplan -place grid_clb_7__6_ -ref_type core_boundary -horizontal_edge_separate {3 3000 3} -vertical_edge_separate {0 3600 0}
+
+create_relative_floorplan -place grid_clb_7__7_ -ref_type core_boundary -horizontal_edge_separate {3 3600 3} -vertical_edge_separate {0 3600 0}
+
+create_relative_floorplan -place grid_clb_7__8_ -ref_type core_boundary -horizontal_edge_separate {3 4200 3} -vertical_edge_separate {0 3600 0}
+
+create_relative_floorplan -place grid_clb_7__9_ -ref_type core_boundary -horizontal_edge_separate {3 4800 3} -vertical_edge_separate {0 3600 0}
+
+create_relative_floorplan -place grid_clb_7__10_ -ref_type core_boundary -horizontal_edge_separate {3 5400 3} -vertical_edge_separate {0 3600 0}
+
+create_relative_floorplan -place grid_clb_7__11_ -ref_type core_boundary -horizontal_edge_separate {3 6000 3} -vertical_edge_separate {0 3600 0}
+
+## CLB 8th Column
+create_relative_floorplan -place grid_clb_8__1_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0 4200 0}
+
+create_relative_floorplan -place grid_clb_8__2_ -ref_type core_boundary -horizontal_edge_separate {3  600  3} -vertical_edge_separate {0 4200 0}
+
+create_relative_floorplan -place grid_clb_8__3_ -ref_type core_boundary -horizontal_edge_separate {3  1200 3} -vertical_edge_separate {0 4200 0}
+
+create_relative_floorplan -place grid_clb_8__4_ -ref_type core_boundary -horizontal_edge_separate {3 1800 3} -vertical_edge_separate {0 4200 0}
+
+create_relative_floorplan -place grid_clb_8__5_ -ref_type core_boundary -horizontal_edge_separate {3 2400 3} -vertical_edge_separate {0 4200 0}
+
+create_relative_floorplan -place grid_clb_8__6_ -ref_type core_boundary -horizontal_edge_separate {3 3000 3} -vertical_edge_separate {0 4200 0}
+
+create_relative_floorplan -place grid_clb_8__7_ -ref_type core_boundary -horizontal_edge_separate {3 3600 3} -vertical_edge_separate {0 4200 0}
+
+create_relative_floorplan -place grid_clb_8__8_ -ref_type core_boundary -horizontal_edge_separate {3 4200 3} -vertical_edge_separate {0 4200 0}
+
+create_relative_floorplan -place grid_clb_8__9_ -ref_type core_boundary -horizontal_edge_separate {3 4800 3} -vertical_edge_separate {0 4200 0}
+
+create_relative_floorplan -place grid_clb_8__10_ -ref_type core_boundary -horizontal_edge_separate {3 5400 3} -vertical_edge_separate {0 4200 0}
+
+create_relative_floorplan -place grid_clb_8__11_ -ref_type core_boundary -horizontal_edge_separate {3 6000 3} -vertical_edge_separate {0 4200 0}
+
+## CLB 9th Column
+create_relative_floorplan -place grid_clb_9__1_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0 4800 0}
+
+create_relative_floorplan -place grid_clb_9__2_ -ref_type core_boundary -horizontal_edge_separate {3  600  3} -vertical_edge_separate {0 4800 0}
+
+create_relative_floorplan -place grid_clb_9__3_ -ref_type core_boundary -horizontal_edge_separate {3  1200 3} -vertical_edge_separate {0 4800 0}
+
+create_relative_floorplan -place grid_clb_9__4_ -ref_type core_boundary -horizontal_edge_separate {3 1800 3} -vertical_edge_separate {0 4800 0}
+
+create_relative_floorplan -place grid_clb_9__5_ -ref_type core_boundary -horizontal_edge_separate {3 2400 3} -vertical_edge_separate {0 4800 0}
+
+create_relative_floorplan -place grid_clb_9__6_ -ref_type core_boundary -horizontal_edge_separate {3 3000 3} -vertical_edge_separate {0 4800 0}
+
+create_relative_floorplan -place grid_clb_9__7_ -ref_type core_boundary -horizontal_edge_separate {3 3600 3} -vertical_edge_separate {0 4800 0}
+
+create_relative_floorplan -place grid_clb_9__8_ -ref_type core_boundary -horizontal_edge_separate {3 4200 3} -vertical_edge_separate {0 4800 0}
+
+create_relative_floorplan -place grid_clb_9__9_ -ref_type core_boundary -horizontal_edge_separate {3 4800 3} -vertical_edge_separate {0 4800 0}
+
+create_relative_floorplan -place grid_clb_9__10_ -ref_type core_boundary -horizontal_edge_separate {3 5400 3} -vertical_edge_separate {0 4800 0}
+
+create_relative_floorplan -place grid_clb_9__11_ -ref_type core_boundary -horizontal_edge_separate {3 6000 3} -vertical_edge_separate {0 4800 0}
+
+## Memory 10th Column
+create_relative_floorplan -place grid_memory_10__1_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0 5490 0}
+
+create_relative_floorplan -place grid_memory_10__3_ -ref_type core_boundary -horizontal_edge_separate {3  1200 3} -vertical_edge_separate {0 5490 0}
+
+create_relative_floorplan -place grid_memory_10__5_ -ref_type core_boundary -horizontal_edge_separate {3 2400 3} -vertical_edge_separate {0 5490 0}
+
+create_relative_floorplan -place grid_memory_10__7_ -ref_type core_boundary -horizontal_edge_separate {3 3600 3} -vertical_edge_separate {0 5490 0}
+
+create_relative_floorplan -place grid_memory_10__9_ -ref_type core_boundary -horizontal_edge_separate {3 4800 3} -vertical_edge_separate {0 5490 0}
+
+## CLB 11th Column
+create_relative_floorplan -place grid_clb_11__1_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0 6000 0}
+
+create_relative_floorplan -place grid_clb_11__2_ -ref_type core_boundary -horizontal_edge_separate {3  600  3} -vertical_edge_separate {0 6000 0}
+
+create_relative_floorplan -place grid_clb_11__3_ -ref_type core_boundary -horizontal_edge_separate {3  1200 3} -vertical_edge_separate {0 6000 0}
+
+create_relative_floorplan -place grid_clb_11__4_ -ref_type core_boundary -horizontal_edge_separate {3 1800 3} -vertical_edge_separate {0 6000 0}
+
+create_relative_floorplan -place grid_clb_11__5_ -ref_type core_boundary -horizontal_edge_separate {3 2400 3} -vertical_edge_separate {0 6000 0}
+
+create_relative_floorplan -place grid_clb_11__6_ -ref_type core_boundary -horizontal_edge_separate {3 3000 3} -vertical_edge_separate {0 6000 0}
+
+create_relative_floorplan -place grid_clb_11__7_ -ref_type core_boundary -horizontal_edge_separate {3 3600 3} -vertical_edge_separate {0 6000 0}
+
+create_relative_floorplan -place grid_clb_11__8_ -ref_type core_boundary -horizontal_edge_separate {3 4200 3} -vertical_edge_separate {0 6000 0}
+
+create_relative_floorplan -place grid_clb_11__9_ -ref_type core_boundary -horizontal_edge_separate {3 4800 3} -vertical_edge_separate {0 6000 0}
+
+create_relative_floorplan -place grid_clb_11__10_ -ref_type core_boundary -horizontal_edge_separate {3 5400 3} -vertical_edge_separate {0 6000 0}
+
+create_relative_floorplan -place grid_clb_11__11_ -ref_type core_boundary -horizontal_edge_separate {3 6000 3} -vertical_edge_separate {0 6000 0}
+
+
 
 
 
