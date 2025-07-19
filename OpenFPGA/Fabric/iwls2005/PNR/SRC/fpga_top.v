@@ -9,30 +9,30 @@
 // `default_nettype none
 
 // ----- Verilog module for fpga_top -----
-module fpga_top(op_clk,
-                op_reset,
-                op_set,
-                pReset,
-                prog_clk,
+module fpga_top(padin_op_clk,
+                padin_op_reset,
+                padin_op_set,
+                padin_pReset,
+                padin_prog_clk,
                 gfpga_pad_GPIO_PAD,
-                ccff_head,
-                ccff_tail);
+                padin_ccff_head,
+                padin_ccff_tail);
 //----- GLOBAL PORTS -----
-input [0:0] op_clk;
+input [0:0] padin_op_clk;
 //----- GLOBAL PORTS -----
-input [0:0] op_reset;
+input [0:0] padin_op_reset;
 //----- GLOBAL PORTS -----
-input [0:0] op_set;
+input [0:0] padin_op_set;
 //----- GLOBAL PORTS -----
-input [0:0] pReset;
+input [0:0] padin_pReset;
 //----- GLOBAL PORTS -----
-input [0:0] prog_clk;
+input [0:0] padin_prog_clk;
 //----- GPIO PORTS -----
 inout [0:351] gfpga_pad_GPIO_PAD;
 //----- INPUT PORTS -----
-input [0:0] ccff_head;
+input [0:0] padin_ccff_head;
 //----- OUTPUT PORTS -----
-output [0:0] ccff_tail;
+output [0:0] padin_ccff_tail;
 
 //----- BEGIN wire-connection ports -----
 //----- END wire-connection ports -----
@@ -19227,24 +19227,16 @@ wire [0:0] sb_9__9__undriven_top_left_grid_right_width_0_height_0_subtile_0__pin
 
 // ----- BEGIN Local short connections -----
 // ----- END Local short connections -----
-wire padin_pReset, padin_prog_clk, padin_op_set, padin_op_reset, padin_op_clk, padin_ccff_head, padin_ccff_tail;
-wire padout_pReset, padout_prog_clk, padout_op_set, padout_op_reset, padout_op_clk, padout_ccff_head, padout_ccff_tail;
-  
-  assign padout_pReset = pReset;
-  assign padout_prog_clk = prog_clk;
-  assign padout_op_set = op_set;
-  assign padout_op_reset = op_reset;
-  assign padout_op_clk = op_clk;
-  assign padout_ccff_head = ccff_head;
-  assign padout_ccff_tail = ccff_tail;
 
-  GPIN pad_pReset(.Y(padout_pReset), .A(padin_pReset));
-  GPIN pad_prog_clk(.Y(padout_prog_clk), .A(padin_prog_clk));
-  GPIN pad_set(.Y(padout_op_set), .A(padin_op_set));
-  GPIN pad_reset(.Y(padout_op_reset), .A(padin_op_reset));
-  GPIN pad_clk(.Y(padout_op_clk), .A(padin_op_clk));
-  GPIN pad_ccff_head(.Y(padout_ccff_head), .A(padin_ccff_head));
-  GPOUT pad_ccff_tail(.A(padout_ccff_tail), .Y(padin_ccff_tail));
+wire op_clk, op_reset, op_set, pReset, prog_clk, gfpga_pad_GPIO_PAD, ccff_head, ccff_tail;
+
+  GPIN pad_clk(.Y(op_clk), .A(padin_op_clk));
+  GPIN pad_reset(.Y(op_reset), .A(padin_op_reset));
+  GPIN pad_set(.Y(op_set), .A(padin_op_set));
+  GPIN pad_pReset(.Y(pReset), .A(padin_pReset));
+  GPIN pad_prog_clk(.Y(prog_clk), .A(padin_prog_clk));
+  GPIN pad_ccff_head(.Y(ccff_head), .A(padin_ccff_head));
+  GPOUT pad_ccff_tail(.A(ccff_tail), .Y(padin_ccff_tail));
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 

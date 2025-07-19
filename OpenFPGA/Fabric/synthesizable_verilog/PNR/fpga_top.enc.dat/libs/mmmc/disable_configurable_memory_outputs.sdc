@@ -1,1 +1,0 @@
-/home/bas33767/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/synthesizable_verilog/PNR/SDC/disable_configurable_memory_outputs.sdc

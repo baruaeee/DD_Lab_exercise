@@ -1,0 +1,83 @@
+reportShield
+#WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+#WARNING (NRIF-67) In option 'OnGridOnly 0', 0 is an unknown type. It will be ignored.
+#WARNING (NRIF-68) Option 'OnGridOnly 0' did not specify a correct type. It will be ignored.
+#WARNING (NRDR-157) In option 'PostRouteSwapVia ',  is invalid and will be ignored.
+#WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+#WARNING (NRIF-67) In option 'OnGridOnly 0', 0 is an unknown type. It will be ignored.
+#WARNING (NRIF-68) Option 'OnGridOnly 0' did not specify a correct type. It will be ignored.
+#WARNING (NRDR-157) In option 'PostRouteSwapVia ',  is invalid and will be ignored.
+#Start routing data preparation on Sat Jul 19 01:43:10 2025
+#
+#WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+#WARNING (NRIF-67) In option 'OnGridOnly 0', 0 is an unknown type. It will be ignored.
+#WARNING (NRIF-68) Option 'OnGridOnly 0' did not specify a correct type. It will be ignored.
+#WARNING (NRDR-157) In option 'PostRouteSwapVia ',  is invalid and will be ignored.
+# Metal1       V   Track-Pitch = 0.4800    Line-2-Via Pitch = 0.3650
+# Metal2       H   Track-Pitch = 0.4200    Line-2-Via Pitch = 0.4100
+# Metal3       V   Track-Pitch = 0.4800    Line-2-Via Pitch = 0.4100
+# Metal4       H   Track-Pitch = 0.4200    Line-2-Via Pitch = 0.4100
+# Metal5       V   Track-Pitch = 0.4800    Line-2-Via Pitch = 0.4100
+# TopMetal1    H   Track-Pitch = 2.5200    Line-2-Via Pitch = 3.2800
+#WARNING (NRAG-44) Track pitch is too small compared with line-2-via pitch.
+# TopMetal2    V   Track-Pitch = 4.0000    Line-2-Via Pitch = 4.0000
+#Bottom routing layer index=1(Metal1), bottom routing layer for shielding=1(Metal1), bottom shield layer=1(Metal1)
+#shield_bottom_stripe_layer=1(Metal1), shield_top_stripe_layer=5(Metal5)
+#pin_access_rlayer=2(Metal2)
+#shield_top_dpt_rlayer=-1 top_rlayer=5 top_trim_metal_rlayer=-1 rlayer_lowest=1 bottom_rlayer=1
+#enable_trim_layer_shield=F enable_dpt_layer_shield=F has_line_end_grid=F
+#enable_dpt_layer_shield=F
+#has_line_end_grid=F
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer Metal3's pitch = 0.4800.
+#Using automatically generated G-grids.
+#Done routing data preparation.
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 4340.89 (MB), peak = 5194.05 (MB)
+#Bottom routing layer index=1(Metal1), bottom routing layer for shielding=1(Metal1), bottom shield layer=1(Metal1)
+#shield_bottom_stripe_layer=1(Metal1), shield_top_stripe_layer=5(Metal5)
+#pin_access_rlayer=2(Metal2)
+#shield_top_dpt_rlayer=-1 top_rlayer=5 top_trim_metal_rlayer=-1 rlayer_lowest=1 bottom_rlayer=1
+#enable_trim_layer_shield=F enable_dpt_layer_shield=F has_line_end_grid=F
+#enable_dpt_layer_shield=F
+#has_line_end_grid=F
+#WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+#WARNING (NRIF-67) In option 'OnGridOnly 0', 0 is an unknown type. It will be ignored.
+#WARNING (NRIF-68) Option 'OnGridOnly 0' did not specify a correct type. It will be ignored.
+#WARNING (NRDR-157) In option 'PostRouteSwapVia ',  is invalid and will be ignored.
+#-------------------------------------------------------------------------------
+#
+#	Shielding Summary
+#-------------------------------------------------------------------------------
+#Primary shielding net(s): vss 
+#Opportunistic shielding net(s): vdd iovss iovdd VDD VSS 
+#
+#Number of nets with shield attribute: 2
+#Number of nets reported: 2
+#Number of nets without shielding: 1
+#Average ratio                   : 0.003
+#
+#Name   Average Length     Shield    Ratio
+#Metal1:           1.7        0.0     0.000
+#Metal2:        8328.0        0.0     0.000
+#Metal3:       12383.3        0.1     0.000
+#Metal4:         963.6      114.2     0.059
+#Metal5:          28.1        0.0     0.000
+#-------------------------------------------------------------------------------
+#Bottom shield layer (Metal1) and above: 
+#Average (BotShieldLayer) ratio  : 0.003
+#
+#Name    Actual Length     Shield    Ratio
+#Metal1:           3.4        0.0     0.000
+#Metal2:       16656.0        0.0     0.000
+#Metal3:       24766.6        0.3     0.000
+#Metal4:        1927.2      228.5     0.059
+#Metal5:          56.3        0.0     0.000
+#-------------------------------------------------------------------------------
+#Preferred routing layer range: Metal3 - Metal4
+#Average (PrefLayerOnly) ratio   : 0.004
+#
+#Name    Actual Length     Shield    Ratio
+#Metal3:       24766.6        0.3     0.000
+#Metal4:        1927.2      228.5     0.059
+#-------------------------------------------------------------------------------
+#Done report shield: cpu time = 00:00:01, elapsed time = 00:00:01, memory = 4347.47 (MB), peak = 5194.05 (MB)

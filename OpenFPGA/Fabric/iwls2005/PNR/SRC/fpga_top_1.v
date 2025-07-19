@@ -3,10 +3,10 @@
 //	Description: Top-level Verilog module for FPGA
 //	Author: Xifan TANG
 //	Organization: University of Utah
-//	Date: Mon Jul  7 19:04:12 2025
+//	Date: Mon Jul  7 22:55:56 2025
 //-------------------------------------------
 //----- Default net type -----
-// // // `default_nettype none
+// `default_nettype none
 
 // ----- Verilog module for fpga_top -----
 module fpga_top(op_clk,
@@ -19227,15 +19227,14 @@ wire [0:0] sb_9__9__undriven_top_left_grid_right_width_0_height_0_subtile_0__pin
 
 // ----- BEGIN Local short connections -----
 // ----- END Local short connections -----
-
 wire padin_pReset, padin_prog_clk, padin_op_set, padin_op_reset, padin_op_clk, padin_ccff_head, padin_ccff_tail;
 wire padout_pReset, padout_prog_clk, padout_op_set, padout_op_reset, padout_op_clk, padout_ccff_head, padout_ccff_tail;
   
   assign padout_pReset = pReset;
   assign padout_prog_clk = prog_clk;
-  assign padout_op_set = set;
-  assign padout_op_reset = reset;
-  assign padout_op_clk = clk;
+  assign padout_op_set = op_set;
+  assign padout_op_reset = op_reset;
+  assign padout_op_clk = op_clk;
   assign padout_ccff_head = ccff_head;
   assign padout_ccff_tail = ccff_tail;
 
@@ -19246,7 +19245,6 @@ wire padout_pReset, padout_prog_clk, padout_op_set, padout_op_reset, padout_op_c
   GPIN pad_clk(.Y(padout_op_clk), .A(padin_op_clk));
   GPIN pad_ccff_head(.Y(padout_ccff_head), .A(padin_ccff_head));
   GPOUT pad_ccff_tail(.A(padout_ccff_tail), .Y(padin_ccff_tail));
-
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
@@ -40875,7 +40873,7 @@ endmodule
 // ----- END Verilog module for fpga_top -----
 
 //----- Default net type -----
-// // // `default_nettype wire
+// `default_nettype wire
 
 
 

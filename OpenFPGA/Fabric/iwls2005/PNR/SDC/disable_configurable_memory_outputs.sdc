@@ -155,6 +155,9 @@ set_disable_timing cby_*__*_/mem_right_ipin_*/DFFR_*_/Q
 set_disable_timing cby_*__*_/mem_right_ipin_*/DFFR_*_/QN
 set_disable_timing grid_io_left_*__*_/logical_tile_io_mode_io__*/logical_tile_io_mode_physical__iopad_*/GPIO_DFFR_mem/DFFR_*_/Q
 set_disable_timing grid_io_left_*__*_/logical_tile_io_mode_io__*/logical_tile_io_mode_physical__iopad_*/GPIO_DFFR_mem/DFFR_*_/QN
+
+set_disable_timing grid_io_left_*__*_/logical_tile_io_mode_io__*/logical_tile_io_mode_physical__iopad_*/GPIO_DFFR_mem/DFFR_*_/RST
+
 set_disable_timing sb_*__*_/mem_top_track_*/DFFR_*_/Q
 set_disable_timing sb_*__*_/mem_top_track_*/DFFR_*_/QN
 set_disable_timing sb_*__*_/mem_top_track_*/DFFR_*_/Q

@@ -1,7 +1,7 @@
 #######################################################
 #                                                     
 #  Innovus Command Logging File                     
-#  Created on Tue Jul  8 10:45:26 2025                
+#  Created on Sat Jul 19 00:42:53 2025                
 #                                                     
 #######################################################
 
@@ -381,51 +381,91 @@ set load_netlist_ignore_undefined_cell 1
 set init_design_uniquify 1
 init_design
 setDrawView fplan
-zoomBox -295.03200 -714.40000 2015.03200 1353.60000
-zoomBox 207.74700 -245.06300 1626.41500 1024.94800
-zoomBox -523.28700 -932.40400 2194.43700 1500.53900
-zoomBox -2356.99300 -2748.47800 3768.07300 2734.76300
-pan -624.39200 268.56400
-zoomBox -2981.38500 -2088.42900 2224.92100 2572.32600
-gui_select -rect {-2381.95300 1892.07100 -58.31000 -707.71400}
-zoomBox -2231.91000 -1241.76500 1529.64700 2125.63100
-zoomBox -1939.20900 -911.10900 1258.11400 1951.17800
-selectObject Module grid_clb_1__1_
-selectObject Module cby_2__2_
-deselectAll
-selectObject Module sb_1__0_
-deselectAll
-zoomBox -2479.35600 -1141.46600 1946.00500 2820.17700
-pan 400.74400 1252.01600
-create_relative_floorplan -place grid_clb_1__1_ -ref_type core_boundary -horizontal_edge_separate {1  -5  1} -vertical_edge_separate {0  5  0}
-create_relative_floorplan -place grid_clb_1__2_ -ref_type core_boundary -horizontal_edge_separate {1  -5  1} -vertical_edge_separate {2  -5  2}
-create_relative_floorplan -place grid_clb_2__1_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {0  5  0}
-create_relative_floorplan -place grid_clb_2__2_ -ref_type core_boundary -horizontal_edge_separate {3  5  3} -vertical_edge_separate {2  -5  2}
-create_relative_floorplan -place sb_0__1_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {1  -10  1} -vertical_edge_separate {2  10  0}
-create_relative_floorplan -place sb_0__2_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {1  -96.94  1} -vertical_edge_separate {2  11.34  0}
-create_relative_floorplan -place sb_1__0_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -10  1} -vertical_edge_separate {0  0  0}
-create_relative_floorplan -place sb_2__0_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -11.34  1} -vertical_edge_separate {0  79  0}
-create_relative_floorplan -place sb_2__1_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -111.34  1} -vertical_edge_separate {2  11.34  0}
-create_relative_floorplan -place sb_2__2_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -197  1} -vertical_edge_separate {2  11.34  0}
-create_relative_floorplan -place cbx_1__0_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -11.34  1} -vertical_edge_separate {0  151  0}
-create_relative_floorplan -place cbx_2__0_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -11.34  1} -vertical_edge_separate {0  233  0}
-create_relative_floorplan -place cby_1__1_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -11.34  1} -vertical_edge_separate {0  315  0}
-create_relative_floorplan -place cbx_1__1_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {1  -177  1} -vertical_edge_separate {2  11.34  0}
-create_relative_floorplan -place cbx_2__1_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -275  1} -vertical_edge_separate {2  11.34  0}
-create_relative_floorplan -place cbx_2__2_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -362  1} -vertical_edge_separate {2  11.34  0}
-create_relative_floorplan -place cby_2__1_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -444  1} -vertical_edge_separate {2  11.34  0}
-create_relative_floorplan -place cby_0__1_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {1  -264  1} -vertical_edge_separate {2  11.34  0}
-create_relative_floorplan -place cby_0__2_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {1  -351  1} -vertical_edge_separate {2  11.34  0}
-create_relative_floorplan -place sb_0__0_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -11.34  1} -vertical_edge_separate {0  410  0}
-create_relative_floorplan -place sb_1__1_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -10  1} -vertical_edge_separate {2  50  0}
-create_relative_floorplan -place sb_1__2_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -10  1} -vertical_edge_separate {2  160  0}
-create_relative_floorplan -place cbx_1__2_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -10  1} -vertical_edge_separate {2  260  0}
-create_relative_floorplan -place cby_1__2_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -10  1} -vertical_edge_separate {2  360  0}
-create_relative_floorplan -place cby_2__2_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3  -10  1} -vertical_edge_separate {2  460  0}
-fit
-selectObject Module grid_clb_1__2_
 loadIoFile Multi_Row_IO_PAD.io
-floorPlan -site CoreSite -b 0.0 0.0 1855.2 1935.78 400.32 400.26 1455.36 1535.1 425.28 425.46 1430.88 1510.74
+floorPlan -site CoreSite -b 0.2 -0.04 1857.8 1950.74 400.52 400.22 1457.96 1549.76 425.48 425.42 1433.48 1525.4
+setObjFPlanBoxList Module sb_0__0_ {{180.00000 206.64000 207.36000 282.24000} {180.00000 180.18000 295.09200 206.64000}}
+create_relative_floorplan -place sb_0__0_ -ref_type core_boundary -horizontal_edge_separate {3  0  5} -vertical_edge_separate {0  0  0}
+delete_relative_floorplan -all
+setObjFPlanBox Module grid_clb_1__1_ 235.069 231.047 678.589 714.887
+create_relative_floorplan -place grid_clb_1__1_ -ref_type object -ref sb_0__0_ -horizontal_edge_separate {3  10  3} -vertical_edge_separate {2  10  0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cby_0__1_ 180.00000 293.58000 207.36000 539.59200
+create_relative_floorplan -place cby_0__1_ -ref_type object -ref sb_0__0_ -horizontal_edge_separate {1 10  3} -vertical_edge_separate {0  0  0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_0__1_ {{180.00000 713.16000 262.71700 743.40000} {180.00000 550.62000 207.36000 713.16000}}
+create_relative_floorplan -place sb_0__1_ -ref_type object -ref cby_0__1_ -horizontal_edge_separate {1 10  5} -vertical_edge_separate {0  0  0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cbx_1__0_ 305.28000 180.18000 544.38400 206.64000
+create_relative_floorplan -place cbx_1__0_ -ref_type object -ref sb_0__0_ -horizontal_edge_separate {5 0  3} -vertical_edge_separate {4  10  0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_1__0_ {{915.08000 451.88000 941.48000 546.38000} {797.94100 425.42000 941.48000 451.88000}}
+create_relative_floorplan -place sb_1__0_ -ref_type object -ref cbx_1__0_ -horizontal_edge_separate {3 0  5} -vertical_edge_separate {2  10  0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cby_1__1_ 671.04000 312.48000 697.44000 554.78200
+create_relative_floorplan -place cby_1__1_ -ref_type object -ref sb_1__0_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2  0  0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_1__1_ {{543.30900 713.16000 697.44000 743.40000} {671.04000 565.74000 697.44000 713.16000}}
+create_relative_floorplan -place sb_1__1_ -ref_type object -ref cby_1__1_ -horizontal_edge_separate {1 10 5} -vertical_edge_separate {0  0  0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cbx_1__1_ 518.12000 958.40000 778.44800 988.64000
+create_relative_floorplan -place cbx_1__1_ -ref_type object -ref sb_0__1_ -horizontal_edge_separate {3 0 3} -vertical_edge_separate {2  10  0}
+delete_relative_floorplan -all
+setObjFPlanBox Module grid_clb_2__1_ 707.52 241.383 1151.04 725.223
+create_relative_floorplan -place grid_clb_2__1_ -ref_type object -ref sb_1__0_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {4  10  0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cbx_2__0_ 707.52000 180.18000 1031.91300 206.64000
+create_relative_floorplan -place cbx_2__0_ -ref_type object -ref sb_1__0_ -horizontal_edge_separate {5 0 3} -vertical_edge_separate {4  10  0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_2__0_ {{1160.64000 206.64000 1187.04000 282.24000} {1041.45100 180.18000 1187.04000 206.64000}}
+create_relative_floorplan -place sb_2__0_ -ref_type object -ref cbx_2__0_ -horizontal_edge_separate {3 0 5} -vertical_edge_separate {2  10  0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cby_2__1_ 1407.08000 538.82000 1433.48000 833.73400
+create_relative_floorplan -place cby_2__1_ -ref_type object -ref sb_2__0_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2  0  0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_2__1_ {{1039.39500 713.16000 1187.52000 743.40000} {1161.12000 599.76000 1187.52000 713.16000}}
+create_relative_floorplan -place sb_2__1_ -ref_type object -ref cby_2__1_ -horizontal_edge_separate {1 10 5} -vertical_edge_separate {0  0  0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cbx_2__1_ 707.52000 713.16000 1029.12000 743.40000
+create_relative_floorplan -place cbx_2__1_ -ref_type object -ref sb_1__1_ -horizontal_edge_separate {1 0 3} -vertical_edge_separate {4  10  0}
+delete_relative_floorplan -all
+setObjFPlanBox Module grid_clb_1__2_ 263.008 766.08 706.528 1249.92
+create_relative_floorplan -place grid_clb_1__2_ -ref_type object -ref sb_0__1_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {4  10  0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cby_0__2_ 180.0 949.151 207.36 1232.651
+create_relative_floorplan -place cby_0__2_ -ref_type object -ref sb_0__1_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module sb_0__2_ 180.00000 1049.58000 207.36000 1280.04500
+create_relative_floorplan -place sb_0__2_ -ref_type object -ref cby_0__2_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cbx_1__2_ 217.44000 1249.92000 505.20800 1280.16000
+create_relative_floorplan -place cbx_1__2_ -ref_type object -ref sb_0__2_ -horizontal_edge_separate {1 0 1} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_1__2_ {{515.61700 1249.92000 697.44000 1280.16000} {671.04000 1102.50000 697.44000 1249.92000}}
+create_relative_floorplan -place sb_1__2_ -ref_type object -ref cbx_1__2_ -horizontal_edge_separate {1 0 3} -vertical_edge_separate {2  10  2}
+delete_relative_floorplan -all
+setObjFPlanBox Module cby_1__2_ 671.04000 755.40700 697.44000 1091.16000
+create_relative_floorplan -place cby_1__2_ -ref_type object -ref sb_1__1_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {0  0  0}
+delete_relative_floorplan -all
+setObjFPlanBox Module grid_clb_2__2_ 745.781 762.3 1189.301 1246.14
+create_relative_floorplan -place grid_clb_2__2_ -ref_type object -ref cbx_2__1_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0  0  0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cby_2__2_ 1161.12000 754.74000 1187.52000 1115.47800
+create_relative_floorplan -place cby_2__2_ -ref_type object -ref sb_2__1_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {0  0  0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_2__2_ {{1027.59800 1249.92000 1187.52000 1280.16000} {1161.12000 1125.18000 1187.52000 1249.92000}}
+create_relative_floorplan -place sb_2__2_ -ref_type object -ref cby_2__2_ -horizontal_edge_separate {1 10 5} -vertical_edge_separate {0  0  0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cbx_2__2_ 707.52000 1249.92000 1017.67300 1280.16000
+create_relative_floorplan -place cbx_2__2_ -ref_type object -ref sb_1__2_ -horizontal_edge_separate {3 0 1} -vertical_edge_separate {4  10  0}
+delete_relative_floorplan -all
+selectObject Module grid_clb_1__2_
+selectObject Module grid_clb_2__2_
+selectObject Module grid_clb_2__1_
+selectObject Module grid_clb_1__1_
+deselectAll
+selectObject Module grid_clb_2__1_
+gui_select -rect {1450.21700 405.06900 413.22800 1546.65300}
+deselectAll
 deselectAll
 setDesignMode -process 130
 globalNetConnect vdd -type pgpin -pin VDD -override -verbose -netlistOverride
@@ -439,40 +479,8 @@ addStripe -nets {vdd vss} -layer TopMetal2 -direction vertical -width 5 -spacing
 sroute -connect { blockPin corePin floatingStripe } -layerChangeRange { Metal1(1) TopMetal2(7) } -blockPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) TopMetal2(7) } -nets { vdd vss } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1(1) TopMetal2(7) }
 sroute -connect { padPin padRing } -layerChangeRange { Metal1(1) TopMetal2(7) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) TopMetal2(7) } -nets { iovdd iovss vdd vss } -allowLayerChange 1 -targetViaLayerRange { Metal1(1) TopMetal2(7) }
 sroute -connect { padPin } -layerChangeRange { Metal1(1) TopMetal2(7) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) TopMetal2(7) } -nets { vdd vss } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1(1) TopMetal2(7) }
-zoomBox -188.79300 -46.48400 1774.76100 1711.31600
-zoomBox -98.49000 -6.09500 1570.53100 1488.03500
-zoomBox -21.73200 28.23500 1396.93600 1298.24600
-zoomBox 43.51200 57.41600 1249.38000 1136.92500
-zoomBox 146.10800 103.30200 1017.34800 883.24800
-zoomBox -21.73300 28.23400 1396.93600 1298.24600
-zoomBox -295.03400 -94.00200 2015.03300 1974.00100
-zoomBox -95.17500 -24.34200 1573.84900 1469.79100
-zoomBox -17.12200 2.86300 1401.54900 1272.87600
-zoomBox -79.30600 -89.11800 1589.71900 1405.01600
-zoomBox -152.46400 -197.33000 1811.09600 1560.47500
-zoomBox -238.53100 -324.63800 2071.53900 1743.36800
-zoomBox -339.78700 -474.41200 2377.94300 1958.53600
-setDrawView place
-zoomBox 342.79800 392.02000 1548.67000 1471.53300
-zoomBox 603.03400 722.34800 1232.50800 1285.86200
-zoomBox 738.87900 894.78100 1067.47000 1188.94000
-zoomBox 761.13200 923.02700 1040.43500 1173.06300
-zoomBox 603.03100 722.34300 1232.51100 1285.86200
-zoomBox 424.45700 495.67200 1449.46000 1413.26800
-zoomBox 246.71200 270.05300 1665.40200 1540.08300
-zoomBox 0.69900 -42.22300 1964.28400 1715.60500
-zoomBox -339.80400 -474.43700 2377.96100 1958.54300
-setDrawView fplan
-selectObject Module grid_clb_1__1_
-selectObject Module grid_clb_1__2_
-selectObject Module grid_clb_2__2_
-selectObject Module grid_clb_2__1_
-zoomBox 69.91400 146.92500 1738.96200 1641.07900
-zoomBox 167.72500 295.26100 1586.41600 1565.29200
-zoomBox 321.53200 528.51900 1346.53700 1446.11700
-zoomBox 201.84700 281.50900 1620.53900 1551.54100
-zoomBox 125.73500 124.42800 1794.78500 1618.58400
-deselectAll
+is_innovus_plus
+setAnalysisMode -cppr both -clockGatingCheck true -timeBorrowing true -useOutputPinCap true -sequentialConstProp false -timingSelfLoopsNoSkew false -enableMultipleDriveNet true -clkSrcPath true -warn true -usefulSkew false -analysisType onChipVariation -log true
 setMultiCpuUsage -localCpu 8 -cpuPerRemoteHost 1 -remoteHost 0 -keepLicense true
 setDistributeHost -local
 setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
@@ -492,14 +500,358 @@ setPlaceMode -congEffort auto -timingDriven 1 -clkGateAware 1 -powerDriven 0 -ig
 setPlaceMode -fp false
 place_design
 timeDesign -preCTS
+setOptMode -opt_fix_fanout_load true
 optDesign -preCTS
+setDesignMode -bottomRoutingLayer 1 -topRoutingLayer 7
+setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+earlyGlobalRoute
+add_ndr -width {Metal1 0.32 Metal2 0.4 Metal3 0.4 Metal4 0.4 Metal5 0.4 TopMetal1 3.28 TopMetal2 4 } -spacing {Metal1 0.36 Metal2 0.42 Metal3 0.42 Metal4 0.42 Metal5 0.42 TopMetal1 3.28 TopMetal2 4 } -name 2w2s
+create_route_type -name clkroute -non_default_rule 2w2s -bottom_preferred_layer Metal4 -top_preferred_layer Metal5 -shield_net vss -shield_side both_side
+set_ccopt_property route_type net_type trunkclkroute
+set_ccopt_property route_type net_type leafclkroute
 set_ccopt_property buffer_cells {sg13g2_buf_1 sg13g2_buf_16 sg13g2_buf_2 sg13g2_buf_4 sg13g2_buf_8}
 set_ccopt_property inverter_cells {sg13g2_inv_1 sg13g2_inv_16 sg13g2_inv_2 sg13g2_inv_4 sg13g2_inv_8}
 set_ccopt_property delay_cells {sg13g2_dlygate4sd2_1 sg13g2_dlygate4sd1_1}
-create_ccopt_clock_tree_spec
+set_ccopt_property clock_gating_cells {sg13g2_lgcp_1 sg13g2_slgcp_1}
+create_ccopt_clock_tree_spec -file ccopt.spec
+get_ccopt_clock_trees
+ccopt_check_and_flatten_ilms_no_restore
+set_ccopt_property cts_is_sdc_clock_root -pin {clk[0]} true
+set_ccopt_property cts_is_sdc_clock_root -pin {prog_clk[0]} true
+create_ccopt_clock_tree -name {prog_clk[0]} -source {prog_clk[0]} -no_skew_group
+set_ccopt_property clock_period -pin {prog_clk[0]} 7
+create_ccopt_clock_tree -name {clk[0]} -source {clk[0]} -no_skew_group
+set_ccopt_property clock_period -pin {clk[0]} 7
+set_ccopt_property timing_connectivity_info {}
+create_ccopt_skew_group -name {clk[0]/CONSTRAINTS} -sources {clk[0]} -auto_sinks
+set_ccopt_property include_source_latency -skew_group {clk[0]/CONSTRAINTS} true
+set_ccopt_property extracted_from_clock_name -skew_group {clk[0]/CONSTRAINTS} {clk[0]}
+set_ccopt_property extracted_from_constraint_mode_names -skew_group {clk[0]/CONSTRAINTS} {CONSTRAINTS  }
+set_ccopt_property extracted_from_delay_corners -skew_group {clk[0]/CONSTRAINTS} {MAX_DEALY MIN_DEALY}
+create_ccopt_skew_group -name {prog_clk[0]/CONSTRAINTS} -sources {prog_clk[0]} -auto_sinks
+set_ccopt_property include_source_latency -skew_group {prog_clk[0]/CONSTRAINTS} true
+set_ccopt_property extracted_from_clock_name -skew_group {prog_clk[0]/CONSTRAINTS} {prog_clk[0]}
+set_ccopt_property extracted_from_constraint_mode_names -skew_group {prog_clk[0]/CONSTRAINTS} {CONSTRAINTS  }
+set_ccopt_property extracted_from_delay_corners -skew_group {prog_clk[0]/CONSTRAINTS} {MAX_DEALY MIN_DEALY}
+check_ccopt_clock_tree_convergence
+get_ccopt_property auto_design_state_for_ilms
+clock_opt_design -cts
+ctd_win -side none -id ctd_window
+setDrawView place
+zoomBox -124.19800 427.62400 1544.82300 1921.75400
+zoomBox -57.48000 631.34000 1361.18700 1901.35000
+zoomBox -246.72400 -98.86900 2063.34000 1969.13100
+zoomBox -436.11200 -824.28500 2761.20800 2037.99900
+zoomBox 235.77300 -336.47900 1654.44100 933.53200
+zoomBox 413.52700 -78.70000 1284.76700 701.24600
+zoomBox 492.03200 35.14700 1121.50300 598.65800
+zoomBox 522.69100 77.16500 1057.74200 556.15000
+zoomBox 548.75100 112.88000 1003.54500 520.01800
+zoomBox 570.90200 143.23900 957.47700 489.30600
+zoomBox 589.73000 169.04400 918.31900 463.20100
+zoomBox 492.03000 35.14400 1121.50400 598.65800
+zoomBox 455.96000 -14.29000 1196.51800 648.66700
+zoomBox 413.52500 -72.44900 1284.77000 707.50100
+zoomBox 304.86600 -221.36600 1510.74200 858.15000
+zoomBox 235.76700 -316.06800 1654.44500 953.95200
+zoomBox 58.83500 -558.55500 2022.40400 1199.25800
+zoomBox 196.76700 -408.43100 1865.80100 1085.71100
+ctd_win -side none -id ctd_window
+selectInst cbx_2__1_/mem_top_ipin_2/DFFR_2_/q_reg_reg
+zoomSelected
+deselectInst cbx_2__1_/mem_top_ipin_2/DFFR_2_/q_reg_reg
+selectInst cby_0__2_/mem_left_ipin_2/DFFR_1_/q_reg_reg
+zoomSelected
+deselectInst cby_0__2_/mem_left_ipin_2/DFFR_1_/q_reg_reg
+selectObject IO_Pin {prog_clk[0]}
+zoomSelected
+zoomBox 1676.41300 1570.69200 1679.25500 1573.23600
+zoomBox 1676.54300 1570.84200 1678.95800 1573.00400
+zoomBox 1676.65300 1570.96900 1678.70600 1572.80700
+zoomBox 1676.82500 1571.16900 1678.31000 1572.49800
+zoomBox 1676.89300 1571.24700 1678.15500 1572.37700
+zoomBox 1676.95100 1571.31400 1678.02300 1572.27400
+zoomBox 1676.99900 1571.37100 1677.91100 1572.18700
+zoomBox 1677.07600 1571.46000 1677.73500 1572.05000
+zoomBox 1677.10600 1571.49500 1677.66600 1571.99600
+zoomBox 1676.89200 1571.24700 1678.15500 1572.37800
+zoomBox 1676.74300 1571.07500 1678.49300 1572.64200
+zoomBox 1676.63100 1570.96800 1678.69000 1572.81100
+zoomBox 1676.50000 1570.84200 1678.92200 1573.01000
+zoomBox 1676.34500 1570.69300 1679.19500 1573.24400
+zoomBox 1675.69800 1570.06900 1680.33900 1574.22400
+zoomBox 1675.40200 1569.78400 1680.86200 1574.67200
+zoomBox 1674.16200 1568.58900 1683.05400 1576.54900
+zoomBox 1671.22400 1565.75600 1688.25800 1581.00500
+deselectObject IO_Pin {prog_clk[0]}
+selectObject IO_Pin {clk[0]}
+zoomSelected
+zoomBox 251.22100 1769.85400 254.75600 1773.01900
+zoomBox 251.53400 1770.16600 254.53900 1772.85600
+zoomBox 252.21900 1770.84800 254.06500 1772.50100
+zoomBox 252.74000 1771.36800 253.70400 1772.23100
+zoomBox 252.81300 1771.44500 253.63300 1772.17900
+zoomBox 252.97200 1771.61500 253.47600 1772.06600
+zoomBox 253.01000 1771.65500 253.43900 1772.03900
+zoomBox 253.04200 1771.68900 253.40700 1772.01600
+zoomBox 253.06900 1771.71800 253.38000 1771.99600
+zoomBox 252.87100 1771.50800 253.57300 1772.13600
+zoomBox 252.64700 1771.26900 253.79100 1772.29300
+zoomBox 252.11700 1770.70600 254.30900 1772.66800
+zoomBox 251.10100 1769.62800 255.30100 1773.38800
+zoomBox 249.15300 1767.56200 257.20200 1774.76800
+zoomBox 245.42300 1763.60400 260.84400 1777.40900
+zoomBox 240.52200 1758.40200 265.63200 1780.88100
+zoomBox 228.89000 1746.05700 276.99500 1789.12100
+zoomBox 213.60000 1729.82900 291.93100 1799.95200
+zoomBox 177.31700 1691.31900 327.37700 1825.65500
+zoomBox 129.62400 1640.69800 373.97200 1859.44200
+zoomBox 51.96400 1558.27200 449.84500 1914.46000
+zoomBox -25.33500 1476.22800 525.36500 1969.22200
+zoomBox -200.36100 1290.45900 696.36100 2093.21700
+zoomBox -280.40500 1205.50200 774.56200 2149.92300
+zoomBox -374.57400 1105.55300 866.56400 2216.63600
+zoomBox -126.74800 1345.32400 635.46600 2027.66800
+zoomBox -67.58500 1402.56300 580.29700 1982.55600
+zoomBox 92.66300 1557.60400 430.86300 1860.36500
+zoomBox 145.11200 1611.99600 389.46200 1830.74100
+zoomBox 195.97700 1669.56900 346.03800 1803.90600
+zoomBox 214.88600 1694.29600 323.30500 1791.35400
+zoomBox 222.27000 1703.95200 314.42700 1786.45200
+deselectAll
+zoomBox 206.93000 1683.53000 334.48300 1797.71700
+zoomBox 185.69800 1655.26300 362.24200 1813.30800
+zoomBox 223.66100 1687.90300 351.21400 1802.09000
+zoomBox 238.48700 1700.65000 346.90700 1797.70900
+zoomBox 269.12000 1728.25200 335.70400 1787.85900
+zoomBox 276.43300 1734.84100 333.03000 1785.50700
+zoomBox 292.45200 1749.24900 327.21000 1780.36500
+zoomBox 302.34100 1758.09700 323.68800 1777.20700
+selectWire 253.0600 1771.8400 481.7400 1772.0400 4 {clk[0]}
+zoomBox 289.18300 1744.17600 337.29500 1787.24700
+zoomBox 267.52200 1721.26200 359.69500 1803.77700
+zoomBox 226.23800 1691.21600 376.32900 1825.57900
+zoomBox 131.64900 1620.80500 419.17900 1878.20600
+zoomBox 55.64300 1564.23000 453.61000 1920.49500
+zoomBox -45.99600 1488.29800 504.82400 1981.39900
+zoomBox -110.63100 1440.01000 537.39300 2020.13000
+zoomBox -630.32500 1203.57700 611.08600 2314.90500
+zoomBox -1625.89600 750.64400 752.26000 2879.60100
+zoomBox -1293.17000 836.47900 728.26300 2646.09300
+zoomBox -2269.18600 433.91300 1022.38200 3380.56900
+zoomBox -4585.28200 -521.37900 1720.32900 5123.48900
+zoomBox -2410.21700 4.28800 1462.21700 3470.94300
+zoomBox -1074.45400 327.11300 1303.70500 2456.07300
+zoomBox -755.57200 404.17900 1265.86400 2213.79600
+zoomBox -484.52200 469.68600 1233.69900 2007.86100
+zoomBox -254.13000 525.36700 1206.35900 1832.81600
+zoomBox -83.80300 636.17900 1157.61300 1747.51100
+zoomBox 60.97500 730.36800 1116.17900 1675.00100
+zoomBox 377.55000 936.32700 1025.57800 1516.45000
+zoomBox 453.12500 985.49400 1003.94900 1478.59900
+zoomBox 619.20400 1086.13100 957.48000 1388.96000
+zoomBox 745.54400 1162.68900 922.12800 1320.76900
+zoomBox 798.78600 1194.95100 907.23100 1292.03200
+zoomBox 831.48300 1214.76300 898.08300 1274.38400
+zoomBox 839.28900 1219.49300 895.89900 1270.17100
+zoomBox 856.35700 1229.83600 891.12300 1260.95900
+zoomBox 860.43100 1232.30500 889.98300 1258.76000
+zoomBox 866.83900 1236.18800 888.19000 1255.30200
+zoomBox 872.39500 1239.07000 887.82200 1252.88000
+zoomBox 877.97700 1241.96500 887.45200 1250.44700
+zoomBox 881.93100 1244.16600 886.87800 1248.59500
+zoomBox 883.00800 1244.78700 886.58400 1247.98800
+zoomBox 883.42900 1245.03000 886.46900 1247.75100
+zoomBox 883.78700 1245.23600 886.37100 1247.54900
+zoomBox 884.57100 1245.65800 886.15800 1247.07900
+zoomBox 884.75800 1245.75900 886.10700 1246.96700
+zoomBox 885.16700 1245.98000 885.99600 1246.72200
+zoomBox 885.34700 1246.07800 885.94600 1246.61400
+zoomBox 885.41800 1246.11600 885.92700 1246.57200
+zoomBox 885.26400 1246.03300 885.96900 1246.66400
+zoomBox 884.91400 1245.84400 886.06300 1246.87300
+zoomBox 884.75400 1245.75800 886.10600 1246.96800
+zoomBox 884.56600 1245.65600 886.15700 1247.08000
+zoomBox 884.34500 1245.53600 886.21700 1247.21200
+zoomBox 884.08400 1245.39600 886.28700 1247.36800
+zoomBox 883.77800 1245.23100 886.37000 1247.55100
+ui_view_box
+ui_view_box
+dbquery -area {883.778 1245.231 886.37 1247.551} -objType inst
+dbquery -area {883.778 1245.231 886.37 1247.551} -objType regular
+dbquery -area {883.778 1245.231 886.37 1247.551} -objType special
+dbquery -area {883.778 1245.231 886.37 1247.551} -objType bump
+zoomBox 880.90700 1244.06100 886.74900 1249.29100
+zoomBox 876.18000 1242.13700 887.37200 1252.15600
+zoomBox 872.38200 1240.59000 887.87300 1254.45800
+zoomBox 869.96600 1239.60700 888.19100 1255.92200
+zoomBox 855.21900 1233.60500 890.13400 1264.86100
+zoomBox 843.37000 1228.78200 891.69500 1272.04300
+zoomBox 835.83500 1225.71400 892.68800 1276.61000
+zoomBox 826.97000 1222.10600 893.85600 1281.98300
+zoomBox 849.77400 1231.38800 890.85100 1268.16100
+zoomBox 869.96400 1239.60600 888.19000 1255.92200
+zoomBox 877.66200 1242.73800 887.17700 1251.25600
+zoomBox 881.67900 1244.37200 886.64900 1248.82100
+zoomBox 883.75300 1245.28000 886.34900 1247.60400
+zoomBox 884.62800 1245.66400 886.22200 1247.09100
+deselectAll
+selectWire 885.7000 1171.2400 885.9000 1274.3400 3 {clk[0]}
+zoomBox 883.12900 1244.90500 886.72400 1248.12300
+zoomBox 879.75200 1243.19600 887.85400 1250.44900
+zoomBox 872.14200 1239.34300 890.40500 1255.69200
+zoomBox 859.61600 1233.00400 894.60300 1264.32500
+zoomBox 835.61800 1220.85800 902.64400 1280.86100
+zoomBox 826.75800 1216.37500 905.61200 1286.96600
+zoomBox 816.33400 1211.10000 909.10400 1294.14900
+zoomBox 804.07100 1204.89400 913.21300 1302.59900
+zoomBox 789.64400 1197.59300 918.04700 1312.54100
+zoomBox 772.67100 1189.00300 923.73400 1324.23700
+zoomBox 663.15400 1136.21300 952.54400 1395.27900
+zoomBox 576.30300 1088.76100 976.84500 1447.33200
+zoomBox 521.07200 1058.58500 992.29900 1480.43400
+zoomBox 289.71700 932.18100 1057.03300 1619.09300
+zoomBox 574.31300 1075.43600 1045.54300 1497.28700
+zoomBox 749.09100 1164.35300 1038.48600 1423.42300
+zoomBox 882.04900 1231.99500 1033.11700 1367.23300
+zoomBox 951.45700 1267.30400 1030.31600 1337.90000
+zoomBox 980.70400 1282.18300 1029.13500 1325.53900
+zoomBox 998.46400 1291.84300 1028.20800 1318.47000
+zoomBox 1002.68300 1294.19700 1027.96600 1316.83100
+zoomBox 1013.98600 1300.55900 1027.18500 1312.37500
+zoomBox 1019.82800 1303.82200 1026.72000 1309.99200
+zoomBox 1022.29100 1305.19800 1026.52400 1308.98700
+zoomBox 1023.37900 1305.80500 1026.43700 1308.54300
+zoomBox 1023.80300 1306.04200 1026.40300 1308.37000
+zoomBox 1022.27300 1304.82000 1027.25700 1309.28200
+deselectAll
+selectWire 1016.7400 1307.3200 1034.7000 1307.5200 4 {clk[0]}
+zoomBox 1020.26200 1303.21400 1028.38000 1310.48100
+zoomBox 1019.34200 1302.48000 1028.89300 1311.03000
+zoomBox 1013.73000 1297.99900 1032.02600 1314.37800
+zoomBox 1006.35400 1292.11000 1036.14500 1318.77900
+zoomBox 994.34300 1282.51900 1042.85300 1325.94600
+zoomBox 969.10600 1267.06000 1048.09800 1337.77500
+zoomBox 957.56400 1259.99100 1050.49600 1343.18500
+zoomBox 943.98500 1251.67400 1053.31800 1349.55000
+zoomBox 888.35200 1218.70200 1066.38200 1378.07700
+zoomBox 756.33200 1140.46000 1097.38300 1445.77300
+zoomBox 582.79100 1037.61000 1138.13400 1534.76100
+zoomBox 300.20500 870.13500 1204.49200 1679.66500
+zoomBox 170.97200 793.54500 1234.83900 1745.93300
+zoomBox -370.37000 472.71700 1361.95900 2023.52100
+zoomBox 608.96700 640.79500 543.97700 705.78600
+zoomBox 556.96100 648.69500 594.85900 682.62200
+zoomBox 564.03600 652.02300 587.31100 672.85900
+zoomBox 570.29900 656.44400 580.62700 665.69000
+zoomBox 572.15000 657.99600 578.49300 663.67400
+zoomBox 572.59100 658.36600 577.98300 663.19300
+zoomBox 573.55700 659.17500 576.86900 662.14000
+zoomBox 573.78700 659.36800 576.60300 661.88900
+deselectAll
+selectWire 575.1400 657.5800 575.3400 665.3400 3 {clk[0]}
+deselectAll
+selectWire 574.1800 574.4200 574.3800 692.0150 3 {grid_clb_1__1_/logical_tile_clb_mode_clb__0/mux_tree_size60_28_out[0]}
+deselectAll
+selectWire 575.1400 657.5800 575.3400 665.3400 3 {clk[0]}
+zoomBox 572.68800 658.42600 578.08400 663.25700
+zoomBox 571.24400 657.18900 580.03100 665.05500
+zoomBox 567.81800 654.25200 584.65500 669.32500
 clock_opt_design
-timeDesign -postCTS
-optDesign -postCTS
+zoomBox 570.38600 657.11700 582.55200 668.00800
+zoomBox 573.58100 660.68200 579.93300 666.36800
+zoomBox 574.54900 661.76200 579.13900 665.87100
+zoomBox 574.92700 662.18400 578.82900 665.67700
+zoomBox 575.24800 662.54300 578.56500 665.51200
+zoomBox 575.75400 663.10700 578.15100 665.25300
+zoomBox 574.00800 661.69000 579.41100 666.52700
+zoomBox 571.13300 659.36000 581.48500 668.62700
+zoomBox 563.59400 653.24700 586.92600 674.13400
+zoomBox 546.60000 639.47000 599.18700 686.54700
+zoomBox 518.62900 616.79400 619.37100 706.98000
+zoomBox 465.04400 573.35400 658.03700 746.12400
+zoomBox 362.39300 490.13500 732.11000 821.11100
+zoomBox 93.14600 271.86100 926.39800 1017.79900
+zoomBox -513.66500 -220.07500 1364.27500 1461.08200
+zoomBox -1881.26500 -1328.77500 2351.13800 2460.12900
+zoomBox -1038.26700 -61.10800 1560.95900 2265.75400
+zoomBox -396.97000 903.24900 959.84300 2117.88600
+zoomBox -64.72600 1391.54800 643.53900 2025.59600
+zoomBox 113.52400 1631.11400 483.24400 1962.09200
+zoomBox 159.18200 1671.99300 426.30500 1911.12500
+zoomBox 177.01300 1687.95700 404.06800 1891.22000
+zoomBox 192.16900 1701.52700 385.16700 1874.30100
+zoomBox 205.05200 1713.06100 369.10100 1859.92000
+zoomBox 216.19300 1721.78300 355.63600 1846.61400
+zoomBox 217.79500 1737.50100 318.54300 1827.69200
+zoomBox 218.42100 1743.64000 304.05600 1820.30200
+zoomBox 219.03600 1748.85800 291.82600 1814.02100
+zoomBox 220.00200 1757.06300 272.59400 1804.14400
+zoomBox 220.38000 1760.26700 265.08300 1800.28600
+pan -19.31600 1541.21700
+zoomBox 207.90600 1767.57500 224.76700 1782.66900
+zoomBox 210.06900 1768.92000 220.42400 1778.19000
+zoomBox 210.58500 1769.24100 219.38700 1777.12100
+zoomBox 207.92900 1766.51300 227.76900 1784.27400
+zoomBox 201.94300 1760.36700 246.65800 1800.39600
+zoomBox 195.18100 1753.42300 267.99400 1818.60600
+zoomBox 179.13700 1736.94800 318.62600 1861.82000
+zoomBox 226.13800 1748.15800 311.80200 1824.84600
+zoomBox 254.27500 1757.05200 306.88400 1804.14800
+zoomBox 275.68000 1763.81800 303.14300 1788.40300
+zoomBox 284.70000 1766.66800 301.56600 1781.76700
+zoomBox 291.33200 1769.21300 300.13800 1777.09600
+zoomBox 294.12700 1770.28400 299.53600 1775.12600
+zoomBox 295.36100 1770.75700 299.27000 1774.25600
+selectWire 253.0600 1771.8400 481.7400 1772.0400 4 {clk[0]}
+zoomBox 293.23600 1769.09900 302.04800 1776.98800
+zoomBox 288.44800 1765.36800 308.30900 1783.14800
+zoomBox 280.56600 1759.22700 318.61400 1793.28800
+zoomBox 259.89100 1743.11900 345.64400 1819.88600
+zoomBox 225.86000 1716.60400 390.13800 1863.66800
+zoomBox 136.59700 1647.06000 506.84200 1978.50800
+zoomBox -64.57500 1490.32500 769.86600 2237.32800
+zoomBox -395.71200 1232.33400 1202.81600 2663.35800
+zoomBox -1264.26600 555.63800 2338.41700 3780.80800
+zoomBox -336.68900 600.06200 1543.93500 2283.62200
+zoomBox 150.79100 622.15700 1132.49000 1500.98700
+zoomBox 249.85000 639.30200 1084.29400 1386.30700
+zoomBox 346.51800 671.84800 1055.79600 1306.80300
+zoomBox 428.82400 699.65000 1031.71000 1239.36200
+zoomBox 78.88100 554.67200 1233.82100 1588.59000
+zoomBox -50.31500 501.14800 1308.43800 1717.52200
+zoomBox -202.31000 438.17900 1396.22300 1869.20700
+zoomBox -381.12800 364.09700 1499.49900 2047.66000
+zoomBox -166.54800 396.21100 1431.98600 1827.24000
+zoomBox 6.85000 439.63800 1365.60400 1656.01300
+zoomBox 148.70200 512.14600 1303.64300 1546.06500
+zoomBox 371.76400 626.16500 1206.20900 1373.17100
+zoomBox 458.87900 670.69400 1168.15700 1305.64900
+zoomBox 595.86600 739.97100 1108.32000 1198.72700
+zoomBox 649.26500 766.52200 1084.85200 1156.46500
+zoomBox 782.05400 833.05000 1009.43300 1036.60300
+zoomBox 831.08900 858.70300 970.72800 983.71000
+zoomBox 861.20100 874.45600 946.95800 951.22700
+zoomBox 878.45200 883.83100 931.11800 930.97800
+zoomBox 888.49400 890.16600 920.83800 919.12100
+zoomBox 896.93200 895.62500 913.81700 910.74100
+zoomBox 898.31400 896.51900 912.66700 909.36800
+zoomBox 901.37300 898.48200 910.18800 906.37300
+zoomBox 903.42400 899.72500 908.83800 904.57200
+zoomBox 904.41100 900.29800 908.32300 903.80000
+zoomBox 905.40300 900.87400 907.80600 903.02500
+deselectAll
+selectWire 425.4800 901.4800 1433.4800 901.9200 1 vdd
+zoomBox 905.86900 901.09800 907.60600 902.65300
+deselectAll
+selectWire 906.8200 899.0800 907.0200 911.8800 3 {clk[0]}
+ui_view_box
+ui_view_box
+dbquery -area {905.869 901.098 907.606 902.653} -objType inst
+dbquery -area {905.869 901.098 907.606 902.653} -objType regular
+dbquery -area {905.869 901.098 907.606 902.653} -objType special
+dbquery -area {905.869 901.098 907.606 902.653} -objType bump
+selectObject Wire {clk[0](906820,899080,907020,911880)}
 setNanoRouteMode -quiet -drouteFixAntenna 1
 setNanoRouteMode -quiet -routeInsertAntennaDiode 0
 setNanoRouteMode -quiet -routeWithTimingDriven 0
@@ -515,17 +867,116 @@ setNanoRouteMode -quiet -drouteEndIteration 1
 setNanoRouteMode -quiet -routeWithTimingDriven false
 setNanoRouteMode -quiet -routeWithSiDriven false
 routeDesign -globalDetail
-setDelayCalMode -SIAware false
-setAnalysisMode -analysisType onChipVariation
-timeDesign -postRoute
-optDesign -postRoute
-saveNetlist pnr_outputs/post_layout_fabric.v
-all_hold_analysis_views 
-all_setup_analysis_views 
-write_sdf  -ideal_clock_network pnr_outputs/post_layout_fabric.sdf
-rcOut -spef pnr_outputs/fabric_RC_BEST.spef -rc_corner RC_BEST
-rcOut -spef pnr_outputs/fabric_RC_WORST.spef -rc_corner RC_WORST
-selectObject Module grid_clb_1__2_
+zoomBox 905.48400 900.76300 907.88900 902.91600
+zoomBox 905.23900 900.55000 908.06800 903.08300
+zoomBox 904.21100 899.66000 908.81900 903.78500
+zoomBox 903.09200 898.72800 909.47000 904.43800
+zoomBox 900.55500 896.61600 910.94200 905.91500
+zoomBox 899.39400 895.65100 911.61500 906.59100
+zoomBox 898.03000 894.51600 912.40700 907.38600
+zoomBox 896.42500 893.17900 913.33900 908.32100
+zoomBox 889.70100 887.58200 917.24400 912.23900
+zoomBox 878.75300 878.46900 923.60300 918.61900
+selectWire 906.8200 899.0800 907.0200 911.8800 3 {clk[0]}
+zoomBox 860.23300 871.57900 933.26300 936.95600
+zoomBox 851.76300 868.42700 937.68100 945.34200
+zoomBox 841.79900 864.72000 942.87900 955.20800
+zoomBox 816.28500 855.22700 956.18800 980.47000
+zoomBox 800.06000 849.19000 964.65200 996.53500
+zoomBox 758.51400 833.73200 986.32400 1037.67100
+zoomBox 732.09400 823.90300 1000.10600 1063.83100
+zoomBox 570.81200 763.89800 1084.23900 1223.52500
+zoomBox 441.21600 715.68300 1151.84200 1351.84500
+zoomBox 261.84400 648.94800 1245.41100 1529.45000
+zoomBox 13.57900 556.58100 1374.91900 1775.27100
+zoomBox 103.39500 602.81000 1260.53500 1638.69700
+zoomBox 244.63200 675.50600 1080.66500 1423.93400
+zoomBox 420.40200 765.97400 856.81700 1156.65900
+zoomBox 509.07300 825.07400 736.88500 1029.01400
+zoomBox 554.99600 857.04900 673.91700 963.50900
+zoomBox 574.34800 871.13100 647.38100 936.51100
+zoomBox 589.65600 886.48400 627.78100 920.61400
+zoomBox 592.16300 888.99900 624.57000 918.01000
+zoomBox 594.35100 891.53900 621.89700 916.19900
+zoomBox 599.13500 897.09400 616.05300 912.23900
+zoomBox 602.07300 900.50500 612.46400 909.80700
+zoomBox 603.87800 902.59900 610.26000 908.31200
+zoomBox 604.98600 903.88400 608.90700 907.39400
+zoomBox 605.82800 904.86300 607.87600 906.69600
+zoomBox 605.96600 905.02300 607.70700 906.58200
+getAttribute -quiet -net {clk[0]}
+setAttribute -net {prog_clk[0]} -skip_antenna_fix false -skip_routing false -avoid_detour true -si_post_route_fix false -weight 20 -preferred_extra_space 1 -top_preferred_routing_layer Metal4 -bottom_preferred_routing_layer Metal3 -shield_net vss -non_default_rule default -pattern steiner
+setAttribute -net {clk[0]} -skip_antenna_fix false -skip_routing false -avoid_detour true -si_post_route_fix false -weight 20 -preferred_extra_space 1 -top_preferred_routing_layer Metal4 -bottom_preferred_routing_layer Metal3 -shield_net vss -non_default_rule default -pattern steiner
+zoomBox 605.58000 904.63300 607.99100 906.79100
+zoomBox 605.33500 904.38400 608.17200 906.92400
+zoomBox 605.04600 904.09200 608.38500 907.08100
+zoomBox 604.70700 903.74900 608.63500 907.26500
+zoomBox 603.82100 902.91800 609.25800 907.78500
+zoomBox 600.89700 900.17300 611.31300 909.49800
+zoomBox 597.05100 896.56500 614.01500 911.75100
+zoomBox 595.29300 894.91500 615.25000 912.78100
+zoomBox 584.55900 884.84300 622.79200 919.07000
+zoomBox 570.44900 871.60400 632.70600 927.33700
+zoomBox 536.96600 840.18600 656.23200 946.95500
+zoomBox 524.60400 828.58700 664.91800 954.19800
+zoomBox 449.14100 757.77900 717.94000 998.41100
+zoomBox 304.57900 622.13200 819.51400 1083.10900
+zoomBox 27.64500 362.27800 1014.09900 1245.36500
+zoomBox -336.39000 20.69400 1269.88600 1458.65400
+zoomBox -502.87300 -135.52100 1386.86400 1556.19700
+zoomBox -698.73500 -319.30300 1524.48500 1670.95300
+zoomBox -80.56900 313.29000 1284.76600 1535.55600
+zoomBox 301.78700 692.23900 1140.27400 1442.86400
+zoomBox 536.60100 924.96000 1051.53800 1385.93900
+zoomBox 679.00700 1060.68400 995.24300 1343.78300
+zoomBox 784.01600 1159.82600 949.09400 1307.60600
+zoomBox 828.26700 1201.60500 929.64600 1292.36100
+zoomBox 837.74800 1212.40500 923.92100 1289.54800
+zoomBox 845.59000 1222.15300 918.83800 1287.72600
+zoomBox 861.20100 1244.12800 906.18700 1284.40000
+zoomBox 870.00300 1257.35400 897.63100 1282.08700
+zoomBox 875.62900 1264.92400 892.59700 1280.11400
+zoomBox 879.10100 1269.48100 889.52200 1278.81000
+zoomBox 881.32100 1272.04800 887.72200 1277.77800
+zoomBox 881.90200 1272.57500 887.34300 1277.44600
+zoomBox 882.42200 1272.99300 887.04700 1277.13300
 deselectAll
-selectWire 425.4800 1309.7200 1431.0800 1310.1600 1 vdd
-setDrawView place
+selectWire 885.2200 1274.5600 885.4200 1282.3200 3 {clk[0]}
+ui_view_box
+ui_view_box
+dbquery -area {882.422 1272.993 887.047 1277.133} -objType inst
+dbquery -area {882.422 1272.993 887.047 1277.133} -objType regular
+dbquery -area {882.422 1272.993 887.047 1277.133} -objType special
+dbquery -area {882.422 1272.993 887.047 1277.133} -objType bump
+selectObject Wire {clk[0](885220,1274560,885420,1282320)}
+reportShield
+selectInst grid_clb_1__2_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_5/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/q_reg_reg
+fit
+zoomBox -87.70100 653.91300 1384.46900 1971.81900
+zoomBox 9.54200 969.42400 1073.18500 1921.61200
+zoomBox 96.61700 1281.62800 749.82900 1866.39200
+zoomBox 154.62400 1472.10500 555.77900 1831.22400
+zoomBox 213.29700 1594.65800 459.65800 1815.20400
+zoomBox 249.82100 1669.79900 401.11900 1805.24300
+zoomBox 272.13000 1713.38900 365.04600 1796.56900
+zoomBox 285.58000 1739.13000 342.64300 1790.21400
+zoomBox 293.98200 1753.40000 329.02700 1784.77300
+zoomBox 298.32200 1758.97400 323.64200 1781.64100
+deselectAll
+selectWire 253.0600 1771.8400 481.7400 1772.0400 4 {clk[0]}
+zoomBox 306.83200 1765.89800 318.06700 1775.95600
+zoomBox 310.07500 1768.53700 315.94100 1773.78800
+zoomBox 311.69300 1770.32100 314.75500 1773.06200
+zoomBox 312.37500 1771.07200 314.25600 1772.75600
+zoomBox 312.53800 1771.25200 314.13700 1772.68300
+zoomBox 312.67600 1771.40400 314.03600 1772.62100
+zoomBox 312.79400 1771.53300 313.95000 1772.56800
+ui_view_box
+ui_view_box
+dbquery -area {312.794 1771.533 313.95 1772.568} -objType inst
+dbquery -area {312.794 1771.533 313.95 1772.568} -objType regular
+dbquery -area {312.794 1771.533 313.95 1772.568} -objType special
+dbquery -area {312.794 1771.533 313.95 1772.568} -objType bump
+selectObject Wire {clk[0](253060,1771840,481740,1772040)}
+fit
+reportShield > shield

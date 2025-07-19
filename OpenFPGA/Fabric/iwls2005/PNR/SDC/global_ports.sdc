@@ -10,13 +10,15 @@
 #############################################
 #	Define time unit 
 #############################################
-set_units -time s
+#set_units -time s
 
 ##################################################
 # Create programmable clock                       
 ##################################################
-create_clock -name prog_clk[0] -period 3.333333387e-09 -waveform {0 1.666666694e-09} [get_ports {prog_clk[0]}]
+#create_clock -name prog_clk[0] -period 3.333333387 -waveform {0 1.666666694} [get_ports {prog_clk[0]}]
+create_clock -name prog_clk[0] -period 3.333333387 -waveform {0 1.666666694} [get_ports {padin_prog_clk[0]}]
 ##################################################
 # Create clock                                    
 ##################################################
-create_clock -name op_clk[0] -period 1.999999943e-09 -waveform {0 9.999999717e-10} [get_ports {op_clk[0]}]
+#create_clock -name op_clk[0] -period 1.999999943 -waveform {0 0.9999999717} [get_ports {op_clk[0]}]
+create_clock -name op_clk[0] -period 1.999999943 -waveform {0 0.9999999717} [get_ports {padin_op_clk[0]}]

@@ -78,8 +78,8 @@ def main():
     # Each tuple is (find_pattern, replace_pattern)
     patterns = [
         # Example 1: Simple string replacement
+        (r'set_units -time s', '#set_units -time s'),
         (r'sram\n', 'sram*\n'),
-
 	(r'sram_inv\n', 'sram_inv*\n'),
 	(r'mode\n', 'mode*\n'),
 	(r'mode_inv\n', 'mode_inv*\n'),

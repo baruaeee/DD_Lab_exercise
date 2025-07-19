@@ -1,0 +1,31 @@
+-------------------------------------------------------------------------------
+Name     : Shielded net name
+Length   : Shielded net length
+Shield   : Total length of shielding wire
+Ratio    : Average shielding ratio
+-------------------------------------------------------------------------------
+Name          Length    Shield    Ratio   
+                                         Layer:      Length     Shield  Ratio
+-------------------------------------------------------------------------------
+prog_clk[0]:   preferred: Metal3 - Metal4
+             39941.8       0.0    0.000
+                                         Metal1:        3.4        0.0  0.000
+                                         Metal2:    16608.6        0.0  0.000
+                                         Metal3:    22916.5        0.0  0.000
+                                         Metal4:      357.1        0.0  0.000
+                                         Metal5:       56.3        0.0  0.000
+clk[0]:   preferred: Metal3 - Metal4
+              3467.6     228.8    0.033
+                                         Metal2:       47.4        0.0  0.000
+                                         Metal3:     1850.1        0.3  0.000
+                                         Metal4:     1570.1      228.5  0.073
+-------------------------------------------------------------------------------
+
+ Average ratio:                   0.003
+                                         Metal1:          1.7        0.0  0.000
+                                         Metal2:       8328.0        0.0  0.000
+                                         Metal3:      12383.3        0.1  0.000
+                                         Metal4:        963.6      114.2  0.059
+                                         Metal5:         28.1        0.0  0.000
+
+

@@ -1,0 +1,1062 @@
+
+Cadence Tempus(TM) Timing Solution.
+Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v23.11-s111_1, built Thu May 16 09:07:16 PDT 2024
+Options:	
+Date:		Thu Jul 17 22:06:13 2025
+Host:		ei-vm-018.othr.de (x86_64 w/Linux 4.18.0-553.58.1.el8_10.x86_64) (32cores*32cpus*AMD Ryzen Threadripper PRO 5965WX 24-Cores 512KB)
+OS:		Red Hat Enterprise Linux 8.10 (Ootpa)
+
+License:
+		[22:06:13.483188] Configured Lic search path (23.02-s005): 5280@hs-lic3.oth-regensburg.de:27003@hs-lic1.oth-regensburg.de:27003@hs-lic1.oth-regensburg.de:
+
+		tpsxl	Tempus Timing Signoff Solution XL	23.1	checkout succeeded
+		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (386 mbytes). Set global soft_stack_size_limit to change the value.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_1017144_czSTo4'.
+<CMD> ::stop_gui -keepDgui
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+<CMD> read_lib -max ../../ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_slow_1p08V_125C.lib ../../ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_slow_1p35V_125C.lib ../../ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_slow_1p08V_3p0V_125C.lib ../../ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_slow_1p35V_3p0V_125C.lib
+<CMD> read_lib -min ../../ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_fast_1p32V_m40C.lib ../../ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_fast_1p65V_m40C.lib ../../ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_fast_1p32V_3p6V_m40C.lib ../../ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_fast_1p65V_3p6V_m40C.lib
+<CMD> read_lib ../../ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib ../../ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p50V_25C.lib ../../ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib ../../ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p5V_3p3V_25C.lib
+<CMD> read_verilog SRC/fabric_netlists_1.v
+<CMD> set_top_module fpga_top
+#% Begin Load MMMC data ... (date=07/17 22:07:55, mem=1766.2M)
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=07/17 22:07:55, total cpu=0:00:00.0, real=0:00:00.0, peak res=1767.6M, current mem=1767.6M)
+default_emulate_early_rc_corner default_emulate_late_rc_corner default_emulate_rc_corner
+Loading view definition file from .ssv_emulate_view_definition_1017144_27bcfc3f-f15b-413e-a6af-492d0066d821.tcl
+Reading default_emulate_libset_max timing library '/home/bas33767/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_slow_1p08V_125C.lib' ...
+Read 78 cells in library 'sg13g2_stdcell_slow_1p08V_125C' 
+Reading default_emulate_libset_max timing library '/home/bas33767/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_slow_1p35V_125C.lib' ...
+Read 78 cells in library 'sg13g2_stdcell_slow_1p35V_125C' 
+Reading default_emulate_libset_max timing library '/home/bas33767/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_slow_1p08V_3p0V_125C.lib' ...
+Read 14 cells in library 'sg13g2_io_slow_1p08V_3p0V_125C' 
+Reading default_emulate_libset_max timing library '/home/bas33767/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_slow_1p35V_3p0V_125C.lib' ...
+Read 14 cells in library 'sg13g2_io_slow_1p35V_3p0V_125C' 
+Reading default_emulate_libset_max timing library '/home/bas33767/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib' ...
+Read 78 cells in library 'sg13g2_stdcell_typ_1p20V_25C' 
+Reading default_emulate_libset_max timing library '/home/bas33767/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p50V_25C.lib' ...
+Read 78 cells in library 'sg13g2_stdcell_typ_1p50V_25C' 
+Reading default_emulate_libset_max timing library '/home/bas33767/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib' ...
+Read 14 cells in library 'sg13g2_io_typ_1p2V_3p3V_25C' 
+Reading default_emulate_libset_max timing library '/home/bas33767/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p5V_3p3V_25C.lib' ...
+Read 14 cells in library 'sg13g2_io_typ_1p5V_3p3V_25C' 
+Reading default_emulate_libset_min timing library '/home/bas33767/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_fast_1p32V_m40C.lib' ...
+Read 78 cells in library 'sg13g2_stdcell_fast_1p32V_m40C' 
+Reading default_emulate_libset_min timing library '/home/bas33767/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_fast_1p65V_m40C.lib' ...
+Read 78 cells in library 'sg13g2_stdcell_fast_1p65V_m40C' 
+Reading default_emulate_libset_min timing library '/home/bas33767/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_fast_1p32V_3p6V_m40C.lib' ...
+Read 14 cells in library 'sg13g2_io_fast_1p32V_3p6V_m40C' 
+Reading default_emulate_libset_min timing library '/home/bas33767/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_fast_1p65V_3p6V_m40C.lib' ...
+Read 14 cells in library 'sg13g2_io_fast_1p65V_3p6V_m40C' 
+*** End library_loading (cpu=0.01min, real=0.00min, mem=40.0M, fe_cpu=0.39min, fe_real=1.70min, fe_mem=1690.6M) ***
+#% Begin Load netlist data ... (date=07/17 22:07:55, mem=1775.6M)
+*** Begin netlist parsing (mem=1690.6M) ***
+Reading verilog netlist 'SRC/fabric_netlists_1.v'
+
+*** Memory Usage v#2 (Current mem = 2080.609M, initial mem = 832.277M) ***
+*** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=2080.6M) ***
+#% End Load netlist data ... (date=07/17 22:07:56, total cpu=0:00:00.4, real=0:00:01.0, peak res=1930.3M, current mem=1921.6M)
+Set top cell to fpga_top.
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Building hierarchical netlist for Cell fpga_top ...
+***** UseNewTieNetMode *****.
+Module dffsrq is multiply-instantiated in MULTI_MODE_DFFSRQ and another module.
+*** Netlist is NOT unique.
+** info: there are 615 modules.
+** info: there are 50221 stdCell insts.
+** info: there are 50221 stdCell insts with at least one signal pin.
+** info: there are 64 Pad insts.
+
+*** Memory Usage v#2 (Current mem = 2561.555M, initial mem = 832.277M) ***
+Set Default Input Pin Transition as 0.1 ps.
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+/dev/null
+Extraction setup Started for TopCell fpga_top 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Reading timing constraints file '/dev/null' ...
+Current (total cpu=0:00:24.9, real=0:01:44, peak res=2694.2M, current mem=2655.3M)
+Total number of combinational cells: 54
+Total number of sequential cells: 10
+Total number of tristate cells: 6
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 0
+List of usable buffers: sg13g2_buf_1 sg13g2_buf_16 sg13g2_buf_2 sg13g2_buf_4 sg13g2_buf_8
+Total number of usable buffers: 5
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: sg13g2_inv_1 sg13g2_inv_16 sg13g2_inv_2 sg13g2_inv_8 sg13g2_inv_4
+Total number of usable inverters: 5
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: sg13g2_dlygate4sd1_1 sg13g2_dlygate4sd3_1 sg13g2_dlygate4sd2_1
+Total number of identified usable delay cells: 3
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+default_emulate_constraint_mode
+Extraction setup Started for TopCell fpga_top 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started for TopCell fpga_top 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started for TopCell fpga_top 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+default_emulate_libset_max default_emulate_libset_min
+<CMD> read_sdc SDC/cbx_1__0_.sdc SDC/cbx_1__1_.sdc SDC/cbx_1__2_.sdc SDC/cby_0__1_.sdc SDC/cby_1__1_.sdc SDC/cby_2__1_.sdc SDC/disable_configurable_memory_outputs.sdc SDC/disable_configure_ports.sdc SDC/disable_routing_multiplexer_outputs.sdc SDC/disable_sb_outputs.sdc SDC/global_ports.sdc SDC/logical_tile_clb_mode_clb_.sdc SDC/logical_tile_clb_mode_default__fle.sdc SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric.sdc SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff.sdc SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic.sdc SDC/logical_tile_io_mode_io_.sdc SDC/sb_0__0_.sdc SDC/sb_0__1_.sdc SDC/sb_0__2_.sdc SDC/sb_1__0_.sdc SDC/sb_1__1_.sdc SDC/sb_1__2_.sdc SDC/sb_2__0_.sdc SDC/sb_2__1_.sdc SDC/sb_2__2_.sdc
+Current (total cpu=0:00:25.3, real=0:01:44, peak res=2694.2M, current mem=2621.7M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2637.6M, current mem=2637.6M)
+Current (total cpu=0:00:25.3, real=0:01:44, peak res=2694.2M, current mem=2637.6M)
+Current (total cpu=0:00:25.4, real=0:01:44, peak res=2694.2M, current mem=2637.6M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2638.3M, current mem=2638.3M)
+Current (total cpu=0:00:25.5, real=0:01:44, peak res=2694.2M, current mem=2638.3M)
+Current (total cpu=0:00:25.5, real=0:01:44, peak res=2694.2M, current mem=2638.3M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2638.8M, current mem=2638.8M)
+Current (total cpu=0:00:25.6, real=0:01:44, peak res=2694.2M, current mem=2638.8M)
+Current (total cpu=0:00:25.6, real=0:01:44, peak res=2694.2M, current mem=2638.8M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2639.2M, current mem=2639.2M)
+Current (total cpu=0:00:25.6, real=0:01:44, peak res=2694.2M, current mem=2639.2M)
+Current (total cpu=0:00:25.7, real=0:01:44, peak res=2694.2M, current mem=2639.2M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2639.9M, current mem=2639.9M)
+Current (total cpu=0:00:25.8, real=0:01:44, peak res=2694.2M, current mem=2639.9M)
+Current (total cpu=0:00:25.8, real=0:01:45, peak res=2694.2M, current mem=2639.9M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2640.5M, current mem=2640.5M)
+Current (total cpu=0:00:25.9, real=0:01:45, peak res=2694.2M, current mem=2640.5M)
+Current (total cpu=0:00:25.9, real=0:01:45, peak res=2694.2M, current mem=2640.5M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.7, real=0:00:00.0, peak res=2649.4M, current mem=2649.4M)
+Current (total cpu=0:00:26.6, real=0:01:45, peak res=2694.2M, current mem=2649.4M)
+Current (total cpu=0:00:26.6, real=0:01:45, peak res=2694.2M, current mem=2649.4M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.3, real=0:00:01.0, peak res=2655.7M, current mem=2655.7M)
+Current (total cpu=0:00:26.9, real=0:01:46, peak res=2694.2M, current mem=2655.7M)
+Current (total cpu=0:00:27.0, real=0:01:46, peak res=2694.2M, current mem=2655.7M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2661.1M, current mem=2661.1M)
+Current (total cpu=0:00:27.1, real=0:01:46, peak res=2694.2M, current mem=2661.1M)
+Current (total cpu=0:00:27.1, real=0:01:46, peak res=2694.2M, current mem=2661.1M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2661.5M, current mem=2661.5M)
+Current (total cpu=0:00:27.2, real=0:01:46, peak res=2694.2M, current mem=2661.5M)
+Current (total cpu=0:00:27.3, real=0:01:46, peak res=2694.2M, current mem=2661.5M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2662.4M, current mem=2662.4M)
+Current (total cpu=0:00:27.3, real=0:01:46, peak res=2694.2M, current mem=2662.4M)
+Current (total cpu=0:00:27.4, real=0:01:46, peak res=2694.2M, current mem=2662.4M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:01.0, real=0:00:01.0, peak res=2663.1M, current mem=2663.1M)
+Current (total cpu=0:00:28.4, real=0:01:47, peak res=2694.2M, current mem=2663.1M)
+Current (total cpu=0:00:28.5, real=0:01:47, peak res=2694.2M, current mem=2663.1M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2663.4M, current mem=2663.4M)
+Current (total cpu=0:00:28.5, real=0:01:47, peak res=2694.2M, current mem=2663.4M)
+Current (total cpu=0:00:28.6, real=0:01:47, peak res=2694.2M, current mem=2663.4M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2663.8M, current mem=2663.8M)
+Current (total cpu=0:00:28.6, real=0:01:47, peak res=2694.2M, current mem=2663.8M)
+Current (total cpu=0:00:28.7, real=0:01:47, peak res=2694.2M, current mem=2663.8M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2664.2M, current mem=2664.2M)
+Current (total cpu=0:00:28.7, real=0:01:47, peak res=2694.2M, current mem=2664.2M)
+Current (total cpu=0:00:28.8, real=0:01:48, peak res=2694.2M, current mem=2664.2M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2664.5M, current mem=2664.5M)
+Current (total cpu=0:00:28.8, real=0:01:48, peak res=2694.2M, current mem=2664.5M)
+Current (total cpu=0:00:28.9, real=0:01:48, peak res=2694.2M, current mem=2664.5M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2664.9M, current mem=2664.9M)
+Current (total cpu=0:00:28.9, real=0:01:48, peak res=2694.2M, current mem=2664.9M)
+Current (total cpu=0:00:29.0, real=0:01:48, peak res=2694.2M, current mem=2664.9M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2665.3M, current mem=2665.3M)
+Current (total cpu=0:00:29.0, real=0:01:48, peak res=2694.2M, current mem=2665.3M)
+Current (total cpu=0:00:29.1, real=0:01:48, peak res=2694.2M, current mem=2665.3M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2665.6M, current mem=2665.6M)
+Current (total cpu=0:00:29.1, real=0:01:48, peak res=2694.2M, current mem=2665.6M)
+Current (total cpu=0:00:29.2, real=0:01:48, peak res=2694.2M, current mem=2665.6M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2666.0M, current mem=2666.0M)
+Current (total cpu=0:00:29.2, real=0:01:48, peak res=2694.2M, current mem=2666.0M)
+Current (total cpu=0:00:29.3, real=0:01:48, peak res=2694.2M, current mem=2666.0M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2666.7M, current mem=2666.7M)
+Current (total cpu=0:00:29.3, real=0:01:48, peak res=2694.2M, current mem=2666.7M)
+Current (total cpu=0:00:29.4, real=0:01:48, peak res=2694.2M, current mem=2666.7M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2667.0M, current mem=2667.0M)
+Current (total cpu=0:00:29.5, real=0:01:48, peak res=2694.2M, current mem=2667.0M)
+Current (total cpu=0:00:29.5, real=0:01:48, peak res=2694.2M, current mem=2667.0M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2667.4M, current mem=2667.4M)
+Current (total cpu=0:00:29.6, real=0:01:48, peak res=2694.2M, current mem=2667.4M)
+Current (total cpu=0:00:29.6, real=0:01:48, peak res=2694.2M, current mem=2667.4M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2667.8M, current mem=2667.8M)
+Current (total cpu=0:00:29.6, real=0:01:48, peak res=2694.2M, current mem=2667.8M)
+Current (total cpu=0:00:29.7, real=0:01:48, peak res=2694.2M, current mem=2667.8M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2668.4M, current mem=2668.4M)
+Current (total cpu=0:00:29.8, real=0:01:49, peak res=2694.2M, current mem=2668.4M)
+Current (total cpu=0:00:29.8, real=0:01:49, peak res=2694.2M, current mem=2668.4M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2668.8M, current mem=2668.8M)
+Current (total cpu=0:00:29.9, real=0:01:49, peak res=2694.2M, current mem=2668.8M)
+Loading  (fpga_top)
+Traverse HInst (fpga_top)
+<CMD> report_timing
+AAE_INFO: opIsDesignInPostRouteState() is 0
+AAE DB initialization (MEM=2995.8 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Name: fpga_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=2594.85)
+/dev/null
+End delay calculation. (MEM=2757.81 CPU=0:00:11.1 REAL=0:00:11.0)
+Begin loading slews from CTE ...
+Loading slews from CTE completed...
+End delay calculation (fullDC). (MEM=2754.08 CPU=0:00:11.6 REAL=0:00:12.0)
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Path 1: VIOLATED Recovery Check with Pin grid_io_top_1__3_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_DFFR_mem/DFFR_0_/q_reg_reg/CLK 
+Endpoint:   grid_io_top_1__3_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_DFFR_mem/DFFR_0_/q_reg_reg/RESET_B (^) checked with  leading edge of 'prog_clk[0]'
+Beginpoint: pReset[0]                                                                                                                   (v) triggered by  leading edge of '@'
+Path Groups: {async_default}
+Other End Arrival Time          0.000
+- Recovery                      0.799
++ Phase Shift                   1.000
+= Required Time                 0.201
+- Arrival Time                26804834.000
+= Slack Time                  -26804834.000
+     Clock Rise Edge                      0.000
+     + Input Delay                        0.000
+     = Beginpoint Arrival Time            0.000
+      -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      Instance                                                                                                             Arc          Cell            Delay         Arrival       Required  
+                                                                                                                                                                      Time          Time  
+      -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      -                                                                                                                    pReset[0] v  -               -             0.000         -26804834.000  
+      grid_io_top_1__3_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_DFFR_mem/DFFR_0_/g6         A v -> Y ^   sg13g2_inv_1    26804830.000  26804830.000  -4.000  
+      grid_io_top_1__3_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_DFFR_mem/DFFR_0_/q_reg_reg  RESET_B ^    sg13g2_dfrbp_1  4.000         26804834.000  0.201  
+      -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<CMD> set_ideal_net pReset[0]
+<CMD> report_timing
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Name: fpga_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=2726.92)
+End delay calculation. (MEM=3308.69 CPU=0:00:44.7 REAL=0:00:02.0)
+Begin loading slews from CTE ...
+Loading slews from CTE completed...
+End delay calculation (fullDC). (MEM=3308.69 CPU=0:00:45.2 REAL=0:00:03.0)
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Path 1: VIOLATED Recovery Check with Pin grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/q_reg_reg/CLK 
+Endpoint:   grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/q_reg_reg/SET_B (^) checked with  leading edge of 'clk[0]'
+Beginpoint: set[0]                                                                                                                                                                                                                                            (v) triggered by  leading edge of '@'
+Path Groups: {async_default}
+Other End Arrival Time          0.000
+- Recovery                      0.970
++ Phase Shift                   1.667
+= Required Time                 0.696
+- Arrival Time                6475.873
+= Slack Time                  -6475.176
+     Clock Rise Edge                      0.000
+     + Input Delay                        0.000
+     = Beginpoint Arrival Time            0.000
+      -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      Instance                                                                                                                                                                                                                                     Arc         Cell             Delay     Arrival   Required  
+                                                                                                                                                                                                                                                                                          Time      Time  
+      -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      -                                                                                                                                                                                                                                            set[0] v    -                -         0.000     -6475.176  
+      grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/g25__2398  B v -> Y ^  sg13g2_nand2_1   6471.693  6471.693  -3.483  
+      grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/q_reg_reg  SET_B ^     sg13g2_sdfbbp_1  4.180     6475.873  0.696  
+      -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<CMD> set_ideal_net set[0]
+<CMD> report_timing
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Name: fpga_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=2979.8)
+End delay calculation. (MEM=3390.7 CPU=0:00:42.6 REAL=0:00:02.0)
+Begin loading slews from CTE ...
+Loading slews from CTE completed...
+End delay calculation (fullDC). (MEM=3390.7 CPU=0:00:43.0 REAL=0:00:03.0)
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Path 1: VIOLATED Recovery Check with Pin grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/q_reg_reg/CLK 
+Endpoint:   grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/q_reg_reg/SET_B (^) checked with  leading edge of 'clk[0]'
+Beginpoint: reset[0]                                                                                                                                                                                                                                          (^) triggered by  leading edge of '@'
+Path Groups: {async_default}
+Other End Arrival Time          0.000
+- Recovery                      0.970
++ Phase Shift                   1.667
+= Required Time                 0.696
+- Arrival Time                6472.435
+= Slack Time                  -6471.738
+     Clock Rise Edge                      0.000
+     + Input Delay                        0.000
+     = Beginpoint Arrival Time            0.000
+      -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      Instance                                                                                                                                                                                                                                     Arc         Cell             Delay     Arrival   Required  
+                                                                                                                                                                                                                                                                                          Time      Time  
+      -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      -                                                                                                                                                                                                                                            reset[0] ^  -                -         0.000     -6471.738  
+      grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/g26        A ^ -> Y v  sg13g2_inv_1     6466.543  6466.543  -5.195  
+      grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/g25__2398  A v -> Y ^  sg13g2_nand2_1   1.711     6468.255  -3.483  
+      grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/q_reg_reg  SET_B ^     sg13g2_sdfbbp_1  4.180     6472.435  0.696  
+      -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<CMD> set_ideal_net reset[0]
+<CMD> report_timing
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Name: fpga_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=3164.61)
+End delay calculation. (MEM=3568.55 CPU=0:00:42.0 REAL=0:00:02.0)
+Begin loading slews from CTE ...
+Loading slews from CTE completed...
+End delay calculation (fullDC). (MEM=3568.55 CPU=0:00:42.4 REAL=0:00:03.0)
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Path 1: VIOLATED Recovery Check with Pin grid_io_top_1__3_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_DFFR_mem/DFFR_0_/q_reg_reg/CLK 
+Endpoint:   grid_io_top_1__3_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_DFFR_mem/DFFR_0_/q_reg_reg/RESET_B (^) checked with  leading edge of 'prog_clk[0]'
+Beginpoint: pReset[0]                                                                                                                   (v) triggered by  leading edge of '@'
+Path Groups: {async_default}
+Other End Arrival Time          0.000
+- Recovery                      0.799
++ Phase Shift                   1.000
+= Required Time                 0.201
+- Arrival Time                  5.891
+= Slack Time                   -5.689
+     Clock Rise Edge                      0.000
+     + Input Delay                        0.000
+     = Beginpoint Arrival Time            0.000
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      Instance                                                                                                             Arc          Cell            Delay  Arrival  Required  
+                                                                                                                                                               Time     Time  
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      -                                                                                                                    pReset[0] v  -               -      0.000    -5.689  
+      grid_io_top_1__3_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_DFFR_mem/DFFR_0_/g6         A v -> Y ^   sg13g2_inv_1    1.705  1.705    -3.984  
+      grid_io_top_1__3_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_DFFR_mem/DFFR_0_/q_reg_reg  RESET_B ^    sg13g2_dfrbp_1  4.186  5.891    0.201  
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<CMD> create_clock -name clk[0] -period 5 -waveform {0 2.5} [get_ports {clk[0]}]
+**WARN: (TCLCMD-1594):	A clock with name clk[0] was already defined in the design. Previously defined clock definition of clk[0] will be overwritten.
+**WARN: (TCLCMD-958):	Previously defined source objects for clock 'clk[0]' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once.
+<CMD> report_timing
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Name: fpga_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=3329.36)
+End delay calculation. (MEM=3712.87 CPU=0:00:40.4 REAL=0:00:02.0)
+Begin loading slews from CTE ...
+Loading slews from CTE completed...
+End delay calculation (fullDC). (MEM=3712.87 CPU=0:00:40.8 REAL=0:00:02.0)
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Path 1: VIOLATED Recovery Check with Pin grid_io_top_1__3_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_DFFR_mem/DFFR_0_/q_reg_reg/CLK 
+Endpoint:   grid_io_top_1__3_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_DFFR_mem/DFFR_0_/q_reg_reg/RESET_B (^) checked with  leading edge of 'prog_clk[0]'
+Beginpoint: pReset[0]                                                                                                                   (v) triggered by  leading edge of '@'
+Path Groups: {async_default}
+Other End Arrival Time          0.000
+- Recovery                      0.799
++ Phase Shift                   1.000
+= Required Time                 0.201
+- Arrival Time                  5.891
+= Slack Time                   -5.689
+     Clock Rise Edge                      0.000
+     + Input Delay                        0.000
+     = Beginpoint Arrival Time            0.000
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      Instance                                                                                                             Arc          Cell            Delay  Arrival  Required  
+                                                                                                                                                               Time     Time  
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      -                                                                                                                    pReset[0] v  -               -      0.000    -5.689  
+      grid_io_top_1__3_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_DFFR_mem/DFFR_0_/g6         A v -> Y ^   sg13g2_inv_1    1.705  1.705    -3.984  
+      grid_io_top_1__3_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/GPIO_DFFR_mem/DFFR_0_/q_reg_reg  RESET_B ^    sg13g2_dfrbp_1  4.186  5.891    0.201  
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<CMD> report_timing > top.btarpt
+<CMD> get_eco_opt_mode -optimization_failure_tracking_file -quiet
+<CMD> get_time_unit
+<CMD> report_timing -gui_capri -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD> selectObject Net cby_2__2_/mem_right_ipin_1/DFFR_0_/n_0
+<CMD> create_clock -name prog_clk[0] -period 5 -waveform {0 2.4999999859} [get_ports {prog_clk[0]}]
+**WARN: (TCLCMD-1594):	A clock with name prog_clk[0] was already defined in the design. Previously defined clock definition of prog_clk[0] will be overwritten.
+**WARN: (TCLCMD-958):	Previously defined source objects for clock 'prog_clk[0]' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once.
+<CMD> report_timing > top.btarpt
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Name: fpga_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=3536.3)
+End delay calculation. (MEM=3953.96 CPU=0:00:40.7 REAL=0:00:02.0)
+Begin loading slews from CTE ...
+Loading slews from CTE completed...
+End delay calculation (fullDC). (MEM=3953.96 CPU=0:00:41.1 REAL=0:00:02.0)
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+<CMD> get_eco_opt_mode -optimization_failure_tracking_file -quiet
+<CMD> get_time_unit
+<CMD> report_timing -gui_capri -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD> create_clock -name prog_clk[0] -period 6 -waveform {0 3} [get_ports {prog_clk[0]}]
+**WARN: (TCLCMD-1594):	A clock with name prog_clk[0] was already defined in the design. Previously defined clock definition of prog_clk[0] will be overwritten.
+**WARN: (TCLCMD-958):	Previously defined source objects for clock 'prog_clk[0]' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once.
+<CMD> report_timing > top.btarpt
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Name: fpga_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=3722.66)
+End delay calculation. (MEM=4126.41 CPU=0:00:41.7 REAL=0:00:02.0)
+Begin loading slews from CTE ...
+Loading slews from CTE completed...
+End delay calculation (fullDC). (MEM=4126.41 CPU=0:00:42.2 REAL=0:00:02.0)
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+<CMD> get_eco_opt_mode -optimization_failure_tracking_file -quiet
+<CMD> get_time_unit
+<CMD> report_timing -gui_capri -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD> create_clock -name prog_clk[0] -period 6.5 -waveform {0 3.25} [get_ports {prog_clk[0]}]
+**WARN: (TCLCMD-1594):	A clock with name prog_clk[0] was already defined in the design. Previously defined clock definition of prog_clk[0] will be overwritten.
+**WARN: (TCLCMD-958):	Previously defined source objects for clock 'prog_clk[0]' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once.
+<CMD> report_timing > top.btarpt
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Name: fpga_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=3880.6)
+End delay calculation. (MEM=4291.02 CPU=0:00:42.5 REAL=0:00:02.0)
+Begin loading slews from CTE ...
+Loading slews from CTE completed...
+End delay calculation (fullDC). (MEM=4291.02 CPU=0:00:42.9 REAL=0:00:02.0)
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+<CMD> get_eco_opt_mode -optimization_failure_tracking_file -quiet
+<CMD> get_time_unit
+<CMD> report_timing -gui_capri -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD> create_clock -name prog_clk[0] -period 6.75 -waveform {0 3.25} [get_ports {prog_clk[0]}]
+**WARN: (TCLCMD-1594):	A clock with name prog_clk[0] was already defined in the design. Previously defined clock definition of prog_clk[0] will be overwritten.
+**WARN: (TCLCMD-958):	Previously defined source objects for clock 'prog_clk[0]' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once.
+<CMD> report_timing > top.btarpt
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Name: fpga_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=4048.91)
+End delay calculation. (MEM=4412.18 CPU=0:00:42.5 REAL=0:00:02.0)
+Begin loading slews from CTE ...
+Loading slews from CTE completed...
+End delay calculation (fullDC). (MEM=4412.18 CPU=0:00:43.0 REAL=0:00:02.0)
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+<CMD> get_eco_opt_mode -optimization_failure_tracking_file -quiet
+<CMD> get_time_unit
+<CMD> report_timing -gui_capri -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD> create_clock -name clk[0] -period 4 -waveform {0 2} [get_ports {clk[0]}]
+**WARN: (TCLCMD-1594):	A clock with name clk[0] was already defined in the design. Previously defined clock definition of clk[0] will be overwritten.
+**WARN: (TCLCMD-958):	Previously defined source objects for clock 'clk[0]' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once.
+<CMD> report_timing > top.btarpt
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Name: fpga_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=4215.19)
+End delay calculation. (MEM=4605.89 CPU=0:00:43.1 REAL=0:00:02.0)
+Begin loading slews from CTE ...
+Loading slews from CTE completed...
+End delay calculation (fullDC). (MEM=4605.89 CPU=0:00:43.5 REAL=0:00:03.0)
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+<CMD> get_eco_opt_mode -optimization_failure_tracking_file -quiet
+<CMD> get_time_unit
+<CMD> report_timing -gui_capri -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD> create_clock -name clk[0] -period 4.5 -waveform {0 2} [get_ports {clk[0]}]
+**WARN: (TCLCMD-1594):	A clock with name clk[0] was already defined in the design. Previously defined clock definition of clk[0] will be overwritten.
+**WARN: (TCLCMD-958):	Previously defined source objects for clock 'clk[0]' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once.
+<CMD> report_timing
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Name: fpga_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=4383.57)
+End delay calculation. (MEM=4725.96 CPU=0:00:42.9 REAL=0:00:02.0)
+Begin loading slews from CTE ...
+Loading slews from CTE completed...
+End delay calculation (fullDC). (MEM=4725.96 CPU=0:00:43.4 REAL=0:00:02.0)
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Path 1: VIOLATED Recovery Check with Pin grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/q_reg_reg/CLK 
+Endpoint:   grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/q_reg_reg/SET_B (^) checked with  leading edge of 'clk[0]'
+Beginpoint: reset[0]                                                                                                                                                                                                                                          (^) triggered by  leading edge of '@'
+Path Groups: {async_default}
+Other End Arrival Time          0.000
+- Recovery                      0.970
++ Phase Shift                   4.500
+= Required Time                 3.530
+- Arrival Time                  5.933
+= Slack Time                   -2.403
+     Clock Rise Edge                      0.000
+     + Input Delay                        0.000
+     = Beginpoint Arrival Time            0.000
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      Instance                                                                                                                                                                                                                                     Arc         Cell             Delay  Arrival  Required  
+                                                                                                                                                                                                                                                                                       Time     Time  
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      -                                                                                                                                                                                                                                            reset[0] ^  -                -      0.000    -2.403  
+      grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/g26        A ^ -> Y v  sg13g2_inv_1     0.042  0.042    -2.361  
+      grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/g25__2398  A v -> Y ^  sg13g2_nand2_1   1.711  1.753    -0.650  
+      grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/q_reg_reg  SET_B ^     sg13g2_sdfbbp_1  4.180  5.933    3.530  
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<CMD> create_clock -name clk[0] -period 5 -waveform {0 2.5} [get_ports {clk[0]}]
+**WARN: (TCLCMD-1594):	A clock with name clk[0] was already defined in the design. Previously defined clock definition of clk[0] will be overwritten.
+**WARN: (TCLCMD-958):	Previously defined source objects for clock 'clk[0]' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once.
+<CMD> report_timing
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Name: fpga_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=4544.95)
+End delay calculation. (MEM=4867.77 CPU=0:00:41.8 REAL=0:00:02.0)
+Begin loading slews from CTE ...
+Loading slews from CTE completed...
+End delay calculation (fullDC). (MEM=4867.77 CPU=0:00:42.3 REAL=0:00:02.0)
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Path 1: VIOLATED Recovery Check with Pin grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/q_reg_reg/CLK 
+Endpoint:   grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/q_reg_reg/SET_B (^) checked with  leading edge of 'clk[0]'
+Beginpoint: reset[0]                                                                                                                                                                                                                                          (^) triggered by  leading edge of '@'
+Path Groups: {async_default}
+Other End Arrival Time          0.000
+- Recovery                      0.970
++ Phase Shift                   5.000
+= Required Time                 4.030
+- Arrival Time                  5.933
+= Slack Time                   -1.903
+     Clock Rise Edge                      0.000
+     + Input Delay                        0.000
+     = Beginpoint Arrival Time            0.000
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      Instance                                                                                                                                                                                                                                     Arc         Cell             Delay  Arrival  Required  
+                                                                                                                                                                                                                                                                                       Time     Time  
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      -                                                                                                                                                                                                                                            reset[0] ^  -                -      0.000    -1.903  
+      grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/g26        A ^ -> Y v  sg13g2_inv_1     0.042  0.042    -1.861  
+      grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/g25__2398  A v -> Y ^  sg13g2_nand2_1   1.711  1.753    -0.150  
+      grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/q_reg_reg  SET_B ^     sg13g2_sdfbbp_1  4.180  5.933    4.030  
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<CMD> create_clock -name prog_clk[0] -period 7 -waveform {0 3.5} [get_ports {prog_clk[0]}]
+**WARN: (TCLCMD-1594):	A clock with name prog_clk[0] was already defined in the design. Previously defined clock definition of prog_clk[0] will be overwritten.
+**WARN: (TCLCMD-958):	Previously defined source objects for clock 'prog_clk[0]' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once.
+<CMD> report_timing
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Name: fpga_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=4712.38)
+End delay calculation. (MEM=5035.95 CPU=0:00:43.4 REAL=0:00:01.0)
+Begin loading slews from CTE ...
+Loading slews from CTE completed...
+End delay calculation (fullDC). (MEM=5035.95 CPU=0:00:43.8 REAL=0:00:03.0)
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Path 1: VIOLATED Recovery Check with Pin grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/q_reg_reg/CLK 
+Endpoint:   grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/q_reg_reg/SET_B (^) checked with  leading edge of 'clk[0]'
+Beginpoint: reset[0]                                                                                                                                                                                                                                          (^) triggered by  leading edge of '@'
+Path Groups: {async_default}
+Other End Arrival Time          0.000
+- Recovery                      0.970
++ Phase Shift                   5.000
+= Required Time                 4.030
+- Arrival Time                  5.933
+= Slack Time                   -1.903
+     Clock Rise Edge                      0.000
+     + Input Delay                        0.000
+     = Beginpoint Arrival Time            0.000
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      Instance                                                                                                                                                                                                                                     Arc         Cell             Delay  Arrival  Required  
+                                                                                                                                                                                                                                                                                       Time     Time  
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      -                                                                                                                                                                                                                                            reset[0] ^  -                -      0.000    -1.903  
+      grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/g26        A ^ -> Y v  sg13g2_inv_1     0.042  0.042    -1.861  
+      grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/g25__2398  A v -> Y ^  sg13g2_nand2_1   1.711  1.753    -0.150  
+      grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/q_reg_reg  SET_B ^     sg13g2_sdfbbp_1  4.180  5.933    4.030  
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<CMD> create_clock -name prog_clk[0] -period 8 -waveform {0 4} [get_ports {prog_clk[0]}]
+**WARN: (TCLCMD-1594):	A clock with name prog_clk[0] was already defined in the design. Previously defined clock definition of prog_clk[0] will be overwritten.
+**WARN: (TCLCMD-958):	Previously defined source objects for clock 'prog_clk[0]' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once.
+<CMD> report_timing
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Name: fpga_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=4874.37)
+End delay calculation. (MEM=5210.16 CPU=0:00:43.7 REAL=0:00:02.0)
+Begin loading slews from CTE ...
+Loading slews from CTE completed...
+End delay calculation (fullDC). (MEM=5210.16 CPU=0:00:44.1 REAL=0:00:02.0)
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Path 1: VIOLATED Recovery Check with Pin grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/q_reg_reg/CLK 
+Endpoint:   grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/q_reg_reg/SET_B (^) checked with  leading edge of 'clk[0]'
+Beginpoint: reset[0]                                                                                                                                                                                                                                          (^) triggered by  leading edge of '@'
+Path Groups: {async_default}
+Other End Arrival Time          0.000
+- Recovery                      0.970
++ Phase Shift                   5.000
+= Required Time                 4.030
+- Arrival Time                  5.933
+= Slack Time                   -1.903
+     Clock Rise Edge                      0.000
+     + Input Delay                        0.000
+     = Beginpoint Arrival Time            0.000
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      Instance                                                                                                                                                                                                                                     Arc         Cell             Delay  Arrival  Required  
+                                                                                                                                                                                                                                                                                       Time     Time  
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      -                                                                                                                                                                                                                                            reset[0] ^  -                -      0.000    -1.903  
+      grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/g26        A ^ -> Y v  sg13g2_inv_1     0.042  0.042    -1.861  
+      grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/g25__2398  A v -> Y ^  sg13g2_nand2_1   1.711  1.753    -0.150  
+      grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/q_reg_reg  SET_B ^     sg13g2_sdfbbp_1  4.180  5.933    4.030  
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<CMD> create_clock -name prog_clk[0] -period 10 -waveform {0 5} [get_ports {prog_clk[0]}]
+**WARN: (TCLCMD-1594):	A clock with name prog_clk[0] was already defined in the design. Previously defined clock definition of prog_clk[0] will be overwritten.
+**WARN: (TCLCMD-958):	Previously defined source objects for clock 'prog_clk[0]' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once.
+<CMD> report_timing
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Name: fpga_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=5037.38)
+End delay calculation. (MEM=5357.1 CPU=0:00:40.1 REAL=0:00:02.0)
+Begin loading slews from CTE ...
+Loading slews from CTE completed...
+End delay calculation (fullDC). (MEM=5357.1 CPU=0:00:40.5 REAL=0:00:02.0)
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Path 1: VIOLATED Recovery Check with Pin grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/q_reg_reg/CLK 
+Endpoint:   grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/q_reg_reg/SET_B (^) checked with  leading edge of 'clk[0]'
+Beginpoint: reset[0]                                                                                                                                                                                                                                          (^) triggered by  leading edge of '@'
+Path Groups: {async_default}
+Other End Arrival Time          0.000
+- Recovery                      0.970
++ Phase Shift                   5.000
+= Required Time                 4.030
+- Arrival Time                  5.933
+= Slack Time                   -1.903
+     Clock Rise Edge                      0.000
+     + Input Delay                        0.000
+     = Beginpoint Arrival Time            0.000
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      Instance                                                                                                                                                                                                                                     Arc         Cell             Delay  Arrival  Required  
+                                                                                                                                                                                                                                                                                       Time     Time  
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      -                                                                                                                                                                                                                                            reset[0] ^  -                -      0.000    -1.903  
+      grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/g26        A ^ -> Y v  sg13g2_inv_1     0.042  0.042    -1.861  
+      grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/g25__2398  A v -> Y ^  sg13g2_nand2_1   1.711  1.753    -0.150  
+      grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/q_reg_reg  SET_B ^     sg13g2_sdfbbp_1  4.180  5.933    4.030  
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<CMD> create_clock -name prog_clk[0] -period 16 -waveform {0 8} [get_ports {prog_clk[0]}]
+**WARN: (TCLCMD-1594):	A clock with name prog_clk[0] was already defined in the design. Previously defined clock definition of prog_clk[0] will be overwritten.
+**WARN: (TCLCMD-958):	Previously defined source objects for clock 'prog_clk[0]' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once.
+<CMD> report_timing
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Name: fpga_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=5199.37)
+End delay calculation. (MEM=5510.99 CPU=0:00:42.2 REAL=0:00:02.0)
+Begin loading slews from CTE ...
+Loading slews from CTE completed...
+End delay calculation (fullDC). (MEM=5510.99 CPU=0:00:42.6 REAL=0:00:02.0)
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Path 1: VIOLATED Recovery Check with Pin grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/q_reg_reg/CLK 
+Endpoint:   grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/q_reg_reg/SET_B (^) checked with  leading edge of 'clk[0]'
+Beginpoint: reset[0]                                                                                                                                                                                                                                          (^) triggered by  leading edge of '@'
+Path Groups: {async_default}
+Other End Arrival Time          0.000
+- Recovery                      0.970
++ Phase Shift                   5.000
+= Required Time                 4.030
+- Arrival Time                  5.933
+= Slack Time                   -1.903
+     Clock Rise Edge                      0.000
+     + Input Delay                        0.000
+     = Beginpoint Arrival Time            0.000
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      Instance                                                                                                                                                                                                                                     Arc         Cell             Delay  Arrival  Required  
+                                                                                                                                                                                                                                                                                       Time     Time  
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      -                                                                                                                                                                                                                                            reset[0] ^  -                -      0.000    -1.903  
+      grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/g26        A ^ -> Y v  sg13g2_inv_1     0.042  0.042    -1.861  
+      grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/g25__2398  A v -> Y ^  sg13g2_nand2_1   1.711  1.753    -0.150  
+      grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/q_reg_reg  SET_B ^     sg13g2_sdfbbp_1  4.180  5.933    4.030  
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<CMD> create_clock -name clk[0] -period 6 -waveform {0 3} [get_ports {clk[0]}]
+**WARN: (TCLCMD-1594):	A clock with name clk[0] was already defined in the design. Previously defined clock definition of clk[0] will be overwritten.
+**WARN: (TCLCMD-958):	Previously defined source objects for clock 'clk[0]' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once.
+<CMD> report_timing
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Name: fpga_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=5367.39)
+End delay calculation. (MEM=5683.98 CPU=0:00:40.9 REAL=0:00:02.0)
+Begin loading slews from CTE ...
+Loading slews from CTE completed...
+End delay calculation (fullDC). (MEM=5683.98 CPU=0:00:41.3 REAL=0:00:02.0)
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Path 1: VIOLATED Recovery Check with Pin grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/q_reg_reg/CLK 
+Endpoint:   grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/q_reg_reg/SET_B (^) checked with  leading edge of 'clk[0]'
+Beginpoint: reset[0]                                                                                                                                                                                                                                          (^) triggered by  leading edge of '@'
+Path Groups: {async_default}
+Other End Arrival Time          0.000
+- Recovery                      0.970
++ Phase Shift                   6.000
+= Required Time                 5.030
+- Arrival Time                  5.933
+= Slack Time                   -0.903
+     Clock Rise Edge                      0.000
+     + Input Delay                        0.000
+     = Beginpoint Arrival Time            0.000
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      Instance                                                                                                                                                                                                                                     Arc         Cell             Delay  Arrival  Required  
+                                                                                                                                                                                                                                                                                       Time     Time  
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      -                                                                                                                                                                                                                                            reset[0] ^  -                -      0.000    -0.903  
+      grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/g26        A ^ -> Y v  sg13g2_inv_1     0.042  0.042    -0.861  
+      grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/g25__2398  A v -> Y ^  sg13g2_nand2_1   1.711  1.753    0.850  
+      grid_clb_1__1_/logical_tile_clb_mode_clb__0/logical_tile_clb_mode_default__fle_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_0/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0/dffsrq_0_/q_reg_reg  SET_B ^     sg13g2_sdfbbp_1  4.180  5.933    5.030  
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<CMD> create_clock -name clk[0] -period 7 -waveform {0 3.5} [get_ports {clk[0]}]
+**WARN: (TCLCMD-1594):	A clock with name clk[0] was already defined in the design. Previously defined clock definition of clk[0] will be overwritten.
+**WARN: (TCLCMD-958):	Previously defined source objects for clock 'clk[0]' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once.
+<CMD> report_timing
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Name: fpga_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=5527.98)
+End delay calculation. (MEM=5837.99 CPU=0:00:43.1 REAL=0:00:02.0)
+Begin loading slews from CTE ...
+Loading slews from CTE completed...
+End delay calculation (fullDC). (MEM=5837.99 CPU=0:00:43.5 REAL=0:00:02.0)
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Path 1: MET Path Delay Check
+Endpoint:   grid_io_left_0__1_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/iopad_outpad[0] (v)
+Beginpoint: grid_io_left_0__1_/logical_tile_io_mode_io__0/io_outpad[0]                                           (v) triggered by  leading edge of '@'
+Path Groups: {default}
+Path Delay                      0.014
+= Required Time                 0.014
+- Arrival Time                  0.000
+= Slack Time                    0.014
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      Instance                                                                              Arc                                                             Cell                                  Delay  Arrival  Required  
+                                                                                                                                                                                                         Time     Time  
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      cby_0__1_/mux_right_ipin_0/sg13g2_inv_4_0_                                            Y v                                                             -                                     -      0.000    0.014  
+      cby_0__1_/mux_right_ipin_0                                                            out[0] v                                                        mux_tree_tapbuf_size4                 -      0.000    0.014  
+      cby_0__1_                                                                             left_grid_right_width_0_height_0_subtile_0__pin_outpad_0_[0] v  cby_0__1_                             -      0.000    0.014  
+      grid_io_left_0__1_/logical_tile_io_mode_io__0                                         io_outpad[0] v                                                  logical_tile_io_mode_io_              -      0.000    0.014  
+      grid_io_left_0__1_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0  iopad_outpad[0] v                                               logical_tile_io_mode_physical__iopad  -      0.000    0.014  
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<CMD> create_clock -name prog_clk[0] -period 10 -waveform {0 5} [get_ports {prog_clk[0]}]
+**WARN: (TCLCMD-1594):	A clock with name prog_clk[0] was already defined in the design. Previously defined clock definition of prog_clk[0] will be overwritten.
+**WARN: (TCLCMD-958):	Previously defined source objects for clock 'prog_clk[0]' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once.
+<CMD> report_timing
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Name: fpga_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=5690.79)
+End delay calculation. (MEM=6008.32 CPU=0:00:43.4 REAL=0:00:02.0)
+Begin loading slews from CTE ...
+Loading slews from CTE completed...
+End delay calculation (fullDC). (MEM=6008.32 CPU=0:00:43.8 REAL=0:00:03.0)
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Path 1: MET Path Delay Check
+Endpoint:   grid_io_left_0__1_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/iopad_outpad[0] (v)
+Beginpoint: grid_io_left_0__1_/logical_tile_io_mode_io__0/io_outpad[0]                                           (v) triggered by  leading edge of '@'
+Path Groups: {default}
+Path Delay                      0.014
+= Required Time                 0.014
+- Arrival Time                  0.000
+= Slack Time                    0.014
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      Instance                                                                              Arc                                                             Cell                                  Delay  Arrival  Required  
+                                                                                                                                                                                                         Time     Time  
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      cby_0__1_/mux_right_ipin_0/sg13g2_inv_4_0_                                            Y v                                                             -                                     -      0.000    0.014  
+      cby_0__1_/mux_right_ipin_0                                                            out[0] v                                                        mux_tree_tapbuf_size4                 -      0.000    0.014  
+      cby_0__1_                                                                             left_grid_right_width_0_height_0_subtile_0__pin_outpad_0_[0] v  cby_0__1_                             -      0.000    0.014  
+      grid_io_left_0__1_/logical_tile_io_mode_io__0                                         io_outpad[0] v                                                  logical_tile_io_mode_io_              -      0.000    0.014  
+      grid_io_left_0__1_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0  iopad_outpad[0] v                                               logical_tile_io_mode_physical__iopad  -      0.000    0.014  
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<CMD> create_clock -name prog_clk[0] -period 9 -waveform {0 4.5} [get_ports {prog_clk[0]}]
+**WARN: (TCLCMD-1594):	A clock with name prog_clk[0] was already defined in the design. Previously defined clock definition of prog_clk[0] will be overwritten.
+**WARN: (TCLCMD-958):	Previously defined source objects for clock 'prog_clk[0]' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once.
+<CMD> report_timing
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Name: fpga_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=5856.88)
+End delay calculation. (MEM=6175.43 CPU=0:00:43.7 REAL=0:00:02.0)
+Begin loading slews from CTE ...
+Loading slews from CTE completed...
+End delay calculation (fullDC). (MEM=6175.43 CPU=0:00:44.1 REAL=0:00:02.0)
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Path 1: MET Path Delay Check
+Endpoint:   grid_io_left_0__1_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/iopad_outpad[0] (v)
+Beginpoint: grid_io_left_0__1_/logical_tile_io_mode_io__0/io_outpad[0]                                           (v) triggered by  leading edge of '@'
+Path Groups: {default}
+Path Delay                      0.014
+= Required Time                 0.014
+- Arrival Time                  0.000
+= Slack Time                    0.014
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      Instance                                                                              Arc                                                             Cell                                  Delay  Arrival  Required  
+                                                                                                                                                                                                         Time     Time  
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      cby_0__1_/mux_right_ipin_0/sg13g2_inv_4_0_                                            Y v                                                             -                                     -      0.000    0.014  
+      cby_0__1_/mux_right_ipin_0                                                            out[0] v                                                        mux_tree_tapbuf_size4                 -      0.000    0.014  
+      cby_0__1_                                                                             left_grid_right_width_0_height_0_subtile_0__pin_outpad_0_[0] v  cby_0__1_                             -      0.000    0.014  
+      grid_io_left_0__1_/logical_tile_io_mode_io__0                                         io_outpad[0] v                                                  logical_tile_io_mode_io_              -      0.000    0.014  
+      grid_io_left_0__1_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0  iopad_outpad[0] v                                               logical_tile_io_mode_physical__iopad  -      0.000    0.014  
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<CMD> create_clock -name prog_clk[0] -period 7 -waveform {0 3.5} [get_ports {prog_clk[0]}]
+**WARN: (TCLCMD-1594):	A clock with name prog_clk[0] was already defined in the design. Previously defined clock definition of prog_clk[0] will be overwritten.
+**WARN: (TCLCMD-958):	Previously defined source objects for clock 'prog_clk[0]' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once.
+<CMD> report_timing
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Name: fpga_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=6017.81)
+End delay calculation. (MEM=6301.45 CPU=0:00:41.3 REAL=0:00:02.0)
+Begin loading slews from CTE ...
+Loading slews from CTE completed...
+End delay calculation (fullDC). (MEM=6301.45 CPU=0:00:41.7 REAL=0:00:02.0)
+Has not load the powerDB, will keep enalbed
+Has not load the powerDB, will keep enalbed
+Path 1: MET Path Delay Check
+Endpoint:   grid_io_left_0__1_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0/iopad_outpad[0] (v)
+Beginpoint: grid_io_left_0__1_/logical_tile_io_mode_io__0/io_outpad[0]                                           (v) triggered by  leading edge of '@'
+Path Groups: {default}
+Path Delay                      0.014
+= Required Time                 0.014
+- Arrival Time                  0.000
+= Slack Time                    0.014
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      Instance                                                                              Arc                                                             Cell                                  Delay  Arrival  Required  
+                                                                                                                                                                                                         Time     Time  
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      cby_0__1_/mux_right_ipin_0/sg13g2_inv_4_0_                                            Y v                                                             -                                     -      0.000    0.014  
+      cby_0__1_/mux_right_ipin_0                                                            out[0] v                                                        mux_tree_tapbuf_size4                 -      0.000    0.014  
+      cby_0__1_                                                                             left_grid_right_width_0_height_0_subtile_0__pin_outpad_0_[0] v  cby_0__1_                             -      0.000    0.014  
+      grid_io_left_0__1_/logical_tile_io_mode_io__0                                         io_outpad[0] v                                                  logical_tile_io_mode_io_              -      0.000    0.014  
+      grid_io_left_0__1_/logical_tile_io_mode_io__0/logical_tile_io_mode_physical__iopad_0  iopad_outpad[0] v                                               logical_tile_io_mode_physical__iopad  -      0.000    0.014  
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<CMD> report_timing > top.btarpt
+<CMD> get_eco_opt_mode -optimization_failure_tracking_file -quiet
+<CMD> get_time_unit
+<CMD> report_timing -gui_capri -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+<CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+Parsing file top.btarpt...
+<CMD> exit
+
+*** Memory Usage v#2 (Current mem = 6974.500M, initial mem = 832.277M) ***
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   TCLCMD-958          17  Previously defined source objects for cl...
+WARNING   TCLCMD-1594         17  A clock with name %s was already defined...
+*** Message Summary: 34 warning(s), 0 error(s)
+
+--- Ending "Tempus Timing Solution" (totcpu=0:19:24, real=0:50:41, mem=6974.5M) ---

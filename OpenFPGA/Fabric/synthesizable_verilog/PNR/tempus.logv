@@ -1,0 +1,885 @@
+[07/17 22:06:13      0s] 
+[07/17 22:06:13      0s] Cadence Tempus(TM) Timing Solution.
+[07/17 22:06:13      0s] Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+[07/17 22:06:13      0s] 
+[07/17 22:06:13      0s] Version:	v23.11-s111_1, built Thu May 16 09:07:16 PDT 2024
+[07/17 22:06:13      0s] Options:	
+[07/17 22:06:13      0s] Date:		Thu Jul 17 22:06:13 2025
+[07/17 22:06:13      0s] Host:		ei-vm-018.othr.de (x86_64 w/Linux 4.18.0-553.58.1.el8_10.x86_64) (32cores*32cpus*AMD Ryzen Threadripper PRO 5965WX 24-Cores 512KB)
+[07/17 22:06:13      0s] OS:		Red Hat Enterprise Linux 8.10 (Ootpa)
+[07/17 22:06:13      0s] 
+[07/17 22:06:13      0s] License:
+[07/17 22:06:13      0s] 		[22:06:13.483188] Configured Lic search path (23.02-s005): 5280@hs-lic3.oth-regensburg.de:27003@hs-lic1.oth-regensburg.de:27003@hs-lic1.oth-regensburg.de:
+
+[07/17 22:06:13      0s] 		tpsxl	Tempus Timing Signoff Solution XL	23.1	checkout succeeded
+[07/17 22:06:13      0s] 		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[07/17 22:06:14      1s] {{{ isCertus 0,  isCertusOrDistOptClient = 0, isInnovusCertusClient = 0}}}
+[07/17 22:06:28     14s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Tempus Timing Solution v23.11-s111_1 (64bit) 05/16/2024 09:07 (Linux 3.10.0-693.el7.x86_64)
+[07/17 22:06:29     15s] @(#)CDS: NanoRoute 23.11-s111_1 NR240401-0735/23_11-UB (database version 18.20.622) {superthreading v2.20}
+[07/17 22:06:29     15s] @(#)CDS: AAE 23.11-s031 (64bit) 05/16/2024 (Linux 3.10.0-693.el7.x86_64)
+[07/17 22:06:29     15s] @(#)CDS: CTE 23.11-s025_1 () May 16 2024 01:47:36 ( )
+[07/17 22:06:29     15s] @(#)CDS: SYNTECH 23.11-s010_1 () Apr  5 2024 04:21:08 ( )
+[07/17 22:06:29     15s] @(#)CDS: CPE v23.11-s059
+[07/17 22:06:29     15s] @(#)CDS: OA 22.61-p011 Thu Nov 30 12:26:13 2023
+[07/17 22:06:29     15s] @(#)CDS: SGN 23.10-d005 (03-Oct-2023) (64 bit executable, TkQt5.15.9)
+[07/17 22:06:29     15s] @(#)CDS: RCDB 11.15.0
+[07/17 22:06:29     15s] @(#)CDS: STYLUS 23.10-a010_1 (02/06/2024 03:59 PST)
+[07/17 22:06:29     15s] Change the soft stacksize limit to 0.2%RAM (386 mbytes). Set global soft_stack_size_limit to change the value.
+[07/17 22:06:30     15s] **INFO: (TMPDIR-1001): Create and set the environment variable TMPDIR to '/tmp/ssv_tmpdir_1017144_czSTo4'.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_1017144_czSTo4'.
+[07/17 22:06:31     16s] <CMD> ::stop_gui -keepDgui
+[07/17 22:06:31     16s] Has not load the powerDB, will keep enalbed
+[07/17 22:06:31     16s] Has not load the powerDB, will keep enalbed
+[07/17 22:07:53     20s] <CMD> read_lib -max ../../ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_slow_1p08V_125C.lib ../../ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_slow_1p35V_125C.lib ../../ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_slow_1p08V_3p0V_125C.lib ../../ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_slow_1p35V_3p0V_125C.lib
+[07/17 22:07:54     20s] <CMD> read_lib -min ../../ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_fast_1p32V_m40C.lib ../../ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_fast_1p65V_m40C.lib ../../ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_fast_1p32V_3p6V_m40C.lib ../../ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_fast_1p65V_3p6V_m40C.lib
+[07/17 22:07:54     20s] <CMD> read_lib ../../ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib ../../ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p50V_25C.lib ../../ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib ../../ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p5V_3p3V_25C.lib
+[07/17 22:07:54     21s] <CMD> read_verilog SRC/fabric_netlists_1.v
+[07/17 22:07:54     21s] <CMD> set_top_module fpga_top
+[07/17 22:07:55     21s] #% Begin Load MMMC data ... (date=07/17 22:07:55, mem=1766.2M)
+[07/17 22:07:55     21s] Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+[07/17 22:07:55     21s] #% End Load MMMC data ... (date=07/17 22:07:55, total cpu=0:00:00.0, real=0:00:00.0, peak res=1767.6M, current mem=1767.6M)
+[07/17 22:07:55     21s] Loading view definition file from .ssv_emulate_view_definition_1017144_27bcfc3f-f15b-413e-a6af-492d0066d821.tcl
+[07/17 22:07:55     21s] Reading default_emulate_libset_max timing library '/home/bas33767/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_slow_1p08V_125C.lib' ...
+[07/17 22:07:55     21s] Read 78 cells in library 'sg13g2_stdcell_slow_1p08V_125C' 
+[07/17 22:07:55     21s] Reading default_emulate_libset_max timing library '/home/bas33767/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_slow_1p35V_125C.lib' ...
+[07/17 22:07:55     21s] Read 78 cells in library 'sg13g2_stdcell_slow_1p35V_125C' 
+[07/17 22:07:55     21s] Reading default_emulate_libset_max timing library '/home/bas33767/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_slow_1p08V_3p0V_125C.lib' ...
+[07/17 22:07:55     21s] Read 14 cells in library 'sg13g2_io_slow_1p08V_3p0V_125C' 
+[07/17 22:07:55     21s] Reading default_emulate_libset_max timing library '/home/bas33767/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_slow_1p35V_3p0V_125C.lib' ...
+[07/17 22:07:55     21s] Read 14 cells in library 'sg13g2_io_slow_1p35V_3p0V_125C' 
+[07/17 22:07:55     21s] Reading default_emulate_libset_max timing library '/home/bas33767/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib' ...
+[07/17 22:07:55     21s] Read 78 cells in library 'sg13g2_stdcell_typ_1p20V_25C' 
+[07/17 22:07:55     21s] Reading default_emulate_libset_max timing library '/home/bas33767/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p50V_25C.lib' ...
+[07/17 22:07:55     21s] Read 78 cells in library 'sg13g2_stdcell_typ_1p50V_25C' 
+[07/17 22:07:55     21s] Reading default_emulate_libset_max timing library '/home/bas33767/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib' ...
+[07/17 22:07:55     21s] Read 14 cells in library 'sg13g2_io_typ_1p2V_3p3V_25C' 
+[07/17 22:07:55     21s] Reading default_emulate_libset_max timing library '/home/bas33767/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p5V_3p3V_25C.lib' ...
+[07/17 22:07:55     21s] Read 14 cells in library 'sg13g2_io_typ_1p5V_3p3V_25C' 
+[07/17 22:07:55     21s] Reading default_emulate_libset_min timing library '/home/bas33767/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_fast_1p32V_m40C.lib' ...
+[07/17 22:07:55     22s] Read 78 cells in library 'sg13g2_stdcell_fast_1p32V_m40C' 
+[07/17 22:07:55     22s] Reading default_emulate_libset_min timing library '/home/bas33767/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_fast_1p65V_m40C.lib' ...
+[07/17 22:07:55     22s] Read 78 cells in library 'sg13g2_stdcell_fast_1p65V_m40C' 
+[07/17 22:07:55     22s] Reading default_emulate_libset_min timing library '/home/bas33767/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_fast_1p32V_3p6V_m40C.lib' ...
+[07/17 22:07:55     22s] Read 14 cells in library 'sg13g2_io_fast_1p32V_3p6V_m40C' 
+[07/17 22:07:55     22s] Reading default_emulate_libset_min timing library '/home/bas33767/Desktop/DD_Lab_exercise/OpenFPGA/Fabric/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_fast_1p65V_3p6V_m40C.lib' ...
+[07/17 22:07:55     22s] Read 14 cells in library 'sg13g2_io_fast_1p65V_3p6V_m40C' 
+[07/17 22:07:55     22s] Ending "PreSetAnalysisView" (total cpu=0:00:00.5, real=0:00:00.0, peak res=1825.4M, current mem=1775.6M)
+[07/17 22:07:55     22s] *** End library_loading (cpu=0.01min, real=0.00min, mem=40.0M, fe_cpu=0.39min, fe_real=1.70min, fe_mem=1690.6M) ***
+[07/17 22:07:55     22s] #% Begin Load netlist data ... (date=07/17 22:07:55, mem=1775.6M)
+[07/17 22:07:55     22s] *** Begin netlist parsing (mem=1690.6M) ***
+[07/17 22:07:55     22s] Reading verilog netlist 'SRC/fabric_netlists_1.v'
+[07/17 22:07:55     22s] 
+[07/17 22:07:55     22s] *** Memory Usage v#2 (Current mem = 2080.609M, initial mem = 832.277M) ***
+[07/17 22:07:55     22s] *** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=2080.6M) ***
+[07/17 22:07:56     22s] #% End Load netlist data ... (date=07/17 22:07:56, total cpu=0:00:00.4, real=0:00:01.0, peak res=1930.3M, current mem=1921.6M)
+[07/17 22:07:56     22s] Set top cell to fpga_top.
+[07/17 22:07:56     22s] Has not load the powerDB, will keep enalbed
+[07/17 22:07:56     22s] Has not load the powerDB, will keep enalbed
+[07/17 22:07:56     22s] Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+[07/17 22:07:56     22s] late library set: default_emulate_libset_max
+[07/17 22:07:56     22s] early library set: default_emulate_libset_min
+[07/17 22:07:56     22s] Completed consistency checks. Status: Successful
+[07/17 22:07:56     22s] Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+[07/17 22:07:56     22s] late library set: default_emulate_libset_max
+[07/17 22:07:56     22s] early library set: default_emulate_libset_min
+[07/17 22:07:56     22s] Completed consistency checks. Status: Successful
+[07/17 22:07:56     22s] Ending "BindLib:" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1959.1M, current mem=1959.1M)
+[07/17 22:07:56     22s] *** Estimate the number of flat objects and h-objects before Flatten ***
+[07/17 22:07:56     22s] 	flat insts : 53478
+[07/17 22:07:56     22s] 	flat terms : 160701
+[07/17 22:07:56     22s] 	HNets : 139270
+[07/17 22:07:56     22s] 	HInsts : 9549
+[07/17 22:07:56     22s] 	HTerms : 81276
+[07/17 22:07:56     22s] Building hierarchical netlist for Cell fpga_top ...
+[07/17 22:07:56     22s] ***** UseNewTieNetMode *****.
+[07/17 22:07:56     23s] Module dffsrq is multiply-instantiated in MULTI_MODE_DFFSRQ and another module.
+[07/17 22:07:56     23s] *** Netlist is NOT unique.
+[07/17 22:07:56     23s] ** info: there are 615 modules.
+[07/17 22:07:56     23s] ** info: there are 50221 stdCell insts.
+[07/17 22:07:56     23s] ** info: there are 50221 stdCell insts with at least one signal pin.
+[07/17 22:07:56     23s] ** info: there are 64 Pad insts.
+[07/17 22:07:56     23s] 
+[07/17 22:07:56     23s] *** Memory Usage v#2 (Current mem = 2561.555M, initial mem = 832.277M) ***
+[07/17 22:07:56     23s] Set Default Input Pin Transition as 0.1 ps.
+[07/17 22:07:56     23s] Has not load the powerDB, will keep enalbed
+[07/17 22:07:56     23s] Has not load the powerDB, will keep enalbed
+[07/17 22:07:56     23s] Has not load the powerDB, will keep enalbed
+[07/17 22:07:56     23s] Has not load the powerDB, will keep enalbed
+[07/17 22:07:56     23s] Has not load the powerDB, will keep enalbed
+[07/17 22:07:56     23s] Has not load the powerDB, will keep enalbed
+[07/17 22:07:56     23s] Extraction setup Started for TopCell fpga_top 
+[07/17 22:07:56     23s] Summary of Active RC-Corners : 
+[07/17 22:07:56     23s]  
+[07/17 22:07:56     23s]  Analysis View: default_emulate_view
+[07/17 22:07:56     23s]     RC-Corner Name        : default_emulate_rc_corner
+[07/17 22:07:56     23s]     RC-Corner Index       : 0
+[07/17 22:07:56     23s]     RC-Corner Temperature : 25 Celsius
+[07/17 22:07:56     23s]     RC-Corner Cap Table   : ''
+[07/17 22:07:56     23s]     RC-Corner PostRoute Res Factor        : 1
+[07/17 22:07:56     23s]     RC-Corner PostRoute Cap Factor        : 1
+[07/17 22:07:56     23s]     RC-Corner PostRoute XCap Factor       : 1
+[07/17 22:07:56     23s] Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+[07/17 22:07:56     23s] late library set: default_emulate_libset_max
+[07/17 22:07:56     23s] early library set: default_emulate_libset_min
+[07/17 22:07:56     23s] Completed consistency checks. Status: Successful
+[07/17 22:07:56     23s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2575.2M, current mem=2330.7M)
+[07/17 22:07:57     23s] Reading timing constraints file '/dev/null' ...
+[07/17 22:07:57     23s] Current (total cpu=0:00:24.9, real=0:01:44, peak res=2694.2M, current mem=2655.3M)
+[07/17 22:07:57     23s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[07/17 22:07:57     23s] 
+[07/17 22:07:57     23s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) Begin ...
+[07/17 22:07:57     23s] Summary for sequential cells identification: 
+[07/17 22:07:57     23s]   Identified SBFF number: 3
+[07/17 22:07:57     23s]   Identified MBFF number: 0
+[07/17 22:07:57     23s]   Identified SB Latch number: 5
+[07/17 22:07:57     23s]   Identified MB Latch number: 0
+[07/17 22:07:57     23s]   Not identified SBFF number: 0
+[07/17 22:07:57     23s]   Not identified MBFF number: 0
+[07/17 22:07:57     23s]   Not identified SB Latch number: 0
+[07/17 22:07:57     23s]   Not identified MB Latch number: 0
+[07/17 22:07:57     23s]   Number of sequential cells which are not FFs: 2
+[07/17 22:07:57     23s] Total number of combinational cells: 54
+[07/17 22:07:57     23s] Total number of sequential cells: 10
+[07/17 22:07:57     23s] Total number of tristate cells: 6
+[07/17 22:07:57     23s] Total number of level shifter cells: 0
+[07/17 22:07:57     23s] Total number of power gating cells: 0
+[07/17 22:07:57     23s] Total number of isolation cells: 0
+[07/17 22:07:57     23s] Total number of power switch cells: 0
+[07/17 22:07:57     23s] Total number of pulse generator cells: 0
+[07/17 22:07:57     23s] Total number of always on buffers: 0
+[07/17 22:07:57     23s] Total number of retention cells: 0
+[07/17 22:07:57     23s] Total number of physical cells: 0
+[07/17 22:07:57     23s] List of usable buffers: sg13g2_buf_1 sg13g2_buf_16 sg13g2_buf_2 sg13g2_buf_4 sg13g2_buf_8
+[07/17 22:07:57     23s] Total number of usable buffers: 5
+[07/17 22:07:57     23s] List of unusable buffers:
+[07/17 22:07:57     23s] Total number of unusable buffers: 0
+[07/17 22:07:57     23s] List of usable inverters: sg13g2_inv_1 sg13g2_inv_16 sg13g2_inv_2 sg13g2_inv_8 sg13g2_inv_4
+[07/17 22:07:57     23s] Total number of usable inverters: 5
+[07/17 22:07:57     23s] List of unusable inverters:
+[07/17 22:07:57     23s] Total number of unusable inverters: 0
+[07/17 22:07:57     23s] List of identified usable delay cells: sg13g2_dlygate4sd1_1 sg13g2_dlygate4sd3_1 sg13g2_dlygate4sd2_1
+[07/17 22:07:57     23s] Total number of identified usable delay cells: 3
+[07/17 22:07:57     23s] List of identified unusable delay cells:
+[07/17 22:07:57     23s] Total number of identified unusable delay cells: 0
+[07/17 22:07:57     23s] 
+[07/17 22:07:57     23s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) End ...
+[07/17 22:07:57     23s] 
+[07/17 22:07:57     23s] TimeStamp Deleting Cell Server Begin ...
+[07/17 22:07:57     23s] 
+[07/17 22:07:57     23s] TimeStamp Deleting Cell Server End ...
+[07/17 22:07:57     23s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2684.0M, current mem=2684.0M)
+[07/17 22:07:57     23s] 
+[07/17 22:07:57     23s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) Begin ...
+[07/17 22:07:57     23s] Summary for sequential cells identification: 
+[07/17 22:07:57     23s]   Identified SBFF number: 3
+[07/17 22:07:57     23s]   Identified MBFF number: 0
+[07/17 22:07:57     23s]   Identified SB Latch number: 5
+[07/17 22:07:57     23s]   Identified MB Latch number: 0
+[07/17 22:07:57     23s]   Not identified SBFF number: 0
+[07/17 22:07:57     23s]   Not identified MBFF number: 0
+[07/17 22:07:57     23s]   Not identified SB Latch number: 0
+[07/17 22:07:57     23s]   Not identified MB Latch number: 0
+[07/17 22:07:57     23s]   Number of sequential cells which are not FFs: 2
+[07/17 22:07:57     23s]  Visiting view : default_emulate_view
+[07/17 22:07:57     23s]    : PowerDomain = none : Weighted F : unweighted  = 34.40 (1.000) with rcCorner = 0
+[07/17 22:07:57     23s]    : PowerDomain = none : Weighted F : unweighted  = 34.40 (1.000) with rcCorner = -1
+[07/17 22:07:57     23s]  Visiting view : default_emulate_view
+[07/17 22:07:57     23s]    : PowerDomain = none : Weighted F : unweighted  = 34.40 (1.000) with rcCorner = 0
+[07/17 22:07:57     23s]    : PowerDomain = none : Weighted F : unweighted  = 34.40 (1.000) with rcCorner = -1
+[07/17 22:07:57     23s] TLC MultiMap info (StdDelay):
+[07/17 22:07:57     23s]   : default_emulate_delay_corner + default_emulate_libset_max + 1 + no RcCorner := 34.4ps
+[07/17 22:07:57     23s]   : default_emulate_delay_corner + default_emulate_libset_max + 1 + default_emulate_rc_corner := 34.4ps
+[07/17 22:07:57     23s]  Setting StdDelay to: 34.4ps
+[07/17 22:07:57     23s] 
+[07/17 22:07:57     23s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) End ...
+[07/17 22:07:57     23s] 
+[07/17 22:07:57     23s] TimeStamp Deleting Cell Server Begin ...
+[07/17 22:07:57     23s] 
+[07/17 22:07:57     23s] TimeStamp Deleting Cell Server End ...
+[07/17 22:07:57     24s] Extraction setup Started for TopCell fpga_top 
+[07/17 22:07:57     24s] Summary of Active RC-Corners : 
+[07/17 22:07:57     24s]  
+[07/17 22:07:57     24s]  Analysis View: default_emulate_view
+[07/17 22:07:57     24s]     RC-Corner Name        : default_emulate_rc_corner
+[07/17 22:07:57     24s]     RC-Corner Index       : 0
+[07/17 22:07:57     24s]     RC-Corner Temperature : 125 Celsius
+[07/17 22:07:57     24s]     RC-Corner Cap Table   : ''
+[07/17 22:07:57     24s]     RC-Corner PostRoute Res Factor        : 1
+[07/17 22:07:57     24s]     RC-Corner PostRoute Cap Factor        : 1
+[07/17 22:07:57     24s]     RC-Corner PostRoute XCap Factor       : 1
+[07/17 22:07:57     24s] Extraction setup Started for TopCell fpga_top 
+[07/17 22:07:57     24s] Summary of Active RC-Corners : 
+[07/17 22:07:57     24s]  
+[07/17 22:07:57     24s]  Analysis View: default_emulate_view
+[07/17 22:07:57     24s]     RC-Corner Name        : default_emulate_rc_corner
+[07/17 22:07:57     24s]     RC-Corner Index       : 0
+[07/17 22:07:57     24s]     RC-Corner Temperature : 125 Celsius
+[07/17 22:07:57     24s]     RC-Corner Cap Table   : ''
+[07/17 22:07:57     24s]     RC-Corner PostRoute Res Factor        : 1
+[07/17 22:07:57     24s]     RC-Corner PostRoute Cap Factor        : 1
+[07/17 22:07:57     24s]     RC-Corner PostRoute XCap Factor       : 1
+[07/17 22:07:57     24s] Extraction setup Started for TopCell fpga_top 
+[07/17 22:07:57     24s] Summary of Active RC-Corners : 
+[07/17 22:07:57     24s]  
+[07/17 22:07:57     24s]  Analysis View: default_emulate_view
+[07/17 22:07:57     24s]     RC-Corner Name        : default_emulate_rc_corner
+[07/17 22:07:57     24s]     RC-Corner Index       : 0
+[07/17 22:07:57     24s]     RC-Corner Temperature : 125 Celsius
+[07/17 22:07:57     24s]     RC-Corner Cap Table   : ''
+[07/17 22:07:57     24s]     RC-Corner PostRoute Res Factor        : 1
+[07/17 22:07:57     24s]     RC-Corner PostRoute Cap Factor        : 1
+[07/17 22:07:57     24s]     RC-Corner PostRoute XCap Factor       : 1
+[07/17 22:07:57     24s] <CMD> read_sdc SDC/cbx_1__0_.sdc SDC/cbx_1__1_.sdc SDC/cbx_1__2_.sdc SDC/cby_0__1_.sdc SDC/cby_1__1_.sdc SDC/cby_2__1_.sdc SDC/disable_configurable_memory_outputs.sdc SDC/disable_configure_ports.sdc SDC/disable_routing_multiplexer_outputs.sdc SDC/disable_sb_outputs.sdc SDC/global_ports.sdc SDC/logical_tile_clb_mode_clb_.sdc SDC/logical_tile_clb_mode_default__fle.sdc SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric.sdc SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff.sdc SDC/logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic.sdc SDC/logical_tile_io_mode_io_.sdc SDC/sb_0__0_.sdc SDC/sb_0__1_.sdc SDC/sb_0__2_.sdc SDC/sb_1__0_.sdc SDC/sb_1__1_.sdc SDC/sb_1__2_.sdc SDC/sb_2__0_.sdc SDC/sb_2__1_.sdc SDC/sb_2__2_.sdc
+[07/17 22:07:57     24s] Current (total cpu=0:00:25.3, real=0:01:44, peak res=2694.2M, current mem=2621.7M)
+[07/17 22:07:57     24s] INFO (CTE): Constraints read successfully.
+[07/17 22:07:57     24s] Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2637.6M, current mem=2637.6M)
+[07/17 22:07:57     24s] Current (total cpu=0:00:25.3, real=0:01:44, peak res=2694.2M, current mem=2637.6M)
+[07/17 22:07:57     24s] Current (total cpu=0:00:25.4, real=0:01:44, peak res=2694.2M, current mem=2637.6M)
+[07/17 22:07:57     24s] INFO (CTE): Constraints read successfully.
+[07/17 22:07:57     24s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2638.3M, current mem=2638.3M)
+[07/17 22:07:57     24s] Current (total cpu=0:00:25.5, real=0:01:44, peak res=2694.2M, current mem=2638.3M)
+[07/17 22:07:57     24s] Current (total cpu=0:00:25.5, real=0:01:44, peak res=2694.2M, current mem=2638.3M)
+[07/17 22:07:57     24s] INFO (CTE): Constraints read successfully.
+[07/17 22:07:57     24s] Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2638.8M, current mem=2638.8M)
+[07/17 22:07:57     24s] Current (total cpu=0:00:25.6, real=0:01:44, peak res=2694.2M, current mem=2638.8M)
+[07/17 22:07:57     24s] Current (total cpu=0:00:25.6, real=0:01:44, peak res=2694.2M, current mem=2638.8M)
+[07/17 22:07:57     24s] INFO (CTE): Constraints read successfully.
+[07/17 22:07:57     24s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2639.2M, current mem=2639.2M)
+[07/17 22:07:57     24s] Current (total cpu=0:00:25.6, real=0:01:44, peak res=2694.2M, current mem=2639.2M)
+[07/17 22:07:57     24s] Current (total cpu=0:00:25.7, real=0:01:44, peak res=2694.2M, current mem=2639.2M)
+[07/17 22:07:57     24s] INFO (CTE): Constraints read successfully.
+[07/17 22:07:57     24s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2639.9M, current mem=2639.9M)
+[07/17 22:07:57     24s] Current (total cpu=0:00:25.8, real=0:01:44, peak res=2694.2M, current mem=2639.9M)
+[07/17 22:07:58     24s] Current (total cpu=0:00:25.8, real=0:01:45, peak res=2694.2M, current mem=2639.9M)
+[07/17 22:07:58     24s] INFO (CTE): Constraints read successfully.
+[07/17 22:07:58     24s] Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2640.5M, current mem=2640.5M)
+[07/17 22:07:58     24s] Current (total cpu=0:00:25.9, real=0:01:45, peak res=2694.2M, current mem=2640.5M)
+[07/17 22:07:58     24s] Current (total cpu=0:00:25.9, real=0:01:45, peak res=2694.2M, current mem=2640.5M)
+[07/17 22:07:58     25s] INFO (CTE): Constraints read successfully.
+[07/17 22:07:58     25s] Ending "Constraint file reading stats" (total cpu=0:00:00.7, real=0:00:00.0, peak res=2649.4M, current mem=2649.4M)
+[07/17 22:07:58     25s] Current (total cpu=0:00:26.6, real=0:01:45, peak res=2694.2M, current mem=2649.4M)
+[07/17 22:07:58     25s] Current (total cpu=0:00:26.6, real=0:01:45, peak res=2694.2M, current mem=2649.4M)
+[07/17 22:07:59     25s] INFO (CTE): Constraints read successfully.
+[07/17 22:07:59     25s] Ending "Constraint file reading stats" (total cpu=0:00:00.3, real=0:00:01.0, peak res=2655.7M, current mem=2655.7M)
+[07/17 22:07:59     25s] Current (total cpu=0:00:26.9, real=0:01:46, peak res=2694.2M, current mem=2655.7M)
+[07/17 22:07:59     25s] Current (total cpu=0:00:27.0, real=0:01:46, peak res=2694.2M, current mem=2655.7M)
+[07/17 22:07:59     26s] INFO (CTE): Constraints read successfully.
+[07/17 22:07:59     26s] Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2661.1M, current mem=2661.1M)
+[07/17 22:07:59     26s] Current (total cpu=0:00:27.1, real=0:01:46, peak res=2694.2M, current mem=2661.1M)
+[07/17 22:07:59     26s] Current (total cpu=0:00:27.1, real=0:01:46, peak res=2694.2M, current mem=2661.1M)
+[07/17 22:07:59     26s] INFO (CTE): Constraints read successfully.
+[07/17 22:07:59     26s] Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2661.5M, current mem=2661.5M)
+[07/17 22:07:59     26s] Current (total cpu=0:00:27.2, real=0:01:46, peak res=2694.2M, current mem=2661.5M)
+[07/17 22:07:59     26s] Current (total cpu=0:00:27.3, real=0:01:46, peak res=2694.2M, current mem=2661.5M)
+[07/17 22:07:59     26s] INFO (CTE): Constraints read successfully.
+[07/17 22:07:59     26s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2662.4M, current mem=2662.4M)
+[07/17 22:07:59     26s] Current (total cpu=0:00:27.3, real=0:01:46, peak res=2694.2M, current mem=2662.4M)
+[07/17 22:07:59     26s] Current (total cpu=0:00:27.4, real=0:01:46, peak res=2694.2M, current mem=2662.4M)
+[07/17 22:08:00     27s] INFO (CTE): Constraints read successfully.
+[07/17 22:08:00     27s] Ending "Constraint file reading stats" (total cpu=0:00:01.0, real=0:00:01.0, peak res=2663.1M, current mem=2663.1M)
+[07/17 22:08:00     27s] Current (total cpu=0:00:28.4, real=0:01:47, peak res=2694.2M, current mem=2663.1M)
+[07/17 22:08:00     27s] Current (total cpu=0:00:28.5, real=0:01:47, peak res=2694.2M, current mem=2663.1M)
+[07/17 22:08:00     27s] INFO (CTE): Constraints read successfully.
+[07/17 22:08:00     27s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2663.4M, current mem=2663.4M)
+[07/17 22:08:00     27s] Current (total cpu=0:00:28.5, real=0:01:47, peak res=2694.2M, current mem=2663.4M)
+[07/17 22:08:00     27s] Current (total cpu=0:00:28.6, real=0:01:47, peak res=2694.2M, current mem=2663.4M)
+[07/17 22:08:00     27s] INFO (CTE): Constraints read successfully.
+[07/17 22:08:00     27s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2663.8M, current mem=2663.8M)
+[07/17 22:08:00     27s] Current (total cpu=0:00:28.6, real=0:01:47, peak res=2694.2M, current mem=2663.8M)
+[07/17 22:08:00     27s] Current (total cpu=0:00:28.7, real=0:01:47, peak res=2694.2M, current mem=2663.8M)
+[07/17 22:08:00     27s] INFO (CTE): Constraints read successfully.
+[07/17 22:08:00     27s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2664.2M, current mem=2664.2M)
+[07/17 22:08:00     27s] Current (total cpu=0:00:28.7, real=0:01:47, peak res=2694.2M, current mem=2664.2M)
+[07/17 22:08:01     27s] Current (total cpu=0:00:28.8, real=0:01:48, peak res=2694.2M, current mem=2664.2M)
+[07/17 22:08:01     27s] INFO (CTE): Constraints read successfully.
+[07/17 22:08:01     27s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2664.5M, current mem=2664.5M)
+[07/17 22:08:01     27s] Current (total cpu=0:00:28.8, real=0:01:48, peak res=2694.2M, current mem=2664.5M)
+[07/17 22:08:01     27s] Current (total cpu=0:00:28.9, real=0:01:48, peak res=2694.2M, current mem=2664.5M)
+[07/17 22:08:01     27s] INFO (CTE): Constraints read successfully.
+[07/17 22:08:01     27s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2664.9M, current mem=2664.9M)
+[07/17 22:08:01     27s] Current (total cpu=0:00:28.9, real=0:01:48, peak res=2694.2M, current mem=2664.9M)
+[07/17 22:08:01     27s] Current (total cpu=0:00:29.0, real=0:01:48, peak res=2694.2M, current mem=2664.9M)
+[07/17 22:08:01     27s] INFO (CTE): Constraints read successfully.
+[07/17 22:08:01     27s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2665.3M, current mem=2665.3M)
+[07/17 22:08:01     28s] Current (total cpu=0:00:29.0, real=0:01:48, peak res=2694.2M, current mem=2665.3M)
+[07/17 22:08:01     28s] Current (total cpu=0:00:29.1, real=0:01:48, peak res=2694.2M, current mem=2665.3M)
+[07/17 22:08:01     28s] INFO (CTE): Constraints read successfully.
+[07/17 22:08:01     28s] Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2665.6M, current mem=2665.6M)
+[07/17 22:08:01     28s] Current (total cpu=0:00:29.1, real=0:01:48, peak res=2694.2M, current mem=2665.6M)
+[07/17 22:08:01     28s] Current (total cpu=0:00:29.2, real=0:01:48, peak res=2694.2M, current mem=2665.6M)
+[07/17 22:08:01     28s] INFO (CTE): Constraints read successfully.
+[07/17 22:08:01     28s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2666.0M, current mem=2666.0M)
+[07/17 22:08:01     28s] Current (total cpu=0:00:29.2, real=0:01:48, peak res=2694.2M, current mem=2666.0M)
+[07/17 22:08:01     28s] Current (total cpu=0:00:29.3, real=0:01:48, peak res=2694.2M, current mem=2666.0M)
+[07/17 22:08:01     28s] INFO (CTE): Constraints read successfully.
+[07/17 22:08:01     28s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2666.7M, current mem=2666.7M)
+[07/17 22:08:01     28s] Current (total cpu=0:00:29.3, real=0:01:48, peak res=2694.2M, current mem=2666.7M)
+[07/17 22:08:01     28s] Current (total cpu=0:00:29.4, real=0:01:48, peak res=2694.2M, current mem=2666.7M)
+[07/17 22:08:01     28s] INFO (CTE): Constraints read successfully.
+[07/17 22:08:01     28s] Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2667.0M, current mem=2667.0M)
+[07/17 22:08:01     28s] Current (total cpu=0:00:29.5, real=0:01:48, peak res=2694.2M, current mem=2667.0M)
+[07/17 22:08:01     28s] Current (total cpu=0:00:29.5, real=0:01:48, peak res=2694.2M, current mem=2667.0M)
+[07/17 22:08:01     28s] INFO (CTE): Constraints read successfully.
+[07/17 22:08:01     28s] Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2667.4M, current mem=2667.4M)
+[07/17 22:08:01     28s] Current (total cpu=0:00:29.6, real=0:01:48, peak res=2694.2M, current mem=2667.4M)
+[07/17 22:08:01     28s] Current (total cpu=0:00:29.6, real=0:01:48, peak res=2694.2M, current mem=2667.4M)
+[07/17 22:08:01     28s] INFO (CTE): Constraints read successfully.
+[07/17 22:08:01     28s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2667.8M, current mem=2667.8M)
+[07/17 22:08:01     28s] Current (total cpu=0:00:29.6, real=0:01:48, peak res=2694.2M, current mem=2667.8M)
+[07/17 22:08:01     28s] Current (total cpu=0:00:29.7, real=0:01:48, peak res=2694.2M, current mem=2667.8M)
+[07/17 22:08:01     28s] INFO (CTE): Constraints read successfully.
+[07/17 22:08:01     28s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2668.4M, current mem=2668.4M)
+[07/17 22:08:02     28s] Current (total cpu=0:00:29.8, real=0:01:49, peak res=2694.2M, current mem=2668.4M)
+[07/17 22:08:02     28s] Current (total cpu=0:00:29.8, real=0:01:49, peak res=2694.2M, current mem=2668.4M)
+[07/17 22:08:02     28s] INFO (CTE): Constraints read successfully.
+[07/17 22:08:02     28s] Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2668.8M, current mem=2668.8M)
+[07/17 22:08:02     28s] Current (total cpu=0:00:29.9, real=0:01:49, peak res=2694.2M, current mem=2668.8M)
+[07/17 22:08:02     28s] Loading  (fpga_top)
+[07/17 22:08:02     28s] Traverse HInst (fpga_top)
+[07/17 22:10:53     36s] <CMD> report_timing
+[07/17 22:10:53     36s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[07/17 22:10:53     37s] AAE DB initialization (MEM=2995.8 CPU=0:00:00.0 REAL=0:00:00.0) 
+[07/17 22:10:53     37s] #################################################################################
+[07/17 22:10:53     37s] # Design Name: fpga_top
+[07/17 22:10:53     37s] # Design Mode: 65nm
+[07/17 22:10:53     37s] # Analysis Mode: MMMC OCV 
+[07/17 22:10:53     37s] # Parasitics Mode: No SPEF/RCDB 
+[07/17 22:10:53     37s] # Signoff Settings: SI Off 
+[07/17 22:10:53     37s] #################################################################################
+[07/17 22:10:54     38s] Topological Sorting (REAL = 0:00:00.0, MEM = 3087.6M, InitMEM = 3085.6M)
+[07/17 22:10:54     38s] Start delay calculation (fullDC) (1 T). (MEM=2594.85)
+[07/17 22:10:54     38s] Start AAE Lib Loading. (MEM=3097.1)
+[07/17 22:10:54     38s] End AAE Lib Loading. (MEM=3325.18 CPU=0:00:00.0 Real=0:00:00.0)
+[07/17 22:10:54     38s] End AAE Lib Interpolated Model. (MEM=3325.18 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[07/17 22:11:06     49s] End Timing Check Calculation. (CPU Time=0:00:00.2, Real Time=0:00:01.0)
+[07/17 22:11:06     49s] End Timing Check Calculation. (CPU Time=0:00:00.1, Real Time=0:00:00.0)
+[07/17 22:11:06     49s] End delay calculation. (MEM=2757.81 CPU=0:00:11.1 REAL=0:00:11.0)
+[07/17 22:11:06     49s] Begin loading slews from CTE ...
+[07/17 22:11:06     49s] Loading slews from CTE completed...
+[07/17 22:11:06     49s] End delay calculation (fullDC). (MEM=2754.08 CPU=0:00:11.6 REAL=0:00:12.0)
+[07/17 22:11:06     50s] *** CDM Built up (cpu=0:00:12.9  real=0:00:13.0  mem= 3490.7M) ***
+[07/17 22:11:06     50s] Has not load the powerDB, will keep enalbed
+[07/17 22:11:06     50s] Has not load the powerDB, will keep enalbed
+[07/17 22:16:17     65s] <CMD> set_ideal_net pReset[0]
+[07/17 22:16:19     65s] <CMD> report_timing
+[07/17 22:16:20     65s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[07/17 22:16:20     65s] #################################################################################
+[07/17 22:16:20     65s] # Design Name: fpga_top
+[07/17 22:16:20     65s] # Design Mode: 65nm
+[07/17 22:16:20     65s] # Analysis Mode: MMMC OCV 
+[07/17 22:16:20     65s] # Parasitics Mode: No SPEF/RCDB 
+[07/17 22:16:20     65s] # Signoff Settings: SI Off 
+[07/17 22:16:20     65s] #################################################################################
+[07/17 22:16:21     67s] Topological Sorting (REAL = 0:00:00.0, MEM = 3510.5M, InitMEM = 3510.5M)
+[07/17 22:16:21     67s] Start delay calculation (fullDC) (1 T). (MEM=2726.92)
+[07/17 22:16:21     67s] End AAE Lib Interpolated Model. (MEM=3510.55 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[07/17 22:16:24    112s] End Timing Check Calculation. (CPU Time=0:00:00.3, Real Time=0:00:00.0)
+[07/17 22:16:24    112s] End Timing Check Calculation. (CPU Time=0:00:00.2, Real Time=0:00:00.0)
+[07/17 22:16:24    112s] End delay calculation. (MEM=3308.69 CPU=0:00:44.7 REAL=0:00:02.0)
+[07/17 22:16:24    112s] Begin loading slews from CTE ...
+[07/17 22:16:24    112s] Loading slews from CTE completed...
+[07/17 22:16:24    112s] End delay calculation (fullDC). (MEM=3308.69 CPU=0:00:45.2 REAL=0:00:03.0)
+[07/17 22:16:24    112s] *** CDM Built up (cpu=0:00:47.1  real=0:00:04.0  mem= 3780.8M) ***
+[07/17 22:16:24    112s] Has not load the powerDB, will keep enalbed
+[07/17 22:16:24    112s] Has not load the powerDB, will keep enalbed
+[07/17 22:16:50    115s] <CMD> set_ideal_net set[0]
+[07/17 22:16:52    115s] <CMD> report_timing
+[07/17 22:16:53    115s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[07/17 22:16:53    115s] #################################################################################
+[07/17 22:16:53    115s] # Design Name: fpga_top
+[07/17 22:16:53    115s] # Design Mode: 65nm
+[07/17 22:16:53    115s] # Analysis Mode: MMMC OCV 
+[07/17 22:16:53    115s] # Parasitics Mode: No SPEF/RCDB 
+[07/17 22:16:53    115s] # Signoff Settings: SI Off 
+[07/17 22:16:53    115s] #################################################################################
+[07/17 22:16:54    117s] Topological Sorting (REAL = 0:00:00.0, MEM = 3792.8M, InitMEM = 3792.8M)
+[07/17 22:16:54    117s] Start delay calculation (fullDC) (1 T). (MEM=2979.8)
+[07/17 22:16:54    117s] End AAE Lib Interpolated Model. (MEM=3792.81 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[07/17 22:16:56    160s] End Timing Check Calculation. (CPU Time=0:00:00.2, Real Time=0:00:00.0)
+[07/17 22:16:57    160s] End Timing Check Calculation. (CPU Time=0:00:00.2, Real Time=0:00:01.0)
+[07/17 22:16:57    160s] End delay calculation. (MEM=3390.7 CPU=0:00:42.6 REAL=0:00:02.0)
+[07/17 22:16:57    160s] Begin loading slews from CTE ...
+[07/17 22:16:57    160s] Loading slews from CTE completed...
+[07/17 22:16:57    160s] End delay calculation (fullDC). (MEM=3390.7 CPU=0:00:43.0 REAL=0:00:03.0)
+[07/17 22:16:57    160s] *** CDM Built up (cpu=0:00:45.0  real=0:00:04.0  mem= 3941.9M) ***
+[07/17 22:16:57    160s] Has not load the powerDB, will keep enalbed
+[07/17 22:16:57    160s] Has not load the powerDB, will keep enalbed
+[07/17 22:17:14    163s] <CMD> set_ideal_net reset[0]
+[07/17 22:17:15    163s] <CMD> report_timing
+[07/17 22:17:16    163s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[07/17 22:17:16    163s] #################################################################################
+[07/17 22:17:16    163s] # Design Name: fpga_top
+[07/17 22:17:16    163s] # Design Mode: 65nm
+[07/17 22:17:16    163s] # Analysis Mode: MMMC OCV 
+[07/17 22:17:16    163s] # Parasitics Mode: No SPEF/RCDB 
+[07/17 22:17:16    163s] # Signoff Settings: SI Off 
+[07/17 22:17:16    163s] #################################################################################
+[07/17 22:17:17    165s] Topological Sorting (REAL = 0:00:00.0, MEM = 3954.0M, InitMEM = 3954.0M)
+[07/17 22:17:17    165s] Start delay calculation (fullDC) (1 T). (MEM=3164.61)
+[07/17 22:17:17    165s] End AAE Lib Interpolated Model. (MEM=3953.95 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[07/17 22:17:19    207s] End Timing Check Calculation. (CPU Time=0:00:00.2, Real Time=0:00:00.0)
+[07/17 22:17:20    207s] End Timing Check Calculation. (CPU Time=0:00:00.2, Real Time=0:00:01.0)
+[07/17 22:17:20    207s] End delay calculation. (MEM=3568.55 CPU=0:00:42.0 REAL=0:00:02.0)
+[07/17 22:17:20    207s] Begin loading slews from CTE ...
+[07/17 22:17:20    207s] Loading slews from CTE completed...
+[07/17 22:17:20    207s] End delay calculation (fullDC). (MEM=3568.55 CPU=0:00:42.4 REAL=0:00:03.0)
+[07/17 22:17:20    208s] *** CDM Built up (cpu=0:00:44.3  real=0:00:04.0  mem= 4113.2M) ***
+[07/17 22:17:20    208s] Has not load the powerDB, will keep enalbed
+[07/17 22:17:20    208s] Has not load the powerDB, will keep enalbed
+[07/17 22:18:56    213s] <CMD> create_clock -name clk[0] -period 5 -waveform {0 2.5} [get_ports {clk[0]}]
+[07/17 22:18:56    213s] **WARN: (TCLCMD-1594):	A clock with name clk[0] was already defined in the design. Previously defined clock definition of clk[0] will be overwritten.
+[07/17 22:18:56    213s] **WARN: (TCLCMD-958):	Previously defined source objects for clock 'clk[0]' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once.
+[07/17 22:19:15    214s] <CMD> report_timing
+[07/17 22:19:15    214s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[07/17 22:19:15    214s] #################################################################################
+[07/17 22:19:15    214s] # Design Name: fpga_top
+[07/17 22:19:15    214s] # Design Mode: 65nm
+[07/17 22:19:15    214s] # Analysis Mode: MMMC OCV 
+[07/17 22:19:15    214s] # Parasitics Mode: No SPEF/RCDB 
+[07/17 22:19:15    214s] # Signoff Settings: SI Off 
+[07/17 22:19:15    214s] #################################################################################
+[07/17 22:19:17    216s] Topological Sorting (REAL = 0:00:00.0, MEM = 4125.2M, InitMEM = 4125.2M)
+[07/17 22:19:17    216s] Start delay calculation (fullDC) (1 T). (MEM=3329.36)
+[07/17 22:19:17    216s] End AAE Lib Interpolated Model. (MEM=4125.23 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[07/17 22:19:19    257s] End Timing Check Calculation. (CPU Time=0:00:00.2, Real Time=0:00:00.0)
+[07/17 22:19:19    257s] End Timing Check Calculation. (CPU Time=0:00:00.1, Real Time=0:00:00.0)
+[07/17 22:19:19    257s] End delay calculation. (MEM=3712.87 CPU=0:00:40.4 REAL=0:00:02.0)
+[07/17 22:19:19    257s] Begin loading slews from CTE ...
+[07/17 22:19:19    257s] Loading slews from CTE completed...
+[07/17 22:19:19    257s] End delay calculation (fullDC). (MEM=3712.87 CPU=0:00:40.8 REAL=0:00:02.0)
+[07/17 22:19:19    257s] *** CDM Built up (cpu=0:00:42.8  real=0:00:04.0  mem= 4273.3M) ***
+[07/17 22:19:19    257s] Has not load the powerDB, will keep enalbed
+[07/17 22:19:19    257s] Has not load the powerDB, will keep enalbed
+[07/17 22:20:46    263s] <CMD> report_timing > top.btarpt
+[07/17 22:20:52    263s] <CMD> get_eco_opt_mode -optimization_failure_tracking_file -quiet
+[07/17 22:20:54    263s] <CMD> get_time_unit
+[07/17 22:20:54    263s] <CMD> report_timing -gui_capri -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+[07/17 22:21:02    271s] <CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+[07/17 22:21:02    271s] Parsing file top.btarpt...
+[07/17 22:21:40    277s] <CMD> selectObject Net cby_2__2_/mem_right_ipin_1/DFFR_0_/n_0
+[07/17 22:22:29    279s] <CMD> create_clock -name prog_clk[0] -period 5 -waveform {0 2.4999999859} [get_ports {prog_clk[0]}]
+[07/17 22:22:29    279s] **WARN: (TCLCMD-1594):	A clock with name prog_clk[0] was already defined in the design. Previously defined clock definition of prog_clk[0] will be overwritten.
+[07/17 22:22:29    279s] **WARN: (TCLCMD-958):	Previously defined source objects for clock 'prog_clk[0]' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once.
+[07/17 22:22:33    279s] <CMD> report_timing > top.btarpt
+[07/17 22:22:33    279s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[07/17 22:22:33    279s] #################################################################################
+[07/17 22:22:33    279s] # Design Name: fpga_top
+[07/17 22:22:33    279s] # Design Mode: 65nm
+[07/17 22:22:33    279s] # Analysis Mode: MMMC OCV 
+[07/17 22:22:33    279s] # Parasitics Mode: No SPEF/RCDB 
+[07/17 22:22:33    279s] # Signoff Settings: SI Off 
+[07/17 22:22:33    279s] #################################################################################
+[07/17 22:22:35    281s] Topological Sorting (REAL = 0:00:00.0, MEM = 4303.3M, InitMEM = 4303.3M)
+[07/17 22:22:35    281s] Start delay calculation (fullDC) (1 T). (MEM=3536.3)
+[07/17 22:22:35    281s] End AAE Lib Interpolated Model. (MEM=4303.33 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[07/17 22:22:37    322s] End Timing Check Calculation. (CPU Time=0:00:00.2, Real Time=0:00:00.0)
+[07/17 22:22:37    322s] End Timing Check Calculation. (CPU Time=0:00:00.1, Real Time=0:00:00.0)
+[07/17 22:22:37    322s] End delay calculation. (MEM=3953.96 CPU=0:00:40.7 REAL=0:00:02.0)
+[07/17 22:22:37    322s] Begin loading slews from CTE ...
+[07/17 22:22:37    322s] Loading slews from CTE completed...
+[07/17 22:22:37    322s] End delay calculation (fullDC). (MEM=3953.96 CPU=0:00:41.1 REAL=0:00:02.0)
+[07/17 22:22:37    322s] *** CDM Built up (cpu=0:00:43.1  real=0:00:04.0  mem= 4487.5M) ***
+[07/17 22:22:37    322s] Has not load the powerDB, will keep enalbed
+[07/17 22:22:37    322s] Has not load the powerDB, will keep enalbed
+[07/17 22:23:33    326s] <CMD> get_eco_opt_mode -optimization_failure_tracking_file -quiet
+[07/17 22:23:35    327s] <CMD> get_time_unit
+[07/17 22:23:35    327s] <CMD> report_timing -gui_capri -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+[07/17 22:23:43    334s] <CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+[07/17 22:23:43    334s] Parsing file top.btarpt...
+[07/17 22:24:16    337s] <CMD> create_clock -name prog_clk[0] -period 6 -waveform {0 3} [get_ports {prog_clk[0]}]
+[07/17 22:24:16    337s] **WARN: (TCLCMD-1594):	A clock with name prog_clk[0] was already defined in the design. Previously defined clock definition of prog_clk[0] will be overwritten.
+[07/17 22:24:16    337s] **WARN: (TCLCMD-958):	Previously defined source objects for clock 'prog_clk[0]' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once.
+[07/17 22:24:19    337s] <CMD> report_timing > top.btarpt
+[07/17 22:24:19    337s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[07/17 22:24:19    337s] #################################################################################
+[07/17 22:24:19    337s] # Design Name: fpga_top
+[07/17 22:24:19    337s] # Design Mode: 65nm
+[07/17 22:24:19    337s] # Analysis Mode: MMMC OCV 
+[07/17 22:24:19    337s] # Parasitics Mode: No SPEF/RCDB 
+[07/17 22:24:19    337s] # Signoff Settings: SI Off 
+[07/17 22:24:19    337s] #################################################################################
+[07/17 22:24:21    339s] Topological Sorting (REAL = 0:00:00.0, MEM = 4499.5M, InitMEM = 4499.5M)
+[07/17 22:24:21    339s] Start delay calculation (fullDC) (1 T). (MEM=3722.66)
+[07/17 22:24:21    339s] End AAE Lib Interpolated Model. (MEM=4499.52 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[07/17 22:24:23    381s] End Timing Check Calculation. (CPU Time=0:00:00.2, Real Time=0:00:00.0)
+[07/17 22:24:23    381s] End Timing Check Calculation. (CPU Time=0:00:00.1, Real Time=0:00:00.0)
+[07/17 22:24:23    381s] End delay calculation. (MEM=4126.41 CPU=0:00:41.7 REAL=0:00:02.0)
+[07/17 22:24:23    381s] Begin loading slews from CTE ...
+[07/17 22:24:23    381s] Loading slews from CTE completed...
+[07/17 22:24:23    381s] End delay calculation (fullDC). (MEM=4126.41 CPU=0:00:42.2 REAL=0:00:02.0)
+[07/17 22:24:24    381s] *** CDM Built up (cpu=0:00:44.1  real=0:00:05.0  mem= 4651.9M) ***
+[07/17 22:24:24    381s] Has not load the powerDB, will keep enalbed
+[07/17 22:24:24    381s] Has not load the powerDB, will keep enalbed
+[07/17 22:24:39    383s] <CMD> get_eco_opt_mode -optimization_failure_tracking_file -quiet
+[07/17 22:24:40    383s] <CMD> get_time_unit
+[07/17 22:24:40    383s] <CMD> report_timing -gui_capri -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+[07/17 22:24:48    391s] <CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+[07/17 22:24:48    391s] Parsing file top.btarpt...
+[07/17 22:25:14    393s] <CMD> create_clock -name prog_clk[0] -period 6.5 -waveform {0 3.25} [get_ports {prog_clk[0]}]
+[07/17 22:25:14    393s] **WARN: (TCLCMD-1594):	A clock with name prog_clk[0] was already defined in the design. Previously defined clock definition of prog_clk[0] will be overwritten.
+[07/17 22:25:14    393s] **WARN: (TCLCMD-958):	Previously defined source objects for clock 'prog_clk[0]' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once.
+[07/17 22:25:17    393s] <CMD> report_timing > top.btarpt
+[07/17 22:25:17    394s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[07/17 22:25:17    394s] #################################################################################
+[07/17 22:25:17    394s] # Design Name: fpga_top
+[07/17 22:25:17    394s] # Design Mode: 65nm
+[07/17 22:25:17    394s] # Analysis Mode: MMMC OCV 
+[07/17 22:25:17    394s] # Parasitics Mode: No SPEF/RCDB 
+[07/17 22:25:17    394s] # Signoff Settings: SI Off 
+[07/17 22:25:17    394s] #################################################################################
+[07/17 22:25:19    395s] Topological Sorting (REAL = 0:00:00.0, MEM = 4664.9M, InitMEM = 4664.9M)
+[07/17 22:25:19    395s] Start delay calculation (fullDC) (1 T). (MEM=3880.6)
+[07/17 22:25:19    395s] End AAE Lib Interpolated Model. (MEM=4664.92 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[07/17 22:25:21    438s] End Timing Check Calculation. (CPU Time=0:00:00.2, Real Time=0:00:00.0)
+[07/17 22:25:21    438s] End Timing Check Calculation. (CPU Time=0:00:00.1, Real Time=0:00:00.0)
+[07/17 22:25:21    438s] End delay calculation. (MEM=4291.02 CPU=0:00:42.5 REAL=0:00:02.0)
+[07/17 22:25:21    438s] Begin loading slews from CTE ...
+[07/17 22:25:21    438s] Loading slews from CTE completed...
+[07/17 22:25:21    438s] End delay calculation (fullDC). (MEM=4291.02 CPU=0:00:42.9 REAL=0:00:02.0)
+[07/17 22:25:21    438s] *** CDM Built up (cpu=0:00:44.8  real=0:00:04.0  mem= 4824.2M) ***
+[07/17 22:25:21    438s] Has not load the powerDB, will keep enalbed
+[07/17 22:25:21    438s] Has not load the powerDB, will keep enalbed
+[07/17 22:25:31    440s] <CMD> get_eco_opt_mode -optimization_failure_tracking_file -quiet
+[07/17 22:25:32    440s] <CMD> get_time_unit
+[07/17 22:25:32    440s] <CMD> report_timing -gui_capri -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+[07/17 22:25:40    448s] <CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+[07/17 22:25:40    448s] Parsing file top.btarpt...
+[07/17 22:28:06    455s] <CMD> create_clock -name prog_clk[0] -period 6.75 -waveform {0 3.25} [get_ports {prog_clk[0]}]
+[07/17 22:28:06    455s] **WARN: (TCLCMD-1594):	A clock with name prog_clk[0] was already defined in the design. Previously defined clock definition of prog_clk[0] will be overwritten.
+[07/17 22:28:06    456s] **WARN: (TCLCMD-958):	Previously defined source objects for clock 'prog_clk[0]' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once.
+[07/17 22:28:08    456s] <CMD> report_timing > top.btarpt
+[07/17 22:28:08    456s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[07/17 22:28:08    456s] #################################################################################
+[07/17 22:28:08    456s] # Design Name: fpga_top
+[07/17 22:28:08    456s] # Design Mode: 65nm
+[07/17 22:28:08    456s] # Analysis Mode: MMMC OCV 
+[07/17 22:28:08    456s] # Parasitics Mode: No SPEF/RCDB 
+[07/17 22:28:08    456s] # Signoff Settings: SI Off 
+[07/17 22:28:08    456s] #################################################################################
+[07/17 22:28:10    457s] Topological Sorting (REAL = 0:00:00.0, MEM = 4836.3M, InitMEM = 4836.3M)
+[07/17 22:28:10    457s] Start delay calculation (fullDC) (1 T). (MEM=4048.91)
+[07/17 22:28:10    457s] End AAE Lib Interpolated Model. (MEM=4836.26 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[07/17 22:28:12    500s] End Timing Check Calculation. (CPU Time=0:00:00.2, Real Time=0:00:00.0)
+[07/17 22:28:12    500s] End Timing Check Calculation. (CPU Time=0:00:00.2, Real Time=0:00:00.0)
+[07/17 22:28:12    500s] End delay calculation. (MEM=4412.18 CPU=0:00:42.5 REAL=0:00:02.0)
+[07/17 22:28:12    500s] Begin loading slews from CTE ...
+[07/17 22:28:12    500s] Loading slews from CTE completed...
+[07/17 22:28:12    500s] End delay calculation (fullDC). (MEM=4412.18 CPU=0:00:43.0 REAL=0:00:02.0)
+[07/17 22:28:12    501s] *** CDM Built up (cpu=0:00:44.9  real=0:00:04.0  mem= 5000.6M) ***
+[07/17 22:28:12    501s] Has not load the powerDB, will keep enalbed
+[07/17 22:28:12    501s] Has not load the powerDB, will keep enalbed
+[07/17 22:28:16    502s] <CMD> get_eco_opt_mode -optimization_failure_tracking_file -quiet
+[07/17 22:28:17    503s] <CMD> get_time_unit
+[07/17 22:28:17    503s] <CMD> report_timing -gui_capri -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+[07/17 22:28:25    511s] <CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+[07/17 22:28:25    511s] Parsing file top.btarpt...
+[07/17 22:32:19    522s] <CMD> create_clock -name clk[0] -period 4 -waveform {0 2} [get_ports {clk[0]}]
+[07/17 22:32:19    522s] **WARN: (TCLCMD-1594):	A clock with name clk[0] was already defined in the design. Previously defined clock definition of clk[0] will be overwritten.
+[07/17 22:32:20    522s] **WARN: (TCLCMD-958):	Previously defined source objects for clock 'clk[0]' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once.
+[07/17 22:32:22    522s] <CMD> report_timing > top.btarpt
+[07/17 22:32:22    522s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[07/17 22:32:22    522s] #################################################################################
+[07/17 22:32:22    522s] # Design Name: fpga_top
+[07/17 22:32:22    522s] # Design Mode: 65nm
+[07/17 22:32:22    522s] # Analysis Mode: MMMC OCV 
+[07/17 22:32:22    522s] # Parasitics Mode: No SPEF/RCDB 
+[07/17 22:32:22    522s] # Signoff Settings: SI Off 
+[07/17 22:32:22    522s] #################################################################################
+[07/17 22:32:23    524s] Topological Sorting (REAL = 0:00:00.0, MEM = 5012.6M, InitMEM = 5012.6M)
+[07/17 22:32:23    524s] Start delay calculation (fullDC) (1 T). (MEM=4215.19)
+[07/17 22:32:23    524s] End AAE Lib Interpolated Model. (MEM=5012.58 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[07/17 22:32:26    567s] End Timing Check Calculation. (CPU Time=0:00:00.2, Real Time=0:00:01.0)
+[07/17 22:32:26    567s] End Timing Check Calculation. (CPU Time=0:00:00.1, Real Time=0:00:00.0)
+[07/17 22:32:26    567s] End delay calculation. (MEM=4605.89 CPU=0:00:43.1 REAL=0:00:02.0)
+[07/17 22:32:26    567s] Begin loading slews from CTE ...
+[07/17 22:32:26    567s] Loading slews from CTE completed...
+[07/17 22:32:26    567s] End delay calculation (fullDC). (MEM=4605.89 CPU=0:00:43.5 REAL=0:00:03.0)
+[07/17 22:32:26    567s] *** CDM Built up (cpu=0:00:45.4  real=0:00:04.0  mem= 5172.0M) ***
+[07/17 22:32:26    567s] Has not load the powerDB, will keep enalbed
+[07/17 22:32:26    567s] Has not load the powerDB, will keep enalbed
+[07/17 22:32:49    570s] <CMD> get_eco_opt_mode -optimization_failure_tracking_file -quiet
+[07/17 22:32:50    570s] <CMD> get_time_unit
+[07/17 22:32:50    570s] <CMD> report_timing -gui_capri -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+[07/17 22:32:58    578s] <CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+[07/17 22:32:58    578s] Parsing file top.btarpt...
+[07/17 22:33:24    580s] <CMD> create_clock -name clk[0] -period 4.5 -waveform {0 2} [get_ports {clk[0]}]
+[07/17 22:33:24    580s] **WARN: (TCLCMD-1594):	A clock with name clk[0] was already defined in the design. Previously defined clock definition of clk[0] will be overwritten.
+[07/17 22:33:24    580s] **WARN: (TCLCMD-958):	Previously defined source objects for clock 'clk[0]' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once.
+[07/17 22:33:29    581s] <CMD> report_timing
+[07/17 22:33:29    581s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[07/17 22:33:29    581s] #################################################################################
+[07/17 22:33:29    581s] # Design Name: fpga_top
+[07/17 22:33:29    581s] # Design Mode: 65nm
+[07/17 22:33:29    581s] # Analysis Mode: MMMC OCV 
+[07/17 22:33:29    581s] # Parasitics Mode: No SPEF/RCDB 
+[07/17 22:33:29    581s] # Signoff Settings: SI Off 
+[07/17 22:33:29    581s] #################################################################################
+[07/17 22:33:31    582s] Topological Sorting (REAL = 0:00:00.0, MEM = 5184.1M, InitMEM = 5184.1M)
+[07/17 22:33:31    582s] Start delay calculation (fullDC) (1 T). (MEM=4383.57)
+[07/17 22:33:31    582s] End AAE Lib Interpolated Model. (MEM=5184.05 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[07/17 22:33:33    625s] End Timing Check Calculation. (CPU Time=0:00:00.2, Real Time=0:00:00.0)
+[07/17 22:33:33    626s] End Timing Check Calculation. (CPU Time=0:00:00.1, Real Time=0:00:00.0)
+[07/17 22:33:33    626s] End delay calculation. (MEM=4725.96 CPU=0:00:42.9 REAL=0:00:02.0)
+[07/17 22:33:33    626s] Begin loading slews from CTE ...
+[07/17 22:33:33    626s] Loading slews from CTE completed...
+[07/17 22:33:33    626s] End delay calculation (fullDC). (MEM=4725.96 CPU=0:00:43.4 REAL=0:00:02.0)
+[07/17 22:33:33    626s] *** CDM Built up (cpu=0:00:45.3  real=0:00:04.0  mem= 5334.6M) ***
+[07/17 22:33:33    626s] Has not load the powerDB, will keep enalbed
+[07/17 22:33:33    626s] Has not load the powerDB, will keep enalbed
+[07/17 22:33:51    628s] <CMD> create_clock -name clk[0] -period 5 -waveform {0 2.5} [get_ports {clk[0]}]
+[07/17 22:33:51    628s] **WARN: (TCLCMD-1594):	A clock with name clk[0] was already defined in the design. Previously defined clock definition of clk[0] will be overwritten.
+[07/17 22:33:51    629s] **WARN: (TCLCMD-958):	Previously defined source objects for clock 'clk[0]' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once.
+[07/17 22:33:52    629s] <CMD> report_timing
+[07/17 22:33:52    629s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[07/17 22:33:52    629s] #################################################################################
+[07/17 22:33:52    629s] # Design Name: fpga_top
+[07/17 22:33:52    629s] # Design Mode: 65nm
+[07/17 22:33:52    629s] # Analysis Mode: MMMC OCV 
+[07/17 22:33:52    629s] # Parasitics Mode: No SPEF/RCDB 
+[07/17 22:33:52    629s] # Signoff Settings: SI Off 
+[07/17 22:33:52    629s] #################################################################################
+[07/17 22:33:54    630s] Topological Sorting (REAL = 0:00:00.0, MEM = 5346.6M, InitMEM = 5346.6M)
+[07/17 22:33:54    630s] Start delay calculation (fullDC) (1 T). (MEM=4544.95)
+[07/17 22:33:54    630s] End AAE Lib Interpolated Model. (MEM=5346.61 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[07/17 22:33:56    672s] End Timing Check Calculation. (CPU Time=0:00:00.2, Real Time=0:00:00.0)
+[07/17 22:33:56    673s] End Timing Check Calculation. (CPU Time=0:00:00.2, Real Time=0:00:00.0)
+[07/17 22:33:56    673s] End delay calculation. (MEM=4867.77 CPU=0:00:41.8 REAL=0:00:02.0)
+[07/17 22:33:56    673s] Begin loading slews from CTE ...
+[07/17 22:33:56    673s] Loading slews from CTE completed...
+[07/17 22:33:56    673s] End delay calculation (fullDC). (MEM=4867.77 CPU=0:00:42.3 REAL=0:00:02.0)
+[07/17 22:33:57    673s] *** CDM Built up (cpu=0:00:44.2  real=0:00:05.0  mem= 5511.5M) ***
+[07/17 22:33:57    673s] Has not load the powerDB, will keep enalbed
+[07/17 22:33:57    673s] Has not load the powerDB, will keep enalbed
+[07/17 22:34:33    676s] <CMD> create_clock -name prog_clk[0] -period 7 -waveform {0 3.5} [get_ports {prog_clk[0]}]
+[07/17 22:34:33    676s] **WARN: (TCLCMD-1594):	A clock with name prog_clk[0] was already defined in the design. Previously defined clock definition of prog_clk[0] will be overwritten.
+[07/17 22:34:33    676s] **WARN: (TCLCMD-958):	Previously defined source objects for clock 'prog_clk[0]' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once.
+[07/17 22:34:35    676s] <CMD> report_timing
+[07/17 22:34:35    676s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[07/17 22:34:35    676s] #################################################################################
+[07/17 22:34:35    676s] # Design Name: fpga_top
+[07/17 22:34:35    676s] # Design Mode: 65nm
+[07/17 22:34:35    676s] # Analysis Mode: MMMC OCV 
+[07/17 22:34:35    676s] # Parasitics Mode: No SPEF/RCDB 
+[07/17 22:34:35    676s] # Signoff Settings: SI Off 
+[07/17 22:34:35    676s] #################################################################################
+[07/17 22:34:37    678s] Topological Sorting (REAL = 0:00:00.0, MEM = 5523.5M, InitMEM = 5523.5M)
+[07/17 22:34:37    678s] Start delay calculation (fullDC) (1 T). (MEM=4712.38)
+[07/17 22:34:37    678s] End AAE Lib Interpolated Model. (MEM=5523.47 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[07/17 22:34:39    722s] End Timing Check Calculation. (CPU Time=0:00:00.2, Real Time=0:00:00.0)
+[07/17 22:34:39    722s] End Timing Check Calculation. (CPU Time=0:00:00.1, Real Time=0:00:00.0)
+[07/17 22:34:39    722s] End delay calculation. (MEM=5035.95 CPU=0:00:43.4 REAL=0:00:01.0)
+[07/17 22:34:39    722s] Begin loading slews from CTE ...
+[07/17 22:34:40    722s] Loading slews from CTE completed...
+[07/17 22:34:40    722s] End delay calculation (fullDC). (MEM=5035.95 CPU=0:00:43.8 REAL=0:00:03.0)
+[07/17 22:34:40    722s] *** CDM Built up (cpu=0:00:45.8  real=0:00:05.0  mem= 5681.7M) ***
+[07/17 22:34:40    722s] Has not load the powerDB, will keep enalbed
+[07/17 22:34:40    722s] Has not load the powerDB, will keep enalbed
+[07/17 22:36:15    728s] <CMD> create_clock -name prog_clk[0] -period 8 -waveform {0 4} [get_ports {prog_clk[0]}]
+[07/17 22:36:15    728s] **WARN: (TCLCMD-1594):	A clock with name prog_clk[0] was already defined in the design. Previously defined clock definition of prog_clk[0] will be overwritten.
+[07/17 22:36:15    728s] **WARN: (TCLCMD-958):	Previously defined source objects for clock 'prog_clk[0]' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once.
+[07/17 22:36:17    728s] <CMD> report_timing
+[07/17 22:36:17    728s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[07/17 22:36:17    728s] #################################################################################
+[07/17 22:36:17    728s] # Design Name: fpga_top
+[07/17 22:36:17    728s] # Design Mode: 65nm
+[07/17 22:36:17    728s] # Analysis Mode: MMMC OCV 
+[07/17 22:36:17    728s] # Parasitics Mode: No SPEF/RCDB 
+[07/17 22:36:17    728s] # Signoff Settings: SI Off 
+[07/17 22:36:17    728s] #################################################################################
+[07/17 22:36:19    730s] Topological Sorting (REAL = 0:00:00.0, MEM = 5693.7M, InitMEM = 5693.7M)
+[07/17 22:36:19    730s] Start delay calculation (fullDC) (1 T). (MEM=4874.37)
+[07/17 22:36:19    730s] End AAE Lib Interpolated Model. (MEM=5693.71 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[07/17 22:36:21    774s] End Timing Check Calculation. (CPU Time=0:00:00.2, Real Time=0:00:00.0)
+[07/17 22:36:21    774s] End Timing Check Calculation. (CPU Time=0:00:00.2, Real Time=0:00:00.0)
+[07/17 22:36:21    774s] End delay calculation. (MEM=5210.16 CPU=0:00:43.7 REAL=0:00:02.0)
+[07/17 22:36:21    774s] Begin loading slews from CTE ...
+[07/17 22:36:21    774s] Loading slews from CTE completed...
+[07/17 22:36:21    774s] End delay calculation (fullDC). (MEM=5210.16 CPU=0:00:44.1 REAL=0:00:02.0)
+[07/17 22:36:21    775s] *** CDM Built up (cpu=0:00:46.1  real=0:00:04.0  mem= 5828.0M) ***
+[07/17 22:36:21    775s] Has not load the powerDB, will keep enalbed
+[07/17 22:36:21    775s] Has not load the powerDB, will keep enalbed
+[07/17 22:37:19    779s] <CMD> create_clock -name prog_clk[0] -period 10 -waveform {0 5} [get_ports {prog_clk[0]}]
+[07/17 22:37:19    779s] **WARN: (TCLCMD-1594):	A clock with name prog_clk[0] was already defined in the design. Previously defined clock definition of prog_clk[0] will be overwritten.
+[07/17 22:37:19    779s] **WARN: (TCLCMD-958):	Previously defined source objects for clock 'prog_clk[0]' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once.
+[07/17 22:37:21    779s] <CMD> report_timing
+[07/17 22:37:21    779s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[07/17 22:37:21    779s] #################################################################################
+[07/17 22:37:21    779s] # Design Name: fpga_top
+[07/17 22:37:21    779s] # Design Mode: 65nm
+[07/17 22:37:21    779s] # Analysis Mode: MMMC OCV 
+[07/17 22:37:21    779s] # Parasitics Mode: No SPEF/RCDB 
+[07/17 22:37:21    779s] # Signoff Settings: SI Off 
+[07/17 22:37:21    779s] #################################################################################
+[07/17 22:37:23    781s] Topological Sorting (REAL = 0:00:00.0, MEM = 5840.0M, InitMEM = 5840.0M)
+[07/17 22:37:23    781s] Start delay calculation (fullDC) (1 T). (MEM=5037.38)
+[07/17 22:37:23    781s] End AAE Lib Interpolated Model. (MEM=5840.03 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[07/17 22:37:25    821s] End Timing Check Calculation. (CPU Time=0:00:00.2, Real Time=0:00:00.0)
+[07/17 22:37:25    821s] End Timing Check Calculation. (CPU Time=0:00:00.1, Real Time=0:00:00.0)
+[07/17 22:37:25    821s] End delay calculation. (MEM=5357.1 CPU=0:00:40.1 REAL=0:00:02.0)
+[07/17 22:37:25    821s] Begin loading slews from CTE ...
+[07/17 22:37:25    821s] Loading slews from CTE completed...
+[07/17 22:37:25    821s] End delay calculation (fullDC). (MEM=5357.1 CPU=0:00:40.5 REAL=0:00:02.0)
+[07/17 22:37:25    821s] *** CDM Built up (cpu=0:00:42.5  real=0:00:04.0  mem= 5999.3M) ***
+[07/17 22:37:25    821s] Has not load the powerDB, will keep enalbed
+[07/17 22:37:25    821s] Has not load the powerDB, will keep enalbed
+[07/17 22:37:43    824s] <CMD> create_clock -name prog_clk[0] -period 16 -waveform {0 8} [get_ports {prog_clk[0]}]
+[07/17 22:37:43    824s] **WARN: (TCLCMD-1594):	A clock with name prog_clk[0] was already defined in the design. Previously defined clock definition of prog_clk[0] will be overwritten.
+[07/17 22:37:43    824s] **WARN: (TCLCMD-958):	Previously defined source objects for clock 'prog_clk[0]' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once.
+[07/17 22:37:45    824s] <CMD> report_timing
+[07/17 22:37:45    824s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[07/17 22:37:45    824s] #################################################################################
+[07/17 22:37:45    824s] # Design Name: fpga_top
+[07/17 22:37:45    824s] # Design Mode: 65nm
+[07/17 22:37:45    824s] # Analysis Mode: MMMC OCV 
+[07/17 22:37:45    824s] # Parasitics Mode: No SPEF/RCDB 
+[07/17 22:37:45    824s] # Signoff Settings: SI Off 
+[07/17 22:37:45    824s] #################################################################################
+[07/17 22:37:47    826s] Topological Sorting (REAL = 0:00:00.0, MEM = 6011.3M, InitMEM = 6011.3M)
+[07/17 22:37:47    826s] Start delay calculation (fullDC) (1 T). (MEM=5199.37)
+[07/17 22:37:47    826s] End AAE Lib Interpolated Model. (MEM=6011.27 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[07/17 22:37:49    868s] End Timing Check Calculation. (CPU Time=0:00:00.2, Real Time=0:00:00.0)
+[07/17 22:37:49    869s] End Timing Check Calculation. (CPU Time=0:00:00.1, Real Time=0:00:00.0)
+[07/17 22:37:49    869s] End delay calculation. (MEM=5510.99 CPU=0:00:42.2 REAL=0:00:02.0)
+[07/17 22:37:49    869s] Begin loading slews from CTE ...
+[07/17 22:37:49    869s] Loading slews from CTE completed...
+[07/17 22:37:49    869s] End delay calculation (fullDC). (MEM=5510.99 CPU=0:00:42.6 REAL=0:00:02.0)
+[07/17 22:37:49    869s] *** CDM Built up (cpu=0:00:44.6  real=0:00:04.0  mem= 6172.6M) ***
+[07/17 22:37:49    869s] Has not load the powerDB, will keep enalbed
+[07/17 22:37:49    869s] Has not load the powerDB, will keep enalbed
+[07/17 22:38:13    872s] <CMD> create_clock -name clk[0] -period 6 -waveform {0 3} [get_ports {clk[0]}]
+[07/17 22:38:13    872s] **WARN: (TCLCMD-1594):	A clock with name clk[0] was already defined in the design. Previously defined clock definition of clk[0] will be overwritten.
+[07/17 22:38:14    872s] **WARN: (TCLCMD-958):	Previously defined source objects for clock 'clk[0]' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once.
+[07/17 22:38:16    872s] <CMD> report_timing
+[07/17 22:38:16    872s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[07/17 22:38:16    872s] #################################################################################
+[07/17 22:38:16    872s] # Design Name: fpga_top
+[07/17 22:38:16    872s] # Design Mode: 65nm
+[07/17 22:38:16    872s] # Analysis Mode: MMMC OCV 
+[07/17 22:38:16    872s] # Parasitics Mode: No SPEF/RCDB 
+[07/17 22:38:16    872s] # Signoff Settings: SI Off 
+[07/17 22:38:16    872s] #################################################################################
+[07/17 22:38:18    874s] Topological Sorting (REAL = 0:00:00.0, MEM = 6184.6M, InitMEM = 6184.6M)
+[07/17 22:38:18    874s] Start delay calculation (fullDC) (1 T). (MEM=5367.39)
+[07/17 22:38:18    874s] End AAE Lib Interpolated Model. (MEM=6184.59 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[07/17 22:38:20    915s] End Timing Check Calculation. (CPU Time=0:00:00.2, Real Time=0:00:00.0)
+[07/17 22:38:20    915s] End Timing Check Calculation. (CPU Time=0:00:00.2, Real Time=0:00:00.0)
+[07/17 22:38:20    915s] End delay calculation. (MEM=5683.98 CPU=0:00:40.9 REAL=0:00:02.0)
+[07/17 22:38:20    915s] Begin loading slews from CTE ...
+[07/17 22:38:20    915s] Loading slews from CTE completed...
+[07/17 22:38:20    915s] End delay calculation (fullDC). (MEM=5683.98 CPU=0:00:41.3 REAL=0:00:02.0)
+[07/17 22:38:20    915s] *** CDM Built up (cpu=0:00:43.2  real=0:00:04.0  mem= 6331.8M) ***
+[07/17 22:38:20    915s] Has not load the powerDB, will keep enalbed
+[07/17 22:38:20    915s] Has not load the powerDB, will keep enalbed
+[07/17 22:38:39    918s] <CMD> create_clock -name clk[0] -period 7 -waveform {0 3.5} [get_ports {clk[0]}]
+[07/17 22:38:39    918s] **WARN: (TCLCMD-1594):	A clock with name clk[0] was already defined in the design. Previously defined clock definition of clk[0] will be overwritten.
+[07/17 22:38:40    918s] **WARN: (TCLCMD-958):	Previously defined source objects for clock 'clk[0]' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once.
+[07/17 22:38:41    918s] <CMD> report_timing
+[07/17 22:38:41    918s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[07/17 22:38:41    918s] #################################################################################
+[07/17 22:38:41    918s] # Design Name: fpga_top
+[07/17 22:38:41    918s] # Design Mode: 65nm
+[07/17 22:38:41    918s] # Analysis Mode: MMMC OCV 
+[07/17 22:38:41    918s] # Parasitics Mode: No SPEF/RCDB 
+[07/17 22:38:41    918s] # Signoff Settings: SI Off 
+[07/17 22:38:41    918s] #################################################################################
+[07/17 22:38:43    920s] Topological Sorting (REAL = 0:00:00.0, MEM = 6343.8M, InitMEM = 6343.8M)
+[07/17 22:38:43    920s] Start delay calculation (fullDC) (1 T). (MEM=5527.98)
+[07/17 22:38:43    920s] End AAE Lib Interpolated Model. (MEM=6343.84 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[07/17 22:38:45    963s] End Timing Check Calculation. (CPU Time=0:00:00.2, Real Time=0:00:00.0)
+[07/17 22:38:45    963s] End Timing Check Calculation. (CPU Time=0:00:00.1, Real Time=0:00:00.0)
+[07/17 22:38:45    963s] End delay calculation. (MEM=5837.99 CPU=0:00:43.1 REAL=0:00:02.0)
+[07/17 22:38:45    963s] Begin loading slews from CTE ...
+[07/17 22:38:45    963s] Loading slews from CTE completed...
+[07/17 22:38:45    963s] End delay calculation (fullDC). (MEM=5837.99 CPU=0:00:43.5 REAL=0:00:02.0)
+[07/17 22:38:45    963s] *** CDM Built up (cpu=0:00:45.5  real=0:00:04.0  mem= 6484.1M) ***
+[07/17 22:38:45    963s] Has not load the powerDB, will keep enalbed
+[07/17 22:38:45    963s] Has not load the powerDB, will keep enalbed
+[07/17 22:44:50    982s] <CMD> create_clock -name prog_clk[0] -period 10 -waveform {0 5} [get_ports {prog_clk[0]}]
+[07/17 22:44:50    982s] **WARN: (TCLCMD-1594):	A clock with name prog_clk[0] was already defined in the design. Previously defined clock definition of prog_clk[0] will be overwritten.
+[07/17 22:44:51    982s] **WARN: (TCLCMD-958):	Previously defined source objects for clock 'prog_clk[0]' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once.
+[07/17 22:44:52    982s] <CMD> report_timing
+[07/17 22:44:52    982s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[07/17 22:44:52    982s] #################################################################################
+[07/17 22:44:52    982s] # Design Name: fpga_top
+[07/17 22:44:52    982s] # Design Mode: 65nm
+[07/17 22:44:52    982s] # Analysis Mode: MMMC OCV 
+[07/17 22:44:52    982s] # Parasitics Mode: No SPEF/RCDB 
+[07/17 22:44:52    982s] # Signoff Settings: SI Off 
+[07/17 22:44:52    982s] #################################################################################
+[07/17 22:44:54    984s] Topological Sorting (REAL = 0:00:00.0, MEM = 6496.1M, InitMEM = 6496.1M)
+[07/17 22:44:54    984s] Start delay calculation (fullDC) (1 T). (MEM=5690.79)
+[07/17 22:44:54    984s] End AAE Lib Interpolated Model. (MEM=6496.08 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[07/17 22:44:56   1027s] End Timing Check Calculation. (CPU Time=0:00:00.2, Real Time=0:00:00.0)
+[07/17 22:44:57   1028s] End Timing Check Calculation. (CPU Time=0:00:00.1, Real Time=0:00:01.0)
+[07/17 22:44:57   1028s] End delay calculation. (MEM=6008.32 CPU=0:00:43.4 REAL=0:00:02.0)
+[07/17 22:44:57   1028s] Begin loading slews from CTE ...
+[07/17 22:44:57   1028s] Loading slews from CTE completed...
+[07/17 22:44:57   1028s] End delay calculation (fullDC). (MEM=6008.32 CPU=0:00:43.8 REAL=0:00:03.0)
+[07/17 22:44:57   1028s] *** CDM Built up (cpu=0:00:45.8  real=0:00:05.0  mem= 6648.3M) ***
+[07/17 22:44:57   1028s] Has not load the powerDB, will keep enalbed
+[07/17 22:44:57   1028s] Has not load the powerDB, will keep enalbed
+[07/17 22:45:28   1031s] <CMD> create_clock -name prog_clk[0] -period 9 -waveform {0 4.5} [get_ports {prog_clk[0]}]
+[07/17 22:45:28   1031s] **WARN: (TCLCMD-1594):	A clock with name prog_clk[0] was already defined in the design. Previously defined clock definition of prog_clk[0] will be overwritten.
+[07/17 22:45:28   1031s] **WARN: (TCLCMD-958):	Previously defined source objects for clock 'prog_clk[0]' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once.
+[07/17 22:45:30   1031s] <CMD> report_timing
+[07/17 22:45:30   1031s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[07/17 22:45:30   1031s] #################################################################################
+[07/17 22:45:30   1031s] # Design Name: fpga_top
+[07/17 22:45:30   1031s] # Design Mode: 65nm
+[07/17 22:45:30   1031s] # Analysis Mode: MMMC OCV 
+[07/17 22:45:30   1031s] # Parasitics Mode: No SPEF/RCDB 
+[07/17 22:45:30   1031s] # Signoff Settings: SI Off 
+[07/17 22:45:30   1031s] #################################################################################
+[07/17 22:45:32   1033s] Topological Sorting (REAL = 0:00:01.0, MEM = 6660.3M, InitMEM = 6660.3M)
+[07/17 22:45:32   1033s] Start delay calculation (fullDC) (1 T). (MEM=5856.88)
+[07/17 22:45:32   1033s] End AAE Lib Interpolated Model. (MEM=6660.32 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[07/17 22:45:34   1077s] End Timing Check Calculation. (CPU Time=0:00:00.2, Real Time=0:00:00.0)
+[07/17 22:45:34   1077s] End Timing Check Calculation. (CPU Time=0:00:00.1, Real Time=0:00:00.0)
+[07/17 22:45:34   1077s] End delay calculation. (MEM=6175.43 CPU=0:00:43.7 REAL=0:00:02.0)
+[07/17 22:45:34   1077s] Begin loading slews from CTE ...
+[07/17 22:45:34   1077s] Loading slews from CTE completed...
+[07/17 22:45:34   1077s] End delay calculation (fullDC). (MEM=6175.43 CPU=0:00:44.1 REAL=0:00:02.0)
+[07/17 22:45:34   1077s] *** CDM Built up (cpu=0:00:46.0  real=0:00:04.0  mem= 6813.4M) ***
+[07/17 22:45:34   1077s] Has not load the powerDB, will keep enalbed
+[07/17 22:45:34   1077s] Has not load the powerDB, will keep enalbed
+[07/17 22:45:54   1080s] <CMD> create_clock -name prog_clk[0] -period 7 -waveform {0 3.5} [get_ports {prog_clk[0]}]
+[07/17 22:45:54   1080s] **WARN: (TCLCMD-1594):	A clock with name prog_clk[0] was already defined in the design. Previously defined clock definition of prog_clk[0] will be overwritten.
+[07/17 22:45:55   1080s] **WARN: (TCLCMD-958):	Previously defined source objects for clock 'prog_clk[0]' have been overwritten. To avoid overwrite, ensure that all source objects are passed to the 'create_clock' command at once.
+[07/17 22:45:56   1080s] <CMD> report_timing
+[07/17 22:45:56   1080s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[07/17 22:45:56   1080s] #################################################################################
+[07/17 22:45:56   1080s] # Design Name: fpga_top
+[07/17 22:45:56   1080s] # Design Mode: 65nm
+[07/17 22:45:56   1080s] # Analysis Mode: MMMC OCV 
+[07/17 22:45:56   1080s] # Parasitics Mode: No SPEF/RCDB 
+[07/17 22:45:56   1080s] # Signoff Settings: SI Off 
+[07/17 22:45:56   1080s] #################################################################################
+[07/17 22:45:58   1082s] Topological Sorting (REAL = 0:00:00.0, MEM = 6825.4M, InitMEM = 6825.4M)
+[07/17 22:45:58   1082s] Start delay calculation (fullDC) (1 T). (MEM=6017.81)
+[07/17 22:45:58   1082s] End AAE Lib Interpolated Model. (MEM=6825.41 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[07/17 22:46:00   1123s] End Timing Check Calculation. (CPU Time=0:00:00.2, Real Time=0:00:00.0)
+[07/17 22:46:00   1123s] End Timing Check Calculation. (CPU Time=0:00:00.1, Real Time=0:00:00.0)
+[07/17 22:46:00   1123s] End delay calculation. (MEM=6301.45 CPU=0:00:41.3 REAL=0:00:02.0)
+[07/17 22:46:00   1123s] Begin loading slews from CTE ...
+[07/17 22:46:00   1123s] Loading slews from CTE completed...
+[07/17 22:46:00   1123s] End delay calculation (fullDC). (MEM=6301.45 CPU=0:00:41.7 REAL=0:00:02.0)
+[07/17 22:46:00   1124s] *** CDM Built up (cpu=0:00:43.7  real=0:00:04.0  mem= 6974.5M) ***
+[07/17 22:46:00   1124s] Has not load the powerDB, will keep enalbed
+[07/17 22:46:00   1124s] Has not load the powerDB, will keep enalbed
+[07/17 22:46:45   1127s] <CMD> report_timing > top.btarpt
+[07/17 22:46:48   1127s] <CMD> get_eco_opt_mode -optimization_failure_tracking_file -quiet
+[07/17 22:46:49   1127s] <CMD> get_time_unit
+[07/17 22:46:49   1127s] <CMD> report_timing -gui_capri -max_paths 50000 -max_slack 0.75 -path_exceptions all -late > top.btarpt
+[07/17 22:46:57   1135s] <CMD> load_timing_debug_report -name default_report top.btarpt -max_path_num 10000 -updateCategory 0 -isDrv 0
+[07/17 22:46:57   1135s] Parsing file top.btarpt...
+[07/17 22:56:53   1163s] <CMD> exit
+[07/17 22:56:54   1163s] 
+[07/17 22:56:54   1163s] *** Memory Usage v#2 (Current mem = 6974.500M, initial mem = 832.277M) ***
+[07/17 22:56:54   1163s] 
+[07/17 22:56:54   1163s] *** Summary of all messages that are not suppressed in this session:
+[07/17 22:56:54   1163s] Severity  ID               Count  Summary                                  
+[07/17 22:56:54   1163s] WARNING   TCLCMD-958          17  Previously defined source objects for cl...
+[07/17 22:56:54   1163s] WARNING   TCLCMD-1594         17  A clock with name %s was already defined...
+[07/17 22:56:54   1163s] *** Message Summary: 34 warning(s), 0 error(s)
+[07/17 22:56:54   1163s] 
+[07/17 22:56:54   1163s] --- Ending "Tempus Timing Solution" (totcpu=0:19:24, real=0:50:41, mem=6974.5M) ---

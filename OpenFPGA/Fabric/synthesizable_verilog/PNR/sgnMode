@@ -1,0 +1,6 @@
+Instance:cby_2__2_/mem_right_ipin_9/DFFR_1_/g6
+Instance:cby_2__2_/mem_right_ipin_9/DFFR_1_/q_reg_reg
+Module:pad_pReset
+Module:pad_prog_clk
+Port:prog_clk[0]
+Port:pReset[0]

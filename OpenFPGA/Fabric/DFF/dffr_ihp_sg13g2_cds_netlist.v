@@ -9,9 +9,10 @@ module DFFR(RST, CK, D, Q, QN);
   output Q, QN;
   wire RST, CK, D;
   wire Q, QN;
-  wire n_0;
+  //wire n_0;
   INJIX0 g4(.A (Q), .Q (QN));
   DFRRQJIX1 q_reg_reg(.RN (n_0), .C (CK), .D (D), .Q (Q));
+  //DFRRQJIX1 q_reg_reg(.RN (RST), .C (CK), .D (D), .Q (Q));
   INJIX0 g6(.A (RST), .Q (n_0));
 endmodule
 
