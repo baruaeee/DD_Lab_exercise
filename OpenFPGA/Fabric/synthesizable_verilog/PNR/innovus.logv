@@ -30342,3 +30342,21 @@ _______________________________________________________________________
 [07/19 01:43:11   1685s] ### export design design signature (83): route=712126401 fixed_route=712126401 flt_obj=0 vio=963754227 swire=209438696 shield_wire=282492057 net_attr=1261647992 dirty_area=0 del_dirty_area=0 cell=1699141073 placement=1159953743 pin_access=1889438559 inst_pattern=1 inst_orient=1 via=2143274293 routing_via=1794334330 timing=1634199259 sns=1634199259 ppa_info=2060608863
 [07/19 01:43:11   1685s] ### import design signature (84): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1889438559 inst_pattern=1 inst_orient=1 via=2143274293 routing_via=1794334330 timing=1 sns=1 ppa_info=1
 [07/19 01:43:11   1685s] #% End reportShield (date=07/19 01:43:11, total cpu=0:00:04.0, real=0:00:02.0, peak res=4317.4M, current mem=4317.4M)
+[07/19 16:32:28   4112s] <CMD> set sprCreateIeRingOffset 1.0
+[07/19 16:32:28   4112s] <CMD> set sprCreateIeRingThreshold 1.0
+[07/19 16:32:28   4112s] <CMD> set sprCreateIeRingJogDistance 1.0
+[07/19 16:32:28   4112s] <CMD> set sprCreateIeRingLayers {}
+[07/19 16:32:28   4112s] <CMD> set sprCreateIeRingOffset 1.0
+[07/19 16:32:28   4112s] <CMD> set sprCreateIeRingThreshold 1.0
+[07/19 16:32:28   4112s] <CMD> set sprCreateIeRingJogDistance 1.0
+[07/19 16:32:28   4112s] <CMD> set sprCreateIeRingLayers {}
+[07/19 16:32:28   4112s] <CMD> set sprCreateIeStripeWidth 10.0
+[07/19 16:32:28   4112s] <CMD> set sprCreateIeStripeThreshold 1.0
+[07/19 16:32:28   4112s] <CMD> set sprCreateIeStripeWidth 10.0
+[07/19 16:32:28   4112s] <CMD> set sprCreateIeStripeThreshold 1.0
+[07/19 16:32:28   4112s] <CMD> set sprCreateIeRingOffset 1.0
+[07/19 16:32:28   4112s] <CMD> set sprCreateIeRingThreshold 1.0
+[07/19 16:32:28   4112s] <CMD> set sprCreateIeRingJogDistance 1.0
+[07/19 16:32:28   4112s] <CMD> set sprCreateIeRingLayers {}
+[07/19 16:32:28   4112s] <CMD> set sprCreateIeStripeWidth 10.0
+[07/19 16:32:28   4112s] <CMD> set sprCreateIeStripeThreshold 1.0
