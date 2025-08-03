@@ -279,11 +279,16 @@ setObjFPlanBoxList Module sb_0__2_ {{182.28000 992.88000 297.78000 1159.07400} {
 create_relative_floorplan -place sb_0__2_ -ref_type object -ref cby_0__2_ -horizontal_edge_separate {1 10 7} -vertical_edge_separate {0 0 0}
 delete_relative_floorplan -all
 
+setObjFPlanBox Module cbx_1__2_ 570.78000 871.92000 933.50300 1000.44000
+create_relative_floorplan -place cbx_1__2_ -ref_type object -ref sb_0__2_ -horizontal_edge_separate {5 0 3} -vertical_edge_separate {4 10 0}
+delete_relative_floorplan -all
+
 setObjFPlanBox Module grid_clb_1__3_ 361.927 1793.028 925.567 2356.248
 create_relative_floorplan -place grid_clb_1__3_ -ref_type object -ref sb_0__2_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 10 0}
 delete_relative_floorplan -all
 
-setObjFPlanBox Module cby_0__3_ 165.119 1946.827 323.645 2105.269
+#setObjFPlanBox Module cby_0__3_ 165.119 1946.827 323.645 2105.269
+setObjFPlanBox Module cby_0__3_ 180.18000 1896.30000 295.67100 2055.06000
 create_relative_floorplan -place cby_0__3_ -ref_type object -ref sb_0__2_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0 0 0}
 delete_relative_floorplan -all
 
@@ -291,6 +296,122 @@ setObjFPlanBoxList Module sb_0__3_ {{180.18000 2429.28000 295.68000 2599.24400} 
 create_relative_floorplan -place sb_0__3_ -ref_type object -ref cby_0__3_ -horizontal_edge_separate {1 10 7} -vertical_edge_separate {0 0 0}
 delete_relative_floorplan -all
 
+setObjFPlanBox Module cbx_1__3_ 570.78000 871.92000 933.50300 1000.44000
+create_relative_floorplan -place cbx_1__3_ -ref_type object -ref sb_0__3_ -horizontal_edge_separate {5 0 3} -vertical_edge_separate {4 10 0}
+delete_relative_floorplan -all
+
+setObjFPlanBox Module grid_clb_1__4_ 342.411 2500.881 906.051 3064.101
+create_relative_floorplan -place grid_clb_1__4_ -ref_type object -ref sb_0__3_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+
+#setObjFPlanBox Module cby_0__4_ 165.119 1946.827 323.645 2105.269
+setObjFPlanBox Module cby_0__4_ 180.18000 2610.72000 295.70200 2769.48000
+create_relative_floorplan -place cby_0__4_ -ref_type object -ref sb_0__3_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+
+setObjFPlanBoxList Module sb_0__4_ {{180.18000 2429.28000 295.68000 2599.24400} {180.18000 2300.76000 467.04000 2429.28000} {180.18000 2066.40000 295.68000 2300.76000}}
+create_relative_floorplan -place sb_0__4_ -ref_type object -ref cby_0__4_ -horizontal_edge_separate {1 10 7} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+
+setObjFPlanBox Module cbx_1__5_ 570.78000 871.92000 933.50300 1000.44000
+create_relative_floorplan -place cbx_1__5_ -ref_type object -ref sb_0__5_ -horizontal_edge_separate {5 0 3} -vertical_edge_separate {4 10 0}
+delete_relative_floorplan -all
+
+setObjFPlanBox Module grid_clb_1__5_ 342.411 2500.881 906.051 3064.101
+create_relative_floorplan -place grid_clb_1__5_ -ref_type object -ref sb_0__4_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+
+setObjFPlanBox Module cby_0__5_ 180.18000 2610.72000 295.70200 2769.48000
+create_relative_floorplan -place cby_0__5_ -ref_type object -ref sb_0__4_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+
+setObjFPlanBoxList Module sb_0__5_ {{180.18000 2429.28000 295.68000 2599.24400} {180.18000 2300.76000 467.04000 2429.28000} {180.18000 2066.40000 295.68000 2300.76000}}
+create_relative_floorplan -place sb_0__5_ -ref_type object -ref cby_0__5_ -horizontal_edge_separate {1 10 7} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+
+setObjFPlanBox Module cbx_1__6_ 570.78000 871.92000 933.50300 1000.44000
+create_relative_floorplan -place cbx_1__6_ -ref_type object -ref sb_0__6_ -horizontal_edge_separate {5 0 3} -vertical_edge_separate {4 10 0}
+delete_relative_floorplan -all
+
+setObjFPlanBox Module grid_clb_1__6_ 342.411 2500.881 906.051 3064.101
+create_relative_floorplan -place grid_clb_1__6_ -ref_type object -ref sb_0__5_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+
+setObjFPlanBox Module cby_0__6_ 180.18000 2610.72000 295.70200 2769.48000
+create_relative_floorplan -place cby_0__6_ -ref_type object -ref sb_0__5_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+
+setObjFPlanBoxList Module sb_0__6_ {{180.18000 2429.28000 295.68000 2599.24400} {180.18000 2300.76000 467.04000 2429.28000} {180.18000 2066.40000 295.68000 2300.76000}}
+create_relative_floorplan -place sb_0__6_ -ref_type object -ref cby_0__6_ -horizontal_edge_separate {1 10 7} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+
+setObjFPlanBox Module cbx_1__7_ 570.78000 871.92000 933.50300 1000.44000
+create_relative_floorplan -place cbx_1__7_ -ref_type object -ref sb_0__7_ -horizontal_edge_separate {5 0 3} -vertical_edge_separate {4 10 0}
+delete_relative_floorplan -all
+
+
+
+
+setObjFPlanBox Module grid_clb_1__7_ 342.411 2500.881 906.051 3064.101
+create_relative_floorplan -place grid_clb_1__7_ -ref_type object -ref sb_0__6_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+
+setObjFPlanBox Module cby_0__7_ 180.18000 2610.72000 295.70200 2769.48000
+create_relative_floorplan -place cby_0__7_ -ref_type object -ref sb_0__6_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+
+setObjFPlanBoxList Module sb_0__7_ {{180.18000 2429.28000 295.68000 2599.24400} {180.18000 2300.76000 467.04000 2429.28000} {180.18000 2066.40000 295.68000 2300.76000}}
+create_relative_floorplan -place sb_0__7_ -ref_type object -ref cby_0__7_ -horizontal_edge_separate {1 10 7} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+
+setObjFPlanBox Module grid_clb_1__8_ 342.411 2500.881 906.051 3064.101
+create_relative_floorplan -place grid_clb_1__8_ -ref_type object -ref sb_0__7_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+
+setObjFPlanBox Module cby_0__8_ 180.18000 2610.72000 295.70200 2769.48000
+create_relative_floorplan -place cby_0__8_ -ref_type object -ref sb_0__7_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+
+setObjFPlanBoxList Module sb_0__8_ {{180.18000 2429.28000 295.68000 2599.24400} {180.18000 2300.76000 467.04000 2429.28000} {180.18000 2066.40000 295.68000 2300.76000}}
+create_relative_floorplan -place sb_0__8_ -ref_type object -ref cby_0__8_ -horizontal_edge_separate {1 10 7} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+
+setObjFPlanBox Module grid_clb_1__9_ 342.411 2500.881 906.051 3064.101
+create_relative_floorplan -place grid_clb_1__9_ -ref_type object -ref sb_0__8_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+
+setObjFPlanBox Module cby_0__9_ 180.18000 2610.72000 295.70200 2769.48000
+create_relative_floorplan -place cby_0__9_ -ref_type object -ref sb_0__8_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+
+setObjFPlanBoxList Module sb_0__9_ {{180.18000 2429.28000 295.68000 2599.24400} {180.18000 2300.76000 467.04000 2429.28000} {180.18000 2066.40000 295.68000 2300.76000}}
+create_relative_floorplan -place sb_0__9_ -ref_type object -ref cby_0__9_ -horizontal_edge_separate {1 10 7} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+
+setObjFPlanBox Module grid_clb_1__10_ 342.411 2500.881 906.051 3064.101
+create_relative_floorplan -place grid_clb_1__10_ -ref_type object -ref sb_0__9_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+
+setObjFPlanBox Module cby_0__10_ 180.18000 2610.72000 295.70200 2769.48000
+create_relative_floorplan -place cby_0__10_ -ref_type object -ref sb_0__9_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+
+setObjFPlanBoxList Module sb_0__10_ {{180.18000 2429.28000 295.68000 2599.24400} {180.18000 2300.76000 467.04000 2429.28000} {180.18000 2066.40000 295.68000 2300.76000}}
+create_relative_floorplan -place sb_0__10_ -ref_type object -ref cby_0__10_ -horizontal_edge_separate {1 10 7} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+
+setObjFPlanBox Module grid_clb_1__11_ 342.411 2500.881 906.051 3064.101
+create_relative_floorplan -place grid_clb_1__11_ -ref_type object -ref sb_0__10_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+
+setObjFPlanBox Module cby_0__11_ 180.18000 2610.72000 295.70200 2769.48000
+create_relative_floorplan -place cby_0__11_ -ref_type object -ref sb_0__10_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+
+#setObjFPlanBox Module sb_0__11_ 1476.292 7198.338 1823.333 7545.195
+setObjFPlanBoxList Module sb_0__11_ {{180.18000 8016.12000 527.10000 8144.73300} {180.18000 7781.76000 295.68000 8016.12000}}
+create_relative_floorplan -place sb_0__11_ -ref_type object -ref cby_0__11_ -horizontal_edge_separate {1 10 5} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
 
 
 
