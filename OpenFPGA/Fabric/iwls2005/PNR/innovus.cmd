@@ -1,7 +1,7 @@
 #######################################################
 #                                                     
 #  Innovus Command Logging File                     
-#  Created on Sun Aug  3 13:53:26 2025                
+#  Created on Sun Aug  3 16:30:03 2025                
 #                                                     
 #######################################################
 
@@ -369,3 +369,4153 @@ set init_verilog_tolerate_port_mismatch 0
 set lefdefInputCheckColoredShape 0
 set load_netlist_ignore_undefined_cell 1
 init_design
+setDrawView fplan
+setObjFPlanBoxList Module sb_0__0_ {{180.18000 286.02000 296.10000 577.08000} {180.18000 180.18000 415.24000 286.02000}}
+create_relative_floorplan -place sb_0__0_ -ref_type core_boundary -horizontal_edge_separate {3 0 5} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module grid_clb_1__1_ 460.781 301.841 1026.101 865.061
+create_relative_floorplan -place grid_clb_1__1_ -ref_type object -ref sb_0__0_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cbx_1__0_ 425.46000 180.18000 1018.52400 286.02000
+create_relative_floorplan -place cby_0__1_ -ref_type object -ref sb_0__0_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_0__1_ {{182.28000 992.88000 297.78000 1159.07400} {182.28000 864.36000 562.80000 992.88000} {182.28000 750.96000 297.78000 864.36000}}
+create_relative_floorplan -place sb_0__1_ -ref_type object -ref cby_0__1_ -horizontal_edge_separate {1 10 7} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cbx_1__1_ 570.78000 871.92000 933.50300 1000.44000
+create_relative_floorplan -place cbx_1__1_ -ref_type object -ref sb_0__1_ -horizontal_edge_separate {5 0 3} -vertical_edge_separate {4 10 0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_1__0_ {{881.49600 297.36000 1256.22000 456.12000} {1028.58000 180.18000 1256.22000 297.36000}}
+create_relative_floorplan -place sb_1__0_ -ref_type object -ref cbx_1__0_ -horizontal_edge_separate {3 0 5} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cby_1__1_ 1046.781 468.818 1213.101 744.758
+create_relative_floorplan -place cby_1__1_ -ref_type object -ref sb_1__0_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 0 0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_1__1_ {{881.58000 1011.78000 1220.52000 1094.94000} {943.74300 860.58000 1220.52000 1011.78000} {881.58000 754.74000 1220.52000 860.58000}}
+create_relative_floorplan -place sb_1__1_ -ref_type object -ref cby_1__1_ -horizontal_edge_separate {1 10 7} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module grid_clb_1__2_ 310.014 1020.986 873.654 1584.206
+create_relative_floorplan -place grid_clb_1__2_ -ref_type object -ref sb_0__1_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cby_0__2_ 180.18000 1166.76000 295.71100 1325.52000
+create_relative_floorplan -place cby_0__2_ -ref_type object -ref sb_0__1_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_0__2_ {{180.18000 1713.10800 295.68000 1881.18000} {180.18000 1586.34000 467.04000 1713.10800} {180.18000 1348.20000 295.68000 1586.34000}}
+create_relative_floorplan -place sb_0__2_ -ref_type object -ref cby_0__2_ -horizontal_edge_separate {1 10 7} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cbx_1__2_ 570.78000 871.92000 933.50300 1000.44000
+create_relative_floorplan -place cbx_1__2_ -ref_type object -ref sb_0__2_ -horizontal_edge_separate {5 0 3} -vertical_edge_separate {4 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module grid_clb_1__3_ 361.927 1793.028 925.567 2356.248
+create_relative_floorplan -place grid_clb_1__3_ -ref_type object -ref sb_0__2_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cby_0__3_ 180.18000 1896.30000 295.67100 2055.06000
+create_relative_floorplan -place cby_0__3_ -ref_type object -ref sb_0__2_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_0__3_ {{180.18000 1713.10800 295.68000 1881.18000} {180.18000 1586.34000 467.04000 1713.10800} {180.18000 1348.20000 295.68000 1586.34000}}
+create_relative_floorplan -place sb_0__3_ -ref_type object -ref cby_0__3_ -horizontal_edge_separate {1 10 7} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cbx_1__3_ 570.78000 871.92000 933.50300 1000.44000
+create_relative_floorplan -place cbx_1__3_ -ref_type object -ref sb_0__3_ -horizontal_edge_separate {5 0 3} -vertical_edge_separate {4 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module grid_clb_1__4_ 342.411 2500.881 906.051 3064.101
+create_relative_floorplan -place grid_clb_1__4_ -ref_type object -ref sb_0__3_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cby_0__4_ 180.18000 2610.72000 295.70200 2769.48000
+create_relative_floorplan -place cby_0__4_ -ref_type object -ref sb_0__3_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_0__4_ {{180.18000 1713.10800 295.68000 1881.18000} {180.18000 1586.34000 467.04000 1713.10800} {180.18000 1348.20000 295.68000 1586.34000}}
+create_relative_floorplan -place sb_0__4_ -ref_type object -ref cby_0__4_ -horizontal_edge_separate {1 10 7} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cbx_1__4_ 570.78000 871.92000 933.50300 1000.44000
+create_relative_floorplan -place cbx_1__4_ -ref_type object -ref sb_0__4_ -horizontal_edge_separate {5 0 3} -vertical_edge_separate {4 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module grid_clb_1__5_ 342.411 2500.881 906.051 3064.101
+create_relative_floorplan -place grid_clb_1__5_ -ref_type object -ref sb_0__4_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cby_0__5_ 180.18000 2610.72000 295.70200 2769.48000
+create_relative_floorplan -place cby_0__5_ -ref_type object -ref sb_0__4_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_0__5_ {{180.18000 1713.10800 295.68000 1881.18000} {180.18000 1586.34000 467.04000 1713.10800} {180.18000 1348.20000 295.68000 1586.34000}}
+create_relative_floorplan -place sb_0__5_ -ref_type object -ref cby_0__5_ -horizontal_edge_separate {1 10 7} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cbx_1__5_ 570.78000 871.92000 933.50300 1000.44000
+create_relative_floorplan -place cbx_1__5_ -ref_type object -ref sb_0__5_ -horizontal_edge_separate {5 0 3} -vertical_edge_separate {4 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module grid_clb_1__6_ 342.411 2500.881 906.051 3064.101
+create_relative_floorplan -place grid_clb_1__6_ -ref_type object -ref sb_0__5_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cby_0__6_ 180.18000 2610.72000 295.70200 2769.48000
+create_relative_floorplan -place cby_0__6_ -ref_type object -ref sb_0__5_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_0__6_ {{180.18000 1713.10800 295.68000 1881.18000} {180.18000 1586.34000 467.04000 1713.10800} {180.18000 1348.20000 295.68000 1586.34000}}
+create_relative_floorplan -place sb_0__6_ -ref_type object -ref cby_0__6_ -horizontal_edge_separate {1 10 7} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cbx_1__6_ 570.78000 871.92000 933.50300 1000.44000
+create_relative_floorplan -place cbx_1__6_ -ref_type object -ref sb_0__6_ -horizontal_edge_separate {5 0 3} -vertical_edge_separate {4 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module grid_clb_1__7_ 342.411 2500.881 906.051 3064.101
+create_relative_floorplan -place grid_clb_1__7_ -ref_type object -ref sb_0__6_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cby_0__7_ 180.18000 2610.72000 295.70200 2769.48000
+create_relative_floorplan -place cby_0__7_ -ref_type object -ref sb_0__6_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_0__7_ {{180.18000 1713.10800 295.68000 1881.18000} {180.18000 1586.34000 467.04000 1713.10800} {180.18000 1348.20000 295.68000 1586.34000}}
+create_relative_floorplan -place sb_0__7_ -ref_type object -ref cby_0__7_ -horizontal_edge_separate {1 10 7} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cbx_1__7_ 570.78000 871.92000 933.50300 1000.44000
+create_relative_floorplan -place cbx_1__7_ -ref_type object -ref sb_0__7_ -horizontal_edge_separate {5 0 3} -vertical_edge_separate {4 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module grid_clb_1__8_ 342.411 2500.881 906.051 3064.101
+create_relative_floorplan -place grid_clb_1__8_ -ref_type object -ref sb_0__7_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cby_0__8_ 180.18000 2610.72000 295.70200 2769.48000
+create_relative_floorplan -place cby_0__8_ -ref_type object -ref sb_0__7_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_0__8_ {{180.18000 1713.10800 295.68000 1881.18000} {180.18000 1586.34000 467.04000 1713.10800} {180.18000 1348.20000 295.68000 1586.34000}}
+create_relative_floorplan -place sb_0__8_ -ref_type object -ref cby_0__8_ -horizontal_edge_separate {1 10 7} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cbx_1__8_ 570.78000 871.92000 933.50300 1000.44000
+create_relative_floorplan -place cbx_1__8_ -ref_type object -ref sb_0__8_ -horizontal_edge_separate {5 0 3} -vertical_edge_separate {4 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module grid_clb_1__9_ 342.411 2500.881 906.051 3064.101
+create_relative_floorplan -place grid_clb_1__9_ -ref_type object -ref sb_0__8_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cby_0__9_ 180.18000 2610.72000 295.70200 2769.48000
+create_relative_floorplan -place cby_0__9_ -ref_type object -ref sb_0__8_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_0__9_ {{180.18000 1713.10800 295.68000 1881.18000} {180.18000 1586.34000 467.04000 1713.10800} {180.18000 1348.20000 295.68000 1586.34000}}
+create_relative_floorplan -place sb_0__9_ -ref_type object -ref cby_0__9_ -horizontal_edge_separate {1 10 7} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cbx_1__9_ 570.78000 871.92000 933.50300 1000.44000
+create_relative_floorplan -place cbx_1__9_ -ref_type object -ref sb_0__9_ -horizontal_edge_separate {5 0 3} -vertical_edge_separate {4 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module grid_clb_1__10_ 342.411 2500.881 906.051 3064.101
+create_relative_floorplan -place grid_clb_1__10_ -ref_type object -ref sb_0__9_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cby_0__10_ 180.18000 2610.72000 295.70200 2769.48000
+create_relative_floorplan -place cby_0__10_ -ref_type object -ref sb_0__9_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_0__10_ {{180.18000 1713.10800 295.68000 1881.18000} {180.18000 1586.34000 467.04000 1713.10800} {180.18000 1348.20000 295.68000 1586.34000}}
+create_relative_floorplan -place sb_0__10_ -ref_type object -ref cby_0__10_ -horizontal_edge_separate {1 10 7} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cbx_1__10_ 570.78000 871.92000 933.50300 1000.44000
+create_relative_floorplan -place cbx_1__10_ -ref_type object -ref sb_0__10_ -horizontal_edge_separate {5 0 3} -vertical_edge_separate {4 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module grid_clb_1__11_ 342.411 2500.881 906.051 3064.101
+create_relative_floorplan -place grid_clb_1__11_ -ref_type object -ref sb_0__10_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cby_0__11_ 180.18000 2610.72000 295.70200 2769.48000
+create_relative_floorplan -place cby_0__11_ -ref_type object -ref sb_0__10_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_0__11_ {{1186.08000 7906.48400 1357.44000 7906.50000} {1070.58000 7777.98000 1357.44000 7906.48400} {1070.58000 7539.84000 1186.08000 7777.98000}}
+create_relative_floorplan -place sb_0__11_ -ref_type object -ref cby_0__11_ -horizontal_edge_separate {1 10 5} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cbx_1__11_ 503.582 8031.24 866.462 8159.76
+create_relative_floorplan -place cbx_1__11_ -ref_type object -ref sb_0__11_ -horizontal_edge_separate {3 0 3} -vertical_edge_separate {2 10 0}
+zoomBox -748.27900 665.37400 8048.98600 8540.80400
+zoomBox -567.32700 1588.91600 6910.34900 8283.03200
+zoomBox -413.51800 2373.92700 5942.50700 8063.92600
+zoomBox -282.78000 3041.18500 5119.84200 7877.68500
+zoomBox -77.19500 4090.45000 3826.20000 7584.82200
+zoomBox 3.09500 4500.23100 3320.98100 7470.44700
+zoomBox -282.78200 3041.18300 5119.84300 7877.68600
+zoomBox -413.52100 2373.92300 5942.50900 8063.92700
+zoomBox -1211.62500 -1699.41300 10964.53400 9200.84800
+zoomBox -982.43600 -1373.35000 9367.29900 7891.87200
+zoomBox -787.62600 -1096.19700 8009.64900 6779.24200
+zoomBox -622.03800 -860.61700 6855.64700 5833.50700
+zoomBox -481.28800 -660.37400 5874.74500 5029.63200
+zoomBox -259.95800 -345.49200 4332.27600 3765.53800
+zoomBox -951.33200 -1146.38900 5404.70200 4543.61800
+zoomBox -1390.99700 -1655.70400 6086.69000 5038.42200
+zoomBox -1908.25100 -2254.89800 6889.02900 5620.54500
+zoomBox -4024.90800 -4993.68200 10299.99400 7830.16300
+zoomBox -7471.53200 -9453.33400 15854.18000 11428.15700
+gui_select -rect {2335.52700 4095.49500 3904.65600 4065.31900}
+pan -4043.52600 -1317.93900
+zoomBox -10677.68600 -6548.93500 9149.16900 11200.33200
+zoomBox -6973.28100 -2233.67000 5202.88700 8666.59900
+zoomBox -4693.94200 416.44100 2783.74800 7110.57000
+zoomBox -4149.80300 1049.09400 2206.23400 6739.10400
+zoomBox -3687.28500 1586.84900 1715.34700 6423.35800
+selectObject Module grid_memory_2__1_
+deselectAll
+selectObject Module sb_9__0_
+pan -1313.96500 5511.76600
+deselectAll
+selectObject Module grid_memory_2__1_
+uiSetTool move
+zoomBox -5212.04400 -94.61800 3585.24100 7780.83000
+zoomBox -5308.44500 -972.27100 5041.30200 8292.96200
+zoomBox -5421.85800 -2004.80400 6754.31500 8895.47000
+zoomBox -2410.14600 -1056.11600 3945.89300 4633.89600
+zoomBox -1406.17300 -738.95200 3186.06700 3372.08300
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__1_ 1379.77 377.307 1755.686 753.024
+zoomBox -3365.89500 -1851.32800 4111.80100 4842.80600
+zoomBox -4262.12700 -2360.04600 4535.16300 5515.40600
+zoomBox -5316.51700 -2958.53800 5033.23600 6306.70000
+zoomBox -6556.97500 -3662.64600 5619.20500 7237.63400
+zoomBox -8016.33800 -4491.00800 6308.58000 8332.85100
+zoomBox -9733.23500 -5465.55200 7119.61000 9621.34200
+zoomBox -11753.11500 -6612.07400 8073.76200 11137.21300
+zoomBox -10321.88600 -5142.37100 6530.95900 9944.52300
+zoomBox -9105.34200 -3893.12400 5219.57700 8930.73600
+zoomBox -7151.18600 -1486.42600 3198.56800 7778.81300
+zoomBox -6319.72500 -518.39600 2477.56600 7357.05700
+zoomBox -5612.98300 304.42900 1864.71500 6998.56500
+deselectAll
+selectObject Module grid_memory_2__3_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__3_ 1419.12 1273.95 1795.036 1649.667
+deselectAll
+selectObject Module grid_memory_2__5_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__5_ 1417.765 2270.331 1793.681 2646.048
+deselectAll
+selectObject Module grid_memory_2__7_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__7_ 1455.105 3392.469 1831.021 3768.186
+deselectAll
+selectObject Module grid_memory_2__9_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__9_ 1492.445 4301.789 1868.361 4677.506
+zoomBox -6749.91700 -161.61100 2047.37500 7713.84300
+zoomBox -8087.48600 -709.89500 2262.27000 8555.34600
+zoomBox -9661.09600 -1354.93300 2515.08700 9545.35000
+zoomBox -11512.40300 -2113.80200 2812.51900 10710.06100
+zoomBox -13690.41100 -3006.58900 3162.43900 12080.30900
+zoomBox -11424.10600 -1855.45100 2900.81700 10968.41300
+zoomBox -9497.74700 -874.20400 2678.43800 10026.08100
+zoomBox -7860.34100 -40.14300 2489.41600 9225.09900
+zoomBox -6468.54600 668.80900 2328.74700 8544.26400
+zoomBox -5285.52100 1271.41800 2192.17800 7965.55500
+zoomBox -7860.34200 -40.14400 2489.41500 9225.09800
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__9_ 1278.034 6054.349 1653.934 6428.569
+deselectAll
+selectObject Module grid_memory_2__7_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__7_ 1308.02 4678.531 1683.92 5052.751
+deselectAll
+selectObject Module grid_memory_2__5_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__5_ 1297.418 3274.7 1673.318 3648.92
+deselectAll
+selectObject Module grid_memory_2__3_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__3_ 1285.289 1848.331 1661.189 2222.551
+deselectAll
+selectObject Module grid_memory_2__9_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__9_ 1291.449 6790.7 1667.349 7164.92
+deselectAll
+selectObject Module grid_memory_2__7_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__7_ 1307.88 5428.169 1683.78 5802.389
+deselectAll
+selectObject Module grid_memory_2__5_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__5_ 1310.769 3945.454 1686.669 4319.674
+deselectAll
+selectObject Module grid_memory_2__3_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__3_ 1271.81 2489.836 1647.71 2864.056
+deselectAll
+selectObject Module grid_memory_2__1_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__1_ 1272.587 1233.641 1648.487 1607.861
+zoomBox -8625.88200 -307.13800 3550.30300 10593.14700
+zoomBox -9526.51800 -621.24900 4798.40600 12202.61600
+zoomBox -10586.08900 -990.79100 6266.76300 14096.10900
+zoomBox -13299.18000 -1937.02300 10026.56800 18944.50000
+zoomBox -17054.32100 -3246.68700 15230.45200 25655.07600
+zoomBox -7449.01800 -2521.45600 12377.87000 15227.84100
+zoomBox -2801.17800 -1980.51300 11523.74900 10843.35400
+zoomBox -986.00800 -1769.25300 11190.18000 9131.03400
+zoomBox -2801.17800 -1980.51300 11523.74900 10843.35400
+zoomBox -4936.67200 -2229.05500 11916.18300 12857.84800
+zoomBox -2490.50200 -1862.78400 11834.42600 10961.08400
+zoomBox -411.25600 -1559.79300 11764.93300 9340.49500
+zoomBox 1367.91600 -1316.42700 11717.67700 7948.81800
+zoomBox 5273.79900 -794.61000 11629.84600 4895.40900
+zoomBox 7672.50000 -474.14900 11575.90800 3020.23400
+zoomBox 8245.13400 -397.64700 11563.03100 2572.57900
+zoomBox 9145.60200 -277.34700 11542.78300 1868.64200
+deselectAll
+selectInst grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a
+zoomBox 6455.07200 -771.13000 11857.71600 4065.39000
+zoomBox 3416.12600 -1328.85600 12213.43100 6546.61000
+zoomBox -3795.32800 -2652.34500 13057.54500 12434.57400
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1930.503 1220.906 2077.383 1557.366
+zoomBox 391.29200 -1968.69200 12567.49300 8931.60700
+deselectAll
+selectObject Module grid_memory_2__1_
+deselectAll
+selectInst grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1698.868 1228.647 1845.748 1565.107
+zoomBox -50.68700 -2538.53900 14274.25500 10285.34200
+zoomBox -570.66300 -3208.94800 16282.21000 11877.97100
+zoomBox -348.28400 -2538.54000 13976.65900 10285.34200
+zoomBox -159.26200 -1968.69300 12016.94000 8931.60700
+zoomBox 1.40700 -1484.32300 10351.17900 7780.93200
+zoomBox 137.97600 -1072.60800 8935.28200 6802.85900
+zoomBox 507.88900 42.57400 5100.13900 4153.61800
+zoomBox 663.77200 512.51700 3483.98900 3037.21300
+zoomBox 700.98500 624.70500 3098.17000 2770.69700
+zoomBox 732.61700 720.06500 2770.22400 2544.15800
+zoomBox 759.50400 801.12100 2491.47000 2351.60000
+zoomBox 782.35800 870.01900 2254.52900 2187.92600
+zoomBox 801.78400 928.58200 2053.12900 2048.80300
+zoomBox 782.35800 870.01900 2254.52900 2187.92600
+zoomBox 602.21500 764.82400 2334.18100 2315.30300
+zoomBox 390.28300 641.06500 2427.89000 2465.15800
+zoomBox 140.95100 495.46600 2538.13600 2641.45800
+zoomBox -152.38100 324.17300 2667.83700 2848.87000
+zoomBox -497.47800 122.65200 2820.42600 3092.88400
+zoomBox -1943.04800 -721.49700 3459.60500 4115.03100
+zoomBox -2604.14500 -1107.54800 3751.91800 4582.48500
+zoomBox -2137.92400 -720.26400 3264.72900 4116.26400
+zoomBox -1741.63700 -391.07300 2850.61900 3719.97600
+zoomBox -1404.79200 -111.26000 2498.62500 3383.13100
+zoomBox -1118.47400 126.58100 2199.43000 3096.81300
+zoomBox -875.10400 328.74500 1945.11500 2853.44300
+zoomBox -1169.33800 126.58000 2148.56700 3096.81300
+zoomBox -1515.49500 -111.26100 2387.92300 3383.13100
+zoomBox -603.25400 366.57800 2216.96600 2891.27700
+deselectAll
+selectObject Module grid_memory_2__1_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__1_ 1276.249 1282.229 1652.149 1656.449
+deselectAll
+selectInst grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1312.138 1297.965 1459.018 1634.425
+deselectAll
+selectInst grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1485.399 1297.522 1632.279 1633.982
+zoomBox -282.01200 526.37800 2115.17500 2672.37200
+zoomBox -8.95600 662.20800 2028.65300 2486.30300
+zoomBox 223.14100 777.66400 1955.10900 2328.14500
+zoomBox 420.42400 875.80100 1892.59700 2193.71000
+zoomBox 588.11500 959.21700 1839.46200 2079.44000
+zoomBox 730.65100 1030.12100 1794.29700 1982.31100
+zoomBox 588.11400 959.21600 1839.46200 2079.44000
+zoomBox 420.42200 875.79900 1892.59700 2193.71000
+zoomBox 223.13800 777.66100 1955.10900 2328.14500
+zoomBox -282.01800 526.37400 2115.17500 2672.37300
+zoomBox -603.26100 366.57300 2216.96600 2891.27800
+zoomBox -981.19400 178.57200 2336.72000 3148.81300
+zoomBox -1948.91200 -302.81400 2643.35600 3808.24600
+zoomBox -2651.32900 -609.99000 2751.33900 4226.55100
+zoomBox -3477.70200 -971.37400 2878.37800 4718.67400
+zoomBox -4449.90500 -1396.53100 3027.83600 5297.64300
+zoomBox -5593.67300 -1896.71600 3203.66900 5978.78300
+zoomBox -8522.35400 -3177.46700 3653.89800 7722.87800
+zoomBox -10384.79000 -3991.93500 3940.21300 8832.00000
+zoomBox -12575.89100 -4950.13300 4277.05400 10136.85000
+deselectAll
+selectObject Module grid_clb_3__1_
+zoomBox -10404.41300 -4096.58500 3920.59100 8727.35100
+zoomBox -8558.65600 -3371.06900 3617.59800 7529.27700
+zoomBox -5660.57400 -2230.19600 3136.77000 5645.30500
+zoomBox -4528.75500 -1784.63800 2948.98700 4909.53700
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__1_ 1562.934 314.92 2126.781 878.468
+zoomBox -2602.61800 -933.55500 1989.65100 3177.50600
+zoomBox -1419.72900 -410.88300 1400.49900 2113.82300
+zoomBox -1137.34200 -286.10700 1259.85200 1859.89300
+zoomBox -756.96900 -24.49400 975.00400 1525.99200
+zoomBox -608.41900 77.67600 863.75900 1395.59000
+zoomBox -482.15200 164.52000 769.20100 1284.74800
+zoomBox -374.82400 238.33800 688.82600 1190.53200
+zoomBox -283.59600 301.08400 620.50700 1110.44900
+setObjFPlanBox Module cby_0__1_ 180.18000 588.42000 296.52700 747.18000
+zoomBox -198.33200 348.80300 570.15600 1036.76400
+zoomBox -64.25500 423.84300 490.97800 920.89500
+zoomBox 67.95400 480.94000 408.93600 786.19200
+zoomBox 99.51500 494.57000 389.35100 754.03500
+zoomBox 149.14600 516.00400 358.55200 703.46700
+zoomBox 199.00800 537.53700 327.61100 652.66400
+zoomBox 149.14400 516.00300 358.55300 703.46900
+zoomBox 99.51200 494.56800 389.35200 754.03700
+zoomBox 67.94900 480.93700 408.93800 786.19500
+zoomBox 30.81600 464.90100 431.98000 824.02800
+zoomBox 128.14000 506.95400 374.50600 727.50400
+zoomBox 202.17800 538.94500 330.78300 654.07400
+zoomBox 240.82500 555.64400 307.95900 615.74300
+zoomBox 193.58600 529.71800 322.19300 644.84900
+zoomBox 131.48900 495.63800 340.90500 683.11000
+deselectAll
+selectObject Module cby_0__1_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_0__1_ 180.18 571.081 296.52 729.841
+zoomBox 193.89800 523.96700 322.50700 639.10000
+zoomBox 234.27900 541.62200 313.26200 612.32900
+zoomBox 259.07800 552.46400 307.58400 595.88700
+zoomBox 264.99800 555.05100 306.22900 591.96200
+setObjFPlanBox Module cby_0__1_ 180.18000 569.52000 296.09400 728.28000
+zoomBox 244.31600 544.82800 311.45600 604.93300
+zoomBox 223.73100 534.65300 316.66000 617.84400
+zoomBox 210.64100 528.18200 319.97000 626.05500
+zoomBox 195.24100 520.56900 323.86400 635.71400
+zoomBox 177.12400 511.61300 328.44500 647.07800
+zoomBox 155.80900 501.07700 333.83400 660.44700
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_0__1_ 180.18 588.635 296.1 747.395
+zoomBox 142.51800 488.55900 351.96000 676.05400
+zoomBox 126.88200 473.83200 373.28500 694.41500
+zoomBox 108.48700 456.50600 398.37300 716.01600
+zoomBox 86.84600 436.12300 427.88900 741.42900
+zoomBox -3.80400 350.73800 551.52800 847.87900
+zoomBox -45.26100 311.69000 608.07100 896.56200
+zoomBox -298.33600 73.31900 953.24400 1193.75000
+zoomBox -505.42100 -121.32800 1226.87000 1429.44200
+zoomBox -637.11300 -245.11100 1400.87700 1579.32500
+zoomBox -792.04400 -390.73700 1605.59100 1755.65800
+zoomBox -1524.83700 -1012.44100 2379.31100 2482.60500
+zoomBox -1898.28800 -1280.72000 2694.82800 2831.09900
+zoomBox -2337.64300 -1596.34200 3066.02400 3241.09300
+zoomBox -2854.53000 -1967.66300 3502.72600 3723.43800
+zoomBox -1665.50500 -1063.91400 2927.61300 3047.90700
+zoomBox -1198.46900 -710.96400 2705.68200 2784.08500
+zoomBox -171.39000 60.80700 2226.24800 2207.20500
+zoomBox 470.13600 532.37700 1942.58700 1850.53500
+zoomBox 958.16700 891.11500 1726.79700 1579.20300
+zoomBox 1038.11200 949.88100 1691.44800 1534.75600
+zoomBox 1106.06500 999.83200 1661.40100 1496.97600
+zoomBox 1287.64200 1116.53900 1628.68900 1421.84900
+zoomBox 1330.99000 1144.40100 1620.88000 1403.91400
+zoomBox 1425.92000 1205.17800 1603.94900 1364.55200
+zoomBox 1448.58200 1219.68700 1599.90700 1355.15500
+zoomBox 1484.21800 1242.50300 1593.55100 1340.37900
+zoomBox 1498.13600 1251.41300 1591.06900 1334.60800
+zoomBox 1425.91700 1205.17500 1603.94900 1364.55200
+zoomBox 1330.98400 1144.39400 1620.88100 1403.91400
+zoomBox 1176.40300 1045.42400 1648.45100 1468.00800
+zoomBox 924.69000 884.26700 1693.34400 1572.37600
+zoomBox 514.82100 621.84900 1766.44600 1742.32100
+zoomBox 327.37600 501.83900 1799.87700 1820.04200
+zoomBox 174.75800 380.14700 1907.11300 1930.97500
+zoomBox -4.79300 236.98100 2033.27300 2061.48500
+zoomBox -216.02800 68.55100 2181.69600 2215.02600
+zoomBox -464.54000 -129.60200 2356.31200 2395.66300
+zoomBox -1794.44100 -1110.97700 2798.84700 3000.99600
+zoomBox -2402.63900 -1559.78500 3001.23000 3277.83100
+zoomBox -4056.62200 -2555.93400 3422.78100 4139.72800
+zoomBox -5108.44000 -3189.41600 3690.85800 4687.83400
+zoomBox -7801.67700 -4811.48000 4377.28400 6091.29000
+zoomBox -9514.38700 -5842.99800 4813.80300 6983.79000
+zoomBox -11529.34000 -7056.54900 5327.35400 8033.79000
+zoomBox -16688.73600 -10163.91300 6642.33000 10722.37100
+zoomBox -19969.75000 -12139.97900 7478.56300 12432.12000
+zoomBox -13091.87100 -6129.22500 6739.53600 11624.11700
+zoomBox -10405.78000 -3781.78200 6450.91600 11308.55900
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+delete_relative_floorplan -allsetObjFPlanBoxList Module sb_0__0_ {{180.18000 286.02000 296.10000 577.08000} {180.18000 180.18000 415.24000 286.02000}}
+create_relative_floorplan -place sb_0__0_ -ref_type core_boundary -horizontal_edge_separate {3 0 5} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+zoomBox -8119.33200 -3320.56700 6208.86000 9506.22300
+zoomBox -6175.85100 -2928.53500 6003.11200 7974.23700
+zoomBox -4523.89300 -2595.30700 5828.22600 6672.04900
+zoomBox -3254.31900 -1825.92900 5544.98200 6051.32400
+zoomBox -2175.18100 -1171.95800 5304.22500 5523.70700
+setObjFPlanBoxList Module sb_0__0_ {{180.18000 286.02000 296.10000 577.08000} {180.18000 180.18000 415.24000 286.02000}}
+create_relative_floorplan -place sb_0__0_ -ref_type core_boundary -horizontal_edge_separate {3 0 5} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module grid_clb_1__1_ 460.781 301.841 1026.101 865.061
+create_relative_floorplan -place grid_clb_1__1_ -ref_type object -ref sb_0__0_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+zoomBox -1815.24100 -978.92500 4542.25400 4712.39000
+zoomBox -1509.29200 -814.84800 3894.57900 4022.77000
+zoomBox -1249.23500 -675.38200 3344.05500 3436.59300
+zoomBox -1028.18700 -556.83600 2876.11000 2938.34300
+zoomBox -840.29600 -456.07300 2478.35700 2514.83000
+zoomBox -680.58800 -370.42300 2140.26700 2154.84400
+zoomBox -544.83700 -297.62100 1852.89000 1848.85600
+zoomBox -429.44800 -235.74000 1608.62000 1588.76600
+zoomBox -331.36800 -183.14000 1400.99000 1367.69000
+zoomBox -248.00000 -138.43100 1224.50500 1179.77500
+zoomBox -177.13700 -100.42800 1074.49200 1020.04700
+zoomBox -248.00000 -138.43100 1224.50500 1179.77500
+setObjFPlanBox Module cby_0__1_ 180.18 588.635 296.1 747.395
+create_relative_floorplan -place cby_0__1_ -ref_type object -ref sb_0__0_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_0__1_ {{182.28000 992.88000 297.78000 1159.07400} {182.28000 864.36000 562.80000 992.88000} {182.28000 750.96000 297.78000 864.36000}}
+create_relative_floorplan -place sb_0__1_ -ref_type object -ref cby_0__1_ -horizontal_edge_separate {1 10 7} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cbx_1__1_ 570.78000 871.92000 933.50300 1000.44000
+create_relative_floorplan -place cbx_1__1_ -ref_type object -ref sb_0__1_ -horizontal_edge_separate {5 0 3} -vertical_edge_separate {4 10 0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_1__0_ {{881.49600 297.36000 1256.22000 456.12000} {1028.58000 180.18000 1256.22000 297.36000}}
+create_relative_floorplan -place sb_1__0_ -ref_type object -ref cbx_1__0_ -horizontal_edge_separate {3 0 5} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+zoomBox -408.68600 -230.20400 1323.67300 1320.62700
+setObjFPlanBox Module cby_1__1_ 1046.781 468.818 1213.101 744.758
+create_relative_floorplan -place cby_1__1_ -ref_type object -ref sb_1__0_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 0 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cby_1__1_ 1046.781 468.818 1213.101 744.758
+undo
+undo
+undo
+setObjFPlanBox Module cbx_1__0_ 570.78000 871.92000 933.50300 1000.44000
+deselectAll
+selectObject Module cbx_1__1_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cbx_1__1_ 570.78 226.487 933.66 355.007
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cbx_1__1_ 570.78 1092.84 933.66 1221.36
+deselectAll
+selectObject Module cbx_1__0_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cbx_1__0_ 570.78 195.113 933.66 323.633
+undo
+undo
+undo
+undo
+setObjFPlanBox Module cbx_1__0_ 570.78 195.113 933.66 323.633
+create_relative_floorplan -place cbx_1__0_ -ref_type object -ref sb_0__0_ -horizontal_edge_separate {5 0 3} -vertical_edge_separate {4 10 0}
+delete_relative_floorplan -all
+zoomBox -248.00000 -160.61800 1224.50500 1157.58800
+zoomBox -111.41700 -101.47000 1140.21200 1019.00500
+zoomBox 103.35900 -8.46100 1007.66200 801.08300
+zoomBox 187.23800 27.86300 955.89600 715.97600
+zoomBox 319.13700 84.98200 874.49400 582.14500
+setObjFPlanBox Module cbx_1__0_ 425.46000 180.18000 788.34000 286.14600
+zoomBox 278.18600 58.23000 931.54700 643.12800
+zoomBox 230.00800 26.75800 998.66800 714.87300
+zoomBox 106.64600 -53.82800 1170.53500 898.58000
+setObjFPlanBox Module cbx_1__0_ 425.46000 180.18000 975.09900 286.02000
+setObjFPlanBox Module cbx_1__0_ 425.46000 180.18000 1015.01200 286.02000
+setObjFPlanBox Module cby_1__1_ 1046.781 468.818 1213.101 744.758
+create_relative_floorplan -place cby_1__1_ -ref_type object -ref sb_1__0_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 0 0}
+delete_relative_floorplan -all
+zoomBox -51.95400 -148.79400 1199.68000 971.68600
+zoomBox -238.54200 -260.51800 1233.96900 1057.69400
+zoomBox -458.05700 -391.95800 1274.30900 1158.87900
+zoomBox -716.31100 -546.59400 1321.76700 1277.92100
+setObjFPlanBox Module cby_1__1_ 1046.781 468.818 1213.101 744.758
+setObjFPlanBoxList Module sb_1__0_ {{881.49600 297.36000 1256.22000 456.12000} {1028.58000 180.18000 1256.22000 297.36000}}
+create_relative_floorplan -place sb_1__0_ -ref_type object -ref cbx_1__0_ -horizontal_edge_separate {3 0 5} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+zoomBox -465.96800 -420.82900 1266.39900 1130.00900
+zoomBox -253.17600 -313.92900 1219.33600 1004.28400
+zoomBox -72.30300 -223.06400 1179.33300 897.41700
+zoomBox 81.43900 -145.83000 1145.33000 806.58000
+zoomBox 212.11900 -80.18000 1116.42700 729.36900
+zoomBox 323.19800 -24.37800 1091.86000 663.73900
+zoomBox 212.11800 -80.18100 1116.42700 729.36900
+zoomBox 81.43700 -145.83100 1145.33000 806.58000
+zoomBox -72.30600 -223.06700 1179.33300 897.41700
+zoomBox -256.32400 -309.36100 1216.19300 1008.85600
+zoomBox -56.30600 -232.78300 1195.33400 887.70200
+zoomBox 258.22300 -112.36300 1162.53300 697.18700
+zoomBox 381.05900 -65.33500 1149.72300 622.78300
+zoomBox 485.46900 -25.36100 1138.83400 559.54000
+zoomBox 574.21800 8.61600 1129.57900 505.78300
+zoomBox 493.58200 -26.12300 1146.94800 558.77900
+zoomBox 401.70000 -67.58900 1170.36600 620.53100
+setObjFPlanBox Module cbx_1__0_ 425.46000 180.18000 1018.22400 286.02000
+create_relative_floorplan -place sb_1__0_ -ref_type object -ref cbx_1__0_ -horizontal_edge_separate {3 0 5} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+zoomBox 471.80500 -7.62700 1125.17100 577.27500
+zoomBox 531.39400 43.34000 1086.75500 540.50700
+zoomBox 582.04500 86.66300 1054.10200 509.25500
+zoomBox 625.09800 123.48600 1026.34700 482.69000
+zoomBox 692.79800 181.39100 982.70200 440.91700
+zoomBox 719.23800 204.00500 965.65700 424.60300
+zoomBox 760.81500 239.56700 938.85300 398.94900
+zoomBox 790.85400 265.26000 919.48700 380.41400
+zoomBox 802.58600 275.29400 911.92400 373.17500
+zoomBox 821.03300 291.07200 900.03100 361.79200
+zoomBox 828.23800 297.23400 895.38600 357.34600
+uiSetTool ruler
+zoomBox 836.19900 301.58600 893.27500 352.68100
+zoomBox 842.96600 305.28500 891.48100 348.71600
+zoomBox 848.71800 308.42900 889.95600 345.34600
+zoomBox 857.76300 313.37300 887.55800 340.04600
+zoomBox 870.86200 320.53300 884.08400 332.37000
+zoomBox 876.67600 323.71000 882.54300 328.96200
+zoomBox 875.82400 323.25800 882.72700 329.43800
+zoomBox 874.82200 322.72700 882.94300 329.99700
+zoomBox 873.64300 322.10200 883.19700 330.65500
+zoomBox 870.62400 320.50200 883.84800 332.34000
+zoomBox 860.66000 315.22100 885.99500 337.90100
+zoomBox 841.57100 305.10600 890.10600 348.55500
+zoomBox 805.00400 285.73000 897.98300 368.96600
+zoomBox 734.95200 248.61100 913.07200 408.06600
+zoomBox 600.75600 177.50400 941.97900 482.97100
+zoomBox 248.76700 -9.00700 1017.80000 679.44200
+zoomBox -330.62300 -316.01000 1142.60400 1002.84300
+zoomBox -115.35800 -234.82100 1136.88600 886.20500
+zoomBox 355.34900 -57.29000 1124.38400 631.16000
+zoomBox 713.43200 77.76400 1114.87300 437.13900
+zoomBox 864.32900 134.67500 1110.86600 355.37800
+zoomBox 865.90800 164.38400 1075.46400 351.98100
+zoomBox 868.39100 211.10100 1019.79500 346.64000
+zoomBox 871.98500 278.76400 939.16500 338.90400
+zoomBox 873.57900 308.78700 903.38800 335.47200
+zoomBox 877.43800 318.01000 890.66600 329.85200
+zoomBox 878.91100 321.52700 885.81500 327.70800
+zoomBox 879.96300 323.90300 883.56900 327.13100
+zoomBox 880.51300 325.14500 882.39600 326.83100
+zoomBox 880.80000 325.79300 881.78400 326.67400
+zoomBox 880.15400 325.46100 882.04200 327.15100
+zoomBox 878.91900 324.82700 882.53600 328.06500
+zoomBox 875.67800 323.16500 883.83300 330.46500
+zoomBox 870.34300 320.42800 885.96900 334.41700
+zoomBox 860.12300 315.18900 890.06000 341.98900
+zoomBox 833.31900 301.44900 900.78900 361.84900
+zoomBox 789.20000 278.83000 918.45300 394.53900
+zoomBox 704.68100 235.49800 952.29100 457.16200
+zoomBox 542.77000 152.49000 1017.11400 577.12900
+pan 154.02400 -433.23500
+zoomBox 822.29200 158.78600 1113.59900 419.56800
+zoomBox 933.40200 202.18100 1062.65700 317.89200
+zoomBox 982.70100 221.43500 1040.05300 272.77700
+zoomBox 1001.49600 228.77500 1031.43500 255.57700
+zoomBox 1007.19200 231.00000 1028.82300 250.36400
+zoomBox 1013.54200 235.56000 1023.14100 244.15300
+zoomBox 1015.96300 237.29900 1020.97400 241.78500
+zoomBox 1016.36000 237.58400 1020.61900 241.39700
+zoomBox 1016.98400 238.03200 1020.06100 240.78700
+zoomBox 1017.43400 238.35600 1019.65800 240.34700
+zoomBox 1017.61000 238.48200 1019.50100 240.17500
+uiSetTool move
+setObjFPlanBox Module cbx_1__0_ 425.46000 180.18000 1018.22700 286.02000
+setObjFPlanBox Module cbx_1__0_ 425.46000 180.18000 1018.24900 286.02000
+zoomBox 1017.36400 238.15900 1019.98200 240.50300
+zoomBox 1017.20700 237.95400 1020.28800 240.71200
+zoomBox 1017.02300 237.71200 1020.64800 240.95700
+zoomBox 1015.90200 236.23800 1022.84800 242.45600
+zoomBox 1014.42800 234.30000 1025.73900 244.42600
+zoomBox 1012.02800 231.14600 1030.44600 247.63400
+zoomBox 1008.16500 225.99500 1038.15600 252.84300
+setObjFPlanBox Module cbx_1__0_ 425.46000 180.18000 1018.79600 286.02000
+zoomBox 998.42900 212.60000 1055.88300 264.03400
+zoomBox 985.63100 194.99300 1079.18700 278.74600
+zoomBox 955.26400 153.21200 1134.48800 313.65600
+zoomBox 897.09100 73.17100 1240.43000 380.53300
+zoomBox 785.65000 -80.16200 1443.38100 508.64800
+zoomBox 639.15800 -281.72000 1710.16400 677.05900
+create_relative_floorplan -place sb_1__0_ -ref_type object -ref cbx_1__0_ -horizontal_edge_separate {3 0 5} -vertical_edge_separate {2 10 0}
+zoomBox 724.16600 -52.89500 1381.89700 535.91500
+zoomBox 744.45900 1.73100 1303.53100 502.22000
+zoomBox 761.70900 48.16400 1236.92000 473.57900
+zoomBox 799.42600 149.69400 1091.26500 410.95200
+zoomBox 828.11800 226.92900 980.46100 363.30900
+zoomBox 832.81700 239.58100 962.31000 355.50500
+zoomBox 840.20800 259.47700 933.76700 343.23200
+zoomBox 843.09500 267.24700 922.62000 338.43900
+zoomBox 840.20800 259.47700 933.76700 343.23200
+zoomBox 836.81100 250.33500 946.88100 348.87100
+zoomBox 828.11500 226.92700 980.46200 363.31000
+zoomBox 808.42400 173.92500 1056.49700 396.00300
+zoomBox 799.41900 149.68500 1091.27000 410.95400
+zoomBox 724.15300 -52.91400 1381.91400 535.92200
+zoomBox 672.18800 -192.79500 1582.58400 622.20400
+setObjFPlanBoxList Module sb_1__0_ {{881.49600 297.36000 1256.22000 456.12000} {1028.58000 180.18000 1256.22000 297.36000}}
+create_relative_floorplan -place sb_1__0_ -ref_type object -ref cbx_1__0_ -horizontal_edge_separate {3 0 5} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cby_1__1_ 1046.781 468.818 1213.101 744.758
+create_relative_floorplan -place cby_1__1_ -ref_type object -ref sb_1__0_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 0 0}
+delete_relative_floorplan -all
+zoomBox 551.01900 -294.63500 1622.07300 664.18700
+zoomBox 408.46700 -414.44700 1668.53100 713.57900
+zoomBox 240.75900 -555.40200 1723.18700 771.68700
+zoomBox 43.45500 -721.23300 1787.48800 840.04900
+zoomBox -188.66700 -916.32800 1863.13700 920.47500
+zoomBox -461.75300 -1145.85100 1952.13600 1015.09500
+zoomBox -783.02900 -1415.87700 2056.84000 1126.41200
+setObjFPlanBoxList Module sb_1__1_ {{881.58000 1011.78000 1220.52000 1094.94000} {943.74300 860.58000 1220.52000 1011.78000} {881.58000 754.74000 1220.52000 860.58000}}
+create_relative_floorplan -place sb_1__1_ -ref_type object -ref cby_1__1_ -horizontal_edge_separate {1 10 7} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+zoomBox -1544.99900 -2156.68100 2385.61600 1362.05800
+zoomBox -2029.55800 -2627.78000 2594.69400 1511.91300
+zoomBox -2599.62800 -3182.01500 2840.66900 1688.21200
+zoomBox -1664.13300 -1986.76900 2266.48200 1531.97000
+zoomBox -1298.78400 -1519.97800 2042.23900 1470.95100
+zoomBox -988.23700 -1123.20400 1851.63200 1419.08500
+zoomBox -499.90300 -499.27800 1551.90300 1337.52600
+uiSetTool select
+zoomBox -755.65700 -679.61800 1658.23300 1481.32900
+zoomBox -1056.54400 -891.78200 1783.32700 1650.50900
+zoomBox -511.11900 -449.32500 1540.68900 1387.48100
+zoomBox -298.10800 -276.52700 1445.92900 1284.75800
+zoomBox 278.86000 191.51800 1189.25900 1006.51900
+zoomBox 36.85100 -4.80400 1296.91900 1123.22600
+zoomBox -117.05100 -129.65100 1365.38300 1197.44400
+zoomBox -298.11100 -276.52900 1445.92900 1284.75900
+zoomBox -511.12200 -449.32700 1540.68900 1387.48200
+zoomBox -761.72400 -652.61900 1652.17200 1508.33300
+zoomBox -1056.55000 -891.78600 1783.32800 1650.51100
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+setObjFPlanBoxList Module sb_0__0_ {{180.18000 286.02000 296.10000 577.08000} {180.18000 180.18000 415.24000 286.02000}}
+create_relative_floorplan -place sb_0__0_ -ref_type core_boundary -horizontal_edge_separate {3 0 5} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module grid_clb_1__1_ 460.781 301.841 1026.101 865.061
+create_relative_floorplan -place grid_clb_1__1_ -ref_type object -ref sb_0__0_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cby_0__1_ 180.18 588.635 296.1 747.395
+create_relative_floorplan -place cby_0__1_ -ref_type object -ref sb_0__0_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_0__1_ {{182.28000 992.88000 297.78000 1159.07400} {182.28000 864.36000 562.80000 992.88000} {182.28000 750.96000 297.78000 864.36000}}
+create_relative_floorplan -place sb_0__1_ -ref_type object -ref cby_0__1_ -horizontal_edge_separate {1 10 7} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cbx_1__1_ 570.78000 871.92000 933.50300 1000.44000
+create_relative_floorplan -place cbx_1__1_ -ref_type object -ref sb_0__1_ -horizontal_edge_separate {5 0 3} -vertical_edge_separate {4 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cbx_1__0_ 425.46000 180.18000 1018.24900 286.02000
+create_relative_floorplan -place cbx_1__0_ -ref_type object -ref sb_0__0_ -horizontal_edge_separate {5 0 3} -vertical_edge_separate {4 10 0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_1__0_ {{881.49600 297.36000 1256.22000 456.12000} {1028.58000 180.18000 1256.22000 297.36000}}
+create_relative_floorplan -place sb_1__0_ -ref_type object -ref cbx_1__0_ -horizontal_edge_separate {3 0 5} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cby_1__1_ 1046.781 468.818 1213.101 744.758
+create_relative_floorplan -place cby_1__1_ -ref_type object -ref sb_1__0_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 0 0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_1__1_ {{881.58000 1011.78000 1220.52000 1094.94000} {943.74300 860.58000 1220.52000 1011.78000} {881.58000 754.74000 1220.52000 860.58000}}
+create_relative_floorplan -place sb_1__1_ -ref_type object -ref cby_1__1_ -horizontal_edge_separate {1 10 7} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module grid_clb_1__2_ 310.014 1020.986 873.654 1584.206
+create_relative_floorplan -place grid_clb_1__2_ -ref_type object -ref sb_0__1_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+zoomBox -777.70600 -689.54200 1636.19100 1471.41100
+zoomBox -540.68800 -517.63400 1511.12400 1319.17600
+zoomBox -339.22300 -371.51200 1404.81700 1189.77600
+zoomBox -167.97800 -247.30900 1314.45600 1079.78600
+zoomBox 123.65600 -65.83500 1194.71500 892.99100
+zoomBox 237.55100 5.03800 1147.95100 820.04000
+zoomBox 334.36200 65.28000 1108.20200 758.03200
+zoomBox 123.65600 -65.83500 1194.71500 892.99100
+zoomBox -10.33800 -149.21500 1249.73100 978.81600
+zoomBox -167.97800 -247.30900 1314.45600 1079.78600
+zoomBox -353.43800 -362.71400 1390.60300 1198.57500
+zoomBox -571.62600 -498.48500 1480.18700 1338.32600
+zoomBox -828.31800 -658.21500 1585.58100 1502.74000
+zoomBox -1130.30800 -846.13200 1709.57300 1696.16800
+zoomBox -1485.59100 -1067.21100 1855.44600 1923.73000
+setObjFPlanBox Module cby_0__2_ 180.18000 1166.76000 295.71100 1325.52000
+create_relative_floorplan -place cby_0__2_ -ref_type object -ref sb_0__1_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_0__2_ {{180.18000 1713.10800 295.68000 1881.18000} {180.18000 1586.34000 467.04000 1713.10800} {180.18000 1348.20000 295.68000 1586.34000}}
+create_relative_floorplan -place sb_0__2_ -ref_type object -ref cby_0__2_ -horizontal_edge_separate {1 10 7} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cbx_1__2_ 570.78000 871.92000 933.50300 1000.44000
+create_relative_floorplan -place cbx_1__2_ -ref_type object -ref sb_0__2_ -horizontal_edge_separate {5 0 3} -vertical_edge_separate {4 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module grid_clb_1__3_ 361.927 1793.028 925.567 2356.248
+create_relative_floorplan -place grid_clb_1__3_ -ref_type object -ref sb_0__2_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cby_0__3_ 180.18000 1896.30000 295.67100 2055.06000
+create_relative_floorplan -place cby_0__3_ -ref_type object -ref sb_0__2_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_0__3_ {{180.18000 1713.10800 295.68000 1881.18000} {180.18000 1586.34000 467.04000 1713.10800} {180.18000 1348.20000 295.68000 1586.34000}}
+create_relative_floorplan -place sb_0__3_ -ref_type object -ref cby_0__3_ -horizontal_edge_separate {1 10 7} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cbx_1__3_ 570.78000 871.92000 933.50300 1000.44000
+create_relative_floorplan -place cbx_1__3_ -ref_type object -ref sb_0__3_ -horizontal_edge_separate {5 0 3} -vertical_edge_separate {4 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module grid_clb_1__4_ 342.411 2500.881 906.051 3064.101
+create_relative_floorplan -place grid_clb_1__4_ -ref_type object -ref sb_0__3_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cby_0__4_ 180.18000 2610.72000 295.70200 2769.48000
+create_relative_floorplan -place cby_0__4_ -ref_type object -ref sb_0__3_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_0__4_ {{180.18000 1713.10800 295.68000 1881.18000} {180.18000 1586.34000 467.04000 1713.10800} {180.18000 1348.20000 295.68000 1586.34000}}
+create_relative_floorplan -place sb_0__4_ -ref_type object -ref cby_0__4_ -horizontal_edge_separate {1 10 7} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cbx_1__4_ 570.78000 871.92000 933.50300 1000.44000
+create_relative_floorplan -place cbx_1__4_ -ref_type object -ref sb_0__4_ -horizontal_edge_separate {5 0 3} -vertical_edge_separate {4 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module grid_clb_1__5_ 342.411 2500.881 906.051 3064.101
+create_relative_floorplan -place grid_clb_1__5_ -ref_type object -ref sb_0__4_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cby_0__5_ 180.18000 2610.72000 295.70200 2769.48000
+create_relative_floorplan -place cby_0__5_ -ref_type object -ref sb_0__4_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_0__5_ {{180.18000 1713.10800 295.68000 1881.18000} {180.18000 1586.34000 467.04000 1713.10800} {180.18000 1348.20000 295.68000 1586.34000}}
+create_relative_floorplan -place sb_0__5_ -ref_type object -ref cby_0__5_ -horizontal_edge_separate {1 10 7} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cbx_1__5_ 570.78000 871.92000 933.50300 1000.44000
+create_relative_floorplan -place cbx_1__5_ -ref_type object -ref sb_0__5_ -horizontal_edge_separate {5 0 3} -vertical_edge_separate {4 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module grid_clb_1__6_ 342.411 2500.881 906.051 3064.101
+create_relative_floorplan -place grid_clb_1__6_ -ref_type object -ref sb_0__5_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cby_0__6_ 180.18000 2610.72000 295.70200 2769.48000
+create_relative_floorplan -place cby_0__6_ -ref_type object -ref sb_0__5_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_0__6_ {{180.18000 1713.10800 295.68000 1881.18000} {180.18000 1586.34000 467.04000 1713.10800} {180.18000 1348.20000 295.68000 1586.34000}}
+create_relative_floorplan -place sb_0__6_ -ref_type object -ref cby_0__6_ -horizontal_edge_separate {1 10 7} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cbx_1__6_ 570.78000 871.92000 933.50300 1000.44000
+create_relative_floorplan -place cbx_1__6_ -ref_type object -ref sb_0__6_ -horizontal_edge_separate {5 0 3} -vertical_edge_separate {4 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module grid_clb_1__7_ 342.411 2500.881 906.051 3064.101
+create_relative_floorplan -place grid_clb_1__7_ -ref_type object -ref sb_0__6_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cby_0__7_ 180.18000 2610.72000 295.70200 2769.48000
+create_relative_floorplan -place cby_0__7_ -ref_type object -ref sb_0__6_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_0__7_ {{180.18000 1713.10800 295.68000 1881.18000} {180.18000 1586.34000 467.04000 1713.10800} {180.18000 1348.20000 295.68000 1586.34000}}
+create_relative_floorplan -place sb_0__7_ -ref_type object -ref cby_0__7_ -horizontal_edge_separate {1 10 7} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cbx_1__7_ 570.78000 871.92000 933.50300 1000.44000
+create_relative_floorplan -place cbx_1__7_ -ref_type object -ref sb_0__7_ -horizontal_edge_separate {5 0 3} -vertical_edge_separate {4 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module grid_clb_1__8_ 342.411 2500.881 906.051 3064.101
+create_relative_floorplan -place grid_clb_1__8_ -ref_type object -ref sb_0__7_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cby_0__8_ 180.18000 2610.72000 295.70200 2769.48000
+create_relative_floorplan -place cby_0__8_ -ref_type object -ref sb_0__7_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_0__8_ {{180.18000 1713.10800 295.68000 1881.18000} {180.18000 1586.34000 467.04000 1713.10800} {180.18000 1348.20000 295.68000 1586.34000}}
+create_relative_floorplan -place sb_0__8_ -ref_type object -ref cby_0__8_ -horizontal_edge_separate {1 10 7} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cbx_1__8_ 570.78000 871.92000 933.50300 1000.44000
+create_relative_floorplan -place cbx_1__8_ -ref_type object -ref sb_0__8_ -horizontal_edge_separate {5 0 3} -vertical_edge_separate {4 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module grid_clb_1__9_ 342.411 2500.881 906.051 3064.101
+create_relative_floorplan -place grid_clb_1__9_ -ref_type object -ref sb_0__8_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cby_0__9_ 180.18000 2610.72000 295.70200 2769.48000
+create_relative_floorplan -place cby_0__9_ -ref_type object -ref sb_0__8_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_0__9_ {{180.18000 1713.10800 295.68000 1881.18000} {180.18000 1586.34000 467.04000 1713.10800} {180.18000 1348.20000 295.68000 1586.34000}}
+create_relative_floorplan -place sb_0__9_ -ref_type object -ref cby_0__9_ -horizontal_edge_separate {1 10 7} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cbx_1__9_ 570.78000 871.92000 933.50300 1000.44000
+create_relative_floorplan -place cbx_1__9_ -ref_type object -ref sb_0__9_ -horizontal_edge_separate {5 0 3} -vertical_edge_separate {4 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module grid_clb_1__10_ 342.411 2500.881 906.051 3064.101
+create_relative_floorplan -place grid_clb_1__10_ -ref_type object -ref sb_0__9_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cby_0__10_ 180.18000 2610.72000 295.70200 2769.48000
+create_relative_floorplan -place cby_0__10_ -ref_type object -ref sb_0__9_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_0__10_ {{180.18000 1713.10800 295.68000 1881.18000} {180.18000 1586.34000 467.04000 1713.10800} {180.18000 1348.20000 295.68000 1586.34000}}
+create_relative_floorplan -place sb_0__10_ -ref_type object -ref cby_0__10_ -horizontal_edge_separate {1 10 7} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cbx_1__10_ 570.78000 871.92000 933.50300 1000.44000
+create_relative_floorplan -place cbx_1__10_ -ref_type object -ref sb_0__10_ -horizontal_edge_separate {5 0 3} -vertical_edge_separate {4 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module grid_clb_1__11_ 342.411 2500.881 906.051 3064.101
+create_relative_floorplan -place grid_clb_1__11_ -ref_type object -ref sb_0__10_ -horizontal_edge_separate {3 10 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cby_0__11_ 180.18000 2610.72000 295.70200 2769.48000
+create_relative_floorplan -place cby_0__11_ -ref_type object -ref sb_0__10_ -horizontal_edge_separate {1 10 3} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBoxList Module sb_0__11_ {{1186.08000 7906.48400 1357.44000 7906.50000} {1070.58000 7777.98000 1357.44000 7906.48400} {1070.58000 7539.84000 1186.08000 7777.98000}}
+create_relative_floorplan -place sb_0__11_ -ref_type object -ref cby_0__11_ -horizontal_edge_separate {1 10 5} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+setObjFPlanBox Module cbx_1__11_ 503.582 8031.24 866.462 8159.76
+create_relative_floorplan -place cbx_1__11_ -ref_type object -ref sb_0__11_ -horizontal_edge_separate {3 0 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+zoomBox -2534.75700 -1892.26800 2089.51700 2247.44400
+zoomBox -4910.34500 -3760.41200 2619.51300 2980.41800
+zoomBox -8778.59200 -6802.37300 3482.52400 4173.94300
+zoomBox -10547.64100 -8193.54000 3877.20100 4719.77300
+pan 2537.87700 6926.01000
+deselectAll
+zoomBox -6526.22600 -2969.43400 5734.89000 8006.88200
+zoomBox -5265.21900 -2415.06700 5156.73000 6914.80200
+zoomBox -4193.36300 -1943.85500 4665.29400 5986.53400
+zoomBox -5265.21900 -2415.06700 5156.73000 6914.80200
+zoomBox -6526.22600 -2969.43400 5734.89000 8006.88200
+zoomBox -5393.69900 -2457.89400 5028.25000 6871.97500
+zoomBox -4431.05100 -2023.08500 4427.60600 5907.30400
+zoomBox -3612.80000 -1653.49700 3917.05900 5087.33400
+zoomBox -2917.28600 -1339.34700 3483.09400 4390.35900
+zoomBox -2326.10100 -1072.32000 3114.22300 3797.93100
+zoomBox -1823.59300 -845.34700 2800.68300 3294.36700
+zoomBox -2400.00000 -1270.79000 3040.32500 3599.46200
+zoomBox -3875.92100 -2360.16100 3653.94100 4380.67300
+pan -2649.57600 4973.84700
+selectObject Module grid_memory_2__1_
+deselectAll
+selectObject Module grid_memory_2__3_
+deselectAll
+selectObject Module grid_memory_2__5_
+deselectAll
+selectObject Module grid_memory_2__7_
+zoomBox -8796.25900 -1154.47300 3464.86500 9821.85000
+zoomBox -9834.73600 -2184.55300 4590.11500 10728.76800
+deselectAll
+selectObject Module grid_clb_3__1_
+deselectAll
+selectObject Module grid_clb_3__2_
+deselectAll
+selectObject Module grid_clb_3__3_
+deselectAll
+selectObject Module grid_clb_3__4_
+zoomBox -8093.67800 -1803.87100 4167.44600 9172.45200
+zoomBox -6613.77800 -1480.29200 3808.17800 7849.58300
+deselectAll
+selectObject Module grid_memory_2__1_
+uiSetTool move
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__1_ -2255.496 843.326 -1879.58 1219.043
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__1_ 1344.326 843.326 1720.242 1219.043
+zoomBox -4331.53200 -1087.44600 3198.33100 5653.38900
+zoomBox -3440.22300 -934.02400 2960.16100 4795.68600
+zoomBox -2682.61000 -803.61600 2757.71700 4066.63800
+zoomBox -1491.26400 -598.54800 2439.37300 2920.21100
+zoomBox -1025.99500 -518.46100 2315.04700 2472.48500
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__1_ 1344.42 1144.232 1720.32 1518.452
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__1_ 903.558 1144.08 1279.458 1518.3
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__1_ 1326.993 1144.08 1702.893 1518.3
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__1_ 1327.2 478.465 1703.1 852.685
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__1_ 1327.2 1213.57 1703.1 1587.79
+zoomBox -1455.41600 -703.80600 2475.22200 2814.95400
+zoomBox -2554.97100 -1178.39200 2885.35800 3691.86400
+zoomBox -5044.65500 -2252.98100 3814.01400 5677.41900
+zoomBox -7522.77700 -3322.57900 4738.35800 7653.75400
+zoomBox -9098.68900 -4002.76800 5326.17600 8910.56500
+deselectAll
+selectObject Module grid_clb_3__1_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__1_ 2008.473 8001.062 2572.32 8564.61
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__1_ 2008.44 396.786 2572.08 956.226
+zoomBox -4864.63700 -2411.39900 3994.03300 5519.00200
+zoomBox -3853.85500 -2031.49600 3676.01500 4709.34500
+zoomBox -2264.40000 -1434.09900 3175.93200 3436.15900
+zoomBox -1643.65300 -1200.79100 2980.62900 2938.92800
+zoomBox -1116.01800 -1002.47900 2814.62100 2516.28200
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__1_ 1077.9 395.64 1641.54 955.08
+zoomBox -789.56600 -808.74400 2551.47700 2182.20300
+zoomBox -512.08300 -644.06900 2327.80400 1898.23600
+zoomBox -276.22200 -504.09500 2137.68200 1656.86400
+zoomBox -75.74000 -385.11700 1976.07800 1451.69800
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__1_ 1077.72 302.737 1641.36 862.177
+zoomBox 77.15000 -284.38400 1821.19600 1276.90900
+zoomBox 207.10700 -198.76100 1689.54600 1128.33800
+zoomBox -80.16100 -399.11200 1971.65800 1437.70400
+zoomBox -477.76400 -676.41400 2362.12400 1865.89200
+zoomBox -730.61200 -852.75900 2610.43300 2138.18900
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__1_ 1570.448 301.14 2134.088 860.58
+zoomBox -494.62100 -680.30400 2345.26700 1862.00200
+zoomBox -294.02900 -533.71700 2119.87600 1627.24300
+zoomBox -794.18100 -917.52700 2546.86500 2073.42200
+zoomBox -1112.24300 -1161.60400 2818.40000 2357.16000
+zoomBox -1926.65700 -1786.57500 3513.68000 3083.68800
+zoomBox -2444.56700 -2184.01200 3955.82900 3545.70900
+zoomBox -3770.70500 -3201.67200 5087.97500 4728.73800
+zoomBox -4614.03700 -3848.83300 5807.94100 5481.06200
+zoomBox -2376.93500 -1991.51900 4023.46200 3738.20300
+zoomBox -1388.93300 -1171.24700 3235.35600 2968.47900
+deselectAll
+selectObject Module grid_memory_2__1_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__1_ 1034.069 1212.12 1409.969 1586.34
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__1_ 1034.04 1014.706 1409.94 1388.926
+zoomBox -734.86300 -598.52000 2606.18600 2392.43200
+deselectAll
+selectObject Module grid_clb_3__1_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__1_ 1138.161 301.14 1701.801 860.58
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__1_ 1069.045 301.14 1632.685 860.58
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__1_ 1738.839 301.14 2302.479 860.58
+zoomBox -1106.31800 -812.85000 2824.32900 2705.91800
+zoomBox -1543.32200 -1065.00200 3080.96800 3074.72500
+zoomBox -4211.04800 -2604.28500 4647.64000 5326.13200
+zoomBox -9321.57100 -5553.06800 7648.89300 9639.12000
+zoomBox -13428.03900 -7922.50900 10060.49400 13104.74200
+zoomBox -7717.83100 -4627.70700 6707.06500 8285.65400
+zoomBox -8616.84900 -6267.67300 8353.61700 8924.51600
+deselectAll
+selectObject Module grid_clb_3__2_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__2_ 1803.946 8001.062 2367.793 8564.61
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__2_ 1803.9 1340.793 2367.54 1900.233
+deselectAll
+selectObject Module grid_clb_3__3_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__3_ 1533.541 8001.062 2097.388 8564.61
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__3_ 1533.42 2394.586 2097.06 2954.026
+zoomBox -7187.64200 -5174.36300 7237.25400 7738.99800
+zoomBox -5972.81600 -4247.84800 6288.34600 6728.50900
+zoomBox -4940.21400 -3460.31100 5481.77400 5869.59300
+zoomBox -4062.50300 -2790.90400 4796.18800 5139.51500
+zoomBox -2682.30100 -1738.26300 3718.10400 3991.46600
+zoomBox -2143.27600 -1327.16300 3297.06800 3543.10600
+zoomBox -1685.10500 -977.72900 2939.18800 3162.00000
+zoomBox -1282.19900 -741.72900 2648.45000 2777.04100
+zoomBox -939.72900 -541.12900 2401.32300 2449.82600
+deselectAll
+selectObject Module grid_memory_2__1_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__1_ 1263.116 1015.56 1639.016 1389.78
+zoomBox -1300.50500 -712.74600 2630.14500 2806.02500
+zoomBox -1724.94800 -914.64800 2899.34700 3225.08300
+zoomBox -2224.29200 -1152.18000 3216.05500 3718.09200
+zoomBox -2811.75600 -1431.62900 3588.65300 4298.10300
+zoomBox -3502.88900 -1760.39300 4027.00400 4980.46900
+zoomBox -2811.75700 -1431.63000 3588.65300 4298.10300
+zoomBox -2224.29400 -1152.18200 3216.05500 3718.09200
+zoomBox -3502.89100 -1760.39400 4027.00400 4980.46900
+zoomBox -6397.97100 -3137.54600 5863.20600 7838.82500
+zoomBox -4249.96700 -2107.56000 4608.73500 5822.86900
+zoomBox -3411.08300 -1705.30800 4118.81300 5035.55600
+zoomBox -1576.76000 -825.73600 3047.53900 3313.99900
+zoomBox -766.64100 -437.27700 2574.41600 2553.68200
+zoomBox -450.25600 -285.56800 2389.64200 2256.74700
+zoomBox -766.64100 -437.27700 2574.41600 2553.68200
+zoomBox -1138.85800 -615.75800 2791.79700 2903.01700
+zoomBox -1576.76100 -825.73700 3047.53900 3313.99900
+zoomBox -2091.94200 -1072.77000 3348.41200 3797.50800
+zoomBox -2698.03600 -1363.39700 3702.38100 4366.34200
+zoomBox -4249.97100 -2107.56400 4608.73700 5822.87100
+zoomBox -3457.50100 -1741.41200 4072.40100 4999.45800
+zoomBox -2783.90200 -1430.18300 3616.51600 4299.55700
+zoomBox -2211.34200 -1165.63800 3229.01300 3704.64100
+zoomBox -1724.66700 -940.77500 2899.63600 3198.96300
+zoomBox -2211.34300 -1165.63800 3229.01300 3704.64200
+zoomBox -2783.90300 -1430.18300 3616.51600 4299.55800
+zoomBox -3457.50300 -1741.41300 4072.40200 4999.45900
+zoomBox -4249.97400 -2107.56600 4608.73800 5822.87200
+deselectAll
+selectObject Module sb_1__3_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__3_ 1129.931 4488.264 1468.777 4826.931
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__3_ 1129.8 1876.461 1468.74 2216.661
+zoomBox -3383.58600 -1626.23900 4146.32000 5114.63400
+zoomBox -2021.18900 -869.35200 3419.16800 4000.92900
+zoomBox -1489.11800 -573.75700 3135.18600 3565.98200
+zoomBox -1036.85800 -322.50200 2893.80100 3196.27700
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__3_ 1236.583 1877.4 1575.523 2217.6
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__3_ 1236.48 2248.6 1575.42 2588.8
+deselectAll
+selectObject Module grid_clb_3__3_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__3_ 1884.281 2395.26 2447.921 2954.7
+deselectAll
+selectObject Module sb_1__3_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__3_ 931.383 2247.84 1270.323 2588.04
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__3_ 931.56 2196.99 1270.5 2537.19
+zoomBox -1464.89100 -667.97900 3159.41400 3471.76100
+zoomBox -1968.45800 -1074.42200 3471.90000 3795.86000
+zoomBox -2560.89100 -1552.59100 3839.53100 4177.15300
+zoomBox -3257.87000 -2115.14200 4272.03800 4625.73300
+zoomBox -4077.84600 -2776.96800 4780.87000 5153.47400
+zoomBox -5042.52300 -3555.58600 5379.49600 5774.34600
+deselectAll
+selectObject Module sb_1__5_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__5_ 1069.695 4488.264 1408.541 4826.931
+zoomBox -2649.33500 -590.11400 3751.08800 5139.63100
+zoomBox -2078.01700 117.82400 3362.34300 4988.10700
+zoomBox -1592.39600 719.57100 3031.91000 4859.31200
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__5_ 1069.74 3657.842 1408.68 3998.042
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__5_ 908.218 3657.78 1247.158 3997.98
+zoomBox -2119.18900 245.56300 3321.17100 5115.84600
+zoomBox -2738.94500 -312.09400 3661.47800 5417.65100
+zoomBox -3468.07000 -968.16000 4061.83900 5772.71600
+zoomBox -4325.86500 -1740.00300 4532.85200 6190.44000
+deselectAll
+selectObject Module sb_1__7_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__7_ 959.572 4488.264 1298.418 4826.931
+zoomBox -2260.70000 634.71600 3179.66000 5504.99900
+zoomBox -3455.50100 -962.85800 4074.40900 5778.01900
+zoomBox -5109.20600 -3174.03200 5312.81600 6155.90200
+zoomBox -3492.91600 -734.63200 4036.99500 6006.24600
+zoomBox -2325.14700 1027.83500 3115.21400 5898.11900
+zoomBox -1869.08600 1716.14900 2755.22100 5855.89100
+zoomBox -1480.53700 2295.83200 2450.12400 5814.61300
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__7_ 959.7 5038.554 1298.64 5378.754
+zoomBox -1963.30800 1954.84200 2660.99900 6094.58400
+zoomBox -2531.27400 1553.67700 2909.08800 6423.96200
+zoomBox -3199.46900 1081.71800 3200.95700 6811.46500
+zoomBox -3985.58000 526.47200 3544.33300 7267.35100
+zoomBox -5998.46000 -895.26600 4423.56500 8434.67100
+zoomBox -7278.51100 -1799.39200 4982.69500 9177.00500
+zoomBox -4046.78800 -1015.94400 3483.12600 5724.93600
+zoomBox -1597.62100 -180.74900 2333.04200 3338.03300
+zoomBox -565.52900 172.43700 1848.39000 2333.41000
+zoomBox -1183.22700 -25.46600 2157.83800 2965.50000
+zoomBox -1576.03900 -151.31800 2354.62500 3367.46500
+zoomBox -2038.17100 -299.38000 2586.14000 3840.36500
+zoomBox -3221.48600 -678.50100 3178.94500 5051.25100
+zoomBox -3973.99100 -919.59500 3555.92800 5821.29000
+zoomBox -5900.82100 -1536.92900 4521.21300 7793.01600
+zoomBox -7126.15000 -1929.51000 5135.06700 9046.89600
+zoomBox -8567.71300 -2391.37000 5857.24800 10522.04900
+zoomBox -7137.34700 -1005.79000 5123.87000 9970.61600
+zoomBox -5921.53600 171.95200 4500.49900 9501.89800
+deselectAll
+selectObject Module sb_1__9_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__9_ 1073.262 4488.264 1412.108 4826.931
+zoomBox -3190.17600 1940.83300 3210.25700 7670.58700
+zoomBox -1983.88500 2722.05000 2640.42800 6861.79700
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__9_ 1073.1 5715.75 1412.04 6055.95
+zoomBox -1609.69300 3092.65300 2320.97300 6611.43800
+zoomBox -1291.62900 3407.66600 2049.43700 6398.63300
+zoomBox -1710.37500 3155.96100 2220.29100 6674.74600
+zoomBox -2203.01700 2859.83800 2421.29600 6999.58500
+zoomBox -2782.59600 2511.45600 2657.77300 7381.74800
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__9_ 1073.1 6446.052 1412.04 6786.252
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__9_ 939.378 6447.42 1278.318 6787.62
+zoomBox -3165.13300 2146.30800 3235.30300 7876.06400
+zoomBox -3615.17500 1716.72200 3914.75000 8457.61200
+zoomBox -4144.63600 1211.32700 4714.09900 9141.78600
+zoomBox -4767.53200 616.74500 5654.51000 9946.69700
+zoomBox -5500.35000 -82.76300 6760.87500 10893.65100
+pan -3790.98700 6178.95700
+zoomBox -7737.66800 1520.87200 2684.37400 10850.82400
+zoomBox -6417.04800 2236.79800 2441.68700 10167.25700
+zoomBox -4340.37500 3362.59100 2060.06200 9092.34800
+zoomBox -3529.34900 3802.25900 1911.02200 8672.55200
+zoomBox -2839.97800 4175.97600 1784.33800 8315.72600
+zoomBox -2254.01200 4493.63500 1676.65700 8012.42300
+zoomBox -1755.94100 4763.64600 1585.12800 7754.61600
+zoomBox -1332.58100 4993.15500 1507.32800 7535.48000
+zoomBox -1755.94200 4763.64500 1585.12800 7754.61600
+zoomBox -2254.01300 4493.63400 1676.65700 8012.42300
+zoomBox -2839.98000 4175.97400 1784.33800 8315.72600
+zoomBox -5294.52800 2845.33100 2235.40400 9586.22700
+zoomBox -6417.05600 2236.79300 2441.68800 10167.26000
+zoomBox -4295.85700 3403.92900 2104.58600 9133.69200
+zoomBox -2763.29100 4247.18500 1861.03000 8386.93900
+zoomBox -2164.76200 4576.51100 1765.91100 8095.30200
+zoomBox -1656.01200 4856.43700 1685.06000 7847.41000
+zoomBox -543.56800 5468.53200 1508.26900 7305.36400
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__9_ 905.033 6447.42 1243.973 6787.62
+setObjFPlanBox Module sb_1__10_ 905.033 6447.42 1243.973 6787.62
+deselectAll
+selectObject Module sb_1__10_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__10_ 905.1 6792.489 1244.04 7132.689
+zoomBox -823.21500 5332.69000 1590.71100 7493.66900
+zoomBox -1152.21100 5172.87600 1687.70200 7715.20400
+zoomBox -1539.26600 4984.85900 1801.80900 7975.83400
+zoomBox -1994.62500 4763.66200 1936.05200 8282.45700
+zoomBox -2530.34100 4503.43100 2093.98500 8643.19000
+zoomBox -3160.59500 4197.27700 2279.78900 9067.58200
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__10_ 905.1 7220.719 1244.04 7560.919
+zoomBox -2536.67600 4564.66100 2087.65100 8704.42100
+zoomBox -2006.34400 4876.93800 1924.33400 8395.73400
+zoomBox -1555.56200 5142.37300 1785.51500 8133.35000
+zoomBox -2006.34400 4876.93700 1924.33500 8395.73400
+zoomBox -2536.67600 4564.66000 2087.65200 8704.42100
+zoomBox -3160.59600 4197.27600 2279.79000 9067.58300
+zoomBox -4363.51300 3797.20500 3166.43400 10538.11500
+zoomBox -5128.48400 3542.78800 3730.27700 11473.27000
+zoomBox -6028.44900 3243.47400 4393.62200 12573.45200
+zoomBox -9798.30200 1989.68000 7172.30000 17181.99100
+zoomBox -11522.35300 1416.28800 8443.06100 19289.59500
+zoomBox -18744.20700 -985.58700 13766.13500 28118.10900
+zoomBox -22046.94700 -2084.02600 16200.51400 32155.61600
+zoomBox -18974.28600 -1957.85400 13536.05600 27145.84200
+zoomBox -14142.52700 -1759.44900 9346.19600 19267.97200
+zoomBox -12255.52900 -1686.52200 7709.88600 16186.78600
+zoomBox -10655.45500 -1624.53400 6315.14800 13567.77800
+zoomBox -9295.39200 -1571.84500 5129.62100 11341.62100
+zoomBox -8139.33800 -1527.05800 4121.92300 9449.38800
+zoomBox -9295.39200 -1571.84500 5129.62100 11341.62100
+undo
+undo
+undo
+zoomBox -8066.56000 -1275.13400 4194.70100 9701.31200
+zoomBox -7022.05400 -1022.93000 3400.01900 8307.05000
+deselectAll
+selectObject Module sb_1__2_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__2_ 1671.686 4042.822 2076.849 4447.77
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__2_ 1671.6 3193.934 2076.9 3598.394
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__2_ 916.573 3192.84 1321.873 3597.3
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__2_ 916.44 1467.063 1321.74 1871.523
+deselectAll
+selectObject Module sb_1__4_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__4_ 903.86 4042.822 1309.023 4447.77
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__4_ 903.84 2883.833 1309.14 3288.293
+deselectAll
+selectObject Module sb_1__6_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__6_ 918.027 4042.822 1323.19 4447.77
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__6_ 918.12 4353.441 1323.42 4757.901
+deselectAll
+selectObject Module sb_1__8_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__8_ 1538.911 4042.822 1944.074 4447.77
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__8_ 1538.88 5728.669 1944.18 6133.129
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__8_ 918.679 5729.22 1323.979 6133.68
+undo
+undo
+undo
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__8_ 1619.807 4042.822 2024.97 4447.77
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__8_ 1619.94 5674.738 2025.24 6079.198
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__8_ 945.809 5676.3 1351.109 6080.76
+deselectAll
+selectObject Module sb_1__10_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__10_ 1474.919 4042.822 1878.943 4446.632
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__10_ 1475.04 7090.414 1879.08 7494.874
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__10_ 976.182 7090.02 1380.222 7494.48
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__10_ 922.15 7090.02 1326.19 7494.48
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__10_ 922.32 7143.951 1326.36 7548.411
+deselectAll
+selectObject Module sb_1__11_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__11_ 1460.526 4042.822 1796.858 4378.976
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__11_ 1460.34 7858.924 1796.76 8195.344
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__11_ 948.0 7857.36 1284.42 8193.78
+pan -2683.04300 6201.36300
+zoomBox -10485.50300 -1298.92800 1775.75900 9677.51900
+zoomBox -11403.62800 -1861.55900 3021.38600 11051.90800
+zoomBox -12483.77500 -2523.47800 4486.83000 12668.83600
+zoomBox -10221.39400 -2062.44100 4203.62100 10851.02700
+zoomBox -5454.43600 -1191.13900 3404.32700 6739.34500
+zoomBox -3349.13400 -806.33300 3051.32300 4923.44200
+zoomBox -2526.92800 -656.05100 2913.46100 4214.25800
+zoomBox -1234.01000 -419.73200 2696.67200 3099.06700
+zoomBox -729.07300 -327.44100 2612.00700 2663.53900
+zoomBox -282.89000 -98.35300 2131.04100 2062.63100
+zoomBox -108.63800 -8.88500 1943.20400 1827.95200
+zoomBox -282.89100 -98.35300 2131.04100 2062.63100
+deselectAll
+selectObject Module grid_clb_3__1_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__1_ 1523.326 301.14 2086.966 860.58
+zoomBox -557.88200 -200.30400 2282.03800 2342.03100
+zoomBox -881.40200 -320.24600 2459.68200 2670.73700
+zoomBox -1262.01300 -461.35500 2668.67500 3057.45000
+zoomBox -2856.34900 -1052.44300 3544.12200 4677.34500
+zoomBox -5452.45900 -2014.92900 4969.64100 7315.07500
+zoomBox -9679.79000 -3582.17500 7290.85900 11610.17800
+zoomBox -8808.59100 -2254.05200 3452.70400 8722.42400
+zoomBox -8468.35200 -1735.36600 1953.74900 7594.63900
+zoomBox -7933.32600 -919.73300 -403.35800 5821.19600
+deselectAll
+selectObject Module cby_1__2_
+zoomBox -10877.40100 -2364.22800 1383.89700 8612.25100
+zoomBox -17863.72400 -5792.02900 5625.07400 15235.45900
+zoomBox -9937.35000 -2966.20700 4487.70900 9947.30000
+zoomBox -6436.70900 -1718.19800 3985.39800 7611.81200
+zoomBox -3952.39200 -861.40900 3577.58100 5879.52400
+zoomBox -2988.01000 -542.87100 3412.46700 5186.92200
+zoomBox -2168.28600 -272.11400 3272.12000 4598.21100
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_1__2_ 2312.746 1012.258 2563.398 1262.777
+zoomBox -1700.60800 -138.03900 2923.73700 4001.73700
+zoomBox -1082.33400 48.61000 2848.36000 3567.42000
+zoomBox 269.60000 456.74100 2683.53800 2617.73100
+zoomBox 592.34300 554.17200 2644.19100 2391.01400
+zoomBox -110.10000 342.11400 2729.82900 2884.45700
+zoomBox -556.80500 207.26000 2784.28900 3198.25200
+zoomBox -1082.33900 48.60700 2848.36000 3567.42200
+zoomBox -785.63100 103.52500 2555.46400 3094.51800
+zoomBox -533.42800 150.20500 2306.50300 2692.54900
+zoomBox -319.05600 189.88300 2094.88600 2350.87600
+zoomBox -136.84000 223.60900 1915.01100 2060.45400
+zoomBox -683.29900 80.87800 2156.63400 2623.22400
+zoomBox -1030.80800 -9.89000 2310.29000 2981.10600
+zoomBox -722.20000 3.07600 2117.73400 2545.42300
+zoomBox -459.88300 14.09800 1954.06100 2175.09300
+zoomBox -236.91400 23.46600 1814.93900 1860.31200
+deselectAll
+selectObject Module grid_clb_3__1_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__1_ 1143.76 301.14 1707.4 860.58
+zoomBox -65.30700 78.81000 1678.76800 1640.12900
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__1_ 1078.229 301.14 1641.869 860.58
+zoomBox 75.82100 123.14400 1558.28500 1450.26600
+zoomBox 195.77900 160.82900 1455.87400 1288.88300
+zoomBox 297.74400 192.86100 1368.82500 1151.70700
+zoomBox 384.41300 220.08800 1294.83300 1035.10800
+zoomBox 297.74300 192.86100 1368.82500 1151.70800
+zoomBox 195.77800 160.82900 1455.87400 1288.88400
+zoomBox 76.10600 123.14400 1558.57300 1450.26800
+zoomBox -230.31900 26.64900 1821.53900 1863.50000
+zoomBox -425.18400 -34.71500 1988.76700 2126.28600
+deselectAll
+selectObject Module grid_memory_2__1_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__1_ 1028.727 1015.56 1404.627 1389.78
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__1_ 1247.178 1015.56 1623.078 1389.78
+zoomBox -698.52400 -227.59600 2141.41800 2314.75800
+zoomBox -1020.10000 -454.51500 2321.00800 2536.49000
+zoomBox -1398.42500 -721.47800 2532.29000 2797.35100
+deselectAll
+selectObject Module grid_clb_3__1_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__1_ 1490.026 301.14 2053.666 860.58
+zoomBox -1087.22200 -573.50400 2253.88600 2417.50100
+zoomBox -822.70000 -447.72600 2017.24200 2094.62800
+zoomBox -597.85600 -340.81500 1816.09500 1820.18600
+zoomBox -406.73900 -249.94200 1645.12000 1586.91000
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__1_ 1283.116 301.14 1846.756 860.58
+create_relative_floorplan -place grid_clb_3__1_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3 0 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+create_relative_floorplan -place grid_clb_3__1_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3 0 3} -vertical_edge_separate {2 100 0}
+delete_relative_floorplan -all
+create_relative_floorplan -place grid_clb_3__1_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3 0 3} -vertical_edge_separate {2 200 0}
+delete_relative_floorplan -all
+zoomBox -194.91800 -135.27200 1549.16300 1426.05300
+zoomBox -14.86900 -37.80200 1467.60000 1289.32400
+zoomBox 138.17200 45.04700 1398.27100 1173.10500
+zoomBox 268.25700 115.46900 1339.34100 1074.31800
+zoomBox 472.81500 226.20800 1246.67400 918.97700
+zoomBox 552.70300 269.45600 1210.48400 858.31000
+zoomBox 727.38900 364.02300 1131.35000 725.65400
+zoomBox 834.66900 422.09900 1082.75100 644.18500
+zoomBox 868.07800 438.17700 1078.94800 626.95100
+zoomBox 896.47600 451.84400 1075.71600 612.30200
+zoomBox 941.13200 473.33500 1070.63300 589.26600
+zoomBox 985.99500 494.92500 1065.52700 566.12300
+zoomBox 1020.12600 511.35100 1061.64200 548.51700
+zoomBox 1034.50800 518.27300 1060.00500 541.09800
+zoomBox 1037.94200 519.92600 1059.61400 539.32700
+zoomBox 1043.34200 522.52400 1059.00000 536.54100
+zoomBox 1034.66000 516.42100 1064.65700 543.27500
+uiSetTool ruler
+zoomBox 1043.47800 521.31600 1061.90200 537.80900
+zoomBox 1048.89500 524.32300 1060.21000 534.45200
+zoomBox 1043.02700 521.48000 1061.45200 537.97400
+zoomBox 1040.34300 520.17900 1062.02000 539.58500
+zoomBox 1029.10000 514.73300 1064.39900 546.33300
+zoomBox 1002.42100 501.81100 1070.04400 562.34800
+zoomBox 967.35200 484.82600 1077.46500 583.40100
+zoomBox 951.31300 477.05800 1080.85900 593.02900
+zoomBox 853.40500 429.63800 1101.57500 651.80300
+zoomBox 817.25800 412.13100 1109.22300 673.50200
+zoomBox 774.73300 391.53500 1118.22100 699.03000
+zoomBox 910.88100 454.61800 1090.18400 615.13200
+zoomBox 981.95100 487.54700 1075.54900 571.33700
+zoomBox 1019.05000 504.73600 1067.91000 548.47600
+zoomBox 1025.12800 507.55200 1066.65900 544.73100
+zoomBox 1030.29400 509.94600 1065.59500 541.54800
+zoomBox 1034.68500 511.98000 1064.69100 538.84200
+zoomBox 1021.88000 506.12700 1070.74000 549.86700
+create_relative_floorplan -place grid_clb_3__1_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3 0 3} -vertical_edge_separate {2 185 0}
+delete_relative_floorplan -all
+create_relative_floorplan -place grid_clb_3__1_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3 0 3} -vertical_edge_separate {2 190 0}
+delete_relative_floorplan -all
+create_relative_floorplan -place grid_clb_3__1_ -ref_type object -ref grid_clb_1__1_ -horizontal_edge_separate {3 0 3} -vertical_edge_separate {2 186 0}
+delete_relative_floorplan -all
+zoomBox 1014.73000 503.23800 1072.21200 554.69700
+zoomBox 1006.31800 499.83900 1073.94400 560.37900
+zoomBox 996.42100 495.84000 1075.98200 567.06400
+zoomBox 984.77800 491.13500 1078.38000 574.92900
+zoomBox 971.08100 485.60100 1081.20100 584.18200
+zoomBox 954.96600 479.08900 1084.51900 595.06700
+zoomBox 913.70400 462.41600 1093.01600 622.93900
+zoomBox 777.54500 407.39900 1121.05500 714.91400
+zoomBox 598.56200 335.07900 1157.91200 835.81700
+zoomBox 307.12000 217.32000 1217.92800 1032.68800
+zoomBox 17.03000 100.10800 1277.66500 1228.64500
+zoomBox -167.44600 25.56900 1315.65400 1353.26000
+zoomBox -384.47700 -62.12400 1360.34700 1499.86600
+zoomBox -639.80700 -165.29200 1412.92700 1672.34300
+zoomBox -940.19600 -286.66600 1474.78600 1875.25800
+zoomBox -1709.35900 -597.45200 1633.17800 2394.83200
+zoomBox -3450.94400 -1301.15100 1991.82000 3571.28500
+zoomBox -1478.41700 -496.92500 1864.12100 2495.36000
+zoomBox -774.05300 -165.74200 1640.93200 1996.18500
+zoomBox -495.68900 -57.02100 1557.04800 1780.61700
+zoomBox -259.08000 35.39100 1485.74700 1597.38400
+zoomBox -57.96200 113.94200 1425.14100 1441.63600
+zoomBox -250.61500 45.54800 1494.21200 1607.54100
+zoomBox -477.26600 -34.91500 1575.47200 1802.72400
+zoomBox -743.91500 -129.57800 1671.07200 2032.35100
+zoomBox -1426.68400 -371.96700 1915.86000 2620.32300
+zoomBox -620.32200 -146.37800 1794.66600 2015.55200
+zoomBox -305.40500 -58.27600 1747.33500 1779.36400
+zoomBox -37.72600 16.61000 1707.10300 1578.60400
+zoomBox 124.11600 60.96300 1607.22100 1388.65900
+zoomBox 261.68100 98.66400 1522.32100 1227.20600
+zoomBox 378.61200 130.71000 1450.15600 1089.97100
+uiSetTool cut
+zoomBox 565.94800 216.49300 1340.13900 909.55900
+zoomBox 639.11000 249.99400 1297.17300 839.10100
+zoomBox 701.29800 278.47000 1260.65200 779.21100
+zoomBox 799.08800 323.24900 1203.22200 685.03500
+zoomBox 487.08000 157.41200 1397.89800 972.78900
+zoomBox 388.10300 104.80500 1459.65400 1064.07200
+zoomBox 512.23900 130.17300 1423.05800 945.55000
+zoomBox 617.75500 151.73500 1391.95100 844.80600
+zoomBox 783.95600 185.64200 1343.31400 686.38700
+setObjFPlanBoxList Module sb_1__0_ {{881.16000 297.36000 1047.94700 456.12000} {1028.16000 284.77800 1047.94700 297.36000} {1028.16000 180.18000 1255.80000 284.77800}}
+zoomBox 728.15100 157.16500 1386.22000 746.27700
+zoomBox 662.49900 123.66300 1436.69800 816.73600
+zoomBox 585.26200 84.24900 1496.08400 899.62900
+zoomBox 494.39500 37.88000 1565.95000 997.15000
+zoomBox 765.40100 233.34900 1324.76000 734.09500
+zoomBox 809.79500 265.36900 1285.25000 691.00300
+setObjFPlanBoxList Module grid_clb_3__1_ {{1057.56000 466.50000 1621.20000 856.80000} {1124.71500 297.36000 1621.20000 466.50000}}
+uiSetTool move
+setObjFPlanBoxList Module sb_1__0_ {{881.16000 297.36000 1104.41700 456.12000} {1028.16000 286.02000 1104.41700 297.36000} {1028.16000 180.18000 1255.80000 286.02000}}
+zoomBox 768.22300 240.62100 1327.58200 741.36700
+zoomBox 719.31400 211.50600 1377.38400 800.61900
+zoomBox 661.77500 177.25300 1435.97500 870.32700
+zoomBox 310.52300 -31.84800 1793.64700 1295.86500
+zoomBox 180.84400 -109.04600 1925.69600 1452.96900
+zoomBox 420.74900 33.77000 1681.40500 1162.32600
+zoomBox 609.92100 113.42100 1520.74500 928.80300
+zoomBox 810.43300 187.07800 1369.79300 687.82500
+zoomBox 853.95900 207.15800 1329.41500 632.79300
+zoomBox 922.40300 238.73400 1265.92100 546.25600
+setObjFPlanBoxList Module sb_1__0_ {{881.16000 297.36000 1113.49300 456.12000} {1028.16000 286.02000 1113.49300 297.36000} {1028.16000 180.18000 1255.80000 286.02000}}
+zoomBox 888.68100 219.36300 1292.82000 581.15400
+zoomBox 849.00700 196.57400 1324.46600 622.21100
+zoomBox 802.33300 169.76300 1361.69700 670.51300
+zoomBox 682.82100 101.11200 1457.02800 794.19300
+zoomBox 606.81900 57.45500 1517.65200 872.84500
+setObjFPlanBoxList Module sb_1__0_ {{881.16000 297.36000 1113.42000 456.12000} {1028.16000 286.02000 1113.42000 297.36000} {1028.16000 180.18000 1272.56400 286.02000}}
+setObjFPlanBoxList Module sb_1__0_ {{881.16000 297.36000 1113.42000 456.12000} {1028.16000 286.02000 1113.42000 297.36000} {1028.16000 180.18000 1310.27000 286.02000}}
+setObjFPlanBoxList Module sb_1__0_ {{881.16000 297.36000 1113.42000 456.12000} {1028.16000 286.02000 1113.42000 297.36000} {1028.16000 180.18000 1377.43300 286.02000}}
+setObjFPlanBoxList Module sb_1__0_ {{881.16000 297.36000 1113.42000 456.12000} {1028.16000 286.02000 1113.42000 297.36000} {1028.16000 180.18000 1395.10800 286.02000}}
+setObjFPlanBoxList Module sb_1__0_ {{881.16000 297.36000 1113.42000 456.12000} {1028.16000 286.02000 1113.42000 297.36000} {1028.16000 180.18000 1415.13900 286.02000}}
+zoomBox 497.23600 17.32300 1568.80400 976.60500
+zoomBox 368.31500 -29.89100 1628.98300 1098.67600
+zoomBox 216.64300 -85.43700 1699.78200 1242.28900
+zoomBox 38.20500 -150.78500 1783.07500 1411.24600
+zoomBox -418.69400 -318.11300 1996.35200 1843.86900
+zoomBox -118.76700 -235.16400 1934.02300 1602.52100
+zoomBox 136.17200 -164.65700 1881.04300 1397.37500
+zoomBox 463.14900 -48.77600 1723.81900 1079.79300
+zoomBox 590.60200 -3.51900 1662.17200 955.76500
+zoomBox 791.02200 67.64700 1565.23200 760.73000
+setObjFPlanBoxList Module grid_clb_3__1_ {{1057.56000 467.46000 1621.20000 856.80000} {1124.76000 329.05500 1621.20000 467.46000}}
+setObjFPlanBoxList Module sb_1__0_ {{881.16000 307.02100 1113.42000 456.12000} {881.16000 297.36000 1414.98000 307.02100} {1028.16000 180.18000 1414.98000 297.36000}}
+zoomBox 911.36700 126.29100 1470.73400 627.04400
+zoomBox 958.36700 149.19400 1433.82900 574.83400
+zoomBox 998.31700 168.66100 1402.46000 530.45500
+setObjFPlanBoxList Module sb_1__0_ {{881.16000 315.05100 1113.42000 456.12000} {881.16000 297.36000 1414.98000 315.05100} {1028.16000 180.18000 1414.98000 297.36000}}
+zoomBox 970.54600 146.24100 1446.00800 571.88100
+zoomBox 937.87400 119.86500 1497.24100 620.61800
+zoomBox 899.43600 88.83400 1557.51500 677.95500
+zoomBox 738.42500 -41.15300 1809.99800 918.13400
+zoomBox 664.79000 -100.59900 1925.46500 1027.97400
+zoomBox 578.16100 -170.53500 2061.30800 1157.19800
+zoomBox 421.93000 -527.94900 2474.72900 1309.74400
+zoomBox 322.57800 -755.23900 2737.63600 1406.75300
+zoomBox 205.69400 -1022.63900 3046.93800 1520.88100
+zoomBox 68.18200 -1337.22800 3410.82300 1655.14900
+zoomBox 260.17800 -690.44000 2675.23700 1471.55300
+zoomBox 335.16000 -437.84400 2387.96100 1399.85100
+zoomBox 398.89500 -223.13700 2143.77600 1338.90400
+zoomBox 453.07000 -40.63600 1936.21900 1287.09900
+zoomBox 503.43500 107.29500 1764.11200 1235.87000
+zoomBox 582.63500 339.91700 1493.47400 1155.31200
+zoomBox 709.17700 455.66800 1367.25900 1044.79200
+zoomBox 837.29400 571.63100 1241.44000 933.42800
+zoomBox 893.87700 622.84500 1185.87300 884.24400
+zoomBox 915.97500 642.84700 1164.17200 865.03600
+zoomBox 934.80600 659.84800 1145.77400 848.70900
+zoomBox 964.49500 686.50700 1116.91900 822.95900
+zoomBox 986.10900 705.71300 1096.23600 804.30000
+uiSetTool cut
+zoomBox 947.07900 674.73900 1126.40400 835.27300
+zoomBox 854.46000 601.23800 1197.99100 908.77200
+zoomBox 780.03800 542.17800 1255.51400 967.83100
+zoomBox 904.30100 631.45000 1247.83300 938.98400
+zoomBox 952.83100 666.24800 1244.83300 927.65200
+zoomBox 994.08100 695.82500 1242.28300 918.01900
+zoomBox 1029.14400 720.96600 1240.11600 909.83100
+setObjFPlanBoxList Module sb_1__1_ {{881.16000 1011.78000 1220.10000 1094.94000} {943.32000 868.07300 1220.10000 1011.78000} {943.32000 860.58000 1048.22500 868.07300} {881.16000 754.74000 1048.22500 860.58000}}
+zoomBox 958.48800 670.03300 1302.02300 977.57000
+zoomBox 843.44000 587.09800 1402.82900 1087.87100
+zoomBox 790.82600 549.17000 1448.93000 1138.31400
+zoomBox 728.92700 504.54900 1503.16700 1197.65900
+zoomBox 469.63600 317.63400 1730.35900 1446.25000
+zoomBox 211.55100 131.58700 1956.49700 1693.68600
+zoomBox 47.42700 13.27400 2100.30500 1851.03800
+zoomBox -145.66000 -125.91800 2269.49100 2036.15800
+uiSetTool select
+deselectAll
+selectObject Module cby_1__1_
+deselectAll
+selectObject Module cby_1__1_
+deselectAll
+selectObject Module cby_1__1_
+zoomBox -865.67500 -519.52700 2477.09600 2472.96700
+zoomBox -1323.55400 -769.83400 2609.11800 2750.74700
+zoomBox -2495.97800 -1410.76000 2947.16700 3462.01700
+zoomBox -3241.55900 -1818.34400 3162.14200 3914.33500
+zoomBox -5150.65700 -2861.98500 3712.59800 5072.52000
+zoomBox -6364.70900 -3525.66700 4062.65000 5809.04500
+zoomBox -7793.00600 -4306.47000 4474.47600 6675.54500
+deselectAll
+selectObject Module sb_9__2_
+deselectAll
+selectObject Module sb_7__2_
+deselectAll
+selectObject Module sb_6__0_
+deselectAll
+selectObject Module sb_6__2_
+deselectAll
+selectObject Module sb_6__1_
+deselectAll
+selectObject Module sb_3__11_
+deselectAll
+selectObject Module grid_memory_2__3_
+deselectAll
+selectObject Module grid_memory_2__5_
+deselectAll
+selectObject Module grid_memory_2__7_
+deselectAll
+selectObject Module sb_5__2_
+zoomBox -9019.66100 -5247.46600 5412.67100 7672.55200
+zoomBox -5786.67000 -3371.91600 4640.69000 5962.79700
+zoomBox -4524.05600 -2639.43800 4339.20000 5295.06800
+zoomBox -2538.59600 -1487.61700 3865.10800 4245.06500
+zoomBox -1442.03400 -809.45000 3184.64200 3332.41300
+zoomBox -649.76800 -319.47500 2693.00600 2673.02100
+zoomBox -340.35600 -128.12000 2501.00200 2415.50200
+zoomBox -77.35600 34.53200 2337.79900 2196.61100
+deselectAll
+selectObject Module grid_memory_2__1_
+uiSetTool move
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__1_ 881.426 1015.56 1257.326 1389.78
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__1_ 881.58 1124.913 1257.48 1499.133
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__1_ 881.58 1115.807 1257.48 1490.027
+zoomBox 185.35100 323.24900 1930.30000 1885.35100
+zoomBox 375.15700 531.84700 1635.88200 1660.46500
+zoomBox 565.84800 741.41700 1340.09100 1434.53000
+zoomBox 650.06600 833.97300 1209.45700 1334.74700
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__1_ 881.58 1071.305 1257.48 1445.525
+zoomBox 754.87400 951.23400 1046.88000 1212.64200
+zoomBox 809.58500 1012.44600 962.01400 1148.90200
+zoomBox 818.54700 1022.47300 948.11200 1138.46100
+zoomBox 826.16500 1030.99600 936.29500 1129.58600
+zoomBox 832.64000 1038.24000 926.25100 1122.04200
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__1_ 881.217 1072.26 1257.117 1446.48
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__1_ 881.16 1091.273 1257.06 1465.493
+zoomBox 777.19600 1002.53300 956.52400 1163.07000
+zoomBox 704.30900 955.59500 996.31800 1217.00500
+zoomBox 585.62900 879.16400 1061.11700 1304.82700
+zoomBox 303.99900 697.79400 1214.88600 1513.23200
+zoomBox -66.20800 459.38000 1417.01900 1787.18500
+zoomBox -669.03000 71.16100 1746.16000 2233.27200
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__1_ 881.16 1134.902 1257.06 1509.122
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__1_ 881.16 1114.649 1257.06 1488.869
+zoomBox -34.86300 431.64700 1448.36700 1759.45400
+zoomBox 447.56800 706.79800 1221.82500 1399.92300
+zoomBox 631.15700 866.81000 1106.64700 1292.47500
+zoomBox 770.81700 988.53400 1019.02700 1210.73500
+zoomBox 829.67100 1039.83000 982.10400 1176.29000
+zoomBox 855.66400 1062.48400 965.79700 1161.07700
+zoomBox 865.81400 1071.33100 959.42800 1155.13600
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__1_ 881.16 1105.847 1257.06 1480.067
+zoomBox 847.85400 1045.60800 1000.29200 1182.07300
+zoomBox 818.60900 1003.72500 1066.83200 1225.93800
+zoomBox 770.99000 935.52500 1175.18200 1297.36300
+zoomBox 657.99100 773.68800 1432.29800 1466.85800
+zoomBox 509.45300 560.95200 1770.28300 1689.66400
+zoomBox 362.23200 348.57800 2107.32500 1910.80900
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__1_ 1025.644 1106.28 1401.544 1480.5
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__1_ 1100.139 1106.28 1476.039 1480.5
+zoomBox 159.45000 235.83300 2212.50100 2073.75200
+zoomBox -79.11700 103.19200 2336.23700 2265.44900
+zoomBox -359.78400 -52.85700 2481.80900 2490.97500
+deselectAll
+selectObject Module cby_1__2_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_1__2_ 1757.856 1011.78 2008.596 1261.26
+zoomBox -27.23100 300.09900 2025.82100 2138.01900
+zoomBox 102.64500 437.94300 1847.73900 2000.17500
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_1__2_ 884.024 1011.78 1134.764 1261.26
+zoomBox 451.19200 710.95500 1362.14400 1526.45100
+zoomBox 633.13500 853.46800 1108.66000 1279.16400
+zoomBox 728.11100 927.86100 976.33900 1150.07800
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_1__2_ 881.21 1011.78 1131.95 1261.26
+zoomBox 645.18300 881.25100 1049.38000 1243.09400
+zoomBox 510.14700 805.35400 1168.31700 1394.55700
+zoomBox 375.73700 729.81100 1286.70000 1545.31700
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_1__2_ 881.16 1106.058 1131.9 1355.538
+setObjFPlanBox Module cby_1__2_ 881.16000 1106.28000 1055.71800 1355.76000
+setObjFPlanBox Module cby_1__2_ 881.16000 1106.28000 1055.88000 1383.86600
+setObjFPlanBox Module cby_1__2_ 881.16000 1106.28000 1059.25400 1382.22000
+zoomBox 249.50100 681.56300 1321.22200 1640.98200
+zoomBox 100.98800 624.80000 1361.83700 1753.52900
+zoomBox -73.73300 558.02000 1409.61900 1885.93700
+zoomBox -279.28700 479.45600 1465.83300 2041.71100
+zoomBox -805.61900 278.28700 1609.77200 2440.57800
+zoomBox -1140.33000 150.35800 1701.30700 2694.23000
+zoomBox -324.68200 241.14300 1420.43900 1803.39900
+zoomBox 176.22800 296.89600 1247.95100 1256.31700
+zoomBox 295.80900 310.20600 1206.77400 1125.71400
+zoomBox 175.18800 274.64300 1246.91200 1234.06500
+zoomBox 33.28100 232.80500 1294.13300 1361.53700
+zoomBox -133.66900 183.58400 1349.68700 1511.50400
+zoomBox -330.08000 125.67700 1415.04400 1687.93500
+zoomBox -536.45100 27.67000 1516.63600 1865.62100
+zoomBox -1063.85500 -224.30100 1777.78800 2319.57600
+zoomBox -1399.24800 -384.53700 1943.86200 2608.26000
+zoomBox -1793.82700 -573.05000 2139.24400 2947.88800
+zoomBox -909.95500 -125.46600 1931.68900 2418.41200
+zoomBox -564.76700 49.33300 1850.63100 2211.63000
+zoomBox -271.35700 197.91300 1781.73100 2035.86500
+setObjFPlanBox Module cby_1__2_ 1046.781 468.818 1213.101 744.758
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_1__2_ 1046.64 1112.868 1212.96 1388.808
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_1__2_ 900.56 1113.84 1066.88 1389.78
+zoomBox -48.25300 239.34700 1696.87200 1801.60600
+zoomBox 141.38500 274.56500 1624.74200 1602.48600
+zoomBox 302.57800 304.50100 1563.43100 1433.23400
+zoomBox 439.59200 329.94600 1511.31700 1289.36900
+zoomBox 319.46000 294.46900 1580.31300 1423.20200
+zoomBox 178.12800 252.73200 1661.48500 1580.65300
+zoomBox -183.75800 145.86100 1869.33100 1983.81400
+zoomBox 319.45900 294.46900 1580.31300 1423.20200
+zoomBox 426.37900 324.56200 1498.10500 1283.98600
+zoomBox 517.26000 350.14100 1428.22800 1165.65200
+zoomBox 594.51000 371.88400 1368.83300 1065.06800
+zoomBox 660.17200 390.36500 1318.34700 979.57200
+zoomBox 715.98500 406.07400 1275.43400 906.90000
+zoomBox 763.42600 419.42600 1238.95800 845.12900
+zoomBox 803.75000 430.77600 1207.95300 792.62400
+zoomBox 838.02600 440.42300 1181.59900 747.99400
+zoomBox 867.16000 448.62300 1159.19800 710.05900
+zoomBox 715.98100 406.07100 1275.43500 906.90200
+zoomBox 517.25300 350.13500 1428.23200 1165.65600
+zoomBox 193.65800 259.05500 1677.03600 1586.99500
+zoomBox -269.21100 183.87600 1783.90800 2021.85600
+create_relative_floorplan -place cby_1__2_ -ref_type object -ref sb_1__1_ -horizontal_edge_separate {5 10 3} -vertical_edge_separate {4 0 0}
+delete_relative_floorplan -all
+zoomBox -523.25300 105.60100 1892.18100 2267.93000
+zoomBox -822.12600 13.51300 2019.56100 2557.42900
+zoomBox -1173.74200 -94.82700 2169.41900 2898.01600
+zoomBox -1587.40800 -222.28500 2345.72300 3298.70700
+zoomBox -2074.07400 -372.23500 2553.13900 3770.10800
+deselectAll
+selectObject Module grid_clb_3__2_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__2_ 1803.9 957.533 2367.54 1516.973
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__2_ 1546.5 958.86 2110.14 1518.3
+zoomBox -725.11400 161.34200 2116.57500 2705.26000
+zoomBox -454.91500 289.27200 1960.52100 2451.60300
+zoomBox -225.24700 398.01300 1827.87500 2235.99500
+zoomBox -30.02800 490.44300 1715.12600 2052.72800
+zoomBox 119.99200 553.43000 1603.37300 1881.37300
+zoomBox 247.50800 606.97000 1508.38300 1735.72200
+zoomBox 355.89800 652.47900 1427.64100 1611.91800
+zoomBox 92.30100 575.26300 1575.68200 1903.20600
+zoomBox -75.32900 526.15900 1669.82600 2088.44500
+zoomBox -272.54100 468.39000 1780.58300 2306.37400
+zoomBox -51.02700 496.27800 1694.12900 2058.56500
+zoomBox 137.26000 519.98300 1620.64300 1847.92700
+zoomBox 297.30400 540.13200 1558.18000 1668.88500
+zoomBox 433.34200 557.25900 1505.08600 1516.69900
+zoomBox 548.97300 571.81700 1459.95600 1387.34100
+zoomBox 638.24500 635.63300 1412.58000 1328.82800
+zoomBox 714.12600 689.87600 1372.31100 1279.09200
+zoomBox 778.62400 735.98300 1338.08200 1236.81700
+zoomBox 548.97200 571.81500 1459.95700 1387.34100
+zoomBox 443.94500 496.73700 1515.69300 1456.18000
+zoomBox 320.38500 408.41000 1581.26500 1537.16700
+uiSetTool cut
+zoomBox 525.88500 592.63600 1436.87100 1408.16300
+zoomBox 606.14100 664.58400 1380.47900 1357.78200
+zoomBox 781.63000 821.90700 1257.17100 1247.61800
+zoomBox 888.68900 918.52300 1180.73200 1179.96400
+uiSetTool move
+deselectAll
+selectObject Module cby_1__2_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_1__2_ 881.16 1091.168 1047.48 1367.108
+uiSetTool cut
+zoomBox 912.94400 944.76100 1161.18100 1166.98600
+zoomBox 965.60700 1002.25800 1118.05700 1138.73300
+zoomBox 1005.48100 1045.99800 1085.06200 1117.24000
+zoomBox 1022.28500 1064.43000 1071.15800 1108.18200
+zoomBox 1032.60500 1075.75000 1062.62000 1102.62000
+zoomBox 1038.94300 1082.70200 1057.37600 1099.20300
+zoomBox 1033.21900 1077.57800 1063.23400 1104.44800
+zoomBox 1019.63600 1065.41700 1077.13600 1116.89200
+zoomBox 993.61600 1042.12100 1103.76900 1140.73100
+zoomBox 959.41200 1011.49800 1138.77900 1172.07000
+zoomBox 878.24500 938.83100 1221.85700 1246.43700
+zoomBox 722.75500 799.62300 1381.00900 1388.90100
+zoomBox 823.70000 894.86800 1167.31400 1202.47600
+zoomBox 876.39300 944.58800 1055.76300 1105.16200
+zoomBox 838.48400 909.59500 1130.55900 1171.06400
+zoomBox 776.75700 852.61600 1252.35200 1278.37500
+zoomBox 748.52700 826.55800 1308.05100 1327.45100
+zoomBox 885.91700 871.34900 1290.17400 1233.24500
+zoomBox 985.18100 903.71100 1277.25800 1165.18200
+zoomBox 1023.94800 916.34900 1272.21400 1138.60000
+setObjFPlanBoxList Module sb_1__1_ {{881.16000 1011.78000 1047.50400 1094.94000} {943.32000 1000.49600 1047.50400 1011.78000} {943.32000 868.14000 1220.10000 1000.49600} {943.32000 860.58000 1048.32000 868.14000} {881.16000 754.74000 1048.32000 860.58000}}
+zoomBox 954.12900 887.48400 1297.74900 1195.09700
+zoomBox 909.72800 869.12700 1313.98700 1231.02500
+zoomBox 723.73800 792.23400 1382.00700 1381.52500
+zoomBox 638.68000 757.06800 1413.11500 1450.35300
+uiSetTool move
+zoomBox 742.67300 876.52400 1218.27400 1302.28800
+zoomBox 799.65100 953.92000 1091.73100 1215.39400
+zoomBox 834.64300 1001.45100 1014.01800 1162.03000
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_1__2_ 881.16 1104.387 1047.48 1380.327
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_1__2_ 881.16 1106.445 1047.48 1382.385
+zoomBox 798.04600 939.48400 1090.12800 1200.96000
+zoomBox 738.45300 838.58100 1214.06000 1264.35100
+zoomBox 641.41800 674.27700 1415.86500 1367.57200
+zoomBox 544.83300 510.73600 1616.73200 1470.31400
+zoomBox 411.15200 284.38300 1894.74800 1612.51800
+setObjFPlanBoxList Module sb_1__1_ {{881.16000 1011.78000 1047.48000 1094.94000} {943.32000 1000.44000 1047.48000 1011.78000} {943.32000 868.14000 1272.90400 1000.44000} {943.32000 860.58000 1048.32000 868.14000} {881.16000 754.74000 1048.32000 860.58000}}
+setObjFPlanBoxList Module sb_1__1_ {{881.16000 1011.78000 1047.48000 1094.94000} {943.32000 1000.44000 1047.48000 1011.78000} {943.32000 868.14000 1286.33900 1000.44000} {943.32000 860.58000 1048.32000 868.14000} {881.16000 754.74000 1048.32000 860.58000}}
+setObjFPlanBoxList Module sb_1__1_ {{881.16000 1011.78000 1047.48000 1094.94000} {943.32000 1000.44000 1047.48000 1011.78000} {943.32000 868.14000 1301.69300 1000.44000} {943.32000 860.58000 1048.32000 868.14000} {881.16000 754.74000 1048.32000 860.58000}}
+setObjFPlanBoxList Module sb_1__1_ {{881.16000 1011.78000 1047.48000 1094.94000} {943.32000 1000.44000 1047.48000 1011.78000} {943.32000 868.14000 1313.20900 1000.44000} {943.32000 860.58000 1048.32000 868.14000} {881.16000 754.74000 1048.32000 860.58000}}
+zoomBox 276.35100 158.72700 2021.75800 1721.23900
+zoomBox 117.76200 10.89700 2171.18200 1849.14600
+zoomBox -68.81300 -163.02100 2346.97500 1999.62500
+deselectAll
+selectObject Module grid_memory_2__1_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__1_ 1099.98 1612.564 1475.88 1986.784
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__1_ 1468.754 1612.8 1844.654 1987.02
+zoomBox -278.38600 -412.30300 2563.71800 2131.98700
+zoomBox -524.94300 -705.57500 2818.70900 2287.70700
+zoomBox -343.27000 -338.33600 2498.83400 2205.95400
+zoomBox -188.84800 -26.18300 2226.94100 2136.46400
+zoomBox -57.58900 239.14700 1995.83200 2077.39700
+zoomBox 77.88900 420.44800 1823.29700 1982.96100
+deselectAll
+selectObject Module sb_1__2_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__2_ 882.571 1465.38 1287.871 1869.84
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__2_ 882.42 1370.546 1287.72 1775.006
+zoomBox 368.89900 785.51900 1440.79900 1745.09800
+zoomBox 598.23500 1071.19400 1157.77500 1572.10200
+zoomBox 717.95000 1220.31800 1010.03400 1481.79600
+zoomBox 780.44100 1298.16300 932.91100 1434.65600
+zoomBox 806.77400 1330.96500 900.41200 1414.79100
+zoomBox 822.94500 1351.11100 880.45200 1402.59200
+zoomBox 806.31500 1339.05300 885.90900 1410.30700
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__2_ 881.184 1370.88 1286.484 1775.34
+zoomBox 795.35800 1331.76700 888.99800 1415.59500
+zoomBox 767.30200 1313.11000 896.90800 1429.13500
+zoomBox 703.77600 1270.86400 914.81800 1459.79200
+zoomBox 600.33400 1202.07400 943.98100 1509.71100
+zoomBox 431.89400 1090.05900 991.46800 1590.99700
+zoomBox 264.23700 978.56600 1038.73400 1671.90600
+zoomBox 548.40400 1138.62600 1024.04300 1564.42400
+zoomBox 722.91800 1236.92200 1015.02100 1498.41700
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__2_ 881.16 1392.42 1286.46 1796.88
+zoomBox 658.62000 1188.00900 1062.91700 1549.94100
+zoomBox 513.03300 1077.25800 1171.36500 1666.60600
+zoomBox 368.12400 967.02200 1279.31100 1782.72900
+zoomBox 167.55800 814.44600 1428.71700 1943.45300
+zoomBox 40.01100 717.41800 1523.72900 2045.66200
+zoomBox 259.99100 1005.57600 1331.97800 1965.23300
+zoomBox 346.31900 1117.48900 1257.50800 1933.19800
+zoomBox 535.99400 1361.29200 1095.57900 1862.24000
+zoomBox 652.47900 1511.01800 996.13400 1818.66300
+zoomBox 680.28700 1546.76200 972.39400 1808.26000
+zoomBox 650.94500 1538.95900 994.60100 1846.60400
+zoomBox 575.47100 1523.42000 1051.12000 1949.22700
+zoomBox 527.47500 1513.53800 1087.06200 2014.48800
+zoomBox 648.98700 1536.44300 992.64500 1844.09000
+zoomBox 741.42700 1553.86800 920.81900 1714.46200
+zoomBox 769.44000 1559.14800 899.05200 1675.17800
+zoomBox 741.42500 1553.86700 920.81900 1714.46300
+zoomBox 723.61000 1550.50800 934.66200 1739.44500
+zoomBox 702.65000 1546.55700 950.94700 1768.83600
+zoomBox 742.58300 1556.27200 921.97800 1716.86900
+uiSetTool cut
+setObjFPlanBoxList Module sb_1__2_ {{881.16000 1714.54800 1286.46000 1798.02000} {855.37200 1586.44200 1286.46000 1714.54800} {881.16000 1393.56000 1286.46000 1586.44200}}
+zoomBox 683.37700 1510.62800 975.49500 1772.13600
+zoomBox 542.88300 1402.31500 1102.49200 1903.28500
+zoomBox 490.88600 1362.32800 1149.25000 1951.70400
+zoomBox 357.74600 1259.93800 1268.97700 2075.68400
+zoomBox 273.07900 1194.82500 1345.11500 2154.52600
+zoomBox 173.47000 1118.22200 1434.68900 2247.28200
+zoomBox 415.23200 1319.06100 1189.77900 2012.44600
+zoomBox 472.94700 1367.00700 1131.31200 1956.38400
+zoomBox 416.13400 1317.40800 1190.68100 2010.79300
+uiSetTool move
+uiSetTool ruler
+zoomBox 533.02100 1409.18800 1092.63300 1910.16000
+zoomBox 680.78100 1522.34200 972.90300 1783.85400
+zoomBox 743.04700 1570.02600 922.44800 1730.62800
+zoomBox 781.28700 1599.30900 891.46200 1697.93900
+zoomBox 798.17500 1611.68800 877.77700 1682.94900
+zoomBox 804.78600 1616.36800 872.44800 1676.94000
+zoomBox 810.40500 1620.34600 867.91900 1671.83300
+zoomBox 815.18200 1623.72800 864.06900 1667.49200
+uiSetTool move
+setObjFPlanBoxList Module sb_1__2_ {{881.16000 1714.86000 1286.46000 1798.02000} {850.09200 1586.34000 1286.46000 1714.86000} {881.16000 1393.56000 1286.46000 1586.34000}}
+zoomBox 804.15400 1619.25800 871.81800 1679.83200
+zoomBox 788.89000 1613.07200 882.54300 1696.91100
+zoomBox 754.32800 1599.06400 906.82700 1735.58300
+zoomBox 719.92700 1585.12200 930.99900 1774.07600
+zoomBox 672.31300 1565.82400 964.45400 1827.35300
+zoomBox 564.50200 1522.12800 1040.20600 1947.98500
+zoomBox 388.95100 1450.98000 1163.55500 2144.41600
+zoomBox 103.09400 1335.12600 1364.40900 2464.27200
+zoomBox -27.63500 1282.14300 1456.26500 2610.55000
+zoomBox 135.63200 1295.10100 1396.94700 2424.24700
+zoomBox -352.39200 1100.87800 1701.44900 2939.50400
+zoomBox -1147.05900 783.67900 2197.28000 3777.57600
+zoomBox -1510.48000 638.61600 2424.03600 4160.84800
+zoomBox -730.80500 649.91500 2111.88400 3194.72800
+deselectAll
+selectObject Module grid_clb_3__2_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__2_ 1546.44 1080.217 2110.08 1639.657
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__2_ 1105.143 1079.82 1668.783 1639.26
+zoomBox -482.57500 677.49600 1933.71000 2840.58700
+zoomBox -271.58000 700.94000 1782.26200 2539.56700
+zoomBox -92.23400 720.86700 1653.53200 2283.70000
+zoomBox -271.58000 700.93900 1782.26300 2539.56700
+zoomBox -482.57500 677.49500 1933.71100 2840.58700
+zoomBox -730.80500 649.91400 2111.88500 3194.72800
+zoomBox -1022.84000 617.46500 2321.50100 3611.36400
+zoomBox -474.17100 625.86800 1942.11600 2788.96100
+zoomBox -259.89300 629.15000 1793.95100 2467.77900
+zoomBox -77.75800 631.94000 1668.01000 2194.77500
+create_relative_floorplan -place grid_clb_3__2_ -ref_type object -ref sb_1__1_ -horizontal_edge_separate {7 10 3} -vertical_edge_separate {6 10 0}
+delete_relative_floorplan -all
+uiSetTool cut
+zoomBox -277.43000 514.76700 1776.41500 2353.39700
+zoomBox -512.33900 376.91700 1903.95000 2540.01100
+zoomBox -804.14700 244.52700 2038.54600 2789.34400
+zoomBox -1147.45100 88.77400 2196.89400 3082.67700
+zoomBox -846.98000 323.70000 1995.71400 2868.51800
+uiSetTool move
+zoomBox -227.53500 608.42000 1826.31100 2447.05100
+zoomBox 220.01300 814.13000 1703.91700 2142.54100
+setObjFPlanBox Module grid_clb_3__2_ 1057.56000 1011.78000 1621.20000 1539.76500
+setObjFPlanBox Module grid_clb_3__2_ 1057.56000 1011.78000 1621.20000 1486.01400
+setObjFPlanBox Module grid_clb_3__2_ 1057.56000 1011.78000 1621.20000 1449.54000
+setObjFPlanBox Module grid_clb_3__2_ 1057.56000 1011.78000 1621.20000 1426.50400
+setObjFPlanBox Module grid_clb_3__2_ 1057.56000 1011.78000 1621.20000 1384.27200
+zoomBox 387.02400 879.78200 1648.34300 2008.93200
+setObjFPlanBox Module grid_clb_3__2_ 1057.56000 1011.78000 1621.20000 1400.30100
+setObjFPlanBox Module grid_clb_3__2_ 1057.56000 1011.78000 1621.20000 1419.88100
+zoomBox 90.58700 663.56500 1836.35800 2226.40300
+zoomBox -97.92700 526.06600 1955.92200 2364.69900
+zoomBox -1380.10000 -398.46100 2554.43000 3123.78300
+zoomBox -3836.33900 -2169.56300 3700.98500 4577.95100
+deselectAll
+selectObject Module grid_memory_2__1_
+zoomBox -6679.13500 -4528.34800 5594.13900 6458.85200
+zoomBox -13425.12300 -10125.77200 10086.61600 10922.25300
+zoomBox -22292.86800 -17483.70700 15992.07500 16789.48900
+zoomBox -31119.43200 -24807.47300 21870.11000 22629.47800
+zoomBox -19915.02400 -18073.41500 18369.92100 16199.78300
+zoomBox -15531.81900 -15413.77500 17010.38400 13718.44300
+zoomBox -8189.93200 -11208.12700 15321.81000 9839.90100
+zoomBox -748.76300 -6924.17300 13690.38700 6001.94800
+zoomBox 5054.84000 -3513.44100 12592.16800 3234.07600
+zoomBox 8084.35700 -1733.01800 12018.89000 1789.22900
+zoomBox 8580.62700 -1441.36400 11924.98000 1552.54600
+zoomBox 9361.01100 -982.73800 11777.30700 1180.36300
+zoomBox 9924.83900 -651.38100 11670.61400 911.46000
+zoomBox 10145.03700 -521.97300 11628.94600 806.44200
+zoomBox 10332.20500 -411.97600 11593.52800 717.17700
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__1_ 10958.702 1612.8 11334.602 1987.02
+deselectAll
+selectInst grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a
+deselectAll
+selectInst grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b
+zoomBox 9525.36400 -870.68200 11941.66500 1292.42300
+zoomBox 7959.67300 -1752.27800 12588.54900 2391.55400
+zoomBox 5901.54000 -2911.15400 13438.89200 3836.38500
+zoomBox 1017.56700 -5661.18000 15456.76800 7264.98700
+zoomBox -785.54800 -6676.46300 16201.74800 8530.79300
+deselectAll
+selectObject Module sb_1__2_
+zoomBox -1511.43400 -9866.98500 22000.39500 11181.12100
+zoomBox -1973.04700 -11895.93400 25687.92900 12866.54400
+zoomBox -854.58900 -6773.12100 16132.70800 8434.13600
+zoomBox -587.58300 -5550.16700 13851.61900 7376.00100
+zoomBox -3.74200 -2876.02800 8863.73400 5062.25600
+zoomBox 440.40400 -841.72100 5069.28300 3302.11400
+zoomBox 672.25200 220.20000 3088.55600 2383.30800
+zoomBox 769.95400 667.70000 2253.86700 1996.11900
+zoomBox 602.58300 392.68100 2656.44200 2231.32300
+zoomBox 223.61100 -230.03500 3567.97800 2763.88700
+zoomBox 50.29700 -514.82000 3984.84700 3007.44200
+undo
+deselectAll
+selectObject Module grid_memory_2__1_
+zoomBox -177.85400 -870.52000 4451.02900 3273.31800
+zoomBox -1310.39400 -2345.45500 6226.97000 4402.09500
+zoomBox -3154.54500 -4747.14000 9118.79400 6240.11800
+zoomBox -6157.43800 -8657.88300 13827.64700 9233.03400
+zoomBox -7530.73800 -10446.36700 15981.12700 10601.77100
+zoomBox -500.32200 -6197.60100 13938.90300 6728.58700
+zoomBox 4008.07100 -3683.86000 12875.56100 4254.43600
+zoomBox 6096.34800 -2655.64000 12503.11000 3079.78000
+zoomBox 7602.82700 -1912.75000 12231.71300 2231.09100
+zoomBox 8689.59600 -1376.01200 12033.96700 1617.91400
+deselectAll
+selectInst grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b
+zoomBox 6332.38400 -2520.94400 12739.14800 3214.47700
+zoomBox 149.56500 -5524.02900 14588.79800 7402.16700
+zoomBox -10027.63100 -10467.23800 17633.40400 14295.29300
+zoomBox -5346.66800 -5413.45400 11640.66500 9793.83500
+zoomBox -1785.70500 -1568.87300 7081.79000 6369.42800
+zoomBox -285.09600 51.25400 5160.65500 4926.36400
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1848.997 0.0 1995.877 336.46
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1848.995 1634.43 1995.875 1970.89
+zoomBox -1967.19800 -918.16800 6900.30000 7020.13600
+zoomBox -5958.84500 -3218.61700 11028.50000 11988.68300
+zoomBox -9166.25900 -5067.10000 14345.63900 15981.06700
+deselectAll
+selectObject Module grid_memory_2__1_
+deselectAll
+selectInst grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a
+zoomBox -3888.65400 -1926.70800 8384.70500 9060.56800
+zoomBox -1664.64200 -603.32900 5872.73500 6144.23200
+zoomBox -298.82100 209.39100 4330.07100 4353.23700
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 2046.989 0.0 2193.869 336.46
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 2046.99 1616.818 2193.87 1953.278
+zoomBox -1384.40800 -202.30500 5022.36300 5533.12300
+zoomBox -696.71700 303.68900 3932.17600 4447.53600
+zoomBox -428.14500 501.30000 3506.41400 4023.57000
+zoomBox 159.12100 933.40200 2575.43200 3096.51600
+zoomBox 300.72400 1036.55600 2354.58800 2875.20300
+deselectAll
+selectInst grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1631.12 1634.43 1778.0 1970.89
+deselectAll
+selectInst grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1797.232 1616.82 1944.112 1953.28
+deselectAll
+selectInst grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1567.352 1634.43 1714.232 1970.89
+deselectAll
+selectInst grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1672.35 1616.82 1819.23 1953.28
+zoomBox 704.03700 1218.67400 2187.95400 2547.09600
+zoomBox 861.54700 1289.79700 2122.87700 2418.95700
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1691.931 1616.82 1838.811 1953.28
+deselectAll
+selectInst grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1515.135 1634.43 1662.015 1970.89
+deselectAll
+selectInst grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1691.93 1634.769 1838.81 1971.229
+zoomBox 973.40200 1360.53300 2045.53300 2320.31900
+zoomBox 1068.47900 1420.65800 1979.79000 2236.47600
+zoomBox 1149.29400 1471.76400 1923.90900 2165.21000
+deselectAll
+selectInst grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1533.173 1634.43 1680.053 1970.89
+zoomBox 970.70600 1350.90900 2042.83800 2310.69600
+zoomBox 857.13700 1274.05400 2118.46900 2403.21500
+zoomBox 566.33800 1077.26200 2312.12700 2640.11600
+zoomBox 313.04500 856.93300 2729.36300 3020.05300
+zoomBox 151.96900 716.81900 2994.69600 3261.66600
+zoomBox -37.53200 551.97900 3306.85300 3545.91700
+zoomBox -260.47400 358.04900 3674.09700 3880.33000
+zoomBox -107.01100 445.85100 3237.37500 3439.79000
+zoomBox 23.43300 520.48300 2866.16100 3065.33100
+zoomBox 134.31000 583.92000 2550.62900 2747.04100
+zoomBox 228.55600 637.84200 2282.42700 2476.49500
+zoomBox 23.43100 520.48200 2866.16100 3065.33200
+zoomBox 122.72400 566.81800 2539.04500 2729.94100
+zoomBox 207.12300 606.20400 2260.99600 2444.85900
+zoomBox 292.01500 652.83500 2037.80700 2215.69100
+uiSetTool select
+deselectAll
+selectInst grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b
+dbSet [dbGet top.insts.name -p grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b].orient R90
+dbSet [dbGet top.insts.name -p grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b].orient R0
+dbSet [dbGet top.insts.name -p grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b].orient MX90
+deselectAll
+selectInst grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a
+dbSet [dbGet top.insts.name -p grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a].orient MX90
+deselectAll
+selectInst grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a
+uiSetTool move
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1691.93 1799.638 2028.39 1946.518
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1488.668 1799.64 1825.128 1946.52
+deselectAll
+selectInst grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1485.747 1634.43 1822.207 1781.31
+zoomBox 688.10300 952.40800 1949.43900 2081.57300
+zoomBox 842.79200 1069.40300 1914.92800 2029.19400
+zoomBox 1121.06500 1271.46900 1895.68400 1964.91800
+zoomBox 1316.83400 1413.84600 1876.49600 1914.86300
+zoomBox 1457.87500 1525.55400 1862.23100 1887.53900
+zoomBox 1599.57300 1637.78200 1847.90000 1860.08800
+zoomBox 1662.15400 1687.34700 1841.57100 1847.96400
+zoomBox 1707.11000 1722.38400 1836.74000 1838.43100
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1485.745 1664.448 1822.205 1811.328
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1488.596 1664.45 1825.056 1811.33
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1488.595 1644.326 1825.055 1791.206
+zoomBox 1688.79000 1711.84800 1841.29800 1848.37500
+zoomBox 1667.23900 1699.45300 1846.66000 1860.07300
+zoomBox 1576.96200 1647.53300 1869.12000 1909.07700
+zoomBox 1429.96100 1562.99000 1905.69100 1988.87000
+zoomBox 1190.59400 1425.32500 1965.24200 2118.80000
+zoomBox 952.33900 1288.29900 2024.51700 2248.12700
+zoomBox 800.82600 1201.16000 2062.21200 2330.37000
+zoomBox 412.86700 978.03600 2158.73200 2540.95800
+zoomBox 548.87200 1057.63300 1810.25900 2186.84400
+zoomBox 648.94400 1116.04700 1560.29800 1931.90300
+uiSetTool cut
+zoomBox 707.83400 1152.12300 1482.48500 1845.60100
+zoomBox 800.43800 1208.85400 1360.12400 1709.89200
+zoomBox 893.47400 1265.84800 1237.19200 1573.54900
+zoomBox 950.61000 1300.84900 1161.69700 1489.81700
+zoomBox 911.38300 1268.22900 1203.54600 1529.77700
+zoomBox 886.43800 1247.48500 1230.15900 1555.18900
+zoomBox 781.94400 1160.59300 1341.63800 1661.63900
+zoomBox 609.51900 1026.83800 1520.88700 1842.70700
+uiSetTool move
+deselectAll
+selectObject Module cby_1__2_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_1__2_ 881.16 1128.681 1047.48 1404.621
+zoomBox 674.77700 1082.19200 1449.44000 1775.68100
+zoomBox 730.24600 1129.24300 1388.71000 1718.70900
+zoomBox 777.39400 1169.23600 1337.09000 1670.28300
+zoomBox 851.53500 1232.12500 1255.91600 1594.13200
+uiSetTool cut
+zoomBox 881.58900 1254.09700 1225.31300 1561.80300
+zoomBox 907.13500 1273.37300 1199.30000 1534.92300
+zoomBox 928.84900 1289.75800 1177.18900 1512.07500
+zoomBox 974.34600 1330.41900 1126.85800 1466.95000
+zoomBox 1002.28600 1355.38900 1095.94900 1439.23700
+zoomBox 1023.53900 1374.38400 1072.43400 1418.15500
+zoomBox 1032.59400 1382.34000 1062.62200 1409.22100
+zoomBox 1039.50000 1388.37300 1055.17600 1402.40600
+zoomBox 1029.37800 1381.83600 1064.71100 1413.46700
+zoomBox 1017.94600 1374.45400 1075.48200 1425.96100
+zoomBox 999.33200 1362.43400 1093.02100 1446.30600
+zoomBox 980.80400 1350.47000 1110.47800 1466.55600
+zoomBox 955.15900 1333.91100 1134.63900 1494.58400
+zoomBox 919.66500 1310.99200 1168.08100 1533.37700
+zoomBox 897.09400 1296.41700 1189.34800 1558.04700
+zoomBox 802.54400 1235.36300 1278.43300 1661.38500
+zoomBox 708.43400 1174.59300 1367.10400 1764.24300
+zoomBox 578.17900 1090.48300 1489.83300 1906.60800
+zoomBox 686.26800 1140.01700 1461.17400 1833.72300
+zoomBox 778.14300 1182.12000 1436.81400 1771.77100
+zoomBox 978.71200 1274.51300 1383.21900 1636.63300
+zoomBox 1025.49500 1297.59000 1369.32600 1605.39200
+zoomBox 1065.26000 1317.20500 1357.51700 1578.83700
+zoomBox 1151.62800 1359.36600 1331.11100 1520.04200
+zoomBox 1217.33000 1391.43900 1311.02300 1475.31400
+zoomBox 1228.09300 1396.69300 1307.73200 1467.98700
+zoomBox 1237.24200 1401.15900 1304.93500 1461.75900
+setObjFPlanBoxList Module sb_1__2_ {{881.16000 1714.86000 1286.46000 1798.02000} {850.08000 1586.34000 1286.46000 1714.86000} {881.16000 1431.19600 1286.46000 1586.34000} {881.16000 1393.56000 1047.55100 1431.19600}}
+zoomBox 1204.44700 1385.58700 1314.67400 1484.26400
+zoomBox 1151.04700 1360.23100 1330.53300 1520.90900
+zoomBox 1064.09300 1318.94200 1356.35700 1580.58100
+zoomBox 977.54300 1277.84500 1382.06100 1639.97500
+zoomBox 781.56900 1184.79000 1440.26100 1774.46000
+zoomBox 691.94600 1142.23400 1466.87700 1835.96300
+zoomBox 586.50600 1092.16800 1498.19000 1908.32000
+zoomBox 462.45900 1033.26700 1535.02900 1993.44600
+uiSetTool move
+zoomBox 650.92500 1037.01300 1309.61800 1626.68400
+zoomBox 817.78200 1040.33000 1110.05000 1301.97200
+zoomBox 881.39800 1041.77500 1033.96400 1178.35400
+zoomBox 861.30900 1022.59600 1072.47300 1211.63300
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_1__2_ 881.16 1107.106 1047.48 1383.046
+zoomBox 815.99400 965.09400 1159.84100 1272.91000
+zoomBox 770.89000 907.86000 1246.80200 1333.90300
+zoomBox 708.46100 828.64200 1367.16400 1418.32200
+zoomBox 622.05600 718.99900 1533.75600 1535.16500
+zoomBox 502.46300 567.24300 1764.33300 1696.88600
+zoomBox 336.93800 357.20100 2083.47100 1920.72100
+zoomBox -37.85500 -118.38900 2806.08400 2427.54300
+zoomBox 304.28500 558.79300 2050.81900 2122.31400
+zoomBox 385.96300 720.45500 1870.51700 2049.44800
+zoomBox 455.38800 857.86700 1717.26000 1987.51200
+zoomBox 293.20100 741.48400 1777.75600 2070.47800
+zoomBox 102.39300 604.56300 1848.92800 2168.08500
+zoomBox -122.08800 443.47900 1932.66000 2282.91700
+zoomBox 172.16900 674.33800 1918.70500 2237.86100
+zoomBox -186.23600 411.39200 2231.11600 2575.43800
+zoomBox -414.15600 244.17700 2429.78700 2790.11300
+zoomBox -682.29700 47.45300 2663.51800 3042.67200
+zoomBox -997.75700 -183.98600 2938.49600 3339.80100
+zoomBox -727.36200 71.13200 2618.45300 3066.35100
+zoomBox -497.52800 287.98200 2346.41600 2833.91900
+zoomBox -302.16800 472.30400 2115.18500 2636.35100
+zoomBox -136.11200 628.97900 1918.63800 2468.41900
+zoomBox 5.03500 762.15200 1751.57300 2325.67600
+zoomBox 125.01000 875.34900 1609.56800 2204.34500
+zoomBox 226.98900 971.56600 1488.86400 2101.21300
+zoomBox 69.98700 866.70500 1554.54600 2195.70200
+zoomBox -114.72100 743.34000 1631.81900 2306.86600
+zoomBox -330.03200 598.60300 1724.72100 2438.04600
+zoomBox -881.34700 227.99700 1962.60300 2773.93900
+zoomBox -480.14100 463.64400 1937.21700 2627.69500
+zoomBox -139.11500 663.94400 1915.63900 2503.38700
+zoomBox 150.75700 834.19800 1897.29800 2397.72500
+zoomBox 391.38600 969.76400 1875.94600 2298.76200
+zoomBox 585.55000 1066.84600 1847.42600 2196.49400
+zoomBox 750.59000 1149.36600 1823.18400 2109.56700
+zoomBox 890.87400 1219.50800 1802.57900 2035.67900
+zoomBox 760.78900 1151.03100 1833.38300 2111.23200
+zoomBox 909.39800 1221.17300 1821.10300 2037.34400
+zoomBox 1035.00800 1279.73200 1809.95700 1973.47700
+setObjFPlanBox Module grid_memory_2__1_ 1468.74000 1635.62700 1844.64000 1987.02000
+zoomBox 848.25800 1154.59000 1920.85200 2114.79100
+zoomBox 729.49700 1075.00900 1991.37300 2204.65700
+zoomBox 1040.71000 1272.97000 1952.41500 2089.14100
+zoomBox 1162.25100 1350.28200 1937.20000 2044.02700
+zoomBox 1265.56000 1415.99700 1924.26800 2005.68100
+setObjFPlanBox Module grid_memory_2__1_ 1468.74000 1635.48000 1832.23600 1987.02000
+zoomBox 1299.43300 1474.92200 1859.33500 1976.15400
+zoomBox 1328.22500 1525.00900 1804.14200 1951.05600
+setObjFPlanBox Module grid_memory_2__1_ 1485.83800 1635.48000 1832.04000 1987.02000
+setObjFPlanBox Module grid_memory_2__1_ 1475.37100 1635.48000 1832.04000 1987.02000
+setObjFPlanBox Module grid_memory_2__1_ 1480.29700 1635.48000 1832.04000 1987.02000
+zoomBox 1272.89000 1429.23700 1931.60000 2018.92300
+setObjFPlanBox Module grid_memory_2__1_ 1480.50000 1635.48000 1832.04000 1954.16000
+zoomBox 1066.03900 1314.35600 1977.74800 2130.53000
+zoomBox 934.49600 1241.30000 2007.09500 2201.50500
+zoomBox 597.67300 1054.23600 2082.24000 2383.24000
+zoomBox 383.47700 935.27600 2130.02700 2498.81100
+zoomBox 509.89200 1004.07600 1994.46000 2333.08100
+zoomBox 617.34600 1062.55600 1879.22800 2192.21000
+zoomBox 708.68100 1112.26400 1781.28100 2072.47000
+zoomBox 509.89100 1004.07500 1994.46000 2333.08100
+zoomBox 434.65200 935.61400 2181.20300 2499.15000
+zoomBox 346.13400 855.07100 2400.90100 2694.52600
+zoomBox 551.27700 1048.93200 1813.16200 2178.58800
+zoomBox 600.25000 1095.21100 1672.85300 2055.42000
+zoomBox 493.65900 994.48300 1978.23200 2323.49300
+zoomBox 425.87500 930.42800 2172.43200 2493.96900
+zoomBox 252.31100 766.41000 2669.69100 2930.48100
+zoomBox 141.93700 662.10600 2985.91300 3208.07200
+zoomBox 263.43100 849.96300 2318.20400 2689.42300
+zoomBox 617.50100 1062.40400 2102.07400 2391.41400
+zoomBox 755.77900 1145.37100 2017.66700 2275.03000
+zoomBox 875.03000 1230.34000 1947.63500 2190.55000
+deselectAll
+selectObject Module grid_memory_2__1_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__1_ 1315.377 1635.48 1666.917 1953.0
+zoomBox 513.20500 993.19200 2259.76400 2556.73500
+zoomBox 347.73300 884.73800 2402.50800 2724.20000
+zoomBox 444.22500 953.31900 2190.78400 2516.86200
+zoomBox 526.24300 1011.61200 2010.81800 2340.62400
+zoomBox 595.95700 1061.16100 1857.84700 2190.82200
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__1_ 1093.426 1635.48 1444.966 1953.0
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__1_ 1093.26 1457.542 1444.8 1775.062
+zoomBox 862.82100 1214.10100 1521.53500 1803.79100
+zoomBox 975.27700 1278.55000 1379.81100 1640.69400
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__1_ 1093.26 1432.177 1444.8 1749.697
+zoomBox 762.19700 1172.33900 1420.91400 1762.03100
+zoomBox 664.75000 1123.76500 1439.71200 1817.52100
+zoomBox 550.10700 1066.62000 1461.82700 1882.80400
+zoomBox 256.55600 920.29800 1518.45300 2049.96500
+zoomBox 69.87900 827.24700 1554.46300 2156.26700
+zoomBox -149.74200 717.77600 1596.82800 2281.32900
+zoomBox -408.11900 588.98600 1646.66900 2428.46000
+zoomBox -712.09200 437.46900 1705.30600 2601.55600
+zoomBox -1069.70800 259.21300 1774.29000 2805.19800
+zoomBox -1879.41900 -277.76800 2056.91100 3246.08800
+zoomBox -1090.90600 238.01600 1753.09300 2784.00200
+zoomBox -782.95900 439.45100 1634.44000 2603.53900
+zoomBox -521.20400 610.67000 1533.58500 2450.14500
+zoomBox -109.59600 879.91200 1374.99000 2208.93300
+zoomBox -303.12000 759.59400 1443.45200 2323.14900
+zoomBox -530.79500 618.04500 1523.99500 2457.52100
+zoomBox -256.07000 760.39100 1490.50200 2323.94600
+zoomBox -22.55400 881.38600 1462.03300 2210.40800
+setObjFPlanBoxList Module sb_1__2_ {{881.16000 1714.86000 1076.00200 1798.02000} {850.08000 1586.34000 1076.00200 1714.86000} {881.16000 1431.36000 1076.00200 1586.34000} {881.16000 1393.56000 1047.48000 1431.36000}}
+zoomBox 282.29400 1033.27700 1354.90900 1993.49600
+zoomBox 401.35000 1092.59600 1313.07300 1908.78300
+zoomBox 588.56500 1185.87700 1247.28500 1775.57200
+zoomBox 661.68000 1222.30700 1221.59200 1723.54800
+zoomBox 725.13100 1253.92400 1201.05700 1679.97900
+zoomBox 824.90900 1303.64200 1168.76600 1611.46700
+zoomBox 863.87600 1323.05800 1156.15500 1584.71000
+zoomBox 725.12900 1253.92200 1201.05800 1679.98000
+zoomBox 499.20300 1141.34600 1274.17400 1835.11000
+zoomBox 274.32600 1029.29200 1346.95100 1989.52000
+setObjFPlanBoxList Module sb_1__2_ {{881.16000 1714.86000 1081.91700 1798.02000} {850.08000 1586.34000 1081.91700 1714.86000} {881.16000 1431.36000 1081.91700 1586.34000} {881.16000 1393.56000 1047.48000 1431.36000}}
+zoomBox 131.81000 936.23900 1393.72200 2065.92000
+zoomBox -35.85700 826.76600 1448.74600 2155.80300
+zoomBox -504.27200 440.23200 1550.54300 2279.73000
+zoomBox -802.15100 194.42300 1615.27900 2358.53900
+zoomBox -1152.59700 -94.76400 1691.43900 2451.25500
+zoomBox -818.15600 184.48800 1599.27500 2348.60500
+zoomBox -533.88100 421.85300 1520.93500 2261.35200
+zoomBox -292.24800 623.61300 1454.34600 2187.18700
+zoomBox 84.58600 896.99000 1346.50000 2026.67200
+zoomBox 233.46900 1012.32500 1306.09600 1972.55500
+zoomBox 360.01900 1110.36000 1271.75200 1926.55600
+zoomBox 468.11800 1207.13600 1243.09100 1900.90200
+zoomBox 560.00100 1289.39500 1218.72900 1879.09700
+zoomBox 638.10200 1359.31500 1198.02100 1860.56200
+zoomBox 807.48300 1373.84900 1151.34300 1681.67700
+zoomBox 847.91900 1377.31800 1140.20000 1638.97200
+zoomBox 762.96000 1366.86200 1167.50200 1729.01300
+zoomBox 708.93300 1360.21200 1184.86500 1786.27300
+zoomBox 645.37100 1352.38900 1205.29100 1853.63700
+zoomBox 570.59300 1343.18600 1229.32200 1932.88900
+zoomBox 482.61800 1332.35800 1257.59400 2026.12700
+zoomBox 572.54700 1410.25600 1231.27700 1999.96000
+zoomBox 648.98700 1476.46900 1208.90800 1977.71800
+zoomBox 333.26700 1215.80200 1405.90100 2176.03800
+zoomBox 216.70600 1119.56600 1478.62900 2249.25600
+zoomBox 453.63400 1183.89400 1365.37400 2000.09600
+zoomBox 546.16400 1209.01700 1321.14300 1902.78900
+uiSetTool ruler
+zoomBox 739.98100 1280.97300 1215.91700 1707.03700
+zoomBox 858.77200 1323.50000 1151.05700 1585.15700
+zoomBox 887.13100 1333.65200 1135.57300 1556.06100
+zoomBox 911.23600 1342.28100 1122.41200 1531.32900
+zoomBox 931.72500 1349.61600 1111.22500 1510.30700
+zoomBox 949.14100 1355.85100 1101.71600 1492.43800
+zoomBox 976.52700 1365.65500 1086.76300 1464.34000
+zoomBox 1004.04100 1375.50400 1071.74000 1436.10900
+zoomBox 1020.93800 1381.55300 1062.51500 1418.77300
+zoomBox 1033.74100 1386.12900 1055.44400 1405.55800
+zoomBox 1041.40800 1390.22000 1051.04000 1398.84300
+zoomBox 1044.33200 1391.78100 1049.36000 1396.28200
+zoomBox 1045.56400 1392.43800 1048.65200 1395.20200
+zoomBox 1043.77800 1391.76100 1049.69400 1397.05700
+zoomBox 1039.09400 1389.98500 1052.42900 1401.92300
+zoomBox 1025.19000 1384.71300 1060.54900 1416.36700
+zoomBox 1004.74900 1376.96400 1072.48700 1437.60400
+zoomBox 934.12500 1350.19000 1113.73200 1510.97700
+zoomBox 791.96400 1296.29600 1196.75700 1658.67200
+zoomBox 557.96100 1207.58600 1333.41800 1901.78600
+zoomBox 109.68500 1037.64400 1595.21900 2367.51400
+zoomBox 357.13300 1274.42500 1430.43200 2235.25700
+zoomBox 453.77200 1366.89800 1366.07600 2183.60500
+zoomBox 605.73500 1512.31100 1264.87600 2102.38300
+zoomBox 665.08300 1569.10100 1225.35300 2070.66200
+zoomBox 453.31500 1367.52900 1365.62100 2184.23800
+zoomBox -236.22400 714.98200 1819.88900 2555.64200
+zoomBox 130.34500 860.33200 1615.88700 2190.20900
+zoomBox 261.79500 955.17200 1524.50600 2085.56800
+zoomBox 376.71300 1089.93700 1450.01800 2050.77400
+zoomBox 474.18500 1198.03100 1386.49500 2014.74300
+zoomBox 557.21300 1287.78600 1332.67700 1981.99200
+zoomBox 627.93800 1363.17600 1287.08200 1953.25100
+zoomBox 691.76300 1364.96600 1252.03600 1866.53000
+zoomBox 831.32500 1368.88100 1175.40300 1676.90400
+zoomBox 954.39100 1372.09900 1107.06100 1508.77100
+zoomBox 969.11500 1372.48400 1098.88400 1488.65500
+zoomBox 1001.30900 1373.32500 1081.00400 1444.66900
+zoomBox 1008.99500 1373.52500 1076.73600 1434.16800
+zoomBox 1014.59400 1377.52100 1072.17500 1429.06800
+zoomBox 1026.83800 1386.25900 1062.20100 1417.91600
+zoomBox 1036.15300 1392.90500 1054.61400 1409.43200
+zoomBox 1023.39600 1383.80100 1065.00500 1421.05000
+zoomBox 1002.39600 1368.81600 1082.10800 1440.17500
+zoomBox 947.32000 1329.51300 1126.97100 1490.33900
+zoomBox 885.11100 1285.11900 1177.64300 1546.99800
+zoomBox 783.81300 1212.83200 1260.15400 1639.25900
+zoomBox 543.43300 1041.29200 1455.95600 1858.19500
+zoomBox 227.45100 815.80200 1713.34100 2145.99100
+zoomBox 546.40000 1199.28300 1458.92300 2016.18600
+zoomBox 622.54200 1290.83000 1398.18700 1985.19800
+zoomBox 687.26200 1368.64500 1346.56100 1958.85800
+zoomBox 742.27500 1434.78800 1302.67900 1936.46900
+zoomBox 808.46200 1569.24200 1100.99700 1831.12300
+zoomBox 828.20500 1608.62200 1039.56200 1797.83200
+zoomBox 807.20100 1568.61000 1099.73700 1830.49200
+uiSetTool cut
+setObjFPlanBoxList Module sb_1__2_ {{881.16000 1714.86000 1047.89000 1798.02000} {850.08000 1713.55300 1047.89000 1714.86000} {850.08000 1586.34000 1081.92000 1713.55300} {881.16000 1431.36000 1081.92000 1586.34000} {881.16000 1393.56000 1047.48000 1431.36000}}
+zoomBox 902.26800 1652.87000 1081.92100 1813.69800
+zoomBox 959.66400 1697.80000 1069.99400 1796.56900
+zoomBox 994.03000 1724.51100 1061.78700 1785.16800
+uiSetTool move
+zoomBox 1019.75600 1736.36800 1055.12500 1768.03100
+zoomBox 1023.97000 1738.31000 1054.03400 1765.22400
+zoomBox 1033.18300 1742.55700 1051.64700 1759.08600
+setObjFPlanBoxList Module sb_1__2_ {{881.16000 1714.86000 1047.49100 1798.02000} {850.08000 1586.34000 1081.92000 1714.86000} {881.16000 1431.36000 1081.92000 1586.34000} {881.16000 1393.56000 1047.48000 1431.36000}}
+zoomBox 1024.19200 1738.29400 1054.25800 1765.20900
+zoomBox 1009.55300 1731.35300 1058.51000 1775.18000
+zoomBox 985.71600 1720.05000 1065.43500 1791.41600
+zoomBox 961.98800 1708.80000 1072.32700 1807.57700
+zoomBox 908.26300 1683.32700 1087.93300 1844.17000
+zoomBox 820.78100 1641.85000 1113.34400 1903.75600
+zoomBox 780.77400 1622.88200 1124.96500 1931.00600
+zoomBox 796.46900 1635.17100 1089.03200 1897.07700
+zoomBox 809.81000 1645.61600 1058.48900 1868.23700
+zoomBox 659.57300 1585.22600 1135.96500 2011.69900
+zoomBox 538.85200 1536.70100 1198.21900 2126.97500
+uiSetTool select
+deselectAll
+zoomBox 458.16800 1483.71500 1233.89400 2178.15500
+uiSetTool move
+setObjFPlanBoxList Module sb_1__2_ {{881.16000 1714.86000 1047.48000 2010.56600} {850.08000 1586.34000 1081.92000 1714.86000} {881.16000 1431.36000 1081.92000 1586.34000} {881.16000 1393.56000 1047.48000 1431.36000}}
+zoomBox 254.65600 1359.98800 1328.32600 2321.15200
+zoomBox 125.23700 1281.30700 1388.37800 2412.08800
+zoomBox -27.02100 1188.74100 1459.02800 2519.07200
+zoomBox -206.14800 1079.84000 1542.14600 2644.93600
+zoomBox -16.16500 1173.13500 1469.88500 2503.46700
+zoomBox 145.60900 1252.43600 1408.75100 2383.21800
+zoomBox 400.45200 1377.13600 1313.07200 2194.12600
+zoomBox 584.57500 1467.23200 1243.94300 2057.50700
+zoomBox 656.48300 1502.41800 1216.94600 2004.15200
+zoomBox 717.60400 1532.32600 1193.99800 1958.80000
+setObjFPlanBoxList Module sb_1__2_ {{881.16000 1747.41200 1047.48000 2009.70000} {881.16000 1714.86000 1081.92000 1747.41200} {850.08000 1586.34000 1081.92000 1714.86000} {881.16000 1431.36000 1081.92000 1586.34000} {881.16000 1393.56000 1047.48000 1431.36000}}
+zoomBox 585.75800 1481.67000 1245.12700 2071.94600
+setObjFPlanBoxList Module sb_1__2_ {{881.16000 1748.88000 1047.48000 2002.00000} {881.16000 1714.86000 1081.92000 1748.88000} {850.08000 1586.34000 1081.92000 1714.86000} {881.16000 1431.36000 1081.92000 1586.34000} {881.16000 1393.56000 1047.48000 1431.36000}}
+zoomBox 451.43300 1387.31500 1364.05400 2204.30600
+zoomBox 8.18900 1075.96300 1756.48600 2641.06200
+zoomBox -194.56600 931.87900 1862.25400 2773.17200
+zoomBox -433.57100 761.89900 1986.21700 2928.12600
+uiSetTool select
+selectInst grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b
+selectInst grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a
+uiSetTool move
+zoomBox -204.42700 841.72400 1852.39300 2683.01700
+zoomBox -9.65400 909.57500 1738.64300 2474.67400
+zoomBox 155.90200 967.24800 1641.95500 2297.58300
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1100.335 1799.64 1436.795 1946.52
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1100.26 1644.325 1436.72 1791.205
+zoomBox 450.91600 1115.02100 1524.58900 2076.18800
+zoomBox 566.13000 1172.73300 1478.75300 1989.72500
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1100.335 1593.03 1436.795 1739.91
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__1_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1100.26 1437.715 1436.72 1584.595
+zoomBox 467.16600 1089.81200 1540.84000 2050.97900
+zoomBox 350.73700 992.25700 1613.88300 2123.04200
+zoomBox -136.97000 583.60900 1919.85500 2424.90600
+zoomBox -360.01000 396.72400 2059.78400 2562.95600
+zoomBox -622.41100 176.85900 2224.40600 2725.36800
+uiSetTool select
+deselectAll
+zoomBox -349.51500 381.25500 2070.28000 2547.48800
+zoomBox -117.55300 554.99200 1939.27300 2396.29000
+zoomBox 79.61400 702.66800 1827.91700 2267.77200
+zoomBox 247.20700 828.19300 1733.26400 2158.53100
+zoomBox 389.66000 934.88900 1652.80900 2065.67700
+zoomBox 701.15300 1168.19400 1476.88500 1862.64000
+zoomBox 761.96700 1252.79200 1421.33900 1843.07100
+zoomBox 857.59700 1388.90000 1333.99300 1815.37600
+zoomBox 976.60800 1558.28500 1225.29100 1780.90900
+zoomBox 865.84300 1433.08400 1342.24300 1859.56400
+zoomBox 776.83900 1332.48100 1436.21800 1922.76600
+zoomBox 720.23900 1268.50500 1495.97900 1962.95800
+zoomBox 483.14700 1000.51700 1746.31100 2131.31800
+zoomBox 97.08400 564.14200 2153.93700 2405.46400
+zoomBox -287.18700 129.79300 2559.67000 2678.33800
+zoomBox -531.55700 -146.42200 2817.68700 2851.86600
+zoomBox -819.05000 -471.38100 3121.23700 3056.01700
+zoomBox -1157.27700 -853.68600 3478.35500 3296.19400
+zoomBox -1555.19200 -1303.45600 3898.49300 3578.75600
+zoomBox -960.01400 -238.40100 2980.27400 3288.99800
+zoomBox -727.57300 177.54700 2621.67200 3175.83600
+zoomBox -362.06000 831.62400 2057.77000 2997.88800
+selectObject Module cby_1__2_
+zoomBox -1037.78000 291.76900 2311.46600 3290.05900
+zoomBox -1973.03300 -455.43600 2662.60200 3694.44700
+zoomBox -3267.50100 -1489.62800 3148.60300 4254.15500
+zoomBox -4090.69200 -2147.30200 3457.66600 4610.09000
+zoomBox -5059.15300 -2921.03600 3821.26900 5028.83700
+zoomBox -4478.42200 -2114.56100 3069.93700 4642.83200
+zoomBox -3984.80100 -1429.05700 2431.30500 4314.72700
+deselectAll
+selectObject Module cbx_5__5_
+zoomBox -2565.95400 -682.78100 2069.68300 3467.10400
+zoomBox -2011.83700 -391.33000 1928.45600 3136.07300
+zoomBox -1140.48700 66.97700 1706.37500 2615.52600
+zoomBox -800.18900 245.96500 1619.64300 2412.23100
+zoomBox -510.93700 398.10400 1545.92100 2239.43100
+zoomBox -56.08700 637.34400 1429.99300 1967.70300
+zoomBox -701.13900 283.41200 1718.69400 2449.67900
+zoomBox -1751.49700 -292.90800 2188.79800 3234.49700
+zoomBox -3461.83000 -1231.35000 2954.28400 4512.44200
+pan -2398.78000 3010.70600
+deselectAll
+selectObject Module sb_3__11_
+deselectAll
+selectObject Module cbx_11__0_
+deselectAll
+selectObject Module cbx_9__0_
+zoomBox -6352.76800 -862.72000 1195.60200 5894.68200
+zoomBox -6931.77700 -1346.95100 1948.65800 6602.93400
+zoomBox -7612.96400 -1916.63400 2834.60700 7436.17200
+deselectAll
+selectObject Module grid_memory_2__3_
+deselectAll
+selectObject Module sb_3__11_
+deselectAll
+selectObject Module sb_6__0_
+pan -4081.71600 5655.78300
+deselectAll
+selectObject Module cbx_3__0_
+deselectAll
+selectObject Module sb_11__11_
+deselectAll
+selectObject Module sb_11__10_
+deselectAll
+selectObject Module sb_5__4_
+deselectAll
+selectObject Module cbx_2__11_
+deselectAll
+selectObject Module cbx_11__10_
+deselectAll
+selectObject Module cbx_11__9_
+deselectAll
+selectObject Module cbx_3__0_
+deselectAll
+selectObject Module sb_11__11_
+deselectAll
+selectObject Module sb_11__10_
+zoomBox -12188.39800 -2651.24800 102.86300 8352.05400
+zoomBox -12769.24200 -3467.79700 1691.06500 9477.26400
+zoomBox -13452.58800 -4428.44300 3559.53800 10801.04100
+zoomBox -8009.01800 -2186.47400 2438.55400 7166.33300
+zoomBox -5604.89400 -1196.32000 1943.47700 5561.08300
+deselectAll
+selectObject Module cby_11__11_
+zoomBox -6390.69200 -1534.07600 2489.74500 6415.81100
+zoomBox -8376.29600 -2284.19300 3914.96700 8719.11100
+deselectAll
+selectObject Module cby_1__3_
+zoomBox -6966.69700 -1745.15900 3480.87700 7607.65000
+zoomBox -4525.06700 -998.79300 3023.30600 5758.61200
+zoomBox -3571.51200 -707.30700 2844.60600 5036.48800
+zoomBox -2760.98900 -459.54400 2692.71100 4422.68200
+zoomBox -2072.04500 -248.94500 2563.60000 3900.94700
+zoomBox -1486.44200 -69.93600 2453.85600 3457.47200
+zoomBox -1118.66500 30.22800 2230.58900 3028.52500
+deselectAll
+selectObject Module cby_1__1_
+deselectAll
+selectObject Module cby_1__2_
+deselectAll
+selectObject Module cby_1__3_
+uiSetTool move
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_1__3_ 1747.418 1012.258 1998.07 1262.777
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_1__3_ 1747.62 1999.658 1998.36 2249.138
+zoomBox -322.83100 884.57700 1734.03000 2725.90700
+deselectAll
+selectObject Module sb_1__3_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__3_ 931.56 2323.761 1270.5 2663.961
+zoomBox -873.68900 465.55700 1973.17800 3014.11100
+zoomBox -1223.99700 199.09000 2125.25900 3197.38900
+deselectAll
+selectObject Module cby_1__3_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_1__3_ 1110.698 1998.36 1361.438 2247.84
+zoomBox -889.93800 487.00400 1956.93000 3035.55900
+zoomBox -605.98900 731.73100 1813.85000 2898.00300
+zoomBox -914.79900 574.83900 1932.07100 3123.39500
+zoomBox -1849.80600 89.65300 2090.49900 3617.06700
+zoomBox -2444.40500 -218.89100 2191.24800 3931.00800
+zoomBox -3143.93300 -581.88400 2309.77600 4300.35000
+zoomBox -1941.82500 179.71300 1998.48000 3707.12700
+zoomBox -1472.35300 477.14600 1876.90700 3475.44900
+zoomBox -1073.30200 729.96500 1773.57000 3278.52300
+zoomBox -733.55600 934.36500 1686.28600 3100.64000
+setObjFPlanBox Module cby_1__3_ 900.56 1113.84 1066.88 1389.78
+create_relative_floorplan -place cby_1__3_ -ref_type object -ref sb_1__2_ -horizontal_edge_separate {5 10 3} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+zoomBox -487.50200 1141.91400 1569.36400 2983.24800
+zoomBox -278.35600 1318.33100 1469.98000 2883.46500
+zoomBox -100.58300 1468.28500 1385.50300 2798.64900
+zoomBox 288.14100 1796.17900 1200.78500 2613.19000
+zoomBox 459.81900 1940.99200 1119.20500 2531.28300
+zoomBox 632.29800 2086.47900 1037.24500 2448.99300
+zoomBox 673.47400 2121.21100 1017.67900 2429.34800
+zoomBox 706.46900 2142.98500 999.04400 2404.90200
+zoomBox 734.51500 2161.49300 983.20400 2384.12300
+zoomBox 758.35400 2177.22500 969.74000 2366.46100
+zoomBox 673.47300 2121.21000 1017.67900 2429.34800
+zoomBox 535.25700 2029.99900 1095.74000 2531.75100
+zoomBox 310.19600 1881.47700 1222.84900 2698.49600
+zoomBox 86.18000 1733.64400 1349.36800 2864.46700
+zoomBox -223.87700 1529.03100 1524.48100 3094.18500
+zoomBox -653.02200 1245.83000 1766.85200 3412.13400
+zoomBox -925.92800 1065.73400 1920.98300 3614.32700
+zoomBox -1246.99300 853.85600 2102.31400 3852.20100
+zoomBox -863.53400 903.25100 1983.37700 3451.84400
+zoomBox -537.59500 945.23600 1882.28000 3111.54100
+zoomBox -127.56400 1281.42800 1620.79700 2846.58400
+zoomBox 32.57000 1412.72400 1518.67700 2743.10700
+zoomBox 168.68400 1524.32600 1431.87500 2655.15200
+zoomBox 284.38100 1619.18800 1358.09400 2580.39000
+zoomBox 168.68400 1524.32600 1431.87500 2655.15200
+zoomBox 32.57000 1412.72400 1518.67700 2743.10700
+zoomBox -127.56500 1281.42700 1620.79700 2846.58400
+zoomBox -309.97200 1147.71500 1746.92500 2989.07700
+zoomBox -524.56800 990.40700 1895.31100 3156.71500
+zoomBox -777.03400 805.33900 2069.88300 3353.93700
+zoomBox -1423.48700 331.46200 2516.88300 3858.93400
+zoomBox -1834.58600 30.10900 2801.14400 4180.07700
+zoomBox -2318.23200 -324.42300 3135.56800 4557.89200
+zoomBox -3556.63300 -1232.22300 3991.88000 5525.30700
+zoomBox -4344.16900 -1809.52000 4536.43500 6140.51600
+zoomBox -7643.06900 -4227.75100 6817.51200 8717.55600
+zoomBox -4344.17000 -1809.52100 4536.43500 6140.51600
+zoomBox -2887.22800 -741.52200 3529.00900 5002.38000
+zoomBox -1834.58900 30.10700 2801.14300 4180.07700
+zoomBox -2370.09200 -167.79600 3083.71100 4714.52200
+zoomBox -1743.57500 142.28700 2892.15800 4292.25800
+zoomBox -1211.03600 405.85800 2729.33800 3933.33400
+zoomBox -758.37800 629.89300 2590.94100 3628.24800
+zoomBox -177.63100 1021.86600 2242.25300 3188.17900
+zoomBox 190.70400 1284.21700 1939.07100 2849.37900
+zoomBox 334.55300 1386.67600 1820.66600 2717.06400
+zoomBox 456.82600 1473.76600 1720.02200 2604.59600
+zoomBox 190.70300 1284.21600 1939.07100 2849.37900
+zoomBox 21.46700 1163.67600 2078.37100 3005.04400
+zoomBox -177.63400 1021.86400 2242.25300 3188.17900
+zoomBox -411.87000 855.02600 2435.05600 3403.63200
+zoomBox -687.44200 658.74500 2661.88300 3657.10600
+zoomBox -472.31400 898.57100 2374.61200 3447.17700
+zoomBox -289.45500 1102.42300 2130.43200 3268.73800
+zoomBox -134.02500 1275.69700 1922.87900 3117.06500
+zoomBox -1.91000 1422.98000 1746.45900 2988.14300
+zoomBox 110.38800 1548.17000 1596.50200 2878.55900
+zoomBox 205.84100 1654.58200 1469.03800 2785.41300
+zoomBox 286.97600 1745.03200 1360.69400 2706.23900
+zoomBox 355.94100 1821.91500 1268.60200 2638.94100
+zoomBox 286.97600 1745.03100 1360.69500 2706.23900
+zoomBox 205.84000 1654.58100 1469.03900 2785.41400
+zoomBox 110.38600 1548.16900 1596.50300 2878.56100
+zoomBox -134.02900 1275.69400 1922.88100 3117.06800
+zoomBox -289.46100 1102.41900 2130.43500 3268.74200
+deselectAll
+selectObject Module grid_clb_3__3_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__3_ 1376.975 2395.26 1940.615 2954.7
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__3_ 1377.18 1838.027 1940.82 2397.467
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__3_ 1079.78 1839.6 1643.42 2399.04
+create_relative_floorplan -place grid_clb_3__3_ -ref_type object -ref cby_1__3_ -horizontal_edge_separate {1 0 1} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+zoomBox -40.11500 1184.12500 2016.79700 3025.50000
+zoomBox 171.82900 1253.57500 1920.20500 2818.74500
+zoomBox 351.98100 1312.60800 1838.10100 2643.00300
+zoomBox 505.11000 1362.78600 1768.31300 2493.62200
+zoomBox 635.27000 1405.43700 1708.99300 2366.64800
+zoomBox 745.90700 1441.69100 1658.57100 2258.72000
+uiSetTool cut
+zoomBox 853.58400 1482.42400 1629.34900 2176.89900
+zoomBox 944.80900 1517.19800 1604.20900 2107.50200
+zoomBox 1022.35000 1546.75600 1582.84000 2048.51400
+zoomBox 1025.06900 1578.73200 1501.48600 2005.22700
+zoomBox 1027.38000 1605.91200 1432.33500 1968.43300
+zoomBox 1029.34400 1629.01500 1373.55600 1937.15800
+zoomBox 1031.01300 1648.65200 1323.59400 1910.57400
+zoomBox 1032.48900 1665.34400 1281.18300 1887.97800
+zoomBox 1033.74400 1679.53200 1245.13400 1868.77100
+zoomBox 1018.62200 1629.01400 1362.83600 1937.15900
+zoomBox 993.99900 1546.75400 1554.49500 2048.51800
+zoomBox 982.73900 1509.13500 1642.14600 2099.44500
+zoomBox 1118.14400 1569.26200 1594.56600 1995.76100
+zoomBox 1286.65600 1644.09000 1535.35100 1866.72500
+zoomBox 1357.66800 1675.62300 1510.39800 1812.34900
+zoomBox 1391.74700 1696.81800 1485.54300 1780.78500
+zoomBox 1399.88300 1701.87800 1479.60900 1773.25000
+zoomBox 1417.67200 1712.94100 1466.63500 1756.77300
+zoomBox 1425.52800 1717.82700 1460.90500 1749.49700
+setObjFPlanBoxList Module grid_clb_3__3_ {{1057.56000 1759.93100 1621.20000 2289.42000} {1454.86400 1729.98000 1621.20000 1759.93100}}
+zoomBox 1407.09400 1710.46500 1464.70000 1762.03500
+zoomBox 1377.07700 1698.47600 1470.88100 1782.45100
+zoomBox 1347.20000 1686.54400 1477.03400 1802.77300
+zoomBox 1305.84900 1670.02900 1485.55000 1830.90000
+zoomBox 1212.21700 1632.63500 1504.83100 1894.58700
+zoomBox 1059.75500 1571.74500 1536.22800 1998.29000
+zoomBox 811.49400 1472.59500 1587.35100 2167.15300
+zoomBox 564.38600 1373.90700 1638.23700 2335.23300
+zoomBox 407.24200 1311.14800 1670.59700 2442.12000
+zoomBox 222.36800 1237.31300 1708.66800 2567.86900
+uiSetTool move
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__3_ 1171.004 1729.98 1734.644 2289.42
+create_relative_floorplan -place grid_clb_3__3_ -ref_type object -ref cby_1__3_ -horizontal_edge_separate {1 0 3} -vertical_edge_separate {2 10 2}
+delete_relative_floorplan -all
+zoomBox -231.07300 1061.55000 1826.09000 2903.15000
+zoomBox -519.43000 949.77700 1900.76200 3116.36500
+zoomBox -882.43100 834.30200 1964.85300 3383.22900
+zoomBox -1309.49100 698.44800 2040.25500 3697.18600
+zoomBox -873.33100 706.24700 1973.95400 3255.17500
+zoomBox -1250.34000 395.53900 2099.40700 3394.27800
+zoomBox -1693.88000 30.00100 2246.99900 3557.92900
+zoomBox -2829.59000 -905.97900 2624.91500 3976.96700
+zoomBox -5401.13300 -3025.28700 3480.61900 4925.77700
+zoomBox -7960.73500 -5134.75100 4332.34800 5870.18200
+zoomBox -9588.46200 -6476.22300 4873.98800 6470.75700
+zoomBox -16406.82700 -12095.49700 7142.85800 8986.49800
+zoomBox -23193.52800 -17688.67600 9401.19200 11490.55600
+zoomBox -16371.72300 -10129.69500 7177.96200 10952.30000
+zoomBox -9518.09100 -2535.44800 4944.36000 10411.53300
+zoomBox -6522.37200 766.59300 3926.74900 10120.78700
+deselectAll
+selectObject Module grid_memory_2__3_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__3_ 1459.272 4901.552 1835.188 5277.269
+zoomBox -4279.19000 871.62500 3270.30000 7630.03000
+zoomBox -3403.13700 912.64300 3013.93000 6657.28800
+zoomBox -2658.49300 947.50900 2796.01500 5830.45800
+zoomBox -2025.54400 977.14500 2610.78800 5127.65200
+zoomBox -1538.81900 1331.61700 2402.06300 4859.54800
+zoomBox -2025.54400 977.14500 2610.78800 5127.65200
+zoomBox -2598.16200 560.11800 2856.34700 5443.06800
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__3_ 1459.08 2481.094 1834.98 2855.314
+zoomBox -2017.07700 832.13700 2619.25600 4982.64500
+zoomBox -1523.15600 1063.35400 2417.72800 4591.28600
+zoomBox -1103.32200 1259.88800 2246.43000 4258.63100
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__3_ 1324.743 2482.2 1700.643 2856.42
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__3_ 1515.352 2482.2 1891.252 2856.42
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__3_ 1515.36 2373.864 1891.26 2748.084
+zoomBox -1589.68800 1046.53000 2351.19700 4574.46300
+zoomBox -2161.88300 795.52000 2474.45300 4946.03000
+zoomBox -2835.05300 500.21400 2619.46000 5383.16700
+zoomBox -4558.74200 -255.93300 2990.75700 6502.48000
+deselectAll
+selectObject Module grid_memory_2__5_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__5_ 1553.248 4901.552 1929.164 5277.269
+zoomBox -3653.38900 277.31700 2763.68600 6021.96900
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__5_ 1553.16 3266.0 1929.06 3640.22
+zoomBox -1510.34900 1420.91100 2430.53900 4948.84700
+zoomBox -998.74700 1693.91800 2351.00800 4692.66400
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__5_ 1501.158 3264.66 1877.058 3638.88
+zoomBox -1466.75900 1384.20400 2474.12900 4912.14000
+zoomBox -2017.36200 1019.83500 2618.97700 5170.34800
+zoomBox -2665.13000 591.16400 2789.38700 5474.12100
+zoomBox -3427.21100 86.84600 2989.86900 5831.50200
+deselectAll
+selectObject Module grid_memory_2__7_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__7_ 1454.027 4901.552 1829.943 5277.269
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__7_ 1454.04 4702.163 1829.94 5076.383
+zoomBox -4235.87800 -466.91500 3313.62800 6291.50400
+zoomBox -5187.25000 -1118.39900 3694.52200 6832.68300
+zoomBox -6306.51200 -1884.85000 4142.63200 7469.36400
+zoomBox -7623.29100 -2786.55700 4669.82000 8218.40100
+zoomBox -5209.31700 -350.51900 3672.45600 7600.56400
+deselectAll
+selectObject Module grid_memory_2__9_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__9_ 1925.339 4901.552 2301.255 5277.269
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__9_ 1925.28 6142.32 2301.18 6516.54
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__9_ 1454.19 6141.24 1830.09 6515.46
+zoomBox -5967.65800 -1064.25100 4481.48700 8289.96400
+zoomBox -6859.82300 -1903.93600 5433.28900 9101.02300
+zoomBox -7735.43000 -3009.67100 6727.05500 9937.34000
+pan -4041.26400 4931.56400
+zoomBox -12843.13900 -3916.53500 4171.55000 11315.24400
+zoomBox -14097.78100 -5225.55700 5919.50200 12694.18400
+zoomBox -9247.21600 -2149.94000 5215.27200 10797.07400
+zoomBox -7409.00200 -962.81900 4884.11300 10042.14300
+zoomBox -4558.12800 908.34300 4323.64700 8859.42700
+zoomBox -2498.37300 2260.25600 3918.71000 8004.91500
+zoomBox -1330.41000 3347.58900 3305.93300 7498.10600
+zoomBox -3207.20000 1700.68700 4342.31300 8459.11300
+zoomBox -5075.27400 61.43400 5373.88000 9415.65700
+zoomBox -4138.50000 292.58600 4743.28100 8243.67600
+zoomBox -5075.27400 61.43400 5373.88000 9415.65700
+zoomBox -4061.44900 1016.45600 4820.33200 8967.54600
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__9_ 1454.04 7129.381 1829.94 7503.601
+deselectAll
+selectObject Module grid_memory_2__7_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__7_ 1454.04 5700.691 1829.94 6074.911
+deselectAll
+selectObject Module grid_memory_2__5_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__5_ 1501.08 4390.681 1876.98 4764.901
+deselectAll
+selectObject Module grid_memory_2__3_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__3_ 1515.36 2901.121 1891.26 3275.341
+zoomBox -5205.04300 675.81100 5244.11100 10030.03400
+zoomBox -6550.44800 275.05200 5742.67400 11280.02000
+zoomBox -5431.66300 463.50400 5017.49100 9817.72700
+zoomBox -4480.69500 623.68800 4401.08600 8574.77800
+zoomBox -3672.37200 759.84500 3877.14100 7518.27100
+zoomBox -2401.28600 973.95100 3053.23800 5856.91400
+saveDesign ../../../../../Pnr_test/fpga_top.enc -tcon
+zoomBox -3108.57700 870.59600 3308.51000 6615.25900
+zoomBox -3940.68500 749.00300 3608.83000 7507.43000
+zoomBox -4919.63400 605.95200 3962.14800 8557.04300
+zoomBox -4045.81900 618.01600 3503.69700 7376.44400
+zoomBox -3303.07600 628.27100 3114.01300 6372.93500
+zoomBox -2130.50500 665.12900 2505.84200 4815.64900
+zoomBox -1672.56800 679.52400 2268.32700 4207.46600
+zoomBox -1283.32200 691.75900 2066.43900 3690.51000
+zoomBox -952.46300 702.15900 1894.83400 3251.09800
+zoomBox -1369.12600 575.40500 1980.63600 3574.15700
+zoomBox -1854.72900 423.98900 2086.16800 3951.93300
+zoomBox -2426.02600 245.85200 2210.32400 4396.37500
+zoomBox -3098.14000 36.27900 2356.39000 4919.24800
+zoomBox -3888.86300 -210.27700 2528.23200 5534.39300
+zoomBox -4819.12600 -500.34300 2730.39900 6258.09300
+zoomBox -3929.88400 -71.10500 2487.21300 5673.56700
+zoomBox -3212.63100 267.59800 2241.90200 5150.56900
+zoomBox -2592.38100 549.14400 2043.97200 4699.67000
+zoomBox -2065.16800 788.45900 1875.73200 4316.40600
+zoomBox -1617.03700 991.87700 1732.72800 3990.63200
+zoomBox -1218.57600 1164.78200 1628.72500 3713.72400
+zoomBox -879.88400 1311.75100 1540.32200 3478.35200
+zoomBox -591.99500 1436.67500 1465.18000 3278.28600
+zoomBox -347.29100 1542.86000 1401.30900 3108.23000
+zoomBox -139.29100 1633.11700 1347.01900 2963.68200
+zoomBox 37.50900 1709.83600 1300.87200 2840.81600
+zoomBox -115.06400 1620.13800 1371.24600 2950.70300
+zoomBox -294.56200 1514.61100 1454.03900 3079.98200
+zoomBox -505.73600 1390.46200 1551.44200 3232.07500
+zoomBox -754.17500 1244.40400 1666.03400 3411.00800
+zoomBox -509.02300 1405.02100 1548.15500 3246.63400
+zoomBox -754.17500 1244.40300 1666.03500 3411.00800
+zoomBox -1381.90000 833.13500 1967.87200 3831.89600
+zoomBox -1781.08900 571.59700 2159.81900 4099.55100
+zoomBox -2250.72300 263.90600 2385.63900 4414.44000
+zoomBox -2803.23400 -98.08400 2651.31000 4784.89700
+zoomBox -3453.24700 -523.95500 2963.86400 5220.72900
+zoomBox -2803.23500 -98.08500 2651.31000 4784.89700
+zoomBox -2250.72500 263.90500 2385.63900 4414.44000
+zoomBox -1777.49200 573.39600 2163.41700 4101.35100
+zoomBox -1375.24400 836.46300 1974.52900 3835.22500
+zoomBox -1033.33400 1060.07000 1813.97400 3609.01800
+zoomBox -1375.24500 836.46200 1974.52900 3835.22500
+zoomBox -1777.49300 573.39500 2163.41700 4101.35100
+zoomBox -1386.71600 869.34500 1963.05800 3868.10800
+zoomBox -1054.55600 1120.90300 1792.75300 3669.85200
+zoomBox -772.22000 1334.72700 1647.99300 3501.33400
+zoomBox -532.23400 1516.47800 1524.94700 3358.09400
+zoomBox -328.24600 1670.96600 1420.35800 3236.34000
+setObjFPlanBoxList Module grid_clb_3__3_ {{1057.56000 1760.22000 1621.20000 2234.22900} {1454.88000 1729.98000 1621.20000 1760.22000}}
+zoomBox -568.16300 1587.53400 1489.01900 3429.15100
+zoomBox -850.41700 1489.37900 1569.79700 3655.98700
+zoomBox -1573.14300 1238.04800 1776.63400 4236.81300
+zoomBox -2032.74600 1078.21900 1908.16800 4606.17800
+zoomBox -1486.72800 1198.28200 1863.04900 4197.04700
+zoomBox -1022.61300 1300.33500 1824.69800 3849.28600
+zoomBox -628.11600 1387.08000 1792.09900 3553.68900
+zoomBox -292.79300 1460.81300 1764.39000 3302.43100
+setObjFPlanBoxList Module grid_clb_3__3_ {{1057.56000 1760.22000 1621.20000 2187.34700} {1454.88000 1729.98000 1621.20000 1760.22000}}
+zoomBox -587.72700 1366.88500 1832.48800 3533.49400
+create_relative_floorplan -place grid_clb_3__3_ -ref_type object -ref sb_1__3_ -horizontal_edge_separate {7 10 3} -vertical_edge_separate {6 10 2}
+deselectAll
+selectObject Module grid_clb_3__3_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__3_ 1170.274 1729.98 1733.914 2187.36
+create_relative_floorplan -place grid_clb_3__3_ -ref_type object -ref sb_1__3_ -horizontal_edge_separate {7 10 3} -vertical_edge_separate {6 10 2}
+create_relative_floorplan -place grid_clb_3__3_ -ref_type object -ref sb_1__2_ -horizontal_edge_separate {7 10 3} -vertical_edge_separate {6 10 2}
+delete_relative_floorplan -all
+zoomBox -944.65400 1284.00700 1902.65800 3832.95900
+zoomBox -1364.56800 1186.50400 1985.21100 4185.27100
+undo
+undo
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__3_ 1369.571 1729.98 1933.211 2187.36
+create_relative_floorplan -place grid_clb_3__3_ -ref_type object -ref sb_1__2_ -horizontal_edge_separate {7 10 5} -vertical_edge_separate {6 10 2}
+delete_relative_floorplan -all
+create_relative_floorplan -place grid_clb_3__3_ -ref_type object -ref sb_1__2_ -horizontal_edge_separate {7 10 1} -vertical_edge_separate {6 10 2}
+delete_relative_floorplan -all
+zoomBox -1016.15600 1331.45900 1831.15600 3880.41100
+zoomBox -720.00600 1454.67100 1700.20900 3621.28000
+zoomBox -468.27900 1559.40100 1588.90400 3401.01900
+zoomBox -254.31100 1648.42100 1494.29500 3213.79700
+zoomBox -78.88500 1748.18000 1407.43000 3078.74900
+zoomBox 70.22700 1832.97500 1333.59500 2963.95900
+zoomBox 196.97200 1905.05000 1270.83500 2866.38700
+zoomBox 396.27900 2018.38800 1172.14600 2712.95500
+deselectAll
+selectObject Module sb_1__3_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__3_ 902.452 2323.44 1241.392 2663.64
+create_relative_floorplan -place sb_1__3_ -ref_type object -ref cbx_1__3_ -horizontal_edge_separate {3 0 3} -vertical_edge_separate {2 10 2}
+delete_relative_floorplan -all
+create_relative_floorplan -place sb_1__3_ -ref_type object -ref cbx_1__3_ -horizontal_edge_separate {3 0 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+uiSetTool cut
+zoomBox 465.68500 2081.47100 1125.17200 2671.85300
+zoomBox 524.68100 2135.09200 1085.24500 2636.91600
+zoomBox 617.45100 2219.40900 1022.45900 2581.97800
+zoomBox 684.47800 2280.32900 977.09700 2542.28500
+zoomBox 710.65500 2304.12000 959.38100 2526.78300
+zoomBox 751.81700 2341.53300 931.52200 2502.40700
+zoomBox 781.55700 2368.56300 911.39400 2484.79500
+zoomBox 803.04400 2388.09300 896.85200 2472.07100
+zoomBox 759.70500 2350.53200 939.41300 2511.40900
+zoomBox 702.73500 2301.15700 995.36000 2563.11900
+zoomBox 676.68100 2278.57700 1020.94600 2586.76800
+zoomBox 567.54400 2183.99200 1128.12300 2685.83000
+zoomBox 458.91400 2089.84600 1234.80300 2784.43200
+zoomBox 389.83300 2029.97500 1302.64400 2847.13600
+zoomBox 464.05000 2120.66600 1239.94000 2815.25300
+zoomBox 526.08100 2198.05300 1185.58800 2788.45300
+zoomBox 578.80600 2263.83200 1139.38800 2765.67300
+zoomBox 623.62300 2319.74500 1100.11800 2746.31000
+zoomBox 661.71700 2367.27100 1066.73900 2729.85200
+setObjFPlanBoxList Module sb_1__3_ {{850.08000 2640.77900 1189.02000 2640.96000} {883.87700 2429.11100 1189.02000 2640.77900} {850.08000 2300.76000 1189.02000 2429.11100}}
+zoomBox 508.29900 2214.18200 1167.81000 2804.58500
+zoomBox 258.48300 1964.90400 1332.38700 2926.27700
+zoomBox 9.82800 1716.78100 1496.20100 3047.40200
+zoomBox 174.23300 1782.83100 1437.65000 2913.85900
+zoomBox 313.97700 1838.97400 1387.88200 2800.34800
+zoomBox 619.54400 1961.73600 1279.05700 2552.14100
+zoomBox 807.20000 2037.12700 1212.22400 2399.71000
+zoomBox 890.07700 2070.42300 1182.70800 2332.39000
+zoomBox 739.98400 1946.49500 1216.48500 2373.06500
+zoomBox 864.17200 2045.19600 1208.44500 2353.39400
+zoomBox 953.89900 2116.50800 1202.63600 2339.18100
+zoomBox 1018.72700 2168.03100 1198.44000 2328.91200
+zoomBox 1044.32400 2188.08300 1197.08000 2324.83200
+zoomBox 1066.08100 2205.12700 1195.92400 2321.36400
+zoomBox 1084.57500 2219.61500 1194.94100 2318.41600
+setObjFPlanBoxList Module grid_clb_3__3_ {{1057.56000 2187.36000 1189.08700 2300.85500} {1057.56000 1760.22000 1621.20000 2187.36000} {1454.88000 1729.98000 1621.20000 1760.22000}}
+zoomBox 995.54000 2154.24400 1206.96900 2343.51800
+zoomBox 824.97900 2029.01500 1230.01100 2391.60500
+zoomBox 687.92800 1928.38900 1248.52600 2430.24400
+undo
+zoomBox 791.57100 2003.65600 1196.60400 2366.24700
+zoomBox 832.04800 2033.05100 1176.32600 2341.25300
+zoomBox 866.45300 2058.03600 1159.09000 2320.00900
+zoomBox 742.75900 1922.21100 1219.27100 2348.79100
+setObjFPlanBoxList Module sb_1__3_ {{883.68000 2429.28000 1189.02000 2640.96000} {850.08000 2300.76000 1189.02000 2429.28000} {1063.31000 2192.21400 1189.02000 2300.76000}}
+zoomBox 801.19800 1962.24900 1206.23300 2324.84200
+zoomBox 850.87000 1996.28100 1195.15100 2304.48600
+zoomBox 959.48600 2070.69700 1170.91800 2259.97400
+zoomBox 985.41500 2088.46200 1165.13300 2249.34800
+zoomBox 1026.18900 2116.39700 1156.03600 2232.63800
+uiSetTool move
+setObjFPlanBoxList Module sb_1__3_ {{883.68000 2429.28000 1189.02000 2640.96000} {850.08000 2300.76000 1189.02000 2429.28000} {1058.10500 2191.14000 1189.02000 2300.76000}}
+setObjFPlanBoxList Module sb_1__3_ {{883.68000 2429.28000 1189.02000 2640.96000} {850.08000 2300.76000 1189.02000 2429.28000} {1057.98000 2181.06900 1189.02000 2300.76000}}
+zoomBox 1039.43600 2149.95900 1107.21800 2210.63800
+zoomBox 1046.35000 2167.47700 1081.73500 2199.15400
+zoomBox 1049.95900 2176.62400 1068.43100 2193.16000
+zoomBox 1051.48000 2180.47700 1062.82500 2190.63300
+setObjFPlanBoxList Module sb_1__3_ {{883.68000 2429.28000 1189.02000 2640.96000} {850.08000 2300.76000 1189.02000 2429.28000} {1057.57100 2179.80000 1189.02000 2300.76000}}
+zoomBox 1049.60300 2178.41900 1065.30600 2192.47700
+zoomBox 1048.40800 2177.11000 1066.88300 2193.64900
+zoomBox 1043.40600 2171.62800 1073.49100 2198.56000
+zoomBox 1035.26200 2162.70100 1084.25100 2206.55700
+zoomBox 1022.00100 2148.16700 1101.77200 2219.57900
+zoomBox 1008.80200 2133.69900 1119.21200 2232.54000
+zoomBox 978.91400 2100.94000 1158.70100 2261.88800
+zoomBox 949.16600 2068.33400 1198.00600 2291.09900
+zoomBox 930.24900 2047.59900 1223.00200 2309.67500
+zoomBox 907.99300 2023.20400 1252.40900 2331.53000
+setObjFPlanBoxList Module sb_1__3_ {{883.68000 2429.28000 1189.02000 2640.96000} {850.08000 2300.76000 1189.02000 2429.28000} {1057.56000 2196.08000 1189.02000 2300.76000}}
+setObjFPlanBoxList Module sb_1__3_ {{883.68000 2429.28000 1189.02000 2640.96000} {850.08000 2300.76000 1189.02000 2429.28000} {1057.56000 2199.19900 1189.02000 2300.76000}}
+zoomBox 850.83000 1984.51900 1256.02600 2347.25600
+zoomBox 783.57900 1939.00700 1260.28100 2365.75700
+zoomBox 704.46100 1885.46400 1265.28700 2387.52300
+zoomBox 501.87500 1748.36300 1278.10600 2443.25500
+zoomBox 221.48000 1558.60400 1295.84800 2520.39300
+zoomBox 43.16800 1437.93100 1307.13000 2569.44700
+zoomBox -413.41000 1128.94100 1336.01900 2695.05300
+zoomBox -703.76100 932.44500 1354.39100 2774.93000
+zoomBox -1045.35100 701.27200 1376.00500 2868.90200
+zoomBox -389.07100 1264.54200 1360.35900 2830.65500
+zoomBox -132.76700 1484.52200 1354.24800 2815.71800
+zoomBox 85.09100 1671.50500 1349.05400 2803.02200
+zoomBox 270.27100 1830.44100 1344.63900 2792.23000
+zoomBox 17.23800 1514.95000 1504.25300 2846.14600
+zoomBox -143.67400 1314.32000 1605.75600 2880.43300
+zoomBox -332.98100 1078.28500 1725.17200 2920.77100
+zoomBox -555.69600 800.59600 1865.66100 2968.22700
+zoomBox -817.71300 473.90400 2030.94200 3024.05800
+zoomBox -1488.62300 -362.61100 2454.15300 3167.01500
+zoomBox -1080.06400 130.10800 2271.29600 3130.29100
+zoomBox -732.78900 548.91900 2115.86800 3099.07500
+zoomBox -186.69800 1207.50100 1871.45700 3049.98900
+zoomBox 26.57200 1464.70400 1776.00400 3030.81900
+zoomBox -160.74000 1310.94100 1897.41600 3153.43000
+zoomBox -381.10600 1130.04400 2040.25400 3297.67800
+zoomBox -640.36000 917.22300 2208.29900 3467.38100
+zoomBox -74.39500 1523.00500 1675.03900 3089.12200
+zoomBox 60.71700 1667.62200 1547.73600 2998.82100
+zoomBox 175.56200 1790.54600 1439.52800 2922.06500
+zoomBox 273.18000 1895.03200 1347.55100 2856.82300
+zoomBox 356.15500 1983.84400 1269.37100 2801.36700
+zoomBox 426.68400 2059.33500 1202.91800 2754.23000
+zoomBox 486.63400 2123.50200 1146.43300 2714.16300
+zoomBox 426.68400 2059.33500 1202.91800 2754.23000
+zoomBox 273.17900 1895.03100 1347.55200 2856.82400
+zoomBox 175.56100 1790.54500 1439.52900 2922.06600
+zoomBox -74.39600 1523.00300 1675.04100 3089.12300
+zoomBox -640.36500 917.21800 2208.30200 3467.38300
+setObjFPlanBoxList Module sb_1__3_ {{883.68000 2429.28000 1189.02000 2582.93300} {850.08000 2300.76000 1189.02000 2429.28000} {1057.56000 2198.70000 1189.02000 2300.76000}}
+setObjFPlanBoxList Module sb_1__3_ {{883.68000 2429.28000 1189.02000 2516.59900} {850.08000 2300.76000 1189.02000 2429.28000} {1057.56000 2198.70000 1189.02000 2300.76000}}
+setObjFPlanBoxList Module sb_1__3_ {{883.68000 2429.28000 1189.02000 2531.34000} {850.08000 2300.76000 1189.02000 2429.28000} {1057.56000 2198.70000 1189.02000 2300.76000}}
+setObjFPlanBoxList Module sb_1__3_ {{883.68000 2429.28000 1189.02000 2542.39500} {850.08000 2300.76000 1189.02000 2429.28000} {1057.56000 2198.70000 1189.02000 2300.76000}}
+uiSetTool select
+deselectAll
+selectObject Module cby_1__3_
+deselectAll
+selectObject Module cby_1__2_
+deselectAll
+selectObject Module cby_1__3_
+setObjFPlanBox Module cby_1__4_ 900.56 1113.84 1066.88 1389.78
+uiSetTool move
+deselectAll
+selectObject Module cby_1__4_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_1__4_ 900.48 2558.442 1066.8 2834.382
+zoomBox -440.81100 1163.20600 1980.55600 3330.84600
+zoomBox -271.19100 1372.29500 1786.97200 3214.79000
+zoomBox -127.01400 1550.02100 1622.42500 3116.14200
+zoomBox -4.46300 1701.08800 1482.56000 3032.29100
+zoomBox 99.70500 1829.49500 1363.67500 2961.01800
+zoomBox 188.24800 1938.64100 1262.62300 2900.43600
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_1__4_ 881.022 2557.8 1047.342 2833.74
+zoomBox -266.74600 1501.98700 1482.69600 3068.11100
+zoomBox -1007.62600 790.97000 1841.04800 3341.14100
+zoomBox -2214.02500 -366.80300 2424.56600 3785.72600
+zoomBox -1745.06600 83.25400 2197.73700 3612.90400
+zoomBox -2260.83200 -366.80400 2377.76000 3785.72600
+zoomBox -2867.61500 -896.28300 2589.55200 3989.04600
+zoomBox -3561.54400 -1531.65800 2858.65200 4215.78800
+zoomBox -4377.93200 -2279.15800 3175.24000 4482.54300
+zoomBox -3614.30900 -1497.94700 2805.88700 4249.49900
+zoomBox -2965.23000 -833.91800 2491.93700 4051.41100
+zoomBox -1540.49000 618.06400 1810.89400 3618.26800
+zoomBox -2411.39600 -269.49500 2227.19800 3883.03700
+zoomBox -1908.23200 306.57900 2034.57300 3836.23100
+zoomBox -1478.24800 787.06000 1873.13700 3787.26500
+zoomBox -1127.06900 1043.29100 1721.60900 3593.46600
+zoomBox -828.56600 1261.08800 1592.81000 3428.73600
+zoomBox -175.85300 1737.32700 1311.17600 3068.53500
+zoomBox -20.03300 1851.01800 1243.94200 2982.54500
+zoomBox 112.41500 1947.65600 1186.79300 2909.45400
+zoomBox 224.99500 2029.79700 1138.21700 2847.32600
+zoomBox 320.68800 2099.61700 1096.92700 2794.51700
+zoomBox 402.02700 2158.96500 1061.83100 2749.63000
+zoomBox 581.53100 2287.41700 986.73500 2650.16100
+zoomBox 624.46300 2318.08300 968.88600 2626.41500
+zoomBox 691.97300 2366.30500 940.81800 2589.07400
+zoomBox 766.69100 2412.43900 919.51400 2549.24800
+zoomBox 784.57300 2423.44100 914.47300 2539.72900
+zoomBox 799.77300 2432.79300 910.18800 2531.63800
+zoomBox 812.69300 2440.74200 906.54600 2524.76000
+zoomBox 823.67500 2447.49800 903.45000 2518.91400
+uiSetTool ruler
+uiSetTool move
+setObjFPlanBoxList Module sb_1__3_ {{879.40400 2429.28000 1189.02000 2542.68000} {850.08000 2300.76000 1189.02000 2429.28000} {1057.56000 2198.70000 1189.02000 2300.76000}}
+uiSetTool select
+zoomBox 815.16900 2442.30700 909.02300 2526.32600
+zoomBox 805.16300 2436.20000 915.57900 2535.04600
+zoomBox 793.39100 2429.01600 923.29200 2545.30500
+zoomBox 744.08000 2398.92300 955.60300 2588.28100
+zoomBox 721.52900 2385.16000 970.38000 2607.93500
+zoomBox 663.78500 2349.92000 1008.21600 2658.25900
+zoomBox 627.06400 2327.51000 1032.27700 2690.26200
+zoomBox 533.03700 2270.12800 1093.88700 2772.20800
+zoomBox 473.24300 2233.63700 1133.06700 2824.32000
+zoomBox 402.89700 2190.70600 1179.16100 2885.62800
+zoomBox 320.13700 2140.20000 1233.38900 2957.75500
+zoomBox 108.22600 2010.87500 1372.24300 3142.44000
+zoomBox 220.56400 2095.74200 1294.97900 3057.57300
+zoomBox 316.05100 2167.87900 1229.30500 2985.43600
+zoomBox 531.68400 2325.61500 1092.53800 2827.69900
+zoomBox 665.79100 2421.64500 1010.22600 2729.98800
+zoomBox 748.14900 2480.61900 959.67700 2669.98200
+uiSetTool move
+zoomBox 722.60300 2468.78800 971.46000 2691.56800
+zoomBox 692.54900 2454.86900 985.32200 2716.96300
+zoomBox 657.19200 2438.49400 1001.63100 2746.84000
+zoomBox 502.08400 2367.65900 1062.94700 2869.75100
+zoomBox 562.37900 2395.19400 1039.11200 2821.97200
+zoomBox 613.62900 2418.59900 1018.85200 2781.36000
+zoomBox 725.69300 2469.77600 974.55100 2692.55700
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_1__4_ 881.16 2538.83 1047.48 2814.77
+zoomBox 748.67900 2480.20600 960.20900 2669.57100
+zoomBox 784.82500 2496.60800 937.65600 2633.42400
+zoomBox 821.13900 2513.08600 914.99700 2597.10900
+zoomBox 843.44100 2523.20600 901.08200 2574.80700
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_1__4_ 879.519 2538.9 1045.839 2814.84
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_1__4_ 879.48 2553.292 1045.8 2829.232
+zoomBox 821.13800 2515.38100 914.99700 2599.40500
+zoomBox 784.82200 2502.64000 937.65600 2639.45900
+zoomBox 725.68800 2481.89300 974.55300 2704.68000
+zoomBox 698.64400 2472.40400 991.42700 2734.50700
+zoomBox 666.82800 2461.24100 1011.27900 2769.59800
+zoomBox 533.55300 2414.48200 1094.43500 2916.59100
+zoomBox 316.53700 2338.34300 1229.84200 3155.94600
+zoomBox 217.29000 2303.52300 1291.76700 3265.40900
+zoomBox 100.52900 2262.55800 1364.62000 3394.18900
+zoomBox -36.83700 2214.36400 1450.32900 3545.69500
+zoomBox -198.44400 2157.66600 1551.16300 3723.93800
+zoomBox -388.57000 2090.96200 1669.79200 3933.63500
+zoomBox -612.24700 2012.48700 1809.35500 4180.33800
+zoomBox -875.39700 1920.16400 1973.54700 4470.57700
+zoomBox -1184.98500 1811.54800 2166.71400 4812.03400
+zoomBox -872.79600 1974.79700 1976.14800 4525.21000
+zoomBox -607.43500 2113.55900 1814.16700 4281.41000
+zoomBox -381.87900 2231.50600 1676.48400 4074.18000
+zoomBox -190.15600 2331.76000 1559.45300 3898.03400
+zoomBox -27.19200 2416.97700 1459.97600 3748.31000
+zoomBox 111.32800 2489.41200 1375.42100 3621.04500
+zoomBox 229.07000 2550.98100 1303.54900 3512.86900
+zoomBox 111.32800 2489.41200 1375.42100 3621.04500
+zoomBox -27.19200 2416.97700 1459.97600 3748.31000
+zoomBox -607.43800 2113.55700 1814.16700 4281.41000
+zoomBox -372.95300 2183.57300 1685.41200 4026.24900
+zoomBox -173.64100 2243.08700 1575.97000 3809.36200
+zoomBox -400.11500 2134.84300 1658.25100 3977.52000
+zoomBox -666.55500 2007.49700 1755.05300 4175.35300
+zoomBox -980.01400 1857.67800 1868.93700 4408.09700
+zoomBox -2293.05400 1230.10500 2345.98600 5383.03600
+zoomBox -2893.54200 943.09900 2564.15300 5828.90100
+zoomBox -4431.12400 208.20500 3122.78100 6970.56200
+zoomBox -5408.91800 -259.13700 3478.02900 7696.57800
+zoomBox -4229.35800 377.20500 3324.54800 7139.56300
+zoomBox -3226.73100 918.09600 3194.08900 6666.10000
+zoomBox -2374.49800 1377.85300 3083.19900 6263.65700
+zoomBox -1670.22200 1720.98900 2968.82000 5873.92200
+zoomBox -1071.58800 2012.65500 2871.59800 5542.64800
+zoomBox -661.45600 2075.39900 2690.25200 5075.89300
+zoomBox -970.58600 1861.15100 2972.60000 5391.14400
+zoomBox -1334.26800 1609.09300 3304.77500 5762.02700
+zoomBox -1762.12900 1312.55500 3695.56900 6198.36000
+zoomBox -1375.57200 1617.56400 3263.47200 5770.49900
+zoomBox -1046.99900 1876.82200 2896.18900 5406.81700
+zoomBox -767.71100 2097.19100 2583.99900 5097.68700
+zoomBox -514.70700 2173.28700 2334.24700 4723.70900
+zoomBox -299.65300 2237.96900 2121.95800 4405.82800
+zoomBox -116.85700 2292.94900 1941.51200 4135.62900
+zoomBox 38.51900 2339.68200 1788.13300 3905.96000
+zoomBox -152.80500 2235.03300 1905.56400 4077.71300
+setObjFPlanBox Module cby_1__5_ 900.56 1113.84 1066.88 1389.78
+zoomBox -360.50600 2157.49700 2061.10500 4325.35600
+zoomBox -604.86000 2066.27900 2244.09400 4616.70100
+zoomBox -360.50600 2157.49700 2061.10500 4325.35600
+zoomBox -152.80600 2235.03200 1905.56500 4077.71300
+zoomBox 23.74000 2300.93700 1773.35500 3867.21600
+zoomBox -214.31800 2247.81400 1844.05300 4090.49500
+pan 18.64000 1921.57700
+pan 10.65200 1362.38200
+pan 21.30300 1162.66900
+deselectAll
+selectObject Module cby_1__5_
+zoomBox -646.46000 701.50100 2202.49500 3251.92400
+zoomBox -953.44800 525.89400 2398.26400 3526.39200
+zoomBox -1739.50700 76.24200 2899.54200 4229.18100
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_1__5_ 900.48 3320.15 1066.8 3596.09
+zoomBox -2806.73200 -656.75400 3614.09800 5091.25900
+zoomBox -1755.64300 721.64700 2883.40700 4874.58700
+zoomBox -1345.15100 1259.96900 2598.04200 4789.96800
+zoomBox -996.23300 1717.54200 2355.48200 4718.04200
+zoomBox -699.65200 2106.47900 2149.30600 4656.90500
+zoomBox -447.55900 2437.07600 1974.05600 4604.93800
+zoomBox -233.27900 2718.08300 1825.09400 4560.76600
+zoomBox -51.14100 2956.93900 1698.47600 4523.22000
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_1__5_ 900.48 3330.414 1066.8 3606.354
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_1__5_ 900.48 3301.76 1066.8 3577.7
+setObjFPlanBox Module cby_1__6_ 900.48 3330.414 1066.8 3606.354
+deselectAll
+selectObject Module cby_1__6_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_1__6_ 900.48 4041.895 1066.8 4317.835
+zoomBox -256.44600 2857.48200 1801.92700 4700.16500
+zoomBox -497.98100 2740.47400 1923.63400 4908.33600
+zoomBox -782.14000 2602.81700 2066.81900 5153.24300
+zoomBox -1116.44400 2440.86800 2235.27200 5441.36900
+zoomBox -1509.74300 2250.34000 2433.45200 5780.34100
+zoomBox -1126.39100 2696.43600 2225.32500 5696.93700
+zoomBox -800.54200 3075.61800 2048.41700 5626.04400
+zoomBox -523.57000 3397.92300 1898.04500 5565.78500
+zoomBox -288.14400 3671.88200 1770.22900 5514.56500
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_1__6_ 900.48 4038.014 1066.8 4313.954
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_1__6_ 900.48 4023.583 1066.8 4299.523
+setObjFPlanBox Module cby_1__7_ 900.48 3330.414 1066.8 3606.354
+panCenter 1181.74200 4247.05500
+pan -173.08500 3042.67900
+deselectAll
+selectObject Module cby_1__7_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_1__7_ 900.48 4742.886 1066.8 5018.826
+zoomBox -228.23000 3067.88900 2193.38500 5235.75100
+zoomBox -472.58500 2918.07000 2376.37400 5468.49600
+zoomBox -760.06100 2741.81100 2591.65600 5742.31300
+zoomBox -497.30000 3097.57900 2351.65900 5648.00500
+zoomBox -273.95400 3399.98100 2147.66200 5567.84400
+zoomBox -84.11000 3657.02300 1974.26400 5499.70700
+deselectAll
+selectObject Module sb_1__7_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__7_ 959.7 5072.097 1298.64 5412.297
+deselectAll
+selectObject Module cby_1__7_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_1__7_ 900.48 4779.92 1066.8 5055.86
+deselectAll
+selectObject Module cby_1__6_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_1__6_ 900.48 4027.103 1066.8 4303.043
+pan 55.92000 4657.14900
+deselectAll
+selectObject Module sb_1__8_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__8_ 945.84 5745.534 1351.14 6149.994
+deselectAll
+selectObject Module sb_1__7_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__7_ 906.444 5071.5 1245.384 5411.7
+deselectAll
+selectObject Module cby_1__7_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_1__7_ 908.468 4780.44 1074.788 5056.38
+setObjFPlanBox Module cby_1__7_ 908.468 4780.44 1074.788 5056.38
+setObjFPlanBox Module cby_1__8_ 908.468 4780.44 1074.788 5056.38
+deselectAll
+selectObject Module cby_1__8_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_1__8_ 908.46 5443.487 1074.78 5719.427
+zoomBox 195.08900 4807.10200 1944.70700 6373.38400
+pan 24.89700 5162.02200
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_1__8_ 908.46 6163.968 1074.78 6439.908
+undo
+setObjFPlanBox Module cby_1__9_ 908.46 6163.968 1074.78 6439.908
+pan -33.95100 5723.34900
+deselectAll
+selectObject Module cby_1__9_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_1__9_ 908.46 6824.837 1074.78 7100.777
+undo
+setObjFPlanBox Module cby_1__10_ 908.46 6824.837 1074.78 7100.777
+pan 4.52700 6440.85000
+deselectAll
+selectObject Module cby_1__10_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module cby_1__10_ 908.46 7565.556 1074.78 7841.496
+undo
+setObjFPlanBox Module cby_1__11_ 908.46 7565.556 1074.78 7841.496
+setObjFPlanBox Module cby_1__12_ 908.46 7565.556 1074.78 7841.496
+zoomBox 2.03200 6444.74700 2060.40700 8287.43200
+zoomBox -219.76700 6230.46600 2201.85100 8398.33100
+zoomBox -480.70700 5978.37100 2368.25600 8528.80100
+zoomBox -787.69500 5681.78900 2564.02600 8682.29500
+zoomBox -1573.75500 4922.37500 3065.30600 9075.32500
+zoomBox -2073.63500 4439.44100 3384.08500 9325.26500
+zoomBox -2661.72800 3871.28300 3759.11900 9619.31200
+zoomBox -4167.57300 2416.48500 4719.41300 10372.23400
+zoomBox -5125.18400 1491.33500 5330.09300 10851.04000
+zoomBox -6251.78700 402.92300 6048.54000 11414.34100
+zoomBox -7577.20100 -877.56200 6893.77200 12077.04800
+zoomBox -9136.51100 -2384.01400 7888.16300 12856.70300
+zoomBox -7603.63000 -1673.73500 6867.34300 11280.87500
+zoomBox -6300.68200 -1069.99800 5999.64600 9941.42100
+zoomBox -5193.17500 -556.82100 5262.10400 8802.88500
+zoomBox -2771.47200 565.30300 3649.37600 6313.33300
+zoomBox -937.14500 1327.62100 2414.57800 4328.12900
+zoomBox -381.25000 1558.64200 2040.37100 3726.51000
+zoomBox -164.15000 1648.86500 1894.22800 3491.55300
+zoomBox 20.38400 1725.55500 1770.00600 3291.84000
+zoomBox 177.23900 1790.74100 1664.41800 3122.08400
+zoomBox 20.38400 1725.55500 1770.00600 3291.84000
+zoomBox -164.15100 1648.86400 1894.22800 3491.55300
+zoomBox -6.37800 1782.67200 1743.24500 3348.95800
+zoomBox 132.48200 1899.46400 1619.66300 3230.80800
+zoomBox 250.51400 1998.73700 1514.61800 3130.38000
+zoomBox 350.84100 2083.12000 1425.32900 3045.01600
+zoomBox 508.60400 2215.81100 1284.92300 2910.78200
+zoomBox 570.21700 2267.63200 1230.08900 2858.35800
+zoomBox 622.58800 2311.68000 1183.48000 2813.79800
+zoomBox 667.10300 2349.12100 1143.86200 2775.92200
+zoomBox 622.58700 2311.68000 1183.48000 2813.79900
+zoomBox 570.21500 2267.63200 1230.08900 2858.36000
+zoomBox 508.60100 2215.80900 1284.92400 2910.78400
+zoomBox 436.11300 2154.84200 1349.43500 2972.46000
+zoomBox 350.83400 2083.11600 1425.33100 3045.02000
+zoomBox 132.47300 1899.45800 1619.66600 3230.81300
+zoomBox -6.38900 1782.66400 1743.25000 3348.96400
+zoomBox -169.75600 1645.26000 1888.64300 3487.96600
+zoomBox -361.95300 1483.60800 2059.69300 3651.49800
+zoomBox -588.06700 1293.42800 2260.92900 3843.88800
+zoomBox -921.07700 1079.44400 2430.68500 4079.98600
+zoomBox -1312.85100 827.69800 2630.39800 4357.74800
+zoomBox -1773.76300 531.52700 2865.35400 4684.52700
+zoomBox -3704.46900 -709.10200 3849.56100 6053.36700
+zoomBox -5626.20800 -1943.96900 4829.19700 7415.85000
+zoomBox -9977.53000 -4740.03400 7047.35100 10500.86900
+zoomBox -8286.05500 -3653.12900 6185.09500 9301.63900
+pan 5691.11200 5007.34200
+deselectAll
+selectObject Module grid_memory_2__3_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__3_ 1515.36 2527.365 1891.26 2901.585
+zoomBox -547.82800 -2804.14200 11752.65000 8207.41100
+deselectAll
+selectInst grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1758.669 0.0 1905.549 336.46
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1758.67 2561.937 1905.55 2898.397
+deselectAll
+selectObject Module grid_memory_2__3_
+deselectAll
+selectInst grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1850.479 0.0 1997.359 336.46
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1850.48 1941.343 1997.36 2277.803
+deselectAll
+selectInst grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1997.36 2561.935 2144.24 2898.395
+zoomBox 577.88200 -400.59900 6998.80900 5347.50100
+zoomBox 1052.26200 612.26600 4995.51400 4142.31800
+deselectAll
+selectInst grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1850.48 2022.964 1997.36 2359.424
+zoomBox 885.72200 316.09400 5524.84200 4469.09700
+zoomBox 689.79200 -32.34300 6147.58100 4853.54300
+zoomBox 459.28600 -442.27000 6880.21500 5305.83200
+zoomBox 188.10300 -924.53600 7742.13700 5837.93700
+zoomBox -130.93600 -1491.90800 8756.16300 6463.94300
+zoomBox -947.85300 -2944.69400 11352.63100 8066.86500
+deselectAll
+selectObject Module grid_memory_2__3_
+zoomBox -241.33300 -1399.17800 8645.76900 6556.67500
+zoomBox 34.59300 -795.59100 7588.62900 5966.88400
+zoomBox 468.48500 153.54900 5926.27700 5039.43800
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__3_ 1515.36 2447.997 1891.26 2822.217
+zoomBox 269.12900 -282.54300 6690.06100 5465.56200
+zoomBox -241.33400 -1399.18000 8645.77000 6556.67500
+zoomBox -1397.15600 -3927.53900 13074.01000 9027.24300
+deselectAll
+selectObject Module grid_memory_2__5_
+zoomBox 4320.88200 -1994.68100 11874.92100 4767.79600
+deselectAll
+selectInst grid_memory_2__5_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b
+deselectAll
+selectInst grid_memory_2__5_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a
+zoomBox 3425.84800 -2382.70200 12312.95300 5573.15400
+zoomBox 2372.86700 -2839.19700 12828.28500 6520.63400
+zoomBox -2037.95100 -4751.40200 14986.95200 10489.52000
+zoomBox -6428.28600 -6654.72700 17135.59400 14439.97500
+zoomBox -4305.02300 -4218.47300 12719.88100 11022.45000
+zoomBox -1662.60800 -1186.53900 7224.49800 6769.31800
+zoomBox -283.25100 396.14800 4355.87500 4549.15600
+zoomBox -57.29600 655.41100 3885.96100 4185.46800
+zoomBox 298.01800 1063.10200 3147.02100 3613.56800
+zoomBox 554.73200 1357.65900 2613.13700 3200.37100
+zoomBox 654.98900 1472.69500 2404.63400 3039.00100
+zoomBox 554.73200 1357.65900 2613.13800 3200.37200
+zoomBox 436.78100 1222.32200 2858.43600 3390.22000
+zoomBox 311.28500 1048.72700 3160.29100 3599.19600
+zoomBox 163.64100 844.49800 3515.41400 3845.05000
+zoomBox -10.05700 604.22900 3933.20600 4134.29100
+zoomBox -454.81900 -10.99300 5002.98500 4874.90700
+zoomBox -292.78000 390.39900 4346.35400 4543.41400
+zoomBox -155.04600 731.58200 3788.21800 4261.64500
+zoomBox -37.97300 1021.58800 3313.80200 4022.14200
+zoomBox 61.53900 1268.09300 2910.54800 3818.56400
+deselectAll
+selectInst grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b
+dbSet [dbGet top.insts.name -p grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b].orient MX90
+deselectAll
+selectInst grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a
+uiSetTool select
+deselectAll
+selectInst grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a
+dbSet [dbGet top.insts.name -p grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a].orient MX90
+zoomBox 282.67800 1405.75100 2704.33600 3573.65200
+zoomBox 470.64600 1522.76100 2529.05600 3365.47700
+zoomBox 630.41900 1622.21900 2380.06800 3188.52800
+deselectAll
+selectInst grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b
+uiSetTool move
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1850.48 2455.285 2186.94 2602.165
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1531.333 2455.285 1867.793 2602.165
+deselectAll
+selectInst grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1528.825 2561.935 1865.285 2708.815
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1528.825 2618.521 1865.285 2765.401
+zoomBox 409.93200 1470.03500 2468.34300 3312.75200
+zoomBox 150.53600 1290.99500 2572.19600 3458.89800
+setObjFPlanBox Module grid_memory_2__3_ 1093.26 1432.177 1444.8 1749.697
+zoomBox 328.63600 1334.22800 2387.04700 3176.94500
+zoomBox 480.02100 1370.97600 2229.67000 2937.28500
+zoomBox 718.07300 1428.76100 1982.19500 2560.42000
+zoomBox 811.04200 1451.32900 1885.54600 2413.23900
+zoomBox 957.23500 1486.81600 1733.56500 2181.79700
+deselectAll
+selectObject Module grid_memory_2__3_
+zoomBox 687.78000 1325.90000 1951.90500 2457.56200
+zoomBox 249.01800 1063.87600 2307.43500 2906.59900
+zoomBox 48.36100 944.04600 2470.02800 3111.95500
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__3_ 1093.26 2358.674 1444.8 2676.194
+zoomBox -186.04700 664.85700 2662.97300 3215.33800
+zoomBox -461.82100 336.39900 2889.96700 3336.96500
+zoomBox -786.26300 -50.02200 3157.01800 3480.05600
+zoomBox -1167.95800 -504.63500 3471.19600 3648.39800
+zoomBox -841.17700 -12.21200 3102.10400 3517.86600
+zoomBox -563.41300 406.34600 2788.37600 3406.91300
+zoomBox -327.31400 762.12100 2521.70700 3312.60300
+zoomBox -126.63000 1064.53000 2295.03800 3232.44000
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__3_ 1093.26 2229.015 1444.8 2546.535
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__3_ 1093.26 2416.909 1444.8 2734.429
+undo
+undo
+undo
+undo
+setObjFPlanBox Module grid_memory_2__3_ 1103.26 1432.177 1454.8 1749.697
+zoomBox 274.14300 1188.84700 2023.79900 2755.16300
+zoomBox 430.66100 1237.39800 1917.86900 2568.76700
+zoomBox 581.88200 1282.99500 1846.01000 2414.65900
+zoomBox 710.42100 1321.75200 1784.93000 2283.66700
+zoomBox 912.54800 1382.69800 1688.88100 2077.68200
+zoomBox 991.48600 1406.50000 1651.37000 1997.23700
+zoomBox 1058.58400 1426.73100 1619.48600 1928.85800
+zoomBox 1115.61700 1443.92800 1592.38400 1870.73600
+zoomBox 1058.58300 1426.73000 1619.48600 1928.85800
+zoomBox 991.48500 1406.49800 1651.37100 1997.23700
+zoomBox 912.54500 1382.69600 1688.88200 2077.68300
+zoomBox 819.67500 1354.69300 1733.01300 2172.32500
+zoomBox 710.41600 1321.74800 1784.93200 2283.66900
+zoomBox 430.65300 1237.39200 1917.87300 2568.77100
+undo
+zoomBox 635.26500 1363.50700 1899.40300 2495.18000
+zoomBox 809.18600 1470.70400 1883.70400 2432.62700
+zoomBox 430.65100 1237.39000 1917.87400 2568.77200
+zoomBox 189.92900 1089.01700 1939.60400 2655.35000
+zoomBox -93.27400 914.46200 1965.16800 2757.20700
+zoomBox -818.43000 467.50400 2030.62600 3018.01700
+zoomBox -111.68500 1146.63300 1946.75800 2989.37900
+zoomBox 164.32700 1411.86100 1914.00400 2978.19500
+setObjFPlanBox Module grid_memory_2__3_ 1103.26 1432.177 1454.8 1749.697
+undo
+setObjFPlanBox Module grid_memory_2__3_ 1103.26 1632.177 1454.8 1949.697
+setObjFPlanBox Module grid_memory_2__3_ 1103.26 1732.177 1454.8 2049.697
+setObjFPlanBox Module grid_memory_2__3_ 1103.26 1832.177 1454.8 2149.697
+zoomBox 10.14300 1268.86100 2068.58700 3111.60800
+zoomBox -171.25100 1100.62600 2250.44900 3268.56400
+zoomBox 178.37600 1233.61500 2236.82100 3076.36300
+setObjFPlanBox Module grid_memory_2__3_ 1693.26 1432.177 2044.8 1749.697
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1700.335 1593.03 2036.795 1739.91
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1700.26 1437.715 2036.72 1584.595
+uiSetTool select
+gui_select -rect {2090.36000 1396.05400 1666.95400 1808.80800}
+deselectAll
+uiSetTool move
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__3_ 1693.44 2246.217 2044.98 2563.737
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1700.335 2407.887 2036.795 2554.767
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1700.26 2252.572 2036.72 2399.452
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__3_ 1208.786 2247.84 1560.326 2565.36
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1215.681 2407.885 1552.141 2554.765
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1215.606 2252.57 1552.066 2399.45
+zoomBox 299.00600 1366.62800 2048.68500 2932.96400
+zoomBox 401.54200 1479.68900 1888.76900 2811.07500
+zoomBox 299.00600 1366.62800 2048.68500 2932.96400
+zoomBox 178.37500 1233.61400 2236.82100 3076.36300
+zoomBox 36.45600 1077.12800 2458.15800 3245.06800
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__3_ 1111.642 2247.84 1463.182 2565.36
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1118.562 2407.885 1455.022 2554.765
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1118.487 2252.57 1454.947 2399.45
+zoomBox 176.96500 1151.84700 2235.41200 2994.59600
+zoomBox 296.39800 1215.35800 2046.07800 2781.69500
+zoomBox 397.91500 1269.34200 1885.14400 2600.72900
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__3_ 1088.653 2247.84 1440.193 2565.36
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1095.473 2407.885 1431.933 2554.765
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1095.398 2252.57 1431.858 2399.45
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__3_ 1336.832 2247.84 1688.372 2565.36
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1343.667 2407.885 1680.127 2554.765
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1343.592 2252.57 1680.052 2399.45
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__3_ 1202.182 2247.84 1553.722 2565.36
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1208.987 2407.885 1545.447 2554.765
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1208.912 2252.57 1545.372 2399.45
+zoomBox 510.46700 1406.71200 1774.61200 2538.39200
+zoomBox 606.13600 1523.47800 1680.66000 2485.40600
+zoomBox 510.46700 1406.71200 1774.61200 2538.39200
+zoomBox 397.91400 1269.34000 1885.14500 2600.72900
+zoomBox 265.49900 1107.72500 2015.18300 2674.06600
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__3_ 1202.04 2198.043 1553.58 2515.563
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1208.985 2358.088 1545.445 2504.968
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1208.91 2202.773 1545.37 2349.653
+zoomBox 531.82200 1400.42900 1795.96900 2532.11000
+zoomBox 635.83200 1514.74200 1710.35700 2476.67100
+zoomBox 917.55500 1824.37200 1478.46500 2326.50600
+zoomBox 1036.83500 1956.25200 1381.30500 2264.62600
+zoomBox 1065.31100 1987.73500 1358.11000 2249.85300
+zoomBox 1089.51500 2014.49600 1338.39400 2237.29600
+zoomBox 963.91900 1875.63500 1440.69700 2302.45300
+zoomBox 862.99900 1764.05600 1522.90000 2354.80800
+zoomBox 798.82100 1693.09900 1575.17600 2388.10200
+zoomBox 723.31800 1609.62000 1636.67700 2427.27100
+zoomBox 634.49100 1511.41000 1709.03100 2473.35300
+zoomBox 529.98800 1395.86900 1794.15400 2527.56700
+zoomBox 407.04400 1259.93800 1894.29800 2591.34800
+zoomBox 721.83100 1694.99800 1635.19200 2512.65100
+zoomBox 860.85500 1887.14000 1520.75900 2477.89500
+zoomBox 1028.15900 2112.23700 1372.63400 2420.61600
+zoomBox 1078.86000 2180.37600 1327.74400 2403.18000
+zoomBox 1028.15700 2112.23600 1372.63400 2420.61600
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__3_ 1199.366 2198.7 1550.906 2516.22
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1206.311 2358.09 1542.771 2504.97
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1206.236 2202.775 1542.696 2349.655
+zoomBox 918.95400 1966.07100 1479.87700 2468.21700
+zoomBox 810.25700 1820.58500 1586.62200 2515.59700
+zoomBox 660.19800 1619.60600 1734.75200 2581.56100
+zoomBox 564.77100 1491.79800 1828.95200 2623.51000
+zoomBox 452.50400 1341.43500 1939.77600 2672.86100
+zoomBox 550.34100 1500.45600 1814.52200 2632.16800
+zoomBox 633.50200 1635.62400 1708.05600 2597.57900
+zoomBox 704.18900 1750.51600 1617.56000 2568.17800
+setObjFPlanBoxList Module sb_1__3_ {{879.48000 2429.28000 1174.46300 2542.68000} {850.08000 2300.76000 1174.46300 2429.28000} {1057.56000 2198.70000 1174.46300 2300.76000}}
+zoomBox 631.00000 1642.29600 1705.55400 2604.25100
+zoomBox 544.89500 1514.97800 1809.07600 2646.69000
+zoomBox 443.59500 1365.19200 1930.86700 2696.61800
+zoomBox 324.41900 1188.97400 2074.15000 2755.35700
+zoomBox 184.21200 981.65900 2242.71900 2824.46200
+zoomBox 19.26200 737.75800 2441.03500 2905.76200
+zoomBox -403.10200 113.23700 2948.83400 3113.93500
+zoomBox 19.26100 737.75700 2441.03500 2905.76200
+zoomBox 443.59400 1365.19100 1930.86700 2696.61800
+zoomBox 630.99900 1642.29400 1705.55400 2604.25000
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__3_ 1187.009 2198.7 1538.549 2516.22
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1193.799 2358.09 1530.259 2504.97
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1193.724 2202.775 1530.184 2349.655
+zoomBox 770.64200 1797.75300 1547.00900 2492.76700
+zoomBox 825.17900 1858.46600 1485.09100 2449.22800
+zoomBox 871.53500 1910.07200 1432.46000 2412.22000
+zoomBox 770.64300 1797.75300 1547.01000 2492.76700
+zoomBox 706.48200 1726.32500 1619.85500 2543.98900
+zoomBox 630.99900 1642.29300 1705.55500 2604.25000
+zoomBox 437.71900 1427.12300 1924.99600 2758.55300
+zoomBox 314.80700 1290.29000 2064.54500 2856.67900
+zoomBox 170.20400 1129.31000 2228.72000 2972.12100
+zoomBox 311.61000 1328.63700 2061.34900 2895.02700
+zoomBox 431.80500 1498.06500 1919.08400 2829.49700
+zoomBox 533.97100 1642.07900 1798.15800 2773.79600
+setObjFPlanBoxList Module sb_1__3_ {{879.48000 2429.28000 1174.32000 2523.57500} {850.08000 2300.76000 1174.32000 2429.28000} {1057.56000 2198.70000 1174.32000 2300.76000}}
+zoomBox 620.07600 1770.13300 1694.63500 2732.09300
+zoomBox 693.26600 1878.97900 1606.64100 2696.64500
+zoomBox 755.47700 1971.49800 1531.84600 2666.51400
+setObjFPlanBoxList Module sb_1__3_ {{879.48000 2429.28000 1174.32000 2515.86000} {850.08000 2300.76000 1174.32000 2429.28000} {1057.56000 2198.70000 1174.32000 2300.76000}}
+zoomBox 811.06800 2049.83800 1470.98200 2640.60200
+zoomBox 858.32000 2116.42700 1419.24700 2618.57600
+zoomBox 898.48500 2173.02700 1375.27300 2599.85400
+zoomBox 858.31900 2116.42600 1419.24700 2618.57600
+zoomBox 690.07200 1879.33100 1603.45100 2697.00000
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__3_ 1196.373 2198.7 1547.913 2516.22
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1203.253 2358.09 1539.713 2504.97
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1203.178 2202.775 1539.638 2349.655
+zoomBox 921.07500 2099.03700 1397.86500 2525.86600
+zoomBox 958.91600 2135.02800 1364.18700 2497.83200
+setObjFPlanBoxList Module sb_1__3_ {{879.48000 2429.28000 1183.83400 2516.22000} {850.08000 2300.76000 1183.83400 2429.28000} {1057.56000 2198.70000 1183.83400 2300.76000}}
+zoomBox 922.27700 2100.79500 1399.06700 2527.62400
+zoomBox 879.17300 2060.52100 1440.10300 2562.67300
+zoomBox 828.46300 2013.14000 1488.38000 2603.90700
+zoomBox 768.80400 1957.39800 1545.17700 2652.41800
+zoomBox 698.61700 1891.81900 1611.99700 2709.48900
+zoomBox 616.04300 1814.66700 1690.60800 2776.63200
+zoomBox 404.60900 1617.11500 1891.89700 2948.55500
+zoomBox 111.96700 1343.68600 2170.49800 3186.51100
+zoomBox -74.13300 1169.80500 2347.66800 3337.83400
+zoomBox -293.07500 965.23900 2556.10400 3515.86200
+zoomBox -550.65200 724.57300 2801.32300 3725.30600
+zoomBox -1210.19300 108.33500 3429.21900 4261.59900
+pan -138.04300 2392.85500
+zoomBox -953.01600 1306.89900 2990.48500 4837.17400
+zoomBox -617.07900 1412.50100 2734.89700 4413.23500
+zoomBox -331.53300 1502.26300 2517.64700 4052.88700
+zoomBox -617.08000 1412.50000 2734.89700 4413.23500
+zoomBox -329.58200 1537.38600 2519.59900 4088.01100
+zoomBox -85.20800 1643.53900 2336.59500 3811.57000
+zoomBox 135.66700 1733.29900 2194.20100 3576.12600
+zoomBox 323.41200 1809.59500 2073.16600 3375.99800
+zoomBox 482.99500 1874.44600 1970.28600 3205.88900
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__3_ 1196.58 2789.383 1548.12 3106.903
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1203.255 2948.773 1539.715 3095.653
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1203.18 2793.458 1539.64 2940.338
+zoomBox 66.20100 1661.61600 2124.73500 3504.44300
+zoomBox -198.85000 1526.27000 2222.95400 3694.30200
+zoomBox -877.52900 1179.71000 2474.45000 4180.44700
+zoomBox -1816.87600 700.04300 2822.54200 4853.31200
+zoomBox -1339.73000 1031.34400 2603.77500 4561.62300
+zoomBox -934.15600 1312.95000 2417.82300 4313.68700
+zoomBox -589.41900 1552.31500 2259.76400 4102.94200
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__3_ 1196.58 2939.501 1548.12 3257.021
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1203.255 3099.896 1539.715 3246.776
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1203.18 2944.581 1539.64 3091.461
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__3_ 1358.759 2939.58 1710.299 3257.1
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1365.434 3099.895 1701.894 3246.775
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1365.359 2944.58 1701.819 3091.46
+zoomBox -215.11900 1762.41000 2206.68700 3930.44300
+zoomBox 103.03700 1945.69000 2161.57200 3788.51800
+zoomBox 798.72300 2346.45300 2062.92200 3478.18100
+zoomBox 1105.97000 2523.44900 2019.35400 3341.12300
+zoomBox 1225.96200 2592.57300 2002.33900 3287.59600
+zoomBox 1327.95600 2651.32900 1987.87600 3242.09800
+zoomBox 1225.96200 2592.57300 2002.33900 3287.59600
+zoomBox 1105.96900 2523.44800 2019.35400 3341.12300
+zoomBox 964.80000 2442.12500 2039.37200 3404.09600
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__3_ 1340.628 2939.58 1692.168 3257.1
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1347.363 3099.895 1683.823 3246.775
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1347.288 2944.58 1683.748 3091.46
+zoomBox 855.38800 2369.01900 2119.59100 3500.75100
+zoomBox 726.66700 2283.01300 2213.96600 3614.46300
+zoomBox 575.23200 2181.83000 2324.99600 3748.24200
+zoomBox 187.47400 1922.74500 2609.29300 4090.79000
+zoomBox -59.11400 1757.98500 2790.08600 4308.62700
+zoomBox -690.51200 1336.10900 3253.01700 4866.40900
+zoomBox -1092.03700 1067.82500 3547.40900 5221.11900
+zoomBox -1564.42000 752.19700 3893.75200 5638.42600
+zoomBox -904.09100 1102.93500 3039.43900 4633.23600
+zoomBox -646.20600 1239.91300 2705.79500 4240.66900
+zoomBox -82.30700 1539.43100 1976.24100 3382.27100
+create_relative_floorplan -place cby_1__4_ -ref_type object -ref sb_1__3_ -horizontal_edge_separate {5 10 3} -vertical_edge_separate {4 0 0}
+delete_relative_floorplan -all
+pan -95.87000 2119.73100
+deselectAll
+selectObject Module sb_1__4_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module sb_1__4_ 882.535 2882.88 1287.835 3287.34
+zoomBox -13.60000 2160.05800 1736.16600 3726.47200
+zoomBox 126.29100 2264.29700 1613.59200 3595.74900
+zoomBox 245.19800 2352.90000 1509.40400 3484.63400
+zoomBox 352.40200 2422.08000 1426.97700 3384.05400
+zoomBox 443.52500 2480.88300 1356.91400 3298.56100
+zoomBox 520.98000 2530.86500 1297.36100 3225.89200
+zoomBox 690.34500 2640.15700 1167.14100 3066.99100
+zoomBox 765.14400 2688.42400 1109.63000 2996.81300
+setObjFPlanBox Module sb_1__4_ 882.42000 2814.98800 1287.72000 3287.34000
+zoomBox 691.02800 2639.81200 1167.82700 3066.64900
+zoomBox 643.89600 2608.89900 1204.83600 3111.06000
+zoomBox 523.21100 2529.74200 1299.60000 3224.77600
+zoomBox 356.17400 2420.18400 1430.76100 3382.16900
+zoomBox 249.95000 2350.51300 1514.17000 3482.26000
+zoomBox 124.98000 2268.54700 1612.29800 3600.01400
+zoomBox 231.47800 2413.43000 1495.69900 3545.17800
+zoomBox 322.00100 2536.58100 1396.58900 3498.56700
+zoomBox 463.96300 2725.60700 1240.35300 3420.64200
+zoomBox 566.80900 2859.66900 1127.75100 3361.83200
+zoomBox 681.05600 2928.27300 1025.54500 3236.66400
+zoomBox 708.39600 2943.91500 1001.21200 3206.04800
+uiSetTool cut
+setObjFPlanBoxList Module sb_1__4_ {{882.42000 3143.16600 1287.72000 3287.34000} {854.99400 3014.37300 1287.72000 3143.16600} {882.42000 2814.84000 1287.72000 3014.37300}}
+zoomBox 686.06800 2920.25100 1030.55800 3228.64300
+zoomBox 659.80100 2892.41100 1065.08300 3255.22500
+zoomBox 628.89800 2859.65800 1105.70100 3286.49800
+zoomBox 592.54200 2821.12400 1153.48700 3323.29000
+zoomBox 499.44800 2722.45700 1275.84400 3417.49700
+zoomBox 440.24800 2659.71200 1353.65500 3477.40600
+zoomBox 370.60100 2585.89400 1445.19700 3547.88700
+zoomBox 288.66300 2499.04900 1552.89400 3630.80600
+zoomBox 192.26500 2396.87900 1679.59600 3728.35800
+uiSetTool move
+setObjFPlanBoxList Module sb_1__4_ {{882.42000 3143.70000 1237.05300 3287.34000} {855.12000 3015.18000 1237.05300 3143.70000} {882.42000 2814.84000 1237.05300 3015.18000}}
+setObjFPlanBoxList Module sb_1__4_ {{882.42000 3143.70000 1175.48100 3287.34000} {855.12000 3015.18000 1175.48100 3143.70000} {882.42000 2814.84000 1175.48100 3015.18000}}
+setObjFPlanBoxList Module sb_1__4_ {{882.42000 3143.70000 1154.31600 3287.34000} {855.12000 3015.18000 1154.31600 3143.70000} {882.42000 2814.84000 1154.31600 3015.18000}}
+setObjFPlanBoxList Module sb_1__4_ {{882.42000 3143.70000 1142.77200 3287.34000} {855.12000 3015.18000 1142.77200 3143.70000} {882.42000 2814.84000 1142.77200 3015.18000}}
+zoomBox 296.16700 2440.46000 1560.39800 3572.21700
+zoomBox 384.48300 2477.50300 1459.08000 3439.49700
+create_relative_floorplan -place sb_1__4_ -ref_type object -ref cby_1__4_ -horizontal_edge_separate {1 10 7} -vertical_edge_separate {0 0 0}
+delete_relative_floorplan -all
+zoomBox 452.04400 2566.96000 1365.45200 3384.65500
+zoomBox 509.47200 2642.99900 1285.86800 3338.03900
+zoomBox 558.28500 2707.63200 1218.22200 3298.41600
+zoomBox 599.77600 2762.56900 1160.72300 3264.73600
+zoomBox 635.04400 2809.26600 1111.84900 3236.10800
+zoomBox 712.16200 2911.37500 1004.97900 3173.50900
+zoomBox 759.52000 2974.08200 939.34700 3135.06600
+zoomBox 770.82500 2989.05200 923.67900 3125.88900
+zoomBox 780.43500 3001.77600 910.36100 3118.08800
+zoomBox 788.60300 3012.59100 899.04100 3111.45700
+uiSetTool ruler
+uiSetTool move
+setObjFPlanBoxList Module sb_1__4_ {{879.48000 3143.70000 1139.88000 3287.34000} {850.32300 3015.18000 1139.88000 3143.70000} {879.48000 2814.84000 1139.88000 3015.18000}}
+zoomBox 778.64400 3005.05300 908.57100 3121.36500
+zoomBox 766.92800 2996.18400 919.78300 3133.02200
+zoomBox 753.14400 2985.75000 932.97400 3146.73600
+zoomBox 736.92800 2973.47500 948.49200 3162.87000
+zoomBox 717.85000 2959.03300 966.74900 3181.85100
+zoomBox 695.40500 2942.04300 988.22800 3204.18200
+zoomBox 668.99900 2922.05500 1013.49700 3230.45400
+zoomBox 637.93400 2898.54000 1043.22500 3261.36200
+zoomBox 601.38700 2870.87500 1078.20000 3297.72400
+zoomBox 558.39000 2838.32800 1119.34600 3340.50300
+zoomBox 507.80500 2800.03700 1167.75400 3390.83200
+zoomBox 448.29400 2754.98900 1224.70400 3450.04200
+zoomBox 378.28100 2701.99200 1291.70400 3519.70100
+zoomBox 514.03500 2835.77900 1173.98400 3426.57400
+zoomBox 684.20600 3001.86900 1028.70500 3310.26900
+zoomBox 755.91800 3071.86200 967.48300 3261.25800
+zoomBox 799.95700 3114.84600 929.88500 3231.15900
+zoomBox 819.40700 3133.82900 913.28000 3217.86500
+zoomBox 838.94800 3152.90100 896.59800 3204.51000
+uiSetTool ruler
+zoomBox 813.40700 3137.48300 907.28200 3221.52100
+zoomBox 801.72600 3130.43200 912.16800 3229.30100
+zoomBox 730.42400 3087.38800 941.99800 3276.79200
+zoomBox 636.69400 3030.80600 981.21000 3339.22100
+zoomBox 593.82900 3004.92900 999.14200 3367.77100
+zoomBox 414.27300 2896.53700 1074.25900 3487.36500
+zoomBox 331.55500 2831.44700 1108.00900 3526.53900
+zoomBox 234.24000 2754.87100 1147.71500 3572.62600
+zoomBox 119.75200 2664.78200 1194.42800 3626.84600
+zoomBox -359.82700 2287.40900 1390.10300 3853.97000
+zoomBox -836.30900 1911.78800 1585.73900 4080.03800
+zoomBox -1139.31900 1672.91900 1710.15000 4223.80200
+zoomBox -1990.23100 1031.55000 1953.67100 4562.18400
+zoomBox -2531.35100 623.68400 2108.53400 4777.37100
+zoomBox -1930.80700 1055.85900 2013.09500 4586.49300
+zoomBox -1420.34500 1423.20800 1931.97200 4424.24700
+zoomBox -986.45200 1735.45500 1863.01700 4286.33800
+zoomBox -304.15600 2226.46200 1754.58700 4069.47600
+zoomBox -617.64400 2000.86300 1804.40700 4169.11600
+zoomBox -986.45400 1735.45300 1863.01800 4286.33900
+zoomBox -1420.34800 1423.20600 1931.97200 4424.24800
+zoomBox -984.50300 1735.45300 1864.96900 4286.33900
+zoomBox -614.03500 2000.86300 1808.01600 4169.11600
+zoomBox -984.50300 1735.45300 1864.96900 4286.33900
+zoomBox -1420.34800 1423.20600 1931.97200 4424.24800
+zoomBox -1591.77800 1095.65200 2352.12800 4626.29000
+zoomBox -1793.46100 710.29500 2846.42900 4863.98700
+zoomBox -2030.73400 256.93400 3427.96000 5143.63000
+zoomBox -2309.87900 -276.43300 4112.11400 5472.62200
+zoomBox -2638.28600 -903.92300 4917.00100 5859.67200
+zoomBox -3024.64700 -1642.14600 5863.92700 6315.02500
+zoomBox -4643.06500 -4734.47900 9830.49400 8222.44600
+zoomBox -5383.20900 -6148.68300 11644.50800 9094.75800
+zoomBox -7278.38800 -9769.82900 16289.38800 11328.36100
+uiSetTool move
+deselectAll
+selectObject Module grid_clb_3__4_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__4_ 2166.252 8001.062 2730.099 8564.61
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__4_ 2166.36 2373.171 2730.0 2932.611
+zoomBox -3431.00700 -3925.89000 8871.52000 7087.49800
+zoomBox -1093.66000 -375.59900 4365.03900 4511.10200
+zoomBox -576.32000 410.20900 3367.59100 3940.85100
+zoomBox -374.27800 717.09900 2978.04700 3718.14500
+zoomBox -202.54200 977.95600 2646.93400 3528.84500
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__4_ 1200.561 2372.58 1764.201 2932.02
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__4_ 1200.36 2350.462 1764.0 2909.902
+zoomBox -945.85200 326.67500 2998.06000 3857.31800
+zoomBox -1418.54500 -87.49400 3221.35100 4066.20300
+zoomBox -1006.17700 326.67500 2937.73500 3857.31800
+zoomBox -655.66400 678.71900 2696.66100 3679.76500
+zoomBox -1006.17800 326.67500 2937.73400 3857.31800
+zoomBox -1418.54700 -87.49500 3221.35000 4066.20300
+zoomBox -1008.87900 420.31300 2935.03300 3950.95600
+zoomBox -660.66200 851.94900 2691.66400 3852.99600
+zoomBox -375.08500 1177.20700 2474.39200 3728.09700
+zoomBox -132.34500 1453.67600 2289.71100 3621.93300
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__4_ 1200.36 2428.233 1764.0 2987.673
+zoomBox 44.37400 1633.68500 2103.12200 3476.70400
+zoomBox 194.58500 1786.69300 1944.52100 3353.25900
+zoomBox 322.26500 1916.75000 1809.71000 3248.33100
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__4_ 1200.36 2454.295 1764.0 3013.735
+create_relative_floorplan -place grid_clb_3__4_ -ref_type object -ref grid_clb_1__4_ -horizontal_edge_separate {1 0 1} -vertical_edge_separate {2 100 0}
+delete_relative_floorplan -all
+create_relative_floorplan -place grid_clb_3__4_ -ref_type object -ref grid_clb_1__4_ -horizontal_edge_separate {1 0 1} -vertical_edge_separate {2 200 0}
+delete_relative_floorplan -all
+zoomBox 430.79200 2033.07100 1695.12100 3164.91500
+zoomBox 523.04100 2131.94400 1597.72000 3094.01100
+zoomBox 601.45200 2215.98600 1514.92900 3033.74300
+zoomBox 724.75300 2348.14100 1384.74100 2938.97100
+zoomBox 848.62800 2480.91300 1253.94500 2843.75800
+zoomBox 878.20000 2512.60900 1222.72000 2821.02800
+zoomBox 924.70300 2562.45100 1173.61900 2785.28400
+zoomBox 942.86400 2581.91700 1154.44300 2771.32500
+zoomBox 971.42300 2612.52600 1124.28900 2749.37400
+zoomBox 982.57600 2624.48000 1112.51300 2740.80100
+zoomBox 992.05700 2634.64100 1102.50300 2733.51400
+zoomBox 1000.11500 2643.27700 1093.99500 2727.32000
+zoomBox 1006.96500 2650.61900 1086.76300 2722.05500
+uiSetTool ruler
+create_relative_floorplan -place grid_clb_3__4_ -ref_type object -ref grid_clb_1__4_ -horizontal_edge_separate {1 0 1} -vertical_edge_separate {2 187 0}
+delete_relative_floorplan -all
+zoomBox 998.49400 2646.44700 1092.37400 2730.49000
+zoomBox 988.52800 2641.53900 1098.97500 2740.41300
+zoomBox 963.00900 2628.97200 1115.87700 2765.82100
+zoomBox 927.68900 2611.57700 1139.27200 2800.98900
+zoomBox 905.22800 2600.51600 1154.14900 2823.35300
+zoomBox 878.80300 2587.50200 1171.65200 2849.66400
+zoomBox 847.71500 2572.19200 1192.24300 2880.61800
+zoomBox 811.14100 2554.18000 1216.46800 2917.03400
+zoomBox 657.93800 2478.73100 1317.94500 3069.57800
+zoomBox 587.87300 2444.22600 1364.35300 3139.34100
+zoomBox 505.44500 2403.63200 1418.95100 3221.41500
+zoomBox 408.47100 2355.87500 1483.18300 3317.97200
+zoomBox 294.38300 2299.69000 1558.75100 3431.56900
+zoomBox 160.16200 2233.58900 1647.65400 3565.21200
+zoomBox 2.25400 2155.82400 1752.24600 3722.44000
+zoomBox -183.51900 2064.33600 1875.29500 3907.41400
+zoomBox -402.07500 1956.70300 2020.05900 4125.03000
+zoomBox 156.53200 2269.86100 1644.02600 3601.48600
+zoomBox 403.23800 2408.16700 1477.95300 3370.26600
+zoomBox 651.09600 2547.11700 1311.10600 3137.96700
+zoomBox 710.26600 2580.28800 1271.27500 3082.51100
+zoomBox 870.53600 2670.13500 1163.38800 2932.30000
+zoomBox 902.98500 2690.19500 1151.90900 2913.03500
+zoomBox 930.56600 2707.24500 1142.15200 2896.66000
+zoomBox 954.01000 2721.73900 1133.85800 2882.74100
+zoomBox 973.93700 2734.05800 1126.80800 2870.91000
+zoomBox 990.87500 2744.52900 1120.81600 2860.85400
+zoomBox 1005.27300 2753.43000 1115.72300 2852.30600
+uiSetTool cut
+zoomBox 973.13200 2722.18700 1152.98100 2883.19000
+zoomBox 920.79600 2671.31200 1213.65000 2933.47900
+zoomBox 896.86000 2648.04600 1241.39500 2956.47800
+zoomBox 835.57300 2588.47000 1312.43900 3015.36700
+zoomBox 796.59900 2550.58500 1357.61800 3052.81700
+setObjFPlanBoxList Module grid_clb_3__4_ {{1152.95100 2803.15400 1619.94000 3003.84000} {1056.30000 2444.40000 1619.94000 2803.15400}}
+zoomBox 739.47700 2513.44300 1399.49900 3104.30400
+zoomBox 672.27400 2469.74600 1448.77100 3164.87700
+zoomBox 593.21200 2418.33800 1506.73800 3236.13900
+zoomBox 500.19700 2357.85800 1574.93400 3319.97700
+zoomBox 390.76800 2286.70500 1655.16500 3418.61000
+zoomBox 504.12200 2303.63400 1578.86000 3265.75400
+zoomBox 600.47300 2318.02400 1514.00000 3135.82600
+zoomBox 811.15700 2349.49000 1372.17600 2851.72200
+zoomBox 861.45300 2357.00200 1338.31900 2783.89900
+zoomBox 904.20400 2363.38700 1309.54000 2726.24900
+zoomBox 940.14900 2370.78000 1284.68500 2679.21300
+setObjFPlanBoxList Module grid_clb_3__4_ {{1152.90000 2803.50000 1619.94000 3003.84000} {1056.30000 2526.77900 1619.94000 2803.50000} {1193.76000 2444.40000 1619.94000 2526.77900}}
+zoomBox 903.41700 2356.62200 1308.75300 2719.48400
+zoomBox 860.20300 2339.96500 1337.06900 2766.86200
+zoomBox 809.36300 2320.36900 1370.38200 2822.60100
+zoomBox 749.55100 2297.31500 1409.57300 2888.17600
+zoomBox 596.39800 2238.28300 1509.92500 3056.08500
+zoomBox 384.42300 2156.58000 1648.82100 3288.48600
+zoomBox 249.62100 2104.62200 1737.14900 3436.27700
+uiSetTool move
+setObjFPlanBoxList Module grid_clb_3__4_ {{1152.90000 2803.50000 1619.94000 2932.09500} {1056.30000 2527.56000 1619.94000 2803.50000} {1193.64000 2444.40000 1619.94000 2527.56000}}
+zoomBox 877.86400 2495.55000 1654.36400 3190.68300
+zoomBox 1068.25500 2614.02100 1629.27600 3116.25500
+zoomBox 1142.60900 2660.28800 1619.47800 3087.18800
+zoomBox 1305.19500 2761.45800 1598.05400 3023.62900
+zoomBox 1344.00800 2785.61000 1592.93900 3008.45600
+zoomBox 1377.00000 2806.13900 1588.59200 2995.55900
+zoomBox 1405.04300 2823.58800 1584.89700 2984.59600
+setObjFPlanBoxList Module grid_clb_3__4_ {{1152.90000 2803.50000 1619.94000 2929.22000} {1056.30000 2527.56000 1619.94000 2803.50000} {1193.64000 2444.40000 1619.94000 2527.56000}}
+zoomBox 1305.62800 2757.21500 1598.49200 3019.39100
+zoomBox 1143.75100 2649.13900 1620.63100 3076.04800
+zoomBox 880.16100 2473.15400 1656.68100 3168.30500
+zoomBox 759.61400 2392.67100 1673.16700 3210.49600
+zoomBox 617.79500 2297.98600 1692.56300 3260.13300
+zoomBox 450.94900 2186.59200 1715.38200 3318.52900
+zoomBox 254.65900 2055.53900 1742.22800 3387.23100
+uiSetTool select
+gui_select -rect {1293.84100 3285.23700 1709.51300 2915.75000}
+deselectAll
+uiSetTool move
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__3_ 1155.897 2939.58 1507.437 3257.1
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1162.622 3099.895 1499.082 3246.775
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1162.547 2944.58 1499.007 3091.46
+zoomBox 596.98900 2400.09600 1510.54300 3217.92200
+zoomBox 678.71200 2482.35100 1455.23300 3177.50300
+zoomBox 857.41000 2662.21200 1334.29200 3089.12300
+zoomBox 967.15300 2772.66800 1260.01900 3034.84600
+zoomBox 1034.54900 2840.50300 1214.40600 3001.51300
+zoomBox 1075.93900 2882.16200 1186.39400 2981.04300
+zoomBox 1094.21900 2900.52100 1174.02300 2971.96300
+zoomBox 1101.45000 2907.59800 1169.28400 2968.32400
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__3_ 1153.646 2939.58 1505.186 3257.1
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1160.426 3099.895 1496.886 3246.775
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1160.351 2944.58 1496.811 3091.46
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__3_ 1153.301 2939.58 1504.841 3257.1
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1159.986 3099.895 1496.446 3246.775
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1159.911 2944.58 1496.371 3091.46
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__3_ 1153.145 2939.58 1504.685 3257.1
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1159.81 3099.895 1496.27 3246.775
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1159.735 2944.58 1496.195 3091.46
+uiSetTool ruler
+uiSetTool move
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_memory_2__3_ 1152.969 2939.58 1504.509 3257.1
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_a 1159.459 3099.895 1495.919 3246.775
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Instance grid_memory_2__3_/logical_tile_memory_mode_memory__0/logical_tile_memory_mode_mem_1024x8_dp__mem_1024x8_dp_0/dpram_1024x8_0_/sram_b 1159.384 2944.58 1495.844 3091.46
+zoomBox 1083.41800 2894.82300 1177.30600 2978.87300
+zoomBox 1042.58700 2865.89900 1195.46900 3002.76100
+zoomBox 976.10100 2818.79800 1225.04600 3041.65700
+zoomBox 867.83900 2742.10500 1273.20600 3104.99500
+zoomBox 760.08000 2665.76800 1321.14300 3168.03900
+zoomBox 610.93300 2560.11000 1387.49200 3255.29600
+zoomBox 404.50200 2413.87300 1479.32400 3376.06800
+zoomBox 118.78500 2211.46800 1606.42800 3543.22600
+zoomBox -62.91200 2082.75200 1687.25700 3649.52700
+zoomBox -276.67300 1931.32200 1782.35000 3774.58700
+zoomBox -528.15600 1753.16900 1894.22400 3921.71600
+uiSetTool select
+deselectAll
+zoomBox -1268.38100 1133.30600 2084.39500 4134.75600
+zoomBox -1739.11200 739.11700 2205.33100 4270.23500
+zoomBox -2292.91300 275.36500 2347.60800 4429.62200
+zoomBox -2944.44400 -270.22600 2514.99400 4617.13600
+zoomBox -2334.23000 298.67100 2306.29200 4452.92900
+zoomBox -1815.54800 782.23400 2128.89600 4313.35300
+zoomBox -1374.66900 1193.26200 1978.10900 4194.71400
+zoomBox -681.38600 1839.60400 1740.99600 4008.15300
+zoomBox -410.63100 2092.02700 1648.39400 3935.29400
+zoomBox -1374.67000 1193.26100 1978.10900 4194.71400
+zoomBox -1815.55100 782.23200 2128.89600 4313.35400
+zoomBox -2334.23300 298.66900 2306.29300 4452.93000
+zoomBox -1358.01200 1356.51900 1994.76800 4357.97300
+zoomBox -976.75800 1769.65300 1873.10500 4320.88900
+zoomBox -652.69200 2120.81600 1769.69200 4289.36700
+uiSetTool move
+selectObject Module grid_clb_3__4_
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__4_ 1256.86 2444.4 1820.5 2928.24
+setObjFPlanBoxList Module grid_clb_3__4_ {{1152.90000 2803.50000 1619.94000 2929.22000} {1056.30000 2527.56000 1619.94000 2803.50000} {1193.64000 2444.40000 1619.94000 2527.56000}}
+getFPlanMode -autoSyncMasterClone -quiet
+setObjFPlanBox Module grid_clb_3__4_ 1344.605 2444.4 1908.245 2928.24
+create_relative_floorplan -place grid_clb_3__4_ -ref_type object -ref cby_1__4_ -horizontal_edge_separate {1 0 3} -vertical_edge_separate {2 10 0}
+delete_relative_floorplan -all
+create_relative_floorplan -place grid_clb_3__4_ -ref_type object -ref cby_1__4_ -horizontal_edge_separate {1 0 3} -vertical_edge_separate {2 10 2}
+delete_relative_floorplan -all
+zoomBox -378.17700 2237.39100 1680.85000 4080.66000
+zoomBox -144.83900 2336.48000 1605.33500 3903.25900
+zoomBox 53.49900 2420.70500 1541.14700 3752.46800
+zoomBox 222.08500 2492.29600 1486.58700 3624.29500
+zoomBox 365.38400 2553.14800 1440.21100 3515.34800
+zoomBox 487.18800 2604.87300 1400.79100 3422.74300
+zoomBox 590.72100 2648.83900 1367.28400 3344.02900
+zoomBox 753.52700 2717.97500 1314.59500 3220.25100
+zoomBox 590.71900 2648.83700 1367.28500 3344.02900
+zoomBox 487.18500 2604.87000 1400.79200 3422.74300
+zoomBox 222.08000 2492.29000 1486.58800 3624.29500
+zoomBox 53.49200 2420.69800 1541.14800 3752.46800
+zoomBox -144.84800 2336.47200 1605.33600 3903.26000
+zoomBox -378.18800 2237.38200 1680.85200 4080.66200
+zoomBox -645.65500 2092.60200 1776.74500 4261.16700
+zoomBox -960.32200 1922.27200 1889.56100 4473.52600
+zoomBox -1367.60400 1665.93200 1985.20000 4667.40700
+zoomBox -1846.75800 1364.35600 2097.71700 4895.50300
+zoomBox -2410.46900 1009.56000 2230.09000 5163.85100
+zoomBox -3073.65900 592.15300 2385.82300 5479.55500
+zoomBox -5851.68600 -1156.31700 3038.17000 6802.00200

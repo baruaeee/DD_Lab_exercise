@@ -1,0 +1,20 @@
+# Version:1.0 MMMC View Definition File
+# Do Not Remove Above Line
+create_rc_corner -name RC_BEST -cap_table {/eda/cadence/pdks/ihp_sg13g2/ixc013g2ng_stdcell/lef/captable/SG13.captable} -T {40} -preRoute_res {1.0} -preRoute_cap {1.0} -preRoute_clkres {0.0} -preRoute_clkcap {0.0} -postRoute_res {1.0} -postRoute_cap {1.0} -postRoute_xcap {1.0} -postRoute_clkres {0.0} -postRoute_clkcap {0.0}
+
+create_rc_corner -name RC_WORST -cap_table {/eda/cadence/pdks/ihp_sg13g2/ixc013g2ng_stdcell/lef/captable/SG13.captable} -T {125} -preRoute_res {1.0} -preRoute_cap {1.0} -preRoute_clkres {0.0} -preRoute_clkcap {0.0} -postRoute_res {1.0} -postRoute_cap {1.0} -postRoute_xcap {1.0} -postRoute_clkres {0.0} -postRoute_clkcap {0.0}
+
+create_library_set -name MAX_TIMING -timing {/eda/cadence/pdks/ihp_sg13g2/ixc013g2ng_stdcell/lib/ixc013g2ng_stdcell_slow_1p08V_125C.lib}
+
+create_library_set -name MIN_TIMING -timing {/eda/cadence/pdks/ihp_sg13g2/ixc013g2ng_stdcell/lib/ixc013g2ng_stdcell_fast_1p32V_m40C.lib}
+
+
+create_constraint_mode -name CONSTRAINTS -sdc_files {../Synthesis/outputs/post_synth_main.sdc}
+
+
+
+create_delay_corner -name MIN_DEALY -library_set {MIN_TIMING} -rc_corner {RC_WORST}
+create_delay_corner -name MAX_DEALY -library_set {MAX_TIMING} -rc_corner {RC_BEST}
+create_analysis_view -name Best_CASE -constraint_mode {CONSTRAINTS} -delay_corner {MIN_DEALY}
+create_analysis_view -name WORST_CASE -constraint_mode {CONSTRAINTS} -delay_corner {MAX_DEALY}
+set_analysis_view -setup {WORST_CASE} -hold {Best_CASE}

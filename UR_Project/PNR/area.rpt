@@ -1,0 +1,18 @@
+    Hinst Name          Module Name                                                   Inst Count           Total Area
+------------------------------------------------------------------------------------------------------------------
+Main                                                                                         426             6896.534
+  A6M                   ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8        225             4913.622
+    A6M/AM_INST[0].am   ActivationMultiplier_IN_WIDTH8                                         0                0.000
+    A6M/AM_INST[1].am   ActivationMultiplier_IN_WIDTH8                                         0                0.000
+    A6M/AM_INST[2].am   ActivationMultiplier_IN_WIDTH8                                         0                0.000
+    A6M/AM_INST[3].am   ActivationMultiplier_IN_WIDTH8                                         0                0.000
+    A6M/AM_INST[4].am   ActivationMultiplier_IN_WIDTH8                                         0                0.000
+    A6M/AM_INST[5].am   ActivationMultiplier_IN_WIDTH8                                         0                0.000
+  AT6                   AdderTree_6_WEIGHT_WIDTH8_NUM_UNITS6                                 182             1690.794
+    AT6/L1_ADD[0].inst_L1 adder_nbit_N5                                                         30              242.903
+    AT6/L1_ADD[1].inst_L1 adder_nbit_N5_158                                                     30              242.903
+    AT6/L1_ADD[2].inst_L1 adder_nbit_N5_157                                                     24              223.852
+    AT6/inst_L2         adder_nbit_N6                                                         37              311.170
+    AT6/inst_L2_extra   adder_nbit_N6_1                                                       20              179.399
+    AT6/inst_L6_0       adder_nbit_N7                                                         33              312.757
+  OGF                   Out_Gen_Func                                                          19              292.118

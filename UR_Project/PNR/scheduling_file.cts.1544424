@@ -1,0 +1,8 @@
+MacroModel pin A6M/result_reg[2][0]/C  748.30ps 748.30ps 748.30ps 748.30ps 0pf WORST_CASE
+MacroModel pin A6M/result_reg[3][0]/C  758.30ps 758.30ps 758.30ps 758.30ps 0pf WORST_CASE
+MacroModel pin A6M/result_reg[0][0]/C  735.30ps 735.30ps 735.30ps 735.30ps 0pf WORST_CASE
+MacroModel pin A6M/result_reg[1][0]/C  730.50ps 730.50ps 730.50ps 730.50ps 0pf WORST_CASE
+MacroModel pin A6M/result_reg[0][1]/C  722.70ps 722.70ps 722.70ps 722.70ps 0pf WORST_CASE
+MacroModel pin A6M/result_reg[1][1]/C  575.20ps 575.20ps 575.20ps 575.20ps 0pf WORST_CASE
+MacroModel pin A6M/result_reg[2][1]/C  652.70ps 652.70ps 652.70ps 652.70ps 0pf WORST_CASE
+MacroModel pin A6M/result_reg[3][1]/C  550.30ps 550.30ps 550.30ps 550.30ps 0pf WORST_CASE

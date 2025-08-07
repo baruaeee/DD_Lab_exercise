@@ -1,0 +1,14 @@
+MacroModel pin A6M/result_reg[3][1]/C  1000.00ps 1000.00ps 1000.00ps 1000.00ps 0pf WORST_CASE
+MacroModel pin A6M/result_reg[2][0]/C  797.70ps 797.70ps 797.70ps 797.70ps 0pf WORST_CASE
+MacroModel pin A6M/result_reg[2][1]/C  1000.00ps 1000.00ps 1000.00ps 1000.00ps 0pf WORST_CASE
+MacroModel pin A6M/result_reg[3][0]/C  791.70ps 791.70ps 791.70ps 791.70ps 0pf WORST_CASE
+MacroModel pin A6M/result_reg[0][0]/C  723.50ps 723.50ps 723.50ps 723.50ps 0pf WORST_CASE
+MacroModel pin A6M/result_reg[4][1]/C  958.70ps 958.70ps 958.70ps 958.70ps 0pf WORST_CASE
+MacroModel pin A6M/result_reg[5][1]/C  968.60ps 968.60ps 968.60ps 968.60ps 0pf WORST_CASE
+MacroModel pin A6M/result_reg[4][0]/C  1000.00ps 1000.00ps 1000.00ps 1000.00ps 0pf WORST_CASE
+MacroModel pin A6M/result_reg[4][2]/C  1000.00ps 1000.00ps 1000.00ps 1000.00ps 0pf WORST_CASE
+MacroModel pin A6M/result_reg[1][0]/C  1000.00ps 1000.00ps 1000.00ps 1000.00ps 0pf WORST_CASE
+MacroModel pin A6M/result_reg[2][2]/C  1000.00ps 1000.00ps 1000.00ps 1000.00ps 0pf WORST_CASE
+MacroModel pin A6M/result_reg[0][2]/C  571.80ps 571.80ps 571.80ps 571.80ps 0pf WORST_CASE
+MacroModel pin A6M/result_reg[0][1]/C  574.40ps 574.40ps 574.40ps 574.40ps 0pf WORST_CASE
+MacroModel pin A6M/result_reg[1][2]/C  568.10ps 568.10ps 568.10ps 568.10ps 0pf WORST_CASE
