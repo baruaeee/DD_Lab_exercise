@@ -93,20 +93,26 @@ setNanoRouteMode -quiet -routeWithTimingDriven false
 setNanoRouteMode -quiet -routeWithSiDriven false
 routeDesign -globalDetail
 
+editDelete -regular_wire_with_drc
+globalDetailRoute
+
 ## post-route timing
 setDelayCalMode -SIAware false
 setAnalysisMode -analysisType onChipVariation
 timeDesign -postRoute
 optDesign -postRoute
 
-saveNetlist pnr_outputs/post_layout_fabric.v
+addFiller -cell FEED5JI FEED3JI FEED2JI FEED25JI FEED1JI FEED10JI DECAP5JI DECAP3JI DECAP25JI DECAP10JI -prefix FILLER -doDRC -fitGap
+
+saveNetlist pnr_outputs/post_layout_main.v
 all_hold_analysis_views 
 all_setup_analysis_views 
-write_sdf  -ideal_clock_network pnr_outputs/post_layout_fabric.sdf
+write_sdf  -ideal_clock_network pnr_outputs/post_layout_main.sdf
 
 
-rcOut -spef pnr_outputs/fabric_RC_BEST.spef -rc_corner RC_BEST
-rcOut -spef pnr_outputs/fabric_RC_WORST.spef -rc_corner RC_WORST
+rcOut -spef pnr_outputs/main_RC_BEST.spef -rc_corner RC_BEST
+rcOut -spef pnr_outputs/main_RC_WORST.spef -rc_corner RC_WORST
 
+streamOut main.gds -mapFile /eda/cadence/pdks/ihp_sg13g2/ixc013g2ng_stdcell/lef/map/SG13G2_streamout.map -libName ur_main -units 1000 -mode ALL
 
 

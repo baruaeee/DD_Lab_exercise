@@ -8588,3 +8588,915 @@ Custom Box                             0
 Trim Metal                             0
 
 ######Streamout is finished!
+<CMD> is_innovus_plus
+<CMD> is_innovus_plus
+<CMD> zoomBox 16.21700 -23.59900 134.55500 82.33900
+<CMD> zoomBox 25.58600 -19.85600 126.17300 70.19100
+<CMD> zoomBox 33.55000 -16.67500 119.04900 59.86500
+<CMD> zoomBox 40.31900 -13.97100 112.99300 51.08800
+<CMD> zoomBox 54.30300 -7.52700 106.81000 39.47800
+<CMD> zoomBox 59.76400 -5.01000 104.39500 34.94400
+<CMD> zoomBox 64.40600 -2.87100 102.34200 31.09000
+<CMD> zoomBox 68.35100 -1.05300 100.59700 27.81400
+<CMD> zoomBox 74.55600 1.80600 97.85400 22.66300
+<CMD> zoomBox 64.40400 -2.87300 102.34300 31.09100
+<CMD> zoomBox 54.29900 -7.53000 106.81100 39.47900
+<CMD> zoomBox 40.31300 -13.97600 112.99500 51.09000
+<CMD> zoomBox 31.41900 -18.07400 116.92700 58.47400
+<CMD> zoomBox 20.95500 -22.89600 121.55300 67.16100
+<CMD> zoomBox 8.64400 -28.56900 126.99600 77.38100
+<CMD> zoomBox -5.83800 -35.24300 133.39900 89.40400
+<CMD> zoomBox 29.37500 -20.86500 102.05800 44.20200
+<CMD> zoomBox 45.77900 -10.39400 83.72100 23.57200
+<CMD> zoomBox 50.88600 -7.50700 78.30000 17.03400
+<CMD> zoomBox 52.90700 -6.41100 76.20900 14.44900
+<CMD> zoomBox 57.32600 -4.01500 71.63700 8.79600
+<CMD> zoomBox 60.26900 -2.24500 69.05900 5.62400
+<CMD> zoomBox 62.75200 -0.86500 67.34100 3.24300
+<CMD> zoomBox 63.55000 -0.53200 66.86600 2.43700
+<CMD> zoomBox 64.14600 -0.32300 66.54300 1.82300
+<CMD> selectPhyPin 65.5800 0.0000 65.8800 0.8000 2 {weight[4][5]}
+<CMD> zoomBox 62.77800 -0.83300 67.37200 3.28000
+<CMD> zoomBox 60.98000 -1.50200 68.46200 5.19600
+<CMD> zoomBox 58.05300 -2.59200 70.23800 8.31600
+<CMD> zoomBox 53.28900 -4.36500 73.13000 13.39700
+<CMD> zoomBox 45.53000 -7.25300 77.84000 21.67100
+<CMD> zoomBox 41.98200 -8.57400 79.99400 25.45500
+<CMD> zoomBox 20.32200 -16.63400 93.14200 48.55500
+<CMD> zoomBox -21.17100 -32.07600 118.33000 92.80700
+<CMD> zoomBox -100.66000 -61.65800 166.58300 177.58200
+<CMD> zoomBox -252.93400 -118.32700 259.02300 339.98400
+<CMD> zoomBox -164.53200 -85.42900 205.35700 245.70100
+<CMD> zoomBox -130.00800 -72.58100 184.39900 208.88000
+<CMD> zoomBox -89.00900 -58.48800 178.23700 180.75400
+<CMD> zoomBox -54.16000 -46.50900 172.99900 156.84700
+<CMD> zoomBox -5.51300 -29.38600 133.99100 95.50000
+<CMD> zoomBox 6.10000 -25.29900 124.67900 80.85500
+<CMD> zoomBox 37.55400 -14.22800 99.45500 41.18700
+<CMD> deselectAll
+<CMD> zoomBox 48.42900 -8.72800 86.44500 25.30400
+<CMD> zoomBox 56.70400 -4.54400 76.54800 13.22100
+<CMD> zoomBox 60.97600 -2.54400 71.33600 6.73000
+<CMD> zoomBox 63.19800 -1.52600 68.60700 3.31600
+<CMD> zoomBox 64.13400 -1.09700 67.45700 1.87800
+<CMD> zoomBox 64.40600 -0.86600 67.23100 1.66300
+<CMD> zoomBox 65.08800 -0.33300 66.56400 0.98800
+<CMD> zoomBox 64.61700 -0.70000 67.02200 1.45300
+<CMD> zoomBox 63.85100 -1.29800 67.76900 2.20900
+<CMD> zoomBox 62.60400 -2.27200 68.98600 3.44100
+<CMD> zoomBox 60.57500 -3.85500 70.96800 5.44900
+<CMD> zoomBox 57.27100 -6.43200 74.19400 8.71800
+<CMD> zoomBox 51.89200 -10.62800 79.44900 14.04100
+<CMD> zoomBox 43.13300 -17.46000 88.00500 22.71000
+<CMD> zoomBox 28.87200 -28.58500 101.93800 36.82500
+<CMD> zoomBox 5.64800 -46.70000 124.62500 59.81000
+<CMD> zoomBox -32.16600 -76.19600 161.56900 97.23800
+<CMD> zoomBox -69.80400 -105.55600 198.34100 134.49100
+<CMD> zoomBox -155.02800 -172.03500 281.60200 218.84200
+<CMD> zoomBox -56.51000 -54.77200 211.63600 185.27600
+<CMD> zoomBox -32.99100 -26.77800 194.93300 177.26300
+<CMD> zoomBox -13.00000 -2.98300 180.73600 170.45200
+<CMD> zoomBox -32.99100 -26.77800 194.93300 177.26300
+<CMD> zoomBox -56.51000 -54.77200 211.63600 185.27600
+<CMD> zoomBox -33.40700 -35.15500 194.51700 168.88600
+<CMD> zoomBox 6.27600 -23.45400 170.95200 123.96600
+<CMD> zoomBox 57.40800 -7.42600 158.54000 83.10900
+<CMD> zoomBox 88.80800 2.41800 150.91700 58.01900
+<CMD> zoomBox 96.30400 4.76800 149.09700 52.02900
+<CMD> zoomBox 102.67600 6.76600 147.55000 46.93800
+<CMD> zoomBox 88.80600 2.41700 150.91700 58.02000
+<CMD> zoomBox 79.98600 -0.34800 153.05800 65.06700
+<CMD> zoomBox 57.40200 -7.42800 158.54000 83.11200
+<CMD> zoomBox 6.26700 -23.46100 170.95500 123.97000
+<CMD> zoomBox -44.63000 -39.41700 183.31100 164.63900
+<CMD> zoomBox -76.99700 -49.56400 191.16900 190.50200
+<CMD> zoomBox -44.63000 -39.41700 183.31100 164.63900
+<CMD> zoomBox -17.11800 -30.79200 176.63200 142.65600
+<CMD> zoomBox -8.54600 -5.64000 156.14200 141.79100
+<CMD> zoomBox -1.26000 15.74000 138.72500 141.05600
+<CMD> zoomBox 4.93300 33.91200 123.92100 140.43200
+<CMD> zoomBox 14.67200 62.48900 100.64100 139.45000
+<CMD> zoomBox 18.47500 73.64900 91.54900 139.06600
+<CMD> zoomBox 27.80500 96.85900 72.68200 137.03300
+<CMD> zoomBox 35.10200 114.39600 58.52900 135.36800
+<CMD> zoomBox 38.82000 121.33100 53.20800 134.21100
+<CMD> zoomBox 33.39700 111.22100 60.96400 135.89900
+<CMD> zoomBox 23.01300 91.85700 75.82200 139.13200
+<CMD> zoomBox 3.11900 54.75900 104.28500 145.32400
+<CMD> zoomBox -23.03200 5.99400 141.70200 153.46600
+<CMD> zoomBox -65.61400 -73.41200 202.62800 166.72200
+<CMD> zoomBox -13.20000 -38.57900 126.82400 86.77200
+<CMD> zoomBox 18.64200 -17.41900 80.77200 38.20100
+<CMD> zoomBox 28.44200 -10.90600 66.59800 23.25200
+<CMD> zoomBox 30.78200 -9.35100 63.21400 19.68300
+<CMD> zoomBox 25.68900 -12.73500 70.57900 27.45100
+<CMD> selectWire 12.2600 12.2600 123.8200 20.2600 7 VSS
+<CMD> deselectAll
+<CMD> selectWire 12.2600 12.2600 123.8200 20.2600 7 VSS
+<CMD> deselectAll
+<CMD> selectWire 49.2500 13.9700 49.4500 25.5100 2 en
+<CMD> zoomBox 10.50900 -30.39600 83.60600 35.04100
+<CMD> zoomBox -14.20900 -59.15500 104.81800 47.40000
+<CMD> deselectAll
+<CMD> selectPhyPin 10.1400 0.0000 10.4400 0.8000 2 clk
+<CMD> zoomBox -4.34700 -36.34000 68.75200 29.09900
+<CMD> zoomBox -1.99200 -30.89300 60.14200 24.73000
+<CMD> zoomBox 1.71000 -22.32900 46.60200 17.85900
+<CMD> deselectAll
+<CMD> selectWire 10.1900 0.9500 29.2900 1.1500 3 clk
+<CMD> zoomBox -5.18800 -36.96200 67.91200 28.47800
+<CMD> zoomBox -12.05300 -51.52800 89.12400 39.04700
+<CMD> zoomBox -7.00800 -43.67500 78.99300 33.31400
+<CMD> zoomBox 6.97800 -22.45800 51.87200 17.73200
+<CMD> zoomBox 12.87100 -13.51700 40.44200 11.16500
+<CMD> zoomBox 16.51700 -8.04100 33.45000 7.11800
+<CMD> zoomBox 18.75700 -4.67600 29.15600 4.63300
+<CMD> deselectAll
+<CMD> selectPhyPin 25.2600 0.0000 25.5600 0.8000 2 {weight[5][5]}
+<CMD> zoomBox 14.23600 -8.53300 34.15800 9.30100
+<CMD> zoomBox 8.29300 -13.60200 40.73300 15.43900
+<CMD> zoomBox -1.38500 -21.85600 51.43900 25.43300
+<CMD> zoomBox -17.14500 -35.29700 68.87200 41.70700
+<CMD> zoomBox -42.80600 -57.18300 97.26000 68.20600
+<CMD> zoomBox -68.34900 -78.96700 125.51500 94.58300
+<CMD> zoomBox -126.18200 -128.29000 189.49400 154.30700
+<CMD> zoomBox -220.35400 -208.60700 293.67300 251.55700
+<CMD> zoomBox -131.22600 -117.44900 240.15900 215.02000
+<CMD> zoomBox -96.41800 -81.84800 219.26000 200.75100
+<CMD> zoomBox -66.83100 -51.58800 201.49600 188.62200
+<CMD> zoomBox 0.54400 -14.21800 165.33100 133.30200
+<CMD> zoomBox 41.91900 8.73200 143.12000 99.32800
+<CMD> zoomBox 73.39500 26.19000 126.22400 73.48300
+<CMD> zoomBox 87.00300 34.47000 119.44700 63.51400
+<CMD> zoomBox 90.25200 36.59200 117.82900 61.27900
+<CMD> zoomBox 95.35000 39.98700 115.27500 57.82400
+<CMD> zoomBox 97.34400 41.36700 114.28100 56.52900
+<CMD> zoomBox 102.76700 45.17800 111.61000 53.09400
+<CMD> zoomBox 103.65600 45.80300 111.17200 52.53100
+<CMD> zoomBox 105.77900 48.10300 109.70300 51.61600
+<CMD> zoomBox 106.66900 49.06000 109.08000 51.21800
+<CMD> zoomBox 106.88200 49.28500 108.93100 51.11900
+<CMD> zoomBox 107.34800 49.76200 108.60700 50.88900
+<CMD> zoomBox 107.45900 49.87500 108.53000 50.83400
+<CMD> deselectAll
+<CMD> selectMarker 108.0500 50.2600 108.2500 50.4600 2 1 6
+<CMD> deselectAll
+<CMD> selectMarker 108.0500 50.2600 108.2500 50.4600 2 1 6
+<CMD> zoomBox 106.82200 49.43300 108.87400 51.27000
+<CMD> zoomBox 105.98500 48.85100 109.32600 51.84200
+<CMD> zoomBox 104.62100 47.90300 110.06200 52.77400
+<CMD> zoomBox 102.39900 46.35800 111.26100 54.29100
+<CMD> zoomBox 97.12800 42.69300 114.10600 57.89200
+<CMD> zoomBox 90.19800 37.87500 117.84600 62.62600
+<CMD> zoomBox 83.30000 33.07900 121.56900 67.33800
+<CMD> zoomBox 67.68300 22.22300 129.99900 78.00900
+<CMD> zoomBox 60.54100 17.25800 133.85400 82.88900
+<CMD> zoomBox 30.62500 -3.54000 150.00400 103.33000
+<CMD> zoomBox -18.08800 -37.40600 176.30100 136.61400
+<CMD> zoomBox -40.36700 -52.89400 188.32700 151.83600
+<CMD> zoomBox -66.57600 -71.11500 202.47600 169.74400
+<CMD> zoomBox -40.36700 -52.89400 188.32700 151.83600
+<CMD> zoomBox -18.08900 -37.40700 176.30100 136.61400
+<CMD> deselectAll
+<CMD> zoomBox -10.23000 8.00700 109.15000 114.87800
+<CMD> zoomBox -8.00100 28.10700 78.25100 105.32100
+<CMD> zoomBox -5.22900 53.12000 39.79700 93.42800
+<CMD> zoomBox -4.39000 60.70100 28.14200 89.82400
+<CMD> zoomBox -4.06200 63.66200 23.59000 88.41600
+<CMD> zoomBox -3.34400 70.13400 13.63800 85.33700
+<CMD> zoomBox -4.39200 60.69800 28.14300 89.82400
+<CMD> zoomBox -6.39900 42.62100 55.93000 98.41900
+<CMD> zoomBox -7.14000 35.94700 66.18900 101.59200
+<CMD> zoomBox -9.03500 18.85800 92.45900 109.71700
+<CMD> zoomBox -15.28900 -37.53000 179.14400 136.52900
+<CMD> zoomBox -23.50800 -111.65400 293.09400 171.77200
+<CMD> zoomBox -17.59800 -58.34900 211.14700 146.42700
+<CMD> zoomBox -6.35300 142.28400 140.71900 -8.33900
+<CMD> zoomBox 5.94300 1.12900 148.95900 129.15900
+<CMD> zoomBox 25.39700 9.17700 146.96100 118.00300
+<CMD> zoomBox 55.98900 21.83200 143.81900 100.45900
+<CMD> zoomBox 78.09100 30.97600 141.54900 87.78400
+<CMD> zoomBox 86.73500 34.55800 140.67500 82.84600
+<CMD> zoomBox 110.41500 44.09700 138.57300 69.30400
+<CMD> zoomBox 120.39400 48.11600 137.68700 63.59700
+<CMD> zoomBox 124.77700 49.90400 137.27100 61.08900
+<CMD> zoomBox 127.87200 51.29000 136.89900 59.37100
+<CMD> zoomBox 129.08100 51.83100 136.75400 58.70000
+<CMD> zoomBox 130.10800 52.29100 136.63000 58.13000
+<CMD> zoomBox 126.45000 50.65300 137.07000 60.16000
+<CMD> zoomBox 120.49300 47.98600 137.78600 63.46700
+<CMD> zoomBox 114.56400 45.33000 138.50000 66.75800
+<CMD> zoomBox 106.35800 41.65500 139.48800 71.31300
+<CMD> zoomBox 87.77600 33.33200 141.72400 81.62700
+<CMD> zoomBox 57.51700 19.78100 145.36400 98.42300
+<CMD> zoomBox 27.39700 6.29300 148.98600 115.14100
+<CMD> zoomBox -71.98700 -38.21600 160.94200 170.30500
+<CMD> zoomBox -16.71500 -27.51400 151.57700 123.14300
+<CMD> zoomBox 4.64300 -24.15000 147.69100 103.90800
+<CMD> zoomBox 38.22700 -18.86200 141.58000 73.66100
+<CMD> zoomBox 22.72500 -21.48100 144.31700 87.37000
+<CMD> zoomBox 55.63800 -14.54100 143.48800 64.10400
+<CMD> zoomBox 68.49000 -11.83100 143.16400 55.01800
+<CMD> zoomBox 96.00000 -5.97800 141.86000 35.07600
+<CMD> zoomBox 111.97900 -2.18000 140.14400 23.03400
+<CMD> zoomBox 115.56900 -1.15800 139.51000 20.27400
+<CMD> zoomBox 118.58400 -0.23900 138.93400 17.97900
+<CMD> zoomBox 121.09800 0.57400 138.39700 16.06000
+<CMD> zoomBox 126.59800 2.35200 137.22200 11.86300
+<CMD> zoomBox 130.78200 3.69500 136.32900 8.66100
+<CMD> zoomBox 132.54400 4.10700 135.95100 7.15700
+<CMD> zoomBox 129.97500 3.50400 136.50400 9.34900
+<CMD> zoomBox 126.60000 2.71300 137.23100 12.23000
+<CMD> zoomBox 123.23900 1.92500 137.95400 15.09800
+<CMD> zoomBox 121.10200 1.42400 138.41400 16.92200
+<CMD> zoomBox 118.58800 0.83500 138.95500 19.06800
+<CMD> zoomBox 125.13500 4.33200 137.64400 15.53000
+<CMD> zoomBox 129.15600 6.47900 136.83900 13.35700
+<CMD> zoomBox 125.17100 4.49900 137.68200 15.69900
+<CMD> zoomBox 121.20500 2.52800 138.52200 18.03000
+<CMD> zoomBox 118.68300 1.27500 139.05600 19.51300
+<CMD> zoomBox 108.11800 -3.97500 141.29200 25.72300
+<CMD> zoomBox 90.91100 -12.52400 144.93200 35.83600
+<CMD> zoomBox 83.04300 -16.43300 146.59700 40.46100
+<CMD> zoomBox 36.51800 -51.51600 158.26700 57.47500
+<CMD> zoomBox -24.64200 -97.63400 173.60600 79.84000
+<CMD> zoomBox -124.23100 -172.72800 198.58300 116.25900
+<CMD> pan 12.52900 76.78700
+<CMD> zoomBox -25.02100 20.09400 173.22700 197.56800
+<CMD> zoomBox 32.37800 61.56000 154.12700 170.55100
+<CMD> zoomBox 72.36800 87.93600 147.13800 154.87100
+<CMD> zoomBox 96.92600 104.13400 142.84500 145.24100
+<CMD> selectPhyPin 135.2800 130.6800 136.0800 130.9800 2 {weight[0][0]}
+<CMD> deselectAll
+<CMD> selectPhyPin 135.2800 125.6400 136.0800 125.9400 2 {weight[0][1]}
+<CMD> zoomBox 61.40600 84.33400 149.37200 163.08200
+<CMD> zoomBox 14.71300 58.30500 157.95300 186.53500
+<CMD> zoomBox -31.76400 32.39700 166.49400 209.88000
+<CMD> zoomBox -96.09100 -3.46100 178.31500 242.19100
+<CMD> zoomBox -241.74500 -84.65200 205.08100 315.35300
+<CMD> zoomBox -140.48000 -55.87900 133.92800 189.77500
+<CMD> zoomBox -78.97600 -37.21800 89.54500 113.64400
+<CMD> zoomBox -32.81200 -22.00400 55.15700 56.74700
+<CMD> zoomBox -8.71500 -14.06200 37.20600 27.04700
+<CMD> zoomBox -0.53900 -9.74400 32.64000 19.95800
+<CMD> deselectAll
+<CMD> selectPhyPin 10.1400 0.0000 10.4400 0.8000 2 clk
+<CMD> zoomBox 4.63000 -4.88300 21.95100 10.62300
+<CMD> zoomBox 6.03500 -3.67100 18.54900 7.53200
+<CMD> zoomBox 7.98300 -1.75300 14.51800 4.09700
+<CMD> zoomBox 8.80400 -0.94800 12.81800 2.64500
+<CMD> zoomBox 9.00000 -0.75600 12.41200 2.29800
+<CMD> zoomBox 8.30100 -1.44100 13.85700 3.53300
+<CMD> zoomBox 7.98100 -1.75400 14.51800 4.09800
+<CMD> zoomBox 6.64200 -3.06800 17.28700 6.46200
+<CMD> zoomBox 6.02900 -3.66900 18.55300 7.54300
+<CMD> zoomBox 3.46300 -6.18500 23.85800 12.07300
+<CMD> zoomBox 0.90900 -8.68800 29.13800 16.58300
+<CMD> zoomBox 2.57100 -5.05300 19.90800 10.46700
+<CMD> zoomBox 3.59200 -2.82100 14.24000 6.71100
+<CMD> zoomBox 4.23000 -1.14300 9.78900 3.83300
+<CMD> zoomBox 4.42400 -0.63400 8.44000 2.96100
+<CMD> zoomBox 4.10700 -1.46700 10.64700 4.38800
+<CMD> zoomBox 3.59100 -2.82300 14.24100 6.71100
+<CMD> zoomBox 3.07800 -4.17200 17.81900 9.02400
+<CMD> zoomBox 2.36700 -6.04000 22.77000 12.22500
+<CMD> zoomBox 0.75800 -10.27000 33.98100 19.47200
+<CMD> zoomBox -0.84400 -14.48000 45.14000 26.68500
+<CMD> zoomBox -1.86200 -17.15700 52.23700 31.27300
+<CMD> zoomBox -3.06000 -20.30700 60.58600 36.67000
+<CMD> zoomBox -6.12800 -28.37100 81.96400 50.49000
+<CMD> zoomBox -8.07900 -33.50000 95.55900 59.27800
+<CMD> zoomBox -10.37400 -39.53400 111.55300 69.61700
+<CMD> zoomBox -13.07400 -46.63200 130.37000 81.78100
+<CMD> zoomBox -16.25100 -54.98300 152.50800 96.09200
+<CMD> zoomBox -90.19000 -90.51300 184.60700 155.48900
+<CMD> zoomBox -124.00400 -106.76100 199.28700 182.65300
+<CMD> zoomBox -11.50000 150.03100 147.42700 -10.98700
+<CMD> zoomBox -14.84900 -9.55600 138.03600 127.30900
+<CMD> zoomBox -8.79800 -8.34000 121.15500 107.99600
+<CMD> zoomBox -3.65500 -7.30600 106.80600 91.58000
+<CMD> zoomBox 10.27900 -4.50700 67.94100 47.11300
+<CMD> deselectAll
+<CMD> selectWire 29.0900 0.9500 29.2900 24.6700 4 clk
+<CMD> zoomBox 1.10900 -7.25900 80.92000 64.18900
+<CMD> zoomBox -4.72200 -9.00900 89.17400 75.04800
+<CMD> deselectAll
+<CMD> selectWire 26.5700 1.7900 26.7700 46.0900 2 {activation[0][0]}
+<CMD> zoomBox -4.28500 -7.46100 75.52700 63.98800
+<CMD> zoomBox -3.91400 -6.14500 63.92700 54.58700
+<CMD> zoomBox -3.33000 -4.07600 45.68600 39.80400
+<CMD> zoomBox -2.60400 -1.50100 22.98400 21.40600
+<CMD> zoomBox -2.22500 -0.15700 11.13300 11.80100
+<CMD> zoomBox -1.17700 0.74200 5.79700 6.98500
+<CMD> zoomBox -0.62900 1.21200 3.01100 4.47100
+<CMD> zoomBox -0.39900 1.40900 1.83700 3.41100
+<CMD> zoomBox -0.34400 1.45600 1.55700 3.15800
+<CMD> zoomBox -0.54100 1.28700 2.55500 4.05900
+<CMD> zoomBox -0.73700 1.11900 3.54900 4.95600
+<CMD> zoomBox -1.00800 0.88700 4.92500 6.19800
+<CMD> zoomBox -1.62100 0.36000 8.04100 9.01000
+<CMD> zoomBox -2.23200 -0.16400 11.14200 11.80900
+<CMD> zoomBox -3.07700 -0.88900 15.43500 15.68300
+<CMD> zoomBox -4.98900 -2.53000 25.15600 24.45600
+<CMD> zoomBox -6.89200 -4.16400 34.83200 33.18800
+<CMD> zoomBox -11.19900 -7.86100 56.74100 52.96000
+<CMD> zoomBox -18.21400 -13.88100 92.41700 85.15700
+<CMD> zoomBox -29.63600 -23.68400 150.51000 137.58500
+<CMD> editDelete -regular_wire_with_drc
+<CMD> globalDetailRoute
+#% Begin globalDetailRoute (date=08/08 17:26:38, mem=3683.6M)
+
+globalDetailRoute
+
+#Start globalDetailRoute on Fri Aug  8 17:26:38 2025
+#
+#Warning: design is detail-routed. Trial route is skipped!
+#NanoRoute Version 23.31-s109_1 NR240401-0735/23_11-UB
+#WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+#WARNING (NRIF-67) In option 'OnGridOnly 0', 0 is an unknown type. It will be ignored.
+#WARNING (NRIF-68) Option 'OnGridOnly 0' did not specify a correct type. It will be ignored.
+#WARNING (NRDR-157) In option 'PostRouteSwapVia ',  is invalid and will be ignored.
+#WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+#WARNING (NRIF-67) In option 'OnGridOnly 0', 0 is an unknown type. It will be ignored.
+#WARNING (NRIF-68) Option 'OnGridOnly 0' did not specify a correct type. It will be ignored.
+#WARNING (NRDR-157) In option 'PostRouteSwapVia ',  is invalid and will be ignored.
+#WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+#WARNING (NRIF-67) In option 'OnGridOnly 0', 0 is an unknown type. It will be ignored.
+#WARNING (NRIF-68) Option 'OnGridOnly 0' did not specify a correct type. It will be ignored.
+#WARNING (NRDR-157) In option 'PostRouteSwapVia ',  is invalid and will be ignored.
+#Total number of trivial nets (e.g. < 2 pins) = 175 (skipped).
+#Total number of routable nets = 492.
+#Total number of nets in the design = 667.
+#2 routable nets do not have any wires.
+#490 routable nets have routed wires.
+#2 nets will be global routed.
+#1 global routed or unrouted (routable) net has been constrained (e.g. have preferred extra spacing, require shielding etc.)
+#Using multithreading with 8 threads.
+#WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+#WARNING (NRIF-67) In option 'OnGridOnly 0', 0 is an unknown type. It will be ignored.
+#WARNING (NRIF-68) Option 'OnGridOnly 0' did not specify a correct type. It will be ignored.
+#WARNING (NRDR-157) In option 'PostRouteSwapVia ',  is invalid and will be ignored.
+#Start routing data preparation on Fri Aug  8 17:26:38 2025
+#
+#WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+#WARNING (NRIF-67) In option 'OnGridOnly 0', 0 is an unknown type. It will be ignored.
+#WARNING (NRIF-68) Option 'OnGridOnly 0' did not specify a correct type. It will be ignored.
+#WARNING (NRDR-157) In option 'PostRouteSwapVia ',  is invalid and will be ignored.
+#Initial pin access analysis.
+#Detail pin access analysis.
+# Metal1       H   Track-Pitch = 0.4200    Line-2-Via Pitch = 0.3650
+# Metal2       V   Track-Pitch = 0.4200    Line-2-Via Pitch = 0.4100
+# Metal3       H   Track-Pitch = 0.4200    Line-2-Via Pitch = 0.4100
+# Metal4       V   Track-Pitch = 0.4200    Line-2-Via Pitch = 0.4100
+# Metal5       H   Track-Pitch = 0.4200    Line-2-Via Pitch = 0.4100
+# TopMetal1    V   Track-Pitch = 2.5200    Line-2-Via Pitch = 3.2800
+#WARNING (NRAG-44) Track pitch is too small compared with line-2-via pitch.
+# TopMetal2    H   Track-Pitch = 4.0000    Line-2-Via Pitch = 4.0000
+#Bottom routing layer index=1(Metal1), bottom routing layer for shielding=1(Metal1), bottom shield layer=1(Metal1)
+#shield_bottom_stripe_layer=1(Metal1), shield_top_stripe_layer=5(Metal5)
+#pin_access_rlayer=2(Metal2)
+#shield_top_dpt_rlayer=-1 top_rlayer=5 top_trim_metal_rlayer=-1 rlayer_lowest=1 bottom_rlayer=1
+#enable_trim_layer_shield=F enable_dpt_layer_shield=F has_line_end_grid=F
+#enable_dpt_layer_shield=F
+#has_line_end_grid=F
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 3692.77 (MB), peak = 3696.77 (MB)
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer Metal3's pitch = 0.4200.
+#Using automatically generated G-grids.
+#Done routing data preparation.
+#cpu time = 00:00:03, elapsed time = 00:00:03, memory = 3702.98 (MB), peak = 3703.24 (MB)
+#WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+#WARNING (NRIF-67) In option 'OnGridOnly 0', 0 is an unknown type. It will be ignored.
+#WARNING (NRIF-68) Option 'OnGridOnly 0' did not specify a correct type. It will be ignored.
+#WARNING (NRDR-157) In option 'PostRouteSwapVia ',  is invalid and will be ignored.
+#
+#Finished routing data preparation on Fri Aug  8 17:26:42 2025
+#
+#Cpu time = 00:00:03
+#Elapsed time = 00:00:03
+#Increased memory = 14.22 (MB)
+#Total memory = 3702.98 (MB)
+#Peak memory = 3703.24 (MB)
+#
+#
+#Start global routing on Fri Aug  8 17:26:42 2025
+#
+#
+#Start global routing initialization on Fri Aug  8 17:26:42 2025
+#
+#Number of eco nets is 0
+#
+#Start global routing data preparation on Fri Aug  8 17:26:42 2025
+#
+#Start routing resource analysis on Fri Aug  8 17:26:42 2025
+#
+#Routing resource analysis is done on Fri Aug  8 17:26:42 2025
+#
+#  Resource Analysis:
+#
+#               Routing  #Avail      #Track     #Total     %Gcell
+#  Layer      Direction   Track     Blocked      Gcell    Blocked
+#  --------------------------------------------------------------
+#  Metal1         H         158         164         462    13.85%
+#  Metal2         V         165         159         462     5.41%
+#  Metal3         H         266          56         462     0.00%
+#  Metal4         V         272          52         462     5.41%
+#  Metal5         H         299          23         462     0.00%
+#  --------------------------------------------------------------
+#  Total                   1161      28.03%        2310     4.94%
+#
+#  1 nets (0.15%) with 1 preferred extra spacing.
+#
+#
+#
+#Global routing data preparation is done on Fri Aug  8 17:26:42 2025
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 3699.34 (MB), peak = 3719.42 (MB)
+#
+#
+#Global routing initialization is done on Fri Aug  8 17:26:42 2025
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 3699.34 (MB), peak = 3719.42 (MB)
+#
+#start global routing iteration 1...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 3699.85 (MB), peak = 3719.42 (MB)
+#
+#start global routing iteration 2...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 3699.85 (MB), peak = 3719.42 (MB)
+#
+#
+#Total number of trivial nets (e.g. < 2 pins) = 175 (skipped).
+#Total number of routable nets = 492.
+#Total number of nets in the design = 667.
+#
+#492 routable nets have routed wires.
+#1 global routed or unrouted (routable) net has been constrained (e.g. have preferred extra spacing, require shielding etc.)
+#
+#Routed net constraints summary:
+#------------------------------------------------
+#        Rules   Pref Extra Space   Unconstrained  
+#------------------------------------------------
+#      Default                  1               1  
+#------------------------------------------------
+#        Total                  1               1  
+#------------------------------------------------
+#
+#Routing constraints summary of the whole design:
+#------------------------------------------------
+#        Rules   Pref Extra Space   Unconstrained  
+#------------------------------------------------
+#      Default                  1             491  
+#------------------------------------------------
+#        Total                  1             491  
+#------------------------------------------------
+#
+#
+#  Congestion Analysis: (blocked Gcells are excluded)
+#
+#                 OverCon          
+#                  #Gcell    %Gcell
+#     Layer           (1)   OverCon
+#  --------------------------------
+#  Metal1        0(0.00%)   (0.00%)
+#  Metal2        0(0.00%)   (0.00%)
+#  Metal3        0(0.00%)   (0.00%)
+#  Metal4        0(0.00%)   (0.00%)
+#  Metal5        0(0.00%)   (0.00%)
+#  --------------------------------
+#     Total      0(0.00%)   (0.00%)
+#
+#  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 1
+#  Overflow after GR: 0.00% H + 0.00% V
+#
+#Complete Global Routing.
+#Total number of nets with non-default rule or having extra spacing = 1
+#
+#  Routing Statistics
+#
+#------------------+-----------+-----+
+#  Layer           | Length(um)| Vias|
+#------------------+-----------+-----+
+#  GatPoly ( 0H)   |          0|    0|
+#  Metal1 ( 1H)    |       2079| 1646|
+#  Metal2 ( 2V)    |       5486|  788|
+#  Metal3 ( 3H)    |       4076|   68|
+#  Metal4 ( 4V)    |        491|    0|
+#  Metal5 ( 5H)    |          0|    0|
+#  TopMetal1 ( 6V) |          0|    0|
+#  TopMetal2 ( 7H) |          0|    0|
+#------------------+-----------+-----+
+#  Total           |      12131| 2502|
+#------------------+-----------+-----+
+#
+# Total half perimeter of net bounding box: 9787 um.
+#Max overcon = 0 track.
+#Total overcon = 0.00%.
+#Worst layer Gcell overcon rate = 0.00%.
+#
+#Global routing statistics:
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = -2.87 (MB)
+#Total memory = 3700.11 (MB)
+#Peak memory = 3719.42 (MB)
+#
+#Finished global routing on Fri Aug  8 17:26:42 2025
+#
+#
+#WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+#WARNING (NRIF-67) In option 'OnGridOnly 0', 0 is an unknown type. It will be ignored.
+#WARNING (NRIF-68) Option 'OnGridOnly 0' did not specify a correct type. It will be ignored.
+#WARNING (NRDR-157) In option 'PostRouteSwapVia ',  is invalid and will be ignored.
+#WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+#WARNING (NRIF-67) In option 'OnGridOnly 0', 0 is an unknown type. It will be ignored.
+#WARNING (NRIF-68) Option 'OnGridOnly 0' did not specify a correct type. It will be ignored.
+#WARNING (NRDR-157) In option 'PostRouteSwapVia ',  is invalid and will be ignored.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 3700.11 (MB), peak = 3719.42 (MB)
+#WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+#WARNING (NRIF-67) In option 'OnGridOnly 0', 0 is an unknown type. It will be ignored.
+#WARNING (NRIF-68) Option 'OnGridOnly 0' did not specify a correct type. It will be ignored.
+#WARNING (NRDR-157) In option 'PostRouteSwapVia ',  is invalid and will be ignored.
+#Start Track Assignment.
+#Done with 69 horizontal wires in 1 hboxes and 58 vertical wires in 1 hboxes.
+#Done with 5 horizontal wires in 1 hboxes and 5 vertical wires in 1 hboxes.
+#Done with 1 horizontal wires in 1 hboxes and 1 vertical wires in 1 hboxes.
+#
+#Track assignment summary:
+# layer   (wire length)   (overlap)     (long ovlp)	(with obs/pg/clk)  
+#------------------------------------------------------------------------
+# Metal1         0.00 	  0.00%  	  0.00% 	  0.00%
+# Metal2       174.96 	  0.00%  	  0.00% 	  0.00%
+# Metal3       640.06 	  0.00%  	  0.00% 	  0.00%
+# Metal4       263.62 	  0.00%  	  0.00% 	  0.00%
+# Metal5         0.00 	  0.00%  	  0.00% 	  0.00%
+#------------------------------------------------------------------------
+# All        1078.64  	  0.00% 	  0.00% 	  0.00%
+#Complete Track Assignment.
+#Total number of nets with non-default rule or having extra spacing = 1
+#
+#  Routing Statistics
+#
+#------------------+-----------+-----+
+#  Layer           | Length(um)| Vias|
+#------------------+-----------+-----+
+#  GatPoly ( 0H)   |          0|    0|
+#  Metal1 ( 1H)    |       2079| 1646|
+#  Metal2 ( 2V)    |       5486|  788|
+#  Metal3 ( 3H)    |       4076|   68|
+#  Metal4 ( 4V)    |        496|    0|
+#  Metal5 ( 5H)    |          0|    0|
+#  TopMetal1 ( 6V) |          0|    0|
+#  TopMetal2 ( 7H) |          0|    0|
+#------------------+-----------+-----+
+#  Total           |      12136| 2502|
+#------------------+-----------+-----+
+#
+# Total half perimeter of net bounding box: 9787 um.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 3698.77 (MB), peak = 3719.42 (MB)
+#
+#number of short segments in preferred routing layers
+#	Metal3    Metal4    Total 
+#	29        32        61        
+#
+#Routing data preparation, pin analysis, global routing and track assignment statistics:
+#Cpu time = 00:00:03
+#Elapsed time = 00:00:03
+#Increased memory = 10.01 (MB)
+#Total memory = 3698.77 (MB)
+#Peak memory = 3719.42 (MB)
+#Using multithreading with 8 threads.
+#WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+#WARNING (NRIF-67) In option 'OnGridOnly 0', 0 is an unknown type. It will be ignored.
+#WARNING (NRIF-68) Option 'OnGridOnly 0' did not specify a correct type. It will be ignored.
+#WARNING (NRDR-157) In option 'PostRouteSwapVia ',  is invalid and will be ignored.
+#WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+#WARNING (NRIF-67) In option 'OnGridOnly 0', 0 is an unknown type. It will be ignored.
+#WARNING (NRIF-68) Option 'OnGridOnly 0' did not specify a correct type. It will be ignored.
+#WARNING (NRDR-157) In option 'PostRouteSwapVia ',  is invalid and will be ignored.
+#WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+#WARNING (NRIF-67) In option 'OnGridOnly 0', 0 is an unknown type. It will be ignored.
+#WARNING (NRIF-68) Option 'OnGridOnly 0' did not specify a correct type. It will be ignored.
+#WARNING (NRDR-157) In option 'PostRouteSwapVia ',  is invalid and will be ignored.
+#WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+#WARNING (NRIF-67) In option 'OnGridOnly 0', 0 is an unknown type. It will be ignored.
+#WARNING (NRIF-68) Option 'OnGridOnly 0' did not specify a correct type. It will be ignored.
+#WARNING (NRDR-157) In option 'PostRouteSwapVia ',  is invalid and will be ignored.
+#
+#Start Detail Routing..
+#start initial detail routing ...
+#   number of violations = 0
+#cpu time = 00:00:01, elapsed time = 00:00:00, memory = 3724.07 (MB), peak = 3845.96 (MB)
+#Complete Detail Routing.
+#Total number of nets with non-default rule or having extra spacing = 1
+#
+#  Routing Statistics
+#
+#------------------+-----------+-----+
+#  Layer           | Length(um)| Vias|
+#------------------+-----------+-----+
+#  GatPoly ( 0H)   |          0|    0|
+#  Metal1 ( 1H)    |       2079| 1644|
+#  Metal2 ( 2V)    |       5486|  817|
+#  Metal3 ( 3H)    |       4058|  109|
+#  Metal4 ( 4V)    |        576|    0|
+#  Metal5 ( 5H)    |          0|    0|
+#  TopMetal1 ( 6V) |          0|    0|
+#  TopMetal2 ( 7H) |          0|    0|
+#------------------+-----------+-----+
+#  Total           |      12199| 2570|
+#------------------+-----------+-----+
+#
+# Total half perimeter of net bounding box: 9787 um.
+#Total number of DRC violations = 0
+#Cpu time = 00:00:01
+#Elapsed time = 00:00:00
+#Increased memory = 18.66 (MB)
+#Total memory = 3717.43 (MB)
+#Peak memory = 3845.96 (MB)
+#
+#start routing for process antenna violation fix ...
+#WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+#WARNING (NRIF-67) In option 'OnGridOnly 0', 0 is an unknown type. It will be ignored.
+#WARNING (NRIF-68) Option 'OnGridOnly 0' did not specify a correct type. It will be ignored.
+#WARNING (NRDR-157) In option 'PostRouteSwapVia ',  is invalid and will be ignored.
+#WARNING (NRIF-79) Wrong option value for drouteUseMultiCutViaEffort <>, reset to default.
+#WARNING (NRIF-67) In option 'OnGridOnly 0', 0 is an unknown type. It will be ignored.
+#WARNING (NRIF-68) Option 'OnGridOnly 0' did not specify a correct type. It will be ignored.
+#WARNING (NRDR-157) In option 'PostRouteSwapVia ',  is invalid and will be ignored.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 3729.40 (MB), peak = 3845.96 (MB)
+#
+#Total number of nets with non-default rule or having extra spacing = 1
+#
+#  Routing Statistics
+#
+#------------------+-----------+-----+
+#  Layer           | Length(um)| Vias|
+#------------------+-----------+-----+
+#  GatPoly ( 0H)   |          0|    0|
+#  Metal1 ( 1H)    |       2079| 1644|
+#  Metal2 ( 2V)    |       5486|  817|
+#  Metal3 ( 3H)    |       4058|  109|
+#  Metal4 ( 4V)    |        576|    0|
+#  Metal5 ( 5H)    |          0|    0|
+#  TopMetal1 ( 6V) |          0|    0|
+#  TopMetal2 ( 7H) |          0|    0|
+#------------------+-----------+-----+
+#  Total           |      12199| 2570|
+#------------------+-----------+-----+
+#
+# Total half perimeter of net bounding box: 9787 um.
+#Total number of DRC violations = 0
+#Total number of process antenna violations = 0
+#Total number of net violated process antenna rule = 0
+#
+#
+#Total number of nets with non-default rule or having extra spacing = 1
+#
+#  Routing Statistics
+#
+#------------------+-----------+-----+
+#  Layer           | Length(um)| Vias|
+#------------------+-----------+-----+
+#  GatPoly ( 0H)   |          0|    0|
+#  Metal1 ( 1H)    |       2079| 1644|
+#  Metal2 ( 2V)    |       5486|  817|
+#  Metal3 ( 3H)    |       4058|  109|
+#  Metal4 ( 4V)    |        576|    0|
+#  Metal5 ( 5H)    |          0|    0|
+#  TopMetal1 ( 6V) |          0|    0|
+#  TopMetal2 ( 7H) |          0|    0|
+#------------------+-----------+-----+
+#  Total           |      12199| 2570|
+#------------------+-----------+-----+
+#
+# Total half perimeter of net bounding box: 9787 um.
+#Total number of DRC violations = 0
+#Total number of process antenna violations = 0
+#Total number of net violated process antenna rule = 0
+#
+#detailRoute Statistics:
+#Cpu time = 00:00:01
+#Elapsed time = 00:00:00
+#Increased memory = 30.53 (MB)
+#Total memory = 3729.30 (MB)
+#Peak memory = 3845.96 (MB)
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:00:05
+#Elapsed time = 00:00:04
+#Increased memory = -90.87 (MB)
+#Total memory = 3592.68 (MB)
+#Peak memory = 3845.96 (MB)
+#Number of warnings = 61
+#Total number of warnings = 306
+#Number of fails = 0
+#Total number of fails = 0
+#Complete globalDetailRoute on Fri Aug  8 17:26:43 2025
+#
+#
+#  Scalability Statistics
+#
+#-------------------------+---------+-------------+------------+
+#  globalDetailRoute      | cpu time| elapsed time| scalability|
+#-------------------------+---------+-------------+------------+
+#  Pre Callback           | 00:00:00|     00:00:00|         1.0|
+#  Post Callback          | 00:00:00|     00:00:00|         1.0|
+#  Timing Data Generation | 00:00:00|     00:00:00|         1.0|
+#  DB Import              | 00:00:00|     00:00:00|         1.0|
+#  DB Export              | 00:00:00|     00:00:00|         1.0|
+#  Cell Pin Access        | 00:00:00|     00:00:00|         1.0|
+#  Data Preparation       | 00:00:03|     00:00:03|         1.0|
+#  Global Routing         | 00:00:00|     00:00:00|         1.0|
+#  Track Assignment       | 00:00:00|     00:00:00|         1.0|
+#  Detail Routing         | 00:00:01|     00:00:00|         1.0|
+#  Antenna Fixing         | 00:00:00|     00:00:00|         1.0|
+#  Entire Command         | 00:00:05|     00:00:04|         1.1|
+#-------------------------+---------+-------------+------------+
+#
+#% End globalDetailRoute (date=08/08 17:26:43, total cpu=0:00:04.8, real=0:00:05.0, peak res=3846.0M, current mem=3586.5M)
+<CMD> zoomBox 3.54000 -16.37600 133.69600 100.14100
+<CMD> zoomBox 34.19100 -11.19000 128.22900 72.99400
+<CMD> zoomBox 57.48400 -5.38400 125.42700 55.43900
+<CMD> zoomBox 66.58100 -3.11700 124.33300 48.58300
+<CMD> zoomBox 86.47100 1.84100 121.94000 33.59300
+<CMD> zoomBox 98.68600 4.88500 120.47000 24.38600
+<CMD> zoomBox 91.53200 1.82100 127.00400 33.57600
+<CMD> zoomBox 84.41000 -1.22800 133.50700 42.72400
+<CMD> zoomBox 74.55500 -5.44800 142.50900 55.38500
+<CMD> zoomBox 60.91500 -11.29000 154.96900 72.90800
+<CMD> zoomBox 52.24000 -15.00500 162.89200 84.05200
+<CMD> fit
+<CMD> getFillerMode -quiet
+<CMD> addFiller -cell FEED5JI FEED3JI FEED2JI FEED25JI FEED1JI FEED10JI DECAP5JI DECAP3JI DECAP25JI DECAP10JI -prefix FILLER -doDRC -fitGap
+**WARN: (IMPSP-5217):	addFiller command is running on a postRoute database. It is recommended to be followed by ecoRoute -target command to make the DRC clean.
+Type 'man IMPSP-5217' for more detail.
+**Info: (IMPSP-2055): Transparent Filler Flow is OFF !
+
+INFO: No filler could be restored
+*INFO: Adding fillers to top-module.
+*INFO:   Added 3 filler insts (cell DECAP25JI / prefix FILLER).
+*INFO:   Added 0 filler inst  (cell FEED25JI / prefix FILLER).
+*INFO:   Added 16 filler insts (cell DECAP10JI / prefix FILLER).
+*INFO:   Added 6 filler insts (cell FEED10JI / prefix FILLER).
+*INFO:   Added 23 filler insts (cell DECAP5JI / prefix FILLER).
+*INFO:   Added 9 filler insts (cell FEED5JI / prefix FILLER).
+*INFO:   Added 17 filler insts (cell DECAP3JI / prefix FILLER).
+*INFO:   Added 41 filler insts (cell FEED3JI / prefix FILLER).
+*INFO:   Added 70 filler insts (cell FEED2JI / prefix FILLER).
+*INFO:   Added 119 filler insts (cell FEED1JI / prefix FILLER).
+*INFO: Total 304 filler insts added - prefix FILLER (CPU: 0:00:00.1).
+For 304 new insts, <CMD> saveNetlist pnr_outputs/post_layout_main.v
+Writing Netlist "pnr_outputs/post_layout_main.v" ...
+<CMD> all_hold_analysis_views 
+<CMD> all_setup_analysis_views 
+<CMD> write_sdf  -ideal_clock_network pnr_outputs/post_layout_main.sdf
+**WARN: (SDF-808):	The software is currently operating in a high performance mode which optimizes the handling of multiple timing arcs between input and output pin pairs. With the current settings, the SDF file generated will contain the same delay information for all of these arcs. To have the SDF recalculated with explicit pin pair data, you should use the option '-recompute_delay_calc'. This setting is recommended for generating SDF for functional  simulation applications.
+AAE_INFO: opIsDesignInPostRouteState() is 1
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: Main
+# Design Mode: 130nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Extraction called for design 'Main' of instances=730 and nets=667 using extraction engine 'postRoute' at effort level 'low' .
+PostRoute (effortLevel low) RC Extraction called for design Main.
+RC Extraction called in multi-corner(2) mode.
+Process corner(s) are loaded.
+ Corner: RC_BEST
+ Corner: RC_WORST
+extractDetailRC Option : -outfile /tmp/innovus_temp_1548662_9d79b53a-790c-43d0-b024-c64704ca8999_ei-vm-018.othr.de_bas33767_4gN3oL/Main_1548662_8Zq0aC.rcdb.d -maxResLength 200  -extended
+RC Mode: PostRoute -effortLevel low [Extended CapTable, RC Table Resistances]
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.00000 1.00000 
+Coupling Cap. Scaling Factor : 1.00000 1.00000 
+Resistance Scaling Factor    : 1.00000 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 1.00000 
+Clock Res. Scaling Factor    : 1.00000 1.00000 
+Shrink Factor                : 1.00000
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 6084.4M)
+Extracted 10.0253% (CPU Time= 0:00:00.0  MEM= 6120.4M)
+Extracted 20.0276% (CPU Time= 0:00:00.0  MEM= 6120.4M)
+Extracted 30.0299% (CPU Time= 0:00:00.0  MEM= 6148.4M)
+Extracted 40.0322% (CPU Time= 0:00:00.0  MEM= 6148.4M)
+Extracted 50.0345% (CPU Time= 0:00:00.0  MEM= 6148.4M)
+Extracted 60.0368% (CPU Time= 0:00:00.1  MEM= 6148.4M)
+Extracted 70.0391% (CPU Time= 0:00:00.1  MEM= 6148.4M)
+Extracted 80.0414% (CPU Time= 0:00:00.1  MEM= 6148.4M)
+Extracted 90.0437% (CPU Time= 0:00:00.1  MEM= 6148.4M)
+Extracted 100% (CPU Time= 0:00:00.1  MEM= 6148.4M)
+Number of Extracted Resistors     : 7257
+Number of Extracted Ground Cap.   : 7400
+Number of Extracted Coupling Cap. : 0
+PostRoute (effortLevel low) RC Extraction DONE (CPU Time: 0:00:00.1  Real Time: 0:00:01.0  MEM: 6126.359M)
+Start delay calculation (fullDC) (8 T). (MEM=3632.28)
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Total number of fetched objects 498
+Total number of fetched objects 498
+End delay calculation. (MEM=3698.67 CPU=0:00:00.3 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=3698.67 CPU=0:00:00.4 REAL=0:00:00.0)
+<CMD> rcOut -spef pnr_outputs/main_RC_BEST.spef -rc_corner RC_BEST
+RC Out has the following PVT Info:
+   RC:RC_BEST, Operating temperature 40 C
+Dumping Spef file.....
+Printing D_NET...
+RC Out from RCDB Completed (CPU Time= 0:00:00.0  MEM= 5654.9M)
+<CMD> rcOut -spef pnr_outputs/main_RC_WORST.spef -rc_corner RC_WORST
+RC Out has the following PVT Info:
+   RC:RC_WORST, Operating temperature 125 C
+Dumping Spef file.....
+Printing D_NET...
+RC Out from RCDB Completed (CPU Time= 0:00:00.0  MEM= 5654.9M)
+<CMD> streamOut main.gds -mapFile /eda/cadence/pdks/ihp_sg13g2/ixc013g2ng_stdcell/lef/map/SG13G2_streamout.map -libName ur_main -units 1000 -mode ALL
+Parse flat map file '/eda/cadence/pdks/ihp_sg13g2/ixc013g2ng_stdcell/lef/map/SG13G2_streamout.map'
+Writing GDSII file ...
+	****** db unit per micron = 1000 ******
+	****** output gds2 file unit per micron = 1000 ******
+	****** unit scaling factor = 1 ******
+Output for instance
+Output for bump
+Output for physical terminals
+Output for logical terminals
+Output for regular nets
+Output for special nets and metal fills
+Convert 0 swires and 0 svias from compressed groups
+Output for via structure generation total number 17
+Statistics for GDS generated (version 3)
+----------------------------------------
+Stream Out Layer Mapping Information:
+GDS Layer Number          GDS Layer Name
+----------------------------------------
+    235                             COMP
+    235                          DIEAREA
+    135                        TopMetal2
+    134                        TopMetal2
+    133                          TopVia2
+    30                            Metal3
+    10                            Metal2
+    50                            Metal4
+    29                              Via2
+    67                            Metal5
+    8                             Metal1
+    19                              Via1
+    125                          TopVia1
+    126                        TopMetal1
+    49                              Via3
+    66                              Via4
+
+
+Stream Out Information Processed for GDS version 3:
+Units: 1000 DBU
+
+Object                             Count
+----------------------------------------
+Instances                            730
+
+Ports/Pins                           105
+    metal layer Metal2               105
+
+Nets                                4687
+    metal layer Metal1              1177
+    metal layer Metal2              2469
+    metal layer Metal3               957
+    metal layer Metal4                84
+
+    Via Instances                   2570
+
+Special Nets                          83
+    metal layer Metal1                75
+    metal layer TopMetal1              4
+    metal layer TopMetal2              4
+
+    Via Instances                    258
+
+Metal Fills                            0
+
+    Via Instances                      0
+
+Metal FillOPCs                         0
+
+    Via Instances                      0
+
+Metal FillDRCs                         0
+
+    Via Instances                      0
+
+Text                                 105
+    metal layer Metal2               105
+
+
+Blockages                              0
+
+
+Custom Text                            0
+
+
+Custom Box                             0
+
+Trim Metal                             0
+
+######Streamout is finished!
