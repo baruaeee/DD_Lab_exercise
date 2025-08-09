@@ -1,0 +1,122 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream Out
+Program   : @(#)$CDS: strmout version IC23.1-64b 05/22/2024 07:39 (cpgbld16) $
+          : sub-version  IC23.1-64b.ISR7.27 
+Started at: 09-Aug-2025  10:08:50
+User Name : bas33767
+Host Name : ei-vm-018.othr.de
+Directory : /home/bas33767/Desktop/DD_Lab_exercise/UR_Project/PV
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+INFO (XSTRM-217): Reading the layer map file, /mnt/cae_storage_sw/eda/cadence/pdks/ihp_sg13g2/sg13g2_oa_ads2024_rev1.3.2/lib/SG13_dev/SG13_dev.layermap
+INFO (XSTRM-427): Based on current hardware configuration, running XStream Out translation in multi-threaded mode with 4 threads.
+INFO (XSTRM-162): You have not used the '-viaMap' option. If the OpenAccess design has native oaVia instances, use the '-viaMap' option for preserving oaVia instances in a XStream Out - XStream In round trip. Using the '-viaMap' option improves performance and VM usage of applications using the Streamed-In design.
+
+Summary of Options :
+library                                 UR_Main
+strmFile                                /home/bas33767/Desktop/DD_Lab_exercise/UR_Project/PV/CALIBRE_DRC/Main.calibre.db
+topCell                                 Main
+view                                    layout
+runDir                                  /home/bas33767/Desktop/DD_Lab_exercise/UR_Project/PV/CALIBRE_DRC/
+logFile                                 PIPO.LOG.Main
+summaryFile                             PIPO.SUM.Main
+layerMap                                /mnt/cae_storage_sw/eda/cadence/pdks/ihp_sg13g2/sg13g2_oa_ads2024_rev1.3.2/lib/SG13_dev/SG13_dev.layermap
+case                                    Preserve
+convertDot                              node
+convertPcellPin                         geometry
+
+INFO (XSTRM-180): You have not used the '-objectMap' option. The design has instance(s) of at least one of following OpenAccess objects: oaBlockage, oaBoundary, oaRow, and oaMarker. Any information about these objects will not be translated into the generated stream file. Use the '-objectMap' option to translate/preserve these objects using XStream.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'Activ:text' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+INFO (XSTRM-223): 1. Translating stdVia SG13_dev/viagen12/layout as STRUCTURE viagen12_CDNS_754726930550.
+INFO (XSTRM-223): 2. Translating stdVia SG13_dev/viagen23/layout as STRUCTURE viagen23_CDNS_754726930551.
+INFO (XSTRM-223): 3. Translating stdVia SG13_dev/viagen12/layout as STRUCTURE viagen12_CDNS_754726930552.
+INFO (XSTRM-223): 4. Translating stdVia SG13_dev/viagen12/layout as STRUCTURE viagen12_CDNS_754726930553.
+INFO (XSTRM-223): 5. Translating stdVia SG13_dev/viagen12/layout as STRUCTURE viagen12_CDNS_754726930554.
+INFO (XSTRM-223): 6. Translating stdVia SG13_dev/viagen23/layout as STRUCTURE viagen23_CDNS_754726930555.
+INFO (XSTRM-223): 7. Translating stdVia SG13_dev/viagen12/layout as STRUCTURE viagen12_CDNS_754726930556.
+INFO (XSTRM-223): 8. Translating stdVia SG13_dev/viagen23/layout as STRUCTURE viagen23_CDNS_754726930557.
+INFO (XSTRM-223): 9. Translating stdVia SG13_dev/viagen34/layout as STRUCTURE viagen34_CDNS_754726930558.
+INFO (XSTRM-223): 10. Translating stdVia SG13_dev/viagen12/layout as STRUCTURE viagen12_CDNS_754726930559.
+INFO (XSTRM-223): 11. Translating stdVia SG13_dev/viagen12/layout as STRUCTURE viagen12_CDNS_7547269305510.
+INFO (XSTRM-223): 12. Translating stdVia SG13_dev/viagen67/layout as STRUCTURE viagen67_CDNS_7547269305511.
+INFO (XSTRM-223): 13. Translating stdVia SG13_dev/viagen56/layout as STRUCTURE viagen56_CDNS_7547269305512.
+INFO (XSTRM-223): 14. Translating stdVia SG13_dev/viagen45/layout as STRUCTURE viagen45_CDNS_7547269305513.
+INFO (XSTRM-223): 15. Translating stdVia SG13_dev/viagen34/layout as STRUCTURE viagen34_CDNS_7547269305514.
+INFO (XSTRM-223): 16. Translating stdVia SG13_dev/viagen23/layout as STRUCTURE viagen23_CDNS_7547269305515.
+INFO (XSTRM-223): 17. Translating stdVia SG13_dev/viagen12/layout as STRUCTURE viagen12_CDNS_7547269305516.
+INFO (XSTRM-223): 18. Translating cellview ihp_sg13g2_stdcell/BUJIX1/layout as STRUCTURE BUJIX1.
+INFO (XSTRM-223): 19. Translating cellview ihp_sg13g2_stdcell/NA3I1JIX0/layout as STRUCTURE NA3I1JIX0.
+INFO (XSTRM-223): 20. Translating cellview ihp_sg13g2_stdcell/INVJIX1/layout as STRUCTURE INVJIX1.
+INFO (XSTRM-223): 21. Translating cellview ihp_sg13g2_stdcell/NA4JIX0/layout as STRUCTURE NA4JIX0.
+INFO (XSTRM-223): 22. Translating cellview ihp_sg13g2_stdcell/AN22JIX0/layout as STRUCTURE AN22JIX0.
+INFO (XSTRM-223): 23. Translating cellview ihp_sg13g2_stdcell/AND2JIX0/layout as STRUCTURE AND2JIX0.
+INFO (XSTRM-223): 24. Translating cellview ihp_sg13g2_stdcell/NO2I1JIX0/layout as STRUCTURE NO2I1JIX0.
+INFO (XSTRM-223): 25. Translating cellview ihp_sg13g2_stdcell/AND3JIX0/layout as STRUCTURE AND3JIX0.
+INFO (XSTRM-223): 26. Translating cellview ihp_sg13g2_stdcell/INVJIX0/layout as STRUCTURE INVJIX0.
+INFO (XSTRM-223): 27. Translating cellview ihp_sg13g2_stdcell/NO2JIX0/layout as STRUCTURE NO2JIX0.
+INFO (XSTRM-223): 28. Translating cellview ihp_sg13g2_stdcell/NA2I1JIX0/layout as STRUCTURE NA2I1JIX0.
+INFO (XSTRM-223): 29. Translating cellview ihp_sg13g2_stdcell/SDFRRQJIX1/layout as STRUCTURE SDFRRQJIX1.
+INFO (XSTRM-223): 30. Translating cellview ihp_sg13g2_stdcell/SDFRRSJIX1/layout as STRUCTURE SDFRRSJIX1.
+INFO (XSTRM-223): 31. Translating cellview ihp_sg13g2_stdcell/AO21JIX0/layout as STRUCTURE AO21JIX0.
+INFO (XSTRM-223): 32. Translating cellview ihp_sg13g2_stdcell/ON21JIX0/layout as STRUCTURE ON21JIX0.
+INFO (XSTRM-223): 33. Translating cellview ihp_sg13g2_stdcell/AO32JIX0/layout as STRUCTURE AO32JIX0.
+INFO (XSTRM-223): 34. Translating cellview ihp_sg13g2_stdcell/NA2JIX0/layout as STRUCTURE NA2JIX0.
+INFO (XSTRM-223): 35. Translating cellview ihp_sg13g2_stdcell/AO22JIX0/layout as STRUCTURE AO22JIX0.
+INFO (XSTRM-223): 36. Translating cellview ihp_sg13g2_stdcell/ON31JIX0/layout as STRUCTURE ON31JIX0.
+INFO (XSTRM-223): 37. Translating cellview ihp_sg13g2_stdcell/AND2JIX1/layout as STRUCTURE AND2JIX1.
+INFO (XSTRM-223): 38. Translating cellview ihp_sg13g2_stdcell/NA2JIX1/layout as STRUCTURE NA2JIX1.
+INFO (XSTRM-223): 39. Translating cellview ihp_sg13g2_stdcell/EO2JIX1/layout as STRUCTURE EO2JIX1.
+INFO (XSTRM-223): 40. Translating cellview ihp_sg13g2_stdcell/NO2I1JIX1/layout as STRUCTURE NO2I1JIX1.
+INFO (XSTRM-223): 41. Translating cellview ihp_sg13g2_stdcell/EO2JIX0/layout as STRUCTURE EO2JIX0.
+INFO (XSTRM-223): 42. Translating cellview ihp_sg13g2_stdcell/OR2JIX0/layout as STRUCTURE OR2JIX0.
+INFO (XSTRM-223): 43. Translating cellview ihp_sg13g2_stdcell/EO3JIX0/layout as STRUCTURE EO3JIX0.
+INFO (XSTRM-223): 44. Translating cellview ihp_sg13g2_stdcell/ON211JIX1/layout as STRUCTURE ON211JIX1.
+INFO (XSTRM-223): 45. Translating cellview ihp_sg13g2_stdcell/NA2I1JIX1/layout as STRUCTURE NA2I1JIX1.
+INFO (XSTRM-223): 46. Translating cellview ihp_sg13g2_stdcell/HAJIX1/layout as STRUCTURE HAJIX1.
+INFO (XSTRM-223): 47. Translating cellview ihp_sg13g2_stdcell/EN2JIX0/layout as STRUCTURE EN2JIX0.
+INFO (XSTRM-223): 48. Translating cellview ihp_sg13g2_stdcell/ON21JIX1/layout as STRUCTURE ON21JIX1.
+INFO (XSTRM-223): 49. Translating cellview ihp_sg13g2_stdcell/NO2JIX1/layout as STRUCTURE NO2JIX1.
+INFO (XSTRM-223): 50. Translating cellview ihp_sg13g2_stdcell/EN3JIX0/layout as STRUCTURE EN3JIX0.
+INFO (XSTRM-223): 51. Translating cellview ihp_sg13g2_stdcell/AN21JIX1/layout as STRUCTURE AN21JIX1.
+INFO (XSTRM-223): 52. Translating cellview ihp_sg13g2_stdcell/SDFRQJIX1/layout as STRUCTURE SDFRQJIX1.
+INFO (XSTRM-223): 53. Translating cellview ihp_sg13g2_stdcell/FEED2JI/layout as STRUCTURE FEED2JI.
+INFO (XSTRM-223): 54. Translating cellview ihp_sg13g2_stdcell/FEED1JI/layout as STRUCTURE FEED1JI.
+INFO (XSTRM-223): 55. Translating cellview ihp_sg13g2_stdcell/FEED5JI/layout as STRUCTURE FEED5JI.
+INFO (XSTRM-223): 56. Translating cellview ihp_sg13g2_stdcell/FEED3JI/layout as STRUCTURE FEED3JI.
+INFO (XSTRM-223): 57. Translating cellview ihp_sg13g2_stdcell/FEED10JI/layout as STRUCTURE FEED10JI.
+INFO (XSTRM-223): 58. Translating cellview ihp_sg13g2_stdcell/DECAP10JI/layout as STRUCTURE DECAP10JI.
+INFO (XSTRM-223): 59. Translating cellview ihp_sg13g2_stdcell/DECAP5JI/layout as STRUCTURE DECAP5JI.
+INFO (XSTRM-223): 60. Translating cellview ihp_sg13g2_stdcell/DECAP3JI/layout as STRUCTURE DECAP3JI.
+INFO (XSTRM-223): 61. Translating cellview ihp_sg13g2_stdcell/DECAP25JI/layout as STRUCTURE DECAP25JI.
+INFO (XSTRM-223): 62. Translating cellview UR_Main/Main/layout as STRUCTURE Main.
+
+Summary of Objects Translated:
+	Scalar Instances:                       730
+	Array Instances:                        0
+	Polygons:                               374
+	Paths:                                  4338
+	Rectangles:                             3074
+	Lines:                                  0
+	Arcs:                                   0
+	Donuts:                                 0
+	Dots:                                   0
+	Ellipses:                               0
+	Boundaries:                             0
+	Area Blockages:                         0
+	Layer Blockages:                        0
+	Area Halos:                             0
+	Markers:                                0
+	Rows:                                   0
+	Stitch:                                 0
+	Standard Vias                           2828
+	Custom Vias:                            0
+	CdsGen Vias:                            0
+	Pathsegs:                               0
+	Text:                                   835
+	TextDisplay:                            222
+	Cells:                                  62
+
+Elapsed Time: 0.5s   User Time: 0.1s   CPU Time: 0.1s   Peak VM: 37288KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '1' warning(s) found.

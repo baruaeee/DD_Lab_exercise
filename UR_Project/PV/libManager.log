@@ -1,0 +1,120 @@
+\o Program:		@(#)$CDS: libManager version 23.1 - CAT38 04/15/2024 12:23 (sjfdcl749) $
+\o Sub version:		sub-version  p323 
+\o Arguments:		-unmapped -mpssession virtuoso1987277 -mpshost ei-vm-018.othr.de -masterPID 1987277 -ADVM 
+\o Working Directory:	ei-vm-018.othr.de:/home/bas33767/Desktop/DD_Lab_exercise/UR_Project/PV
+\o 64-bit offsets
+\o Qt version: 		5.15.9
+\o MPS virtuoso types registered: 68
+\o changeWorkingDir("/home/bas33767/Desktop/DD_Lab_exercise/UR_Project/PV") unnecessary.
+\o ddSetForcedLib("") unnecessary.
+\o Session hidden cells enabled.
+\o Log file is "/home/bas33767/Desktop/DD_Lab_exercise/UR_Project/PV/libManager.log".
+\o Opening libManager window.
+\a nrSetWindowVisibility(cdsLibManager "show")
+\o MPS service: map window
+\a nrSetCurrentWindow(cdsLibManager)
+\o Library Manager customization server connected.
+\a nrResizeWindow(cdsLibManager list(0 27 824 594))
+\a cdsLibManager->FileNewLibButton->value = t
+\a nrSetWindowVisibility(NewLibShell "show")
+\a nrSetCurrentWindow(NewLibShell)
+\a nrSetCurrentWindow(NewLibShell->subDialog)
+\a nrResizeWindow(NewLibShell list(154 27 507 559))
+\a NewLibShell->newLibNameText->value = "UR_Main"
+\a NewLibShell->newLibOKButton->value = t
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(workingDialogForm)
+\o Created new library "UR_Main" at /home/bas33767/Desktop/DD_Lab_exercise/UR_Project/PV/UR_Main.
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(262 229 291 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "UR_Main"
+\a cdsLibManager->libLineEdit->value = "UR_Main"
+\a lmgrLogShowPopup("mainListPopup0" 27 25 2 "UR_Main")
+\a cdsLibManager->editChangeRefsButton->value = t
+\a nrSetCurrentWindow(changeRefDialog)
+\a nrResizeWindow(changeRefDialog list(62 29 690 533))
+\a changeRefDialog->inLibsListWidget->value = '("UR_Main" )
+\a nrResizeWindow(changeRefDialog list(201 179 690 533))
+\a nrSetCurrentWindow(changeRefDialog)
+\a nrResizeWindow(changeRefDialog list(204 181 690 533))
+\a changeRefDialog->fromLibsListWidget->value = '("SG13_dev" )
+\a changeRefDialog->toLibListWidget->value = "UR_Main"
+\a changeRefDialog->addButton->value = t
+\a changeRefDialog->OK->value = t
+\o QUESTION (CLM-380): 1 reference changes will be applied to 1 libraries.\n\nDo you want to continue this operation?
+\a nrSetWindowVisibility(genericDialog "show")
+\a nrSetCurrentWindow(genericDialog)
+\a nrResizeWindow(genericDialog list(383 344 323 148))
+\a genericDialog->genericYesButton->value = t
+\o Operation confirmed for 1 changes will apply to 1 libraries.
+\o Running change rule: (in: UR_Main), (fl: SG13_dev), (fv: <All>), (tl: UR_Main), (tv: <As Is>)
+\o Change Library References command finished.
+\o INFO (CLM-370): All change operations succeeded.
+\o All change operations succeeded.
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(QMessageBox1)
+\a QMessageBox1->OK->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "UR_Main"
+\a cdsLibManager->libLineEdit->value = "UR_Main"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "UR_Main"
+\a cdsLibManager->libLineEdit->value = "UR_Main"
+\a cdsLibManager->cellListBox->value = "Main"
+\a cdsLibManager->cellLineEdit->value = "Main"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "Main"
+\a cdsLibManager->cellLineEdit->value = "Main"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "UR_Main"
+\a cdsLibManager->libLineEdit->value = "UR_Main"
+\a cdsLibManager->cellListBox->value = "Main"
+\a cdsLibManager->cellLineEdit->value = "Main"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "Main"
+\a cdsLibManager->cellLineEdit->value = "Main"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)

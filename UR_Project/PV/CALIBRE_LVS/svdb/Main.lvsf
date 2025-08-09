@@ -1,0 +1,10 @@
+# Automagically generated file: Please do not edit!
+lvs_LvsOutFile RUNDIR /home/bas33767/Desktop/DD_Lab_exercise/UR_Project/PV/CALIBRE_LVS
+lvs_LvsfVersion 4
+lvs_LvsInputSummary {0 3 3}
+lvs_LvsComparisonSummary {2 0 0 0}
+lvs_SourceCase YES
+lvs_LayoutCase YES
+lvs_LvsOutFile LVS_REPORT Main.lvs.report
+lvs_LvsOutFile SOURCE_NETLIST main_netlist.v.v2lvs.sp
+lvs_LvsOutFile RULES_FILE _lvs.tvf_

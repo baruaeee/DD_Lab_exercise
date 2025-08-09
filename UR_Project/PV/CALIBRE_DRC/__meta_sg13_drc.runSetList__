@@ -1,0 +1,3 @@
+DRC ICSTATION YES
+
+INCLUDE "/eda/cadence/pdks/ihp_sg13g2/SG13G2_618_rev1.3.1/Calibre/RunSets/sg13_drc.runSetList"

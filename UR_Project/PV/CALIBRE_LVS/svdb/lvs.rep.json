@@ -1,0 +1,17 @@
+{
+    "PLEASE DON'T EDIT OR PARSE": "This is automatically generated file for extracting in QS",
+    "CREATION TIME": "Sat Aug  9 13:38:56 2025",
+    "VERSION": "1",
+    "LVS LAYOUT TOP ERRORS AND WARNINGS": {
+        "WRNS": [
+            "Duplicate pin definition \"DFT_\" at line 5 in file \"main_netlist.v.v2lvs.sp\"",
+            "Duplicate pin definition \"DFT_\" at line 756 in file \"main_netlist.v.v2lvs.sp\"",
+            "Duplicate pin definition \"DFT_\" at line 833 in file \"main_netlist.v.v2lvs.sp\""
+        ],
+        "ERRS": [
+            "Pin mismatch in subcircuit instantiation \"ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8\" in file \"main_netlist.v.v2lvs.sp\" at line 878. Tried to match definition in file \"main_netlist.v.v2lvs.sp\" at line 5.\n         Unmatched instantiation pins: DFT_\/sdi=scan_in  DFT_\/sen=scan_en",
+            "Pin mismatch in subcircuit instantiation \"AdderTree_6_WEIGHT_WIDTH8_NUM_UNITS6\" in file \"main_netlist.v.v2lvs.sp\" at line 936. Tried to match definition in file \"main_netlist.v.v2lvs.sp\" at line 756.\n         Unmatched instantiation pins: DFT_\/sen=scan_en  DFT_\/sdo=n_105",
+            "Pin mismatch in subcircuit instantiation \"Out_Gen_Func\" in file \"main_netlist.v.v2lvs.sp\" at line 969. Tried to match definition in file \"main_netlist.v.v2lvs.sp\" at line 833.\n         Unmatched instantiation pins: DFT_\/sdi=n_105  DFT_\/sen=scan_en"
+        ]
+    }
+}

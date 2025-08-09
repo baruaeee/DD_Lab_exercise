@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      bas33767
+HostName                       ei-vm-018.hs-regensburg.de
+ProcessIdentifier              1988103
+ProcessCreationTime_UTC        1754679734
+ProcessCreationTime_Readable   Fri Aug  8 21:02:14 2025 CEST
+AppIdentifier                  /eda/cadence/2024-25/RHELx86/IC_23.10.070/tools/dfII/bin/64bit/libManager
+OSType                         lnx86
+ReasonForPlacingEditLock       log file
+FilePathUsedToEditLock         /home/bas33767/Desktop/DD_Lab_exercise/UR_Project/PV/libManager.log
+TimeEditLocked                 Fri Aug  8 21:03:02 2025 CEST

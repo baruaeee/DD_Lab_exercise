@@ -12,5 +12,37 @@ DEFINE sky130_fd_pr_main /eda/cadence/pdks/sky130/sky130_release_004a/libs/sky13
 
 DEFINE avTech /eda/cadence/2023-24/RHELx86/ASSURA_04.16.115_231/tools.lnx86/assura/etc/avtech/avTech
 DEFINE sky130_scl_9T /eda/cadence/pdks/sky130/sky130_scl_9T_0_0_5/oa/sky130_scl_9T
+
+
+
+
+#### ihp_sg13g2 (The open-source PDK and software development in SG13G2 technology)
+#export IHP_TECH=/eda/cadence/pdks/ihp_sg13g2/sg13g2_oa_ads2024_rev1.3.2
+#SOFTINCLUDE $CDSHOME/../../../pdks/ihp_sg13g2/sg13g2_oa_ads2024_rev1.3.2/env/cds.lib_composite
+DEFINE SG13_dev $CDSHOME/../../../pdks/ihp_sg13g2/SG13G2_618_rev1.3.1/lib/SG13_dev
+DEFINE ihp_sg13g2_stdcell $CDSHOME/../../../pdks/ihp_sg13g2/ixc013g2ng_stdcell/oa/ixc013g2ng_stdcell
+DEFINE ixc013g2_iocell $CDSHOME/../../../pdks/ihp_sg13g2/ixc013g2_iocell/oa/ixc013g2_iocell
+DEFINE SG13_Examples $CDSHOME/../../../pdks/ihp_sg13g2/SG13G2_618_rev1.3.1/lib/SG13_Examples
+#ASSIGN SG13_Example DISPLAY PDKlib
+DEFINE TL_SG13 $CDSHOME/../../../pdks/ihp_sg13g2/SG13G2_618_rev1.3.1/lib/TL_SG13/TL_SG13
+#ASSIGN TL_SG13 DISPLAY PDKlib
+DEFINE ihp_sg_13g2 $CDSHOME/../../../pdks/ihp_sg13g2/
+ASSIGN ihp_sg_13g2 COMBINE SG13_dev ihp_sg13g2_stdcell SG13_Examples TL_SG13 ixc013g2_iocell
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 DEFINE FPGA_TOP /home/cae1/Desktop/FPGA-OpenFPGA/DRC/FPGA_TOP
 DEFINE Pipeline /home/bas33767/Desktop/DD_Lab_exercise/PipelineADC/Pipeline
