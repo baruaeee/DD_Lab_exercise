@@ -1,0 +1,59 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream Out
+Program   : @(#)$CDS: strmout version IC23.1-64b 05/22/2024 07:39 (cpgbld16) $
+          : sub-version  IC23.1-64b.ISR7.27 
+Started at: 27-Sep-2025  23:54:00
+User Name : bas33767
+Host Name : ei-vm-018.othr.de
+Directory : /home/bas33767/Desktop/DD_Lab_exercise/UR_Project/gpdk45/PV
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+WARNING (XSTRM-20): Output Stream file '/home/bas33767/Desktop/DD_Lab_exercise/UR_Project/gpdk45/PV/Pag_DRC/Main.gds.gz' already exists. It will be overwritten.
+INFO (XSTRM-217): Reading the layer map file, /mnt/cae_storage_sw/eda/cadence/pdks/gpdk045/gpdk045_v_6_0/gpdk045/gpdk045.layermap
+WARNING (XSTRM-333): The '-enableColoring' option will be ignored during XStream Out. This is because there is no color entry in the layer map and the object map file.
+INFO (XSTRM-427): Based on current hardware configuration, running XStream Out translation in multi-threaded mode with 4 threads.
+INFO (XSTRM-280): The output file will be a compressed file because the file name has extension .gz
+INFO (XSTRM-162): You have not used the '-viaMap' option. If the OpenAccess design has native oaVia instances, use the '-viaMap' option for preserving oaVia instances in a XStream Out - XStream In round trip. Using the '-viaMap' option improves performance and VM usage of applications using the Streamed-In design.
+
+Summary of Options :
+library                                 ur_main
+strmFile                                /home/bas33767/Desktop/DD_Lab_exercise/UR_Project/gpdk45/PV/Pag_DRC/Main.gds.gz
+topCell                                 Main
+view                                    layout
+runDir                                  /home/bas33767/Desktop/DD_Lab_exercise/UR_Project/gpdk45/PV/Pag_DRC
+logFile                                 /home/bas33767/Desktop/DD_Lab_exercise/UR_Project/gpdk45/PV/Pag_DRC/PIPO1.LOG
+techLib                                 gpdk045
+hierDepth                               32
+maxVertices                             2048
+layerMap                                /mnt/cae_storage_sw/eda/cadence/pdks/gpdk045/gpdk045_v_6_0/gpdk045/gpdk045.layermap
+userSkillFile                           /home/bas33767/Desktop/DD_Lab_exercise/UR_Project/gpdk45/PV/Pag_DRC/strmout.il
+labelDepth                              32
+case                                    Preserve
+convertDot                              node
+
+INFO (XSTRM-223): 1. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_759010040550.
+INFO (XSTRM-223): 2. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_759010040551.
+INFO (XSTRM-223): 3. Translating stdVia gpdk045/M3_M2/layout as STRUCTURE M3_M2_CDNS_759010040552.
+INFO (XSTRM-223): 4. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_759010040553.
+INFO (XSTRM-223): 5. Translating stdVia gpdk045/M3_M2/layout as STRUCTURE M3_M2_CDNS_759010040554.
+INFO (XSTRM-223): 6. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_759010040555.
+INFO (XSTRM-223): 7. Translating stdVia gpdk045/M4_M3/layout as STRUCTURE M4_M3_CDNS_759010040556.
+INFO (XSTRM-223): 8. Translating stdVia gpdk045/M5_M4/layout as STRUCTURE M5_M4_CDNS_759010040557.
+INFO (XSTRM-223): 9. Translating stdVia gpdk045/M3_M2/layout as STRUCTURE M3_M2_CDNS_759010040558.
+INFO (XSTRM-223): 10. Translating stdVia gpdk045/M4_M3/layout as STRUCTURE M4_M3_CDNS_759010040559.
+INFO (XSTRM-223): 11. Translating stdVia gpdk045/M3_M2/layout as STRUCTURE M3_M2_CDNS_7590100405510.
+INFO (XSTRM-223): 12. Translating stdVia gpdk045/M4_M3/layout as STRUCTURE M4_M3_CDNS_7590100405511.
+INFO (XSTRM-223): 13. Translating stdVia gpdk045/M3_M2/layout as STRUCTURE M3_M2_CDNS_7590100405512.
+INFO (XSTRM-223): 14. Translating stdVia gpdk045/M3_M2/layout as STRUCTURE M3_M2_CDNS_7590100405513.
+INFO (XSTRM-223): 15. Translating stdVia gpdk045/M9_M8/layout as STRUCTURE M9_M8_CDNS_7590100405514.
+INFO (XSTRM-223): 16. Translating stdVia gpdk045/M8_M7/layout as STRUCTURE M8_M7_CDNS_7590100405515.
+INFO (XSTRM-223): 17. Translating stdVia gpdk045/M7_M6/layout as STRUCTURE M7_M6_CDNS_7590100405516.
+INFO (XSTRM-223): 18. Translating stdVia gpdk045/M6_M5/layout as STRUCTURE M6_M5_CDNS_7590100405517.
+INFO (XSTRM-223): 19. Translating stdVia gpdk045/M5_M4/layout as STRUCTURE M5_M4_CDNS_7590100405518.
+INFO (XSTRM-223): 20. Translating stdVia gpdk045/M4_M3/layout as STRUCTURE M4_M3_CDNS_7590100405519.
+INFO (XSTRM-223): 21. Translating stdVia gpdk045/M3_M2/layout as STRUCTURE M3_M2_CDNS_7590100405520.
+INFO (XSTRM-223): 22. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_7590100405521.
+ERROR (XSTRM-341): Translation failed while processing 'gsclib045/CLKXOR2X1/layout' because of the following reason: Cannot open design gsclib045_tech/cellTmpl/layout: "Library gsclib045_tech not found.". Ensure that the specified cellview exists on disk and that you have permission to open it and then rerun the translation.
+INFO (XSTRM-273): Translation failed. '1' error(s) and '2' warning(s) found.

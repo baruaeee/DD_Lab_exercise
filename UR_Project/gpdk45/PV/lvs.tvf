@@ -1,0 +1,117 @@
+#! tvf
+
+##===============================================================================================
+##
+## Copyright (c)    :  IHP-Microelectronics (c) 2020
+##
+## File name 		    : drc.tvf
+## File description : RSF file  for DRC in sg13 technology
+##  			            This file is provided to run Calibre DRC
+##          			    This file contains general and customized options for DRC
+## Version		      : 0.0.2									   
+## Release date 	  : 2024/06/09
+## Authors		      :
+##===============================================================================================
+##
+##==========================================================================
+##-------------------------------------------------------------------
+##  Revision 0.0.2  2024/08/07
+##-------------------------------------------------------------------
+##  Changes:
+##       - Reviewed and updated the file's style and headers.
+##-------------------------------------------------------------------
+##
+##  Revision 0.0.1
+##-------------------------------------------------------------------
+##  - Initial version
+##-------------------------------------------------------------------
+##==========================================================================
+
+#  tvf::TITLE "SG13 Calibre LVS Runset"
+
+##==================================================
+## --------------- Setup Environment ---------------
+##==================================================
+
+  tvf::PRECISION  1000
+  tvf::RESOLUTION 5
+
+  tvf::UNIT CAPACITANCE FF
+  tvf::UNIT LENGTH      U
+  tvf::UNIT RESISTANCE  OHM
+
+  tvf::MASK RESULTS DATABASE "mask.db"
+  tvf::FLAG OFFGRID YES
+  tvf::FLAG ACUTE YES
+  tvf::FLAG SKEW YES
+  tvf::FLAG NONSIMPLE YES
+  tvf::FLAG NONSIMPLE PATH YES
+
+  tvf::TEXT DEPTH PRIMARY
+  
+  tvf::LAYOUT SYSTEM GDSII
+
+  tvf::LAYOUT ERROR ON INPUT NO
+  tvf::LAYOUT PROCESS BOX RECORD YES
+  tvf::VIRTUAL CONNECT COLON YES
+  tvf::LVS EXECUTE ERC YES
+  tvf::ERC RESULTS DATABASE erc.db
+
+##===============================================
+## --------------- Setup Defaults ---------------
+##===============================================
+
+#  if {$globPort == "NO"} {
+#    tvf::LVS GLOBALS ARE PORTS NO
+#  } else {
+#    tvf::LVS GLOBALS ARE PORTS YES
+#  }
+  tvf::LVS SPICE ALLOW INLINE PARAMETERS NO
+  tvf::LVS SPICE ALLOW UNQUOTED STRINGS YES
+  tvf::LVS SPICE REPLICATE DEVICES LPI
+
+  tvf::SOURCE CASE YES
+  tvf::LAYOUT CASE YES
+  tvf::LAYOUT PRESERVE PROPERTY CASE YES
+  tvf::LVS COMPARE CASE NAMES 
+
+  tvf::LVS REDUCE SERIES MOS         NO
+  tvf::LVS REDUCE PARALLEL MOS       YES
+  tvf::LVS REDUCE SPLIT GATES        NO
+  tvf::LVS REDUCE PARALLEL BIPOLAR   YES
+  tvf::LVS REDUCE SERIES RESISTORS   YES
+  tvf::LVS REDUCE PARALLEL RESISTORS YES
+  tvf::LVS REDUCE PARALLEL DIODES    YES
+
+  tvf::FLATTEN CELL diodevdd_2kv
+  tvf::FLATTEN CELL diodevdd_4kv
+  tvf::FLATTEN CELL diodevss_2kv
+  tvf::FLATTEN CELL diodevss_4kv
+
+##============================================
+## -------------- LVS UTILITIES  -------------
+##============================================
+
+  set grid  0.005
+
+  source $env(IHP_TECH)/Calibre/LVS/lvsRules/VcadRuleBox_LVS.tvf
+
+##============================================
+## ------------ LAYER DEFINITIONS ------------
+##============================================
+
+  source $env(IHP_TECH)/Calibre/LAYERS/layerDefs.tvf
+
+##============================================
+## ------------ LAYER DERIVATIONS ------------
+##============================================
+
+  source $env(IHP_TECH)/Calibre/LVS/lvsRules/ruleDefs.tvf
+  source $env(IHP_TECH)/Calibre/LVS/lvsRules/comDerLays.tvf
+  source $env(IHP_TECH)/Calibre/LVS/lvsRules/lvsDerLays.tvf
+
+##============================================
+## --------------- LVS INCLUDE ---------------
+##============================================
+
+  source /home/bas33767/Desktop/DD_Lab_exercise/UR_Project/PV/deviceEXT.tvf

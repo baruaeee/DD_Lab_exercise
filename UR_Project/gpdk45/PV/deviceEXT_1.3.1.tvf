@@ -1,0 +1,372 @@
+#! tvf
+
+##===============================================================================================
+##
+## Copyright (c)    : IHP-Microelectronics (c) 2020
+##
+## File name 	     : deviceEXT.tvf
+## File description : Calibre LVS device extraction
+## Version		     : 0.0.2								   
+## Release date 	  : 07.08.2024
+##  Authors		     :
+##===============================================================================================
+##
+##==========================================================================
+##-------------------------------------------------------------------
+##  Revision 0.0.2  07.08.2024
+##-------------------------------------------------------------------
+##  Changes:
+##       - Reviewed and enhanced the file's style and headers.
+##
+##-------------------------------------------------------------------
+##  Revision 0.0.1
+##-------------------------------------------------------------------
+##  - Initial version
+##-------------------------------------------------------------------
+##==========================================================================
+
+namespace import tvf::DEVICE tvf::LVS tvf::SETLAYER
+
+##====================================
+## --------- BIPOLAR DEVICES ---------
+##====================================
+
+if { $techName == "SG13G2" || $techName == "SG13G2Cu" || $techName == "SG13G2C" } {
+   ### npn13G2
+   VcadExtractNPN "Q" "npn13G2" "npn13G2"      "colPin" "basPin" "emi_M2Pin" "bulk"     $npn13g2_param "npn13Emi"
+   VcadExtractNPN "Q" "npn13G2" "npn13G2_iso"  "colPin" "basPin" "emi_M2Pin" "isoPWell" $npn13g2_param "npn13Emi"
+
+   ### npn13G2L
+   VcadExtractNPN "Q" "npn13G2l" "npn13G2L"     "colPin" "basPin" "emi_M2Pin" "bulk"     $npn13g2l_param "npn13Emi"
+   VcadExtractNPN "Q" "npn13G2l" "npn13G2L_iso" "colPin" "basPin" "emi_M2Pin" "isoPWell" $npn13g2l_param "npn13Emi"
+
+   ### npn13G2V
+   VcadExtractNPN "Q" "npn13G2v" "npn13G2V"     "colPin" "basPin" "emi_M2Pin" "bulk"     $npn13g2v_param "npn13EmiHV"
+   VcadExtractNPN "Q" "npn13G2v" "npn13G2V_iso" "colPin" "basPin" "emi_M2Pin" "isoPWell" $npn13g2v_param "npn13EmiHV"
+}
+
+if { $techName == "SG13G2C" } {
+   ### npn13G2C
+   VcadExtractNPN "Q" "npn13G2C" "npn13G2C"     "colPin" "basPin" "emi_M2Pin" "bulk"     $npn13g2c_param "npn13Emi"
+   VcadExtractNPN "Q" "npn13G2C" "npn13G2C_iso" "colPin" "basPin" "emi_M2Pin" "isoPWell" $npn13g2c_param "npn13Emi"
+}
+
+if { $techName == "SG13G3" } {
+   VcadExtractNPN "Q" "npn13D6" "npn13D6" "colPin" "basPin" "emi_M2Pin" "bulk" $npn13D6_param "npn13Emi"
+
+   VcadExtractNPN "Q" "npnG3" "npnG3" "npnG3C" "npnG3B" "npnG3EM2" "bulk" $npnG3_param "npnG3EmiWi"
+   VcadExtractNPN "Q" "npnG3S" "npnG3S" "npnG3C" "npnG3B" "npnG3EM2" "bulk" $npnG3S_param "npnG3EmiWi"
+   VcadExtractNPN "Q" "npnG3L" "npnG3L" "npnG3C" "npnG3B" "npnG3EM2" "bulk" $npnG3S_param "npnG3EmiWi"
+   VcadExtractNPN "Q" "npnG3HV" "npnG3HV" "npnG3C" "npnG3B" "npnG3EM2" "bulk" $npnG3S_param "npnG3EmiWiHV"
+   VcadExtractNPN "Q" "npnG3MV" "npnG3MV" "npnG3C" "npnG3B" "npnG3EM2" "bulk" $npnG3S_param "npnG3EmiWiHV"
+   VcadExtractNPN_iso "npnG3iso" "npnG3iso" "npnG3iso" "npnG3C" "npnG3B" "npnG3EM2" "npnG3iso_NWell" "isoPWell" "bulk" $npnG3S_param "npnG3EmiWi"
+}
+
+if { [lsearch -exact {"SG13G2" "SG13G2Cu" "SG13G2C" "SG13G3" "SG13G3Cu"} $techName] == -1 } { 
+   ### npn13p
+   VcadExtractNPN "Q" "npn13p" "transP2" "colPin" "basPin" "emi_M2Pin" "bulk" $npn13p_param "npn13Emi"
+
+   ### npn13pl2
+   VcadExtractNPN "Q" "npn13pl" "transPl2" "colPin" "basPin" "emi_M2Pin" "bulk" $npn13p_param "npn13Emi"
+
+   ### npn13v2
+   VcadExtractNPN "Q" "npn13v" "transV2" "colPin" "basPin" "emi_M2Pin" "bulk" $npn13v2_param "npn13Emi"
+}
+
+##====================================
+## ----------- MOS DEVICES -----------
+##====================================
+
+ ### pmos
+ VcadExtractMOS "M" "sg13_lv_pmos" "pmos" "GP_connect" "PAct_connect" "NWell"
+
+ ### pmosHV
+ VcadExtractMOS "M" "sg13_hv_pmos" "pmosHV" "GP_connect" "PAct_connect" "NWell"
+ 
+ ### rfpmos
+ VcadExtractMOS "M" "rfpmos" "rfpmos" "GP_connect" "PAct_connect" "NWell"
+
+ ### rfpmosHV
+ VcadExtractMOS "M" "rfpmosHV" "rfpmosHV" "GP_connect" "PAct_connect" "NWell"
+ 
+ ### nmos
+ VcadExtractMOS "M" "sg13_lv_nmos" "nmos" "GP_connect" "NAct_connect" "bulk"
+ 
+ ### nmos_iso
+ VcadExtractMOS "M" "sg13_lv_nmos" "nmos_iso" "GP_connect" "NAct_connect" "isoPwell"
+ 
+ ### nmosHV
+ VcadExtractMOS "M" "sg13_hv_nmos" "nmosHV" "GP_connect" "NAct_connect" "bulk"
+
+ ### nmosHV_iso
+ VcadExtractMOS "M" "sg13_hv_nmos" "nmosHV_iso" "GP_connect" "NAct_connect" "isoPWell"
+ 
+ ### nmoselt
+ VcadExtractMOS "MN" "nmoselt" "nmoselt" "GP_connect" "NAct_connect" "bulk"
+
+ ### nmoselt_iso
+ VcadExtractMOS "MN" "nmoselt" "nmoselt_iso" "GP_connect" "NAct_connect" "isoPWell"
+ 
+ ### rfnmos
+ VcadExtractMOS "M" "rfnmos" "rfnmos" "GP_connect" "NAct_connect" "rfPwellRing"
+ 
+ ### rfnmosHV
+ VcadExtractMOS "M" "rfnmosHV" "rfnmosHV" "GP_connect" "NAct_connect" "rfPwellRing"
+
+ set moreParam "nil"
+# if {$ngComp == 1} {
+#   set moreParam {{ng ng 0} {1 2 3}}
+# }
+ 
+ foreach {devModel} [list "sg13_lv_pmos" "sg13_hv_pmos" "rfpmos" "rfpmosHV" "sg13_lv_nmos" "sg13_hv_nmos" "rfnmos" "rfnmosHV"] \
+                      {
+    VcadInitPropMOS "M" $devModel
+    
+    VcadReduceMOS "M" $devModel
+    
+    VcadTraceMOS "M" $devModel $moreParam
+ }
+ 
+ foreach {devModel} [list "nmoselt"] {
+    VcadInitPropMOS "MN" $devModel
+    
+    VcadReduceMOS "MN" $devModel
+    
+    VcadTraceMOS "MN" $devModel $moreParam
+ }
+
+##=====================================
+## --------- SUB/WELL DEVICES ---------
+##=====================================
+
+ VcadExtractCont "ptap1" "ptap1" "SubContDev" "bulk" "SUB" "PAct_connect" $ptap1_param
+ VcadExtractCont "ntap1" "ntap1" "WellContDev" "NWell" "WELL" "NAct_connect" $ntap1_param
+ VcadExtractCont "ptap1" "ptap1" "SubContDev_iso" "isoPWell" "SUB" "PAct_connect" $ptap1_param 
+ 
+ foreach {devType} [list "ptap1" "ntap1"] {
+   VcadInitPropCont $devType
+    
+   VcadReduceCont $devType
+   
+   VcadTraceCont $devType
+ }
+
+##=====================================
+## ----------- DIODE DEVICES ----------
+##=====================================
+
+ VcadExtractAnt "D" "dantenna" "dantn" "bulk" "NAct_connect" "nil" "hordant_dantenna"
+ VcadExtractAnt "D" "dantenna" "dantn_iso" "isoPWell" "NAct_connect" "nil" "hordant_dantenna"
+ VcadExtractAnt "D" "dpantenna" "dantp" "PAct_connect" "NWell" "nil" "hordant_dantp"
+ VcadExtractAnt "pnpMPA" "pnpMPA" "pnpMPA" "PAct_connect" "NWell" "pnpMPARing_connect" "hordiode_pnpMPA"
+
+ foreach {dev} {{"D" "dantenna" 0} {"D" "dpantenna" 0} {"pnpMPA" "pnpMPA" 0}} {
+    VcadTraceANT $dev
+    
+    VcadReduceAnt $dev
+    
+    VcadInitPropAnt [lindex $dev 0] [lindex $dev 1]
+ }
+ 
+ VcadExtractDiode "D" "dpsd" "dpsd" "dpsdp" "NWell"
+# VcadExtractDiode "D" "dnw" "dnw" "bulk" "NWell"
+ VcadExtractDiode "pdnw" "pdnw" "pdnw" "bulk" "bn" "NWell" "MINUS"
+ VcadExtractSchottky "schottky_nbl1" "schottky_nbl1" "schottky_nbl1" "schottky_nbl1_p" "schottky_nbl1_m" "schottky_nbl1_b" $schottky_param
+
+##====================================
+## ----------- RES DEVICES -----------
+##====================================
+
+ VcadExtractRES "R" "res_rsil" "rsil" "GP_connect" "bulk" "SUB" $rsil_param "1"
+ VcadExtractRES "R" "res_rsil" "Rsil_nwell" "GP_connect" "NWell" "SUB" $rsil_param "1"
+ VcadExtractRES "R" "res_rsil" "Rsil_iso" "GP_connect" "isoPWell" "SUB" $rsil_param "1"
+ 
+ VcadExtractRES "R" "res_rppd" "Rppd" "GP_connect" "bulk" "SUB" $rppd_param "1"
+ VcadExtractRES "R" "res_rppd" "Rppd_nwell" "GP_connect" "NWell" "SUB" $rppd_param "1"
+ VcadExtractRES "R" "res_rppd" "Rppd_iso" "GP_connect" "isoPWell" "SUB" $rppd_param "1"
+ 
+ VcadExtractRES "R" "res_rhigh" "Rhigh" "GP_connect" "bulk" "SUB" $rhigh_param "1"
+ VcadExtractRES "R" "res_rhigh" "Rhigh_nwell" "GP_connect" "NWell" "SUB" $rhigh_param "1"
+ VcadExtractRES "R" "res_rhigh" "Rhigh_iso" "GP_connect" "isoPWell" "SUB" $rhigh_param "1"
+
+ foreach {devModel} [list "res_rsil" "res_rppd" "res_high"] {
+    VcadInitPropRES "R" $devModel
+    
+#    VcadReduceRES "R" $devModel
+ }
+ 
+ foreach {dev} {{"R" "res_rsil"} {"R" "res_rppd"} {"R" "res_rhigh"}} {
+    VcadTraceRES $dev
+ }
+ 
+ foreach {lay} [list m1 m2 m3 m4 m5 tm1 tm2] {
+    set termName [string toupper $lay]
+    VcadExtractMetalRes "R" "lvsres" "lvsres_$lay" "${termName}_connect"
+ }
+ 
+ TRACE "PROPERTY R(lvsres) \"length\" l $metR_l"
+ TRACE "PROPERTY R(lvsres) \"width\" w $metR_w"
+
+##====================================
+## ----------- CAP DEVICES -----------
+##====================================
+
+ VcadExtractMIM "C" "cap_cmim" "cmim" "cmim_tm1" "cmim_m5" $cmim_param
+ VcadExtractRFCMIM "rfcmim" "rfcmim"  "rfcmim" "cmim_tm1" "cmim_m5" "cmim_tie"
+
+##=====================================
+## --------- SVARICAP DEVICES ---------
+##=====================================
+
+ VcadExtractSVaricap "sg13_hv_svaricap" "SVaricap" "SVaricap_g1" "SVaricap_w" "SVaricap_g2" "bulk" "hord_svaricap"
+
+##====================================
+## ----------- ESD DEVICES -----------
+##====================================
+
+ foreach {dev} [list vdd_2kv vdd_4kv vss_2kv vss_4kv] {
+    DEVICE "diode${dev} (diode${dev}) diode${dev} diode${dev}_VDD(VDD) diode${dev}_PAD(PAD) diode${dev}_VSS(VSS) \[property m m = 1\]"
+    DEVICE "idiode${dev} (idiode${dev}) idiode${dev} idiode${dev}_VDD(VDD) idiode${dev}_PAD(PAD) idiode${dev}_VSS(VSS) \[property m m = 1\]"
+ }
+
+##===================================
+## ----------- SC DEVICES -----------
+##===================================
+
+ foreach {dev} [list "nmoscl_2" "nmoscl_4" "scr1"] {
+    set devType "D"
+    VcadExtractSC $devType $dev $dev
+ }
+
+##====================================
+## --------- IsolBox DEVICES ---------
+##====================================
+
+ VcadExtractIsolbox "isolbox" "isolbox" "isolbox" "isoPWell" "nBuLay" "bulk"
+
+##====================================
+## ------------ TL DEVICES -----------
+##====================================
+
+ foreach {dev} [list TL1 TL1_stub TL1_45deg TL1_90deg TL1_T TL1_Y TL2 TL2_45deg TL2_90deg] {
+    foreach {lay} [list 1 2 3 4 5] {
+
+       set m m$lay
+       
+       if {$dev in [list TL1 TL1_45 TL1_90deg] } {
+         DEVICE "$dev $dev indCG${m}(CG) indT1tm1(T1) indT2tm1(T2)"
+         DEVICE "$dev $dev indCG${m}(CG) indT1tm2(T1) indT2tm2(T2)"
+       }
+       
+       if {$dev in [list TL1_T TL1_Y] } {
+         DEVICE "$dev $dev indCG${m}(CG) indT1tm1(T1) indT2tm1(T2) indT3tm1(T3)"
+         DEVICE "$dev $dev indCG${m}(CG) indT1tm2(T1) indT2tm2(T2) indT3tm2(T3)"
+       }       
+      
+       if {$dev == "TL1_sub"} {
+         DEVICE "$dev $dev indCG{m}(CG) indT1tm1(T1)"
+         DEVICE "$dev $dev indCG{m}(CG) indT1tm2(T1)"
+       }
+
+       if {$dev in [list TL2]} {
+         DEVICE "$dev $dev indCG${m}(CG) indT1tm1(T2) indT2tm1(T3)"
+         DEVICE "$dev $dev indCG${m}(CG) indT1tm2(T2) indT2tm2(T3)"
+       }
+       
+       if {$dev in [list TL2_45deg TL2_90deg]} {
+         DEVICE "$dev $dev indCG${m}(CG) indT1tm1(T1) indT2tm1(T2) indT3tm1(T3) indT4tm1(T4)"
+         DEVICE "$dev $dev indCG${m}(CG) indT1tm2(T1) indT2tm2(T2) indT3tm2(T3) indT4tm2(T4)"
+       }
+
+    }
+ }
+ 
+##====================================
+## ---------- DUMMY DEVICES ----------
+##====================================
+
+ foreach {lay} [list M1 M2 M3 M4 M5 TM1 TM2] {
+    DEVICE "dummy1 dummy1_$lay ${lay}_connect(C)"
+ }
+
+##=====================================
+## ---------- IPROPE DEVICES ----------
+##=====================================
+
+ foreach {pref} [list M1 M2 M3 M4 M5 TM1 TM2] \
+         {lay}  [list Metal1  Metal2  Metal3  Metal4 Metal5 TopMetal1 TopMetal2] {
+     
+    VcadExtractIprobe "iprobe" "iprobe" "iprobe_$pref"  "${pref}_connect"  "iprobe_${pref}_PLUS"  "iprobe_${pref}_MINUS"  \"$lay\"
+ }
+ 
+ VcadReduceIprb
+ VcadTraceIprb
+
+##===================================
+## ------ DIFFSTBPROBE DEVICES ------
+##===================================
+
+ foreach {pref} [list M1 M2 M3 M4 M5 TM1 TM2] \
+         {lay}  [list Metal1  Metal2  Metal3  Metal4 Metal5 TopMetal1 TopMetal2] {
+     
+    VcadExtractDiffstb diffstbprobe diffstbprobe_$pref diffstbprobe_${pref} ${pref}_connect $lay
+ }
+ 
+ VcadReduceDiffstb
+ VcadTraceDiffstb
+
+##====================================
+## ----------- OTP DEVICES -----------
+##====================================
+
+ DEVICE "otpcell otp_cell gp_otp(G) act_otp(D) bulk(B)"
+
+##====================================
+## ----------- TSV DEVICES -----------
+##====================================
+
+ VcadExtractTSV "TSV" "TSV" "recog_tsv" "M1_connect" "tsv_bot" "layX" "layY"
+
+##====================================
+## ----------- IND DEVICES -----------
+##====================================
+
+ ###l2_ind_lvs
+ foreach {lay} [list M1 M2 M3 M4 M5 TM1 TM2] \
+         {ms}  [list 1 2 4 8 16 32 64] {
+            
+     VcadExtractL2IndLvs "l2_ind_lvs" "inductor" ${lay}_ind ${lay}_connect ${lay}_connect bulk $ms $lay
+ }
+ 
+ TRACE "PROPERTY l2_ind_lvs(inductor) mergeStat mergeStat"
+ TRACE "PROPERTY l2_ind_lvs(inductor)\"length\" \"length\" 0.1"
+ TRACE "PROPERTY l2_ind_lvs(inductor) \"width\" \"width\" 0.1" 
+ 
+ ###inductor2/3
+ VcadExtractIndN "inductor" "ind2_rec" "TM2_ind_A" "TM2_ind_B" "nil" "bulk"
+ VcadExtractIndN "inductor3" "ind3_rec" "TM1_ind_A" "TM1_ind_B" "TM2_ind_C" "bulk"
+ 
+ VcadIndParamCalc TEXT_0
+ foreach {devType} [list "inductor" "inductor3"] {
+    VcadTraceIND $devType
+ }
+
+##====================================
+## ----------- PAD DEVICES -----------
+##====================================
+
+ foreach {pref} [list M1 M2 M3 M4 M5 TM1 TM2] \
+         {lay}  [list Metal1 Metal2 Metal3 Metal4 Metal5 TopMetal1 TopMetal2] {
+       
+       set loLay [string tolower $pref]
+       set sLng  [string length $pref]
+       set lNum  [string range $pref [expr $sLng-1] $sLng]
+       set lNam  [string range $loLay 0 [expr $sLng-2]]
+       
+       SETLAYER pad_${pref}_rec = ( dfpad AND Passiv ) AND ${lay}_res
+       DEVICE pad (pad) pad_${pref}_rec ${pref}_connect (Core_Con) ${pref}_connect (Pad_Con)
+ }
+
+##==================================================================
+## -------------------------- END OF FILE --------------------------
+##==================================================================

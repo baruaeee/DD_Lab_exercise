@@ -1,0 +1,5 @@
+ur_main Main layout Main
+sky130_scl_9T CLKXOR2X1 layout CLKXOR2X1
+sky130_scl_9T CLKBUFX2 layout CLKBUFX2
+sky130_scl_9T OAI21X2 layout OAI21X2
+sky130_scl_9T BUFX2 layout BUFX2

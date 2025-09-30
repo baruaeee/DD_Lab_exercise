@@ -1,0 +1,2 @@
+ur_main Main layout Main
+gsclib045 CLKXOR2X1 layout CLKXOR2X1

@@ -1,0 +1,17 @@
+case	"preserve"
+convertDot	"node"
+convertPin	"geometry"
+hierDepth	32
+labelCase	"preserve"
+labelDepth	32
+library	"ur_main"
+logFile	"/home/bas33767/Desktop/DD_Lab_exercise/UR_Project/gpdk45/PV/Pag_LVS/PIPO1.LOG"
+maxVertices	2048
+pinAttNum	0
+runDir	"/home/bas33767/Desktop/DD_Lab_exercise/UR_Project/gpdk45/PV/Pag_LVS"
+strmFile	"/home/bas33767/Desktop/DD_Lab_exercise/UR_Project/gpdk45/PV/Pag_LVS/Main.gds.gz"
+strmVersion	5
+techLib	"gpdk045"
+topCell	"Main"
+view	"layout"
+enableColoring

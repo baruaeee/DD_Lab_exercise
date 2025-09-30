@@ -1,9 +1,0 @@
-# Automagically generated file: Please do not edit!
-lvs_ExtfVersion 3
-lvs_ExtRunTimes 1754739534 1754739536
-lvs_ExtOutFile RUNDIR /home/bas33767/Desktop/DD_Lab_exercise/UR_Project/PV/CALIBRE_LVS
-lvs_ExtOutFile RULES_FILE _lvs.tvf_
-lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 105 0 0 0}
-lvs_ExtInfoDfmSummary {0}
-lvs_ExtOutFile LAYOUT_NETLIST Main.sp
-lvs_ExtOutFile EXTRACTION_REPORT Main.lvs.report.ext

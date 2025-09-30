@@ -1,0 +1,27 @@
+#!tvf
+
+## +++ TVF CUSTOMIZATION SETTINGS START +++
+
+set "density" 0
+tvf::set_global_variable "density" 0
+set "offGrid" 1
+tvf::set_global_variable "offGrid" 1
+set "angleCheck" 1
+tvf::set_global_variable "angleCheck" 1
+set "filler" 1
+tvf::set_global_variable "filler" 1
+set "antennaRules" 0
+tvf::set_global_variable "antennaRules" 0
+set "sanityRules" 1
+tvf::set_global_variable "sanityRules" 1
+set "noRecommendedRules" 0
+tvf::set_global_variable "noRecommendedRules" 0
+
+## +++ TVF CUSTOMIZATION SETTINGS END +++
+
+tvf::VERBATIM {
+DRC ICSTATION YES
+
+}
+
+source "/eda/cadence/pdks/ihp_sg13g2/SG13G2_618_rev1.3.1/Calibre/RSF/drc.tvf"

@@ -1,0 +1,462 @@
+\o Program:		@(#)$CDS: libManager version 23.1 - CAT38 04/15/2024 12:23 (sjfdcl749) $
+\o Sub version:		sub-version  p323 
+\o Arguments:		-unmapped -mpssession virtuoso3516007 -mpshost ei-vm-018.othr.de -masterPID 3516007 -ADVM 
+\o Working Directory:	ei-vm-018.othr.de:/home/bas33767/Desktop/DD_Lab_exercise/UR_Project/gpdk45/PV
+\o 64-bit offsets
+\o Qt version: 		5.15.9
+\o MPS virtuoso types registered: 68
+\o changeWorkingDir("/home/bas33767/Desktop/DD_Lab_exercise/UR_Project/gpdk45/PV") unnecessary.
+\o ddSetForcedLib("") unnecessary.
+\o Session hidden cells enabled.
+\o Log file is "/home/bas33767/Desktop/DD_Lab_exercise/UR_Project/gpdk45/PV/libManager.log".
+\o Opening libManager window.
+\a nrSetWindowVisibility(cdsLibManager "show")
+\o MPS service: map window
+\a nrSetCurrentWindow(cdsLibManager)
+\o Library Manager customization server connected.
+\a nrResizeWindow(cdsLibManager list(0 27 824 594))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "ur_main"
+\a cdsLibManager->libLineEdit->value = "ur_main"
+\a lmgrLogShowPopup("mainListPopup0" 30 161 2 "ur_main")
+\a cdsLibManager->cellListBox->value = "Main"
+\a cdsLibManager->cellLineEdit->value = "Main"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "ur_main"
+\a cdsLibManager->libLineEdit->value = "ur_main"
+\a cdsLibManager->cellListBox->value = "Main"
+\a cdsLibManager->cellLineEdit->value = "Main"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 24 11 2 "Main")
+\a cdsLibManager->editDeleteButton->value = t
+\a deleteForm->deleteFilterEdit->value = "*"
+\a deleteForm->notDeleteFilterEdit->value = "*"
+\a nrSetWindowVisibility(deleteForm "show")
+\a nrSetCurrentWindow(deleteForm)
+\a nrResizeWindow(deleteForm list(94 83 627 425))
+\a deleteForm->notDeleteListBox->value = '("Main_VIA0" )
+\a deleteForm->moveToDeleteButton->value = t
+\a deleteForm->notDeleteListBox->value = '("Main_VIA1" )
+\a deleteForm->moveToDeleteButton->value = t
+\a deleteForm->OK->value = t
+\o QUESTION (CLM-199): The following 3 items are marked for deletion.  Are you sure?
+\a nrSetWindowVisibility(mcMBXDLG "show")
+\a nrSetCurrentWindow(mcMBXDLG)
+\a nrResizeWindow(mcMBXDLG list(253 221 268 91))
+\a mcMBXDLG->pushButton1->value = t
+\o Deleting 3 cells from library "ur_main".
+\a nrSetWindowVisibility(workingDialogForm "show")
+\o Deleting cell "Main".
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\o Deleted cell 'ur_main/Main'.
+\o Deleting cell "Main_VIA0".
+\o Deleted cell 'ur_main/Main_VIA0'.
+\o Deleting cell "Main_VIA1".
+\o Deleted cell 'ur_main/Main_VIA1'.
+\o Deletion of 3 cells done.
+\a nrResizeWindow(workingDialogForm list(273 229 268 133))
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "ur_main"
+\a cdsLibManager->libLineEdit->value = "ur_main"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "ur_main"
+\a cdsLibManager->libLineEdit->value = "ur_main"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "Main"
+\a cdsLibManager->cellLineEdit->value = "Main"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup0" 29 160 2 "ur_main")
+\a cdsLibManager->editChangeRefsButton->value = t
+\a nrSetCurrentWindow(changeRefDialog)
+\a nrResizeWindow(changeRefDialog list(62 29 690 533))
+\a changeRefDialog->inLibsListWidget->value = '("ur_main" )
+\a changeRefDialog->fromLibsListWidget->value = '("gsclib045" )
+\a changeRefDialog->toLibListWidget->value = "ur_main"
+\a changeRefDialog->addButton->value = t
+\a changeRefDialog->Apply->value = t
+\o QUESTION (CLM-380): 1 reference changes will be applied to 1 libraries.\n\nDo you want to continue this operation?
+\a nrSetWindowVisibility(genericDialog "show")
+\a nrSetCurrentWindow(genericDialog)
+\a nrResizeWindow(genericDialog list(241 192 323 148))
+\a genericDialog->genericYesButton->value = t
+\o Operation confirmed for 1 changes will apply to 1 libraries.
+\o Running change rule: (in: ur_main), (fl: gsclib045), (fv: <All>), (tl: ur_main), (tv: <As Is>)
+\o Performing instance update.
+\o  Info (ccp):  Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.02s.
+\o  Info (ccp):  ccpDFIIUpdtr: Starting ...
+\o  Info (ccp):  Design
+\o  Info (ccp):  ur_main/Main/layout
+\o  Info (ccp):      62 instances that do not match the original references library in any rule
+\o  Info (ccp):  ccpDFIIUpdtr: End running.
+\o Change Library References command finished.
+\o INFO (CLM-370): All change operations succeeded.
+\o All change operations succeeded.
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(QMessageBox1)
+\a QMessageBox1->OK->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(changeRefDialog)
+\a changeRefDialog->OK->value = t
+\o QUESTION (CLM-380): 1 reference changes will be applied to 1 libraries.\n\nDo you want to continue this operation?
+\a nrSetWindowVisibility(genericDialog "show")
+\a nrSetCurrentWindow(genericDialog)
+\a nrResizeWindow(genericDialog list(241 192 323 148))
+\a genericDialog->genericYesButton->value = t
+\o Operation confirmed for 1 changes will apply to 1 libraries.
+\o Running change rule: (in: ur_main), (fl: gsclib045), (fv: <All>), (tl: ur_main), (tv: <As Is>)
+\o Performing instance update.
+\o  Info (ccp):  Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.02s.
+\o  Info (ccp):  ccpDFIIUpdtr: Starting ...
+\o  Info (ccp):  Design
+\o  Info (ccp):  ur_main/Main/layout
+\o  Info (ccp):      62 instances that do not match the original references library in any rule
+\o  Info (ccp):  ccpDFIIUpdtr: End running.
+\o Change Library References command finished.
+\o INFO (CLM-370): All change operations succeeded.
+\o All change operations succeeded.
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(QMessageBox1)
+\a QMessageBox1->OK->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "Main"
+\a cdsLibManager->cellLineEdit->value = "Main"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "Main_VIA1"
+\a cdsLibManager->cellLineEdit->value = "Main_VIA1"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellListBox->value = "Main_VIA0"
+\a cdsLibManager->cellLineEdit->value = "Main_VIA0"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellListBox->value = "Main"
+\a cdsLibManager->cellLineEdit->value = "Main"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 12 3 2 "Main")
+\a cdsLibManager->editDeleteButton->value = t
+\a nrSetCurrentWindow(deleteForm)
+\a nrResizeWindow(deleteForm list(94 83 627 425))
+\a deleteForm->notDeleteListBox->value = '("Main_VIA0" )
+\a deleteForm->moveToDeleteButton->value = t
+\a deleteForm->notDeleteListBox->value = '("Main_VIA1" )
+\a deleteForm->moveToDeleteButton->value = t
+\a deleteForm->OK->value = t
+\o QUESTION (CLM-199): The following 3 items are marked for deletion.  Are you sure?
+\a nrSetWindowVisibility(mcMBXDLG "show")
+\a nrSetCurrentWindow(mcMBXDLG)
+\a nrResizeWindow(mcMBXDLG list(253 221 268 91))
+\a mcMBXDLG->pushButton1->value = t
+\o Deleting 3 cells from library "ur_main".
+\o Deleting cell "Main".
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\o Deleted cell 'ur_main/Main'.
+\o Deleting cell "Main_VIA0".
+\o Deleted cell 'ur_main/Main_VIA0'.
+\o Deleting cell "Main_VIA1".
+\o Deleted cell 'ur_main/Main_VIA1'.
+\o Deletion of 3 cells done.
+\a nrResizeWindow(workingDialogForm list(278 258 268 133))
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "ur_main"
+\a cdsLibManager->libLineEdit->value = "ur_main"
+\a lmgrLogShowPopup("mainListPopup0" 27 165 2 "ur_main")
+\a cdsLibManager->editDeleteButton->value = t
+\a nrSetCurrentWindow(deleteForm)
+\a deleteForm->OK->value = t
+\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
+\a nrSetWindowVisibility(mcMBXDLG "show")
+\a nrSetCurrentWindow(mcMBXDLG)
+\a nrResizeWindow(mcMBXDLG list(253 122 278 289))
+\a mcMBXDLG->pushButton1->value = t
+\o Deleting 1 library.
+\o Deleting library "ur_main".
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\o Deleted library 'ur_main'.
+\o Delete of library "ur_main" succeeded.
+\o Deletion of library done.
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a nrResizeWindow(workingDialogForm list(278 258 268 133))
+\a cdsLibManager->FileNewLibButton->value = t
+\a nrSetWindowVisibility(NewLibShell "show")
+\a nrSetCurrentWindow(NewLibShell)
+\a nrSetCurrentWindow(NewLibShell->subDialog)
+\a nrResizeWindow(NewLibShell list(154 27 507 559))
+\a NewLibShell->newLibNameText->value = "ur_main"
+\a NewLibShell->newLibOKButton->value = t
+\a nrSetCurrentWindow(workingDialogForm)
+\o Created new library "ur_main" at /home/bas33767/Desktop/DD_Lab_exercise/UR_Project/gpdk45/PV/ur_main.
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(278 258 288 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "ur_main"
+\a cdsLibManager->libLineEdit->value = "ur_main"
+\a lmgrLogShowPopup("mainListPopup0" 17 159 2 "ur_main")
+\a cdsLibManager->editChangeRefsButton->value = t
+\a nrSetCurrentWindow(changeRefDialog)
+\a nrResizeWindow(changeRefDialog list(67 58 690 533))
+\a changeRefDialog->inLibsListWidget->value = '("ur_main" )
+\a changeRefDialog->fromLibsListWidget->value = '("ur_main" )
+\a changeRefDialog->fromLibsListWidget->value = '("gsclib045" )
+\a changeRefDialog->toLibListWidget->value = "ur_main"
+\a changeRefDialog->addButton->value = t
+\a changeRefDialog->Apply->value = t
+\o QUESTION (CLM-380): 1 reference changes will be applied to 1 libraries.\n\nDo you want to continue this operation?
+\a nrSetWindowVisibility(genericDialog "show")
+\a nrSetCurrentWindow(genericDialog)
+\a nrResizeWindow(genericDialog list(246 221 323 148))
+\a genericDialog->genericYesButton->value = t
+\o Operation confirmed for 1 changes will apply to 1 libraries.
+\o Running change rule: (in: ur_main), (fl: gsclib045), (fv: <All>), (tl: ur_main), (tv: <As Is>)
+\o Change Library References command finished.
+\o INFO (CLM-370): All change operations succeeded.
+\o All change operations succeeded.
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(QMessageBox1)
+\a QMessageBox1->OK->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(changeRefDialog)
+\a changeRefDialog->OK->value = t
+\o QUESTION (CLM-380): 1 reference changes will be applied to 1 libraries.\n\nDo you want to continue this operation?
+\a nrSetWindowVisibility(genericDialog "show")
+\a nrSetCurrentWindow(genericDialog)
+\a nrResizeWindow(genericDialog list(246 221 323 148))
+\a genericDialog->genericYesButton->value = t
+\o Operation confirmed for 1 changes will apply to 1 libraries.
+\o Running change rule: (in: ur_main), (fl: gsclib045), (fv: <All>), (tl: ur_main), (tv: <As Is>)
+\o Change Library References command finished.
+\o INFO (CLM-370): All change operations succeeded.
+\o All change operations succeeded.
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(QMessageBox1)
+\a QMessageBox1->OK->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "ur_main"
+\a cdsLibManager->libLineEdit->value = "ur_main"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "gsclib045"
+\a cdsLibManager->libLineEdit->value = "gsclib045"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "gsclib045"
+\a cdsLibManager->libLineEdit->value = "gsclib045"
+\o DB was auto refreshed.
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "ur_main"
+\a cdsLibManager->libLineEdit->value = "ur_main"
+\a cdsLibManager->cellListBox->value = "Main_VIA1"
+\a cdsLibManager->cellLineEdit->value = "Main_VIA1"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 35 39 2 "Main_VIA1")
+\a cdsLibManager->editDeleteButton->value = t
+\a nrSetCurrentWindow(deleteForm)
+\a deleteForm->notDeleteListBox->value = '("Main" )
+\a deleteForm->moveToDeleteButton->value = t
+\a deleteForm->notDeleteListBox->value = '("Main_VIA0" )
+\a deleteForm->moveToDeleteButton->value = t
+\a deleteForm->OK->value = t
+\o QUESTION (CLM-199): The following 3 items are marked for deletion.  Are you sure?
+\a nrSetWindowVisibility(mcMBXDLG "show")
+\a nrSetCurrentWindow(mcMBXDLG)
+\a nrResizeWindow(mcMBXDLG list(253 221 268 91))
+\a mcMBXDLG->pushButton1->value = t
+\o Deleting 3 cells from library "ur_main".
+\o Deleting cell "Main".
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\o Deleted cell 'ur_main/Main'.
+\o Deleting cell "Main_VIA0".
+\o Deleted cell 'ur_main/Main_VIA0'.
+\o Deleting cell "Main_VIA1".
+\o Deleted cell 'ur_main/Main_VIA1'.
+\o Deletion of 3 cells done.
+\a nrResizeWindow(workingDialogForm list(268 258 288 133))
+\a cdsLibManager->cellLineEdit->value = ""
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "ur_main"
+\a cdsLibManager->libLineEdit->value = "ur_main"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "ur_main"
+\a cdsLibManager->libLineEdit->value = "ur_main"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "ur_main"
+\a cdsLibManager->libLineEdit->value = "ur_main"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "gsclib045"
+\a cdsLibManager->libLineEdit->value = "gsclib045"
+\a cdsLibManager->libListBox->value = "ur_main"
+\a cdsLibManager->libLineEdit->value = "ur_main"
+\a cdsLibManager->cellListBox->value = "Main"
+\a cdsLibManager->cellLineEdit->value = "Main"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 36 14 2 "Main")
+\a cdsLibManager->editDeleteButton->value = t
+\a nrSetCurrentWindow(deleteForm)
+\a deleteForm->notDeleteListBox->value = '("Main_VIA0" )
+\a deleteForm->moveToDeleteButton->value = t
+\a deleteForm->notDeleteListBox->value = '("Main_VIA1" )
+\a deleteForm->moveToDeleteButton->value = t
+\a deleteForm->OK->value = t
+\o QUESTION (CLM-199): The following 3 items are marked for deletion.  Are you sure?
+\a nrSetWindowVisibility(mcMBXDLG "show")
+\a nrSetCurrentWindow(mcMBXDLG)
+\a nrResizeWindow(mcMBXDLG list(253 221 268 91))
+\a mcMBXDLG->pushButton1->value = t
+\o Deleting 3 cells from library "ur_main".
+\o Deleting cell "Main".
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\o Deleted cell 'ur_main/Main'.
+\o Deleting cell "Main_VIA0".
+\o Deleted cell 'ur_main/Main_VIA0'.
+\o Deleting cell "Main_VIA1".
+\o Deleted cell 'ur_main/Main_VIA1'.
+\o Deletion of 3 cells done.
+\a nrResizeWindow(workingDialogForm list(278 258 268 133))
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "ur_main"
+\a cdsLibManager->libLineEdit->value = "ur_main"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "ur_main"
+\a cdsLibManager->libLineEdit->value = "ur_main"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "Main"
+\a cdsLibManager->cellLineEdit->value = "Main"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 6 13 2 "Main")
+\a cdsLibManager->editDeleteButton->value = t
+\a nrSetCurrentWindow(deleteForm)
+\a deleteForm->notDeleteListBox->value = '("Main_VIA0" )
+\a deleteForm->moveToDeleteButton->value = t
+\a deleteForm->notDeleteListBox->value = '("Main_VIA1" )
+\a deleteForm->moveToDeleteButton->value = t
+\a deleteForm->OK->value = t
+\o QUESTION (CLM-199): The following 3 items are marked for deletion.  Are you sure?
+\a nrSetWindowVisibility(mcMBXDLG "show")
+\a nrSetCurrentWindow(mcMBXDLG)
+\a nrResizeWindow(mcMBXDLG list(253 221 268 91))
+\a mcMBXDLG->pushButton1->value = t
+\o Deleting 3 cells from library "ur_main".
+\o Deleting cell "Main".
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\o Deleted cell 'ur_main/Main'.
+\o Deleting cell "Main_VIA0".
+\o Deleted cell 'ur_main/Main_VIA0'.
+\o Deleting cell "Main_VIA1".
+\o Deleted cell 'ur_main/Main_VIA1'.
+\o Deletion of 3 cells done.
+\a nrResizeWindow(workingDialogForm list(278 258 268 133))
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "ur_main"
+\a cdsLibManager->libLineEdit->value = "ur_main"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "ur_main"
+\a cdsLibManager->libLineEdit->value = "ur_main"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "Main"
+\a cdsLibManager->cellLineEdit->value = "Main"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)

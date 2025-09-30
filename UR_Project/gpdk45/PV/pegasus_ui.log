@@ -1,0 +1,10 @@
+
+INFO:    Checking out 1 license(s) of feature: 'Pegasus_UI' version 24.1
+INFO:    License checkout successful ... 2025-09-27 23:52:43
+WARNING: In technology 'gpdk045_pvs', the rule set 'Metal Fill' is not a Pegasus rule set.
+It will be accepted for this run but should be changed to a pegasusRuleSet.
+WARNING: In technology 'gpdk045_pvs', the rule set 'antenna' is not a Pegasus rule set.
+It will be accepted for this run but should be changed to a pegasusRuleSet.
+WARNING: In technology 'gpdk045_pvs', the rule set 'default' is not a Pegasus rule set.
+It will be accepted for this run but should be changed to a pegasusRuleSet.
+Checking in SoftShare license Pegasus_UI ... succeeded (1s).

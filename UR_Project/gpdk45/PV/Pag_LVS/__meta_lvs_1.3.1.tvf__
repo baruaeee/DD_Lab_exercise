@@ -1,0 +1,7 @@
+#!tvf
+tvf::VERBATIM {
+DRC ICSTATION YES
+
+}
+
+source "/home/bas33767/Desktop/DD_Lab_exercise/UR_Project/PV/lvs_1.3.1.tvf"

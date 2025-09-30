@@ -1,0 +1,166 @@
+Running: /eda/cadence/2024-25/RHELx86/PEGASUS_24.10.000/tools.lnx86/Pegasus/bin/64bit/pegasusvirt \
+  -isPegasus \
+  -mode lvs \
+  -global_log_file /home/bas33767/Desktop/DD_Lab_exercise/UR_Project/gpdk45/PV/Pag_LVS/pegasusuilvs.log \
+  -control /home/bas33767/Desktop/DD_Lab_exercise/UR_Project/gpdk45/PV/Pag_LVS/pegasuslvsctl \
+  -df2_version IC23.1.0 \
+  -run_dir /home/bas33767/Desktop/DD_Lab_exercise/UR_Project/gpdk45/PV/Pag_LVS \
+  -no_rules_check \
+  -qrc_data \
+  -sch_in_ctl \
+  -source_top_cell Main \
+  -spice /home/bas33767/Desktop/DD_Lab_exercise/UR_Project/gpdk45/PV/Pag_LVS/Main.spi \
+  -layLibName ur_main \
+  -layCellName Main \
+  -layViewName layout \
+  -igds /home/bas33767/Desktop/DD_Lab_exercise/UR_Project/gpdk45/PV/Pag_LVS/Main.gds.gz \
+  -layScale 0.0005 \
+  -layTechLib gpdk045 \
+  -convertPin geometry \
+  -replaceBusBitChar nil \
+  -noConvertHalfWidthPath nil \
+  -flattenPcells nil \
+  -layHierDepth 32 \
+  -layMaxVertices 2048 \
+  -enableColoring yes \
+  -rulesFile /home/bas33767/Desktop/DD_Lab_exercise/UR_Project/gpdk45/PV/Pag_LVS/.technology.rul \
+  -log_dir LOGS
+
+
+
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.03s.
+********************************************************************************
+Product   : Virtuoso(R) XStream Out
+Program   : @(#)$CDS: strmout version IC23.1-64b 05/22/2024 07:39 (cpgbld16) $
+          : sub-version  IC23.1-64b.ISR7.27 
+Started at: 10-Aug-2025  19:10:17
+User Name : bas33767
+Host Name : ei-vm-018.othr.de
+Directory : /home/bas33767/Desktop/DD_Lab_exercise/UR_Project/gpdk45/PV
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+Loading gpdk045/libInit.il ...
+	Loading gpdk045/loadCxt.ile ... done!
+	Loading context 'gpdk045' from library 'gpdk045' ... done!
+	Loading context 'pdkUtils' from library 'gpdk045' ... done!
+	Loading gpdk045/gpdk045_customFilter.il ... done!
+	Loading gpdk045/libInitCustomExit.il ... 
+	Loading Environment Settings ...
+	Loading gpdk045/gpdk045_PDKRegistrations.il ... done!
+
+  *************************************************************           
+  *              Cadence Design Systems, Inc.                 *           
+  *                                                           *           
+  *                    Generic 45nm PDK                       *           
+  *                        (gpdk045)                          *           
+  *                                                           *           
+  *************************************************************           
+	
+
+	VERSION: 6.0 (09-September-2019)
+
+done!
+Loaded gpdk045/libInit.il successfully!
+INFO (XSTRM-217): Reading the layer map file, /mnt/cae_storage_sw/eda/cadence/pdks/gpdk045/gpdk045_v_6_0/gpdk045/gpdk045.layermap
+WARNING (XSTRM-333): The '-enableColoring' option will be ignored during XStream Out. This is because there is no color entry in the layer map and the object map file.
+INFO (XSTRM-427): Based on current hardware configuration, running XStream Out translation in multi-threaded mode with 4 threads.
+INFO (XSTRM-280): The output file will be a compressed file because the file name has extension .gz
+INFO (XSTRM-162): You have not used the '-viaMap' option. If the OpenAccess design has native oaVia instances, use the '-viaMap' option for preserving oaVia instances in a XStream Out - XStream In round trip. Using the '-viaMap' option improves performance and VM usage of applications using the Streamed-In design.
+
+Summary of Options :
+library                                 ur_main
+strmFile                                /home/bas33767/Desktop/DD_Lab_exercise/UR_Project/gpdk45/PV/Pag_LVS/Main.gds.gz
+topCell                                 Main
+view                                    layout
+runDir                                  /home/bas33767/Desktop/DD_Lab_exercise/UR_Project/gpdk45/PV/Pag_LVS
+logFile                                 /home/bas33767/Desktop/DD_Lab_exercise/UR_Project/gpdk45/PV/Pag_LVS/PIPO1.LOG
+techLib                                 gpdk045
+hierDepth                               32
+maxVertices                             2048
+layerMap                                /mnt/cae_storage_sw/eda/cadence/pdks/gpdk045/gpdk045_v_6_0/gpdk045/gpdk045.layermap
+userSkillFile                           /home/bas33767/Desktop/DD_Lab_exercise/UR_Project/gpdk45/PV/Pag_LVS/strmout.il
+labelDepth                              32
+case                                    Preserve
+convertDot                              node
+
+Loading sky130_fd_pr_main/libInit.il ...
+	Loading context 'sky130_fd_pr_main' from library 'sky130_fd_pr_main' ... done!
+	Loading sky130_fd_pr_main/libInitCktPro.il ... done!
+	Loading sky130_fd_pr_main/libInitCustomExit.il ... function envSetValIfDefault redefined
+	Loading Environment Settings ...
+done!
+Loaded sky130_fd_pr_main/libInit.il successfully!
+WARNING (XSTRM-34): The objects in the layer-purpose pair '5:4294967295' are ignored. This is because either the layer-purpose pair used in the design is not specified in the layer map file or the layer/purpose is not defined in technology file. Ensure that the layer-purpose pair used in the design is specified in the layer map file and the layer/purpose is defined in technology file.
+WARNING (XSTRM-34): The objects in the layer-purpose pair '22:4294967295' are ignored. This is because either the layer-purpose pair used in the design is not specified in the layer map file or the layer/purpose is not defined in technology file. Ensure that the layer-purpose pair used in the design is specified in the layer map file and the layer/purpose is defined in technology file.
+WARNING (XSTRM-34): The objects in the layer-purpose pair '43:4294967295' are ignored. This is because either the layer-purpose pair used in the design is not specified in the layer map file or the layer/purpose is not defined in technology file. Ensure that the layer-purpose pair used in the design is specified in the layer map file and the layer/purpose is defined in technology file.
+WARNING (XSTRM-34): The objects in the layer-purpose pair '31:4294967295' are ignored. This is because either the layer-purpose pair used in the design is not specified in the layer map file or the layer/purpose is not defined in technology file. Ensure that the layer-purpose pair used in the design is specified in the layer map file and the layer/purpose is defined in technology file.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'OVERLAP:drawing' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+INFO (XSTRM-180): You have not used the '-objectMap' option. The design has instance(s) of at least one of following OpenAccess objects: oaBlockage, oaBoundary, oaRow, and oaMarker. Any information about these objects will not be translated into the generated stream file. Use the '-objectMap' option to translate/preserve these objects using XStream.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'Nwell:pin' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+WARNING (XSTRM-34): The objects in the layer-purpose pair '3:4294967295' are ignored. This is because either the layer-purpose pair used in the design is not specified in the layer map file or the layer/purpose is not defined in technology file. Ensure that the layer-purpose pair used in the design is specified in the layer map file and the layer/purpose is defined in technology file.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'Nwell:label' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+INFO (XSTRM-223): 1. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_754845817010.
+INFO (XSTRM-223): 2. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_754845817011.
+INFO (XSTRM-223): 3. Translating stdVia gpdk045/M3_M2/layout as STRUCTURE M3_M2_CDNS_754845817012.
+INFO (XSTRM-223): 4. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_754845817013.
+INFO (XSTRM-223): 5. Translating stdVia gpdk045/M3_M2/layout as STRUCTURE M3_M2_CDNS_754845817014.
+INFO (XSTRM-223): 6. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_754845817015.
+INFO (XSTRM-223): 7. Translating stdVia gpdk045/M4_M3/layout as STRUCTURE M4_M3_CDNS_754845817016.
+INFO (XSTRM-223): 8. Translating stdVia gpdk045/M5_M4/layout as STRUCTURE M5_M4_CDNS_754845817017.
+INFO (XSTRM-223): 9. Translating stdVia gpdk045/M3_M2/layout as STRUCTURE M3_M2_CDNS_754845817018.
+INFO (XSTRM-223): 10. Translating stdVia gpdk045/M4_M3/layout as STRUCTURE M4_M3_CDNS_754845817019.
+INFO (XSTRM-223): 11. Translating stdVia gpdk045/M3_M2/layout as STRUCTURE M3_M2_CDNS_7548458170110.
+INFO (XSTRM-223): 12. Translating stdVia gpdk045/M4_M3/layout as STRUCTURE M4_M3_CDNS_7548458170111.
+INFO (XSTRM-223): 13. Translating stdVia gpdk045/M3_M2/layout as STRUCTURE M3_M2_CDNS_7548458170112.
+INFO (XSTRM-223): 14. Translating stdVia gpdk045/M3_M2/layout as STRUCTURE M3_M2_CDNS_7548458170113.
+INFO (XSTRM-223): 15. Translating stdVia gpdk045/M9_M8/layout as STRUCTURE M9_M8_CDNS_7548458170114.
+INFO (XSTRM-223): 16. Translating stdVia gpdk045/M8_M7/layout as STRUCTURE M8_M7_CDNS_7548458170115.
+INFO (XSTRM-223): 17. Translating stdVia gpdk045/M7_M6/layout as STRUCTURE M7_M6_CDNS_7548458170116.
+INFO (XSTRM-223): 18. Translating stdVia gpdk045/M6_M5/layout as STRUCTURE M6_M5_CDNS_7548458170117.
+INFO (XSTRM-223): 19. Translating stdVia gpdk045/M5_M4/layout as STRUCTURE M5_M4_CDNS_7548458170118.
+INFO (XSTRM-223): 20. Translating stdVia gpdk045/M4_M3/layout as STRUCTURE M4_M3_CDNS_7548458170119.
+INFO (XSTRM-223): 21. Translating stdVia gpdk045/M3_M2/layout as STRUCTURE M3_M2_CDNS_7548458170120.
+INFO (XSTRM-223): 22. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_7548458170121.
+INFO (XSTRM-223): 23. Translating stdVia sky130_fd_pr_main/L1M1_C/layout as STRUCTURE L1M1_C_CDNS_7548458170122.
+INFO (XSTRM-223): 24. Translating stdVia sky130_fd_pr_main/PYL1CON_C/layout as STRUCTURE PYL1CON_C_CDNS_7548458170123.
+INFO (XSTRM-223): 25. Translating stdVia sky130_fd_pr_main/L1M1_C/layout as STRUCTURE L1M1_C_CDNS_7548458170124.
+INFO (XSTRM-223): 26. Translating stdVia sky130_fd_pr_main/L1M1_C/layout as STRUCTURE L1M1_C_CDNS_7548458170125.
+INFO (XSTRM-223): 27. Translating stdVia sky130_fd_pr_main/LICONDIFF_C/layout as STRUCTURE LICONDIFF_C_CDNS_7548458170126.
+INFO (XSTRM-223): 28. Translating stdVia sky130_fd_pr_main/L1M1_C/layout as STRUCTURE L1M1_C_CDNS_7548458170127.
+INFO (XSTRM-223): 29. Translating cellview sky130_fd_pr_main/pfet_01v8/layout as STRUCTURE pfet_01v8_CDNS_754845817010.
+INFO (XSTRM-223): 30. Translating cellview sky130_fd_pr_main/nfet_01v8/layout as STRUCTURE nfet_01v8_CDNS_754845817011.
+INFO (XSTRM-223): 31. Translating cellview sky130_fd_pr_main/nfet_01v8/layout as STRUCTURE nfet_01v8_CDNS_754845817012.
+INFO (XSTRM-223): 32. Translating cellview sky130_fd_pr_main/nfet_01v8/layout as STRUCTURE nfet_01v8_CDNS_754845817013.
+INFO (XSTRM-223): 33. Translating cellview sky130_fd_pr_main/pfet_01v8/layout as STRUCTURE pfet_01v8_CDNS_754845817014.
+INFO (XSTRM-223): 34. Translating cellview sky130_fd_pr_main/pfet_01v8/layout as STRUCTURE pfet_01v8_CDNS_754845817015.
+INFO (XSTRM-223): 35. Translating cellview sky130_fd_pr_main/pfet_01v8/layout as STRUCTURE pfet_01v8_CDNS_754845817016.
+INFO (XSTRM-223): 36. Translating cellview sky130_fd_pr_main/pfet_01v8/layout as STRUCTURE pfet_01v8_CDNS_754845817017.
+INFO (XSTRM-223): 37. Translating cellview sky130_fd_pr_main/nfet_01v8/layout as STRUCTURE nfet_01v8_CDNS_754845817018.
+INFO (XSTRM-223): 38. Translating cellview sky130_fd_pr_main/pfet_01v8/layout as STRUCTURE pfet_01v8_CDNS_754845817019.
+INFO (XSTRM-223): 39. Translating cellview sky130_fd_pr_main/nfet_01v8/layout as STRUCTURE nfet_01v8_CDNS_7548458170110.
+INFO (XSTRM-223): 40. Translating cellview sky130_fd_pr_main/nfet_01v8/layout as STRUCTURE nfet_01v8_CDNS_7548458170111.
+INFO (XSTRM-223): 41. Translating cellview sky130_scl_9T/CLKXOR2X1/layout as STRUCTURE CLKXOR2X1.
+INFO (XSTRM-223): 42. Translating stdVia sky130_fd_pr_main/L1M1_C/layout as STRUCTURE L1M1_C_CDNS_7548458170128.
+INFO (XSTRM-223): 43. Translating stdVia sky130_fd_pr_main/L1M1_C/layout as STRUCTURE L1M1_C_CDNS_7548458170129.
+INFO (XSTRM-223): 44. Translating cellview sky130_fd_pr_main/nfet_01v8/layout as STRUCTURE nfet_01v8_CDNS_7548458170112.
+INFO (XSTRM-223): 45. Translating cellview sky130_fd_pr_main/pfet_01v8/layout as STRUCTURE pfet_01v8_CDNS_7548458170113.
+INFO (XSTRM-223): 46. Translating cellview sky130_fd_pr_main/pfet_01v8/layout as STRUCTURE pfet_01v8_CDNS_7548458170114.
+INFO (XSTRM-223): 47. Translating cellview sky130_fd_pr_main/nfet_01v8/layout as STRUCTURE nfet_01v8_CDNS_7548458170115.
+INFO (XSTRM-223): 48. Translating cellview sky130_scl_9T/CLKBUFX2/layout as STRUCTURE CLKBUFX2.
+INFO (XSTRM-223): 49. Translating stdVia sky130_fd_pr_main/L1M1_C/layout as STRUCTURE L1M1_C_CDNS_7548458170130.
+INFO (XSTRM-223): 50. Translating cellview sky130_fd_pr_main/pfet_01v8/layout as STRUCTURE pfet_01v8_CDNS_7548458170116.
+INFO (XSTRM-223): 51. Translating cellview sky130_fd_pr_main/pfet_01v8/layout as STRUCTURE pfet_01v8_CDNS_7548458170117.
+INFO (XSTRM-223): 52. Translating cellview sky130_fd_pr_main/pfet_01v8/layout as STRUCTURE pfet_01v8_CDNS_7548458170118.
+INFO (XSTRM-223): 53. Translating cellview sky130_fd_pr_main/nfet_01v8/layout as STRUCTURE nfet_01v8_CDNS_7548458170119.
+INFO (XSTRM-223): 54. Translating cellview sky130_fd_pr_main/nfet_01v8/layout as STRUCTURE nfet_01v8_CDNS_7548458170120.
+INFO (XSTRM-223): 55. Translating cellview sky130_fd_pr_main/nfet_01v8/layout as STRUCTURE nfet_01v8_CDNS_7548458170121.
+INFO (XSTRM-223): 56. Translating cellview sky130_scl_9T/OAI21X2/layout as STRUCTURE OAI21X2.
+INFO (XSTRM-223): 57. Translating cellview sky130_scl_9T/BUFX2/layout as STRUCTURE BUFX2.
+ERROR (XSTRM-341): Translation failed while processing 'ur_main/Main/layout' because of the following reason: Cannot open design ur_main/NAND2BX4/layout: "Open of ur_main/NAND2BX4/layout failed - cellView for the design was not found.". Ensure that the specified cellview exists on disk and that you have permission to open it and then rerun the translation.
+INFO (XSTRM-273): Translation failed. '1' error(s) and '9' warning(s) found.
+
+
+
+ERROR: Problem happened while processing strmout.

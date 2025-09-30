@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      bas33767
+HostName                       ei-vm-018.othr.de
+ProcessIdentifier              3516007
+ProcessCreationTime_UTC        1759009078
+ProcessCreationTime_Readable   Sat Sep 27 23:37:58 2025 CEST
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/bas33767/Desktop/DD_Lab_exercise/UR_Project/gpdk45/PV/ur_main/Main/layout/layout.oa.cdslck
+TimeEditLocked                 Sat Sep 27 23:52:28 2025 CEST

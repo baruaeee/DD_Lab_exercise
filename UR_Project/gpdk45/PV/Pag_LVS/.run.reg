@@ -1,0 +1,19 @@
+# This Pegasus GUI File Index Registry was created automatically
+# Do not attempt to modify this file as any change may lead
+# to Pegasus GUI Tools malfunction.
+# 
+"Run Directory" internal none /home/bas33767/Desktop/DD_Lab_exercise/UR_Project/gpdk45/PV/Pag_LVS
+"Current Directory" internal none /home/bas33767/Desktop/DD_Lab_exercise/UR_Project/gpdk45/PV
+"Cadence Directory" internal none /home/bas33767/Desktop/DD_Lab_exercise/UR_Project/gpdk45/PV/.cadence/
+"Job Signature" internal none IPVS_1754845811_2753765
+"Pegasus Job Mode" internal none lvs
+"GUI Flow" internal none virtuoso6
+"GUI Preset" internal none /home/bas33767/Desktop/DD_Lab_exercise/UR_Project/gpdk45/PV/Pag_LVS/.preset.autosave
+"Technology Name" internal none "gpdk045_pvs"
+"Technology RuleSet" internal none "default"
+"Technology Mapping File" internal none /eda/cadence/pdks/gpdk045/gpdk045_v_6_0/pvtech.lib
+"Technology Rule File" internal none /home/bas33767/Desktop/DD_Lab_exercise/UR_Project/gpdk45/PV/Pag_LVS/.technology.rul
+"Pegasus Version" internal none 24.10-p017
+"Binary Name" internal none pegasusgui
+"Pegasus Build Date" internal none "Tue Sep 17 16:53:17 PDT 2024"
+"Pegasus Job Time" internal none 1754845815

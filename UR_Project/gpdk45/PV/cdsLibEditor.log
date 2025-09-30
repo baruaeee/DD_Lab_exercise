@@ -1,0 +1,10 @@
+\o Program:		@(#)$CDS: cdsLibEditor version 23.1 - CAT38 04/15/2024 12:26 (sjfdcl749) $
+\o Sub version:		sub-version  p323 
+\o Arguments:		-display :15.0 -mpssession virtuoso1957115 -mpshost ei-vm-018.othr.de -mpsversion 23.1 -namespace CDBA -cdslib /home/bas33767/Desktop/DD_Lab_exercise/UR_Project/PV/cds.lib 
+\o Working Directory:	ei-vm-018.othr.de:/home/bas33767/Desktop/DD_Lab_exercise/UR_Project/PV
+\o 64-bit offsets
+\a nrSetWindowVisibility(cdsLibEditor "show")
+\o Qt version: 		5.15.9
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrResizeWindow(cdsLibEditor list(585 321 500 400))
+\a exit(0)

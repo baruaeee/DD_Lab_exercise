@@ -1,0 +1,1 @@
+technology "gpdk045_pvs" -ruleSet "default" -techLib "/eda/cadence/pdks/gpdk045/gpdk045_v_6_0/pvtech.lib";

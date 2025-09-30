@@ -1,0 +1,187 @@
+//  v2lvs v2024.4_12.9    Tue Oct 1 20:33:59 PDT 2024
+//
+//  Copyright (c) 1992, 1993 Regents of the University of California
+//         All rights reserved.
+//
+//                   Copyright Siemens 1996-2024
+//                       All Rights Reserved.
+//   THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+//        OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  The registered trademark Linux is used pursuant to a sublicense from LMI, the
+//  exclusive licensee of Linus Torvalds, owner of the mark on a world-wide basis.
+//
+//  Mentor Graphics software executing under x86-64 Linux
+//
+//  Running on Linux ei-vm-018.othr.de (10.120.1.35) 4.18.0-553.63.1.el8_10.x86_64 #1 SMP Fri Jul 18 06:13:44 EDT 2025 x86_64 glibc 2.28/NPTL 2.28
+//  OS: Red Hat Enterprise Linux release 8.10 (Ootpa)[4.18.0-553.63.1.el8_10.x86_64]
+//  hypervisor detected
+//
+//  Entries in /proc/meminfo:
+//
+//  MemTotal:       198059940 kB
+//  MemFree:        16308528 kB
+//  MemAvailable:   152778304 kB
+//  Buffers:            2192 kB
+//  Cached:         132289340 kB
+//  SwapCached:            0 kB
+//  Active:         26951992 kB
+//  Inactive:       144533284 kB
+//  Active(anon):     782904 kB
+//  Inactive(anon): 40048432 kB
+//  Active(file):   26169088 kB
+//  Inactive(file): 104484852 kB
+//  Unevictable:        8584 kB
+//  Mlocked:             408 kB
+//  SwapTotal:             0 kB
+//  SwapFree:              0 kB
+//  Dirty:               768 kB
+//  Writeback:           220 kB
+//  AnonPages:      38831404 kB
+//  Mapped:          2925464 kB
+//  Shmem:           1629408 kB
+//  KReclaimable:    7587500 kB
+//  Slab:            8845516 kB
+//  SReclaimable:    7587500 kB
+//  SUnreclaim:      1258016 kB
+//  KernelStack:      106512 kB
+//  PageTables:       753336 kB
+//  NFS_Unstable:          0 kB
+//  Bounce:                0 kB
+//  WritebackTmp:          0 kB
+//  CommitLimit:    99029968 kB
+//  Committed_AS:   594547172 kB
+//  VmallocTotal:   34359738367 kB
+//  VmallocUsed:      344876 kB
+//  VmallocChunk:          0 kB
+//  Percpu:            34176 kB
+//  HardwareCorrupted:     0 kB
+//  AnonHugePages:  25745408 kB
+//  ShmemHugePages:        0 kB
+//  ShmemPmdMapped:        0 kB
+//  FileHugePages:         0 kB
+//  FilePmdMapped:         0 kB
+//  HugePages_Total:       0
+//  HugePages_Free:        0
+//  HugePages_Rsvd:        0
+//  HugePages_Surp:        0
+//  Hugepagesize:       2048 kB
+//  Hugetlb:               0 kB
+//  DirectMap4k:     2377576 kB
+//  DirectMap2M:    184268800 kB
+//  DirectMap1G:    16777216 kB
+//
+//  User limits:
+//
+//  Data size: unlimited
+//  RSS: unlimited
+//  Stack size: 8192 kB
+//  Max user processes: 773438
+//  VM: unlimited
+//  Current active profile: virtual-guest
+//  net.netfilter.nf_conntrack_max: 262144
+//  vm.max_map_count: 65530
+//  vm.overcommit_memory: 0
+//  kernel.pid_max: 4194304
+//
+WARNING: Please increase descriptors limit for best performance (1024)
+//
+//  Processor AMD Ryzen Threadripper PRO 5965WX 24-Cores      [2582] (4th generation)
+//  CPU Info: Cores = 32
+//  Max file descriptors: 1024
+//  64 bit virtual addressing enabled
+//  Running aok_cal_2024.4_12.9/pkgs/icv/pvt/v2lvs -v /home/bas33767/Desktop/DD_Lab_exercise/UR_Project/PNR/pnr_outputs/post_layout_main.v -o post_layout_main.v.v2lvs.sp -w 2
+//  Process ID: 2585378
+//
+//  Starting time: Sun Aug 10 12:48:22 2025
+//
+
+--- CALIBRE_* ENVIRONMENT VARIABLES:
+
+CALIBRE_ATOMIC_LVHEAP=0
+CALIBRE_CMD_LINE='/eda/Siemens/2024-25/RHELx86/CALIBRE_2024.4/aok_cal_2024.4_12.9/pkgs/icv/pvt/calibrerve -gui  -lvs'
+CALIBRE_HOME=/eda/Siemens/2024-25/RHELx86/CALIBRE_2024.4/aok_cal_2024.4_12.9
+CALIBRE_INITIAL_CMD_LINE='/eda/Siemens/2024-25/RHELx86/CALIBRE_2024.4/aok_cal_2024.4_12.9/bin/calibre -gui -lvs'
+CALIBRE_READDB_LD_LIBRARY_PATH=/eda/Siemens/2024-25/RHELx86/CALIBRE_2024.4/aok_cal_2024.4_12.9/pkgs/icv/julia/1.5/lib/julia:/eda/Siemens/2024-25/RHELx86/CALIBRE_2024.4/aok_cal_2024.4_12.9/pkgs/icv/julia/1.5/lib:/eda/Siemens/2024-25/RHELx86/CALIBRE_2024.4/aok_cal_2024.4_12.9/shared/pkgs/icv/tools/calibre_client/lib/64:/eda/Siemens/2024-25/RHELx86/CALIBRE_2024.4/aok_cal_2024.4_12.9/pkgs/calibre_base/lib64:/eda/Siemens/2024-25/RHELx86/CALIBRE_2024.4/aok_cal_2024.4_12.9/pkgs/icv_lib/lib64:/eda/Siemens/2024-25/RHELx86/CALIBRE_2024.4/aok_cal_2024.4_12.9/pkgs/icv_qt5_comp/plugins:/eda/Siemens/2024-25/RHELx86/CALIBRE_2024.4/aok_cal_2024.4_12.9/pkgs/icv_oa/22.41p004/lib/linux_rhel68_gcc44x_64/opt:/eda/cadence/2024-25/RHELx86/IC_23.10.070/tools/TPtools/libstdc++6/lib/64bit:/eda/cadence/2024-25/RHELx86/IC_23.10.070/share/oa/lib/lnx86/opt:/eda/cadence/2024-25/RHELx86/IC_23.10.070/tools/dfII/lib/64bit:/eda/cadence/2024-25/RHELx86/IC_23.10.070/tools/sev/lib/64bit:/eda/cadence/2024-25/RHELx86/IC_23.10.070/tools/lib/64bit:/eda/cadence/2024-25/RHELx86/IC_23.10.070/tools/lib:/eda/cadence/2024-25/RHELx86/IC_23.10.070/tools/hdf5/lib/64bit:/eda/cadence/2024-25/RHELx86/IC_23.10.070/tools/lz4/lib/64bit:/eda/cadence/2024-25/RHELx86/IC_23.10.070/tools/python/64bit/lib:/eda/cadence/2024-25/RHELx86/IC_23.10.070/tools/pcb/lib/64bit:/eda/cadence/2024-25/RHELx86/IC_23.10.070/tools/mainwin560/mw/lib-amd64_linux_optimized:/eda/cadence/2024-25/RHELx86/XCELIUM_24.03.004/tools.lnx86/lib/64bit:/eda/cadence/2024-25/RHELx86/IC_23.10.070/tools/TPtools/grpc/lib64:/eda/cadence/2024-25/RHELx86/IC_23.10.070/tools/TPtools/grpc/lib:/eda/cadence/2024-25/RHELx86/IC_23.10.070/tools/TPtools/boost/lib/64bit:/eda/cadence/2024-25/RHELx86/IC_23.10.070/tools/Qt/v5/64bit/lib:/eda/cadence/2024-25/RHELx86/IC_23.10.070/tools/lib/64bit/RHEL/RHEL8:/lib64:/eda/Siemens/2024-25/RHELx86/CALIBRE_2024.4/aok_cal_2024.4_12.9/lib:/eda/Siemens/2024-25/RHELx86/HLVX_2409/HL2409/SDD_HOME/hldrc/linux64/bin:/eda/Siemens/2024-25/RHELx86/HLVX_2409/HL2409/SDD_HOME/common/amd64_linux/lib:/CALIBRE_SKIP_DYNAMIC_LIBRARY_CHECK=1
+CALIBRE_SKIP_OS_CHECKS=
+
+--- V2LVS_* ENVIRONMENT VARIABLES:
+
+
+--- Verilog-to-LVS - Sun Aug 10 12:48:22 2025
+
+//  Applying licensing policy...
+//  calibrelvs license acquired.
+
+//  Licensed Products
+//  -----------------
+//  Other products:
+//  - v2lvs
+
+
+Info: Creating Verilog Library Database ...
+Info: Verilog Library Database Creation completed. CPU TIME = 0  REAL TIME = 0  LVHEAP = 0/0/0  MALLOC = 14/14/14  ELAPSED TIME = 1
+
+Info: Creating Design Database of Module Interfaces ...
+Info: Design Database of Module Interfaces Creation completed. CPU TIME = 0  REAL TIME = 0  LVHEAP = 0/0/0  MALLOC = 15/15/15  ELAPSED TIME = 1
+
+Info: Creating Design Database of Module Instantiations ...
+Info: Design Database of Module Instantiations Creation completed. CPU TIME = 0  REAL TIME = 0  LVHEAP = 0/0/0  MALLOC = 15/15/15  ELAPSED TIME = 1
+Info: 10 modules parsed, containing 441 module instantiations and 0 gate instance calls 
+
+Info: Converting Design ...
+Warning: No module declaration for module BUJIX1 first encountered in module ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8
+Warning: No module declaration for module NA3I1JIX0 first encountered in module ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8
+Warning: No module declaration for module INVJIX1 first encountered in module ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8
+Warning: No module declaration for module ActivationMultiplier_IN_WIDTH8 first encountered in module ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8
+Warning: ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8/AM_INST[0].am calls array of unknown dimension weight in undeclared module ActivationMultiplier_IN_WIDTH8
+Warning: ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8/AM_INST[0].am calls array of unknown dimension result in undeclared module ActivationMultiplier_IN_WIDTH8
+Warning: ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8/AM_INST[1].am calls array of unknown dimension weight in undeclared module ActivationMultiplier_IN_WIDTH8
+Warning: ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8/AM_INST[1].am calls array of unknown dimension result in undeclared module ActivationMultiplier_IN_WIDTH8
+Warning: ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8/AM_INST[2].am calls array of unknown dimension weight in undeclared module ActivationMultiplier_IN_WIDTH8
+Warning: ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8/AM_INST[2].am calls array of unknown dimension result in undeclared module ActivationMultiplier_IN_WIDTH8
+Warning: ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8/AM_INST[3].am calls array of unknown dimension weight in undeclared module ActivationMultiplier_IN_WIDTH8
+Warning: ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8/AM_INST[3].am calls array of unknown dimension result in undeclared module ActivationMultiplier_IN_WIDTH8
+Warning: ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8/AM_INST[4].am calls array of unknown dimension weight in undeclared module ActivationMultiplier_IN_WIDTH8
+Warning: ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8/AM_INST[4].am calls array of unknown dimension result in undeclared module ActivationMultiplier_IN_WIDTH8
+Warning: ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8/AM_INST[5].am calls array of unknown dimension weight in undeclared module ActivationMultiplier_IN_WIDTH8
+Warning: ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8/AM_INST[5].am calls array of unknown dimension result in undeclared module ActivationMultiplier_IN_WIDTH8
+Warning: No module declaration for module NA4JIX0 first encountered in module ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8
+Warning: No module declaration for module AN22JIX0 first encountered in module ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8
+Warning: No module declaration for module AND2JIX0 first encountered in module ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8
+Warning: No module declaration for module NO2I1JIX0 first encountered in module ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8
+Warning: No module declaration for module AND3JIX0 first encountered in module ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8
+Warning: No module declaration for module INVJIX0 first encountered in module ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8
+Warning: No module declaration for module NO2JIX0 first encountered in module ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8
+Warning: No module declaration for module NA2I1JIX0 first encountered in module ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8
+Warning: No module declaration for module SDFRRQJIX1 first encountered in module ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8
+Warning: No module declaration for module SDFRRSJIX1 first encountered in module ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8
+Warning: No module declaration for module AO21JIX0 first encountered in module ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8
+Warning: No module declaration for module ON21JIX0 first encountered in module ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8
+Warning: No module declaration for module AO32JIX0 first encountered in module ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8
+Warning: No module declaration for module NA2JIX0 first encountered in module ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8
+Warning: No module declaration for module AO22JIX0 first encountered in module ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8
+Warning: No module declaration for module ON31JIX0 first encountered in module ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8
+Warning: No module declaration for module AND2JIX1 first encountered in module ActivationMultiplier_6_IN_WIDTH8_NUM_UNITS6_ACTIVATION_WIDTH8
+Warning: No module declaration for module NA2JIX1 first encountered in module adder_nbit_N5
+Warning: No module declaration for module EO2JIX1 first encountered in module adder_nbit_N5
+Warning: No module declaration for module NO2I1JIX1 first encountered in module adder_nbit_N5
+Warning: No module declaration for module EO2JIX0 first encountered in module adder_nbit_N5
+Warning: No module declaration for module OR2JIX0 first encountered in module adder_nbit_N5
+Warning: No module declaration for module EO3JIX0 first encountered in module adder_nbit_N5_157
+Warning: No module declaration for module ON211JIX1 first encountered in module adder_nbit_N5_157
+Warning: No module declaration for module NA2I1JIX1 first encountered in module adder_nbit_N6
+Warning: No module declaration for module HAJIX1 first encountered in module adder_nbit_N6
+Warning: No module declaration for module EN2JIX0 first encountered in module adder_nbit_N6_1
+Warning: No module declaration for module ON21JIX1 first encountered in module adder_nbit_N6_1
+Warning: No module declaration for module NO2JIX1 first encountered in module adder_nbit_N6_1
+Warning: No module declaration for module EN3JIX0 first encountered in module adder_nbit_N7
+Warning: No module declaration for module AN21JIX1 first encountered in module adder_nbit_N7
+Warning: No module declaration for module SDFRQJIX1 first encountered in module AdderTree_6_WEIGHT_WIDTH8_NUM_UNITS6
+Info: Design Conversion completed. CPU TIME = 0  REAL TIME = 0  LVHEAP = 0/0/0  MALLOC = 15/15/15  ELAPSED TIME = 1
+
+--- Verilog-to-LVS COMPLETED - Sun Aug 10 12:48:22 2025
+--- TOTAL CPU TIME = 0  REAL TIME = 0  LVHEAP = 0/0/0  MALLOC = 15/15/15  ELAPSED TIME = 1
+--- LOG FILE = v2lvs.log
+

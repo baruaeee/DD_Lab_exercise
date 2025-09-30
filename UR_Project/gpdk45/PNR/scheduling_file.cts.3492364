@@ -1,0 +1,2 @@
+MacroModel pin A6M_result_reg[0][0]/CK  58.50ps 58.50ps 58.50ps 58.50ps 0pf WORST_CASE
+MacroModel pin A6M_result_reg[1][0]/CK  32.00ps 32.00ps 32.00ps 32.00ps 0pf WORST_CASE

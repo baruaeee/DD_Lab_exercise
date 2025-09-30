@@ -1,0 +1,7 @@
+#!tvf
+tvf::VERBATIM {
+DRC ICSTATION YES
+
+}
+
+source "/eda/cadence/pdks/ihp_sg13g2/SG13G2_618_rev1.3.1/Calibre/RSF/lvs.tvf"

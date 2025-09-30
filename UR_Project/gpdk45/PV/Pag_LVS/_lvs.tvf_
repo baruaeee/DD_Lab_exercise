@@ -1,0 +1,32 @@
+#!tvf
+tvf::VERBATIM {
+//
+//  Rule file generated on Sat Aug 9 13:38:36 2025
+//  by Calibre Interactive v2024.4_12.9    Tue Oct 1 20:34:14 PDT 2024
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+LAYOUT PATH "Main.calibre.db"
+LAYOUT SYSTEM GDSII
+LAYOUT PRIMARY "Main"
+
+SOURCE PATH "main_netlist.v.v2lvs.sp"
+SOURCE SYSTEM SPICE
+SOURCE PRIMARY "Main"
+
+MASK SVDB DIRECTORY "svdb" QUERY
+
+LVS REPORT "Main.lvs.report"
+
+LVS EXECUTE ERC YES
+
+ERC RESULTS DATABASE "Main.erc.results"
+ERC CELL NAME YES CELL SPACE XFORM
+
+DRC ICSTATION YES
+
+}
+
+source "/home/bas33767/Desktop/DD_Lab_exercise/UR_Project/PV/lvs.tvf"
